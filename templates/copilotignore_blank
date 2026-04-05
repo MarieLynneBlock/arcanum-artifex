@@ -1,0 +1,42 @@
+# .copilotignore
+#
+# FILE NAMING: Rename to .copilotignore (remove _blank) when deploying.
+# Place at repo root.
+#
+# Works like .gitignore — Copilot will not read or suggest content
+# from matched files. Use this to exclude secrets, generated output,
+# and large files that add noise without useful context.
+
+# Secrets and environment config
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# Generated and build output
+dist/
+build/
+out/
+*.generated.*
+*.min.js
+*.min.css
+
+# Dependencies
+node_modules/
+vendor/
+.venv/
+__pycache__/
+
+# Test fixtures and snapshots (large or generated)
+# __snapshots__/
+# fixtures/
+
+# Binary and media files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.pdf
+*.zip

@@ -1,0 +1,19 @@
+{
+  // GitHub Copilot — Chat
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "github.copilot.chat.codeGeneration.instructions": [],
+
+  // GitHub Copilot — Editor
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": false,
+    "scminput": false
+  },
+
+  // GitHub Copilot — Completions
+  "github.copilot.editor.enableAutoCompletions": true,
+
+  // GitHub Copilot — Next Edit Suggestions (NES)
+  "github.copilot.nextEditSuggestions.enabled": true
+}

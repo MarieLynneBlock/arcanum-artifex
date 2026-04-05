@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encdata
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# GitHub Copilot — local overrides (never commit)
+.github/copilot-instructions-local.md
+.copilotignore.local
+
+# Claude Code — local config (never commit)
+*.local.md
+.claude/settings.local.json
