@@ -7,7 +7,8 @@ authors:
   - Marie-Lynne Block
 tags:
   - data-science
-  - [TODO]
+  - data-validation
+  - schema-contracts
 ---
 
 ## What this skill does
