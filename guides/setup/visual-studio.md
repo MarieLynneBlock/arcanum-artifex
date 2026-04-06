@@ -68,15 +68,7 @@ Key options:
 
 ## 6. Feature availability vs VS Code
 
-| Feature | Visual Studio 2022 |
-| --- | --- |
-| Inline completions | Yes |
-| Copilot Chat | Yes |
-| `.github/copilot-instructions.md` | Yes |
-| Prompt files (`.prompt.md`) | No |
-| Agent mode | No |
-| MCP servers | No |
-| Next Edit Suggestions | No |
+See the canonical IDE matrix: [ide-feature-matrix.md](../resources/ide-feature-matrix.md)
 
 ---
 
@@ -84,4 +76,5 @@ Key options:
 
 - Visual Studio is Windows-only. Mac developers use VS Code or Rider.
 - Primarily used for C#, .NET, C++, and ASP.NET projects.
+- Agent mode and MCP tools require Visual Studio 17.14 or later.
 - The `.github/copilot-instructions.md` file is respected — keep it in every project.

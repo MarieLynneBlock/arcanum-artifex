@@ -1,6 +1,6 @@
 # GitHub Copilot — Eclipse Setup Guide
 
-Copilot support in Eclipse is more limited than in VS Code or JetBrains. Inline completions and basic chat are available; advanced features (agent mode, prompt files, MCP) are not.
+Eclipse supports inline completions, Copilot Chat, agent mode, and MCP tools. Some capabilities require newer Eclipse and extension versions.
 
 ---
 
@@ -11,7 +11,7 @@ Copilot support in Eclipse is more limited than in VS Code or JetBrains. Inline 
 3. Search **GitHub Copilot** and click **Install**.
 4. Accept the license and restart Eclipse when prompted.
 
-> Requires Eclipse 2023-03 (4.27) or later and Java 17+.
+> Requires Eclipse 2024-09 (4.33) or later for current Copilot Chat, agent mode, and MCP workflows.
 
 ---
 
@@ -46,23 +46,15 @@ Copilot support in Eclipse is more limited than in VS Code or JetBrains. Inline 
 ## 5. Chat
 
 - Open via **Window → Show View → GitHub Copilot Chat**.
-- Supports basic natural language questions about code.
-- Supports `/explain` and `/fix` slash commands.
+- Supports natural language questions, slash commands, plan mode, and agent mode.
+- Supports MCP tools when configured.
 - Less context-aware than VS Code or JetBrains — attach files manually when needed.
 
 ---
 
 ## 6. Feature availability vs VS Code
 
-| Feature | Eclipse |
-| --- | --- |
-| Inline completions | Yes |
-| Copilot Chat | Basic |
-| `.github/copilot-instructions.md` | Partial — verify per version |
-| Prompt files (`.prompt.md`) | No |
-| Agent mode | No |
-| MCP servers | No |
-| Next Edit Suggestions | No |
+See the canonical IDE matrix: [ide-feature-matrix.md](../resources/ide-feature-matrix.md)
 
 ---
 

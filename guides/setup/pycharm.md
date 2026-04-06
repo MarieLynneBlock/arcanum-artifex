@@ -56,20 +56,13 @@ There is no `settings.json` equivalent — configuration is IDE-native via the S
 
 - Open via **Tools → GitHub Copilot → Open Chat** or the chat icon in the toolbar.
 - Supports `@` context references (e.g. `@file`, `@project`).
-- Supports `/` slash commands: `/explain`, `/fix`, `/tests`, `/docs`.
+- Supports `/` slash commands: `/explain`, `/fix`, `/tests`, `/doc`.
+- Supports Copilot Edits (including agent mode) and MCP tools in recent plugin versions.
 
 ---
 
 ## 6. Feature availability vs VS Code
 
-| Feature | PyCharm |
-| --- | --- |
-| Inline completions | Yes |
-| Copilot Chat | Yes |
-| `.github/copilot-instructions.md` | Yes |
-| Prompt files (`.prompt.md`) | No |
-| Agent mode | No |
-| MCP servers | No |
-| Next Edit Suggestions | No |
+See the canonical IDE matrix: [ide-feature-matrix.md](../resources/ide-feature-matrix.md)
 
 The repo-level instructions file (`.github/copilot-instructions.md`) is respected — keep it in every project regardless of IDE.

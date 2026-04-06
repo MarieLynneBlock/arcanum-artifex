@@ -61,7 +61,7 @@ Built-in shortcuts in chat: `/explain`, `/fix`, `/tests`, `/doc`. Select some co
 A chat participant that gives Copilot access to your entire project — not just the open file. Use it for questions that span multiple files: `@workspace how does authentication work in this project?` VS Code only.
 
 **What is agent mode?**
-Agent mode lets Copilot autonomously use tools — read files, run terminal commands, and iterate on a task. It asks for confirmation before running commands. VS Code only.
+Agent mode lets Copilot autonomously use tools — read files, run terminal commands, and iterate on a task. It asks for confirmation before running commands. Availability depends on IDE and version (see the [ide-feature-matrix.md](ide-feature-matrix.md)).
 
 **Does Copilot work without an internet connection?**
 No. Copilot requires a connection to GitHub's servers for every completion and chat message.

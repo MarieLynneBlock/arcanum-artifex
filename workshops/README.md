@@ -12,6 +12,6 @@ Hands-on exercises for Copilot onboarding sessions. Each workshop is self-contai
 
 ## Running a workshop
 
-- Participants need Copilot installed and working before the session starts. Use [getting-started.md](../guides/getting-started.md).
+- Participants need Copilot installed and working before the session starts. Use [getting-started.md](../guides/how-to/getting-started.md).
 - Each exercise has a goal, steps, and a debrief question. Run exercises, then discuss as a group.
 - Adapt examples to the team's primary language — the concepts transfer across stacks.

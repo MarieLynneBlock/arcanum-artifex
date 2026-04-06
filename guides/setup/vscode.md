@@ -75,4 +75,5 @@ VS Code has the most complete Copilot feature set. All customization files (inst
 - **MCP servers** — extend Copilot with external tools
 - **Next Edit Suggestions (NES)** — predicts your next edit location
 
-See [copilot-guide.md](copilot-guide.md) for full feature details.
+See [copilot-guide.md](../resources/copilot-guide.md) for full feature details.
+For cross-IDE availability, use the canonical matrix: [ide-feature-matrix.md](../resources/ide-feature-matrix.md)

@@ -33,7 +33,7 @@ The friction phase is normal. Developers who push through it become the stronges
 ## 3. How to support your team
 
 **Do:**
-- Share the [getting-started guide](getting-started.md) and [cheat sheet](cheat-sheet.md) on day 1.
+- Share the [getting-started guide](../how-to/getting-started.md) and [cheat sheet](../resources/cheat-sheet.md) on day 1.
 - Give developers time to experiment — block 1–2 hours in week 1.
 - Create space to share what's working (team chat channel, retro item).
 - Ask "what did Copilot help you with this week?" in 1:1s.
@@ -72,7 +72,7 @@ Research is mixed. The risk is real for junior developers who accept suggestions
 | Suggestions shown | GitHub Copilot dashboard | Copilot is active and triggering |
 | Team sentiment | Your own surveys | Whether the tool is helping or creating friction |
 
-See [measuring-impact.md](measuring-impact.md) for the full framework.
+See [measuring-impact.md](../resources/measuring-impact.md) for the full framework.
 
 **Avoid:** tracking acceptance rate per individual. It creates incentives to accept bad suggestions.
 

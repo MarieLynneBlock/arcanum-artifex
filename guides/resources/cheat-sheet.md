@@ -103,15 +103,4 @@ Flags: `-t shell` · `-t git` · `-t gh`
 
 ## Feature availability by IDE
 
-| Feature | VS Code | IntelliJ | PyCharm | Visual Studio | Eclipse |
-| --- | --- | --- | --- | --- | --- |
-| Inline completions | Yes | Yes | Yes | Yes | Yes |
-| Copilot Chat | Yes | Yes | Yes | Yes | Basic |
-| `copilot-instructions.md` | Yes | Yes | Yes | Yes | Partial |
-| Prompt files | Yes | No | No | No | No |
-| Agent mode | Yes | Preview | Preview | No | Preview |
-| MCP servers | Yes | Preview | Preview | No | Preview |
-| Agent Skills | Yes | Yes (CLI) | Yes (CLI) | No | Yes (CLI) |
-| `@workspace` | Yes | No | No | No | No |
-| Copilot Extensions | Yes | No | No | No | No |
-| Next Edit Suggestions | Yes | No | No | No | No |
+See the canonical matrix: [ide-feature-matrix.md](ide-feature-matrix.md)

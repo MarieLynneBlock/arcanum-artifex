@@ -90,7 +90,7 @@ dist/
 
 Place at repo root. Copilot will not read or suggest content from matched files.
 
-See template: [templates/copilotignore_blank](../templates/copilotignore_blank)
+See template: [templates/copilotignore_blank](../../templates/copilotignore_blank)
 
 ---
 
@@ -155,7 +155,7 @@ In VS Code, Copilot can run in **agent mode**: it autonomously uses tools, reads
 
 Copilot supports **Model Context Protocol (MCP)** servers for extending tool access in agent mode.
 
-Configure in VS Code user or workspace settings:
+In VS Code, configure MCP servers in workspace or user configuration:
 
 ```json
 {
@@ -172,6 +172,13 @@ Configure in VS Code user or workspace settings:
 ```
 
 MCP tools appear in agent mode and in prompt files with `tools` frontmatter.
+
+For IDE-specific MCP setup outside VS Code, use the setup guides and canonical matrix:
+- [ide-feature-matrix.md](ide-feature-matrix.md)
+- [IntelliJ setup](../setup/intellij.md)
+- [PyCharm setup](../setup/pycharm.md)
+- [Visual Studio setup](../setup/visual-studio.md)
+- [Eclipse setup](../setup/eclipse.md)
 
 ---
 
