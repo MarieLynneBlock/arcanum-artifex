@@ -1,13 +1,12 @@
 ---
 name: mlflow
 description: >
-  Use this skill for MLflow run tracking, model registry workflows, artifact logging, and reproducible experiment lifecycle management.
-version: 1.0.0
-authors:
-  - Marie-Lynne Block
-tags:
-  - data-science
-  - [TODO]
+  Use this skill for MLflow run tracking, model registry workflows,
+  artifact logging, and reproducible experiment lifecycle management.
+metadata:
+  version: "1.0.0"
+  author: Marie-Lynne Block
+  tags: data-science, mlops
 ---
 
 ## What this skill does
