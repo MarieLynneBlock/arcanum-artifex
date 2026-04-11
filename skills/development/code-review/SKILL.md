@@ -2,8 +2,7 @@
 name: code-review
 description: >
   Perform a structured code review covering correctness, security, maintainability,
-  performance, and test coverage — producing prioritised findings with inline
-  suggestions. Use when asked to review a diff, PR, or code snippet regardless
+  performance, and test coverage. Produces prioritised findings with inline suggestions. Use when asked to review a diff, PR, or code snippet regardless
   of language.
 version: 1.0.0
 authors:
