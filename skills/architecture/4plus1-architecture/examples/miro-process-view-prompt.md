@@ -88,5 +88,9 @@ DO NOT include: source code, class definitions, deployment infrastructure, datab
 
 - **Swimlane count.** More than 6 swimlanes makes the diagram unreadable. If you have more, split into multiple sequence diagrams — one per critical scenario.
 - **Async vs sync.** The colour distinction (orange for async) is the single most important visual choice in this view. Do not let Miro default to a uniform colour.
-- **Failure stickies.** These are often omitted in generated diagrams. The explicit sticky note instruction forces their inclusion.
-- **Iteration tip.** After generation, add failure paths one at a time: "In the sequence diagram, add a red dashed arrow from [Process B] back to [Process A] labelled 'timeout: 503' after the [operation] arrow."
+- **Specify parallel processes.** If steps can happen simultaneously (e.g., "while the notification service sends the email, the analytics service logs the event"), say so explicitly. Without this instruction, Miro AI defaults to a purely sequential flow.
+- **Mention handoffs explicitly.** State actor transitions clearly — "API Gateway authenticates → Order Service processes → Payment Service charges" — so Miro AI creates distinct swimlanes with clear responsibility boundaries.
+- **Failure stickies.** These are often omitted in generated diagrams. The explicit sticky note instruction forces their inclusion. Miro AI will not invent failure scenarios — if you do not mention them, they will not appear.
+- **Start with the happy path.** Generate the main success flow first. Add failure paths and edge cases in a second iteration — overcomplicating the first draft is the most common prompting error.
+- **Iteration tip.** After generation, add failure paths one at a time: "In the sequence diagram, add a red dashed arrow from [Process B] back to [Process A] labelled 'timeout: 503' after the [operation] arrow." Never request multiple structural changes in a single prompt.
+- **Use existing board content.** If you have sequence flow notes or process descriptions as sticky notes on the board, select and attach them as context. Miro AI will build the sequence diagram incorporating those specific details.

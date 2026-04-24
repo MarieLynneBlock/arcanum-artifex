@@ -81,8 +81,10 @@ DO NOT include: database schemas, deployment nodes, server configurations, API e
 
 ## Calibration Notes
 
-- **Specificity is mandatory.** Miro AI will default to a generic diagram if you do not name every class, every package, every connection.
+- **Specificity is mandatory.** Miro AI will default to a generic diagram if you do not name every class, every package, every connection. "Create a logical view" will produce a useless generic result — be specific about your domain.
 - **Colour codes matter.** Use hex codes, not colour names — Miro's colour picker is more reliable with hex values.
 - **Package zone sizing.** If you have more than 4 packages, increase the top zone to 35%.
 - **State diagrams.** Only include if you have identified at least one stateful entity. If not, replace Step 4 with: "Create a text card in the bottom-left of the middle zone summarising the primary design pattern used (e.g., Repository Pattern, Observer, Strategy)."
-- **Iterating.** After the initial generation, use the Miro AI edit function for one change at a time — e.g., "Add an inheritance arrow between [ClassA] and [ClassB]" rather than requesting multiple changes simultaneously.
+- **Use existing board content.** If you have brainstormed class names or package groupings as sticky notes, select and attach them before running the prompt — Miro AI will incorporate those specific details rather than inventing generic abstractions.
+- **Iterating.** After the initial generation, use the Miro AI edit function for one change at a time — e.g., "Add an inheritance arrow between [ClassA] and [ClassB]" rather than requesting multiple changes simultaneously. Start with the happy-path structure, then add complexity (edge-case relationships, optional associations) in subsequent iterations.
+- **Simplifying.** If a section looks cluttered after generation, select that section and prompt: "Simplify this portion while maintaining the core logic" — do not try to fix layout and content in the same edit.

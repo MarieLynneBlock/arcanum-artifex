@@ -175,7 +175,10 @@ DO NOT include: real personal data, real IP addresses, real credentials, generic
 ## Calibration Notes
 
 - **This prompt produces a complex board.** Expect Miro AI to take longer than for individual view prompts. If it times out, run each view frame separately using the individual view prompts.
-- **Context is everything.** The more specific your attached board context, the less Miro AI will fill gaps with generic content. Run the pre-flight checklist before starting.
-- **Iteration order.** If iterating, start with the frame that has the most stakeholder visibility (typically the Scenarios frame or Physical frame), not the Logical frame.
+- **Context is everything.** The more specific your attached board context, the less Miro AI will fill gaps with generic content. Run the pre-flight checklist before starting. Select and attach existing board content (sticky notes, docs, brainstorming output) — Miro AI analyses the selected content and incorporates those specific details.
+- **Start with the happy path.** Generate the main flow per view first. Add failure paths and exception handling in a second pass — overcomplicating the first draft is the most common prompting error.
+- **Iteration order.** If iterating, start with the frame that has the most stakeholder visibility (typically the Scenarios frame or Physical frame), not the Logical frame. Make one structural change per iteration — Miro AI handles single targeted edits more reliably than multi-change requests.
 - **Cross-frame connectors.** These are the hardest part for Miro AI. If they are wrong or missing, add them manually — they take 5 minutes to draw by hand and are not worth fighting with AI generation.
 - **Colour consistency.** The five frame border colours (blue, green, amber, purple, pink) are non-negotiable — they are the visual architecture of the board itself. If Miro AI deviates, edit frame borders manually.
+- **Decision points matter.** Explicitly include conditions ("if deployment fails", "when approval is needed") and handoff points ("Ops triages → Dev fixes"). Without these, Miro AI produces overly linear diagrams.
+- **For very complex boards.** Consider using Miro's Doc format first to outline the full architecture with all variables and outcomes, then use that doc as context input for this board prompt.
