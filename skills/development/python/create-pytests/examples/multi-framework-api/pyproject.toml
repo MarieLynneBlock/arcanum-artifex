@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "multi-framework-api"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["flask>=3.0", "fastapi>=0.115", "httpx>=0.27"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov", "flake8-pytest-style"]
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+testpaths = ["tests"]
+markers = [
+  "integration: tests that require live external services (deselect with '-m not integration')",
+]
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
