@@ -1,0 +1,44 @@
+---
+description: Produce Kruchten's 4+1 architectural view model (logical, process, development, physical, scenarios) for a software system, with Mermaid diagrams (primary), PlantUML for deployment-heavy physical views, and a Miro RISEN prompt per view. Trigger for requests mentioning 4+1, architecture views, architectural documentation, architecture blueprint, or when asked to document a system's architecture for developers, cross-functional stakeholders, or executives. Supports zero-input, interview, and partial modes; asks the audience at invocation to pick notation.
+globs:
+alwaysApply: false
+---
+
+# architecture-models-4plus1 — Cursor shim
+
+This Cursor rule is a thin pointer to the canonical skill documentation. **Do not duplicate logic here** — when the skill changes, the canonical `SKILL.md` is the single source of truth.
+
+## What this rule does
+
+When triggered, Cursor should behave exactly as described in the canonical skill:
+
+> **Canonical location:** `architecture-models-4plus1/SKILL.md` (relative to the skill install path — in most Cursor setups, `.claude/skills/architecture-models-4plus1/SKILL.md` or equivalent; adjust to your layout).
+
+Read the canonical `SKILL.md` first. It describes the full 8-step workflow (mode → audience → context → concerns → five views → Miro prompts → cross-view consistency → output).
+
+## Triggering
+
+Trigger this rule when the user's request matches any of:
+
+- Mentions **4+1**, **architecture views**, **architectural documentation**, **architectural blueprint**, **logical view**, **process view**, **development view**, **physical view**, **deployment view**, or **scenarios view**.
+- Asks to document a system's architecture for developers, cross-functional stakeholders, or executives.
+- Asks for diagrams following Kruchten's view model, or asks to generate **Mermaid**, **PlantUML**, or **Miro** diagrams specifically for architectural views.
+- Asks to produce Miro RISEN prompts for architecture.
+
+## Required behaviour summary (see SKILL.md for full detail)
+
+1. **Mode** — determine if this is zero-input, interview, or partial.
+2. **Audience** — ask explicitly: (a) dev-only, (b) cross-functional, (c) executive. This determines notation per view.
+3. **Context** — gather / confirm system name, stakeholders, stack, scale, quality attributes, constraints, out-of-scope. Flag assumptions with `> **Assumption:** …`.
+4. **Concerns** — pull relevant modules from `concerns/*.md` (GDPR, security, bias/fairness, regulatory, sustainability, accessibility) and surface real findings as `> **Concern (X):** …` in each view.
+5. **Views** — generate in order: logical, process, development, physical, scenarios. For each: read the reference file (`references/<view>-view.md`), generate the diagram + prose using `templates/view-template.md`, then generate the corresponding Miro RISEN prompt using `templates/miro-prompt-template.md`.
+6. **Cross-view consistency** — verify component names match across views; run `scripts/validate-views.py` if outputting to disk.
+7. **Output** — default structure in `SKILL.md` Step 8.
+
+## Worked example
+
+See `examples/synth-claim/` for a complete worked example of a synthetic hybrid-cloud claims-processing platform — five view documents, six Miro prompts, concerns surfaced, assumptions flagged.
+
+## Portability note
+
+This skill is portable to Claude Code (native) and GitHub Copilot (via `shims/copilot/`). Changes to logic go in the canonical `SKILL.md` — the Cursor rule and the Copilot prompt both reference it.

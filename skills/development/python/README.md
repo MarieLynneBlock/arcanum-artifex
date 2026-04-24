@@ -4,7 +4,9 @@ Skills for Python development workflows, idioms, and ecosystem tooling.
 
 ## Skills
 
-[TODO] Add first Python skill.
+| Skill | Description |
+| --- | --- |
+| [create-pytests](create-pytests/SKILL.md) | Generate pytest test files targeting 80% line coverage for a Python project or targeted scope, with pyproject.toml setup (hatchling + importlib mode) and a Coverage Gap Report. |
 
 ## Add a skill here
 
