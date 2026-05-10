@@ -113,26 +113,6 @@ Three hands-on exercises for team onboarding:
 
 ---
 
-## How to use a skill
-
-```bash
-# Copy any skill folder to your project
-cp -r skills/development/test-strategy/ your-project/.agents/skills/
-
-# The AI tool detects and loads it when the task matches — no wiring required
-```
-
-Where you copy it depends on tool and scope:
-
-| Scope | Cross-tool (open standard) | GitHub Copilot | Claude Code |
-| --- | --- | --- | --- |
-| Project (repo) | `.agents/skills/` | `.github/skills/` | `.claude/skills/` |
-| Personal (user) | `~/.agents/skills/` | `~/.copilot/skills/` | `~/.claude/skills/` |
-
-Use `.agents/skills/` when you want a single location that works across all compliant tools.
-
----
-
 ## Philosophy
 
 These resources are built for real work, not demos. If it only performs in controlled conditions, it doesn't belong here.
@@ -140,10 +120,3 @@ These resources are built for real work, not demos. If it only performs in contr
 - **No vendor loyalty.** Built on the open Agent Skills standard — run it in whatever tool you're actually using.
 - **Occasionally heretical.** When official docs and real behavior diverge, we document real behavior.
 - **Documentation-level accuracy.** If a feature is described here, it exists and works as described.
-
----
-
-## Community
-
-- [anthropics/skills](https://github.com/anthropics/skills) — Anthropic's official skill collection
-- [github/awesome-copilot](https://github.com/github/awesome-copilot) — community Copilot resources
