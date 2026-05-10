@@ -1,6 +1,6 @@
-# Arcanum Artifex 🧙🏻‍♀️
-
 ![Arcanum Artifex](assets/arcanum-artifex_banner.png)
+
+# Arcanum Artifex 🧙🏻‍♀️
 
 > Prompts, skills, and agents that survive contact with real workflows.  
 > No vendor loyalty. Occasionally heretical.
