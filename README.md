@@ -24,16 +24,19 @@ A curated library of AI assistant resources — skills, agents, instructions, an
 
 The largest section. Skills are folders of instructions and resources that AI tools load when the task matches — drop a skill folder into the right location for your tool and scope, and it activates automatically.
 
-| Domain | What's here |
-| --- | --- |
-| [scientific/](skills/scientific/) | AlphaFold, PubMed, RDKit, scanpy, molecular dynamics, quantum computing, clinical data, financial APIs — 160+ skills covering the full research stack |
-| [data-science/](skills/data-science/) | pandas, polars, scikit-learn, SHAP, MLflow, gradient boosting, survival analysis, time series, imbalanced classification |
-| [development/](skills/development/) | Python, Rust, Java, TypeScript, SQL, DevOps, API design, frontend, game dev, refactoring, test strategy |
-| [analysis/](skills/analysis/) | Architecture audit, gap analysis, risk analysis, stakeholder mapping, user stories, epics, trade-off analysis |
-| [architecture/](skills/architecture/) | 4+1 architectural views, ADRs, technology stack blueprints |
-| [agentic/](skills/agentic/) | Agent governance, OWASP compliance for agents, MCP, supply chain, evaluation frameworks |
-| [security/](skills/security/) | Threat modeling, GDPR compliance, security review, data breach blast radius |
-| [document-production/](skills/document-production/) | PPTX, DOCX, PDF, LaTeX posters, Mermaid diagrams, scientific slides |
+```text
+skills/
+├── scientific/          ← AlphaFold, PubMed, RDKit, scanpy, molecular dynamics, quantum computing, clinical data, financial APIs — 160+ skills
+├── data-science/        ← pandas, polars, scikit-learn, SHAP, MLflow, gradient boosting, survival analysis, time series
+├── development/         ← Python, Rust, Java, TypeScript, SQL, DevOps, API design, frontend, game dev, refactoring, test strategy
+├── analysis/            ← architecture audit, gap analysis, risk analysis, stakeholder mapping, user stories, epics, trade-off analysis
+├── architecture/        ← 4+1 architectural views, ADRs, technology stack blueprints
+├── agentic/             ← agent governance, OWASP compliance for agents, MCP, supply chain, evaluation frameworks
+├── security/            ← threat modeling, GDPR compliance, security review, data breach blast radius
+├── document-production/ ← PPTX, DOCX, PDF, LaTeX posters, Mermaid diagrams, scientific slides
+├── documentation/       ← doc standards, writing guides, changelog and release note templates
+└── study-support/       ← learning aids, flashcard generation, concept explanation frameworks
+```
 
 Skills follow the open standard — the same folder works in Copilot, Claude Code, and other compliant tools.
 
@@ -43,7 +46,16 @@ Skills follow the open standard — the same folder works in Copilot, Claude Cod
 
 Custom agent definitions (`.agent.md` files) that give an AI a focused working mode: domain expert, reviewer, planner, task-specific assistant.
 
-Categories: `agentic · analysis · architecture · development · documentation · scientific · security`
+```text
+agents/
+├── agentic/       ← agent orchestration, evaluation, and governance agents
+├── analysis/      ← gap analysis, risk, stakeholder, and trade-off agents
+├── architecture/  ← 4+1 views, ADR, and tech stack agents
+├── development/   ← code review, refactoring, test strategy, and DevOps agents
+├── documentation/ ← doc writing, changelog, and release note agents
+├── scientific/    ← research, literature review, and data pipeline agents
+└── security/      ← threat modeling, compliance, and security review agents
+```
 
 Drop them into `.github/agents/` for project scope, or `~/.copilot/agents/` for personal use.
 
@@ -53,7 +65,14 @@ Drop them into `.github/agents/` for project scope, or `~/.copilot/agents/` for 
 
 Context files that adjust AI behavior for a specific language, framework, or workflow. Load them as repo-level instructions or agent context.
 
-Categories: `agentic · architecture · data-science · development · documentation`
+```text
+instructions/
+├── agentic/      ← agent behavior, governance, and safety constraints
+├── architecture/ ← architectural standards and design principles
+├── data-science/ ← data analysis, ML workflows, and notebook conventions
+├── development/  ← language- and framework-specific coding standards
+└── documentation/← writing style, structure, and doc conventions
+```
 
 ---
 
