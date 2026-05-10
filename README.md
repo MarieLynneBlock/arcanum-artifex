@@ -1,78 +1,130 @@
-# copilot-lab
+# arcanum-artifex 🧙🏻‍♀️
 
-Personal collection of verified GitHub Copilot resources — instructions templates, prompt file templates, VS Code settings, and guides.
+> Prompts, skills, and agents that survive contact with real workflows.  
+> No vendor loyalty. Occasionally heretical.
 
-## Structure
+A curated library of AI assistant resources — skills, agents, instructions, and guides — tested in real projects across multiple tools. Built on the open Agent Skills standard, so the same assets work in GitHub Copilot, Claude Code, and anything else that follows the spec.
+
+---
+
+## What's in here
+
+| Folder | Contents |
+| --- | --- |
+| [skills/](skills/) | 200+ reusable skills, organized by domain |
+| [agents/](agents/) | Custom agent definitions, organized by specialty |
+| [instructions/](instructions/) | Context files that shape AI behavior per stack or domain |
+| [templates/](templates/) | Blank starters to copy into your own project |
+| [guides/](guides/) | Setup, practices, policy, and reference material |
+| [workshops/](workshops/) | Hands-on exercises for team onboarding |
+
+---
+
+## Skills
+
+The largest section. Skills are folders of instructions and resources that AI tools load when the task matches — drop a skill folder into the right location for your tool and scope, and it activates automatically.
+
+| Domain | What's here |
+| --- | --- |
+| [scientific/](skills/scientific/) | AlphaFold, PubMed, RDKit, scanpy, molecular dynamics, quantum computing, clinical data, financial APIs — 160+ skills covering the full research stack |
+| [data-science/](skills/data-science/) | pandas, polars, scikit-learn, SHAP, MLflow, gradient boosting, survival analysis, time series, imbalanced classification |
+| [development/](skills/development/) | Python, Rust, Java, TypeScript, SQL, DevOps, API design, frontend, game dev, refactoring, test strategy |
+| [analysis/](skills/analysis/) | Architecture audit, gap analysis, risk analysis, stakeholder mapping, user stories, epics, trade-off analysis |
+| [architecture/](skills/architecture/) | 4+1 architectural views, ADRs, technology stack blueprints |
+| [agentic/](skills/agentic/) | Agent governance, OWASP compliance for agents, MCP, supply chain, evaluation frameworks |
+| [security/](skills/security/) | Threat modeling, GDPR compliance, security review, data breach blast radius |
+| [document-production/](skills/document-production/) | PPTX, DOCX, PDF, LaTeX posters, Mermaid diagrams, scientific slides |
+
+Skills follow the open standard — the same folder works in Copilot, Claude Code, and other compliant tools.
+
+---
+
+## Agents
+
+Custom agent definitions (`.agent.md` files) that give an AI a focused working mode: domain expert, reviewer, planner, task-specific assistant.
+
+Categories: `agentic · analysis · architecture · development · documentation · scientific · security`
+
+Drop them into `.github/agents/` for project scope, or `~/.copilot/agents/` for personal use.
+
+---
+
+## Instructions
+
+Context files that adjust AI behavior for a specific language, framework, or workflow. Load them as repo-level instructions or agent context.
+
+Categories: `agentic · architecture · data-science · development · documentation`
+
+---
+
+## Templates
+
+Blank starters to fork into your own project. Remove the `_blank` suffix, fill in the `[TODO]` placeholders.
 
 ```text
-copilot-lab/
-├── agents/                       ← curated custom agents, organized by category
-├── .github/
-│   ├── copilot-instructions.md   ← repo-level instructions (this lab's own)
-│   └── prompts/                  ← reusable .prompt.md files
-├── .vscode/
-│   └── settings.json             ← Copilot VS Code settings reference
-├── instructions/                 ← classified instruction files, organized like skills/
-├── templates/                    ← blank templates to copy into projects
-│   ├── instructions/             ← deploys to .github/copilot-instructions.md
-│   ├── prompts/                  ← deploys to .github/prompts/
-│   ├── skills/                   ← deploys to .github/skills/ (open standard)
-│   └── copilotignore_blank       ← rename to .copilotignore on deploy
-├── skills/                       ← proven skills ready to deploy
-├── workshops/                    ← hands-on exercises for onboarding sessions
-│   ├── 01-completions.md
-│   ├── 02-chat-and-participants.md
-│   └── 03-prompt-engineering.md
-└── guides/
-    ├── setup/                    ← IDE installation guides
-    │   ├── vscode.md
-    │   ├── intellij.md
-    │   ├── pycharm.md
-    │   ├── visual-studio.md
-    │   └── eclipse.md
-    ├── guidelines/               ← policy-level: admins, leads, compliance
-    │   ├── responsible-use.md
-    │   ├── security.md
-    │   ├── admin.md
-    │   ├── manager-guide.md
-    │   └── pilot-guide.md
-    ├── how-to/                   ← step-by-step guides for any role
-    │   ├── getting-started.md
-    │   ├── getting-started-analyst.md
-    │   ├── getting-started-architect.md
-    │   ├── getting-started-devops.md
-    │   ├── workflow-integration.md
-    │   └── troubleshooting.md
-    ├── practices/                ← how to use Copilot well
-    │   └── prompt-engineering.md
-    └── resources/                ← evergreen reference material
-        ├── copilot-guide.md
-        ├── cheat-sheet.md
-        ├── prompt-library.md
-        ├── faq.md
-        ├── privacy-quick-card.md
-        └── measuring-impact.md
+templates/
+├── instructions/    ← stack-specific AI instructions (Python, Java, .NET, R, and more)
+├── prompts/         ← reusable .prompt.md files (VS Code 1.99+)
+├── skills/          ← empty skill shell to fill in
+└── copilotignore_blank  ← rename to .copilotignore to exclude files from AI context
 ```
 
-## Native Copilot concepts
+---
 
-| Concept | File/Location | Purpose |
-| --- | --- | --- |
-| Repo instructions | `.github/copilot-instructions.md` | Appended to every chat request |
-| Prompt files | `.github/prompts/*.prompt.md` | Reusable prompts in the picker |
-| VS Code settings | `.vscode/settings.json` | Enable and configure Copilot |
-| Copilot ignore | `.copilotignore` | Exclude files from Copilot context |
+## Guides
 
-## Custom agents
+```text
+guides/
+├── setup/           ← install in VS Code, IntelliJ, PyCharm, Visual Studio, Eclipse
+├── guidelines/      ← responsible use, security, admin setup, manager and pilot guides
+├── how-to/          ← getting started by role: developer, analyst, architect, DevOps
+├── practices/       ← prompt engineering
+└── resources/       ← cheat sheet, FAQ, prompt library, privacy card, impact measurement
+```
 
-The [agents/](agents/) library is organized by category, similar to [skills/](skills/), so domain-specific agents are easier to find and maintain.
+---
 
-## Using templates
+## Workshops
 
-1. Copy the relevant file from `templates/` to your project.
-2. Remove the `_blank` suffix from the filename.
-3. Fill in `[TODO]` placeholders.
+Three hands-on exercises for team onboarding:
 
-## Related labs
+1. [Completions](workshops/01-completions.md)
+2. [Chat and participants](workshops/02-chat-and-participants.md)
+3. [Prompt engineering](workshops/03-prompt-engineering.md)
 
-- [claude-lab](../claude-lab) — Claude Code resources
+---
+
+## How to use a skill
+
+```bash
+# Copy any skill folder to your project
+cp -r skills/development/test-strategy/ your-project/.agents/skills/
+
+# The AI tool detects and loads it when the task matches — no wiring required
+```
+
+Where you copy it depends on tool and scope:
+
+| Scope | Cross-tool (open standard) | GitHub Copilot | Claude Code |
+| --- | --- | --- | --- |
+| Project (repo) | `.agents/skills/` | `.github/skills/` | `.claude/skills/` |
+| Personal (user) | `~/.agents/skills/` | `~/.copilot/skills/` | `~/.claude/skills/` |
+
+Use `.agents/skills/` when you want a single location that works across all compliant tools.
+
+---
+
+## Philosophy
+
+These resources are built for real work, not demos. If it only performs in controlled conditions, it doesn't belong here.
+
+- **No vendor loyalty.** Built on the open Agent Skills standard — run it in whatever tool you're actually using.
+- **Occasionally heretical.** When official docs and real behavior diverge, we document real behavior.
+- **Documentation-level accuracy.** If a feature is described here, it exists and works as described.
+
+---
+
+## Community
+
+- [anthropics/skills](https://github.com/anthropics/skills) — Anthropic's official skill collection
+- [github/awesome-copilot](https://github.com/github/awesome-copilot) — community Copilot resources
