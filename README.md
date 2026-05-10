@@ -3,7 +3,7 @@
 > Prompts, skills, and agents that survive contact with real workflows.  
 > No vendor loyalty. Occasionally heretical.
 
-A curated library of AI assistant resources — skills, agents, instructions, and guides — tested in real projects across multiple tools. Built on the open Agent Skills standard, so the same assets work in GitHub Copilot, Claude Code, and anything else that follows the spec.
+Everything here has survived contact with real work. Skills, agents, instructions, and guides... tested across stacks, tools, and the kinds of projects that don't forgive sloppy prompts. Built on the open Agent Skills standard, so the same assets travel freely between Copilot, Claude Code, and anything else that follows the spec.
 
 ---
 
@@ -22,7 +22,7 @@ A curated library of AI assistant resources — skills, agents, instructions, an
 
 ## Skills
 
-The largest section. Skills are folders of instructions and resources that AI tools load when the task matches — drop a skill folder into the right location for your tool and scope, and it activates automatically.
+The main event. Skills are self-contained folders that AI tools pick up automatically when the task matches. Drop one into the right location and it activates. No wiring required.
 
 ```text
 skills/
@@ -38,13 +38,13 @@ skills/
 └── study-support/       ← learning aids, flashcard generation, concept explanation frameworks
 ```
 
-Skills follow the open standard — the same folder works in Copilot, Claude Code, and other compliant tools.
+Same folder, any compliant tool. Copilot, Claude Code, whatever's next.
 
 ---
 
 ## Agents
 
-Custom agent definitions (`.agent.md` files) that give an AI a focused working mode: domain expert, reviewer, planner, task-specific assistant.
+When a generalist isn't what you need. Each `.agent.md` gives an AI a tighter brief domain expert, stubborn reviewer or obsessive planner so it stops trying to be everything and starts being useful.
 
 ```text
 agents/
@@ -63,7 +63,7 @@ Drop them into `.github/agents/` for project scope, or `~/.copilot/agents/` for 
 
 ## Instructions
 
-Context files that adjust AI behavior for a specific language, framework, or workflow. Load them as repo-level instructions or agent context.
+The invisible hand. Load one of these and the AI stops guessing about your stack, it knows it. Drop them as repo-level instructions or wire them directly into an agent.
 
 ```text
 instructions/
@@ -78,7 +78,7 @@ instructions/
 
 ## Templates
 
-Blank starters to fork into your own project. Remove the `_blank` suffix, fill in the `[TODO]` placeholders.
+Blank starters, ready to fork. Strip the `_blank` suffix, fill the `[TODO]` gaps, ship it.
 
 ```text
 templates/
@@ -115,7 +115,7 @@ Three hands-on exercises for team onboarding:
 
 ## Philosophy
 
-These resources are built for real work, not demos. If it only performs in controlled conditions, it doesn't belong here.
+These resources are built for real work. If it only performs in controlled conditions, it doesn't belong here.
 
 - **No vendor loyalty.** Built on the open Agent Skills standard — run it in whatever tool you're actually using.
 - **Occasionally heretical.** When official docs and real behavior diverge, we document real behavior.
