@@ -1,4 +1,4 @@
-# arcanum-artifex 🧙🏻‍♀️
+# Arcanum Artifex 🧙🏻‍♀️
 
 ![Arcanum Artifex](assets/arcanum-artifex_banner.png)
 
