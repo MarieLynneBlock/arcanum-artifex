@@ -6,11 +6,13 @@ Personal collection of verified GitHub Copilot resources — instructions templa
 
 ```text
 copilot-lab/
+├── agents/                       ← curated custom agents, organized by category
 ├── .github/
 │   ├── copilot-instructions.md   ← repo-level instructions (this lab's own)
 │   └── prompts/                  ← reusable .prompt.md files
 ├── .vscode/
 │   └── settings.json             ← Copilot VS Code settings reference
+├── instructions/                 ← classified instruction files, organized like skills/
 ├── templates/                    ← blank templates to copy into projects
 │   ├── instructions/             ← deploys to .github/copilot-instructions.md
 │   ├── prompts/                  ← deploys to .github/prompts/
@@ -60,6 +62,10 @@ copilot-lab/
 | Prompt files | `.github/prompts/*.prompt.md` | Reusable prompts in the picker |
 | VS Code settings | `.vscode/settings.json` | Enable and configure Copilot |
 | Copilot ignore | `.copilotignore` | Exclude files from Copilot context |
+
+## Custom agents
+
+The [agents/](agents/) library is organized by category, similar to [skills/](skills/), so domain-specific agents are easier to find and maintain.
 
 ## Using templates
 
