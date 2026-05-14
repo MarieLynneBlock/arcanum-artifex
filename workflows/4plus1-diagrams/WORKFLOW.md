@@ -49,16 +49,16 @@ The workflow extends — does **not** replace — the `4plus1-models` skill work
 1. **Run skill steps 1–4** (mode → audience → context → concerns) from `skills/4plus1-models/SKILL.md`. No changes.
 2. **Choose visual format.** Ask the user: *"How would you like to deliver the diagrams? (A) draw.io or (B) Miro?"* Treat the selected path as an independent track; do not import style/mechanics from the other track.
 3. **For each view (logical → process → development → physical → scenarios)**:
-   1. Generate the Mermaid (or PlantUML for physical) diagram per the skill's Step 5. Write to `diagrams/<view>.mmd` (or `.puml`).
+   1. Generate the Mermaid (or PlantUML for physical) diagram per the skill's Step 5. Write to `diagrams/mermaid/<view>.mmd` (or `.puml`).
    2. **If draw.io**:
       - Pick the matching `.drawio` skeleton from `templates/drawio/` (routing table in §4a).
       - Adapt the skeleton — replace placeholders with real component names, apply semantic palette and conventions from `references/notation-drawio.md`.
       - For mxGraph XML mechanics, defer to `skills/draw-io-diagram-generator/SKILL.md` and `instructions/draw-io.instructions.md`.
-      - Write to `diagrams/<view>.drawio`.
+      - Write to `diagrams/drawio/<view>.drawio`.
    3. **If Miro**:
       - Use Miro rules from `skills/miro-diagram-generator/SKILL.md`, workflow templates from `templates/miro/`, and per-view conventions from `references/notation-miro.md`.
       - Generate a Miro board setup prompt.
-      - Write to `diagrams/<view>-miro-prompt.md`.
+      - Write to `diagrams/miro/<view>-miro-prompt.md`.
    4. Verify component names are consistent across Mermaid and the chosen visual format.
 4. **Cross-view consistency check.** Run `python skills/4plus1-models/scripts/validate-views.py` if outputting to disk.
 5. **Format-specific validation**:
@@ -101,16 +101,18 @@ docs/architecture/
 ├── 40-physical-view.md
 ├── 50-scenarios-view.md
 └── diagrams/
-    ├── logical-view.mmd
-    ├── logical-view.drawio
-    ├── process-view.mmd
-    ├── process-view.drawio
-    ├── development-view.mmd
-    ├── development-view.drawio
-    ├── physical-view.puml
-    ├── physical-view.drawio
-    ├── scenarios-view.mmd
-    └── scenarios-view.drawio
+    ├── mermaid/
+    │   ├── logical-view.mmd
+    │   ├── process-view.mmd
+    │   ├── development-view.mmd
+    │   ├── physical-view.puml
+    │   └── scenarios-view.mmd
+    └── drawio/
+        ├── logical-view.drawio
+        ├── process-view.drawio
+        ├── development-view.drawio
+        ├── physical-view.drawio
+        └── scenarios-view.drawio
 ```
 
 **Option B: Miro format**
@@ -123,27 +125,61 @@ docs/architecture/
 ├── 40-physical-view.md
 ├── 50-scenarios-view.md
 └── diagrams/
-    ├── logical-view.mmd
-    ├── logical-view-miro-prompt.md
-    ├── process-view.mmd
-    ├── process-view-miro-prompt.md
-    ├── development-view.mmd
-    ├── development-view-miro-prompt.md
-    ├── physical-view.puml
-    ├── physical-view-miro-prompt.md
-    ├── scenarios-view.mmd
-    └── scenarios-view-miro-prompt.md
+    ├── mermaid/
+    │   ├── logical-view.mmd
+    │   ├── process-view.mmd
+    │   ├── development-view.mmd
+    │   ├── physical-view.puml
+    │   └── scenarios-view.mmd
+    └── miro/
+        ├── logical-view-miro-prompt.md
+        ├── process-view-miro-prompt.md
+        ├── development-view-miro-prompt.md
+        ├── physical-view-miro-prompt.md
+        ├── scenarios-view-miro-prompt.md
+        └── full-board-prompt.md        ← optional aggregate
+```
+
+**Option A+B: All formats**
+```text
+docs/architecture/
+├── 00-overview.md
+├── 10-logical-view.md
+├── 20-process-view.md
+├── 30-development-view.md
+├── 40-physical-view.md
+├── 50-scenarios-view.md
+└── diagrams/
+    ├── mermaid/
+    │   ├── logical-view.mmd
+    │   ├── process-view.mmd
+    │   ├── development-view.mmd
+    │   ├── physical-view.puml
+    │   └── scenarios-view.mmd
+    ├── drawio/
+    │   ├── logical-view.drawio
+    │   ├── process-view.drawio
+    │   ├── development-view.drawio
+    │   ├── physical-view.drawio
+    │   └── scenarios-view.drawio
+    └── miro/
+        ├── logical-view-miro-prompt.md
+        ├── process-view-miro-prompt.md
+        ├── development-view-miro-prompt.md
+        ├── physical-view-miro-prompt.md
+        ├── scenarios-view-miro-prompt.md
+        └── full-board-prompt.md        ← optional aggregate
 ```
 
 ## 6. Validation
 
 **For draw.io output:**
-1. Every view has both a primary diagram (`.mmd` / `.puml`) and a `.drawio` file.
+1. Every view has both a primary diagram in `diagrams/mermaid/` (`.mmd` / `.puml`) and a `.drawio` file in `diagrams/drawio/`.
 2. Component names, scope, and key relationships match between the two formats per view.
 3. Each `.drawio` file is well-formed XML (parses with `xml.etree.ElementTree`) and renders in VS Code's `hediet.vscode-drawio` without manual fixes.
 
 **For Miro output:**
-1. Every view has both a primary diagram (`.mmd` / `.puml`) and a `-miro-prompt.md` file.
+1. Every view has both a primary diagram in `diagrams/mermaid/` (`.mmd` / `.puml`) and a `-miro-prompt.md` file in `diagrams/miro/`.
 2. Component names, scope, and key relationships match between the two formats per view.
 3. Each prompt is valid markdown and references the correct view names.
 
@@ -162,3 +198,4 @@ docs/architecture/
 | 2026-05-10 | Split skills by responsibility: added `4plus1-models` (core method), retained `draw-io-diagram-generator` (draw.io output), and added `miro-diagram-generator` (Miro output). Updated workflow, prompt, agent, and instructions to load core + selected output skill. Removed legacy combined skill. |
 | 2026-05-10 | Added `notation-miro.md` reference file (Miro-track parity with `notation-drawio.md`). Updated §4b to point to it for per-view conventions. |
 | 2026-05-10 | Added root-level `architecture-documentation.agent.md` as a no-installer discoverable entrypoint so the same folder can be placed directly under `.github/agents/` or `~/.agents/`. |
+| 2026-05-14 | Split flat `diagrams/` output folder into typed subfolders: `diagrams/mermaid/` (`.mmd`/`.puml`), `diagrams/drawio/` (`.drawio`), `diagrams/miro/` (`-miro-prompt.md`, `full-board-prompt.md`). Only the subfolders for the chosen format track are created. |

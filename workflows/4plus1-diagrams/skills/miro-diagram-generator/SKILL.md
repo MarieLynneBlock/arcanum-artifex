@@ -56,14 +56,14 @@ Check that names and relationships in the prompt match the canonical source exac
 Output files:
 
 ```text
-diagrams/
+diagrams/miro/
   <view>-miro-prompt.md
 ```
 
 Optional aggregate output:
 
 ```text
-miro-prompts/full-board-prompt.md
+diagrams/miro/full-board-prompt.md
 ```
 
 Use `templates/full-board-prompt-template.md` when the user wants one aggregate board prompt that orchestrates all per-view Miro prompts.

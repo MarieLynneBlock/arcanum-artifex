@@ -117,12 +117,15 @@ python scripts/validate-views.py
 ├── 04-physical-view.md
 ├── 05-scenarios-view.md
 └── diagrams/
-    ├── logical-view.mmd
-    ├── process-view.mmd
-    ├── development-view.mmd
-    ├── physical-view.puml
-    └── scenarios-view.mmd
+    └── mermaid/
+        ├── logical-view.mmd
+        ├── process-view.mmd
+        ├── development-view.mmd
+        ├── physical-view.puml
+        └── scenarios-view.mmd
 ```
+
+When used inside the `4plus1-diagrams` workflow, the visual-format skill adds a `diagrams/drawio/` or `diagrams/miro/` sibling folder alongside `diagrams/mermaid/`.
 
 ## Quality standards
 

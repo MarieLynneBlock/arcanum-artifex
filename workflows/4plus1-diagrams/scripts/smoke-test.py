@@ -174,6 +174,39 @@ def check_miro_prompt_names(errors: list[str]) -> None:
             add_error(errors, f"Miro example does not follow -miro-prompt.md naming: {rel(path)}")
 
 
+# Matches bare diagrams/<word>.<ext> or diagrams/<word>-miro-prompt.md (flat, unsubfoldered paths).
+# Allowed context: code-fence paths that already contain a subfolder (mermaid/, drawio/, miro/).
+_FLAT_DIAGRAM_PATH_RE = re.compile(
+    r"diagrams/"
+    r"(?!mermaid/|drawio/|miro/)"
+    r"[\w-]+\.(?:mmd|puml|drawio)"
+    r"|diagrams/(?!miro/)[\w-]+-miro-prompt\.md"
+)
+
+# Files where this check is enforced (instruction and reference docs are excluded).
+_OUTPUT_CONTRACT_SCOPE = {
+    "WORKFLOW.md",
+    "skills/4plus1-models/SKILL.md",
+    "skills/miro-diagram-generator/SKILL.md",
+    "skills/draw-io-diagram-generator/SKILL.md",
+}
+
+
+def check_output_path_contract(errors: list[str]) -> None:
+    """Ensure no file in the output contract scope uses the old flat diagrams/ paths."""
+    for relative in _OUTPUT_CONTRACT_SCOPE:
+        path = ROOT / relative
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8")
+        for match in _FLAT_DIAGRAM_PATH_RE.finditer(text):
+            add_error(
+                errors,
+                f"Flat diagrams/ output path in {relative}: '{match.group()}' — "
+                "use diagrams/mermaid/, diagrams/drawio/, or diagrams/miro/ instead",
+            )
+
+
 def check_miro_template_parity(errors: list[str]) -> None:
     template_pairs = [
         (
@@ -231,6 +264,7 @@ def main() -> int:
     check_entry_frontmatter(errors)
     check_markdown_links(errors)
     check_forbidden_text(errors)
+    check_output_path_contract(errors)
     check_miro_prompt_names(errors)
     check_miro_template_parity(errors)
     check_drawio_templates(errors)
@@ -247,6 +281,7 @@ def main() -> int:
     print("- workflow, skill, and agent entry frontmatter follows required order")
     print("- internal Markdown links resolve inside the bundle")
     print("- no stale legacy references detected")
+    print("- output paths use diagrams/mermaid/, diagrams/drawio/, diagrams/miro/ subfolders")
     print("- Miro example prompt filenames match the naming contract")
     print("- workflow and skill Miro templates are in sync")
     print("- draw.io templates passed XML validation")
