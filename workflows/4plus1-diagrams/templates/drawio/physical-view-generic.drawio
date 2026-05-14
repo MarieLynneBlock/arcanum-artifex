@@ -1,0 +1,55 @@
+<mxfile host="Electron" modified="2026-05-10T00:00:00.000Z" version="26.0.0">
+  <diagram id="physical-view-generic" name="Physical View — Cloud-agnostic">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Physical View — &lt;System Name&gt;" style="text;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1090" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zone-edge" value="Edge / Public Zone" style="swimlane;html=1;startSize=30;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="320" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="cdn" value="CDN / WAF" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;" vertex="1" parent="zone-edge">
+          <mxGeometry x="80" y="60" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lb" value="Load Balancer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;" vertex="1" parent="zone-edge">
+          <mxGeometry x="80" y="160" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zone-app" value="Application Zone" style="swimlane;html=1;startSize=30;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="320" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="svc1" value="&lt;Service A&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="zone-app">
+          <mxGeometry x="80" y="60" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="svc2" value="&lt;Service B&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="zone-app">
+          <mxGeometry x="80" y="160" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zone-data" value="Data Zone" style="swimlane;html=1;startSize=30;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="780" y="80" width="320" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="&lt;Primary DB&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="zone-data">
+          <mxGeometry x="80" y="60" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cache" value="&lt;Cache&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="zone-data">
+          <mxGeometry x="80" y="180" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="cdn" target="lb" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="lb" target="svc1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="gRPC" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="svc1" target="svc2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="SQL" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="svc2" target="db" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;" edge="1" source="svc1" target="cache" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

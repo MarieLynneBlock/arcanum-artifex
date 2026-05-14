@@ -1,0 +1,164 @@
+---
+name: 4+1 Architecture Diagrams (Miro & draw.io)
+description: Workflow playbook for producing Kruchten 4+1 architecture views with canonical diagram-as-code plus editable draw.io or Miro output.
+metadata:
+   skill-author: Marie-Lynne Block
+---
+
+# Workflow: 4+1 Architecture Diagrams (Miro & draw.io)
+
+## 1. Purpose
+
+Produce a complete Kruchten 4+1 view model where **every view is delivered in two formats**:
+1. **Canonical diagram-as-code**: Mermaid/PlantUML (per the `4plus1-models` skill).
+2. **Editable visual format**: Either **draw.io** (interactive `.drawio` files) or **Miro** (collaboration prompts).
+
+The canonical format and the selected visual track are kept consistent — same component names, same relationships, same scope.
+
+## 2. Linked assets
+
+**This workflow is self-contained.** Everything it needs is vendored in top-level workflow folders. Copy the whole `4plus1-diagrams/` folder into another repo and it works as-is.
+
+The vendored copies are a **frozen snapshot**. This workflow has no sync mechanism and no dependency on any path outside this folder.
+
+| Asset type | Path (inside this workflow) | Role |
+|------------|------------------------------|------|
+| Skill (primary, vendored) | [skills/4plus1-models/](skills/4plus1-models/) | Owns the 4+1 method, audience routing, per-view references, and Mermaid/PlantUML output. **Source of truth for core architecture logic.** |
+| Skill (secondary, vendored) | [skills/draw-io-diagram-generator/](skills/draw-io-diagram-generator/) | Owns the mxGraph XML mechanics, validation script, and shape-library knowledge. Needed only for draw.io path. |
+| Skill (secondary, vendored) | [skills/miro-diagram-generator/](skills/miro-diagram-generator/) | Owns Miro prompt mechanics, RISEN formatting, and track-specific validation. Needed only for Miro path. |
+| Instructions (vendored) | [instructions/](instructions/) | Auto-applies to `.drawio` files (draw.io path) or Miro prompts (Miro path). |
+| Agent (discoverable entrypoint) | [architecture-documentation.agent.md](architecture-documentation.agent.md) | Drop-in entrypoint for placement under `.github/agents/` or `~/.agents/` with no install step. |
+| Agent | [agents/architecture-documentation.agent.md](agents/architecture-documentation.agent.md) | Thin orchestrator. Loads the two skills and runs the steps below. **No `mcp-servers` block.** |
+| Prompt | [prompts/4plus1-diagrams.prompt.md](prompts/4plus1-diagrams.prompt.md) | Single-shot prompt that triggers the workflow. |
+| Templates | [templates/drawio/](templates/drawio/) | Eight per-view `.drawio` skeletons. |
+| Templates | [templates/miro/](templates/miro/) | Miro prompt templates for per-view and full-board setup prompts. |
+| Reference | [references/notation-drawio.md](references/notation-drawio.md) | Per-view draw.io conventions: shape library per view, palette, layout, edge style. |
+| Reference | [references/notation-miro.md](references/notation-miro.md) | Per-view Miro conventions: frame naming, shape semantics, colour palette, layout discipline. |
+| External tool | VS Code extension `hediet.vscode-drawio` | Renders the produced `.drawio` files inside VS Code. |
+
+## 3. Preconditions
+
+- The vendored skills and instruction are present in top-level workflow folders (they ship with the workflow).
+- For the user: VS Code with `hediet.vscode-drawio` installed (or draw.io desktop / app.diagrams.net) to view/edit the output.
+- The agent / user has confirmed the **audience** before starting (dev-only / cross-functional / executive — the `4plus1-models` skill, Step 2, asks this).
+
+## 4. Steps
+
+The workflow extends — does **not** replace — the `4plus1-models` skill workflow. Run that skill end-to-end, then choose your visual format.
+
+1. **Run skill steps 1–4** (mode → audience → context → concerns) from `skills/4plus1-models/SKILL.md`. No changes.
+2. **Choose visual format.** Ask the user: *"How would you like to deliver the diagrams? (A) draw.io or (B) Miro?"* Treat the selected path as an independent track; do not import style/mechanics from the other track.
+3. **For each view (logical → process → development → physical → scenarios)**:
+   1. Generate the Mermaid (or PlantUML for physical) diagram per the skill's Step 5. Write to `diagrams/<view>.mmd` (or `.puml`).
+   2. **If draw.io**:
+      - Pick the matching `.drawio` skeleton from `templates/drawio/` (routing table in §4a).
+      - Adapt the skeleton — replace placeholders with real component names, apply semantic palette and conventions from `references/notation-drawio.md`.
+      - For mxGraph XML mechanics, defer to `skills/draw-io-diagram-generator/SKILL.md` and `instructions/draw-io.instructions.md`.
+      - Write to `diagrams/<view>.drawio`.
+   3. **If Miro**:
+      - Use Miro rules from `skills/miro-diagram-generator/SKILL.md`, workflow templates from `templates/miro/`, and per-view conventions from `references/notation-miro.md`.
+      - Generate a Miro board setup prompt.
+      - Write to `diagrams/<view>-miro-prompt.md`.
+   4. Verify component names are consistent across Mermaid and the chosen visual format.
+4. **Cross-view consistency check.** Run `python skills/4plus1-models/scripts/validate-views.py` if outputting to disk.
+5. **Format-specific validation**:
+   - **draw.io**: Run `python skills/draw-io-diagram-generator/scripts/validate-drawio.py <file>` or open in VS Code with `hediet.vscode-drawio`.
+   - **Miro**: Confirm prompts are markdown-valid and reference the correct view names.
+
+### 4a. draw.io per-view skeleton routing
+
+(Only used if draw.io format is chosen.)
+
+| View | Audience | Skeleton |
+|------|----------|----------|
+| Logical | any | `logical-view.drawio` |
+| Process | dev-only | `process-view-sequence.drawio` |
+| Process | cross-functional / executive | `process-view-bpmn.drawio` |
+| Development | any | `development-view.drawio` |
+| Physical | AWS-heavy | `physical-view-aws.drawio` |
+| Physical | Azure-heavy | `physical-view-azure.drawio` |
+| Physical | cloud-agnostic / multi-cloud | `physical-view-generic.drawio` |
+| Scenarios | any | `scenarios-view.drawio` |
+
+### 4b. Miro board structure (reference)
+
+(Only used if Miro format is chosen.) The generated prompt should describe:
+- One Miro frame per view (logical, process, development, physical, scenarios).
+- Frame titles from the naming table in `references/notation-miro.md`.
+- Shape semantics and colour palette from `references/notation-miro.md` (per-view tables).
+- Layout discipline (orientation, spacing, grid, legend) from `references/notation-miro.md`.
+- RISEN prompt structure from `skills/miro-diagram-generator/SKILL.md` and its template.
+
+## 5. Outputs
+
+**Option A: draw.io format**
+```text
+docs/architecture/
+├── 00-overview.md
+├── 10-logical-view.md
+├── 20-process-view.md
+├── 30-development-view.md
+├── 40-physical-view.md
+├── 50-scenarios-view.md
+└── diagrams/
+    ├── logical-view.mmd
+    ├── logical-view.drawio
+    ├── process-view.mmd
+    ├── process-view.drawio
+    ├── development-view.mmd
+    ├── development-view.drawio
+    ├── physical-view.puml
+    ├── physical-view.drawio
+    ├── scenarios-view.mmd
+    └── scenarios-view.drawio
+```
+
+**Option B: Miro format**
+```text
+docs/architecture/
+├── 00-overview.md
+├── 10-logical-view.md
+├── 20-process-view.md
+├── 30-development-view.md
+├── 40-physical-view.md
+├── 50-scenarios-view.md
+└── diagrams/
+    ├── logical-view.mmd
+    ├── logical-view-miro-prompt.md
+    ├── process-view.mmd
+    ├── process-view-miro-prompt.md
+    ├── development-view.mmd
+    ├── development-view-miro-prompt.md
+    ├── physical-view.puml
+    ├── physical-view-miro-prompt.md
+    ├── scenarios-view.mmd
+    └── scenarios-view-miro-prompt.md
+```
+
+## 6. Validation
+
+**For draw.io output:**
+1. Every view has both a primary diagram (`.mmd` / `.puml`) and a `.drawio` file.
+2. Component names, scope, and key relationships match between the two formats per view.
+3. Each `.drawio` file is well-formed XML (parses with `xml.etree.ElementTree`) and renders in VS Code's `hediet.vscode-drawio` without manual fixes.
+
+**For Miro output:**
+1. Every view has both a primary diagram (`.mmd` / `.puml`) and a `-miro-prompt.md` file.
+2. Component names, scope, and key relationships match between the two formats per view.
+3. Each prompt is valid markdown and references the correct view names.
+
+**Shared:**
+- The skill's own checks pass (`skills/4plus1-models/scripts/validate-views.py`).
+- The bundle smoke test passes: `python scripts/smoke-test.py`.
+
+## 7. Change log
+
+| Date | Change |
+|------|--------|
+| 2026-05-10 | Created. |
+| 2026-05-10 | Vendored the initial architecture-model assets, `draw-io-diagram-generator`, and `draw-io.instructions.md` in top-level workflow folders so the workflow folder is self-contained and portable. |
+| 2026-05-10 | Removed all sync/re-vendor mechanics; workflow is now a strict standalone snapshot. |
+| 2026-05-10 | Made Miro and draw.io equal first-class options. Workflow now includes format-choice step (Step 2), supports both paths in Step 3, presents both output options in Section 5, and uses conditional validation per format. Prompt renamed to `4plus1-diagrams.prompt.md`. Agent guardrail updated to offer both formats equally. |
+| 2026-05-10 | Split skills by responsibility: added `4plus1-models` (core method), retained `draw-io-diagram-generator` (draw.io output), and added `miro-diagram-generator` (Miro output). Updated workflow, prompt, agent, and instructions to load core + selected output skill. Removed legacy combined skill. |
+| 2026-05-10 | Added `notation-miro.md` reference file (Miro-track parity with `notation-drawio.md`). Updated §4b to point to it for per-view conventions. |
+| 2026-05-10 | Added root-level `architecture-documentation.agent.md` as a no-installer discoverable entrypoint so the same folder can be placed directly under `.github/agents/` or `~/.agents/`. |
