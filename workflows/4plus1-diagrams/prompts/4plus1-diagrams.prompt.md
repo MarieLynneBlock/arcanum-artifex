@@ -36,13 +36,13 @@ All skills and instructions this workflow needs are vendored locally in top-leve
    - Start with one compact question block (max 5 fields): system, audience, track, domain/regulatory context, constraints.
    - If answers are partial, proceed with explicit assumptions instead of asking many immediate follow-ups.
    - Ask follow-ups only when a missing value blocks the next artifact, one at a time.
-2. Ask the user: **"How would you like to deliver the diagrams? (A) draw.io (.drawio files for editing in VS Code, desktop, or web) or (B) Miro (collaboration prompts for team whiteboarding)?"** Use only the selected track's rules and assets.
+2. Confirm the visual track from intake. If it was not provided, ask once: **"How would you like to deliver the diagrams? (A) draw.io (.drawio files for editing in VS Code, desktop, or web) or (B) Miro (collaboration prompts for team whiteboarding)?"** Use only the selected track's rules and assets.
 3. For each view (logical → process → development → physical → scenarios):
    - **For draw.io**: Generate the primary Mermaid/PlantUML per the skill's Step 5. Pick the matching draw.io skeleton, adapt it with real component names, apply conventions from `notation-drawio.md`. For BPMN process views, enforce the shared semantic palette mapping via `notation-drawio.md`. Defer mxGraph XML rules to `draw-io-diagram-generator`.
    - **For Miro**: Generate the primary Mermaid/PlantUML per the skill's Step 5. Use the Miro prompt template and `notation-miro.md` to generate a board setup prompt with component placement guidance. For BPMN swimlane process views, enforce the same shared semantic palette mapping via `notation-miro.md`.
    - Verify component names match between the primary Mermaid/PlantUML source and the selected track output.
    - For Physical view, treat the `.puml` as canonical and verify exact parity for node/container names, child elements, relationship endpoints, and relationship labels. Keep visual zones only as grouping around those canonical elements; remove skeleton placeholders that are not in the `.puml`.
-4. Run `skills/4plus1-models/scripts/validate-views.py` if outputting to disk.
+4. If outputting to disk, run `python skills/4plus1-models/scripts/validate-views.py <output-directory>` (for example `python skills/4plus1-models/scripts/validate-views.py docs/architecture`).
 5. **Format validation**:
    - draw.io: run `skills/draw-io-diagram-generator/scripts/validate-drawio.py <file>` or open in `hediet.vscode-drawio`.
    - Miro: confirm prompts are markdown-valid and reference correct view names.

@@ -103,7 +103,13 @@ Verify:
 If writing to disk, run:
 
 ```bash
-python scripts/validate-views.py
+python scripts/validate-views.py <output-directory>
+```
+
+For example:
+
+```bash
+python scripts/validate-views.py docs/architecture
 ```
 
 ### Step 7 — Output format (core)

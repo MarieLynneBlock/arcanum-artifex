@@ -47,7 +47,7 @@ The vendored copies are a **frozen snapshot**. This workflow has no sync mechani
 The workflow extends — does **not** replace — the `4plus1-models` skill workflow. Run that skill end-to-end, then choose your visual format.
 
 1. **Run skill steps 1–4** (mode → audience → context → concerns) from `skills/4plus1-models/SKILL.md`. No changes.
-2. **Choose visual format.** Ask the user: *"How would you like to deliver the diagrams? (A) draw.io or (B) Miro?"* Treat the selected path as an independent track; do not import style/mechanics from the other track.
+2. **Confirm visual format.** Take the visual track from intake. If it was not provided, ask once: *"How would you like to deliver the diagrams? (A) draw.io or (B) Miro?"* Treat the selected path as an independent track; do not import style/mechanics from the other track.
 3. **For each view (logical → process → development → physical → scenarios)**:
    1. Generate the Mermaid (or PlantUML for physical) diagram per the skill's Step 5. Write to `diagrams/mermaid/<view>.mmd` (or `.puml`).
       - For Physical view, treat the generated `.puml` as canonical. Extract its node/container names, child elements, relationship endpoints, and relationship labels before creating draw.io or Miro output.
@@ -67,7 +67,7 @@ The workflow extends — does **not** replace — the `4plus1-models` skill work
       - Generate a Miro board setup prompt.
       - Write to `diagrams/miro/<view>-miro-prompt.md`.
    4. Verify component names are consistent across Mermaid/PlantUML and the chosen visual format. For Physical view, also verify every relationship endpoint and label from the `.puml` is represented in the draw.io file or Miro prompt.
-4. **Cross-view consistency check.** Run `python skills/4plus1-models/scripts/validate-views.py` if outputting to disk.
+4. **Cross-view consistency check.** If outputting to disk, run `python skills/4plus1-models/scripts/validate-views.py <output-directory>` (for example `python skills/4plus1-models/scripts/validate-views.py docs/architecture`).
 5. **Format-specific validation**:
    - **draw.io**: Run `python skills/draw-io-diagram-generator/scripts/validate-drawio.py <file>` or open in VS Code with `hediet.vscode-drawio`.
    - **Miro**: Confirm prompts are markdown-valid and reference the correct view names.
@@ -101,12 +101,12 @@ The workflow extends — does **not** replace — the `4plus1-models` skill work
 **Option A: draw.io format**
 ```text
 docs/architecture/
-├── 00-overview.md
-├── 10-logical-view.md
-├── 20-process-view.md
-├── 30-development-view.md
-├── 40-physical-view.md
-├── 50-scenarios-view.md
+├── 00-system-context.md
+├── 01-logical-view.md
+├── 02-process-view.md
+├── 03-development-view.md
+├── 04-physical-view.md
+├── 05-scenarios-view.md
 └── diagrams/
     ├── mermaid/
     │   ├── logical-view.mmd
@@ -125,12 +125,12 @@ docs/architecture/
 **Option B: Miro format**
 ```text
 docs/architecture/
-├── 00-overview.md
-├── 10-logical-view.md
-├── 20-process-view.md
-├── 30-development-view.md
-├── 40-physical-view.md
-├── 50-scenarios-view.md
+├── 00-system-context.md
+├── 01-logical-view.md
+├── 02-process-view.md
+├── 03-development-view.md
+├── 04-physical-view.md
+├── 05-scenarios-view.md
 └── diagrams/
     ├── mermaid/
     │   ├── logical-view.mmd
@@ -150,12 +150,12 @@ docs/architecture/
 **Option A+B: All formats**
 ```text
 docs/architecture/
-├── 00-overview.md
-├── 10-logical-view.md
-├── 20-process-view.md
-├── 30-development-view.md
-├── 40-physical-view.md
-├── 50-scenarios-view.md
+├── 00-system-context.md
+├── 01-logical-view.md
+├── 02-process-view.md
+├── 03-development-view.md
+├── 04-physical-view.md
+├── 05-scenarios-view.md
 └── diagrams/
     ├── mermaid/
     │   ├── logical-view.mmd
@@ -194,7 +194,7 @@ docs/architecture/
 
 **Shared:**
 - Physical view visual outputs must preserve the canonical `.puml` element list and relationship labels before adding zones, styling, or collaboration-layout guidance.
-- The skill's own checks pass (`skills/4plus1-models/scripts/validate-views.py`).
+- The skill's own checks pass (`python skills/4plus1-models/scripts/validate-views.py <output-directory>`).
 - The bundle smoke test passes: `python scripts/smoke-test.py`.
 
 ## 7. Change log

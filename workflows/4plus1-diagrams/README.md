@@ -81,31 +81,47 @@ Choose your format:
 **Option A: draw.io output** — editable `.drawio` files
 ```text
 docs/architecture/
-├── diagrams/
-    ├── logical-view.mmd
-    ├── logical-view.drawio         ← Edit in VS Code or draw.io
-    ├── process-view.mmd
-    ├── process-view.drawio
-    ├── development-view.mmd
-    ├── development-view.drawio
-    ├── physical-view.puml
-    ├── physical-view.drawio
-    ├── scenarios-view.mmd
-    └── scenarios-view.drawio
+├── 00-system-context.md
+├── 01-logical-view.md
+├── 02-process-view.md
+├── 03-development-view.md
+├── 04-physical-view.md
+├── 05-scenarios-view.md
+└── diagrams/
+    ├── mermaid/
+    │   ├── logical-view.mmd
+    │   ├── process-view.mmd
+    │   ├── development-view.mmd
+    │   ├── physical-view.puml
+    │   └── scenarios-view.mmd
+    └── drawio/
+        ├── logical-view.drawio         ← Edit in VS Code or draw.io
+        ├── process-view.drawio
+        ├── development-view.drawio
+        ├── physical-view.drawio
+        └── scenarios-view.drawio
 ```
 
 **Option B: Miro output** — collaboration prompts
 ```text
 docs/architecture/
-├── diagrams/
-    ├── logical-view.mmd
-    ├── logical-view-miro-prompt.md     ← Paste into Miro
-    ├── process-view.mmd
-    ├── process-view-miro-prompt.md
-    ├── development-view.mmd
-    ├── development-view-miro-prompt.md
-    ├── physical-view.puml
-    ├── physical-view-miro-prompt.md
-    ├── scenarios-view.mmd
-    └── scenarios-view-miro-prompt.md
+├── 00-system-context.md
+├── 01-logical-view.md
+├── 02-process-view.md
+├── 03-development-view.md
+├── 04-physical-view.md
+├── 05-scenarios-view.md
+└── diagrams/
+    ├── mermaid/
+    │   ├── logical-view.mmd
+    │   ├── process-view.mmd
+    │   ├── development-view.mmd
+    │   ├── physical-view.puml
+    │   └── scenarios-view.mmd
+    └── miro/
+        ├── logical-view-miro-prompt.md     ← Paste into Miro
+        ├── process-view-miro-prompt.md
+        ├── development-view-miro-prompt.md
+        ├── physical-view-miro-prompt.md
+        └── scenarios-view-miro-prompt.md
 ```

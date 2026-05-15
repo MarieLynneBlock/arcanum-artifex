@@ -3,7 +3,11 @@
 validate-drawio.py — Validate the XML structure of a .drawio diagram file.
 
 Usage:
-    python scripts/validate-drawio.py <path-to-file.drawio>
+    python scripts/validate-drawio.py <path-to-file.drawio> [--require-provenance]
+
+Flags:
+    --require-provenance   Require an invisible mxCell with id='canonical-source-ref'
+                           on every diagram page (used for workflow-level templates).
 
 Exit codes:
     0  All checks passed
@@ -21,7 +25,7 @@ def _error(msg: str, errors: list) -> None:
     print(f"  ERROR: {msg}")
 
 
-def validate_file(path: Path) -> list[str]:
+def validate_file(path: Path, require_provenance: bool = False) -> list[str]:
     """Parse and validate a single .drawio file. Returns list of error strings."""
     errors: list[str] = []
 
@@ -45,10 +49,15 @@ def validate_file(path: Path) -> list[str]:
         d_name = diagram.get("name", f"page-{d_idx}")
         prefix = f"[diagram '{d_name}']"
 
-        # Find mxGraphModel (may be direct child or base64-encoded; we handle direct only)
+        # Find mxGraphModel (must be a direct child; compressed/base64 payloads are not supported).
         graph_model = diagram.find("mxGraphModel")
         if graph_model is None:
-            print(f"  SKIP {prefix}: mxGraphModel not found as direct child (may be compressed)")
+            _error(
+                f"{prefix} <mxGraphModel> not found as direct child of <diagram>; "
+                "compressed/base64-encoded diagrams are not supported by this validator. "
+                "Open the file in draw.io and re-save with 'Compressed' disabled.",
+                errors,
+            )
             continue
 
         root_elem = graph_model.find("root")
@@ -121,6 +130,20 @@ def validate_file(path: Path) -> list[str]:
                 errors,
             )
 
+        # Provenance: invisible canonical-source-ref cell carrying source path/format/summary.
+        if require_provenance:
+            provenance_cell = next(
+                (c for c in cells if c.get("id") == "canonical-source-ref"),
+                None,
+            )
+            if provenance_cell is None:
+                _error(
+                    f"{prefix} Missing required canonical-source-ref provenance cell — "
+                    "add an invisible mxCell with id='canonical-source-ref' carrying "
+                    "canonical-source-path / canonical-source-format / canonical-source-summary",
+                    errors,
+                )
+
         # --- Check each cell for structural validity ---
         for cell in cells:
             cid = cell.get("id", "<unknown>")
@@ -187,11 +210,16 @@ def validate_file(path: Path) -> list[str]:
 
 
 def main() -> int:
-    if len(sys.argv) < 2:
-        print("Usage: python validate-drawio.py <diagram.drawio>")
+    args = [a for a in sys.argv[1:] if a]
+    require_provenance = False
+    if "--require-provenance" in args:
+        require_provenance = True
+        args = [a for a in args if a != "--require-provenance"]
+    if len(args) < 1:
+        print("Usage: python validate-drawio.py <diagram.drawio> [--require-provenance]")
         return 1
 
-    path = Path(sys.argv[1])
+    path = Path(args[0])
     if not path.exists():
         print(f"File not found: {path}")
         return 1
@@ -200,7 +228,7 @@ def main() -> int:
         return 1
 
     print(f"Validating: {path}")
-    errors = validate_file(path)
+    errors = validate_file(path, require_provenance=require_provenance)
 
     if errors:
         print(f"\nFAIL — {len(errors)} error(s) found.")

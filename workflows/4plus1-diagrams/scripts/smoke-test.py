@@ -185,7 +185,11 @@ _FLAT_DIAGRAM_PATH_RE = re.compile(
 
 # Files where this check is enforced (instruction and reference docs are excluded).
 _OUTPUT_CONTRACT_SCOPE = {
+    "README.md",
     "WORKFLOW.md",
+    "architecture-documentation.agent.md",
+    "agents/architecture-documentation.agent.md",
+    "prompts/4plus1-diagrams.prompt.md",
     "skills/4plus1-models/SKILL.md",
     "skills/miro-diagram-generator/SKILL.md",
     "skills/draw-io-diagram-generator/SKILL.md",
@@ -205,6 +209,79 @@ def check_output_path_contract(errors: list[str]) -> None:
                 f"Flat diagrams/ output path in {relative}: '{match.group()}' — "
                 "use diagrams/mermaid/, diagrams/drawio/, or diagrams/miro/ instead",
             )
+        _check_tree_diagram_paths(relative, text, errors)
+        _check_canonical_view_filenames(relative, text, errors)
+
+
+# Detects a tree line introducing the diagrams/ folder (with no trailing typed subfolder on the same line).
+_TREE_DIAGRAMS_LINE_RE = re.compile(r"^[\s\u2502\u251c\u2514\u2500]*diagrams/\s*$", re.MULTILINE)
+# Detects a tree leaf with a flat diagram filename and no enclosing typed subfolder context.
+_TREE_LEAF_RE = re.compile(r"[\u251c\u2514]\u2500\u2500\s+([\w-]+\.(?:mmd|puml|drawio)|[\w-]+-miro-prompt\.md)")
+_TYPED_SUBFOLDERS = ("mermaid/", "drawio/", "miro/")
+_CANONICAL_VIEW_NAME_RE = re.compile(r"\b(\d{2})-(overview|logical-view|process-view|development-view|physical-view|scenarios-view)\.md\b")
+_CANONICAL_VIEW_NAMES = {
+    "00": "system-context",
+    "01": "logical-view",
+    "02": "process-view",
+    "03": "development-view",
+    "04": "physical-view",
+    "05": "scenarios-view",
+}
+
+
+def _check_tree_diagram_paths(relative: str, text: str, errors: list[str]) -> None:
+    """Within markdown trees, every diagrams/ folder must be followed by typed subfolder leaves."""
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        if not _TREE_DIAGRAMS_LINE_RE.match(line):
+            continue
+        # Inspect the next ~12 lines for the immediate children of this diagrams/ folder.
+        # A child is a leaf at deeper indentation. Stop at blank line or fence end.
+        for j in range(i + 1, min(i + 14, len(lines))):
+            child = lines[j]
+            if not child.strip() or child.strip().startswith("```"):
+                break
+            leaf_match = _TREE_LEAF_RE.search(child)
+            if not leaf_match:
+                continue
+            # If this leaf is a bare diagram filename directly under diagrams/ (no typed subfolder above it on the path),
+            # scan upward to ensure a typed subfolder line precedes it.
+            ancestor_window = lines[i + 1 : j]
+            if not any(sub in ancestor for ancestor in ancestor_window for sub in _TYPED_SUBFOLDERS):
+                add_error(
+                    errors,
+                    f"Tree-style flat diagrams/ leaf in {relative}: '{leaf_match.group(1)}' — "
+                    "place under diagrams/mermaid/, diagrams/drawio/, or diagrams/miro/",
+                )
+
+
+def _check_canonical_view_filenames(relative: str, text: str, errors: list[str]) -> None:
+    """View files must use canonical 00-system-context / 01..05- naming."""
+    for match in _CANONICAL_VIEW_NAME_RE.finditer(text):
+        prefix, name = match.group(1), match.group(2)
+        canonical = _CANONICAL_VIEW_NAMES.get(prefix)
+        if canonical is None or name != canonical:
+            add_error(
+                errors,
+                f"Non-canonical view filename in {relative}: '{match.group(0)}' — "
+                "expected 00-system-context.md and 01..05-<view>.md",
+            )
+
+
+_VALIDATE_VIEWS_INVOCATION_RE = re.compile(r"python\s+\S*validate-views\.py(?:\s+(\S+))?")
+
+
+def check_validate_views_command(errors: list[str]) -> None:
+    """Wherever validate-views.py is invoked as a `python ...` command, require a positional directory argument."""
+    for path in sorted(p for p in ROOT.rglob("*") if p.is_file() and is_markdown(p)):
+        text = path.read_text(encoding="utf-8")
+        for match in _VALIDATE_VIEWS_INVOCATION_RE.finditer(text):
+            arg = match.group(1)
+            if arg is None or arg.startswith("`"):
+                add_error(
+                    errors,
+                    f"validate-views.py invocation missing positional directory argument in {rel(path)}: {match.group(0)}",
+                )
 
 
 def check_miro_template_parity(errors: list[str]) -> None:
@@ -244,16 +321,18 @@ def check_drawio_templates(errors: list[str]) -> None:
     except RuntimeError as exc:
         add_error(errors, str(exc))
         return
+    # Workflow-level templates must carry canonical-source-ref provenance cells;
+    # the skill-internal generic templates are not subject to that contract.
     drawio_roots = [
-        ROOT / "templates/drawio",
-        ROOT / "skills/draw-io-diagram-generator/assets/templates",
+        (ROOT / "templates/drawio", True),
+        (ROOT / "skills/draw-io-diagram-generator/assets/templates", False),
     ]
-    for drawio_root in drawio_roots:
+    for drawio_root, require_provenance in drawio_roots:
         if not drawio_root.exists():
             add_error(errors, f"Missing draw.io template directory: {rel(drawio_root)}")
             continue
         for drawio_file in sorted(drawio_root.glob("*.drawio")):
-            validation_errors = validator.validate_file(drawio_file)
+            validation_errors = validator.validate_file(drawio_file, require_provenance=require_provenance)
             for validation_error in validation_errors:
                 add_error(errors, f"draw.io validation failed in {rel(drawio_file)}: {validation_error}")
 
@@ -265,6 +344,7 @@ def main() -> int:
     check_markdown_links(errors)
     check_forbidden_text(errors)
     check_output_path_contract(errors)
+    check_validate_views_command(errors)
     check_miro_prompt_names(errors)
     check_miro_template_parity(errors)
     check_drawio_templates(errors)
@@ -282,6 +362,8 @@ def main() -> int:
     print("- internal Markdown links resolve inside the bundle")
     print("- no stale legacy references detected")
     print("- output paths use diagrams/mermaid/, diagrams/drawio/, diagrams/miro/ subfolders")
+    print("- view filenames use canonical 00-system-context / 01..05-<view>.md form")
+    print("- validate-views.py is invoked with a positional directory argument")
     print("- Miro example prompt filenames match the naming contract")
     print("- workflow and skill Miro templates are in sync")
     print("- draw.io templates passed XML validation")
