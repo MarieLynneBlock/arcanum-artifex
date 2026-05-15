@@ -16,6 +16,7 @@ Everything here has survived contact with real work. Skills, agents, instruction
 | [skills/](skills/) | 200+ reusable skills, organized by domain |
 | [agents/](agents/) | Custom agent definitions, organized by specialty |
 | [instructions/](instructions/) | Context files that shape AI behavior per stack or domain |
+| [workflows/](workflows/) | Orchestrated playbooks that link skills, instructions, agents, prompts and tools end-to-end |
 | [templates/](templates/) | Blank starters to copy into your own project |
 | [guides/](guides/) | Setup, practices, policy, and reference material |
 | [workshops/](workshops/) | Hands-on exercises for team onboarding |

@@ -1,0 +1,64 @@
+<mxfile host="Electron" modified="2026-05-10T00:00:00.000Z" version="26.0.0">
+  <diagram id="process-view-sequence" name="Process View — Sequence">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Process View — &lt;Scenario Name&gt;" style="text;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1090" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="actor" value="&lt;Actor&gt;" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="80" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lifeline-actor" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="160" as="sourcePoint" />
+            <mxPoint x="180" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svcA" value="&lt;Service A&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lifeline-A" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="140" as="sourcePoint" />
+            <mxPoint x="460" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svcB" value="&lt;Service B&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lifeline-B" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="140" as="sourcePoint" />
+            <mxPoint x="760" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg1" value="1: &lt;request&gt;" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="220" as="sourcePoint" />
+            <mxPoint x="460" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg2" value="2: &lt;internal call&gt;" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="280" as="sourcePoint" />
+            <mxPoint x="760" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg3" value="3: &lt;response&gt;" style="html=1;endArrow=open;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="340" as="sourcePoint" />
+            <mxPoint x="460" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg4" value="4: &lt;reply&gt;" style="html=1;endArrow=open;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="400" as="sourcePoint" />
+            <mxPoint x="180" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

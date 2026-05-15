@@ -1,0 +1,40 @@
+<mxfile host="Electron" modified="2026-05-10T00:00:00.000Z" version="26.0.0">
+  <diagram id="physical-view-azure" name="Physical View — Azure">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Physical View (Azure) — &lt;System Name&gt;" style="text;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1090" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="subscription" value="Subscription: &lt;name&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0072C6;dashed=1;verticalAlign=top;align=left;spacingLeft=10;fontColor=#0072C6;fontStyle=1;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="1050" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="rg" value="Resource Group: &lt;name&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0072C6;verticalAlign=top;align=left;spacingLeft=10;fontColor=#0072C6;container=1;collapsible=0;" vertex="1" parent="subscription">
+          <mxGeometry x="40" y="50" width="970" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="appgw" value="Application Gateway" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#0072C6;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.azure.application_gateway;" vertex="1" parent="rg">
+          <mxGeometry x="60" y="80" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aks" value="AKS Cluster" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#0072C6;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.azure.kubernetes_services;" vertex="1" parent="rg">
+          <mxGeometry x="280" y="80" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sqldb" value="Azure SQL DB" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#0072C6;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.azure.sql_database;" vertex="1" parent="rg">
+          <mxGeometry x="500" y="80" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" value="Storage Account" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#0072C6;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.azure.storage_accounts;" vertex="1" parent="rg">
+          <mxGeometry x="720" y="80" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="appgw" target="aks" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="TDS 1433" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="aks" target="sqldb" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="aks" target="storage" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,43 @@
+<mxfile host="Electron" modified="2026-05-10T00:00:00.000Z" version="26.0.0">
+  <diagram id="development-view" name="Development View">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Development View — &lt;System Name&gt;" style="text;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1090" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="layer-ui" value="UI / Presentation" style="swimlane;html=1;startSize=30;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="1050" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="mod-ui-1" value="&lt;module&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="layer-ui">
+          <mxGeometry x="40" y="50" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mod-ui-2" value="&lt;module&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="layer-ui">
+          <mxGeometry x="240" y="50" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="layer-app" value="Application / Domain" style="swimlane;html=1;startSize=30;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="60" y="240" width="1050" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="mod-app-1" value="&lt;module&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="layer-app">
+          <mxGeometry x="40" y="50" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mod-app-2" value="&lt;module&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="layer-app">
+          <mxGeometry x="240" y="50" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="layer-infra" value="Infrastructure" style="swimlane;html=1;startSize=30;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="60" y="400" width="1050" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="mod-infra-1" value="&lt;module&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="layer-infra">
+          <mxGeometry x="40" y="50" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dep1" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="mod-ui-1" target="mod-app-1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep2" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="mod-app-1" target="mod-infra-1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
