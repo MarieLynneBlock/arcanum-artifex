@@ -13,6 +13,28 @@ Desktop.ini
 $RECYCLE.BIN/
 *.lnk
 
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment
+.env
+.env.local
+
 # GitHub Copilot — local overrides (never commit)
 .github/copilot-instructions-local.md
 .copilotignore.local

@@ -48,13 +48,17 @@ Audit and repair customisation assets so they can be copied into another project
 
 - Search for relative links, absolute paths, and references to repo-only files.
 - Verify Markdown links resolve from the asset's expected deployed location.
+- Treat outward links to nearby repo files as suspect until classified as optional or vendored.
 - Replace required outward links with vendored files or inline guidance.
 - Leave optional references only when the asset remains usable without them.
+- Search for common dependency patterns: `](../`, `](../../`, `.github/`, `.copilot`, absolute paths, template names, workflow names, and referenced asset filenames.
+- When a link points to official documentation, keep it only when it is reference material; do not rely on it for required runtime instructions.
 
 ### 3. Frontmatter and Metadata
 
 - Confirm frontmatter exists and matches the asset type.
 - Check descriptions, names, metadata, and tool declarations for portability.
+- For instruction files, validate `applyTo` globs when present and avoid broad `**` scope unless the instruction is intentionally always-on.
 - Remove lab-only naming conventions only when preparing an asset for real deployment.
 - Preserve author metadata unless the user asks to change it.
 
@@ -72,7 +76,7 @@ Audit and repair customisation assets so they can be copied into another project
 3. **Classify**: Mark each dependency as required, optional, stale, or out of scope.
 4. **Vendor or Inline**: Copy required local assets into the package or include essential guidance directly.
 5. **Repair Links**: Update relative links so they work from the packaged location.
-6. **Validate**: Re-scan for broken links, outward dependencies, missing frontmatter, and lab-only conventions.
+6. **Validate**: Re-scan for broken links, outward dependencies, missing frontmatter, invalid `applyTo` globs, and lab-only conventions.
 7. **Report**: Summarise packaged files, removed dependencies, validation, and remaining `[TODO]` items.
 
 ## Output Format
