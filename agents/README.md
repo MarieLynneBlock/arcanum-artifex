@@ -56,7 +56,17 @@ agents/
 
 ## What are custom agents?
 
-Custom agents are `.agent.md` files that define a focused working mode for GitHub Copilot, such as a domain expert, reviewer, planner, or task-specific assistant.
+Custom agents are `.agent.md` files that define a focused working mode for an AI assistant, such as a domain expert, reviewer, planner, or task-specific assistant.
+
+In practice, an agent gives the assistant a narrower role with clearer boundaries than a general chat mode. A good agent usually defines:
+
+- scope: what tasks it should handle
+- boundaries: what it should avoid or hand back
+- workflow: the steps it should follow
+- quality bar: what a good result looks like
+- output shape: how responses should be structured
+
+Use an agent when you want repeatable behaviour for a task family. Use general instructions for broad project rules, and use skills for deep domain knowledge that can be reused across multiple agents.
 
 ## Agent locations
 
