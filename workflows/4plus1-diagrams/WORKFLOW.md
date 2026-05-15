@@ -50,16 +50,23 @@ The workflow extends — does **not** replace — the `4plus1-models` skill work
 2. **Choose visual format.** Ask the user: *"How would you like to deliver the diagrams? (A) draw.io or (B) Miro?"* Treat the selected path as an independent track; do not import style/mechanics from the other track.
 3. **For each view (logical → process → development → physical → scenarios)**:
    1. Generate the Mermaid (or PlantUML for physical) diagram per the skill's Step 5. Write to `diagrams/mermaid/<view>.mmd` (or `.puml`).
+      - For Physical view, treat the generated `.puml` as canonical. Extract its node/container names, child elements, relationship endpoints, and relationship labels before creating draw.io or Miro output.
    2. **If draw.io**:
       - Pick the matching `.drawio` skeleton from `templates/drawio/` (routing table in §4a).
       - Adapt the skeleton — replace placeholders with real component names, apply semantic palette and conventions from `references/notation-drawio.md`.
+      - Add hidden source provenance to the XML: canonical source path, source format, and enough inline Mermaid/PlantUML source content or extracted facts for the `.drawio` file to remain understandable when copied outside the repository.
+      - For Physical view, keep useful visual zones only when they group canonical `.puml` elements. Do not keep placeholder infrastructure from the skeleton if it is absent from the `.puml`.
+      - For BPMN process views, apply the shared semantic palette mapping from `references/notation-drawio.md`.
       - For mxGraph XML mechanics, defer to `skills/draw-io-diagram-generator/SKILL.md` and `instructions/draw-io.instructions.md`.
       - Write to `diagrams/drawio/<view>.drawio`.
    3. **If Miro**:
       - Use Miro rules from `skills/miro-diagram-generator/SKILL.md`, workflow templates from `templates/miro/`, and per-view conventions from `references/notation-miro.md`.
+      - Add a `Canonical source reference` section with the source path and the canonical Mermaid/PlantUML content, so the prompt remains usable when copied outside the repository.
+      - For Physical view, keep the `.puml` as source of truth, then expand its exact elements and relationships into a Sidekick-optimized object manifest before layout instructions. Do not ask Miro to parse raw PlantUML. Zones are allowed as visual grouping only; they must not introduce new infrastructure.
+      - For BPMN swimlane process views, enforce the same shared semantic palette mapping via `references/notation-miro.md`.
       - Generate a Miro board setup prompt.
       - Write to `diagrams/miro/<view>-miro-prompt.md`.
-   4. Verify component names are consistent across Mermaid and the chosen visual format.
+   4. Verify component names are consistent across Mermaid/PlantUML and the chosen visual format. For Physical view, also verify every relationship endpoint and label from the `.puml` is represented in the draw.io file or Miro prompt.
 4. **Cross-view consistency check.** Run `python skills/4plus1-models/scripts/validate-views.py` if outputting to disk.
 5. **Format-specific validation**:
    - **draw.io**: Run `python skills/draw-io-diagram-generator/scripts/validate-drawio.py <file>` or open in VS Code with `hediet.vscode-drawio`.
@@ -85,7 +92,7 @@ The workflow extends — does **not** replace — the `4plus1-models` skill work
 (Only used if Miro format is chosen.) The generated prompt should describe:
 - One Miro frame per view (logical, process, development, physical, scenarios).
 - Frame titles from the naming table in `references/notation-miro.md`.
-- Shape semantics and colour palette from `references/notation-miro.md` (per-view tables).
+- Shape semantics and colour palette from `references/notation-miro.md` (per-view tables and shared palette mapping for process swimlane views).
 - Layout discipline (orientation, spacing, grid, legend) from `references/notation-miro.md`.
 - RISEN prompt structure from `skills/miro-diagram-generator/SKILL.md` and its template.
 
@@ -176,14 +183,17 @@ docs/architecture/
 **For draw.io output:**
 1. Every view has both a primary diagram in `diagrams/mermaid/` (`.mmd` / `.puml`) and a `.drawio` file in `diagrams/drawio/`.
 2. Component names, scope, and key relationships match between the two formats per view.
-3. Each `.drawio` file is well-formed XML (parses with `xml.etree.ElementTree`) and renders in VS Code's `hediet.vscode-drawio` without manual fixes.
+3. Each `.drawio` file includes hidden canonical-source provenance with enough inline source content or extracted facts to stand alone when copied outside the repository.
+4. Each `.drawio` file is well-formed XML (parses with `xml.etree.ElementTree`) and renders in VS Code's `hediet.vscode-drawio` without manual fixes.
 
 **For Miro output:**
 1. Every view has both a primary diagram in `diagrams/mermaid/` (`.mmd` / `.puml`) and a `-miro-prompt.md` file in `diagrams/miro/`.
 2. Component names, scope, and key relationships match between the two formats per view.
-3. Each prompt is valid markdown and references the correct view names.
+3. Each prompt includes a canonical-source reference section with enough source content or extracted manifest details to stand alone when copied outside the repository.
+4. Each prompt is valid markdown and references the correct view names.
 
 **Shared:**
+- Physical view visual outputs must preserve the canonical `.puml` element list and relationship labels before adding zones, styling, or collaboration-layout guidance.
 - The skill's own checks pass (`skills/4plus1-models/scripts/validate-views.py`).
 - The bundle smoke test passes: `python scripts/smoke-test.py`.
 

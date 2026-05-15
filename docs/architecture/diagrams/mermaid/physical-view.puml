@@ -1,0 +1,31 @@
+@startuml
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam rectangle {
+  BorderColor #666666
+}
+
+title Physical View - Arcanum Artifex
+
+node "Developer Machine" as dev {
+  artifact "VS Code" as vscode
+  artifact "Local Workspace" as ws
+}
+
+cloud "GitHub" as github {
+  component "Repository" as repo
+  component "Pull Request" as pr
+  component "GitHub Actions" as gha
+}
+
+node "Copilot Runtime" as copilot {
+  component "Prompt + Agent Execution" as runtime
+}
+
+vscode --> ws : edit content
+ws --> repo : push commits
+repo --> pr : propose changes
+pr --> gha : run smoke test
+repo --> runtime : source assets
+runtime --> vscode : assisted authoring
+@enduml

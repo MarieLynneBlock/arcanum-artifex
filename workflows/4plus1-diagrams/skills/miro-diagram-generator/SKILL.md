@@ -46,6 +46,7 @@ All prompts must include:
 - explicit labels for all entities and connectors
 - explicit arrow semantics (solid/dashed/dotted)
 - explicit exclusions in Narrowing
+- for BPMN/swimlane process views, explicit shared semantic mapping: user task = primary, service task/start event = success, gateway = warning, end event = error, lane = neutral
 
 ### Step 4 — Validate against canonical source
 
@@ -84,6 +85,7 @@ Each output must be:
 - all relationship labels match canonical source
 - no unlabeled arrows in instructions
 - no unsupported decorative elements
+- BPMN/swimlane process prompts include the shared semantic mapping above
 
 ## References
 

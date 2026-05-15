@@ -90,18 +90,20 @@ flowchart LR
 | Parallel gateway (AND) | `A{{Parallel}}` | Fork or join |
 | Data object | `A[(Data)]` | Data input / output |
 
-Colour-code by shape type using `classDef` to reinforce BPMN semantics:
+Colour-code by shape type using `classDef` to reinforce BPMN semantics with the shared palette mapping:
 
 ```
-classDef userTask fill:#fff4e6,stroke:#d46b08
-classDef serviceTask fill:#e6f7ff,stroke:#1890ff
-classDef gateway fill:#fff,stroke:#000
-classDef event fill:#f6ffed,stroke:#52c41a
+classDef userTask fill:#dae8fc,stroke:#6c8ebf
+classDef serviceTask fill:#d5e8d4,stroke:#82b366
+classDef gateway fill:#fff2cc,stroke:#d6b656
+classDef startEvent fill:#d5e8d4,stroke:#82b366
+classDef endEvent fill:#f8cecc,stroke:#b85450
 
 class c_submit userTask
 class p_validate,p_store,p_notify,pay_exec serviceTask
 class a_decide gateway
-class c_start,pay_end event
+class c_start startEvent
+class pay_end endEvent
 ```
 
 ## Message flow vs sequence flow

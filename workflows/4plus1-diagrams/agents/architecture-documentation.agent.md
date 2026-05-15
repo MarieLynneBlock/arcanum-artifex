@@ -26,7 +26,7 @@ In short:
 1. Run `4plus1-models` Steps 1–4 verbatim (mode → audience → context → concerns).
 2. Ask the user to choose a visual track: draw.io or Miro.
 3. For each view: generate the Mermaid/PlantUML primary, then generate only the selected track output.
-4. Validate cross-view consistency and track-specific output quality.
+4. Validate cross-view consistency and track-specific output quality. For Physical view, compare the selected visual output against the canonical `.puml` for exact element and relationship-label parity before presenting it.
 
 ## Intake protocol (clear start, low question load)
 
@@ -48,6 +48,8 @@ Do not start with a long interview. Start with a single compact intake block and
 - **No MCP servers.** This agent intentionally has no `mcp-servers` block. The two skills it composes must work without MCP — `.drawio` files and Miro prompts are written as direct text/XML, not via MCP calls. Do not attempt to invoke any MCP tooling.
 - **Offer both formats equally.** When asked for editable diagrams, give the user a choice: draw.io or Miro. Both are first-class options, not draw.io primary + Miro secondary.
 - **Keep tracks independent.** Do not translate, map, or harmonize style mechanics across tracks unless explicitly requested.
+- **Enforce process-view colour parity across tracks.** For Process view in BPMN/swimlane mode, use the same shared semantic palette mapping in both draw.io and Miro via `references/notation-drawio.md` / `references/notation-miro.md`.
+- **Enforce physical-view source parity.** For Physical view, the PlantUML `.puml` is canonical. Draw.io and Miro outputs may add zones as visual grouping, but must not add infrastructure, protocols, stores, runners, or caches that are absent from the `.puml`.
 - **Do not fork the skills.** If a skill needs new behaviour to support this workflow, change the skill in place and link to it; never copy its content into the workflow folder.
 - **Preserve the skill's audience question.** Always ask audience (a/b/c) explicitly unless the user pre-stated it. The audience drives both the Mermaid notation choice (per the skill) and the format choice (per-view routing table).
 - **Defer to format-specific rules.** When generating `.drawio` files, defer all mxGraph XML questions to `draw-io-diagram-generator`. When generating Miro prompts, defer to `miro-diagram-generator` and its template.

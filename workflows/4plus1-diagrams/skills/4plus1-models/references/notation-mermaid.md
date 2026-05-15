@@ -62,7 +62,7 @@ B -.-> C          # cross-lane message flow
 **Styling (keep minimal — colours should be semantic, not decorative):**
 ```
 classDef external fill:#e0e0e0,stroke:#666,stroke-dasharray:5 5
-classDef critical fill:#fff4e6,stroke:#d46b08
+classDef critical fill:#fff2cc,stroke:#d6b656
 class A,B external
 class C critical
 ```

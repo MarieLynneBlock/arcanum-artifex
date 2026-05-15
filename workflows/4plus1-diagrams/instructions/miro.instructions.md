@@ -33,6 +33,8 @@ Every prompt **must follow the RISEN framework** (from SKILL.md):
 
 Use `references/notation-miro.md` as the source of truth for Miro colour values, frame naming, shape semantics, layout discipline, and per-view validation. Do not duplicate those values in prompt files; copy only the subset needed for the target Miro frame legend.
 
+For **Process view (swimlane/BPMN style)**, use the same shared semantic palette from `references/notation-miro.md`: user task = primary, service task/start event = success, gateway = warning, end event = error.
+
 ---
 
 ## Validation Checklist
@@ -43,7 +45,7 @@ Before committing a `-miro-prompt.md` file:
 - [ ] Prompt follows RISEN structure (Role, Input, Steps, Expectations, Narrowing — see template)
 - [ ] All component names **exactly match** the corresponding `.mmd`/`.puml` file
 - [ ] Steps are numbered, imperative, and include specific counts/positions/labels
-- [ ] Colour palette uses hex codes from `references/notation-miro.md`
+- [ ] Colour palette uses hex codes from `references/notation-miro.md` (shared palette mapping applied for swimlane process views)
 - [ ] No references to other views (Narrowing section enforces scope)
 - [ ] Markdown is valid (no syntax errors)
 

@@ -142,6 +142,18 @@ Use the standard semantic color palette for consistency:
 | Neutral | `#f5f5f5` | `#666666` |
 | External / Partner | `#e1d5e7` | `#9673a6` |
 
+For BPMN workflow/process diagrams, map BPMN elements to the semantic palette using this override table:
+
+| BPMN element | fillColor | strokeColor |
+|---|---|---|
+| User task (primary/informational) | `#dae8fc` | `#6c8ebf` |
+| Service task (success path) | `#d5e8d4` | `#82b366` |
+| Gateway (warning/decision) | `#fff2cc` | `#d6b656` |
+| Event (start/success) | `#d5e8d4` | `#82b366` |
+| Event (end/error/alternate) | `#f8cecc` | `#b85450` |
+
+Use neutral pool/lane containers (`#f5f5f5` / `#666666`) so BPMN element semantics remain clear.
+
 Common style strings by diagram type:
 
 ```

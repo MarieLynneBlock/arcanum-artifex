@@ -19,18 +19,22 @@ Each view occupies exactly one Miro frame. Use these exact frame titles so cross
 
 ---
 
-## Semantic colour palette (Miro track)
+## Semantic colour palette (shared across all views)
 
-Use these fill colours for **sticky notes and shapes**. Miro renders colours by their hex value — apply consistently to encode the same meaning across all frames.
+Use this single palette table consistently across every Miro frame, including process swimlane/BPMN-style views.
 
-| Meaning | Hex | Use |
-|---------|-----|-----|
-| Primary / informational | `#dae8fc` | Services, APIs, domain objects, main system components |
-| Success / entry point | `#d5e8d4` | Start events, entry points, happy path nodes |
-| Warning / decision | `#fff2cc` | Decision points, gateways, conditional branches |
-| Error / termination | `#f8cecc` | Error states, end events, failure paths |
-| Neutral / container | `#f5f5f5` | Swimlane backgrounds, groups, UI containers |
-| External / partner | `#e1d5e7` | Third-party systems, external actors, partner services |
+| Meaning / element | Fill | Stroke | Use |
+|-------------------|------|--------|-----|
+| Primary / informational | `#dae8fc` | `#6c8ebf` | Services, APIs, domain objects, main system components, user tasks |
+| Success / start event | `#d5e8d4` | `#82b366` | Start events, entry points, happy-path service tasks |
+| Warning / decision | `#fff2cc` | `#d6b656` | Decision points and gateways |
+| Error / end / alternate path | `#f8cecc` | `#b85450` | End events, failure paths, alternate outcomes |
+| Neutral / container | `#f5f5f5` | `#666666` | Swimlane backgrounds, groups, frame containers |
+| External / partner | `#e1d5e7` | `#9673a6` | Third-party systems, external actors, partner services |
+
+Notes:
+- For Process view (swimlane): user task = primary, service task = success, gateway = warning, start event = success, end event = error.
+- Keep end events distinct by using a thicker border.
 
 ---
 
@@ -63,10 +67,11 @@ Use these fill colours for **sticky notes and shapes**. Miro renders colours by 
 | Element | Miro shape | Colour |
 |---------|------------|--------|
 | Lane (actor or role) | Horizontal swimlane group | `#f5f5f5` |
-| Task | Rounded rectangle | `#dae8fc` |
-| Start event | Circle — small, filled | `#d5e8d4` |
-| End event | Circle — bold border | `#f8cecc` |
-| Decision gateway | Diamond | `#fff2cc` |
+| User task | Rounded rectangle | `#dae8fc` (stroke `#6c8ebf`) |
+| Service task | Rounded rectangle | `#d5e8d4` (stroke `#82b366`) |
+| Start event | Circle — small, filled | `#d5e8d4` (stroke `#82b366`) |
+| End event | Circle — bold border | `#f8cecc` (stroke `#b85450`, thicker border) |
+| Decision gateway | Diamond | `#fff2cc` (stroke `#d6b656`) |
 | Sequence flow | Arrow — solid | — |
 | Message flow | Arrow — dashed | — |
 
@@ -82,9 +87,15 @@ Use these fill colours for **sticky notes and shapes**. Miro renders colours by 
 
 ### Physical view
 
+Before writing layout instructions for a Physical view prompt, treat the canonical `.puml` as the source of truth and copy its element names and relationship labels into the prompt. The Miro prompt is a Sidekick-optimized drawing brief derived from PlantUML; it must not ask Miro to parse raw PlantUML syntax. Zones are visual grouping aids; they must be derived from the PlantUML deployment boundaries and must not introduce CDN/WAF, load balancers, caches, databases, runners, or protocols that are absent from the canonical source.
+
+For cloud-agnostic Physical views, prefer a Draw.io-like lane layout: three or more tall vertical zone containers with visible headers, nested boundary containers inside each lane, and components placed inside those boundaries. These are ordinary visual lane containers, not BPMN lanes. Show containment through placement, not `contains` arrows. Do not add `Start` or `End` nodes to a physical deployment view.
+
+When generating a Miro prompt for Physical view, expand the canonical PlantUML into one compact Sidekick prompt instead of asking Miro to parse or interpret the `.puml`. Preserve the `.puml` path and title as source-of-truth provenance, then provide the manifest as the drawing source. The prompt should define the frame, zone panels, parent boundary containers, child elements, connectors, approximate coordinates, shape types, fill colours, and stroke colours. Keep the prompt focused on what to draw and what not to draw; avoid optional objects that Sidekick may turn into flowchart nodes.
+
 | Element | Miro shape | Colour |
 |---------|------------|--------|
-| Deployment zone / region | Large rectangle (outer container) | `#f5f5f5` |
+| Deployment zone / region | Tall vertical lane container with header | `#f5f5f5` |
 | Node / server / VM | Rectangle | `#dae8fc` |
 | Cloud service / managed service | Rounded rectangle | `#dae8fc` |
 | Datastore | Cylinder sticky note or stacked rect | `#dae8fc` |
@@ -113,6 +124,8 @@ Every Miro frame **must** include a legend in the top-right corner of the frame.
 - All arrow types used in that frame (style → meaning)
 - The audience the frame is designed for
 
+Exception: for Physical view prompts intended for Miro Sidekick, omit the legend unless the user explicitly asks for one. Sidekick may otherwise generate the legend as a connected flowchart node. If included, the legend must be unconnected and outside the diagram flow.
+
 ---
 
 ## Frame layout discipline
@@ -132,7 +145,12 @@ Every Miro frame **must** include a legend in the top-right corner of the frame.
 
 - [ ] Frame title matches the pattern above (with the correct system name)
 - [ ] Legend present in top-right with shape + colour + arrow type index
+- [ ] Prompt includes a `Canonical source reference` section with the source path and inline Mermaid/PlantUML source or an expanded manifest derived from it
 - [ ] All element names match the canonical `.mmd` / `.puml` file exactly
+- [ ] For Physical view, all relationship endpoints and labels match the canonical `.puml` file exactly
+- [ ] For Physical view, zones are visible lane containers and containment is shown by nesting, not `contains` arrows
+- [ ] For Physical view, prompt includes one compact object manifest with zone-panel, parent-boundary, child-element, connector, and title counts
+- [ ] For Physical view, prompt names the `.puml` as source of truth but does not ask Miro to parse PlantUML syntax
 - [ ] Shape semantics follow the per-view table above
 - [ ] Colour values are from the Miro palette (exact hex codes)
 - [ ] No shapes from other views appear in this frame

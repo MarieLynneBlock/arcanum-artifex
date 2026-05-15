@@ -1,0 +1,37 @@
+<mxfile host="Electron" modified="2026-05-10T00:00:00.000Z" version="26.0.0">
+  <diagram id="logical-view" name="Logical View">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Logical View — Arcanum Artifex" style="text;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1090" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="canonical-source-ref" value="Canonical source: diagrams/mermaid/logical-view.mmd&#10;Source format: Mermaid&#10;Generated visual artifact from the canonical Mermaid source. Preserve this provenance when copying the draw.io file.&#10;&#10;Canonical source content:&#10;flowchart LR&#10;    contributor[Contributor Workspace]&#10;    catalog[Asset Catalog]&#10;    orchestrator[Workflow Orchestrator]&#10;    governance[Quality and Governance Engine]&#10;    bundle[Publication Bundle]&#10;&#10;    gh[(GitHub Repository)]&#10;    vscode[VS Code + Copilot Runtime]&#10;    reviewers[Review Stakeholders]&#10;&#10;    contributor --&gt; catalog&#10;    catalog --&gt; orchestrator&#10;    orchestrator --&gt; governance&#10;    governance --&gt; bundle&#10;    bundle --&gt; gh&#10;    gh --&gt; vscode&#10;    governance --&gt; reviewers&#10;    reviewers --&gt; governance" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;" vertex="1" parent="1" visible="0">
+          <mxGeometry x="0" y="0" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="comp1" value="Asset Catalog&#10;&#10;Curates reusable assets" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="120" y="120" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="comp2" value="Workflow Orchestrator&#10;&#10;Coordinates multi-asset outputs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="480" y="120" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="comp3" value="Quality and Governance Engine&#10;&#10;Applies policy and validation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="840" y="120" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1" value="GitHub Repository" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="320" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="uses" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="comp1" target="comp2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="uses" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="comp2" target="comp3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="depends on" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;" edge="1" source="comp2" target="ext1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

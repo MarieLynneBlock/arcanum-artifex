@@ -1,0 +1,28 @@
+flowchart TB
+    subgraph ui[Authoring and UX Layer]
+        prompts[Prompts]
+        instructions[Instructions]
+        guides[Guides]
+    end
+
+    subgraph app[Architecture Content Layer]
+        skills[Skills]
+        workflows[Workflows]
+        agents[Agents]
+        templates[Templates]
+    end
+
+    subgraph infra[Automation and Validation Layer]
+        scripts[Validation Scripts]
+        smoke[Workflow Smoke Test]
+        repo[(Repository CI and PR)]
+    end
+
+    prompts --> skills
+    instructions --> workflows
+    guides --> workflows
+    templates --> workflows
+    skills --> agents
+    workflows --> smoke
+    scripts --> smoke
+    smoke --> repo

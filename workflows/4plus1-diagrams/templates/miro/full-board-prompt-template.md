@@ -40,6 +40,12 @@ Perform these steps in order. Do not merge separate views into one diagram.
 8. Add reading-order connectors between consecutive frames.
 9. Add a **Back to Cover** link at the top-left of every non-cover frame.
 10. Add a board-level version / owner / status note in the top-right of the overall canvas.
+11. For all process/swimlane frames, enforce the shared semantic palette mapping:
+   - User task uses primary
+   - Service task and start event use success
+   - Gateway uses warning
+   - End event uses error
+   - Lane background uses neutral
 
 ## Expectation
 
@@ -53,6 +59,7 @@ The final Miro board must contain exactly:
 - Reading-order connectors between frames
 - Back-to-cover links on every non-cover frame
 - Consistent shape, colour, arrow, and legend semantics from `references/notation-miro.md`
+- BPMN process/swimlane frames use the exact BPMN hex palette listed in Steps
 
 ## Narrowing
 

@@ -139,8 +139,8 @@ flowchart TB
     tf -.-> dsar
     tf -.-> edge
 
-    classDef sharedLib fill:#e6f7ff,stroke:#1890ff,color:#000
-    classDef appRepo fill:#fff4e6,stroke:#d46b08,color:#000
+    classDef sharedLib fill:#d5e8d4,stroke:#82b366,color:#000
+    classDef appRepo fill:#dae8fc,stroke:#6c8ebf,color:#000
     classDef infraRepo fill:#f9f0ff,stroke:#722ed1,color:#000
 
     class sharedSec,sharedObs,sharedEvents,sharedIdent,sharedData sharedLib

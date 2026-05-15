@@ -1,0 +1,20 @@
+flowchart LR
+    actor([Contributor]) --> start((Start))
+    start --> step1[Create workflow folder]
+    step1 --> step2[Add workflow, agent, prompts, templates]
+    step2 --> gate{Standalone and links valid?}
+    gate -->|yes| step3[Run smoke-test]
+    gate -->|no| step4[Fix packaging and links]
+    step4 -.-> step2
+    step3 --> step5[Open PR and request review]
+    step5 --> end((End))
+
+    classDef primary fill:#dae8fc,stroke:#6c8ebf,color:#000
+    classDef success fill:#d5e8d4,stroke:#82b366,color:#000
+    classDef warning fill:#fff2cc,stroke:#d6b656,color:#000
+    classDef error fill:#f8cecc,stroke:#b85450,color:#000
+
+    class step1,step2,step5 primary
+    class start,step3,end success
+    class gate warning
+    class step4 error

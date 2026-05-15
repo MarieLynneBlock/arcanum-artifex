@@ -40,7 +40,13 @@ Perform these steps in order. Do not skip or reorder.
    - **Solid arrow** for [meaning — e.g. synchronous call]
    - **Dashed arrow** for [meaning — e.g. asynchronous event]
    - **Dotted arrow** for [meaning — e.g. data reference]
-7. [Apply colour semantics.]
+7. Apply colour semantics. For BPMN/swimlane process views, map elements to the shared semantic palette:
+   - User task: primary (`#dae8fc` / `#6c8ebf`)
+   - Service task: success (`#d5e8d4` / `#82b366`)
+   - Gateway: warning (`#fff2cc` / `#d6b656`)
+   - Start event: success (`#d5e8d4` / `#82b366`)
+   - End event: error (`#f8cecc` / `#b85450`)
+   - Lane background: neutral (`#f5f5f5`)
 8. [Any final step — e.g. "Align all elements to the Miro grid and ensure no arrows cross unnecessarily."]
 
 ## Expectation
@@ -52,6 +58,7 @@ The final Miro frame must contain exactly:
 - **[N] sticky notes** of colour [X] representing [meaning]
 - **[N] rectangles / rounded rectangles / other shape** representing [meaning]
 - **[N] arrows**: [X] solid (for [meaning]), [Y] dashed (for [meaning]), [Z] dotted (for [meaning])
+- If this is a BPMN/swimlane process view, every BPMN element uses the exact hex colours listed in Step 7.
 - No orphan shapes (every shape must participate in at least one labelled arrow, unless it's a legend element).
 - All text is readable at the default Miro zoom level.
 

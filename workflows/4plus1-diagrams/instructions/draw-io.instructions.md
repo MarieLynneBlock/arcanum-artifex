@@ -61,6 +61,20 @@ Follow these steps for every draw.io task:
 | Neutral / Interface | `#f5f5f5` | `#666666` |
 | External / Partner | `#e1d5e7` | `#9673a6` |
 
+### BPMN Color Override — Process view only
+
+When generating BPMN process diagrams (including `process-view-bpmn.drawio` in this workflow), map BPMN elements to the semantic palette above using this table:
+
+| BPMN element | fillColor | strokeColor |
+|---|---|---|
+| User task (primary/informational) | `#dae8fc` | `#6c8ebf` |
+| Service task (success path) | `#d5e8d4` | `#82b366` |
+| Gateway (warning/decision) | `#fff2cc` | `#d6b656` |
+| Event (start/success) | `#d5e8d4` | `#82b366` |
+| Event (end/error/alternate) | `#f8cecc` | `#b85450` |
+
+Keep lane/pool containers neutral (`#f5f5f5` / `#666666`) and use thicker border for end events.
+
 ### Always include on vertex shapes
 
 ```

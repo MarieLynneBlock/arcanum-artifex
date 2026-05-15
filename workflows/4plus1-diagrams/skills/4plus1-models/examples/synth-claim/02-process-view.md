@@ -116,10 +116,10 @@ flowchart LR
     dec_audit -.-> audit_store
     dec_record -.-> p_confirm
 
-    classDef userTask fill:#fff4e6,stroke:#d46b08,color:#000
-    classDef serviceTask fill:#e6f7ff,stroke:#1890ff,color:#000
-    classDef gateway fill:#ffffff,stroke:#000,color:#000
-    classDef event fill:#f6ffed,stroke:#52c41a,color:#000
+    classDef userTask fill:#dae8fc,stroke:#6c8ebf,color:#000
+    classDef serviceTask fill:#d5e8d4,stroke:#82b366,color:#000
+    classDef gateway fill:#fff2cc,stroke:#d6b656,color:#000
+    classDef event fill:#d5e8d4,stroke:#82b366,color:#000
 
     class p_submit,p_confirm userTask
     class port_validate,port_upload,intake_normalise,intake_publish,doc_ocr,doc_classify,cls_score,lc_policy,lc_decide,dec_record,dec_writeback,dec_audit serviceTask
@@ -238,8 +238,8 @@ flowchart LR
     adj_decide --> dec_record
     dec_record --> dec_writeback
 
-    classDef userTask fill:#fff4e6,stroke:#d46b08,color:#000
-    classDef serviceTask fill:#e6f7ff,stroke:#1890ff,color:#000
+    classDef userTask fill:#dae8fc,stroke:#6c8ebf,color:#000
+    classDef serviceTask fill:#d5e8d4,stroke:#82b366,color:#000
 
     class p_email,adj_pick,adj_review,adj_decide userTask
     class scan,fwd,mg_ingest,mg_webhook,in_parse,in_normalise,dp_ocr,cls_score,lc_queue,lc_policy_read,dec_record,dec_writeback serviceTask
@@ -319,9 +319,9 @@ flowchart LR
     dec_queue -.-> op_alert
     op_reconcile -.-> dec_queue
 
-    classDef serviceTask fill:#e6f7ff,stroke:#1890ff,color:#000
-    classDef userTask fill:#fff4e6,stroke:#d46b08,color:#000
-    classDef gateway fill:#ffffff,stroke:#000,color:#000
+    classDef serviceTask fill:#d5e8d4,stroke:#82b366,color:#000
+    classDef userTask fill:#dae8fc,stroke:#6c8ebf,color:#000
+    classDef gateway fill:#fff2cc,stroke:#d6b656,color:#000
 
     class lc_try,lc_cache,lc_park,dec_try,dec_queue,done serviceTask
     class op_alert,op_reconcile userTask

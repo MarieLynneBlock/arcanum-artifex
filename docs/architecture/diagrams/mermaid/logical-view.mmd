@@ -1,0 +1,19 @@
+flowchart LR
+    contributor[Contributor Workspace]
+    catalog[Asset Catalog]
+    orchestrator[Workflow Orchestrator]
+    governance[Quality and Governance Engine]
+    bundle[Publication Bundle]
+
+    gh[(GitHub Repository)]
+    vscode[VS Code + Copilot Runtime]
+    reviewers[Review Stakeholders]
+
+    contributor --> catalog
+    catalog --> orchestrator
+    orchestrator --> governance
+    governance --> bundle
+    bundle --> gh
+    gh --> vscode
+    governance --> reviewers
+    reviewers --> governance

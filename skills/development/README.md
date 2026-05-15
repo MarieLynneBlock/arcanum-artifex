@@ -18,6 +18,7 @@ This category contains skills for software engineering workflows. Language-agnos
 | [bash/](bash/) | Bash / shell scripting |
 | [dotnet/](dotnet/) | C#, F#, VB.NET (.NET / ASP.NET) |
 | [frontend/](frontend/) | HTML, CSS, JavaScript |
+| [generative-art/](generative-art/) | Creative coding and generative art workflows |
 | [java/](java/) | Java |
 | [lua/](lua/) | Lua |
 | [p5js/](p5js/) | p5.js |
