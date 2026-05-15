@@ -15,6 +15,8 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 - Prefer updating existing markdown and JSON content over creating new structures.
 - Do not invent product capabilities or undocumented behavior.
 - Use `[TODO]` rather than filling gaps with speculation.
+- There is no build or test pipeline; validate changes by checking Markdown links, JSON syntax, YAML frontmatter, and nearby consistency.
+- Use British spelling in prose for customisation-related terms; preserve existing file and folder names even when they use US spelling.
 
 ## Standards
 
@@ -54,5 +56,5 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 
 - Keep edits minimal and localized; preserve existing structure and naming.
 - When adding, removing, or renaming files or folders, update affected relative markdown links in the same change.
-- Validate changes by consistency and link correctness; there is no build or test pipeline in this repo.
+- Validate changes by consistency, link correctness, and frontmatter shape.
 - Prefer packaging over linking: duplicate required local assets so the target folder remains fully standalone.
