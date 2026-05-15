@@ -34,6 +34,9 @@
         <mxCell id="e2" value="TCP 5432" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="ecs" target="rds" parent="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="canonical-source-ref" value="canonical-source-path=&lt;path&gt;&#10;canonical-source-format=&lt;mmd|puml&gt;&#10;canonical-source-summary=&lt;short summary&gt;" style="text;strokeColor=none;fillColor=none;opacity=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1" height="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
