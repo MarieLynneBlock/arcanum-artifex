@@ -60,7 +60,13 @@ agents/
 └── security/      ← threat modeling, compliance, and security review agents
 ```
 
-Drop them into `.github/agents/` for project scope, or `~/.copilot/agents/` for personal use.
+```text
+Project (portable default): .github/agents/
+Personal (portable default): ~/.agents/
+Personal (GitHub Copilot): ~/.copilot/agents/
+Personal (Claude Code): ~/.claude/agents/
+Personal (OpenCode): ~/.opencode/agents/
+```
 
 ---
 

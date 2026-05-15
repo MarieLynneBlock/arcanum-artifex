@@ -18,6 +18,18 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 - There is no build or test pipeline; validate changes by checking Markdown links, JSON syntax, YAML frontmatter, and nearby consistency.
 - Use British spelling in prose for customisation-related terms; preserve existing file and folder names even when they use US spelling.
 
+## Agent Quick Start
+
+1. Read [README.md](../README.md) to confirm the target asset type and where it belongs.
+2. Read the nearest domain index before editing:
+  - [skills/README.md](../skills/README.md)
+  - [instructions/README.md](../instructions/README.md)
+  - [agents/README.md](../agents/README.md)
+  - [workflows/README.md](../workflows/README.md)
+3. Prefer editing existing assets over creating new files.
+4. If files or folders are moved, added, or renamed, update affected relative links in the same change.
+5. Keep each asset copyable on its own and avoid runtime dependencies on other repo paths.
+
 ## Standards
 
 - All content must reflect documented Copilot behavior.
@@ -58,3 +70,10 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 - When adding, removing, or renaming files or folders, update affected relative markdown links in the same change.
 - Validate changes by consistency, link correctness, and frontmatter shape.
 - Prefer packaging over linking: duplicate required local assets so the target folder remains fully standalone.
+
+## Validation Checklist
+
+- Markdown: check relative links and heading consistency.
+- YAML frontmatter: check field order where required (`name`, `description`, `metadata`) and valid indentation.
+- JSON: check syntax and trailing commas.
+- Scope check: confirm edited content is documentation-first and avoids speculative features.
