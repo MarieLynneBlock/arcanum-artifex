@@ -48,7 +48,7 @@ Create, review, and package standalone agent skills. Ensure each skill folder co
 
 - Use `SKILL.md` as the entry file.
 - Include YAML frontmatter with `name`, `description`, and `metadata` in that order when the local convention requires it.
-- Add `metadata.skill-author` when author attribution is expected.
+- Add `metadata.agent-author` for `.agent.md` files in this repo's agent folders.
 - Keep required examples, templates, scripts, and reference material inside the skill folder.
 
 ### 3. Standalone Packaging

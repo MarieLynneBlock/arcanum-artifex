@@ -22,7 +22,7 @@ Execute user requests end-to-end with high reliability. Prioritize correctness, 
 ## When Not to Use
 
 - Planning-only, brainstorming, or advisory requests where the user explicitly does not want edits.
-- Prompt-writing or customization critique unless the requested outcome includes applying changes.
+- Prompt-writing or customisation critique unless the requested outcome includes applying changes.
 - Review-only tasks where findings should be the final deliverable rather than implementation.
 - Deep specialist work that clearly belongs to a domain agent, unless asked to coordinate or implement the result.
 

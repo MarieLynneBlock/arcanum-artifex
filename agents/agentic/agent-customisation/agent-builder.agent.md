@@ -46,7 +46,7 @@ Create, review, and repair single `.agent.md` files for GitHub Copilot custom ag
 
 ### 2. Frontmatter
 
-- Include YAML frontmatter with `description`, `name`, `tools`, and `metadata.skill-author`.
+- Include YAML frontmatter with `description`, `name`, `tools`, and `metadata.agent-author`.
 - Make the `description` searchable with realistic trigger phrases.
 - Use a human-readable `name` that matches the heading.
 - Select only the tools needed for the agent's intended work.
