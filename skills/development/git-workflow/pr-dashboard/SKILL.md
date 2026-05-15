@@ -1,6 +1,8 @@
 ---
-name: pr-dashboard
 description: 'Open a GitHub PR dashboard in the browser. Use when the user asks to see their pull requests, open the PR dashboard, show PRs for a date range, or check PR status. Trigger phrases include "show my PRs", "open PR dashboard", "pull request dashboard".'
+name: pr-dashboard
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # PR Dashboard
@@ -51,4 +53,3 @@ The script understands natural language — pass it through as-is:
 ## After running
 
 Tell the user the dashboard is opening in their browser. The script outputs progress to stdout. If it exits with an error, show the error output and suggest they run `gh auth login` if it's an auth issue.
-

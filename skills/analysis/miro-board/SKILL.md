@@ -1,20 +1,15 @@
 ---
-name: miro-board
 description: >
-  Generate a Miro board for common analyst deliverables — user story maps,
-  process flows, stakeholder maps, gap analyses, and prioritisation matrices —
-  either as Miro REST API code (Python) or as a structured import prompt for
-  Miro AI. Use when a user wants to create or populate a Miro board from
-  structured content.
+name: miro-board
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - miro
   - visual
   - diagramming
   - collaboration
   - api
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

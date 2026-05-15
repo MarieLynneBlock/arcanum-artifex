@@ -1,13 +1,12 @@
 ---
-name: model-selections-and-cross-validation
 description: >
-  Use this skill when comparing candidate models with robust cross-validation, scoring, and leakage-safe evaluation protocols.
+name: model-selections-and-cross-validation
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

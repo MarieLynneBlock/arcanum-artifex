@@ -1,10 +1,10 @@
 ---
-name: research-grants
 description: Write competitive research proposals for NSF, NIH, DOE, DARPA, and Taiwan NSTC. Agency-specific formatting, review criteria, budget preparation, broader impacts, significance statements, innovation narratives, and compliance with submission requirements.
+name: research-grants
 allowed-tools: Read Write Edit Bash
 license: MIT license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # Research Grant Writing
@@ -951,5 +951,4 @@ Load these references as needed when working on specific aspects of grant writin
 ---
 
 **Final Note**: Grant writing is both an art and a science. Success requires not only excellent research ideas but also clear communication, strategic positioning, and meticulous attention to detail. Start early, seek feedback, and remember that even the best researchers face rejection—persistence and revision are key to funding success.
-
 

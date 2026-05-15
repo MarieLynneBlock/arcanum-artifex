@@ -3,8 +3,7 @@ description: 'Expert prompt engineering and validation system for creating high-
 name: 'Prompt Builder'
 tools: ['read', 'semantic_search', 'search', 'edit', 'web/fetch', 'web/githubRepo', 'execute/runInTerminal']
 metadata:
-  derived-from: ['Microsoft Edge AI', 'Anthropic']
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
 ---
 
 # Prompt Builder

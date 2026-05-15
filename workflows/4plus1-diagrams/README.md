@@ -1,8 +1,8 @@
 ---
-name: 4+1 Architecture Diagrams (Miro & draw.io)
 description: Standalone workflow bundle for producing Kruchten 4+1 architecture views with canonical diagram-as-code plus editable draw.io or Miro output.
+name: 4+1 Architecture Diagrams (Miro & draw.io)
 metadata:
-  skill-author: Marie-Lynne Block
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # 4+1 Architecture Diagrams (Miro & draw.io)

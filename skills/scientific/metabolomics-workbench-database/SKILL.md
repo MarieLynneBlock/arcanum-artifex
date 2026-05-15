@@ -1,9 +1,9 @@
 ---
-name: metabolomics-workbench-database
 description: Access NIH Metabolomics Workbench via REST API (4,200+ studies). Query metabolites, RefMet nomenclature, MS/NMR data, m/z searches, study metadata, for metabolomics and biomarker discovery.
+name: metabolomics-workbench-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # Metabolomics Workbench Database
@@ -254,4 +254,3 @@ Detailed API reference documentation is available in `references/api_reference.m
 - Additional query examples
 
 Load this reference file when detailed API specifications are needed or when working with less common endpoints.
-

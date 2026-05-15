@@ -3,7 +3,7 @@ description: 'Instruction-file customisation builder for creating, reviewing, an
 name: 'Instructions Builder'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
 ---
 
 # Instructions Builder

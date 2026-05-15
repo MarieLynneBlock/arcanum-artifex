@@ -1,13 +1,12 @@
 ---
-name: pandas-data-wrangling
 description: >
-  Use this skill when cleaning, reshaping, joining, and preparing tabular data with pandas for analytics and machine learning workflows.
+name: pandas-data-wrangling
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

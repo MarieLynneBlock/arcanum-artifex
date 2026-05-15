@@ -3,7 +3,7 @@ description: 'Terse, low-token responses. Minimal words, no fluff. Full capabili
 name: 'Caveman Mode'
 tools: ['read', 'search', 'edit', 'execute']
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
 ---
 
 # Caveman Mode

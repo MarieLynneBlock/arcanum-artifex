@@ -1,6 +1,8 @@
 ---
-name: noob-mode
 description: 'Plain-English translation layer for non-technical Copilot CLI users. Translates every approval prompt, error message, and technical output into clear, jargon-free English with color-coded risk indicators.'
+name: noob-mode
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Noob Mode

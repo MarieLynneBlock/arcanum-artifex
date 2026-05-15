@@ -1,13 +1,12 @@
 ---
-name: survival-analysis
 description: >
-  Use this skill for time-to-event modeling, censoring-aware analysis, and survival prediction with lifelines or scikit-survival.
+name: survival-analysis
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

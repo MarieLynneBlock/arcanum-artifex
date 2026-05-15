@@ -1,13 +1,12 @@
 ---
-name: shap-and-model-explainability
 description: >
-  Use this skill for model explainability with SHAP, LIME, and permutation importance, including healthcare-safe interpretation patterns.
+name: shap-and-model-explainability
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

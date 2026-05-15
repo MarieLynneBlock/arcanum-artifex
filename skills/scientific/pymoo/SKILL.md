@@ -1,9 +1,9 @@
 ---
-name: pymoo
 description: Multi-objective optimization framework. NSGA-II, NSGA-III, MOEA/D, Pareto fronts, constraint handling, benchmarks (ZDT, DTLZ), for engineering design and optimization problems.
+name: pymoo
 license: Apache-2.0 license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # Pymoo - Multi-Objective Optimization in Python
@@ -566,4 +566,3 @@ uv pip install pymoo
 - Reference directions required for NSGA-III
 - Normalize objectives before MCDM
 - Use appropriate termination: `('n_gen', N)` or `get_termination("f_tol", tol=0.001)`
-

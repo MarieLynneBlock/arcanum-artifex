@@ -1,9 +1,9 @@
 ---
-name: kegg-database
 description: Direct REST API access to KEGG (academic use only). Pathway analysis, gene-pathway mapping, metabolic pathways, drug interactions, ID conversion. For Python workflows with multiple databases, prefer bioservices. Use this for direct HTTP/REST work or KEGG-specific control.
+name: kegg-database
 license: Non-academic use of KEGG requires a commercial license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # KEGG Database
@@ -372,4 +372,3 @@ For interactive pathway visualization and annotation:
 - **KEGG Mapper**: https://www.kegg.jp/kegg/mapper/
 - **BlastKOALA**: Automated genome annotation
 - **GhostKOALA**: Metagenome/metatranscriptome annotation
-

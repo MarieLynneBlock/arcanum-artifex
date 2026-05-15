@@ -1,9 +1,9 @@
 ---
-name: simpy
 description: Process-based discrete-event simulation framework in Python. Use this skill when building simulations of systems with processes, queues, resources, and time-based events such as manufacturing systems, service operations, network traffic, logistics, or any system where entities interact with shared resources over time.
+name: simpy
 license: MIT license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # SimPy - Discrete-Event Simulation
@@ -424,4 +424,3 @@ Detailed guides for specific topics:
 - **Transportation**: Traffic flow, logistics, vehicle routing
 - **Service operations**: Call centers, retail checkout, appointment scheduling
 - **Computer systems**: CPU scheduling, memory management, I/O operations
-

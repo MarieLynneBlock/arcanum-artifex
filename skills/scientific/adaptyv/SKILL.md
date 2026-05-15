@@ -1,9 +1,9 @@
 ---
-name: adaptyv
 description: Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experimental validation including binding assays, expression testing, thermostability measurements, enzyme activity assays, or protein sequence optimization. Also use for submitting experiments via API, tracking experiment status, downloading results, optimizing protein sequences for better expression using computational tools (NetSolP, SoluProt, SolubleMPNN, ESM), or managing protein design workflows with wet-lab validation.
+name: adaptyv
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # Adaptyv
@@ -109,4 +109,3 @@ For concrete code examples covering common use cases (experiment submission, sta
 - Results typically delivered in ~21 days
 - Contact support@adaptyvbio.com for access requests or questions
 - Suitable for high-throughput AI-driven protein design workflows
-

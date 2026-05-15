@@ -1,8 +1,10 @@
 ---
-name: 'SE: Security'
 description: 'Security-focused code review specialist with OWASP Top 10, Zero Trust, LLM security, and enterprise security standards'
-model: GPT-5
+name: 'SE: Security'
 tools: ['codebase', 'edit/editFiles', 'search', 'problems']
+model: GPT-5
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Security Reviewer

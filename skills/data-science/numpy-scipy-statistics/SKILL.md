@@ -1,13 +1,12 @@
 ---
-name: numpy-scipy-statistics
 description: >
-  Use this skill for numerical computing, statistical tests, distributions, and scientific computing with NumPy and SciPy.
+name: numpy-scipy-statistics
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

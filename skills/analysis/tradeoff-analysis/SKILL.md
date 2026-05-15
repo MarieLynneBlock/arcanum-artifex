@@ -1,17 +1,14 @@
 ---
-name: tradeoff-analysis
 description: >
-  Compare two or more options against explicit decision criteria and produce a
-  structured trade-off report with a reasoned recommendation. Use when a user
-  needs to choose between approaches, technologies, designs, or strategies.
+name: tradeoff-analysis
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - decision-making
   - trade-offs
   - comparison
   - options-analysis
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

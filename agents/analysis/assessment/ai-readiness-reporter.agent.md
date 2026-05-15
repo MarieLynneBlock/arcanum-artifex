@@ -1,9 +1,11 @@
 ---
-name: ai-readiness-reporter
 description: 'Runs the AgentRC readiness assessment on the current repository and produces a self-contained, static HTML dashboard at reports/index.html. Explains every readiness pillar, the maturity level, and an actionable remediation plan, framed by AgentRC measure → generate → maintain loop. Use when asked to assess, audit, score, report on, or visualise the AI readiness of a repo.'
-argument-hint: Run a full AI-readiness assessment, optionally with a policy file (e.g. examples/policies/strict.json). Ask about specific pillars (repo health vs AI setup) or extras.
+name: ai-readiness-reporter
 tools: ['execute', 'read', 'search', 'search/codebase', 'editFiles']
+argument-hint: Run a full AI-readiness assessment, optionally with a policy file (e.g. examples/policies/strict.json). Ask about specific pillars (repo health vs AI setup) or extras.
 model: 'Claude Sonnet 4.5'
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # AI Readiness Reporter

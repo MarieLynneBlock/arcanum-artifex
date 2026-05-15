@@ -1,13 +1,8 @@
 ---
-name: dashboard-beautify
 description: >
-  Build beautiful, production-grade data dashboards and infographics using Dash and Plotly Python.
-  Use this skill when the user wants to create a dashboard, build an infographic, visualise data,
-  make a chart, display KPIs, or build an analytics app. Also trigger when the user mentions Dash,
-  Plotly, data visualisation, or wants to improve the quality or appearance of existing charts.
-  Covers single polished infographics through to multi-panel interactive dashboards. Read this skill
-  before writing any Dash or Plotly code — it contains required project structure, coding standards,
-  and a pre-ship checklist.
+name: dashboard-beautify
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Data Atelier

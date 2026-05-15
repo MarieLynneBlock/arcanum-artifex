@@ -1,13 +1,12 @@
 ---
-name: forecastic-evaluation
 description: >
-  Use this skill for forecasting evaluation workflows including rolling backtests, horizon-aware metrics, and interval coverage diagnostics.
+name: forecastic-evaluation
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

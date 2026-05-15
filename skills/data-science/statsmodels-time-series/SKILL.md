@@ -1,13 +1,12 @@
 ---
-name: statsmodels-time-series
 description: >
-  Use this skill for classical time-series modeling and diagnostics with ARIMA, SARIMA, and SARIMAX using statsmodels.
+name: statsmodels-time-series
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

@@ -1,9 +1,9 @@
 ---
-name: alphafold-database
 description: Access AlphaFold 200M+ AI-predicted protein structures. Retrieve structures by UniProt ID, download PDB/mmCIF files, analyze confidence metrics (pLDDT, PAE), for drug discovery and structural biology.
+name: alphafold-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # AlphaFold Database
@@ -508,4 +508,3 @@ Consult this reference for detailed API information, bulk download strategies, o
   - Nucleic Acids Research (2024): https://doi.org/10.1093/nar/gkad1011
 - **Biopython Documentation:** https://biopython.org/docs/dev/api/Bio.PDB.alphafold_db.html
 - **GitHub Repository:** https://github.com/google-deepmind/alphafold
-

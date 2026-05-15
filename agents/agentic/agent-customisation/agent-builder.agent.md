@@ -3,7 +3,7 @@ description: 'Agent customisation builder for creating, reviewing, and fixing si
 name: 'Agent Builder'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
 ---
 
 # Agent Builder

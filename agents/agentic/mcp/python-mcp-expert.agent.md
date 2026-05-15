@@ -1,7 +1,10 @@
 ---
 description: "Expert assistant for developing Model Context Protocol (MCP) servers in Python"
 name: "Python MCP Server Expert"
+tools: []
 model: GPT-4.1
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Python MCP Server Expert

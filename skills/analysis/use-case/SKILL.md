@@ -1,19 +1,15 @@
 ---
-name: use-case
 description: >
-  Write a formal use case with actors, preconditions, a numbered main success
-  scenario, extension flows, and postconditions. Use when a capability needs
-  more rigorous specification than a user story provides — particularly for
-  complex interactions, system integrations, or compliance contexts.
+name: use-case
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - use-case
   - requirements
   - uml
   - specification
   - functional-analysis
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

@@ -1,9 +1,9 @@
 ---
-name: torch-geometric
 description: Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, heterogeneous graphs, molecular property prediction, for geometric deep learning.
+name: torch-geometric
 license: MIT license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # PyTorch Geometric (PyG)
@@ -671,4 +671,3 @@ Execute scripts directly or read them for implementation patterns.
 - **GitHub**: https://github.com/pyg-team/pytorch_geometric
 - **Tutorials**: https://pytorch-geometric.readthedocs.io/en/latest/get_started/introduction.html
 - **Examples**: https://github.com/pyg-team/pytorch_geometric/tree/master/examples
-

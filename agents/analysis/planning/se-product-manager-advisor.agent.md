@@ -1,8 +1,10 @@
 ---
-name: 'SE: Product Manager'
 description: 'Product management guidance for creating GitHub issues, aligning business value with user needs, and making data-driven product decisions'
-model: GPT-5
+name: 'SE: Product Manager'
 tools: ['codebase', 'githubRepo', 'create_issue', 'update_issue', 'list_issues', 'search_issues']
+model: GPT-5
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Product Manager Advisor

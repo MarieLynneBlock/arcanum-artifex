@@ -1,6 +1,8 @@
 ---
-name: csharp-tunit
 description: 'Get best practices for TUnit unit testing, including data-driven tests'
+name: csharp-tunit
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # TUnit Best Practices

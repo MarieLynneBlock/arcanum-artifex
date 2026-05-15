@@ -1,9 +1,9 @@
 ---
-name: protocolsio-integration
 description: Integration with protocols.io API for managing scientific protocols. This skill should be used when working with protocols.io to search, create, update, or publish protocols; manage protocol steps and materials; handle discussions and comments; organize workspaces; upload and manage files; or integrate protocols.io functionality into workflows. Applicable for protocol discovery, collaborative protocol development, experiment tracking, lab protocol management, and scientific documentation.
+name: protocolsio-integration
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # Protocols.io Integration
@@ -416,4 +416,3 @@ To load a reference file, read the file from the `references/` directory when ne
 - Ensure multipart/form-data encoding is correct
 
 For detailed troubleshooting guidance, refer to the specific reference files covering each capability area.
-

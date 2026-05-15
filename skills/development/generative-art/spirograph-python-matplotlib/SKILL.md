@@ -1,8 +1,8 @@
 ---
-name: spirograph-python-matplotlib
 description: Create easy Python scripts that generate beautiful, unique spirograph-style generative art with Matplotlib, support multi-color or gradient background and main palettes, and always save the result as a PNG. Use when the user asks for creative coding, spirographs, procedural art, or quick art scripts with tunable inputs.
+name: spirograph-python-matplotlib
 metadata:
-  skill-author: arcanum-artifex
+  skill-author: 'arcanum-artifex'
 ---
 
 # Spirograph Python Matplotlib

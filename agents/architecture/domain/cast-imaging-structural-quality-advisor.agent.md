@@ -1,6 +1,7 @@
 ---
-name: 'CAST Imaging Structural Quality Advisor Agent'
 description: 'Specialized agent for identifying, analyzing, and providing remediation guidance for code quality issues using CAST Imaging'
+name: 'CAST Imaging Structural Quality Advisor Agent'
+tools: []
 mcp-servers:
   imaging-structural-quality:
     type: 'http'
@@ -8,6 +9,8 @@ mcp-servers:
     headers:
       'x-api-key': '${input:imaging-key}'
     args: []
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # CAST Imaging Structural Quality Advisor Agent

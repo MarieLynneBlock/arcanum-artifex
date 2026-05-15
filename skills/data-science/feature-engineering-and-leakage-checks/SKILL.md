@@ -1,13 +1,12 @@
 ---
-name: feature-engineering-and-leakage-checks
 description: >
-  Use this skill for feature creation, encoding, scaling, and explicit leakage checks across train, validation, and test boundaries.
+name: feature-engineering-and-leakage-checks
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

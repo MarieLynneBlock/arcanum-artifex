@@ -1,19 +1,15 @@
 ---
-name: acceptance-test-plan
 description: >
-  Generate a structured acceptance test plan with test cases derived from user
-  stories, use cases, or functional requirements — covering happy paths, edge
-  cases, and negative scenarios. Use when a user needs to verify that a feature
-  or system meets its stated requirements before sign-off.
+name: acceptance-test-plan
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - testing
   - acceptance
   - test-plan
   - quality
   - requirements
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

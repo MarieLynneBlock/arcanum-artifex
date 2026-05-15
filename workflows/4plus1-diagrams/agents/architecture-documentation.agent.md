@@ -1,8 +1,9 @@
 ---
-name: Architecture Documentation
 description: Produce a complete Kruchten 4+1 architectural view model with diagram-as-code (Mermaid / PlantUML) and editable visual diagrams in either draw.io or Miro. Choose one independent track. Always uses 4plus1-models and exactly one output skill (draw-io-diagram-generator or miro-diagram-generator). No MCP dependency. Use when the user asks for 4+1 architecture views or architecture documentation with editable visual outputs.
+name: Architecture Documentation
+tools: []
 metadata:
-  skill-author: Marie-Lynne Block
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Architecture Documentation Agent

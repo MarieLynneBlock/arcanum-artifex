@@ -1,17 +1,14 @@
 ---
-name: write-user-story
 description: >
-  Draft a well-formed agile user story following the Atlassian format: persona,
-  want, and benefit — with acceptance criteria and a definition of done. Use
-  when a user wants to write, refine, or validate a user story.
+name: write-user-story
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - agile
   - user-story
   - requirements
   - backlog
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

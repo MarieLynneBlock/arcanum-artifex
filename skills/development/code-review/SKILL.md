@@ -1,17 +1,14 @@
 ---
-name: code-review
 description: >
-  Perform a structured code review covering correctness, security, maintainability,
-  performance, and test coverage. Produces prioritised findings with inline suggestions. Use when asked to review a diff, PR, or code snippet regardless
-  of language.
+name: code-review
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - code-review
   - quality
   - security
   - pull-request
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

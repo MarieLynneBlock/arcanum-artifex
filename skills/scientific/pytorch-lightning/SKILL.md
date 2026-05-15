@@ -1,9 +1,9 @@
 ---
-name: pytorch-lightning
 description: Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.
+name: pytorch-lightning
 license: Apache-2.0 license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # PyTorch Lightning
@@ -169,4 +169,3 @@ Detailed documentation for each PyTorch Lightning component:
 - `logging.md` - Logger integrations and usage
 - `distributed_training.md` - DDP, FSDP, DeepSpeed comparison and setup
 - `best_practices.md` - Common patterns, tips, and pitfalls
-

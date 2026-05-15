@@ -1,13 +1,12 @@
 ---
-name: experiment-tracking-and-reproducibility
 description: >
-  Use this skill for reproducible ML experiments with run metadata, seed control, artifacts, and deterministic evaluation.
+name: experiment-tracking-and-reproducibility
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

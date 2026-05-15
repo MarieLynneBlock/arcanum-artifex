@@ -1,13 +1,12 @@
 ---
-name: gradient-boostong
 description: >
-  Use this skill when building and tuning gradient boosting models with XGBoost and CatBoost for tabular prediction tasks.
+name: gradient-boostong
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

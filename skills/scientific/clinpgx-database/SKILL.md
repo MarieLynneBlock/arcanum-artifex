@@ -1,9 +1,9 @@
 ---
-name: clinpgx-database
 description: Access ClinPGx pharmacogenomics data (successor to PharmGKB). Query gene-drug interactions, CPIC guidelines, allele functions, for precision medicine and genotype-guided dosing decisions.
+name: clinpgx-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # ClinPGx Database
@@ -633,4 +633,3 @@ pair_info = response.json()
 - **PharmCAT**: https://pharmcat.clinpgx.org/
 - **ClinGen**: https://clinicalgenome.org/
 - **Contact**: api@clinpgx.org (for substantial API use)
-

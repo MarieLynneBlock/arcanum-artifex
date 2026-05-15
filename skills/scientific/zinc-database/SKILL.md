@@ -1,9 +1,9 @@
 ---
-name: zinc-database
 description: Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for docking, analog discovery, for virtual screening and drug discovery.
+name: zinc-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # ZINC Database
@@ -399,4 +399,3 @@ Irwin, J. J., et al. "ZINC22—A Free Multi-Billion-Scale Database of Tangible C
 
 **ZINC15**:
 Irwin, J. J., et al. "ZINC15 – Ligand Discovery for Everyone." *Journal of Chemical Information and Modeling* 2020, 60, 6065–6073.
-

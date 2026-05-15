@@ -3,7 +3,7 @@ description: 'Agent skill builder for creating, reviewing, and packaging standal
 name: 'Skill Builder'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
 ---
 
 # Skill Builder

@@ -1,6 +1,8 @@
 ---
-name: csharp-xunit
 description: 'Get best practices for XUnit unit testing, including data-driven tests'
+name: csharp-xunit
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # XUnit Best Practices

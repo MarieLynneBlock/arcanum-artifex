@@ -1,19 +1,15 @@
 ---
-name: gap-analysis
 description: >
-  Produce a structured gap analysis comparing current state to a desired target
-  state across defined dimensions, with prioritised gaps and recommended
-  actions. Use when a user needs to identify what is missing or insufficient
-  before planning a change, migration, or improvement initiative.
+name: gap-analysis
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - analysis
   - gap-analysis
   - current-state
   - target-state
   - planning
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

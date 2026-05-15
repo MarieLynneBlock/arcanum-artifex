@@ -1,9 +1,9 @@
 ---
-name: fda-database
 description: Query openFDA API for drugs, devices, adverse events, recalls, regulatory submissions (510k, PMA), substance identification (UNII), for FDA regulatory data analysis and safety research.
+name: fda-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # FDA Database Access
@@ -513,4 +513,3 @@ python scripts/fda_examples.py
 
 - **GitHub Issues**: https://github.com/FDA/openfda/issues
 - **Email**: open-fda@fda.hhs.gov
-

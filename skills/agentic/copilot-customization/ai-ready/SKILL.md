@@ -1,6 +1,8 @@
 ---
-name: ai-ready
 description: 'Make any repo AI-ready — analyzes your codebase and generates AGENTS.md, copilot-instructions.md, CI workflows, issue templates, and more. Mines your PR review patterns and creates files customized to your stack. USE THIS SKILL when the user asks to "make this repo ai-ready", "set up AI config", or "prepare this repo for AI contributions".'
+name: ai-ready
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # AI Ready

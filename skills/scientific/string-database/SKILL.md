@@ -1,9 +1,9 @@
 ---
-name: string-database
 description: Query STRING API for protein-protein interactions (59M proteins, 20B interactions). Network analysis, GO/KEGG enrichment, interaction discovery, 5000+ species, for systems biology.
+name: string-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # STRING Database
@@ -529,4 +529,3 @@ STRING data is freely available under **Creative Commons BY 4.0** license:
 ## Citation
 
 When using STRING in publications, cite the most recent publication from: https://string-db.org/cgi/about
-

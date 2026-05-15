@@ -1,9 +1,9 @@
 ---
-name: gene-database
 description: Query NCBI Gene via E-utilities/Datasets API. Search by symbol/ID, retrieve gene info (RefSeqs, GO, locations, phenotypes), batch lookups, for gene annotation and functional analysis.
+name: gene-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # Gene Database
@@ -174,4 +174,3 @@ This skill includes:
 ### references/
 - `api_reference.md` - Detailed API documentation for both E-utilities and Datasets API
 - `common_workflows.md` - Examples of common gene queries and use cases
-

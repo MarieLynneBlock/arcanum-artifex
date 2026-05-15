@@ -1,9 +1,9 @@
 ---
-name: gget
 description: "Fast CLI/Python queries to 20+ bioinformatics databases. Use for quick lookups: gene info, BLAST searches, AlphaFold structures, enrichment analysis. Best for interactive exploration, simple queries. For batch processing or advanced BLAST use biopython; for multi-database Python workflows use bioservices."
+name: gget
 license: BSD-2-Clause license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # gget
@@ -866,4 +866,3 @@ For additional help:
 - Official documentation: https://pachterlab.github.io/gget/
 - GitHub issues: https://github.com/pachterlab/gget/issues
 - Citation: Luebbert, L. & Pachter, L. (2023). Efficient querying of genomic reference databases with gget. Bioinformatics. https://doi.org/10.1093/bioinformatics/btac836
-

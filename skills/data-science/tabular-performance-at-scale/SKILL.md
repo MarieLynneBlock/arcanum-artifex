@@ -1,13 +1,12 @@
 ---
-name: tabular-performance-at-scale
 description: >
-  Use this skill for high-performance tabular pipelines using vectorized operations, lazy execution, and memory-efficient data processing.
+name: tabular-performance-at-scale
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

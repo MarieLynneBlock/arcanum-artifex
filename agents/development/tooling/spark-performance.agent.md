@@ -1,6 +1,9 @@
 ---
-name: 'PySpark Expert Agent'
 description: Diagnose PySpark performance bottlenecks, distributed execution pitfalls, and suggest Spark-native rewrites and safer distributed patterns (incl. mapInPandas guidance).
+name: 'PySpark Expert Agent'
+tools: []
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # PySpark Performance & Parallelism Reviewer (Agent)

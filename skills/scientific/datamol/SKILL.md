@@ -1,9 +1,9 @@
 ---
-name: datamol
 description: Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery including SMILES parsing, standardization, descriptors, fingerprints, clustering, 3D conformers, parallel processing. Returns native rdkit.Chem.Mol objects. For advanced control or custom parameters, use rdkit directly.
+name: datamol
 license: Apache-2.0 license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # Datamol Cheminformatics Skill
@@ -701,4 +701,3 @@ predictions = model.predict(X_test)
 - **Datamol Documentation**: https://docs.datamol.io/
 - **RDKit Documentation**: https://www.rdkit.org/docs/
 - **GitHub Repository**: https://github.com/datamol-io/datamol
-

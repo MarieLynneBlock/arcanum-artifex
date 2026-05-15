@@ -1,18 +1,14 @@
 ---
-name: architecture-audit
 description: >
-  Perform a structured audit of a software architecture or design decision,
-  surfacing quality attributes, risks, constraint violations, and concrete
-  improvement recommendations. Use when asked to review, audit, or assess
-  a system design, ADR, or architectural choice.
+name: architecture-audit
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - architecture
   - audit
   - design
   - quality-attributes
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

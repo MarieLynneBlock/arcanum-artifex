@@ -1,9 +1,9 @@
 ---
-name: scikit-learn
 description: Machine learning in Python with scikit-learn. Use when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.
+name: scikit-learn
 license: BSD-3-Clause license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # Scikit-learn
@@ -516,4 +516,3 @@ model = MiniBatchKMeans(n_clusters=8, batch_size=100)
 - User Guide: https://scikit-learn.org/stable/user_guide.html
 - API Reference: https://scikit-learn.org/stable/api/index.html
 - Examples Gallery: https://scikit-learn.org/stable/auto_examples/index.html
-

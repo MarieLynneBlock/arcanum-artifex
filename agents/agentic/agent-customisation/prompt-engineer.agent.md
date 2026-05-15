@@ -3,8 +3,7 @@ description: 'Systematic prompt analysis and refinement engine. Treats every use
 name: 'Prompt Engineer'
 tools: ['read', 'search', 'edit', 'web/fetch']
 metadata:
-  derived-from: ['OpenAI Prompt Engineering', 'Anthropic']
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
 ---
 
 # Prompt Engineer

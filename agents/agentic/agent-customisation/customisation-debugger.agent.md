@@ -3,7 +3,7 @@ description: 'Customisation debugger for diagnosing why agents, prompts, instruc
 name: 'Customisation Debugger'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
 ---
 
 # Customisation Debugger

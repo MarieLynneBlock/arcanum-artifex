@@ -1,20 +1,15 @@
 ---
-name: create-pytests
 description: >
-  Generate pytest test files targeting 80% line coverage for a Python codebase or
-  a specific file, module, or function — with a pyproject.toml setup using hatchling
-  and importlib import mode, and a Coverage Gap Report explaining what was skipped
-  and why. Use when a user asks to write tests, generate test coverage, or add pytest
-  to a Python project.
+name: create-pytests
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - testing
   - pytest
   - python
   - coverage
   - pyproject
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

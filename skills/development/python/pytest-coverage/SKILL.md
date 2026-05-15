@@ -1,6 +1,8 @@
 ---
-name: pytest-coverage
 description: 'Run pytest tests with coverage, discover lines missing coverage, and increase coverage to 100%.'
+name: pytest-coverage
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 The goal is for the tests to cover all lines of code.

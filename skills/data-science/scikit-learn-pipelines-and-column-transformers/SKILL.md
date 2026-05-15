@@ -1,13 +1,12 @@
 ---
-name: scikit-learn-pipelines-and-column-transformers
 description: >
-  Use this skill for leakage-safe preprocessing architectures using scikit-learn Pipeline and ColumnTransformer patterns.
+name: scikit-learn-pipelines-and-column-transformers
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

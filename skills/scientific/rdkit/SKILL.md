@@ -1,9 +1,9 @@
 ---
-name: rdkit
 description: Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity, reactions. For standard workflows with simpler interface, use datamol (wrapper around RDKit). Use rdkit for advanced control, custom sanitization, specialized algorithms.
+name: rdkit
 license: BSD-3-Clause license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # RDKit Cheminformatics Toolkit
@@ -775,4 +775,3 @@ Example scripts for common RDKit workflows:
 - `substructure_filter.py` - Filter molecules by substructure patterns
 
 These scripts can be executed directly or used as templates for custom workflows.
-

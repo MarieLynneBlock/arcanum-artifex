@@ -1,9 +1,9 @@
 ---
-name: matplotlib
 description: Low-level plotting library for full customization. Use when you need fine-grained control over every plot element, creating novel plot types, or integrating with specific scientific workflows. Export to PNG/PDF/SVG for publication. For quick statistical plots use seaborn; for interactive plots use plotly; for publication-ready multi-panel figures with journal styling, use scientific-visualization.
+name: matplotlib
 license: https://github.com/matplotlib/matplotlib/tree/main/LICENSE
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # Matplotlib
@@ -356,4 +356,3 @@ Matplotlib integrates well with:
 - Gallery: https://matplotlib.org/stable/gallery/index.html
 - Cheatsheets: https://matplotlib.org/cheatsheets/
 - Tutorials: https://matplotlib.org/stable/tutorials/index.html
-

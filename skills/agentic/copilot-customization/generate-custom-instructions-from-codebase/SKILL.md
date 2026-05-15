@@ -1,6 +1,8 @@
 ---
-name: generate-custom-instructions-from-codebase
 description: 'Migration and code evolution instructions generator for GitHub Copilot. Analyzes differences between two project versions (branches, commits, or releases) to create precise instructions allowing Copilot to maintain consistency during technology migrations, major refactoring, or framework version upgrades.'
+name: generate-custom-instructions-from-codebase
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Migration and Code Evolution Instructions Generator

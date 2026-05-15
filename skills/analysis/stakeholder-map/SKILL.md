@@ -1,19 +1,15 @@
 ---
-name: stakeholder-map
 description: >
-  Identify and map stakeholders on an influence × interest grid, classify their
-  engagement stance, and produce an engagement strategy per quadrant. Use when
-  starting an initiative, change programme, or project and needing to understand
-  who to involve, inform, and manage.
+name: stakeholder-map
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - stakeholder
   - influence
   - interest
   - engagement
   - change-management
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

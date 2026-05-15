@@ -1,6 +1,9 @@
 ---
-mode: agent
 description: Produce a 4+1 architectural view model (logical, process, development, physical, scenarios) for a software system, with Mermaid diagrams (primary), PlantUML for deployment-heavy physical views, and a Miro RISEN prompt per view.
+name: 'Architecture Models 4plus1.prompt'
+mode: agent
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # architecture-models-4plus1 — GitHub Copilot shim

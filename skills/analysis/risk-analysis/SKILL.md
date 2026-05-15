@@ -1,18 +1,14 @@
 ---
-name: risk-analysis
 description: >
-  Identify, classify, and prioritise risks for a project, system, decision, or
-  change, and produce a risk register with mitigation strategies. Use when a
-  user wants to surface and manage risks before or during a project or
-  architectural change.
+name: risk-analysis
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - risk
   - risk-register
   - mitigation
   - planning
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

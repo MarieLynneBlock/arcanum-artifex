@@ -1,13 +1,12 @@
 ---
-name: hypothesis-testing-and-ab-evaluation
 description: >
-  Use this skill for A/B testing design, power analysis, effect size estimation, and multiple-comparison-safe inference.
+name: hypothesis-testing-and-ab-evaluation
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

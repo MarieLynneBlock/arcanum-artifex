@@ -1,18 +1,15 @@
 ---
-name: write-epic
 description: >
-  Draft a well-formed agile epic with a goal statement, scope boundaries, and
-  an initial story map. Use when a user wants to define a large body of work
-  that will be broken down into user stories across multiple sprints.
+name: write-epic
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - agile
   - epic
   - requirements
   - backlog
   - roadmap
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

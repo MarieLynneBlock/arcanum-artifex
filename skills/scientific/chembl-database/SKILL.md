@@ -1,9 +1,9 @@
 ---
-name: chembl-database
 description: Query ChEMBL bioactive molecules and drug discovery data. Search compounds by structure/properties, retrieve bioactivity data (IC50, Ki), find inhibitors, perform SAR studies, for medicinal chemistry.
+name: chembl-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # ChEMBL Database
@@ -384,4 +384,3 @@ Refer to this document when detailed API information is needed or when troublesh
 - Python client GitHub: https://github.com/chembl/chembl_webresource_client
 - Interface documentation: https://chembl.gitbook.io/chembl-interface-documentation/
 - Example notebooks: https://github.com/chembl/notebooks
-

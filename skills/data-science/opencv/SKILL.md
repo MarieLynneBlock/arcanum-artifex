@@ -1,13 +1,12 @@
 ---
-name: opencv
 description: >
-  Use this skill for computer vision preprocessing, feature extraction, and image/video transformation workflows with OpenCV.
+name: opencv
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

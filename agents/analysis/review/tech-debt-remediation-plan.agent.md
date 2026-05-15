@@ -2,6 +2,8 @@
 description: 'Generate technical debt remediation plans for code, tests, and documentation.'
 name: 'Technical Debt Remediation Plan'
 tools: ['changes', 'codebase', 'edit/editFiles', 'extensions', 'web/fetch', 'findTestFiles', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runTasks', 'runTests', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages', 'vscodeAPI', 'github']
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 # Technical Debt Remediation Plan
 

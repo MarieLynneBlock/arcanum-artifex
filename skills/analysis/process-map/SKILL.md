@@ -1,13 +1,7 @@
 ---
-name: process-map
 description: >
-  Document an AS-IS or TO-BE process as a structured flow with swim lanes,
-  decision points, and handoffs, rendered in Mermaid flowchart notation or
-  BPMN-lite text. Use when a user wants to capture, clarify, or redesign a
-  business or technical process.
+name: process-map
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - process
   - flowchart
@@ -16,6 +10,8 @@ tags:
   - swim-lane
   - as-is
   - to-be
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

@@ -1,6 +1,8 @@
 ---
-name: prompt-builder
 description: 'Guide users through creating high-quality GitHub Copilot prompts with proper structure, tools, and best practices.'
+name: prompt-builder
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Professional Prompt Builder

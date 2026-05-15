@@ -1,9 +1,9 @@
 ---
-name: pubmed-database
 description: Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch processing, citation management. For Python workflows, prefer biopython (Bio.Entrez). Use this for direct HTTP/REST work or custom API implementations.
+name: pubmed-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # PubMed Database
@@ -455,4 +455,3 @@ Load reference files into context as needed based on the specific task. For brie
 - **NLM Help Desk**: 1-888-FIND-NLM (1-888-346-3656)
 - **Technical Support**: vog.hin.mln.ibcn@seitilitue
 - **Mailing List**: utilities-announce@ncbi.nlm.nih.gov
-

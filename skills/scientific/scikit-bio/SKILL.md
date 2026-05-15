@@ -1,9 +1,9 @@
 ---
-name: scikit-bio
 description: Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ordination (PCoA), PERMANOVA, FASTA/Newick I/O, for microbiome analysis.
+name: scikit-bio
 license: BSD-3-Clause license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # scikit-bio
@@ -432,4 +432,3 @@ For detailed API information, parameter specifications, and advanced usage examp
 - Official documentation: https://scikit.bio/docs/latest/
 - GitHub repository: https://github.com/scikit-bio/scikit-bio
 - Forum support: https://forum.qiime2.org (scikit-bio is part of QIIME 2 ecosystem)
-

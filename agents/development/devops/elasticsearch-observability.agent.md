@@ -1,6 +1,6 @@
 ---
-name: elasticsearch-agent
 description: Our expert AI assistant for debugging code (O11y), optimizing vector search (RAG), and remediating security threats using live Elastic data.
+name: elasticsearch-agent
 tools:
   # Standard tools for file reading, editing, and execution
   - read
@@ -17,7 +17,10 @@ mcp-servers:
     command: 'npx'
     args: [
         'mcp-remote',
-        # ---
+        # 
+metadata:
+  skill-author: 'Marie-Lynne Block'
+---
         # !! ACTION REQUIRED !!
         # Replace this URL with your actual Kibana URL
         # ---

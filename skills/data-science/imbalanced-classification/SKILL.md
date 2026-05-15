@@ -1,13 +1,12 @@
 ---
-name: imbalanced-classification
 description: >
-  Use this skill for imbalanced classification with resampling, class weighting, threshold tuning, and PR-AUC-first evaluation.
+name: imbalanced-classification
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

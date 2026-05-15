@@ -2,6 +2,8 @@
 description: 'Help mentor the engineer by providing guidance and support.'
 name: 'Mentor mode'
 tools: ['codebase', 'web/fetch', 'findTestFiles', 'githubRepo', 'search', 'usages']
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 # Mentor mode instructions
 

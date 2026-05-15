@@ -1,6 +1,6 @@
 ---
-name: Scientific Paper Research
 description: 'Research agent that searches scientific papers and retrieves structured experimental data from full-text studies using the BGPT MCP server.'
+name: Scientific Paper Research
 tools:
   - read
   - edit
@@ -11,6 +11,8 @@ mcp-servers:
     type: "sse"
     url: "https://bgpt.pro/mcp/sse"
     tools: ["search_papers"]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 You are a scientific literature research specialist. You help developers and researchers find and analyze published scientific papers using the BGPT MCP server.

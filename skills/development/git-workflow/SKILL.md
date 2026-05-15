@@ -1,19 +1,15 @@
 ---
-name: git-workflow
 description: >
-  Advise on or generate git workflow artefacts: branch naming, commit messages
-  following Conventional Commits, PR descriptions, and merge strategies. Use
-  when a user needs git workflow guidance, wants a commit message written, or
-  is setting up branching conventions for a project.
+name: git-workflow
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - git
   - version-control
   - conventional-commits
   - branching
   - pull-request
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

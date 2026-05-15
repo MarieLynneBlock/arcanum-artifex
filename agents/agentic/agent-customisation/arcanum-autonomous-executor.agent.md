@@ -3,7 +3,7 @@ description: 'Autonomous end-to-end execution agent for multi-step coding tasks,
 name: 'Arcanum Autonomous Executor'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
 ---
 
 # Arcanum Autonomous Executor

@@ -1,9 +1,9 @@
 ---
-name: uspto-database
 description: Access USPTO APIs for patent/trademark searches, examination history (PEDS), assignments, citations, office actions, TSDR, for IP analysis and prior art searches.
+name: uspto-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # USPTO Database
@@ -602,4 +602,3 @@ def comprehensive_patent_analysis(patent_number, api_key):
 - `scripts/patent_search.py` - PatentSearch API client
 - `scripts/peds_client.py` - PEDS examination data client
 - `scripts/trademark_client.py` - Trademark search client
-

@@ -1,6 +1,8 @@
 ---
-name: review-and-refactor
 description: 'Review and refactor code in your project according to defined instructions'
+name: review-and-refactor
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## Role

@@ -1,8 +1,8 @@
 ---
-name: miro-diagram-generator
 description: Generate Miro board prompts for architecture diagrams. Use this skill to produce per-view Miro prompts from canonical 4+1 diagram sources, with RISEN structure, strict scope boundaries, and track-specific validation.
+name: miro-diagram-generator
 metadata:
-  skill-author: Marie-Lynne Block
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Miro Diagram Generator

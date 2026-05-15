@@ -1,6 +1,8 @@
 ---
-name: what-context-needed
 description: 'Ask Copilot what files it needs to see before answering a question'
+name: what-context-needed
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # What Context Do You Need?

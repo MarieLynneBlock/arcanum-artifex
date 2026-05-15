@@ -1,6 +1,8 @@
 ---
-name: writing
 description: "Use this skill to create high-quality academic papers, literature reviews, grant proposals, clinical reports, and other research and scientific documents backed by comprehensive research and real, verifiable citations. Use this skill whenever the user asks for written output such as a report, paper...etc."
+name: writing
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 

@@ -1,19 +1,15 @@
 ---
-name: requirements-document
 description: >
-  Produce a structured requirements document (BRD or FRS) with business
-  context, stakeholder needs, functional requirements, non-functional
-  requirements, constraints, and assumptions. Use when a project or system
-  needs formal requirements capture beyond user stories or use cases.
+name: requirements-document
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - requirements
   - brd
   - frs
   - functional-specification
   - documentation
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

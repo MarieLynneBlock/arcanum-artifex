@@ -1,6 +1,8 @@
 ---
-name: csharp-nunit
 description: 'Get best practices for NUnit unit testing, including data-driven tests'
+name: csharp-nunit
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # NUnit Best Practices

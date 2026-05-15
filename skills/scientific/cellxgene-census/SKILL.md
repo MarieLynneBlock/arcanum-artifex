@@ -1,9 +1,9 @@
 ---
-name: cellxgene-census
 description: Query the CELLxGENE Census (61M+ cells) programmatically. Use when you need expression data across tissues, diseases, or cell types from the largest curated single-cell atlas. Best for population-scale queries, reference atlas comparisons. For analyzing your own data use scanpy or scvi-tools.
+name: cellxgene-census
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # CZ CELLxGENE Census
@@ -506,4 +506,3 @@ with cellxgene_census.open_soma() as census:
 - Always specify `census_version` explicitly
 - Use same version across all analyses
 - Check release notes for version-specific changes
-

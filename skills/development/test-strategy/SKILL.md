@@ -1,19 +1,15 @@
 ---
-name: test-strategy
 description: >
-  Define a test strategy for a system, feature, or codebase: test pyramid
-  layers, coverage goals, tooling choices, and gap analysis of existing tests.
-  Use when a project needs a testing plan, a team is establishing test standards,
-  or a feature needs a testing approach before implementation.
+name: test-strategy
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - testing
   - test-strategy
   - quality
   - tdd
   - ci
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

@@ -1,9 +1,9 @@
 ---
-name: biorxiv-database
 description: Efficient database search tool for bioRxiv preprint server. Use this skill when searching for life sciences preprints by keywords, authors, date ranges, or categories, retrieving paper metadata, downloading PDFs, or conducting literature reviews.
+name: biorxiv-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # bioRxiv Database
@@ -478,4 +478,3 @@ The reference file includes:
 - Error handling patterns
 - Rate limiting guidelines
 - Advanced search patterns
-

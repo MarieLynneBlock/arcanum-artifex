@@ -1,6 +1,8 @@
 ---
-name: model-recommendation
 description: 'Analyze chatmode or prompt files and recommend optimal AI models based on task complexity, required capabilities, and cost-efficiency'
+name: model-recommendation
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # AI Model Recommendation for Copilot Chat Modes and Prompts

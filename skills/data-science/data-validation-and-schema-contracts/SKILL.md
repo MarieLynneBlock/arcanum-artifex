@@ -1,14 +1,13 @@
 ---
-name: data-validation-and-schema-contracts
 description: >
-  Use this skill for data contracts, schema validation, and ingestion-time quality checks using Pandera or Great Expectations.
+name: data-validation-and-schema-contracts
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - data-validation
   - schema-contracts
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

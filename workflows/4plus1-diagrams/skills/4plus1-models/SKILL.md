@@ -1,8 +1,8 @@
 ---
-name: 4plus1-models
 description: Produce Philippe Kruchten's 4+1 architectural view model for a software system. This is the core method skill: audience routing, concerns, per-view generation, and cross-view consistency. It outputs canonical diagram-as-code (Mermaid / PlantUML) plus view prose, and does not own draw.io or Miro rendering.
+name: 4plus1-models
 metadata:
-    skill-author: Marie-Lynne Block
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # 4+1 Models (Core)

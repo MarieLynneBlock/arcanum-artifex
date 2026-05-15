@@ -1,6 +1,8 @@
 ---
-name: dotnet-design-pattern-review
 description: 'Review the C#/.NET code for design pattern implementation and suggest improvements.'
+name: dotnet-design-pattern-review
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # .NET/C# Design Pattern Review

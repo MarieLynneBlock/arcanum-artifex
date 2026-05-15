@@ -3,7 +3,7 @@ description: 'Customisation packager for auditing and fixing standalone copyabil
 name: 'Customisation Packager'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
 ---
 
 # Customisation Packager

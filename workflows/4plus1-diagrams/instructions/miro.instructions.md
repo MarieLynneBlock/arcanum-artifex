@@ -1,6 +1,9 @@
 ---
 description: "Use when creating, editing, or reviewing Miro board setup prompts in -miro-prompt.md files for 4+1 architecture diagrams."
+name: 'Miro.instructions'
 applyTo: "**/*miro-prompt*.md"
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Miro Board Setup Standards

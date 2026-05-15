@@ -1,6 +1,9 @@
 ---
-mode: agent
 description: Produce a complete Kruchten 4+1 architectural view model with diagram-as-code (Mermaid / PlantUML) and editable visual diagrams in draw.io or Miro. Choose one independent track. Loads 4plus1-models for core logic and exactly one output skill (draw-io-diagram-generator or miro-diagram-generator). No MCP dependency.
+name: '4plus1 Diagrams.prompt'
+mode: agent
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # 4+1 Architecture Diagrams (Miro & draw.io)

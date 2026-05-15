@@ -1,13 +1,12 @@
 ---
-name: dash
 description: >
-  Use this skill for building interactive analytical web apps with Dash, Plotly components, and production-ready callback architecture.
+name: dash
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - data-science
   - [TODO]
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

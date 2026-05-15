@@ -1,8 +1,10 @@
 ---
-name: 'Frontend Performance Investigator'
 description: 'Runtime web-performance specialist for diagnosing Core Web Vitals, Lighthouse regressions, layout shifts, long tasks, and slow network paths with Chrome DevTools MCP.'
-model: GPT-5
+name: 'Frontend Performance Investigator'
 tools: ['codebase', 'search', 'fetch', 'findTestFiles', 'problems', 'runCommands', 'runTasks', 'runTests', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'openSimpleBrowser']
+model: GPT-5
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Frontend Performance Investigator

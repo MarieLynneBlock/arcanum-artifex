@@ -1,19 +1,15 @@
 ---
-name: api-design
 description: >
-  Design or review a REST or GraphQL API: resource modelling, endpoint naming,
-  request/response contracts, error handling, versioning, and security conventions.
-  Use when a user is designing a new API, reviewing an existing one, or writing
-  an API contract.
+name: api-design
 version: 1.0.0
-authors:
-  - Marie-Lynne Block
 tags:
   - api
   - rest
   - graphql
   - design
   - contract
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 ## What this skill does

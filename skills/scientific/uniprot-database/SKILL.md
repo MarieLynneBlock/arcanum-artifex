@@ -1,9 +1,9 @@
 ---
-name: uniprot-database
 description: Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEMBL. For Python workflows with multiple databases, prefer bioservices (unified interface to 40+ services). Use this for direct HTTP/REST work or UniProt-specific control.
+name: uniprot-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # UniProt Database
@@ -190,4 +190,3 @@ See `/references/query_syntax.md` for comprehensive syntax documentation.
 - **REST Tutorial**: https://www.uniprot.org/help/uniprot_rest_tutorial
 - **Query Syntax Help**: https://www.uniprot.org/help/query-fields
 - **SPARQL Endpoint**: https://sparql.uniprot.org/ (for advanced graph queries)
-

@@ -1,9 +1,9 @@
 ---
-name: ena-database
 description: Access European Nucleotide Archive via API/FTP. Retrieve DNA/RNA sequences, raw reads (FASTQ), genome assemblies by accession, for genomics and bioinformatics pipelines. Supports multiple formats.
+name: ena-database
 license: Unknown
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # ENA Database
@@ -199,4 +199,3 @@ This skill includes detailed reference documentation for working with ENA:
 - Common API patterns and examples
 
 Load this reference when constructing complex API queries, debugging API responses, or needing specific parameter details.
-

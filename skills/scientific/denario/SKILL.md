@@ -1,9 +1,9 @@
 ---
-name: denario
 description: Multiagent AI system for scientific research assistance that automates research workflows from data analysis to publication. This skill should be used when generating research ideas from datasets, developing research methodologies, executing computational experiments, performing literature searches, or generating publication-ready papers in LaTeX format. Supports end-to-end research pipelines with customizable agent orchestration.
+name: denario
 license: GPL-3.0 license
 metadata:
-    skill-author: K-Dense Inc.
+  skill-author: 'K-Dense Inc.'
 ---
 
 # Denario
@@ -210,4 +210,3 @@ Common issues and solutions:
 - **LaTeX compilation**: Install TeX distribution or use Docker image with pre-installed LaTeX
 - **Package conflicts**: Use virtual environments or Docker for isolation
 - **Python version**: Requires Python 3.12 or higher
-

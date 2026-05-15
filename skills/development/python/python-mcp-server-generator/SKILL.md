@@ -1,6 +1,8 @@
 ---
-name: python-mcp-server-generator
 description: 'Generate a complete MCP server project in Python with tools, resources, and proper configuration'
+name: python-mcp-server-generator
+metadata:
+  skill-author: 'Marie-Lynne Block'
 ---
 
 # Generate Python MCP Server
