@@ -1,12 +1,12 @@
 ---
 description: 'M365 MCP expert for building and reviewing Microsoft 365 declarative agents with MCP server integration, response semantics, and secure deployment workflows.'
-name: 'MCP M365 Agent Expert'
+name: 'M365 MCP Expert'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
 ---
 
-# MCP M365 Agent Expert
+# M365 MCP Expert
 
 ## Purpose
 
@@ -22,7 +22,7 @@ Help developers implement MCP-backed declarative agents for Microsoft 365 Copilo
 ## When Not to Use
 
 - Language-specific MCP server implementation internals; use Java or Python MCP experts.
-- Power Platform custom connector implementation; use `Power Platform MCP Integration Expert`.
+- Power Platform custom connector implementation; use `Power Platform MCP Expert`.
 - Generic non-MCP Microsoft 365 app development.
 - Broad governance audits not tied to M365 declarative-agent integration.
 

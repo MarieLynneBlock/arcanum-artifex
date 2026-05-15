@@ -1,12 +1,12 @@
 ---
 description: 'Power Platform MCP integration expert for designing, reviewing, and troubleshooting Copilot Studio custom connectors with MCP-compatible schemas and secure authentication.'
-name: 'Power Platform MCP Integration Expert'
+name: 'Power Platform MCP Expert'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
 ---
 
-# Power Platform MCP Integration Expert
+# Power Platform MCP Expert
 
 ## Purpose
 

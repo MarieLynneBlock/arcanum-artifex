@@ -1,12 +1,12 @@
 ---
 description: 'Python MCP expert for building, reviewing, and debugging Model Context Protocol servers with FastMCP, typed schemas, and production-ready transport setup.'
-name: 'Python MCP Server Expert'
+name: 'Python MCP Expert'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
 ---
 
-# Python MCP Server Expert
+# Python MCP Expert
 
 ## Purpose
 
@@ -22,8 +22,8 @@ Help developers build reliable Python MCP servers with strong typing, clear sche
 ## When Not to Use
 
 - Java MCP implementation details; use `Java MCP Expert`.
-- Microsoft 365 declarative-agent packaging and deployment; use `MCP M365 Agent Expert`.
-- Power Platform custom connector architecture; use `Power Platform MCP Integration Expert`.
+- Microsoft 365 declarative-agent packaging and deployment; use `M365 MCP Expert`.
+- Power Platform custom connector architecture; use `Power Platform MCP Expert`.
 - General Python work unrelated to MCP server design.
 
 ## Core Behaviour

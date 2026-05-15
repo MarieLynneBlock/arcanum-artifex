@@ -21,9 +21,9 @@ Help developers design, implement, and troubleshoot Java-based MCP servers. Focu
 
 ## When Not to Use
 
-- Python-specific MCP implementation; use `Python MCP Server Expert`.
-- Microsoft 365 declarative-agent configuration; use `MCP M365 Agent Expert`.
-- Power Platform custom connector implementation; use `Power Platform MCP Integration Expert`.
+- Python-specific MCP implementation; use `Python MCP Expert`.
+- Microsoft 365 declarative-agent configuration; use `M365 MCP Expert`.
+- Power Platform custom connector implementation; use `Power Platform MCP Expert`.
 - Non-MCP Java architecture work unrelated to agent tooling.
 
 ## Core Behaviour
