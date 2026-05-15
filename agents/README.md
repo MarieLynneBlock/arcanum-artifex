@@ -1,10 +1,10 @@
 # Agents
 
-Custom agents organized by category so they are easier to browse and reuse.
+Custom agents organised by category so they are easier to browse and reuse.
 
 ## Library structure
 
-This library is organized close to the `skills/` taxonomy:
+This library is organised close to the `skills/` taxonomy:
 
 - [agentic/](agentic/)
 - [analysis/](analysis/)
