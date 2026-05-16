@@ -1,6 +1,6 @@
 # Code-to-Coach: 4plus1-diagrams Workflow Analysis
 
-This document deconstructs the current `workflows/4plus1-diagrams` bundle using the Code-to-Coach method. It replaces the earlier review because the workflow has since been updated: several previous findings are now addressed, and the remaining risks have shifted from broad design issues to narrower contract and validation details.
+This document deconstructs the current `workflows/4plus1-diagrams` bundle using the Code-to-Coach method.
 
 The goal is not just to describe what the workflow does. The goal is to teach how to think about this kind of workflow: orchestration, standalone packaging, canonical sources, independent output tracks, and mechanical validation.
 
@@ -35,19 +35,19 @@ Without this workflow, a user would generate the 4+1 architecture views, then se
 
 With this workflow, the canonical source is generated first, output tracks are selected explicitly, and each visual track is validated against the source.
 
-### What Changed Since The Previous Review
+### Design Signals To Notice
 
-Several earlier findings have been directly addressed:
+The workflow is designed around a few deliberate signals that make it easier to teach and maintain:
 
-- The root agent is now a thin launcher and points to the workflow-local orchestrator.
-- `WORKFLOW.md` is explicitly named as the execution source of truth.
-- draw.io and Miro are framed as first-class output options, with support for either or both.
-- Validation failure handling now has a documented recovery loop.
-- Vendored asset metadata and hash-based skew checks now exist.
-- Output folders now use typed subfolders: `diagrams/mermaid/`, `diagrams/drawio/`, and `diagrams/miro/`.
-- The smoke test now checks bundle integrity, frontmatter order, links, stale references, output path contracts, Miro template parity, draw.io XML, and vendored hashes.
+- The root agent is a thin launcher that points to the workflow-local orchestrator.
+- `WORKFLOW.md` is the execution source of truth.
+- draw.io and Miro are first-class output options, with support for either or both.
+- Validation failure handling has a documented recovery loop.
+- Vendored asset metadata and hash-based skew checks protect the standalone bundle.
+- Output folders use typed subfolders: `diagrams/mermaid/`, `diagrams/drawio/`, and `diagrams/miro/`.
+- The smoke test checks bundle integrity, frontmatter order, links, stale references, output path contracts, Miro template parity, draw.io XML, and vendored hashes.
 
-That means the workflow is no longer mainly suffering from missing orchestration rules. The remaining concerns are more precise: places where written contracts do not quite match implementation, and places where a strong design choice should be explained more clearly.
+For learners, these signals show the workflow's central teaching pattern: one source of truth, independent output tracks, and mechanical checks that keep the bundle copyable.
 
 ---
 
@@ -55,7 +55,7 @@ That means the workflow is no longer mainly suffering from missing orchestration
 
 The current workflow is best understood as eight logical chunks.
 
-### Chunk A: Discoverable Launcher
+### Chunk 1: Discoverable Launcher
 
 **What:** `architecture-documentation.agent.md` at the workflow root.
 
@@ -65,7 +65,7 @@ The current workflow is best understood as eight logical chunks.
 
 **Teaching point:** This is a wrapper pattern. A wrapper is valuable when it gives users a stable entrypoint while keeping real logic somewhere else.
 
-### Chunk B: Thin Orchestrator Agent
+### Chunk 2: Thin Orchestrator Agent
 
 **What:** `agents/architecture-documentation.agent.md`.
 
@@ -75,7 +75,7 @@ The current workflow is best understood as eight logical chunks.
 
 **Teaching point:** Good orchestration code should know sequencing and boundaries. It should not absorb the internals of every subsystem it coordinates.
 
-### Chunk C: Workflow Playbook
+### Chunk 3: Workflow Playbook
 
 **What:** `WORKFLOW.md`.
 
@@ -85,7 +85,7 @@ The current workflow is best understood as eight logical chunks.
 
 **Teaching point:** In documentation-first systems, the playbook is the equivalent of application control flow. If the playbook drifts, every dependent entrypoint becomes suspect.
 
-### Chunk D: Core 4+1 Method Skill
+### Chunk 4: Core 4+1 Method Skill
 
 **What:** `skills/4plus1-models/SKILL.md`.
 
@@ -95,7 +95,7 @@ The current workflow is best understood as eight logical chunks.
 
 **Teaching point:** This is the domain core. Output formats should depend on it; it should not depend on output formats.
 
-### Chunk E: Visual Track Decision
+### Chunk 5: Visual Track Decision
 
 **What:** The track choice in the prompt, agent, and `WORKFLOW.md`.
 
@@ -105,7 +105,7 @@ The current workflow is best understood as eight logical chunks.
 
 **Teaching point:** Branching is not a design smell when the branches represent genuinely different modes of work.
 
-### Chunk F: draw.io Output Track
+### Chunk 6: draw.io Output Track
 
 **What:** `skills/draw-io-diagram-generator/`, `instructions/draw-io.instructions.md`, `templates/drawio/`, and `references/notation-drawio.md`.
 
@@ -115,7 +115,7 @@ The current workflow is best understood as eight logical chunks.
 
 **Teaching point:** This is a concrete-output track. Most bugs here are structural: malformed XML, invalid references, missing provenance, or a diagram that renders poorly.
 
-### Chunk G: Miro Output Track
+### Chunk 7: Miro Output Track
 
 **What:** `skills/miro-diagram-generator/`, `instructions/miro.instructions.md`, `templates/miro/`, and `references/notation-miro.md`.
 
@@ -125,7 +125,7 @@ The current workflow is best understood as eight logical chunks.
 
 **Teaching point:** This is a prompt-output track. Most bugs here are ambiguity bugs: missing counts, loose labels, unscoped instructions, or prompts that ask Miro to infer too much.
 
-### Chunk H: Validation and Maintenance
+### Chunk 8: Validation and Maintenance
 
 **What:** `scripts/smoke-test.py`, `scripts/sync-vendored-assets.py`, `vendored-assets-manifest.json`, `skills/4plus1-models/scripts/validate-views.py`, and `skills/draw-io-diagram-generator/scripts/validate-drawio.py`.
 
@@ -139,7 +139,7 @@ The current workflow is best understood as eight logical chunks.
 
 ## Step 3: Analyse - Quality Review By Chunk
 
-### Chunk A: Discoverable Launcher
+### Chunk 1: Discoverable Launcher
 
 | Quality Factor | Finding | Reasoning |
 |---|---|---|
@@ -150,35 +150,35 @@ The current workflow is best understood as eight logical chunks.
 | Cognitive load | Low | Users only need to know this is the entrypoint. |
 | Smell | Minor | `tools: []` is correct for no MCP dependency, but users may misread it as the agent being unable to work. The README helps offset this. |
 
-**Coaching insight:** The launcher is now doing the right amount of work. It is a sign of maturity that it became smaller after the previous review.
+**Coaching insight:** The launcher is doing the right amount of work: enough to be discoverable, not enough to become a second workflow definition.
 
-### Chunk B: Thin Orchestrator Agent
+### Chunk 2: Thin Orchestrator Agent
 
 | Quality Factor | Finding | Reasoning |
 |---|---|---|
 | Clarity and naming | Strong | It names the three loaded skills and the authority boundary for each. |
 | Single responsibility | Strong | It coordinates sequence and guardrails; it does not own rendering internals. |
-| Error handling | Improved | It requires compact intake, assumptions for partial answers, and one follow-up at a time. |
+| Error handling | Strong | It requires compact intake, assumptions for partial answers, and one follow-up at a time. |
 | Testability | Medium | Humans can inspect routing rules, but there is no automated test that the agent and prompt remain semantically aligned with `WORKFLOW.md`. |
 | Cognitive load | Low to medium | The guardrails are many, but they are grouped by concern and mostly non-overlapping. |
 | Smell | Residual duplication | The agent includes a short workflow summary. That is useful for execution, but it still creates some drift risk with `WORKFLOW.md`. |
 
 **Coaching insight:** Thin does not mean empty. A good orchestrator keeps the minimum useful mental model close at hand, then defers detail to the owner files.
 
-### Chunk C: Workflow Playbook
+### Chunk 3: Workflow Playbook
 
 | Quality Factor | Finding | Reasoning |
 |---|---|---|
 | Clarity and naming | Strong | Purpose, linked assets, preconditions, steps, output directories, validation, and troubleshooting are explicit. |
 | Single responsibility | Strong | It defines the full run without embedding all skill internals. |
-| Error handling | Much improved | Section 7 now defines a recovery loop for validation failures. |
+| Error handling | Strong | Section 7 defines a recovery loop for validation failures. |
 | Testability | Strong | Many workflow claims are covered by `scripts/smoke-test.py`. |
 | Cognitive load | Medium | The file is long, but the sections match the order of execution. |
 | Smell | Contract mismatch | Section 7 says `validate-views.py` exits non-zero on mismatch, but the script returns `0` for warnings and only returns `1` for fatal setup errors. |
 
 **Coaching insight:** A playbook is only as strong as its contract with scripts. If prose says one thing and code returns another, the user will trust whichever they encounter first.
 
-### Chunk D: Core 4+1 Method Skill
+### Chunk 4: Core 4+1 Method Skill
 
 | Quality Factor | Finding | Reasoning |
 |---|---|---|
@@ -191,7 +191,7 @@ The current workflow is best understood as eight logical chunks.
 
 **Coaching insight:** Heuristic validators are still valuable when they are labelled honestly. They should be treated as consistency prompts, not proof of correctness.
 
-### Chunk E: Visual Track Decision
+### Chunk 5: Visual Track Decision
 
 | Quality Factor | Finding | Reasoning |
 |---|---|---|
@@ -200,11 +200,11 @@ The current workflow is best understood as eight logical chunks.
 | Governance | Strong | The workflow says not to import style or mechanics from one track into the other. |
 | Testability | Medium | The smoke test checks assets for both tracks, but does not simulate user track selection. |
 | Cognitive load | Low | Users get a compact choice with concrete descriptions. |
-| Smell | Mostly fixed | The earlier one-sided wording has been corrected. The prompt still repeats some workflow details, but the value proposition is now balanced. |
+| Smell | Drift surface | The prompt repeats some workflow details. The value proposition is balanced, but repeated execution rules still need maintenance care. |
 
 **Coaching insight:** The track decision is a good example of user choice with architectural consequences. It is simple at the UI level but important at the implementation level.
 
-### Chunk F: draw.io Output Track
+### Chunk 6: draw.io Output Track
 
 | Quality Factor | Finding | Reasoning |
 |---|---|---|
@@ -216,7 +216,7 @@ The current workflow is best understood as eight logical chunks.
 
 **Coaching insight:** draw.io validation is strongest at structure and weaker at meaning. That is normal: XML can prove that a diagram is well-formed, but not that the architecture is true.
 
-### Chunk G: Miro Output Track
+### Chunk 7: Miro Output Track
 
 | Quality Factor | Finding | Reasoning |
 |---|---|---|
@@ -228,13 +228,13 @@ The current workflow is best understood as eight logical chunks.
 
 **Coaching insight:** Prompt artefacts need contracts too. The Miro track is not code, but naming, sections, source references, and scope boundaries are still executable design constraints.
 
-### Chunk H: Validation and Maintenance
+### Chunk 8: Validation and Maintenance
 
 | Quality Factor | Finding | Reasoning |
 |---|---|---|
 | Completeness | Strong | Smoke testing covers path presence, links, stale references, path contracts, templates, XML, and vendored metadata. |
 | Error messages | Good | Smoke-test output names the failing contract and path. draw.io validation prints precise structural failures. |
-| Rollback/recovery | Improved | The workflow now tells the agent to stop, classify failure, regenerate affected artefacts, and re-run validators. |
+| Rollback/recovery | Strong | The workflow tells the agent to stop, classify failure, regenerate affected artefacts, and re-run validators. |
 | Testability | Strong | The smoke test is fast and mechanical. |
 | Cognitive load | Medium | There are several validators with different scopes; the README helps explain when to run each. |
 | Smell | Ambiguous sync model | The manifest uses `source.kind: bundle-path`, often with `source.path` equal to `local_path`. This detects local snapshot drift but does not fetch or compare against an external upstream source. |
@@ -307,8 +307,8 @@ The subtle point: this does not automatically tell you whether an external origi
 The smoke test is the workflow's executable memory. It catches things humans forget:
 
 - broken local links
-- stale references to old paths
-- flat `diagrams/` outputs after the typed-folder migration
+- stale references to non-local or incorrect paths
+- flat `diagrams/` outputs that bypass the typed folder contract
 - Miro template drift between workflow and skill copies
 - malformed draw.io templates
 - vendored asset hash drift
@@ -364,9 +364,9 @@ If the desired behaviour is true upstream comparison, add a separate, optional m
 **Impact:** Medium  
 **Effort:** Medium
 
-**Issue:** The root launcher is now thin, but the prompt still restates a condensed workflow sequence. Some repetition is useful for agent execution, but it remains a drift surface.
+**Issue:** The root launcher is thin, but the prompt still restates a condensed workflow sequence. Some repetition is useful for agent execution, but it remains a drift surface.
 
-**Why it matters:** The smoke test can catch old paths and missing files, but it cannot prove that the prompt's behavioural summary matches `WORKFLOW.md`.
+**Why it matters:** The smoke test can catch invalid paths and missing files, but it cannot prove that the prompt's behavioural summary matches `WORKFLOW.md`.
 
 **Recommendation:** Keep the prompt executable but make each repeated item explicitly a summary of `WORKFLOW.md`, not a separate rule. Add one smoke-test check for a small number of high-risk statements, such as output track choices and typed output folders.
 
@@ -420,18 +420,18 @@ That is the part worth carrying to other systems. If you add a third output form
 4. Validate it against the canonical source.
 5. Extend the smoke test for its folder and naming contract.
 
-The current workflow is well-designed because it has moved from implicit convention to explicit contracts. Its remaining issues are not architectural collapse; they are contract alignment problems. That is a good place for a documentation-first workflow to be.
+The current workflow is well-designed because it makes its contracts explicit: source of truth, output ownership, validation scope, and packaging rules. Its remaining issues are not architectural collapse; they are contract alignment problems. That is a good place for a documentation-first workflow to be.
 
 ---
 
 ## Success Criteria Check
 
 - Learner understands the purpose: connect version-controlled 4+1 diagrams with editable draw.io and Miro outputs.
-- Learner can name the chunks: launcher, orchestrator, playbook, core skill, track decision, draw.io track, Miro track, validation and maintenance.
+- Learner can name the numbered chunks: launcher, orchestrator, playbook, core skill, track decision, draw.io track, Miro track, validation and maintenance.
 - Learner can explain the main design decisions: canonical source first, thin launcher, skill composition, independent tracks, PlantUML for Physical view, vendored snapshot packaging.
 - Learner can identify remaining hard parts: script/prose contract drift, Miro output location mismatch, self-referential vendored sync, heuristic validation limits.
 - Learner has actionable improvements ranked by impact and effort.
 
 ## Result
 
-The updated `4plus1-diagrams` workflow is stronger than the earlier review described. The major architectural direction is sound: standalone bundle, clear source of truth, independent output tracks, canonical-source parity, and increasingly mechanical validation. The next improvements should focus on tightening the few contracts where prose and implementation still disagree.
+The `4plus1-diagrams` workflow is a strong example of documentation-first workflow design: a standalone bundle, a clear source of truth, independent output tracks, canonical-source parity, and mechanical validation. Its main teaching value is the way it turns architectural documentation into an explicit, testable set of contracts.
