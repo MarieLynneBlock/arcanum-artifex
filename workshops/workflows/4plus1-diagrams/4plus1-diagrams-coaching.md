@@ -1,437 +1,405 @@
-# Code-to-Coach: 4plus1-diagrams Workflow Analysis
+# Code-to-Coach: the `4plus1-diagrams` agentic workflow
 
-This document deconstructs the current `workflows/4plus1-diagrams` bundle using the Code-to-Coach method.
+A teaching document for coaches who use the `4plus1-diagrams` workflow as a worked example of a *complex agentic workflow bundle*. The aim is not to describe what each file does. The aim is to teach **how to think about agentic workflows that orchestrate multiple skills, output tracks, and validation surfaces inside a strictly standalone package**.
 
-The goal is not just to describe what the workflow does. The goal is to teach how to think about this kind of workflow: orchestration, standalone packaging, canonical sources, independent output tracks, and mechanical validation.
+This bundle is large enough to expose every interesting design tension, but small enough to hold in a learner's head in one session. Use it to coach the underlying patterns; the specific architecture domain is incidental.
 
 ---
 
-## Step 1: Orient - Scope and Context
+## How to use this document
 
-### The Job
+Coach in five passes, mirroring the Code-to-Coach cycle:
 
-The `4plus1-diagrams` workflow produces a complete Kruchten 4+1 architecture documentation set with two layers of output:
+1. **Orient** — situate the workflow: what it produces, who triggers it, and what failure modes it prevents.
+2. **Deconstruct** — break the bundle into eight teachable chunks; name each by its job.
+3. **Analyse** — evaluate each chunk against an agentic-workflow rubric (clarity, single responsibility, contract strength, drift surface, mechanical testability).
+4. **Teach** — surface the seven design decisions that make this bundle behave the way it does, and the trade-offs behind each.
+5. **Advise** — give learners the reusable questions and patterns they can apply to any agentic workflow they design or review next.
 
-1. Canonical diagram-as-code: Mermaid for most views and PlantUML for the Physical view.
-2. Editable visual artefacts: draw.io files, Miro prompts, or both.
+Each pass builds intuition. Resist the temptation to jump to "what would you change?" before the learner can articulate what the bundle is *trying to protect*.
 
-The workflow exists because architecture teams often need both durable source files and collaborative visuals. Mermaid and PlantUML are easy to version, diff, and review in git. draw.io and Miro are easier to edit with stakeholders. This bundle bridges those worlds while trying to keep all representations aligned.
+---
 
-### Who Calls It
+## Step 1 — Orient: scope and context
+
+### What the workflow produces
+
+A complete Kruchten 4+1 architecture documentation set, in two synchronised layers:
+
+1. **Canonical diagram-as-code**: Mermaid for logical, process, development, and scenarios views; PlantUML for the physical view.
+2. **Editable visual artefacts**: `.drawio` files, Miro board prompts, or both — generated *from* the canonical source, never replacing it.
+
+Five view files (`01-logical-view.md` … `05-scenarios-view.md`) and a system-context overview (`00-system-context.md`) sit alongside, written in prose with embedded references to the diagrams.
+
+Output lands under typed subfolders: `diagrams/mermaid/`, `diagrams/drawio/`, `diagrams/miro/`. Only the subfolders for selected tracks are created.
+
+### Who triggers it
 
 - Architects producing end-to-end system documentation.
-- Technical leads preparing architecture views for mixed technical and business audiences.
-- Teams that need editable diagrams for workshops, reviews, or slide decks.
-- Users who want one orchestrated 4+1 run instead of manually combining separate skills.
-- Maintainers who need a standalone, copyable workflow bundle with no runtime dependency on other repo paths.
+- Technical leads preparing views for mixed technical and non-technical stakeholders.
+- Teams running architecture workshops who need editable visuals on a Miro board *and* durable text in git.
+- Maintainers who need a copyable bundle that runs in any repo with no install step.
 
-### The Problem It Solves
+### What problem it solves
 
-Without this workflow, a user would generate the 4+1 architecture views, then separately recreate each view in draw.io or Miro. That creates three risks:
+Without this workflow, a team typically generates Mermaid diagrams once, then manually recreates each view in draw.io or Miro for stakeholders. Three failure modes follow:
 
-- Names drift between the source diagram and the visual diagram.
-- Visual diagrams acquire extra infrastructure or relationships that were never in the canonical source.
-- The folder becomes hard to copy because it depends on skills, instructions, templates, or references elsewhere.
+- **Name drift** — a service is "Claims API" in Mermaid and "ClaimSvc" in the Miro board. The two diagrams describe different systems within a week.
+- **Invented infrastructure** — the visual editor's template ships with a CDN, cache, or load balancer; nobody removes it; the deployment diagram now claims components that do not exist.
+- **Bundle decay** — the working assets live across `.github/skills/`, `.github/instructions/`, internal templates, and the user's own notes. Copying the workflow to another repo means hunting six places.
 
-With this workflow, the canonical source is generated first, output tracks are selected explicitly, and each visual track is validated against the source.
+The workflow defends against all three: canonical first, tracks generated from canonical with parity checks, everything vendored under one folder.
 
-### Design Signals To Notice
+### Design signals worth pointing out before deconstructing
 
-The workflow is designed around a few deliberate signals that make it easier to teach and maintain:
+These are the signals that show this workflow was designed deliberately — not assembled. Coaches should name them early so learners notice them recurring through the analysis:
 
-- The root agent is a thin launcher that points to the workflow-local orchestrator.
-- `WORKFLOW.md` is the execution source of truth.
-- draw.io and Miro are first-class output options, with support for either or both.
-- Validation failure handling has a documented recovery loop.
-- Vendored asset metadata and hash-based skew checks protect the standalone bundle.
-- Output folders use typed subfolders: `diagrams/mermaid/`, `diagrams/drawio/`, and `diagrams/miro/`.
-- The smoke test checks bundle integrity, frontmatter order, links, stale references, output path contracts, Miro template parity, draw.io XML, and vendored hashes.
+- A **discoverable root launcher** (`architecture-documentation.agent.md`) that delegates rather than executes.
+- A **thin orchestrator agent** (`agents/architecture-documentation.agent.md`) that composes skills but does not absorb their internals.
+- A **playbook** (`WORKFLOW.md`) that is the single execution source of truth.
+- **Three skills** with non-overlapping ownership: method, draw.io output, Miro output.
+- **Independent output tracks** chosen at intake, never blended.
+- A **vendored asset manifest** with hash-tracked snapshots (`vendored-assets-manifest.json`).
+- **Mechanical validation** at three layers: bundle integrity (`scripts/smoke-test.py`), cross-view consistency (`skills/4plus1-models/scripts/validate-views.py`), and per-format validity (`skills/draw-io-diagram-generator/scripts/validate-drawio.py`).
+- **Typed output subfolders** enforced by smoke-test rules.
+- **Frontmatter order discipline** enforced across every entry file (`name`, `description`, `metadata`).
 
-For learners, these signals show the workflow's central teaching pattern: one source of truth, independent output tracks, and mechanical checks that keep the bundle copyable.
-
----
-
-## Step 2: Deconstruct - Breaking Into Chunks
-
-The current workflow is best understood as eight logical chunks.
-
-### Chunk 1: Discoverable Launcher
-
-**What:** `architecture-documentation.agent.md` at the workflow root.
-
-**Job:** Make the whole folder discoverable when copied under `.github/agents/` or `~/.agents/`.
-
-**Why it exists:** It lets the bundle be installed by copying one folder. The launcher does not own behaviour; it delegates to `agents/architecture-documentation.agent.md` and `WORKFLOW.md`.
-
-**Teaching point:** This is a wrapper pattern. A wrapper is valuable when it gives users a stable entrypoint while keeping real logic somewhere else.
-
-### Chunk 2: Thin Orchestrator Agent
-
-**What:** `agents/architecture-documentation.agent.md`.
-
-**Job:** Load the right skills, ask a compact intake question, route to draw.io, Miro, or both, and enforce guardrails.
-
-**Why it exists:** The agent coordinates work across assets but deliberately avoids owning the 4+1 method, draw.io mechanics, or Miro prompt craft.
-
-**Teaching point:** Good orchestration code should know sequencing and boundaries. It should not absorb the internals of every subsystem it coordinates.
-
-### Chunk 3: Workflow Playbook
-
-**What:** `WORKFLOW.md`.
-
-**Job:** Define the canonical execution sequence, output contracts, validation expectations, troubleshooting loop, and maintenance notes.
-
-**Why it exists:** It is the human-readable source of truth. The prompt, launcher, and agent should all defer to it.
-
-**Teaching point:** In documentation-first systems, the playbook is the equivalent of application control flow. If the playbook drifts, every dependent entrypoint becomes suspect.
-
-### Chunk 4: Core 4+1 Method Skill
-
-**What:** `skills/4plus1-models/SKILL.md`.
-
-**Job:** Own invocation mode, audience routing, context capture, concern routing, per-view generation, and canonical Mermaid/PlantUML outputs.
-
-**Why it exists:** The 4+1 method is reusable without draw.io or Miro. Keeping it separate means the same architecture logic can be used standalone or inside this larger workflow.
-
-**Teaching point:** This is the domain core. Output formats should depend on it; it should not depend on output formats.
-
-### Chunk 5: Visual Track Decision
-
-**What:** The track choice in the prompt, agent, and `WORKFLOW.md`.
-
-**Job:** Decide whether to produce draw.io, Miro, or both.
-
-**Why it exists:** The two tracks use different authoring models and validation rules. The workflow should branch explicitly rather than trying to hide those differences.
-
-**Teaching point:** Branching is not a design smell when the branches represent genuinely different modes of work.
-
-### Chunk 6: draw.io Output Track
-
-**What:** `skills/draw-io-diagram-generator/`, `instructions/draw-io.instructions.md`, `templates/drawio/`, and `references/notation-drawio.md`.
-
-**Job:** Convert each canonical view into valid mxGraph XML, starting from per-view skeletons and enforcing draw.io-specific notation.
-
-**Why it exists:** draw.io generation is structured XML work. It needs exact cell ids, parent references, geometry, shape libraries, and validation.
-
-**Teaching point:** This is a concrete-output track. Most bugs here are structural: malformed XML, invalid references, missing provenance, or a diagram that renders poorly.
-
-### Chunk 7: Miro Output Track
-
-**What:** `skills/miro-diagram-generator/`, `instructions/miro.instructions.md`, `templates/miro/`, and `references/notation-miro.md`.
-
-**Job:** Convert each canonical view into a Miro prompt using RISEN sections, deterministic object lists, frame naming, and per-view layout rules.
-
-**Why it exists:** Miro output is language-driven rather than XML-driven. It needs precise instructions so a collaborative board can be recreated without inventing extra objects.
-
-**Teaching point:** This is a prompt-output track. Most bugs here are ambiguity bugs: missing counts, loose labels, unscoped instructions, or prompts that ask Miro to infer too much.
-
-### Chunk 8: Validation and Maintenance
-
-**What:** `scripts/smoke-test.py`, `scripts/sync-vendored-assets.py`, `vendored-assets-manifest.json`, `skills/4plus1-models/scripts/validate-views.py`, and `skills/draw-io-diagram-generator/scripts/validate-drawio.py`.
-
-**Job:** Check that the bundle is self-contained, links resolve, output contracts are current, draw.io templates parse, Miro templates match, and vendored asset hashes are unchanged.
-
-**Why it exists:** A standalone workflow only stays portable if there is a mechanical way to catch missing files, stale paths, and local drift.
-
-**Teaching point:** Validation is where documentation becomes executable. The stronger the mechanical checks, the less the maintainer has to rely on memory.
+The teaching pattern under all of these is the same: **one source of truth per concern, independent tracks where the work is genuinely different, and machine-checkable contracts at every join**.
 
 ---
 
-## Step 3: Analyse - Quality Review By Chunk
+## Step 2 — Deconstruct: eight chunks
 
-### Chunk 1: Discoverable Launcher
+Use these chunks as the unit of teaching. Each chunk has one job. The relationships between chunks are where most of the design lessons live.
 
-| Quality Factor | Finding | Reasoning |
-|---|---|---|
-| Clarity and naming | Strong | The launcher says it is a discoverable entrypoint and points to the local orchestrator, playbook, and prompt. |
-| Single responsibility | Strong | It delegates instead of duplicating workflow logic. |
-| Error handling | Adequate | It tells the agent to enforce a clean start, but it does not define recovery behaviour itself. That belongs in `WORKFLOW.md`. |
-| Testability | Good | The smoke test checks required paths and agent frontmatter. |
-| Cognitive load | Low | Users only need to know this is the entrypoint. |
-| Smell | Minor | `tools: []` is correct for no MCP dependency, but users may misread it as the agent being unable to work. The README helps offset this. |
+### Chunk 1 — Discoverable launcher
 
-**Coaching insight:** The launcher is doing the right amount of work: enough to be discoverable, not enough to become a second workflow definition.
+**File:** [`architecture-documentation.agent.md`](../../../workflows/4plus1-diagrams/architecture-documentation.agent.md) at the bundle root.
 
-### Chunk 2: Thin Orchestrator Agent
+**Job:** Make the bundle discoverable when the folder is dropped under `.github/agents/` (repo scope) or `~/.agents/` (user scope), with no install step. Tell the agent runtime that the *real* orchestration lives one folder down.
 
-| Quality Factor | Finding | Reasoning |
-|---|---|---|
-| Clarity and naming | Strong | It names the three loaded skills and the authority boundary for each. |
-| Single responsibility | Strong | It coordinates sequence and guardrails; it does not own rendering internals. |
-| Error handling | Strong | It requires compact intake, assumptions for partial answers, and one follow-up at a time. |
-| Testability | Medium | Humans can inspect routing rules, but there is no automated test that the agent and prompt remain semantically aligned with `WORKFLOW.md`. |
-| Cognitive load | Low to medium | The guardrails are many, but they are grouped by concern and mostly non-overlapping. |
-| Smell | Residual duplication | The agent includes a short workflow summary. That is useful for execution, but it still creates some drift risk with `WORKFLOW.md`. |
+**What to notice:** It explicitly names the orchestrator, the playbook, and the prompt. It declares `tools: []`. It enforces a "clean start, compact intake" rule and stops there.
 
-**Coaching insight:** Thin does not mean empty. A good orchestrator keeps the minimum useful mental model close at hand, then defers detail to the owner files.
+**Teaching point:** This is a wrapper. Wrappers earn their cost when they give the user a stable entrypoint while keeping behaviour somewhere reusable.
 
-### Chunk 3: Workflow Playbook
+### Chunk 2 — Thin orchestrator agent
 
-| Quality Factor | Finding | Reasoning |
-|---|---|---|
-| Clarity and naming | Strong | Purpose, linked assets, preconditions, steps, output directories, validation, and troubleshooting are explicit. |
-| Single responsibility | Strong | It defines the full run without embedding all skill internals. |
-| Error handling | Strong | Section 7 defines a recovery loop for validation failures. |
-| Testability | Strong | Many workflow claims are covered by `scripts/smoke-test.py`. |
-| Cognitive load | Medium | The file is long, but the sections match the order of execution. |
-| Smell | Contract mismatch | Section 7 says `validate-views.py` exits non-zero on mismatch, but the script returns `0` for warnings and only returns `1` for fatal setup errors. |
+**File:** [`agents/architecture-documentation.agent.md`](../../../workflows/4plus1-diagrams/agents/architecture-documentation.agent.md).
 
-**Coaching insight:** A playbook is only as strong as its contract with scripts. If prose says one thing and code returns another, the user will trust whichever they encounter first.
+**Job:** Coordinate a run. Load the right skills, ask the smallest useful intake, branch on track choice, enforce cross-cutting guardrails (no MCP, both formats equal, tracks independent, physical-view source parity, audience always asked).
 
-### Chunk 4: Core 4+1 Method Skill
+**What to notice:** It names the *authority boundary* of each loaded skill ("authoritative for everything 4+1 core logic", "authoritative for everything draw.io"). It refuses to paraphrase the playbook from memory and tells the agent to read `WORKFLOW.md`.
 
-| Quality Factor | Finding | Reasoning |
-|---|---|---|
-| Clarity and naming | Strong | The five views are named by audience, question answered, and notation. |
-| Single responsibility | Strong | It explicitly says it does not own draw.io or Miro rendering. |
-| Assumptions | Strong | It requires visible assumptions and targeted follow-ups. |
-| Testability | Medium | The validator checks naming and concern visibility, but does not parse diagrams deeply. |
-| Cognitive load | Manageable | The skill routes to references rather than embedding all per-view detail. |
-| Smell | Heuristic validation | `validate-views.py` extracts bold text as component names. This is useful but approximate, so it can miss real drift or flag prose terms as components. |
+**Teaching point:** A good orchestrator owns sequencing and boundaries. It does not own the internals of any subsystem it composes. When you find an orchestrator absorbing domain detail, that is the symptom of a missing skill.
 
-**Coaching insight:** Heuristic validators are still valuable when they are labelled honestly. They should be treated as consistency prompts, not proof of correctness.
+### Chunk 3 — Workflow playbook
 
-### Chunk 5: Visual Track Decision
+**File:** [`WORKFLOW.md`](../../../workflows/4plus1-diagrams/WORKFLOW.md).
 
-| Quality Factor | Finding | Reasoning |
-|---|---|---|
-| Clarity and naming | Strong | The choice is draw.io, Miro, or both. |
-| Single responsibility | Strong | The decision only chooses selected outputs; each track owns its own mechanics. |
-| Governance | Strong | The workflow says not to import style or mechanics from one track into the other. |
-| Testability | Medium | The smoke test checks assets for both tracks, but does not simulate user track selection. |
-| Cognitive load | Low | Users get a compact choice with concrete descriptions. |
-| Smell | Drift surface | The prompt repeats some workflow details. The value proposition is balanced, but repeated execution rules still need maintenance care. |
+**Job:** Be the human-readable source of truth for the full run. Define preconditions, the per-view loop, output contracts (Option A / B / A+B), routing tables (per-view skeleton selection by audience), validation expectations, the recovery loop, and the change log.
 
-**Coaching insight:** The track decision is a good example of user choice with architectural consequences. It is simple at the UI level but important at the implementation level.
+**What to notice:** The playbook contains a **per-view skeleton routing table** (§4a) and a **Miro board structure reference** (§4b) so that branching decisions are explicit, not implicit. §7 documents the *expected exit-code contract* of each script — including that `validate-views.py` always returns 0 when it ran (warnings are advisory) and only returns 1 on fatal setup errors.
 
-### Chunk 6: draw.io Output Track
+**Teaching point:** In documentation-first systems, the playbook plays the role of application control flow. Every dependent surface (launcher, orchestrator, prompt) defers to it. Drift between any of them and the playbook is a bug.
 
-| Quality Factor | Finding | Reasoning |
-|---|---|---|
-| Separation of concerns | Strong | Workflow-level notation is separate from generic mxGraph mechanics. |
-| Testability | Strong | `validate-drawio.py` parses XML, checks root cells, title cells, parents, geometry, edge endpoints, and optional provenance. |
-| Governance | Strong | Physical view provenance and `.puml` parity are documented. BPMN colour mapping is explicit. |
-| Cognitive load | Medium to high | mxGraph XML is inherently detailed, but the skill and instruction file chunk it well. |
-| Smell | Manual semantic parity | XML validity is automated, but exact component and relationship parity still requires careful human or agent comparison. |
+### Chunk 4 — Core 4+1 method skill
 
-**Coaching insight:** draw.io validation is strongest at structure and weaker at meaning. That is normal: XML can prove that a diagram is well-formed, but not that the architecture is true.
+**Folder:** [`skills/4plus1-models/`](../../../workflows/4plus1-diagrams/skills/4plus1-models/).
 
-### Chunk 7: Miro Output Track
+**Job:** Own the 4+1 method end-to-end *up to but not including* output rendering: invocation mode, audience routing, context capture, concern routing, per-view content generation, canonical Mermaid/PlantUML output, cross-view consistency.
 
-| Quality Factor | Finding | Reasoning |
-|---|---|---|
-| Separation of concerns | Strong | Miro has its own skill, instruction file, templates, and notation reference. |
-| Testability | Medium | The smoke test checks template parity and example names, but there is no Miro-specific validator script equivalent to `validate-drawio.py`. |
-| Governance | Strong | RISEN sections, exact counts, labels, exclusions, and physical-view object manifests reduce ambiguity. |
-| Cognitive load | Medium | Sidekick-specific physical-view guidance is detailed because it prevents common prompt failures. |
-| Smell | Output location inconsistency | `instructions/miro.instructions.md` says prompts live in the same directory as the corresponding `.mmd` or `.puml`, while the workflow output contract says they live under `diagrams/miro/`. |
+**What to notice:** The skill explicitly disclaims ownership of draw.io and Miro mechanics. Its references folder carries the per-view detail (`logical-view.md`, `process-view.md`, …) and notation cheatsheets (`notation-mermaid.md`, `notation-plantuml.md`, `notation-bpmn-in-mermaid.md`). Its `concerns/` folder contains pluggable concern modules (GDPR, security, bias, regulatory, sustainability, accessibility) routed in by Step 4.
 
-**Coaching insight:** Prompt artefacts need contracts too. The Miro track is not code, but naming, sections, source references, and scope boundaries are still executable design constraints.
+**Teaching point:** This is the **domain core**. Output formats depend on it; it depends on no output format. When you can pull a skill out of a workflow and run it standalone, you have evidence the boundary is clean.
 
-### Chunk 8: Validation and Maintenance
+### Chunk 5 — Track decision
 
-| Quality Factor | Finding | Reasoning |
-|---|---|---|
-| Completeness | Strong | Smoke testing covers path presence, links, stale references, path contracts, templates, XML, and vendored metadata. |
-| Error messages | Good | Smoke-test output names the failing contract and path. draw.io validation prints precise structural failures. |
-| Rollback/recovery | Strong | The workflow tells the agent to stop, classify failure, regenerate affected artefacts, and re-run validators. |
-| Testability | Strong | The smoke test is fast and mechanical. |
-| Cognitive load | Medium | There are several validators with different scopes; the README helps explain when to run each. |
-| Smell | Ambiguous sync model | The manifest uses `source.kind: bundle-path`, often with `source.path` equal to `local_path`. This detects local snapshot drift but does not fetch or compare against an external upstream source. |
+**Surfaces:** Step 2 in the prompt, agent, and `WORKFLOW.md`.
 
-**Coaching insight:** The maintenance model is intentionally standalone. That is good, but the word "sync" can overpromise. It is more like bundle-local integrity management unless a maintainer deliberately replaces assets and updates hashes.
+**Job:** Choose draw.io, Miro, or both, exactly once, at intake. Treat each chosen track as independent for the rest of the run.
 
----
+**What to notice:** The decision is asked as a single question with three options. The agent guardrail says *do not import style or mechanics from one track into the other*. Only the typed subfolders for the chosen tracks are created.
 
-## Step 4: Teach - Explain The Why
+**Teaching point:** Branching is not a design smell when the branches represent genuinely different *modes of work*. draw.io is an XML authoring problem; Miro is a prompt authoring problem. A unified abstraction would hide that difference and make both worse.
 
-### Decision 1: Why Canonical Diagram-As-Code Comes First
+### Chunk 6 — draw.io output track
 
-The workflow treats Mermaid and PlantUML as the source of truth because they are reviewable text. A pull request can show exactly what changed in a relationship, component name, or deployment node.
+**Files:** [`skills/draw-io-diagram-generator/`](../../../workflows/4plus1-diagrams/skills/draw-io-diagram-generator/), [`instructions/draw-io.instructions.md`](../../../workflows/4plus1-diagrams/instructions/draw-io.instructions.md), [`templates/drawio/`](../../../workflows/4plus1-diagrams/templates/drawio/) (eight per-view skeletons), [`references/notation-drawio.md`](../../../workflows/4plus1-diagrams/references/notation-drawio.md).
 
-draw.io and Miro are easier for humans to manipulate visually, but they are not the best place to establish architectural truth. If the editable visual becomes the source of truth, drift becomes harder to detect because diagrams can change spatially, stylistically, or semantically all at once.
+**Job:** Convert each canonical view into a valid mxGraph XML file, starting from a per-view skeleton, applying view-specific shape libraries, palette, layout, edge style, and embedding hidden canonical-source provenance.
 
-The thinking pattern is: first define the model in a durable representation, then generate or describe visual surfaces from that model.
+**What to notice:**
 
-### Decision 2: Why The Root Agent Is Thin
+- The eight skeletons cover the per-view variants the routing table refers to (process sequence vs. process BPMN; physical AWS vs. Azure vs. generic).
+- Each workflow-level template carries a `canonical-source-ref` provenance cell so the file remains traceable when copied outside the repo.
+- `scripts/validate-drawio.py` checks XML well-formedness, root cells `0` and `1`, parent references, geometry presence, edge endpoints, and (when invoked with `--require-provenance`) the provenance cell.
+- The skill keeps generic templates (flowchart, ER, UML class, sequence, architecture) for non-4+1 use, separate from the workflow-level per-view skeletons.
 
-The root agent is a discoverability adapter. Its job is to let the folder be copied into a standard agent location and still work. It should not repeat the workflow because repeated instructions become alternate sources of truth.
+**Teaching point:** Most failures here are structural — malformed XML, dangling parent ids, missing provenance, geometry typos. Structural validators catch them cheaply. Semantic parity (does the diagram actually mean what the canonical source says?) is still a human or agent responsibility.
 
-This is similar to a command-line shim: the shim helps users find the tool, but the actual behaviour lives in the real program.
+### Chunk 7 — Miro output track
 
-The trade-off is that users may need one more hop to understand the system. The benefit is much larger: the bundle can evolve without updating the launcher every time.
+**Files:** [`skills/miro-diagram-generator/`](../../../workflows/4plus1-diagrams/skills/miro-diagram-generator/), [`instructions/miro.instructions.md`](../../../workflows/4plus1-diagrams/instructions/miro.instructions.md), [`templates/miro/`](../../../workflows/4plus1-diagrams/templates/miro/) (per-view + full-board), [`references/notation-miro.md`](../../../workflows/4plus1-diagrams/references/notation-miro.md).
 
-### Decision 3: Why The Orchestrator Composes Skills Instead Of Merging Them
+**Job:** Convert each canonical view into a precise Miro board prompt — RISEN structure (Role, Input, Steps, Expectation, Narrowing), exact frame title, exact shape and arrow counts, exact labels, explicit exclusions, and a canonical-source reference section so the prompt stands alone when copied.
 
-The three major responsibilities are different kinds of work:
+**What to notice:**
 
-- `4plus1-models` is architecture method work.
-- `draw-io-diagram-generator` is XML and visual layout work.
-- `miro-diagram-generator` is prompt and board-instruction work.
+- The skill keeps two template files duplicated: one workflow copy under `templates/miro/`, one skill-internal copy under `skills/miro-diagram-generator/templates/`. The smoke test enforces byte-equality between the pair.
+- Per-view conventions live in `references/notation-miro.md` (frame naming, shape semantics, palette, layout discipline).
+- Validation is checklist-driven, not script-driven: naming pattern (`<view>-miro-prompt.md`), template sections present, names matching canonical source, no unlabelled arrows, no decorative elements outside scope.
+- For Physical view, the prompt expands the `.puml` into an explicit object manifest before layout instructions, because asking Miro to "parse PlantUML" produces drift.
 
-Combining them into one giant skill would hide the boundaries. Every change to Miro prompt style would risk touching 4+1 logic. Every draw.io XML rule would sit beside audience-routing guidance. That would make the system harder to teach, harder to test, and harder to extend.
+**Teaching point:** This is a prompt-output track. Failures here are *ambiguity bugs*: missing counts, vague labels, scope leak, asking the consumer to infer too much. The mitigation is determinism — say exactly what objects, exactly what labels, exactly what is out of scope.
 
-The thinking pattern is: split by reason to change. If two parts change for different reasons, they probably deserve different ownership.
+### Chunk 8 — Validation and maintenance
 
-### Decision 4: Why draw.io And Miro Tracks Stay Independent
+**Files:**
 
-draw.io and Miro do not have the same mechanics. draw.io needs exact XML. Miro needs precise natural-language instructions. Trying to force one shared visual grammar across both would create hidden coupling.
+- [`scripts/smoke-test.py`](../../../workflows/4plus1-diagrams/scripts/smoke-test.py) — bundle integrity.
+- [`skills/4plus1-models/scripts/validate-views.py`](../../../workflows/4plus1-diagrams/skills/4plus1-models/scripts/validate-views.py) — cross-view consistency.
+- [`skills/draw-io-diagram-generator/scripts/validate-drawio.py`](../../../workflows/4plus1-diagrams/skills/draw-io-diagram-generator/scripts/validate-drawio.py) — per-file draw.io validity.
+- [`scripts/inject-and-validate-provenance.py`](../../../workflows/4plus1-diagrams/scripts/inject-and-validate-provenance.py) — idempotent provenance-cell injector for workflow-level draw.io templates, followed by validator run with `--require-provenance`.
+- [`scripts/sync-vendored-assets.py`](../../../workflows/4plus1-diagrams/scripts/sync-vendored-assets.py) and [`vendored-assets-manifest.json`](../../../workflows/4plus1-diagrams/vendored-assets-manifest.json) — vendored snapshot integrity.
 
-The workflow instead shares only what needs to be shared:
+**Job:** Make the bundle's correctness *executable*. The smoke test alone enforces:
 
-- canonical component and relationship names
-- source paths and provenance
-- semantic palette expectations for BPMN-style process views
-- physical-view parity with PlantUML
+| Check | Why it matters |
+|---|---|
+| Required paths exist | Missing files break copy-and-run portability. |
+| Entry frontmatter order (`name`, `description`, `metadata` last; `skill-author` under metadata) | Discoverability tooling and downstream parsers depend on the order. |
+| Markdown links resolve and never escape the bundle root | Standalone packaging guarantee. |
+| Forbidden stale text absent (e.g. `.github/skills/`, legacy skill name, flat per-view prompt names) | Catches half-done refactors. |
+| Output contract: no flat `diagrams/<file>` paths in scope files; trees show typed subfolders | Enforces the typed-subfolder convention everywhere it is documented. |
+| Canonical view filenames (`00-system-context.md`, `01..05-<view>.md`) | Prevents naming drift between WORKFLOW.md, prompts, agents, and skill output specs. |
+| `validate-views.py` invocations include the positional directory argument | Catches docs that show the wrong invocation. |
+| Miro template parity (workflow vs. skill copy) | The deliberate duplication is allowed only while bytes match. |
+| draw.io templates parse and pass the validator (workflow templates also require provenance) | Skeletons cannot ship broken. |
+| Vendored asset hashes match the manifest (with `--check-skew`) | Snapshot integrity. |
 
-Everything else remains track-local. This is a good boundary because it lets each track improve without forcing the other to mimic it.
-
-### Decision 5: Why Physical View Uses PlantUML As Canonical
-
-Physical architecture needs deployment boundaries, cloud services, regions, network relationships, and sometimes provider-specific notation. PlantUML is a better source format for that than Mermaid in this workflow.
-
-The workflow then imposes a strict rule: visual outputs can group and style physical elements, but they must not invent infrastructure. This prevents a common failure mode where a nice-looking deployment diagram gains an unstated CDN, cache, WAF, database, or protocol because the visual template happened to include one.
-
-The thinking pattern is: for infrastructure, treat extra boxes as claims. If the canonical source does not claim a resource exists, the visual output should not show it.
-
-### Decision 6: Why Vendoring Is A Feature, Not A Smell
-
-This repo has a strict standalone packaging rule. A copied workflow must include everything it needs. That is why skills, instructions, templates, scripts, references, and examples are vendored under the workflow folder.
-
-Vendoring has a cost: copied assets can become stale relative to their original sources. The current bundle handles this by treating the vendored assets as a frozen snapshot and checking local hash integrity.
-
-The subtle point: this does not automatically tell you whether an external original has changed. It tells you whether this bundle's declared snapshot still matches the manifest. That is a valid design, but maintainers should describe it as snapshot integrity unless they add a real upstream comparison process.
-
-### Decision 7: Why The Smoke Test Matters
-
-The smoke test is the workflow's executable memory. It catches things humans forget:
-
-- broken local links
-- stale references to non-local or incorrect paths
-- flat `diagrams/` outputs that bypass the typed folder contract
-- Miro template drift between workflow and skill copies
-- malformed draw.io templates
-- vendored asset hash drift
-
-This is especially important for documentation-first assets. There is no application build to fail. The smoke test becomes the build.
+**Teaching point:** Documentation-first projects have no application build to fail. The smoke test *is* the build. A learner who internalises this stops thinking of validators as optional.
 
 ---
 
-## Step 5: Advise - Prioritised Next Steps
+## Step 3 — Analyse: chunk-by-chunk quality rubric
 
-### Priority 1: Fix The `validate-views.py` Exit-Code Contract
+Use this table format with learners. The columns generalise to any agentic workflow.
 
-**Impact:** High  
-**Effort:** Low to medium
+### Chunk 1 — Discoverable launcher
 
-**Issue:** `WORKFLOW.md` says `validate-views.py` exits non-zero on mismatch. The script documentation and implementation say it returns `0` after reporting warnings, and only returns `1` for fatal setup problems like a missing directory or no expected files.
+| Quality factor | Finding | Why |
+|---|---|---|
+| Clarity & naming | Strong | The file states it is a launcher and names the three things it delegates to. |
+| Single responsibility | Strong | No workflow logic is duplicated. |
+| Contract strength | Strong | "Required behavior" is four bullets. |
+| Drift surface | Low | Almost nothing here can drift — there is almost nothing here. |
+| Mechanical testability | Good | `smoke-test.py` requires the file path and validates frontmatter. |
 
-**Why it matters:** Agents and maintainers use exit codes to decide whether to stop. If warnings return `0`, the workflow should not claim they fail the run.
+**Coach this:** the launcher exists *only* to win one moment — discoverability. Wrappers should be smaller than the thing they wrap.
 
-**Recommendation:** Choose one contract and align both sides:
+### Chunk 2 — Thin orchestrator agent
 
-- Option A: Keep `validate-views.py` advisory and update `WORKFLOW.md` to say mismatches are warnings that require human review.
-- Option B: Add a `--strict` mode that returns non-zero when consistency warnings are present, then update `WORKFLOW.md` to invoke strict mode when final validation is required.
+| Quality factor | Finding | Why |
+|---|---|---|
+| Clarity & naming | Strong | Each loaded skill is named with its authority boundary. |
+| Single responsibility | Strong | Coordinates; does not absorb. |
+| Contract strength | Strong | Intake protocol, guardrails, and skill-authority statements are all explicit. |
+| Drift surface | Medium | The agent restates a short workflow summary. Useful for execution; still a place to keep aligned with `WORKFLOW.md`. |
+| Mechanical testability | Medium | Frontmatter and existence are tested. Behavioural alignment with the playbook is not automated. |
 
-### Priority 2: Fix The Miro Prompt Location Inconsistency
+**Coach this:** "thin" is not "empty". A useful orchestrator carries the *minimum execution mental model* and defers the rest. The drift surface is the price of usability.
 
-**Impact:** Medium  
-**Effort:** Low
+### Chunk 3 — Workflow playbook
 
-**Issue:** The workflow output contract writes Miro prompts under `diagrams/miro/`, but `instructions/miro.instructions.md` says the prompt location is the same directory as the corresponding `.mmd` or `.puml` file.
+| Quality factor | Finding | Why |
+|---|---|---|
+| Clarity & naming | Strong | Section numbering matches execution order. |
+| Single responsibility | Strong | The playbook owns the run; it does not own skill internals. |
+| Contract strength | Strong | Includes routing tables, output trees per option, validation steps, and explicit script exit-code expectations. |
+| Drift surface | Medium | Several surfaces (prompt, agent, README) reproduce parts of the playbook. |
+| Mechanical testability | Strong | Output paths, link integrity, forbidden text, and canonical view filenames are smoke-tested directly out of the playbook. |
 
-**Why it matters:** This is exactly the kind of small contract drift that causes generated artefacts to land in the wrong folder.
+**Coach this:** the playbook is application control flow. Every overlap with the prompt or agent should ask one question: *if these disagree, who wins?* The answer here is always the playbook.
 
-**Recommendation:** Update the Miro instruction file to use `diagrams/miro/<view>-miro-prompt.md`, matching `WORKFLOW.md`, `README.md`, and the Miro skill.
+### Chunk 4 — Core 4+1 method skill
 
-### Priority 3: Clarify The Vendored Asset Maintenance Model
+| Quality factor | Finding | Why |
+|---|---|---|
+| Clarity & naming | Strong | Each view is described by audience, question answered, and primary notation. |
+| Single responsibility | Strong | Explicitly disclaims output-track ownership. |
+| Contract strength | Strong | Workflow steps 1–7 are linear; concerns are pluggable. |
+| Drift surface | Low | Per-view detail is in `references/`, so the SKILL.md stays slim. |
+| Mechanical testability | Medium | `validate-views.py` performs heuristic component-name extraction (bold tokens, minus a noise list). Useful as a consistency prompt; not proof of correctness. |
 
-**Impact:** Medium  
-**Effort:** Low to medium
+**Coach this:** heuristic validators are still valuable when their limits are stated honestly. The skill labels them as advisory and the playbook says so too. That alignment is the lesson.
 
-**Issue:** The manifest and sync script are bundle-local. They enforce local snapshot integrity, but they do not check an external upstream source.
+### Chunk 5 — Track decision
 
-**Why it matters:** "Sync" may imply that the script refreshes from an original skill source. In the current strict-standalone model, it does not.
+| Quality factor | Finding | Why |
+|---|---|---|
+| Clarity & naming | Strong | Three options, single question. |
+| Single responsibility | Strong | The decision only selects outputs; tracks own their mechanics. |
+| Contract strength | Strong | Workflow guardrail: do not import style or mechanics across tracks. |
+| Drift surface | Low | The branch logic appears identically in playbook, agent, and prompt. |
+| Mechanical testability | Medium | Required assets for both tracks are checked; user selection itself is not simulated. |
 
-**Recommendation:** Add a short note to the README maintenance SOP:
+**Coach this:** simple branches at the UI can carry significant architectural weight. Make the branch explicit; let each branch own its world.
 
-> This workflow does not automatically fetch upstream skill changes. To refresh a vendored asset, deliberately replace the local bundle copy, then run the sync/apply or hash update process and smoke test the result.
+### Chunk 6 — draw.io output track
 
-If the desired behaviour is true upstream comparison, add a separate, optional maintainer-only manifest outside the runtime bundle. Keep it out of the copied workflow if strict standalone packaging is required.
+| Quality factor | Finding | Why |
+|---|---|---|
+| Separation of concerns | Strong | Workflow notation lives in `references/notation-drawio.md`; mxGraph mechanics live in the skill. |
+| Contract strength | Strong | Eight per-view skeletons, provenance cell required at workflow level, validation script with `--require-provenance` flag. |
+| Drift surface | Medium | Skeleton inventory and the routing table in `WORKFLOW.md` §4a must stay aligned (smoke test enforces required paths). |
+| Mechanical testability | Strong | `validate-drawio.py` parses XML, checks root cells, parents, geometry, edge endpoints, provenance. Smoke test runs it across all templates. |
+| Semantic correctness | Manual | Structural validity does not prove the diagram says the right thing. |
 
-### Priority 4: Reduce Residual Prompt And Workflow Duplication
+**Coach this:** XML can prove a diagram is well-formed. It cannot prove the architecture is true. Always pair structural automation with semantic review.
 
-**Impact:** Medium  
-**Effort:** Medium
+### Chunk 7 — Miro output track
 
-**Issue:** The root launcher is thin, but the prompt still restates a condensed workflow sequence. Some repetition is useful for agent execution, but it remains a drift surface.
+| Quality factor | Finding | Why |
+|---|---|---|
+| Separation of concerns | Strong | Skill, instruction, templates, and notation reference all distinct. |
+| Contract strength | Strong | RISEN sections, exact counts, exact labels, exclusions, source-reference section, physical-view object manifest. |
+| Drift surface | Medium | Two copies of the Miro templates (workflow vs. skill); kept honest by byte-equality smoke check. |
+| Mechanical testability | Medium | No prompt-validation script analogous to `validate-drawio.py`; checks are filename pattern, template parity, and example naming. |
+| Semantic correctness | Manual | Same as draw.io: parity with canonical source is checklist-driven. |
 
-**Why it matters:** The smoke test can catch invalid paths and missing files, but it cannot prove that the prompt's behavioural summary matches `WORKFLOW.md`.
+**Coach this:** prompts are artefacts with contracts too. Naming, sections, source references, and explicit scope boundaries are this track's equivalent of XML schema.
 
-**Recommendation:** Keep the prompt executable but make each repeated item explicitly a summary of `WORKFLOW.md`, not a separate rule. Add one smoke-test check for a small number of high-risk statements, such as output track choices and typed output folders.
+### Chunk 8 — Validation and maintenance
 
-### Priority 5: Add A Worked End-To-End Example README
+| Quality factor | Finding | Why |
+|---|---|---|
+| Completeness | Strong | Three validators address three distinct concerns: bundle integrity, cross-view consistency, per-format validity. |
+| Error messages | Good | Smoke-test errors include path and the failing contract. draw.io validation prints precise structural failures. |
+| Recovery model | Strong | `WORKFLOW.md` §7 defines a stop-classify-regenerate-revalidate loop and states each script's exit-code contract. |
+| Drift surface | Low | The manifest treats the bundle as a frozen snapshot; `--check-skew` detects local drift against recorded hashes. |
+| Honest scope | Strong | The README and manifest describe sync as bundle-local integrity, not upstream fetch. |
 
-**Impact:** Medium  
-**Effort:** Medium
-
-**Issue:** The bundle includes core 4+1 example views and Miro examples, but the top-level workflow does not yet have a narrative example that shows intake, generated canonical views, selected visual tracks, validation, and final folder structure in one place.
-
-**Why it matters:** First-time users understand workflow systems faster when they can see one complete run.
-
-**Recommendation:** Add `examples/synth-claim/README.md` or a workflow-level example guide showing:
-
-1. The initial user request.
-2. The compact intake assumptions.
-3. The five canonical views.
-4. The selected draw.io and/or Miro outputs.
-5. The validation commands and expected result.
-
-### Priority 6: Consider A Miro Prompt Validator
-
-**Impact:** Low to medium  
-**Effort:** Medium
-
-**Issue:** Miro validation is currently checklist-based. The smoke test checks template parity and file names, but does not parse generated Miro prompt content.
-
-**Why it matters:** The Miro track has a strong contract: RISEN sections, canonical source reference, exact labels, counts, and narrowing. Some of that can be checked mechanically.
-
-**Recommendation:** Add a lightweight `validate-miro-prompt.py` that checks required RISEN headings, `Canonical source reference`, view filename pattern, and absence of known cross-view leakage terms.
-
----
-
-## Teaching Summary: How To Think About This Workflow
-
-The deep pattern is orchestration over independent capabilities.
-
-The workflow has a domain core (`4plus1-models`), two independent rendering tracks (draw.io and Miro), and a validation layer that protects the bundle contract. The orchestration works because coupling is mostly one-directional:
-
-```text
-4+1 method -> canonical Mermaid/PlantUML -> selected visual track(s) -> validation
-```
-
-draw.io does not depend on Miro. Miro does not depend on draw.io. Both depend on the same canonical source.
-
-That is the part worth carrying to other systems. If you add a third output format later, the scalable move is not to edit every existing track. The scalable move is:
-
-1. Create a new output skill.
-2. Add a track choice branch.
-3. Define its templates and notation reference.
-4. Validate it against the canonical source.
-5. Extend the smoke test for its folder and naming contract.
-
-The current workflow is well-designed because it makes its contracts explicit: source of truth, output ownership, validation scope, and packaging rules. Its remaining issues are not architectural collapse; they are contract alignment problems. That is a good place for a documentation-first workflow to be.
+**Coach this:** "sync" easily overpromises. Naming the operation accurately ("snapshot integrity, not upstream pull") prevents users from trusting it for the wrong job.
 
 ---
 
-## Success Criteria Check
+## Step 4 — Teach: seven design decisions and their trade-offs
 
-- Learner understands the purpose: connect version-controlled 4+1 diagrams with editable draw.io and Miro outputs.
-- Learner can name the numbered chunks: launcher, orchestrator, playbook, core skill, track decision, draw.io track, Miro track, validation and maintenance.
-- Learner can explain the main design decisions: canonical source first, thin launcher, skill composition, independent tracks, PlantUML for Physical view, vendored snapshot packaging.
-- Learner can identify remaining hard parts: script/prose contract drift, Miro output location mismatch, self-referential vendored sync, heuristic validation limits.
-- Learner has actionable improvements ranked by impact and effort.
+These are the decisions worth slowing down on. For each, ask the learner what they would have done before showing what the bundle did.
 
-## Result
+### Decision 1 — Canonical diagram-as-code first, visual artefacts second
 
-The `4plus1-diagrams` workflow is a strong example of documentation-first workflow design: a standalone bundle, a clear source of truth, independent output tracks, canonical-source parity, and mechanical validation. Its main teaching value is the way it turns architectural documentation into an explicit, testable set of contracts.
+**The choice:** Mermaid and PlantUML are the source of truth. draw.io and Miro are *generated from* canonical sources, never the reverse.
+
+**Why:** Canonical formats are reviewable text. A pull request shows exactly which component name, relationship, or deployment node changed. Visual editors let humans change spatial layout, style, and meaning at the same time, which makes drift invisible.
+
+**Trade-off:** The first run of each view is slower because two artefacts are produced. Long-term, audit and review costs collapse.
+
+**Pattern to teach:** *Define the model in a durable representation; generate or describe visual surfaces from that model.*
+
+### Decision 2 — Discoverable launcher separate from orchestrator
+
+**The choice:** A root `architecture-documentation.agent.md` exists only to make the bundle discoverable. The real orchestration lives in `agents/architecture-documentation.agent.md`.
+
+**Why:** Agent runtimes look in fixed places (`.github/agents/`, `~/.agents/`). The bundle must be installable by copy. The root file is a shim. The orchestrator is the real program.
+
+**Trade-off:** One more hop for the reader. In return, the bundle can evolve internally without touching the discoverability surface.
+
+**Pattern to teach:** *Discoverability is an interface. Behaviour is an implementation. Keep them separate.*
+
+### Decision 3 — Compose three skills instead of one big skill
+
+**The choice:** `4plus1-models` (method), `draw-io-diagram-generator` (XML output), `miro-diagram-generator` (prompt output) are three separate skills, each authoritative for its own world.
+
+**Why:** They change for different reasons. A new BPMN palette change affects both output skills but not the method. A new view variant affects the method but not the output mechanics. Putting them in one skill would hide those reasons.
+
+**Trade-off:** Three skills means three sets of frontmatter, three reference folders, three places a learner has to look. The orchestrator and playbook do the navigation work.
+
+**Pattern to teach:** *Split skills by reason to change. Cohesion is about why code changes together, not about what it does together.*
+
+### Decision 4 — draw.io and Miro tracks stay independent
+
+**The choice:** Each track has its own skill, instructions, templates, references, validation surface. The orchestrator forbids importing style or mechanics across tracks.
+
+**Why:** draw.io is structured XML. Miro is structured prompts. A shared abstraction would have to leak both worlds and would weaken both.
+
+**What is shared (deliberately):** canonical component and relationship names; canonical-source paths and provenance; the BPMN semantic palette mapping for process views; the rule that physical-view visuals must not invent infrastructure beyond the `.puml`.
+
+**Trade-off:** Some duplicated effort across tracks. In return, each track can improve independently and a new track (Lucidchart, Excalidraw, …) can be added without touching the others.
+
+**Pattern to teach:** *Share the model; do not share the rendering.*
+
+### Decision 5 — Physical view uses PlantUML as canonical
+
+**The choice:** Physical view uses PlantUML (`.puml`); the other four views use Mermaid (`.mmd`).
+
+**Why:** Physical architecture needs deployment boundaries, cloud-provider stdlib shapes, network topology, regions, and provider-specific notation. PlantUML handles this better than Mermaid in this workflow.
+
+**The strict rule downstream:** visual outputs (draw.io, Miro) may *group and style* physical elements, but must not *invent* infrastructure. Every node, container, child element, relationship endpoint, and relationship label in the `.puml` must be represented; nothing else may appear.
+
+**Why the rule matters:** the most common deployment-diagram failure is a CDN, cache, WAF, queue, or replica that "looked right" in the visual template and was never removed. Such elements are claims; if the canonical source does not claim them, the diagram lies.
+
+**Trade-off:** Mixing notations in one workflow adds a learning step. The cost buys deployment-diagram honesty.
+
+**Pattern to teach:** *For infrastructure, treat extra boxes as claims. Visual editors are very good at producing claims you didn't make.*
+
+### Decision 6 — Vendoring is the packaging contract
+
+**The choice:** Skills, instructions, templates, scripts, references, examples are all vendored under the workflow folder. The bundle has no runtime dependency on any path outside itself.
+
+**Why:** The repository's standalone-packaging rule says every workflow, skill, instruction, prompt, and agent must be copyable on its own. A workflow that links outward is not portable.
+
+**The cost:** vendored copies can drift from upstream. The bundle handles this honestly with two ideas:
+
+- The vendored manifest tracks **bundle-local integrity** (hashes match the recorded snapshot). It does *not* fetch from upstream.
+- A `--check-skew` mode tells the maintainer whether the local snapshot still matches the manifest.
+
+**Trade-off:** Larger bundle, manual upstream refresh. In return, copy-to-deploy is real.
+
+**Pattern to teach:** *Standalone is a guarantee. Manifests with hashes are how you keep the guarantee true.*
+
+### Decision 7 — The smoke test is executable memory
+
+**The choice:** A single `scripts/smoke-test.py` enforces every contract the bundle relies on for portability and consistency: required paths, frontmatter order, link resolution and bundle containment, forbidden stale text, output-path conventions, canonical view filenames, validator invocation form, Miro template parity, draw.io template validity, and (with `--check-skew`) vendored asset hashes.
+
+**Why:** Documentation-first projects have no compiler. Without mechanical checks, every refactor relies on memory. Memory loses to large bundles.
+
+**Trade-off:** Maintainers must update the smoke test when contracts change. In return, breaking changes are loud.
+
+**Pattern to teach:** *In a documentation-first system, every contract you care about needs a check that fails when it breaks. The smoke test is your build.*
+
+---
+
+## Step 5 — Advise: questions to take to the next agentic workflow
+
+Coaches: when learners move from this workflow to design or review their own, give them this question set. Each question maps to a decision above.
+
+1. **What is the single source of truth?** If a view, prompt, or output disagrees with another, which one wins? Is that documented?
+2. **Where is the orchestration thin and where is it thick?** Does the orchestrator absorb domain logic? If yes, which skill is missing?
+3. **How is the bundle discovered?** Is the discoverability surface separate from the behaviour surface, or are they tangled?
+4. **How many skills, and why those?** Could one skill be split because it changes for two different reasons? Could two be merged because they always change together?
+5. **Where are the genuine branches?** Track choice, audience, view, environment. Are branches explicit and named, or implicit and inferred?
+6. **What is shared across branches and what is not?** Share the model; do not share the rendering.
+7. **What can be invented downstream?** For every artefact the workflow produces, ask: what could a generator add that the canonical source does not claim? Where is that prevented?
+8. **Is the bundle copy-to-deploy?** Are skills, instructions, templates, references vendored locally? Are external links forbidden? Is there a manifest with integrity hashes?
+9. **What contracts have machine checks?** Required files, frontmatter order, link resolution, naming conventions, output paths, format validity, parity between duplicated files, vendored hashes. If a contract has no check, it will drift.
+10. **What is the recovery loop on validation failure?** Stop, classify, regenerate the affected artefact only, re-run the failing validator first, then re-run the full set. Is it documented?
+
+If a learner can apply this question set to an unfamiliar workflow and produce a useful review, the coaching has worked.
+
+---
+
+## Appendix — Map from chunk to file (for facilitators)
+
+| Chunk | Primary file(s) | Secondary surfaces |
+|---|---|---|
+| 1. Discoverable launcher | `architecture-documentation.agent.md` (root) | — |
+| 2. Thin orchestrator agent | `agents/architecture-documentation.agent.md` | `prompts/4plus1-diagrams.prompt.md` |
+| 3. Workflow playbook | `WORKFLOW.md` | `README.md` |
+| 4. Core 4+1 method skill | `skills/4plus1-models/SKILL.md` | `references/`, `concerns/`, `templates/view-template.md`, `examples/synth-claim/` |
+| 5. Track decision | `WORKFLOW.md` §2, agent guardrails, prompt step 2 | — |
+| 6. draw.io track | `skills/draw-io-diagram-generator/SKILL.md`, `templates/drawio/`, `references/notation-drawio.md`, `instructions/draw-io.instructions.md` | `skills/draw-io-diagram-generator/scripts/validate-drawio.py` |
+| 7. Miro track | `skills/miro-diagram-generator/SKILL.md`, `templates/miro/`, `references/notation-miro.md`, `instructions/miro.instructions.md` | `skills/miro-diagram-generator/examples/synth-claim/miro-prompts/` |
+| 8. Validation & maintenance | `scripts/smoke-test.py`, `vendored-assets-manifest.json`, `scripts/sync-vendored-assets.py`, `scripts/inject-and-validate-provenance.py` | `skills/4plus1-models/scripts/validate-views.py`, `skills/draw-io-diagram-generator/scripts/validate-drawio.py` |
+
+Use this table when the workshop asks "where do I look?" — but resist letting learners read top-to-bottom. The coaching value comes from the chunk-to-decision-to-question chain, not the file list.

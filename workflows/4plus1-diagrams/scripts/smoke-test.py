@@ -36,6 +36,7 @@ REQUIRED_PATHS = [
     "references/notation-miro.md",
     "vendored-assets-manifest.json",
     "scripts/sync-vendored-assets.py",
+    "scripts/inject-and-validate-provenance.py",
     "skills/4plus1-models/SKILL.md",
     "skills/draw-io-diagram-generator/SKILL.md",
     "skills/miro-diagram-generator/SKILL.md",
