@@ -224,7 +224,7 @@ Use this recovery loop whenever any validator fails.
 6. Only present final deliverables after all selected track checks pass.
 
 Expected command behaviour:
-- `validate-views.py`: exit code `0` on success, non-zero on mismatch.
+- `validate-views.py`: exit code `0` always when validation ran — warnings are advisory and do not fail the run. Exit code `1` only on fatal setup errors (directory not found, not a directory, or no expected view files present).
 - `validate-drawio.py`: exit code `0` on success, non-zero on XML/contract failures.
 - `scripts/smoke-test.py`: exit code `0` on bundle integrity success, non-zero on contract violations.
 

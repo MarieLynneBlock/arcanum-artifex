@@ -116,6 +116,8 @@ python scripts/smoke-test.py --check-skew
 5. Update `vendored-assets-manifest.json` metadata (`ref`, `last_sync_utc`) for any refreshed asset, keeping `source.kind` as `bundle-path`.
 6. Commit synced assets and metadata together.
 
+> **Note — bundle-local integrity only.** All `source.path` values in the manifest point to paths inside this folder (`source.kind: bundle-path`), so `--apply` operates within the bundle and updates integrity hashes. It does not fetch from any external upstream. To refresh a vendored asset from an upstream source, manually replace the local bundle copy first, then run `--apply` to recalculate hashes, and smoke-test the result.
+
 ## What you get back
 
 Choose your format:

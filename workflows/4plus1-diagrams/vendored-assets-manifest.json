@@ -1,6 +1,6 @@
 {
   "manifest_version": 1,
-  "generated_at_utc": "2026-05-16T00:00:00Z",
+  "generated_at_utc": "2026-05-16T09:06:11Z",
   "assets": [
     {
       "id": "skill-4plus1-models",
@@ -74,7 +74,7 @@
       "last_sync_utc": "2026-05-16T00:00:00Z",
       "integrity": {
         "algo": "sha256-tree-v1",
-        "hash": "db443b5a9579128a32057ed76bb0286ace33bfe77aaee13b2a35467d275a06b1"
+        "hash": "3f4e371e9c4a6abbc9c13902ecdc2854bbe5b0c3c8546acc7d71df2c31bdba37"
       }
     }
   ]
