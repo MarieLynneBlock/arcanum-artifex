@@ -32,7 +32,7 @@ Treat the selected workflow folder as a fully contained, copyable unit. It must 
 
 Check that:
 
-- All runtime dependencies are vendored inside the workflow folder.
+- All runtime dependencies are bundled inside the workflow folder.
 - Relative markdown links resolve to files inside the selected workflow folder.
 - No instructions, prompts, agents, skills, scripts, templates, or examples require repo-level assets outside the selected workflow folder.
 - No absolute local paths, machine-specific paths, or hidden cross-repo assumptions are required.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Synchronise vendored workflow assets from declared bundle-local sources.
+"""Synchronise bundled workflow assets from declared bundle-local sources.
 
-Default mode is dry-run. Use --apply to copy source content into local vendored paths.
+Default mode is dry-run. Use --apply to copy source content into local bundled paths.
 The script reads vendored-assets-manifest.json in the workflow root.
 """
 from __future__ import annotations
@@ -160,7 +160,7 @@ def limit_list(items: list[str], max_items: int = 20) -> list[str]:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Sync vendored assets from manifest sources inside this bundle"
+        description="Sync bundled assets from manifest sources inside this bundle"
     )
     parser.add_argument("--apply", action="store_true", help="Apply changes instead of dry-run")
     parser.add_argument(

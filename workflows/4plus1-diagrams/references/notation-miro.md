@@ -1,6 +1,6 @@
 # Miro conventions for 4+1 views
 
-Per-view conventions for the `4plus1-diagrams` workflow. **Mechanics of RISEN prompts (Role/Input/Steps/Expectation/Narrowing structure, template, validation rules) are owned by [`miro-diagram-generator`](../skills/miro-diagram-generator/SKILL.md) and the [Miro instruction file](../instructions/miro.instructions.md) (both vendored in top-level workflow folders).** This file only covers what is specific to each 4+1 view in Miro.
+Per-view conventions for the `4plus1-diagrams` workflow. **Mechanics of RISEN prompts (Role/Input/Steps/Expectation/Narrowing structure, template, validation rules) are owned by [`miro-diagram-generator`](../skills/miro-diagram-generator/SKILL.md) and the [Miro instruction file](../instructions/miro.instructions.md) (both bundled in top-level workflow folders).** This file only covers what is specific to each 4+1 view in Miro.
 
 ---
 

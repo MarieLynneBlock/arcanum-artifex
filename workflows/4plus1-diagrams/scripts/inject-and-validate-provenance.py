@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Inject the canonical-source-ref provenance cell into workflow draw.io templates
-and validate each template with the vendored draw.io validator.
+and validate each template with the bundled draw.io validator.
 
 Idempotent: templates that already contain the provenance cell are skipped.
 

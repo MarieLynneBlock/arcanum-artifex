@@ -25,7 +25,7 @@ If Mermaid/PlantUML core views are enough → use the [`4plus1-models`](skills/4
 
 ## Self-contained
 
-This folder ships with **vendored copies** of every skill and instruction it depends on, under `skills/` and `instructions/`. Copy the entire `4plus1-diagrams/` folder into any repo and it runs as-is — no other files in this repo are required at runtime.
+This folder ships with **bundled copies** of every skill and instruction it depends on, under `skills/` and `instructions/`. Copy the entire `4plus1-diagrams/` folder into any repo and it runs as-is — no other files in this repo are required at runtime.
 
 This workflow is a **frozen snapshot** at runtime. It has no runtime dependency on any path outside this folder.
 
@@ -60,9 +60,9 @@ Pick one entry point:
 
 - [WORKFLOW.md](WORKFLOW.md) — the orchestration playbook (source of truth for what the agent / prompt does).
 - `skills/4plus1-models/` — core 4+1 method skill (authoritative for architecture logic).
-- `skills/draw-io-diagram-generator/` — vendored copy of the draw.io generator skill (authoritative for mxGraph XML mechanics).
-- `skills/miro-diagram-generator/` — vendored copy of the Miro generator skill (authoritative for Miro prompt mechanics).
-- `instructions/` — vendored instruction files (draw.io and Miro).
+- `skills/draw-io-diagram-generator/` — bundled copy of the draw.io generator skill (authoritative for mxGraph XML mechanics).
+- `skills/miro-diagram-generator/` — bundled copy of the Miro generator skill (authoritative for Miro prompt mechanics).
+- `instructions/` — bundled instruction files (draw.io and Miro).
 - `architecture-documentation.agent.md` — discoverable root entrypoint for repo-level or user-level placement.
 - `agents/` — the workflow-specific thin agent (no MCP servers).
 - `prompts/` — Copilot/Cursor/Claude prompts that trigger the workflow.
@@ -70,9 +70,9 @@ Pick one entry point:
 - `templates/miro/` — Miro prompt templates for per-view and full-board setup prompts.
 - `references/notation-drawio.md` — per-view draw.io conventions (palette, shape libraries, layout discipline).
 - `references/notation-miro.md` — per-view Miro conventions (frame naming, shape semantics, colour palette, layout discipline).
-- `vendored-assets-manifest.json` — vendored asset metadata (source, ref, last sync, local hash).
-- `scripts/sync-vendored-assets.py` — dry-run/apply re-sync helper for vendored assets.
-- `scripts/smoke-test.py` — bundle smoke test for internal links, required assets, stale references, Miro prompt names, draw.io XML templates, and vendored skew status.
+- `vendored-assets-manifest.json` — bundled asset metadata (source, ref, last sync, local hash).
+- `scripts/sync-vendored-assets.py` — dry-run/apply re-sync helper for bundled assets.
+- `scripts/smoke-test.py` — bundle smoke test for internal links, required assets, stale references, Miro prompt names, draw.io XML templates, and bundle integrity status.
 ## Smoke test
 
 Run this after changing files, folders, links, examples, templates, or skill boundaries:
@@ -83,15 +83,15 @@ python scripts/smoke-test.py
 
 The smoke test validates that the workflow remains self-contained and that both output tracks still have resolvable local assets.
 
-Check vendored skew status only:
+Check bundle integrity status only:
 
 ```bash
 python scripts/smoke-test.py --check-skew
 ```
 
-## Maintenance SOP (vendored assets)
+## Maintenance SOP (bundled assets)
 
-Use this process whenever vendored skills or instructions need updating.
+Use this process whenever bundled skills or instructions need updating.
 
 1. Run a baseline dry-run and review pending changes:
 
@@ -116,7 +116,7 @@ python scripts/smoke-test.py --check-skew
 5. Update `vendored-assets-manifest.json` metadata (`ref`, `last_sync_utc`) for any refreshed asset, keeping `source.kind` as `bundle-path`.
 6. Commit synced assets and metadata together.
 
-> **Note — bundle-local integrity only.** All `source.path` values in the manifest point to paths inside this folder (`source.kind: bundle-path`), so `--apply` operates within the bundle and updates integrity hashes. It does not fetch from any external upstream. To refresh a vendored asset from an upstream source, manually replace the local bundle copy first, then run `--apply` to recalculate hashes, and smoke-test the result.
+> **Note — bundle-local integrity only.** All `source.path` values in the manifest point to paths inside this folder (`source.kind: bundle-path`), so `--apply` operates within the bundle and updates integrity hashes. It does not fetch from any external upstream. To refresh a bundled asset from an upstream source, manually replace the local bundle copy first, then run `--apply` to recalculate hashes, and smoke-test the result.
 
 ## What you get back
 

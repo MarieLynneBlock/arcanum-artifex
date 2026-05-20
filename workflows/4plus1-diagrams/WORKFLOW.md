@@ -17,16 +17,16 @@ The canonical format and the selected visual track(s) are kept consistent — sa
 
 ## 2. Linked assets
 
-**This workflow is self-contained.** Everything it needs is vendored in top-level workflow folders. Copy the whole `4plus1-diagrams/` folder into another repo and it works as-is.
+**This workflow is self-contained.** Everything it needs is bundled in top-level workflow folders. Copy the whole `4plus1-diagrams/` folder into another repo and it works as-is.
 
-The vendored copies are a **frozen snapshot** at runtime. This workflow has no runtime dependency on any path outside this folder. Controlled re-sync is a maintenance operation via `scripts/sync-vendored-assets.py` and `vendored-assets-manifest.json`.
+The bundled copies are a **frozen snapshot** at runtime. This workflow has no runtime dependency on any path outside this folder. Controlled re-sync is a maintenance operation via `scripts/sync-vendored-assets.py` and `vendored-assets-manifest.json`.
 
 | Asset type | Path (inside this workflow) | Role |
 |------------|------------------------------|------|
-| Skill (primary, vendored) | [skills/4plus1-models/](skills/4plus1-models/) | Owns the 4+1 method, audience routing, per-view references, and Mermaid/PlantUML output. **Source of truth for core architecture logic.** |
-| Skill (secondary, vendored) | [skills/draw-io-diagram-generator/](skills/draw-io-diagram-generator/) | Owns the mxGraph XML mechanics, validation script, and shape-library knowledge. Needed only for draw.io path. |
-| Skill (secondary, vendored) | [skills/miro-diagram-generator/](skills/miro-diagram-generator/) | Owns Miro prompt mechanics, RISEN formatting, and track-specific validation. Needed only for Miro path. |
-| Instructions (vendored) | [instructions/](instructions/) | Auto-applies to `.drawio` files (draw.io path) or Miro prompts (Miro path). |
+| Skill (primary, bundled) | [skills/4plus1-models/](skills/4plus1-models/) | Owns the 4+1 method, audience routing, per-view references, and Mermaid/PlantUML output. **Source of truth for core architecture logic.** |
+| Skill (secondary, bundled) | [skills/draw-io-diagram-generator/](skills/draw-io-diagram-generator/) | Owns the mxGraph XML mechanics, validation script, and shape-library knowledge. Needed only for draw.io path. |
+| Skill (secondary, bundled) | [skills/miro-diagram-generator/](skills/miro-diagram-generator/) | Owns Miro prompt mechanics, RISEN formatting, and track-specific validation. Needed only for Miro path. |
+| Instructions (bundled) | [instructions/](instructions/) | Auto-applies to `.drawio` files (draw.io path) or Miro prompts (Miro path). |
 | Agent (discoverable entrypoint) | [architecture-documentation.agent.md](architecture-documentation.agent.md) | Drop-in entrypoint for placement under `.github/agents/` or `~/.agents/` with no install step. |
 | Agent | [agents/architecture-documentation.agent.md](agents/architecture-documentation.agent.md) | Thin orchestrator. Loads the two skills and runs the steps below. **No `mcp-servers` block.** |
 | Prompt | [prompts/4plus1-diagrams.prompt.md](prompts/4plus1-diagrams.prompt.md) | Single-shot prompt that triggers the workflow. |
@@ -38,7 +38,7 @@ The vendored copies are a **frozen snapshot** at runtime. This workflow has no r
 
 ## 3. Preconditions
 
-- The vendored skills and instruction are present in top-level workflow folders (they ship with the workflow).
+- The bundled skills and instruction are present in top-level workflow folders (they ship with the workflow).
 - For the user: VS Code with `hediet.vscode-drawio` installed (or draw.io desktop / app.diagrams.net) to view/edit the output.
 - The agent / user has confirmed the **audience** before starting (dev-only / cross-functional / executive — the `4plus1-models` skill, Step 2, asks this).
 
@@ -233,7 +233,7 @@ Expected command behaviour:
 | Date | Change |
 |------|--------|
 | 2026-05-10 | Created. |
-| 2026-05-10 | Vendored the initial architecture-model assets, `draw-io-diagram-generator`, and `draw-io.instructions.md` in top-level workflow folders so the workflow folder is self-contained and portable. |
+| 2026-05-10 | Bundled the initial architecture-model assets, `draw-io-diagram-generator`, and `draw-io.instructions.md` in top-level workflow folders so the workflow folder is self-contained and portable. |
 | 2026-05-10 | Removed all sync/re-vendor mechanics; workflow is now a strict standalone snapshot. |
 | 2026-05-10 | Made Miro and draw.io equal first-class options. Workflow now includes format-choice step (Step 2), supports both paths in Step 3, presents both output options in Section 5, and uses conditional validation per format. Prompt renamed to `4plus1-diagrams.prompt.md`. Agent guardrail updated to offer both formats equally. |
 | 2026-05-10 | Split skills by responsibility: added `4plus1-models` (core method), retained `draw-io-diagram-generator` (draw.io output), and added `miro-diagram-generator` (Miro output). Updated workflow, prompt, agent, and instructions to load core + selected output skill. Removed legacy combined skill. |

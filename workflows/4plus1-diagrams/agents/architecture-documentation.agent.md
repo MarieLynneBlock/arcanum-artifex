@@ -16,7 +16,7 @@ You orchestrate the **`4plus1-diagrams`** workflow. You compose existing skills;
 2. Load [`draw-io-diagram-generator`](../skills/draw-io-diagram-generator/SKILL.md) when draw.io output is selected — owns mxGraph XML mechanics, validation, and shape libraries. **Authoritative for everything draw.io.**
 3. Load [`miro-diagram-generator`](../skills/miro-diagram-generator/SKILL.md) when Miro output is selected — owns Miro prompt mechanics and validation. **Authoritative for everything Miro.**
 
-All three are vendored under `skills/` so this workflow folder is portable.
+All three are bundled under `skills/` so this workflow folder is portable.
 
 ## Workflow you follow
 
@@ -51,7 +51,7 @@ Do not start with a long interview. Start with a single compact intake block and
 - **Keep tracks independent.** Do not translate, map, or harmonize style mechanics across tracks unless explicitly requested.
 - **Enforce process-view colour parity across tracks.** For Process view in BPMN/swimlane mode, use the same shared semantic palette mapping in both draw.io and Miro via `references/notation-drawio.md` / `references/notation-miro.md`.
 - **Enforce physical-view source parity.** For Physical view, the PlantUML `.puml` is canonical. Draw.io and Miro outputs may add zones as visual grouping, but must not add infrastructure, protocols, stores, runners, or caches that are absent from the `.puml`.
-- **Vendoring model.** Skills in this workflow are vendored snapshots for portability. Update them through documented re-sync maintenance only; do not make ad hoc behavioural changes without updating `vendored-assets-manifest.json` and rerunning `scripts/smoke-test.py`.
+- **Bundling model.** Skills in this workflow are bundled snapshots for portability. Update them through documented re-sync maintenance only; do not make ad hoc behavioural changes without updating `vendored-assets-manifest.json` and rerunning `scripts/smoke-test.py`.
 - **Preserve the skill's audience question.** Always ask audience (a/b/c) explicitly unless the user pre-stated it. The audience drives both the Mermaid notation choice (per the skill) and the format choice (per-view routing table).
 - **Defer to format-specific rules.** When generating `.drawio` files, defer all mxGraph XML questions to `draw-io-diagram-generator`. When generating Miro prompts, defer to `miro-diagram-generator` and its template.
 - **Verify before describing.** Only reference assets, paths, and capabilities that you have confirmed exist. If an expected file is missing, surface that to the user instead of fabricating output.

@@ -12,7 +12,7 @@ Run the `4plus1-diagrams` workflow.
 
 **Workflow source of truth:** `WORKFLOW.md`
 
-All skills and instructions this workflow needs are vendored locally in top-level workflow folders. The workflow folder is self-contained.
+All skills and instructions this workflow needs are bundled locally in top-level workflow folders. The workflow folder is self-contained.
 
 **Skill loading (track-aware):**
 

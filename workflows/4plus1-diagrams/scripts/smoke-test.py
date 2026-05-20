@@ -9,7 +9,7 @@ Checks are intentionally mechanical and fast:
 - stale legacy references are absent
 - Miro example prompt filenames follow the documented contract
 - workflow-level and skill-internal Miro templates stay in sync
-- draw.io templates parse and pass the vendored draw.io validator
+- draw.io templates parse and pass the bundled draw.io validator
 """
 from __future__ import annotations
 
@@ -407,16 +407,16 @@ def _compute_tree_hash(path: Path) -> str:
 def _read_manifest(errors: list[str]) -> dict | None:
     manifest_path = ROOT / "vendored-assets-manifest.json"
     if not manifest_path.exists():
-        add_error(errors, "Missing vendored manifest: vendored-assets-manifest.json")
+        add_error(errors, "Missing bundled manifest: vendored-assets-manifest.json")
         return None
     try:
         data = json.loads(manifest_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
-        add_error(errors, f"Invalid vendored manifest JSON: {exc}")
+        add_error(errors, f"Invalid bundled manifest JSON: {exc}")
         return None
     assets = data.get("assets")
     if not isinstance(assets, list):
-        add_error(errors, "Vendored manifest must contain an 'assets' list")
+        add_error(errors, "Bundled manifest must contain an 'assets' list")
         return None
     return data
 
@@ -499,7 +499,7 @@ def check_vendored_skew(errors: list[str], warnings: list[str]) -> None:
         if actual_hash != expected_hash:
             add_error(
                 errors,
-                f"Vendored skew detected for {asset_id}: manifest hash {expected_hash} != actual {actual_hash}",
+                f"Bundled skew detected for {asset_id}: manifest hash {expected_hash} != actual {actual_hash}",
             )
 
 
@@ -508,7 +508,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--check-skew",
         action="store_true",
-        help="Run only vendored manifest/skew checks",
+        help="Run only bundled manifest/skew checks",
     )
     return parser.parse_args()
 
@@ -549,8 +549,8 @@ def main() -> int:
 
     print("SMOKE TEST PASS")
     if args.check_skew:
-        print("- vendored manifest fields are present")
-        print("- vendored asset hashes match manifest values")
+        print("- bundled manifest fields are present")
+        print("- bundled asset hashes match manifest values")
         return 0
 
     print("- required files/folders present")
@@ -563,8 +563,8 @@ def main() -> int:
     print("- Miro example prompt filenames match the naming contract")
     print("- workflow and skill Miro templates are in sync")
     print("- draw.io templates passed XML validation")
-    print("- vendored asset metadata is present")
-    print("- vendored asset hashes match manifest values")
+    print("- bundled asset metadata is present")
+    print("- bundled asset hashes match manifest values")
     return 0
 
 

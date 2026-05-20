@@ -48,7 +48,7 @@ Without this workflow, a team typically generates Mermaid diagrams once, then ma
 - **Invented infrastructure** — the visual editor's template ships with a CDN, cache, or load balancer; nobody removes it; the deployment diagram now claims components that do not exist.
 - **Bundle decay** — the working assets live across `.github/skills/`, `.github/instructions/`, internal templates, and the user's own notes. Copying the workflow to another repo means hunting six places.
 
-The workflow defends against all three: canonical first, tracks generated from canonical with parity checks, everything vendored under one folder.
+The workflow defends against all three: canonical first, tracks generated from canonical with parity checks, everything bundled under one folder.
 
 ### Design signals worth pointing out before deconstructing
 
@@ -59,7 +59,7 @@ These are the signals that show this workflow was designed deliberately — not 
 - A **playbook** (`WORKFLOW.md`) that is the single execution source of truth.
 - **Three skills** with non-overlapping ownership: method, draw.io output, Miro output.
 - **Independent output tracks** chosen at intake, never blended.
-- A **vendored asset manifest** with hash-tracked snapshots (`vendored-assets-manifest.json`).
+- A **bundled asset manifest** with hash-tracked snapshots (`vendored-assets-manifest.json`).
 - **Mechanical validation** at three layers: bundle integrity (`scripts/smoke-test.py`), cross-view consistency (`skills/4plus1-models/scripts/validate-views.py`), and per-format validity (`skills/draw-io-diagram-generator/scripts/validate-drawio.py`).
 - **Typed output subfolders** enforced by smoke-test rules.
 - **Frontmatter order discipline** enforced across every entry file (`name`, `description`, `metadata`).
@@ -160,7 +160,7 @@ Use these chunks as the unit of teaching. Each chunk has one job. The relationsh
 - [`skills/4plus1-models/scripts/validate-views.py`](../../../workflows/4plus1-diagrams/skills/4plus1-models/scripts/validate-views.py) — cross-view consistency.
 - [`skills/draw-io-diagram-generator/scripts/validate-drawio.py`](../../../workflows/4plus1-diagrams/skills/draw-io-diagram-generator/scripts/validate-drawio.py) — per-file draw.io validity.
 - [`scripts/inject-and-validate-provenance.py`](../../../workflows/4plus1-diagrams/scripts/inject-and-validate-provenance.py) — idempotent provenance-cell injector for workflow-level draw.io templates, followed by validator run with `--require-provenance`.
-- [`scripts/sync-vendored-assets.py`](../../../workflows/4plus1-diagrams/scripts/sync-vendored-assets.py) and [`vendored-assets-manifest.json`](../../../workflows/4plus1-diagrams/vendored-assets-manifest.json) — vendored snapshot integrity.
+- [`scripts/sync-vendored-assets.py`](../../../workflows/4plus1-diagrams/scripts/sync-vendored-assets.py) and [`vendored-assets-manifest.json`](../../../workflows/4plus1-diagrams/vendored-assets-manifest.json) — bundle snapshot integrity.
 
 **Job:** Make the bundle's correctness *executable*. The smoke test alone enforces:
 
@@ -175,7 +175,7 @@ Use these chunks as the unit of teaching. Each chunk has one job. The relationsh
 | `validate-views.py` invocations include the positional directory argument | Catches docs that show the wrong invocation. |
 | Miro template parity (workflow vs. skill copy) | The deliberate duplication is allowed only while bytes match. |
 | draw.io templates parse and pass the validator (workflow templates also require provenance) | Skeletons cannot ship broken. |
-| Vendored asset hashes match the manifest (with `--check-skew`) | Snapshot integrity. |
+| Bundled asset hashes match the manifest (with `--check-skew`) | Snapshot integrity. |
 
 **Teaching point:** Documentation-first projects have no application build to fail. The smoke test *is* the build. A learner who internalises this stops thinking of validators as optional.
 
@@ -345,13 +345,13 @@ These are the decisions worth slowing down on. For each, ask the learner what th
 
 ### Decision 6 — Vendoring is the packaging contract
 
-**The choice:** Skills, instructions, templates, scripts, references, examples are all vendored under the workflow folder. The bundle has no runtime dependency on any path outside itself.
+**The choice:** Skills, instructions, templates, scripts, references, examples are all bundled under the workflow folder. The bundle has no runtime dependency on any path outside itself.
 
 **Why:** The repository's standalone-packaging rule says every workflow, skill, instruction, prompt, and agent must be copyable on its own. A workflow that links outward is not portable.
 
-**The cost:** vendored copies can drift from upstream. The bundle handles this honestly with two ideas:
+**The cost:** bundled copies can drift from upstream. The bundle handles this honestly with two ideas:
 
-- The vendored manifest tracks **bundle-local integrity** (hashes match the recorded snapshot). It does *not* fetch from upstream.
+- The bundled manifest tracks **bundle-local integrity** (hashes match the recorded snapshot). It does *not* fetch from upstream.
 - A `--check-skew` mode tells the maintainer whether the local snapshot still matches the manifest.
 
 **Trade-off:** Larger bundle, manual upstream refresh. In return, copy-to-deploy is real.
@@ -360,7 +360,7 @@ These are the decisions worth slowing down on. For each, ask the learner what th
 
 ### Decision 7 — The smoke test is executable memory
 
-**The choice:** A single `scripts/smoke-test.py` enforces every contract the bundle relies on for portability and consistency: required paths, frontmatter order, link resolution and bundle containment, forbidden stale text, output-path conventions, canonical view filenames, validator invocation form, Miro template parity, draw.io template validity, and (with `--check-skew`) vendored asset hashes.
+**The choice:** A single `scripts/smoke-test.py` enforces every contract the bundle relies on for portability and consistency: required paths, frontmatter order, link resolution and bundle containment, forbidden stale text, output-path conventions, canonical view filenames, validator invocation form, Miro template parity, draw.io template validity, and (with `--check-skew`) bundled asset hashes.
 
 **Why:** Documentation-first projects have no compiler. Without mechanical checks, every refactor relies on memory. Memory loses to large bundles.
 
@@ -381,8 +381,8 @@ Coaches: when learners move from this workflow to design or review their own, gi
 5. **Where are the genuine branches?** Track choice, audience, view, environment. Are branches explicit and named, or implicit and inferred?
 6. **What is shared across branches and what is not?** Share the model; do not share the rendering.
 7. **What can be invented downstream?** For every artefact the workflow produces, ask: what could a generator add that the canonical source does not claim? Where is that prevented?
-8. **Is the bundle copy-to-deploy?** Are skills, instructions, templates, references vendored locally? Are external links forbidden? Is there a manifest with integrity hashes?
-9. **What contracts have machine checks?** Required files, frontmatter order, link resolution, naming conventions, output paths, format validity, parity between duplicated files, vendored hashes. If a contract has no check, it will drift.
+8. **Is the bundle copy-to-deploy?** Are skills, instructions, templates, references bundled locally? Are external links forbidden? Is there a manifest with integrity hashes?
+9. **What contracts have machine checks?** Required files, frontmatter order, link resolution, naming conventions, output paths, format validity, parity between duplicated files, bundled hashes. If a contract has no check, it will drift.
 10. **What is the recovery loop on validation failure?** Stop, classify, regenerate the affected artefact only, re-run the failing validator first, then re-run the full set. Is it documented?
 
 If a learner can apply this question set to an unfamiliar workflow and produce a useful review, the coaching has worked.
