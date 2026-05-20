@@ -1,0 +1,38 @@
+# Copy this file to governance-policy.yaml and adapt it for the target agent.
+# Keep the policy close to the deployed agent configuration and review it like code.
+
+name: production-agent
+governance_level: standard
+
+allowed_tools:
+  - search_documents
+  - query_database
+  - create_ticket
+
+blocked_tools:
+  - shell_exec
+  - delete_database
+  - modify_identity
+
+blocked_patterns:
+  - "(?i)(api[_-]?key|secret|password|token)\\s*[:=]"
+  - "(?i)(drop|truncate|delete from)\\s+\\w+"
+
+max_calls_per_request: 25
+
+require_human_approval:
+  - send_email
+  - write_report
+  - update_customer_record
+
+audit:
+  enabled: true
+  redact_fields:
+    - password
+    - token
+    - api_key
+  retention_days: 90
+
+trust_thresholds:
+  autonomous: 0.7
+  supervised: 0.4

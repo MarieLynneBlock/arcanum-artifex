@@ -1,6 +1,7 @@
 ---
-description: |
 name: agentic-eval
+description: >
+    Design and implement evaluation loops for AI agents, including reflection, evaluator-optimizer patterns, rubric scoring, LLM-as-judge review, test-driven refinement, convergence checks, and iteration logging.
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -24,14 +25,39 @@ Generate → Evaluate → Critique → Refine → Output
 - **Quality-critical generation**: Code, reports, analysis requiring high accuracy
 - **Tasks with clear evaluation criteria**: Defined success metrics exist
 - **Content requiring specific standards**: Style guides, compliance, formatting
+- **Iterative improvement workflows**: Drafts, plans, prompts, or code need critique and refinement before delivery
+
+## Do Not Use This Skill For
+
+- Formal compliance claims, certification, or audit sign-off without approved organisational evidence
+- Production monitoring design, runtime governance, access control, or policy enforcement
+- Broad statistical evaluation methodology, benchmark design, or model selection studies
+- Security, privacy, or safety review where evaluation loops are not the central concern
 
 ---
+
+## Expected Outputs
+
+When applying this skill, produce the assets needed to run and inspect an evaluation loop:
+
+- evaluation criteria or rubric
+- generator, evaluator, and optimiser responsibilities
+- iteration limit and convergence policy
+- structured evaluator output format
+- failure handling for malformed evaluations or non-improving outputs
+- logging fields for debugging and review
+- final recommendation or refined output with evaluation history summary
+
+Treat code blocks in this skill as adaptable Python-style skeletons. Replace `llm`, `run_tests`, model settings, and logging functions with project-specific implementations.
 
 ## Pattern 1: Basic Reflection
 
 Agent evaluates and improves its own output through self-critique.
 
 ```python
+import json
+
+
 def reflect_and_refine(task: str, criteria: list[str], max_iterations: int = 3) -> str:
     """Generate with reflection loop."""
     output = llm(f"Complete this task:\n{task}")
@@ -56,7 +82,7 @@ def reflect_and_refine(task: str, criteria: list[str], max_iterations: int = 3) 
     return output
 ```
 
-**Key insight**: Use structured JSON output for reliable parsing of critique results.
+**Key insight**: Use structured JSON output for reliable parsing of critique results, and handle parsing failures as evaluation failures rather than silently accepting the draft.
 
 ---
 
@@ -65,6 +91,9 @@ def reflect_and_refine(task: str, criteria: list[str], max_iterations: int = 3) 
 Separate generation and evaluation into distinct components for clearer responsibilities.
 
 ```python
+import json
+
+
 class EvaluatorOptimizer:
     def __init__(self, score_threshold: float = 0.8):
         self.score_threshold = score_threshold
@@ -84,10 +113,15 @@ class EvaluatorOptimizer:
     
     def run(self, task: str, max_iterations: int = 3) -> str:
         output = self.generate(task)
+        previous_score = 0.0
         for _ in range(max_iterations):
             evaluation = self.evaluate(output, task)
-            if evaluation["overall_score"] >= self.score_threshold:
+            current_score = evaluation["overall_score"]
+            if current_score >= self.score_threshold:
                 break
+            if current_score <= previous_score:
+                break
+            previous_score = current_score
             output = self.optimize(output, evaluation)
         return output
 ```
@@ -111,6 +145,19 @@ class CodeReflector:
             code = llm(f"Fix error: {result['error']}\nCode: {code}")
         return code
 ```
+
+---
+
+## Evaluator Reliability
+
+Evaluation loops are only useful when the evaluator is harder to fool than the generator. For high-risk or quality-critical work:
+
+- Anchor the evaluator with a concrete rubric and examples of passing and failing outputs.
+- Ask for evidence, failure reasons, and uncertainty, not just a score.
+- Randomise or blind comparison order when comparing alternatives to reduce position bias.
+- Repeat judging or use multiple evaluators when scores are close or the decision is consequential.
+- Escalate to human review when evaluator outputs conflict, confidence is low, or policy-sensitive content is involved.
+- Track whether scores improve over iterations; stop when improvement stalls to avoid overfitting to the evaluator.
 
 ---
 
@@ -158,6 +205,20 @@ def evaluate_with_rubric(output: str, rubric: dict) -> float:
 | **Convergence check** | Stop if output score isn't improving between iterations |
 | **Log history** | Keep full trajectory for debugging and analysis |
 | **Structured output** | Use JSON for reliable parsing of evaluation results |
+| **Evaluator calibration** | Use examples, rubrics, and evidence requirements to reduce judge drift |
+| **Human escalation** | Route low-confidence or high-impact decisions to a reviewer |
+
+---
+
+## Failure Handling
+
+Plan for evaluation failures before running the loop:
+
+- If evaluator JSON is malformed, retry once with the schema and then fail closed with the raw response logged.
+- If the evaluator gives no evidence, treat the score as unreliable and request evidence before refining.
+- If output quality stops improving, return the best-scored candidate and include the stopping reason.
+- If evaluation criteria conflict, pause and ask for priority order rather than optimising against incompatible goals.
+- If generated tests or checks are themselves suspect, review or regenerate the tests before trusting the score.
 
 ---
 
@@ -181,4 +242,5 @@ def evaluate_with_rubric(output: str, rubric: dict) -> float:
 - [ ] Add convergence detection
 - [ ] Log all iterations for debugging
 - [ ] Handle evaluation parse failures gracefully
+- [ ] Escalate low-confidence or high-impact decisions to human review
 ```
