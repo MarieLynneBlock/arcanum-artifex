@@ -1,17 +1,18 @@
 ---
-description: |
-name: agent-governance
+name: agent-governance-patterns
+description: >
+    Design and implement governance controls for tool-using and multi-agent AI systems, including policy enforcement, approval gates, audit trails, trust scoring, rate limits, and safe tool execution.
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
 
 # Agent Governance Patterns
 
-Patterns for adding safety, trust, and policy enforcement to AI agent systems.
+Patterns for adding safety, trust, and deterministic policy enforcement to tool-using and multi-agent AI systems.
 
 ## Overview
 
-Governance patterns ensure AI agents operate within defined boundaries — controlling which tools they can call, what content they can process, how much they can do, and maintaining accountability through audit trails.
+Governance patterns ensure AI agents operate within defined boundaries — controlling which tools they can call, what content they can process, how much they can do, and maintaining accountability through audit trails. Use this skill to design or implement controls; use a compliance-focused skill when the task is to score an existing system against a formal standard.
 
 ```
 User Request → Intent Classification → Policy Check → Tool Execution → Audit Log
@@ -19,12 +20,21 @@ User Request → Intent Classification → Policy Check → Tool Execution → A
               Threat Detection         Allow/Deny      Trust Update
 ```
 
-## When to Use
+## Use This Skill When
 
 - **Agents with tool access**: Any agent that calls external tools (APIs, databases, shell commands)
 - **Multi-agent systems**: Agents delegating to other agents need trust boundaries
 - **Production deployments**: Compliance, audit, and safety requirements
 - **Sensitive operations**: Financial transactions, data access, infrastructure management
+- **Policy enforcement**: Tool allowlists, blocklists, approval gates, rate limits, or content filters are needed
+- **Operational accountability**: Tool calls need structured audit trails, denial reasons, or replayable records
+
+## Do Not Use This Skill For
+
+- General security reviews where agent governance is not the focus
+- OWASP ASI compliance scoring or gap reporting
+- Supply-chain integrity, signing, plugin provenance, or manifest verification
+- Broad agent architecture design unless policy enforcement, trust boundaries, or auditability are central
 
 ---
 
@@ -201,6 +211,8 @@ def is_safe(content: str, threshold: float = 0.7) -> bool:
 
 **Key insight**: Intent classification happens *before* tool execution, acting as a pre-flight safety check. This is fundamentally different from output guardrails which only check *after* generation.
 
+Pattern-based classification is a baseline control, not complete sensitive-data detection. For regulated or high-risk systems, combine it with structured validators, data-loss prevention controls, and human approval for high-impact actions.
+
 ---
 
 ## Pattern 3: Tool-Level Governance Decorator
@@ -210,9 +222,19 @@ Wrap individual tool functions with governance checks:
 ```python
 import functools
 import time
-from collections import defaultdict
+import contextvars
 
-_call_counters: dict[str, int] = defaultdict(int)
+_call_counters: contextvars.ContextVar[dict[str, int] | None] = contextvars.ContextVar(
+    "governance_call_counters",
+    default=None,
+)
+
+def _request_call_counters() -> dict[str, int]:
+    counters = _call_counters.get()
+    if counters is None:
+        counters = {}
+        _call_counters.set(counters)
+    return counters
 
 def govern(policy: GovernancePolicy, audit_trail=None):
     """Decorator that enforces governance policy on a tool function."""
@@ -220,46 +242,52 @@ def govern(policy: GovernancePolicy, audit_trail=None):
         @functools.wraps(func)
         async def wrapper(*args, **kwargs):
             tool_name = func.__name__
+            start = time.monotonic()
 
-            # 1. Check tool allowlist/blocklist
-            action = policy.check_tool(tool_name)
-            if action == PolicyAction.DENY:
-                raise PermissionError(f"Policy '{policy.name}' blocks tool '{tool_name}'")
-            if action == PolicyAction.REVIEW:
-                raise PermissionError(f"Tool '{tool_name}' requires human approval")
+            def audit(action: str, **details):
+                if audit_trail is not None:
+                    audit_trail.append({
+                        "tool": tool_name,
+                        "action": action,
+                        "policy": policy.name,
+                        "timestamp": time.time(),
+                        **details,
+                    })
 
-            # 2. Check rate limit
-            _call_counters[policy.name] += 1
-            if _call_counters[policy.name] > policy.max_calls_per_request:
-                raise PermissionError(f"Rate limit exceeded: {policy.max_calls_per_request} calls")
+            try:
+                # 1. Check tool allowlist/blocklist
+                action = policy.check_tool(tool_name)
+                if action == PolicyAction.DENY:
+                    raise PermissionError(f"Policy '{policy.name}' blocks tool '{tool_name}'")
+                if action == PolicyAction.REVIEW:
+                    raise PermissionError(f"Tool '{tool_name}' requires human approval")
 
-            # 3. Check content in arguments
-            for arg in list(args) + list(kwargs.values()):
-                if isinstance(arg, str):
-                    matched = policy.check_content(arg)
-                    if matched:
-                        raise PermissionError(f"Blocked pattern detected: {matched}")
+                # 2. Check rate limit for this request/execution context
+                counters = _request_call_counters()
+                counters[policy.name] = counters.get(policy.name, 0) + 1
+                if counters[policy.name] > policy.max_calls_per_request:
+                    raise PermissionError(f"Rate limit exceeded: {policy.max_calls_per_request} calls")
+
+                # 3. Check content in arguments
+                for arg in list(args) + list(kwargs.values()):
+                    if isinstance(arg, str):
+                        matched = policy.check_content(arg)
+                        if matched:
+                            raise PermissionError(f"Blocked pattern detected: {matched}")
+            except PermissionError as error:
+                audit("denied", reason=str(error))
+                raise
+            except Exception as error:
+                audit("denied", reason="governance_check_failed", error=str(error))
+                raise PermissionError("Governance check failed closed") from error
 
             # 4. Execute and audit
-            start = time.monotonic()
             try:
                 result = await func(*args, **kwargs)
-                if audit_trail is not None:
-                    audit_trail.append({
-                        "tool": tool_name,
-                        "action": "allowed",
-                        "duration_ms": (time.monotonic() - start) * 1000,
-                        "timestamp": time.time()
-                    })
+                audit("allowed", duration_ms=(time.monotonic() - start) * 1000)
                 return result
             except Exception as e:
-                if audit_trail is not None:
-                    audit_trail.append({
-                        "tool": tool_name,
-                        "action": "error",
-                        "error": str(e),
-                        "timestamp": time.time()
-                    })
+                audit("error", error=str(e))
                 raise
 
         return wrapper
@@ -427,6 +455,8 @@ class AuditTrail:
 
 ## Pattern 6: Framework Integration
 
+These examples show where to attach the governance wrapper in common agent frameworks. Treat them as adaptation sketches and verify the exact decorator signatures, tool registration APIs, and version constraints against the framework version used in your project.
+
 ### PydanticAI
 
 ```python
@@ -493,11 +523,13 @@ policy = GovernancePolicy(
 @govern(policy)
 async def read_file(path: str) -> str:
     """Read file contents — governed."""
-    import os
-    safe_path = os.path.realpath(path)
-    if not safe_path.startswith(os.path.realpath(".")):
+    from pathlib import Path
+
+    root = Path(".").resolve()
+    safe_path = Path(path).resolve()
+    if root not in safe_path.parents and safe_path != root:
         raise ValueError("Path traversal blocked by governance")
-    with open(safe_path) as f:
+    with safe_path.open() as f:
         return f.read()
 ```
 
@@ -522,15 +554,24 @@ Match governance strictness to risk level:
 |----------|-----------|
 | **Policy as configuration** | Store policies in YAML/JSON, not hardcoded — enables change without deploys |
 | **Most-restrictive-wins** | When composing policies, deny always overrides allow |
+| **Deterministic decisions** | Use explicit policy checks for allow/deny/review rather than asking an LLM to decide permissions |
 | **Pre-flight intent check** | Classify intent *before* tool execution, not after |
 | **Trust decay** | Trust scores should decay over time — require ongoing good behavior |
 | **Append-only audit** | Never modify or delete audit entries — immutability enables compliance |
+| **Audit redaction** | Store enough detail to investigate, but redact secrets, credentials, and unnecessary personal data |
+| **Structured denials** | Return consistent denial reasons so users, operators, and tests can distinguish policy failures |
 | **Fail closed** | If governance check errors, deny the action rather than allowing it |
+| **Human approval for high-impact actions** | Require explicit review for irreversible, external, financial, legal, or privileged operations |
 | **Separate policy from logic** | Governance enforcement should be independent of agent business logic |
 
 ---
 
 ## Quick Start Checklist
+
+This skill includes copyable local resources:
+
+- [resources/governance-policy.template.yaml](resources/governance-policy.template.yaml) — baseline policy configuration
+- [resources/governance-checklist.md](resources/governance-checklist.md) — implementation and review checklist
 
 ```markdown
 ## Agent Governance Implementation Checklist
