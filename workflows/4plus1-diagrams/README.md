@@ -1,13 +1,13 @@
 ---
-description: Standalone workflow bundle for producing Kruchten 4+1 architecture views with canonical diagram-as-code plus editable draw.io or Miro output.
 name: 4+1 Architecture Diagrams (Miro & draw.io)
+description: Standalone workflow bundle for producing Kruchten 4+1 architecture views with canonical diagram-as-code plus editable draw.io or Miro output.
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
 
 # 4+1 Architecture Diagrams (Miro & draw.io)
 
-Produce a complete Kruchten 4+1 architectural view model **with editable visual diagrams alongside the canonical Mermaid/PlantUML output**. Choose your preferred format:
+Produce a complete Kruchten 4+1 architectural view model **with editable visual diagrams alongside the canonical Mermaid/PlantUML output**. Choose one or both output formats:
 - **draw.io** (`.drawio`) — editable in VS Code, draw.io desktop, or app.diagrams.net
 - **Miro** (prompts) — editable in Miro for real-time team collaboration
 
@@ -17,7 +17,7 @@ Run this workflow when **all** of the following are true:
 
 - You need a 4+1 architecture documentation set (logical / process / development / physical / scenarios).
 - The audience or downstream tooling needs **editable visual diagrams** in addition to Mermaid.
-- You want either:
+- You want one or both of:
   - **draw.io** exports (PNG/SVG for slide decks, or interactive `.drawio` for desktop editing), or
   - **Miro** collaboration prompts (for real-time whiteboard editing and team discussion).
 
@@ -25,9 +25,16 @@ If Mermaid/PlantUML core views are enough → use the [`4plus1-models`](skills/4
 
 ## Self-contained
 
-This folder ships with **vendored copies** of every skill and instruction it depends on, under `skills/` and `instructions/`. Copy the entire `4plus1-diagrams/` folder into any repo and it runs as-is — no other files in this repo are required at runtime.
+This folder ships with **bundled copies** of every skill and instruction it depends on, under `skills/` and `instructions/`. Copy the entire `4plus1-diagrams/` folder into any repo and it runs as-is — no other files in this repo are required at runtime.
 
-This workflow is a **frozen snapshot**. It has no sync contract and no runtime dependency on any path outside this folder.
+This workflow is a **frozen snapshot** at runtime. It has no runtime dependency on any path outside this folder.
+
+Controlled maintenance re-sync is supported via:
+- `vendored-assets-manifest.json`
+- `scripts/sync-vendored-assets.py`
+- `scripts/smoke-test.py --check-skew`
+
+All `source.path` values in `vendored-assets-manifest.json` must remain inside this folder (`source.kind: bundle-path`). External repo paths are not allowed.
 
 ## Discoverable placement (no installer)
 
@@ -53,9 +60,9 @@ Pick one entry point:
 
 - [WORKFLOW.md](WORKFLOW.md) — the orchestration playbook (source of truth for what the agent / prompt does).
 - `skills/4plus1-models/` — core 4+1 method skill (authoritative for architecture logic).
-- `skills/draw-io-diagram-generator/` — vendored copy of the draw.io generator skill (authoritative for mxGraph XML mechanics).
-- `skills/miro-diagram-generator/` — vendored copy of the Miro generator skill (authoritative for Miro prompt mechanics).
-- `instructions/` — vendored instruction files (draw.io and Miro).
+- `skills/draw-io-diagram-generator/` — bundled copy of the draw.io generator skill (authoritative for mxGraph XML mechanics).
+- `skills/miro-diagram-generator/` — bundled copy of the Miro generator skill (authoritative for Miro prompt mechanics).
+- `instructions/` — bundled instruction files (draw.io and Miro).
 - `architecture-documentation.agent.md` — discoverable root entrypoint for repo-level or user-level placement.
 - `agents/` — the workflow-specific thin agent (no MCP servers).
 - `prompts/` — Copilot/Cursor/Claude prompts that trigger the workflow.
@@ -63,7 +70,9 @@ Pick one entry point:
 - `templates/miro/` — Miro prompt templates for per-view and full-board setup prompts.
 - `references/notation-drawio.md` — per-view draw.io conventions (palette, shape libraries, layout discipline).
 - `references/notation-miro.md` — per-view Miro conventions (frame naming, shape semantics, colour palette, layout discipline).
-- `scripts/smoke-test.py` — bundle smoke test for internal links, required assets, stale references, Miro prompt names, and draw.io XML templates.
+- `vendored-assets-manifest.json` — bundled asset metadata (source, ref, last sync, local hash).
+- `scripts/sync-vendored-assets.py` — dry-run/apply re-sync helper for bundled assets.
+- `scripts/smoke-test.py` — bundle smoke test for internal links, required assets, stale references, Miro prompt names, draw.io XML templates, and bundle integrity status.
 ## Smoke test
 
 Run this after changing files, folders, links, examples, templates, or skill boundaries:
@@ -73,6 +82,41 @@ python scripts/smoke-test.py
 ```
 
 The smoke test validates that the workflow remains self-contained and that both output tracks still have resolvable local assets.
+
+Check bundle integrity status only:
+
+```bash
+python scripts/smoke-test.py --check-skew
+```
+
+## Maintenance SOP (bundled assets)
+
+Use this process whenever bundled skills or instructions need updating.
+
+1. Run a baseline dry-run and review pending changes:
+
+```bash
+python scripts/sync-vendored-assets.py --dry-run
+```
+
+2. If source refs are ready, apply the sync:
+
+```bash
+python scripts/sync-vendored-assets.py --apply
+```
+
+3. Validate bundle integrity and skew status:
+
+```bash
+python scripts/smoke-test.py
+python scripts/smoke-test.py --check-skew
+```
+
+4. Review changed files for unintended deletions or path leakage outside this folder.
+5. Update `vendored-assets-manifest.json` metadata (`ref`, `last_sync_utc`) for any refreshed asset, keeping `source.kind` as `bundle-path`.
+6. Commit synced assets and metadata together.
+
+> **Note — bundle-local integrity only.** All `source.path` values in the manifest point to paths inside this folder (`source.kind: bundle-path`), so `--apply` operates within the bundle and updates integrity hashes. It does not fetch from any external upstream. To refresh a bundled asset from an upstream source, manually replace the local bundle copy first, then run `--apply` to recalculate hashes, and smoke-test the result.
 
 ## What you get back
 
@@ -125,3 +169,5 @@ docs/architecture/
         ├── physical-view-miro-prompt.md
         └── scenarios-view-miro-prompt.md
 ```
+
+      **Option A+B: draw.io + Miro outputs** — both tracks generated from the same canonical Mermaid/PlantUML source.

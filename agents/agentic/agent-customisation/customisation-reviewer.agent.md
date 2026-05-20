@@ -23,7 +23,7 @@ Review Copilot customisation assets for quality and consistency before release o
 ## When Not to Use
 
 - Diagnosing why a customisation is not discovered or invoked; use `Customisation Debugger`.
-- Packaging an asset for portability and vendoring dependencies; use `Customisation Packager`.
+- Packaging an asset for portability and bundling dependencies; use `Customisation Packager`.
 - Creating a brand-new customisation asset from scratch; use `Agent Builder`, `Instructions Builder`, `Prompt Builder`, or `Skill Builder`.
 - Performing governance, compliance, or policy safety audits of AI systems; use `Agent Governance Reviewer`.
 - Debugging application runtime behaviour unrelated to customisation assets.

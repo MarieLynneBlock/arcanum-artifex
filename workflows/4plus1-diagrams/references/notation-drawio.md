@@ -1,6 +1,6 @@
 # draw.io conventions for 4+1 views
 
-Per-view conventions for the `4plus1-diagrams` workflow. **Mechanics of mxGraph XML (cell ids, geometry, edges) are owned by [`draw-io-diagram-generator`](../skills/draw-io-diagram-generator/SKILL.md) and the [draw.io instruction file](../instructions/draw-io.instructions.md) (both vendored in top-level workflow folders).** This file only covers what is specific to each 4+1 view.
+Per-view conventions for the `4plus1-diagrams` workflow. **Mechanics of mxGraph XML (cell ids, geometry, edges) are owned by [`draw-io-diagram-generator`](../skills/draw-io-diagram-generator/SKILL.md) and the [draw.io instruction file](../instructions/draw-io.instructions.md) (both bundled in top-level workflow folders).** This file only covers what is specific to each 4+1 view.
 
 ---
 

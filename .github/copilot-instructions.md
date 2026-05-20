@@ -42,7 +42,7 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 - [README.md](../README.md): top-level source of truth for the repo layout and philosophy.
 - [skills/README.md](../skills/README.md): skill library conventions and deployment locations.
 - [instructions/README.md](../instructions/README.md): instruction-file organization and indexing.
-- [workflows/README.md](../workflows/README.md): workflow packaging rules and vendored asset expectations.
+- [workflows/README.md](../workflows/README.md): workflow packaging rules and bundled asset expectations.
 - [guides/how-to/workflow-integration.md](../guides/how-to/workflow-integration.md): workflow expectations and limits.
 - [guides/practices/prompt-engineering.md](../guides/practices/prompt-engineering.md): prompt-writing patterns.
 

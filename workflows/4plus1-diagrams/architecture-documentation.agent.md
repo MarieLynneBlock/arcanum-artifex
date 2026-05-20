@@ -1,6 +1,6 @@
 ---
-description: Discoverable entrypoint for the standalone 4plus1-diagrams workflow bundle. Supports draw.io and Miro outputs with no MCP dependency.
 name: Architecture Documentation (4plus1-diagrams)
+description: Discoverable entrypoint for the standalone 4plus1-diagrams workflow bundle. Supports draw.io and Miro outputs with no MCP dependency.
 tools: []
 metadata:
   skill-author: 'Marie-Lynne Block'

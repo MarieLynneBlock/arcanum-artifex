@@ -2,7 +2,7 @@
 
 Orchestrated playbooks that link together skills, instructions, agents, prompts, templates, and external tools to deliver a complete outcome.
 
-**A workflow is a self-contained, drop-in folder.** Every skill and instruction it depends on is **vendored** under `assets/` so the entire workflow folder can be copied into any other repo and run without dragging the rest of this repo along. That portability is the whole point.
+**A workflow is a self-contained, drop-in folder.** Every skill and instruction it depends on is **bundled** under `assets/` so the entire workflow folder can be copied into any other repo and run without dragging the rest of this repo along. That portability is the whole point.
 
 A workflow is the right home for any sequence of work that:
 
@@ -39,8 +39,8 @@ workflows/
     ├── README.md                          ← human-facing summary, when to use, how to invoke
     ├── WORKFLOW.md                        ← the orchestration playbook (the "source of truth")
     ├── assets/                            ← everything the workflow needs at runtime
-    │   ├── skills/                        ← vendored copies of skills the workflow depends on
-    │   ├── instructions/                  ← vendored copies of instruction files
+    │   ├── skills/                        ← bundled copies of skills the workflow depends on
+    │   ├── instructions/                  ← bundled copies of instruction files
     │   ├── agents/                        ← .agent.md files specific to this workflow
     │   ├── prompts/                       ← .prompt.md files specific to this workflow
     │   ├── templates/                     ← templates produced or consumed by the workflow
@@ -79,7 +79,7 @@ Keep `WORKFLOW.md` short. Push detail down into the linked skills and references
 
 ## Conventions
 
-- **Self-contained.** Every skill and instruction the workflow needs at runtime is vendored under `assets/skills/` and `assets/instructions/`. The workflow folder must run after being copied to any other repo, with no other files from this repo present.
+- **Self-contained.** Every skill and instruction the workflow needs at runtime is bundled under `assets/skills/` and `assets/instructions/`. The workflow folder must run after being copied to any other repo, with no other files from this repo present.
 - **Strict snapshot.** Workflows are shipped as complete snapshots. No sync scripts, no manifests, and no update contract to repo-level assets.
-- **No invented capabilities.** Workflows must only reference assets that actually exist (vendored locally or genuinely installed external tools). Verify paths.
+- **No invented capabilities.** Workflows must only reference assets that actually exist (bundled locally or genuinely installed external tools). Verify paths.
 - **No MCP requirement** unless every linked tool is documented as MCP-only. Where an MCP server would be the natural choice but is unavailable (e.g. restricted environments), the workflow generates the artefact directly (e.g. write `.drawio` XML to disk instead of calling a draw.io MCP).

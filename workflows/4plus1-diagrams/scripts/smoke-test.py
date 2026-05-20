@@ -9,11 +9,14 @@ Checks are intentionally mechanical and fast:
 - stale legacy references are absent
 - Miro example prompt filenames follow the documented contract
 - workflow-level and skill-internal Miro templates stay in sync
-- draw.io templates parse and pass the vendored draw.io validator
+- draw.io templates parse and pass the bundled draw.io validator
 """
 from __future__ import annotations
 
+import argparse
+import hashlib
 import importlib.util
+import json
 import re
 import sys
 from pathlib import Path
@@ -31,6 +34,9 @@ REQUIRED_PATHS = [
     "instructions/miro.instructions.md",
     "references/notation-drawio.md",
     "references/notation-miro.md",
+    "vendored-assets-manifest.json",
+    "scripts/sync-vendored-assets.py",
+    "scripts/inject-and-validate-provenance.py",
     "skills/4plus1-models/SKILL.md",
     "skills/draw-io-diagram-generator/SKILL.md",
     "skills/miro-diagram-generator/SKILL.md",
@@ -78,6 +84,21 @@ def add_error(errors: list[str], message: str) -> None:
     errors.append(message)
 
 
+def add_warning(warnings: list[str], message: str) -> None:
+    warnings.append(message)
+
+
+def _should_skip_hash_file(path: Path) -> bool:
+    parts = set(path.parts)
+    if "__pycache__" in parts:
+        return True
+    if path.suffix in {".pyc", ".pyo"}:
+        return True
+    if path.name in {".DS_Store"}:
+        return True
+    return False
+
+
 def is_markdown(path: Path) -> bool:
     name = path.name
     return path.suffix == ".md" or name.endswith((".agent.md", ".prompt.md", ".instructions.md"))
@@ -121,16 +142,41 @@ def check_entry_frontmatter(errors: list[str]) -> None:
             continue
         if lines[0] != "---":
             add_error(errors, f"Entry frontmatter missing opening fence: {rel(path)}")
-        if not lines[1].startswith("name: "):
-            add_error(errors, f"Entry frontmatter missing name as first field: {rel(path)}")
-        if not lines[2].startswith("description: "):
-            add_error(errors, f"Entry frontmatter missing description as second field: {rel(path)}")
-        if lines[3] != "metadata:":
-            add_error(errors, f"Entry frontmatter missing metadata as third field: {rel(path)}")
-        if not re.match(r"^ +skill-author: ", lines[4]):
-            add_error(errors, f"Entry frontmatter missing skill-author metadata: {rel(path)}")
-        if "---" not in lines[5:]:
+            continue
+        try:
+            closing_index = lines.index("---", 1)
+        except ValueError:
             add_error(errors, f"Entry frontmatter missing closing fence: {rel(path)}")
+            continue
+
+        fm_lines = lines[1:closing_index]
+        if len(fm_lines) < 3:
+            add_error(errors, f"Entry frontmatter too short: {rel(path)}")
+            continue
+
+        if not fm_lines[0].startswith("name: "):
+            add_error(errors, f"Entry frontmatter missing name as first field: {rel(path)}")
+        if len(fm_lines) < 2 or not fm_lines[1].startswith("description: "):
+            add_error(errors, f"Entry frontmatter missing description as second field: {rel(path)}")
+
+        top_level_keys: list[tuple[str, int]] = []
+        for idx, line in enumerate(fm_lines):
+            if line and not line.startswith((" ", "\t")) and line.endswith(":"):
+                top_level_keys.append((line[:-1], idx))
+            elif line and not line.startswith((" ", "\t")) and ": " in line:
+                top_level_keys.append((line.split(":", 1)[0], idx))
+
+        metadata_positions = [idx for key, idx in top_level_keys if key == "metadata"]
+        if not metadata_positions:
+            add_error(errors, f"Entry frontmatter missing metadata field: {rel(path)}")
+            continue
+
+        metadata_idx = metadata_positions[-1]
+        if metadata_idx != top_level_keys[-1][1]:
+            add_error(errors, f"Entry frontmatter must have metadata as last field: {rel(path)}")
+
+        if metadata_idx + 1 >= len(fm_lines) or not re.match(r"^\s+skill-author: ", fm_lines[metadata_idx + 1]):
+            add_error(errors, f"Entry frontmatter missing skill-author metadata: {rel(path)}")
 
 
 def check_markdown_links(errors: list[str]) -> None:
@@ -337,17 +383,162 @@ def check_drawio_templates(errors: list[str]) -> None:
                 add_error(errors, f"draw.io validation failed in {rel(drawio_file)}: {validation_error}")
 
 
+def _compute_tree_hash(path: Path) -> str:
+    hasher = hashlib.sha256()
+    if path.is_file():
+        if _should_skip_hash_file(path):
+            return hasher.hexdigest()
+        hasher.update(path.name.encode("utf-8"))
+        hasher.update(b"\0")
+        hasher.update(path.read_bytes())
+        return hasher.hexdigest()
+
+    for file_path in sorted(p for p in path.rglob("*") if p.is_file()):
+        if _should_skip_hash_file(file_path):
+            continue
+        rel_name = file_path.relative_to(path).as_posix()
+        hasher.update(rel_name.encode("utf-8"))
+        hasher.update(b"\0")
+        hasher.update(file_path.read_bytes())
+        hasher.update(b"\0")
+    return hasher.hexdigest()
+
+
+def _read_manifest(errors: list[str]) -> dict | None:
+    manifest_path = ROOT / "vendored-assets-manifest.json"
+    if not manifest_path.exists():
+        add_error(errors, "Missing bundled manifest: vendored-assets-manifest.json")
+        return None
+    try:
+        data = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        add_error(errors, f"Invalid bundled manifest JSON: {exc}")
+        return None
+    assets = data.get("assets")
+    if not isinstance(assets, list):
+        add_error(errors, "Bundled manifest must contain an 'assets' list")
+        return None
+    return data
+
+
+def check_vendored_manifest(errors: list[str], warnings: list[str]) -> None:
+    data = _read_manifest(errors)
+    if data is None:
+        return
+
+    for asset in data["assets"]:
+        asset_id = asset.get("id", "<unknown>")
+        local_path = asset.get("local_path")
+        source = asset.get("source", {})
+        source_kind = source.get("kind")
+        source_path = source.get("path")
+        source_ref = source.get("ref")
+        last_sync = asset.get("last_sync_utc")
+
+        if not isinstance(local_path, str) or not local_path:
+            add_error(errors, f"Manifest asset {asset_id}: missing local_path")
+            continue
+
+        if not (ROOT / local_path).exists():
+            add_error(errors, f"Manifest asset {asset_id}: local_path does not exist: {local_path}")
+
+        if source_kind != "bundle-path":
+            add_error(errors, f"Manifest asset {asset_id}: source.kind must be bundle-path")
+
+        if not isinstance(source_path, str) or not source_path:
+            add_error(errors, f"Manifest asset {asset_id}: missing source.path")
+        elif source_path == "[TODO]":
+            add_error(errors, f"Manifest asset {asset_id}: source.path cannot be TODO")
+        else:
+            resolved_source = (ROOT / source_path).resolve()
+            try:
+                resolved_source.relative_to(ROOT)
+            except ValueError:
+                add_error(errors, f"Manifest asset {asset_id}: source.path escapes bundle: {source_path}")
+            else:
+                if not resolved_source.exists():
+                    add_error(errors, f"Manifest asset {asset_id}: source.path missing in bundle: {source_path}")
+
+        if not isinstance(source_ref, str) or not source_ref:
+            add_error(errors, f"Manifest asset {asset_id}: missing source.ref")
+        elif source_ref == "[TODO]":
+            add_error(errors, f"Manifest asset {asset_id}: source.ref cannot be TODO")
+
+        if not isinstance(last_sync, str) or not last_sync:
+            add_error(errors, f"Manifest asset {asset_id}: missing last_sync_utc")
+        elif last_sync == "[TODO]":
+            add_warning(warnings, f"Manifest asset {asset_id}: last_sync_utc is TODO")
+
+
+def check_vendored_skew(errors: list[str], warnings: list[str]) -> None:
+    data = _read_manifest(errors)
+    if data is None:
+        return
+
+    for asset in data["assets"]:
+        asset_id = asset.get("id", "<unknown>")
+        local_path = asset.get("local_path")
+        if not isinstance(local_path, str) or not local_path:
+            add_error(errors, f"Manifest asset {asset_id}: missing local_path")
+            continue
+        resolved_local = ROOT / local_path
+        if not resolved_local.exists():
+            add_error(errors, f"Manifest asset {asset_id}: local_path missing for skew check: {local_path}")
+            continue
+
+        integrity = asset.get("integrity", {})
+        expected_hash = integrity.get("hash") if isinstance(integrity, dict) else None
+        if not isinstance(expected_hash, str) or not expected_hash:
+            add_warning(warnings, f"Manifest asset {asset_id}: missing integrity.hash")
+            continue
+        if expected_hash == "[TODO]":
+            add_warning(warnings, f"Manifest asset {asset_id}: integrity.hash is TODO")
+            continue
+
+        actual_hash = _compute_tree_hash(resolved_local)
+        if actual_hash != expected_hash:
+            add_error(
+                errors,
+                f"Bundled skew detected for {asset_id}: manifest hash {expected_hash} != actual {actual_hash}",
+            )
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Smoke test the standalone 4plus1-diagrams bundle")
+    parser.add_argument(
+        "--check-skew",
+        action="store_true",
+        help="Run only bundled manifest/skew checks",
+    )
+    return parser.parse_args()
+
+
 def main() -> int:
+    args = parse_args()
     errors: list[str] = []
-    check_required_paths(errors)
-    check_entry_frontmatter(errors)
-    check_markdown_links(errors)
-    check_forbidden_text(errors)
-    check_output_path_contract(errors)
-    check_validate_views_command(errors)
-    check_miro_prompt_names(errors)
-    check_miro_template_parity(errors)
-    check_drawio_templates(errors)
+    warnings: list[str] = []
+
+    if args.check_skew:
+        check_vendored_manifest(errors, warnings)
+        check_vendored_skew(errors, warnings)
+    else:
+        check_required_paths(errors)
+        check_entry_frontmatter(errors)
+        check_markdown_links(errors)
+        check_forbidden_text(errors)
+        check_output_path_contract(errors)
+        check_validate_views_command(errors)
+        check_miro_prompt_names(errors)
+        check_miro_template_parity(errors)
+        check_drawio_templates(errors)
+        check_vendored_manifest(errors, warnings)
+        check_vendored_skew(errors, warnings)
+
+    if warnings:
+        print("SMOKE TEST WARNINGS")
+        for warning in warnings:
+            print(f"- {warning}")
+        print(f"\n{len(warnings)} warning(s) found.\n")
 
     if errors:
         print("SMOKE TEST FAIL")
@@ -357,6 +548,11 @@ def main() -> int:
         return 1
 
     print("SMOKE TEST PASS")
+    if args.check_skew:
+        print("- bundled manifest fields are present")
+        print("- bundled asset hashes match manifest values")
+        return 0
+
     print("- required files/folders present")
     print("- workflow, skill, and agent entry frontmatter follows required order")
     print("- internal Markdown links resolve inside the bundle")
@@ -367,6 +563,8 @@ def main() -> int:
     print("- Miro example prompt filenames match the naming contract")
     print("- workflow and skill Miro templates are in sync")
     print("- draw.io templates passed XML validation")
+    print("- bundled asset metadata is present")
+    print("- bundled asset hashes match manifest values")
     return 0
 
 
