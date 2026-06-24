@@ -5,6 +5,7 @@ tools: ['search/codebase', 'edit/editFiles', 'search', 'web/fetch']
 model: GPT-5
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # System Architecture Reviewer

@@ -5,6 +5,7 @@ tools: [vscode/getProjectSetupInfo, vscode/installExtension, vscode/newWorkspace
 model: ["GPT-5.3-Codex", "Claude Sonnet 4.6 (copilot)", "Claude Opus 4.6 (copilot)", "Claude Haiku 4.5 (copilot)"]
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Dotnet Self-Learning Architect

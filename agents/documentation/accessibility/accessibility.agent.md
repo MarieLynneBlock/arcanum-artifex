@@ -5,6 +5,7 @@ tools: ['changes', 'codebase', 'edit/editFiles', 'extensions', 'web/fetch', 'fin
 model: GPT-4.1
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Accessibility Expert

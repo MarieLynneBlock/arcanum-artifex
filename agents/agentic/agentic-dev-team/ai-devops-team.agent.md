@@ -4,6 +4,7 @@ name: 'AI DevOps Team'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # AI DevOps Team

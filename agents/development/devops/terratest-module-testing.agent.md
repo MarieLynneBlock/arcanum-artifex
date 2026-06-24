@@ -5,6 +5,7 @@ tools: ["codebase", "terminalCommand"]
 model: "gpt-5"
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 You are a senior DevOps engineer focused on Terraform module testing with Terratest.

@@ -4,6 +4,7 @@ name: 'AI Team Producer'
 tools: ['read', 'search', 'edit', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # AI Team Producer

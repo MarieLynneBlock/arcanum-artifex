@@ -4,6 +4,7 @@ description: Discoverable entrypoint for the standalone 4plus1-diagrams workflow
 tools: []
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Discoverable Entrypoint

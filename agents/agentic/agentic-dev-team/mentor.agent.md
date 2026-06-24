@@ -4,6 +4,7 @@ name: 'AI Team Mentor'
 tools: ['read', 'search', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # AI Team Mentor

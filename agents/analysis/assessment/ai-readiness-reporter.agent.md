@@ -4,6 +4,7 @@ description: 'Runs the AgentRC readiness assessment on the current repository an
 tools: ['execute', 'read', 'search', 'edit']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # AI Readiness Reporter

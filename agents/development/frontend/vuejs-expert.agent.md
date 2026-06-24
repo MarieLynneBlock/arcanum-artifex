@@ -5,6 +5,7 @@ tools: ["search/changes", "search/codebase", "edit/editFiles", "vscode/extension
 model: 'Claude Sonnet 4.5'
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Expert Vue.js Frontend Engineer

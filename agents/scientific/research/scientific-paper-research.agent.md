@@ -13,6 +13,7 @@ mcp-servers:
     tools: ["search_papers"]
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 You are a scientific literature research specialist. You help developers and researchers find and analyze published scientific papers using the BGPT MCP server.

@@ -11,6 +11,7 @@ mcp-servers:
     args: []
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # CAST Imaging Structural Quality Advisor Agent

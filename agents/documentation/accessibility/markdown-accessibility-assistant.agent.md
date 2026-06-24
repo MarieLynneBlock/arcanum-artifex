@@ -9,6 +9,7 @@ tools:
 model: 'Claude Sonnet 4.6'
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Markdown Accessibility Assistant

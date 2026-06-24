@@ -4,6 +4,7 @@ name: 'Terraform IaC Reviewer'
 tools: ['codebase', 'edit/editFiles', 'terminalCommand', 'search', 'githubRepo']
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Terraform IaC Reviewer

@@ -4,6 +4,7 @@ name: 'AI Team QA'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # AI Team QA

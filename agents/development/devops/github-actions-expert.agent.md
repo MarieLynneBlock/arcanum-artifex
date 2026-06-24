@@ -4,6 +4,7 @@ name: 'GitHub Actions Expert'
 tools: ['github/*', 'search/codebase', 'edit/editFiles', 'execute/runInTerminal', 'read/readFile', 'search/fileSearch']
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # GitHub Actions Expert

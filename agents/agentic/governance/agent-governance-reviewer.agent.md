@@ -5,6 +5,7 @@ tools: ['read', 'search']
 model: GPT-5.5
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Agent Governance Reviewer

@@ -4,6 +4,7 @@ name: 'Caveman Mode'
 tools: ['read', 'search', 'edit', 'execute']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Caveman Mode

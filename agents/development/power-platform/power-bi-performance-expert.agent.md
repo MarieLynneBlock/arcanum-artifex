@@ -5,6 +5,7 @@ tools: ["changes", "codebase", "editFiles", "extensions", "fetch", "findTestFile
 model: "gpt-4.1"
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Power BI Performance Expert Mode

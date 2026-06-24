@@ -4,6 +4,7 @@ name: 'Critical thinking mode instructions'
 tools: ['codebase', 'extensions', 'web/fetch', 'findTestFiles', 'githubRepo', 'problems', 'search', 'searchResults', 'usages']
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 # Critical thinking mode instructions
 

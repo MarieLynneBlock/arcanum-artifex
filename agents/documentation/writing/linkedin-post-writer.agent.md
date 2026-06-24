@@ -4,6 +4,7 @@ name: "LinkedIn Post Writer"
 tools: ["codebase", "fetch"]
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # LinkedIn Post Writer

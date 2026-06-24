@@ -4,6 +4,7 @@ name: reepl-linkedin
 tools: []
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Reepl -- LinkedIn Content Agent

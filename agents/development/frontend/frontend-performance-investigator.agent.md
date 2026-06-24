@@ -5,6 +5,7 @@ tools: ['codebase', 'search', 'fetch', 'findTestFiles', 'problems', 'runCommands
 model: GPT-5
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Frontend Performance Investigator

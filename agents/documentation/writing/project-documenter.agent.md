@@ -19,6 +19,7 @@ tools:
   ]
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Project Documentation Agent

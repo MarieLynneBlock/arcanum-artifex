@@ -15,6 +15,7 @@ handoffs:
       send: true
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 You are an expert Java upgrade agent. **Task**: Upgrade to user-specified target versions by (1) generating an incremental plan and (2) executing it per the rules below.

@@ -4,6 +4,7 @@ name: 'Idea Generator'
 tools: ['changes', 'search/codebase', 'web/fetch', 'web/githubRepo', 'openSimpleBrowser', 'read/problems', 'azure-mcp/search', 'searchResults', 'search/usages', 'microsoft.docs.mcp', 'websearch']
 metadata:
   skill-author: Marie-Lynne Block
+  version: 1.0.0
 ---
 # Idea Generator mode instructions
 

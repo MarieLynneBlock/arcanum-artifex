@@ -4,6 +4,7 @@ name: 'Agent OWASP Compliance Reviewer'
 tools: ['read', 'search']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Agent OWASP Compliance Reviewer

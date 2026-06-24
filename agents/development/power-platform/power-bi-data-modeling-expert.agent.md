@@ -5,6 +5,7 @@ tools: ["changes", "search/codebase", "editFiles", "extensions", "fetch", "findT
 model: "gpt-4.1"
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Power BI Data Modeling Expert Mode

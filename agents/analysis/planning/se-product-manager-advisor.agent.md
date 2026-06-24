@@ -5,6 +5,7 @@ tools: ['codebase', 'githubRepo', 'create_issue', 'update_issue', 'list_issues',
 model: GPT-5
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Product Manager Advisor

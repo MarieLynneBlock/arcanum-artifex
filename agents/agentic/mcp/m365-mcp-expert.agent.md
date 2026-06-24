@@ -4,6 +4,7 @@ name: 'M365 MCP Expert'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # M365 MCP Expert

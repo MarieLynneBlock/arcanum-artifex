@@ -5,6 +5,7 @@ tools: ['codebase', 'search', 'edit/editFiles', 'web/fetch', 'runCommands', 'ter
 model: claude-sonnet-4-6
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # AWS Cloud Expert

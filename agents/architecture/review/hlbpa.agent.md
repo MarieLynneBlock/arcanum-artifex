@@ -19,6 +19,7 @@ tools:
 model: 'claude-sonnet-4'
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # High-Level Big Picture Architect (HLBPA)

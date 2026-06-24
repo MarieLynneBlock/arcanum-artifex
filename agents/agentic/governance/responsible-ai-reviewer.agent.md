@@ -4,6 +4,7 @@ name: 'Responsible AI Reviewer'
 tools: ['read', 'search']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Responsible AI

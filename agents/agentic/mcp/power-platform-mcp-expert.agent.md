@@ -4,6 +4,7 @@ name: 'Power Platform MCP Expert'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Power Platform MCP Expert

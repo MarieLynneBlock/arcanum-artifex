@@ -4,6 +4,7 @@ description: Produce a complete Kruchten 4+1 architectural view model with diagr
 tools: []
 metadata:
 	skill-author: 'Marie-Lynne Block'
+	version: 1.0.0
 ---
 
 # Architecture Documentation Agent

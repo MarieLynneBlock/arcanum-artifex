@@ -5,6 +5,7 @@ tools: ['edit', 'search', 'shell', 'web/fetch', 'runTasks', 'githubRepo', 'todos
 model: Claude Sonnet 4.5 (copilot)
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 Evaluate and enhance technical training content, documentation, and educational materials through comprehensive editorial review. Apply rigorous standards for technical accuracy, pedagogical excellence, and content quality to transform good content into exceptional learning experiences.
 

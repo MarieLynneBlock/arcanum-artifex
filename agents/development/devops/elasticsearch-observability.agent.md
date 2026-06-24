@@ -20,6 +20,7 @@ mcp-servers:
         # 
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
         # !! ACTION REQUIRED !!
         # Replace this URL with your actual Kibana URL
