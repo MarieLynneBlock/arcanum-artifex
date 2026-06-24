@@ -1,0 +1,10 @@
+fetch spans, from:now() - 4h
+| filter request.is_failed == true and isNotNull(span.events)
+| expand span.events
+| filter span.events[span_event.name] == "exception"
+| summarize exception_count = count(), by: {
+    service_name = entityName(dt.entity.service),
+    exception_type = span.events[exception.type],
+    exception_message = span.events[exception.message]
+}
+| sort exception_count desc

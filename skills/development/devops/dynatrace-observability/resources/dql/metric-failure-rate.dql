@@ -1,0 +1,8 @@
+timeseries {
+  requests = sum(dt.service.request.count, default: 0),
+  failures = sum(dt.service.request.failure_count, default: 0)
+}, by:{dt.entity.service}, from:now() - 2h
+| fieldsAdd failure_rate = if(requests[] > 0, 100 * failures[] / requests[], else: 0)
+| fieldsAdd service_name = entityName(dt.entity.service)
+| sort arrayAvg(failure_rate) desc
+| limit 20

@@ -16,6 +16,7 @@ This category contains skills for software engineering workflows. Language-agnos
 | Sub-folder | Languages / platforms |
 | --- | --- |
 | [bash/](bash/) | Bash / shell scripting |
+| [devops/](devops/) | DevOps workflows and automation |
 | [dotnet/](dotnet/) | C#, F#, VB.NET (.NET / ASP.NET) |
 | [frontend/](frontend/) | HTML, CSS, JavaScript |
 | [generative-art/](generative-art/) | Creative coding and generative art workflows |

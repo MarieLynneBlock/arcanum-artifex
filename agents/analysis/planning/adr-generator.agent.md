@@ -3,7 +3,7 @@ description: Enterprise-grade agent for authoring Architectural Decision Records
 name: ADR Generator
 tools: []
 metadata:
-  agent-author: 'Marie-Lynne Block'
+  hisagent-author: 'Marie-Lynne Block'
   version: 1.0.0
 ---
 
