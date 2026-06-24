@@ -1,6 +1,6 @@
 ---
-description: 'Create tldr summaries for GitHub Copilot files (prompts, agents, instructions, collections), MCP servers, or documentation from URLs and queries.'
 name: tldr-prompt
+description: 'Create tldr-style summaries for GitHub Copilot customisation files, MCP server documentation, or Copilot documentation from files, URLs, or focused queries.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---

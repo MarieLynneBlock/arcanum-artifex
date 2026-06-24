@@ -1,6 +1,6 @@
 ---
-description: 'Ask Copilot what files it needs to see before answering a question'
 name: what-context-needed
+description: 'Identify which files or folders Copilot needs to inspect before answering a user question, including required context, helpful context, and uncertainties.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -12,6 +12,8 @@ Before answering my question, tell me what files you need to see.
 ## My Question
 
 {{question}}
+
+Replace `{{question}}` with the user's actual question. If no question is provided, ask for it before listing required context.
 
 ## Instructions
 

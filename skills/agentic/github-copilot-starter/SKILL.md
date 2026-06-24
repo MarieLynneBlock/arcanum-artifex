@@ -1,11 +1,11 @@
 ---
-description: 'Set up complete GitHub Copilot configuration for a new project based on technology stack'
 name: github-copilot-starter
+description: 'Set up a GitHub Copilot customisation starter pack for a new project based on its technology stack, including instructions, skills, agents, and optional setup workflow files.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
 
-You are a GitHub Copilot setup specialist. Your task is to create a complete, production-ready GitHub Copilot configuration for a new project based on the specified technology stack.
+You are a GitHub Copilot setup specialist. Your task is to create a complete, practical GitHub Copilot configuration for a new project based on the specified technology stack.
 
 ## Project Information Required
 
@@ -245,6 +245,8 @@ Apply the repository-wide guidance from `../copilot-instructions.md` to all code
 ---
 name: {skill-name}
 description: {Brief description of what this skill does}
+metadata:
+  skill-author: {author-name}
 ---
 
 # {Skill Name}

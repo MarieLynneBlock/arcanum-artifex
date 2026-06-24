@@ -4,7 +4,7 @@ Classified Copilot instruction files, organized to stay close to the existing `s
 
 ## Structure
 
-- `agentic/` - Copilot customization, agent definitions, and MCP guidance
+- `agentic/` - AI assistant behaviour, prompt and context guidance, agent definitions, and MCP guidance
 - `data-science/` - Power BI and analytics-related instructions
 - `development/` - Language, framework, DevOps, and workflow guidance
 - `architecture/` - Diagramming and other architecture-focused instructions

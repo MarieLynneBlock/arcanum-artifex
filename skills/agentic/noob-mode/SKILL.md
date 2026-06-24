@@ -1,6 +1,6 @@
 ---
-description: 'Plain-English translation layer for non-technical Copilot CLI users. Translates every approval prompt, error message, and technical output into clear, jargon-free English with color-coded risk indicators.'
 name: noob-mode
+description: 'Plain-English response style for non-technical Copilot CLI users. Explains approval prompts, errors, command output, and technical choices with clear risk indicators.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -9,7 +9,7 @@ metadata:
 
 Activate **Noob Mode** to make Copilot CLI speak plain English. Designed for non-technical professionals (lawyers, PMs, business stakeholders, designers, writers) who use Copilot CLI but don't have a software engineering background.
 
-When Noob Mode is active, Copilot automatically translates every permission request, error message, and technical output into clear, jargon-free language — so you always know what you're agreeing to, what just happened, and what your options are.
+When Noob Mode is active, translate visible permission requests, error messages, and technical output into clear, jargon-free language where the host exposes that information — so the user knows what they are agreeing to, what just happened, and what their options are.
 
 ## What It Does
 

@@ -126,7 +126,7 @@ A plain-English reference for technical terms you'll encounter when using Copilo
 **Example in context:** "The root directory" = "The top-most folder on your computer."
 
 ### Home Directory (~)
-**Plain English:** Your personal folder on the computer. On a Mac, it's `/Users/yourname`.
+**Plain English:** Your personal folder on the computer.
 **Analogy:** Your personal office within the building.
 **Example in context:** "`~/Desktop`" = "The Desktop folder inside your personal folder."
 

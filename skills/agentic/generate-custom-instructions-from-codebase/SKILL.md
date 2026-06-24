@@ -1,6 +1,6 @@
 ---
-description: 'Migration and code evolution instructions generator for GitHub Copilot. Analyzes differences between two project versions (branches, commits, or releases) to create precise instructions allowing Copilot to maintain consistency during technology migrations, major refactoring, or framework version upgrades.'
 name: generate-custom-instructions-from-codebase
+description: 'Generate GitHub Copilot migration instructions by comparing two project versions and extracting conventions for framework upgrades, refactoring, dependency changes, or technology migrations.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -8,6 +8,8 @@ metadata:
 # Migration and Code Evolution Instructions Generator
 
 ## Configuration Variables
+
+The `${...}` expressions below are placeholders for the agent to resolve or replace with concrete values. They are not tied to a required template engine.
 
 ```
 ${MIGRATION_TYPE="Framework Version|Architecture Refactoring|Technology Migration|Dependencies Update|Pattern Changes"}

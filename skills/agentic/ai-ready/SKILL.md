@@ -1,15 +1,19 @@
 ---
-description: 'Make any repo AI-ready — analyzes your codebase and generates AGENTS.md, copilot-instructions.md, CI workflows, issue templates, and more. Mines your PR review patterns and creates files customized to your stack. USE THIS SKILL when the user asks to "make this repo ai-ready", "set up AI config", or "prepare this repo for AI contributions".'
 name: ai-ready
+description: 'Guide users to review and install the external ai-ready skill from its upstream repository. Use when the user asks to install or try John Papa''s ai-ready skill.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
 
 # AI Ready
 
-This skill helps the user install the latest [ai-ready](https://github.com/johnpapa/ai-ready) `SKILL.md` by [John Papa](https://github.com/johnpapa) into their personal skills directory.
+This skill helps the user review and install the external [ai-ready](https://github.com/johnpapa/ai-ready) `SKILL.md` by [John Papa](https://github.com/johnpapa) into their personal skills directory.
 
-*Why?*: The full ai-ready skill is ~600 lines of detailed instructions that evolve frequently. This wrapper keeps it discoverable here while the source of truth stays in [johnpapa/ai-ready](https://github.com/johnpapa/ai-ready) — always up to date.
+*Why?*: The full ai-ready skill is maintained upstream and may change over time. This helper is a self-contained installer guide; the upstream repository remains an explicit external prerequisite.
+
+## External prerequisite
+
+This package does not vendor the upstream ai-ready skill. Before installing it, ask the user to review the source repository and confirm they are comfortable downloading that external content.
 
 ## Steps
 

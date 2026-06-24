@@ -1,12 +1,17 @@
 ---
-description: 'Generate or edit images via OpenRouter with the Gemini 3 Pro Image model. Use for prompt-only image generation, image edits, and multi-image compositing; supports 1K/2K/4K output.'
 name: nano-banana-pro-openrouter
+description: 'Generate or edit images via OpenRouter with the Gemini 3 Pro Image model. Use for prompt-only image generation, image edits, and multi-image compositing; supports 1K/2K/4K output.'
 metadata:
   skill-author: 'Marie-Lynne Block'
   emoji: 🍌
-  requires: 
-  bins: 
-  env: 
+  requires:
+    - Python 3.10+
+    - uv
+    - OpenRouter API key
+  bins:
+    - uv
+  env:
+    - OPENROUTER_API_KEY
   primaryEnv: OPENROUTER_API_KEY
 ---
 
@@ -17,10 +22,12 @@ metadata:
 
 Generate or edit images with OpenRouter using the `google/gemini-3-pro-image-preview` model. Support prompt-only generation, single-image edits, and multi-image composition.
 
+Run commands from this skill folder so bundled scripts and assets resolve correctly.
+
 ### Prompt-only generation
 
 ```
-uv run {baseDir}/scripts/generate_image.py \
+uv run scripts/generate_image.py \
   --prompt "A cinematic sunset over snow-capped mountains" \
   --filename sunset.png
 ```
@@ -28,7 +35,7 @@ uv run {baseDir}/scripts/generate_image.py \
 ### Edit a single image
 
 ```
-uv run {baseDir}/scripts/generate_image.py \
+uv run scripts/generate_image.py \
   --prompt "Replace the sky with a dramatic aurora" \
   --input-image input.jpg \
   --filename aurora.png
@@ -37,7 +44,7 @@ uv run {baseDir}/scripts/generate_image.py \
 ### Compose multiple images
 
 ```
-uv run {baseDir}/scripts/generate_image.py \
+uv run scripts/generate_image.py \
   --prompt "Combine the subjects into a single studio portrait" \
   --input-image face1.jpg \
   --input-image face2.jpg \
