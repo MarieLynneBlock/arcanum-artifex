@@ -1,9 +1,9 @@
 ---
-description: 'Brainstorm and develop new application ideas through fun, interactive questioning until ready for specification creation.'
 name: 'Idea Generator'
+description: 'Brainstorm and develop new application ideas through fun, interactive questioning until ready for specification creation.'
 tools: ['changes', 'search/codebase', 'web/fetch', 'web/githubRepo', 'openSimpleBrowser', 'read/problems', 'azure-mcp/search', 'searchResults', 'search/usages', 'microsoft.docs.mcp', 'websearch']
 metadata:
-  skill-author: Marie-Lynne Block
+  agent-author: Marie-Lynne Block
   version: 1.0.0
 ---
 # Idea Generator mode instructions

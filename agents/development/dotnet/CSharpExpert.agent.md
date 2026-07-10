@@ -1,9 +1,9 @@
 ---
+name: 'C# Expert'
 description: An agent designed to assist with software development tasks for .NET projects.
-name: "C# Expert"
 tools: []
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
   version: 1.0.0
 ---
 

@@ -1,9 +1,9 @@
 ---
+name: 'reepl-linkedin'
 description: "AI-powered LinkedIn content creation, scheduling, and analytics agent. Create posts, carousels, and manage your LinkedIn presence with GitHub Copilot."
-name: reepl-linkedin
 tools: []
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
   version: 1.0.0
 ---
 

@@ -1,6 +1,9 @@
 ---
-description: >
 name: eval-driven-dev
+description: >-
+  Build an automated evaluation pipeline that tests a Python LLM application end-to-end with
+  pixie test — real code paths, real LLM calls, instrumented external data — and scores outputs
+  with evaluators instead of assertions. Use when adding evals to a Python AI app.
 license: MIT
 compatibility: Python 3.10+
 metadata:

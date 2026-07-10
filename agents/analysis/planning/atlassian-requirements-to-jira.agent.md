@@ -1,6 +1,6 @@
 ---
-description: 'Enterprise-grade agent that transforms requirements documents into governed Jira epics, stories, and sub-tasks via the Atlassian Rovo MCP Server — with metadata discovery, duplicate detection, traceability, and human-approved create/update gates.'
 name: 'Atlassian Requirements to Jira'
+description: 'Enterprise-grade agent that transforms requirements documents into governed Jira epics, stories, and sub-tasks via the Atlassian Rovo MCP Server — with metadata discovery, duplicate detection, traceability, and human-approved create/update gates.'
 tools: ['atlassian']
 metadata:
   agent-author: 'Marie-Lynne Block'

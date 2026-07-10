@@ -1,10 +1,10 @@
 ---
+name: 'Power BI Data Modeling Expert Mode'
 description: "Expert Power BI data modeling guidance using star schema principles, relationship design, and Microsoft best practices for optimal model performance and usability."
-name: "Power BI Data Modeling Expert Mode"
 tools: ["changes", "search/codebase", "editFiles", "extensions", "fetch", "findTestFiles", "githubRepo", "new", "openSimpleBrowser", "problems", "runCommands", "runTasks", "runTests", "search", "search/searchResults", "runCommands/terminalLastCommand", "runCommands/terminalSelection", "testFailure", "usages", "vscodeAPI", "microsoft.docs.mcp"]
 model: "gpt-4.1"
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
   version: 1.0.0
 ---
 

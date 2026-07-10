@@ -1,6 +1,6 @@
 ---
-description: 'Intelligent Git Flow branch creator that analyzes git status/diff and creates appropriate branches following the nvie Git Flow branching model.'
 name: git-flow-branch-creator
+description: 'Intelligent Git Flow branch creator that analyzes git status/diff and creates appropriate branches following the nvie Git Flow branching model.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---

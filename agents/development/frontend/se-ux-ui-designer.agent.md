@@ -1,10 +1,10 @@
 ---
-description: 'Jobs-to-be-Done analysis, user journey mapping, and UX research artifacts for Figma and design workflows'
 name: 'SE: UX Designer'
+description: 'Jobs-to-be-Done analysis, user journey mapping, and UX research artifacts for Figma and design workflows'
 tools: ['codebase', 'edit/editFiles', 'search', 'web/fetch']
 model: GPT-5
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
   version: 1.0.0
 ---
 

@@ -1,6 +1,8 @@
 ---
-description: >
 name: mlflow
+description: >-
+  [TODO] Define the specific workflow this skill standardizes, including default libraries,
+  quality checks, and expected deliverables.
 metadata:
   skill-author: 'Marie-Lynne Block'
   version: "1.0.0"

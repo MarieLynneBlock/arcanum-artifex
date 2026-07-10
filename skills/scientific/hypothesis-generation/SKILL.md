@@ -1,8 +1,8 @@
 ---
-description: Structured hypothesis formulation from observations. Use when you have experimental observations or data and need to formulate testable hypotheses with predictions, propose mechanisms, and design experiments to test them. Follows scientific method framework. For open-ended ideation use scientific-brainstorming; for automated LLM-driven hypothesis testing on datasets use hypogenic.
 name: hypothesis-generation
-allowed-tools: Read Write Edit Bash
+description: Structured hypothesis formulation from observations. Use when you have experimental observations or data and need to formulate testable hypotheses with predictions, propose mechanisms, and design experiments to test them. Follows scientific method framework. For open-ended ideation use scientific-brainstorming; for automated LLM-driven hypothesis testing on datasets use hypogenic.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---

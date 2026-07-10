@@ -1,6 +1,6 @@
 ---
+name: 'PRD Generator'
 description: Enterprise-grade agent for authoring comprehensive Product Requirements Documents (PRDs) — user stories, acceptance criteria, non-functional requirements, security, privacy, compliance, dependencies, risks, success metrics, and a defined approval lifecycle. Optionally creates traceable GitHub issues on confirmation.
-name: PRD Generator
 tools: ['codebase', 'search', 'fetch', 'githubRepo', 'editFiles', 'create_issue', 'update_issue', 'get_issue', 'list_issues', 'search_issues', 'add_issue_comment']
 model: GPT-5
 metadata:

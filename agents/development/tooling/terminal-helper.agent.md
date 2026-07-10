@@ -1,10 +1,10 @@
 ---
-description: 'Fast terminal syntax and command helper for PowerShell and Bash'
 name: 'terminal-helper'
+description: 'Fast terminal syntax and command helper for PowerShell and Bash'
 tools: ['execute/getTerminalOutput', 'execute/runInTerminal', 'read/terminalLastCommand', 'read/terminalSelection']
 model: GPT-4.1 (copilot)
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
   version: 1.0.0
 ---
 

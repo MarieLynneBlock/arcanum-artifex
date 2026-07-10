@@ -1,6 +1,6 @@
 ---
-description: 'Agent supply-chain reviewer for auditing plugin, tool, and MCP dependency integrity, provenance, and tamper risks in agent ecosystems.'
 name: 'Agent Supply Chain Reviewer'
+description: 'Agent supply-chain reviewer for auditing plugin, tool, and MCP dependency integrity, provenance, and tamper risks in agent ecosystems.'
 tools: ['read', 'search']
 metadata:
   agent-author: 'Marie-Lynne Block'

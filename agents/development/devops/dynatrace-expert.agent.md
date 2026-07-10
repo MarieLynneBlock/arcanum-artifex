@@ -1,6 +1,6 @@
 ---
-description: 'Dynatrace observability and security specialist for incident response, deployment validation, performance regression analysis, vulnerability triage, and DQL-assisted investigation. Use when analysing traces, logs, metrics, Davis problems, and security findings.'
 name: 'Dynatrace Expert'
+description: 'Dynatrace observability and security specialist for incident response, deployment validation, performance regression analysis, vulnerability triage, and DQL-assisted investigation. Use when analysing traces, logs, metrics, Davis problems, and security findings.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 mcp-servers:
   dynatrace:

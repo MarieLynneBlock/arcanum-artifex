@@ -1,6 +1,6 @@
 ---
-description: 'AI agent governance reviewer for auditing agent systems for policy gaps, trust boundary risks, and auditability weaknesses before release.'
 name: 'Agent Governance Reviewer'
+description: 'AI agent governance reviewer for auditing agent systems for policy gaps, trust boundary risks, and auditability weaknesses before release.'
 tools: ['read', 'search']
 model: GPT-5.5
 metadata:

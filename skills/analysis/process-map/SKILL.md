@@ -1,6 +1,9 @@
 ---
-description: >
 name: process-map
+description: >-
+  Produces a structured process map with swim lanes, task nodes, decision diamonds, and handoff
+  arrows. Output is in **Mermaid** flowchart notation (renderable in GitHub, VS Code, Confluence,
+  and Miro) or **BPMN-lite** text when a formal notation is required.
 version: 1.0.0
 tags:
   - process

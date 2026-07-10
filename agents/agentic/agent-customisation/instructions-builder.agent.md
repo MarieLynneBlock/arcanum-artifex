@@ -1,6 +1,6 @@
 ---
-description: 'Instruction-file customisation builder for creating, reviewing, and fixing Copilot .instructions.md files. Use when: applyTo patterns, scoped instructions, repo guidance, or instruction-file packaging.'
 name: 'Instructions Builder'
+description: 'Instruction-file customisation builder for creating, reviewing, and fixing Copilot .instructions.md files. Use when: applyTo patterns, scoped instructions, repo guidance, or instruction-file packaging.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'

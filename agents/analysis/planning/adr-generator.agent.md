@@ -1,6 +1,6 @@
 ---
+name: 'ADR Generator'
 description: Enterprise-grade agent for authoring Architectural Decision Records (ADRs) with governance, compliance, security, and lifecycle controls, formatted for both AI consumption and human review.
-name: ADR Generator
 tools: []
 metadata:
   hisagent-author: 'Marie-Lynne Block'

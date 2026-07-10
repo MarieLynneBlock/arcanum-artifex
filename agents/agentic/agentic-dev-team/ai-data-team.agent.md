@@ -1,6 +1,6 @@
 ---
-description: 'AI data team agent (Ingrid, Tycho). Use when: designing data models, building ingestion or transformation pipelines, validating data quality, defining offline evaluation metrics, analysing model/prompt performance, or preparing datasets for production AI features.'
 name: 'AI Data Team'
+description: 'AI data team agent (Ingrid, Tycho). Use when: designing data models, building ingestion or transformation pipelines, validating data quality, defining offline evaluation metrics, analysing model/prompt performance, or preparing datasets for production AI features.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'

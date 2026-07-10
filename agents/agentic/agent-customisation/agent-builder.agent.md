@@ -1,6 +1,6 @@
 ---
-description: 'Agent customisation builder for creating, reviewing, and fixing single .agent.md files. Use when: custom agent design, agent frontmatter, tool selection, agent scope, agent behaviour, or agent packaging.'
 name: 'Agent Builder'
+description: 'Agent customisation builder for creating, reviewing, and fixing single .agent.md files. Use when: custom agent design, agent frontmatter, tool selection, agent scope, agent behaviour, or agent packaging.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'

@@ -1,8 +1,8 @@
 ---
-description: Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR), audio (with transcription), HTML, CSV, JSON, XML, ZIP, YouTube URLs, EPubs and more.
 name: markitdown
-allowed-tools: Read Write Edit Bash
+description: Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR), audio (with transcription), HTML, CSV, JSON, XML, ZIP, YouTube URLs, EPubs and more.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---

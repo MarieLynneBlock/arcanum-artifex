@@ -1,6 +1,7 @@
 ---
-description: >
 name: risk-analysis
+description: >-
+  Provides a structured framework for risk identification and assessment.
 version: 1.0.0
 tags:
   - risk

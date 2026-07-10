@@ -1,6 +1,10 @@
 ---
-description: >
 name: use-case
+description: >-
+  Produces a complete use case following the Cockburn/RUP format. A use case describes a
+  goal-directed interaction between an actor and the system — capturing not just the happy path,
+  but the extension flows (error, alternative, and exception paths) that user stories typically
+  omit.
 version: 1.0.0
 tags:
   - use-case

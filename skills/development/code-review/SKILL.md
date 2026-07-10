@@ -1,6 +1,9 @@
 ---
-description: >
 name: code-review
+description: >-
+  Applies a consistent, language-agnostic review framework to any code change. It evaluates code
+  across five dimensions, produces prioritised findings with inline suggestions, and distinguishes
+  blockers (must fix before merge) from improvements (worth addressing but not blocking).
 version: 1.0.0
 tags:
   - code-review

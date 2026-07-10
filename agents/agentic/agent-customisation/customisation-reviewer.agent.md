@@ -1,6 +1,6 @@
 ---
-description: 'Customisation quality reviewer for auditing agents, prompts, instructions, and skills for clarity, scope boundaries, trigger quality, and internal consistency.'
 name: 'Customisation Reviewer'
+description: 'Customisation quality reviewer for auditing agents, prompts, instructions, and skills for clarity, scope boundaries, trigger quality, and internal consistency.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'

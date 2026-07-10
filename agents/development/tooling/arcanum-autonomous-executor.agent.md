@@ -1,6 +1,6 @@
 ---
-description: 'Autonomous end-to-end execution agent for multi-step coding tasks, debugging, refactoring, validation, resume work, and practical implementation with concise progress updates.'
 name: 'Arcanum Autonomous Executor'
+description: 'Autonomous end-to-end execution agent for multi-step coding tasks, debugging, refactoring, validation, resume work, and practical implementation with concise progress updates.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'

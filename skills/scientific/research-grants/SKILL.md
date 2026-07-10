@@ -1,8 +1,8 @@
 ---
-description: Write competitive research proposals for NSF, NIH, DOE, DARPA, and Taiwan NSTC. Agency-specific formatting, review criteria, budget preparation, broader impacts, significance statements, innovation narratives, and compliance with submission requirements.
 name: research-grants
-allowed-tools: Read Write Edit Bash
+description: Write competitive research proposals for NSF, NIH, DOE, DARPA, and Taiwan NSTC. Agency-specific formatting, review criteria, budget preparation, broader impacts, significance statements, innovation narratives, and compliance with submission requirements.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---

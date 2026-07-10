@@ -1,6 +1,6 @@
 ---
-description: 'Get best practices for JUnit 5 unit testing, including data-driven tests'
 name: java-junit
+description: 'Get best practices for JUnit 5 unit testing, including data-driven tests'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---

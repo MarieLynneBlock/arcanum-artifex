@@ -1,6 +1,9 @@
 ---
-description: >
 name: git-workflow
+description: >-
+  Covers the full git workflow for a software project: branch naming conventions, commit message
+  authoring (Conventional Commits standard), PR description templates, and merge strategy advice.
+  It produces ready-to-use git artefacts, not generic advice.
 version: 1.0.0
 tags:
   - git

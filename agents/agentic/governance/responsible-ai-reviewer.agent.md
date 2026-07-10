@@ -1,6 +1,6 @@
 ---
-description: 'Responsible AI reviewer for auditing AI features for fairness, accessibility, privacy, and explainability risks before release.'
 name: 'Responsible AI Reviewer'
+description: 'Responsible AI reviewer for auditing AI features for fairness, accessibility, privacy, and explainability risks before release.'
 tools: ['read', 'search']
 metadata:
   agent-author: 'Marie-Lynne Block'

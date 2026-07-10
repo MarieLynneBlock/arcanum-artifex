@@ -1,6 +1,6 @@
 ---
-description: 'Generate a complete, production-ready application from an OpenAPI specification'
 name: openapi-to-application-code
+description: 'Generate a complete, production-ready application from an OpenAPI specification'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---

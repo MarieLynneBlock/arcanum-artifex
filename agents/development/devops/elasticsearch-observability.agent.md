@@ -1,6 +1,6 @@
 ---
+name: 'elasticsearch-agent'
 description: Our expert AI assistant for debugging code (O11y), optimizing vector search (RAG), and remediating security threats using live Elastic data.
-name: elasticsearch-agent
 tools:
   # Standard tools for file reading, editing, and execution
   - read
@@ -17,14 +17,8 @@ mcp-servers:
     command: 'npx'
     args: [
         'mcp-remote',
-        # 
-metadata:
-  skill-author: 'Marie-Lynne Block'
-  version: 1.0.0
----
         # !! ACTION REQUIRED !!
         # Replace this URL with your actual Kibana URL
-        # ---
         'https://{KIBANA_URL}/api/agent_builder/mcp',
         '--header',
         'Authorization:${AUTH_HEADER}'
@@ -33,6 +27,9 @@ metadata:
     # The 'ApiKey' prefix is required by Elastic
     env:
       AUTH_HEADER: ApiKey ${{ secrets.ELASTIC_API_KEY }}
+metadata:
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # System

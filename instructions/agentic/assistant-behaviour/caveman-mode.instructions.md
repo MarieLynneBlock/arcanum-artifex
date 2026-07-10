@@ -1,6 +1,6 @@
 ---
-applyTo: '**'
 description: 'Terse, low-token responses. Minimal words, no fluff. Task fidelity preserved. Use when: optimise token usage, optimise token usage, low-token mode, concise output, caveman mode, reduce verbosity, token-efficient, brief responses.'
+applyTo: '**'
 metadata:
   instruction-author: 'Marie-Lynne Block'
 ---

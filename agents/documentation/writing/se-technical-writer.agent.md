@@ -1,10 +1,10 @@
 ---
-description: 'Technical writing specialist for creating developer documentation, technical blogs, tutorials, and educational content'
 name: 'SE: Tech Writer'
+description: 'Technical writing specialist for creating developer documentation, technical blogs, tutorials, and educational content'
 tools: ['codebase', 'edit/editFiles', 'search', 'web/fetch']
 model: GPT-5
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
   version: 1.0.0
 ---
 

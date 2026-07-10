@@ -1,10 +1,10 @@
 ---
-description: 'Expert assistant for web accessibility (WCAG 2.1/2.2), inclusive UX, and a11y testing'
 name: 'Accessibility Expert'
+description: 'Expert assistant for web accessibility (WCAG 2.1/2.2), inclusive UX, and a11y testing'
 tools: ['changes', 'codebase', 'edit/editFiles', 'extensions', 'web/fetch', 'findTestFiles', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runTasks', 'runTests', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages', 'vscodeAPI']
 model: GPT-4.1
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
   version: 1.0.0
 ---
 

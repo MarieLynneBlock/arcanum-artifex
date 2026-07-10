@@ -1,5 +1,5 @@
 ---
-name: AI Readiness Reporter
+name: 'AI Readiness Reporter'
 description: 'Runs the AgentRC readiness assessment on the current repository and writes a self-contained Markdown readiness report at reports/ai-readiness-report.md. Explains every readiness pillar, maturity level, policy effect, raw JSON result, and actionable remediation plan through the AgentRC measure -> generate -> maintain loop.'
 tools: ['execute', 'read', 'search', 'edit']
 metadata:

@@ -1,6 +1,6 @@
 ---
-description: 'AI DevOps team agent (Niels, Anders). Use when: designing CI/CD for AI-enabled systems, writing deployment manifests, managing AWS environments, hardening runtime reliability, defining observability and rollback strategy, or operationalising release governance.'
 name: 'AI DevOps Team'
+description: 'AI DevOps team agent (Niels, Anders). Use when: designing CI/CD for AI-enabled systems, writing deployment manifests, managing AWS environments, hardening runtime reliability, defining observability and rollback strategy, or operationalising release governance.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'

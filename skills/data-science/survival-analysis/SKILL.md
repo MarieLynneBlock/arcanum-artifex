@@ -1,6 +1,8 @@
 ---
-description: >
 name: survival-analysis
+description: >-
+  [TODO] Define the specific workflow this skill standardizes, including default libraries,
+  quality checks, and expected deliverables.
 version: 1.0.0
 tags:
   - data-science

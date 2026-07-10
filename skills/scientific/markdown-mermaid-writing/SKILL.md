@@ -1,8 +1,8 @@
 ---
-description: Comprehensive markdown and Mermaid diagram writing skill. Use when creating any scientific document, report, analysis, or visualization. Establishes text-based diagrams as the default documentation standard with full style guides (markdown + mermaid), 24 diagram type references, and 9 document templates.
 name: markdown-mermaid-writing
-allowed-tools: Read Write Edit Bash
+description: Comprehensive markdown and Mermaid diagram writing skill. Use when creating any scientific document, report, analysis, or visualization. Establishes text-based diagrams as the default documentation standard with full style guides (markdown + mermaid), 24 diagram type references, and 9 document templates.
 license: Apache-2.0
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'Clayton Young / Superior Byte Works, LLC (@borealBytes)'
   skill-source: https://github.com/SuperiorByteWorks-LLC/agent-project

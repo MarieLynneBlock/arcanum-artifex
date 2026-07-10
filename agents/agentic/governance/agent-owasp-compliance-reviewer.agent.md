@@ -1,6 +1,6 @@
 ---
-description: 'OWASP ASI reviewer for auditing AI agent systems against OWASP ASI Top 10 controls and identifying agentic security compliance gaps.'
 name: 'Agent OWASP Compliance Reviewer'
+description: 'OWASP ASI reviewer for auditing AI agent systems against OWASP ASI Top 10 controls and identifying agentic security compliance gaps.'
 tools: ['read', 'search']
 metadata:
   agent-author: 'Marie-Lynne Block'

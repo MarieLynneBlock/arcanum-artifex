@@ -1,6 +1,6 @@
 ---
-applyTo: '*'
 description: 'Quarkus development standards and instructions'
+applyTo: '*'
 ---
 
 - Instructions for high-quality Quarkus applications with Java 17 or later.

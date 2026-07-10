@@ -1,6 +1,7 @@
 ---
-description: >
 name: architecture-audit
+description: >-
+  Provides a repeatable, evidence-based framework for reviewing software architectures.
 version: 1.0.0
 tags:
   - architecture

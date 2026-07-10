@@ -1,9 +1,9 @@
 ---
-description: 'Provide expert C++ software engineering guidance using modern C++ and industry best practices.'
 name: 'C++ Expert'
+description: 'Provide expert C++ software engineering guidance using modern C++ and industry best practices.'
 tools: ['changes', 'codebase', 'edit/editFiles', 'extensions', 'web/fetch', 'findTestFiles', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runNotebooks', 'runTasks', 'runTests', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages', 'vscodeAPI', 'microsoft.docs.mcp']
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
   version: 1.0.0
 ---
 # Expert C++ software engineer mode instructions

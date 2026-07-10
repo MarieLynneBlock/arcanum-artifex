@@ -1,6 +1,6 @@
 ---
-description: 'M365 MCP expert for building and reviewing Microsoft 365 declarative agents with MCP server integration, response semantics, and secure deployment workflows.'
 name: 'M365 MCP Expert'
+description: 'M365 MCP expert for building and reviewing Microsoft 365 declarative agents with MCP server integration, response semantics, and secure deployment workflows.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'

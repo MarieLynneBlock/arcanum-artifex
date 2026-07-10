@@ -1,6 +1,10 @@
 ---
-description: >
 name: stakeholder-map
+description: >-
+  Produces a stakeholder map structured around the classic influence × interest grid (also called
+  a power/interest matrix). It classifies each stakeholder, recommends an engagement strategy per
+  quadrant, and surfaces alignment risks — stakeholders who are high-influence but opposed or
+  unengaged.
 version: 1.0.0
 tags:
   - stakeholder
