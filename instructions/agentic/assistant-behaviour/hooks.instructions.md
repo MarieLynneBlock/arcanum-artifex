@@ -73,7 +73,7 @@ tool_name="$(printf '%s' "$payload" | jq -r '.toolName')"
 [[ "$tool_name" != "bash" ]] && exit 0
 ```
 
-With a matcher, the host does this filtering for you — no boilerplate, no process spawn for irrelevant tools. This will likely become the standard pattern once the feature stabilizes.
+With a matcher, the host does this filtering for you — no boilerplate, no process spawn for irrelevant tools. This will likely become the standard pattern once the feature stabilises.
 
 If your hooks must work on both the CLI and the cloud agent (or on older CLI versions), keep the in-script filtering as a fallback even when using matchers.
 
@@ -537,7 +537,7 @@ Minimal payload — use it to trigger end-of-session actions like running `git d
 | Default to **observe first** | Blocking or mutation should be an explicit choice |
 | Keep hooks synchronous, bounded, and non-interactive | Hooks run in the critical path |
 | Make hooks deterministic and idempotent | Re-runs should not create drift |
-| Do not mutate branch, index, or worktree state by default | Git-destructive behavior is high risk |
+| Do not mutate branch, index, or worktree state by default | Git-destructive behaviour is high risk |
 | Treat prompts, tool arguments, and tool output as untrusted and sensitive | Input may be hostile or private |
 | Redact secrets, credentials, tokens, and private content from logs | Logs often outlive the hook run |
 

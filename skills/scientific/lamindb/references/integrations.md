@@ -1,10 +1,10 @@
 # LaminDB Integrations
 
-This document covers LaminDB integrations with workflow managers, MLOps platforms, visualization tools, and other third-party systems.
+This document covers LaminDB integrations with workflow managers, MLOps platforms, visualisation tools, and other third-party systems.
 
 ## Overview
 
-LaminDB supports extensive integrations across data storage, computational workflows, machine learning platforms, and visualization tools, enabling seamless incorporation into existing data science and bioinformatics pipelines.
+LaminDB supports extensive integrations across data storage, computational workflows, machine learning platforms, and visualisation tools, enabling seamless incorporation into existing data science and bioinformatics pipelines.
 
 ## Data Storage Integrations
 
@@ -383,7 +383,7 @@ with soma.Experiment.open(uri) as exp:
 
 ### DuckDB
 
-Query artifacts with DuckDB:
+Query artefacts with DuckDB:
 
 ```python
 import duckdb
@@ -408,11 +408,11 @@ result_artifact = ln.Artifact.from_dataframe(
 ).save()
 ```
 
-## Visualization Integrations
+## Visualisation Integrations
 
 ### Vitessce
 
-Create interactive visualizations:
+Create interactive visualisations:
 
 ```python
 from vitessce import VitessceConfig
@@ -596,11 +596,11 @@ artifact = ln.Artifact.from_dataframe(
 
 1. **Track consistently**: Use `ln.track()` in all integrated workflows
 2. **Link IDs**: Store external system IDs (W&B run ID, MLflow experiment ID) as features
-3. **Centralize data**: Use LaminDB as single source of truth for data artifacts
+3. **Centralise data**: Use LaminDB as single source of truth for data artefacts
 4. **Sync parameters**: Log parameters to both LaminDB and ML platforms
 5. **Version together**: Keep code (git), data (LaminDB), and experiments (ML platform) in sync
 6. **Cache strategically**: Configure appropriate cache locations for cloud storage
-7. **Use feature sets**: Link ontology terms from Bionty to artifacts
+7. **Use feature sets**: Link ontology terms from Bionty to artefacts
 8. **Document integrations**: Add descriptions explaining integration context
 9. **Test incrementally**: Verify integration with small datasets first
 10. **Monitor lineage**: Use `view_lineage()` to ensure integration tracking works
@@ -634,7 +634,7 @@ git commit -m "Update analysis"
 ln.track()
 ```
 
-**Issue: MLflow artifacts not syncing**
+**Issue: MLflow artefacts not syncing**
 ```python
 # Save explicitly to both systems
 mlflow.log_artifact("model.pkl")

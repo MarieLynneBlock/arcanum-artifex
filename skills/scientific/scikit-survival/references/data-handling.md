@@ -32,7 +32,7 @@ print(y.dtype)  # [('event', '?'), ('time', '<f8')]
 
 **Interval Censoring**:
 - Event occurred in a known time interval
-- Requires specialized methods
+- Requires specialised methods
 
 scikit-survival primarily handles right-censored data.
 
@@ -148,9 +148,9 @@ import pandas as pd
 X_encoded = pd.get_dummies(X, drop_first=True)
 ```
 
-### Standardization
+### Standardisation
 
-Standardization is important for:
+Standardisation is important for:
 - Cox models with regularization
 - SVMs
 - Models sensitive to feature scales

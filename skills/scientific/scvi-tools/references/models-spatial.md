@@ -1,6 +1,6 @@
 # Spatial Transcriptomics Models
 
-This document covers models for analyzing spatially-resolved transcriptomics data in scvi-tools.
+This document covers models for analysing spatially-resolved transcriptomics data in scvi-tools.
 
 ## DestVI (Deconvolution of Spatial Transcriptomics using Variational Inference)
 
@@ -17,7 +17,7 @@ This document covers models for analyzing spatially-resolved transcriptomics dat
 - Deconvolving Visium or similar spatial transcriptomics
 - Have scRNA-seq reference data with cell type labels
 - Want to map cell types to spatial locations
-- Interested in spatial organization of cell types
+- Interested in spatial organisation of cell types
 - Need probabilistic estimates of cell type abundance
 
 **Data Requirements**:
@@ -66,7 +66,7 @@ ct_expression = model.get_scale_for_ct("T cells")
 - `get_scale_for_ct(cell_type)`: Cell type-specific expression patterns
 - `get_gamma()`: Proportion-specific gene expression scaling
 
-**Visualization**:
+**Visualisation**:
 ```python
 import scanpy as sc
 import matplotlib.pyplot as plt
@@ -90,13 +90,13 @@ for ct in cell_types:
 
 ## Stereoscope
 
-**Purpose**: Cell type deconvolution for spatial transcriptomics using probabilistic modeling.
+**Purpose**: Cell type deconvolution for spatial transcriptomics using probabilistic modelling.
 
 **Key Features**:
 - Reference-based deconvolution
 - Probabilistic framework for cell type proportions
 - Works with various spatial technologies
-- Handles gene selection and normalization
+- Handles gene selection and normalisation
 
 **When to Use**:
 - Similar to DestVI but simpler approach
@@ -142,7 +142,7 @@ proportions = spatial_model.get_proportions()
 **When to Use**:
 - Mapping cells from scRNA-seq to spatial locations
 - Imputing unmeasured genes in spatial data
-- Understanding spatial organization at single-cell resolution
+- Understanding spatial organisation at single-cell resolution
 - Integrating scRNA-seq and spatial transcriptomics
 
 **Data Requirements**:
@@ -177,7 +177,7 @@ genes_to_impute = ["CD3D", "CD8A", "CD4"]
 tg.project_genes(ad_map, spatial_adata, genes=genes_to_impute)
 ```
 
-**Visualization**:
+**Visualisation**:
 ```python
 # Visualize cell type mapping
 sc.pl.spatial(
@@ -221,7 +221,7 @@ imputed = model.get_imputed_values(spatial_indices)
 
 ## scVIVA (Variation in Variational Autoencoders for Spatial)
 
-**Purpose**: Analyzing cell-environment relationships in spatial data.
+**Purpose**: Analysing cell-environment relationships in spatial data.
 
 **Key Features**:
 - Models cellular neighborhoods and environments
@@ -259,7 +259,7 @@ env_genes = model.get_environment_specific_genes()
 
 ## ResolVI
 
-**Purpose**: Addressing spatial transcriptomics noise through resolution-aware modeling.
+**Purpose**: Addressing spatial transcriptomics noise through resolution-aware modelling.
 
 **Key Features**:
 - Accounts for spatial resolution effects
@@ -319,7 +319,7 @@ denoised = model.get_denoised_expression()
 ### gimVI
 **Choose when**:
 - Need bidirectional imputation
-- Joint modeling of spatial and single-cell
+- Joint modelling of spatial and single-cell
 - Cross-dataset queries
 
 **Best for**: Integration and imputation
@@ -432,7 +432,7 @@ spatial_adata.write("spatial_deconvolved.h5ad")
 2. **Gene overlap**: Ensure sufficient shared genes between reference and spatial
 3. **Spatial coordinates**: Properly register spatial coordinates in `.obsm["spatial"]`
 4. **Validation**: Use known marker genes to validate deconvolution
-5. **Visualization**: Always visualize results spatially to check biological plausibility
+5. **Visualisation**: Always visualise results spatially to check biological plausibility
 6. **Cell type granularity**: Consider appropriate cell type resolution
 7. **Computational resources**: Spatial models can be memory-intensive
 8. **Quality control**: Filter low-quality spots before analysis

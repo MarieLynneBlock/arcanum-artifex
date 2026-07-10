@@ -165,7 +165,7 @@ client = Client()  # Prints dashboard URL
 The dashboard shows:
 - **Task progress**: Number of tasks completed/pending
 - **Resource usage**: CPU, memory per worker
-- **Task stream**: Real-time visualization of computation
+- **Task stream**: Real-time visualisation of computation
 - **Performance**: Bottleneck identification
 
 ### Verbose Output
@@ -180,7 +180,7 @@ network = grnboost2(
 )
 ```
 
-## Performance Optimization Tips
+## Performance Optimisation Tips
 
 ### 1. Data Format
 - **Use Pandas DataFrame when possible**: More efficient than NumPy for Dask operations

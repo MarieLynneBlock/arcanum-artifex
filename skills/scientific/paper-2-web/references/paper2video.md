@@ -2,23 +2,23 @@
 
 ## Overview
 
-Paper2Video generates presentation videos from LaTeX sources, transforming academic papers into engaging video presentations. The system processes papers through multiple specialized modules to create professional presentation videos complete with slides, narration, and optional talking-head video.
+Paper2Video generates presentation videos from LaTeX sources, transforming academic papers into engaging video presentations. The system processes papers through multiple specialised modules to create professional presentation videos complete with slides, narration, and optional talking-head video.
 
 ## Core Components
 
 ### 1. Slide Generation Module
 - Extracts key content from paper structure
 - Creates visually appealing presentation slides
-- Organizes content in logical flow
+- Organises content in logical flow
 - Includes figures, tables, and equations
-- Optimizes text density for readability
+- Optimises text density for readability
 
 ### 2. Subtitle Generation Module
 - Generates natural presentation script
-- Synchronizes text with slide transitions
+- Synchronises text with slide transitions
 - Creates speaker notes and timing
 - Supports multiple languages
-- Optimizes for speech synthesis
+- Optimises for speech synthesis
 
 ### 3. Speech Synthesis Module
 - Converts subtitles to natural-sounding speech
@@ -32,7 +32,7 @@ Paper2Video generates presentation videos from LaTeX sources, transforming acade
 - Highlights key points on slides
 - Guides viewer attention
 - Creates natural presentation flow
-- Synchronizes with narration
+- Synchronises with narration
 
 ### 5. Talking-Head Video Generation (Optional)
 - Uses Hallo2 for realistic presenter video
@@ -157,7 +157,7 @@ output/paper_name/video/
 1. Write natural presentation narration
 2. Time script sections to slides
 3. Add transitions and emphasis
-4. Optimize for speech synthesis
+4. Optimise for speech synthesis
 
 ### Phase 4: Audio Production
 1. Generate speech from script
@@ -167,12 +167,12 @@ output/paper_name/video/
 
 ### Phase 5: Video Assembly
 1. Combine slides with timing information
-2. Synchronize audio track
+2. Synchronise audio track
 3. Add cursor movements and highlights
 4. Generate talking-head video (if enabled)
 5. Render final video file
 
-## Customization Options
+## Customisation Options
 
 ### Presentation Style
 - **Academic**: Formal, detailed, comprehensive
@@ -185,10 +185,10 @@ Available voice options (via speech synthesis):
 - Multiple languages and accents
 - Male/female voice selection
 - Speaking rate adjustment
-- Pitch and tone customization
+- Pitch and tone customisation
 
 ### Visual Themes
-- Institution branding colors
+- Institution branding colours
 - Conference template matching
 - Custom backgrounds and fonts
 - Dark mode presentations
@@ -204,7 +204,7 @@ Available voice options (via speech synthesis):
 ### Technical Quality Metrics
 - **Audio quality**: Speech clarity and naturalness
 - **Video quality**: Resolution and encoding
-- **Synchronization**: Audio-visual alignment
+- **Synchronisation**: Audio-visual alignment
 - **Timing**: Appropriate slide duration
 
 ## Advanced Features
@@ -236,9 +236,9 @@ Benefits:
 ## Best Practices
 
 ### Input Preparation
-1. **Clean LaTeX source**: Remove unnecessary comments and artifacts
+1. **Clean LaTeX source**: Remove unnecessary comments and artefacts
 2. **High-quality figures**: Use vector formats when possible
-3. **Clear structure**: Well-organized sections and subsections
+3. **Clear structure**: Well-organised sections and subsections
 4. **Complete content**: Include all necessary files and references
 
 ### Model Selection
@@ -246,16 +246,16 @@ Benefits:
 - **Visual generation (model_name_v)**: GPT-4.1 for optimal slide design
 - For faster processing with acceptable quality: GPT-3.5-turbo
 
-### Video Optimization
+### Video Optimisation
 1. **Target duration**: 10-15 minutes for conference talks, 30-45 for detailed presentations
 2. **Pacing**: 2-3 slides per minute for technical content
 3. **Resolution**: 1920x1080 for standard, 3840x2160 for high-quality
 4. **Audio**: 192kbps minimum for clear speech
 
 ### Quality Review
-Before finalizing:
+Before finalising:
 1. Watch entire video for content accuracy
-2. Check audio synchronization with slides
+2. Check audio synchronisation with slides
 3. Verify figure quality and readability
 4. Test subtitle accuracy and timing
 5. Review cursor movements for natural flow

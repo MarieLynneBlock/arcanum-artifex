@@ -107,7 +107,7 @@ k.organism = "hsa"  # Set default organism
 - eco: Escherichia coli
 
 **Use cases:**
-- Pathway analysis and visualization
+- Pathway analysis and visualisation
 - Gene function annotation
 - Metabolic network reconstruction
 - Protein-protein interaction extraction
@@ -129,7 +129,7 @@ h = HGNC()
 - `fetch(format, query)`: Retrieve gene information
 
 **Use cases:**
-- Standardizing human gene names
+- Standardising human gene names
 - Looking up official gene symbols
 
 ---
@@ -364,7 +364,7 @@ i = IntactComplex()
 
 ### OmniPath
 
-Integrated signaling pathway database.
+Integrated signalling pathway database.
 
 **Initialization:**
 ```python
@@ -377,7 +377,7 @@ o = OmniPath()
 - `ptms(datasets, organisms)`: Post-translational modifications
 
 **Use cases:**
-- Cell signaling analysis
+- Cell signalling analysis
 - Regulatory network mapping
 
 ---
@@ -501,7 +501,7 @@ p = PDB()
 **Use cases:**
 - 3D structure retrieval
 - Structure-based analysis
-- PyMOL visualization
+- PyMOL visualisation
 
 ---
 
@@ -526,7 +526,7 @@ p = Pfam()
 
 ---
 
-## Specialized Resources
+## Specialised Resources
 
 ### BioModels
 
@@ -542,7 +542,7 @@ b = BioModels()
 - `get_model_by_id(model_id)`: Retrieve SBML model
 
 **Use cases:**
-- Systems biology modeling
+- Systems biology modelling
 - SBML model retrieval
 
 ---

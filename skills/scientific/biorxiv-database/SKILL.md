@@ -18,7 +18,7 @@ Use this skill when:
 - Searching for recent preprints in specific research areas
 - Tracking publications by particular authors
 - Conducting systematic literature reviews
-- Analyzing research trends over time periods
+- Analysing research trends over time periods
 - Retrieving metadata for citation management
 - Downloading preprint PDFs for analysis
 - Filtering papers by bioRxiv subject categories
@@ -48,7 +48,7 @@ python scripts/biorxiv_search.py \
 ```
 
 **Search Fields:**
-By default, keywords are searched in both title and abstract. Customize with `--search-fields`:
+By default, keywords are searched in both title and abstract. Customise with `--search-fields`:
 ```python
 python scripts/biorxiv_search.py \
   --keywords "AlphaFold" \
@@ -263,7 +263,7 @@ for doi in selected_dois:
 
 ### Trend Analysis
 
-Track research trends by analyzing publication frequencies over time:
+Track research trends by analysing publication frequencies over time:
 
 ```python
 python scripts/biorxiv_search.py \
@@ -274,7 +274,7 @@ python scripts/biorxiv_search.py \
   --output ml_trends.json
 ```
 
-Then analyze the temporal distribution in the results.
+Then analyse the temporal distribution in the results.
 
 ### Author Tracking
 

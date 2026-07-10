@@ -1,6 +1,6 @@
 ---
 name: transformers
-description: This skill should be used when working with pre-trained transformer models for natural language processing, computer vision, audio, or multimodal tasks. Use for text generation, classification, question answering, translation, summarization, image classification, object detection, speech recognition, and fine-tuning models on custom datasets.
+description: This skill should be used when working with pre-trained transformer models for natural language processing, computer vision, audio, or multimodal tasks. Use for text generation, classification, question answering, translation, summarisation, image classification, object detection, speech recognition, and fine-tuning models on custom datasets.
 license: Apache-2.0 license
 compatibility: Some features require an Huggingface token
 metadata:
@@ -71,11 +71,11 @@ result = qa(question="What is AI?", context="AI is artificial intelligence...")
 
 ### 1. Pipelines for Quick Inference
 
-Use for simple, optimized inference across many tasks. Supports text generation, classification, NER, question answering, summarization, translation, image classification, object detection, audio classification, and more.
+Use for simple, optimised inference across many tasks. Supports text generation, classification, NER, question answering, summarisation, translation, image classification, object detection, audio classification, and more.
 
 **When to use**: Quick prototyping, simple inference tasks, no custom preprocessing needed.
 
-See `references/pipelines.md` for comprehensive task coverage and optimization.
+See `references/pipelines.md` for comprehensive task coverage and optimisation.
 
 ### 2. Model Loading and Management
 
@@ -154,7 +154,7 @@ trainer.train()
 ## Reference Documentation
 
 For detailed information on specific components:
-- **Pipelines**: `references/pipelines.md` - All supported tasks and optimization
+- **Pipelines**: `references/pipelines.md` - All supported tasks and optimisation
 - **Models**: `references/models.md` - Loading, saving, and configuration
 - **Generation**: `references/generation.md` - Text generation strategies and parameters
 - **Training**: `references/training.md` - Fine-tuning with Trainer API

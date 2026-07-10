@@ -361,15 +361,15 @@ namespace ProjectAPI {
 1. **Provision**: Deploy to development environment
 2. **Test**: Use Microsoft 365 Copilot at https://m365.cloud.microsoft/chat
 3. **Debug**: Enable Copilot developer mode for orchestrator insights
-4. **Iterate**: Refine based on actual behavior
+4. **Iterate**: Refine based on actual behaviour
 5. **Validate**: Test all conversation starters and capabilities
 
-## Performance Optimization
+## Performance Optimisation
 
 1. **Scope Capabilities**: Don't grant access to all data if only subset needed
 2. **Limit Operations**: Only expose API operations the agent actually uses
 3. **Efficient Models**: Keep response models focused on necessary data
-4. **Card Optimization**: Use conditional rendering (`$when`) in Adaptive Cards
+4. **Card Optimisation**: Use conditional rendering (`$when`) in Adaptive Cards
 5. **Caching**: Design APIs with appropriate caching headers
 
 ## Security Best Practices

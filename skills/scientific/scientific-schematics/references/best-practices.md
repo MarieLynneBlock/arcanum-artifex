@@ -36,8 +36,8 @@ This guide provides publication standards, accessibility guidelines, and best pr
   - Supports transparency
 
 **Never Use**
-- **JPEG**: Lossy compression creates artifacts in diagrams
-- **GIF**: Limited colors, inappropriate for scientific figures
+- **JPEG**: Lossy compression creates artefacts in diagrams
+- **GIF**: Limited colours, inappropriate for scientific figures
 - **BMP**: Uncompressed, unnecessarily large files
 
 ### 2. Resolution Requirements
@@ -135,30 +135,30 @@ Black:      #000000 (  0,   0,   0)
 - **Sequential**: Blues, Greens, Oranges (avoid Reds/Greens together)
 - **Diverging**: RdBu (Red-Blue), PuOr (Purple-Orange)
 
-**Colors to Avoid Together**
+**Colours to Avoid Together**
 - Red-Green combinations (8% of males cannot distinguish)
 - Blue-Purple combinations
 - Yellow-Light green combinations
 
 ### 2. Redundant Encoding
 
-Don't rely on color alone. Use multiple visual channels:
+Don't rely on colour alone. Use multiple visual channels:
 
-**Shape + Color**
+**Shape + Colour**
 ```
 Circle + Blue   = Condition A
 Square + Orange = Condition B
 Triangle + Green = Condition C
 ```
 
-**Line Style + Color**
+**Line Style + Colour**
 ```
 Solid + Blue = Treatment 1
 Dashed + Orange = Treatment 2
 Dotted + Green = Control
 ```
 
-**Pattern Fill + Color**
+**Pattern Fill + Colour**
 ```
 Solid fill + Blue = Group A
 Diagonal stripes + Orange = Group B
@@ -191,7 +191,7 @@ convert diagram.pdf -colorspace gray diagram_gray.pdf
 
 **High Contrast Practices**
 - Dark text on light background (or vice versa)
-- Avoid low-contrast color pairs (yellow on white, light gray on white)
+- Avoid low-contrast colour pairs (yellow on white, light gray on white)
 - Use black or dark gray for critical text
 - White text on dark backgrounds needs larger font size
 
@@ -200,7 +200,7 @@ convert diagram.pdf -colorspace gray diagram_gray.pdf
 **Figure Captions Must Include**
 - Description of diagram type
 - All abbreviations spelled out
-- Explanation of symbols and colors
+- Explanation of symbols and colours
 - Sample sizes (n) where relevant
 - Statistical annotations explained
 - Reference to detailed methods if applicable
@@ -226,13 +226,13 @@ convert diagram.pdf -colorspace gray diagram_gray.pdf
 ### 2. Consistency
 
 **Within a Figure**
-- Same shape/color represents same concept
+- Same shape/colour represents same concept
 - Consistent arrow styles for same relationships
 - Uniform spacing and alignment
 - Matching font sizes for similar elements
 
 **Across Figures in a Paper**
-- Reuse color schemes
+- Reuse colour schemes
 - Maintain consistent node styles
 - Use same notation system
 - Apply same layout principles
@@ -243,7 +243,7 @@ convert diagram.pdf -colorspace gray diagram_gray.pdf
 - Use grids for node placement
 - Align nodes horizontally or vertically
 - Evenly space elements
-- Center labels within shapes
+- Centre labels within shapes
 
 **White Space**
 - Don't overcrowd diagrams
@@ -273,7 +273,7 @@ convert diagram.pdf -colorspace gray diagram_gray.pdf
 **Problem**: Different styles for same elements across figures
 **Solution**:
 - Create and use style templates
-- Use the same color palette throughout
+- Use the same colour palette throughout
 - Document your style choices
 
 ### Pitfall 3: Poor Label Placement
@@ -303,12 +303,12 @@ convert diagram.pdf -colorspace gray diagram_gray.pdf
 - Include legend for arrow types
 - Use anchor points for precise connections
 
-### Pitfall 6: Color Overuse
+### Pitfall 6: Colour Overuse
 
-**Problem**: Too many colors, confusing or inaccessible
+**Problem**: Too many colours, confusing or inaccessible
 **Solution**:
-- Limit to 3-5 colors maximum
-- Use color purposefully (categories, emphasis)
+- Limit to 3-5 colours maximum
+- Use colour purposefully (categories, emphasis)
 - Stick to colorblind-safe palette
 - Provide redundant encoding
 
@@ -321,14 +321,14 @@ convert diagram.pdf -colorspace gray diagram_gray.pdf
 - [ ] Sufficient resolution (vector or 300+ DPI)
 - [ ] Appropriate size (matches journal column width)
 - [ ] Fonts embedded in PDF
-- [ ] No compression artifacts
+- [ ] No compression artefacts
 
 **Accessibility**
 - [ ] Colorblind-safe palette used
 - [ ] Works in grayscale (tested)
 - [ ] Text minimum 7-8 pt at final size
 - [ ] High contrast between elements
-- [ ] Redundant encoding (not color alone)
+- [ ] Redundant encoding (not colour alone)
 
 **Design Quality**
 - [ ] Elements aligned properly
@@ -338,7 +338,7 @@ convert diagram.pdf -colorspace gray diagram_gray.pdf
 - [ ] Professional appearance
 
 **Content**
-- [ ] All elements labeled
+- [ ] All elements labelled
 - [ ] Abbreviations defined
 - [ ] Units included where relevant
 - [ ] Legend provided if needed
@@ -364,7 +364,7 @@ convert diagram.pdf -colorspace gray diagram_gray.pdf
 **Style Notes**
 - Panel labels: lowercase bold (a, b, c)
 - Simple, clean design
-- Minimal colors
+- Minimal colours
 - Clear captions
 
 ### Science
@@ -392,7 +392,7 @@ convert diagram.pdf -colorspace gray diagram_gray.pdf
 
 **Style Notes**
 - Clean, professional
-- Color or grayscale
+- Colour or grayscale
 - Panel labels capital (A, B, C)
 
 ### IEEE
@@ -402,7 +402,7 @@ convert diagram.pdf -colorspace gray diagram_gray.pdf
 - **Format**: PDF, EPS (vector preferred)
 - **Resolution**: 600 DPI for line art, 300 DPI for halftone
 - **Fonts**: 8-10 pt minimum
-- **Color**: Grayscale in print, color in digital
+- **Colour**: Grayscale in print, colour in digital
 
 **Style Notes**
 - Follow IEEE Graphics Manual
@@ -466,7 +466,7 @@ inkscape diagram.svg --export-pdf=diagram.pdf
 **Keep Source Files**
 - Save original .tex, .py, or .svg files
 - Use descriptive filenames with versions
-- Document color palette and style choices
+- Document colour palette and style choices
 - Include README with regeneration instructions
 
 **Directory Structure**
@@ -508,15 +508,15 @@ figures/
 4. **Format compliance**: Verify accepted format
 
 **Accessibility Tests**
-1. **Colorblind simulation**: Use tools like Color Oracle
+1. **Colorblind simulation**: Use tools like Colour Oracle
 2. **Contrast checker**: WCAG contrast ratio tools
 3. **Screen reader**: Test alt text (for web figures)
 
 ### Tools for Testing
 
 **Colorblind Simulation**
-- Color Oracle (free, cross-platform)
-- Coblis (Color Blindness Simulator)
+- Colour Oracle (free, cross-platform)
+- Coblis (Colour Blindness Simulator)
 - Photoshop/GIMP colorblind preview modes
 
 **PDF Inspection**
@@ -540,7 +540,7 @@ identify -verbose diagram.pdf
 1. **Vector first**: Always use vector formats when possible
 2. **Design at final size**: Avoid scaling after creation
 3. **Colorblind-safe palette**: Use Okabe-Ito or similar
-4. **Test in grayscale**: Diagrams must work without color
+4. **Test in grayscale**: Diagrams must work without colour
 5. **Minimum 7-8 pt text**: At final print size
 6. **Consistent styling**: Across all figures in paper
 7. **Keep it simple**: Remove unnecessary elements
@@ -553,7 +553,7 @@ identify -verbose diagram.pdf
 - **Nature Figure Preparation**: https://www.nature.com/nature/for-authors/final-submission
 - **Science Figure Guidelines**: https://www.science.org/content/page/instructions-preparing-initial-manuscript
 - **WCAG Accessibility Standards**: https://www.w3.org/WAI/WCAG21/quickref/
-- **Color Universal Design (CUD)**: https://jfly.uni-koeln.de/color/
+- **Colour Universal Design (CUD)**: https://jfly.uni-koeln.de/colour/
 - **ColorBrewer**: https://colorbrewer2.org/
 
 Following these best practices ensures your diagrams meet publication standards and effectively communicate to all readers, regardless of colorblindness or viewing conditions.

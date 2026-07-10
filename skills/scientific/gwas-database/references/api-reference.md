@@ -1,12 +1,12 @@
-# GWAS Catalog API Reference
+# GWAS Catalogue API Reference
 
-Comprehensive reference for the GWAS Catalog REST APIs, including endpoint specifications, query parameters, response formats, and advanced usage patterns.
+Comprehensive reference for the GWAS Catalogue REST APIs, including endpoint specifications, query parameters, response formats, and advanced usage patterns.
 
 ## Table of Contents
 
 - [API Overview](#api-overview)
 - [Authentication and Rate Limiting](#authentication-and-rate-limiting)
-- [GWAS Catalog REST API](#gwas-catalog-rest-api)
+- [GWAS Catalogue REST API](#gwas-catalogue-rest-api)
 - [Summary Statistics API](#summary-statistics-api)
 - [Response Formats](#response-formats)
 - [Error Handling](#error-handling)
@@ -15,9 +15,9 @@ Comprehensive reference for the GWAS Catalog REST APIs, including endpoint speci
 
 ## API Overview
 
-The GWAS Catalog provides two complementary REST APIs:
+The GWAS Catalogue provides two complementary REST APIs:
 
-1. **GWAS Catalog REST API**: Access to curated SNP-trait associations, studies, and metadata
+1. **GWAS Catalogue REST API**: Access to curated SNP-trait associations, studies, and metadata
 2. **Summary Statistics API**: Access to full GWAS summary statistics (all tested variants)
 
 Both APIs use RESTful design principles with JSON responses in HAL (Hypertext Application Language) format, which includes `_links` for resource navigation.
@@ -31,7 +31,7 @@ Summary Statistics API:   https://www.ebi.ac.uk/gwas/summary-statistics/api
 
 ### Version Information
 
-The GWAS Catalog REST API v2.0 was released in 2024, with significant improvements:
+The GWAS Catalogue REST API v2.0 was released in 2024, with significant improvements:
 - New endpoints (publications, genes, genomic context, ancestries)
 - Enhanced data exposure (cohorts, background traits, licenses)
 - Improved query capabilities
@@ -65,7 +65,7 @@ def query_with_rate_limit(url, delay=0.1):
     return response.json()
 ```
 
-## GWAS Catalog REST API
+## GWAS Catalogue REST API
 
 The main API provides access to curated GWAS associations, studies, variants, and traits.
 
@@ -172,7 +172,7 @@ print(f"Found {len(associations)} associations")
 - `range`: Confidence interval
 - `standardError`: Standard error
 - `efoTrait`: Trait name
-- `mappedLabel`: EFO standardized term
+- `mappedLabel`: EFO standardised term
 - `studyId`: Associated study accession
 
 #### 3. Variants (Single Nucleotide Polymorphisms)
@@ -788,6 +788,6 @@ download_summary_statistics("GCST001234", output_dir="./sumstats")
 
 - **Interactive API Documentation**: https://www.ebi.ac.uk/gwas/rest/docs/api
 - **Summary Statistics API Docs**: https://www.ebi.ac.uk/gwas/summary-statistics/docs/
-- **Workshop Materials**: https://github.com/EBISPOT/GWAS_Catalog-workshop
+- **Workshop Materials**: https://github.com/EBISPOT/GWAS_Catalogue-workshop
 - **Blog Post on API v2**: https://ebispot.github.io/gwas-blog/rest-api-v2-release/
 - **R Package (gwasrapidd)**: https://cran.r-project.org/package=gwasrapidd

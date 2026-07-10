@@ -35,7 +35,7 @@ Comprehensive reference for the European Nucleotide Archive REST APIs.
 
 **Query Syntax:**
 
-ENA uses a specialized query language with operators:
+ENA uses a specialised query language with operators:
 
 - **Equality:** `field_name="value"` or `field_name=value`
 - **Wildcards:** `field_name="*partial*"` (use * for wildcard)
@@ -479,7 +479,7 @@ For downloading large numbers of files or large datasets:
        time.sleep(0.02)  # 50 req/sec = 0.02s between requests
    ```
 
-## Query Optimization Tips
+## Query Optimisation Tips
 
 1. **Use specific result types** instead of broad searches
 2. **Limit fields** to only what you need using `fields` parameter

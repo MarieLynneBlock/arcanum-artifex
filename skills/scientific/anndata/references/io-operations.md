@@ -54,7 +54,7 @@ adata_memory = adata.to_memory()
 ```
 
 ### Zarr
-Hierarchical array storage format, optimized for cloud storage and parallel I/O.
+Hierarchical array storage format, optimised for cloud storage and parallel I/O.
 
 #### Writing Zarr
 ```python

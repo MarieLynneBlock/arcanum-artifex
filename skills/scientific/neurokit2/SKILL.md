@@ -1,6 +1,6 @@
 ---
 name: neurokit2
-description: Comprehensive biosignal processing toolkit for analyzing physiological data including ECG, EEG, EDA, RSP, PPG, EMG, and EOG signals. Use this skill when processing cardiovascular signals, brain activity, electrodermal responses, respiratory patterns, muscle activity, or eye movements. Applicable for heart rate variability analysis, event-related potentials, complexity measures, autonomic nervous system assessment, psychophysiology research, and multi-modal physiological signal integration.
+description: Comprehensive biosignal processing toolkit for analysing physiological data including ECG, EEG, EDA, RSP, PPG, EMG, and EOG signals. Use this skill when processing cardiovascular signals, brain activity, electrodermal responses, respiratory patterns, muscle activity, or eye movements. Applicable for heart rate variability analysis, event-related potentials, complexity measures, autonomic nervous system assessment, psychophysiology research, and multi-modal physiological signal integration.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-NeuroKit2 is a comprehensive Python toolkit for processing and analyzing physiological signals (biosignals). Use this skill to process cardiovascular, neural, autonomic, respiratory, and muscular signals for psychophysiology research, clinical applications, and human-computer interaction studies.
+NeuroKit2 is a comprehensive Python toolkit for processing and analysing physiological signals (biosignals). Use this skill to process cardiovascular, neural, autonomic, respiratory, and muscular signals for psychophysiology research, clinical applications, and human-computer interaction studies.
 
 ## When to Use This Skill
 
@@ -58,7 +58,7 @@ Compute comprehensive HRV metrics from cardiac signals. See `references/hrv.md` 
 - **Time domain**: SDNN, RMSSD, pNN50, SDSD, and derived metrics
 - **Frequency domain**: ULF, VLF, LF, HF, VHF power and ratios
 - **Nonlinear domain**: Poincaré plot (SD1/SD2), entropy measures, fractal dimensions
-- **Specialized**: Respiratory sinus arrhythmia (RSA), recurrence quantification analysis (RQA)
+- **Specialised**: Respiratory sinus arrhythmia (RSA), recurrence quantification analysis (RQA)
 
 **Key functions:**
 ```python
@@ -74,7 +74,7 @@ hrv_rsa = nk.hrv_rsa(peaks, rsp_signal, sampling_rate=1000)
 
 ### 3. Brain Signal Analysis (EEG)
 
-Analyze electroencephalography signals for frequency power, complexity, and microstate patterns. See `references/eeg.md` for detailed workflows and MNE integration.
+Analyse electroencephalography signals for frequency power, complexity, and microstate patterns. See `references/eeg.md` for detailed workflows and MNE integration.
 
 **Primary capabilities:**
 - Frequency band power analysis (Delta, Theta, Alpha, Beta, Gamma)
@@ -118,7 +118,7 @@ sympathetic = nk.eda_sympathetic(signals, sampling_rate=100)
 
 ### 5. Respiratory Signal Processing (RSP)
 
-Analyze breathing patterns and respiratory variability. See `references/rsp.md` for detailed workflows.
+Analyse breathing patterns and respiratory variability. See `references/rsp.md` for detailed workflows.
 
 **Primary capabilities:**
 - Respiratory rate calculation and variability analysis
@@ -153,7 +153,7 @@ activation = nk.emg_activation(signals, sampling_rate=1000, method='threshold')
 
 ### 7. Electrooculography (EOG)
 
-Analyze eye movement and blink patterns. See `references/eog.md` for workflows.
+Analyse eye movement and blink patterns. See `references/eog.md` for workflows.
 
 **Key functions:**
 ```python
@@ -212,11 +212,11 @@ lyap = nk.complexity_lyapunov(signal, sampling_rate=1000)
 
 ### 10. Event-Related Analysis
 
-Create epochs around stimulus events and analyze physiological responses. See `references/epochs-events.md` for workflows.
+Create epochs around stimulus events and analyse physiological responses. See `references/epochs-events.md` for workflows.
 
 **Primary capabilities:**
 - Epoch creation from event markers
-- Event-related averaging and visualization
+- Event-related averaging and visualisation
 - Baseline correction options
 - Grand average computation with confidence intervals
 
@@ -257,12 +257,12 @@ bio_analysis = nk.bio_analyze(bio_signals, sampling_rate=1000)
 NeuroKit2 automatically selects between two analysis modes based on data duration:
 
 **Event-related analysis** (< 10 seconds):
-- Analyzes stimulus-locked responses
+- Analyses stimulus-locked responses
 - Epoch-based segmentation
 - Suitable for experimental paradigms with discrete trials
 
 **Interval-related analysis** (≥ 10 seconds):
-- Characterizes physiological patterns over extended periods
+- Characterises physiological patterns over extended periods
 - Resting state or continuous activities
 - Suitable for baseline measurements and long-term monitoring
 
@@ -329,7 +329,7 @@ eda_epochs = nk.eda_eventrelated(epochs)
 
 ## References
 
-This skill includes comprehensive reference documentation organized by signal type and analysis method:
+This skill includes comprehensive reference documentation organised by signal type and analysis method:
 
 - **ecg-cardiac.md**: ECG/PPG processing, R-peak detection, delineation, quality assessment
 - **hrv.md**: Heart rate variability indices across all domains
@@ -350,4 +350,4 @@ Load specific reference files as needed using the Read tool to access detailed f
 
 - Official Documentation: https://neuropsychology.github.io/NeuroKit/
 - GitHub Repository: https://github.com/neuropsychology/NeuroKit
-- Publication: Makowski et al. (2021). NeuroKit2: A Python toolbox for neurophysiological signal processing. Behavior Research Methods. https://doi.org/10.3758/s13428-020-01516-y
+- Publication: Makowski et al. (2021). NeuroKit2: A Python toolbox for neurophysiological signal processing. Behaviour Research Methods. https://doi.org/10.3758/s13428-020-01516-y

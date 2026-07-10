@@ -27,7 +27,7 @@ This skill should be used when:
 
 **⚠️ MANDATORY: Every hypothesis generation report MUST include at least 1-2 AI-generated figures using the scientific-schematics skill.**
 
-This is not optional. Hypothesis reports without visual elements are incomplete. Before finalizing any document:
+This is not optional. Hypothesis reports without visual elements are incomplete. Before finalising any document:
 1. Generate at minimum ONE schematic or diagram (e.g., hypothesis framework showing competing explanations)
 2. Prefer 2-3 figures for comprehensive reports (mechanistic pathway, experimental design flowchart, prediction decision tree)
 
@@ -53,8 +53,8 @@ The AI will automatically:
 - Mechanistic pathway diagrams
 - Prediction decision trees
 - Causal relationship diagrams
-- Theoretical model visualizations
-- Any complex concept that benefits from visualization
+- Theoretical model visualisations
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -94,14 +94,14 @@ Search existing scientific literature to ground hypotheses in current evidence. 
 - Look for contradictory findings or unresolved debates
 - Consult `references/literature-search-strategies.md` for detailed search techniques
 
-### 3. Synthesize Existing Evidence
+### 3. Synthesise Existing Evidence
 
-Analyze and integrate findings from literature search:
+Analyse and integrate findings from literature search:
 
-- Summarize current understanding of the phenomenon
+- Summarise current understanding of the phenomenon
 - Identify established mechanisms or theories that may apply
 - Note conflicting evidence or alternative viewpoints
-- Recognize gaps, limitations, or unanswered questions
+- Recognise gaps, limitations, or unanswered questions
 - Identify analogies from related systems or domains
 
 ### 4. Generate Competing Hypotheses
@@ -163,13 +163,13 @@ For each hypothesis, generate specific, quantitative predictions:
 
 ### 8. Present Structured Output
 
-Generate a professional LaTeX document using the template in `assets/hypothesis_report_template.tex`. The report should be well-formatted with colored boxes for visual organization and divided into a concise main text with comprehensive appendices.
+Generate a professional LaTeX document using the template in `assets/hypothesis_report_template.tex`. The report should be well-formatted with coloured boxes for visual organisation and divided into a concise main text with comprehensive appendices.
 
 **Document Structure:**
 
 **Main Text (Maximum 4 pages):**
 1. **Executive Summary** - Brief overview in summary box (0.5-1 page)
-2. **Competing Hypotheses** - Each hypothesis in its own colored box with brief mechanistic explanation and key evidence (2-2.5 pages for 3-5 hypotheses)
+2. **Competing Hypotheses** - Each hypothesis in its own coloured box with brief mechanistic explanation and key evidence (2-2.5 pages for 3-5 hypotheses)
    - **IMPORTANT:** Use `\newpage` before each hypothesis box to prevent content overflow
    - Each box should be ≤0.6 pages maximum
 3. **Testable Predictions** - Key predictions in amber boxes (0.5-1 page)
@@ -188,7 +188,7 @@ Keep main text highly concise - only the most essential information. All details
 - **Appendix C:** Quality assessment tables and detailed evaluations
 - **Appendix D:** Supplementary evidence and analogous systems
 
-**Colored Box Usage:**
+**Coloured Box Usage:**
 
 Use the custom box environments from `hypothesis_generation.sty`:
 
@@ -262,7 +262,7 @@ To prevent content from overflowing on pages, follow these critical guidelines:
 
 6. **Appendix Page Management:** In appendices, use `\newpage` between major sections to avoid overflow in detailed content areas.
 
-**Quick Reference:** See `assets/formatting-guide.md` for detailed examples of all box types, color schemes, and common formatting patterns.
+**Quick Reference:** See `assets/formatting-guide.md` for detailed examples of all box types, colour schemes, and common formatting patterns.
 
 ## Quality Standards
 
@@ -284,9 +284,9 @@ Ensure all generated hypotheses meet these standards:
 
 ### assets/
 
-- `hypothesis_generation.sty` - LaTeX style package providing colored boxes, professional formatting, and custom environments for hypothesis reports
+- `hypothesis_generation.sty` - LaTeX style package providing coloured boxes, professional formatting, and custom environments for hypothesis reports
 - `hypothesis_report_template.tex` - Complete LaTeX template with main text structure and comprehensive appendix sections
-- `formatting-guide.md` - Quick reference guide with examples of all box types, color schemes, citation practices, and troubleshooting tips
+- `formatting-guide.md` - Quick reference guide with examples of all box types, colour schemes, citation practices, and troubleshooting tips
 
 ### Related Skills
 

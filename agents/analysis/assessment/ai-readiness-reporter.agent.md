@@ -94,7 +94,7 @@ On completion, the next step is **Generate**: run `agentrc instructions` to auto
 | 1 | **Functional** | Builds, tests, basic tooling in place |
 | 2 | **Documented** | README, CONTRIBUTING, custom instructions exist |
 | 3 | **Standardised** | CI/CD, security policies, CODEOWNERS, observability |
-| 4 | **Optimized** | MCP servers, custom agents, AI skills configured |
+| 4 | **Optimised** | MCP servers, custom agents, AI skills configured |
 | 5 | **Autonomous** | Full AI-native development with minimal human oversight |
 
 The level is computed by AgentRC from the readiness score. Use `--fail-level n` in CI to enforce a minimum.

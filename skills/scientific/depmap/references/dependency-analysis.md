@@ -33,7 +33,7 @@ These can be used as positive controls for screen quality.
 
 Genes with negligible fitness effect (score ~ 0):
 - Non-expressed genes (tissue-specific)
-- Safe harbor loci
+- Safe harbour loci
 
 ## Selectivity Assessment
 

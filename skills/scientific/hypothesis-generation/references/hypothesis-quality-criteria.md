@@ -2,7 +2,7 @@
 
 ## Framework for Evaluating Scientific Hypotheses
 
-Use these criteria to assess the quality and rigor of generated hypotheses. A robust hypothesis should score well across multiple dimensions.
+Use these criteria to assess the quality and rigour of generated hypotheses. A robust hypothesis should score well across multiple dimensions.
 
 **Note on Report Structure:** When generating hypothesis reports, provide a brief quality assessment summary in the main text (comparative table with ratings), and include detailed evaluation with strengths, weaknesses, and comprehensive analysis in **Appendix C: Quality Assessment**.
 
@@ -87,13 +87,13 @@ Use these criteria to assess the quality and rigor of generated hypotheses. A ro
 
 **Evaluation questions:**
 - Does it apply only to the specific case or to broader situations?
-- Can it generalize across conditions, species, or systems?
+- Can it generalise across conditions, species, or systems?
 - Does it connect to larger theoretical frameworks?
 - What are its boundaries and limitations?
 
 **Broader scope (generally preferable):**
 - Applies across multiple experimental conditions
-- Generalizes to related systems or species
+- Generalises to related systems or species
 - Connects phenomenon to established principles
 
 **Narrower scope (acceptable if explicitly defined):**
@@ -158,7 +158,7 @@ Hypotheses often involve trade-offs:
 **Key question:** Can experiments distinguish between competing hypotheses?
 
 - Identify predictions that differ between hypotheses
-- Prioritize hypotheses that make distinct predictions
+- Prioritise hypotheses that make distinct predictions
 - Note which experiments would most efficiently narrow the field
 - Consider whether hypotheses could all be partially correct
 
@@ -193,6 +193,6 @@ When generating hypotheses:
 3. **Refine hypotheses** to improve testability and clarity
 4. **Develop specific predictions** to enhance testability and falsifiability
 5. **Compare systematically** across all criteria
-6. **Prioritize for testing** based on distinguishability and feasibility
+6. **Prioritise for testing** based on distinguishability and feasibility
 
 Remember: The goal is not a perfect hypothesis, but a set of testable, falsifiable, informative hypotheses that advance understanding of the phenomenon.

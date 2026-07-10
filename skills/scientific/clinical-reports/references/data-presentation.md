@@ -115,7 +115,7 @@ FPG = fasting plasma glucose
 
 ### Adverse Events Table
 
-**Purpose:** Summarize safety data
+**Purpose:** Summarise safety data
 
 **Example:**
 
@@ -215,7 +215,7 @@ ITT = intent-to-treat
 - Axis labels with units
 - Legible font size (minimum 8-10 point)
 - High resolution (300 dpi for print, 150 dpi for web)
-- Color-blind friendly palette
+- Colour-blind friendly palette
 - Black and white compatible (use different symbols/patterns)
 
 **Figure caption:**
@@ -343,7 +343,7 @@ p-value for interaction testing heterogeneity of treatment effect across subgrou
 - Y-axis: Outcome variable
 - Individual patient lines (often semi-transparent)
 - Mean trajectory (bold line)
-- Separate colors for treatment groups
+- Separate colours for treatment groups
 
 ### Bar Chart
 
@@ -369,7 +369,7 @@ p-value for interaction testing heterogeneity of treatment effect across subgrou
 **Elements:**
 - X-axis: Time (with consistent intervals)
 - Y-axis: Outcome variable
-- Separate lines for each group (different colors/patterns)
+- Separate lines for each group (different colours/patterns)
 - Data points marked (circles, squares, triangles)
 - Error bars at each time point (SE or 95% CI)
 - Legend identifying groups
@@ -481,7 +481,7 @@ p-value for interaction testing heterogeneity of treatment effect across subgrou
 ## Software for Creating Figures
 
 **Statistical software:**
-- R (ggplot2) - highly customizable
+- R (ggplot2) - highly customisable
 - GraphPad Prism - user-friendly for biomedical
 - SAS, Stata, SPSS - comprehensive statistical packages
 - Python (matplotlib, seaborn) - flexible and powerful
@@ -492,18 +492,18 @@ p-value for interaction testing heterogeneity of treatment effect across subgrou
 - PowerPoint - basic graphs, easy to use
 - BioRender - biological schematics and figures
 
-## Color Schemes
+## Colour Schemes
 
-**Color-blind friendly palettes:**
+**Colour-blind friendly palettes:**
 - Avoid red-green combinations
 - Use blue-orange, blue-yellow
 - Include shape/pattern differences
 - Test figures in grayscale
 
 **Recommended palettes:**
-- ColorBrewer (designed for data visualization)
+- ColorBrewer (designed for data visualisation)
 - Viridis (perceptually uniform)
-- IBM Color Blind Safe Palette
+- IBM Colour Blind Safe Palette
 
 ## Image Quality Standards
 
@@ -520,7 +520,7 @@ p-value for interaction testing heterogeneity of treatment effect across subgrou
 
 **Image editing:**
 - No manipulation that alters data
-- Only acceptable adjustments: brightness, contrast, color balance applied to entire image
+- Only acceptable adjustments: brightness, contrast, colour balance applied to entire image
 - Document all adjustments
 - Provide original images if requested
 

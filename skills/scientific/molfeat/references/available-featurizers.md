@@ -1,6 +1,6 @@
 # Available Featurizers in Molfeat
 
-This document provides a comprehensive catalog of all featurizers available in molfeat, organized by category.
+This document provides a comprehensive catalogue of all featurizers available in molfeat, organised by category.
 
 ## Transformer-Based Language Models
 
@@ -17,7 +17,7 @@ Pre-trained transformer models for molecular embeddings using SMILES/SELFIES rep
 - **ChemGPT-19M** - Medium transformer (19M parameters) pretrained on PubChem10M
 - **ChemGPT-4.7M** - Small transformer (4.7M parameters) pretrained on PubChem10M
 
-### Specialized Transformer Models
+### Specialised Transformer Models
 - **MolT5** - Self-supervised framework for molecule captioning and text-based generation
 
 ## Graph Neural Networks (GNNs)
@@ -27,7 +27,7 @@ Pre-trained graph neural network models operating on molecular graph structures.
 ### GIN (Graph Isomorphism Network) Variants
 All pre-trained on ChEMBL molecules with different objectives:
 - **gin-supervised-masking** - Supervised with node masking objective
-- **gin-supervised-infomax** - Supervised with graph-level mutual information maximization
+- **gin-supervised-infomax** - Supervised with graph-level mutual information maximisation
 - **gin-supervised-edgepred** - Supervised with edge prediction objective
 - **gin-supervised-contextpred** - Supervised with context prediction objective
 
@@ -97,7 +97,7 @@ Binary or count-based fixed-length vectors representing molecular substructures.
   - Fast computation
 - **avalon** - Avalon fingerprints
   - Similar to MACCS but more features
-  - Optimized for similarity searching
+  - Optimised for similarity searching
 
 ### Atom-Pair Fingerprints
 - **atompair** - Atom pair fingerprints

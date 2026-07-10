@@ -325,7 +325,7 @@ PlayState._spawnCharacters = function (data) {
 };
 ```
 
-- `anchor.set(0.5, 1)` sets the sprite's origin point to the horizontal center and vertical bottom. This makes it easier to position the hero on top of platforms, since the `y` position refers to the hero's feet rather than the top-left corner.
+- `anchor.set(0.5, 1)` sets the sprite's origin point to the horizontal centre and vertical bottom. This makes it easier to position the hero on top of platforms, since the `y` position refers to the hero's feet rather than the top-left corner.
 
 ---
 
@@ -533,7 +533,7 @@ PlayState._jump = function () {
 
 - `this.hero.body.touching.down` is `true` when the hero's physics body is touching another body on its underside -- meaning the hero is standing on something.
 - Setting `velocity.y` to a negative value launches the hero upward (the y-axis points downward in screen coordinates).
-- The `canJump` check prevents the hero from jumping while already in the air, enforcing single-jump behavior.
+- The `canJump` check prevents the hero from jumping while already in the air, enforcing single-jump behaviour.
 - The method returns whether the jump was performed, which is useful later for playing sound effects.
 
 ### Adding a Jump Sound Effect
@@ -1835,7 +1835,7 @@ window.onload = function () {
 | Concept | Phaser API | Purpose |
 |---------|-----------|---------|
 | Game instance | `new Phaser.Game(w, h, renderer, container)` | Creates the game canvas and engine |
-| Game states | `game.state.add()` / `game.state.start()` | Organizes code into init/preload/create/update lifecycle |
+| Game states | `game.state.add()` / `game.state.start()` | Organises code into init/preload/create/update lifecycle |
 | Loading images | `game.load.image(key, path)` | Loads a static image asset |
 | Loading spritesheets | `game.load.spritesheet(key, path, fw, fh)` | Loads an animated spritesheet |
 | Loading JSON | `game.load.json(key, path)` | Loads JSON data (level definitions) |

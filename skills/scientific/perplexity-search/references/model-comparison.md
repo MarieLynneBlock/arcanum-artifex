@@ -57,7 +57,7 @@ All Perplexity models are accessed through OpenRouter using the format:
 
 **Use cases:**
 - "What are the latest developments in CRISPR base editing?"
-- "Summarize recent clinical trials for Alzheimer's treatment"
+- "Summarise recent clinical trials for Alzheimer's treatment"
 - "Explain how transformer architectures work in modern LLMs"
 - Standard literature searches
 - Technical documentation queries
@@ -119,7 +119,7 @@ All Perplexity models are accessed through OpenRouter using the format:
 
 **Use cases:**
 - "Walk through the steps to design a clinical trial for testing a novel cancer therapy"
-- "Analyze the computational complexity of different protein folding algorithms"
+- "Analyse the computational complexity of different protein folding algorithms"
 - "Reason through the molecular mechanisms linking multiple genes to a disease phenotype"
 - Technical troubleshooting with multiple steps
 - Logical analysis of complex systems
@@ -256,7 +256,7 @@ Is this a simple fact-finding or basic lookup?
 ### Accuracy and Comprehensiveness
 
 **Most Comprehensive:**
-- Sonar Pro Search: Explores multiple sources, synthesizes deeply
+- Sonar Pro Search: Explores multiple sources, synthesises deeply
 - Sonar Reasoning Pro: Thorough step-by-step analysis
 
 **Most Accurate:**
@@ -336,7 +336,7 @@ OpenRouter enforces rate limits:
 
 **Sonar Pro Search:**
 - Comprehensive analysis
-- Multiple sources synthesized
+- Multiple sources synthesised
 - Historical context included
 - Recent developments covered
 - ~1500-2000 tokens
@@ -345,7 +345,7 @@ OpenRouter enforces rate limits:
 
 ### Query: "What is 2+2?"
 
-All models return accurate answer. Use Sonar for simple queries to minimize cost.
+All models return accurate answer. Use Sonar for simple queries to minimise cost.
 
 ### Query: "Design a clinical trial for novel immunotherapy"
 

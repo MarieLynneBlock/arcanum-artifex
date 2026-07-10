@@ -1,7 +1,7 @@
 # TMT Element Taxonomy — Code to Threat Model DFD Reference
 
 Complete reference for identifying DFD elements from source code analysis.
-Aligns with Microsoft Threat Modeling Tool (TMT) element types for TM7 compatibility.
+Aligns with Microsoft Threat Modelling Tool (TMT) element types for TM7 compatibility.
 This is the **single authoritative file** for all TMT type classifications.
 
 **Diagram styling & rendering rules** are in: [diagram-conventions.md](./diagram-conventions.md)
@@ -136,7 +136,7 @@ Look for these patterns to identify flows:
 
 ## 4. Code Analysis Checklist
 
-When analyzing code, systematically identify:
+When analysing code, systematically identify:
 
 1. **Entry Points** → External Interactors + inbound flows
    - API controllers, event handlers, webhook endpoints

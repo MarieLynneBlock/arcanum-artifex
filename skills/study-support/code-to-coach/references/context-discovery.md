@@ -2,7 +2,7 @@
 
 ## What Is Context Discovery?
 
-**Context discovery** is the process of understanding a piece of code's *purpose, constraints, and history* before analyzing it. You need context to coach effectively — otherwise, you're just describing syntax.
+**Context discovery** is the process of understanding a piece of code's *purpose, constraints, and history* before analysing it. You need context to coach effectively — otherwise, you're just describing syntax.
 
 ---
 
@@ -27,7 +27,7 @@
 - **What are the performance requirements?** (Must be fast? Memory-constrained?)
 - **What are the failure modes?** (What can go wrong? How critical?)
 - **What are the maintenance constraints?** (Legacy system? Active development?)
-- **What's the organizational context?** (Startup vs enterprise? Stable vs fast-moving team?)
+- **What's the organisational context?** (Startup vs enterprise? Stable vs fast-moving team?)
 
 ### About History
 

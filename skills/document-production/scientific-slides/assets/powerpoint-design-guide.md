@@ -7,7 +7,7 @@ This guide provides comprehensive instructions for creating professional scienti
 **CRITICAL**: Avoid dry, text-heavy presentations. Scientific slides should be:
 - **Visually engaging**: High-quality images, figures, diagrams on EVERY slide
 - **Research-backed**: Citations from research-lookup for credibility (8-15 papers minimum)
-- **Modern design**: Contemporary color palettes, not default themes
+- **Modern design**: Contemporary colour palettes, not default themes
 - **Minimal text**: 3-4 bullets with 4-6 words each, visuals do the talking
 - **Professional polish**: Consistent but varied layouts, generous white space
 
@@ -26,7 +26,7 @@ For complete technical documentation on PowerPoint creation, refer to:
 
 #### 1. Programmatic Creation (html2pptx)
 
-**Best for**: Creating presentations from scratch with custom designs and data visualizations.
+**Best for**: Creating presentations from scratch with custom designs and data visualisations.
 
 **Workflow**:
 1. Read `skills/document-production/pptx/SKILL.md` completely
@@ -80,7 +80,7 @@ pptx.writeFile({ fileName: "presentation.pptx" });
 **Slide Master Setup**:
 - Create consistent master slides
 - Define 4-5 layout types (title, content, figure, two-column, closing)
-- Set default fonts, colors, and spacing
+- Set default fonts, colours, and spacing
 - Include placeholders for logos and footers
 
 **Standard Layouts**:
@@ -150,23 +150,23 @@ pptx.writeFile({ fileName: "presentation.pptx" });
 
 **Text Formatting**:
 - **Bold**: For emphasis (use sparingly)
-- **Color**: For highlighting (consistent meaning)
+- **Colour**: For highlighting (consistent meaning)
 - **Size**: For hierarchy
-- **Alignment**: Left for body, center for titles
+- **Alignment**: Left for body, centre for titles
 
 **The 6×6 Rule**:
 - Maximum 6 bullet points per slide
 - Maximum 6 words per bullet
 - Better: 3-4 bullets with 4-8 words each
 
-### 3. Color Schemes
+### 3. Colour Schemes
 
-**Selecting Colors**:
+**Selecting Colours**:
 
 Consider your subject matter and audience:
 - **Academic/Professional**: Navy blue, gray, white with minimal accent
 - **Biomedical**: Blue and green tones (avoid red-green combinations)
-- **Technology**: Modern colors (teal, orange, purple)
+- **Technology**: Modern colours (teal, orange, purple)
 - **Clinical**: Conservative (blue, gray, subdued greens)
 
 **Example Palettes**:
@@ -192,8 +192,8 @@ Consider your subject matter and audience:
 **Accessibility Guidelines**:
 - Minimum contrast ratio: 4.5:1 (body text)
 - Preferred contrast ratio: 7:1 (AAA standard)
-- Avoid red-green combinations (8% of men are color-blind)
-- Use patterns or shapes in addition to color for data
+- Avoid red-green combinations (8% of men are colour-blind)
+- Use patterns or shapes in addition to colour for data
 
 ### 4. Visual Elements
 
@@ -201,27 +201,27 @@ Consider your subject matter and audience:
 - **Resolution**: Minimum 300 DPI for print, 150 DPI for projection
 - **Format**: PNG for screenshots, PDF/SVG for vector graphics
 - **Size**: Large enough to be readable from back of room
-- **Placement**: Center or use two-column layout
+- **Placement**: Centre or use two-column layout
 
-**Data Visualizations**:
+**Data Visualisations**:
 - **Simplify** from journal figures (fewer panels, larger text)
 - **Font sizes**: 18-24pt for axis labels
 - **Line widths**: 2-4pt thickness
-- **Colors**: High contrast, color-blind safe
-- **Labels**: Direct labeling preferred over legends
+- **Colours**: High contrast, colour-blind safe
+- **Labels**: Direct labelling preferred over legends
 
 **Icons and Shapes**:
-- Use for visual interest and organization
+- Use for visual interest and organisation
 - Consistent style (all outline or all filled)
 - Size appropriately (not too large or small)
-- Limit colors (match theme)
+- Limit colours (match theme)
 
 ### 5. Animations and Transitions
 
 **When to Use**:
 - ✅ Progressive disclosure of bullet points
 - ✅ Building complex figures incrementally
-- ✅ Emphasizing key findings
+- ✅ Emphasising key findings
 - ✅ Showing process steps
 
 **When to Avoid**:
@@ -246,9 +246,9 @@ Consider your subject matter and audience:
 
 ### Design-First Workflow
 
-**Step 0: Choose Modern Color Palette Based on Topic**
+**Step 0: Choose Modern Colour Palette Based on Topic**
 
-**CRITICAL**: Select colors that reflect your subject matter, not generic defaults.
+**CRITICAL**: Select colours that reflect your subject matter, not generic defaults.
 
 **Topic-Based Palette Examples:**
 - **Biotechnology/Life Sciences**: Teal (#0A9396), Coral (#EE6C4D), Cream (#F4F1DE)
@@ -384,7 +384,7 @@ pptx.writeFile({ fileName: "presentation.pptx" });
 ```
 
 **Key Changes from Dry Presentations:**
-- Title slide uses bold background color (not plain white)
+- Title slide uses bold background colour (not plain white)
 - Introduction includes relevant image (not just bullets)
 - Results slide is figure-dominated (not text-dominated)
 - Citations included in bullets for research context
@@ -463,7 +463,7 @@ python scripts/thumbnail.py presentation.pptx review/slide
 For each slide, check:
 - [ ] Text readable (not cut off or too small)
 - [ ] No element overlap
-- [ ] Consistent colors and fonts
+- [ ] Consistent colours and fonts
 - [ ] Adequate white space
 - [ ] Figures clear and properly sized
 - [ ] Alignment correct
@@ -481,7 +481,7 @@ For each slide, check:
 - Adjust positioning
 
 **Poor Contrast**:
-- Choose higher contrast colors
+- Choose higher contrast colours
 - Use dark text on light background
 - Test with contrast checker
 
@@ -501,7 +501,7 @@ python scripts/inventory.py template.pptx inventory.json
 python scripts/thumbnail.py template.pptx template_review
 ```
 
-3. **Analyze layouts** and document which slides to use
+3. **Analyse layouts** and document which slides to use
 
 4. **Rearrange slides**:
 ```bash
@@ -519,7 +519,7 @@ python scripts/replace.py working.pptx replacements.json output.pptx
 
 - ✅ Use research-lookup to find 8-15 papers for citations
 - ✅ Add HIGH-QUALITY visuals to EVERY slide (figures, images, diagrams, icons)
-- ✅ Choose MODERN color palette reflecting your topic (not defaults)
+- ✅ Choose MODERN colour palette reflecting your topic (not defaults)
 - ✅ Keep text MINIMAL (3-4 bullets, 4-6 words each)
 - ✅ Use LARGE fonts (24-28pt body, 36-44pt titles)
 - ✅ Vary slide layouts (full-figure, two-column, visual overlays)
@@ -532,12 +532,12 @@ python scripts/replace.py working.pptx replacements.json output.pptx
 ### Don'ts (Avoid Dry Presentations)
 
 - ❌ Don't create text-only slides (add visuals to EVERY slide)
-- ❌ Don't use default themes unchanged (customize for your topic)
+- ❌ Don't use default themes unchanged (customise for your topic)
 - ❌ Don't have all bullet-point slides (vary layouts)
 - ❌ Don't skip research-lookup (presentations need citations too)
 - ❌ Don't cram too much text on one slide
 - ❌ Don't use tiny fonts (<24pt for body)
-- ❌ Don't rely solely on color
+- ❌ Don't rely solely on colour
 - ❌ Don't use complex animations
 - ❌ Don't mix too many font styles
 - ❌ Don't ignore accessibility
@@ -545,14 +545,14 @@ python scripts/replace.py working.pptx replacements.json output.pptx
 
 ## Accessibility Considerations
 
-**Color Contrast**:
+**Colour Contrast**:
 - Use WebAIM contrast checker
 - Minimum 4.5:1 for normal text
 - Preferred 7:1 for optimal readability
 
-**Color Blindness**:
+**Colour Blindness**:
 - Test with Coblis simulator
-- Use patterns/shapes with colors
+- Use patterns/shapes with colours
 - Avoid red-green combinations
 
 **Readability**:
@@ -569,11 +569,11 @@ python scripts/replace.py working.pptx replacements.json output.pptx
 - Extract key findings
 - Create visual abstracts
 
-**With Data Visualization**:
+**With Data Visualisation**:
 - Simplify journal figures
 - Recreate with larger labels
 - Use progressive disclosure
-- Emphasize key results
+- Emphasise key results
 
 **With Research Lookup**:
 - Find relevant papers
@@ -589,7 +589,7 @@ python scripts/replace.py working.pptx replacements.json output.pptx
 - Scientific presentation examples
 
 **Design Tools**:
-- Color palette generators (Coolors.co)
+- Colour palette generators (Coolors.co)
 - Contrast checkers (WebAIM)
 - Icon libraries (Noun Project)
 - Image editing (PowerPoint built-in, external tools)
@@ -624,12 +624,12 @@ python scripts/replace.py working.pptx replacements.json output.pptx
 | Caption | 14pt | 16-20pt |
 | Footer | 10pt | 10-12pt |
 
-### Color Usage
+### Colour Usage
 
-- **Backgrounds**: White or very light colors
+- **Backgrounds**: White or very light colours
 - **Text**: Dark (black/dark gray) on light, or white on dark
-- **Accents**: One or two accent colors max
-- **Data**: Color-blind safe palettes (blue/orange)
+- **Accents**: One or two accent colours max
+- **Data**: Colour-blind safe palettes (blue/orange)
 
 ## Troubleshooting
 
@@ -639,7 +639,7 @@ python scripts/replace.py working.pptx replacements.json output.pptx
 **Problem**: Figures are blurry
 - **Solution**: Use higher resolution images (300 DPI)
 
-**Problem**: Colors look different when projected
+**Problem**: Colours look different when projected
 - **Solution**: Test with projector beforehand, use high contrast
 
 **Problem**: File size too large

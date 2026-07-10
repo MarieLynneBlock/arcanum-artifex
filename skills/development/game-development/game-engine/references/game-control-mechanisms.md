@@ -107,7 +107,7 @@ this.button = this.gamepad.addButton(400, 420, 1.0, "gamepad");
 
 ### Best Practices
 
-- Always call `preventDefault()` on touch events to avoid unwanted scrolling and default browser behavior.
+- Always call `preventDefault()` on touch events to avoid unwanted scrolling and default browser behaviour.
 - Use invisible button areas rather than visible buttons to avoid covering gameplay.
 - Leverage natural touch gestures like dragging, which are more intuitive than on-screen buttons.
 - Subtract canvas offset and account for object dimensions when calculating positions.
@@ -547,7 +547,7 @@ function draw() {
 
 ### Doppler Effect (Microphone-Based Gesture Detection)
 
-**Description:** Detects hand movement direction and magnitude by analyzing frequency shifts in sound waves picked up by the device microphone. An emitted tone bounces off the user's hand, and the frequency difference indicates movement direction.
+**Description:** Detects hand movement direction and magnitude by analysing frequency shifts in sound waves picked up by the device microphone. An emitted tone bounces off the user's hand, and the frequency difference indicates movement direction.
 
 **Key Events and APIs:**
 

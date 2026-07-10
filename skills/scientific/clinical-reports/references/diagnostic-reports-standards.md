@@ -56,7 +56,7 @@ The ACR provides comprehensive practice parameters for diagnostic imaging report
 
 **6. Findings**
 - Systematic description of imaging findings
-- Organized by anatomical region or organ system
+- Organised by anatomical region or organ system
 - Measurements of abnormalities (size, volume)
 - Specific descriptive terminology
 - Pertinent positive findings
@@ -103,7 +103,7 @@ Used for lung cancer screening CT interpretation.
 **Categories:**
 - **Lung-RADS 0**: Incomplete - additional imaging needed
 - **Lung-RADS 1**: Negative - no nodules, definitely benign nodules
-- **Lung-RADS 2**: Benign appearance or behavior - nodules with very low likelihood of malignancy
+- **Lung-RADS 2**: Benign appearance or behaviour - nodules with very low likelihood of malignancy
 - **Lung-RADS 3**: Probably benign - short-interval follow-up suggested
 - **Lung-RADS 4A**: Suspicious - 3-month follow-up or PET/CT
 - **Lung-RADS 4B**: Very suspicious - 3-month follow-up or PET/CT, consider biopsy
@@ -113,7 +113,7 @@ Used for lung cancer screening CT interpretation.
 
 #### BI-RADS (Breast Imaging Reporting and Data System)
 
-Standardized lexicon for breast imaging (mammography, ultrasound, MRI).
+Standardised lexicon for breast imaging (mammography, ultrasound, MRI).
 
 **Categories:**
 - **BI-RADS 0**: Incomplete - need additional imaging
@@ -168,12 +168,12 @@ For multiparametric MRI of the prostate.
 - Transition zone: T2-weighted primary determinant
 - DCE (dynamic contrast-enhanced): Used for PI-RADS 3 lesions in peripheral zone
 
-### RadLex and Standardized Terminology
+### RadLex and Standardised Terminology
 
 **RadLex** is a comprehensive lexicon for radiology developed by the Radiological Society of North America (RSNA).
 
 **Benefits:**
-- Standardized terminology
+- Standardised terminology
 - Improved communication
 - Enables data mining and analytics
 - Facilitates decision support systems
@@ -207,7 +207,7 @@ For multiparametric MRI of the prostate.
 
 ### College of American Pathologists (CAP) Protocols
 
-CAP cancer protocols provide standardized synoptic reporting templates for cancer specimens.
+CAP cancer protocols provide standardised synoptic reporting templates for cancer specimens.
 
 #### Synoptic Reporting Elements
 
@@ -313,7 +313,7 @@ CAP cancer protocols provide standardized synoptic reporting templates for cance
 ### Gross Pathology Description
 
 **Essential elements:**
-- Specimen labeling and identification
+- Specimen labelling and identification
 - Type of specimen
 - Dimensions and weight
 - Orientation markers (if present)
@@ -322,7 +322,7 @@ CAP cancer protocols provide standardized synoptic reporting templates for cance
 - Lesion description:
   - Size (3 dimensions)
   - Location
-  - Color
+  - Colour
   - Consistency
   - Borders (well-circumscribed, infiltrative)
   - Distance to margins
@@ -368,7 +368,7 @@ posterior margin.
 - Tissue triage
 
 **Report format:**
-- "Frozen section diagnosis" clearly labeled
+- "Frozen section diagnosis" clearly labelled
 - Intraoperative consultation note
 - Time of frozen section
 - Specimen description
@@ -376,7 +376,7 @@ posterior margin.
 - Note: "Permanent sections to follow"
 
 **Frozen section disclaimers:**
-- Limited by frozen artifact
+- Limited by frozen artefact
 - Final diagnosis on permanent sections
 - Defer to permanent sections for definitive diagnosis
 
@@ -389,7 +389,7 @@ posterior margin.
 
 **Probable:**
 - "Consistent with..."
-- "Favor..."
+- "Favour..."
 - "Most likely..."
 
 **Possible:**
@@ -528,7 +528,7 @@ Standard coding system for laboratory and clinical observations.
 
 **Preliminary reports:**
 - Issued before final identification
-- Clearly labeled "PRELIMINARY"
+- Clearly labelled "PRELIMINARY"
 - Final report to follow
 
 **Final reports:**

@@ -234,7 +234,7 @@ Generate comprehensive usage statistics for the institution.
 **Returns:** Usage metrics including:
 - User login frequency
 - Entry creation counts
-- Storage utilization
+- Storage utilisation
 - Collaboration statistics
 - Time-based activity patterns
 

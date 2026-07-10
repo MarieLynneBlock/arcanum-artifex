@@ -16,7 +16,7 @@
 
 1. Copy this file for each reporting period
 2. Name it by date: `status-2026-02-14.md` or `status-week-07.md`
-3. **Fill in the TL;DR first** — if you can't summarize it, you don't understand it yet
+3. **Fill in the TL;DR first** — if you can't summarise it, you don't understand it yet
 4. Be honest about health status — green means green, not "green because I'm optimistic"
 5. Add [Mermaid diagrams](../mermaid-style-guide.md) for progress timelines, architecture changes, or risk impact flows
 

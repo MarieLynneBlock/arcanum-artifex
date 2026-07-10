@@ -93,7 +93,7 @@ algorithm = GA(pop_size=100)
 
 **Advantages:**
 - Converts constrained to unconstrained problem
-- Works with any optimization algorithm
+- Works with any optimisation algorithm
 
 **Disadvantages:**
 - Penalty parameter sensitive
@@ -156,7 +156,7 @@ algorithm = GA(pop_size=100, repair=MyRepair())
 ```
 
 **Advantages:**
-- Maintains feasibility throughout optimization
+- Maintains feasibility throughout optimisation
 - Can encode domain knowledge
 
 **Disadvantages:**
@@ -168,7 +168,7 @@ algorithm = GA(pop_size=100, repair=MyRepair())
 Some algorithms have built-in constraint handling:
 
 #### SRES (Stochastic Ranking Evolution Strategy)
-**Purpose:** Single-objective constrained optimization
+**Purpose:** Single-objective constrained optimisation
 **Mechanism:** Stochastic ranking balances objectives and constraints
 
 **Usage:**
@@ -179,7 +179,7 @@ algorithm = SRES()
 ```
 
 #### ISRES (Improved SRES)
-**Purpose:** Enhanced constrained optimization
+**Purpose:** Enhanced constrained optimisation
 **Improvements:** Better parameter adaptation
 
 **Usage:**
@@ -217,7 +217,7 @@ After obtaining a Pareto front, MCDM helps select preferred solution(s).
 ### MCDM Methods in Pymoo
 
 #### 1. Pseudo-Weights
-**Concept:** Weight each objective, select solution minimizing weighted sum
+**Concept:** Weight each objective, select solution minimising weighted sum
 **Formula:** `score = w1*f1 + w2*f2 + ... + wM*fM`
 
 **Usage:**
@@ -274,13 +274,13 @@ best_idx = dm.do(result.F, ideal=ideal_point, nadir=nadir_point)
 
 ### Decision Making Workflow
 
-**Step 1: Normalize objectives**
+**Step 1: Normalise objectives**
 ```python
 # Normalize to [0, 1] for fair comparison
 F_norm = (result.F - result.F.min(axis=0)) / (result.F.max(axis=0) - result.F.min(axis=0))
 ```
 
-**Step 2: Analyze trade-offs**
+**Step 2: Analyse trade-offs**
 ```python
 from pymoo.visualization.scatter import Scatter
 
@@ -360,8 +360,8 @@ selected_solutions = result.X[top_indices]
 | Need diverse subset | Hypervolume contribution |
 
 **Best practices:**
-1. **Normalize objectives** before MCDM
-2. **Visualize Pareto front** to understand trade-offs
+1. **Normalise objectives** before MCDM
+2. **Visualise Pareto front** to understand trade-offs
 3. **Consider multiple methods** for robust selection
 4. **Validate results** with domain experts
 5. **Document assumptions** and preference sources

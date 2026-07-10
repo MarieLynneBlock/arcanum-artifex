@@ -45,17 +45,17 @@ The research lookup tool is automatically available in Claude Code when you:
 
 ## Features
 
-- **Academic Focus:** Prioritizes peer-reviewed papers and reputable sources
+- **Academic Focus:** Prioritises peer-reviewed papers and reputable sources
 - **Current Information:** Focuses on recent publications (2020-2024)
 - **Complete Citations:** Provides full bibliographic information with DOIs
 - **Multiple Formats:** Supports various query types and research needs
 - **High Search Context:** Always uses high search context for deeper, more comprehensive research
-- **Quality Prioritization:** Automatically prioritizes highly-cited papers from top venues
+- **Quality Prioritisation:** Automatically prioritises highly-cited papers from top venues
 - **Cost Effective:** Typically $0.01-0.05 per research query
 
-## Paper Quality Prioritization
+## Paper Quality Prioritisation
 
-This skill **always prioritizes high-impact, influential papers** over obscure publications. Results are ranked by:
+This skill **always prioritises high-impact, influential papers** over obscure publications. Results are ranked by:
 
 ### Citation-Based Ranking
 
@@ -74,16 +74,16 @@ Papers from higher-tier venues are always preferred:
 
 - **Tier 1 (Highest Priority):** Nature, Science, Cell, NEJM, Lancet, JAMA, PNAS, Nature Medicine, Nature Biotechnology
 - **Tier 2 (High Priority):** High-impact journals (IF>10), top conferences (NeurIPS, ICML, ICLR for ML/AI)
-- **Tier 3 (Good):** Respected specialized journals (IF 5-10)
+- **Tier 3 (Good):** Respected specialised journals (IF 5-10)
 - **Tier 4 (Use Sparingly):** Other peer-reviewed venues
 
 ### Author Reputation
 
 The skill prefers papers from:
 - Senior researchers with high h-index
-- Established research groups at recognized institutions
+- Established research groups at recognised institutions
 - Authors with multiple publications in Tier-1 venues
-- Researchers with recognized expertise (awards, editorial positions)
+- Researchers with recognised expertise (awards, editorial positions)
 
 ### Relevance Priority
 
@@ -101,7 +101,7 @@ The skill prefers papers from:
 ### Technical Methods
 - "Standard protocols for immunohistochemistry in tissue samples"
 - "Best practices for machine learning model validation"
-- "Statistical methods for analyzing longitudinal data"
+- "Statistical methods for analysing longitudinal data"
 
 ### Statistical Data
 - "Global renewable energy adoption statistics 2024"
@@ -151,6 +151,6 @@ This skill enhances the scientific writing process by providing:
 - Monitor usage through OpenRouter dashboard
 - Typical costs: $0.01-0.05 per research query
 - Batch processing available for multiple queries
-- Consider query specificity to optimize token usage
+- Consider query specificity to optimise token usage
 
 This skill is designed for academic and research purposes, providing high-quality, cited information to support scientific writing and research activities.

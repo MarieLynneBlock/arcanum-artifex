@@ -10,7 +10,7 @@
   Scope: repo-wide. For file-specific instructions, use prompt files in
   .github/prompts/ or inline comments.
 
-  Docs: https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot
+  Docs: https://docs.github.com/en/copilot/customising-copilot/adding-repository-custom-instructions-for-github-copilot
 -->
 
 ## Project

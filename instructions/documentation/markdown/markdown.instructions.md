@@ -12,8 +12,8 @@ Apply these rules per the [CommonMark spec 0.31.2](https://spec.commonmark.org/0
 - A line ends at a newline (`U+000A`), carriage return (`U+000D`), or end of file. A blank line contains only spaces or tabs.
 - Tabs behave as 4-space tab stops for block structure but are not expanded in content.
 - Replace `U+0000` with the replacement character `U+FFFD`.
-- **Backslash escapes**: `\` before any ASCII punctuation character renders the literal character. Not recognized in code spans, code blocks, or autolinks.
-- **Entity and numeric character references**: `&amp;`, `&#123;`, `&#x7B;` — valid HTML5 entities only. Not recognized in code spans or code blocks. Cannot replace structural characters.
+- **Backslash escapes**: `\` before any ASCII punctuation character renders the literal character. Not recognised in code spans, code blocks, or autolinks.
+- **Entity and numeric character references**: `&amp;`, `&#123;`, `&#x7B;` — valid HTML5 entities only. Not recognised in code spans or code blocks. Cannot replace structural characters.
 
 ## Leaf Blocks
 
@@ -41,7 +41,7 @@ Apply these rules per the [CommonMark spec 0.31.2](https://spec.commonmark.org/0
 - **Images**: `![alt](src "title")` — same syntax as links prefixed with `!`. Alt text is the plain-string content of the description.
 - **Autolinks**: `<URI>` or `<email>` in angle brackets. Scheme must be 2–32 characters starting with an ASCII letter. Bare URLs are not auto-linked in CommonMark (requires angle brackets).
 - **Raw HTML**: Open/close tags, comments (`<!--` … `-->`), processing instructions (`<?` … `?>`), declarations (`<!` … `>`), CDATA (`<![CDATA[` … `]]>`) are passed through as literal HTML.
-- **Hard line breaks**: Two+ trailing spaces or `\` before a line ending. Not recognized in code spans or HTML tags. Does not work at end of a block.
+- **Hard line breaks**: Two+ trailing spaces or `\` before a line ending. Not recognised in code spans or HTML tags. Does not work at end of a block.
 - **Soft line breaks**: A line ending not preceded by two+ spaces or `\`. Rendered as a space in browsers.
 
 ## Validation Checklist

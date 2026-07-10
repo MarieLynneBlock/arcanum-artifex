@@ -1,6 +1,6 @@
 ---
 name: ginkgo-cloud-lab
-description: Submit and manage protocols on Ginkgo Bioworks Cloud Lab (cloud.ginkgo.bio), a web-based interface for autonomous lab execution on Reconfigurable Automation Carts (RACs). Use when the user wants to run cell-free protein expression (validation or optimization), generate fluorescent pixel art, or interact with Ginkgo Cloud Lab services. Covers protocol selection, input preparation, pricing, and ordering workflows.
+description: Submit and manage protocols on Ginkgo Bioworks Cloud Lab (cloud.ginkgo.bio), a web-based interface for autonomous lab execution on Reconfigurable Automation Carts (RACs). Use when the user wants to run cell-free protein expression (validation or optimisation), generate fluorescent pixel art, or interact with Ginkgo Cloud Lab services. Covers protocol selection, input preparation, pricing, and ordering workflows.
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -22,12 +22,12 @@ Rapid go/no-go expression screening using reconstituted E. coli CFPS. Submit a F
 - **Price:** $39/sample | **Turnaround:** 5-10 days | **Status:** Certified
 - **Details:** See [references/cell-free-protein-expression-validation.md](references/cell-free-protein-expression-validation.md)
 
-### 2. Cell Free Protein Expression Optimization
+### 2. Cell Free Protein Expression Optimisation
 
-DoE-based optimization across up to 24 conditions per protein (lysates, temperatures, chaperones, disulfide enhancers, cofactors). Designed for difficult-to-express and membrane proteins.
+DoE-based optimisation across up to 24 conditions per protein (lysates, temperatures, chaperones, disulfide enhancers, cofactors). Designed for difficult-to-express and membrane proteins.
 
 - **Price:** $199/sample | **Turnaround:** 6-11 days | **Status:** Certified
-- **Details:** See [references/cell-free-protein-expression-optimization.md](references/cell-free-protein-expression-optimization.md)
+- **Details:** See [references/cell-free-protein-expression-optimisation.md](references/cell-free-protein-expression-optimization.md)
 
 ### 3. Fluorescent Pixel Art Generation
 

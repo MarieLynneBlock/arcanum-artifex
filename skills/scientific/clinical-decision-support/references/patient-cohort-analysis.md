@@ -30,7 +30,7 @@ Patient cohort analysis involves systematically studying groups of patients to i
 
 - **Age Groups**: Pediatric (<18), young adult (18-39), middle-age (40-64), elderly (65-79), very elderly (≥80)
 - **Sex/Gender**: Male, female, sex-specific biomarkers
-- **Race/Ethnicity**: FDA-recognized categories, ancestry-informative markers
+- **Race/Ethnicity**: FDA-recognised categories, ancestry-informative markers
 - **Geographic Location**: Regional variation in disease prevalence
 
 ### Clinical Stratification
@@ -190,7 +190,7 @@ Patient cohort analysis involves systematically studying groups of patients to i
 **Kaplan-Meier Method**
 - **Application**: Estimate survival curves with censored data
 - **Output**: Survival probability at each time point, median survival
-- **Visualization**: Step function curves with 95% CI bands
+- **Visualisation**: Step function curves with 95% CI bands
 
 **Log-Rank Test**
 - **Application**: Compare survival curves between groups
@@ -345,7 +345,7 @@ Hepatotoxicity             8 (16%)  6 (13%)   2 (4%)   1 (2%)
 Treatment discontinuation  6 (12%)  8 (18%)   -        -
 ```
 
-### Visualization Formats
+### Visualisation Formats
 
 **Survival Curves**
 - Kaplan-Meier plots with 95% CI bands
@@ -361,7 +361,7 @@ Treatment discontinuation  6 (12%)  8 (18%)   -        -
 **Waterfall Plots**
 - Individual patient best response (% change from baseline)
 - Ordered from best to worst response
-- Color-coded by response category (CR, PR, SD, PD)
+- Colour-coded by response category (CR, PR, SD, PD)
 - Biomarker status annotation
 
 **Swimmer Plots**
@@ -377,7 +377,7 @@ Treatment discontinuation  6 (12%)  8 (18%)   -        -
 - **Completeness**: Missing data patterns, loss to follow-up
 - **Consistency**: Cross-field validation, logical checks
 - **Outliers**: Identify and investigate extreme values
-- **Duplicates**: Patient ID verification, enrollment checks
+- **Duplicates**: Patient ID verification, enrolment checks
 
 ### Statistical Assumptions
 

@@ -22,14 +22,14 @@ Throughout this prompt, `<global-prompts>` and `<workspace-instructions>` refer 
 
 ## Your Mission
 
-Transform debugging sessions, workflow discoveries, frequently repeated mistakes, and hard-won lessons into **domain-specific, reusable knowledge**, that helps the agent to effectively find the best patterns and avoid common mistakes. Your intelligent categorization system automatically:
+Transform debugging sessions, workflow discoveries, frequently repeated mistakes, and hard-won lessons into **domain-specific, reusable knowledge**, that helps the agent to effectively find the best patterns and avoid common mistakes. Your intelligent categorisation system automatically:
 
 - **Discovers existing memory domains** via glob patterns to find `vscode-userdata:/User/prompts/*-memory.instructions.md` files
 - **Matches learnings to domains** or creates new domain files when needed
-- **Organizes knowledge contextually** so future AI assistants find relevant guidance exactly when needed
+- **Organises knowledge contextually** so future AI assistants find relevant guidance exactly when needed
 - **Builds institutional memory** that prevents repeating mistakes across all projects
 
-The result: a **self-organizing, domain-driven knowledge base** that grows smarter with every lesson learned.
+The result: a **self-organising, domain-driven knowledge base** that grows smarter with every lesson learned.
 
 ## Syntax
 
@@ -74,15 +74,15 @@ Each distinct lesson has its own level 2 headline
 2. **Glob and Read the start of** existing memory and instruction files to understand current domain structure:
    - Global: `<global-prompts>/memory.instructions.md`, `<global-prompts>/*-memory.instructions.md`, and `<global-prompts>/*.instructions.md`
    - Workspace: `<workspace-instructions>/memory.instructions.md`, `<workspace-instructions>/*-memory.instructions.md`, and `<workspace-instructions>/*.instructions.md`
-3. **Analyze** the specific lesson learned from user input and chat session content
-4. **Categorize** the learning:
+3. **Analyse** the specific lesson learned from user input and chat session content
+4. **Categorise** the learning:
    - New gotcha/common mistake
    - Enhancement to existing section
    - New best practice
    - Process improvement
 5. **Determine target domain(s) and file paths**:
    - If user specified `>domain-name`, request human input if it seems to be a typo
-   - Otherwise, intelligently match learning to a domain, using existing domain files as a guide while recognizing there may be coverage gaps
+   - Otherwise, intelligently match learning to a domain, using existing domain files as a guide while recognising there may be coverage gaps
    - **For universal learnings:**
      - Global: `<global-prompts>/memory.instructions.md`
      - Workspace: `<workspace-instructions>/memory.instructions.md`
@@ -109,7 +109,7 @@ Each distinct lesson has its own level 2 headline
 
 ## Quality Guidelines
 
-- **Generalize beyond specifics** - Extract reusable patterns rather than task-specific details
+- **Generalise beyond specifics** - Extract reusable patterns rather than task-specific details
 - Be specific and concrete (avoid vague advice)
 - Include code examples when relevant
 - Focus on common, recurring issues

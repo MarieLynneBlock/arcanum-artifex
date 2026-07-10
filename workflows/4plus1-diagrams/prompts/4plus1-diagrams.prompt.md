@@ -38,7 +38,7 @@ All skills and instructions this workflow needs are bundled locally in top-level
 1. Run `4plus1-models` Steps 1–4 (mode → audience → context → concerns) with a clear intake style:
    - Start with one compact question block (max 5 fields): system, audience, track, domain/regulatory context, constraints.
    - If answers are partial, proceed with explicit assumptions instead of asking many immediate follow-ups.
-   - Ask follow-ups only when a missing value blocks the next artifact, one at a time.
+   - Ask follow-ups only when a missing value blocks the next artefact, one at a time.
 2. Confirm visual output selection from intake. If it was not provided, ask once: **"How would you like to deliver editable diagrams? (A) draw.io - edit in VS Code/desktop/web and export PNG/SVG, (B) Miro - collaborate in real time with AI-assisted layout and export PNG/SVG, or (C) both."** Use only each selected track's rules and assets.
 3. For each view (logical → process → development → physical → scenarios):
    - **For draw.io**: Generate the primary Mermaid/PlantUML per the skill's Step 5. Pick the matching draw.io skeleton, adapt it with real component names, apply conventions from `notation-drawio.md`. For BPMN process views, enforce the shared semantic palette mapping via `notation-drawio.md`. Defer mxGraph XML rules to `draw-io-diagram-generator`.

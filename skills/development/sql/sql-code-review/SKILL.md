@@ -1,6 +1,6 @@
 ---
 name: sql-code-review
-description: 'Universal SQL code review assistant that performs comprehensive security, maintainability, and code quality analysis across all SQL databases (MySQL, PostgreSQL, SQL Server, Oracle). Focuses on SQL injection prevention, access control, code standards, and anti-pattern detection. Complements SQL optimization prompt for complete development coverage.'
+description: 'Universal SQL code review assistant that performs comprehensive security, maintainability, and code quality analysis across all SQL databases (MySQL, PostgreSQL, SQL Server, Oracle). Focuses on SQL injection prevention, access control, code standards, and anti-pattern detection. Complements SQL optimisation prompt for complete development coverage.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -38,7 +38,7 @@ EXEC sp_executesql N'SELECT * FROM users WHERE id = @id', N'@id INT', @id = @use
 - **Data Masking**: Use views or functions to mask sensitive data
 - **Encryption**: Verify encrypted storage for sensitive data
 
-## ⚡ Performance Optimization
+## ⚡ Performance Optimisation
 
 ### Query Structure Analysis
 ```sql
@@ -63,9 +63,9 @@ AND o.order_date < '2025-01-01';
 - **Composite Indexes**: Multi-column indexes for complex queries
 - **Index Maintenance**: Check for fragmented or outdated indexes
 
-### Join Optimization
+### Join Optimisation
 - **Join Types**: Verify appropriate join types (INNER vs LEFT vs EXISTS)
-- **Join Order**: Optimize for smaller result sets first
+- **Join Order**: Optimise for smaller result sets first
 - **Cartesian Products**: Identify and fix missing join conditions
 - **Subquery vs JOIN**: Choose the most efficient approach
 
@@ -107,7 +107,7 @@ WHERE u.status = 'active'
 - **Case Sensitivity**: Consistent case usage across schema
 
 ### Schema Design Review
-- **Normalization**: Appropriate normalization level (avoid over/under-normalization)
+- **Normalisation**: Appropriate normalisation level (avoid over/under-normalisation)
 - **Data Types**: Optimal data type choices for storage and performance
 - **Constraints**: Proper use of PRIMARY KEY, FOREIGN KEY, CHECK, NOT NULL
 - **Default Values**: Appropriate default values for columns
@@ -192,7 +192,7 @@ WHERE price < 0 OR stock_quantity < 0;
 - **Execution Plans**: Review query execution plans
 - **Load Testing**: Test queries with realistic data volumes
 - **Stress Testing**: Verify performance under concurrent load
-- **Regression Testing**: Ensure optimizations don't break functionality
+- **Regression Testing**: Ensure optimisations don't break functionality
 
 ## 📊 Common Anti-Patterns
 
@@ -246,9 +246,9 @@ WHERE order_date >= '2024-01-01'
 ### Performance
 - [ ] Indexes exist for frequently queried columns
 - [ ] No unnecessary SELECT * statements
-- [ ] JOINs are optimized and use appropriate types
+- [ ] JOINs are optimised and use appropriate types
 - [ ] WHERE clauses are selective and use indexes
-- [ ] Subqueries are optimized or converted to JOINs
+- [ ] Subqueries are optimised or converted to JOINs
 
 ### Code Quality
 - [ ] Consistent naming conventions
@@ -258,7 +258,7 @@ WHERE order_date >= '2024-01-01'
 - [ ] Error handling is implemented
 
 ### Schema Design
-- [ ] Tables are properly normalized
+- [ ] Tables are properly normalised
 - [ ] Constraints enforce data integrity
 - [ ] Indexes support query patterns
 - [ ] Foreign key relationships are defined
@@ -293,11 +293,11 @@ WHERE order_date >= '2024-01-01'
 - **Security Score**: [1-10] - SQL injection protection, access controls
 - **Performance Score**: [1-10] - Query efficiency, index usage
 - **Maintainability Score**: [1-10] - Code quality, documentation
-- **Schema Quality Score**: [1-10] - Design patterns, normalization
+- **Schema Quality Score**: [1-10] - Design patterns, normalisation
 
 ### Top 3 Priority Actions
 1. **[Critical Security Fix]**: Address SQL injection vulnerabilities
-2. **[Performance Optimization]**: Add missing indexes or optimize queries
+2. **[Performance Optimisation]**: Add missing indexes or optimise queries
 3. **[Code Quality]**: Improve naming conventions and documentation
 
-Focus on providing actionable, database-agnostic recommendations while highlighting platform-specific optimizations and best practices.
+Focus on providing actionable, database-agnostic recommendations while highlighting platform-specific optimisations and best practices.

@@ -29,7 +29,7 @@ This skill should be used when:
 
 ### 1. Data Types and Structure
 
-ENA organizes data into hierarchical object types:
+ENA organises data into hierarchical object types:
 
 **Studies/Projects** - Group related data and control release dates. Studies are the primary unit for citing archived data.
 

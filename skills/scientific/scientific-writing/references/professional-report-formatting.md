@@ -25,7 +25,7 @@ This reference guide covers professional formatting for scientific reports, tech
 - **Academic theses/dissertations** → Use institutional templates
 - **Peer-reviewed submissions** → Follow journal author guidelines
 
-**Key Distinction**: Professional report formatting prioritizes visual appeal and readability for general audiences, while journal manuscripts must follow strict publisher requirements.
+**Key Distinction**: Professional report formatting prioritises visual appeal and readability for general audiences, while journal manuscripts must follow strict publisher requirements.
 
 ---
 
@@ -36,8 +36,8 @@ The `scientific_report.sty` package provides:
 | Feature | Description |
 |---------|-------------|
 | Typography | Helvetica font family for modern, professional appearance |
-| Color Scheme | Coordinated blues, greens, oranges, and purples |
-| Box Environments | Colored boxes for organizing content types |
+| Colour Scheme | Coordinated blues, greens, oranges, and purples |
+| Box Environments | Coloured boxes for organising content types |
 | Tables | Professional styling with alternating rows |
 | Figures | Consistent caption formatting |
 | Headers/Footers | Professional page headers and footers |
@@ -65,11 +65,11 @@ xelatex document.tex
 
 ### Purpose and Usage
 
-Colored boxes help readers quickly identify different types of content. Use them strategically to highlight important information.
+Coloured boxes help readers quickly identify different types of content. Use them strategically to highlight important information.
 
 ### Available Box Environments
 
-| Environment | Color | Purpose |
+| Environment | Colour | Purpose |
 |-------------|-------|---------|
 | `keyfindings` | Blue | Major findings, discoveries, key takeaways |
 | `methodology` | Green | Methods, procedures, study design |
@@ -116,7 +116,7 @@ conditions: (1) Treatment A, (2) Treatment B, (3) Combined A+B, or
 ```
 
 **Best Practices:**
-- Summarize key methodological features
+- Summarise key methodological features
 - Use at the start of methods sections
 - Include sample size and design type
 - Keep technical but accessible
@@ -159,7 +159,7 @@ Based on our findings, we recommend:
 
 **Best Practices:**
 - Make recommendations specific and actionable
-- Prioritize with clear labels
+- Prioritise with clear labels
 - Link to supporting evidence
 - Include implementation guidance
 
@@ -311,7 +311,7 @@ Chen et al. (2023) & Case-control & 320 & \qualitymedium & \evidencemoderate \\
 The style package automatically formats captions with:
 - Blue, bold figure labels
 - Gray descriptive text
-- Centered alignment with margins
+- Centred alignment with margins
 
 ### Standard Figure
 
@@ -350,11 +350,11 @@ The style package automatically formats captions with:
 
 ---
 
-## Color Palette and Visual Hierarchy
+## Colour Palette and Visual Hierarchy
 
-### Color Usage Guidelines
+### Colour Usage Guidelines
 
-| Color | Use For | Avoid Using For |
+| Colour | Use For | Avoid Using For |
 |-------|---------|-----------------|
 | Primary Blue | Headers, important findings | Warnings, cautions |
 | Science Green | Methods, positive results | Negative findings |
@@ -366,17 +366,17 @@ The style package automatically formats captions with:
 ### Visual Hierarchy
 
 1. **Executive summary boxes** (shadow effect) - Most prominent
-2. **Colored content boxes** - High prominence for key content
-3. **Tables with color** - Medium prominence for data
+2. **Coloured content boxes** - High prominence for key content
+3. **Tables with colour** - Medium prominence for data
 4. **Body text** - Standard prominence
 5. **Definition boxes** - Lower prominence for supplementary info
 
 ### Accessibility Considerations
 
-- Color palette is designed to be distinguishable for common color vision deficiencies
-- All boxes have both color AND structural indicators (borders, backgrounds)
+- Colour palette is designed to be distinguishable for common colour vision deficiencies
+- All boxes have both colour AND structural indicators (borders, backgrounds)
 - Text maintains sufficient contrast ratios
-- Don't rely solely on color to convey meaning
+- Don't rely solely on colour to convey meaning
 
 ---
 
@@ -384,7 +384,7 @@ The style package automatically formats captions with:
 
 ### Font Specifications
 
-| Element | Font | Size | Color |
+| Element | Font | Size | Colour |
 |---------|------|------|-------|
 | Body text | Helvetica | 11pt | Dark gray (#424242) |
 | Chapter titles | Helvetica Bold | Huge | Primary blue (#003366) |
@@ -600,13 +600,13 @@ Several limitations warrant consideration:
 
 ## Checklist: Professional Report Quality
 
-Before finalizing your report, verify:
+Before finalising your report, verify:
 
 ### Formatting
 - [ ] Using `scientific_report.sty` package
 - [ ] Compiled with XeLaTeX or LuaLaTeX
 - [ ] Helvetica font rendering correctly
-- [ ] Colors displaying properly
+- [ ] Colours displaying properly
 
 ### Content Organization
 - [ ] Executive summary present and complete
@@ -618,7 +618,7 @@ Before finalizing your report, verify:
 
 ### Tables
 - [ ] All tables have captions and labels
-- [ ] Alternating row colors applied
+- [ ] Alternating row colours applied
 - [ ] Significance indicators explained
 - [ ] Numbers formatted consistently
 
@@ -660,5 +660,5 @@ Before finalizing your report, verify:
 
 - [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX) - General LaTeX reference
 - [Booktabs Package Documentation](https://ctan.org/pkg/booktabs) - Professional table styling
-- [tcolorbox Package Documentation](https://ctan.org/pkg/tcolorbox) - Colored box environments
+- [tcolorbox Package Documentation](https://ctan.org/pkg/tcolorbox) - Coloured box environments
 

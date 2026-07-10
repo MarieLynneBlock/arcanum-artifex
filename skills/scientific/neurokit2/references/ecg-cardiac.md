@@ -55,14 +55,14 @@ cleaned_ecg = nk.ecg_clean(ecg_signal, sampling_rate=1000, method='neurokit')
 
 ### ecg_peaks()
 
-Detect R-peaks in ECG signals with optional artifact correction.
+Detect R-peaks in ECG signals with optional artefact correction.
 
 ```python
 peaks_dict, info = nk.ecg_peaks(cleaned_ecg, sampling_rate=1000, method='neurokit', correct_artifacts=False)
 ```
 
 **Available methods (13+ algorithms):**
-- `'neurokit'`: Hybrid approach optimized for reliability
+- `'neurokit'`: Hybrid approach optimised for reliability
 - `'pantompkins1985'`: Classic Pan-Tompkins algorithm
 - `'hamilton2002'`: Hamilton's adaptive threshold
 - `'christov2004'`: Christov's adaptive method
@@ -72,7 +72,7 @@ peaks_dict, info = nk.ecg_peaks(cleaned_ecg, sampling_rate=1000, method='neuroki
 - `'kalidas2017'`: XQRS-based
 - `'martinez2004'`, `'rodrigues2021'`, `'koka2022'`, `'promac'`: Advanced methods
 
-**Artifact correction:**
+**Artefact correction:**
 Set `correct_artifacts=True` to apply Lipponen & Tarvainen (2019) correction:
 - Detects ectopic beats, long/short intervals, missed beats
 - Uses threshold-based detection with configurable parameters
@@ -125,7 +125,7 @@ quality = nk.ecg_quality(ecg_signal, rpeaks=None, sampling_rate=1000, method='av
 
 ## Analysis Functions
 
-### ecg_analyze()
+### ecg_analyse()
 
 High-level analysis that automatically selects event-related or interval-related mode.
 
@@ -142,7 +142,7 @@ DataFrame with cardiac metrics appropriate for the analysis mode.
 
 ### ecg_eventrelated()
 
-Analyze stimulus-locked ECG epochs for event-related responses.
+Analyse stimulus-locked ECG epochs for event-related responses.
 
 ```python
 results = nk.ecg_eventrelated(epochs)
@@ -159,7 +159,7 @@ Experimental paradigms with discrete trials (e.g., stimulus presentations, task 
 
 ### ecg_intervalrelated()
 
-Analyze continuous ECG recordings for resting state or extended periods.
+Analyse continuous ECG recordings for resting state or extended periods.
 
 ```python
 results = nk.ecg_intervalrelated(signals, sampling_rate=1000)
@@ -221,7 +221,7 @@ heartbeats = nk.ecg_segment(ecg_cleaned, rpeaks, sampling_rate=1000)
 
 **Returns:**
 - Dictionary of epochs, each containing one heartbeat
-- Centered on R-peak with configurable pre/post windows
+- Centred on R-peak with configurable pre/post windows
 - Useful for beat-to-beat morphology comparison
 
 ### ecg_invert()
@@ -233,7 +233,7 @@ corrected_ecg, is_inverted = nk.ecg_invert(ecg_signal, sampling_rate=1000)
 ```
 
 **Method:**
-- Analyzes QRS complex polarity
+- Analyses QRS complex polarity
 - Flips signal if predominantly negative
 - Returns corrected signal and inversion status
 
@@ -254,7 +254,7 @@ edr_signal = nk.ecg_rsp(ecg_cleaned, sampling_rate=1000, method='vangent2019')
 - Estimate respiration when direct respiratory signal unavailable
 - Multi-modal physiological analysis
 
-## Simulation and Visualization
+## Simulation and Visualisation
 
 ### ecg_simulate()
 
@@ -280,7 +280,7 @@ synthetic_ecg = nk.ecg_simulate(duration=10, sampling_rate=1000, heart_rate=70, 
 
 ### ecg_plot()
 
-Visualize processed ECG with detected R-peaks and signal quality.
+Visualise processed ECG with detected R-peaks and signal quality.
 
 ```python
 nk.ecg_plot(signals, info)
@@ -312,7 +312,7 @@ nk.ecg_plot(signals, info)
 - Try different methods: `method='pantompkins1985'` often robust
 - Ensure adequate sampling rate (≥250 Hz)
 - Check for inverted ECG: use `ecg_invert()`
-- Apply artifact correction: `correct_artifacts=True`
+- Apply artefact correction: `correct_artifacts=True`
 
 **Noisy signal:**
 - Use appropriate cleaning method for noise type

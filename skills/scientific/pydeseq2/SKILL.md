@@ -15,7 +15,7 @@ PyDESeq2 is a Python implementation of DESeq2 for differential expression analys
 ## When to Use This Skill
 
 This skill should be used when:
-- Analyzing bulk RNA-seq count data for differential expression
+- Analysing bulk RNA-seq count data for differential expression
 - Comparing gene expression between experimental conditions (e.g., treated vs control)
 - Performing multi-factor designs accounting for batch effects or covariates
 - Converting R-based DESeq2 workflows to Python
@@ -98,7 +98,7 @@ metadata = metadata.loc[samples_to_keep]
 
 ### Step 2: Design Specification
 
-The design formula specifies how gene expression is modeled.
+The design formula specifies how gene expression is modelled.
 
 **Single-factor designs:**
 ```python
@@ -138,7 +138,7 @@ dds.deseq2()
 ```
 
 **What `deseq2()` does:**
-1. Computes size factors (normalization)
+1. Computes size factors (normalisation)
 2. Fits genewise dispersions
 3. Fits dispersion trend curve
 4. Computes dispersion priors
@@ -171,7 +171,7 @@ ds.summary()
 - If `None`, uses the last coefficient in the design
 
 **Result DataFrame columns:**
-- `baseMean`: Mean normalized count across samples
+- `baseMean`: Mean normalised count across samples
 - `log2FoldChange`: Log2 fold change between conditions
 - `lfcSE`: Standard error of LFC
 - `stat`: Wald test statistic
@@ -187,11 +187,11 @@ ds.lfc_shrink()  # Applies apeGLM shrinkage
 ```
 
 **When to use LFC shrinkage:**
-- For visualization (volcano plots, heatmaps)
+- For visualisation (volcano plots, heatmaps)
 - For ranking genes by effect size
-- When prioritizing genes for follow-up experiments
+- When prioritising genes for follow-up experiments
 
-**Important:** Shrinkage affects only the log2FoldChange values, not the statistical test results (p-values remain unchanged). Use shrunk values for visualization but report unshrunken p-values for significance.
+**Important:** Shrinkage affects only the log2FoldChange values, not the statistical test results (p-values remain unchanged). Use shrunk values for visualisation but report unshrunken p-values for significance.
 
 ### Step 6: Result Export
 
@@ -308,9 +308,9 @@ python scripts/run_deseq2_analysis.py \
 - Automatic data loading and validation
 - Gene and sample filtering
 - Complete DESeq2 pipeline execution
-- Statistical testing with customizable parameters
+- Statistical testing with customisable parameters
 - Result export (CSV, pickle)
-- Optional visualization (volcano and MA plots)
+- Optional visualisation (volcano and MA plots)
 
 Refer users to `scripts/run_deseq2_analysis.py` when they need a standalone analysis tool or want to batch process multiple datasets.
 
@@ -374,11 +374,11 @@ plt.title("P-value Distribution")
 plt.show()
 ```
 
-## Visualization Guidelines
+## Visualisation Guidelines
 
 ### Volcano Plot
 
-Visualize significance vs effect size:
+Visualise significance vs effect size:
 
 ```python
 import matplotlib.pyplot as plt
@@ -522,7 +522,7 @@ Load these references into context when users need:
 
 4. **Design formula order:** Put adjustment variables before the variable of interest (e.g., `"~batch + condition"` not `"~condition + batch"`).
 
-5. **LFC shrinkage timing:** Apply shrinkage after statistical testing and only for visualization/ranking purposes. P-values remain based on unshrunken estimates.
+5. **LFC shrinkage timing:** Apply shrinkage after statistical testing and only for visualisation/ranking purposes. P-values remain based on unshrunken estimates.
 
 6. **Result interpretation:** Use `padj < 0.05` for significance, not raw p-values. The Benjamini-Hochberg procedure controls false discovery rate.
 
@@ -544,7 +544,7 @@ uv pip install pydeseq2
 - scikit-learn 1.1.1+
 - anndata 0.8.0+
 
-**Optional for visualization:**
+**Optional for visualisation:**
 - matplotlib
 - seaborn
 

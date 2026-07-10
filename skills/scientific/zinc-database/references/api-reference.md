@@ -111,12 +111,12 @@ curl "https://cartblanche22.docking.org/smiles.txt:smiles=CC%28%3DO%29Oc1ccccc1C
 
 ### 3. Supplier Code Search
 
-Query compounds by vendor catalog numbers.
+Query compounds by vendor catalogue numbers.
 
 **Endpoint**: `/catitems.txt`
 
 **Parameters**:
-- `catitem_id` (required): Supplier catalog code
+- `catitem_id` (required): Supplier catalogue code
 - `output_fields` (optional): Comma-separated field names
 
 **URL Format**:
@@ -177,14 +177,14 @@ curl "https://cartblanche22.docking.org/substance/random.txt:count=500&subset=fr
 
 ### Available Fields
 
-Customize API responses using the `output_fields` parameter:
+Customise API responses using the `output_fields` parameter:
 
 | Field | Description | Example |
 |-------|-------------|---------|
 | `zinc_id` | ZINC identifier | ZINC000000000001 |
 | `smiles` | Canonical SMILES string | CC(C)O |
 | `sub_id` | Internal substance ID | 123456 |
-| `supplier_code` | Vendor catalog number | AB-1234567 |
+| `supplier_code` | Vendor catalogue number | AB-1234567 |
 | `catalogs` | List of suppliers | [emolecules, mcule, mcule-ultimate] |
 | `tranche` | Encoded molecular properties | H02P025M300-0 |
 | `mwt` | Molecular weight | 325.45 |
@@ -213,7 +213,7 @@ curl "https://cartblanche22.docking.org/[email protected]_fields=zinc_id,smiles,
 
 ## Tranche System
 
-ZINC organizes compounds into tranches based on molecular properties for efficient filtering and organization.
+ZINC organises compounds into tranches based on molecular properties for efficient filtering and organisation.
 
 ### Tranche Code Format
 
@@ -287,7 +287,7 @@ wget https://files.docking.org/zinc22/H05/H05P035M400-0.db2.gz
 
 ### Directory Structure
 
-ZINC22 3D structures are organized hierarchically by H-bond donors:
+ZINC22 3D structures are organised hierarchically by H-bond donors:
 
 ```
 https://files.docking.org/zinc22/

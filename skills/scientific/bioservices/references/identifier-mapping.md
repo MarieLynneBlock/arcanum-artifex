@@ -238,7 +238,7 @@ if len(lines) > 1:
 
 ## UniChem Compound Mapping
 
-UniChem specializes in mapping chemical compound identifiers across databases.
+UniChem specialises in mapping chemical compound identifiers across databases.
 
 ### Source Database IDs
 

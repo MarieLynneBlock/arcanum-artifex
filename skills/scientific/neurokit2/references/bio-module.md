@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Bio module provides unified functions for processing and analyzing multiple physiological signals simultaneously. It acts as a wrapper that coordinates signal-specific processing functions and enables integrated multi-modal analysis.
+The Bio module provides unified functions for processing and analysing multiple physiological signals simultaneously. It acts as a wrapper that coordinates signal-specific processing functions and enables integrated multi-modal analysis.
 
 ## Multi-Signal Processing
 
@@ -70,7 +70,7 @@ rsp_peaks = bio_info['RSP']['RSP_Peaks']
 
 ## Multi-Signal Analysis
 
-### bio_analyze()
+### bio_analyse()
 
 Perform comprehensive analysis on processed multi-modal signals.
 
@@ -98,7 +98,7 @@ bio_results = nk.bio_analyze(bio_signals, sampling_rate=1000)
 
 **Cross-signal metrics:**
 - **RSA (Respiratory Sinus Arrhythmia)**: If ECG + RSP present
-- **Cardiorespiratory coupling**: Phase synchronization indices
+- **Cardiorespiratory coupling**: Phase synchronisation indices
 - **Multi-modal arousal**: Combined autonomic indices
 
 **Example:**
@@ -131,7 +131,7 @@ rsa = results['RSA']  # Automatically included
 
 **Computation:**
 - High-frequency HRV modulation by breathing
-- Requires synchronized ECG R-peaks and respiratory signal
+- Requires synchronised ECG R-peaks and respiratory signal
 - Methods: Porges-Bohrer or peak-to-trough
 
 **Interpretation:**
@@ -156,7 +156,7 @@ edr = nk.ecg_rsp(ecg_signals['ECG_Clean'], sampling_rate=1000)
 
 ### Cardio-EDA Integration
 
-Synchronized cardiac and electrodermal activity:
+Synchronised cardiac and electrodermal activity:
 
 ```python
 bio_signals, bio_info = nk.bio_process(ecg=ecg, eda=eda, sampling_rate=1000)
@@ -340,7 +340,7 @@ Unobtrusive user state assessment:
 
 - **Cognitive load**: ↓ HRV, ↑ EDA, suppressed blinks
 - **Frustration**: ↑ HR, ↑ EDA, ↑ muscle tension
-- **Engagement**: Moderate arousal, synchronized responses
+- **Engagement**: Moderate arousal, synchronised responses
 - **Boredom**: Low arousal, irregular patterns
 
 ### Athletic Performance and Recovery
@@ -377,18 +377,18 @@ Monitor training load and recovery:
 
 ## Considerations
 
-### Hardware and Synchronization
+### Hardware and Synchronisation
 
-- **Same device**: Signals inherently synchronized
+- **Same device**: Signals inherently synchronised
 - **Different devices**: Requires common trigger/timestamp
   - Use hardware trigger to mark simultaneous events
   - Software alignment based on event markers
-  - Verify synchronization quality (cross-correlate redundant signals)
+  - Verify synchronisation quality (cross-correlate redundant signals)
 
 ### Signal Quality Across Modalities
 
 - Not all signals may have equal quality
-- Prioritize based on research question
+- Prioritise based on research question
 - Document quality issues per signal
 
 ### Computational Cost

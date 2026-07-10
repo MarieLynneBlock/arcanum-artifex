@@ -70,7 +70,7 @@ sim.time_stepping.start()
 
 The simulation runs until `t_end` or specified number of iterations.
 
-### 6. Analyze Results During/After Simulation
+### 6. Analyse Results During/After Simulation
 
 ```python
 # Plot physical fields

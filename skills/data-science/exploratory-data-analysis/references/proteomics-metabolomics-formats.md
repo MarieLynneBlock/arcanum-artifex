@@ -190,7 +190,7 @@ This reference covers file formats specific to proteomics, metabolomics, lipidom
 - Conversion to mzML
 **EDA Approach:**
 - MRM transition performance
-- Dwell time optimization
+- Dwell time optimisation
 - Cycle time analysis
 - Peak integration quality
 
@@ -266,7 +266,7 @@ This reference covers file formats specific to proteomics, metabolomics, lipidom
 - Library coverage
 - Metadata completeness (InChI, SMILES)
 - Spectral quality metrics
-- Collision energy standardization
+- Collision energy standardisation
 - Precursor type annotation
 
 ### .mgf (Metabolomics)
@@ -303,7 +303,7 @@ This reference covers file formats specific to proteomics, metabolomics, lipidom
 **Use Cases:** GNPS, MetaboAnalyst, web tools
 **Python Libraries:**
 - `json`: Standard library
-- `pandas`: JSON normalization
+- `pandas`: JSON normalisation
 **EDA Approach:**
 - Feature annotation coverage
 - GNPS clustering results
@@ -320,7 +320,7 @@ This reference covers file formats specific to proteomics, metabolomics, lipidom
 **EDA Approach:**
 - Feature count and quality
 - Missing value imputation
-- Data normalization assessment
+- Data normalisation assessment
 - Batch correction validation
 - PCA and clustering for QC
 - Fold change calculations
@@ -349,7 +349,7 @@ This reference covers file formats specific to proteomics, metabolomics, lipidom
 - Feature correspondence quality
 - Retention time alignment
 - Missing value patterns
-- Intensity normalization needs
+- Intensity normalisation needs
 - Batch-wise feature agreement
 
 ### .idXML - OpenMS Identification Format
@@ -376,7 +376,7 @@ This reference covers file formats specific to proteomics, metabolomics, lipidom
 **EDA Approach:**
 - Transition coverage per lipid class
 - Retention time prediction
-- Collision energy optimization
+- Collision energy optimisation
 - Class-specific fragmentation patterns
 
 ### .mzTab - Proteomics/Metabolomics Tabular Format
@@ -406,7 +406,7 @@ This reference covers file formats specific to proteomics, metabolomics, lipidom
 - Fatty acid composition analysis
 - Double bond and chain length patterns
 - Intensity correlations
-- Normalization to internal standards
+- Normalisation to internal standards
 
 ### .sdf (Metabolomics)
 **Description:** Structure data file for metabolites
@@ -443,7 +443,7 @@ This reference covers file formats specific to proteomics, metabolomics, lipidom
 - `h5py`: HDF5 access
 - `anndata`: For single-cell proteomics
 **EDA Approach:**
-- Dataset organization
+- Dataset organisation
 - Chunking and compression
 - Metadata structure
 - Efficient data access patterns
@@ -506,11 +506,11 @@ This reference covers file formats specific to proteomics, metabolomics, lipidom
 ### .zarr (Omics)
 **Description:** Chunked, compressed array storage
 **Typical Data:** Multi-dimensional omics data
-**Use Cases:** Cloud-optimized analysis
+**Use Cases:** Cloud-optimised analysis
 **Python Libraries:**
 - `zarr`: Array storage
 **EDA Approach:**
-- Chunk optimization
+- Chunk optimisation
 - Compression codecs
 - Multi-scale data
 - Parallel access patterns

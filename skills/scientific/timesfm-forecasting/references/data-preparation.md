@@ -242,7 +242,7 @@ for i, arr in enumerate(inputs):
 
 ### Issue: Extreme outliers
 
-Large outliers can destabilize forecasts even with normalization:
+Large outliers can destabilize forecasts even with normalisation:
 
 ```python
 def clip_outliers(arr: np.ndarray, n_sigma: float = 5.0) -> np.ndarray:

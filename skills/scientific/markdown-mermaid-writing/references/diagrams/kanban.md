@@ -2,10 +2,10 @@
 
 # Kanban Board
 
-> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `kanban`
-**Best for:** Task status boards, workflow columns, work-in-progress visualization, sprint status
+**Best for:** Task status boards, workflow columns, work-in-progress visualisation, sprint status
 **When NOT to use:** Task timelines/dependencies (use [Gantt](gantt.md)), process logic (use [Flowchart](flowchart.md))
 
 > ⚠️ **Accessibility:** Kanban boards do **not** support `accTitle`/`accDescr`. Always place a descriptive _italic_ Markdown paragraph directly above the code block.
@@ -32,14 +32,14 @@ Done
   task8[⚙️ Update CI pipeline]
 ```
 
-> ⚠️ **Tip:** Each task gets ONE domain emoji at the start — this is your primary visual signal for categorization. Column emoji indicates workflow state.
+> ⚠️ **Tip:** Each task gets ONE domain emoji at the start — this is your primary visual signal for categorisation. Column emoji indicates workflow state.
 
 ---
 
 ## Tips
 
 - Name columns with **status emoji** for instant visual scanning
-- Add **domain emoji** to tasks for quick categorization
+- Add **domain emoji** to tasks for quick categorisation
 - Keep to **3–5 columns**
 - Limit to **3–4 items per column** (representative, not exhaustive)
 - Items are simple text descriptions — keep concise

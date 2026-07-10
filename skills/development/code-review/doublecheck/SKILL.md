@@ -52,7 +52,7 @@ Format:
 - [FABRICATION RISK] "Claim text" -- could not find this citation; verify before relying on it
 ```
 
-For active mode, prioritize speed. Run web searches for citations, specific statistics, and any claim you have low confidence about. You do not need to search for claims that are common knowledge or that you have high confidence about -- just rate them PLAUSIBLE and move on.
+For active mode, prioritise speed. Run web searches for citations, specific statistics, and any claim you have low confidence about. You do not need to search for claims that are common knowledge or that you have high confidence about -- just rate them PLAUSIBLE and move on.
 
 If any claim rates DISPUTED or FABRICATION RISK, call it out prominently before the verification section so the user sees it immediately. When auto-escalation applies (see below), place this callout at the top of the full report, before the summary table:
 
@@ -98,14 +98,14 @@ Re-read the target text with a critical lens. Your job in this layer is extracti
 
 ### Step 1: Extract Claims
 
-Go through the target text sentence by sentence and pull out every statement that asserts something verifiable. Categorize each claim:
+Go through the target text sentence by sentence and pull out every statement that asserts something verifiable. Categorise each claim:
 
 | Category | What to look for | Examples |
 |----------|-----------------|---------|
 | **Factual** | Assertions about how things are or were | "Python was created in 1991", "The GPL requires derivative works to be open-sourced" |
 | **Statistical** | Numbers, percentages, quantities | "95% of enterprises use cloud services", "The contract has a 30-day termination clause" |
 | **Citation** | References to specific documents, cases, laws, papers, or standards | "Under Section 230 of the CDA...", "In *Mayo v. Prometheus* (2012)..." |
-| **Entity** | Claims about specific people, organizations, products, or places | "OpenAI was founded by Sam Altman and Elon Musk", "GDPR applies to EU residents" |
+| **Entity** | Claims about specific people, organisations, products, or places | "OpenAI was founded by Sam Altman and Elon Musk", "GDPR applies to EU residents" |
 | **Causal** | Claims that X caused Y or X leads to Y | "This vulnerability allows remote code execution", "The regulation was passed in response to the 2008 financial crisis" |
 | **Temporal** | Dates, timelines, sequences of events | "The deadline is March 15", "Version 2.0 was released before the security patch" |
 
@@ -148,7 +148,7 @@ For each claim:
    - Did you find contradicting information from a credible source?
    - Did you find nothing relevant? (This is itself a signal -- real things usually have a web footprint.)
 
-4. **Record the result** with the source URL. Always provide the URL even if you also summarize what the source says.
+4. **Record the result** with the source URL. Always provide the URL even if you also summarise what the source says.
 
 ### What Counts as a Source
 
@@ -156,7 +156,7 @@ Prefer primary and authoritative sources:
 - Official documentation, specifications, and standards
 - Court records, legislative texts, regulatory filings
 - Peer-reviewed publications
-- Official organizational websites and press releases
+- Official organisational websites and press releases
 - Established reference works (encyclopedias, legal databases)
 
 Note when a source is secondary (news article, blog post, wiki page) vs. primary. The user can weigh accordingly.

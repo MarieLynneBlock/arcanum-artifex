@@ -501,11 +501,11 @@ def merge_vcf_samples(vcf_files, output_file):
 ## Performance Tips for Workflows
 
 1. **Use indexed files** for all random access operations
-2. **Process regions in parallel** when analyzing multiple independent regions
+2. **Process regions in parallel** when analysing multiple independent regions
 3. **Stream data when possible** - avoid loading entire files into memory
 4. **Close files explicitly** to free resources
 5. **Use `until_eof=True`** for sequential processing of entire files
-6. **Batch operations** on the same file to minimize I/O
+6. **Batch operations** on the same file to minimise I/O
 7. **Consider memory usage** with pileup operations on high-coverage regions
 8. **Use count() instead of pileup()** when only counts are needed
 

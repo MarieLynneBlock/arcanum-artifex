@@ -1,6 +1,6 @@
 # Plotting Guide
 
-Comprehensive guide for creating publication-quality visualizations from Neuropixels data.
+Comprehensive guide for creating publication-quality visualisations from Neuropixels data.
 
 ## Setup
 
@@ -41,7 +41,7 @@ sw.plot_drift_raster_map(
 plt.savefig('drift_raster.png', bbox_inches='tight')
 ```
 
-### Motion Estimate Visualization
+### Motion Estimate Visualisation
 
 ```python
 motion_info = npa.estimate_motion(recording)
@@ -104,7 +104,7 @@ sw.plot_unit_waveforms_on_probe(
 plt.savefig(f'unit_{unit_id}_probe.png')
 ```
 
-## Quality Metrics Visualization
+## Quality Metrics Visualisation
 
 ### Metrics Overview
 
@@ -443,7 +443,7 @@ plt.savefig('figure.svg', format='svg', bbox_inches='tight')
 plt.savefig('figure.png', dpi=600, bbox_inches='tight', facecolor='white')
 ```
 
-### Color Palettes
+### Colour Palettes
 
 ```python
 # Colorblind-friendly

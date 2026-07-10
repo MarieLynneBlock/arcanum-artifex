@@ -1,6 +1,6 @@
 # Advanced Council Configurations
 
-Reference guide for specialized Council configurations beyond the defaults.
+Reference guide for specialised Council configurations beyond the defaults.
 
 ## Domain-Specific Councils
 
@@ -17,7 +17,7 @@ Reference guide for specialized Council configurations beyond the defaults.
 ### Hiring / People Decisions
 **Members:** Empath, Strategist, Pragmatist, Ethicist, Historian
 **Why this mix:** People decisions need emotional intelligence (Empath), strategic fit (Strategist), practical constraints (Pragmatist), fairness (Ethicist), and pattern recognition (Historian).
-**Key tension to watch:** Empath vs. Strategist — caring for the person vs. optimizing for the team.
+**Key tension to watch:** Empath vs. Strategist — caring for the person vs. optimising for the team.
 
 ### Creative Direction
 **Members:** Creator, Outsider, Historian, Empiricist, Minimalist

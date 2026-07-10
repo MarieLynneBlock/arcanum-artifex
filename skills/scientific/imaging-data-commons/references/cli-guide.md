@@ -50,7 +50,7 @@ idc download manifest.txt --download-dir ./data
 
 ### Directory Template Variables
 
-Use these variables in `--dir-template` to organize downloads:
+Use these variables in `--dir-template` to organise downloads:
 
 - `%collection_id` - Collection identifier
 - `%PatientID` - Patient identifier
@@ -72,7 +72,7 @@ idc download rider_pilot --download-dir ./data --dir-template "%collection_id/%P
 
 ## idc download-from-manifest
 
-Specialized for downloading from manifest files with built-in validation, progress tracking, and resume capability.
+Specialised for downloading from manifest files with built-in validation, progress tracking, and resume capability.
 
 ### Usage
 

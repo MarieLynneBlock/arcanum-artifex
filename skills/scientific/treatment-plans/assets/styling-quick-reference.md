@@ -86,7 +86,7 @@ Data row 2 \\
 \end{medtable}
 ```
 
-## Color Scheme
+## Colour Scheme
 
 - **Primary Blue** (0, 102, 153): Headers, titles
 - **Secondary Blue** (102, 178, 204): Light backgrounds
@@ -107,7 +107,7 @@ xelatex document.tex
 
 1. **Match box type to purpose:** Green for goals, red/yellow for warnings
 2. **Don't overuse boxes:** Reserve for important information only
-3. **Maintain color consistency:** Stick to the defined scheme
+3. **Maintain colour consistency:** Stick to the defined scheme
 4. **Use white space:** Add `\vspace{0.5cm}` between major sections
 5. **Table alternating rows:** Use `\tablerowcolor` for readability
 

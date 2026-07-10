@@ -23,7 +23,7 @@ Use this skill proactively before any computationally intensive task:
 - **At project initialization**: Understand baseline capabilities for making architectural decisions
 
 **Example scenarios:**
-- "Help me analyze this 50GB genomics dataset" → Use this skill first to determine if Dask/Zarr are needed
+- "Help me analyse this 50GB genomics dataset" → Use this skill first to determine if Dask/Zarr are needed
 - "Train a neural network on this data" → Use this skill to detect available GPUs and backends
 - "Process 10,000 files in parallel" → Use this skill to determine optimal worker count
 - "Run a computationally intensive simulation" → Use this skill to understand resource constraints
@@ -139,7 +139,7 @@ The skill generates context-aware recommendations:
 - **NVIDIA GPUs detected**: Use PyTorch, TensorFlow, JAX, CuPy, or RAPIDS
 - **AMD GPUs detected**: Use PyTorch-ROCm or TensorFlow-ROCm
 - **Apple Silicon detected**: Use PyTorch with MPS backend, TensorFlow-Metal, or JAX-Metal
-- **No GPU detected**: Use CPU-optimized libraries
+- **No GPU detected**: Use CPU-optimised libraries
 
 **Large Data Handling Recommendations:**
 - **Disk constrained (< 10GB)**: Use streaming or compression strategies

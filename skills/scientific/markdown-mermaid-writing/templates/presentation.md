@@ -102,7 +102,7 @@ After this presentation, you'll be able to:
 - Reference these objectives throughout the presentation
 - "This connects back to our first objective..."
 - At the end, revisit: "Let's check — did we hit all three?"
-- **Strong action verbs:** Identify, Analyze, Compare, Evaluate, Design, Implement, Explain, Distinguish, Create, Apply
+- **Strong action verbs:** Identify, Analyse, Compare, Evaluate, Design, Implement, Explain, Distinguish, Create, Apply
 
 </details>
 

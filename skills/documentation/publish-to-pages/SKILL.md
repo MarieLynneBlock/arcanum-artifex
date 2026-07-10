@@ -45,7 +45,7 @@ Both conversion scripts automatically detect large files and switch to **externa
 
 This keeps individual files well under GitHub's 100MB limit. Small files still produce a single self-contained HTML.
 
-You can force the behavior with `--external-assets` or `--no-external-assets`.
+You can force the behaviour with `--external-assets` or `--no-external-assets`.
 
 ### HTML
 No conversion needed. Use the file directly as `index.html`.

@@ -21,10 +21,10 @@ This reference provides detailed guidelines for developing treatment plans speci
 ### Mental Health - Depression Example
 
 **VERBOSE (Avoid)**:
-> "The patient will participate in individual psychotherapy sessions utilizing Cognitive Behavioral Therapy techniques. Sessions will be scheduled on a weekly basis for a duration of 50 minutes each. The therapist will work with the patient to identify negative thought patterns, challenge cognitive distortions, develop behavioral activation strategies, and build coping skills for managing depressive symptoms."
+> "The patient will participate in individual psychotherapy sessions utilising Cognitive Behavioural Therapy techniques. Sessions will be scheduled on a weekly basis for a duration of 50 minutes each. The therapist will work with the patient to identify negative thought patterns, challenge cognitive distortions, develop behavioural activation strategies, and build coping skills for managing depressive symptoms."
 
 **CONCISE (Preferred - 60% shorter)**:
-> "CBT weekly × 16 sessions (50 min) focusing on: identifying/challenging negative thoughts, behavioral activation, coping skills development. Goals: PHQ-9 <10, return to work, 3 effective stress management strategies."
+> "CBT weekly × 16 sessions (50 min) focusing on: identifying/challenging negative thoughts, behavioural activation, coping skills development. Goals: PHQ-9 <10, return to work, 3 effective stress management strategies."
 
 ### Rehabilitation - Post-Stroke Example
 
@@ -37,10 +37,10 @@ This reference provides detailed guidelines for developing treatment plans speci
 ### Perioperative - Laparoscopic Surgery Example
 
 **VERBOSE (Avoid)**:
-> "Postoperative pain management will utilize a multimodal approach to analgesia in order to minimize opioid consumption and reduce the risk of opioid-related adverse effects including nausea, vomiting, constipation, and respiratory depression. The multimodal regimen will include scheduled acetaminophen administered at a dose of 1000 milligrams every 6 hours, ibuprofen 600 milligrams every 6 hours as needed, and opioid analgesics reserved for breakthrough pain only."
+> "Postoperative pain management will utilise a multimodal approach to analgesia in order to minimise opioid consumption and reduce the risk of opioid-related adverse effects including nausea, vomiting, constipation, and respiratory depression. The multimodal regimen will include scheduled acetaminophen administered at a dose of 1000 milligrams every 6 hours, ibuprofen 600 milligrams every 6 hours as needed, and opioid analgesics reserved for breakthrough pain only."
 
 **CONCISE (Preferred - 65% shorter)**:
-> "Multimodal analgesia: Acetaminophen 1000mg Q6H scheduled, ibuprofen 600mg Q6H PRN, opioids for breakthrough only. Goal: Pain <4/10, minimize opioid use, early mobilization."
+> "Multimodal analgesia: Acetaminophen 1000mg Q6H scheduled, ibuprofen 600mg Q6H PRN, opioids for breakthrough only. Goal: Pain <4/10, minimise opioid use, early mobilization."
 
 ### Key Principles for Concise Documentation
 
@@ -50,7 +50,7 @@ This reference provides detailed guidelines for developing treatment plans speci
 4. **Eliminate filler words**: "The patient will...", "It is anticipated that..."
 5. **Focus on "what, when, why"**: Action, timing, rationale in minimal words
 6. **Use tables for complex data**: Medication lists, monitoring schedules
-7. **Prioritize critical information**: Safety warnings, emergency actions
+7. **Prioritise critical information**: Safety warnings, emergency actions
 
 ## 1. General Medical Treatment Plans
 
@@ -116,14 +116,14 @@ This reference provides detailed guidelines for developing treatment plans speci
 - Daily weights (report gain >2-3 lbs in 2 days)
 - BNP/NT-proBNP when clinically changing
 - Echo annually or if EF change suspected
-- Medication titration every 2 weeks during optimization phase
+- Medication titration every 2 weeks during optimisation phase
 
 ### Primary Care Integration
 
 **Preventive Care**:
 - Include age-appropriate cancer screenings
 - Vaccination schedule (flu, pneumococcal, zoster, COVID)
-- Lifestyle counseling (tobacco, alcohol, diet, exercise)
+- Lifestyle counselling (tobacco, alcohol, diet, exercise)
 
 **Chronic Disease Management Models**:
 - Chronic Care Model components: Self-management support, delivery system redesign, clinical information systems, decision support
@@ -273,7 +273,7 @@ This reference provides detailed guidelines for developing treatment plans speci
 ### Treatment Goals Specifics
 
 **Symptom Goals**:
-- Reduction in standardized scale scores (e.g., PHQ-9 from 18→<10→<5 for remission)
+- Reduction in standardised scale scores (e.g., PHQ-9 from 18→<10→<5 for remission)
 - Specific symptom targets (sleep 7 hours, reduce panic attacks from 3/week→0)
 
 **Functional Goals**:
@@ -292,7 +292,7 @@ This reference provides detailed guidelines for developing treatment plans speci
 
 **Depression**:
 - **CBT**: 12-16 sessions, homework between sessions
-- **Behavioral Activation**: Focus on increasing rewarding activities
+- **Behavioural Activation**: Focus on increasing rewarding activities
 - **Interpersonal Therapy (IPT)**: 12-16 sessions, focus on relationships
 - **Problem-Solving Therapy**: Brief (6-8 sessions), structured approach
 
@@ -308,10 +308,10 @@ This reference provides detailed guidelines for developing treatment plans speci
 
 **Bipolar**:
 - **Family-Focused Therapy**: Psychoeducation, communication, problem-solving
-- **Interpersonal and Social Rhythm Therapy**: Stabilize daily routines, sleep
+- **Interpersonal and Social Rhythm Therapy**: Stabilise daily routines, sleep
 
 **Borderline Personality Disorder**:
-- **DBT** (Dialectical Behavior Therapy): 1 year program, individual + group + phone coaching
+- **DBT** (Dialectical Behaviour Therapy): 1 year program, individual + group + phone coaching
 - Skills: Mindfulness, distress tolerance, emotion regulation, interpersonal effectiveness
 
 ### Psychopharmacology Specifics
@@ -337,7 +337,7 @@ This reference provides detailed guidelines for developing treatment plans speci
 ### Safety Planning
 
 **Essential for All Mental Health Plans**:
-- Warning signs (thoughts, feelings, behaviors)
+- Warning signs (thoughts, feelings, behaviours)
 - Internal coping strategies
 - Social support contacts
 - Professional contacts (therapist, psychiatrist, crisis line)
@@ -362,7 +362,7 @@ This reference provides detailed guidelines for developing treatment plans speci
 - Renal-cardiovascular: CKD + hypertension + diabetes
 - Mental-physical: Depression + chronic pain + chronic disease
 
-### Prioritization Strategies
+### Prioritisation Strategies
 
 **When Multiple Goals Compete**:
 1. **Life-threatening issues first**: Unstable angina, uncontrolled heart failure
@@ -370,7 +370,7 @@ This reference provides detailed guidelines for developing treatment plans speci
 3. **Synergistic treatments**: Medications that help multiple conditions (SGLT2i for diabetes + heart failure + CKD)
 4. **Patient priorities**: What matters most to patient
 
-### Medication Optimization for Multimorbidity
+### Medication Optimisation for Multimorbidity
 
 **Synergistic Medications** (dual/triple benefit):
 - **SGLT2 inhibitors**: Diabetes + heart failure + CKD
@@ -390,7 +390,7 @@ This reference provides detailed guidelines for developing treatment plans speci
 - Primary care coordinates
 - Specialists co-manage (cardiologist for HF, endocrinologist for diabetes)
 - Care coordinator facilitates (schedules, education, barrier identification)
-- Pharmacist reviews medications, optimizes therapy
+- Pharmacist reviews medications, optimises therapy
 - Dietitian provides medical nutrition therapy
 - Social worker addresses social needs
 
@@ -433,7 +433,7 @@ This reference provides detailed guidelines for developing treatment plans speci
 - Age, surgery type, mobility, prior VTE, obesity, cancer
 - Stratify to guide prophylaxis (none, mechanical, pharmacologic, or both)
 
-### Preoperative Optimization
+### Preoperative Optimisation
 
 **Diabetes**:
 - Target HbA1c <8% for elective surgery (delay if >9%)
@@ -452,7 +452,7 @@ This reference provides detailed guidelines for developing treatment plans speci
 - Antiplatelet: Continue aspirin for most surgeries, hold P2Y12 inhibitors (clopidogrel) 5-7 days if high bleeding risk
 
 **Anemia**:
-- Optimize iron stores preop (IV iron if time limited)
+- Optimise iron stores preop (IV iron if time limited)
 - Avoid transfusion triggers if possible (restrictive strategy)
 
 ### Enhanced Recovery After Surgery (ERAS)
@@ -464,7 +464,7 @@ This reference provides detailed guidelines for developing treatment plans speci
 - No routine premedication
 
 **Intraoperative**:
-- Multimodal analgesia (minimize opioids)
+- Multimodal analgesia (minimise opioids)
 - Goal-directed fluid therapy (avoid overhydration)
 - Normothermia (prevent hypothermia)
 - Antiemetic prophylaxis
@@ -582,7 +582,7 @@ This reference provides detailed guidelines for developing treatment plans speci
 **Tapering**:
 - If not meeting functional goals
 - Serious adverse effects
-- Aberrant behaviors
+- Aberrant behaviours
 - Patient request
 - Slow taper: 10-25% dose reduction per week to month (faster if safety concern)
 

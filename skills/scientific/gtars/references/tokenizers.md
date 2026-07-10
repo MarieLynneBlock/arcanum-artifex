@@ -59,7 +59,7 @@ metadata = token.metadata
 
 Tokenizers are essential for preparing genomic data for ML models:
 
-1. **Sequence modeling**: Convert genomic intervals into discrete tokens for transformer models
+1. **Sequence modelling**: Convert genomic intervals into discrete tokens for transformer models
 2. **Position encoding**: Create consistent positional encodings across datasets
 3. **Data augmentation**: Generate alternative tokenizations for training
 

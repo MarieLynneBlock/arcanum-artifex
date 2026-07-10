@@ -96,11 +96,11 @@ This template has two variants — use the section that matches your issue type:
 
 **Reproducibility:** [Always / Intermittent (~N% of attempts) / Once]
 
-### Expected behavior
+### Expected behaviour
 
 [What should happen when following the steps above.]
 
-### Actual behavior
+### Actual behaviour
 
 [What actually happens. Include the exact error message, screenshot, or log output.]
 
@@ -256,7 +256,7 @@ flowchart TB
 
 ### Mockup / wireframe
 
-[If visual, include a mockup or screenshot of the expected UI. If not visual, describe the expected behavior in detail.]
+[If visual, include a mockup or screenshot of the expected UI. If not visual, describe the expected behaviour in detail.]
 
 ### Technical considerations
 

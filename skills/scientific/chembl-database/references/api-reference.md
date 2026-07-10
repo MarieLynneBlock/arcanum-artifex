@@ -19,7 +19,7 @@ pip install chembl_webresource_client
 
 ## Key Resources and Endpoints
 
-ChEMBL provides access to 30+ specialized endpoints:
+ChEMBL provides access to 30+ specialised endpoints:
 
 ### Core Data Types
 
@@ -179,7 +179,7 @@ Key bioactivity fields:
 - `standard_type` - Activity type (IC50, Ki, Kd, EC50, etc.)
 - `standard_value` - Numerical activity value
 - `standard_units` - Units (nM, uM, etc.)
-- `pchembl_value` - Normalized activity value (-log scale)
+- `pchembl_value` - Normalised activity value (-log scale)
 - `activity_comment` - Activity annotations
 - `data_validity_comment` - Data validity flags
 - `potential_duplicate` - Duplicate flag
@@ -261,7 +261,7 @@ The client automatically retries failed requests based on `TOTAL_RETRIES` settin
 
 ChEMBL has fair usage policies:
 - Be respectful with query frequency
-- Use caching to minimize repeated requests
+- Use caching to minimise repeated requests
 - Consider bulk downloads for large datasets
 
 ## Additional Resources

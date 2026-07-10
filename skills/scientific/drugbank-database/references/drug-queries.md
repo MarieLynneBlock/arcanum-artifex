@@ -352,7 +352,7 @@ def search_drugs_by_keyword(keyword, field='indication'):
 cancer_drugs = search_drugs_by_keyword('cancer', 'indication')
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Indexing for Faster Queries
 ```python

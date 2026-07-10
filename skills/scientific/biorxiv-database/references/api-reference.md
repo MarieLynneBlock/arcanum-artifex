@@ -123,7 +123,7 @@ GET https://api.biorxiv.org/pubs/biorxiv/1/0/json
 
 ## Valid Categories
 
-bioRxiv organizes preprints into the following categories:
+bioRxiv organises preprints into the following categories:
 
 - `animal-behavior-and-cognition`
 - `biochemistry`

@@ -7,7 +7,7 @@ This document provides detailed step-by-step workflows for common PyDESeq2 analy
 2. [Data Loading and Preparation](#data-loading-and-preparation)
 3. [Single-Factor Analysis](#single-factor-analysis)
 4. [Multi-Factor Analysis](#multi-factor-analysis)
-5. [Result Export and Visualization](#result-export-and-visualization)
+5. [Result Export and Visualisation](#result-export-and-visualisation)
 6. [Common Patterns and Best Practices](#common-patterns-and-best-practices)
 7. [Troubleshooting](#troubleshooting)
 
@@ -18,8 +18,8 @@ This document provides detailed step-by-step workflows for common PyDESeq2 analy
 ### Overview
 A standard PyDESeq2 analysis consists of 12 main steps across two phases:
 
-**Phase 1: Read Counts Modeling (Steps 1-7)**
-- Normalization and dispersion estimation
+**Phase 1: Read Counts Modelling (Steps 1-7)**
+- Normalisation and dispersion estimation
 - Log fold-change fitting
 - Outlier detection
 
@@ -295,7 +295,7 @@ dds.deseq2()
 
 ---
 
-## Result Export and Visualization
+## Result Export and Visualisation
 
 ### Saving Results
 
@@ -332,7 +332,7 @@ with open("dds_result.pkl", "rb") as f:
     adata = pickle.load(f)
 ```
 
-### Basic Visualization
+### Basic Visualisation
 
 **Volcano plot:**
 ```python
@@ -432,9 +432,9 @@ ds = DeseqStats(dds, independent_filter=False)
 ### 4. LFC Shrinkage
 
 **When to use:**
-- For visualization (volcano plots, heatmaps)
+- For visualisation (volcano plots, heatmaps)
 - For ranking genes by effect size
-- When prioritizing genes for follow-up
+- When prioritising genes for follow-up
 
 **When NOT to use:**
 - For reporting statistical significance (use unshrunken p-values)

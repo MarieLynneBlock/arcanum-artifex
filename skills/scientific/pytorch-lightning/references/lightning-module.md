@@ -2,7 +2,7 @@
 
 ## Overview
 
-A `LightningModule` organizes PyTorch code into six logical sections without abstraction. The code remains pure PyTorch, just better organized. The Trainer handles device management, distributed sampling, and infrastructure while preserving full model control.
+A `LightningModule` organises PyTorch code into six logical sections without abstraction. The code remains pure PyTorch, just better organised. The Trainer handles device management, distributed sampling, and infrastructure while preserving full model control.
 
 ## Core Structure
 
@@ -57,7 +57,7 @@ class MyModel(L.LightningModule):
 ### Training Pipeline Methods
 
 #### `training_step(batch, batch_idx)`
-Computes the forward pass and returns the loss. Lightning automatically handles backward propagation and optimizer updates in automatic optimization mode.
+Computes the forward pass and returns the loss. Lightning automatically handles backward propagation and optimizer updates in automatic optimisation mode.
 
 **Parameters:**
 - `batch` - Current training batch from the DataLoader
@@ -199,7 +199,7 @@ Records metrics with automatic epoch-level reduction across devices.
 - `prog_bar` - Display in progress bar (default: False)
 - `logger` - Send to logger backends (default: True)
 - `reduce_fx` - Reduction function: "mean", "sum", "max", "min" (default: "mean")
-- `sync_dist` - Synchronize across devices in distributed training (default: False)
+- `sync_dist` - Synchronise across devices in distributed training (default: False)
 
 **Examples:**
 ```python
@@ -247,11 +247,11 @@ def __init__(self, learning_rate, hidden_dim, dropout):
 | `self.local_rank` | GPU rank on current node |
 | `self.hparams` | Saved hyperparameters (via save_hyperparameters) |
 | `self.trainer` | Reference to parent Trainer instance |
-| `self.automatic_optimization` | Whether to use automatic optimization (default: True) |
+| `self.automatic_optimization` | Whether to use automatic optimisation (default: True) |
 
-## Manual Optimization
+## Manual Optimisation
 
-For advanced use cases (GANs, reinforcement learning, multiple optimizers), disable automatic optimization:
+For advanced use cases (GANs, reinforcement learning, multiple optimizers), disable automatic optimisation:
 
 ```python
 class GANModel(L.LightningModule):
@@ -348,7 +348,7 @@ def on_after_backward(self):
 ### Checkpoint Hooks
 
 #### `on_save_checkpoint(checkpoint)`
-Customize checkpoint saving. Add extra state to save.
+Customise checkpoint saving. Add extra state to save.
 
 **Example:**
 ```python
@@ -357,7 +357,7 @@ def on_save_checkpoint(self, checkpoint):
 ```
 
 #### `on_load_checkpoint(checkpoint)`
-Customize checkpoint loading. Restore extra state.
+Customise checkpoint loading. Restore extra state.
 
 **Example:**
 ```python

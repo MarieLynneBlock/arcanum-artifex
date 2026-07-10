@@ -47,10 +47,10 @@ The AI will automatically:
 - Document conversion workflow diagrams
 - File format architecture illustrations
 - OCR processing pipeline diagrams
-- Integration workflow visualizations
+- Integration workflow visualisations
 - System architecture diagrams
 - Data flow diagrams
-- Any complex concept that benefits from visualization
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -361,7 +361,7 @@ with open("large_file.pdf", "rb") as f:
         out.write(result.text_content)
 ```
 
-### 4. Optimize for Token Efficiency
+### 4. Optimise for Token Efficiency
 
 Markdown output is already token-efficient, but you can:
 - Remove excessive whitespace

@@ -90,7 +90,7 @@ Before ANY other analysis, calculate the Documentation Wrapper Score (0-100):
 - Verify all external links are valid and point to correct resources
 - Test that referenced files actually exist in the repository
 - Validate service names, API endpoints, and tool versions are accurate
-- **CRITICAL**: Cross-reference code snippets in content with their source files to ensure accuracy and synchronization
+- **CRITICAL**: Cross-reference code snippets in content with their source files to ensure accuracy and synchronisation
 - Identify code snippets longer than 30 lines and suggest breaking them into smaller, more digestible examples
 
 ## 3. Content Flow & Structure
@@ -122,7 +122,7 @@ Before ANY other analysis, calculate the Documentation Wrapper Score (0-100):
 - Suggest specific types of visuals: flowcharts, sequence diagrams, entity relationships, architecture diagrams
 - Ensure technical jargon is introduced with clear definitions
 - Verify that abstract concepts have concrete examples
-- **CRITICAL**: Identify missing learning path diagrams, workflow visualizations, and architecture examples
+- **CRITICAL**: Identify missing learning path diagrams, workflow visualisations, and architecture examples
 - Flag complex multi-step processes that need visual representation
 
 ## 6. Code Sample Validation
@@ -152,7 +152,7 @@ Before ANY other analysis, calculate the Documentation Wrapper Score (0-100):
 
 **MANDATORY EXERCISE QUANTIFICATION:**
 
-For each chapter claiming "Practical Exercises", count and categorize:
+For each chapter claiming "Practical Exercises", count and categorise:
 
 1. ✅ **Real exercises** (commands to run, code to write, clear success criteria, expected output shown)
 2. ⚠️ **Partial exercises** (some steps provided but missing starter code, validation, or success criteria)
@@ -320,7 +320,7 @@ Compare README/documentation claims to actual repository contents:
 ## Step 4: Structural Evaluation
 
 **Organization Assessment**:
-- Assess chapter organization and logical flow
+- Assess chapter organisation and logical flow
 - Verify navigation elements and cross-references
 - Evaluate pacing and information density
 - Check for gaps or redundancies
@@ -460,7 +460,7 @@ Calculate grade using objective metrics (each scored 0-100):
 
 **Show Your Math:** Display the calculation clearly in your assessment.
 
-## Recommended Next Steps (Prioritized)
+## Recommended Next Steps (Prioritised)
 
 **Action Plan**:
 1. **CRITICAL** fixes (do immediately)
@@ -551,7 +551,7 @@ Calculate grade using objective metrics (each scored 0-100):
 
 **HONESTY OVER POLITENESS:**
 
-When critical issues are found, prioritize honesty over diplomatic language.
+When critical issues are found, prioritise honesty over diplomatic language.
 
 **DO NOT SAY:**
 - "This is substantial content with some areas for improvement"

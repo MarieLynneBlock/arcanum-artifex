@@ -1,13 +1,13 @@
-# Data Visualization
+# Data Visualisation
 
-This reference covers Vaex's visualization capabilities for creating plots, heatmaps, and interactive visualizations of large datasets.
+This reference covers Vaex's visualisation capabilities for creating plots, heatmaps, and interactive visualisations of large datasets.
 
 ## Overview
 
-Vaex excels at visualizing datasets with billions of rows through efficient binning and aggregation. The visualization system works directly with large data without sampling, providing accurate representations of the entire dataset.
+Vaex excels at visualising datasets with billions of rows through efficient binning and aggregation. The visualisation system works directly with large data without sampling, providing accurate representations of the entire dataset.
 
 **Key features:**
-- Visualize billion-row datasets interactively
+- Visualise billion-row datasets interactively
 - No sampling required - uses all data
 - Automatic binning and aggregation
 - Integration with matplotlib
@@ -69,9 +69,9 @@ df_sample.scatter(df_sample.x, df_sample.y,
 plt.show()
 ```
 
-## Advanced Visualization Options
+## Advanced Visualisation Options
 
-### Color Scales and Normalization
+### Colour Scales and Normalisation
 
 ```python
 # Linear scale (default)
@@ -118,9 +118,9 @@ df.plot(df.x, df.y, shape=(128, 128))
 df.plot(df.x, df.y, shape=(512, 256))
 ```
 
-## Statistical Visualizations
+## Statistical Visualisations
 
-### Visualizing Aggregations
+### Visualising Aggregations
 
 ```python
 # Mean on a grid
@@ -171,7 +171,7 @@ plt.show()
 
 ## Working with Selections
 
-Visualize different segments of data simultaneously:
+Visualise different segments of data simultaneously:
 
 ```python
 import vaex
@@ -251,7 +251,7 @@ plt.show()
 
 ## Interactive Widgets (Jupyter)
 
-Create interactive visualizations in Jupyter notebooks:
+Create interactive visualisations in Jupyter notebooks:
 
 ### Selection Widget
 
@@ -274,7 +274,7 @@ df.plot_widget(df.x, df.y)
 df.scatter_widget(df.x, df.y)
 ```
 
-## Customization
+## Customisation
 
 ### Styling Plots
 
@@ -313,7 +313,7 @@ df.plot(df.x, df.y,
         dpi=300)
 ```
 
-## Specialized Visualizations
+## Specialised Visualisations
 
 ### Hexbin Plots
 
@@ -379,7 +379,7 @@ plt.show()
 
 ## Performance Considerations
 
-### Optimizing Large Visualizations
+### Optimising Large Visualisations
 
 ```python
 # For very large datasets, reduce shape
@@ -392,7 +392,7 @@ df.plot(df.x, df.y, shape=(1024, 1024))  # Higher quality
 df.plot(df.x, df.y, shape=(512, 512))  # Good balance
 ```
 
-### Caching Visualization Data
+### Caching Visualisation Data
 
 ```python
 # Compute once, plot multiple times
@@ -514,7 +514,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-### Pattern: Time Series Visualization
+### Pattern: Time Series Visualisation
 
 ```python
 # Aggregate by time bins
@@ -567,11 +567,11 @@ plt.show()
 
 1. **Use appropriate shape** - Balance resolution and performance (256-512 for exploration, 1024+ for publication)
 2. **Apply sensible limits** - Use percentile-based limits ('99%', '99.7%') to handle outliers
-3. **Choose color scales wisely** - Log scale for wide-ranging counts, linear for uniform data
+3. **Choose colour scales wisely** - Log scale for wide-ranging counts, linear for uniform data
 4. **Leverage selections** - Compare subsets without creating new DataFrames
 5. **Cache aggregations** - Compute once if creating multiple similar plots
 6. **Use vector formats for publication** - Save as PDF or SVG for scalable figures
-7. **Avoid sampling** - Vaex visualizations use all data, no sampling needed
+7. **Avoid sampling** - Vaex visualisations use all data, no sampling needed
 
 ## Troubleshooting
 
@@ -609,5 +609,5 @@ df.plot(df.x, df.y, f='log')
 ## Related Resources
 
 - For data aggregation: See `data-processing.md`
-- For performance optimization: See `performance.md`
+- For performance optimisation: See `performance.md`
 - For DataFrame basics: See `core-dataframes.md`

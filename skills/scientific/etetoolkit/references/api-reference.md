@@ -2,13 +2,13 @@
 
 ## Overview
 
-ETE (Environment for Tree Exploration) is a Python toolkit for phylogenetic tree manipulation, analysis, and visualization. This reference covers the main classes and methods.
+ETE (Environment for Tree Exploration) is a Python toolkit for phylogenetic tree manipulation, analysis, and visualisation. This reference covers the main classes and methods.
 
 ## Core Classes
 
 ### TreeNode (alias: Tree)
 
-The fundamental class representing tree structures with hierarchical node organization.
+The fundamental class representing tree structures with hierarchical node organisation.
 
 **Constructor:**
 ```python
@@ -32,7 +32,7 @@ t = Tree(newick=None, format=0, dist=None, support=None, name=None)
 
 ### PhyloTree
 
-Specialized class for phylogenetic analysis, extending TreeNode.
+Specialised class for phylogenetic analysis, extending TreeNode.
 
 **Constructor:**
 ```python
@@ -378,7 +378,7 @@ print(tree)
 print(tree.get_ascii(show_internal=True, compact=False))
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Caching Content
 
@@ -579,5 +579,5 @@ except:
 4. **Preserve branch lengths**: Use `preserve_branch_length=True` when pruning
 5. **Choose copy method wisely**: "newick" for speed, "cpickle" for full fidelity
 6. **Validate monophyly**: Check returned clade type (monophyletic/paraphyletic/polyphyletic)
-7. **Use PhyloTree for phylogenetics**: Specialized methods for evolutionary analysis
+7. **Use PhyloTree for phylogenetics**: Specialised methods for evolutionary analysis
 8. **Cache NCBI queries**: Store results to avoid repeated database access

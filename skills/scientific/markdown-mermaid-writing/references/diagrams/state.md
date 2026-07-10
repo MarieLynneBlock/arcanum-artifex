@@ -2,7 +2,7 @@
 
 # State Diagram
 
-> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `stateDiagram-v2`
 **Best for:** State machines, lifecycle flows, status transitions, object lifecycles
@@ -73,7 +73,7 @@ stateDiagram-v2
 
 ## Complex Example
 
-A CI/CD pipeline modeled as a state machine with 3 composite (nested) states, each containing internal substates. Shows how source changes flow through build, test, and deploy phases with failure recovery and rollback transitions.
+A CI/CD pipeline modelled as a state machine with 3 composite (nested) states, each containing internal substates. Shows how source changes flow through build, test, and deploy phases with failure recovery and rollback transitions.
 
 ```mermaid
 stateDiagram-v2
@@ -146,5 +146,5 @@ stateDiagram-v2
 
 - **Composite states group pipeline phases** — Source, Build & Test, and Deployment each contain their internal flow, readable in isolation or as part of the whole
 - **Failure and rollback are first-class states** — not just transition labels. The Failed and Rollback states have their own internal substates showing what actually happens during recovery
-- **Notes on key states** add operational context — the approval gate has timeout rules, the compile step documents the artifact format. This is the kind of detail operators need.
+- **Notes on key states** add operational context — the approval gate has timeout rules, the compile step documents the artefact format. This is the kind of detail operators need.
 - **Transitions between composite states** are the high-level flow (Source → Build → Deploy → Complete), while transitions within composites are the detailed steps. Two levels of reading for two audiences.

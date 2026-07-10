@@ -1,11 +1,11 @@
 # Pymoo Algorithms Reference
 
-Comprehensive reference for optimization algorithms available in pymoo.
+Comprehensive reference for optimisation algorithms available in pymoo.
 
-## Single-Objective Optimization Algorithms
+## Single-Objective Optimisation Algorithms
 
 ### Genetic Algorithm (GA)
-**Purpose:** General-purpose single-objective evolutionary optimization
+**Purpose:** General-purpose single-objective evolutionary optimisation
 **Best for:** Continuous, discrete, or mixed-variable problems
 **Algorithm type:** (μ+λ) genetic algorithm
 
@@ -25,32 +25,32 @@ algorithm = GA(pop_size=100, eliminate_duplicates=True)
 ```
 
 ### Differential Evolution (DE)
-**Purpose:** Single-objective continuous optimization
-**Best for:** Continuous parameter optimization with good global search
+**Purpose:** Single-objective continuous optimisation
+**Best for:** Continuous parameter optimisation with good global search
 **Algorithm type:** Population-based differential evolution
 
 **Variants:** Multiple DE strategies available (rand/1/bin, best/1/bin, etc.)
 
-### Particle Swarm Optimization (PSO)
-**Purpose:** Single-objective optimization through swarm intelligence
+### Particle Swarm Optimisation (PSO)
+**Purpose:** Single-objective optimisation through swarm intelligence
 **Best for:** Continuous problems, fast convergence on smooth landscapes
 
 ### CMA-ES
 **Purpose:** Covariance Matrix Adaptation Evolution Strategy
-**Best for:** Continuous optimization, particularly for noisy or ill-conditioned problems
+**Best for:** Continuous optimisation, particularly for noisy or ill-conditioned problems
 
 ### Pattern Search
 **Purpose:** Direct search method
 **Best for:** Problems where gradient information is unavailable
 
 ### Nelder-Mead
-**Purpose:** Simplex-based optimization
-**Best for:** Local optimization of continuous functions
+**Purpose:** Simplex-based optimisation
+**Best for:** Local optimisation of continuous functions
 
-## Multi-Objective Optimization Algorithms
+## Multi-Objective Optimisation Algorithms
 
 ### NSGA-II (Non-dominated Sorting Genetic Algorithm II)
-**Purpose:** Multi-objective optimization with 2-3 objectives
+**Purpose:** Multi-objective optimisation with 2-3 objectives
 **Best for:** Bi- and tri-objective problems requiring well-distributed Pareto fronts
 **Selection strategy:** Non-dominated sorting + crowding distance
 
@@ -79,7 +79,7 @@ algorithm = NSGA2(pop_size=100)
 - Standard multi-objective benchmark
 
 ### NSGA-III
-**Purpose:** Many-objective optimization (4+ objectives)
+**Purpose:** Many-objective optimisation (4+ objectives)
 **Best for:** Problems with 4 or more objectives requiring uniform Pareto front coverage
 **Selection strategy:** Reference direction-based diversity maintenance
 
@@ -111,7 +111,7 @@ algorithm = NSGA3(ref_dirs=ref_dirs)
 - NSGA-II has lower computational overhead
 
 ### R-NSGA-II (Reference Point Based NSGA-II)
-**Purpose:** Multi-objective optimization with preference articulation
+**Purpose:** Multi-objective optimisation with preference articulation
 **Best for:** When decision maker has preferred regions of Pareto front
 
 ### U-NSGA-III (Unified NSGA-III)
@@ -119,7 +119,7 @@ algorithm = NSGA3(ref_dirs=ref_dirs)
 **Best for:** Many-objective problems with additional robustness
 
 ### MOEA/D (Multi-Objective Evolutionary Algorithm based on Decomposition)
-**Purpose:** Decomposition-based multi-objective optimization
+**Purpose:** Decomposition-based multi-objective optimisation
 **Best for:** Problems where decomposition into scalar subproblems is effective
 
 ### AGE-MOEA
@@ -127,7 +127,7 @@ algorithm = NSGA3(ref_dirs=ref_dirs)
 **Best for:** Multi and many-objective problems with adaptive mechanisms
 
 ### RVEA (Reference Vector guided Evolutionary Algorithm)
-**Purpose:** Reference vector-based many-objective optimization
+**Purpose:** Reference vector-based many-objective optimisation
 **Best for:** Many-objective problems with adaptive reference vectors
 
 ### SMS-EMOA
@@ -142,24 +142,24 @@ algorithm = NSGA3(ref_dirs=ref_dirs)
 **Best for:** Time-varying objective functions or constraints
 
 ### KGB-DMOEA
-**Purpose:** Knowledge-guided dynamic multi-objective optimization
+**Purpose:** Knowledge-guided dynamic multi-objective optimisation
 **Best for:** Dynamic problems leveraging historical information
 
-## Constrained Optimization
+## Constrained Optimisation
 
 ### SRES (Stochastic Ranking Evolution Strategy)
-**Purpose:** Single-objective constrained optimization
+**Purpose:** Single-objective constrained optimisation
 **Best for:** Heavily constrained problems
 
 ### ISRES (Improved SRES)
-**Purpose:** Enhanced constrained optimization
+**Purpose:** Enhanced constrained optimisation
 **Best for:** Complex constraint landscapes
 
 ## Algorithm Selection Guidelines
 
 **For single-objective problems:**
 - Start with GA for general problems
-- Use DE for continuous optimization
+- Use DE for continuous optimisation
 - Try PSO for faster convergence on smooth problems
 - Use CMA-ES for difficult/noisy landscapes
 

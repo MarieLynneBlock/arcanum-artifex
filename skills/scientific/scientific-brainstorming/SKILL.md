@@ -59,7 +59,7 @@ Begin by deeply understanding what the scientist is working on. This phase estab
 
 ### Phase 2: Divergent Exploration
 
-Help the scientist generate a wide range of ideas without judgment. The goal is quantity and diversity, not immediate feasibility.
+Help the scientist generate a wide range of ideas without judgement. The goal is quantity and diversity, not immediate feasibility.
 
 **Techniques to employ:**
 
@@ -132,7 +132,7 @@ Shift to constructively evaluating the most promising ideas while maintaining cr
 Help crystallize insights and create concrete paths forward.
 
 **Deliverables:**
-- Summarize the most promising directions identified
+- Summarise the most promising directions identified
 - Highlight novel connections or perspectives discovered
 - Suggest immediate next steps (literature search, pilot experiments, collaborations)
 - Capture key questions that emerged for future exploration

@@ -15,7 +15,7 @@ LangChain's `Runnable` interface is the foundation for composing and executing c
 
 - All major LangChain components (chat models, output parsers, retrievers, graphs) implement the Runnable interface.
 - Supports synchronous (`invoke`, `batch`, `stream`) and asynchronous (`ainvoke`, `abatch`, `astream`) execution.
-- Batching (`batch`, `batch_as_completed`) is optimized for parallel API calls; set `max_concurrency` in `RunnableConfig` to control parallelism.
+- Batching (`batch`, `batch_as_completed`) is optimised for parallel API calls; set `max_concurrency` in `RunnableConfig` to control parallelism.
 - Streaming APIs (`stream`, `astream`, `astream_events`) yield outputs as they are produced, critical for responsive LLM apps.
 - Input/output types are component-specific (e.g., chat models accept messages, retrievers accept strings, output parsers accept model outputs).
 - Inspect schemas with `get_input_schema`, `get_output_schema`, and their JSONSchema variants for validation and OpenAPI generation.
@@ -70,9 +70,9 @@ Best practices:
 
 
 
-- LLM client factory: centralize provider configs (API keys), timeouts, retries, and telemetry. Provide a single place to switch providers or client settings.
+- LLM client factory: centralise provider configs (API keys), timeouts, retries, and telemetry. Provide a single place to switch providers or client settings.
 - Prompt templates: store templates under `prompts/` and load via a safe helper. Keep templates small and testable.
-- Chains vs Agents: prefer Chains for deterministic pipelines (RAG, summarization). Use Agents when you require planning or dynamic tool selection.
+- Chains vs Agents: prefer Chains for deterministic pipelines (RAG, summarisation). Use Agents when you require planning or dynamic tool selection.
 - Tools: implement typed adapter interfaces for tools; validate inputs and outputs strictly.
 - Memory: default to stateless design. When memory is needed, store minimal context and document retention/erasure policies.
 - Retrievers: build retrieval + rerank pipelines. Keep vectorstore schema stable (id, text, metadata).
@@ -125,11 +125,11 @@ for doc in results:
 
 - Store canonical prompts under `prompts/` and reference them by filename from code.
 - Write unit tests that assert required placeholders exist and that rendered prompts fit expected patterns (length, variables present).
-- Maintain a CHANGELOG for prompt and schema changes that affect behavior.
+- Maintain a CHANGELOG for prompt and schema changes that affect behaviour.
 
 ## Chat models
 
-LangChain offers a consistent interface for chat models with additional features for monitoring, debugging, and optimization.
+LangChain offers a consistent interface for chat models with additional features for monitoring, debugging, and optimisation.
 
 ### Integrations
 
@@ -163,7 +163,7 @@ Commonly supported parameters (provider-dependent):
 
 - `model`: model identifier (eg. `gpt-4o`, `gpt-3.5-turbo`).
 - `temperature`: randomness control (0.0 deterministic — 1.0 creative).
-- `timeout`: seconds to wait before canceling.
+- `timeout`: seconds to wait before cancelling.
 - `max_tokens`: response token limit.
 - `stop`: stop sequences.
 - `max_retries`: retry attempts for network/limit failures.
@@ -194,8 +194,8 @@ Some models support multimodal inputs (images, audio). Check provider docs for s
 
 Models have a finite context window measured in tokens. When designing conversational flows:
 
-- Keep messages concise and prioritize important context.
-- Trim old context (summarize or archive) outside the model when it exceeds the window.
+- Keep messages concise and prioritise important context.
+- Trim old context (summarise or archive) outside the model when it exceeds the window.
 - Use a retriever + RAG pattern to surface relevant long-form context instead of pasting large documents into the chat.
 
 ## Advanced topics

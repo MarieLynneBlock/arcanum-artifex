@@ -22,11 +22,11 @@ All 3D objects are positioned relative to this coordinate system.
 
 ### Vertices, Edges, Faces, and Meshes
 
-- **Vertex** -- a point in 3D space defined by `(x, y, z)` with additional attributes: color (RGBA, values 0.0-1.0), normal (direction the vertex faces, used for lighting), and texture coordinates.
+- **Vertex** -- a point in 3D space defined by `(x, y, z)` with additional attributes: colour (RGBA, values 0.0-1.0), normal (direction the vertex faces, used for lighting), and texture coordinates.
 - **Edge** -- a line connecting two vertices.
 - **Face** -- a flat surface bounded by edges (e.g., a triangle connecting three vertices).
 - **Geometry** -- the structural shape built from vertices, edges, and faces.
-- **Material** -- the surface appearance, combining color, texture, roughness, metalness, etc.
+- **Material** -- the surface appearance, combining colour, texture, roughness, metalness, etc.
 - **Mesh** -- geometry combined with a material to produce a renderable 3D object.
 
 ### The Rendering Pipeline
@@ -48,7 +48,7 @@ Converts 3D primitives into 2D fragments aligned to the pixel grid.
 
 **3. Fragment Processing**
 
-Determines the final color of each fragment using textures and lighting:
+Determines the final colour of each fragment using textures and lighting:
 
 - **Textures**: 2D images mapped onto 3D surfaces. Individual texture elements are called *texels*. Texture wrapping repeats images around geometry; texture filtering handles minification and magnification when displayed resolution differs from texture resolution.
 - **Lighting (Phong model)**: Four types of light interaction -- **diffuse** (distant directional light like the sun), **specular** (point source highlights like a flashlight), **ambient** (constant global illumination), and **emissive** (light emitted by the object itself).
@@ -195,7 +195,7 @@ render();
 #### Practical Tips
 
 - Use `Math.abs()` when animating scale with `Math.sin()` to avoid negative scale values.
-- The render loop uses `requestAnimationFrame` for smooth, browser-optimized frame updates.
+- The render loop uses `requestAnimationFrame` for smooth, browser-optimised frame updates.
 - Consult [Three.js documentation](https://threejs.org/docs/) for the full API.
 
 ---
@@ -272,8 +272,8 @@ engine.runRenderLoop(renderLoop);
 #### Practical Tips
 
 - The `BABYLON` global object contains all framework functions.
-- `BABYLON.Vector3` and `BABYLON.Color3` are used extensively for positioning and coloring.
-- Babylon.js includes a built-in math library for vectors, colors, and matrices.
+- `BABYLON.Vector3` and `BABYLON.Color3` are used extensively for positioning and colouring.
+- Babylon.js includes a built-in math library for vectors, colours, and matrices.
 - Consult [Babylon.js documentation](https://doc.babylonjs.com/) for advanced features like physics, particles, and post-processing.
 
 ---
@@ -377,7 +377,7 @@ render();
 
 - A-Frame is ideal for rapid VR/AR prototyping using familiar HTML syntax.
 - The entity-component architecture makes it extensible; community plugins add physics, gamepad controls, and more.
-- Use `<a-sky>` for background colors or 360-degree images.
+- Use `<a-sky>` for background colours or 360-degree images.
 - A-Frame supports desktop, mobile (iOS/Android), and VR headsets (Meta Quest, HTC Vive).
 
 ---
@@ -415,7 +415,7 @@ GLSL (OpenGL Shading Language) is a C-like language that runs directly on the GP
 Shaders are small programs that execute on the GPU instead of the CPU. They are strongly typed and rely heavily on vector and matrix mathematics. There are two types relevant to WebGL:
 
 - **Vertex shader** -- runs once per vertex, transforms 3D positions into screen coordinates.
-- **Fragment shader** (pixel shader) -- runs once per pixel, determines the final RGBA color.
+- **Fragment shader** (pixel shader) -- runs once per pixel, determines the final RGBA colour.
 
 ### Vertex Shader
 
@@ -441,7 +441,7 @@ void main() {
 
 ### Fragment Shader
 
-The fragment shader's job is to set `gl_FragColor`, a built-in GLSL variable holding the RGBA color:
+The fragment shader's job is to set `gl_FragColor`, a built-in GLSL variable holding the RGBA colour:
 
 ```glsl
 void main() {
@@ -551,7 +551,7 @@ Bounding spheres are invariant to rotation (the sphere stays the same regardless
 
 #### Point vs. Sphere
 
-Check whether the distance from the point to the sphere center is less than the radius:
+Check whether the distance from the point to the sphere centre is less than the radius:
 
 ```javascript
 function isPointInsideSphere(point, sphere) {
@@ -564,7 +564,7 @@ function isPointInsideSphere(point, sphere) {
 }
 ```
 
-**Performance optimization**: avoid the square root by comparing squared distances:
+**Performance optimisation**: avoid the square root by comparing squared distances:
 
 ```javascript
 const distanceSqr =
@@ -576,7 +576,7 @@ return distanceSqr < sphere.radius * sphere.radius;
 
 #### Sphere vs. Sphere
 
-Check whether the distance between centers is less than the sum of radii:
+Check whether the distance between centres is less than the sum of radii:
 
 ```javascript
 function intersect(sphere, other) {
@@ -591,7 +591,7 @@ function intersect(sphere, other) {
 
 #### Sphere vs. AABB
 
-Find the point on the AABB closest to the sphere center by clamping, then check the distance:
+Find the point on the AABB closest to the sphere centre by clamping, then check the distance:
 
 ```javascript
 function intersect(sphere, box) {
@@ -740,7 +740,7 @@ All major 3D web frameworks support WebXR:
 
 ### Design Principles
 
-- Prioritize **immersion** over raw graphics quality or gameplay complexity.
+- Prioritise **immersion** over raw graphics quality or gameplay complexity.
 - Users must feel like they are *part of the experience*.
 - Basic shapes rendered at high, stable frame rates can be more compelling in VR than detailed graphics at unstable frame rates.
 - Experimentation is essential; test frequently on actual hardware.

@@ -1,7 +1,7 @@
 # Resource Configuration
 
 ## Overview
-Latch SDK provides flexible resource configuration for workflow tasks, enabling efficient execution on appropriate compute infrastructure including CPU, GPU, and memory-optimized instances.
+Latch SDK provides flexible resource configuration for workflow tasks, enabling efficient execution on appropriate compute infrastructure including CPU, GPU, and memory-optimised instances.
 
 ## Task Resource Decorators
 
@@ -284,7 +284,7 @@ def process_large_dataset():
 - Ephemeral storage is cleared after task completion
 - Use LatchDir for persistent storage needs
 
-## Cost Optimization
+## Cost Optimisation
 
 ### Resource Efficiency Tips
 
@@ -292,7 +292,7 @@ def process_large_dataset():
 2. **Use appropriate decorators**: Start with standard decorators
 3. **GPU only when needed**: GPU tasks cost more
 4. **Parallel small tasks**: Better than one large task
-5. **Monitor usage**: Review actual resource utilization
+5. **Monitor usage**: Review actual resource utilisation
 
 ### Example: Cost-Effective Design
 
@@ -325,9 +325,9 @@ def intensive_analysis():  # Appropriate
 ### Resource Usage Monitoring
 
 During workflow execution, monitor:
-- CPU utilization
+- CPU utilisation
 - Memory usage
-- GPU utilization (if applicable)
+- GPU utilisation (if applicable)
 - Execution duration
 - Storage consumption
 
@@ -395,7 +395,7 @@ def process_large(file: LatchFile) -> LatchFile:
 2. **Profile first**: Run test executions to determine actual needs
 3. **GPU sparingly**: Only use GPU when algorithms support it
 4. **Parallel design**: Break into smaller tasks when possible
-5. **Monitor and adjust**: Review execution metrics and optimize
+5. **Monitor and adjust**: Review execution metrics and optimise
 6. **Document requirements**: Comment why specific resources are needed
 7. **Test locally**: Use Docker locally to validate before registration
 8. **Consider cost**: Balance performance with cost efficiency

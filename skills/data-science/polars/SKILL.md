@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-Polars is a lightning-fast DataFrame library for Python and Rust built on Apache Arrow. Work with Polars' expression-based API, lazy evaluation framework, and high-performance data manipulation capabilities for efficient data processing, pandas migration, and data pipeline optimization.
+Polars is a lightning-fast DataFrame library for Python and Rust built on Apache Arrow. Work with Polars' expression-based API, lazy evaluation framework, and high-performance data manipulation capabilities for efficient data processing, pandas migration, and data pipeline optimisation.
 
 ## Quick Start
 
@@ -48,7 +48,7 @@ df.with_columns(
 
 ### Expressions
 
-Expressions are the fundamental building blocks of Polars operations. They describe transformations on data and can be composed, reused, and optimized.
+Expressions are the fundamental building blocks of Polars operations. They describe transformations on data and can be composed, reused, and optimised.
 
 **Key principles:**
 - Use `pl.col("column_name")` to reference columns
@@ -72,7 +72,7 @@ df = pl.read_csv("file.csv")  # Reads immediately
 result = df.filter(pl.col("age") > 25)  # Executes immediately
 ```
 
-**Lazy (LazyFrame):** Operations build a query plan, optimized before execution
+**Lazy (LazyFrame):** Operations build a query plan, optimised before execution
 ```python
 lf = pl.scan_csv("file.csv")  # Doesn't read yet
 result = lf.filter(pl.col("age") > 25).select("name", "age")
@@ -86,7 +86,7 @@ df = result.collect()  # Now executes optimized query
 - Performance is critical
 
 **Benefits of lazy evaluation:**
-- Automatic query optimization
+- Automatic query optimisation
 - Predicate pushdown
 - Projection pushdown
 - Parallel execution
@@ -316,7 +316,7 @@ For comprehensive migration guide, load `references/pandas-migration.md`.
 
 ## Best Practices
 
-### Performance Optimization
+### Performance Optimisation
 
 1. **Use lazy evaluation for large datasets:**
    ```python
@@ -379,6 +379,6 @@ This skill includes comprehensive reference documentation:
 - `pandas-migration.md` - Complete migration guide from pandas to Polars
 - `io-guide.md` - Data I/O operations for all supported formats
 - `transformations.md` - Joins, concatenation, pivots, and reshaping operations
-- `best-practices.md` - Performance optimization tips and common patterns
+- `best-practices.md` - Performance optimisation tips and common patterns
 
 Load these references as needed when users require detailed information about specific topics.

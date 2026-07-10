@@ -4,12 +4,12 @@
 
 Data preprocessing transforms raw data into a format suitable for machine learning models. This includes scaling, encoding, handling missing values, and feature engineering.
 
-## Feature Scaling and Normalization
+## Feature Scaling and Normalisation
 
 ### StandardScaler
 
 **StandardScaler (`sklearn.preprocessing.StandardScaler`)**
-- Standardizes features to zero mean and unit variance
+- Standardises features to zero mean and unit variance
 - Formula: z = (x - mean) / std
 - Use when: Features have different scales, algorithm assumes normally distributed data
 - Required for: SVM, KNN, Neural Networks, PCA, Linear Regression with regularization
@@ -63,9 +63,9 @@ X_scaled = scaler.fit_transform(X_train)
 ### Normalizer
 
 **Normalizer (`sklearn.preprocessing.Normalizer`)**
-- Normalizes samples individually to unit norm
+- Normalises samples individually to unit norm
 - Common norms: 'l1', 'l2', 'max'
-- Use when: Need to normalize each sample independently (e.g., text features)
+- Use when: Need to normalise each sample independently (e.g., text features)
 - Example:
 ```python
 from sklearn.preprocessing import Normalizer
@@ -79,8 +79,8 @@ X_normalized = normalizer.fit_transform(X)
 **MaxAbsScaler (`sklearn.preprocessing.MaxAbsScaler`)**
 - Scales by maximum absolute value
 - Range: [-1, 1]
-- Doesn't shift/center data (preserves sparsity)
-- Use when: Data is already centered or sparse
+- Doesn't shift/centre data (preserves sparsity)
+- Use when: Data is already centred or sparse
 - Example:
 ```python
 from sklearn.preprocessing import MaxAbsScaler
@@ -252,7 +252,7 @@ X_imputed = imputer.fit_transform(X)
 ### KNN Imputer
 
 **KNNImputer**
-- Imputes using k-nearest neighbors
+- Imputes using k-nearest neighbours
 - Use when: Features are correlated
 - Example:
 ```python

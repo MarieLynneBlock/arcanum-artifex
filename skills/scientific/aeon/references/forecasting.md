@@ -27,7 +27,7 @@ Classical time series forecasting methods:
 ### Threshold Autoregressive
 - `TAR` - Threshold Autoregressive model for regime switching
 - `AutoTAR` - Automated threshold discovery
-  - **Use when**: Series exhibits different behaviors in different regimes
+  - **Use when**: Series exhibits different behaviours in different regimes
 
 ### Theta Method
 - `Theta` - Classical Theta forecasting

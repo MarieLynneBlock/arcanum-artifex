@@ -144,7 +144,7 @@ score_tiler.extract(slide)
 
 **Use cases:**
 - Extracting most informative regions
-- Prioritizing tiles with specific features (nuclei, cells, etc.)
+- Prioritising tiles with specific features (nuclei, cells, etc.)
 - Quality-based tile selection
 - Focusing on diagnostically relevant areas
 - Training data curation
@@ -152,7 +152,7 @@ score_tiler.extract(slide)
 **Advantages:**
 - Focuses on most informative tiles
 - Reduces dataset size while maintaining quality
-- Customizable with different scorers
+- Customisable with different scorers
 - Efficient for targeted analysis
 
 **Limitations:**
@@ -237,7 +237,7 @@ random_tiler.locate_tiles(
 )
 ```
 
-This displays the slide thumbnail with colored rectangles indicating tile positions.
+This displays the slide thumbnail with coloured rectangles indicating tile positions.
 
 ## Extraction Workflow
 
@@ -383,9 +383,9 @@ filter_blurry_tiles("output/tiles/")
 5. **Enable logging**: Monitor extraction progress for large datasets
 6. **Use seeds for reproducibility**: Set random seeds in RandomTiler
 7. **Consider storage**: GridTiler can generate thousands of tiles per slide
-8. **Validate tile quality**: Check extracted tiles for artifacts, blur, or focus issues
+8. **Validate tile quality**: Check extracted tiles for artefacts, blur, or focus issues
 
-## Performance Optimization
+## Performance Optimisation
 
 1. **Extract at appropriate level**: Lower levels (1, 2) extract faster
 2. **Adjust tissue_percent**: Higher thresholds reduce invalid tile attempts

@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-PyHealth is a comprehensive Python library for healthcare AI that provides specialized tools, models, and datasets for clinical machine learning. Use this skill when developing healthcare prediction models, processing clinical data, working with medical coding systems, or deploying AI solutions in healthcare settings.
+PyHealth is a comprehensive Python library for healthcare AI that provides specialised tools, models, and datasets for clinical machine learning. Use this skill when developing healthcare prediction models, processing clinical data, working with medical coding systems, or deploying AI solutions in healthcare settings.
 
 ## When to Use This Skill
 
@@ -25,9 +25,9 @@ Invoke this skill when:
 
 ## Core Capabilities
 
-PyHealth operates through a modular 5-stage pipeline optimized for healthcare AI:
+PyHealth operates through a modular 5-stage pipeline optimised for healthcare AI:
 
-1. **Data Loading**: Access 10+ healthcare datasets with standardized interfaces
+1. **Data Loading**: Access 10+ healthcare datasets with standardised interfaces
 2. **Task Definition**: Apply 20+ predefined clinical prediction tasks or create custom tasks
 3. **Model Selection**: Choose from 33+ models (baselines, deep learning, healthcare-specific)
 4. **Training**: Train with automatic checkpointing, monitoring, and evaluation
@@ -78,7 +78,7 @@ results = trainer.evaluate(test_loader)
 
 ## Detailed Documentation
 
-This skill includes comprehensive reference documentation organized by functionality. Read specific reference files as needed:
+This skill includes comprehensive reference documentation organised by functionality. Read specific reference files as needed:
 
 ### 1. Datasets and Data Structures
 
@@ -96,7 +96,7 @@ This skill includes comprehensive reference documentation organized by functiona
 - 10+ available datasets (EHR, physiological signals, imaging, text)
 - Data loading and iteration
 - Train/val/test splitting strategies
-- Performance optimization for large datasets
+- Performance optimisation for large datasets
 
 ### 2. Medical Coding Translation
 
@@ -106,7 +106,7 @@ This skill includes comprehensive reference documentation organized by functiona
 - Translating between medical coding systems
 - Working with diagnosis codes (ICD-9-CM, ICD-10-CM, CCS)
 - Processing medication codes (NDC, RxNorm, ATC)
-- Standardizing procedure codes (ICD-9-PROC, ICD-10-PROC)
+- Standardising procedure codes (ICD-9-PROC, ICD-10-PROC)
 - Grouping codes into clinical categories
 - Handling hierarchical drug classifications
 
@@ -114,7 +114,7 @@ This skill includes comprehensive reference documentation organized by functiona
 - InnerMap for within-system lookups
 - CrossMap for cross-system translation
 - Supported coding systems (ICD, NDC, ATC, CCS, RxNorm)
-- Code standardization and hierarchy traversal
+- Code standardisation and hierarchy traversal
 - Medication classification by therapeutic class
 - Integration with datasets
 
@@ -168,7 +168,7 @@ This skill includes comprehensive reference documentation organized by functiona
 - Preprocessing clinical data for models
 - Handling sequential events and time-series data
 - Processing physiological signals (EEG, ECG)
-- Normalizing lab values and vital signs
+- Normalising lab values and vital signs
 - Preparing labels for different task types
 - Building feature vocabularies
 - Managing missing data and outliers
@@ -202,7 +202,7 @@ This skill includes comprehensive reference documentation organized by functiona
 - Fairness metrics for bias assessment
 - Calibration methods (Platt scaling, temperature scaling)
 - Uncertainty quantification (conformal prediction, MC dropout)
-- Interpretability tools (attention visualization, SHAP, ChEFER)
+- Interpretability tools (attention visualisation, SHAP, ChEFER)
 - Complete training pipeline example
 
 ## Installation
@@ -264,7 +264,7 @@ uv pip install pyhealth
 
 ### Use Case 5: Medical Code Translation
 
-**Objective**: Standardize diagnoses across different coding systems
+**Objective**: Standardise diagnoses across different coding systems
 
 **Approach:**
 1. Read `references/medical-coding.md` for comprehensive guidance
@@ -293,7 +293,7 @@ uv pip install pyhealth
    train, val, test = split_by_patient(dataset, [0.7, 0.1, 0.2])
    ```
 
-2. **Check dataset statistics**: Understand your data before modeling
+2. **Check dataset statistics**: Understand your data before modelling
    ```python
    print(dataset.stats())  # Patients, visits, events, code distributions
    ```
@@ -367,7 +367,7 @@ uv pip install pyhealth
 
 **Poor performance**:
 - Check class imbalance and use appropriate metrics (AUPRC vs AUROC)
-- Verify preprocessing (normalization, missing data handling)
+- Verify preprocessing (normalisation, missing data handling)
 - Increase model capacity or training epochs
 - Check for data leakage in train/test split
 
@@ -479,7 +479,7 @@ print("\nModel saved successfully!")
 For detailed information on each component, refer to the comprehensive reference files in the `references/` directory:
 
 - **datasets.md**: Data structures, loading, and splitting (4,500 words)
-- **medical-coding.md**: Code translation and standardization (3,800 words)
+- **medical-coding.md**: Code translation and standardisation (3,800 words)
 - **tasks.md**: Clinical prediction tasks and custom task creation (4,200 words)
 - **models.md**: Model architectures and selection guidelines (5,100 words)
 - **preprocessing.md**: Data processors and preprocessing workflows (4,600 words)

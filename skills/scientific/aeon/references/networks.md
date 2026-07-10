@@ -7,7 +7,7 @@ Aeon provides neural network architectures specifically designed for time series
 ### Convolutional Networks
 
 **FCNNetwork** - Fully Convolutional Network
-- Three convolutional blocks with batch normalization
+- Three convolutional blocks with batch normalisation
 - Global average pooling for dimensionality reduction
 - **Use when**: Need simple yet effective CNN baseline
 
@@ -37,7 +37,7 @@ Aeon provides neural network architectures specifically designed for time series
 
 **RecurrentNetwork** - RNN/LSTM/GRU
 - Configurable cell type (RNN, LSTM, GRU)
-- Sequential modeling of temporal dependencies
+- Sequential modelling of temporal dependencies
 - **Use when**: Sequential dependencies critical, variable-length series
 
 ### Temporal Convolutional Network
@@ -88,7 +88,7 @@ Networks designed for representation learning and clustering.
 - Attention mechanism on BiGRU outputs
 - **Use when**: Need to focus on important time steps
 
-## Specialized Architectures
+## Specialised Architectures
 
 **LITENetwork** - Lightweight Inception Time Ensemble
 - Efficient inception-based architecture
@@ -214,7 +214,7 @@ clf.fit(X_train, y_train)
 
 ### 1. Data Preparation
 
-Normalize input data:
+Normalise input data:
 
 ```python
 from aeon.transformations.collection import Normalizer

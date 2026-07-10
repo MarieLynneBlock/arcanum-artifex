@@ -17,7 +17,7 @@ This document provides detailed characteristics of all RL algorithms in Stable B
 
 ## Detailed Algorithm Characteristics
 
-### PPO (Proximal Policy Optimization)
+### PPO (Proximal Policy Optimisation)
 
 **Overview:** General-purpose on-policy algorithm with good performance across many tasks.
 
@@ -306,7 +306,7 @@ model = SAC(
 3. **Using too few environments** - On-policy methods need many samples
 4. **Using too large replay buffer** - Can cause memory issues
 5. **Not tuning learning rate** - Critical for stable training
-6. **Ignoring reward scaling** - Normalize rewards for better learning
+6. **Ignoring reward scaling** - Normalise rewards for better learning
 7. **Wrong policy type** - Use "CnnPolicy" for images, "MultiInputPolicy" for dict observations
 
 ## Performance Benchmarks

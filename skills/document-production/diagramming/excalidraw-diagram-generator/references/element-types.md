@@ -36,9 +36,9 @@ Detailed specifications for each Excalidraw element type with visual examples an
 
 | Scenario | Configuration |
 |----------|---------------|
-| **Process step** | Green background (`#b2f2bb`), centered text |
+| **Process step** | Green background (`#b2f2bb`), centred text |
 | **Entity/Object** | Blue background (`#a5d8ff`), medium size |
-| **System component** | Light color, descriptive text |
+| **System component** | Light colour, descriptive text |
 | **Data store** | Gray/white, database-like label |
 
 ### Size Guidelines
@@ -91,8 +91,8 @@ Detailed specifications for each Excalidraw element type with visual examples an
 |----------|---------------|
 | **Flow start** | Light green, "Start" text |
 | **Flow end** | Light red, "End" text |
-| **State** | Soft color, state name |
-| **Highlight** | Bright color, emphasis text |
+| **State** | Soft colour, state name |
+| **Highlight** | Bright colour, emphasis text |
 
 ### Size Guidelines
 
@@ -236,7 +236,7 @@ Diamonds need more space than rectangles for the same text:
 |-------|---------------|---------------|----------|
 | **Normal flow** | `"solid"` | 2 | Standard connections |
 | **Optional/Weak** | `"dashed"` | 2 | Optional paths |
-| **Important** | `"solid"` | 3-4 | Emphasized flow |
+| **Important** | `"solid"` | 3-4 | Emphasised flow |
 | **Dotted** | `"dotted"` | 2 | Indirect relationships |
 
 ### Adding Arrow Labels
@@ -350,7 +350,7 @@ const height = fontSize * 1.2 * lines;
 | Position | textAlign | verticalAlign | Use Case |
 |----------|-----------|---------------|----------|
 | **Top-left** | `"left"` | `"top"` | Default labels |
-| **Centered** | `"center"` | `"middle"` | Titles |
+| **Centred** | `"center"` | `"middle"` | Titles |
 | **Bottom-right** | `"right"` | `"bottom"` | Footnotes |
 
 ### Example: Title
@@ -391,7 +391,7 @@ const height = fontSize * 1.2 * lines;
 
 ## Combining Elements
 
-### Pattern: Labeled Box
+### Pattern: Labelled Box
 
 ```json
 [

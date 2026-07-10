@@ -58,7 +58,7 @@ Notes:
 ## Layout discipline
 
 - **Canvas:** A4 landscape (`pageWidth="1169" pageHeight="827"`), 10 px grid, snap to grid.
-- **Title cell:** First non-required cell. Plain text style, 18 pt bold, centered, full canvas width.
+- **Title cell:** First non-required cell. Plain text style, 18 pt bold, centred, full canvas width.
 - **Spacing:** Minimum 40 px between sibling shapes; minimum 20 px padding inside containers.
 - **Reading order:** Left-to-right for component / data flow; top-to-bottom for layers / time. BPMN lanes stack top-to-bottom inside a vertical pool.
 - **Avoid crossing edges.** Use `edgeStyle=orthogonalEdgeStyle` and reposition shapes if needed.

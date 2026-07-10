@@ -36,7 +36,7 @@ Example: "72-year-old woman with enlarging pigmented lesion on left forearm. Cli
 
 ## Gross Description
 
-**Specimen A labeled "[Specimen label]":**
+**Specimen A labelled "[Specimen label]":**
 
 **Description:**
 - Received [fresh/in formalin]
@@ -49,7 +49,7 @@ Example: "72-year-old woman with enlarging pigmented lesion on left forearm. Cli
 
 **Sampling:**
 - [How specimen was sectioned]
-- [Cassette labeling]
+- [Cassette labelling]
 - [Percent of tissue submitted]
 
 **Example:**

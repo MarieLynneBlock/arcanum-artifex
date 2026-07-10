@@ -41,9 +41,9 @@
 
 **Reality:** Most outcomes have multiple contributing causes.
 
-## Fallacies of Generalization
+## Fallacies of Generalisation
 
-### 5. Hasty Generalization
+### 5. Hasty Generalisation
 **Description:** Drawing broad conclusions from insufficient evidence.
 
 **Examples:**
@@ -272,7 +272,7 @@
 
 **Example:**
 - Testing 20 hypotheses at p < .05 gives ~65% chance of at least one false positive
-- Claiming jellybean color X causes acne after testing 20 colors
+- Claiming jellybean colour X causes acne after testing 20 colours
 
 **Solution:** Correct for multiple comparisons (Bonferroni, FDR).
 
@@ -323,7 +323,7 @@
 - Assuming categories that exist in language exist in nature
 - "Which chromosome is the gene for X on?" when X is polygenic and partially environmental
 
-**Better:** Recognize human categories may not carve nature at the joints.
+**Better:** Recognise human categories may not carve nature at the joints.
 
 ## Fallacies Specific to Science
 
@@ -473,6 +473,6 @@
 
 - **Fallacious reasoning doesn't mean the conclusion is false** - just that this argument doesn't support it.
 - **Identifying fallacies isn't about winning** - it's about better understanding reality.
-- **We all commit fallacies** - recognizing them in ourselves is as important as in others.
+- **We all commit fallacies** - recognising them in ourselves is as important as in others.
 - **Charity principle** - Interpret arguments generously; don't assume bad faith.
 - **Focus on claims, not people** - Ad hominem goes both ways.

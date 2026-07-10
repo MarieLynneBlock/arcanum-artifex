@@ -2,9 +2,9 @@
 
 ## Overview
 
-Star schema is the optimal design pattern for Power BI semantic models. It organizes data into:
+Star schema is the optimal design pattern for Power BI semantic models. It organises data into:
 - **Dimension tables**: Enable filtering and grouping (the "one" side)
-- **Fact tables**: Enable summarization (the "many" side)
+- **Fact tables**: Enable summarisation (the "many" side)
 
 ## Table Classification
 
@@ -89,7 +89,7 @@ Keep transaction identifiers (OrderNumber, InvoiceID) in fact table.
 | Anti-Pattern | Problem | Solution |
 |--------------|---------|----------|
 | Wide denormalized tables | Poor performance, hard to maintain | Split into star schema |
-| Snowflake (normalized dims) | Extra joins hurt performance | Flatten dimensions |
+| Snowflake (normalised dims) | Extra joins hurt performance | Flatten dimensions |
 | Many-to-many without bridge | Ambiguous results | Add bridge/junction table |
 | Mixed grain facts | Incorrect aggregations | Separate tables per grain |
 

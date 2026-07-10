@@ -449,7 +449,7 @@ transmuter = PoscarTransmuter.from_filenames(
 
 1. **Automatic format detection**: Use `from_file()` and `to()` methods whenever possible
 2. **Error handling**: Always wrap file I/O in try-except blocks
-3. **Format-specific parsers**: Use specialized parsers (e.g., `Vasprun`) for detailed output analysis
+3. **Format-specific parsers**: Use specialised parsers (e.g., `Vasprun`) for detailed output analysis
 4. **Input sets**: Prefer pre-configured input sets over manual parameter specification
 5. **Serialization**: Use JSON/YAML for long-term storage and version control
 6. **Batch processing**: Use transmuters for applying transformations to multiple structures

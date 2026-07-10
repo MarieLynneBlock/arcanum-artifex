@@ -152,7 +152,7 @@ Three main techniques prevent overfitting:
 
 1. **Learning Rate** (`learning_rate < 1`)
    - Shrinks contribution of each base learner
-   - Smaller values need more iterations but better generalization
+   - Smaller values need more iterations but better generalisation
    - Typical range: 0.01 - 0.1
 
 2. **Dropout** (`dropout_rate > 0`)

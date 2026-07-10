@@ -46,7 +46,7 @@ labels = model.fit_predict(X)
 **DBSCAN (`sklearn.cluster.DBSCAN`)**
 - Density-Based Spatial Clustering
 - Key parameters:
-  - `eps`: Maximum distance between two samples to be neighbors
+  - `eps`: Maximum distance between two samples to be neighbours
   - `min_samples`: Minimum samples in neighborhood to form core point
   - `metric`: Distance metric
 - Use when: Arbitrary cluster shapes, presence of noise/outliers
@@ -132,7 +132,7 @@ labels = model.fit_predict(X)
 
 **SpectralClustering**
 - Uses graph-based approach with eigenvalues
-- Key parameters: `n_clusters`, `affinity` ('rbf', 'nearest_neighbors')
+- Key parameters: `n_clusters`, `affinity` ('rbf', 'nearest_neighbours')
 - Use when: Non-convex clusters, graph structure
 - Example:
 ```python
@@ -271,14 +271,14 @@ X_reduced = pca.fit_transform(X)
 ### Manifold Learning
 
 **t-SNE (`sklearn.manifold.TSNE`)**
-- t-distributed Stochastic Neighbor Embedding
-- Excellent for 2D/3D visualization
+- t-distributed Stochastic Neighbour Embedding
+- Excellent for 2D/3D visualisation
 - Key parameters:
   - `n_components`: Usually 2 or 3
   - `perplexity`: Balance between local and global structure (5-50)
   - `learning_rate`: Usually 10-1000
   - `n_iter`: Number of iterations (min 250)
-- Use when: Visualizing high-dimensional data
+- Use when: Visualising high-dimensional data
 - Note: Slow on large datasets, no transform() method
 - Example:
 ```python
@@ -384,9 +384,9 @@ A = ica.mixing_  # Mixing matrix
 ```
 
 **LatentDirichletAllocation (LDA)**
-- Topic modeling for text data
+- Topic modelling for text data
 - Key parameters: `n_components` (number of topics), `learning_method` ('batch', 'online')
-- Use when: Topic modeling, document clustering
+- Use when: Topic modelling, document clustering
 - Example:
 ```python
 from sklearn.decomposition import LatentDirichletAllocation
@@ -494,10 +494,10 @@ print(f"AIC: {gmm.aic(X)}")  # Lower is better
 
 ### Dimensionality Reduction:
 - **Linear, variance explanation**: PCA
-- **Non-linear, visualization**: t-SNE, UMAP
+- **Non-linear, visualisation**: t-SNE, UMAP
 - **Non-negative data**: NMF
 - **Sparse data**: TruncatedSVD
-- **Topic modeling**: LatentDirichletAllocation
+- **Topic modelling**: LatentDirichletAllocation
 
 ### Outlier Detection:
 - **High-dimensional**: IsolationForest

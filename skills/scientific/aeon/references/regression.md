@@ -26,13 +26,13 @@ Neural architectures for end-to-end temporal regression:
 - `MLPRegressor` - Multi-layer perceptron
 - `EncoderRegressor` - Generic encoder wrapper
 - `LITERegressor` - Lightweight inception time ensemble
-- `DisjointCNNRegressor` - Specialized CNN architecture
+- `DisjointCNNRegressor` - Specialised CNN architecture
 
 **Use when**: Large datasets, complex patterns, or need feature learning.
 
 ## Distance-Based Regressors
 
-k-nearest neighbors with temporal distance metrics:
+k-nearest neighbours with temporal distance metrics:
 
 - `KNeighborsTimeSeriesRegressor` - k-NN with DTW, LCSS, ERP, or other distances
 

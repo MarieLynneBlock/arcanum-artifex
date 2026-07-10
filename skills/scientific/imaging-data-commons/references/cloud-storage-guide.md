@@ -1,6 +1,6 @@
 # Cloud Storage Guide for IDC
 
-IDC maintains all DICOM files in public cloud storage buckets mirrored between Google Cloud Storage (GCS) and AWS S3. This guide covers bucket organization, file structure, access methods, and versioning.
+IDC maintains all DICOM files in public cloud storage buckets mirrored between Google Cloud Storage (GCS) and AWS S3. This guide covers bucket organisation, file structure, access methods, and versioning.
 
 ## When to Use Direct Cloud Storage Access
 
@@ -14,7 +14,7 @@ For most use cases, `idc-index` is simpler and recommended -— it uses s5cmd in
 
 ## Storage Buckets
 
-IDC organizes data across multiple buckets based on licensing and content type. All buckets are mirrored between AWS and GCS with identical content and file paths.
+IDC organises data across multiple buckets based on licensing and content type. All buckets are mirrored between AWS and GCS with identical content and file paths.
 
 ### Bucket Summary
 
@@ -33,12 +33,12 @@ IDC organizes data across multiple buckets based on licensing and content type. 
 ### Why Multiple Buckets?
 
 1. **Licensing separation**: Data with commercial-use restrictions (CC BY-NC) is isolated in `idc-open-data-cr` / `idc-open-cr` to prevent accidental commercial use
-2. **Head scan handling**: Collections labeled by TCIA as potentially containing head scans are in separate buckets (`idc-open-data-two` / `idc-open-idc1`) for potential future policy compliance
+2. **Head scan handling**: Collections labelled by TCIA as potentially containing head scans are in separate buckets (`idc-open-data-two` / `idc-open-idc1`) for potential future policy compliance
 3. **Historical reasons**: The bucket structure evolved as IDC grew and partnered with different cloud programs
 
 ## File Organization Within Buckets
 
-Files are organized by CRDC UUIDs, not DICOM UIDs. This enables versioning while maintaining consistent paths across cloud providers.
+Files are organised by CRDC UUIDs, not DICOM UIDs. This enables versioning while maintaining consistent paths across cloud providers.
 
 ### Directory Structure
 
@@ -312,7 +312,7 @@ Since `crdc_series_uuid` identifies an immutable version of each series, saving 
 ## Resources
 
 **IDC Documentation:**
-- [Files and metadata](https://learn.canceridc.dev/data/organization-of-data/files-and-metadata) - Bucket organization details
+- [Files and metadata](https://learn.canceridc.dev/data/organization-of-data/files-and-metadata) - Bucket organisation details
 - [Data versioning](https://learn.canceridc.dev/data/data-versioning) - Versioning scheme explanation
 - [Resolving GUIDs and UUIDs](https://learn.canceridc.dev/data/organization-of-data/guids-and-uuids) - CRDC UUID documentation
 - [Direct loading from cloud](https://learn.canceridc.dev/data/downloading-data/direct-loading) - Python examples for cloud access

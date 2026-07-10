@@ -1,6 +1,6 @@
 # 2D Maze Game Template
 
-A mobile-optimized 2D maze game where players guide a ball through a labyrinth of obstacles to reach a target hole. The game uses the **Device Orientation API** for tilt-based motion controls on mobile devices and keyboard arrow keys on desktop. Built with the **Phaser** framework (v2.x with Arcade Physics), it features multi-level progression, collision detection, audio feedback, vibration haptics, and a timer system.
+A mobile-optimised 2D maze game where players guide a ball through a labyrinth of obstacles to reach a target hole. The game uses the **Device Orientation API** for tilt-based motion controls on mobile devices and keyboard arrow keys on desktop. Built with the **Phaser** framework (v2.x with Arcade Physics), it features multi-level progression, collision detection, audio feedback, vibration haptics, and a timer system.
 
 **Source reference:** [MDN - HTML5 Gamedev Phaser Device Orientation](https://developer.mozilla.org/en-US/docs/Games/Tutorials/HTML5_Gamedev_Phaser_Device_Orientation)
 **Live demo:** [Cyber Orb](https://orb.enclavegames.com/)
@@ -227,7 +227,7 @@ handleOrientation(e) {
 }
 ```
 
-### Tilt Behavior
+### Tilt Behaviour
 
 - Tilt device left: negative gamma, ball rolls left
 - Tilt device right: positive gamma, ball rolls right
@@ -269,7 +269,7 @@ this.ball.body.setSize(18, 18);
 this.ball.body.bounce.set(0.3, 0.3);
 ```
 
-- Anchor at center `(0.5, 0.5)` for rotation around midpoint
+- Anchor at centre `(0.5, 0.5)` for rotation around midpoint
 - Physics body: 18x18 pixels
 - Bounce coefficient: 0.3 (retains 30% velocity after wall collision)
 

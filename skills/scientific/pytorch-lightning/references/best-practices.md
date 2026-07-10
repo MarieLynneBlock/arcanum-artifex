@@ -344,7 +344,7 @@ trainer = L.Trainer(overfit_batches=10)
 trainer = L.Trainer(profiler="simple")  # or "advanced"
 ```
 
-## Memory Optimization
+## Memory Optimisation
 
 ### 1. Use Mixed Precision
 
@@ -707,7 +707,7 @@ tuner.scale_batch_size(model, datamodule=dm, mode="power")
 trainer.fit(model, datamodule=dm)
 ```
 
-### 4. Optimize Data Loading
+### 4. Optimise Data Loading
 
 ```python
 # Use faster image decoding

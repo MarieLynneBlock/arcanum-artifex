@@ -1,4 +1,4 @@
-# Performance Optimization for Power BI Models
+# Performance Optimisation for Power BI Models
 
 ## Data Reduction Techniques
 
@@ -31,7 +31,7 @@ High cardinality (many unique values) impacts:
 | Text with patterns | Extract common prefix/suffix |
 | High-precision IDs | Use surrogate integer keys |
 
-### 4. Optimize Data Types
+### 4. Optimise Data Types
 | From | To | Benefit |
 |------|-----|---------|
 | DateTime | Date (if time not needed) | 8 bytes to 4 bytes |
@@ -39,13 +39,13 @@ High cardinality (many unique values) impacts:
 | Text with numbers | Whole Number | Much better compression |
 | Long text | Shorter text | Reduces storage |
 
-### 5. Group and Summarize
+### 5. Group and Summarise
 Pre-aggregate data when detail not needed:
 - Daily instead of transactional
 - Monthly instead of daily
 - Consider aggregation tables for DirectQuery
 
-## Column Optimization
+## Column Optimisation
 
 ### Prefer Power Query Columns Over Calculated Columns
 | Approach | When to Use |
@@ -70,7 +70,7 @@ DAX calculated columns in relationships:
 CompositeKey = COMBINEVALUES(",", [Country], [City])
 ```
 
-### Set Appropriate Summarization
+### Set Appropriate Summarisation
 Prevent accidental aggregation of non-additive columns:
 ```
 column_operations(
@@ -83,9 +83,9 @@ column_operations(
 )
 ```
 
-## Relationship Optimization
+## Relationship Optimisation
 
-### 1. Minimize Bidirectional Relationships
+### 1. Minimise Bidirectional Relationships
 Each bidirectional relationship:
 - Increases query complexity
 - Can create ambiguous paths
@@ -102,7 +102,7 @@ Keep relationship columns low cardinality:
 - Use integer keys over text
 - Consider higher-grain relationships
 
-## DAX Optimization
+## DAX Optimisation
 
 ### 1. Use Variables
 ```dax
@@ -144,18 +144,18 @@ Margin % = DIVIDE([Profit], [Sales])
 Margin % = [Profit] / [Sales]
 ```
 
-## DirectQuery Optimization
+## DirectQuery Optimisation
 
-### 1. Minimize Columns and Tables
+### 1. Minimise Columns and Tables
 DirectQuery models:
 - Query source for every visual
 - Performance depends on source
-- Minimize data retrieved
+- Minimise data retrieved
 
 ### 2. Avoid Complex Power Query Transformations
 - Transforms become subqueries
 - Native queries are faster
-- Materialize at source when possible
+- Materialise at source when possible
 
 ### 3. Keep Measures Simple Initially
 Complex DAX generates complex SQL:
@@ -207,7 +207,7 @@ External tool for:
 - [ ] Unnecessary columns removed
 - [ ] Appropriate data types used
 - [ ] High-cardinality columns addressed
-- [ ] Bidirectional relationships minimized
+- [ ] Bidirectional relationships minimised
 - [ ] DAX uses variables for repeated expressions
 - [ ] No FILTER on entire tables
 - [ ] DIVIDE used instead of division operator

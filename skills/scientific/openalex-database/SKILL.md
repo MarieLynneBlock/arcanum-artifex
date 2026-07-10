@@ -1,6 +1,6 @@
 ---
 name: openalex-database
-description: Query and analyze scholarly literature using the OpenAlex database. This skill should be used when searching for academic papers, analyzing research trends, finding works by authors or institutions, tracking citations, discovering open access publications, or conducting bibliometric analysis across 240M+ scholarly works. Use for literature searches, research output analysis, citation analysis, and academic database queries.
+description: Query and analyse scholarly literature using the OpenAlex database. This skill should be used when searching for academic papers, analysing research trends, finding works by authors or institutions, tracking citations, discovering open access publications, or conducting bibliometric analysis across 240M+ scholarly works. Use for literature searches, research output analysis, citation analysis, and academic database queries.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-OpenAlex is a comprehensive open catalog of 240M+ scholarly works, authors, institutions, topics, sources, publishers, and funders. This skill provides tools and workflows for querying the OpenAlex API to search literature, analyze research output, track citations, and conduct bibliometric studies.
+OpenAlex is a comprehensive open catalogue of 240M+ scholarly works, authors, institutions, topics, sources, publishers, and funders. This skill provides tools and workflows for querying the OpenAlex API to search literature, analyse research output, track citations, and conduct bibliometric studies.
 
 ## Quick Start
 
@@ -91,7 +91,7 @@ works = client.search_works(
 
 ### 3. Find Works from Institution
 
-**Use for**: Analyzing research output from universities or organizations
+**Use for**: Analysing research output from universities or organisations
 
 ```python
 from scripts.query_helpers import find_institution_works
@@ -383,10 +383,10 @@ filter_params={
 OpenAlex provides these entity types:
 - **works** - Scholarly documents (articles, books, datasets)
 - **authors** - Researchers with disambiguated identities
-- **institutions** - Universities and research organizations
+- **institutions** - Universities and research organisations
 - **sources** - Journals, repositories, conferences
 - **topics** - Subject classifications
-- **publishers** - Publishing organizations
+- **publishers** - Publishing organisations
 - **funders** - Funding agencies
 
 Access any entity type using consistent patterns:
@@ -421,7 +421,7 @@ See `references/api-guide.md` for:
 - All available endpoints
 - Response structures
 - Error handling
-- Performance optimization
+- Performance optimisation
 - Rate limiting details
 
 ### Common Query Examples
@@ -450,7 +450,7 @@ High-level helper functions for common operations:
 - `find_institution_works()` - Get papers from institution
 - `find_highly_cited_recent_papers()` - Get influential papers
 - `get_open_access_papers()` - Find OA publications
-- `get_publication_trends()` - Analyze trends over time
+- `get_publication_trends()` - Analyse trends over time
 - `analyze_research_output()` - Comprehensive analysis
 
 Use for common research queries with simplified interfaces.

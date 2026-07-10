@@ -2,7 +2,7 @@
 
 # Pie Chart
 
-> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `pie`
 **Best for:** Simple proportional breakdowns, budget allocation, composition, survey results

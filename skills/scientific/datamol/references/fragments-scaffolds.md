@@ -2,7 +2,7 @@
 
 ## Scaffolds Module (`datamol.scaffold`)
 
-Scaffolds represent the core structure of molecules, useful for identifying structural families and analyzing structure-activity relationships (SAR).
+Scaffolds represent the core structure of molecules, useful for identifying structural families and analysing structure-activity relationships (SAR).
 
 ### Murcko Scaffolds
 
@@ -104,7 +104,7 @@ Fragment molecule using RECAP (Retrosynthetic Combinatorial Analysis Procedure).
 #### `dm.fragment.mmpa_frag(mol, ...)`
 Fragment for Matched Molecular Pair Analysis.
 - **Purpose**: Generate fragments suitable for identifying molecular pairs
-- **Use case**: Analyzing how small structural changes affect properties
+- **Use case**: Analysing how small structural changes affect properties
 - **Example**:
   ```python
   fragments = dm.fragment.mmpa_frag(mol)

@@ -7,52 +7,52 @@ Quick reference for using the `scientific_report.sty` style package.
 The `scientific_report.sty` package provides professional formatting for scientific reports, technical documents, and white papers. It features:
 
 - **Helvetica font family** for a clean, modern appearance
-- **Professional color scheme** with blues, greens, and accent colors
-- **Colored box environments** for organizing different types of content
-- **Attractive tables** with alternating row colors and professional headers
+- **Professional colour scheme** with blues, greens, and accent colours
+- **Coloured box environments** for organising different types of content
+- **Attractive tables** with alternating row colours and professional headers
 - **Scientific notation commands** for p-values, effect sizes, and statistics
 - **Professional headers and footers** with automatic section titles
 
 ---
 
-## Color Palette
+## Colour Palette
 
-### Primary Colors (Blues)
+### Primary Colours (Blues)
 
-| Color Name | RGB | Hex | Usage |
+| Colour Name | RGB | Hex | Usage |
 |------------|-----|-----|-------|
 | `primaryblue` | (0, 51, 102) | `#003366` | Headers, titles, primary elements |
 | `secondaryblue` | (74, 144, 226) | `#4A90E2` | Subsections, secondary headings |
 | `lightblue` | (220, 235, 252) | `#DCEBFC` | Key findings box backgrounds |
 | `accentblue` | (0, 120, 215) | `#0078D7` | Accent highlights, hypothesis boxes |
 
-### Scientific Colors (Greens)
+### Scientific Colours (Greens)
 
-| Color Name | RGB | Hex | Usage |
+| Colour Name | RGB | Hex | Usage |
 |------------|-----|-----|-------|
 | `sciencegreen` | (0, 168, 150) | `#00A896` | Methodology boxes, positive findings |
 | `lightgreen` | (220, 245, 240) | `#DCF5F0` | Methodology box backgrounds |
 | `darkgreen` | (0, 128, 96) | `#008060` | Results boxes, strong evidence |
 
-### Warning Colors (Orange/Red)
+### Warning Colours (Orange/Red)
 
-| Color Name | RGB | Hex | Usage |
+| Colour Name | RGB | Hex | Usage |
 |------------|-----|-----|-------|
 | `cautionorange` | (255, 140, 66) | `#FF8C42` | Limitations, warnings, cautions |
 | `lightorange` | (255, 243, 224) | `#FFF3E0` | Limitations box backgrounds |
 | `criticalred` | (198, 40, 40) | `#C62828` | Critical notices, alerts |
 | `lightred` | (255, 235, 238) | `#FFEBEE` | Critical notice backgrounds |
 
-### Recommendation Colors
+### Recommendation Colours
 
-| Color Name | RGB | Hex | Usage |
+| Colour Name | RGB | Hex | Usage |
 |------------|-----|-----|-------|
 | `recommendpurple` | (103, 58, 183) | `#673AB7` | Recommendations boxes |
 | `lightpurple` | (237, 231, 246) | `#EDE7F6` | Recommendations box backgrounds |
 
-### Neutral Colors
+### Neutral Colours
 
-| Color Name | RGB | Hex | Usage |
+| Colour Name | RGB | Hex | Usage |
 |------------|-----|-----|-------|
 | `darkgray` | (66, 66, 66) | `#424242` | Body text |
 | `mediumgray` | (117, 117, 117) | `#757575` | Secondary text, definitions |

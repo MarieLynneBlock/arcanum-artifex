@@ -35,7 +35,7 @@ This reference covers file formats used in various spectroscopic techniques and 
 - Phase correction assessment
 - Reference peak identification
 - Spectral resolution
-- Artifacts detection
+- Artefacts detection
 - Multiplicity analysis
 
 ### .1r / .2rr - Bruker NMR Processed Data
@@ -49,11 +49,11 @@ This reference covers file formats used in various spectroscopic techniques and 
 - Window function effects
 - Zero-filling assessment
 - Linear prediction validation
-- Spectral artifacts
+- Spectral artefacts
 
 ### .dx - NMR JCAMP-DX
 **Description:** JCAMP-DX format for NMR
-**Typical Data:** Standardized NMR spectrum
+**Typical Data:** Standardised NMR spectrum
 **Use Cases:** Data exchange between software
 **Python Libraries:**
 - `jcamp`: JCAMP reader
@@ -435,7 +435,7 @@ This reference covers file formats used in various spectroscopic techniques and 
 **EDA Approach:**
 - 2-theta range
 - Peak positions and intensities
-- Background modeling
+- Background modelling
 - Peak width analysis (strain/size)
 - Phase identification via matching
 - Preferred orientation effects

@@ -1,6 +1,6 @@
 ---
 name: scanpy
-description: Standard single-cell RNA-seq analysis pipeline. Use for QC, normalization, dimensionality reduction (PCA/UMAP/t-SNE), clustering, differential expression, and visualization. Best for exploratory scRNA-seq analysis with established workflows. For deep learning models use scvi-tools; for data format questions use anndata.
+description: Standard single-cell RNA-seq analysis pipeline. Use for QC, normalisation, dimensionality reduction (PCA/UMAP/t-SNE), clustering, differential expression, and visualisation. Best for exploratory scRNA-seq analysis with established workflows. For deep learning models use scvi-tools; for data format questions use anndata.
 license: SD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,14 +10,14 @@ metadata:
 
 ## Overview
 
-Scanpy is a scalable Python toolkit for analyzing single-cell RNA-seq data, built on AnnData. Apply this skill for complete single-cell workflows including quality control, normalization, dimensionality reduction, clustering, marker gene identification, visualization, and trajectory analysis.
+Scanpy is a scalable Python toolkit for analysing single-cell RNA-seq data, built on AnnData. Apply this skill for complete single-cell workflows including quality control, normalisation, dimensionality reduction, clustering, marker gene identification, visualisation, and trajectory analysis.
 
 ## When to Use This Skill
 
 This skill should be used when:
-- Analyzing single-cell RNA-seq data (.h5ad, 10X, CSV formats)
+- Analysing single-cell RNA-seq data (.h5ad, 10X, CSV formats)
 - Performing quality control on scRNA-seq datasets
-- Creating UMAP, t-SNE, or PCA visualizations
+- Creating UMAP, t-SNE, or PCA visualisations
 - Identifying cell clusters and finding marker genes
 - Annotating cell types based on gene expression
 - Conducting trajectory inference or pseudotime analysis
@@ -97,7 +97,7 @@ adata = adata[adata.obs.pct_counts_mt < 5, :]  # Remove high MT% cells
 python scripts/qc_analysis.py input_file.h5ad --output filtered.h5ad
 ```
 
-### 2. Normalization and Preprocessing
+### 2. Normalisation and Preprocessing
 
 ```python
 # Normalize to 10,000 counts per cell
@@ -230,7 +230,7 @@ sc.pl.dotplot(adata, var_names=genes, groupby='cell_type',
               save='_dotplot.pdf')
 ```
 
-Refer to `references/plotting-guide.md` for comprehensive visualization examples.
+Refer to `references/plotting-guide.md` for comprehensive visualisation examples.
 
 ### Trajectory Inference
 
@@ -280,7 +280,7 @@ sc.pp.combat(adata, key='batch')
 - `min_cells`: Minimum cells per gene (typically 3-10)
 - `pct_counts_mt`: Mitochondrial threshold (typically 5-20%)
 
-### Normalization
+### Normalisation
 - `target_sum`: Target counts per cell (default 1e4)
 
 ### Feature Selection
@@ -289,7 +289,7 @@ sc.pp.combat(adata, key='batch')
 
 ### Dimensionality Reduction
 - `n_pcs`: Number of principal components (check variance ratio plot)
-- `n_neighbors`: Number of neighbors (typically 10-30)
+- `n_neighbors`: Number of neighbours (typically 10-30)
 
 ### Clustering
 - `resolution`: Clustering granularity (0.4-1.2, higher = more clusters)
@@ -318,8 +318,8 @@ python scripts/qc_analysis.py input.h5ad --output filtered.h5ad \
 ### references/standard-workflow.md
 Complete step-by-step workflow with detailed explanations and code examples for:
 - Data loading and setup
-- Quality control with visualization
-- Normalization and scaling
+- Quality control with visualisation
+- Normalisation and scaling
 - Feature selection
 - Dimensionality reduction (PCA, UMAP, t-SNE)
 - Clustering (Leiden, Louvain)
@@ -331,7 +331,7 @@ Complete step-by-step workflow with detailed explanations and code examples for:
 Read this reference when performing a complete analysis from scratch.
 
 ### references/api-reference.md
-Quick reference guide for scanpy functions organized by module:
+Quick reference guide for scanpy functions organised by module:
 - Reading/writing data (`sc.read_*`, `adata.write_*`)
 - Preprocessing (`sc.pp.*`)
 - Tools (`sc.tl.*`)
@@ -342,20 +342,20 @@ Quick reference guide for scanpy functions organized by module:
 Use this for quick lookup of function signatures and common parameters.
 
 ### references/plotting-guide.md
-Comprehensive visualization guide including:
+Comprehensive visualisation guide including:
 - Quality control plots
-- Dimensionality reduction visualizations
-- Clustering visualizations
+- Dimensionality reduction visualisations
+- Clustering visualisations
 - Marker gene plots (heatmaps, dot plots, violin plots)
 - Trajectory and pseudotime plots
-- Publication-quality customization
+- Publication-quality customisation
 - Multi-panel figures
-- Color palettes and styling
+- Colour palettes and styling
 
 Consult this when creating publication-ready figures.
 
 ### assets/analysis_template.py
-Complete analysis template providing a full workflow from data loading through cell type annotation. Copy and customize this template for new analyses:
+Complete analysis template providing a full workflow from data loading through cell type annotation. Copy and customise this template for new analyses:
 
 ```bash
 cp assets/analysis_template.py my_analysis.py
@@ -377,7 +377,7 @@ The template includes all standard steps with configurable parameters and helpfu
 1. **Start with the template**: Use `assets/analysis_template.py` as a starting point
 2. **Run QC script first**: Use `scripts/qc_analysis.py` for initial filtering
 3. **Consult references as needed**: Load workflow and API references into context
-4. **Iterate on clustering**: Try multiple resolutions and visualization methods
+4. **Iterate on clustering**: Try multiple resolutions and visualisation methods
 5. **Validate biologically**: Check marker genes match expected cell types
 6. **Document parameters**: Record QC thresholds and analysis settings
 7. **Save checkpoints**: Write intermediate results at key steps

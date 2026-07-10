@@ -29,7 +29,7 @@ Review the C#/.NET code in ${selection} for design pattern implementation and su
 - **Maintainability**: Clear separation of concerns, consistent error handling, proper configuration usage?
 - **Testability**: Dependencies abstracted via interfaces, mockable components, async testability, AAA pattern compatibility?
 - **Security**: Input validation, secure credential handling, parameterized queries, safe exception handling?
-- **Documentation**: XML docs for public APIs, parameter/return descriptions, resource file organization?
+- **Documentation**: XML docs for public APIs, parameter/return descriptions, resource file organisation?
 - **Code Clarity**: Meaningful names reflecting domain concepts, clear intent through patterns, self-explanatory structure?
 - **Clean Code**: Consistent style, appropriate method/class size, minimal complexity, eliminated duplication?
 

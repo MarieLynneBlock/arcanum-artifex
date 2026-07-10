@@ -25,7 +25,7 @@ Each phase feeds insights into the next, creating a continuous improvement cycle
 
 ## Phase 1: Plan
 
-**Objective**: Define work, prioritize, and prepare for implementation
+**Objective**: Define work, prioritise, and prepare for implementation
 
 **Key Activities**:
 - Gather requirements and define user stories
@@ -71,19 +71,19 @@ Each phase feeds insights into the next, creating a continuous improvement cycle
 
 ## Phase 3: Build
 
-**Objective**: Automate compilation and artifact creation
+**Objective**: Automate compilation and artefact creation
 
 **Key Practices**:
 - Automated builds on every commit
 - Consistent build environments (containers)
 - Dependency management and vulnerability scanning
-- Build artifact versioning
+- Build artefact versioning
 - Fast feedback loops
 
 **Tools & Patterns**:
 - CI/CD pipelines (GitHub Actions, Jenkins, GitLab CI)
 - Containerization (Docker)
-- Artifact repositories
+- Artefact repositories
 - Build caching
 
 **Questions to Ask**:
@@ -123,7 +123,7 @@ Each phase feeds insights into the next, creating a continuous improvement cycle
 - Semantic versioning
 - Release notes generation
 - Changelog maintenance
-- Release artifact signing
+- Release artefact signing
 - Rollback preparation
 
 **Automation Focus**:
@@ -190,7 +190,7 @@ Each phase feeds insights into the next, creating a continuous improvement cycle
 
 **Monitoring Pillars**:
 - **Metrics**: System and business metrics (Prometheus, CloudWatch)
-- **Logs**: Centralized logging (ELK, Splunk)
+- **Logs**: Centralised logging (ELK, Splunk)
 - **Traces**: Distributed tracing (Jaeger, Zipkin)
 - **Alerts**: Actionable notifications
 
@@ -209,8 +209,8 @@ Each phase feeds insights into the next, creating a continuous improvement cycle
 
 Monitor insights feed back into Plan:
 - **Incidents** → New requirements or technical debt
-- **Performance data** → Optimization opportunities  
-- **User behavior** → Feature refinement
+- **Performance data** → Optimisation opportunities  
+- **User behaviour** → Feature refinement
 - **DORA metrics** → Process improvements
 
 ## Core DevOps Practices

@@ -1,6 +1,6 @@
 # FRED Categories Endpoints
 
-Categories endpoints provide access to the hierarchical organization of economic data series.
+Categories endpoints provide access to the hierarchical organisation of economic data series.
 
 ## Table of Contents
 
@@ -13,11 +13,11 @@ Categories endpoints provide access to the hierarchical organization of economic
 
 ## Category Hierarchy
 
-FRED organizes data in a hierarchical category structure. The root category has `category_id=0`.
+FRED organises data in a hierarchical category structure. The root category has `category_id=0`.
 
 **Top-level categories (children of root):**
 - Money, Banking, & Finance (32991)
-- Population, Employment, & Labor Markets (10)
+- Population, Employment, & Labour Markets (10)
 - National Accounts (32992)
 - Production & Business Activity (32455)
 - Prices (32455)
@@ -394,7 +394,7 @@ response = requests.get(
 |----|------|
 | 0 | Root (all categories) |
 | 32991 | Money, Banking, & Finance |
-| 10 | Population, Employment, & Labor Markets |
+| 10 | Population, Employment, & Labour Markets |
 | 32992 | National Accounts |
 | 1 | Production & Business Activity |
 | 32455 | Prices |

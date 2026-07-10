@@ -26,7 +26,7 @@ PathML supports the following slide formats:
 - **Vectra** (`.qptiff`) - Multiplex immunofluorescence
 - **MERFISH** - Multiplexed error-robust FISH
 
-PathML leverages OpenSlide and other specialized libraries to handle format-specific nuances automatically.
+PathML leverages OpenSlide and other specialised libraries to handle format-specific nuances automatically.
 
 ## Core Classes for Loading Images
 
@@ -74,9 +74,9 @@ SlideType.DICOM  # For DICOM WSI
 SlideType.VectraQPTIFF  # For Vectra multiplex IF
 ```
 
-### Specialized Slide Classes
+### Specialised Slide Classes
 
-PathML provides specialized slide classes for specific imaging modalities:
+PathML provides specialised slide classes for specific imaging modalities:
 
 **CODEXSlide:**
 ```python
@@ -182,7 +182,7 @@ wsi.generate_tiles(level=2, tile_size=256)  # Use level 2 (16x downsampled)
 
 ### Thumbnail Loading
 
-Generate low-resolution thumbnails for visualization and quality control:
+Generate low-resolution thumbnails for visualisation and quality control:
 
 ```python
 # Get thumbnail
@@ -253,7 +253,7 @@ print(wsi.level_dimensions[0])  # (width, height) at level 0
 
 ## Working with DICOM Slides
 
-PathML supports DICOM WSI through specialized handling:
+PathML supports DICOM WSI through specialised handling:
 
 ```python
 from pathml.core import SlideData, SlideType
@@ -339,8 +339,8 @@ Balance resolution and performance by selecting appropriate pyramid levels:
 - Reduce tile_size parameter
 - Enable distributed processing with Dask
 
-**Issue: Color inconsistencies across slides**
-- Apply stain normalization preprocessing (see `preprocessing.md`)
+**Issue: Colour inconsistencies across slides**
+- Apply stain normalisation preprocessing (see `preprocessing.md`)
 - Check scanner metadata for calibration information
 - Use `StainNormalizationHE` transform in preprocessing pipeline
 
@@ -355,13 +355,13 @@ Balance resolution and performance by selecting appropriate pyramid levels:
 
 2. **Use appropriate pyramid levels**: Process at level 1-2 for most tasks; reserve level 0 for final high-resolution analysis
 
-3. **Tile with overlap** for segmentation tasks: Use stride < tile_size to avoid edge artifacts
+3. **Tile with overlap** for segmentation tasks: Use stride < tile_size to avoid edge artefacts
 
 4. **Verify magnification consistency**: Check `openslide.objective-power` metadata when combining slides from different sources
 
-5. **Handle vendor-specific formats**: Use specialized slide classes (CODEXSlide, VectraSlide) for multiparametric data
+5. **Handle vendor-specific formats**: Use specialised slide classes (CODEXSlide, VectraSlide) for multiparametric data
 
-6. **Implement quality control**: Generate thumbnails and inspect for artifacts before processing
+6. **Implement quality control**: Generate thumbnails and inspect for artefacts before processing
 
 7. **Use distributed processing** for large datasets: Leverage Dask for parallel processing across multiple workers
 

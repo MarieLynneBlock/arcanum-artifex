@@ -2,33 +2,33 @@
 
 ## Overview
 
-Molecular generation involves creating novel molecular structures with desired properties. TorchDrug supports both unconditional generation (exploring chemical space) and conditional generation (optimizing for specific properties).
+Molecular generation involves creating novel molecular structures with desired properties. TorchDrug supports both unconditional generation (exploring chemical space) and conditional generation (optimising for specific properties).
 
 ## Task Types
 
 ### AutoregressiveGeneration
 
-Generates molecules step-by-step by sequentially adding atoms and bonds. This approach enables fine-grained control and property optimization during generation.
+Generates molecules step-by-step by sequentially adding atoms and bonds. This approach enables fine-grained control and property optimisation during generation.
 
 **Key Features:**
 - Sequential atom-by-bond construction
-- Supports property optimization during generation
+- Supports property optimisation during generation
 - Can incorporate chemical validity constraints
-- Enables multi-objective optimization
+- Enables multi-objective optimisation
 
 **Generation Strategies:**
 1. **Beam Search**: Keep top-k candidates at each step
 2. **Sampling**: Probabilistic selection for diversity
 3. **Greedy**: Always select highest probability action
 
-**Property Optimization:**
+**Property Optimisation:**
 - Reward shaping based on desired properties
 - Real-time constraint satisfaction
 - Multi-objective balancing (e.g., potency + drug-likeness)
 
 ### GCPNGeneration (Graph Convolutional Policy Network)
 
-Uses reinforcement learning to generate molecules optimized for specific properties.
+Uses reinforcement learning to generate molecules optimised for specific properties.
 
 **Components:**
 1. **Policy Network**: Decides which action to take (add atom, add bond)
@@ -36,20 +36,20 @@ Uses reinforcement learning to generate molecules optimized for specific propert
 3. **Training**: Reinforcement learning with policy gradient
 
 **Advantages:**
-- Direct optimization of non-differentiable objectives
+- Direct optimisation of non-differentiable objectives
 - Can incorporate complex domain knowledge
 - Balances exploration and exploitation
 
 **Applications:**
 - Drug design with specific targets
 - Material discovery with property constraints
-- Multi-objective molecular optimization
+- Multi-objective molecular optimisation
 
 ## Generative Models
 
 ### GraphAutoregressiveFlow
 
-Normalizing flow model for molecular generation with exact likelihood computation.
+Normalising flow model for molecular generation with exact likelihood computation.
 
 **Architecture:**
 - Coupling layers transform simple distribution to complex molecular distribution
@@ -92,7 +92,7 @@ Generate diverse molecules without specific property targets.
 
 ### Conditional Generation
 
-Generate molecules optimized for specific properties.
+Generate molecules optimised for specific properties.
 
 **Property Targets:**
 - **Drug-likeness**: LogP, QED, Lipinski's rule of five
@@ -112,7 +112,7 @@ Generate molecules optimized for specific properties.
 Generate molecules around a fixed scaffold or core structure.
 
 **Applications:**
-- Lead optimization keeping core pharmacophore
+- Lead optimisation keeping core pharmacophore
 - R-group enumeration for SAR studies
 - Fragment linking and growing
 
@@ -135,11 +135,11 @@ Build molecules from validated fragments.
 - Vocabulary-based generation
 - Fragment linking with learned linkers
 
-## Property Optimization Strategies
+## Property Optimisation Strategies
 
-### Single-Objective Optimization
+### Single-Objective Optimisation
 
-Maximize or minimize a single property (e.g., binding affinity).
+Maximise or minimise a single property (e.g., binding affinity).
 
 **Approach:**
 - Define scalar reward function
@@ -151,13 +151,13 @@ Maximize or minimize a single property (e.g., binding affinity).
 - Risk of adversarial examples (valid but non-drug-like)
 - Need constraints on drug-likeness
 
-### Multi-Objective Optimization
+### Multi-Objective Optimisation
 
 Balance multiple competing objectives (e.g., potency, selectivity, synthesizability).
 
 **Weighting Approaches:**
 - **Linear combination**: w1×prop1 + w2×prop2 + ...
-- **Pareto optimization**: Find non-dominated solutions
+- **Pareto optimisation**: Find non-dominated solutions
 - **Constraint satisfaction**: Threshold on secondary objectives
 
 **Example Objectives:**
@@ -307,12 +307,12 @@ Generate molecules satisfying hard constraints.
 
 1. **Start Simple**: Begin with unconditional generation, then add constraints
 2. **Validate Chemistry**: Always check for valid molecules and drug-likeness
-3. **Diverse Training Data**: Use large, diverse datasets for better generalization
+3. **Diverse Training Data**: Use large, diverse datasets for better generalisation
 4. **Multi-Objective**: Consider multiple properties from the start
 5. **Iterative Refinement**: Generate → validate → retrain with feedback
 6. **Domain Expert Review**: Consult medicinal chemists before synthesis
 7. **Benchmark**: Compare against known actives and random samples
-8. **Synthesizability**: Prioritize molecules that can actually be made
+8. **Synthesizability**: Prioritise molecules that can actually be made
 9. **Explainability**: Understand why model generates certain structures
 10. **Wet Lab Validation**: Ultimately validate promising candidates experimentally
 
@@ -320,7 +320,7 @@ Generate molecules satisfying hard constraints.
 
 ### Drug Discovery
 - Lead generation for novel targets
-- Lead optimization around active scaffolds
+- Lead optimisation around active scaffolds
 - Bioisostere replacement
 - Fragment elaboration
 
@@ -349,4 +349,4 @@ Generate molecules satisfying hard constraints.
 - Multi-task learning with generation and prediction
 
 **Active Learning:**
-- Generate candidates → Predict properties → Synthesize best → Retrain
+- Generate candidates → Predict properties → Synthesise best → Retrain

@@ -1,10 +1,10 @@
-# Datamol Descriptors and Visualization Reference
+# Datamol Descriptors and Visualisation Reference
 
 ## Descriptors Module (`datamol.descriptors`)
 
 The descriptors module provides tools for computing molecular properties and descriptors.
 
-### Specialized Descriptor Functions
+### Specialised Descriptor Functions
 
 #### `dm.descriptors.n_aromatic_atoms(mol)`
 Calculate the number of aromatic atoms.
@@ -27,7 +27,7 @@ Count non-rotatable bonds (neither single bonds nor ring bonds).
 - **Use case**: Molecular flexibility assessment
 
 #### `dm.descriptors.n_stereo_centers(mol)`
-Count stereogenic centers (chiral centers).
+Count stereogenic centres (chiral centres).
 - **Returns**: Integer count
 - **Use case**: Stereochemistry analysis
 
@@ -109,11 +109,11 @@ bbb_candidates = df[df['tpsa'] < 90]
 
 ---
 
-## Visualization Module (`datamol.viz`)
+## Visualisation Module (`datamol.viz`)
 
 The viz module provides tools for rendering molecules and conformers as images.
 
-### Main Visualization Function
+### Main Visualisation Function
 
 #### `dm.viz.to_image(mols, legends=None, n_cols=4, use_svg=False, mol_size=(200, 200), highlight_atom=None, highlight_bond=None, outfile=None, max_mols=None, copy=True, indices=False, ...)`
 Generate image grid from molecules.
@@ -145,7 +145,7 @@ Generate image grid from molecules.
   dm.viz.to_image(mols, align=True, legends=activity_labels)
   ```
 
-### Conformer Visualization
+### Conformer Visualisation
 
 #### `dm.viz.conformers(mol, n_confs=None, align_conf=True, n_cols=3, sync_views=True, remove_hs=True, ...)`
 Display multiple conformers in grid layout.
@@ -154,9 +154,9 @@ Display multiple conformers in grid layout.
   - `n_confs`: Number or list of conformer indices to display (None = all)
   - `align_conf`: Align conformers for comparison (default: True)
   - `n_cols`: Grid columns (default: 3)
-  - `sync_views`: Synchronize 3D views when interactive (default: True)
+  - `sync_views`: Synchronise 3D views when interactive (default: True)
   - `remove_hs`: Remove hydrogens for clarity (default: True)
-- **Returns**: Grid of conformer visualizations
+- **Returns**: Grid of conformer visualisations
 - **Use case**: Comparing conformational diversity
 - **Example**:
   ```python
@@ -164,18 +164,18 @@ Display multiple conformers in grid layout.
   dm.viz.conformers(mol_3d, n_confs=10, align_conf=True)
   ```
 
-### Circle Grid Visualization
+### Circle Grid Visualisation
 
 #### `dm.viz.circle_grid(center_mol, circle_mols, mol_size=200, circle_margin=50, act_mapper=None, ...)`
-Create concentric ring visualization with central molecule.
+Create concentric ring visualisation with central molecule.
 - **Parameters**:
-  - `center_mol`: Molecule at center
+  - `center_mol`: Molecule at centre
   - `circle_mols`: List of molecule lists (one list per ring)
   - `mol_size`: Image size per molecule
   - `circle_margin`: Spacing between rings (default: 50)
-  - `act_mapper`: Activity mapping dictionary for color-coding
+  - `act_mapper`: Activity mapping dictionary for colour-coding
 - **Returns**: Circular grid image
-- **Use case**: Visualizing molecular neighborhoods, SAR analysis, similarity networks
+- **Use case**: Visualising molecular neighborhoods, SAR analysis, similarity networks
 - **Example**:
   ```python
   # Show a reference molecule surrounded by similar compounds
@@ -185,11 +185,11 @@ Create concentric ring visualization with central molecule.
   )
   ```
 
-### Visualization Best Practices
+### Visualisation Best Practices
 
 1. **Use legends for clarity**: Always label molecules with SMILES, IDs, or activity values
 2. **Align related molecules**: Use `align=True` in `to_image()` for SAR analysis
 3. **Adjust grid size**: Set `n_cols` based on molecule count and display width
 4. **Use SVG for publications**: Set `use_svg=True` for scalable vector graphics
-5. **Highlight substructures**: Use `highlight_atom` and `highlight_bond` to emphasize features
+5. **Highlight substructures**: Use `highlight_atom` and `highlight_bond` to emphasise features
 6. **Save large grids**: Use `outfile` parameter to save rather than display in memory

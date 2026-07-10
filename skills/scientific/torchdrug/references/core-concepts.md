@@ -106,7 +106,7 @@ Core data structure representing molecular or protein graphs.
 
 ### Molecule (extends Graph)
 
-Specialized graph for molecules.
+Specialised graph for molecules.
 
 **Additional Attributes:**
 - `atom_type`: Atomic numbers
@@ -135,7 +135,7 @@ print(mol.bond_type)  # [1, 1] (single bonds)
 
 ### Protein (extends Graph)
 
-Specialized graph for proteins.
+Specialised graph for proteins.
 
 **Additional Attributes:**
 - `residue_type`: Amino acid types
@@ -191,7 +191,7 @@ Efficient batching structure for heterogeneous graphs.
 
 ### Forward Function Signature
 
-All TorchDrug models follow a standardized interface:
+All TorchDrug models follow a standardised interface:
 
 ```python
 def forward(self, graph, input, all_loss=None, metric=None):
@@ -498,11 +498,11 @@ dataset = datasets.Fold("~/datasets/", transform=transform)
 3. **Monitor Gradients**: Watch for vanishing/exploding
 4. **Overfit Small Batch**: Ensure model capacity
 
-### Performance Optimization
+### Performance Optimisation
 
-1. **GPU Utilization**: Monitor with `nvidia-smi`
+1. **GPU Utilisation**: Monitor with `nvidia-smi`
 2. **Profile Code**: Use PyTorch profiler
-3. **Optimize Data Loading**: Prefetch, pin memory
+3. **Optimise Data Loading**: Prefetch, pin memory
 4. **Compile Models**: Use TorchScript if possible
 
 ## Advanced Topics

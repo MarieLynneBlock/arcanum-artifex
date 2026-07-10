@@ -27,7 +27,7 @@ Comprehensive formatting requirements and submission guidelines for major academ
 - **Anonymization**: **Required** for initial submission (double-blind review)
   - Remove author names, affiliations
   - Anonymize self-citations ("Author et al." → "Anonymous et al.")
-  - Remove acknowledgments revealing identity
+  - Remove acknowledgements revealing identity
 - **Citations**: Numbered in square brackets [1], [2-4]
 - **References**: Any consistent style (commonly uses numbered references)
 - **Figures**: 
@@ -131,7 +131,7 @@ Comprehensive formatting requirements and submission guidelines for major academ
   - Anonymize datasets if they reveal identity
 - **Paper size**: US Letter
 - **Citations**: Numbered [1]
-- **Figures**: High resolution, can be color
+- **Figures**: High resolution, can be colour
 - **LaTeX Template**: CVPR official template (changes yearly)
 - **Supplementary Material**: 
   - Video demonstrations encouraged
@@ -325,7 +325,7 @@ Comprehensive formatting requirements and submission guidelines for major academ
 - **Citations**: Numbered (Oxford style similar to Bioinformatics journal)
 - **LaTeX Template**: Oxford Bioinformatics template
 - **Anonymization**: **Not required** (single-blind)
-- **Figures**: High resolution, color acceptable
+- **Figures**: High resolution, colour acceptable
 - **Supplementary**: Encouraged for additional data/methods
 
 **LaTeX Template**: `assets/journals/ismb_article.tex`
@@ -452,7 +452,7 @@ Comprehensive formatting requirements and submission guidelines for major academ
 
 **Remove**:
 - Author names, affiliations, emails from title page
-- Acknowledgments section
+- Acknowledgements section
 - Funding information that reveals identity
 - Any "our previous work" citations that make identity obvious
 
@@ -478,7 +478,7 @@ Comprehensive formatting requirements and submission guidelines for major academ
 - Interactive demos
 
 **Best Practices**:
-- Keep supplementary well-organized
+- Keep supplementary well-organised
 - Reference supplementary clearly from main paper
 - Ensure supplementary is anonymized for blind review
 - Check file size limits (typically 50-100 MB)
@@ -487,7 +487,7 @@ Comprehensive formatting requirements and submission guidelines for major academ
 
 After acceptance:
 1. **De-anonymize**: Add author names, affiliations
-2. **Add acknowledgments**: Funding, contributions
+2. **Add acknowledgements**: Funding, contributions
 3. **Copyright**: Add conference copyright notice
 4. **Formatting**: Follow camera-ready specific guidelines
 5. **Page limit**: May allow 1-2 extra pages (check guidelines)
@@ -496,11 +496,11 @@ After acceptance:
 ### Accessibility Considerations
 
 **For All Conferences**:
-- Use colorblind-safe color palettes
+- Use colorblind-safe colour palettes
 - Ensure sufficient contrast
 - Provide alt text for figures (where supported)
 - Use clear, readable fonts
-- Avoid solely color-based distinctions
+- Avoid solely colour-based distinctions
 
 ---
 

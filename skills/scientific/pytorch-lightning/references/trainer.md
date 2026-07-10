@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Trainer automates training workflows after organizing PyTorch code into a LightningModule. It handles loop details, device management, callbacks, gradient operations, checkpointing, and distributed training automatically.
+The Trainer automates training workflows after organising PyTorch code into a LightningModule. It handles loop details, device management, callbacks, gradient operations, checkpointing, and distributed training automatically.
 
 ## Core Purpose
 
@@ -157,7 +157,7 @@ trainer = L.Trainer(precision="bf16-mixed")
 trainer = L.Trainer(precision="32-true")
 ```
 
-### Optimization Configuration
+### Optimisation Configuration
 
 #### `gradient_clip_val` (float)
 Gradient clipping value. Default: None
@@ -355,7 +355,7 @@ trainer = L.Trainer(detect_anomaly=True)
 ### Reproducibility
 
 #### `deterministic` (bool or str)
-Control deterministic behavior. Default: False
+Control deterministic behaviour. Default: False
 
 ```python
 import lightning as L
@@ -394,7 +394,7 @@ trainer = L.Trainer(inference_mode=True)
 ```
 
 #### `profiler` (str or Profiler)
-Profile code for performance optimization. Options: "simple", "advanced", or custom Profiler.
+Profile code for performance optimisation. Options: "simple", "advanced", or custom Profiler.
 
 ```python
 # Simple profiler

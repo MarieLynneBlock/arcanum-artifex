@@ -28,7 +28,7 @@ applyTo: '**/*.java, **/*.kt'
 
 ### Code Organization
 
-- Package Structure: Organize by feature/domain rather than by layer
+- Package Structure: Organise by feature/domain rather than by layer
 - Separation of Concerns: Keep controllers thin, services focused, and repositories simple
 - Utility Classes: Make utility classes final with private constructors
 

@@ -51,7 +51,7 @@ This is the recommended approach for creating visually compelling posters:
 
 ### CRITICAL: Poster-Size Font Requirements
 
-**⚠️ ALL text within AI-generated visualizations MUST be poster-readable.**
+**⚠️ ALL text within AI-generated visualisations MUST be poster-readable.**
 
 When generating graphics for posters, you MUST include font size specifications in EVERY prompt. Poster graphics are viewed from 4-6 feet away, so text must be LARGE.
 
@@ -288,7 +288,7 @@ prs.save("poster.pptx")
 
 The provided template (`assets/poster_html_template.html`) includes:
 
-### CSS Variables for Customization
+### CSS Variables for Customisation
 
 ```css
 /* Poster dimensions */
@@ -361,7 +361,7 @@ body {
 
 - [ ] NO content cut off at ANY of the 4 edges (check carefully)
 - [ ] All images display correctly
-- [ ] Colors render as expected
+- [ ] Colours render as expected
 - [ ] Text readable at 25% scale
 - [ ] Graphics look SIMPLE (not like complex 7-stage workflows)
 
@@ -408,6 +408,6 @@ Available in `assets/` directory:
 
 Available in `references/` directory:
 
-- `poster-content-guide.md`: Content organization and writing guidelines
-- `poster-design-principles.md`: Typography, color theory, and visual hierarchy
+- `poster-content-guide.md`: Content organisation and writing guidelines
+- `poster-design-principles.md`: Typography, colour theory, and visual hierarchy
 - `poster-layout-design.md`: Layout principles and grid systems

@@ -164,7 +164,7 @@ circuit.append(my_gate(q0))
 
 ### Moments
 
-Circuits are organized into moments (parallel operations):
+Circuits are organised into moments (parallel operations):
 
 ```python
 # Explicit moment construction
@@ -302,6 +302,6 @@ obs = 0.5 * cirq.X(q0) + 0.3 * cirq.Z(q1)
 
 1. **Use appropriate qubit types**: GridQubit for hardware-like topologies, LineQubit for 1D problems
 2. **Keep circuits modular**: Build reusable circuit functions
-3. **Use symbolic parameters**: For parameter sweeps and optimization
+3. **Use symbolic parameters**: For parameter sweeps and optimisation
 4. **Label measurements clearly**: Use descriptive keys for measurement results
-5. **Document custom gates**: Include circuit diagram information for visualization
+5. **Document custom gates**: Include circuit diagram information for visualisation

@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-USPTO provides specialized APIs for patent and trademark data. Search patents by keywords/inventors/assignees, retrieve examination history via PEDS, track assignments, analyze citations and office actions, access TSDR for trademarks, for IP analysis and prior art searches.
+USPTO provides specialised APIs for patent and trademark data. Search patents by keywords/inventors/assignees, retrieve examination history via PEDS, track assignments, analyse citations and office actions, access TSDR for trademarks, for IP analysis and prior art searches.
 
 ## When to Use This Skill
 
@@ -23,13 +23,13 @@ This skill should be used when:
 - **Examination History**: Accessing patent prosecution data from PEDS (Patent Examination Data System)
 - **Office Actions**: Retrieving office action text, citations, and rejections
 - **Assignments**: Tracking patent/trademark ownership transfers
-- **Citations**: Analyzing patent citations (forward and backward)
+- **Citations**: Analysing patent citations (forward and backward)
 - **Litigation**: Accessing patent litigation records
-- **Portfolio Analysis**: Analyzing patent/trademark portfolios for companies or inventors
+- **Portfolio Analysis**: Analysing patent/trademark portfolios for companies or inventors
 
 ## USPTO API Ecosystem
 
-The USPTO provides multiple specialized APIs for different data needs:
+The USPTO provides multiple specialised APIs for different data needs:
 
 ### Core APIs
 
@@ -268,7 +268,7 @@ if summary['is_patented']:
 
 #### Prosecution Analysis
 
-Analyze prosecution patterns:
+Analyse prosecution patterns:
 
 ```python
 analysis = helper.analyze_prosecution("16123456")
@@ -452,7 +452,7 @@ def find_company_patents(company_name, api_key):
 
 ### Office Actions, Citations, and Litigation
 
-Multiple specialized APIs provide additional patent data.
+Multiple specialised APIs provide additional patent data.
 
 #### Office Action Text Retrieval
 
@@ -460,7 +460,7 @@ Retrieve full text of office actions using application number. Integrate with PE
 
 #### Enriched Citation API
 
-Analyze patent citations:
+Analyse patent citations:
 - Forward citations (patents citing this patent)
 - Backward citations (prior art cited)
 - Examiner vs. applicant citations
@@ -556,7 +556,7 @@ def comprehensive_patent_analysis(patent_number, api_key):
    - Implement exponential backoff for rate limit errors
    - Cache responses when possible
 
-3. **Query Optimization**
+3. **Query Optimisation**
    - Use `_text_*` operators for text fields (more performant)
    - Request only needed fields to reduce response size
    - Use date ranges to narrow searches

@@ -1,6 +1,6 @@
 # Datamol Conformers Module Reference
 
-The `datamol.conformers` module provides tools for generating and analyzing 3D molecular conformations.
+The `datamol.conformers` module provides tools for generating and analysing 3D molecular conformations.
 
 ## Conformer Generation
 
@@ -10,7 +10,7 @@ Generate 3D molecular conformers.
   - `mol`: Input molecule
   - `n_confs`: Number of conformers to generate (auto-determined based on rotatable bonds if None)
   - `rms_cutoff`: RMS threshold in Ångströms for filtering similar conformers (removes duplicates)
-  - `minimize_energy`: Apply UFF energy minimization (default: True)
+  - `minimize_energy`: Apply UFF energy minimisation (default: True)
   - `method`: Embedding method - options:
     - `'ETDG'` - Experimental Torsion Distance Geometry
     - `'ETKDG'` - ETDG with additional basic knowledge
@@ -69,13 +69,13 @@ Calculate Solvent Accessible Surface Area (SASA) using FreeSASA.
 ## Low-Level Conformer Manipulation
 
 ### `dm.conformers.center_of_mass(mol, conf_id=-1, use_atoms=True, round_coord=None)`
-Calculate molecular center.
+Calculate molecular centre.
 - **Parameters**:
   - `conf_id`: Conformer index (-1 for first conformer)
-  - `use_atoms`: Use atomic masses (True) or geometric center (False)
+  - `use_atoms`: Use atomic masses (True) or geometric centre (False)
   - `round_coord`: Decimal precision for rounding
-- **Returns**: 3D coordinates of center
-- **Use case**: Centering molecules for visualization or alignment
+- **Returns**: 3D coordinates of centre
+- **Use case**: Centring molecules for visualisation or alignment
 
 ### `dm.conformers.get_coords(mol, conf_id=-1)`
 Retrieve atomic coordinates from a conformer.
@@ -127,5 +127,5 @@ coords = dm.conformers.get_coords(mol_3d, conf_id=0)
 - **Distance Geometry**: Method for generating 3D structures from connectivity information
 - **ETKDG**: Uses experimental torsion angle preferences and additional chemical knowledge
 - **RMS Cutoff**: Lower values = more unique conformers; higher values = fewer, more distinct conformers
-- **Energy Minimization**: Relaxes structures to nearest local energy minimum
+- **Energy Minimisation**: Relaxes structures to nearest local energy minimum
 - **Hydrogens**: Critical for accurate 3D geometry - always include during embedding

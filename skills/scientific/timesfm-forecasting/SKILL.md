@@ -253,11 +253,11 @@ is_critical = anomalies  # outside 90% CI
 
 | Severity | Condition | Interpretation |
 | -------- | --------- | -------------- |
-| **Normal** | Inside 80% CI | Expected behavior |
+| **Normal** | Inside 80% CI | Expected behaviour |
 | **Warning** | Outside 80% CI | Unusual but possible |
 | **Critical** | Outside 90% CI | Statistically rare (< 10% probability) |
 
-> See `examples/anomaly-detection/` for a complete example with visualization.
+> See `examples/anomaly-detection/` for a complete example with visualisation.
 
 ```python
 # Requires: uv pip install timesfm[xreg]
@@ -332,7 +332,7 @@ flowchart LR
 
 ## 🔧 ForecastConfig Reference
 
-All forecasting behavior is controlled by `timesfm.ForecastConfig`:
+All forecasting behaviour is controlled by `timesfm.ForecastConfig`:
 
 ```python
 timesfm.ForecastConfig(
@@ -724,7 +724,7 @@ Run this checklist after every TimesFM task before declaring success:
 - [ ] **Frequency flag** -- TimesFM 1.0/2.0: pass `freq=[0]` for monthly data. TimesFM 2.5: no freq flag.
 - [ ] **Series length** -- context must be >= 32 data points (model minimum). Warn if shorter.
 - [ ] **No NaN** -- `np.isnan(point_fc).any()` should be False. Check input series for gaps first.
-- [ ] **Visualization axes** -- if multiple panels share data, use `sharex=True`. All time axes must cover the same span.
+- [ ] **Visualisation axes** -- if multiple panels share data, use `sharex=True`. All time axes must cover the same span.
 - [ ] **Binary outputs in Git LFS** -- PNG and GIF files must be tracked via `.gitattributes` (repo root already configured).
 - [ ] **No large datasets committed** -- any real dataset > 1 MB should be downloaded to `tempfile.mkdtemp()` and annotated in code.
 - [ ] **`matplotlib.use('Agg')`** -- must appear before any pyplot import when running headless.

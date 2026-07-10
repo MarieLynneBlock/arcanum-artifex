@@ -1,6 +1,6 @@
 # Data Science
 
-Analytics-oriented instruction files, currently centered on Power BI.
+Analytics-oriented instruction files, currently centred on Power BI.
 
 ## Subfolders
 

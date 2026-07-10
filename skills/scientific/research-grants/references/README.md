@@ -6,7 +6,7 @@ Comprehensive skill for writing competitive research grant proposals focused on 
 - **NSF** (National Science Foundation)
 - **NIH** (National Institutes of Health)
 - **DOE** (Department of Energy)
-- **DARPA** (Defense Advanced Research Projects Agency)
+- **DARPA** (Defence Advanced Research Projects Agency)
 
 ## What This Skill Provides
 
@@ -82,7 +82,7 @@ For in-depth help on specific components:
 - **Specific Aims Page**: The most critical page (detailed 1-page guide included)
 - **Research Strategy**: Significance, Innovation, Approach sections
 - **Preliminary Data**: Essential for R01 applications
-- Rigor and reproducibility requirements
+- Rigour and reproducibility requirements
 - Modular vs. detailed budgets
 - Resubmission strategies (A1 applications)
 
@@ -112,7 +112,7 @@ For in-depth help on specific components:
 - `references/doe-guidelines.md` - DOE offices and programs
 - `references/darpa-guidelines.md` - DARPA structure and strategy
 
-### Specialized Guides
+### Specialised Guides
 - `references/broader-impacts.md` - NSF broader impacts strategies
 - `references/specific-aims-guide.md` - NIH Specific Aims page mastery
 - `references/budget_preparation.md` - Budget development (coming soon)
@@ -216,7 +216,7 @@ This skill is continuously updated with:
 
 ### For NSF Proposals
 1. Start with Specific Aims/Objectives (even though not required)
-2. Develop broader impacts with same rigor as research plan
+2. Develop broader impacts with same rigour as research plan
 3. Use figures and diagrams liberally (make it skimmable)
 4. Address both review criteria explicitly
 5. Get feedback from outside your immediate field
@@ -224,12 +224,12 @@ This skill is continuously updated with:
 ### For NIH Proposals
 1. Perfect your Specific Aims page first (10+ drafts)
 2. Include substantial preliminary data
-3. Address rigor and reproducibility explicitly
+3. Address rigour and reproducibility explicitly
 4. Identify potential problems proactively with alternatives
 5. Make sure your aims are independent but synergistic
 
 ### For DOE Proposals
-1. Emphasize energy relevance and impact
+1. Emphasise energy relevance and impact
 2. Include quantitative metrics (cost, efficiency, emissions)
 3. Develop pathway to deployment or commercialization
 4. Consider national laboratory partnerships

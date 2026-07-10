@@ -1,6 +1,6 @@
 ---
 name: scientific-slides
-description: Build slide decks and presentations for research talks. Use this for making PowerPoint slides, conference presentations, seminar talks, research presentations, thesis defense slides, or any scientific talk. Provides slide structure, design templates, timing guidance, and visual validation. Works with PowerPoint and LaTeX Beamer.
+description: Build slide decks and presentations for research talks. Use this for making PowerPoint slides, conference presentations, seminar talks, research presentations, thesis defence slides, or any scientific talk. Provides slide structure, design templates, timing guidance, and visual validation. Works with PowerPoint and LaTeX Beamer.
 license: MIT license
 allowed-tools: Read Write Edit Bash
 metadata:
@@ -13,23 +13,23 @@ metadata:
 
 Scientific presentations are a critical medium for communicating research, sharing findings, and engaging with academic and professional audiences. This skill provides comprehensive guidance for creating effective scientific presentations, from structure and content development to visual design and delivery preparation.
 
-**Key Focus**: Oral presentations for conferences, seminars, defenses, and professional talks.
+**Key Focus**: Oral presentations for conferences, seminars, defences, and professional talks.
 
 **CRITICAL DESIGN PHILOSOPHY**: Scientific presentations should be VISUALLY ENGAGING and RESEARCH-BACKED. Avoid dry, text-heavy slides at all costs. Great scientific presentations combine:
 - **Compelling visuals**: High-quality figures, images, diagrams (not just bullet points)
 - **Research context**: Proper citations from research-lookup establishing credibility
 - **Minimal text**: Bullet points as prompts, YOU provide the explanation verbally
-- **Professional design**: Modern color schemes, strong visual hierarchy, generous white space
+- **Professional design**: Modern colour schemes, strong visual hierarchy, generous white space
 - **Story-driven**: Clear narrative arc, not just data dumps
 
-**Remember**: Boring presentations = forgotten science. Make your slides visually memorable while maintaining scientific rigor through proper citations.
+**Remember**: Boring presentations = forgotten science. Make your slides visually memorable while maintaining scientific rigour through proper citations.
 
 ## When to Use This Skill
 
 This skill should be used when:
 - Preparing conference presentations (5-20 minutes)
 - Developing academic seminars (45-60 minutes)
-- Creating thesis or dissertation defense presentations
+- Creating thesis or dissertation defence presentations
 - Designing grant pitch presentations
 - Preparing journal club presentations
 - Giving research talks at institutions or companies
@@ -85,7 +85,7 @@ Use the `generate_slide_image.py` script to create each slide.
 To ensure unified formatting across all slides in a presentation:
 
 1. **Define a Formatting Goal** at the start of your presentation and include it in EVERY prompt:
-   - Color scheme (e.g., "dark blue background, white text, gold accents")
+   - Colour scheme (e.g., "dark blue background, white text, gold accents")
    - Typography style (e.g., "bold sans-serif titles, clean body text")
    - Visual style (e.g., "minimal, professional, corporate aesthetic")
    - Layout approach (e.g., "generous white space, left-aligned content")
@@ -93,7 +93,7 @@ To ensure unified formatting across all slides in a presentation:
 2. **Always attach the previous slide** when generating subsequent slides using `--attach`:
    - This allows Nano Banana Pro to see and match the existing style
    - Creates visual continuity throughout the deck
-   - Ensures consistent colors, fonts, and design language
+   - Ensures consistent colours, fonts, and design language
 
 3. **Default author is "K-Dense"** unless another name is specified
 
@@ -107,7 +107,7 @@ To ensure unified formatting across all slides in a presentation:
    - When creating slides about results, ALWAYS check for existing figures in:
      - The working directory (e.g., `figures/`, `results/`, `plots/`, `images/`)
      - User-provided input files or directories
-     - Any data visualizations, charts, or graphs relevant to the presentation
+     - Any data visualisations, charts, or graphs relevant to the presentation
    - Use `--attach` to include these figures so Nano Banana Pro can incorporate them:
      - Attach the actual data figure/chart for results slides
      - Attach relevant diagrams for methodology slides
@@ -150,7 +150,7 @@ python scripts/generate_slide_image.py "Presentation slide titled 'System Archit
 
 **Prompt Template:**
 
-Include these elements in every prompt (customize as needed):
+Include these elements in every prompt (customise as needed):
 ```
 [Slide content description]
 CITATIONS: Include at bottom: (Author1 et al., Year; Author2 et al., Year)
@@ -270,7 +270,7 @@ For complete slides, include:
 2. **Title**: The slide title text
 3. **Content**: Key points, bullet items, or descriptions
 4. **Visual elements**: What imagery, icons, or graphics to include
-5. **Design style**: Color scheme, mood, aesthetic
+5. **Design style**: Colour scheme, mood, aesthetic
 
 **Example prompts:**
 
@@ -335,7 +335,7 @@ Build presentations with clear narrative flow and appropriate structure for diff
 **Talk-Specific Structures**:
 - **Conference talks (15 min)**: Focused on 1-2 key findings, minimal methods
 - **Academic seminars (45 min)**: Comprehensive coverage, detailed methods, multiple studies
-- **Thesis defenses (60 min)**: Complete dissertation overview, all studies covered
+- **Thesis defences (60 min)**: Complete dissertation overview, all studies covered
 - **Grant pitches (15 min)**: Emphasis on significance, feasibility, and impact
 - **Journal clubs (30 min)**: Critical analysis of published work
 
@@ -350,7 +350,7 @@ Create professional, readable, and accessible slides that enhance understanding.
 - Small fonts (<24pt body text)
 - Black text on white background only (no visual interest)
 - No images or graphics (bullet points only)
-- Generic templates with no customization
+- Generic templates with no customisation
 - Dense, paragraph-like bullet points
 - Missing research context (no citations)
 - All slides look the same (repetitive)
@@ -358,7 +358,7 @@ Create professional, readable, and accessible slides that enhance understanding.
 ✅ **What Makes Presentations Engaging and Memorable:**
 - HIGH-QUALITY VISUALS dominate (figures, photos, diagrams, icons)
 - Large, clear text as accent (not the main content)
-- Modern, purposeful color schemes (not default themes)
+- Modern, purposeful colour schemes (not default themes)
 - Generous white space (slides breathe)
 - Research-backed context (proper citations from research-lookup)
 - Variety in slide layouts (not all bullet lists)
@@ -388,23 +388,23 @@ Create professional, readable, and accessible slides that enhance understanding.
 - High contrast (minimum 4.5:1, prefer 7:1)
 - Use size for hierarchy, not just weight
 
-**Color for Impact**:
-- MODERN color palettes (not default blue/gray)
-- Consider your topic: biotech? vibrant colors. Physics? sleek darks. Health? warm tones.
-- Limited palette (3-5 colors total)
+**Colour for Impact**:
+- MODERN colour palettes (not default blue/gray)
+- Consider your topic: biotech? vibrant colours. Physics? sleek darks. Health? warm tones.
+- Limited palette (3-5 colours total)
 - High contrast combinations
-- Color-blind safe (avoid red-green combinations)
-- Use color purposefully (not decoration)
+- Colour-blind safe (avoid red-green combinations)
+- Use colour purposefully (not decoration)
 
 **Layout for Visual Interest**:
 - Vary layouts (not all bullet lists)
 - Use two-column layouts (text + figure)
 - Full-slide figures for key results
-- Asymmetric compositions (more interesting than centered)
+- Asymmetric compositions (more interesting than centred)
 - Rule of thirds for focal points
 - Consistent but not repetitive
 
-### 3. Data Visualization for Slides
+### 3. Data Visualisation for Slides
 
 Adapt scientific figures for presentation context. For detailed guidance, refer to `references/data-visualization-slides.md`.
 
@@ -412,11 +412,11 @@ Adapt scientific figures for presentation context. For detailed guidance, refer 
 - Simplify, don't replicate
 - Larger fonts (18-24pt minimum)
 - Fewer panels (split across slides)
-- Direct labeling (not legends)
-- Emphasis through color and size
+- Direct labelling (not legends)
+- Emphasis through colour and size
 - Progressive disclosure for complex data
 
-**Visualization Best Practices**:
+**Visualisation Best Practices**:
 - **Bar charts**: Comparing discrete categories
 - **Line graphs**: Trends and trajectories
 - **Scatter plots**: Relationships and correlations
@@ -446,7 +446,7 @@ Different presentation contexts require different approaches. For comprehensive 
 - Style: Scholarly, interactive, discussion-oriented
 - Goal: Demonstrate expertise, get feedback, collaborate
 
-**Thesis Defenses** (45-60 minutes):
+**Thesis Defences** (45-60 minutes):
 - Structure: Complete dissertation overview, all studies
 - Focus: Demonstrating mastery and independent thinking
 - Style: Formal, comprehensive, prepared for interrogation
@@ -535,11 +535,11 @@ Use Nano Banana Pro with `--visual-only` to generate images, then build PPTX wit
 **Templates Available**:
 - `assets/beamer_template_conference.tex`: 15-minute conference talk
 - `assets/beamer_template_seminar.tex`: 45-minute academic seminar
-- `assets/beamer_template_defense.tex`: Dissertation defense
+- `assets/beamer_template_defense.tex`: Dissertation defence
 
 **Workflow**:
 1. Choose appropriate template
-2. Customize theme and colors
+2. Customise theme and colours
 3. Add content (LaTeX native: equations, code, algorithms)
 4. Compile to PDF
 5. Convert to images for visual validation
@@ -628,7 +628,7 @@ Ensure presentations fit allocated time. For comprehensive timing guidance, refe
 - 5-minute talk: Practice 5-7 times
 - 15-minute talk: Practice 3-5 times
 - 45-minute talk: Practice 3-4 times
-- Defense: Practice 4-6 times
+- Defence: Practice 4-6 times
 
 **Timing Checkpoints**:
 
@@ -663,7 +663,7 @@ python scripts/validate_presentation.py presentation.pdf --duration 15
 - [ ] Clear narrative flow
 - [ ] One main idea per slide
 - [ ] Font sizes ≥18pt (preferably 24pt+)
-- [ ] High contrast colors
+- [ ] High contrast colours
 - [ ] Figures large and readable
 - [ ] No text overflow or element overlap
 - [ ] Consistent design throughout
@@ -677,7 +677,7 @@ python scripts/validate_presentation.py presentation.pdf --duration 15
 ### Stage 1: Planning (Before Creating Slides)
 
 **Define Context**:
-1. What type of talk? (Conference, seminar, defense, etc.)
+1. What type of talk? (Conference, seminar, defence, etc.)
 2. How long? (Duration in minutes)
 3. Who is the audience? (Specialists, general, mixed)
 4. What's the venue? (Room size, A/V setup, virtual/in-person)
@@ -730,21 +730,21 @@ and discussion (slides 13-14) BEFORE creating slides.
 **Option B: LaTeX Beamer**
 1. Read `references/beamer-guide.md`
 2. Select appropriate template from `assets/`
-3. Customize theme and colors
+3. Customise theme and colours
 4. Write content in LaTeX
 5. Compile to PDF
 
 **Design Considerations** (Make It Visually Appealing):
-- **Select MODERN color palette**: Match your topic (biotech=vibrant, physics=sleek, health=warm)
-  - Use pptx skill's color palette examples (Teal & Coral, Bold Red, Deep Purple & Emerald, etc.)
+- **Select MODERN colour palette**: Match your topic (biotech=vibrant, physics=sleek, health=warm)
+  - Use pptx skill's colour palette examples (Teal & Coral, Bold Red, Deep Purple & Emerald, etc.)
   - NOT just default blue/gray themes
-  - 3-5 colors with high contrast
+  - 3-5 colours with high contrast
 - **Choose clean fonts**: Sans-serif, large sizes (24pt+ body)
 - **Plan visual elements**: What images, diagrams, icons for each slide?
 - **Create varied layouts**: Mix full-figure, two-column, text-overlay (not all bullets)
 - **Design section dividers**: Visual breaks with striking graphics
 - **Plan animations/builds**: Control information flow for complex slides
-- **Add visual interest**: Background images, color blocks, shapes, icons
+- **Add visual interest**: Background images, colour blocks, shapes, icons
 
 ### Stage 3: Content Development
 
@@ -762,9 +762,9 @@ and discussion (slides 13-14) BEFORE creating slides.
 - **Icons**: Visual representations of concepts (not decoration)
 - **Diagrams**: Flowcharts, schematics, process diagrams
 - **Figures**: Simplified research figures with LARGE labels (18-24pt)
-- **Charts**: Clean data visualizations with clear messages
+- **Charts**: Clean data visualisations with clear messages
 - **Graphics**: Visual metaphors, conceptual illustrations
-- **Color blocks**: Use colored shapes to organize content visually
+- **Colour blocks**: Use coloured shapes to organise content visually
 - Target: MINIMUM 1-2 strong visual elements per slide
 
 **Scientific Content** (Research-Backed):
@@ -773,7 +773,7 @@ and discussion (slides 13-14) BEFORE creating slides.
   - Background: Show key prior work visually (not just cite)
   - Discussion: Cite 3-5 papers for comparison with your results
   - Use author-year format (Smith et al., 2023) for readability
-  - Citations establish credibility and scientific rigor
+  - Citations establish credibility and scientific rigour
 - **Figures**: Simplified from papers, LARGE labels (18-24pt minimum)
 - **Equations**: Large, clear, explain each term (use sparingly)
 - **Tables**: Minimal, highlight key comparisons (not data dumps)
@@ -887,9 +887,9 @@ python ../document-production/pptx/scripts/thumbnail.py presentation.pptx review
 - Use thumbnail generation for validation
 - Reference html2pptx for programmatic creation
 
-**Data Visualization**:
+**Data Visualisation**:
 - Create presentation-appropriate figures
-- Simplify complex visualizations
+- Simplify complex visualisations
 - Ensure readability from distance
 - Use progressive disclosure
 
@@ -903,7 +903,7 @@ python ../document-production/pptx/scripts/thumbnail.py presentation.pptx review
 - Solution: 
   - Use research-lookup to find 8-15 papers for credible context
   - Add high-quality visuals to EVERY slide (figures, photos, diagrams, icons)
-  - Choose modern color palette reflecting your topic
+  - Choose modern colour palette reflecting your topic
   - Vary slide layouts (not all bullet lists)
   - Tell a story with visuals, use text sparingly
 
@@ -930,8 +930,8 @@ python ../document-production/pptx/scripts/thumbnail.py presentation.pptx review
 ### Design Mistakes
 
 **Generic, Default Appearance**:
-- Problem: Using default PowerPoint/Beamer themes without customization, looks dated
-- Solution: Choose modern color palette, customize fonts/layouts, add visual personality
+- Problem: Using default PowerPoint/Beamer themes without customisation, looks dated
+- Solution: Choose modern colour palette, customise fonts/layouts, add visual personality
 
 **Text-Heavy, Visual-Poor**:
 - Problem: All bullet point slides, no images or graphics, boring to look at
@@ -950,21 +950,21 @@ python ../document-production/pptx/scripts/thumbnail.py presentation.pptx review
 - Solution: One idea per slide, 40-50% white space, generous spacing
 
 **Inconsistent Formatting**:
-- Problem: Different fonts, colors, layouts slide-to-slide, looks amateurish
+- Problem: Different fonts, colours, layouts slide-to-slide, looks amateurish
 - Solution: Use master slides, maintain design system, professional consistency
 
 **Missing Visual Hierarchy**:
-- Problem: Everything same size and color, no emphasis, unclear focus
-- Solution: Size differences (titles large, body medium), color for emphasis, clear focal point
+- Problem: Everything same size and colour, no emphasis, unclear focus
+- Solution: Size differences (titles large, body medium), colour for emphasis, clear focal point
 
 ### Timing Mistakes
 
-**Not Practicing**:
+**Not Practising**:
 - Problem: First time through is during presentation
 - Solution: Practice minimum 3 times with timer
 
 **No Time Checkpoints**:
-- Problem: Don't realize running behind until too late
+- Problem: Don't realise running behind until too late
 - Solution: Set 3-4 checkpoints, monitor throughout
 
 **Going Over Time**:
@@ -1044,8 +1044,8 @@ From `skills/document-production/pptx/scripts/`:
 
 **Recommended**:
 - PDF viewer: For reviewing presentations
-- Color contrast checker: WebAIM Contrast Checker
-- Color blindness simulator: Coblis
+- Colour contrast checker: WebAIM Contrast Checker
+- Colour blindness simulator: Coblis
 - Timer app: For practice sessions
 - Screen recorder: For self-review
 
@@ -1054,10 +1054,10 @@ From `skills/document-production/pptx/scripts/`:
 Comprehensive guides for specific aspects:
 
 - **`references/presentation-structure.md`**: Detailed structure for all talk types, timing allocation, opening/closing strategies, transition techniques
-- **`references/slide-design-principles.md`**: Typography, color theory, layout, accessibility, visual hierarchy, design workflow
+- **`references/slide-design-principles.md`**: Typography, colour theory, layout, accessibility, visual hierarchy, design workflow
 - **`references/data-visualization-slides.md`**: Simplifying figures, chart types, progressive disclosure, common mistakes, recreation workflow
-- **`references/talk-types-guide.md`**: Specific guidance for conferences, seminars, defenses, grants, journal clubs, with examples
-- **`references/beamer-guide.md`**: Complete LaTeX Beamer documentation, themes, customization, advanced features, compilation
+- **`references/talk-types-guide.md`**: Specific guidance for conferences, seminars, defences, grants, journal clubs, with examples
+- **`references/beamer-guide.md`**: Complete LaTeX Beamer documentation, themes, customisation, advanced features, compilation
 - **`references/visual-review-workflow.md`**: PDF to images conversion, systematic inspection, issue documentation, iterative improvement
 
 ## Assets
@@ -1066,7 +1066,7 @@ Comprehensive guides for specific aspects:
 
 - **`assets/beamer_template_conference.tex`**: 15-minute conference talk template
 - **`assets/beamer_template_seminar.tex`**: 45-minute academic seminar template
-- **`assets/beamer_template_defense.tex`**: Dissertation defense template
+- **`assets/beamer_template_defense.tex`**: Dissertation defence template
 
 ### Guides
 
@@ -1113,7 +1113,7 @@ Comprehensive guides for specific aspects:
    - Record yourself, watch playback
    - **Prepare for questions** (use research-lookup to anticipate)
 
-5. **Finalize** (30 minutes):
+5. **Finalise** (30 minutes):
    - Generate backup/appendix slides if needed
    - Save multiple copies
    - Test on presentation computer
@@ -1138,7 +1138,7 @@ See `skills/document-production/pptx/SKILL.md` for complete PowerPoint workflow.
 
 1. **Visual-First Design**: Every slide needs strong visual element (figure, image, diagram) - avoid text-only slides
 2. **Research-Backed**: Use research-lookup to find 8-15 papers, cite 3-5 in intro, 3-5 in discussion
-3. **Modern Aesthetics**: Choose contemporary color palette matching topic, not default themes
+3. **Modern Aesthetics**: Choose contemporary colour palette matching topic, not default themes
 4. **Minimal Text**: 3-4 bullets, 4-6 words each (24-28pt font), let visuals tell story
 5. **Structure**: Follow story arc, spend 40-50% on results
 6. **High Contrast**: 7:1 preferred for professional appearance

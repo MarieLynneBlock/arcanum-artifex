@@ -1,6 +1,6 @@
 ---
 name: markdown-mermaid-writing
-description: Comprehensive markdown and Mermaid diagram writing skill. Use when creating any scientific document, report, analysis, or visualization. Establishes text-based diagrams as the default documentation standard with full style guides (markdown + mermaid), 24 diagram type references, and 9 document templates.
+description: Comprehensive markdown and Mermaid diagram writing skill. Use when creating any scientific document, report, analysis, or visualisation. Establishes text-based diagrams as the default documentation standard with full style guides (markdown + mermaid), 24 diagram type references, and 9 document templates.
 license: Apache-2.0
 allowed-tools: Read Write Edit Bash
 metadata:
@@ -44,7 +44,7 @@ Use this skill when:
 - Producing **any diagram** — workflows, data pipelines, architectures, timelines, relationships
 - Generating **any output that will be version-controlled** — if it's going into git, it should be markdown
 - Working with **any other skill** — this skill defines the documentation layer that wraps every other output
-- Someone asks you to "add a diagram" or "visualize the relationship" — Mermaid first, always
+- Someone asks you to "add a diagram" or "visualise the relationship" — Mermaid first, always
 
 Do NOT start with Python matplotlib, seaborn, or AI image generation for structural or relational diagrams.
 Those are Phase 2 and Phase 3 — only used when Mermaid cannot express what's needed (e.g., scatter plots with real data, photorealistic images).
@@ -110,7 +110,7 @@ Mermaid covers 24 diagram types. Almost every scientific relationship fits one:
 | Chronological events / history | Timeline | `references/diagrams/timeline.md` |
 | Class hierarchy / type relationships | Class | `references/diagrams/class.md` |
 | User journey / satisfaction map | User Journey | `references/diagrams/user-journey.md` |
-| Two-axis comparison / prioritization | Quadrant | `references/diagrams/quadrant.md` |
+| Two-axis comparison / prioritisation | Quadrant | `references/diagrams/quadrant.md` |
 | Requirements traceability | Requirement | `references/diagrams/requirement.md` |
 | Flow magnitude / resource distribution | Sankey | `references/diagrams/sankey.md` |
 | Numeric trends / bar + line charts | XY Chart | `references/diagrams/xy-chart.md` |
@@ -272,7 +272,7 @@ Literature review produces summaries with lots of relationship data. Use this sk
 
 ### With any skill that produces output documents
 
-Before finalizing any document from any skill, apply this skill's checklist:
+Before finalising any document from any skill, apply this skill's checklist:
 
 - [ ] Does the document use a template? If so, did I start from the right one?
 - [ ] Are all diagrams in Mermaid with `accTitle` + `accDescr`?
@@ -290,7 +290,7 @@ Before finalizing any document from any skill, apply this skill's checklist:
 | Guide | Path | Lines | What it covers |
 | ----------------------- | ------------------------------------------- | ----- | -------------------------------------------------- |
 | Markdown Style Guide | `references/markdown-style-guide.md` | ~733 | Headings, formatting, citations, tables, Mermaid integration, templates, quality checklist |
-| Mermaid Style Guide | `references/mermaid-style-guide.md` | ~458 | Accessibility, emoji set, color classes, theme neutrality, type selection, complexity tiers |
+| Mermaid Style Guide | `references/mermaid-style-guide.md` | ~458 | Accessibility, emoji set, colour classes, theme neutrality, type selection, complexity tiers |
 
 ### Diagram type guides (24 types)
 

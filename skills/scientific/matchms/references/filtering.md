@@ -8,7 +8,7 @@ This document provides a comprehensive reference of all filtering functions avai
 
 **add_compound_name(spectrum)**
 - Adds compound name to the correct metadata field
-- Standardizes compound name storage location
+- Standardises compound name storage location
 
 **clean_compound_name(spectrum)**
 - Removes frequently seen unwanted additions from compound names
@@ -56,8 +56,8 @@ This document provides a comprehensive reference of all filtering functions avai
 ### Mass & Charge Information
 
 **add_precursor_mz(spectrum)**
-- Normalizes precursor m/z values
-- Standardizes precursor mass metadata
+- Normalises precursor m/z values
+- Standardises precursor mass metadata
 
 **add_parent_mass(spectrum, estimate_from_adduct=True)**
 - Calculates neutral parent mass from precursor m/z and adduct
@@ -69,10 +69,10 @@ This document provides a comprehensive reference of all filtering functions avai
 
 **make_charge_int(spectrum)**
 - Converts charge to integer format
-- Standardizes charge representation
+- Standardises charge representation
 
 **clean_adduct(spectrum)**
-- Standardizes adduct notation
+- Standardises adduct notation
 - Corrects common adduct formatting issues
 
 **interpret_pepmass(spectrum)**
@@ -101,25 +101,25 @@ This document provides a comprehensive reference of all filtering functions avai
 ### Retention Information
 
 **add_retention_time(spectrum)**
-- Harmonizes retention time as float values
-- Standardizes RT metadata field
+- Harmonises retention time as float values
+- Standardises RT metadata field
 
 **add_retention_index(spectrum)**
-- Stores retention index in standardized field
-- Normalizes RI metadata
+- Stores retention index in standardised field
+- Normalises RI metadata
 
-### Data Harmonization
+### Data Harmonisation
 
-**harmonize_undefined_inchi(spectrum, undefined="", aliases=None)**
-- Standardizes undefined/empty InChI entries
+**harmonise_undefined_inchi(spectrum, undefined="", aliases=None)**
+- Standardises undefined/empty InChI entries
 - Replaces various "unknown" representations with consistent value
 
-**harmonize_undefined_inchikey(spectrum, undefined="", aliases=None)**
-- Standardizes undefined/empty InChIKey entries
+**harmonise_undefined_inchikey(spectrum, undefined="", aliases=None)**
+- Standardises undefined/empty InChIKey entries
 - Unifies missing data representation
 
-**harmonize_undefined_smiles(spectrum, undefined="", aliases=None)**
-- Standardizes undefined/empty SMILES entries
+**harmonise_undefined_smiles(spectrum, undefined="", aliases=None)**
+- Standardises undefined/empty SMILES entries
 - Consistent handling of missing structural data
 
 ### Repair & Quality Functions
@@ -150,9 +150,9 @@ This document provides a comprehensive reference of all filtering functions avai
 
 ## Peak Processing Filters
 
-### Normalization & Selection
+### Normalisation & Selection
 
-**normalize_intensities(spectrum)**
+**normalise_intensities(spectrum)**
 - Scales peak intensities to unit height (max = 1.0)
 - Essential preprocessing step for similarity calculations
 
@@ -212,9 +212,9 @@ This document provides a comprehensive reference of all filtering functions avai
   5. derive_adduct_from_name
   6. derive_formula_from_name
   7. clean_compound_name
-  8. harmonize_undefined_smiles
-  9. harmonize_undefined_inchi
-- Recommended starting point for metadata harmonization
+  8. harmonise_undefined_smiles
+  9. harmonise_undefined_inchi
+- Recommended starting point for metadata harmonisation
 
 **SpectrumProcessor(filters)**
 - Orchestrates multi-filter pipelines
@@ -281,7 +281,7 @@ spectrum = reduce_to_number_of_peaks(spectrum, n_max=200)
 
 ## Notes on Filter Usage
 
-1. **Order matters**: Apply filters in logical sequence (e.g., normalize before relative intensity selection)
+1. **Order matters**: Apply filters in logical sequence (e.g., normalise before relative intensity selection)
 2. **Filters return None**: Many filters return None for invalid spectra; check for None before proceeding
 3. **Immutability**: Filters typically return modified copies; reassign results to variables
 4. **Pipeline efficiency**: Use SpectrumProcessor for consistent multi-spectrum processing

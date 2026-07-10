@@ -6,7 +6,7 @@ For general IDC queries and downloads, use `idc-index` (see main SKILL.md). This
 
 ## Index Tables for Digital Pathology
 
-Five specialized index tables provide curated metadata without needing BigQuery:
+Five specialised index tables provide curated metadata without needing BigQuery:
 
 | Table | Row Granularity | Description |
 |-------|-----------------|-------------|

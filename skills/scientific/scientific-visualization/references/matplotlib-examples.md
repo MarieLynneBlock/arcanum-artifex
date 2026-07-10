@@ -588,7 +588,7 @@ plt.show()
 - Embed fonts in PDF/EPS files
 
 ### Seaborn
-- Built on matplotlib, so all matplotlib customizations work
+- Built on matplotlib, so all matplotlib customisations work
 - Use `sns.set_style('ticks')` or `'whitegrid'` for clean looks
 - `sns.despine()` removes top and right spines
 - Set custom palette with `sns.set_palette()`
@@ -604,7 +604,7 @@ plt.show()
 1. **Explore with default settings**
 2. **Apply publication configuration** (see Setup section)
 3. **Create plot with appropriate size** (check journal requirements)
-4. **Customize colors** (use colorblind-friendly palettes)
+4. **Customise colours** (use colorblind-friendly palettes)
 5. **Adjust fonts and line widths** (readable at final size)
 6. **Remove chart junk** (top/right spines, excessive grid)
 7. **Add clear labels with units**
@@ -617,4 +617,4 @@ plt.show()
 - Matplotlib documentation: https://matplotlib.org/
 - Seaborn gallery: https://seaborn.pydata.org/examples/index.html
 - Plotly documentation: https://plotly.com/python/
-- Nature Methods Points of View: Data visualization column archive
+- Nature Methods Points of View: Data visualisation column archive

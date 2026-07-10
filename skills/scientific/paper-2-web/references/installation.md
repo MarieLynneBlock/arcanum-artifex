@@ -124,7 +124,7 @@ If successful, you should see the help menu with all available options.
 
 ## Directory Structure
 
-After installation, organize your workspace:
+After installation, organise your workspace:
 
 ```
 Paper2All/

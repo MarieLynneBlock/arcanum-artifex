@@ -1,6 +1,6 @@
 ---
 name: model-recommendation
-description: 'Analyze chatmode or prompt files and recommend optimal AI models based on task complexity, required capabilities, and cost-efficiency'
+description: 'Analyse chatmode or prompt files and recommend optimal AI models based on task complexity, required capabilities, and cost-efficiency'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -9,7 +9,7 @@ metadata:
 
 ## Mission
 
-Analyze `.agent.md` or `.prompt.md` files to understand their purpose, complexity, and required capabilities, then recommend the most suitable AI model(s) from GitHub Copilot's available options. Provide rationale based on task characteristics, model strengths, cost-efficiency, and performance trade-offs.
+Analyse `.agent.md` or `.prompt.md` files to understand their purpose, complexity, and required capabilities, then recommend the most suitable AI model(s) from GitHub Copilot's available options. Provide rationale based on task characteristics, model strengths, cost-efficiency, and performance trade-offs.
 
 ## Scope & Preconditions
 
@@ -22,12 +22,12 @@ Analyze `.agent.md` or `.prompt.md` files to understand their purpose, complexit
 
 Required:
 
-- `${input:filePath:Path to .agent.md or .prompt.md file}` - Absolute or workspace-relative path to the file to analyze
+- `${input:filePath:Path to .agent.md or .prompt.md file}` - Absolute or workspace-relative path to the file to analyse
 
 Optional:
 
 - `${input:subscriptionTier:Pro}` - User's Copilot subscription tier (Free, Pro, Pro+) - defaults to Pro
-- `${input:priorityFactor:Balanced}` - Optimization priority (Speed, Cost, Quality, Balanced) - defaults to Balanced
+- `${input:priorityFactor:Balanced}` - Optimisation priority (Speed, Cost, Quality, Balanced) - defaults to Balanced
 
 ## Workflow
 
@@ -37,15 +37,15 @@ Optional:
 
 - Read the target `.agent.md` or `.prompt.md` file
 - Extract frontmatter (description, mode, tools, model if specified)
-- Analyze body content to identify:
+- Analyse body content to identify:
   - Task complexity (simple/moderate/complex/advanced)
   - Required reasoning depth (basic/intermediate/advanced/expert)
   - Code generation needs (minimal/moderate/extensive)
   - Multi-turn conversation requirements
   - Context window needs (small/medium/large)
-  - Specialized capabilities (image analysis, long-context, real-time data)
+  - Specialised capabilities (image analysis, long-context, real-time data)
 
-**Categorize Task Type**:
+**Categorise Task Type**:
 
 Identify the primary task category based on content analysis:
 
@@ -63,9 +63,9 @@ Identify the primary task category based on content analysis:
 
 3. **Complex Refactoring & Architecture**:
 
-   - Pattern: System design, architectural review, large-scale refactoring, performance optimization
+   - Pattern: System design, architectural review, large-scale refactoring, performance optimisation
    - Characteristics: Deep reasoning, multiple components, trade-off analysis
-   - Keywords: architect, refactor, optimize, design, scale, review architecture
+   - Keywords: architect, refactor, optimise, design, scale, review architecture
 
 4. **Debugging & Problem-Solving**:
 
@@ -77,24 +77,24 @@ Identify the primary task category based on content analysis:
 
    - Pattern: Feature planning, research, documentation analysis, ADR creation
    - Characteristics: Read-only, context gathering, decision-making support
-   - Keywords: plan, research, analyze, investigate, document, assess
+   - Keywords: plan, research, analyse, investigate, document, assess
 
 6. **Code Review & Quality Analysis**:
 
    - Pattern: Security analysis, performance review, best practices validation, compliance checking
    - Characteristics: Critical thinking, pattern recognition, domain expertise
-   - Keywords: review, analyze, security, performance, compliance, validate
+   - Keywords: review, analyse, security, performance, compliance, validate
 
-7. **Specialized Domain Tasks**:
+7. **Specialised Domain Tasks**:
 
    - Pattern: Django/framework-specific, accessibility (WCAG), testing (TDD), API design
    - Characteristics: Deep domain knowledge, framework conventions, standards compliance
    - Keywords: django, accessibility, wcag, rest, api, testing, tdd
 
 8. **Advanced Reasoning & Multi-Step Workflows**:
-   - Pattern: Algorithmic optimization, complex data transformations, multi-phase workflows
+   - Pattern: Algorithmic optimisation, complex data transformations, multi-phase workflows
    - Characteristics: Advanced reasoning, mathematical/algorithmic thinking, sequential logic
-   - Keywords: algorithm, optimize, transform, sequential, reasoning, calculate
+   - Keywords: algorithm, optimise, transform, sequential, reasoning, calculate
 
 **Extract Capability Requirements**:
 
@@ -119,7 +119,7 @@ For each available model, evaluate against these dimensions:
 | GPT-4.1                 | 0x         | Fast     | Good         | Good      | 128K    | ✅     | Balanced general tasks, included in all plans     |
 | GPT-5 mini              | 0x         | Fastest  | Good         | Basic     | 128K    | ❌     | Simple tasks, quick responses, cost-effective     |
 | GPT-5                   | 1x         | Moderate | Excellent    | Advanced  | 128K    | ✅     | Complex code, advanced reasoning, multi-turn chat |
-| GPT-5 Codex             | 1x         | Fast     | Excellent    | Good      | 128K    | ❌     | Code optimization, refactoring, algorithmic tasks |
+| GPT-5 Codex             | 1x         | Fast     | Excellent    | Good      | 128K    | ❌     | Code optimisation, refactoring, algorithmic tasks |
 | Claude Sonnet 3.5       | 1x         | Moderate | Excellent    | Excellent | 200K    | ✅     | Code generation, long context, balanced reasoning |
 | Claude Sonnet 4         | 1x         | Moderate | Excellent    | Advanced  | 200K    | ❌     | Complex code, robust reasoning, enterprise tasks  |
 | Claude Sonnet 4.5       | 1x         | Moderate | Excellent    | Expert    | 200K    | ✅     | Advanced code, architecture, design patterns      |
@@ -127,7 +127,7 @@ For each available model, evaluate against these dimensions:
 | Gemini 2.5 Pro          | 1x         | Moderate | Excellent    | Advanced  | 2M      | ✅     | Very long context, multi-modal, real-time data    |
 | Gemini 2.0 Flash (dep.) | 0.25x      | Fastest  | Good         | Good      | 1M      | ❌     | Fast responses, cost-effective (deprecated)       |
 | Grok Code Fast 1        | 0.25x      | Fastest  | Good         | Basic     | 128K    | ❌     | Speed-critical simple tasks, preview (free)       |
-| o3 (deprecated)         | 1x         | Slow     | Good         | Expert    | 128K    | ❌     | Advanced reasoning, algorithmic optimization      |
+| o3 (deprecated)         | 1x         | Slow     | Good         | Expert    | 128K    | ❌     | Advanced reasoning, algorithmic optimisation      |
 | o4-mini (deprecated)    | 0.33x      | Fast     | Good         | Good      | 128K    | ❌     | Reasoning at lower cost (deprecated)              |
 
 #### Selection Decision Tree
@@ -478,7 +478,7 @@ model: "[Recommended Model Name]"
 
 - [ ] File successfully read and parsed
 - [ ] Frontmatter extracted correctly (or noted if missing)
-- [ ] Task complexity accurately categorized (Simple/Moderate/Complex/Advanced)
+- [ ] Task complexity accurately categorised (Simple/Moderate/Complex/Advanced)
 - [ ] Primary task category identified from 8 options
 - [ ] Model recommendation aligns with decision tree logic
 - [ ] Multiplier cost explained for user's subscription tier
@@ -509,11 +509,11 @@ model: "[Recommended Model Name]"
 
 ## Advanced Use Cases
 
-### Analyzing Multiple Files
+### Analysing Multiple Files
 
 If user provides multiple files:
 
-1. Analyze each file individually
+1. Analyse each file individually
 2. Generate separate recommendations per file
 3. Provide summary table comparing recommendations
 4. Note any patterns (e.g., "All debug-related modes benefit from Claude Sonnet 4.5")
@@ -531,8 +531,8 @@ If user asks "Which model is better between X and Y for this file?":
 
 If file specifies a deprecated model:
 
-1. Prioritize migration guidance in report
-2. Test current behavior expectations vs. replacement model capabilities
+1. Prioritise migration guidance in report
+2. Test current behaviour expectations vs. replacement model capabilities
 3. Provide phased migration if breaking changes expected
 4. Include rollback plan if needed
 
@@ -544,12 +544,12 @@ If file specifies a deprecated model:
 **Content**: "Format Python code with Black style, add type hints"
 **Recommendation**: GPT-5 mini (0x multiplier, fastest, sufficient for repetitive formatting)
 **Alternative**: Grok Code Fast 1 (0.25x, even faster, preview feature)
-**Rationale**: Task is simple and repetitive; premium reasoning not needed; speed prioritized
+**Rationale**: Task is simple and repetitive; premium reasoning not needed; speed prioritised
 
 ### Example 2: Complex Architecture Review
 
 **File**: `architect.agent.md`
-**Content**: "Review system design for scalability, security, maintainability; analyze trade-offs; provide ADR-level recommendations"
+**Content**: "Review system design for scalability, security, maintainability; analyse trade-offs; provide ADR-level recommendations"
 **Recommendation**: Claude Sonnet 4.5 (1x multiplier, expert reasoning, excellent for architecture)
 **Alternative**: Claude Opus 4.1 (10x, use for very large codebases >500K tokens)
 **Rationale**: Requires deep reasoning, architectural expertise, design pattern knowledge; Sonnet 4.5 excels at this
@@ -557,7 +557,7 @@ If file specifies a deprecated model:
 ### Example 3: Django Expert Mode
 
 **File**: `django.agent.md`
-**Content**: "Django 5.x expert with ORM optimization, async views, REST API design; uses context7 for up-to-date Django docs"
+**Content**: "Django 5.x expert with ORM optimisation, async views, REST API design; uses context7 for up-to-date Django docs"
 **Recommendation**: GPT-5 (1x multiplier, advanced reasoning, excellent code quality)
 **Alternative**: Claude Sonnet 4.5 (1x, alternative perspective, strong with frameworks)
 **Rationale**: Domain expertise + context7 integration benefits from advanced reasoning; 1x cost justified for expert mode
@@ -605,7 +605,7 @@ If file specifies a deprecated model:
 - ✅ Claude Sonnet 3.5, Claude Sonnet 4, Claude Opus 4.1 (Anthropic)
 - ✅ Gemini 2.5 Pro (Google)
 
-### Auto Model Selection Behavior (Sept 2025+)
+### Auto Model Selection Behaviour (Sept 2025+)
 
 **Included in Auto Selection**:
 
@@ -623,7 +623,7 @@ If file specifies a deprecated model:
 
 **When Auto Selects**:
 
-- Copilot analyzes prompt complexity, context size, task type
+- Copilot analyses prompt complexity, context size, task type
 - Chooses from eligible pool based on availability and rate limits
 - Applies 10% multiplier discount on auto-selected models
 - Shows selected model on hover over response in Chat view

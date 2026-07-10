@@ -6,7 +6,7 @@
 `pixie.wrap` — data-oriented observation API.
 
 `wrap()` observes a data value or callable at a named point in the
-processing pipeline. Its behavior depends on the active mode:
+processing pipeline. Its behaviour depends on the active mode:
 
 - **No-op** (tracing disabled, no eval registry): returns `data` unchanged.
 - **Tracing** (during `pixie trace`): writes to the trace file and emits an

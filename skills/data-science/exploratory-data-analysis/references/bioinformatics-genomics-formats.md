@@ -201,7 +201,7 @@ This reference covers file formats used in genomics, transcriptomics, sequence a
 **Use Cases:** Efficient variant storage and processing
 **Python Libraries:**
 - `pysam`: Full BCF support
-- `cyvcf2`: Optimized BCF reading
+- `cyvcf2`: Optimised BCF reading
 **EDA Approach:**
 - Same as VCF plus:
 - Compression efficiency
@@ -240,10 +240,10 @@ This reference covers file formats used in genomics, transcriptomics, sequence a
 - Correlation between replicates
 - PCA for sample relationships
 
-### .tpm / .fpkm - Normalized Expression
-**Description:** Normalized gene expression values
+### .tpm / .fpkm - Normalised Expression
+**Description:** Normalised gene expression values
 **Typical Data:** TPM (transcripts per million) or FPKM values
-**Use Cases:** Cross-sample comparison, visualization
+**Use Cases:** Cross-sample comparison, visualisation
 **Python Libraries:**
 - `pandas`: Standard CSV reading
 - `anndata`: For integrated analysis
@@ -280,7 +280,7 @@ This reference covers file formats used in genomics, transcriptomics, sequence a
 **EDA Approach:**
 - Cell and gene counts
 - Metadata completeness
-- Layer availability (raw, normalized)
+- Layer availability (raw, normalised)
 - Embedding presence (PCA, UMAP)
 - QC metrics distribution
 - Batch information
@@ -437,7 +437,7 @@ This reference covers file formats used in genomics, transcriptomics, sequence a
 ### .nwk / .newick - Newick Tree Format
 **Description:** Parenthetical tree representation
 **Typical Data:** Phylogenetic trees with branch lengths
-**Use Cases:** Evolutionary analysis, tree visualization
+**Use Cases:** Evolutionary analysis, tree visualisation
 **Python Libraries:**
 - `Biopython`: `Phylo.read('file.nwk', 'newick')`
 - `ete3`: `ete3.Tree('file.nwk')`
@@ -576,7 +576,7 @@ This reference covers file formats used in genomics, transcriptomics, sequence a
 - `straw`: C++ library with Python bindings
 **EDA Approach:**
 - Available resolutions
-- Normalization methods
+- Normalisation methods
 - Contact statistics
 - Chromosomal interactions
 - Quality metrics
@@ -612,7 +612,7 @@ This reference covers file formats used in genomics, transcriptomics, sequence a
 ### .wig - Wiggle Format
 **Description:** Dense continuous genomic data
 **Typical Data:** Coverage or signal tracks
-**Use Cases:** Genome browser visualization
+**Use Cases:** Genome browser visualisation
 **Python Libraries:**
 - `pyBigWig`: Can convert to bigWig
 - Custom parsers for wiggle format

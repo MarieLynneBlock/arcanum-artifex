@@ -164,7 +164,7 @@ The Java SDK supports:
 - HTTP transport configuration
 - Servlet integration
 - Context propagation for tracing
-- Performance optimization
+- Performance optimisation
 - Deployment strategies
 - Maven and Gradle setup
 

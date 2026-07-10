@@ -2,7 +2,7 @@
 
 ## Overview
 
-Effective scientific writing requires mastering fundamental principles that ensure clarity, precision, and impact. Unlike creative or narrative writing, scientific writing prioritizes accuracy, conciseness, and objectivity. This guide covers the core principles that distinguish good scientific writing from poor writing and provides practical strategies for improvement.
+Effective scientific writing requires mastering fundamental principles that ensure clarity, precision, and impact. Unlike creative or narrative writing, scientific writing prioritises accuracy, conciseness, and objectivity. This guide covers the core principles that distinguish good scientific writing from poor writing and provides practical strategies for improvement.
 
 ## The Three Pillars of Scientific Writing
 
@@ -125,7 +125,7 @@ Concise: "Our results demonstrate that..." or "The results show that..."
 | Wordy | Concise |
 |-------|---------|
 | "make a decision" | "decide" |
-| "perform an analysis" | "analyze" |
+| "perform an analysis" | "analyse" |
 | "conduct a study" | "study" or "studied" |
 | "make an assessment" | "assess" |
 | "provide information about" | "inform" |
@@ -143,7 +143,7 @@ received the treatment intervention, had better outcomes."
 Concise: "The intervention group had better outcomes."
 ```
 
-**Favor shorter constructions:**
+**Favour shorter constructions:**
 ```
 Wordy: "In spite of the fact that the sample size was small..."
 Concise: "Although the sample size was small..."
@@ -296,7 +296,7 @@ activity, suggesting that apoptosis may be the primary mechanism of cell death."
 **Style:**
 - Follow journal guidelines consistently
 - Citation format
-- Heading capitalization
+- Heading capitalisation
 - Number vs. word for numerals
 
 ### 6. Logical Organization
@@ -708,7 +708,7 @@ provided to the third group.")
 - **Nature Masterclasses**: Scientific writing courses
 - **WritingCenters**: Many universities provide free online resources
 
-### University Writing Centers
+### University Writing Centres
 
 Most research universities offer:
 - Individual consultations
@@ -727,7 +727,7 @@ Most research universities offer:
 
 ### Writing Style Comparison
 
-| Aspect | Nature/Science | Medical | Specialized | ML Conference |
+| Aspect | Nature/Science | Medical | Specialised | ML Conference |
 |--------|---------------|---------|-------------|---------------|
 | **Sentence length** | 15-20 words | 12-18 words | 18-25 words | 12-20 words |
 | **Vocabulary** | Minimal jargon | Clinical terms | Field-specific | Technical + math |
@@ -740,7 +740,7 @@ Most research universities offer:
 - Direct, technical language with mathematical notation
 - Contribution-focused (numbered lists common)
 - Assumes ML expertise (CNNs, transformers, SGD, etc.)
-- Emphasizes novelty and performance gains
+- Emphasises novelty and performance gains
 - Pseudocode and equations expected
 
 **Example opening (NeurIPS style):**
@@ -759,10 +759,10 @@ showing preserved expressive power, and (3) empirical validation on ImageNet sho
 
 ### Key Writing Differences
 
-| Aspect | Nature/Science | Medical | Specialized | ML Conference |
+| Aspect | Nature/Science | Medical | Specialised | ML Conference |
 |--------|---------------|---------|-------------|---------------|
 | **Paragraph length** | 3-5 sentences | 5-7 sentences | 6-10 sentences | 4-6 sentences |
-| **Math/equations** | Minimize | Rare | Moderate | Essential |
+| **Math/equations** | Minimise | Rare | Moderate | Essential |
 | **Active voice** | Preferred | Mixed | Passive OK | Preferred |
 | **Hedging** | Moderate | Conservative | Detailed | Minimal (claim gains) |
 | **Figure integration** | Tight | Systematic | Detailed | Dense, in-page |
@@ -773,7 +773,7 @@ showing preserved expressive power, and (3) empirical validation on ImageNet sho
 |-------|------------------------|
 | **Nature/Science** | Accessible to non-specialists? Broad significance clear? Compelling story? |
 | **Medical** | Clinical relevance apparent? Professional tone? Methods adequate? |
-| **Specialized** | Technical precision? Field expertise shown? Methods detailed? |
+| **Specialised** | Technical precision? Field expertise shown? Methods detailed? |
 | **ML conferences** | Clear contributions? Claims supported by experiments? Reproducible? |
 
 **Common rejection reasons:**
@@ -787,11 +787,11 @@ showing preserved expressive power, and (3) empirical validation on ImageNet sho
 
 | From → To | Key Changes |
 |-----------|-------------|
-| **Journal → ML conference** | Add numbered contributions; include equations/pseudocode; emphasize quantitative gains; condense prose |
+| **Journal → ML conference** | Add numbered contributions; include equations/pseudocode; emphasise quantitative gains; condense prose |
 | **ML conference → Journal** | Remove contribution numbering; expand motivation; separate Results/Discussion; reduce equations in main text |
-| **Specialist → Broad** | Simplify language; emphasize broad implications; explain technical concepts; add context for non-experts |
+| **Specialist → Broad** | Simplify language; emphasise broad implications; explain technical concepts; add context for non-experts |
 | **Broad → Specialist** | Add technical detail; use field terminology freely; expand mechanistic discussion; cite field literature |
-| **Basic science → Clinical** | Add patient/clinical context; use clinical language; emphasize outcomes/implications; cite clinical evidence |
+| **Basic science → Clinical** | Add patient/clinical context; use clinical language; emphasise outcomes/implications; cite clinical evidence |
 
 ### Pre-Submission Style Checklist
 
@@ -818,7 +818,7 @@ Effective scientific writing is a skill developed through practice. Key principl
 3. **Accuracy** builds credibility
 4. **Objectivity** maintains scientific integrity
 5. **Consistency** aids comprehension
-6. **Logical organization** guides readers
-7. **Journal-specific adaptation** maximizes publication success
+6. **Logical organisation** guides readers
+7. **Journal-specific adaptation** maximises publication success
 
 **Remember:** The goal is not to impress readers with vocabulary or complexity, but to communicate your science clearly and precisely so readers can understand, evaluate, and build upon your work. Adapt your writing style to match your target journal's expectations and audience.

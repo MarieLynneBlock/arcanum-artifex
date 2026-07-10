@@ -4,7 +4,7 @@ Guide to using AI visual analysis for unit curation, inspired by SpikeAgent's ap
 
 ## Overview
 
-AI-assisted curation uses vision-language models to analyze spike sorting visualizations,
+AI-assisted curation uses vision-language models to analyse spike sorting visualisations,
 providing expert-level quality assessments similar to human curators.
 
 ### Workflow
@@ -16,10 +16,10 @@ AI-Enhanced:  Metrics → AI Visual Analysis → Confidence Score → Labels
 
 ## Claude Code Integration
 
-When using this skill within Claude Code, Claude can directly analyze waveform plots without requiring API setup. Simply:
+When using this skill within Claude Code, Claude can directly analyse waveform plots without requiring API setup. Simply:
 
 1. Generate a unit report or plot
-2. Ask Claude to analyze the visualization
+2. Ask Claude to analyse the visualisation
 3. Claude will provide expert-level curation decisions
 
 Example workflow in Claude Code:
@@ -134,7 +134,7 @@ session.export_decisions('final_curation.csv')
 
 ### Quality Assessment (Default)
 
-Analyzes waveform shape, refractory period, amplitude stability.
+Analyses waveform shape, refractory period, amplitude stability.
 
 ```python
 result = npa.analyze_unit_visually(analyzer, uid, task='quality_assessment')
@@ -321,7 +321,7 @@ result = npa.analyze_unit_visually(
 4. **Save sessions** - Always use CurationSession to track decisions
 5. **Document reasoning** - Use notes field to record decision rationale
 
-## Cost Optimization
+## Cost Optimisation
 
 ```python
 # Only use AI for uncertain units

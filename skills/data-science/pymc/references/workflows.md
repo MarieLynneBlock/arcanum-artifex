@@ -1,6 +1,6 @@
 # PyMC Workflows and Common Patterns
 
-This reference provides standard workflows and patterns for building, validating, and analyzing Bayesian models in PyMC.
+This reference provides standard workflows and patterns for building, validating, and analysing Bayesian models in PyMC.
 
 ## Standard Bayesian Workflow
 
@@ -243,9 +243,9 @@ with pm.Model() as mixture_model:
 
 ## Data Preparation Best Practices
 
-### Standardization
+### Standardisation
 
-Standardize continuous predictors for better sampling:
+Standardise continuous predictors for better sampling:
 
 ```python
 # Standardize
@@ -282,9 +282,9 @@ with pm.Model() as model:
     # ... rest of model using X_complete ...
 ```
 
-### Centering and Scaling
+### Centring and Scaling
 
-For regression models, center predictors and outcome:
+For regression models, centre predictors and outcome:
 
 ```python
 # Center
@@ -467,7 +467,7 @@ diagnose_sampling(idata, var_names=['alpha', 'beta', 'sigma'])
 
 | Problem | Solution |
 |---------|----------|
-| Divergences | Increase `target_accept=0.95`, use non-centered parameterization |
+| Divergences | Increase `target_accept=0.95`, use non-centred parameterization |
 | Low ESS | Sample more draws, reparameterize to reduce correlation |
 | High R-hat | Run longer chains, check for multimodality, improve initialization |
 | Slow sampling | Use ADVI initialization, reparameterize, reduce model complexity |

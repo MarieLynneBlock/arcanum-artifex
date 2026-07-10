@@ -146,7 +146,7 @@ Start with core query, then add constraints:
 Improve answers by specifying the output format:
 
 - "Provide a step-by-step explanation..."
-- "Summarize in bullet points..."
+- "Summarise in bullet points..."
 - "Create a comparison table of..."
 - "List the top 5 approaches with pros and cons..."
 - "Include specific numerical benchmarks and metrics..."
@@ -241,7 +241,7 @@ For comprehensive research:
 **Example workflow for "CAR-T cell therapy":**
 
 1. "What is CAR-T cell therapy and how does it work?"
-2. "What are the specific molecular mechanisms by which CAR-T cells recognize and kill cancer cells?"
+2. "What are the specific molecular mechanisms by which CAR-T cells recognise and kill cancer cells?"
 3. "Compare first-generation, second-generation, and third-generation CAR-T cell designs"
 4. "What are the latest clinical trial results for CAR-T therapy in treating solid tumors (2024)?"
 5. "What are the current limitations and challenges in CAR-T cell therapy, and what approaches are being investigated to address them?"
@@ -250,7 +250,7 @@ For comprehensive research:
 
 Effective Perplexity searches require:
 1. **Specificity**: Clear, detailed queries
-2. **Structure**: Well-organized questions with context
+2. **Structure**: Well-organised questions with context
 3. **Terminology**: Domain-appropriate keywords
 4. **Constraints**: Time frames, sources, output formats
 5. **Iteration**: Refine based on initial results

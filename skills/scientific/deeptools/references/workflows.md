@@ -116,9 +116,9 @@ plotFingerprint \
 
 ## ChIP-seq Analysis Workflow
 
-Complete workflow from BAM files to publication-quality visualizations.
+Complete workflow from BAM files to publication-quality visualisations.
 
-### Step 1: Generate Normalized Coverage Tracks
+### Step 1: Generate Normalised Coverage Tracks
 
 ```bash
 # Input control
@@ -347,7 +347,7 @@ plotProfile \
 
 ## ATAC-seq Workflow
 
-Specialized workflow for ATAC-seq data with Tn5 offset correction.
+Specialised workflow for ATAC-seq data with Tn5 offset correction.
 
 ### Step 1: Shift Reads for Tn5 Correction
 
@@ -392,7 +392,7 @@ bamPEFragmentSize \
 
 ## Peak Region Analysis Workflow
 
-Analyze ChIP-seq signal specifically at peak regions.
+Analyse ChIP-seq signal specifically at peak regions.
 
 ### Step 1: Matrix at Peaks
 
@@ -467,7 +467,7 @@ samtools index input.bam
 
 1. **Always check QC first:** Run correlation, coverage, and fingerprint analysis before proceeding
 2. **Document parameters:** Save command lines for reproducibility
-3. **Use consistent normalization:** Apply same normalization method across samples in a comparison
+3. **Use consistent normalisation:** Apply same normalisation method across samples in a comparison
 4. **Verify reference genome match:** Ensure BAM files and region files use same genome build
 5. **Check strand orientation:** For RNA-seq, verify correct strand orientation
 6. **Test on small regions first:** Use `--region chr1:1-1000000` for testing parameters

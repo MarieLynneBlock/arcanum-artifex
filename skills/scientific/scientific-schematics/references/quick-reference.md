@@ -68,7 +68,7 @@ python scripts/generate_schematic.py \
 ### ✓ Good Prompts (Specific)
 - "CONSORT flowchart with screening (n=500), exclusion (n=150), randomization (n=350)"
 - "Transformer architecture: encoder on left with 6 layers, decoder on right, cross-attention connections"
-- "MAPK signaling: receptor → RAS → RAF → MEK → ERK → nucleus, label each phosphorylation"
+- "MAPK signalling: receptor → RAS → RAF → MEK → ERK → nucleus, label each phosphorylation"
 
 ### ✗ Avoid (Too Vague)
 - "Make a flowchart"

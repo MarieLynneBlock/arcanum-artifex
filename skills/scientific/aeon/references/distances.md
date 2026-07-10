@@ -1,6 +1,6 @@
 # Distance Metrics
 
-Aeon provides specialized distance functions for measuring similarity between time series, compatible with both aeon and scikit-learn estimators.
+Aeon provides specialised distance functions for measuring similarity between time series, compatible with both aeon and scikit-learn estimators.
 
 ## Distance Categories
 
@@ -11,7 +11,7 @@ Allow flexible temporal alignment between series:
 **Dynamic Time Warping Family:**
 - `dtw` - Classic Dynamic Time Warping
 - `ddtw` - Derivative DTW (compares derivatives)
-- `wdtw` - Weighted DTW (penalizes warping by location)
+- `wdtw` - Weighted DTW (penalises warping by location)
 - `wddtw` - Weighted Derivative DTW
 - `shape_dtw` - Shape-based DTW
 
@@ -21,7 +21,7 @@ Allow flexible temporal alignment between series:
 - `lcss` - Longest Common SubSequence
 - `twe` - Time Warp Edit distance
 
-**Specialized:**
+**Specialised:**
 - `msm` - Move-Split-Merge distance
 - `adtw` - Amerced DTW
 - `sbd` - Shape-Based Distance
@@ -34,7 +34,7 @@ Compare time series point-by-point without alignment:
 
 - `euclidean` - Euclidean distance (L2 norm)
 - `manhattan` - Manhattan distance (L1 norm)
-- `minkowski` - Generalized Minkowski distance (Lp norm)
+- `minkowski` - Generalised Minkowski distance (Lp norm)
 - `squared` - Squared Euclidean distance
 
 **Use when**: Series already aligned, need computational speed, or no temporal warping expected.
@@ -107,9 +107,9 @@ dtw_distance(x, y, window=0.1)  # Allow 10% deviation
 dtw_distance(x, y, itakura_max_slope=2.0)
 ```
 
-### Normalization
+### Normalisation
 
-Control whether to z-normalize series before distance computation:
+Control whether to z-normalise series before distance computation:
 
 ```python
 # Most elastic distances support normalization
@@ -162,9 +162,9 @@ distance = lcss_distance(x, y, epsilon=0.5)
 
 ## Best Practices
 
-### 1. Normalization
+### 1. Normalisation
 
-Most distances sensitive to scale; normalize when appropriate:
+Most distances sensitive to scale; normalise when appropriate:
 
 ```python
 from aeon.transformations.collection import Normalizer
@@ -175,7 +175,7 @@ X_normalized = normalizer.fit_transform(X)
 
 ### 2. Window Constraints
 
-For DTW variants, use window constraints for speed and better generalization:
+For DTW variants, use window constraints for speed and better generalisation:
 
 ```python
 # Start with 10-20% window
@@ -196,7 +196,7 @@ Most distances support multivariate time series:
 distance = dtw_distance(x_multivariate, y_multivariate)
 ```
 
-### 5. Performance Optimization
+### 5. Performance Optimisation
 
 - Use numba-compiled implementations (default in aeon)
 - Consider lock-step distances if alignment not needed

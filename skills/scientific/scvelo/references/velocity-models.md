@@ -67,7 +67,7 @@ scv.tl.velocity(adata, mode='dynamical')
 
 ## Velocity Graph
 
-The velocity graph connects cells based on their velocity similarity to neighboring cells' states:
+The velocity graph connects cells based on their velocity similarity to neighbouring cells' states:
 
 ```python
 scv.tl.velocity_graph(adata)
@@ -76,9 +76,9 @@ scv.tl.velocity_graph(adata)
 ```
 
 **Parameters:**
-- `n_neighbors`: Number of neighbors considered
+- `n_neighbors`: Number of neighbours considered
 - `sqrt_transform`: Apply sqrt transform to data (default: False for spliced)
-- `approx`: Use approximate nearest neighbor search (faster for large datasets)
+- `approx`: Use approximate nearest neighbour search (faster for large datasets)
 
 ## Latent Time Interpretation
 
@@ -100,7 +100,7 @@ Latent time τ ∈ [0, 1] for each gene represents:
 
 ### Cell-level
 - `velocity_length`: Magnitude of velocity vector (cell speed)
-- `velocity_confidence`: Coherence of velocity with neighboring cells (0-1)
+- `velocity_confidence`: Coherence of velocity with neighbouring cells (0-1)
 
 ### Dataset-level
 ```python

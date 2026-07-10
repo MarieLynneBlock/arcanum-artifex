@@ -156,7 +156,7 @@ def parse_iqtree_log(log_file: str) -> dict:
 | Issue | Likely Cause | Solution |
 |-------|-------------|---------|
 | All bootstrap values = 0 | Too few taxa | Need ≥4 taxa for bootstrap |
-| Very long branches | Alignment artifacts | Re-trim alignment; check for outliers |
+| Very long branches | Alignment artefacts | Re-trim alignment; check for outliers |
 | Memory error | Too many sequences | Use FastTree; or reduce `-T` to 1 |
 | Poor model fit | Wrong alphabet | Check nucleotide vs. protein specification |
 | Identical sequences | Duplicate sequences | Remove duplicates before alignment |

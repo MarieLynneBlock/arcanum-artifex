@@ -1,4 +1,4 @@
-# Layouts, Styling, and Customization
+# Layouts, Styling, and Customisation
 
 ## Subplots
 
@@ -60,7 +60,7 @@ fig.add_trace(go.Scatter(x=[1, 2], y=[3, 4]), row=1, col=1)
 fig.add_trace(go.Scatter3d(x=[1, 2], y=[3, 4], z=[5, 6]), row=1, col=2)
 ```
 
-### Customizing Subplot Axes
+### Customising Subplot Axes
 
 ```python
 # Update specific subplot axes
@@ -186,9 +186,9 @@ px.defaults.height = 600
 px.defaults.color_continuous_scale = 'Viridis'
 ```
 
-## Color Scales
+## Colour Scales
 
-### Discrete Colors
+### Discrete Colours
 
 ```python
 import plotly.express as px
@@ -207,7 +207,7 @@ fig = px.scatter(df, x='x', y='y', color='category',
                 color_discrete_sequence=px.colors.qualitative.Set2)
 ```
 
-### Continuous Colors
+### Continuous Colours
 
 ```python
 # Named continuous scales
@@ -229,7 +229,7 @@ fig = px.scatter(df, x='x', y='y', color='value',
                 color_continuous_scale=['blue', 'white', 'red'])
 ```
 
-### Colorbar Customization
+### Colorbar Customisation
 
 ```python
 fig.update_coloraxes(
@@ -245,7 +245,7 @@ fig.update_coloraxes(
 )
 ```
 
-## Layout Customization
+## Layout Customisation
 
 ### Title and Fonts
 
@@ -285,7 +285,7 @@ fig.update_layout(
 )
 ```
 
-### Background Colors
+### Background Colours
 
 ```python
 fig.update_layout(
@@ -354,7 +354,7 @@ fig.update_yaxes(
 )
 ```
 
-### Hover Behavior
+### Hover Behaviour
 
 ```python
 fig.update_layout(

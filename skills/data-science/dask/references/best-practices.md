@@ -1,6 +1,6 @@
 # Dask Best Practices
 
-## Performance Optimization Principles
+## Performance Optimisation Principles
 
 ### Start with Simpler Solutions First
 
@@ -29,12 +29,12 @@ These alternatives often provide better returns than distributed systems and sho
 ### Monitor with the Dashboard
 
 The Dask dashboard provides essential visibility into:
-- Worker states and resource utilization
+- Worker states and resource utilisation
 - Task progress and bottlenecks
 - Memory usage patterns
 - Performance characteristics
 
-Access the dashboard to understand what's actually slow in parallel workloads rather than guessing at optimizations.
+Access the dashboard to understand what's actually slow in parallel workloads rather than guessing at optimisations.
 
 ## Critical Pitfalls to Avoid
 
@@ -81,7 +81,7 @@ results = dask.compute(*computations)  # Single compute for all
 **Why**: Calling compute in loops prevents Dask from:
 - Parallelizing different computations
 - Sharing intermediate results
-- Optimizing the overall task graph
+- Optimising the overall task graph
 
 ### 3. Don't Build Excessively Large Task Graphs
 
@@ -163,7 +163,7 @@ del intermediate
 - Zarr: Cloud-native, parallel-friendly
 - NetCDF: Scientific data with metadata
 
-### Optimize Data Ingestion
+### Optimise Data Ingestion
 
 **Read Multiple Files Efficiently**:
 ```python

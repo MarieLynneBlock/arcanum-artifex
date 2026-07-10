@@ -2,7 +2,7 @@
 
 ## Overview
 
-Effective scientific presentations follow a clear narrative structure that guides the audience through your research story. This guide provides structure templates for different talk lengths and contexts, helping you organize content for maximum impact and clarity.
+Effective scientific presentations follow a clear narrative structure that guides the audience through your research story. This guide provides structure templates for different talk lengths and contexts, helping you organise content for maximum impact and clarity.
 
 ## Core Narrative Structure
 
@@ -48,13 +48,13 @@ This arc mirrors the scientific method while maintaining narrative flow that kee
 1. **Title slide** (15 seconds): Title, name, affiliation
 2. **The Problem** (45 seconds): One compelling problem statement with visual
 3. **Your Solution** (60 seconds): Core approach or finding (1 slide or 2 if showing before/after)
-4. **Key Result** (90 seconds): Single most important finding with clear visualization
+4. **Key Result** (90 seconds): Single most important finding with clear visualisation
 5. **Impact** (45 seconds): Why it matters, one key implication
 6. **Closing** (30 seconds): Memorable takeaway, contact info
 
 **Tips**:
 - Focus on ONE message only
-- Maximize visuals, minimize text
+- Maximise visuals, minimise text
 - Practice exact timing
 - No methods details (mention in one sentence)
 - Prepare for "tell me more" conversations after
@@ -75,7 +75,7 @@ This arc mirrors the scientific method while maintaining narrative flow that kee
    - (Optional) Result 4: Extension or implication
 6. **Interpretation** (90 seconds): What it means (1-2 slides)
 7. **Conclusions** (45 seconds): Main takeaways
-8. **Acknowledgments** (15 seconds): Funding, collaborators
+8. **Acknowledgements** (15 seconds): Funding, collaborators
 
 **Tips**:
 - Spend 40-50% of time on results
@@ -110,7 +110,7 @@ This arc mirrors the scientific method while maintaining narrative flow that kee
    - Limitations
    - Implications
 9. **Conclusions** (60 seconds): Key takeaways (1-2 slides)
-10. **Acknowledgments + Questions** (30 seconds)
+10. **Acknowledgements + Questions** (30 seconds)
 
 **Tips**:
 - Budget time for each section and practice with timer
@@ -159,7 +159,7 @@ Similar to 15-minute talk but with:
    - Secondary analyses
    - Subgroup analyses
    - Sensitivity analyses
-   - Summary visualization
+   - Summary visualisation
 6. **Discussion** (5-6 minutes): Interpretation and implications (6-8 slides)
    - Summary of findings
    - Comparison to literature (multiple references)
@@ -168,7 +168,7 @@ Similar to 15-minute talk but with:
    - Clinical/practical implications
    - Future directions
 7. **Conclusions** (1-2 minutes): Key messages (2 slides)
-8. **Acknowledgments/Questions** (1 minute)
+8. **Acknowledgements/Questions** (1 minute)
 
 **Tips**:
 - Include an outline slide showing talk structure
@@ -198,12 +198,12 @@ Similar to 15-minute talk but with:
    - Limitations
 6. **Future Directions** (2-3 minutes): Where the field is going (2-3 slides)
 7. **Conclusions** (2 minutes): Key messages (2 slides)
-8. **Acknowledgments** (1 minute)
+8. **Acknowledgements** (1 minute)
 
 **Tips**:
 - Tell a story arc across multiple studies
 - Show evolution of thinking
-- Include more personal elements and humor
+- Include more personal elements and humour
 - Can discuss failed experiments or pivots
 - More philosophical and forward-looking
 - Engage audience with rhetorical questions
@@ -250,7 +250,7 @@ Your opening sets the tone and captures attention. Effective hooks:
 - Humanizes research, creates emotional connection
 
 **4. Visual Puzzle**
-- Start with an intriguing image or data visualization
+- Start with an intriguing image or data visualisation
 - "Look at this pattern. What could explain it?"
 
 **5. Contrasting Paradigms**
@@ -298,7 +298,7 @@ Example outline approach:
 The last 1-2 minutes are most remembered. Strong conclusions:
 
 **1. Key Takeaways Format**
-- 3-5 bullet points summarizing main messages
+- 3-5 bullet points summarising main messages
 - Each should be a complete, memorable sentence
 - Not just "Results": make claims
 
@@ -322,7 +322,7 @@ The last 1-2 minutes are most remembered. Strong conclusions:
 - 1-2 specific next steps
 - Inspiration for audience's own work
 
-### Acknowledgments Slide
+### Acknowledgements Slide
 
 Essential elements:
 - **Funding sources** (with grant numbers)
@@ -341,7 +341,7 @@ Your final slide stays visible during Q&A. Include:
 - **Lab website or GitHub**
 - **Key visual from your research** (not just text)
 
-Avoid ending with "References" or dense acknowledgments—these don't facilitate discussion.
+Avoid ending with "References" or dense acknowledgements—these don't facilitate discussion.
 
 ## Transition Techniques
 
@@ -350,7 +350,7 @@ Smooth transitions maintain narrative flow and audience orientation.
 ### Between Major Sections
 
 **Explicit Transition Slides**:
-- Use consistent visual style (color, icon, position)
+- Use consistent visual style (colour, icon, position)
 - Single word or short phrase: "Methods" "Results" "Implications"
 - Optional: Return to outline with current section highlighted
 
@@ -363,7 +363,7 @@ Smooth transitions maintain narrative flow and audience orientation.
 
 **Visual Continuity**:
 - Repeat key element (figure, title format) across slides
-- Use consistent color coding
+- Use consistent colour coding
 - Progressive builds of same figure
 
 **Verbal Bridges**:
@@ -425,7 +425,7 @@ Help audience track progress through talk:
 
 **If Running Behind**:
 - Skip backup slides or extra examples (prepare these in advance)
-- Summarize rather than detail on secondary points
+- Summarise rather than detail on secondary points
 - Never rush through conclusions—skip earlier content instead
 - NEVER say "I'll go quickly through these" (just skip them)
 
@@ -445,7 +445,7 @@ Help audience track progress through talk:
 - **Bored**: Leaning back, glazed eyes, fidgeting
 
 **Adjustments**:
-- If losing audience: Speed up, add humor, show compelling visual
+- If losing audience: Speed up, add humour, show compelling visual
 - If audience confused: Slow down, ask "Does this make sense?", re-explain
 - If highly engaged: Can add more detail, encourage questions
 
@@ -474,7 +474,7 @@ For seminars and longer talks:
 - ✅ Stand to side of screen, facing audience
 - ✅ Use pointer deliberately for specific elements
 - ✅ Make eye contact with different sections of room
-- ✅ Gesture naturally to emphasize points
+- ✅ Gesture naturally to emphasise points
 - ✅ Vary voice pitch and pace
 - ✅ Pause after important points
 
@@ -494,7 +494,7 @@ For seminars and longer talks:
 - Test screen sharing, audio, and video beforehand
 - Use presenter mode if available (see notes)
 - Ensure good lighting and camera angle
-- Minimize background distractions
+- Minimise background distractions
 
 **Engagement Challenges**:
 - Can't read audience body language as well
@@ -540,7 +540,7 @@ For seminars and longer talks:
 - Stay calm and professional
 - Fill time with verbal explanation while fixing
 - Skip problem slide if necessary
-- Apologize briefly but don't dwell on it
+- Apologise briefly but don't dwell on it
 
 ## Adapting to Different Venues
 
@@ -574,7 +574,7 @@ For seminars and longer talks:
 - Engage in back-and-forth discussion
 - Less formal style acceptable
 
-### Thesis Defense
+### Thesis Defence
 
 **Context**:
 - Committee has read dissertation
@@ -602,13 +602,13 @@ For seminars and longer talks:
 - Lead with impact and significance
 - Minimal methods details (what, not how)
 - Show preliminary data and proof of concept
-- Emphasize feasibility and timeline
+- Emphasise feasibility and timeline
 - Clear, simple language
 - Strong business case or societal benefit
 
 ## Summary Checklist
 
-Before finalizing your presentation structure:
+Before finalising your presentation structure:
 
 **Overall Structure**:
 - [ ] Clear narrative arc (hook → context → problem → solution → results → impact)

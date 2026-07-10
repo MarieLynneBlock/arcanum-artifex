@@ -6,7 +6,7 @@
 - Use human-readable names (spaces allowed)
 - Be descriptive: `Total Sales Amount` not `TSA`
 - Avoid abbreviations unless universally understood
-- Use consistent capitalization (Title Case recommended)
+- Use consistent capitalisation (Title Case recommended)
 - Avoid special characters except spaces
 
 ### Table Naming
@@ -45,7 +45,7 @@
 - Acceptable for simple exploration
 - Set correct SummarizeBy property:
   - Amounts: Sum
-  - Keys/IDs: None (Do Not Summarize)
+  - Keys/IDs: None (Do Not Summarise)
   - Rates/Prices: None or Average
 
 ## Measure Patterns
@@ -138,7 +138,7 @@ measure_operations(
 
 ## Display Folders
 
-Organize measures into logical groups:
+Organise measures into logical groups:
 ```
 measure_operations(
   operation: "Update",
@@ -189,7 +189,7 @@ RETURN
 - [ ] Measures have clear, descriptive names
 - [ ] Measures have descriptions
 - [ ] Appropriate format strings applied
-- [ ] Display folders organize related measures
+- [ ] Display folders organise related measures
 - [ ] Column references are fully qualified
 - [ ] Measure references are not qualified
 - [ ] Variables used for complex calculations

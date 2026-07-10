@@ -66,8 +66,8 @@ The AI will automatically:
 - Video production workflow illustrations
 - Poster design process flowcharts
 - Content extraction diagrams
-- System architecture visualizations
-- Any complex concept that benefits from visualization
+- System architecture visualisations
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -99,7 +99,7 @@ Generates professional presentation videos with slides, narration, cursor moveme
 **Key Features**:
 - Automated slide generation from paper structure
 - Natural-sounding speech synthesis
-- Synchronized cursor movements and highlights
+- Synchronised cursor movements and highlights
 - Optional talking-head video using Hallo2 (requires GPU)
 - Multi-language support
 
@@ -274,7 +274,7 @@ input/
 - `--generate-video`: Enable video generation
 - `--enable-talking-head`: Add talking-head to video (requires GPU)
 
-### Customization
+### Customisation
 - `--poster-width-inches [width]`: Custom poster width
 - `--poster-height-inches [height]`: Custom poster height
 - `--video-duration [seconds]`: Target video length
@@ -282,7 +282,7 @@ input/
 
 ## Output Structure
 
-Generated outputs are organized by paper and component:
+Generated outputs are organised by paper and component:
 
 ```
 output/
@@ -306,9 +306,9 @@ output/
 
 ### Input Preparation
 1. **Use LaTeX when possible**: Provides best content extraction and structure
-2. **Organize files properly**: Keep all assets (figures, tables, bibliography) in paper directory
+2. **Organise files properly**: Keep all assets (figures, tables, bibliography) in paper directory
 3. **High-quality figures**: Use vector formats (PDF, SVG) or high-resolution rasters (300+ DPI)
-4. **Clean LaTeX**: Remove compilation artifacts, ensure source compiles successfully
+4. **Clean LaTeX**: Remove compilation artefacts, ensure source compiles successfully
 
 ### Model Selection Strategy
 - **GPT-4**: Best for production-quality outputs, conferences, publications
@@ -322,10 +322,10 @@ For tight deadlines, generate in this order:
 3. **Video** (slowest, can be generated later, ~20-60 min)
 
 ### Quality Assurance
-Before finalizing outputs:
+Before finalising outputs:
 1. **Website**: Test on multiple devices, verify all links work, check figure quality
-2. **Poster**: Print test page, verify text readability from 3-6 feet, check colors
-3. **Video**: Watch entire video, verify audio synchronization, test on different devices
+2. **Poster**: Print test page, verify text readability from 3-6 feet, check colours
+3. **Video**: Watch entire video, verify audio synchronisation, test on different devices
 
 ## Resource Requirements
 
@@ -378,7 +378,7 @@ Before finalizing outputs:
 
 ## Platform-Specific Features
 
-### Social Media Optimization
+### Social Media Optimisation
 
 The system auto-detects target platforms:
 
@@ -400,7 +400,7 @@ Specify conference requirements:
 - Standard poster sizes (4'×3', 5'×4', A0, A1)
 - Video abstract length limits (typically 3-5 minutes)
 - Institution branding requirements
-- Color scheme preferences
+- Colour scheme preferences
 
 ## Integration and Deployment
 
@@ -443,7 +443,7 @@ wait
 ### Custom Branding
 Apply institution or lab branding:
 - Provide logo files in paper directory
-- Specify color schemes in configuration
+- Specify colour schemes in configuration
 - Use custom templates (advanced)
 - Match conference theme requirements
 
@@ -481,7 +481,7 @@ The Paper2All system includes built-in quality assessment:
 
 ### Design Quality
 - **Aesthetics**: Visual appeal and professionalism
-- **Layout**: Balance, hierarchy, and organization
+- **Layout**: Balance, hierarchy, and organisation
 - **Readability**: Text legibility and figure clarity
 - **Consistency**: Uniform styling and branding
 

@@ -44,7 +44,7 @@ Proper timing is critical for professional scientific presentations. This guide 
 
 **When to Use Fewer Slides**:
 - Deep dive into few concepts
-- Complex data visualizations
+- Complex data visualisations
 - Interactive discussions expected
 - Technical/mathematical content
 
@@ -170,7 +170,7 @@ Slide 7: Conclusion + Contact (30 seconds)
 
 ### Complex Slides
 
-**Data Visualization Slides** (2-3 minutes):
+**Data Visualisation Slides** (2-3 minutes):
 ```
 30 seconds: Set up (what you're showing)
 60 seconds: Walk through key patterns
@@ -228,7 +228,7 @@ For 45-minute talk:
 
 **Recovery Strategies**:
 1. Skip backup/secondary slides (prepare these in advance)
-2. Summarize instead of detailing
+2. Summarise instead of detailing
 3. Cut discussion, not results
 4. NEVER skip conclusions
 
@@ -256,7 +256,7 @@ For 45-minute talk:
 | Lightning (5 min) | 5-7 times | 3 hours |
 | Conference (15 min) | 3-5 times | 4-5 hours |
 | Seminar (45 min) | 3-4 times | 6-8 hours |
-| Defense (60 min) | 4-6 times | 10-15 hours |
+| Defence (60 min) | 4-6 times | 10-15 hours |
 
 ### Practice Progression
 
@@ -486,7 +486,7 @@ Target: 15:00, Slides: 1-18
 
 ### Mistake 3: No Time Checkpoints
 
-**Problem**: Realizing you're behind only at minute 12 of 15
+**Problem**: Realising you're behind only at minute 12 of 15
 
 **Solution**:
 - Set 3-4 checkpoints

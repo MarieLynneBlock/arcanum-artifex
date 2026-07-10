@@ -48,7 +48,7 @@ Search for clinical trials using various query parameters and filters.
 - `SUSPENDED` - Temporarily halted
 - `TERMINATED` - Stopped prematurely
 - `COMPLETED` - Study has concluded
-- `WITHDRAWN` - Withdrawn prior to enrollment
+- `WITHDRAWN` - Withdrawn prior to enrolment
 
 **Valid Phase Values:**
 - `EARLY_PHASE1` - Early Phase 1 (formerly Phase 0)
@@ -60,7 +60,7 @@ Search for clinical trials using various query parameters and filters.
 
 **Sort Options:**
 - `LastUpdatePostDate:asc` / `LastUpdatePostDate:desc` - Sort by last update date
-- `EnrollmentCount:asc` / `EnrollmentCount:desc` - Sort by enrollment count
+- `EnrollmentCount:asc` / `EnrollmentCount:desc` - Sort by enrolment count
 - `StartDate:asc` / `StartDate:desc` - Sort by start date
 - `StudyFirstPostDate:asc` / `StudyFirstPostDate:desc` - Sort by first posted date
 
@@ -109,18 +109,18 @@ curl "https://clinicaltrials.gov/api/v2/studies/NCT04852770?format=json"
 
 ## Response Data Structure
 
-The API returns study data organized into hierarchical modules. Key sections include:
+The API returns study data organised into hierarchical modules. Key sections include:
 
 ### protocolSection
 
 Core study information and design:
 
-- **identificationModule** - NCT ID, official title, brief title, organization
+- **identificationModule** - NCT ID, official title, brief title, organisation
 - **statusModule** - Overall status, start date, completion date, last update
 - **sponsorCollaboratorsModule** - Lead sponsor, collaborators, responsible party
 - **descriptionModule** - Brief summary, detailed description
 - **conditionsModule** - Conditions being studied
-- **designModule** - Study type, phases, enrollment info, design details
+- **designModule** - Study type, phases, enrolment info, design details
 - **armsInterventionsModule** - Study arms and interventions
 - **outcomesModule** - Primary and secondary outcomes
 - **eligibilityModule** - Inclusion/exclusion criteria, age/sex requirements
@@ -343,7 +343,7 @@ Descriptive text fields use CommonMark Markdown format, allowing for structured 
 
 ### Enumerated Values
 
-Many fields use standardized enumerated values (e.g., study status, phase) rather than free-form text, improving data consistency and query reliability.
+Many fields use standardised enumerated values (e.g., study status, phase) rather than free-form text, improving data consistency and query reliability.
 
 ## Migration from Classic API
 
@@ -351,7 +351,7 @@ The API v2 replaced the classic API (retired June 2024). Key improvements:
 
 1. **Structured Data** - Enumerated values instead of free text
 2. **Modern Standards** - ISO 8601 dates, CommonMark markdown
-3. **Better Performance** - Optimized queries and pagination
+3. **Better Performance** - Optimised queries and pagination
 4. **OpenAPI Spec** - Standard API specification format
 5. **Consistent Fields** - Number fields properly typed
 

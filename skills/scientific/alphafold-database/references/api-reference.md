@@ -79,7 +79,7 @@ curl https://alphafold.ebi.ac.uk/api/prediction/P00520
 - `latestVersion`: Current model version number
 - `allVersions`: List of available versions
 - `cifUrl/bcifUrl/pdbUrl`: Structure file download URLs
-- `paeImageUrl`: PAE visualization image URL
+- `paeImageUrl`: PAE visualisation image URL
 - `paeDocUrl`: PAE data JSON URL
 
 ### 2. 3D-Beacons Integration
@@ -143,7 +143,7 @@ https://alphafold.ebi.ac.uk/files/AF-P00520-F1-model_v4.bcif
 - Compressed binary version of mmCIF
 - Smaller file size (~70% reduction)
 - Faster parsing
-- Requires specialized parser
+- Requires specialised parser
 
 **PDB Format (Legacy):**
 ```
@@ -191,7 +191,7 @@ https://alphafold.ebi.ac.uk/files/AF-P00520-F1-predicted_aligned_error_v4.json
 - `distance`: N×N matrix of PAE values in Ångströms
 - `max_predicted_aligned_error`: Maximum PAE value in the matrix
 
-#### 4. PAE Visualization (PNG)
+#### 4. PAE Visualisation (PNG)
 
 ```
 https://alphafold.ebi.ac.uk/files/AF-P00520-F1-predicted_aligned_error_v4.png
@@ -229,7 +229,7 @@ AlphaFold mmCIF files contain:
 - `B_iso_or_equiv`: B-factor (contains pLDDT score)
 
 **pLDDT in B-factor Column:**
-AlphaFold stores per-residue confidence (pLDDT) in the B-factor field. This allows standard structure viewers to color by confidence automatically.
+AlphaFold stores per-residue confidence (pLDDT) in the B-factor field. This allows standard structure viewers to colour by confidence automatically.
 
 ### Confidence JSON Schema
 

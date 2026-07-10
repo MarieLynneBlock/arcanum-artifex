@@ -1,6 +1,6 @@
 ---
 name: denario
-description: Multiagent AI system for scientific research assistance that automates research workflows from data analysis to publication. This skill should be used when generating research ideas from datasets, developing research methodologies, executing computational experiments, performing literature searches, or generating publication-ready papers in LaTeX format. Supports end-to-end research pipelines with customizable agent orchestration.
+description: Multiagent AI system for scientific research assistance that automates research workflows from data analysis to publication. This skill should be used when generating research ideas from datasets, developing research methodologies, executing computational experiments, performing literature searches, or generating publication-ready papers in LaTeX format. Supports end-to-end research pipelines with customisable agent orchestration.
 license: GPL-3.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,14 +10,14 @@ metadata:
 
 ## Overview
 
-Denario is a multiagent AI system designed to automate scientific research workflows from initial data analysis through publication-ready manuscripts. Built on AG2 and LangGraph frameworks, it orchestrates multiple specialized agents to handle hypothesis generation, methodology development, computational analysis, and paper writing.
+Denario is a multiagent AI system designed to automate scientific research workflows from initial data analysis through publication-ready manuscripts. Built on AG2 and LangGraph frameworks, it orchestrates multiple specialised agents to handle hypothesis generation, methodology development, computational analysis, and paper writing.
 
 ## When to Use This Skill
 
 Use this skill when:
-- Analyzing datasets to generate novel research hypotheses
+- Analysing datasets to generate novel research hypotheses
 - Developing structured research methodologies
-- Executing computational experiments and generating visualizations
+- Executing computational experiments and generating visualisations
 - Conducting literature searches for research context
 - Writing journal-formatted LaTeX papers from research results
 - Automating the complete research pipeline from data to publication
@@ -103,7 +103,7 @@ Execute computational experiments and generate analysis:
 den.get_results()
 ```
 
-This runs the methodology, performs computations, creates visualizations, and produces findings. Can also provide pre-computed results:
+This runs the methodology, performs computations, creates visualisations, and produces findings. Can also provide pre-computed results:
 
 ```python
 den.set_results("path/to/results.md")
@@ -189,7 +189,7 @@ For literature search functionality and additional workflow examples, see `refer
 
 ## Advanced Features
 
-- **Multiagent orchestration**: AG2 and LangGraph coordinate specialized agents for different research tasks
+- **Multiagent orchestration**: AG2 and LangGraph coordinate specialised agents for different research tasks
 - **Reproducible research**: All stages produce structured outputs that can be version-controlled
 - **Journal integration**: Automatic formatting for target publication venues
 - **Flexible input**: Manual or automated at each pipeline stage

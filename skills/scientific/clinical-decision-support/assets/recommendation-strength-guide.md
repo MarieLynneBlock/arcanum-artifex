@@ -205,7 +205,7 @@ Occurs when:
 - "We suggest either [option A] or [option B] based on patient preferences."
 - "Either approach is reasonable."
 
-## Color Coding for Visual Documents
+## Colour Coding for Visual Documents
 
 **Strong Recommendations (Green Background)**:
 - RGB(0, 153, 76) or #009954
@@ -236,7 +236,7 @@ Occurs when:
 - Evidence: Large phase 3 RCT (KEYNOTE-024), n=305, well-designed
 - Results: PFS HR 0.50 (0.37-0.68), OS HR 0.60 (0.41-0.89)
 - Toxicity: Lower grade 3-5 AEs than chemotherapy (27% vs 53%)
-- Patient values: Most prioritize efficacy and tolerability
+- Patient values: Most prioritise efficacy and tolerability
 
 **Recommendation**: STRONG FOR (Grade 1A)
 
@@ -248,7 +248,7 @@ Occurs when:
 - Results: Recurrence risk reduced but ongoing toxicity
 - Toxicity: Immune-related AEs requiring steroids (some severe)
 - Cost: High annual cost for 12 months treatment
-- Patient values: Variable (some prioritize recurrence prevention, others avoid toxicity)
+- Patient values: Variable (some prioritise recurrence prevention, others avoid toxicity)
 
 **Recommendation**: CONDITIONAL FOR (Grade 2B)
 
@@ -310,7 +310,7 @@ Guideline Concordance:
 
 ## Quality Checklist
 
-Before finalizing recommendations, verify:
+Before finalising recommendations, verify:
 
 - [ ] Recommendation statement is clear and actionable
 - [ ] Strength is explicitly stated (strong vs conditional)

@@ -34,7 +34,7 @@ All `read_*` and `scan_*` functions share these parameters (instead of a single 
 | `max_retries` | int | `5` | Maximum retries for cloud operations |
 | `timeout` | int | `300` | Timeout in seconds for cloud operations |
 | `compression_type` | str | `"auto"` | Compression type (auto-detected from extension) |
-| `projection_pushdown` | bool | `True` | Enable projection pushdown optimization |
+| `projection_pushdown` | bool | `True` | Enable projection pushdown optimisation |
 | `use_zero_based` | bool | `None` | Set coordinate system metadata (None = use global setting) |
 
 Not all functions support all parameters. SAM functions lack cloud parameters. FASTA/FASTQ lack `predicate_pushdown`.

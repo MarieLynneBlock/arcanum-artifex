@@ -2,7 +2,7 @@
 
 Use this reference when designing player state, match flow, cooldowns, respawn logic, class selection, or round progression.
 
-## Session modeling in real plugins
+## Session modelling in real plugins
 
 ### Rich minigame session
 
@@ -28,7 +28,7 @@ Persistent brawl modes often keep a leaner `PlayerSession`, including:
 - safe-zone tracking
 - generic cooldown map
 
-This is a strong pattern when the plugin has one dominant game loop and most feature-specific behavior lives in services.
+This is a strong pattern when the plugin has one dominant game loop and most feature-specific behaviour lives in services.
 
 ## Rule 1: model player state explicitly
 
@@ -71,7 +71,7 @@ Guidance:
 
 - for round-based modes, use a phase enum or state machine
 - trigger map-wide events from phase transitions, not random listeners
-- keep the “what happens at phase N” logic centralized
+- keep the “what happens at phase N” logic centralised
 
 ## Rule 4: match overlays should not be mixed blindly into normal rounds
 
@@ -84,7 +84,7 @@ Observed match overlay pattern:
 Guidance:
 
 - if tournament or match mode changes the base game rules, isolate it behind a dedicated manager
-- keep “normal game” and “match override” behavior composable, not tangled
+- keep “normal game” and “match override” behaviour composable, not tangled
 
 ## Rule 5: reconnect and cleanup paths matter
 
@@ -97,10 +97,10 @@ Observed concerns:
 Guidance:
 
 - prefer `UUID` for durable identity
-- if you must keep live `Player` references, also define detach/reattach behavior
+- if you must keep live `Player` references, also define detach/reattach behaviour
 - always think through quit, reconnect, death, respawn, and shutdown together
 
-## Rule 6: cooldowns should be centralized
+## Rule 6: cooldowns should be centralised
 
 Observed patterns:
 
@@ -110,7 +110,7 @@ Observed patterns:
 Choose based on your mode:
 
 - tick-down integers:
-  - good for per-second synchronized gameplay pacing
+  - good for per-second synchronised gameplay pacing
 - expiry timestamps:
   - good for lightweight cooldown checks across arbitrary actions
 

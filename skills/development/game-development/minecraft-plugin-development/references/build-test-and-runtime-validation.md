@@ -1,6 +1,6 @@
 # Build, Test, And Runtime Validation
 
-Use this reference when a Minecraft plugin task touches build configuration, packaging, generated resources, deployment to a local test server, optional plugin integrations, reload behavior, or release readiness.
+Use this reference when a Minecraft plugin task touches build configuration, packaging, generated resources, deployment to a local test server, optional plugin integrations, reload behaviour, or release readiness.
 
 This is especially useful for Maven or Gradle Paper plugins with many YAML resources, shaded libraries, soft dependencies such as PlaceholderAPI or MythicMobs, and admin commands that validate runtime configuration.
 
@@ -17,7 +17,7 @@ Guidance:
 - If the package or main class changes, update `plugin.yml` in the same change.
 - If command names change, update command registration, permission checks, tab completers, and usage text together.
 
-Maven shape to recognize:
+Maven shape to recognise:
 
 ```xml
 <resources>
@@ -127,6 +127,6 @@ Before finishing build or deployment-related changes, verify:
 - generated README or marketplace files are updated if the repository requires it
 - build files and `plugin.yml` agree on version, main class, dependencies, and commands
 - shaded dependencies are relocated when conflict-prone
-- optional integrations have guards and clear degraded behavior
+- optional integrations have guards and clear degraded behaviour
 - validation commands or test checklists cover the changed gameplay path
 - local build output is not committed unless the repository intentionally tracks it

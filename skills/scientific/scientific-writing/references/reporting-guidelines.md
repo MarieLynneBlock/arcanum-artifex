@@ -13,7 +13,7 @@ The EQUATOR Network (Enhancing the QUAlity and Transparency Of health Research) 
 **For authors:**
 - Ensures nothing important is forgotten
 - Increases acceptance rates
-- Improves manuscript organization
+- Improves manuscript organisation
 - Reduces reviewer requests for additional information
 
 **For readers and reviewers:**
@@ -46,7 +46,7 @@ The EQUATOR Network (Enhancing the QUAlity and Transparency Of health Research) 
 
 **Key components:**
 - **Checklist**: 25 items covering title, abstract, introduction, methods, results, discussion
-- **Flow diagram**: Participant flow through enrollment, allocation, follow-up, and analysis
+- **Flow diagram**: Participant flow through enrolment, allocation, follow-up, and analysis
 
 **Main checklist items:**
 1. Title identifies study as randomized trial
@@ -262,7 +262,7 @@ The EQUATOR Network (Enhancing the QUAlity and Transparency Of health Research) 
 
 **Main checklist items (22 items):**
 1. Title identifies study as prediction model study
-2. Abstract summarizes key elements
+2. Abstract summarises key elements
 3. Background and objectives
 4. Data source and participants
 5. Outcome definition
@@ -323,7 +323,7 @@ The EQUATOR Network (Enhancing the QUAlity and Transparency Of health Research) 
 
 **Main checklist items (13 items):**
 1. Title with "case report"
-2. Abstract summarizing case
+2. Abstract summarising case
 3. Introduction with case background
 4. Patient information (demographics, primary concern)
 5. Clinical findings
@@ -503,7 +503,7 @@ Many reporting guidelines have extensions for specific contexts:
 ### CONSORT Flow Diagram
 
 **Four stages:**
-1. **Enrollment**: Assessed for eligibility
+1. **Enrolment**: Assessed for eligibility
 2. **Allocation**: Randomly assigned to groups
 3. **Follow-up**: Received intervention, lost to follow-up
 4. **Analysis**: Included in analysis
@@ -553,7 +553,7 @@ Analyzed          Analyzed          Analyzed
 
 ### Mistake 2: Using Guidelines Only After Manuscript is Complete
 
-**Impact:** May realize key data were not collected or documented
+**Impact:** May realise key data were not collected or documented
 
 **Solution:** Review guidelines during study design and data collection
 
@@ -666,7 +666,7 @@ checklist is provided as Supplementary File 1."
 |-----------|--------------|---------------------------|
 | **Medical journals** | Mandatory (CONSORT, STROBE, etc.) | Checklist required at submission |
 | **PLOS/BMC** | Mandatory for study types | Checklist uploaded as supplement |
-| **Nature/Science** | Recommended | Methods completeness emphasized |
+| **Nature/Science** | Recommended | Methods completeness emphasised |
 | **ML conferences** | No formal guidelines | Reproducibility details required |
 
 ### ML Conference Reporting Standards
@@ -692,7 +692,7 @@ checklist is provided as Supplementary File 1."
 
 **What gets checked:**
 - **Medical journals**: Checklist uploaded; adherence statement in Methods; systematic completeness
-- **PLOS/BMC**: Mandatory checklists for certain designs; reproducibility emphasized
+- **PLOS/BMC**: Mandatory checklists for certain designs; reproducibility emphasised
 - **High-impact**: Methods sufficiency for replication (checklist often not required)
 - **ML conferences**: Reproducibility checklist (NeurIPS); code availability increasingly expected
 

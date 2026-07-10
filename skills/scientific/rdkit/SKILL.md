@@ -1,6 +1,6 @@
 ---
 name: rdkit
-description: Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity, reactions. For standard workflows with simpler interface, use datamol (wrapper around RDKit). Use rdkit for advanced control, custom sanitization, specialized algorithms.
+description: Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity, reactions. For standard workflows with simpler interface, use datamol (wrapper around RDKit). Use rdkit for advanced control, custom sanitization, specialised algorithms.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-RDKit is a comprehensive cheminformatics library providing Python APIs for molecular analysis and manipulation. This skill provides guidance for reading/writing molecular structures, calculating descriptors, fingerprinting, substructure searching, chemical reactions, 2D/3D coordinate generation, and molecular visualization. Use this skill for drug discovery, computational chemistry, and cheminformatics research tasks.
+RDKit is a comprehensive cheminformatics library providing Python APIs for molecular analysis and manipulation. This skill provides guidance for reading/writing molecular structures, calculating descriptors, fingerprinting, substructure searching, chemical reactions, 2D/3D coordinate generation, and molecular visualisation. Use this skill for drug discovery, computational chemistry, and cheminformatics research tasks.
 
 ## Core Capabilities
 
@@ -430,7 +430,7 @@ AllChem.AlignMol(probe_mol, ref_mol)
 AllChem.ConstrainedEmbed(mol, core_mol)
 ```
 
-### 9. Molecular Visualization
+### 9. Molecular Visualisation
 
 **Basic Drawing:**
 
@@ -464,7 +464,7 @@ img = Draw.MolToImage(mol, highlightAtoms=match,
                       highlightAtomColors=highlight_colors)
 ```
 
-**Customizing Visualization:**
+**Customising Visualisation:**
 
 ```python
 from rdkit.Chem.Draw import rdMolDraw2D
@@ -501,7 +501,7 @@ IPythonConsole.molSize = (300, 300)   # Default size
 mol  # Shows molecule image
 ```
 
-**Visualizing Fingerprint Bits:**
+**Visualising Fingerprint Bits:**
 
 ```python
 # Show what molecular features a fingerprint bit represents
@@ -558,7 +558,7 @@ uncharger = rdMolStandardize.Uncharger()
 mol_neutral = uncharger.uncharge(mol)
 ```
 
-### 11. Working with Molecular Hashes and Standardization
+### 11. Working with Molecular Hashes and Standardisation
 
 **Molecular Hashing:**
 
@@ -691,7 +691,7 @@ if mol is None:
     continue
 ```
 
-### Performance Optimization
+### Performance Optimisation
 
 **Use binary formats for storage:**
 
@@ -750,7 +750,7 @@ suppl = Chem.MultithreadedSDMolSupplier('large.sdf', numWriterThreads=4)
 1. **Forgetting to check for None:** Always validate molecules after parsing
 2. **Sanitization failures:** Use `DetectChemistryProblems()` to debug
 3. **Missing hydrogens:** Use `AddHs()` when calculating properties that depend on hydrogen
-4. **2D vs 3D:** Generate appropriate coordinates before visualization or 3D analysis
+4. **2D vs 3D:** Generate appropriate coordinates before visualisation or 3D analysis
 5. **SMARTS matching rules:** Remember that unspecified properties match anything
 6. **Thread safety with MolSuppliers:** Don't share supplier objects across threads
 
@@ -760,7 +760,7 @@ suppl = Chem.MultithreadedSDMolSupplier('large.sdf', numWriterThreads=4)
 
 This skill includes detailed API reference documentation:
 
-- `api-reference.md` - Comprehensive listing of RDKit modules, functions, and classes organized by functionality
+- `api-reference.md` - Comprehensive listing of RDKit modules, functions, and classes organised by functionality
 - `descriptors-reference.md` - Complete list of available molecular descriptors with descriptions
 - `smarts-patterns.md` - Common SMARTS patterns for functional groups and structural features
 

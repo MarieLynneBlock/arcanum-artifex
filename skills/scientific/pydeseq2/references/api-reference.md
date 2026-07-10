@@ -6,7 +6,7 @@ This document provides comprehensive API reference for PyDESeq2 classes, methods
 
 ### DeseqDataSet
 
-The main class for differential expression analysis that handles data processing from normalization through log-fold change fitting.
+The main class for differential expression analysis that handles data processing from normalisation through log-fold change fitting.
 
 **Purpose:** Implements dispersion and log fold-change (LFC) estimation for RNA-seq count data.
 
@@ -21,10 +21,10 @@ The main class for differential expression analysis that handles data processing
 **Key Methods:**
 
 #### `deseq2()`
-Run the complete DESeq2 pipeline for normalization and dispersion/LFC fitting.
+Run the complete DESeq2 pipeline for normalisation and dispersion/LFC fitting.
 
 **Steps performed:**
-1. Compute normalization factors (size factors)
+1. Compute normalisation factors (size factors)
 2. Fit genewise dispersions
 3. Fit dispersion trend curve
 4. Calculate dispersion priors
@@ -52,7 +52,7 @@ with open("result_adata.pkl", "wb") as f:
 ```
 
 **Attributes (after running deseq2()):**
-- `layers`: dict containing various matrices (normalized counts, etc.)
+- `layers`: dict containing various matrices (normalised counts, etc.)
 - `varm`: dict containing gene-level results (log fold changes, dispersions, etc.)
 - `obsm`: dict containing sample-level information
 - `uns`: dict containing global parameters
@@ -91,7 +91,7 @@ Run Wald tests and compute p-values and adjusted p-values.
 **Returns:** None (results stored in `results_df` attribute)
 
 **Result DataFrame columns:**
-- `baseMean`: mean normalized count across all samples
+- `baseMean`: mean normalised count across all samples
 - `log2FoldChange`: log2 fold change between conditions
 - `lfcSE`: standard error of the log2 fold change
 - `stat`: Wald test statistic
@@ -101,12 +101,12 @@ Run Wald tests and compute p-values and adjusted p-values.
 #### `lfc_shrink(coeff=None)`
 Apply shrinkage to log fold changes using the apeGLM method.
 
-**Purpose:** Reduces noise in LFC estimates for better visualization and ranking, especially for genes with low counts or high variability.
+**Purpose:** Reduces noise in LFC estimates for better visualisation and ranking, especially for genes with low counts or high variability.
 
 **Parameters:**
 - `coeff`: str or None, coefficient name to shrink (if None, uses the coefficient from the contrast)
 
-**Important:** Shrinkage is applied only for visualization/ranking purposes. The statistical test results (p-values, adjusted p-values) remain unchanged.
+**Important:** Shrinkage is applied only for visualisation/ranking purposes. The statistical test results (p-values, adjusted p-values) remain unchanged.
 
 **Returns:** None (updates `results_df` with shrunk LFCs)
 
@@ -137,7 +137,7 @@ The `pydeseq2.preprocessing` module provides utilities for data preparation.
 **Common operations:**
 - Gene filtering based on minimum read counts
 - Sample filtering based on metadata criteria
-- Data transformation and normalization
+- Data transformation and normalisation
 
 ---
 
@@ -150,7 +150,7 @@ Abstract base class defining the interface for DESeq2-related inference methods.
 Default implementation of inference methods using scipy, sklearn, and numpy.
 
 **Purpose:** Provides the mathematical implementations for:
-- GLM (Generalized Linear Model) fitting
+- GLM (Generalised Linear Model) fitting
 - Dispersion estimation
 - Trend curve fitting
 - Statistical testing

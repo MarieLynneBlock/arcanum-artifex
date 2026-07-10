@@ -52,7 +52,7 @@ Use this skill when working on:
 - Testing multiple competing hypotheses systematically
 - Combining literature insights with empirical patterns
 - Accelerating research discovery through automated hypothesis ideation
-- Domains requiring hypothesis-driven analysis: deception detection, AI-generated content identification, mental health indicators, predictive modeling, or other empirical research
+- Domains requiring hypothesis-driven analysis: deception detection, AI-generated content identification, mental health indicators, predictive modelling, or other empirical research
 
 ## Key Features
 
@@ -66,7 +66,7 @@ Use this skill when working on:
 - Combine theoretical foundations with empirical patterns
 - Systematic literature-to-hypothesis pipeline with GROBID
 
-**Performance Optimization**
+**Performance Optimisation**
 - Redis caching reduces API costs for repeated experiments
 - Parallel processing for large-scale hypothesis testing
 - Adaptive refinement focuses on challenging examples
@@ -172,7 +172,7 @@ Datasets must follow HuggingFace datasets format with specific naming convention
 **Important notes:**
 - All lists must have the same length
 - Label format must match your `extract_label()` function output format
-- Feature keys can be customized to match your domain (e.g., `review_text`, `post_content`, etc.)
+- Feature keys can be customised to match your domain (e.g., `review_text`, `post_content`, etc.)
 
 ## Configuration
 
@@ -378,7 +378,7 @@ def extract_label(llm_output: str) -> str:
    ```bash
    hypogenic_inference --config config.yaml --hypotheses output/hypotheses.json --test_data data/test.json
    ```
-5. Analyze results for patterns like formality, grammatical precision, and tone differences
+5. Analyse results for patterns like formality, grammatical precision, and tone differences
 
 ### Example 2: Literature-Informed Hypothesis Testing (HypoRefine)
 
@@ -397,7 +397,7 @@ def extract_label(llm_output: str) -> str:
 
 ### Example 3: Comprehensive Hypothesis Coverage (Union Method)
 
-**Scenario:** Mental stress detection maximizing hypothesis diversity
+**Scenario:** Mental stress detection maximising hypothesis diversity
 
 **Steps:**
 1. Generate literature hypotheses from mental health research papers
@@ -406,9 +406,9 @@ def extract_label(llm_output: str) -> str:
    ```bash
    hypogenic_generation --config config.yaml --method union --literature_hypotheses lit_hyp.json
    ```
-4. Inference captures both theoretical constructs (posting behavior changes) and data patterns (emotional language shifts)
+4. Inference captures both theoretical constructs (posting behaviour changes) and data patterns (emotional language shifts)
 
-## Performance Optimization
+## Performance Optimisation
 
 **Caching:** Enable Redis caching to reduce API costs and computation time for repeated LLM calls
 
@@ -648,5 +648,5 @@ Scripts directory is available for:
 Assets directory is available for:
 - Example datasets and templates
 - Sample hypothesis banks
-- Visualization outputs
+- Visualisation outputs
 - Documentation supplements

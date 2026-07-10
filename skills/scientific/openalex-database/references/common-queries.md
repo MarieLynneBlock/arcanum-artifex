@@ -113,9 +113,9 @@ for trend in trends_sorted[-10:]:  # Last 10 years
     print(f"{year}: {count} publications")
 ```
 
-## Analyzing Research Output
+## Analysing Research Output
 
-**User query**: "Analyze the research output of Stanford University from 2020-2024"
+**User query**: "Analyse the research output of Stanford University from 2020-2024"
 
 **Approach**: Multiple aggregations for comprehensive analysis
 

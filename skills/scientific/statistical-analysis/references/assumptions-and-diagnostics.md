@@ -24,7 +24,7 @@ This document provides comprehensive guidance on checking and validating statist
 **What to do if violated**:
 - Use mixed-effects models for clustered/hierarchical data
 - Use time series methods for temporally dependent data
-- Use generalized estimating equations (GEE) for correlated data
+- Use generalised estimating equations (GEE) for correlated data
 
 **Critical severity**: HIGH - violations can severely inflate Type I error
 
@@ -97,7 +97,7 @@ stats.probplot(data, dist="norm", plot=plt)
 **Visual methods** (primary):
 - Box plots by group (for t-test/ANOVA)
 - Residuals vs. fitted values plot (for regression) - should show random scatter
-- Scale-location plot (square root of standardized residuals vs. fitted)
+- Scale-location plot (square root of standardised residuals vs. fitted)
 
 **Formal tests** (secondary):
 - Levene's test (robust to non-normality)
@@ -131,7 +131,7 @@ _, p_value, _, _ = het_breuschpagan(residuals, exog)
   - Transform dependent variable (log, square root)
   - Use weighted least squares (WLS)
   - Use robust standard errors (HC3)
-  - Use generalized linear models (GLM) with appropriate variance function
+  - Use generalised linear models (GLM) with appropriate variance function
 
 **Critical severity**: MEDIUM - tests can be robust with equal sample sizes
 

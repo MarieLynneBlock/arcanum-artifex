@@ -2,7 +2,7 @@
 
 ## Overview
 
-Workspaces in protocols.io enable team collaboration by organizing protocols, managing members, and controlling access permissions. The Workspaces API allows you to list workspaces, manage memberships, and access workspace-specific protocols.
+Workspaces in protocols.io enable team collaboration by organising protocols, managing members, and controlling access permissions. The Workspaces API allows you to list workspaces, manage memberships, and access workspace-specific protocols.
 
 ## Base URL
 
@@ -147,7 +147,7 @@ Create a new protocol within a specific workspace.
 3. **Institutional Workspace**
    - Organization-wide workspace
    - Often includes branding
-   - Centralized protocol management
+   - Centralised protocol management
 
 ### Permission Levels
 
@@ -175,13 +175,13 @@ Create a new protocol within a specific workspace.
 
 ### 1. Lab Protocol Repository
 
-Organize lab protocols in a shared workspace:
+Organise lab protocols in a shared workspace:
 
 1. Create or join lab workspace: `GET /workspaces`
 2. List existing protocols: `GET /workspaces/{id}/protocols`
 3. Create new protocols: `POST /workspaces/{id}/protocols`
 4. Invite lab members: Share workspace invitation
-5. Organize by categories or tags
+5. Organise by categories or tags
 
 ### 2. Collaborative Protocol Development
 

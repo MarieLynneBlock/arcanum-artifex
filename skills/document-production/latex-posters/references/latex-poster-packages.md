@@ -10,9 +10,9 @@ Three major LaTeX packages dominate research poster creation: beamerposter, tikz
 |---------|--------------|------------|----------|
 | **Learning Curve** | Easy (if familiar with Beamer) | Moderate | Moderate |
 | **Flexibility** | Moderate | High | Moderate-High |
-| **Default Aesthetics** | Traditional/Academic | Modern/Colorful | Professional/Clean |
+| **Default Aesthetics** | Traditional/Academic | Modern/Colourful | Professional/Clean |
 | **Theme Support** | Extensive (Beamer themes) | Built-in + Custom | Limited built-in |
-| **Customization** | Moderate effort | Easy with TikZ | Structured approach |
+| **Customisation** | Moderate effort | Easy with TikZ | Structured approach |
 | **Layout System** | Frame-based | Block-based | Box-based with grid |
 | **Multi-column** | Manual | Automatic | Automatic |
 | **Graphics Integration** | Standard includegraphics | TikZ + includegraphics | Standard + advanced |
@@ -25,23 +25,23 @@ Three major LaTeX packages dominate research poster creation: beamerposter, tikz
 
 ### Overview
 
-beamerposter extends the popular Beamer presentation class for poster-sized documents. It inherits all Beamer functionality, themes, and customization options.
+beamerposter extends the popular Beamer presentation class for poster-sized documents. It inherits all Beamer functionality, themes, and customisation options.
 
 ### Advantages
 
 - **Familiar syntax**: If you know Beamer, you know beamerposter
-- **Extensive themes**: Access to all Beamer themes and color schemes
+- **Extensive themes**: Access to all Beamer themes and colour schemes
 - **Institutional branding**: Easy to match university templates
 - **Stable and mature**: Well-tested, extensive documentation
-- **Block structure**: Clear organizational units
-- **Good for traditional posters**: Academic conferences, thesis defenses
+- **Block structure**: Clear organisational units
+- **Good for traditional posters**: Academic conferences, thesis defences
 
 ### Disadvantages
 
 - **Less flexible layouts**: Column-based system can be restrictive
 - **Manual positioning**: Requires careful spacing adjustments
 - **Traditional aesthetics**: Can look dated compared to modern designs
-- **Limited built-in styling**: Requires theme customization for unique looks
+- **Limited built-in styling**: Requires theme customisation for unique looks
 
 ### Basic Template
 
@@ -119,7 +119,7 @@ beamerposter extends the popular Beamer presentation class for poster-sized docu
 \usecolortheme{seahorse}
 ```
 
-### Custom Colors
+### Custom Colours
 
 ```latex
 % Define custom colors
@@ -133,7 +133,7 @@ beamerposter extends the popular Beamer presentation class for poster-sized docu
 \setbeamercolor{block body}{bg=primarycolor!10,fg=black}
 ```
 
-### Advanced Customization
+### Advanced Customisation
 
 ```latex
 % Remove navigation symbols
@@ -180,22 +180,22 @@ beamerposter extends the popular Beamer presentation class for poster-sized docu
 
 ### Overview
 
-tikzposter is built on the powerful TikZ graphics package, offering modern designs with extensive customization through TikZ commands.
+tikzposter is built on the powerful TikZ graphics package, offering modern designs with extensive customisation through TikZ commands.
 
 ### Advantages
 
-- **Modern aesthetics**: Contemporary, colorful designs out-of-the-box
+- **Modern aesthetics**: Contemporary, colourful designs out-of-the-box
 - **Flexible block placement**: Easy positioning anywhere on poster
 - **Beautiful themes**: Multiple professionally designed themes included
 - **TikZ integration**: Seamless graphics and custom drawings
-- **Color customization**: Easy to create custom color palettes
+- **Colour customisation**: Easy to create custom colour palettes
 - **Automatic spacing**: Intelligent block spacing and alignment
 
 ### Disadvantages
 
 - **Compilation time**: TikZ processing can be slow for large posters
 - **File size**: PDFs can be larger due to TikZ elements
-- **Learning curve**: TikZ syntax can be complex for advanced customization
+- **Learning curve**: TikZ syntax can be complex for advanced customisation
 - **Less institutional theme support**: Requires more work to match branding
 
 ### Basic Template
@@ -278,7 +278,7 @@ tikzposter is built on the powerful TikZ graphics package, offering modern desig
 \usetheme{Desert}
 ```
 
-### Color Styles
+### Colour Styles
 
 ```latex
 % Professional blue
@@ -297,7 +297,7 @@ tikzposter is built on the powerful TikZ graphics package, offering modern desig
 \usecolorstyle{Default}
 ```
 
-### Custom Color Definition
+### Custom Colour Definition
 
 ```latex
 \definecolorstyle{CustomStyle}{
@@ -548,7 +548,7 @@ baposter (Box Area Poster) uses a box-based layout system with automatic positio
 }
 ```
 
-### Color Schemes
+### Colour Schemes
 
 ```latex
 % Professional blue
@@ -587,7 +587,7 @@ baposter (Box Area Poster) uses a box-based layout system with automatic positio
 - ✅ You're creating posters for conservative academic conferences
 
 ### Choose tikzposter if:
-- ✅ You want modern, colorful designs
+- ✅ You want modern, colourful designs
 - ✅ You plan to create custom graphics with TikZ
 - ✅ You value aesthetic flexibility
 - ✅ You want built-in professional themes

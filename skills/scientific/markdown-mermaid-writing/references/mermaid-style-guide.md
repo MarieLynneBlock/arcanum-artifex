@@ -15,7 +15,7 @@
 
 1. **Pick the diagram type** → [Selection table](#choosing-the-right-diagram)
 2. **Open that type's file** → Copy the template, fill in your content
-3. **Apply styling from this file** → Emoji from [approved set](#approved-emoji-set), colors from [approved palette](#github-compatible-color-classes)
+3. **Apply styling from this file** → Emoji from [approved set](#approved-emoji-set), colours from [approved palette](#github-compatible-colour-classes)
 4. **Add accessibility** → `accTitle` + `accDescr` (or italic Markdown paragraph for unsupported types)
 5. **Verify** → Renders in light mode, dark mode, and screen reader
 
@@ -96,7 +96,7 @@ One emoji per node, at the start of the label. Same emoji = same meaning across 
 | 🔄    | Cycle / sync / recurring process | `[🔄 Retry loop]`         |
 | 🚀    | Deploy / launch / release        | `[🚀 Ship to production]` |
 | ⚡    | Fast action / trigger / event    | `[⚡ Webhook fired]`      |
-| 📦    | Package / artifact / bundle      | `[📦 Docker image]`       |
+| 📦    | Package / artefact / bundle      | `[📦 Docker image]`       |
 | 🔧    | Tool / utility / maintenance     | `[🔧 Migration script]`   |
 | ⏰    | Scheduled / cron / time-based    | `[⏰ Nightly job]`        |
 
@@ -105,7 +105,7 @@ One emoji per node, at the start of the label. Same emoji = same meaning across 
 | Emoji | Meaning                      | Example              |
 | ----- | ---------------------------- | -------------------- |
 | 👤    | User / person / actor        | `[👤 End user]`      |
-| 👥    | Team / group / organization  | `[👥 Platform team]` |
+| 👥    | Team / group / organisation  | `[👥 Platform team]` |
 | 🤖    | Bot / agent / automation     | `[🤖 CI bot]`        |
 | 🧠    | Intelligence / decision / AI | `[🧠 ML classifier]` |
 
@@ -139,7 +139,7 @@ One emoji per node, at the start of the label. Same emoji = same meaning across 
 | 🧪    | Testing / experiment / QA       | `[🧪 A/B test]`         |
 | 📚    | Documentation / knowledge base  | `[📚 API docs]`         |
 | 🎯    | Goal / target / objective       | `[🎯 OKR tracking]`     |
-| 🗂️    | Category / organize / archive   | `[🗂️ Backlog]`          |
+| 🗂️    | Category / organise / archive   | `[🗂️ Backlog]`          |
 | 🔗    | Link / reference / dependency   | `[🔗 External API]`     |
 | 🛡️    | Protection / guardrail / policy | `[🛡️ Rate limiter]`     |
 | 🏁    | Start / finish / milestone      | `[🏁 Sprint complete]`  |
@@ -157,9 +157,9 @@ One emoji per node, at the start of the label. Same emoji = same meaning across 
 
 ---
 
-## GitHub-Compatible Color Classes
+## GitHub-Compatible Colour Classes
 
-Use **only** when you genuinely need color-coding (multi-actor diagrams, severity levels). Prefer shapes + emoji first.
+Use **only** when you genuinely need colour-coding (multi-actor diagrams, severity levels). Prefer shapes + emoji first.
 
 **Approved palette (tested in both GitHub light and dark modes):**
 
@@ -202,10 +202,10 @@ flowchart LR
 
 **Rules:**
 
-1. Always include `color:` (text color) — dark-mode backgrounds can hide default text
+1. Always include `color:` (text colour) — dark-mode backgrounds can hide default text
 2. Use `classDef` + `class` — **never** inline `style` directives
-3. Max **3–4 color classes** per diagram
-4. **Never rely on color alone** — always pair with emoji, shape, or label text
+3. Max **3–4 colour classes** per diagram
+4. **Never rely on colour alone** — always pair with emoji, shape, or label text
 
 ---
 
@@ -227,7 +227,7 @@ flowchart LR
 
 ## Node Shapes
 
-Use shapes consistently to convey node type without color:
+Use shapes consistently to convey node type without colour:
 
 | Shape             | Syntax     | Meaning                      |
 | ----------------- | ---------- | ---------------------------- |
@@ -253,7 +253,7 @@ Use `**bold**` on **one** key term per node — the word the reader's eye should
 
 ## Subgraphs
 
-Subgraphs are the primary tool for organizing complex diagrams. They create visual groupings that help readers parse structure at a glance.
+Subgraphs are the primary tool for organising complex diagrams. They create visual groupings that help readers parse structure at a glance.
 
 ```
 subgraph name ["📋 Descriptive Title"]
@@ -345,9 +345,9 @@ Not every diagram is simple, and that's fine. The goal is **clarity at every sca
 
 - **One primary flow direction** per diagram — `TB` for hierarchies/processes, `LR` for pipelines/timelines. Mixed directions confuse readers.
 - **Decision points** — keep to ≤3 per subgraph. If a single subgraph has 4+ decisions, it deserves its own focused diagram.
-- **Edge crossings** — minimize by grouping tightly-connected nodes together. If edges are crossing multiple subgraphs chaotically, reorganize the groupings.
+- **Edge crossings** — minimise by grouping tightly-connected nodes together. If edges are crossing multiple subgraphs chaotically, reorganize the groupings.
 - **Labels stay concise** regardless of diagram size — 3–6 words per node, 1–4 words per edge. Complexity comes from structure, not verbose labels.
-- **Color-code subgraph purpose** — in complex diagrams, use `classDef` classes to visually distinguish layers (e.g., all "data" nodes in one color, all "API" nodes in another). Max 3–4 classes even in large diagrams.
+- **Colour-code subgraph purpose** — in complex diagrams, use `classDef` classes to visually distinguish layers (e.g., all "data" nodes in one colour, all "API" nodes in another). Max 3–4 classes even in large diagrams.
 
 ### Composing multiple diagrams
 
@@ -372,7 +372,7 @@ Read the "best for" column, then follow the link to the type file for the exempl
 | Concept hierarchy / brainstorm           | **Mindmap**      | [mindmap.md](mermaid_diagrams/mindmap.md)           |
 | Events over time (chronological)         | **Timeline**     | [timeline.md](mermaid_diagrams/timeline.md)         |
 | User experience / satisfaction map       | **User Journey** | [user-journey.md](mermaid_diagrams/user-journey.md) |
-| Two-axis prioritization / comparison     | **Quadrant**     | [quadrant.md](mermaid_diagrams/quadrant.md)         |
+| Two-axis prioritisation / comparison     | **Quadrant**     | [quadrant.md](mermaid_diagrams/quadrant.md)         |
 | Requirements traceability                | **Requirement**  | [requirement.md](mermaid_diagrams/requirement.md)   |
 | System architecture (zoom levels)        | **C4**           | [c4.md](mermaid_diagrams/c4.md)                     |
 | Flow magnitude / resource distribution   | **Sankey**       | [sankey.md](mermaid_diagrams/sankey.md)             |
@@ -399,7 +399,7 @@ These will save you debugging time:
 | **Architecture** | Hyphens in `[]` labels parsed as edge operators | `[US East Region]` not `[US-East Region]`                           |
 | **Architecture** | `-->` arrow syntax is strict about spacing      | Use `lb:R --> L:api` format exactly                                 |
 | **Requirement**  | `id` field with dashes (`REQ-001`) can fail     | Use numeric IDs: `id: 1`                                            |
-| **Requirement**  | Capitalized risk/verify values can fail         | Use lowercase: `risk: high`, `verifymethod: test`                   |
+| **Requirement**  | Capitalised risk/verify values can fail         | Use lowercase: `risk: high`, `verifymethod: test`                   |
 | **C4**           | Long descriptions cause label overlaps          | Keep descriptions under 4 words; use `UpdateRelStyle()` for offsets |
 | **C4**           | Emoji in labels render but look odd             | Skip emoji in C4 — renderer has its own icons                       |
 | **Flowchart**    | The word `end` breaks parsing                   | Wrap in quotes: `["End"]` or use `end_node` as ID                   |
@@ -426,14 +426,14 @@ These will save you debugging time:
 - [ ] No inline `style` directives
 - [ ] Minimal edge crossings (reorganize groupings if chaotic)
 
-### If Using Color/Emoji/Bold
+### If Using Colour/Emoji/Bold
 
-- [ ] Colors from approved palette using `classDef` + `class`
+- [ ] Colours from approved palette using `classDef` + `class`
 - [ ] Text `color:` included in every `classDef`
-- [ ] ≤4 color classes
+- [ ] ≤4 colour classes
 - [ ] Emoji from approved set, max 1 per node
 - [ ] Bold on max 1–2 words per node
-- [ ] Meaning never conveyed by color alone
+- [ ] Meaning never conveyed by colour alone
 
 ### Before Merge
 

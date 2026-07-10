@@ -61,7 +61,7 @@ Hook (Problem) → Approach → Discovery → Impact
 | Methods | 100-150 | 25% |
 | Results (text) | 100-200 | 25% |
 | Discussion/Conclusions | 100-150 | 25% |
-| References/Acknowledgments | 50-100 | 10% |
+| References/Acknowledgements | 50-100 | 10% |
 
 **Counting Tool**:
 ```latex
@@ -79,7 +79,7 @@ Hook (Problem) → Approach → Discovery → Impact
 - Photos and images
 - Diagrams and flowcharts
 - Icons and symbols
-- Color blocks and design elements
+- Colour blocks and design elements
 
 **Too Text-Heavy** (❌):
 - Wall of text
@@ -139,7 +139,7 @@ Example: "Urban Heat Islands: A Machine Learning Framework for Mitigation"
 **Avoid**:
 - ❌ Generic titles: "A Study of X"
 - ❌ Overly cute or clever wordplay (confuses message)
-- ❌ Excessive jargon: "Utilization of CRISPR-Cas9..."
+- ❌ Excessive jargon: "Utilisation of CRISPR-Cas9..."
 - ❌ Unnecessarily long: "Investigation of the potential role of..."
 
 **LaTeX Title Formatting**:
@@ -219,7 +219,7 @@ improve cross-species accuracy.
 **Key Question**: "How did you do it?" not "How could someone else replicate it?"
 
 **Content Strategy**:
-- **Prioritize**: Visual methods diagram > text description
+- **Prioritise**: Visual methods diagram > text description
 - **Include**: Study design, key procedures, analysis approach
 - **Omit**: Detailed protocols, routine procedures, specific reagent details
 
@@ -365,7 +365,7 @@ Conclusions
 **2. Limitations** (25-50 words, optional but recommended):
 - Acknowledge key constraints
 - Brief, honest
-- Shows scientific rigor
+- Shows scientific rigour
 
 **Example**:
 ```
@@ -431,7 +431,7 @@ Chen (Cell 2022). Full bibliography: [QR Code]
 
 **Alternative**: QR code linking to full reference list
 
-### Acknowledgments
+### Acknowledgements
 
 **Include**:
 - Funding sources (with grant numbers)
@@ -476,7 +476,7 @@ Lab: smithlab.university.edu | Twitter: @smithlab
 
 **Passive Voice** (when appropriate):
 - ✅ "Samples were collected from..."
-- ✅ "Data were analyzed using..."
+- ✅ "Data were analysed using..."
 
 ### Sentence Length
 
@@ -487,7 +487,7 @@ Lab: smithlab.university.edu | Twitter: @smithlab
 
 **Example Revision**:
 - ❌ Long: "We performed a comprehensive analysis of gene expression data from 500 patients with colorectal cancer using RNA sequencing and identified 47 differentially expressed genes associated with treatment response." (31 words)
-- ✅ Short: "We analyzed RNA sequencing data from 500 colorectal cancer patients. We identified 47 genes associated with treatment response." (19 words total, two sentences)
+- ✅ Short: "We analysed RNA sequencing data from 500 colorectal cancer patients. We identified 47 genes associated with treatment response." (19 words total, two sentences)
 
 ### Bullet Points vs. Paragraphs
 
@@ -530,8 +530,8 @@ We used machine learning (ML) to analyze... Later, ML predicted...
 - AI, ML, CNN (in computer science context)
 
 **Avoid Excessive Jargon**:
-- ❌ "Utilized" → ✅ "Used"
-- ❌ "Implement utilization of" → ✅ "Use"
+- ❌ "Utilised" → ✅ "Used"
+- ❌ "Implement utilisation of" → ✅ "Use"
 - ❌ "A majority of" → ✅ "Most"
 
 ### Numbers and Statistics
@@ -634,7 +634,7 @@ Our method reduces errors by 34\% compared to state-of-the-art.
 - Can use field-specific jargon
 - Less background needed
 - Focus on novel methodology
-- Emphasize nuanced findings
+- Emphasise nuanced findings
 
 **General Scientific Audience**:
 - Define key terms

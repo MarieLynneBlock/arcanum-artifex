@@ -16,7 +16,7 @@
 
 ## Common Domain Accessions
 
-### Signaling Domains
+### Signalling Domains
 
 | Accession | Name | Function |
 |-----------|------|---------|

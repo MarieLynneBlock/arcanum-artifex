@@ -36,7 +36,7 @@ Scan the codebase for these signals to determine which regulations apply:
 - GCP storage in europe-* regions
 ```
 
-**Applies to:** Any organization processing personal data of EU/EEA residents, regardless of where the organization is based.
+**Applies to:** Any organisation processing personal data of EU/EEA residents, regardless of where the organisation is based.
 
 ---
 
@@ -228,8 +228,8 @@ HIPAA fines are tiered by knowledge/culpability (45 CFR § 160.404):
 | Tier | Culpability | Min per Violation | Max per Violation | Annual Cap |
 | A | Did not know | $137 | $68,928 | $2,067,813 |
 | B | Reasonable cause | $1,379 | $68,928 | $2,067,813 |
-| C | Willful neglect, corrected | $13,785 | $68,928 | $2,067,813 |
-| D | Willful neglect, not corrected | $68,928 | $1,919,173 | $1,919,173 |
+| C | Wilful neglect, corrected | $13,785 | $68,928 | $2,067,813 |
+| D | Wilful neglect, not corrected | $68,928 | $1,919,173 | $1,919,173 |
 
 **For breach planning:** Each affected patient record where PHI was exposed = 1 violation.
 
@@ -304,7 +304,7 @@ Use this model when generating the Financial Impact Estimate section:
 ```
 
 ### Reputational Multiplier
-Apply based on public visibility of the organization:
+Apply based on public visibility of the organisation:
 ```
 B2C consumer app, consumer brand:     ×1.5 (high reputational damage)
 B2B enterprise, low public profile:  ×1.1 (moderate reputational damage)

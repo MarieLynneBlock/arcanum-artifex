@@ -20,7 +20,7 @@ Present quantitative data, statistics, survey results, and numerical comparisons
 ### Layout Patterns
 - **Single-stat hero**: One large number with supporting context
 - **Multi-stat grid**: 3-6 statistics in a grid layout
-- **Chart-centric**: Large visualization with supporting text
+- **Chart-centric**: Large visualisation with supporting text
 - **Comparison bars**: Side-by-side bar comparisons
 
 ### Prompt Templates
@@ -368,7 +368,7 @@ python skills/generate-image/scripts/generate_image.py \
 ## 5. List/Informational Infographics
 
 ### Purpose
-Present tips, facts, key points, or information in an organized, scannable format.
+Present tips, facts, key points, or information in an organised, scannable format.
 
 ### Visual Elements
 - **Numbers or bullets**: Clear list indicators
@@ -465,10 +465,10 @@ python skills/generate-image/scripts/generate_image.py \
 Display location-based data, regional statistics, or geographic trends.
 
 ### Visual Elements
-- **Map visualization**: World, country, or region
-- **Color coding**: Data intensity by region
+- **Map visualisation**: World, country, or region
+- **Colour coding**: Data intensity by region
 - **Data callouts**: Key statistics for regions
-- **Legend**: Color scale explanation
+- **Legend**: Colour scale explanation
 - **Labels**: Region or country names
 
 ### Layout Patterns
@@ -540,13 +540,13 @@ python skills/generate-image/scripts/generate_image.py \
 ## 7. Hierarchical/Pyramid Infographics
 
 ### Purpose
-Show levels of importance, organizational structures, or ranked information.
+Show levels of importance, organisational structures, or ranked information.
 
 ### Visual Elements
 - **Pyramid shape**: Triangle with levels
 - **Level labels**: Clear tier identification
 - **Size progression**: Larger at base, smaller at top
-- **Color progression**: Gradient or distinct colors per level
+- **Colour progression**: Gradient or distinct colours per level
 - **Icons**: Optional for each level
 
 ### Layout Patterns
@@ -625,10 +625,10 @@ Explain complex systems using familiar visual metaphors (bodies, machines, trees
 
 ### Visual Elements
 - **Central metaphor image**: The main visual (body, tree, machine)
-- **Labeled parts**: Components identified
+- **Labelled parts**: Components identified
 - **Callout lines**: Connecting labels to parts
 - **Descriptions**: Explanations for each part
-- **Color coding**: Different parts in different colors
+- **Colour coding**: Different parts in different colours
 
 ### Layout Patterns
 - **Central image with callouts**: Labels pointing to parts
@@ -703,7 +703,7 @@ Present professional information, skills, experience, and achievements visually.
 
 ### Visual Elements
 - **Photo/avatar section**: Personal branding
-- **Skills visualization**: Bars, charts, ratings
+- **Skills visualisation**: Bars, charts, ratings
 - **Timeline**: Career progression
 - **Contact icons**: Email, phone, social
 - **Achievement badges**: Certifications, awards
@@ -750,12 +750,12 @@ python skills/generate-image/scripts/generate_image.py \
 ## 10. Social Media/Interactive Infographics
 
 ### Purpose
-Create shareable, engaging content optimized for social media platforms.
+Create shareable, engaging content optimised for social media platforms.
 
 ### Visual Elements
 - **Bold headlines**: Attention-grabbing text
 - **Minimal text**: Quick to read
-- **Vibrant colors**: Stand out in feeds
+- **Vibrant colours**: Stand out in feeds
 - **Central visual**: Eye-catching image or icon
 - **Call to action**: Engagement prompt
 
@@ -832,31 +832,31 @@ python skills/generate-image/scripts/generate_image.py \
 ## Style Variations by Industry
 
 ### Corporate/Business Style
-- Colors: Navy, gray, gold accents
+- Colours: Navy, gray, gold accents
 - Typography: Clean sans-serif (Arial, Helvetica)
 - Design: Minimal, professional, structured
 - Elements: Charts, icons, clean lines
 
 ### Healthcare/Medical Style
-- Colors: Blue, teal, green, white
+- Colours: Blue, teal, green, white
 - Typography: Clear, readable
 - Design: Trust-inducing, clean, clinical
 - Elements: Medical icons, anatomy, research imagery
 
 ### Technology/Data Style
-- Colors: Dark backgrounds, neon accents, blue/purple
+- Colours: Dark backgrounds, neon accents, blue/purple
 - Typography: Modern sans-serif, monospace for data
 - Design: Futuristic, clean, dark mode friendly
-- Elements: Circuit patterns, data visualizations, glows
+- Elements: Circuit patterns, data visualisations, glows
 
 ### Education/Academic Style
-- Colors: Neutral tones, soft blues, warm accents
+- Colours: Neutral tones, soft blues, warm accents
 - Typography: Readable, slightly traditional
-- Design: Organized, clear hierarchy, accessible
+- Design: Organised, clear hierarchy, accessible
 - Elements: Books, lightbulbs, graduation icons
 
 ### Marketing/Creative Style
-- Colors: Bold, vibrant, trendy combinations
+- Colours: Bold, vibrant, trendy combinations
 - Typography: Mix of display and body fonts
 - Design: Eye-catching, dynamic, playful
 - Elements: Abstract shapes, gradients, illustrations
@@ -870,26 +870,26 @@ Add these modifiers to any prompt to adjust style:
 ### Design Style
 - "clean minimal design"
 - "modern professional design"
-- "flat design with bold colors"
+- "flat design with bold colours"
 - "hand-drawn illustration style"
 - "3D isometric style"
 - "vintage retro style"
 - "corporate business style"
 - "playful friendly design"
 
-### Color Instructions
-- "[color] and [color] color scheme"
-- "monochromatic [color] palette"
+### Colour Instructions
+- "[colour] and [colour] colour scheme"
+- "monochromatic [colour] palette"
 - "colorblind-safe palette"
-- "warm/cool color tones"
+- "warm/cool colour tones"
 - "high contrast design"
-- "muted pastel colors"
-- "bold vibrant colors"
+- "muted pastel colours"
+- "bold vibrant colours"
 
 ### Layout Instructions
 - "vertical layout"
 - "horizontal layout"
-- "centered composition"
+- "centred composition"
 - "asymmetrical balance"
 - "grid-based layout"
 - "flowing organic layout"
@@ -898,10 +898,10 @@ Add these modifiers to any prompt to adjust style:
 - "white background"
 - "light gray background"
 - "dark background"
-- "gradient background from [color] to [color]"
+- "gradient background from [colour] to [colour]"
 - "subtle pattern background"
-- "solid [color] background"
+- "solid [colour] background"
 
 ---
 
-Use these templates and examples as starting points, then customize for your specific needs.
+Use these templates and examples as starting points, then customise for your specific needs.

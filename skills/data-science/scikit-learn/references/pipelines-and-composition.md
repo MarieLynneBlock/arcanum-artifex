@@ -516,7 +516,7 @@ y_pred = best_pipeline.predict(X_test)
 y_proba = best_pipeline.predict_proba(X_test)
 ```
 
-## Visualization
+## Visualisation
 
 ### Displaying Pipelines
 

@@ -1,20 +1,20 @@
-# deepTools Normalization Methods
+# deepTools Normalisation Methods
 
-This document explains the various normalization methods available in deepTools and when to use each one.
+This document explains the various normalisation methods available in deepTools and when to use each one.
 
-## Why Normalize?
+## Why Normalise?
 
-Normalization is essential for:
+Normalisation is essential for:
 1. **Comparing samples with different sequencing depths**
 2. **Accounting for library size differences**
 3. **Making coverage values interpretable across experiments**
 4. **Enabling fair comparisons between conditions**
 
-Without normalization, a sample with 100 million reads will appear to have higher coverage than a sample with 50 million reads, even if the true biological signal is identical.
+Without normalisation, a sample with 100 million reads will appear to have higher coverage than a sample with 50 million reads, even if the true biological signal is identical.
 
 ---
 
-## Available Normalization Methods
+## Available Normalisation Methods
 
 ### 1. RPKM (Reads Per Kilobase per Million mapped reads)
 
@@ -81,10 +81,10 @@ bamCoverage --bam input.bam --outFileName output.bw \
 
 **Formula:** `(Number of reads in bin) / (Sum of all reads in bins in millions)`
 
-**Key difference from CPM:** Only considers reads that fall within the analyzed bins, not all mapped reads.
+**Key difference from CPM:** Only considers reads that fall within the analysed bins, not all mapped reads.
 
 **When to use:**
-- Similar to CPM, but when you want to exclude reads outside analyzed regions
+- Similar to CPM, but when you want to exclude reads outside analysed regions
 - Comparing specific genomic regions while ignoring background
 
 **Available in:** `bamCoverage`, `bamCompare`
@@ -98,7 +98,7 @@ bamCoverage --bam input.bam --outFileName output.bw \
 **Interpretation:** BPM accounts only for reads in the binned regions.
 
 **Pros:**
-- Focuses normalization on analyzed regions
+- Focuses normalisation on analysed regions
 - Less affected by reads in unanalyzed areas
 
 **Cons:**
@@ -116,7 +116,7 @@ bamCoverage --bam input.bam --outFileName output.bw \
 - Want comparable coverage values across samples
 - Need interpretable absolute coverage values
 - Comparing samples with very different total read counts
-- ChIP-seq with spike-in normalization context
+- ChIP-seq with spike-in normalisation context
 
 **Available in:** `bamCoverage`, `bamCompare`
 
@@ -132,7 +132,7 @@ bamCoverage --bam input.bam --outFileName output.bw \
 **Interpretation:** Signal value approximates the coverage depth (e.g., value of 2 ≈ 2× coverage).
 
 **Pros:**
-- Produces 1× normalized coverage
+- Produces 1× normalised coverage
 - Interpretable in terms of genomic coverage
 - Good for comparing samples with different sequencing depths
 
@@ -142,14 +142,14 @@ bamCoverage --bam input.bam --outFileName output.bw \
 
 ---
 
-### 5. None (No Normalization)
+### 5. None (No Normalisation)
 
 **Formula:** Raw read counts
 
 **When to use:**
 - Preliminary analysis
 - When samples have identical library sizes (rare)
-- When downstream tool will perform normalization
+- When downstream tool will perform normalisation
 - Debugging or quality control
 
 **Available in:** All tools (usually default)
@@ -215,7 +215,7 @@ bamCompare -b1 treatment.bam -b2 control.bam -o output.bw \
 
 ---
 
-## Normalization Method Selection Guide
+## Normalisation Method Selection Guide
 
 ### For ChIP-seq Coverage Tracks
 
@@ -297,13 +297,13 @@ plotCorrelation -in readCounts.npz \
     -o correlation.png
 ```
 
-**Note:** `multiBamSummary` doesn't explicitly normalize, but correlation analysis is robust to scaling. For very different library sizes, consider normalizing BAM files first or using CPM-normalized bigWig files with `multiBigwigSummary`.
+**Note:** `multiBamSummary` doesn't explicitly normalise, but correlation analysis is robust to scaling. For very different library sizes, consider normalising BAM files first or using CPM-normalised bigWig files with `multiBigwigSummary`.
 
 ---
 
-## Advanced Normalization Considerations
+## Advanced Normalisation Considerations
 
-### Spike-in Normalization
+### Spike-in Normalisation
 
 For experiments with spike-in controls (e.g., *Drosophila* chromatin spike-in for ChIP-seq):
 
@@ -335,7 +335,7 @@ bamCoverage --bam input.bam --outFileName output.bw \
 
 ### Chromosome Exclusion
 
-Exclude specific chromosomes from normalization calculations:
+Exclude specific chromosomes from normalisation calculations:
 
 ```bash
 bamCoverage --bam input.bam --outFileName output.bw \
@@ -356,7 +356,7 @@ bamCoverage --bam input.bam --outFileName output.bw \
 
 ### 2. Comparing unnormalized samples
 **Problem:** Sample with 2× sequencing depth appears to have 2× signal
-**Solution:** Always normalize when comparing samples
+**Solution:** Always normalise when comparing samples
 
 ### 3. Wrong effective genome size
 **Problem:** Using hg19 genome size for hg38 data
@@ -372,7 +372,7 @@ bamCoverage --bam input.bam --outFileName output.bw \
 
 ---
 
-## Normalization for Different Comparisons
+## Normalisation for Different Comparisons
 
 ### Within-sample comparisons (different regions)
 **Use:** RPKM (accounts for region length)
@@ -384,7 +384,7 @@ bamCoverage --bam input.bam --outFileName output.bw \
 **Use:** bamCompare with log2 ratio and readCount/SES scaling
 
 ### Multiple samples correlation
-**Use:** CPM or RPGC normalized bigWig files, then multiBigwigSummary
+**Use:** CPM or RPGC normalised bigWig files, then multiBigwigSummary
 
 ---
 
@@ -404,7 +404,7 @@ bamCoverage --bam input.bam --outFileName output.bw \
 
 ## Further Reading
 
-For more details on normalization theory and best practices:
+For more details on normalisation theory and best practices:
 - deepTools documentation: https://deeptools.readthedocs.io/
 - ENCODE guidelines for ChIP-seq analysis
-- RNA-seq normalization papers (DESeq2, TMM methods)
+- RNA-seq normalisation papers (DESeq2, TMM methods)

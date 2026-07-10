@@ -1,6 +1,6 @@
 # Post-Processing & Analysis Reference
 
-Comprehensive guide to quality metrics, visualization, and analysis of sorted Neuropixels data.
+Comprehensive guide to quality metrics, visualisation, and analysis of sorted Neuropixels data.
 
 ## Sorting Analyzer
 
@@ -81,8 +81,8 @@ print(qm)
 | `isolation_distance` | Mahalanobis distance | > 20 |
 | `l_ratio` | L-ratio (isolation) | < 0.1 |
 | `d_prime` | Discriminability | > 5 |
-| `nn_hit_rate` | Nearest neighbor hit rate | > 0.9 |
-| `nn_miss_rate` | Nearest neighbor miss rate | < 0.1 |
+| `nn_hit_rate` | Nearest neighbour hit rate | > 0.9 |
+| `nn_miss_rate` | Nearest neighbour miss rate | < 0.1 |
 | `silhouette_score` | Cluster silhouette | > 0.5 |
 
 ### Compute Specific Metrics
@@ -173,7 +173,7 @@ correlograms, bins = analyzer.get_extension('correlograms').get_data()
 # Cross-correlogram units i,j: correlograms[i, j, :]
 ```
 
-## Visualization
+## Visualisation
 
 ### Probe Map
 ```python

@@ -79,7 +79,7 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 
 **Adequate (3):**
 - Partial coverage with notable gaps
-- More descriptive summarization than synthesis
+- More descriptive summarisation than synthesis
 - Literature mix of current and dated sources
 - Mix of authoritative and less rigorous sources
 - Weak positioning within existing literature
@@ -89,7 +89,7 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 - Minimal coverage with major gaps
 - Purely descriptive without synthesis
 - Literature is largely outdated
-- Sources lack authority or rigor
+- Sources lack authority or rigour
 - Little to no positioning of current work
 - No clear research gaps identified
 
@@ -103,7 +103,7 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 ### Assessment Checklist
 
 - [ ] Does review cover all major relevant areas?
-- [ ] Is literature synthesized rather than just summarized?
+- [ ] Is literature synthesised rather than just summarised?
 - [ ] Are sources current and authoritative?
 - [ ] Are contrasting viewpoints presented?
 - [ ] Are research gaps clearly identified?
@@ -114,10 +114,10 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 ### Common Issues
 
 - **Insufficient coverage**: Missing key papers or research streams
-- **Descriptive listing**: Summarizing papers sequentially without synthesis
+- **Descriptive listing**: Summarising papers sequentially without synthesis
 - **Outdated sources**: Relying on literature more than 5-10 years old
 - **Cherry-picking**: Only citing work that supports hypothesis
-- **Poor organization**: Lack of thematic or conceptual structure
+- **Poor organisation**: Lack of thematic or conceptual structure
 - **Weak gap identification**: Gaps are trivial or not actually gaps
 
 ---
@@ -168,7 +168,7 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 - Not replicable
 - No validity considerations
 - No ethical considerations
-- No acknowledgment of limitations
+- No acknowledgement of limitations
 
 ### Assessment Checklist
 
@@ -226,7 +226,7 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 **Adequate (3):**
 - Data sources are acceptable but not optimal
 - Sample size is marginal
-- Collection procedures lack some rigor
+- Collection procedures lack some rigour
 - Limited quality controls
 - Sampling may have bias concerns
 - Missing data handling is basic
@@ -346,8 +346,8 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 
 **Excellent (5):**
 - Results are clearly and comprehensively presented
-- Visualizations are effective and appropriate
-- Statistical or qualitative rigor is evident
+- Visualisations are effective and appropriate
+- Statistical or qualitative rigour is evident
 - Key findings are highlighted effectively
 - Results directly address research questions
 - Patterns and relationships are clearly shown
@@ -355,8 +355,8 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 
 **Good (4):**
 - Results are clear with minor presentation issues
-- Visualizations are generally effective
-- Rigor is present
+- Visualisations are generally effective
+- Rigour is present
 - Main findings are identifiable
 - Results mostly address questions
 - Patterns are shown
@@ -364,17 +364,17 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 
 **Adequate (3):**
 - Results presentation is adequate but could be clearer
-- Visualizations are basic or have issues
-- Rigor is questionable in places
-- Findings are present but not emphasized
+- Visualisations are basic or have issues
+- Rigour is questionable in places
+- Findings are present but not emphasised
 - Partial alignment with questions
 - Patterns are unclear
 - Negative results may be omitted
 
 **Needs Improvement (2):**
 - Results presentation is unclear or confusing
-- Visualizations are poor or misleading
-- Lack of rigor
+- Visualisations are poor or misleading
+- Lack of rigour
 - Findings are difficult to identify
 - Weak alignment with questions
 - No clear patterns
@@ -382,8 +382,8 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 
 **Poor (1):**
 - Results are poorly presented or absent
-- Visualizations are inappropriate or missing
-- No evidence of rigor
+- Visualisations are inappropriate or missing
+- No evidence of rigour
 - Findings are unclear
 - Results don't address questions
 - No identifiable patterns
@@ -393,7 +393,7 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 
 - [ ] Are results clearly presented?
 - [ ] Do results directly address research questions?
-- [ ] Are visualizations appropriate and effective?
+- [ ] Are visualisations appropriate and effective?
 - [ ] Are key findings highlighted?
 - [ ] Are negative/null results reported?
 - [ ] Is appropriate precision reported (p-values, CIs, effect sizes)?
@@ -405,14 +405,14 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 **Tables:**
 - Clear labels and captions
 - Appropriate precision
-- Organized logically
+- Organised logically
 - Not overly complex
 
 **Figures:**
 - Clear axes and legends
 - Appropriate chart type
 - Professional appearance
-- Accessible (color-blind friendly)
+- Accessible (colour-blind friendly)
 
 **Text:**
 - Highlights key findings
@@ -454,7 +454,7 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 
 **Needs Improvement (2):**
 - Writing is often unclear or verbose
-- Poor organization and flow
+- Poor organisation and flow
 - Tone is inappropriate
 - Frequent grammar/mechanical errors
 - Technical terminology problems
@@ -463,7 +463,7 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 
 **Poor (1):**
 - Writing is unclear and difficult to follow
-- No clear organization
+- No clear organisation
 - Tone is inappropriate
 - Pervasive grammar/mechanical errors
 - Incorrect technical terminology
@@ -473,12 +473,12 @@ This document provides detailed evaluation criteria, rubrics, and quality indica
 ### Assessment Checklist
 
 - [ ] Is writing clear and concise?
-- [ ] Is organization logical?
+- [ ] Is organisation logical?
 - [ ] Is tone appropriate for academic writing?
 - [ ] Are grammar and mechanics correct?
 - [ ] Are technical terms used appropriately?
 - [ ] Is jargon explained when necessary?
-- [ ] Does abstract accurately summarize the work?
+- [ ] Does abstract accurately summarise the work?
 - [ ] Are transitions between sections smooth?
 - [ ] Is the target audience clear?
 
@@ -656,8 +656,8 @@ Adjust standards based on:
 2. **Score each dimension** using the 5-point scale
 3. **Document evidence** for each score with specific examples
 4. **Consider context** and adjust expectations appropriately
-5. **Synthesize findings** across dimensions
-6. **Provide actionable feedback** prioritized by impact
+5. **Synthesise findings** across dimensions
+6. **Provide actionable feedback** prioritised by impact
 7. **Balance criticism with recognition** of strengths
 
-This framework is a guide, not a rigid checklist. Professional judgment should always be applied in context.
+This framework is a guide, not a rigid checklist. Professional judgement should always be applied in context.

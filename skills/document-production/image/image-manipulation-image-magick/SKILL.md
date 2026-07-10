@@ -33,7 +33,7 @@ Use this skill when you need to:
 ### 1. Image Information
 
 - Get image dimensions (width x height)
-- Retrieve detailed metadata (format, color space, etc.)
+- Retrieve detailed metadata (format, colour space, etc.)
 - Identify image format
 
 ### 2. Image Resizing

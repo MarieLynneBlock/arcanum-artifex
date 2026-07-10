@@ -386,7 +386,7 @@ adata = adata[:, desired_genes]
 
 ## Data Transformations
 
-### Normalize
+### Normalise
 ```python
 # Total count normalization (CPM/TPM-like)
 total_counts = adata.X.sum(axis=1)

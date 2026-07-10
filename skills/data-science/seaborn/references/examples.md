@@ -1,6 +1,6 @@
 # Seaborn Common Use Cases and Examples
 
-This document provides practical examples for common data visualization scenarios using seaborn.
+This document provides practical examples for common data visualisation scenarios using seaborn.
 
 ## Exploratory Data Analysis
 
@@ -488,7 +488,7 @@ g = sns.jointplot(
 g.set_axis_labels('X Variable', 'Y Variable')
 ```
 
-## Matrix and Heatmap Visualizations
+## Matrix and Heatmap Visualisations
 
 ### Hierarchical Clustering Heatmap
 
@@ -678,7 +678,7 @@ sns.despine()
 
 ## Custom Styling
 
-### Custom Color Palette from Hex Codes
+### Custom Colour Palette from Hex Codes
 
 ```python
 # Define custom palette
@@ -721,7 +721,7 @@ sns.set_theme(
 )
 ```
 
-### Diverging Colormap Centered on Zero
+### Diverging Colormap Centred on Zero
 
 ```python
 # For data with meaningful zero point (e.g., log fold change)

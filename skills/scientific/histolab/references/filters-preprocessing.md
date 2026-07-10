@@ -2,12 +2,12 @@
 
 ## Overview
 
-Histolab provides a comprehensive set of filters for preprocessing whole slide images and tiles. Filters can be applied to images for visualization, quality control, tissue detection, and artifact removal. They are composable and can be chained together to create sophisticated preprocessing pipelines.
+Histolab provides a comprehensive set of filters for preprocessing whole slide images and tiles. Filters can be applied to images for visualisation, quality control, tissue detection, and artefact removal. They are composable and can be chained together to create sophisticated preprocessing pipelines.
 
 ## Filter Categories
 
 ### Image Filters
-Color space conversions, thresholding, and intensity adjustments
+Colour space conversions, thresholding, and intensity adjustments
 
 ### Morphological Filters
 Structural operations like dilation, erosion, opening, and closing
@@ -30,12 +30,12 @@ gray_image = gray_filter(rgb_image)
 
 **Use cases:**
 - Preprocessing for intensity-based operations
-- Simplifying color complexity
+- Simplifying colour complexity
 - Input for morphological operations
 
 ### RgbToHsv
 
-Convert RGB to HSV (Hue, Saturation, Value) color space.
+Convert RGB to HSV (Hue, Saturation, Value) colour space.
 
 ```python
 from histolab.filters.image_filters import RgbToHsv
@@ -45,13 +45,13 @@ hsv_image = hsv_filter(rgb_image)
 ```
 
 **Use cases:**
-- Color-based tissue segmentation
+- Colour-based tissue segmentation
 - Detecting pen markings by hue
 - Separating chromatic from achromatic content
 
 ### RgbToHed
 
-Convert RGB to HED (Hematoxylin-Eosin-DAB) color space for stain deconvolution.
+Convert RGB to HED (Hematoxylin-Eosin-DAB) colour space for stain deconvolution.
 
 ```python
 from histolab.filters.image_filters import RgbToHed
@@ -62,7 +62,7 @@ hed_image = hed_filter(rgb_image)
 
 **Use cases:**
 - Separating H&E stain components
-- Analyzing nuclear (hematoxylin) vs. cytoplasmic (eosin) staining
+- Analysing nuclear (hematoxylin) vs. cytoplasmic (eosin) staining
 - Quantifying stain intensity
 
 ### OtsuThreshold
@@ -79,7 +79,7 @@ binary_image = otsu_filter(grayscale_image)
 **How it works:**
 - Automatically determines optimal threshold
 - Separates foreground from background
-- Minimizes intra-class variance
+- Minimises intra-class variance
 
 **Use cases:**
 - Tissue detection
@@ -118,7 +118,7 @@ inverted_image = invert_filter(image)
 
 **Use cases:**
 - Preprocessing for certain segmentation algorithms
-- Visualization adjustments
+- Visualisation adjustments
 
 ### StretchContrast
 
@@ -133,7 +133,7 @@ enhanced_image = contrast_filter(image)
 
 **Use cases:**
 - Improving visibility of low-contrast features
-- Preprocessing for visualization
+- Preprocessing for visualisation
 - Enhancing faint structures
 
 ### HistogramEqualization
@@ -148,7 +148,7 @@ equalized_image = hist_eq_filter(grayscale_image)
 ```
 
 **Use cases:**
-- Standardizing image contrast
+- Standardising image contrast
 - Revealing hidden details
 - Preprocessing for feature extraction
 
@@ -201,7 +201,7 @@ opened_image = opening_filter(binary_image)
 ```
 
 **Use cases:**
-- Removing small artifacts
+- Removing small artefacts
 - Smoothing object boundaries
 - Noise reduction
 
@@ -235,7 +235,7 @@ cleaned_image = remove_small_filter(binary_image)
 ```
 
 **Use cases:**
-- Removing dust and artifacts
+- Removing dust and artefacts
 - Filtering noise
 - Cleaning tissue masks
 
@@ -255,7 +255,7 @@ filled_image = fill_holes_filter(binary_image)
 **Use cases:**
 - Filling small gaps in tissue
 - Creating continuous tissue regions
-- Removing internal artifacts
+- Removing internal artefacts
 
 ## Filter Composition
 
@@ -350,7 +350,7 @@ nuclei_enhancement = Compose([
 ])
 ```
 
-### Contrast Normalization
+### Contrast Normalisation
 
 ```python
 from histolab.filters.image_filters import StretchContrast, HistogramEqualization
@@ -410,9 +410,9 @@ aggressive_filters = Compose([
 custom_mask = TissueMask(filters=aggressive_filters)
 ```
 
-## Stain Normalization
+## Stain Normalisation
 
-While histolab doesn't have built-in stain normalization, filters can be used for basic normalization:
+While histolab doesn't have built-in stain normalisation, filters can be used for basic normalisation:
 
 ```python
 from histolab.filters.image_filters import RgbToHed, Lambda
@@ -445,8 +445,8 @@ normalization_pipeline = Compose([
 
 ## Best Practices
 
-1. **Preview filters**: Visualize filter outputs on thumbnails before applying to tiles
-2. **Chain efficiently**: Order filters logically (e.g., color conversion before thresholding)
+1. **Preview filters**: Visualise filter outputs on thumbnails before applying to tiles
+2. **Chain efficiently**: Order filters logically (e.g., colour conversion before thresholding)
 3. **Tune parameters**: Adjust thresholds and structuring element sizes for specific tissues
 4. **Use composition**: Build reusable filter pipelines with `Compose`
 5. **Consider performance**: Complex filter chains increase processing time
@@ -496,11 +496,11 @@ coverage_filter = Lambda(tissue_coverage)
 - Decrease erosion/opening disk size
 - Try adaptive thresholding instead of Otsu
 
-### Issue: Too many artifacts included
+### Issue: Too many artefacts included
 **Solutions:**
 - Increase `area_threshold` in `RemoveSmallObjects`
 - Add opening/closing operations
-- Use custom color-based filtering for specific artifacts
+- Use custom colour-based filtering for specific artefacts
 
 ### Issue: Tissue boundaries too rough
 **Solutions:**
@@ -511,4 +511,4 @@ coverage_filter = Lambda(tissue_coverage)
 **Solutions:**
 - Apply histogram equalization
 - Use adaptive thresholding
-- Implement stain normalization pipeline
+- Implement stain normalisation pipeline

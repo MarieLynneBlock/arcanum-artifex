@@ -661,7 +661,7 @@ expected_claims = results.predict(X, which='mean')
 2. **Perfect separation**: Logit/probit may not converge
 3. **Using Poisson with overdispersion**: Check and use Negative Binomial
 4. **Misinterpreting coefficients**: Remember they're on log-odds/log scale
-5. **Not checking convergence**: Optimization may fail silently
+5. **Not checking convergence**: Optimisation may fail silently
 6. **Wrong distribution**: Match model to data type (binary/count/categorical)
 7. **Ignoring excess zeros**: Use ZIP/ZINB when appropriate
 8. **Not validating predictions**: Always check out-of-sample performance

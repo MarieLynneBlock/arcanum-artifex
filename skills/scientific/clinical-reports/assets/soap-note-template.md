@@ -27,7 +27,7 @@
 
 **Duration:** [How long has this been going on?]
 
-**Characterization:** [Describe the quality - sharp, dull, burning, etc.]
+**Characterisation:** [Describe the quality - sharp, dull, burning, etc.]
 
 **Aggravating factors:** [What makes it worse?]
 
@@ -191,7 +191,7 @@
 - Referrals placed: [specialty, reason]
 - Follow-up appointment: [date/timeframe and with whom]
 - Patient verbalized understanding of plan: [Yes/No, questions answered]
-- Time spent: [Total time and time spent on counseling/coordination if relevant for billing]
+- Time spent: [Total time and time spent on counselling/coordination if relevant for billing]
 
 ---
 
@@ -209,7 +209,7 @@
 
 [OR if time-based:]
 - Total time: [minutes]
-- Time spent on counseling/coordination: [minutes] (>50% of visit)
+- Time spent on counselling/coordination: [minutes] (>50% of visit)
 
 ---
 
@@ -234,7 +234,7 @@
 **Billing Considerations:**
 - Document medical necessity
 - Match documentation level to billing code
-- For time-based billing, document total time and counseling time
+- For time-based billing, document total time and counselling time
 - Include relevant history, exam, and MDM elements
 
 **Legal Considerations:**
@@ -244,7 +244,7 @@
 - Never alter records - use addendum for corrections
 - Ensure legibility
 
-**Customization:**
+**Customisation:**
 - Adapt level of detail to setting (quick outpatient visit vs. complex hospital consultation)
 - Include or exclude sections as relevant
 - Follow institutional templates if required

@@ -177,7 +177,7 @@ Compare cumulative incidence functions between groups using Gray's test (availab
 # result = multivariate_logrank_test(times, groups, events, event_of_interest=1)
 ```
 
-## Modeling with Competing Risks
+## Modelling with Competing Risks
 
 ### Approach 1: Cause-Specific Hazard Models
 

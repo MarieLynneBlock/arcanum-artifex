@@ -1,6 +1,6 @@
 ---
 name: matplotlib
-description: Low-level plotting library for full customization. Use when you need fine-grained control over every plot element, creating novel plot types, or integrating with specific scientific workflows. Export to PNG/PDF/SVG for publication. For quick statistical plots use seaborn; for interactive plots use plotly; for publication-ready multi-panel figures with journal styling, use scientific-visualization.
+description: Low-level plotting library for full customisation. Use when you need fine-grained control over every plot element, creating novel plot types, or integrating with specific scientific workflows. Export to PNG/PDF/SVG for publication. For quick statistical plots use seaborn; for interactive plots use plotly; for publication-ready multi-panel figures with journal styling, use scientific-visualisation.
 license: https://github.com/matplotlib/matplotlib/tree/main/LICENSE
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,18 +10,18 @@ metadata:
 
 ## Overview
 
-Matplotlib is Python's foundational visualization library for creating static, animated, and interactive plots. This skill provides guidance on using matplotlib effectively, covering both the pyplot interface (MATLAB-style) and the object-oriented API (Figure/Axes), along with best practices for creating publication-quality visualizations.
+Matplotlib is Python's foundational visualisation library for creating static, animated, and interactive plots. This skill provides guidance on using matplotlib effectively, covering both the pyplot interface (MATLAB-style) and the object-oriented API (Figure/Axes), along with best practices for creating publication-quality visualisations.
 
 ## When to Use This Skill
 
 This skill should be used when:
 - Creating any type of plot or chart (line, scatter, bar, histogram, heatmap, contour, etc.)
-- Generating scientific or statistical visualizations
-- Customizing plot appearance (colors, styles, labels, legends)
+- Generating scientific or statistical visualisations
+- Customising plot appearance (colours, styles, labels, legends)
 - Creating multi-panel figures with subplots
-- Exporting visualizations to various formats (PNG, PDF, SVG, etc.)
+- Exporting visualisations to various formats (PNG, PDF, SVG, etc.)
 - Building interactive plots or animations
-- Working with 3D visualizations
+- Working with 3D visualisations
 - Integrating plots into Jupyter notebooks or GUI applications
 
 ## Core Concepts
@@ -168,10 +168,10 @@ ax.violinplot([data1, data2, data3], positions=[1, 2, 3])
 
 For comprehensive plot type examples and variations, refer to `references/plot-types.md`.
 
-### 4. Styling and Customization
+### 4. Styling and Customisation
 
-**Color specification methods:**
-- Named colors: `'red'`, `'blue'`, `'steelblue'`
+**Colour specification methods:**
+- Named colours: `'red'`, `'blue'`, `'steelblue'`
 - Hex codes: `'#FF5733'`
 - RGB tuples: `(0.1, 0.2, 0.3)`
 - Colormaps: `cmap='viridis'`, `cmap='plasma'`, `cmap='coolwarm'`
@@ -183,7 +183,7 @@ plt.style.use('seaborn-v0_8-darkgrid')  # Apply predefined style
 print(plt.style.available)  # List all available styles
 ```
 
-**Customizing with rcParams:**
+**Customising with rcParams:**
 ```python
 plt.rcParams['font.size'] = 12
 plt.rcParams['axes.labelsize'] = 14
@@ -267,13 +267,13 @@ ax.set_zlabel('Z Label')
 
 ### 4. Colormap Selection
 - **Sequential** (viridis, plasma, inferno): Ordered data with consistent progression
-- **Diverging** (coolwarm, RdBu): Data with meaningful center point (e.g., zero)
+- **Diverging** (coolwarm, RdBu): Data with meaningful centre point (e.g., zero)
 - **Qualitative** (tab10, Set3): Categorical/nominal data
 - Avoid rainbow colormaps (jet) - they are not perceptually uniform
 
 ### 5. Accessibility
 - Use colorblind-friendly colormaps (viridis, cividis)
-- Add patterns/hatching for bar charts in addition to colors
+- Add patterns/hatching for bar charts in addition to colours
 - Ensure sufficient contrast between elements
 - Include descriptive labels and legends
 
@@ -310,7 +310,7 @@ plt.savefig('analysis.png', dpi=300, bbox_inches='tight')
 This skill includes helper scripts in the `scripts/` directory:
 
 ### `plot_template.py`
-Template script demonstrating various plot types with best practices. Use this as a starting point for creating new visualizations.
+Template script demonstrating various plot types with best practices. Use this as a starting point for creating new visualisations.
 
 **Usage:**
 ```bash
@@ -329,8 +329,8 @@ python scripts/style_configurator.py
 
 For comprehensive information, consult the reference documents:
 
-- **`references/plot-types.md`** - Complete catalog of plot types with code examples and use cases
-- **`references/styling-guide.md`** - Detailed styling options, colormaps, and customization
+- **`references/plot-types.md`** - Complete catalogue of plot types with code examples and use cases
+- **`references/styling-guide.md`** - Detailed styling options, colormaps, and customisation
 - **`references/api-reference.md`** - Core classes and methods reference
 - **`references/common-issues.md`** - Troubleshooting guide for common problems
 
@@ -338,7 +338,7 @@ For comprehensive information, consult the reference documents:
 
 Matplotlib integrates well with:
 - **NumPy/Pandas** - Direct plotting from arrays and DataFrames
-- **Seaborn** - High-level statistical visualizations built on matplotlib
+- **Seaborn** - High-level statistical visualisations built on matplotlib
 - **Jupyter** - Interactive plotting with `%matplotlib inline` or `%matplotlib widget`
 - **GUI frameworks** - Embedding in Tkinter, Qt, wxPython applications
 

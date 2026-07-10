@@ -654,7 +654,7 @@ for name, smarts in patterns.items():
 - `[R]` - In ring
 - `[r6]` - In 6-membered ring
 - `[r{5-7}]` - In 5, 6, or 7-membered ring
-- `[D2]` - Degree 2 (2 neighbors)
+- `[D2]` - Degree 2 (2 neighbours)
 - `[+]` - Positive charge
 - `[-]` - Negative charge
 - `[!C]` - Not carbon

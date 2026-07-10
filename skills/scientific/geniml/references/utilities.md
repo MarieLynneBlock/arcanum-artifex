@@ -177,7 +177,7 @@ print(f"F1 score: {results['f1']:.3f}")
 - Use multiple complementary metrics
 - Compare against baseline models
 - Report metrics on held-out test data
-- Visualize embeddings (UMAP/t-SNE) alongside metrics
+- Visualise embeddings (UMAP/t-SNE) alongside metrics
 
 ---
 

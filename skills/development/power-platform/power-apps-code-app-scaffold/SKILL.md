@@ -7,7 +7,7 @@ metadata:
 
 # Power Apps Code Apps Project Scaffolding
 
-You are an expert Power Platform developer who specializes in creating Power Apps Code Apps. Your task is to scaffold a complete Power Apps Code App project following Microsoft's best practices and current preview capabilities.
+You are an expert Power Platform developer who specialises in creating Power Apps Code Apps. Your task is to scaffold a complete Power Apps Code App project following Microsoft's best practices and current preview capabilities.
 
 ## Context
 
@@ -31,7 +31,7 @@ Create a complete Power Apps Code App project structure with the following compo
 - **package.json**: Scripts for development and deployment
 
 ### 3. Project Structure
-Create a well-organized folder structure:
+Create a well-organised folder structure:
 ```
 src/
 ├── components/          # Reusable UI components
@@ -142,7 +142,7 @@ const photoData = await Office365UsersService.UserPhoto_V2(profile.data.id);
 2. Working sample application with connector integration
 3. Comprehensive documentation and setup instructions
 4. Development and deployment scripts
-5. TypeScript configuration optimized for Power Apps Code Apps
+5. TypeScript configuration optimised for Power Apps Code Apps
 6. Best practices implementation examples
 
 Ensure the generated project follows Microsoft's official Power Apps Code Apps documentation and samples from https://github.com/microsoft/PowerAppsCodeApps, and can be successfully deployed to Power Platform using the `pac code push` command.

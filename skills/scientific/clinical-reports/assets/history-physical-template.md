@@ -184,7 +184,7 @@
 - Gait: [Normal, antalgic, ataxic, spastic]
 
 **Skin:**  
-[Color, temperature, moisture, turgor, lesions, rashes, wounds]
+[Colour, temperature, moisture, turgor, lesions, rashes, wounds]
 
 **Neurological:**
 - Mental Status: [Alert, oriented x3 (person, place, time), speech, memory]
@@ -196,7 +196,7 @@
 - Gait: [Already documented above or describe here]
 
 **Psychiatric:**  
-[Mood, affect, thought process, thought content, judgment, insight]
+[Mood, affect, thought process, thought content, judgement, insight]
 
 **Genitourinary:** (if applicable)  
 [Defer/document findings if examined]

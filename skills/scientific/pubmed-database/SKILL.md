@@ -28,7 +28,7 @@ This skill should be used when:
 
 ### 1. Advanced Search Query Construction
 
-Construct sophisticated PubMed queries using Boolean operators, field tags, and specialized syntax.
+Construct sophisticated PubMed queries using Boolean operators, field tags, and specialised syntax.
 
 **Basic Search Strategies**:
 - Combine concepts with Boolean operators (AND, OR, NOT)
@@ -53,7 +53,7 @@ smith ja[au] AND cancer[tiab] AND 2023[dp] AND english[la]
 - Need comprehensive list of available field tags
 - Require detailed explanation of search operators
 - Constructing complex proximity searches
-- Understanding automatic term mapping behavior
+- Understanding automatic term mapping behaviour
 - Need specific syntax for date ranges, wildcards, or special characters
 
 Grep pattern for field tags: `\[au\]|\[ti\]|\[ab\]|\[mh\]|\[pt\]|\[dp\]`
@@ -158,7 +158,7 @@ abstracts = response.text
 **Best Practices**:
 - Use history server (usehistory=y) for large result sets
 - Implement batch operations via EPost for multiple UIDs
-- Cache results locally to minimize redundant calls
+- Cache results locally to minimise redundant calls
 - Respect rate limits to avoid service disruption
 
 **When to consult api-reference.md**:
@@ -268,7 +268,7 @@ Use PubMed's search history and My NCBI features for efficient research workflow
 - Save searches indefinitely
 - Set up email alerts for new matching articles
 - Create collections of saved articles
-- Organize research by project or topic
+- Organise research by project or topic
 
 **RSS Feeds**:
 Create RSS feeds for any search to monitor new publications in your area of interest.
@@ -405,11 +405,11 @@ Load reference files into context as needed based on the specific task. For brie
 - Obtain API key for higher rate limits (10 req/sec vs 3 req/sec)
 - Use history server for result sets > 500 articles
 - Implement exponential backoff for rate limit handling
-- Cache results locally to minimize redundant requests
+- Cache results locally to minimise redundant requests
 - Always include descriptive User-Agent header
 
 ### Quality Filtering
-- Prefer systematic reviews and meta-analyses for synthesized evidence
+- Prefer systematic reviews and meta-analyses for synthesised evidence
 - Use publication type filters to find specific study designs
 - Filter by date for most recent research
 - Apply language filters as appropriate
@@ -420,7 +420,7 @@ Load reference files into context as needed based on the specific task. For brie
 - Use .nbib format for compatibility with most reference managers
 - Create My NCBI account for permanent collections
 - Document search strategies for reproducibility
-- Use Collections to organize research by project
+- Use Collections to organise research by project
 
 ## Limitations and Considerations
 

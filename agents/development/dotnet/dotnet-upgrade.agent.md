@@ -1,6 +1,6 @@
 ---
 name: '.NET Upgrade'
-description: 'Perform janitorial tasks on C#/.NET code including cleanup, modernization, and tech debt remediation.'
+description: 'Perform janitorial tasks on C#/.NET code including cleanup, modernisation, and tech debt remediation.'
 tools: ['codebase', 'edit/editFiles', 'search', 'runCommands', 'runTasks', 'runTests', 'problems', 'changes', 'usages', 'findTestFiles', 'testFailure', 'terminalLastCommand', 'terminalSelection', 'web/fetch', 'microsoft.docs.mcp']
 metadata:
   agent-author: 'Marie-Lynne Block'
@@ -11,7 +11,7 @@ metadata:
 
 .NET Framework upgrade specialist for comprehensive project migration
 
-**Tags:** dotnet, upgrade, migration, framework, modernization
+**Tags:** dotnet, upgrade, migration, framework, modernisation
 
 ## Collection Usage
 
@@ -34,7 +34,7 @@ The upgrade chat mode automatically adapts to your repository's current .NET ver
 It will help you:
 - Auto-detect current .NET versions across all projects
 - Generate optimal upgrade sequences
-- Identify breaking changes and modernization opportunities
+- Identify breaking changes and modernisation opportunities
 - Create per-project upgrade flows
 
 ---
@@ -57,7 +57,7 @@ Use these instructions when implementing upgrade plans to ensure proper executio
 
 ### .NET Upgrade Prompts
 
-Quick access to specialized upgrade analysis prompts!
+Quick access to specialised upgrade analysis prompts!
 
 The prompts collection includes ready-to-use queries for:
 - Project discovery and assessment
@@ -98,7 +98,7 @@ dotnet --info | grep "Version"
 ```
 
 **Chat Prompt:**
-> "Analyze the repository and list each project’s current TargetFramework along with the latest available LTS version from Microsoft’s release schedule."
+> "Analyse the repository and list each project’s current TargetFramework along with the latest available LTS version from Microsoft’s release schedule."
 
 ---
 
@@ -118,7 +118,7 @@ dotnet msbuild <ProjectName>.csproj /t:GenerateRestoreGraphFile /p:RestoreGraphO
 ```
 
 **Chat Prompt:**
-> "Analyze the solution and summarize each project’s current TargetFramework and suggest the appropriate next LTS upgrade version."
+> "Analyse the solution and summarise each project’s current TargetFramework and suggest the appropriate next LTS upgrade version."
 
 ---
 
@@ -136,7 +136,7 @@ dotnet msbuild <ProjectName>.csproj /t:GenerateRestoreGraphFile /p:RestoreGraphO
 4. **Finally:** Tests, integration points, and pipelines.
 
 **Chat Prompt:**
-> "Generate the optimal upgrade order for this repository, prioritizing least-dependent projects first."
+> "Generate the optimal upgrade order for this repository, prioritising least-dependent projects first."
 
 ---
 
@@ -154,16 +154,16 @@ dotnet msbuild <ProjectName>.csproj /t:GenerateRestoreGraphFile /p:RestoreGraphO
    dotnet build <ProjectName>.csproj
    dotnet test <ProjectName>.Tests.csproj
    ```
-5. **Fix issues** — resolve deprecated APIs, adjust configurations, modernize JSON/logging/DI.
+5. **Fix issues** — resolve deprecated APIs, adjust configurations, modernise JSON/logging/DI.
 6. **Commit & push** PR with test evidence and checklist.
 
 ---
 
-## Breaking Changes & Modernization
+## Breaking Changes & Modernisation
 - Use `.NET Upgrade Assistant` for initial recommendations.
 - Apply analyzers to detect obsolete APIs.
 - Replace outdated SDKs (e.g., `Microsoft.Azure.*` → `Azure.*`).
-- Modernize startup logic (`Startup.cs` → `Program.cs` top-level statements).
+- Modernise startup logic (`Startup.cs` → `Program.cs` top-level statements).
 
 **Chat Prompt:**
 > "List deprecated or incompatible APIs when upgrading from <currentVersion> to <targetVersion> for <ProjectName>."
@@ -220,7 +220,7 @@ Ensure pipelines use the detected **target version** dynamically:
 1. "List all projects with current and recommended .NET versions."
 2. "Generate a per-project upgrade plan from <currentVersion> to <targetVersion>."
 3. "Suggest .csproj and pipeline edits to upgrade <ProjectName>."
-4. "Summarize build/test results post-upgrade for <ProjectName>."
+4. "Summarise build/test results post-upgrade for <ProjectName>."
 5. "Create PR description and checklist for the upgrade."
 
 ---

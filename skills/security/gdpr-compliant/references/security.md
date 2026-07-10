@@ -113,7 +113,7 @@ appsettings.*.json   # if it may contain connection strings
 |---|---|---|
 | Suppression | Remove the field entirely | Fields with no analytical value |
 | Masking | Replace with fixed placeholder (`"ANONYMIZED_USER"`) | Audit log identifiers after erasure |
-| Generalization | Replace exact value with a range (age 34 → "30–40") | Analytics |
+| Generalisation | Replace exact value with a range (age 34 → "30–40") | Analytics |
 | Noise addition | Add statistical noise to numerical values | Aggregate analytics |
 | Aggregation | Report group statistics, never individual values | Reporting |
 | K-anonymity | Ensure each record is indistinguishable from k-1 others | Analytics datasets |

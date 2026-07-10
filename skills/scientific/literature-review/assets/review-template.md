@@ -37,7 +37,7 @@
 
 ### 1.3 Significance
 
-[Explain the significance of this review. Why is it important to synthesize this literature now? What gaps does it fill?]
+[Explain the significance of this review. Why is it important to synthesise this literature now? What gaps does it fill?]
 
 ---
 
@@ -102,7 +102,7 @@ Title/abstract screened: n=[Y] → Full-text assessed: n=[Z] → Included: n=[N]
 
 ### 2.6 Data Extraction
 
-**Method:** [Standardized form (Appendix E); pilot-tested on n studies]  
+**Method:** [Standardised form (Appendix E); pilot-tested on n studies]  
 **Extractors:** [n independent] | **Verification:** [Double-checked]
 
 **Items:** Study ID, design, population, interventions/exposures, outcomes, statistics, funding, COI, bias domains
@@ -137,7 +137,7 @@ Title/abstract screened: n=[Y] → Full-text assessed: n=[Z] → Included: n=[N]
 
 ### 3.2 Bibliometric Overview
 
-[Optional: Trends, journal distribution, author networks, citations, keywords - if analyzed with VOSviewer or similar]
+[Optional: Trends, journal distribution, author networks, citations, keywords - if analysed with VOSviewer or similar]
 
 ### 3.3 Study Characteristics
 
@@ -149,7 +149,7 @@ Title/abstract screened: n=[Y] → Full-text assessed: n=[Z] → Included: n=[N]
 
 ### 3.4 Thematic Synthesis
 
-[Organize by themes, NOT study-by-study. Synthesize across studies to identify consensus, controversies, and gaps.]
+[Organise by themes, NOT study-by-study. Synthesise across studies to identify consensus, controversies, and gaps.]
 
 #### 3.4.1 Theme 1: [Title]
 
@@ -187,7 +187,7 @@ Title/abstract screened: n=[Y] → Full-text assessed: n=[Z] → Included: n=[N]
 
 ### 4.1 Main Findings
 
-[Synthesize key findings by research question]
+[Synthesise key findings by research question]
 
 **Principal findings:** [Top 3-5 takeaways]  
 **Consensus:** [Where studies agree]  
@@ -245,7 +245,7 @@ Title/abstract screened: n=[Y] → Full-text assessed: n=[Z] → Included: n=[N]
 ## 6. Declarations
 
 ### Author Contributions
-[CRediT taxonomy: Author 1 - Conceptualization, Methodology, Writing; Author 2 - Analysis, Review; etc.]
+[CRediT taxonomy: Author 1 - Conceptualisation, Methodology, Writing; Author 2 - Analysis, Review; etc.]
 
 ### Funding
 [Grant details with numbers] OR [No funding received]
@@ -258,7 +258,7 @@ Title/abstract screened: n=[Y] → Full-text assessed: n=[Z] → Included: n=[N]
 **Data/Code:** [Repository URL/DOI or "Available upon request"]  
 **Materials:** [Search strategies (Appendix A), PRISMA checklist (Appendix B), extraction form (Appendix E)]
 
-### Acknowledgments
+### Acknowledgements
 [Contributors not meeting authorship criteria, librarians, patient involvement]
 
 ---
@@ -395,7 +395,7 @@ FUNDING/COI: _____
 7. Make data/code openly available
 
 **Common pitfalls to avoid:**
-- Don't list studies - synthesize them
+- Don't list studies - synthesise them
 - Don't cherry-pick results
 - Don't ignore limitations
 - Don't overstate conclusions

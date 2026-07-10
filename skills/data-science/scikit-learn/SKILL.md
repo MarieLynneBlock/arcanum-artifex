@@ -121,7 +121,7 @@ Comprehensive algorithms for classification and regression tasks.
 - **Support Vector Machines**: SVC, SVR with various kernels
 - **Ensemble methods**: AdaBoost, Voting, Stacking
 - **Neural Networks**: MLPClassifier, MLPRegressor
-- **Others**: Naive Bayes, K-Nearest Neighbors
+- **Others**: Naive Bayes, K-Nearest Neighbours
 
 **When to use:**
 - Classification: Predicting discrete categories (spam detection, image classification, fraud detection)
@@ -146,9 +146,9 @@ Discover patterns in unlabeled data through clustering and dimensionality reduct
 - **Feature extraction**: FastICA, LatentDirichletAllocation
 
 **When to use:**
-- Customer segmentation, anomaly detection, data visualization
+- Customer segmentation, anomaly detection, data visualisation
 - Reducing feature dimensions, exploratory data analysis
-- Topic modeling, image compression
+- Topic modelling, image compression
 
 **See:** `references/unsupervised-learning.md` for detailed documentation.
 
@@ -175,7 +175,7 @@ Tools for robust model evaluation, cross-validation, and hyperparameter tuning.
 - Comparing model performance objectively
 - Finding optimal hyperparameters
 - Preventing overfitting through cross-validation
-- Understanding model behavior with learning curves
+- Understanding model behaviour with learning curves
 
 **See:** `references/model-evaluation.md` for comprehensive metrics and tuning strategies.
 
@@ -183,11 +183,11 @@ Tools for robust model evaluation, cross-validation, and hyperparameter tuning.
 
 Transform raw data into formats suitable for machine learning.
 
-**Scaling and normalization:**
+**Scaling and normalisation:**
 - StandardScaler (zero mean, unit variance)
 - MinMaxScaler (bounded range)
 - RobustScaler (robust to outliers)
-- Normalizer (sample-wise normalization)
+- Normalizer (sample-wise normalisation)
 
 **Encoding categorical variables:**
 - OneHotEncoder (nominal categories)
@@ -196,7 +196,7 @@ Transform raw data into formats suitable for machine learning.
 
 **Handling missing values:**
 - SimpleImputer (mean, median, most frequent)
-- KNNImputer (k-nearest neighbors)
+- KNNImputer (k-nearest neighbours)
 - IterativeImputer (multivariate imputation)
 
 **Feature engineering:**
@@ -255,7 +255,7 @@ This script demonstrates:
 
 ### Clustering Analysis
 
-Perform clustering analysis with algorithm comparison and visualization:
+Perform clustering analysis with algorithm comparison and visualisation:
 
 ```bash
 python scripts/clustering_analysis.py
@@ -265,7 +265,7 @@ This script demonstrates:
 - Finding optimal number of clusters (elbow method, silhouette analysis)
 - Comparing multiple clustering algorithms (K-Means, DBSCAN, Agglomerative, Gaussian Mixture)
 - Evaluating clustering quality without ground truth
-- Visualizing results with PCA projection
+- Visualising results with PCA projection
 
 ## Reference Documentation
 
@@ -277,14 +277,14 @@ This skill includes comprehensive reference files for deep dives into specific t
 - Quick workflow templates for common tasks
 - Algorithm selection cheat sheets
 - Common patterns and gotchas
-- Performance optimization tips
+- Performance optimisation tips
 
 ### Supervised Learning
 **File:** `references/supervised-learning.md`
 - Linear models (regression and classification)
 - Support Vector Machines
 - Decision Trees and ensemble methods
-- K-Nearest Neighbors, Naive Bayes, Neural Networks
+- K-Nearest Neighbours, Naive Bayes, Neural Networks
 - Algorithm selection guide
 
 ### Unsupervised Learning
@@ -305,7 +305,7 @@ This skill includes comprehensive reference files for deep dives into specific t
 
 ### Preprocessing
 **File:** `references/preprocessing.md`
-- Feature scaling and normalization
+- Feature scaling and normalisation
 - Encoding categorical variables
 - Missing value imputation
 - Feature engineering techniques
@@ -412,7 +412,7 @@ This skill includes comprehensive reference files for deep dives into specific t
    labels = model.fit_predict(X_scaled)
    ```
 
-4. **Visualize with dimensionality reduction**
+4. **Visualise with dimensionality reduction**
    ```python
    from sklearn.decomposition import PCA
 

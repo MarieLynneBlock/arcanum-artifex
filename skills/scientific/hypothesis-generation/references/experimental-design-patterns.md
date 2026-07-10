@@ -63,7 +63,7 @@ Choose experimental approaches based on:
 
 ### In Vivo Experiments
 
-**When to use:** Testing hypotheses in whole organisms to assess systemic, physiological, or behavioral effects.
+**When to use:** Testing hypotheses in whole organisms to assess systemic, physiological, or behavioural effects.
 
 **Common patterns:**
 
@@ -75,7 +75,7 @@ Choose experimental approaches based on:
   - Appropriate sample size (power analysis)
   - Control group (vehicle, sham, or standard treatment)
   - Blinding (single or double-blind)
-  - Standardized conditions across groups
+  - Standardised conditions across groups
 
 **Example application:**
 "Randomly assign 20 mice each to vehicle control or drug treatment groups, measure tumor size weekly for 8 weeks, with experimenters blinded to group assignment."
@@ -103,7 +103,7 @@ Choose experimental approaches based on:
 **Example application:**
 "2×2 design crossing genotype (WT vs. mutant) × treatment (vehicle vs. drug) to test whether drug effect depends on genotype."
 
-### Computational/Modeling Experiments
+### Computational/Modelling Experiments
 
 **When to use:** Testing hypotheses about complex systems, making predictions, or when physical experiments are infeasible.
 
@@ -121,7 +121,7 @@ Choose experimental approaches based on:
 
 #### 8. Bioinformatics/Meta-Analysis
 - **Purpose:** Test hypotheses using existing datasets
-- **Design:** Analyze large-scale data or aggregate multiple studies
+- **Design:** Analyse large-scale data or aggregate multiple studies
 - **Key elements:**
   - Appropriate statistical corrections (multiple testing)
   - Validation in independent datasets
@@ -142,7 +142,7 @@ Choose experimental approaches based on:
 - **Limitations:** Cannot establish temporality or causation
 - **Key elements:**
   - Representative sampling
-  - Standardized measurements
+  - Standardised measurements
   - Control for confounding variables
   - Appropriate statistical analysis
 
@@ -157,7 +157,7 @@ Choose experimental approaches based on:
 - **Key elements:**
   - Baseline exposure assessment
   - Follow-up at defined intervals
-  - Minimize loss to follow-up
+  - Minimise loss to follow-up
   - Account for time-varying confounders
 
 **Example application:**
@@ -246,7 +246,7 @@ Choose experimental approaches based on:
 
 **Biological replicates:** Independent samples/subjects
 - Address biological variability
-- Critical for generalization
+- Critical for generalisation
 - Minimum: n≥3, preferably n≥5-10 per group
 
 **Experimental replicates:** Repeat entire experiment
@@ -260,7 +260,7 @@ Choose experimental approaches based on:
 - **Matching:** Pair similar subjects across conditions
 - **Blocking:** Group by confound, then randomize within blocks
 - **Statistical adjustment:** Measure confounds and adjust in analysis
-- **Standardization:** Keep conditions constant across groups
+- **Standardisation:** Keep conditions constant across groups
 
 ## Selecting Appropriate Design
 
@@ -274,13 +274,13 @@ Choose experimental approaches based on:
    - Cells/molecules → In vitro experiments
    - Whole organisms → In vivo experiments
    - Humans → Clinical trials or observational studies
-   - Complex systems → Computational modeling
+   - Complex systems → Computational modelling
 
 3. **What is the primary goal?**
    - Mechanism → Gain/loss of function, dose-response
    - Causation → RCT, cohort study with good controls
    - Association → Cross-sectional, case-control
-   - Prediction → Modeling, machine learning
+   - Prediction → Modelling, machine learning
    - Temporal dynamics → Time-course, longitudinal
 
 4. **What are the constraints?**

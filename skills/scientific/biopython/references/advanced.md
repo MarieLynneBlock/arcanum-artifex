@@ -482,7 +482,7 @@ for orf in orfs:
     print(f"ORF: {orf['start']}-{orf['end']}, strand={orf['strand']}, length={orf['length']}")
 ```
 
-### Analyze Codon Usage
+### Analyse Codon Usage
 
 ```python
 from Bio import SeqIO

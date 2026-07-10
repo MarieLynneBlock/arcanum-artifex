@@ -34,7 +34,7 @@ schemars = { version = "0.8", features = ["derive"] }
 
 ### Project Structure
 
-Organize your Rust MCP server project:
+Organise your Rust MCP server project:
 
 ```
 my-mcp-server/
@@ -225,7 +225,7 @@ impl ServerHandler for ToolsHandler {
 
 ### Tool Annotations
 
-Use annotations to provide hints about tool behavior:
+Use annotations to provide hints about tool behaviour:
 
 ```rust
 #[tool(
@@ -673,7 +673,7 @@ async fn my_tool(params: Parameters<MyParams>) -> String {
 
 ### Binary Distribution
 
-Build optimized release binaries:
+Build optimised release binaries:
 
 ```bash
 cargo build --release --target x86_64-unknown-linux-gnu

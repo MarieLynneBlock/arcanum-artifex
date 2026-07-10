@@ -357,7 +357,7 @@ url = {bit.ly/...}  % URL shortener (not permanent)
 - Keep one, remove other
 
 **By title similarity**:
-- Normalize: lowercase, remove punctuation
+- Normalise: lowercase, remove punctuation
 - Calculate similarity (e.g., Levenshtein distance)
 - Flag if >90% similar
 
@@ -448,7 +448,7 @@ title = {Title with {Protected} Text}
 **Special characters**:
 - `{` and `}` for grouping
 - `\` for LaTeX commands
-- Protect capitalization: `{AlphaFold}`
+- Protect capitalisation: `{AlphaFold}`
 - Accents: `{\"u}`, `{\'e}`, `{\aa}`
 
 #### Validation
@@ -536,7 +536,7 @@ Examine validation report:
 3. Fix page ranges
 
 **Low-priority**:
-1. Standardize formatting
+1. Standardise formatting
 2. Add URLs for accessibility
 
 ### Step 4: Auto-Fix
@@ -552,9 +552,9 @@ python scripts/validate_citations.py references.bib \
 **Auto-fix can**:
 - Fix page range format (- to --)
 - Remove "pp." from pages
-- Standardize author separators
+- Standardise author separators
 - Fix common syntax errors
-- Normalize field order
+- Normalise field order
 
 **Auto-fix cannot**:
 - Add missing information

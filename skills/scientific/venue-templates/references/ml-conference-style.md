@@ -8,7 +8,7 @@ Comprehensive writing guide for NeurIPS, ICML, ICLR, CVPR, ECCV, ICCV, and other
 
 ## Overview
 
-ML conferences prioritize **novelty**, **rigorous empirical evaluation**, and **reproducibility**. Papers are evaluated on clear contribution, strong baselines, comprehensive ablations, and honest discussion of limitations.
+ML conferences prioritise **novelty**, **rigorous empirical evaluation**, and **reproducibility**. Papers are evaluated on clear contribution, strong baselines, comprehensive ablations, and honest discussion of limitations.
 
 ### Key Philosophy
 
@@ -175,7 +175,7 @@ Our contributions are as follows:
 | Specific, quantifiable | Vague claims |
 | Self-contained | Requires reading paper to understand |
 | Distinct from each other | Overlapping bullets |
-| Emphasize novelty | State obvious facts |
+| Emphasise novelty | State obvious facts |
 
 ### Related Work Placement
 
@@ -331,9 +331,9 @@ FlashAttention-1 (baseline)          |   1.0x  |  1.0x
 
 ### Writing Style
 
-- **Organized by theme**: Not chronological
+- **Organised by theme**: Not chronological
 - **Position your work**: How you differ from each line of work
-- **Fair characterization**: Don't misrepresent prior work
+- **Fair characterisation**: Don't misrepresent prior work
 - **Recent citations**: Include 2023-2024 papers
 
 ### Example Structure
@@ -430,12 +430,12 @@ time was approximately 500 GPU-hours."
 - **Vector graphics preferred**: PDF, SVG
 - **High resolution for rasters**: 300+ dpi
 - **Readable at publication size**: Test at actual column width
-- **Colorblind-accessible**: Use patterns in addition to color
+- **Colorblind-accessible**: Use patterns in addition to colour
 
 ### Common Figure Types
 
 1. **Architecture diagram**: Show your method visually
-2. **Performance plots**: Learning curves, scaling behavior
+2. **Performance plots**: Learning curves, scaling behaviour
 3. **Comparison tables**: Main results
 4. **Ablation figures**: Component contributions
 5. **Qualitative examples**: Input/output samples
@@ -513,7 +513,7 @@ Self-contained captions that explain:
 ## Rebuttal Tips
 
 ML conferences have author response periods. Tips:
-- **Address key concerns first**: Prioritize critical issues
+- **Address key concerns first**: Prioritise critical issues
 - **Run requested experiments**: When feasible in time
 - **Be concise**: Reviewers read many rebuttals
 - **Stay professional**: Even with unfair reviews
@@ -537,7 +537,7 @@ ML conferences have author response periods. Tips:
 - [ ] Anonymized (no author names, no identifiable URLs)
 - [ ] Page limit respected
 - [ ] References complete
-- [ ] Supplementary organized
+- [ ] Supplementary organised
 
 ### Reproducibility
 - [ ] Hyperparameters listed

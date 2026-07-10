@@ -6,7 +6,7 @@ Skills for generative art development: creative coding, algorithmic visuals, ani
 
 | Skill | Description |
 | --- | --- |
-| [spirograph-python-matplotlib](spirograph-python-matplotlib/SKILL.md) | Create easy Python scripts for unique spirograph-style generative art using Matplotlib, with background/main color palettes (including gradients) and guaranteed PNG export. |
+| [spirograph-python-matplotlib](spirograph-python-matplotlib/SKILL.md) | Create easy Python scripts for unique spirograph-style generative art using Matplotlib, with background/main colour palettes (including gradients) and guaranteed PNG export. |
 
 ## Add a skill here
 

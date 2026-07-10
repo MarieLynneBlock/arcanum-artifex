@@ -266,7 +266,7 @@ xychart-beta
 
 ### Summary
 
-[3–5 sentences. Restate the problem, summarize the key findings, and state the primary recommendation. A reader who skips to this section should understand the entire paper's value.]
+[3–5 sentences. Restate the problem, summarise the key findings, and state the primary recommendation. A reader who skips to this section should understand the entire paper's value.]
 
 ### Recommendations
 

@@ -22,7 +22,7 @@ A budget justification provides detailed explanation for each budget line item, 
 **Effort**: [X] calendar months ([Y]% FTE) per year
 
 **Justification**: 
-The PI will provide overall scientific leadership, supervise all research activities, mentor graduate students and postdocs, analyze data, prepare manuscripts, and report to the funding agency. The PI will be responsible for [specific activities related to aims]. [X] months of effort is necessary given the scope of the project and the PI's other commitments ([describe other activities briefly]).
+The PI will provide overall scientific leadership, supervise all research activities, mentor graduate students and postdocs, analyse data, prepare manuscripts, and report to the funding agency. The PI will be responsible for [specific activities related to aims]. [X] months of effort is necessary given the scope of the project and the PI's other commitments ([describe other activities briefly]).
 
 **Calculation**: 
 - Year 1: [Annual salary] × [% effort] × [inflation factor if applicable] = $[amount]
@@ -33,7 +33,7 @@ The PI will provide overall scientific leadership, supervise all research activi
 
 *Effort*: 2.5 calendar months (21% FTE) per year
 
-*Justification*: Dr. Smith will provide overall project leadership including: (1) supervising all experimental work and data analysis for Aims 1-3, (2) weekly mentoring meetings with 3 graduate students and 2 postdocs, (3) coordinating with collaborators at partner institutions, (4) analyzing multi-omics datasets and interpreting results, (5) preparing manuscripts and presenting at conferences, and (6) managing budget and reporting to NIH. 2.5 months effort is necessary for a project of this scope involving multiple aims, techniques, and personnel. Dr. Smith's remaining effort supports teaching (3 months), other research projects (4 months), and administrative duties (2.5 months).
+*Justification*: Dr. Smith will provide overall project leadership including: (1) supervising all experimental work and data analysis for Aims 1-3, (2) weekly mentoring meetings with 3 graduate students and 2 postdocs, (3) coordinating with collaborators at partner institutions, (4) analysing multi-omics datasets and interpreting results, (5) preparing manuscripts and presenting at conferences, and (6) managing budget and reporting to NIH. 2.5 months effort is necessary for a project of this scope involving multiple aims, techniques, and personnel. Dr. Smith's remaining effort supports teaching (3 months), other research projects (4 months), and administrative duties (2.5 months).
 
 *Calculation*: 
 - Year 1: $120,000 × 0.2083 = $25,000
@@ -74,7 +74,7 @@ One full-time postdoctoral researcher is essential to conduct [which experiments
 **Example**:
 *Postdoctoral Researcher (1.0 FTE)*
 
-*Justification*: One full-time postdoc is essential to execute the cellular and molecular experiments in Aims 2-3. The postdoc will: (1) generate and characterize patient-derived iPSC lines, (2) differentiate iPSCs into β-cells, hepatocytes, and adipocytes, (3) perform functional assays (insulin secretion, glucose uptake, cytokine profiling), (4) conduct proteomics sample preparation and analysis, (5) integrate cellular data with clinical outcomes, and (6) mentor graduate students in cell culture techniques. We will recruit a candidate with expertise in stem cell biology and diabetes research. The postdoc will have opportunity for career development through institutional K99/R00 preparation programs.
+*Justification*: One full-time postdoc is essential to execute the cellular and molecular experiments in Aims 2-3. The postdoc will: (1) generate and characterise patient-derived iPSC lines, (2) differentiate iPSCs into β-cells, hepatocytes, and adipocytes, (3) perform functional assays (insulin secretion, glucose uptake, cytokine profiling), (4) conduct proteomics sample preparation and analysis, (5) integrate cellular data with clinical outcomes, and (6) mentor graduate students in cell culture techniques. We will recruit a candidate with expertise in stem cell biology and diabetes research. The postdoc will have opportunity for career development through institutional K99/R00 preparation programs.
 
 *Calculation*:
 - Year 1: $54,840 (NIH Year 0) + $14,258 (26% fringe) = $69,098
@@ -88,7 +88,7 @@ One full-time postdoctoral researcher is essential to conduct [which experiments
 **Graduate Research Assistants ([Number] students)**
 
 **Justification**:
-[Number] graduate students are required to [specific roles and aims]. Each student will focus on [division of labor among students]. This project provides excellent training opportunities in [techniques/approaches], preparing students for careers in [field]. Students will be recruited from our [department/program] with preference for candidates from underrepresented groups through our partnerships with [specific programs].
+[Number] graduate students are required to [specific roles and aims]. Each student will focus on [division of labour among students]. This project provides excellent training opportunities in [techniques/approaches], preparing students for careers in [field]. Students will be recruited from our [department/program] with preference for candidates from underrepresented groups through our partnerships with [specific programs].
 
 **Calculation**:
 - Stipend: $[amount]/student/year (following university RA rates)
@@ -170,7 +170,7 @@ This equipment is essential for [which aims/experiments]. We currently do not ha
 
 *Cost*: $425,000
 
-*Justification*: A high-speed cell sorter is essential for Aim 2 experiments requiring isolation of specific cell populations from patient-derived heterogeneous cultures (β-cells, hepatocytes, adipocytes) for downstream proteomics and functional analysis. Our current institutional sorter has a 6-month wait time and lacks the 4-laser capability needed for our 8-color panel. This sorter will be used 15 hours/week for this project and will support 3 graduate students and 1 postdoc. The equipment will be housed in the Department of Biology core facility and will be available to 15 other laboratories after this project, ensuring long-term institutional value. Equipment cost includes installation, training, and 5-year service contract.
+*Justification*: A high-speed cell sorter is essential for Aim 2 experiments requiring isolation of specific cell populations from patient-derived heterogeneous cultures (β-cells, hepatocytes, adipocytes) for downstream proteomics and functional analysis. Our current institutional sorter has a 6-month wait time and lacks the 4-laser capability needed for our 8-colour panel. This sorter will be used 15 hours/week for this project and will support 3 graduate students and 1 postdoc. The equipment will be housed in the Department of Biology core facility and will be available to 15 other laboratories after this project, ensuring long-term institutional value. Equipment cost includes installation, training, and 5-year service contract.
 
 ---
 
@@ -198,7 +198,7 @@ Trips include:
 
 2. Endocrine Society Annual Meeting (alternate years): Important for reaching clinical endocrinology audience. PI will present translational findings. ($2,200)
 
-3. Cold Spring Harbor Metabolism & Disease Conference (Year 3): Specialized meeting for in-depth scientific exchange. Postdoc will present mechanistic findings. ($1,800)
+3. Cold Spring Harbour Metabolism & Disease Conference (Year 3): Specialised meeting for in-depth scientific exchange. Postdoc will present mechanistic findings. ($1,800)
 
 *Total*: $9,700/year (Years 1-2, 4-5); $11,500/year (Year 3)
 
@@ -227,7 +227,7 @@ Trips include:
 [Description of supplies needed and why]
 
 **Calculation**:
-[Itemize major categories with estimated costs]
+[Itemise major categories with estimated costs]
 
 **Total**: $[amount]/year
 
@@ -239,7 +239,7 @@ Trips include:
 *Breakdown*:
 - Cell culture reagents (media, growth factors, serum): $15,000/year
   - Maintaining >50 patient-derived iPSC, hepatocyte, and adipocyte lines
-  - Differentiation protocols requiring specialized media
+  - Differentiation protocols requiring specialised media
   
 - Molecular biology supplies (RNA extraction, qPCR, Western blotting): $12,000/year
   - Processing samples from cell assays and mouse tissues
@@ -356,7 +356,7 @@ Detailed budget and justification from [institution] are included as a subaward/
 
 *Total costs*: $100,000/year
 
-*Justification*: UCSD will perform all mass spectrometry-based metabolomics and proteomics analyses for Aims 1-2. Dr. Michael Williams, Director of the UCSD Metabolomics Core, will lead these efforts. This collaboration is essential because our institution lacks the specialized mass spectrometry platforms (Orbitrap Fusion, QTOF) and expertise required for these analyses. UCSD has extensive experience with T2D metabolomics and proteomics, having processed >5,000 clinical samples.
+*Justification*: UCSD will perform all mass spectrometry-based metabolomics and proteomics analyses for Aims 1-2. Dr. Michael Williams, Director of the UCSD Metabolomics Core, will lead these efforts. This collaboration is essential because our institution lacks the specialised mass spectrometry platforms (Orbitrap Fusion, QTOF) and expertise required for these analyses. UCSD has extensive experience with T2D metabolomics and proteomics, having processed >5,000 clinical samples.
 
 *Work to be performed*:
 - Sample processing and metabolite/protein extraction (Years 1-3)

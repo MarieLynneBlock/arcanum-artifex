@@ -1,6 +1,6 @@
 ---
 name: vaex
-description: Use this skill for processing and analyzing large tabular datasets (billions of rows) that exceed available RAM. Vaex excels at out-of-core DataFrame operations, lazy evaluation, fast aggregations, efficient visualization of big data, and machine learning on large datasets. Apply when users need to work with large CSV/HDF5/Arrow/Parquet files, perform fast statistics on massive datasets, create visualizations of big data, or build ML pipelines that do not fit in memory.
+description: Use this skill for processing and analysing large tabular datasets (billions of rows) that exceed available RAM. Vaex excels at out-of-core DataFrame operations, lazy evaluation, fast aggregations, efficient visualisation of big data, and machine learning on large datasets. Apply when users need to work with large CSV/HDF5/Arrow/Parquet files, perform fast statistics on massive datasets, create visualisations of big data, or build ML pipelines that do not fit in memory.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,14 +10,14 @@ metadata:
 
 ## Overview
 
-Vaex is a high-performance Python library designed for lazy, out-of-core DataFrames to process and visualize tabular datasets that are too large to fit into RAM. Vaex can process over a billion rows per second, enabling interactive data exploration and analysis on datasets with billions of rows.
+Vaex is a high-performance Python library designed for lazy, out-of-core DataFrames to process and visualise tabular datasets that are too large to fit into RAM. Vaex can process over a billion rows per second, enabling interactive data exploration and analysis on datasets with billions of rows.
 
 ## When to Use This Skill
 
 Use Vaex when:
 - Processing tabular datasets larger than available RAM (gigabytes to terabytes)
 - Performing fast statistical aggregations on massive datasets
-- Creating visualizations and heatmaps of large datasets
+- Creating visualisations and heatmaps of large datasets
 - Building machine learning pipelines on big data
 - Converting between data formats (CSV, HDF5, Arrow, Parquet)
 - Needing lazy evaluation and virtual columns to avoid memory overhead
@@ -44,22 +44,22 @@ Perform filtering, create virtual columns, use expressions, and aggregate data w
 - String operations and datetime handling
 - Working with missing data
 
-### 3. Performance and Optimization
+### 3. Performance and Optimisation
 
 Leverage Vaex's lazy evaluation, caching strategies, and memory-efficient operations. Reference `references/performance.md` for:
 - Understanding lazy evaluation
 - Using `delay=True` for batching operations
-- Materializing columns when needed
+- Materialising columns when needed
 - Caching strategies
 - Asynchronous operations
 
-### 4. Data Visualization
+### 4. Data Visualisation
 
-Create interactive visualizations of large datasets including heatmaps, histograms, and scatter plots. Reference `references/visualization.md` for:
+Create interactive visualisations of large datasets including heatmaps, histograms, and scatter plots. Reference `references/visualization.md` for:
 - Creating 1D and 2D plots
-- Heatmap visualizations
+- Heatmap visualisations
 - Working with selections
-- Customizing plots and subplots
+- Customising plots and subplots
 
 ### 5. Machine Learning Integration
 
@@ -119,18 +119,18 @@ The reference files contain detailed information about each capability area. Loa
 
 - **Basic operations**: Start with `references/core-dataframes.md` and `references/data-processing.md`
 - **Performance issues**: Check `references/performance.md`
-- **Visualization tasks**: Use `references/visualization.md`
+- **Visualisation tasks**: Use `references/visualization.md`
 - **ML pipelines**: Reference `references/machine-learning.md`
 - **File I/O**: Consult `references/io-operations.md`
 
 ## Best Practices
 
 1. **Use HDF5 or Apache Arrow formats** for optimal performance with large datasets
-2. **Leverage virtual columns** instead of materializing data to save memory
+2. **Leverage virtual columns** instead of materialising data to save memory
 3. **Batch operations** using `delay=True` when performing multiple calculations
 4. **Export to efficient formats** rather than keeping data in CSV
 5. **Use expressions** for complex calculations without intermediate storage
-6. **Profile with `df.stat()`** to understand memory usage and optimize operations
+6. **Profile with `df.stat()`** to understand memory usage and optimise operations
 
 ## Common Patterns
 
@@ -173,7 +173,7 @@ This skill includes reference documentation in the `references/` directory:
 
 - `core-dataframes.md` - DataFrame creation, loading, and basic structure
 - `data-processing.md` - Filtering, expressions, aggregations, and transformations
-- `performance.md` - Optimization strategies and lazy evaluation
-- `visualization.md` - Plotting and interactive visualizations
+- `performance.md` - Optimisation strategies and lazy evaluation
+- `visualization.md` - Plotting and interactive visualisations
 - `machine-learning.md` - ML pipelines and model integration
 - `io-operations.md` - File formats and data import/export

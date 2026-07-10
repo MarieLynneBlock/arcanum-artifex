@@ -55,7 +55,7 @@ applyTo: '**/*.tf'
 
 ## Maintainability
 
-- Prioritize readability, clarity, and maintainability.
+- Prioritise readability, clarity, and maintainability.
 - Use comments to explain complex configurations and why certain design decisions were made.
 - Write concise, efficient, and idiomatic configs that are easy to understand.
 - Avoid using hard-coded values; use variables for configuration instead.
@@ -68,7 +68,7 @@ applyTo: '**/*.tf'
 
 ## Style and Formatting
 
-- Follow Terraform best practices for resource naming and organization.
+- Follow Terraform best practices for resource naming and organisation.
   - Use descriptive names for resources, variables, and outputs.
   - Use consistent naming conventions across all configurations.
 - Follow the **Terraform Style Guide** for formatting.

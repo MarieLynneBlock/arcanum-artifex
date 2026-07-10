@@ -457,7 +457,7 @@ d = {name: t[name] for name in t.colnames}
 
 ## Common Use Cases
 
-### Cross-Matching Catalogs
+### Cross-Matching Catalogues
 
 ```python
 from astropy.coordinates import SkyCoord, match_coordinates_sky

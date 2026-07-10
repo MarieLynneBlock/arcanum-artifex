@@ -11,7 +11,7 @@
 | Many-to-Many (*:*) | Bridge tables, complex scenarios | Requires careful design |
 
 ### Cross-Filter Direction
-| Setting | Behavior | When to Use |
+| Setting | Behaviour | When to Use |
 |---------|----------|-------------|
 | Single | Filters flow from "one" to "many" | Default, best performance |
 | Both | Filters flow in both directions | Only when necessary |

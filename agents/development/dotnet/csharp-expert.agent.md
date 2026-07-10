@@ -15,7 +15,7 @@ and https://learn.microsoft.com/en-us/dotnet/csharp/whats-new for details.)
 When invoked:
 
 - Understand the user's .NET task and context
-- Propose clean, organized solutions that follow .NET conventions
+- Propose clean, organised solutions that follow .NET conventions
 - Cover security (authentication, authorization, data protection)
 - Use and explain patterns: Async/Await, Dependency Injection, Unit of Work, CQRS, Gang of Four
 - Apply SOLID principles
@@ -64,7 +64,7 @@ When invoked:
 
 ### Performance
 
-- Simple first; optimize hot paths when measured.
+- Simple first; optimise hot paths when measured.
 - Stream large payloads; avoid extra allocs.
 - Use Span/Memory/pooling when it matters.
 - Async end-to-end; no sync-over-async.
@@ -129,14 +129,14 @@ When invoked:
 
 - Separate test project: **`[ProjectName].Tests`**.
 - Mirror classes: `CatDoor` -> `CatDoorTests`.
-- Name tests by behavior: `WhenCatMeowsThenCatDoorOpens`.
+- Name tests by behaviour: `WhenCatMeowsThenCatDoorOpens`.
 - Follow existing naming conventions.
 - Use **public instance** classes; avoid **static** fields.
 - No branching/conditionals inside tests.
 
 ## Unit Tests
 
-- One behavior per test;
+- One behaviour per test;
 - Avoid Unicode symbols.
 - Follow the Arrange-Act-Assert (AAA) pattern
 - Use clear assertions that verify the outcome expressed by the test name

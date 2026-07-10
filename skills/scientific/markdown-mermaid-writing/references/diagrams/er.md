@@ -2,7 +2,7 @@
 
 # Entity Relationship (ER) Diagram
 
-> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `erDiagram`
 **Best for:** Database schemas, data models, entity relationships, API data structures
@@ -217,6 +217,6 @@ erDiagram
 
 ### Why this works
 
-- **10 entities organized by domain** — identity (Tenant, Organization, User, Role, Permission), billing (Plan, Subscription, Invoice), and security (Audit Log, API Key). The relationship lines naturally cluster related entities together.
+- **10 entities organised by domain** — identity (Tenant, Organization, User, Role, Permission), billing (Plan, Subscription, Invoice), and security (Audit Log, API Key). The relationship lines naturally cluster related entities together.
 - **Full cardinality tells the business rules** — `||--||` (one-to-one) for Organization-Subscription means one subscription per org. `}o--o{` (many-to-many) for User-Role means flexible RBAC. Each relationship symbol encodes a constraint.
 - **Every field has type, annotation, and purpose** — PK/FK for schema generation, emoji comments for human scanning. A developer can read this diagram and write the migration script directly.

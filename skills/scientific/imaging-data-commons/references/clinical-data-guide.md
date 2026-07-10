@@ -38,13 +38,13 @@ Clinical data refers to non-imaging information that accompanies medical images:
 Clinical data in IDC comes from collection-specific spreadsheets provided by data submitters. IDC parses these into queryable tables accessible via `idc-index`.
 
 **Important characteristics:**
-- Clinical data is **not harmonized** across collections (terms and formats vary)
+- Clinical data is **not harmonised** across collections (terms and formats vary)
 - Not all collections have clinical data (check availability first)
 - All data is **anonymized** - `dicom_patient_id` links to imaging
 
 ### The clinical_index Table
 
-The `clinical_index` serves as a dictionary/catalog of all available clinical data:
+The `clinical_index` serves as a dictionary/catalogue of all available clinical data:
 
 | Column | Purpose | Use For |
 |--------|---------|---------|
@@ -310,7 +310,7 @@ print(f"Patients with both imaging and clinical data: {len(overlap)}")
 ## Resources
 
 **IDC Documentation:**
-- [Clinical data organization](https://learn.canceridc.dev/data/organization-of-data/clinical) - How clinical data is organized in IDC
+- [Clinical data organisation](https://learn.canceridc.dev/data/organization-of-data/clinical) - How clinical data is organised in IDC
 - [Clinical data dashboard](https://datastudio.google.com/u/0/reporting/04cf5976-4ea0-4fee-a749-8bfd162f2e87/page/p_s7mk6eybqc) - Visual summary of available clinical data
 - [idc-index clinical_index documentation](https://idc-index.readthedocs.io/en/latest/column_descriptions.html#clinical-index)
 

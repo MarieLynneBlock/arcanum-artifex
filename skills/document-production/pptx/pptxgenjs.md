@@ -126,7 +126,7 @@ Shadow options:
 | `blur` | number | 0-100 pt | |
 | `offset` | number | 0-200 pt | **Must be non-negative** — negative values corrupt the file |
 | `angle` | number | 0-359 degrees | Direction the shadow falls (135 = bottom-right, 270 = upward) |
-| `opacity` | number | 0.0-1.0 | Use this for transparency, never encode in color string |
+| `opacity` | number | 0.0-1.0 | Use this for transparency, never encode in colour string |
 
 To cast a shadow upward (e.g. on a footer bar), use `angle: 270` with a positive offset — do **not** use a negative offset.
 
@@ -339,7 +339,7 @@ slide.addChart(pres.charts.BAR, chartData, {
 ```
 
 **Key styling options:**
-- `chartColors: [...]` - hex colors for series/segments
+- `chartColors: [...]` - hex colours for series/segments
 - `chartArea: { fill, border, roundedCorners }` - chart background
 - `catGridLine/valGridLine: { color, style, size }` - grid lines (`style: "none"` to hide)
 - `lineSmooth: true` - curved lines (line charts)
@@ -367,13 +367,13 @@ titleSlide.addText("My Title", { placeholder: "title" });
 
 ⚠️ These issues cause file corruption, visual bugs, or broken output. Avoid them.
 
-1. **NEVER use "#" with hex colors** - causes file corruption
+1. **NEVER use "#" with hex colours** - causes file corruption
    ```javascript
    color: "FF0000"      // ✅ CORRECT
    color: "#FF0000"     // ❌ WRONG
    ```
 
-2. **NEVER encode opacity in hex color strings** - 8-char colors (e.g., `"00000020"`) corrupt the file. Use the `opacity` property instead.
+2. **NEVER encode opacity in hex colour strings** - 8-char colours (e.g., `"00000020"`) corrupt the file. Use the `opacity` property instead.
    ```javascript
    shadow: { type: "outer", blur: 6, offset: 2, color: "00000020" }          // ❌ CORRUPTS FILE
    shadow: { type: "outer", blur: 6, offset: 2, color: "000000", opacity: 0.12 }  // ✅ CORRECT
@@ -416,5 +416,5 @@ titleSlide.addText("My Title", { placeholder: "title" });
 - **Shapes**: RECTANGLE, OVAL, LINE, ROUNDED_RECTANGLE
 - **Charts**: BAR, LINE, PIE, DOUGHNUT, SCATTER, BUBBLE, RADAR
 - **Layouts**: LAYOUT_16x9 (10"×5.625"), LAYOUT_16x10, LAYOUT_4x3, LAYOUT_WIDE
-- **Alignment**: "left", "center", "right"
-- **Chart data labels**: "outEnd", "inEnd", "center"
+- **Alignment**: "left", "centre", "right"
+- **Chart data labels**: "outEnd", "inEnd", "centre"

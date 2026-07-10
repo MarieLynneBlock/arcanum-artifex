@@ -80,7 +80,7 @@ Everything below the line is the template. Copy from here:
 
 ### Before and after
 
-[For behavioral changes, show the difference. Use code blocks, screenshots, or diagrams as appropriate.]
+[For behavioural changes, show the difference. Use code blocks, screenshots, or diagrams as appropriate.]
 
 **Before:**
 
@@ -178,7 +178,7 @@ flowchart LR
 
 | What breaks                        | Who's affected           | Migration path   |
 | ---------------------------------- | ------------------------ | ---------------- |
-| [API endpoint / behavior / config] | [Service / team / users] | [How to migrate] |
+| [API endpoint / behaviour / config] | [Service / team / users] | [How to migrate] |
 
 ### Migration guide
 
@@ -194,7 +194,7 @@ flowchart LR
 [New usage — what consumers need to change]
 ```
 
-**Deprecation timeline:** [When the old behavior will be removed, if applicable]
+**Deprecation timeline:** [When the old behaviour will be removed, if applicable]
 
 ---
 
@@ -276,7 +276,7 @@ git revert [commit-sha]
 - [ ] Error handling covers failure modes (no empty catch blocks)
 - [ ] No secrets, credentials, or PII in the diff
 - [ ] Tests cover the happy path and at least one error path
-- [ ] Documentation updated if public API or behavior changed
+- [ ] Documentation updated if public API or behaviour changed
 - [ ] Database migrations are reversible (if applicable)
 - [ ] Performance impact considered (no N+1 queries, no unbounded lists)
 - [ ] Breaking changes documented with migration guide (if applicable)

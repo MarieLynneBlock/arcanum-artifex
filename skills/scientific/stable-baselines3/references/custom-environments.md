@@ -171,8 +171,8 @@ self.observation_space = spaces.Box(
 **Important for Images:**
 - Must be `dtype=np.uint8` in range [0, 255]
 - Use **channel-first** format: (channels, height, width)
-- SB3 automatically normalizes by dividing by 255
-- Set `normalize_images=False` in policy_kwargs if pre-normalized
+- SB3 automatically normalises by dividing by 255
+- Set `normalize_images=False` in policy_kwargs if pre-normalised
 
 ### MultiDiscrete
 
@@ -509,8 +509,8 @@ def step(self, action):
 - Use `VecCheckNan` wrapper to catch issues
 
 ### "Policy doesn't learn"
-- Check reward scaling (normalize rewards)
-- Verify observation normalization
+- Check reward scaling (normalise rewards)
+- Verify observation normalisation
 - Ensure reward signal is meaningful
 - Check if exploration is sufficient
 

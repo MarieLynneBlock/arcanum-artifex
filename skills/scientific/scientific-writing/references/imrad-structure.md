@@ -2,7 +2,7 @@
 
 ## Overview
 
-IMRAD (Introduction, Methods, Results, And Discussion) is the predominant organizational structure for scientific journal articles of original research. Adopted as the majority format since the 1970s, it is now the standard in medical, health, biological, chemical, engineering, and computer sciences.
+IMRAD (Introduction, Methods, Results, And Discussion) is the predominant organisational structure for scientific journal articles of original research. Adopted as the majority format since the 1970s, it is now the standard in medical, health, biological, chemical, engineering, and computer sciences.
 
 ## Why IMRAD?
 
@@ -25,7 +25,7 @@ A full scientific manuscript typically includes these sections in order:
 5. **Results**
 6. **Discussion** (sometimes combined with Results)
 7. **Conclusion** (sometimes part of Discussion)
-8. **Acknowledgments**
+8. **Acknowledgements**
 9. **References**
 10. **Supplementary Materials** (if applicable)
 
@@ -53,7 +53,7 @@ Provide a complete, standalone summary enabling readers to decide if the full pa
 
 ### Format: Flowing Paragraphs (Default)
 
-**⚠️ CRITICAL: Write abstracts as flowing paragraphs, NOT with labeled sections.**
+**⚠️ CRITICAL: Write abstracts as flowing paragraphs, NOT with labelled sections.**
 
 Most scientific papers use **unstructured abstracts** written as one or two cohesive paragraphs. This is the standard format for the majority of journals including Nature, Science, Cell, PNAS, and most field-specific journals.
 
@@ -95,7 +95,7 @@ While written as flowing prose, the abstract should cover these elements in orde
 
 ### Key Rules
 - Write the abstract **last** (after completing all other sections)
-- **Write as flowing paragraph(s)** - no labeled sections
+- **Write as flowing paragraph(s)** - no labelled sections
 - Make it fully understandable without reading the paper
 - Do not cite references in the abstract
 - Avoid abbreviations or define them at first use
@@ -105,7 +105,7 @@ While written as flowing prose, the abstract should cover these elements in orde
 
 ### When to Use Structured Abstracts (Exception)
 
-Only use labeled sections (Background/Objective, Methods, Results, Conclusions) when:
+Only use labelled sections (Background/Objective, Methods, Results, Conclusions) when:
 - The journal **explicitly requires** structured abstracts in their author guidelines
 - Common in some medical journals (JAMA, BMJ, Annals of Internal Medicine)
 - Always check journal requirements before formatting
@@ -211,13 +211,13 @@ Another expert in the field should be able to repeat your experiment exactly as 
 #### Materials and Equipment
 - List all materials, reagents, and equipment used
 - Include manufacturer names and locations (in parentheses)
-- Specify catalog numbers for specialized items
+- Specify catalogue numbers for specialised items
 - Report software names and versions
 
 #### Procedures
 - Describe what was done in chronological order
 - Include sufficient detail for replication
-- Use subheadings to organize complex procedures
+- Use subheadings to organise complex procedures
 - Specify timing (e.g., "incubated for 2 hours at 37°C")
 - For surveys/interviews: describe instruments, validation, administration
 
@@ -276,7 +276,7 @@ Show, don't interpret. Save interpretation for the Discussion.
 **Subsequent Paragraphs**
 - Present results in logical order (usually primary outcome first)
 - Follow the order of objectives stated in Introduction
-- Organize by theme or by chronology, depending on what's clearest
+- Organise by theme or by chronology, depending on what's clearest
 - Reference figures and tables by number
 
 **Each Finding Should Include:**
@@ -367,7 +367,7 @@ Interpret findings, relate them to existing knowledge, acknowledge limitations, 
 
 **Paragraph 1: Summary of Main Findings**
 - Restate the primary objective or hypothesis
-- Summarize the principal findings in 2-4 sentences
+- Summarise the principal findings in 2-4 sentences
 - Avoid repeating details from Results
 - State clearly whether the hypothesis was supported
 
@@ -392,7 +392,7 @@ Interpret findings, relate them to existing knowledge, acknowledge limitations, 
 - Theoretical contributions
 
 **Final Paragraph: Conclusions and Future Directions**
-- Summarize the take-home message
+- Summarise the take-home message
 - Suggest specific future research to address gaps or limitations
 - End with a strong concluding statement
 
@@ -460,7 +460,7 @@ Provide a concise summary of key findings and their significance.
 ### Content
 - 1-2 paragraphs maximum
 - Restate the main finding(s)
-- Emphasize the significance or implications
+- Emphasise the significance or implications
 - End with a strong, memorable statement
 - Do NOT introduce new information
 
@@ -476,7 +476,7 @@ crisis in higher education.
 
 ## Additional Sections
 
-### Acknowledgments
+### Acknowledgements
 - Thank funding sources (with grant numbers)
 - Acknowledge substantial contributions not qualifying for authorship
 - Thank those who provided materials, equipment, or assistance
@@ -608,7 +608,7 @@ crisis in higher education.
 |-------|----------|-------------|----------------|---------------------|----------------------|
 | **Nature/Science** | Non-specialists | Broad significance | Brief, supplement | Story-driven | Broad implications |
 | **Medical** | Clinicians | Clinical problem | Comprehensive | Primary outcome first | Clinical relevance |
-| **Specialized** | Experts | Field context | Full technical | By experiment | Mechanistic depth |
+| **Specialised** | Experts | Field context | Full technical | By experiment | Mechanistic depth |
 | **ML conferences** | ML researchers | Novel contribution | Reproducible | Baselines, ablations | Brief, limitations |
 
 **ML conference emphasis:**
@@ -658,15 +658,15 @@ crisis in higher education.
 - Expand limitations discussion
 
 **Specialist → Broad journal:**
-- Simplify intro; emphasize broad significance
+- Simplify intro; emphasise broad significance
 - Move technical methods to supplement
-- Story-driven results organization
+- Story-driven results organisation
 - Lead discussion with implications
 
 **Broad → Specialist:**
 - Add detailed literature review
 - Full methods in main text
-- Organize results by experiment
+- Organise results by experiment
 - Add mechanistic discussion depth
 
 ### Pre-Submission Structure Checklist

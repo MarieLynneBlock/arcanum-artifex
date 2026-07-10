@@ -175,7 +175,7 @@ params = {
 - Regulatory requirement determination
 - Product code lookup
 - Classification research
-- Device categorization
+- Device categorisation
 
 **Example Queries**:
 ```python
@@ -413,7 +413,7 @@ params = {
 - `identifiers.type` - Primary or Package DI
 - `brand_name` - Brand name
 - `version_model_number` - Version/model number
-- `catalog_number` - Catalog number
+- `catalog_number` - Catalogue number
 - `company_name` - Device company
 - `device_count_in_base_package` - Quantity in base package
 - `device_description` - Description
@@ -421,7 +421,7 @@ params = {
 - `is_otc` - Over-the-counter device (true/false)
 - `is_combination_product` - Combination product (true/false)
 - `is_kit` - Kit (true/false)
-- `is_labeled_no_nrl` - Latex-free labeled
+- `is_labeled_no_nrl` - Latex-free labelled
 - `has_lot_or_batch_number` - Uses lot/batch numbers
 - `has_serial_number` - Uses serial numbers
 - `has_manufacturing_date` - Has manufacturing date

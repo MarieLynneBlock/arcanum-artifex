@@ -96,7 +96,7 @@ rowan.submit_workflow(
 ) -> Workflow
 ```
 
-### Specialized Submission Functions
+### Specialised Submission Functions
 
 All functions return a `Workflow` object.
 
@@ -145,7 +145,7 @@ rowan.submit_bde_workflow(
 )
 ```
 
-#### Molecular Modeling
+#### Molecular Modelling
 
 ```python
 # Geometry optimization
@@ -394,7 +394,7 @@ for wf in workflows:
         print(wf.data)
 ```
 
-### Organizing Workflows in Folders
+### Organising Workflows in Folders
 
 ```python
 import rowan

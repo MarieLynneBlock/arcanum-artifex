@@ -183,11 +183,11 @@ result = cirq.DensityMatrixSimulator(noise=noise_model).run(
 )
 ```
 
-See `noise.md` for comprehensive noise modeling details.
+See `noise.md` for comprehensive noise modelling details.
 
 ## State Histograms
 
-### Visualize Results
+### Visualise Results
 
 ```python
 import matplotlib.pyplot as plt
@@ -298,7 +298,7 @@ for i, step in enumerate(simulator.simulate_moment_steps(circuit)):
 
 ## Simulation Performance
 
-### Optimizing Large Simulations
+### Optimising Large Simulations
 
 1. **Use state vector for pure states**: Faster than density matrix
 2. **Avoid density matrix when possible**: Exponentially more expensive
@@ -347,4 +347,4 @@ result = simulator.run(circuit, repetitions=1000)
 3. **Validate circuits**: Check circuit validity before long simulations
 4. **Monitor resource usage**: Track memory for large-scale simulations
 5. **Use stabilizer simulation**: When circuits contain only Clifford gates
-6. **Save intermediate results**: For long parameter sweeps or optimization runs
+6. **Save intermediate results**: For long parameter sweeps or optimisation runs

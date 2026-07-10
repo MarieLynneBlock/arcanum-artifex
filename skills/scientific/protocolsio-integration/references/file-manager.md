@@ -2,7 +2,7 @@
 
 ## Overview
 
-The File Manager API enables file operations within protocols.io workspaces, including uploading files, organizing folders, searching content, and managing file lifecycle. This is useful for attaching data files, images, documents, and other resources to protocols.
+The File Manager API enables file operations within protocols.io workspaces, including uploading files, organising folders, searching content, and managing file lifecycle. This is useful for attaching data files, images, documents, and other resources to protocols.
 
 ## Base URL
 
@@ -246,7 +246,7 @@ curl -X POST \
 
 ### 2. Workspace Organization
 
-Organize files into logical folder structures:
+Organise files into logical folder structures:
 
 1. Create folder hierarchy: `POST /workspaces/{id}/folders`
 2. Upload files to appropriate folders
@@ -277,7 +277,7 @@ Find files across workspace:
 1. Search by keywords: `GET /workspaces/{id}/files/search?query=keywords`
 2. Filter by type and date
 3. Download relevant files
-4. Update metadata for better organization
+4. Update metadata for better organisation
 
 ### 4. Batch File Upload
 
@@ -373,7 +373,7 @@ Protocols.io supports various file types:
    - Use clear file names for team members
    - Document file purposes in descriptions
    - Maintain consistent folder structures
-   - Communicate major organizational changes
+   - Communicate major organisational changes
 
 6. **Security**
    - Avoid uploading sensitive data without proper permissions
@@ -406,7 +406,7 @@ Common error responses:
    - Use exponential backoff for rate limits
    - Process uploads in parallel where possible
 
-3. **Download Optimization**
+3. **Download Optimisation**
    - Cache frequently accessed files locally
    - Use streaming for large file downloads
    - Implement resume capability for interrupted downloads

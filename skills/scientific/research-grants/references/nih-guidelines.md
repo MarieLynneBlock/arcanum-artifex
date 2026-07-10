@@ -2,20 +2,20 @@
 
 ## Agency Overview
 
-**Mission**: To seek fundamental knowledge about the nature and behavior of living systems and to apply that knowledge to enhance health, lengthen life, and reduce illness and disability
+**Mission**: To seek fundamental knowledge about the nature and behaviour of living systems and to apply that knowledge to enhance health, lengthen life, and reduce illness and disability
 
 **Annual Budget**: ~$47 billion (largest biomedical research funder globally)
 
 **Website**: https://www.nih.gov
 
 **Key Characteristics**:
-- 27 Institutes and Centers (ICs), each with specific research focus
-- Supports biomedical and behavioral research
-- Strong emphasis on rigor, reproducibility, and translation
+- 27 Institutes and Centres (ICs), each with specific research focus
+- Supports biomedical and behavioural research
+- Strong emphasis on rigour, reproducibility, and translation
 - Clinical trials and human subjects research
 - Patient-oriented and population health research
 
-## NIH Institutes and Centers (Major ICs)
+## NIH Institutes and Centres (Major ICs)
 
 - **NCI** - National Cancer Institute
 - **NHLBI** - National Heart, Lung, and Blood Institute
@@ -31,7 +31,7 @@
 - **NIAAA** - National Institute on Alcohol Abuse and Alcoholism
 - **NIDA** - National Institute on Drug Abuse
 - **NHGRI** - National Human Genome Research Institute
-- **NCCIH** - National Center for Complementary and Integrative Health
+- **NCCIH** - National Centre for Complementary and Integrative Health
 
 **Plus**: NIBIB, NIDCD, NIDCR, NINR, FIC, NLM, and others
 
@@ -126,7 +126,7 @@ NIH proposals are evaluated using **scored criteria** (1-9 scale, 1 = exceptiona
 - Are potential problems, alternative strategies, and benchmarks for success presented?
 - Is the timeline reasonable and is there adequate statistical power?
 - Are the data management and analysis plans appropriate?
-- Is rigor and transparency evident in the experimental design?
+- Is rigour and transparency evident in the experimental design?
 
 **What Reviewers Look For**:
 - Detailed, specific methodology
@@ -135,11 +135,11 @@ NIH proposals are evaluated using **scored criteria** (1-9 scale, 1 = exceptiona
 - Potential pitfalls identified with alternatives
 - Feasibility demonstrated with preliminary data
 - Logical flow from aims through methods to expected outcomes
-- Rigor and reproducibility measures
+- Rigour and reproducibility measures
 
 **Writing Strategy**:
 - Provide sufficient detail to judge feasibility
-- Use subheadings for organization
+- Use subheadings for organisation
 - Include flowcharts or diagrams
 - Address authentication of key biological resources
 - Discuss biological variables (sex, age, etc.)
@@ -195,7 +195,7 @@ These factors are discussed but do not contribute to the numerical score:
 #### Vertebrate Animals
 - IACUC approval status
 - Proposed procedures appropriate and humane
-- Minimization of discomfort, distress, pain
+- Minimisation of discomfort, distress, pain
 - Euthanasia method appropriate
 - Justification of species and numbers
 
@@ -314,7 +314,7 @@ These factors are discussed but do not contribute to the numerical score:
 - Randomization, blinding, controls
 - Timeline for this aim
 
-**Methods** (organized by sub-aim or experiment):
+**Methods** (organised by sub-aim or experiment):
 - Detailed procedures and protocols
 - Materials, reagents, equipment
 - Data collection procedures
@@ -340,19 +340,19 @@ These factors are discussed but do not contribute to the numerical score:
 - Estimated completion time
 
 **Writing Tips**:
-- Use consistent organization across aims
+- Use consistent organisation across aims
 - Include subheadings for clarity
 - Integrate preliminary data throughout (not just at beginning)
 - Provide figures, flowcharts, and tables
-- Address rigor and reproducibility explicitly
+- Address rigour and reproducibility explicitly
 - Justify choice of methods and approaches
 - Be specific about numbers, timelines, and analysis
 - Show that you've thought through the research process
 
-**Rigor and Reproducibility** (addressed throughout Approach):
+**Rigour and Reproducibility** (addressed throughout Approach):
 
 NIH requires explicit discussion of:
-- **Scientific rigor in experimental design**: Controls, replicates, blinding, randomization
+- **Scientific rigour in experimental design**: Controls, replicates, blinding, randomization
 - **Authentication of key biological resources**: Cell lines, antibodies, organisms
 - **Consideration of biological variables**: Sex, age, strain, etc.
 - **Statistical power**: Adequate sample sizes
@@ -377,7 +377,7 @@ NIH requires explicit discussion of:
 
 **Vertebrate Animals Section**:
 - Justification of species and numbers
-- Minimization of pain and distress
+- Minimisation of pain and distress
 - Euthanasia method
 
 ## Key NIH Application Types
@@ -556,13 +556,13 @@ NIH requires explicit discussion of:
 
 **K Awards and Fellowship**: Different dates, typically 3 times/year
 
-**Submission Time**: 5:00 PM local time of applicant organization
+**Submission Time**: 5:00 PM local time of applicant organisation
 
 ### Submission Systems
 
 **eRA Commons**: Required for NIH submission
 - Create account through institution
-- Assign roles (PI, authorized organizational representative)
+- Assign roles (PI, authorized organisational representative)
 
 **ASSIST (Application Submission System & Interface for Submission Tracking)**:
 - NIH's electronic submission system
@@ -621,7 +621,7 @@ NIH requires explicit discussion of:
 - Assigned reviewers present their assessments
 - Panel discusses strengths and weaknesses
 - Open discussion among all panel members
-- Questions about rigor, innovation, feasibility
+- Questions about rigour, innovation, feasibility
 
 **Final Scoring** (after discussion):
 - All panel members score 1-9
@@ -752,7 +752,7 @@ We have addressed these concerns as follows:
 **Common Resubmission Improvements**:
 1. **Add preliminary data**: Especially for Aim 2 or 3 if criticized
 2. **Clarify methods**: Provide more detail, address technical concerns
-3. **Increase rigor**: Better controls, larger n, statistical justification
+3. **Increase rigour**: Better controls, larger n, statistical justification
 4. **Revise specific aims**: If fundamentally flawed
 5. **Add collaborators**: If expertise questioned
 6. **Strengthen significance**: Better literature review, clearer impact
@@ -812,8 +812,8 @@ We have addressed these concerns as follows:
 
 ✅ **Start with Specific Aims page** - Most important page, revise extensively
 ✅ **Include substantial preliminary data** - Demonstrate feasibility (esp. for R01)
-✅ **Be explicit about innovation** - Don't assume reviewers will recognize it
-✅ **Address rigor and reproducibility** - Controls, power, authentication, variables
+✅ **Be explicit about innovation** - Don't assume reviewers will recognise it
+✅ **Address rigour and reproducibility** - Controls, power, authentication, variables
 ✅ **Provide detailed methods** - Enough detail to assess feasibility
 ✅ **Identify pitfalls proactively** - Show you've thought through challenges
 ✅ **Use figures and diagrams** - Clarify complex ideas, show preliminary data
@@ -843,7 +843,7 @@ We have addressed these concerns as follows:
 - **ASSIST**: https://public.era.nih.gov/assist
 - **Application Forms and Instructions**: https://grants.nih.gov/grants/how-to-apply-application-guide.html
 - **NIH Data Sharing Policy**: https://sharing.nih.gov
-- **Rigor and Reproducibility**: https://grants.nih.gov/reproducibility/index.htm
+- **Rigour and Reproducibility**: https://grants.nih.gov/reproducibility/index.htm
 
 ---
 

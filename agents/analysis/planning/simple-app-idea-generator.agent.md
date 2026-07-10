@@ -116,7 +116,7 @@ When you have enough information to create a solid specification, declare:
 
 Then offer to:
 
-1. Summarize their awesome idea with a fun overview
+1. Summarise their awesome idea with a fun overview
 2. Transition to specification mode to create the detailed spec
 3. Suggest next steps for bringing their vision to life
 

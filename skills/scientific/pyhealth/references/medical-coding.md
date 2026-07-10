@@ -12,7 +12,7 @@ Handles within-system ontology lookups and hierarchical navigation.
 **Key Capabilities:**
 - Code lookup with attributes (names, descriptions)
 - Ancestor/descendant hierarchy traversal
-- Code standardization and conversion
+- Code standardisation and conversion
 - Parent-child relationship navigation
 
 ### CrossMap
@@ -81,8 +81,8 @@ Manages cross-system mappings between different coding standards.
   - `ndc_map = InnerMap.load("NDC")`
 
 **RxNorm**
-- Standardized drug terminology
-- Normalized drug names and relationships
+- Standardised drug terminology
+- Normalised drug names and relationships
 - Links multiple drug vocabularies
 - Usage: `from pyhealth.medcode import CrossMap`
   - `ndc_to_rxnorm = CrossMap.load("NDC", "RXNORM")`
@@ -136,7 +136,7 @@ descendants = icd9_map.get_descendants("428")
 # Returns: ["428.0", "428.1", "428.2", ...]
 ```
 
-**4. Code Standardization**
+**4. Code Standardisation**
 ```python
 # Normalize code format
 standard_code = icd9_map.standardize("4280")  # Returns "428.0"
@@ -174,7 +174,7 @@ ndc_codes = rxnorm_to_ndc.map("197381")  # Get all NDC codes for RxNorm
 
 ## Workflow Examples
 
-### Example 1: Standardize and Group Diagnoses
+### Example 1: Standardise and Group Diagnoses
 ```python
 from pyhealth.medcode import InnerMap, CrossMap
 
@@ -255,14 +255,14 @@ for patient in dataset.iter_patients():
 ## Use Cases
 
 ### Clinical Research
-- Standardize diagnoses across different coding systems
+- Standardise diagnoses across different coding systems
 - Group related conditions for cohort identification
-- Harmonize multi-site studies with different standards
+- Harmonise multi-site studies with different standards
 
 ### Drug Safety Analysis
 - Classify medications by therapeutic class
 - Identify drug-drug interactions at class level
-- Analyze polypharmacy patterns
+- Analyse polypharmacy patterns
 
 ### Healthcare Analytics
 - Reduce diagnosis/procedure dimensionality
@@ -276,7 +276,7 @@ for patient in dataset.iter_patients():
 
 ## Best Practices
 
-1. **Always standardize codes** before mapping to ensure consistent format
+1. **Always standardise codes** before mapping to ensure consistent format
 2. **Handle one-to-many mappings** appropriately (some codes map to multiple targets)
 3. **Specify ATC level** explicitly when mapping drugs to avoid ambiguity
 4. **Use CCS categories** to reduce diagnosis/procedure dimensionality

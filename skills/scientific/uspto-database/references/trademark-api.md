@@ -305,7 +305,7 @@ def get_current_owner(registration_number, api_key):
 
 ### 3. Portfolio Management
 
-Analyze trademark portfolio:
+Analyse trademark portfolio:
 
 ```python
 def analyze_portfolio(serial_numbers, api_key):
@@ -346,13 +346,13 @@ def analyze_portfolio(serial_numbers, api_key):
 Combine trademark data with other sources:
 
 - **TSDR + Assignment** - Current status + ownership history
-- **Multiple marks** - Analyze related marks in a family
+- **Multiple marks** - Analyse related marks in a family
 - **Patent data** - Cross-reference IP portfolio
 
 ## Resources
 
-- **TSDR API**: https://developer.uspto.gov/api-catalog/tsdr-data-api
-- **Assignment API**: https://developer.uspto.gov/api-catalog/trademark-assignment-search-data-api
+- **TSDR API**: https://developer.uspto.gov/api-catalogue/tsdr-data-api
+- **Assignment API**: https://developer.uspto.gov/api-catalogue/trademark-assignment-search-data-api
 - **API Key Registration**: https://account.uspto.gov/api-manager/
 - **Trademark Search**: https://tmsearch.uspto.gov/
 - **Swagger Documentation**: https://developer.uspto.gov/swagger/tsdr-api-v1

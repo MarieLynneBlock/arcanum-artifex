@@ -105,8 +105,8 @@ main(); // Start the cycle
 ```
 
 Key points:
-- `requestAnimationFrame()` synchronizes callbacks to the browser's repaint schedule (typically 60 Hz).
-- Schedule the next frame **before** performing loop work to maximize available computation time.
+- `requestAnimationFrame()` synchronises callbacks to the browser's repaint schedule (typically 60 Hz).
+- Schedule the next frame **before** performing loop work to maximise available computation time.
 
 ### Self-Contained Main Loop (IIFE)
 
@@ -197,7 +197,7 @@ Assumptions:
 
 ## Decoupled Update and Render with Fixed Timestep
 
-For robust handling of variable refresh rates and consistent simulation behavior:
+For robust handling of variable refresh rates and consistent simulation behaviour:
 
 ```javascript
 ;(() => {
@@ -236,7 +236,7 @@ For robust handling of variable refresh rates and consistent simulation behavior
 Benefits:
 - **Deterministic simulation** -- Game logic runs at a fixed frequency regardless of display refresh rate.
 - **Smooth rendering** -- Rendering can interpolate between simulation states for visual smoothness.
-- **Portable behavior** -- Game behaves the same on 60 Hz, 120 Hz, and 144 Hz displays.
+- **Portable behaviour** -- Game behaves the same on 60 Hz, 120 Hz, and 144 Hz displays.
 
 ---
 

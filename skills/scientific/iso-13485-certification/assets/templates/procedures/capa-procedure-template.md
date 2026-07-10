@@ -36,7 +36,7 @@
 5. [Procedure](#5-procedure)
    - 5.1 [Corrective Action Process](#51-corrective-action-process)
    - 5.2 [Preventive Action Process](#52-preventive-action-process)
-   - 5.3 [CAPA Prioritization](#53-capa-prioritization)
+   - 5.3 [CAPA Prioritisation](#53-capa-prioritisation)
    - 5.4 [Investigation and Root Cause Analysis](#54-investigation-and-root-cause-analysis)
    - 5.5 [Action Planning and Implementation](#55-action-planning-and-implementation)
    - 5.6 [Effectiveness Review](#56-effectiveness-review)
@@ -79,12 +79,12 @@ This procedure applies to:
 | **CAPA** | Corrective and Preventive Action |
 | **Corrective Action** | Action to eliminate the cause of a detected nonconformity or other undesirable situation to prevent recurrence |
 | **Preventive Action** | Action to eliminate the cause of a potential nonconformity or other potential undesirable situation to prevent occurrence |
-| **Nonconformity** | Non-fulfillment of a requirement |
+| **Nonconformity** | Non-fulfilment of a requirement |
 | **Root Cause** | The fundamental reason for the occurrence of a problem |
 | **Root Cause Analysis (RCA)** | Systematic process to identify the root cause of a problem |
 | **Effectiveness Check** | Verification that implemented actions have achieved the intended result |
 | **5 Whys** | Iterative questioning technique used to explore cause-and-effect relationships |
-| **Fishbone Diagram** | Visual tool for categorizing potential causes of a problem (also called Ishikawa diagram) |
+| **Fishbone Diagram** | Visual tool for categorising potential causes of a problem (also called Ishikawa diagram) |
 
 ---
 
@@ -177,7 +177,7 @@ Preventive actions are initiated proactively to address potential problems befor
 - Risk management activities (per SOP-[NUMBER])
 - Process capability studies
 - Near-miss events
-- Lessons learned from other organizations or devices
+- Lessons learned from other organisations or devices
 - Changes in regulations or standards
 - Proactive process improvements
 - Management review outputs
@@ -188,11 +188,11 @@ Preventive actions are initiated proactively to address potential problems befor
 Process is similar to corrective action (Section 5.1.1), but:
 - Describes potential nonconformity and its possible consequences
 - Includes data or rationale supporting the need for preventive action
-- May have different prioritization based on risk of occurrence
+- May have different prioritisation based on risk of occurrence
 
-### 5.3 CAPA Prioritization
+### 5.3 CAPA Prioritisation
 
-All CAPAs are prioritized based on:
+All CAPAs are prioritised based on:
 - Severity of impact (safety, regulatory, customer impact)
 - Frequency or likelihood of occurrence
 - Detectability before reaching customer
@@ -227,7 +227,7 @@ Collect relevant data:
 - Review similar past occurrences
 - Examine physical evidence (product samples, equipment, etc.)
 - Review applicable procedures and work instructions
-- Analyze trend data if available
+- Analyse trend data if available
 
 **5.4.3 Root Cause Analysis**
 
@@ -349,7 +349,7 @@ Methods appropriate to the CAPA may include:
 
 CAPA Owner:
 - Collects effectiveness data using planned method
-- Analyzes data to determine if actions achieved intended result
+- Analyses data to determine if actions achieved intended result
 - Documents findings in CAPA record
 - Recommends effectiveness status:
   - **Effective:** Actions achieved intended result, no recurrence

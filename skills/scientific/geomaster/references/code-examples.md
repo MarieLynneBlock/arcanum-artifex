@@ -1,6 +1,6 @@
 # Code Examples
 
-500+ code examples organized by category and programming language.
+500+ code examples organised by category and programming language.
 
 ## Python Examples
 
@@ -77,7 +77,7 @@ dst_transform, dst_width, dst_height = calculate_default_transform(
     src.crs, 'EPSG:32633', src.width, src.height, *src.bounds)
 ```
 
-### Visualization
+### Visualisation
 
 ```python
 # 18. Static plot with GeoPandas

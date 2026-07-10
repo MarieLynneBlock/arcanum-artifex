@@ -18,7 +18,7 @@ This document provides guidance on calculating, interpreting, and reporting effe
 
 ### T-Tests and Mean Differences
 
-#### Cohen's d (Standardized Mean Difference)
+#### Cohen's d (Standardised Mean Difference)
 
 **Formula**:
 - Independent groups: d = (M₁ - M₂) / SD_pooled
@@ -230,7 +230,7 @@ rho = result['r'].values[0]
 **Context-dependent**:
 - Physical sciences: R² > 0.90 expected
 - Social sciences: R² > 0.30 considered good
-- Behavior prediction: R² > 0.10 may be meaningful
+- Behaviour prediction: R² > 0.10 may be meaningful
 
 **Python calculation**:
 ```python
@@ -250,7 +250,7 @@ r_squared = 1 - (SS_residual / SS_total)
 
 #### Adjusted R²
 
-**Why use it**: R² artificially increases when adding predictors; adjusted R² penalizes model complexity
+**Why use it**: R² artificially increases when adding predictors; adjusted R² penalises model complexity
 
 **Formula**: R²_adj = 1 - (1 - R²) × (n - 1) / (n - k - 1)
 
@@ -258,7 +258,7 @@ r_squared = 1 - (SS_residual / SS_total)
 
 ---
 
-#### Standardized Regression Coefficients (β)
+#### Standardised Regression Coefficients (β)
 
 **What it measures**: Effect of one-SD change in predictor on outcome (in SD units)
 
@@ -576,6 +576,6 @@ print(f"With n=50 per group, we could detect d ≥ {detectable_effect:.2f}")
 
 ## Resources
 
-- Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences* (2nd ed.)
+- Cohen, J. (1988). *Statistical Power Analysis for the Behavioural Sciences* (2nd ed.)
 - Lakens, D. (2013). Calculating and reporting effect sizes
 - Ellis, P. D. (2010). *The Essential Guide to Effect Sizes*

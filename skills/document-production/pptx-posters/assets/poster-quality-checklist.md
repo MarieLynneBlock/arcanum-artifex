@@ -11,7 +11,7 @@ Use this comprehensive checklist before printing or presenting your research pos
 - [ ] Contact email address included
 - [ ] All sections present: Introduction, Methods, Results, Conclusions
 - [ ] References cited (5-10 key citations)
-- [ ] Acknowledgments included (funding, collaborators)
+- [ ] Acknowledgements included (funding, collaborators)
 - [ ] No placeholder text remaining (TODO, Lorem ipsum, etc.)
 
 ### Visual Content
@@ -26,7 +26,7 @@ Use this comprehensive checklist before printing or presenting your research pos
 - [ ] Correct orientation (portrait/landscape)
 - [ ] Minimal margins configured (5-15mm)
 - [ ] Font sizes appropriate (title 72pt+, body 24pt+)
-- [ ] Color scheme defined
+- [ ] Colour scheme defined
 - [ ] All packages installed and working
 
 ## Compilation Checks
@@ -73,7 +73,7 @@ pdffonts poster.pdf
 pdfimages -list poster.pdf
 ```
 - [ ] All images at least 300 DPI
-- [ ] No JPEG artifacts in figures
+- [ ] No JPEG artefacts in figures
 - [ ] Vector graphics used where possible
 
 #### File Size
@@ -111,25 +111,25 @@ ls -lh poster.pdf
 - [ ] No pixelated or blurry images
 - [ ] Figure resolution high (zoom to 200% to verify)
 - [ ] Figure labels large and clear
-- [ ] Graph axes labeled with units
-- [ ] Color schemes consistent across figures
+- [ ] Graph axes labelled with units
+- [ ] Colour schemes consistent across figures
 - [ ] Legends readable and well-positioned
 - [ ] Logos crisp and professional
 - [ ] QR codes sharp and high-contrast (minimum 2×2cm)
-- [ ] No visual artifacts or rendering errors
+- [ ] No visual artefacts or rendering errors
 
-### Colors
-- [ ] Colors render as intended (not washed out)
+### Colours
+- [ ] Colours render as intended (not washed out)
 - [ ] High contrast between text and background (≥4.5:1)
-- [ ] Color scheme harmonious
-- [ ] Colors appropriate for printing (not too bright/neon)
-- [ ] Institutional colors used correctly
-- [ ] Color-blind friendly palette (avoid red-green only)
+- [ ] Colour scheme harmonious
+- [ ] Colours appropriate for printing (not too bright/neon)
+- [ ] Institutional colours used correctly
+- [ ] Colour-blind friendly palette (avoid red-green only)
 
 ### Content
 - [ ] Title complete and correctly positioned
 - [ ] All author names and affiliations visible
-- [ ] All sections present and labeled
+- [ ] All sections present and labelled
 - [ ] Results section has figures/data
 - [ ] Conclusions clearly stated
 - [ ] References formatted consistently
@@ -162,11 +162,11 @@ Print poster at 25% scale:
 - [ ] All details clear
 
 ### Print Quality
-- [ ] Colors accurate (match screen expectations)
-- [ ] No banding or color shifts
+- [ ] Colours accurate (match screen expectations)
+- [ ] No banding or colour shifts
 - [ ] Sharp edges (not blurry)
 - [ ] Consistent print density
-- [ ] No printer artifacts
+- [ ] No printer artefacts
 
 ## Content Proofreading
 
@@ -199,26 +199,26 @@ Print poster at 25% scale:
 
 ## Accessibility Checks
 
-### Color Contrast
+### Colour Contrast
 Test at: https://webaim.org/resources/contrastchecker/
 
 - [ ] Title-background contrast ≥ 7:1
 - [ ] Body text-background contrast ≥ 4.5:1
 - [ ] All text meets WCAG AA standard minimum
 
-### Color Blindness
-Test with simulator: https://www.color-blindness.com/coblis-color-blindness-simulator/
+### Colour Blindness
+Test with simulator: https://www.colour-blindness.com/coblis-colour-blindness-simulator/
 
 - [ ] Information not lost with deuteranopia (red-green)
 - [ ] Key distinctions visible with protanopia
-- [ ] Patterns/shapes used in addition to color
-- [ ] No critical info conveyed by color alone
+- [ ] Patterns/shapes used in addition to colour
+- [ ] No critical info conveyed by colour alone
 
 ### Visual Clarity
 - [ ] Clear visual hierarchy (size, weight, position)
 - [ ] Logical reading order
 - [ ] Grouping of related elements obvious
-- [ ] Important info emphasized appropriately
+- [ ] Important info emphasised appropriately
 
 ## Peer Review
 
@@ -232,7 +232,7 @@ Show poster to colleague for 30 seconds, then ask:
 Ask colleague to read poster (5 minutes), then ask:
 - [ ] They understand the research question
 - [ ] They can explain the approach
-- [ ] They can summarize the conclusions
+- [ ] They can summarise the conclusions
 - [ ] They identify what makes it novel/important
 
 ### Feedback
@@ -247,7 +247,7 @@ Ask colleague to read poster (5 minutes), then ask:
 - [ ] PDF size exactly matches conference requirements
 - [ ] Orientation correct (portrait vs landscape)
 - [ ] All fonts embedded (verified with pdffonts)
-- [ ] Color space correct (RGB for screen, CMYK if printer requires)
+- [ ] Colour space correct (RGB for screen, CMYK if printer requires)
 - [ ] Resolution adequate (300+ DPI for all images)
 - [ ] Bleed area added if required (typically 3-5mm)
 - [ ] Crop marks visible if required
@@ -256,7 +256,7 @@ Ask colleague to read poster (5 minutes), then ask:
 ### Printer Communication
 - [ ] Confirmed paper type (matte vs glossy)
 - [ ] Confirmed poster size
-- [ ] Provided color profile if required
+- [ ] Provided colour profile if required
 - [ ] Verified delivery deadline
 - [ ] Confirmed shipping/pickup arrangements
 - [ ] Discussed backup plan if issues arise
@@ -273,7 +273,7 @@ Ask colleague to read poster (5 minutes), then ask:
 
 If presenting digitally or sharing online:
 
-### File Optimization
+### File Optimisation
 - [ ] PDF compressed if >10MB (for email)
 - [ ] Test opens in Adobe Reader
 - [ ] Test opens in Preview (Mac)
@@ -347,7 +347,7 @@ _________________________________________________________
 | Large white margins | Reduce margin in documentclass: `margin=5mm` |
 | Text too small | Increase scale: `scale=1.5` in beamerposter |
 | Blurry figures | Use vector graphics (PDF) or higher resolution (600+ DPI) |
-| Colors wrong | Check RGB vs CMYK, test print before final |
+| Colours wrong | Check RGB vs CMYK, test print before final |
 | Fonts not embedded | Compile with: `pdflatex -dEmbedAllFonts=true` |
 | Content cut off | Check total width: columns + spacing + margins = pagewidth |
 | QR codes don't scan | Increase size (min 2×2cm), ensure high contrast |

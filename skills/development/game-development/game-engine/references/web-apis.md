@@ -8,7 +8,7 @@ A comprehensive reference covering the web platform APIs most relevant to buildi
 
 ### What It Is
 
-asm.js is a strict, highly optimizable subset of JavaScript designed for near-native performance. It restricts JavaScript to a narrow set of constructs -- integers, floats, arithmetic, simple functions, and heap accesses -- and disallows objects, strings, closures, and anything requiring heap allocation. The result is completely valid JavaScript that any engine can run, but that supporting engines can compile aggressively ahead of time.
+asm.js is a strict, highly optimisable subset of JavaScript designed for near-native performance. It restricts JavaScript to a narrow set of constructs -- integers, floats, arithmetic, simple functions, and heap accesses -- and disallows objects, strings, closures, and anything requiring heap allocation. The result is completely valid JavaScript that any engine can run, but that supporting engines can compile aggressively ahead of time.
 
 ### Why It Matters for Games
 
@@ -78,7 +78,7 @@ The Canvas API provides a means for drawing 2D graphics via JavaScript and the H
 | `Path2D` | Reusable path objects |
 | `OffscreenCanvas` | Offscreen rendering, usable in Web Workers |
 | `CanvasPattern` | Repeating image patterns |
-| `CanvasGradient` | Color gradients |
+| `CanvasGradient` | Colour gradients |
 | `TextMetrics` | Text measurement data |
 
 ### Key Methods (CanvasRenderingContext2D)
@@ -138,7 +138,7 @@ CSS is the language used to describe the presentation of web documents. In the c
 - **CSS Transforms**: Translate, rotate, scale, and skew DOM elements for visual effects and UI positioning.
 - **Flexbox and Grid**: Lay out complex game UIs (settings panels, leaderboards, lobby screens) responsively.
 - **Custom Properties (CSS Variables)**: Theme game UIs dynamically by changing variable values at runtime.
-- **Pointer and cursor control**: Customize or hide cursors, control pointer events on overlay elements.
+- **Pointer and cursor control**: Customise or hide cursors, control pointer events on overlay elements.
 - **Media queries**: Adapt game UI across screen sizes and device types.
 
 ### Key Properties for Games
@@ -156,7 +156,7 @@ CSS is the language used to describe the presentation of web documents. In the c
 | `display: flex / grid` | Responsive layout for menus and panels |
 | `filter` | Blur, brightness, contrast effects on DOM elements |
 | `mix-blend-mode` | Blend overlay effects with the canvas |
-| `will-change` | Hint the browser to optimize animated properties |
+| `will-change` | Hint the browser to optimise animated properties |
 
 ### Code Example
 
@@ -277,7 +277,7 @@ document.addEventListener("fullscreenchange", () => {
 
 ### What It Is
 
-The Gamepad API provides a standardized interface for detecting and reading input from gamepads and game controllers. It exposes button presses, analog stick positions, and controller connection events, enabling console-style controls in browser games.
+The Gamepad API provides a standardised interface for detecting and reading input from gamepads and game controllers. It exposes button presses, analog stick positions, and controller connection events, enabling console-style controls in browser games.
 
 ### Why It Matters for Games
 
@@ -423,7 +423,7 @@ JavaScript is a lightweight, dynamically typed, prototype-based programming lang
 
 - **Runtime environment**: JavaScript is the language in which browser game logic executes.
 - **Event-driven architecture**: Native event handling supports input, timers, and async resource loading.
-- **First-class functions**: Callbacks and closures enable patterns like game loops, event handlers, behavior trees, and state machines.
+- **First-class functions**: Callbacks and closures enable patterns like game loops, event handlers, behaviour trees, and state machines.
 - **Dynamic objects**: Runtime object creation and modification supports entity-component systems and data-driven designs.
 - **Modern class syntax**: ES6+ classes provide clean inheritance hierarchies for game entities.
 - **Async/await**: Clean asynchronous control flow for asset loading, server communication, and scene transitions.
@@ -440,7 +440,7 @@ JavaScript is a lightweight, dynamically typed, prototype-based programming lang
 | Destructuring and spread | Clean configuration and state passing |
 | `Map` and `Set` | Entity lookup tables, unique ID tracking, collision sets |
 | Template literals | Debug output, dynamic text rendering |
-| Modules (import/export) | Organize game code into systems and components |
+| Modules (import/export) | Organise game code into systems and components |
 
 ### Code Example
 
@@ -571,7 +571,7 @@ SVG is an XML-based markup language for describing two-dimensional vector graphi
 - **Scriptable via the DOM**: SVG elements can be created, modified, and animated with JavaScript in real time.
 - **CSS styling**: SVG shapes accept CSS rules for fill, stroke, opacity, transforms, filters, and animations.
 - **Built-in animation**: SMIL animation elements (`<animate>`, `<animateTransform>`, `<animateMotion>`) for declarative motion.
-- **Filters and effects**: Gaussian blur, drop shadows, color matrices, and blend modes through SVG filter primitives.
+- **Filters and effects**: Gaussian blur, drop shadows, colour matrices, and blend modes through SVG filter primitives.
 
 ### Key Elements
 
@@ -584,7 +584,7 @@ SVG is an XML-based markup language for describing two-dimensional vector graphi
 | `<g>` | Group elements for collective transforms |
 | `<defs>`, `<use>`, `<symbol>` | Reusable sprite definitions |
 | `<text>`, `<tspan>` | Score displays, labels, dialog |
-| `<filter>` | Blur, shadow, and color effects |
+| `<filter>` | Blur, shadow, and colour effects |
 | `<clipPath>`, `<mask>` | Viewport clipping, reveal effects |
 | `<linearGradient>`, `<radialGradient>` | Shading and depth effects |
 | `<animate>`, `<animateTransform>` | Declarative UI animations |
@@ -628,7 +628,7 @@ Typed Arrays are array-like views over raw binary data buffers (`ArrayBuffer`). 
 
 ### Why They Matter for Games
 
-- **WebGL vertex and index buffers**: WebGL methods accept typed arrays directly for positions, normals, texture coordinates, colors, and indices.
+- **WebGL vertex and index buffers**: WebGL methods accept typed arrays directly for positions, normals, texture coordinates, colours, and indices.
 - **Web Audio buffers**: Audio sample data is stored and manipulated as `Float32Array`.
 - **Binary asset loading**: Parse binary file formats (models, textures, level data) directly.
 - **Memory-efficient**: Fixed-size elements with no boxing overhead.
@@ -641,7 +641,7 @@ Typed Arrays are array-like views over raw binary data buffers (`ArrayBuffer`). 
 |------|-------|-------|---------------|
 | `Float32Array` | 4 | ~3.4e38 | Vertex positions, normals, UVs, physics values |
 | `Float64Array` | 8 | ~1.8e308 | High-precision calculations, simulation |
-| `Uint8Array` | 1 | 0 -- 255 | Texture/pixel data, color channels |
+| `Uint8Array` | 1 | 0 -- 255 | Texture/pixel data, colour channels |
 | `Uint8ClampedArray` | 1 | 0 -- 255 (clamped) | `ImageData` pixel manipulation |
 | `Uint16Array` | 2 | 0 -- 65535 | Index buffers (small meshes) |
 | `Uint32Array` | 4 | 0 -- ~4.3 billion | Index buffers (large meshes), IDs |
@@ -719,7 +719,7 @@ The Web Audio API is a high-level system for controlling audio on the web. It us
 - **Modular effects pipeline**: Chain gain, reverb, filters, compression, and distortion nodes for dynamic soundscapes.
 - **Precise scheduling**: Schedule sounds to exact sample-accurate times for rhythm games, sequenced music, and timed events.
 - **Real-time analysis**: `AnalyserNode` provides frequency and waveform data for audio-reactive visuals.
-- **Procedural audio**: `OscillatorNode` generates waveforms for synthesized sound effects and UI tones.
+- **Procedural audio**: `OscillatorNode` generates waveforms for synthesised sound effects and UI tones.
 
 ### Key Interfaces
 
@@ -935,14 +935,14 @@ gl.drawArrays(gl.TRIANGLES, 0, 3);
 
 ### What It Is
 
-WebRTC (Web Real-Time Communication) enables peer-to-peer communication between browsers for audio, video, and arbitrary data exchange -- without requiring plugins or intermediary relay servers (though signaling servers and STUN/TURN are used for connection setup and NAT traversal).
+WebRTC (Web Real-Time Communication) enables peer-to-peer communication between browsers for audio, video, and arbitrary data exchange -- without requiring plugins or intermediary relay servers (though signalling servers and STUN/TURN are used for connection setup and NAT traversal).
 
 ### Why It Matters for Games
 
 - **Peer-to-peer multiplayer**: Establish direct connections between players, reducing latency and eliminating dedicated game servers for small-scale games.
 - **Low-latency data channels**: `RTCDataChannel` sends binary game state updates with minimal overhead, supporting both reliable and unreliable delivery modes.
 - **Voice chat**: Built-in audio/video streaming enables in-game voice communication.
-- **Reduced server costs**: Direct peer connections offload bandwidth and processing from centralized servers.
+- **Reduced server costs**: Direct peer connections offload bandwidth and processing from centralised servers.
 
 ### Key Interfaces
 
@@ -953,7 +953,7 @@ WebRTC (Web Real-Time Communication) enables peer-to-peer communication between 
 | `RTCSessionDescription` | Session negotiation via SDP (offer/answer model) |
 | `RTCIceCandidate` | Connectivity candidate for NAT/firewall traversal |
 | `RTCRtpSender` / `RTCRtpReceiver` | Manage audio/video encoding and transmission |
-| `RTCStatsReport` | Connection statistics (latency, packet loss, bandwidth) for optimization |
+| `RTCStatsReport` | Connection statistics (latency, packet loss, bandwidth) for optimisation |
 
 ### Key Events
 
@@ -967,7 +967,7 @@ WebRTC (Web Real-Time Communication) enables peer-to-peer communication between 
 ### Connection Lifecycle
 
 1. Create `RTCPeerConnection` on each peer.
-2. Exchange SDP offers/answers via a signaling server (typically WebSocket).
+2. Exchange SDP offers/answers via a signalling server (typically WebSocket).
 3. Exchange ICE candidates for NAT traversal.
 4. Peers connect directly.
 5. Open `RTCDataChannel` for game data and/or add media tracks for voice.
@@ -1140,7 +1140,7 @@ The WebVR API provides interfaces for accessing virtual reality devices (head-mo
 
 ### Deprecation Notice
 
-The WebVR API is **deprecated and non-standard**. It was never ratified as a web standard and has been superseded by the **WebXR Device API**, which supports both VR and AR, has broader browser support, and is on track for standardization. All new VR game development should target WebXR.
+The WebVR API is **deprecated and non-standard**. It was never ratified as a web standard and has been superseded by the **WebXR Device API**, which supports both VR and AR, has broader browser support, and is on track for standardisation. All new VR game development should target WebXR.
 
 ### Key Interfaces
 
@@ -1302,7 +1302,7 @@ self.onmessage = (event) => {
 - **Asset loading**: Retrieve game assets (images, audio, JSON level data, binary model files) asynchronously without blocking the game loop.
 - **Binary data support**: Set `responseType` to `"arraybuffer"` or `"blob"` to load binary assets directly into typed arrays for WebGL or Web Audio.
 - **Progress tracking**: The `progress` event reports download progress, enabling loading bars.
-- **Server communication**: Submit scores, authenticate players, fetch leaderboards, and synchronize game state with backend services.
+- **Server communication**: Submit scores, authenticate players, fetch leaderboards, and synchronise game state with backend services.
 - **Web Worker compatible**: XHR can be used inside Web Workers for background asset loading.
 
 ### Key Methods

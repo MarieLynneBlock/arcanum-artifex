@@ -1,6 +1,6 @@
 ---
 name: protocolsio-integration
-description: Integration with protocols.io API for managing scientific protocols. This skill should be used when working with protocols.io to search, create, update, or publish protocols; manage protocol steps and materials; handle discussions and comments; organize workspaces; upload and manage files; or integrate protocols.io functionality into workflows. Applicable for protocol discovery, collaborative protocol development, experiment tracking, lab protocol management, and scientific documentation.
+description: Integration with protocols.io API for managing scientific protocols. This skill should be used when working with protocols.io to search, create, update, or publish protocols; manage protocol steps and materials; handle discussions and comments; organise workspaces; upload and manage files; or integrate protocols.io functionality into workflows. Applicable for protocol discovery, collaborative protocol development, experiment tracking, lab protocol management, and scientific documentation.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -18,7 +18,7 @@ Use this skill when working with protocols.io in any of the following scenarios:
 
 - **Protocol Discovery**: Searching for existing protocols by keywords, DOI, or category
 - **Protocol Management**: Creating, updating, or publishing scientific protocols
-- **Step Management**: Adding, editing, or organizing protocol steps and procedures
+- **Step Management**: Adding, editing, or organising protocol steps and procedures
 - **Collaborative Development**: Working with team members on shared protocols
 - **Workspace Organization**: Managing lab or institutional protocol repositories
 - **Discussion & Feedback**: Adding or responding to protocol comments
@@ -68,14 +68,14 @@ Enable community engagement through comments and discussions.
 - View protocol-level and step-level comments
 - Create new comments and threaded replies
 - Edit or delete your own comments
-- Analyze discussion patterns and feedback
+- Analyse discussion patterns and feedback
 - Respond to user questions and issues
 
 **Reference:** Read `references/discussions.md` for discussion management, comment threading, and collaboration workflows.
 
 ### 4. Workspace Management
 
-Organize protocols within team workspaces with role-based permissions.
+Organise protocols within team workspaces with role-based permissions.
 
 **Key operations:**
 - List and access user workspaces
@@ -85,22 +85,22 @@ Organize protocols within team workspaces with role-based permissions.
 - Create protocols within workspaces
 - Manage workspace permissions and collaboration
 
-**Reference:** Read `references/workspaces.md` for workspace organization, permission management, and team collaboration patterns.
+**Reference:** Read `references/workspaces.md` for workspace organisation, permission management, and team collaboration patterns.
 
 ### 5. File Operations
 
-Upload, organize, and manage files associated with protocols.
+Upload, organise, and manage files associated with protocols.
 
 **Key operations:**
 - Search workspace files and folders
 - Upload files with metadata and tags
 - Download files and verify uploads
-- Organize files into folder hierarchies
+- Organise files into folder hierarchies
 - Update file metadata
 - Delete and restore files
-- Manage storage and organization
+- Manage storage and organisation
 
-**Reference:** Read `references/file-manager.md` for file upload procedures, organization strategies, and storage management.
+**Reference:** Read `references/file-manager.md` for file upload procedures, organisation strategies, and storage management.
 
 ### 6. Additional Features
 
@@ -111,7 +111,7 @@ Supplementary functionality including profiles, notifications, and exports.
 - Query recently published protocols
 - Create and track experiment records
 - Receive and manage notifications
-- Export organization data for archival
+- Export organisation data for archival
 
 **Reference:** Read `references/additional-features.md` for profile management, publication discovery, experiment tracking, and data export.
 
@@ -180,9 +180,9 @@ Implement exponential backoff for rate limit errors (HTTP 429).
 
 ## Common Workflows
 
-### Workflow 1: Import and Analyze Protocol
+### Workflow 1: Import and Analyse Protocol
 
-To analyze an existing protocol from protocols.io:
+To analyse an existing protocol from protocols.io:
 
 1. **Search**: Use `GET /protocols` with keywords to find relevant protocols
 2. **Retrieve**: Get full details with `GET /protocols/{protocol_id}`
@@ -210,7 +210,7 @@ To create a new protocol and publish with DOI:
 To set up team protocol management:
 
 1. **Create/join workspace**: Access or request workspace membership (see `workspaces.md`)
-2. **Organize structure**: Create folder hierarchy for lab protocols (see `file-manager.md`)
+2. **Organise structure**: Create folder hierarchy for lab protocols (see `file-manager.md`)
 3. **Create protocols**: Use `POST /workspaces/{id}/protocols` for team protocols
 4. **Upload files**: Add experimental data and images
 5. **Enable discussions**: Team members can comment and provide feedback
@@ -226,8 +226,8 @@ To track protocol executions and results:
 2. **Upload data**: Use File Manager API to upload results (see `file-manager.md`)
 3. **Create record**: Document execution with `POST /protocols/{id}/runs`
 4. **Link files**: Reference uploaded data files in experiment record
-5. **Note modifications**: Document any protocol deviations or optimizations
-6. **Analyze**: Review multiple runs for reproducibility assessment
+5. **Note modifications**: Document any protocol deviations or optimisations
+6. **Analyse**: Review multiple runs for reproducibility assessment
 
 **Reference files**: `additional-features.md`, `file-manager.md`, `protocols-api.md`
 
@@ -367,7 +367,7 @@ Load the appropriate reference file based on your task:
 - **`authentication.md`**: OAuth flows, token management, rate limiting
 - **`protocols-api.md`**: Protocol CRUD, steps, materials, publishing, PDFs
 - **`discussions.md`**: Comments, replies, collaboration
-- **`workspaces.md`**: Team workspaces, permissions, organization
+- **`workspaces.md`**: Team workspaces, permissions, organisation
 - **`file-manager.md`**: File upload, folders, storage management
 - **`additional-features.md`**: Profiles, publications, experiments, notifications
 

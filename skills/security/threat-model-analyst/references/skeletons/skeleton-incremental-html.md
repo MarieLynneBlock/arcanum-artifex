@@ -47,7 +47,7 @@ The HTML report has exactly 8 sections in this order. Each section MUST be prese
 ```
 **MUST include Trust Boundaries as one of the 5 metrics. 5th box is Code Changes (NOT Time Between).**
 
-## Section 3: Status Summary Cards (colored)
+## Section 3: Status Summary Cards (coloured)
 ```html
 <div class="status-cards">
   <!-- Green card --> Fixed: [FILL: count] [FILL: 1-sentence summary, NO IDs]

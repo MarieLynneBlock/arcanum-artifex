@@ -93,7 +93,7 @@ kanban
 
 ## 📋 Backlog
 
-_Prioritized top-to-bottom. Top items are next to be pulled. Include at least one placeholder item if empty._
+_Prioritised top-to-bottom. Top items are next to be pulled. Include at least one placeholder item if empty._
 
 | #   | Item              | Priority  | Estimate | Assignee | Notes                   |
 | --- | ----------------- | --------- | -------- | -------- | ----------------------- |

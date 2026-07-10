@@ -150,7 +150,7 @@ recent_oas = [t for t in app['transactions']
 
 ### 2. Portfolio Analysis
 
-Analyze prosecution history across a portfolio.
+Analyse prosecution history across a portfolio.
 
 ```python
 # Get all applications for an assignee
@@ -170,7 +170,7 @@ print(f"Average pendency: {avg_pendency} days")
 
 ### 3. Examine Rejection Patterns
 
-Analyze types of rejections received.
+Analyse types of rejections received.
 
 ```python
 # Count rejection types
@@ -193,7 +193,7 @@ PEDS data can be combined with other USPTO APIs:
 
 1. **PAIR Bulk Data (PBD) is decommissioned** - Use PEDS instead
 2. **Data updates** - PEDS is updated regularly but may have 1-2 day lag
-3. **Application numbers** - Use standardized format (no slashes or spaces)
+3. **Application numbers** - Use standardised format (no slashes or spaces)
 4. **Continuity data** - Parent/child applications tracked in transaction history
 
 ## Best Practices

@@ -589,7 +589,7 @@ def molecular_complexity(mol):
 
 1. **Use batch calculation** for multiple descriptors to avoid redundant computations
 2. **Check for None** - some descriptors may return None for invalid molecules
-3. **Normalize descriptors** for machine learning applications
+3. **Normalise descriptors** for machine learning applications
 4. **Select relevant descriptors** - not all 200+ descriptors are useful for every task
 5. **Consider 3D descriptors** separately (require 3D coordinates)
 6. **Validate ranges** - check if descriptor values are in expected ranges

@@ -11,11 +11,11 @@ Detailed guidance for writing each section of a comprehensive market research re
 **Purpose:** Create a strong first impression and communicate report scope.
 
 **Required Elements:**
-- Report title (clear, specific to market being analyzed)
+- Report title (clear, specific to market being analysed)
 - Subtitle (e.g., "Comprehensive Market Analysis Report")
-- Hero visualization (executive summary infographic or market-relevant image)
+- Hero visualisation (executive summary infographic or market-relevant image)
 - Date of publication
-- Prepared by / Author organization
+- Prepared by / Author organisation
 - Classification (Confidential, Internal Use, Public)
 - Report type identifier
 
@@ -32,7 +32,7 @@ Detailed guidance for writing each section of a comprehensive market research re
 **Auto-generated in LaTeX.** Ensure all chapters, sections, and subsections use proper commands for inclusion.
 
 **Include:**
-- List of Figures (all visualizations with page numbers)
+- List of Figures (all visualisations with page numbers)
 - List of Tables (all data tables with page numbers)
 
 ---
@@ -60,7 +60,7 @@ Key metrics displayed prominently:
 - Risk-adjusted assessment
 
 #### Key Findings Summary
-Organized by theme:
+Organised by theme:
 - Market Dynamics (2-3 points)
 - Competitive Landscape (2-3 points)
 - Growth Drivers (2-3 points)
@@ -75,7 +75,7 @@ Top 5 actionable recommendations, each with:
 **Visual Requirements:**
 - 1-2 visuals maximum
 - Executive summary infographic strongly recommended
-- Key metrics visualization
+- Key metrics visualisation
 
 **Writing Guidelines:**
 - Write this section LAST after completing all analysis
@@ -95,7 +95,7 @@ Top 5 actionable recommendations, each with:
 #### Section 1.1: Market Definition
 
 **Content Requirements:**
-- Precise definition of the market being analyzed
+- Precise definition of the market being analysed
 - Products/services included in scope
 - Products/services explicitly excluded
 - Industry classification codes (NAICS, SIC, GICS if applicable)
@@ -249,7 +249,7 @@ Segment analysis table showing:
 
 ### Chapter 3: Industry Drivers & Trends (5-6 pages)
 
-**Purpose:** Identify and analyze factors driving market growth and evolution.
+**Purpose:** Identify and analyse factors driving market growth and evolution.
 
 #### Section 3.1: Primary Growth Drivers
 
@@ -288,7 +288,7 @@ Comprehensive analysis of external factors:
 **Social:**
 - Demographic trends
 - Cultural shifts
-- Consumer behavior changes
+- Consumer behaviour changes
 - Workforce trends
 - Health and wellness trends
 
@@ -449,7 +449,7 @@ Top 10 companies showing:
 
 ### Chapter 5: Customer Analysis & Segmentation (4-5 pages)
 
-**Purpose:** Understand customer needs, behaviors, and segment attractiveness.
+**Purpose:** Understand customer needs, behaviours, and segment attractiveness.
 
 #### Section 5.1: Customer Segmentation
 
@@ -465,7 +465,7 @@ Top 10 companies showing:
 - By company size (Enterprise, Mid-market, SMB, Consumer)
 - By industry vertical
 - By geography
-- By buying behavior
+- By buying behaviour
 - By needs/use cases
 
 #### Section 5.2: Segment Attractiveness Analysis
@@ -474,7 +474,7 @@ Top 10 companies showing:
 - Attractiveness criteria
 - Segment scoring/ranking
 - Investment implications
-- Prioritization recommendations
+- Prioritisation recommendations
 
 **Required Visual:** Segment attractiveness matrix
 
@@ -495,7 +495,7 @@ Top 10 companies showing:
 - Key pain points
 - Unmet needs
 
-#### Section 5.4: Buying Behavior
+#### Section 5.4: Buying Behaviour
 
 **Content Requirements:**
 - Purchase triggers
@@ -527,7 +527,7 @@ Top 10 companies showing:
 
 ### Chapter 6: Technology & Innovation Landscape (4-5 pages)
 
-**Purpose:** Analyze technology trends and innovation dynamics.
+**Purpose:** Analyse technology trends and innovation dynamics.
 
 #### Section 6.1: Current Technology Stack
 
@@ -593,7 +593,7 @@ Top 10 companies showing:
 
 ### Chapter 7: Regulatory & Policy Environment (3-4 pages)
 
-**Purpose:** Analyze regulatory framework and policy impacts.
+**Purpose:** Analyse regulatory framework and policy impacts.
 
 #### Section 7.1: Current Regulatory Framework
 
@@ -636,7 +636,7 @@ Top 10 companies showing:
 
 **Content Requirements:**
 - Comparison of regulations by region
-- Harmonization efforts
+- Harmonisation efforts
 - Key differences to navigate
 - Best practices for compliance
 
@@ -716,7 +716,7 @@ Provide detailed analysis of top 5-10 risks, including:
 
 ### Chapter 9: Strategic Opportunities & Recommendations (4-5 pages)
 
-**Purpose:** Synthesize analysis into actionable strategic guidance.
+**Purpose:** Synthesise analysis into actionable strategic guidance.
 
 #### Section 9.1: Opportunity Analysis
 
@@ -727,7 +727,7 @@ Provide detailed analysis of top 5-10 risks, including:
 - Sizing of each opportunity
 - Attractiveness assessment
 - Ability to win assessment
-- Prioritization
+- Prioritisation
 
 #### Section 9.2: Detailed Opportunity Analysis
 
@@ -749,7 +749,7 @@ For each top opportunity, provide:
 - Partner (strategic alliances) options
 - Decision framework for each opportunity
 
-#### Section 9.4: Prioritized Recommendations
+#### Section 9.4: Prioritised Recommendations
 
 **Required Visual:** Recommendation priority matrix (impact vs. effort)
 
@@ -824,7 +824,7 @@ For each top opportunity, provide:
 - Phase 1: Foundation (months 1-6)
 - Phase 2: Build (months 4-12)
 - Phase 3: Scale (months 10-18)
-- Phase 4: Optimize (months 16-24)
+- Phase 4: Optimise (months 16-24)
 
 #### Section 10.3: Key Milestones
 
@@ -984,7 +984,7 @@ Milestone table showing:
 
 ## Quality Checklist
 
-Before finalizing, verify:
+Before finalising, verify:
 
 - [ ] All required sections are complete
 - [ ] All data points have sources

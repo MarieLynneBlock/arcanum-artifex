@@ -2,7 +2,7 @@
 
 ## Overview
 
-Evidence synthesis involves systematically reviewing, analyzing, and integrating research findings to inform clinical recommendations. This guide covers guideline sources, evidence hierarchies, systematic reviews, meta-analyses, and integration of multiple evidence streams for clinical decision support.
+Evidence synthesis involves systematically reviewing, analysing, and integrating research findings to inform clinical recommendations. This guide covers guideline sources, evidence hierarchies, systematic reviews, meta-analyses, and integration of multiple evidence streams for clinical decision support.
 
 ## Major Clinical Practice Guidelines
 
@@ -204,7 +204,7 @@ Studies included in meta-analysis (n=24)          - Wrong intervention (n=35)
 - **Assumption**: True effect varies across studies (distribution of effects)
 - **Weighting**: By inverse variance + between-study variance
 - **Application**: When heterogeneity moderate to high (I² ≥25%)
-- **Interpretation**: Estimate of average effect (center of distribution)
+- **Interpretation**: Estimate of average effect (centre of distribution)
 - **Wider CI**: Accounts for heterogeneity, more conservative
 
 **Heterogeneity Assessment**
@@ -269,7 +269,7 @@ Alternative: Pembrolizumab + chemotherapy also Category 1/I-A recommended.
 - Identify differences and reasons (geography, cost, access, evidence interpretation)
 - Note date of each guideline (newer may incorporate recent trials)
 - Consider regional applicability
-- Favor guidelines with most rigorous methodology (GRADE-based)
+- Favour guidelines with most rigorous methodology (GRADE-based)
 
 ### Regulatory Approval Landscape
 
@@ -297,7 +297,7 @@ Alternative: Pembrolizumab + chemotherapy also Category 1/I-A recommended.
 **Electronic Health Records (EHR)**
 - Clinical data from routine practice
 - Large patient numbers
-- Heterogeneous populations (more generalizable than RCTs)
+- Heterogeneous populations (more generalisable than RCTs)
 - Limitations: Missing data, inconsistent documentation, selection bias
 
 **Claims Databases**
@@ -387,7 +387,7 @@ Study 1:
 
 ### Continuous Outcomes (Quality of Life, Lab Values)
 
-**Standardized Mean Difference (SMD)**
+**Standardised Mean Difference (SMD)**
 - Application: Different scales used across studies
 - SMD = (Mean₁ - Mean₂) / Pooled SD
 - Interpretation: Cohen's d effect size (0.2 small, 0.5 medium, 0.8 large)
@@ -430,7 +430,7 @@ Compare multiple treatments simultaneously when no head-to-head trials exist
 - **Transitivity assumption**: May not hold if studies differ in important ways
 - **Indirect evidence**: Less reliable than direct head-to-head trials
 - **Rankings**: Probabilistic, not definitive ordering
-- **Clinical judgment**: Consider beyond statistical rankings
+- **Clinical judgement**: Consider beyond statistical rankings
 
 ## Evidence Tables
 
@@ -489,7 +489,7 @@ Pooled Effect                                                          Pooled HR
 
 ## Guideline Concordance Documentation
 
-### Synthesizing Multiple Guidelines
+### Synthesising Multiple Guidelines
 
 **Concordant Recommendations**
 ```
@@ -559,7 +559,7 @@ Recommendation Context-Dependent:
 4. **Bias in outcome measurement**: Blinded assessment, objective outcomes
 5. **Bias in selection of reported result**: Selective reporting, outcome switching
 
-**Judgment**: Low risk, some concerns, high risk (for each domain)
+**Judgement**: Low risk, some concerns, high risk (for each domain)
 
 **Overall Risk of Bias**: Based on highest-risk domain
 
@@ -599,9 +599,9 @@ O - Outcomes: Major adverse cardiovascular events (3P-MACE), hospitalization for
 
 **Step 2: Systematic Evidence Review**
 - Identify all relevant studies
-- Assess quality using standardized tools
+- Assess quality using standardised tools
 - Extract outcome data
-- Synthesize findings (narrative or meta-analysis)
+- Synthesise findings (narrative or meta-analysis)
 
 **Step 3: GRADE Evidence Rating**
 - Start at high (RCTs) or low (observational)
@@ -644,13 +644,13 @@ Conditional: "We suggest..."
 - Purpose: Dose-finding, safety
 - Outcomes: Maximum tolerated dose (MTD), dose-limiting toxicities (DLTs), pharmacokinetics
 - Evidence level: Very low (expert opinion, case series)
-- Clinical application: Investigational only, clinical trial enrollment
+- Clinical application: Investigational only, clinical trial enrolment
 
 **Phase 2 Trials**
 - Purpose: Preliminary efficacy signal
 - Design: Single-arm (ORR primary endpoint) or randomized (PFS comparison)
 - Evidence level: Low to moderate
-- Clinical application: May support off-label use in refractory settings, clinical trial enrollment preferred
+- Clinical application: May support off-label use in refractory settings, clinical trial enrolment preferred
 
 **Phase 3 Trials**
 - Purpose: Confirmatory efficacy and safety
@@ -697,8 +697,8 @@ Conditional: "We suggest..."
 ### Identifying Potential Bias
 
 **Study Sponsorship**
-- **Industry-sponsored**: May favor sponsor's product (publication bias, outcome selection)
-- **Academic**: May favor investigator's hypothesis
+- **Industry-sponsored**: May favour sponsor's product (publication bias, outcome selection)
+- **Academic**: May favour investigator's hypothesis
 - **Independent**: Government funding (NIH, PCORI)
 
 **Author Conflicts of Interest**

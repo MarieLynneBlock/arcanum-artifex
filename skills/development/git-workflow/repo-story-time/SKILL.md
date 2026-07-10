@@ -40,7 +40,7 @@ After executing these commands, use semantic search to understand key concepts a
 ### Phase 2: Technical Deep Dive
 Create comprehensive technical inventory:
 - **Purpose**: What problem does this repository solve?
-- **Architecture**: How is the code organized?
+- **Architecture**: How is the code organised?
 - **Technologies**: What languages, frameworks, and tools are used?
 - **Key Components**: What are the main modules/services/features?
 - **Data Flow**: How does information move through the system?
@@ -69,8 +69,8 @@ Create comprehensive technical inventory:
 **Step 6: Seasonal Analysis** - Run this command:
 - `git log --since="1 year ago" --format="%ai" | ForEach-Object { $_.Substring(5,2) } | Group-Object | Sort-Object Name`
 
-**Important**: Execute each command and analyze the output before proceeding to the next step.
-**Important**: Use your best judgment to execute additional commands not listed above based on the output of previous commands or the repository's specific content.
+**Important**: Execute each command and analyse the output before proceeding to the next step.
+**Important**: Use your best judgement to execute additional commands not listed above based on the output of previous commands or the repository's specific content.
 
 ### Phase 4: Pattern Recognition
 Look for these narrative elements:

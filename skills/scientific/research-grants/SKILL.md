@@ -11,9 +11,9 @@ metadata:
 
 ## Overview
 
-Research grant writing is the process of developing competitive funding proposals for federal agencies and foundations. Master agency-specific requirements, review criteria, narrative structure, budget preparation, and compliance for NSF (National Science Foundation), NIH (National Institutes of Health), DOE (Department of Energy), DARPA (Defense Advanced Research Projects Agency), and Taiwan's NSTC (National Science and Technology Council) submissions.
+Research grant writing is the process of developing competitive funding proposals for federal agencies and foundations. Master agency-specific requirements, review criteria, narrative structure, budget preparation, and compliance for NSF (National Science Foundation), NIH (National Institutes of Health), DOE (Department of Energy), DARPA (Defence Advanced Research Projects Agency), and Taiwan's NSTC (National Science and Technology Council) submissions.
 
-**Critical Principle: Grants are persuasive documents that must simultaneously demonstrate scientific rigor, innovation, feasibility, and broader impact.** Each agency has distinct priorities, review criteria, formatting requirements, and strategic goals that must be addressed.
+**Critical Principle: Grants are persuasive documents that must simultaneously demonstrate scientific rigour, innovation, feasibility, and broader impact.** Each agency has distinct priorities, review criteria, formatting requirements, and strategic goals that must be addressed.
 
 ## When to Use This Skill
 
@@ -33,9 +33,9 @@ This skill should be used when:
 
 **⚠️ MANDATORY: Every research grant proposal MUST include at least 1-2 AI-generated figures using the scientific-schematics skill.**
 
-This is not optional. Grant proposals without visual elements are incomplete and less competitive. Before finalizing any document:
+This is not optional. Grant proposals without visual elements are incomplete and less competitive. Before finalising any document:
 1. Generate at minimum ONE schematic or diagram (e.g., project timeline, methodology flowchart, or conceptual framework)
-2. Prefer 2-3 figures for comprehensive proposals (research workflow, Gantt chart, preliminary data visualization)
+2. Prefer 2-3 figures for comprehensive proposals (research workflow, Gantt chart, preliminary data visualisation)
 
 **How to generate figures:**
 - Use the **scientific-schematics** skill to generate AI-powered publication-quality diagrams
@@ -61,7 +61,7 @@ The AI will automatically:
 - Experimental design flowcharts
 - Broader impacts activity diagrams
 - Collaboration network diagrams
-- Any complex concept that benefits from visualization
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -87,7 +87,7 @@ For detailed guidance on creating schematics, refer to the scientific-schematics
 - Specific Aims (1 page) + Research Strategy (12 pages for R01)
 - Significance, Innovation, Approach as core review criteria
 - Preliminary data typically required for R01s
-- Emphasis on rigor, reproducibility, and clinical relevance
+- Emphasis on rigour, reproducibility, and clinical relevance
 - Modular budgets ($250K increments) for most R01s
 - Multiple resubmission opportunities
 
@@ -102,7 +102,7 @@ For detailed guidance on creating schematics, refer to the scientific-schematics
 - Energy innovation and commercialization pathways
 - Varies by office (ARPA-E, Office of Science, EERE, etc.)
 
-### DARPA (Defense Advanced Research Projects Agency)
+### DARPA (Defence Advanced Research Projects Agency)
 **Mission**: Make pivotal investments in breakthrough technologies for national security
 
 **Key Features**:
@@ -285,7 +285,7 @@ NSF explicitly evaluates broader impacts. Address at least one of these areas:
 - Addresses important problem or critical barrier to progress
 - Improves scientific knowledge, technical capability, or clinical practice
 - Potential to lead to better outcomes, interventions, or understanding
-- Rigor of prior research in the field
+- Rigour of prior research in the field
 - Alignment with NIH mission and institute priorities
 
 For detailed guidance, refer to `references/broader-impacts.md`.
@@ -328,11 +328,11 @@ Detailed description of how the research will be conducted.
 - Data collection, management, and analysis
 - Quality control and validation approaches
 - Potential problems and alternative strategies
-- Rigor and reproducibility measures
+- Rigour and reproducibility measures
 
 **Writing Strategy**:
 - Provide enough detail for reproducibility and feasibility assessment
-- Use subheadings and figures to improve organization
+- Use subheadings and figures to improve organisation
 - Justify choice of methods and approaches
 - Address potential limitations proactively
 - Include preliminary data demonstrating feasibility
@@ -344,7 +344,7 @@ Detailed description of how the research will be conducted.
 - Specify materials, reagents, and equipment
 - Detail data collection protocols
 - Explain statistical analysis plans
-- Address rigor and reproducibility
+- Address rigour and reproducibility
 
 **For Computational Research**:
 - Describe algorithms, models, and software
@@ -375,7 +375,7 @@ Demonstrate that the research is achievable and the team is capable.
 
 **What to Include**:
 - Pilot studies or proof-of-concept results
-- Method development or optimization
+- Method development or optimisation
 - Access to unique resources (samples, data, collaborators)
 - Relevant publications from your team
 - Preliminary models or simulations
@@ -396,7 +396,7 @@ Demonstrate that the research is achievable and the team is capable.
 - Present most compelling data that supports your approach
 - Clearly connect preliminary data to proposed aims
 - Acknowledge limitations and how proposed work will address them
-- Use figures and data visualizations effectively
+- Use figures and data visualisations effectively
 - Avoid over-interpreting or overstating preliminary findings
 - Show trajectory of your research program
 
@@ -529,7 +529,7 @@ Understanding how proposals are evaluated is critical for writing competitive ap
 
 **Intellectual Merit** (primary):
 - What is the potential for the proposed activity to advance knowledge?
-- How well-conceived and organized is the proposed activity?
+- How well-conceived and organised is the proposed activity?
 - Is there sufficient access to resources?
 - How well-qualified is the individual, team, or institution to conduct proposed activities?
 
@@ -599,7 +599,7 @@ Varies by program office, but generally includes:
 
 **Core Evaluation Dimensions**:
 1. **Innovation (創新性)**: Novelty of concept and approach.
-2. **Feasibility (可行性)**: Methodology rigor and preliminary data.
+2. **Feasibility (可行性)**: Methodology rigour and preliminary data.
 3. **PI Capability (主持人能力)**: Track record and expertise.
 4. **Value (價值)**: Academic contribution and societal/industrial impact.
 
@@ -618,7 +618,7 @@ For detailed review criteria by agency, refer to `references/review_criteria.md`
 - Technical reviewers in your field (will scrutinize methods)
 - Reviewers in related but not identical fields (need context)
 - Program officers (look for alignment with agency goals)
-- Panel members reading 15+ proposals (need clear organization)
+- Panel members reading 15+ proposals (need clear organisation)
 
 **Strategies**:
 - Use clear section headings and subheadings
@@ -663,7 +663,7 @@ For detailed review criteria by agency, refer to `references/review_criteria.md`
 
 **Design Principles**:
 - Make figures self-explanatory with complete captions
-- Use consistent color schemes and fonts
+- Use consistent colour schemes and fonts
 - Ensure readability (large enough fonts, clear labels)
 - Integrate figures with text (refer to specific figures)
 - Follow agency-specific formatting requirements
@@ -717,7 +717,7 @@ For detailed review criteria by agency, refer to `references/review_criteria.md`
 - **R21**: Exploratory/Developmental Research, up to $275K over 2 years, no preliminary data
 - **R03**: Small Grant Program, up to $100K over 2 years
 - **R15**: Academic Research Enhancement Awards (AREA), for primarily undergraduate institutions
-- **R35**: MIRA (Maximizing Investigators' Research Award), program-specific
+- **R35**: MIRA (Maximising Investigators' Research Award), program-specific
 - **P01**: Program Project Grant, multi-project integrated research
 - **U01**: Research Project Cooperative Agreement, NIH involvement in conduct
 
@@ -749,7 +749,7 @@ For detailed program guidance, refer to `references/funding_mechanisms.md`.
 ### NIH Resubmission (A1)
 
 **Introduction to Resubmission** (1 page):
-- Summarize major criticisms from previous review
+- Summarise major criticisms from previous review
 - Describe specific changes made in response
 - Use bullet points for clarity
 - Be respectful of reviewers' comments
@@ -846,7 +846,7 @@ For detailed resubmission guidance, refer to `references/resubmission_strategies
 **Activities**:
 - Write specific aims or objectives (start here!)
 - Develop project description/research strategy
-- Create figures and data visualizations
+- Create figures and data visualisations
 - Draft timeline and milestones
 - Prepare preliminary budget
 - Write broader impacts or significance sections
@@ -873,12 +873,12 @@ For detailed resubmission guidance, refer to `references/resubmission_strategies
 - Refined budget aligned with revised plan
 - Identified weaknesses and mitigation strategies
 
-### Phase 4: Finalization (2-4 weeks before deadline)
+### Phase 4: Finalisation (2-4 weeks before deadline)
 
 **Activities**:
 - Final revisions to narrative
 - Prepare all required forms and documents
-- Finalize budget and budget justification
+- Finalise budget and budget justification
 - Compile biosketches, CVs, and current & pending
 - Collect letters of support
 - Prepare data management plan (if required)
@@ -914,7 +914,7 @@ This skill works effectively with:
 - **Literature Review**: For comprehensive background sections
 - **Peer Review**: For self-assessment before submission
 - **Research Lookup**: For finding relevant citations and prior work
-- **Data Visualization**: For creating effective figures
+- **Data Visualisation**: For creating effective figures
 
 ## Resources
 

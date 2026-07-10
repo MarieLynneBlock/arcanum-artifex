@@ -2,7 +2,7 @@
 
 ## Overview
 
-ClinVar uses standardized terminology to describe the clinical significance of genetic variants. Understanding these classifications is critical for interpreting variant reports and making informed research or clinical decisions.
+ClinVar uses standardised terminology to describe the clinical significance of genetic variants. Understanding these classifications is critical for interpreting variant reports and making informed research or clinical decisions.
 
 ## Important Disclaimer
 
@@ -157,7 +157,7 @@ When submitters disagree:
 
 ### For Variant Annotation Pipelines
 
-1. Prioritize higher review status classifications
+1. Prioritise higher review status classifications
 2. Flag conflicting interpretations for manual review
 3. Track classification changes over time
 4. Include population frequency data alongside ClinVar classifications

@@ -1,6 +1,6 @@
 ---
 name: deeptools
-description: NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for ChIP-seq, RNA-seq, ATAC-seq visualization.
+description: NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for ChIP-seq, RNA-seq, ATAC-seq visualisation.
 license: BSD license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,24 +10,24 @@ metadata:
 
 ## Overview
 
-deepTools is a comprehensive suite of Python command-line tools designed for processing and analyzing high-throughput sequencing data. Use deepTools to perform quality control, normalize data, compare samples, and generate publication-quality visualizations for ChIP-seq, RNA-seq, ATAC-seq, MNase-seq, and other NGS experiments.
+deepTools is a comprehensive suite of Python command-line tools designed for processing and analysing high-throughput sequencing data. Use deepTools to perform quality control, normalise data, compare samples, and generate publication-quality visualisations for ChIP-seq, RNA-seq, ATAC-seq, MNase-seq, and other NGS experiments.
 
 **Core capabilities:**
-- Convert BAM alignments to normalized coverage tracks (bigWig/bedGraph)
+- Convert BAM alignments to normalised coverage tracks (bigWig/bedGraph)
 - Quality control assessment (fingerprint, correlation, coverage)
 - Sample comparison and correlation analysis
 - Heatmap and profile plot generation around genomic features
-- Enrichment analysis and peak region visualization
+- Enrichment analysis and peak region visualisation
 
 ## When to Use This Skill
 
 This skill should be used when:
 
-- **File conversion**: "Convert BAM to bigWig", "generate coverage tracks", "normalize ChIP-seq data"
+- **File conversion**: "Convert BAM to bigWig", "generate coverage tracks", "normalise ChIP-seq data"
 - **Quality control**: "check ChIP quality", "compare replicates", "assess sequencing depth", "QC analysis"
-- **Visualization**: "create heatmap around TSS", "plot ChIP signal", "visualize enrichment", "generate profile plot"
+- **Visualisation**: "create heatmap around TSS", "plot ChIP signal", "visualise enrichment", "generate profile plot"
 - **Sample comparison**: "compare treatment vs control", "correlate samples", "PCA analysis"
-- **Analysis workflows**: "analyze ChIP-seq data", "RNA-seq coverage", "ATAC-seq analysis", "complete workflow"
+- **Analysis workflows**: "analyse ChIP-seq data", "RNA-seq coverage", "ATAC-seq analysis", "complete workflow"
 - **Working with specific file types**: BAM files, bigWig files, BED region files in genomics context
 
 ## Quick Start
@@ -46,7 +46,7 @@ This checks file existence, BAM indices, and format correctness.
 
 ### 2. Generate Workflow Template
 
-For standard analyses, use the workflow generator to create customized scripts:
+For standard analyses, use the workflow generator to create customised scripts:
 
 ```bash
 # List available workflows
@@ -74,7 +74,7 @@ uv pip install deeptools
 
 ## Core Workflows
 
-deepTools workflows typically follow this pattern: **QC → Normalization → Comparison/Visualization**
+deepTools workflows typically follow this pattern: **QC → Normalisation → Comparison/Visualisation**
 
 ### ChIP-seq Quality Control Workflow
 
@@ -97,12 +97,12 @@ Full workflow details in `references/workflows.md` → "ChIP-seq Quality Control
 
 ### ChIP-seq Complete Analysis Workflow
 
-For full ChIP-seq analysis from BAM to visualizations:
+For full ChIP-seq analysis from BAM to visualisations:
 
-1. **Generate coverage tracks** with normalization (bamCoverage)
+1. **Generate coverage tracks** with normalisation (bamCoverage)
 2. **Create comparison tracks** (bamCompare for log2 ratio)
 3. **Compute signal matrices** around features (computeMatrix)
-4. **Generate visualizations** (plotHeatmap, plotProfile)
+4. **Generate visualisations** (plotHeatmap, plotProfile)
 5. **Enrichment analysis** at peaks (plotEnrichment)
 
 Use `scripts/workflow_generator.py chipseq_analysis` to generate template.
@@ -117,7 +117,7 @@ Use bamCoverage with `--filterRNAstrand` to separate forward and reverse strands
 
 **Important:** NEVER use `--extendReads` for RNA-seq (would extend over splice junctions).
 
-Use normalization: CPM for fixed bins, RPKM for gene-level analysis.
+Use normalisation: CPM for fixed bins, RPKM for gene-level analysis.
 
 Template available: `scripts/workflow_generator.py rnaseq_coverage`
 
@@ -129,8 +129,8 @@ ATAC-seq requires Tn5 offset correction:
 
 1. **Shift reads** using alignmentSieve with `--ATACshift`
 2. **Generate coverage** with bamCoverage
-3. **Analyze fragment sizes** (expect nucleosome ladder pattern)
-4. **Visualize at peaks** if available
+3. **Analyse fragment sizes** (expect nucleosome ladder pattern)
+4. **Visualise at peaks** if available
 
 Template: `scripts/workflow_generator.py atacseq`
 
@@ -140,7 +140,7 @@ Full workflow in `references/workflows.md` → "ATAC-seq Workflow"
 
 ### BAM/bigWig Processing
 
-**Convert BAM to normalized coverage:**
+**Convert BAM to normalised coverage:**
 ```bash
 bamCoverage --bam input.bam --outFileName output.bw \
     --normalizeUsing RPGC --effectiveGenomeSize 2913022398 \
@@ -176,7 +176,7 @@ plotCorrelation -in counts.npz --corMethod pearson \
 
 Complete reference: `references/tools-reference.md` → "Quality Control Tools"
 
-### Visualization
+### Visualisation
 
 **Create heatmap around TSS:**
 ```bash
@@ -197,11 +197,11 @@ plotProfile -m matrix.gz -o profile.png \
 
 **Key tools:** computeMatrix, plotHeatmap, plotProfile, plotEnrichment
 
-Complete reference: `references/tools-reference.md` → "Visualization Tools"
+Complete reference: `references/tools-reference.md` → "Visualisation Tools"
 
-## Normalization Methods
+## Normalisation Methods
 
-Choosing the correct normalization is critical for valid comparisons. Consult `references/normalization-methods.md` for comprehensive guidance.
+Choosing the correct normalisation is critical for valid comparisons. Consult `references/normalization-methods.md` for comprehensive guidance.
 
 **Quick selection guide:**
 
@@ -211,7 +211,7 @@ Choosing the correct normalization is critical for valid comparisons. Consult `r
 - **RNA-seq genes**: Use RPKM (accounts for gene length)
 - **ATAC-seq**: Use RPGC or CPM
 
-**Normalization methods:**
+**Normalisation methods:**
 - **RPGC**: 1× genome coverage (requires --effectiveGenomeSize)
 - **CPM**: Counts per million mapped reads
 - **RPKM**: Reads per kb per million (accounts for region length)
@@ -222,7 +222,7 @@ Full explanation: `references/normalization-methods.md`
 
 ## Effective Genome Sizes
 
-RPGC normalization requires effective genome size. Common values:
+RPGC normalisation requires effective genome size. Common values:
 
 | Organism | Assembly | Size | Usage |
 |----------|----------|------|-------|
@@ -250,7 +250,7 @@ Many deepTools commands share these options:
 
 **Read Processing:**
 - `--extendReads`: Extend to fragment length (ChIP-seq: YES, RNA-seq: NO)
-- `--centerReads`: Center at fragment midpoint for sharper signals
+- `--centerReads`: Centre at fragment midpoint for sharper signals
 
 ## Best Practices
 
@@ -266,7 +266,7 @@ Many deepTools commands share these options:
 1. **Start with QC**: Run correlation, coverage, and fingerprint analysis before proceeding
 2. **Test on small regions**: Use `--region chr1:1-10000000` for parameter testing
 3. **Document commands**: Save full command lines for reproducibility
-4. **Use consistent normalization**: Apply same method across samples in comparisons
+4. **Use consistent normalisation**: Apply same method across samples in comparisons
 5. **Verify genome assembly**: Ensure BAM and BED files use matching genome builds
 
 ### ChIP-seq Specific
@@ -280,7 +280,7 @@ Many deepTools commands share these options:
 
 - **Never extend reads** for RNA-seq (would span splice junctions)
 - **Strand-specific**: Use `--filterRNAstrand forward/reverse` for stranded libraries
-- **Normalization**: CPM for bins, RPKM for genes
+- **Normalisation**: CPM for bins, RPKM for genes
 
 ### ATAC-seq Specific
 
@@ -288,7 +288,7 @@ Many deepTools commands share these options:
 - **Fragment filtering**: Set appropriate min/max fragment lengths
 - **Check nucleosome pattern**: Fragment size plot should show ladder pattern
 
-### Performance Optimization
+### Performance Optimisation
 
 1. **Use multiple processors**: `--numberOfProcessors 8` (or available cores)
 2. **Increase bin size** for faster processing and smaller files
@@ -331,10 +331,10 @@ Common errors and solutions explained in script output.
 This skill includes comprehensive reference documentation:
 
 ### references/tools-reference.md
-Complete documentation of all deepTools commands organized by category:
+Complete documentation of all deepTools commands organised by category:
 - BAM and bigWig processing tools (9 tools)
 - Quality control tools (6 tools)
-- Visualization tools (3 tools)
+- Visualisation tools (3 tools)
 - Miscellaneous tools (2 tools)
 
 Each tool includes:
@@ -357,8 +357,8 @@ Complete workflow examples for common analyses:
 
 **Use this reference when:** Users need complete analysis pipelines or workflow examples.
 
-### references/normalization-methods.md
-Comprehensive guide to normalization methods:
+### references/normalisation-methods.md
+Comprehensive guide to normalisation methods:
 - Detailed explanation of each method (RPGC, CPM, RPKM, BPM, etc.)
 - When to use each method
 - Formulas and interpretation
@@ -366,7 +366,7 @@ Comprehensive guide to normalization methods:
 - Common pitfalls and solutions
 - Quick reference table
 
-**Use this reference when:** Users ask about normalization, comparing samples, or which method to use.
+**Use this reference when:** Users ask about normalisation, comparing samples, or which method to use.
 
 ### references/effective-genome-sizes.md
 Effective genome size values and usage:
@@ -376,7 +376,7 @@ Effective genome size values and usage:
 - When and how to use in commands
 - Custom genome calculation instructions
 
-**Use this reference when:** Users need genome size for RPGC normalization or GC bias correction.
+**Use this reference when:** Users need genome size for RPGC normalisation or GC bias correction.
 
 ## Helper Scripts
 
@@ -394,7 +394,7 @@ python scripts/validate_files.py --bam sample1.bam sample2.bam \
 
 ### scripts/workflow_generator.py
 
-Generates customizable bash script templates for common deepTools workflows.
+Generates customisable bash script templates for common deepTools workflows.
 
 **Available workflows:**
 - `chipseq_qc`: ChIP-seq quality control
@@ -417,7 +417,7 @@ chmod +x qc.sh
 ./qc.sh
 ```
 
-**When to use:** Users request standard workflows or need template scripts to customize.
+**When to use:** Users request standard workflows or need template scripts to customise.
 
 ## Assets
 
@@ -435,19 +435,19 @@ Quick reference card with most common commands, effective genome sizes, and typi
 2. Validate input files using `scripts/validate_files.py`
 3. Recommend appropriate workflow based on experiment type
 4. Generate workflow template using `scripts/workflow_generator.py`
-5. Guide through customization and execution
+5. Guide through customisation and execution
 
 ### For Experienced Users
 
 1. Provide specific tool commands for requested operations
 2. Reference appropriate sections in `references/tools-reference.md`
-3. Suggest optimizations and best practices
+3. Suggest optimisations and best practices
 4. Offer troubleshooting for issues
 
 ### For Specific Tasks
 
 **"Convert BAM to bigWig":**
-- Use bamCoverage with appropriate normalization
+- Use bamCoverage with appropriate normalisation
 - Recommend RPGC or CPM based on use case
 - Provide effective genome size for organism
 - Suggest relevant parameters (extendReads, ignoreDuplicates, binSize)
@@ -460,19 +460,19 @@ Quick reference card with most common commands, effective genome sizes, and typi
 **"Create heatmap":**
 - Guide through two-step process: computeMatrix → plotHeatmap
 - Help choose appropriate matrix mode (reference-point vs scale-regions)
-- Suggest visualization parameters and clustering options
+- Suggest visualisation parameters and clustering options
 
 **"Compare samples":**
 - Recommend bamCompare for two-sample comparison
 - Suggest multiBamSummary + plotCorrelation for multiple samples
-- Guide normalization method selection
+- Guide normalisation method selection
 
 ### Referencing Documentation
 
 When users need detailed information:
 - **Tool details**: Direct to specific sections in `references/tools-reference.md`
 - **Workflows**: Use `references/workflows.md` for complete analysis pipelines
-- **Normalization**: Consult `references/normalization-methods.md` for method selection
+- **Normalisation**: Consult `references/normalization-methods.md` for method selection
 - **Genome sizes**: Reference `references/effective-genome-sizes.md`
 
 Search references using grep patterns:
@@ -489,16 +489,16 @@ grep -A 15 "^### Method Name" references/normalization-methods.md
 
 ## Example Interactions
 
-**User: "I need to analyze my ChIP-seq data"**
+**User: "I need to analyse my ChIP-seq data"**
 
 Response approach:
 1. Ask about files available (BAM files, peaks, genes)
 2. Validate files using validation script
 3. Generate chipseq_analysis workflow template
-4. Customize for their specific files and organism
+4. Customise for their specific files and organism
 5. Explain each step as script runs
 
-**User: "Which normalization should I use?"**
+**User: "Which normalisation should I use?"**
 
 Response approach:
 1. Ask about experiment type (ChIP-seq, RNA-seq, etc.)
@@ -512,14 +512,14 @@ Response approach:
 Response approach:
 1. Verify bigWig and gene BED files available
 2. Use computeMatrix with reference-point mode at TSS
-3. Generate plotHeatmap with appropriate visualization parameters
+3. Generate plotHeatmap with appropriate visualisation parameters
 4. Suggest clustering if dataset is large
 5. Offer profile plot as complement
 
 ## Key Reminders
 
 - **File validation first**: Always validate input files before analysis
-- **Normalization matters**: Choose appropriate method for comparison type
+- **Normalisation matters**: Choose appropriate method for comparison type
 - **Extend reads carefully**: YES for ChIP-seq, NO for RNA-seq
 - **Use all cores**: Set `--numberOfProcessors` to available cores
 - **Test on regions**: Use `--region` for parameter testing

@@ -28,7 +28,7 @@ spectra = list(spectra_generator)
 
 **Parameters**:
 - `filename` (str): Path to MGF file
-- `metadata_harmonization` (bool, default=True): Apply automatic metadata key harmonization
+- `metadata_harmonization` (bool, default=True): Apply automatic metadata key harmonisation
 
 **Example**:
 ```python
@@ -53,7 +53,7 @@ spectra = list(load_from_mgf("data.mgf", metadata_harmonization=False))
 
 **Parameters**:
 - `filename` (str): Path to MSP file
-- `metadata_harmonization` (bool, default=True): Apply automatic metadata harmonization
+- `metadata_harmonization` (bool, default=True): Apply automatic metadata harmonisation
 
 **Example**:
 ```python
@@ -75,7 +75,7 @@ spectra = list(load_from_msp("library.msp"))
 **Parameters**:
 - `filename` (str): Path to mzML file
 - `ms_level` (int, default=2): MS level to extract (1 for MS1, 2 for MS2/tandem)
-- `metadata_harmonization` (bool, default=True): Apply automatic metadata harmonization
+- `metadata_harmonization` (bool, default=True): Apply automatic metadata harmonisation
 
 **Example**:
 ```python
@@ -101,7 +101,7 @@ ms1_spectra = list(load_from_mzml("data.mzML", ms_level=1))
 **Parameters**:
 - `filename` (str): Path to mzXML file
 - `ms_level` (int, default=2): MS level to extract
-- `metadata_harmonization` (bool, default=True): Apply automatic metadata harmonization
+- `metadata_harmonization` (bool, default=True): Apply automatic metadata harmonisation
 
 **Example**:
 ```python
@@ -122,7 +122,7 @@ spectra = list(load_from_mzxml("data.mzXML"))
 
 **Parameters**:
 - `filename` (str): Path to JSON file
-- `metadata_harmonization` (bool, default=True): Apply automatic metadata harmonization
+- `metadata_harmonization` (bool, default=True): Apply automatic metadata harmonisation
 
 **Example**:
 ```python
@@ -172,7 +172,7 @@ usi = "mzspec:GNPS:TASK-...:spectrum..."
 spectrum = load_from_usi(usi)
 ```
 
-**USI Format**: Standardized identifier for accessing spectra from online repositories.
+**USI Format**: Standardised identifier for accessing spectra from online repositories.
 
 ---
 
@@ -385,9 +385,9 @@ with open("output.mgf", 'w') as outfile:
 - ✗ Slower to parse
 - Best for: Raw data archival, multi-level MS data
 
-## Metadata Harmonization
+## Metadata Harmonisation
 
-The `metadata_harmonization` parameter (available in most import functions) automatically standardizes metadata keys:
+The `metadata_harmonization` parameter (available in most import functions) automatically standardises metadata keys:
 
 ```python
 # Without harmonization
@@ -399,7 +399,7 @@ spectrum = load_from_mgf("data.mgf", metadata_harmonization=True)
 # Standardized to: "precursor_mz"
 ```
 
-**Recommended**: Keep harmonization enabled (default) for consistent metadata access across different data sources.
+**Recommended**: Keep harmonisation enabled (default) for consistent metadata access across different data sources.
 
 ## File Format Specifications
 

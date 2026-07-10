@@ -14,7 +14,7 @@ The FDA animal and veterinary databases provide access to information about adve
 
 **Purpose**: Access reports of side effects, product use errors, product quality problems, and therapeutic failures associated with animal drugs.
 
-**Data Source**: FDA Center for Veterinary Medicine (CVM) Adverse Event Reporting System
+**Data Source**: FDA Centre for Veterinary Medicine (CVM) Adverse Event Reporting System
 
 **Key Fields**:
 - `unique_aer_id_number` - Unique adverse event report identifier
@@ -161,15 +161,15 @@ params = {
 
 ## VeDDRA - Veterinary Dictionary for Drug Related Affairs
 
-The Veterinary Dictionary for Drug Related Affairs (VeDDRA) is a standardized international veterinary terminology for adverse event reporting. It provides:
+The Veterinary Dictionary for Drug Related Affairs (VeDDRA) is a standardised international veterinary terminology for adverse event reporting. It provides:
 
-- Standardized terms for veterinary adverse events
-- Hierarchical organization of terms
+- Standardised terms for veterinary adverse events
+- Hierarchical organisation of terms
 - Species-specific terminology
-- International harmonization
+- International harmonisation
 
 **VeDDRA Term Structure**:
-- Terms are organized hierarchically
+- Terms are organised hierarchically
 - Each term has a unique code
 - Terms are species-appropriate
 - Multiple versions exist (check `veddra_version` field)
@@ -353,7 +353,7 @@ def compare_drug_safety(drug_list, species, api_key):
 6. **Consider animal demographics** - Age, weight, and reproductive status matter
 7. **Track temporal patterns** - Seasonal variations may exist
 8. **Cross-reference products** - Same active ingredient may have multiple brands
-9. **Analyze by route** - Topical vs. systemic administration affects safety
+9. **Analyse by route** - Topical vs. systemic administration affects safety
 10. **Consider species differences** - Drugs affect species differently
 
 ## Reporting Sources
@@ -371,7 +371,7 @@ Different sources may have different reporting thresholds and detail levels.
 ## Additional Resources
 
 - OpenFDA Animal & Veterinary API: https://open.fda.gov/apis/animalandveterinary/
-- FDA Center for Veterinary Medicine: https://www.fda.gov/animal-veterinary
+- FDA Centre for Veterinary Medicine: https://www.fda.gov/animal-veterinary
 - VeDDRA: https://www.veddra.org/
 - API Basics: See `api-basics.md` in this references directory
 - Python examples: See `scripts/fda_animal_query.py`

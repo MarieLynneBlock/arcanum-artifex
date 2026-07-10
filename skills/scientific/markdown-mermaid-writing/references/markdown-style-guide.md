@@ -280,7 +280,7 @@ If the content could be expressed as a **Mermaid diagram**, prefer that over a s
 | Timeline                   | Mermaid `timeline` or `gantt`              |
 | Screenshot of UI           | Image (Mermaid can't do this)              |
 | Photo / real-world image   | Image                                      |
-| Complex data visualization | Image or Mermaid `xychart-beta`            |
+| Complex data visualisation | Image or Mermaid `xychart-beta`            |
 
 See the [Mermaid Style Guide](mermaid-style-guide.md) for diagram type selection and styling.
 
@@ -346,8 +346,7 @@ def calculate_average(values: list[float]) -> float:
 
 **Rules:**
 
-- **Always include language identifier** — ` ```python `, ` ```bash `, ` ```json `, etc.
-- **Use ` ```text ` for plain output** — not ` ``` ` with no language
+- **Always include language identifier** — `  14 text ` for plain output** — not ` ``` ` with no language
 - **Keep blocks focused** — show the relevant snippet, not the entire file
 - **Add a comment if context needed** — `# Configure the database connection` at the top of the block
 
@@ -730,4 +729,4 @@ checking their permissions against the requested resource...
 
 ## Resources
 
-- [GitHub Flavored Markdown Spec](https://github.github.com/gfm/) · [Mermaid Style Guide](mermaid-style-guide.md) · [GitHub Basic Formatting](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [GitHub Flavoured Markdown Spec](https://github.github.com/gfm/) · [Mermaid Style Guide](mermaid-style-guide.md) · [GitHub Basic Formatting](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)

@@ -183,7 +183,7 @@ pcp.download('SDF', 'aspirin', 'name', 'aspirin.sdf', overwrite=True)
 pcp.download('JSON', '2244', 'cid', 'aspirin.json', overwrite=True)
 ```
 
-### 6. Structure Visualization
+### 6. Structure Visualisation
 
 Generate 2D structure images:
 

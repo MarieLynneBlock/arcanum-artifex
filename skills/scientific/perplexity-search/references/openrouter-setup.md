@@ -205,7 +205,7 @@ Protect against unexpected charges:
 - Rate limit: 10-20 requests per minute
 - Spending limit: $10-50 depending on usage
 
-### Cost Optimization
+### Cost Optimisation
 
 Tips for reducing costs:
 
@@ -451,4 +451,4 @@ Setting up OpenRouter for Perplexity access involves:
 6. Verify setup: `python scripts/setup_env.py --validate`
 7. Start searching: `python scripts/perplexity_search.py "your query"`
 
-Monitor usage and costs regularly to optimize your spending and ensure security.
+Monitor usage and costs regularly to optimise your spending and ensure security.

@@ -17,7 +17,7 @@ def compute():
 ### CPU Limits
 
 - Default soft limit: 16 physical cores above the CPU request
-- Set explicit limits to prevent noisy-neighbor effects:
+- Set explicit limits to prevent noisy-neighbour effects:
 
 ```python
 @app.function(cpu=4.0)  # Request 4 cores
@@ -92,11 +92,11 @@ You are charged based on **whichever is higher**: your resource request or actua
 | GPU | Time GPU is allocated |
 | Disk | Increases memory billing at 20:1 ratio |
 
-### Cost Optimization Tips
+### Cost Optimisation Tips
 
 - Request only what you need
 - Use appropriate GPU tiers (L40S over H100 for inference)
-- Set `scaledown_window` to minimize idle time
+- Set `scaledown_window` to minimise idle time
 - Use `min_containers=0` when cold starts are acceptable
 - Batch inputs with `.map()` instead of individual `.remote()` calls
 

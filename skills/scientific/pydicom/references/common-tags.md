@@ -1,6 +1,6 @@
 # Common DICOM Tags Reference
 
-This document provides a comprehensive list of commonly used DICOM tags organized by category. Tags can be accessed in pydicom using attribute notation (e.g., `ds.PatientName`) or tag tuple notation (e.g., `ds[0x0010, 0x0010]`).
+This document provides a comprehensive list of commonly used DICOM tags organised by category. Tags can be accessed in pydicom using attribute notation (e.g., `ds.PatientName`) or tag tuple notation (e.g., `ds[0x0010, 0x0010]`).
 
 ## Patient Information Tags
 
@@ -73,8 +73,8 @@ This document provides a comprehensive list of commonly used DICOM tags organize
 | (0028,0102) | HighBit | US | Most significant bit for pixel sample |
 | (0028,0103) | PixelRepresentation | US | 0=unsigned, 1=signed |
 | (0028,0002) | SamplesPerPixel | US | Number of samples per pixel (1 or 3) |
-| (0028,0004) | PhotometricInterpretation | CS | Color space (MONOCHROME2, RGB, etc.) |
-| (0028,0006) | PlanarConfiguration | US | Color pixel data arrangement |
+| (0028,0004) | PhotometricInterpretation | CS | Colour space (MONOCHROME2, RGB, etc.) |
+| (0028,0006) | PlanarConfiguration | US | Colour pixel data arrangement |
 | (0028,0030) | PixelSpacing | DS | Physical spacing [row, column] in mm |
 | (0028,0008) | NumberOfFrames | IS | Number of frames in multi-frame image |
 | (0028,0034) | PixelAspectRatio | IS | Ratio of vertical to horizontal pixel |
@@ -83,7 +83,7 @@ This document provides a comprehensive list of commonly used DICOM tags organize
 
 | Tag | Name | Type | Description |
 |-----|------|------|-------------|
-| (0028,1050) | WindowCenter | DS | Window center for display |
+| (0028,1050) | WindowCenter | DS | Window centre for display |
 | (0028,1051) | WindowWidth | DS | Window width for display |
 | (0028,1052) | RescaleIntercept | DS | b in output = m*SV + b |
 | (0028,1053) | RescaleSlope | DS | m in output = m*SV + b |

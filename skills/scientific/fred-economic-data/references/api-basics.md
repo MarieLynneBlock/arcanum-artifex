@@ -160,7 +160,7 @@ if value != ".":
 
 ## Tag Groups
 
-Tags are organized into groups:
+Tags are organised into groups:
 
 | Group ID | Description |
 |----------|-------------|

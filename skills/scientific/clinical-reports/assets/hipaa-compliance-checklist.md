@@ -101,7 +101,7 @@ Verify that ALL of the following identifiers have been removed or altered:
 - [ ] State or country is acceptable
 - [ ] Removed specific cities (unless population >20,000 and no other identifying information)
 - [ ] Removed hospital/clinic names
-- [ ] Use general descriptors: "a community hospital in the Midwest" or "a tertiary care center"
+- [ ] Use general descriptors: "a community hospital in the Midwest" or "a tertiary care centre"
 
 ### Rare Conditions and Combinations
 
@@ -170,9 +170,9 @@ The informed consent form must include:
 
 ---
 
-## Safe Harbor vs. Expert Determination
+## Safe Harbour vs. Expert Determination
 
-### Safe Harbor Method
+### Safe Harbour Method
 
 - [ ] All 18 identifiers removed
 - [ ] No actual knowledge that remaining information could identify individual
@@ -188,7 +188,7 @@ The informed consent form must include:
 - [ ] May allow retention of some data elements
 - [ ] Requires statistical expertise
 
-**Method used:** [ ] Safe Harbor  [ ] Expert Determination
+**Method used:** [ ] Safe Harbour  [ ] Expert Determination
 
 ---
 
@@ -306,7 +306,7 @@ Notification must include:
 - [ ] Description of breach
 - [ ] Types of information involved
 - [ ] Steps individuals should take
-- [ ] What organization is doing
+- [ ] What organisation is doing
 - [ ] Contact for questions
 
 ---

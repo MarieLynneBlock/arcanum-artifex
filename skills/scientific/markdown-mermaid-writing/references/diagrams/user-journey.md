@@ -2,7 +2,7 @@
 
 # User Journey
 
-> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `journey`
 **Best for:** User experience mapping, customer journey, process satisfaction scoring, onboarding flows
@@ -103,6 +103,6 @@ journey
 ### Why this works
 
 - **Two personas on the same map** — instead of two separate diagrams, both actors appear in each step. The satisfaction gap between New Customer (2-3) and Returning Customer (4-5) is immediately visible in checkout and post-purchase.
-- **5 sections follow the real funnel** — discovery → shopping → checkout → fulfillment → post-purchase. Each section tells a story about where the experience breaks down for new users.
+- **5 sections follow the real funnel** — discovery → shopping → checkout → fulfilment → post-purchase. Each section tells a story about where the experience breaks down for new users.
 - **Some steps are persona-specific** — "Compare alternatives" is only New Customer, "Reorder same item" is only Returning Customer. This shows divergent paths within the shared journey.
 - **Low scores are the actionable insight** — New Customer scores 1-2 on payment entry, coupon application, and support contact. These are the specific UX investments that would improve conversion.

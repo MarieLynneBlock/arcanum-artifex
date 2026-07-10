@@ -7,7 +7,7 @@ applyTo: '**/*.{md,js,mjs,cjs,ts,tsx,jsx,py,java,cs,go,rb,php,rs,cpp,c,h,hpp}'
 
 ## Overview
 
-Ensure documentation stays synchronized with code changes by automatically detecting when README.md,
+Ensure documentation stays synchronised with code changes by automatically detecting when README.md,
 API documentation, configuration guides, and other documentation files need updates based on code
 modifications.
 
@@ -33,7 +33,7 @@ the level two header, wrapped in backticks (e.g., `apply-this`). Call this the
 **CONFIGURABLE PROPERTY**.
 
 The **configurable property** will be declared and defined in the **Instruction Configuration**
-portion of this section. They are booleans. If `true`, then apply, utilize, and/or follow the
+portion of this section. They are booleans. If `true`, then apply, utilise, and/or follow the
 instructions in that section.
 
 Each **configurable instruction section** will also have a sentence that follows the section's
@@ -44,7 +44,7 @@ section. This allows for custom cases and/or conditions to be checked that will 
 implementation for that **configurable instruction section**.
 
 Before resolving on how to apply a **configurable instruction section**, check the
-**configurable property** for a nested and/or corresponding `apply-condition`, and utilize the `apply-condition` when settling on the final approach for the **configurable instruction section**. By
+**configurable property** for a nested and/or corresponding `apply-condition`, and utilise the `apply-condition` when settling on the final approach for the **configurable instruction section**. By
 default the `apply-condition` for each **configurable property** is unset, but an example of a set
 `apply-condition` could be something like:
 
@@ -55,7 +55,7 @@ The sum of all the **constant instructions sections**, and **configurable instru
 will determine the complete instructions to follow. Call this the **COMPILED INSTRUCTIONS**.
 
 The **compiled instructions** are dependent on the configuration. Each instruction section
-included in the **compiled instructions** will be interpreted and utilized AS IF a separate set
+included in the **compiled instructions** will be interpreted and utilised AS IF a separate set
 of instructions that are independent of the entirety of this instruction file. Call this the
 **FINAL PROCEDURE**.
 
@@ -83,7 +83,7 @@ of instructions that are independent of the entirety of this instruction file. C
 <!--
 | Configuration Property         | Default | Description                                                                 | When to Enable/Disable                                      |
 |-------------------------------|---------|-----------------------------------------------------------------------------|-------------------------------------------------------------|
-| apply-doc-file-structure      | true    | Ensures documentation follows a consistent file structure.                  | Disable if you want to allow free-form doc organization.    |
+| apply-doc-file-structure      | true    | Ensures documentation follows a consistent file structure.                  | Disable if you want to allow free-form doc organisation.    |
 | apply-doc-verification        | true    | Verifies that documentation matches code changes.                           | Disable if verification is handled elsewhere.               |
 | apply-doc-quality-standard    | true    | Enforces documentation quality standards.                                   | Disable if quality standards are not required.              |
 | apply-automation-tooling      | true    | Uses automation tools to update documentation.                              | Disable if you prefer manual documentation updates.         |
@@ -153,7 +153,7 @@ Automatically check if documentation updates are needed when:
   - Revise security requirements
   - Update API key/token documentation
 
-### Code Example Synchronization
+### Code Example Synchronisation
 
 **Verify and update code examples when:**
 

@@ -17,8 +17,8 @@ Variational inference is a technique for approximating complex probability distr
 
 **How does it work?**
 1. Define a simpler approximate distribution q(z|x) with learnable parameters
-2. Minimize the KL divergence between q(z|x) and true posterior p(z|x)
-3. Equivalent to maximizing the Evidence Lower Bound (ELBO)
+2. Minimise the KL divergence between q(z|x) and true posterior p(z|x)
+3. Equivalent to maximising the Evidence Lower Bound (ELBO)
 
 **ELBO Objective**:
 ```
@@ -79,7 +79,7 @@ x̂ (reconstructed data)
 - Leverages shared structure across cells
 - Enables few-shot learning
 
-## Statistical Modeling
+## Statistical Modelling
 
 ### Count Data Distributions
 
@@ -144,7 +144,7 @@ Decoder: p(x|z, s)  - batch-specific decoding
 - s explains technical variation
 - Separable biology and batch effects
 
-### Deep Generative Modeling
+### Deep Generative Modelling
 
 **Generative model**: Learns p(x), the data distribution
 
@@ -201,13 +201,13 @@ L = E_q[log p(x|z)] - KL(q(z|x) || N(0,I))
 - Or use conditional layers
 
 **Continuous covariates** (library size, percent_mito):
-- Standardize to zero mean, unit variance
+- Standardise to zero mean, unit variance
 - Include in encoder and/or decoder
 
 **Covariate injection strategies**:
 - **Concatenation**: [z, s] fed to decoder
 - **Deep injection**: s added at multiple layers
-- **Conditional batch norm**: Batch-specific normalization
+- **Conditional batch norm**: Batch-specific normalisation
 
 ## Advanced Theoretical Concepts
 
@@ -231,7 +231,7 @@ L = E_q[log p(x|z)] - KL(q(z|x) || N(0,I))
 - Few-shot learning for rare cell types
 - Rapid analysis of new datasets
 
-### Multi-Resolution Modeling (MrVI)
+### Multi-Resolution Modelling (MrVI)
 
 **Idea**: Separate shared and sample-specific variation
 
@@ -331,7 +331,7 @@ BF = P(H₁|data) / P(H₀|data)
 
 ## Implementation Details
 
-### Optimization
+### Optimisation
 
 **Optimizer**: Adam (adaptive learning rates)
 - Default lr = 0.001
@@ -358,7 +358,7 @@ BF = P(H₁|data) / P(H₀|data)
 **Dropout**: Random neuron dropping during training
 - Default: 0.1 dropout rate
 - Prevents overfitting
-- Improves generalization
+- Improves generalisation
 
 **Weight decay**: L2 regularization on weights
 - Prevents large weights
@@ -371,7 +371,7 @@ BF = P(H₁|data) / P(H₀|data)
 - Batch size: 64-256 cells
 - Enables scaling to millions of cells
 
-**Stochastic optimization**:
+**Stochastic optimisation**:
 - Estimates ELBO on mini-batches
 - Unbiased gradient estimates
 - Converges to optimal solution
@@ -389,13 +389,13 @@ BF = P(H₁|data) / P(H₀|data)
 - **Advantage**: scVI captures complex structure, handles counts
 
 ### vs. t-SNE/UMAP
-- **t-SNE/UMAP**: Visualization-focused
+- **t-SNE/UMAP**: Visualisation-focused
 - **scVI**: Full generative model
 - **Advantage**: scVI enables downstream tasks (DE, imputation)
 
 ### vs. Seurat Integration
 - **Seurat**: Anchor-based alignment
-- **scVI**: Probabilistic modeling
+- **scVI**: Probabilistic modelling
 - **Advantage**: scVI provides uncertainty, works for multiple batches
 
 ### vs. Harmony
@@ -420,19 +420,19 @@ BF = P(H₁|data) / P(H₀|data)
 ## Further Reading
 
 **Key Papers**:
-1. Lopez et al. (2018): "Deep generative modeling for single-cell transcriptomics"
-2. Xu et al. (2021): "Probabilistic harmonization and annotation of single-cell transcriptomics"
+1. Lopez et al. (2018): "Deep generative modelling for single-cell transcriptomics"
+2. Xu et al. (2021): "Probabilistic harmonisation and annotation of single-cell transcriptomics"
 3. Boyeau et al. (2019): "Deep generative models for detecting differential expression in single cells"
 
 **Concepts to explore**:
 - Variational inference in machine learning
 - Bayesian deep learning
 - Information theory (KL divergence, mutual information)
-- Generative models (GANs, normalizing flows, diffusion models)
+- Generative models (GANs, normalising flows, diffusion models)
 - Probabilistic programming (Pyro, PyTorch)
 
 **Mathematical background**:
 - Probability theory and statistics
 - Linear algebra and calculus
-- Optimization theory
+- Optimisation theory
 - Information theory

@@ -1,6 +1,6 @@
 # Common Methodological and Statistical Issues in Scientific Manuscripts
 
-This document catalogs frequent issues encountered during peer review, organized by category. Use this as a reference to identify potential problems and provide constructive feedback.
+This document catalogues frequent issues encountered during peer review, organised by category. Use this as a reference to identify potential problems and provide constructive feedback.
 
 ## Statistical Issues
 
@@ -32,7 +32,7 @@ This document catalogs frequent issues encountered during peer review, organized
 
 **Common Problems:**
 - Using parametric tests when assumptions are violated (non-normal data, unequal variances)
-- Analyzing paired data with unpaired tests
+- Analysing paired data with unpaired tests
 - Using t-tests for multiple groups instead of ANOVA with post-hoc tests
 - Treating ordinal data as continuous
 - Ignoring repeated measures structure
@@ -42,8 +42,8 @@ This document catalogs frequent issues encountered during peer review, organized
 - No mention of assumption checking
 - Small sample sizes with parametric tests
 - Multiple pairwise t-tests instead of ANOVA
-- Likert scales analyzed with t-tests
-- Time-series data analyzed without accounting for repeated measures
+- Likert scales analysed with t-tests
+- Time-series data analysed without accounting for repeated measures
 
 **What to Recommend:**
 - Check assumptions explicitly (normality tests, Q-Q plots)
@@ -110,7 +110,7 @@ This document catalogs frequent issues encountered during peer review, organized
 **How to Identify:**
 - ROIs or features selected based on results
 - Unexpected subgroup analyses
-- Post-hoc analyses not clearly labeled as exploratory
+- Post-hoc analyses not clearly labelled as exploratory
 - No data-independent validation
 - Introduction that perfectly predicts findings
 
@@ -126,7 +126,7 @@ This document catalogs frequent issues encountered during peer review, organized
 **Common Problems:**
 - Technical replicates treated as biological replicates
 - Multiple measurements from same subject treated as independent
-- Clustered data analyzed without accounting for clustering
+- Clustered data analysed without accounting for clustering
 - Non-independence in spatial or temporal data
 
 **How to Identify:**
@@ -186,7 +186,7 @@ This document catalogs frequent issues encountered during peer review, organized
 - Randomize experimental units to conditions
 - Block on known confounders
 - Randomize sample processing order
-- Use blinding to minimize bias
+- Use blinding to minimise bias
 - Perform batch correction if needed
 - Report and adjust for baseline differences
 
@@ -219,7 +219,7 @@ This document catalogs frequent issues encountered during peer review, organized
 
 **Common Problems:**
 - Methods not described in sufficient detail for replication
-- Key reagents not specified (vendor, catalog number)
+- Key reagents not specified (vendor, catalogue number)
 - Software versions and parameters not reported
 - Antibodies not validated
 - Cell line authentication not verified
@@ -233,7 +233,7 @@ This document catalogs frequent issues encountered during peer review, organized
 
 **What to Recommend:**
 - Provide detailed protocols or cite specific protocols
-- Include reagent vendors, catalog numbers, lot numbers
+- Include reagent vendors, catalogue numbers, lot numbers
 - Report software versions and all parameters
 - Include antibody validation (Western blot, specificity tests)
 - Report cell line authentication method (STR profiling)
@@ -362,7 +362,7 @@ This document catalogs frequent issues encountered during peer review, organized
 
 ## Figure and Data Presentation Issues
 
-### 16. Inappropriate Data Visualization
+### 16. Inappropriate Data Visualisation
 
 **Common Problems:**
 - Bar graphs for continuous data (hiding distributions)
@@ -370,7 +370,7 @@ This document catalogs frequent issues encountered during peer review, organized
 - Truncated y-axes exaggerating differences
 - Dual y-axes creating misleading comparisons
 - Too many significant figures
-- Colors not colorblind-friendly
+- Colours not colorblind-friendly
 
 **How to Identify:**
 - Bar graphs with few data points
@@ -378,7 +378,7 @@ This document catalogs frequent issues encountered during peer review, organized
 - Y-axis doesn't start at zero for ratio/percentage data
 - Left and right y-axes with different scales
 - Values reported to excessive precision (p=0.04562)
-- Red-green color schemes
+- Red-green colour schemes
 
 **What to Recommend:**
 - Show individual data points with scatter/box/violin plots
@@ -547,6 +547,6 @@ When reviewing manuscripts:
 3. Note specific problems with evidence
 4. Provide constructive suggestions for improvement
 5. Distinguish major issues (affect validity) from minor issues (affect clarity)
-6. Prioritize reproducibility and transparency
+6. Prioritise reproducibility and transparency
 
 This is not an exhaustive list but covers the most frequently encountered issues. Always consider the specific context and discipline when evaluating potential problems.

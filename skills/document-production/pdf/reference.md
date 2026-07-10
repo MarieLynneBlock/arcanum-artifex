@@ -312,7 +312,7 @@ qpdf input.pdf --pages input.pdf 1,3-5,8,10-end -- extracted.pdf
 qpdf --empty --pages doc1.pdf 1-3 doc2.pdf 5-7 doc3.pdf 2,4 -- combined.pdf
 ```
 
-#### PDF Optimization and Repair
+#### PDF Optimisation and Repair
 ```bash
 # Optimize PDF for web (linearize for streaming)
 qpdf --linearize input.pdf optimized.pdf
@@ -525,7 +525,7 @@ with open("cropped.pdf", "wb") as output:
     writer.write(output)
 ```
 
-## Performance Optimization Tips
+## Performance Optimisation Tips
 
 ### 1. For Large PDFs
 - Use streaming approaches instead of loading entire PDF in memory

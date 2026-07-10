@@ -1,16 +1,16 @@
-# Infographic Color Palettes Reference
+# Infographic Colour Palettes Reference
 
-This reference provides comprehensive color palette options for creating accessible, professional infographics.
+This reference provides comprehensive colour palette options for creating accessible, professional infographics.
 
 ---
 
 ## Colorblind-Safe Palettes
 
-These palettes are designed to be distinguishable by people with various forms of color vision deficiency.
+These palettes are designed to be distinguishable by people with various forms of colour vision deficiency.
 
-### Wong's Palette (7 Colors)
+### Wong's Palette (7 Colours)
 
-The most widely recommended colorblind-safe palette, developed by Bang Wong for scientific visualization.
+The most widely recommended colorblind-safe palette, developed by Bang Wong for scientific visualisation.
 
 | Name | Hex | RGB | Usage |
 |------|-----|-----|-------|
@@ -31,9 +31,9 @@ bluish green (#009E73), and blue (#0072B2) for data categories"
 
 ---
 
-### IBM Colorblind-Safe Palette (8 Colors)
+### IBM Colorblind-Safe Palette (8 Colours)
 
-IBM's accessible color palette designed for data visualization.
+IBM's accessible colour palette designed for data visualisation.
 
 | Name | Hex | RGB | Usage |
 |------|-----|-----|-------|
@@ -54,7 +54,7 @@ magenta (#DC267F), and gold (#FFB000) for visual elements"
 
 ---
 
-### Okabe-Ito Palette (8 Colors)
+### Okabe-Ito Palette (8 Colours)
 
 Developed by Masataka Okabe and Kei Ito, widely used in scientific publications.
 
@@ -73,7 +73,7 @@ Developed by Masataka Okabe and Kei Ito, widely used in scientific publications.
 
 ---
 
-### Tol's Qualitative Palette (12 Colors)
+### Tol's Qualitative Palette (12 Colours)
 
 Paul Tol's extended colorblind-safe palette for more categories.
 
@@ -120,7 +120,7 @@ light gray background, professional clean design"
 
 ### Healthcare/Medical
 
-Trust-inducing, clinical colors appropriate for health-related content.
+Trust-inducing, clinical colours appropriate for health-related content.
 
 | Role | Name | Hex | RGB |
 |------|------|-----|-----|
@@ -195,7 +195,7 @@ cream background, organic natural design feel"
 
 ### Education/Academic
 
-Friendly yet professional colors for learning content.
+Friendly yet professional colours for learning content.
 
 | Role | Name | Hex | RGB |
 |------|------|-----|-----|
@@ -217,7 +217,7 @@ warm white background, friendly educational design"
 
 ### Marketing/Creative
 
-Bold, vibrant colors for attention-grabbing content.
+Bold, vibrant colours for attention-grabbing content.
 
 | Role | Name | Hex | RGB |
 |------|------|-----|-----|
@@ -284,7 +284,7 @@ dark background, bold creative aesthetic"
 
 ### Government/Policy
 
-Formal, accessible colors for public sector content.
+Formal, accessible colours for public sector content.
 
 | Role | Name | Hex | RGB |
 |------|------|-----|-----|
@@ -306,7 +306,7 @@ high contrast for readability"
 
 ### Nonprofit/Cause
 
-Warm, human-centered colors for social impact content.
+Warm, human-centred colours for social impact content.
 
 | Role | Name | Hex | RGB |
 |------|------|-----|-----|
@@ -399,7 +399,7 @@ flowing top to bottom, modern clean design"
 ### Common Safe Combinations
 
 **On White Background (#FFFFFF):**
-| Text Color | Hex | Contrast Ratio |
+| Text Colour | Hex | Contrast Ratio |
 |------------|-----|----------------|
 | Black | `#000000` | 21:1 ✓ |
 | Dark Gray | `#333333` | 12.6:1 ✓ |
@@ -410,7 +410,7 @@ flowing top to bottom, modern clean design"
 | Red | `#CC0000` | 5.5:1 ✓ |
 
 **On Dark Background (#1A1A2E):**
-| Text Color | Hex | Contrast Ratio |
+| Text Colour | Hex | Contrast Ratio |
 |------------|-----|----------------|
 | White | `#FFFFFF` | 17.1:1 ✓ |
 | Light Gray | `#E5E5E5` | 13.8:1 ✓ |
@@ -418,7 +418,7 @@ flowing top to bottom, modern clean design"
 | Yellow | `#F0E442` | 12.5:1 ✓ |
 | Light Blue | `#56B4E9` | 7.8:1 ✓ |
 
-### Colors to Avoid Together
+### Colours to Avoid Together
 
 These combinations have poor contrast or are problematic for colorblind users:
 
@@ -431,7 +431,7 @@ These combinations have poor contrast or are problematic for colorblind users:
 
 ---
 
-## Quick Reference: Color Prompt Phrases
+## Quick Reference: Colour Prompt Phrases
 
 Copy-paste these phrases into your prompts:
 
@@ -469,7 +469,7 @@ Copy-paste these phrases into your prompts:
 
 ---
 
-## Testing Your Colors
+## Testing Your Colours
 
 ### Online Tools
 
@@ -478,19 +478,19 @@ Copy-paste these phrases into your prompts:
    - Coolors Contrast Checker: https://coolors.co/contrast-checker
 
 2. **Colorblind Simulators:**
-   - Coblis: https://www.color-blindness.com/coblis-color-blindness-simulator/
+   - Coblis: https://www.colour-blindness.com/coblis-colour-blindness-simulator/
    - Sim Daltonism (Mac app)
-   - Color Oracle (Desktop app)
+   - Colour Oracle (Desktop app)
 
 3. **Palette Generators:**
    - Coolors: https://coolors.co/
-   - Adobe Color: https://color.adobe.com/
+   - Adobe Colour: https://colour.adobe.com/
    - Paletton: https://paletton.com/
 
 ### Quick Grayscale Test
 
-Convert your infographic to grayscale. If all elements are still distinguishable, your color choices are accessible.
+Convert your infographic to grayscale. If all elements are still distinguishable, your colour choices are accessible.
 
 ---
 
-Use these palettes as starting points, adjusting as needed for your specific content and brand requirements. Always test for accessibility before finalizing.
+Use these palettes as starting points, adjusting as needed for your specific content and brand requirements. Always test for accessibility before finalising.

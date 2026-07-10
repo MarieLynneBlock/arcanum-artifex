@@ -92,7 +92,7 @@ sim.output.spatial_means.plot()
 sim.output.spectra.plot1d()
 ```
 
-Use this for quick visualization and analysis. Does not initialize full simulation state.
+Use this for quick visualisation and analysis. Does not initialize full simulation state.
 
 #### Full State Loading
 
@@ -105,7 +105,7 @@ sim = load_state_phys_file("simulation_dir/state_phys_t10.000.h5")
 sim.time_stepping.start()
 ```
 
-### Visualization Tools
+### Visualisation Tools
 
 #### Built-in Plotting
 
@@ -123,9 +123,9 @@ sim.output.spatial_means.plot()
 sim.output.spectra.plot1d()
 ```
 
-#### Advanced Visualization
+#### Advanced Visualisation
 
-For publication-quality or 3D visualization:
+For publication-quality or 3D visualisation:
 
 **ParaView**: Open `.h5` files directly
 ```bash

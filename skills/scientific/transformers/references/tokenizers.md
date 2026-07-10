@@ -304,7 +304,7 @@ sequence_ids = encoding.sequence_ids()
 
 ### Custom Preprocessing
 
-Subclass for custom behavior:
+Subclass for custom behaviour:
 
 ```python
 class CustomTokenizer(AutoTokenizer):

@@ -1,6 +1,6 @@
 # Standard Scanpy Workflow for Single-Cell Analysis
 
-This document outlines the standard workflow for analyzing single-cell RNA-seq data using scanpy.
+This document outlines the standard workflow for analysing single-cell RNA-seq data using scanpy.
 
 ## Complete Analysis Pipeline
 
@@ -41,7 +41,7 @@ sc.pl.scatter(adata, x='total_counts', y='pct_counts_mt')
 sc.pl.scatter(adata, x='total_counts', y='n_genes_by_counts')
 ```
 
-### 3. Normalization
+### 3. Normalisation
 
 ```python
 # Normalize to 10,000 counts per cell
@@ -190,16 +190,16 @@ sc.pl.umap(adata, color='T_cell_score')
 ## Common Parameters to Adjust
 
 - **QC thresholds**: `min_genes`, `min_cells`, `pct_counts_mt` - depends on dataset quality
-- **Normalization target**: Usually 1e4, but can be adjusted
+- **Normalisation target**: Usually 1e4, but can be adjusted
 - **HVG parameters**: Affects feature selection stringency
 - **PCA components**: Check variance ratio plot to determine optimal number
 - **Clustering resolution**: Higher values give more clusters (typically 0.4-1.2)
-- **n_neighbors**: Affects granularity of UMAP and clustering (typically 10-30)
+- **n_neighbours**: Affects granularity of UMAP and clustering (typically 10-30)
 
 ## Best Practices
 
-1. Always visualize QC metrics before filtering
-2. Save raw counts before normalization (`adata.raw = adata`)
+1. Always visualise QC metrics before filtering
+2. Save raw counts before normalisation (`adata.raw = adata`)
 3. Use Leiden instead of Louvain for clustering (more efficient)
 4. Try multiple clustering resolutions to find optimal granularity
 5. Validate cell type annotations with known marker genes

@@ -2,11 +2,11 @@
 
 ## Overview
 
-Evidence represents any event or set of events that identifies a target as a potential causal gene or protein for a disease. Evidence is standardized and mapped to:
+Evidence represents any event or set of events that identifies a target as a potential causal gene or protein for a disease. Evidence is standardised and mapped to:
 - **Ensembl gene IDs** for targets
 - **EFO (Experimental Factor Ontology)** for diseases/phenotypes
 
-Evidence is organized into **data types** (broader categories) and **data sources** (specific databases/studies).
+Evidence is organised into **data types** (broader categories) and **data sources** (specific databases/studies).
 
 ## Evidence Data Types
 
@@ -20,7 +20,7 @@ Evidence from human genetics linking genetic variants to disease phenotypes.
 - Population-level common variant associations
 - Filtered with Locus-to-Gene (L2G) scores >0.05
 - Includes fine-mapping and colocalization data
-- Sources: GWAS Catalog, FinnGen, UK Biobank, EBI GWAS
+- Sources: GWAS Catalogue, FinnGen, UK Biobank, EBI GWAS
 
 **Gene Burden Tests**
 - Rare variant association analyses
@@ -116,7 +116,7 @@ Evidence linking genes to disease through pathway perturbations and functional s
 
 **PROGENy**
 - Pathway activity inference
-- Signaling pathway perturbations
+- Signalling pathway perturbations
 
 **Reactome**
 - Expert-curated pathway annotations
@@ -147,7 +147,7 @@ Evidence from in vivo studies showing phenotypes associated with gene perturbati
 **IMPC (International Mouse Phenotyping Consortium)**
 - Systematic mouse knockout phenotypes
 - Phenotype-disease mappings via ontologies
-- Standardized phenotyping procedures
+- Standardised phenotyping procedures
 
 ### 7. Literature
 
@@ -157,7 +157,7 @@ Evidence from text-mining of biomedical literature.
 
 **Europe PMC**
 - Co-occurrence of genes and diseases in abstracts
-- Normalized citation counts
+- Normalised citation counts
 - Weighted by publication type and recency
 
 ## Evidence Scoring
@@ -165,7 +165,7 @@ Evidence from text-mining of biomedical literature.
 Each evidence source has its own scoring methodology:
 
 ### Score Ranges
-- Most scores normalized to 0-1 range
+- Most scores normalised to 0-1 range
 - Higher scores indicate stronger evidence
 - Scores are NOT confidence levels but relative strength indicators
 
@@ -299,7 +299,7 @@ query = """
 When evaluating evidence:
 
 1. **Check multiple sources** - Single source may be unreliable
-2. **Prioritize human genetic evidence** - Strongest disease relevance
+2. **Prioritise human genetic evidence** - Strongest disease relevance
 3. **Consider clinical precedence** - Known drugs indicate druggability
 4. **Assess mechanistic support** - Pathway evidence supports biology
 5. **Review literature manually** - For critical decisions, read primary publications

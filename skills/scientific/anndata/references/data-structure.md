@@ -86,8 +86,8 @@ normalized_data = adata.layers['normalized']
 ```
 
 Common layer uses:
-- `raw_counts`: Original count data before normalization
-- `normalized`: Log-normalized or TPM values
+- `raw_counts`: Original count data before normalisation
+- `normalized`: Log-normalised or TPM values
 - `scaled`: Z-scored values for analysis
 - `imputed`: Data after imputation
 
@@ -184,7 +184,7 @@ pca_params = adata.uns['pca']['params']
 
 Common uns uses:
 - Analysis parameters and settings
-- Color palettes for plotting
+- Colour palettes for plotting
 - Cluster information
 - Tool-specific metadata
 

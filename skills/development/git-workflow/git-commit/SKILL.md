@@ -11,7 +11,7 @@ metadata:
 
 ## Overview
 
-Create standardized, semantic git commits using the Conventional Commits specification. Analyze the actual diff to determine appropriate type, scope, and message.
+Create standardised, semantic git commits using the Conventional Commits specification. Analyse the actual diff to determine appropriate type, scope, and message.
 
 ## Conventional Commit Format
 
@@ -53,7 +53,7 @@ BREAKING CHANGE: `extends` key behavior changed
 
 ## Workflow
 
-### 1. Analyze Diff
+### 1. Analyse Diff
 
 ```bash
 # If files are staged, use staged diff
@@ -86,7 +86,7 @@ git add -p
 
 ### 3. Generate Commit Message
 
-Analyze the diff to determine:
+Analyse the diff to determine:
 
 - **Type**: What kind of change is this?
 - **Scope**: What area/module is affected?

@@ -15,7 +15,7 @@ Apply the ScholarEval framework to systematically evaluate scholarly and researc
 ## When to Use This Skill
 
 Use this skill when:
-- Evaluating research papers for quality and rigor
+- Evaluating research papers for quality and rigour
 - Assessing literature review comprehensiveness and quality
 - Reviewing research methodology design
 - Scoring data analysis approaches
@@ -50,11 +50,11 @@ The AI will automatically:
 **When to add schematics:**
 - Evaluation framework diagrams
 - Quality assessment criteria decision trees
-- Scholarly workflow visualizations
+- Scholarly workflow visualisations
 - Assessment methodology flowcharts
-- Scoring rubric visualizations
+- Scoring rubric visualisations
 - Evaluation process diagrams
-- Any complex concept that benefits from visualization
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -96,17 +96,17 @@ Refer to `references/evaluation-framework.md` for detailed criteria and rubrics 
 
 2. **Literature Review**
    - Comprehensiveness of coverage
-   - Critical synthesis vs. mere summarization
+   - Critical synthesis vs. mere summarisation
    - Identification of research gaps
    - Currency and relevance of sources
    - Proper contextualization
 
 3. **Methodology & Research Design**
    - Appropriateness for research questions
-   - Rigor and validity
+   - Rigour and validity
    - Reproducibility and transparency
    - Ethical considerations
-   - Limitations acknowledgment
+   - Limitations acknowledgement
 
 4. **Data Collection & Sources**
    - Quality and appropriateness of data
@@ -116,20 +116,20 @@ Refer to `references/evaluation-framework.md` for detailed criteria and rubrics 
 
 5. **Analysis & Interpretation**
    - Appropriateness of analytical methods
-   - Rigor of analysis
+   - Rigour of analysis
    - Logical coherence
    - Alternative explanations considered
    - Results-claims alignment
 
 6. **Results & Findings**
    - Clarity of presentation
-   - Statistical or qualitative rigor
-   - Visualization quality
+   - Statistical or qualitative rigour
+   - Visualisation quality
    - Interpretation accuracy
    - Implications discussion
 
 7. **Scholarly Writing & Presentation**
-   - Clarity and organization
+   - Clarity and organisation
    - Academic tone and style
    - Grammar and mechanics
    - Logical flow
@@ -161,11 +161,11 @@ Use a 5-point scale where applicable:
 
 To calculate aggregate scores programmatically, use `scripts/calculate_scores.py`.
 
-### Step 4: Synthesize Overall Assessment
+### Step 4: Synthesise Overall Assessment
 
 Provide an integrated evaluation summary:
 
-1. **Overall Quality Assessment** - Holistic judgment of the work's scholarly merit
+1. **Overall Quality Assessment** - Holistic judgement of the work's scholarly merit
 2. **Major Strengths** - 3-5 key strengths across dimensions
 3. **Critical Weaknesses** - 3-5 primary areas requiring attention
 4. **Priority Recommendations** - Ranked list of improvements by impact
@@ -178,7 +178,7 @@ Transform evaluation findings into constructive, actionable feedback:
 **Feedback Structure:**
 - **Specific** - Reference exact sections, paragraphs, or page numbers
 - **Actionable** - Provide concrete suggestions for improvement
-- **Prioritized** - Rank recommendations by importance and feasibility
+- **Prioritised** - Rank recommendations by importance and feasibility
 - **Balanced** - Acknowledge strengths while addressing weaknesses
 - **Evidence-based** - Ground feedback in evaluation criteria
 
@@ -198,13 +198,13 @@ Adjust evaluation approach based on:
 - Final submission: Comprehensive quality check
 
 **Purpose and Venue:**
-- Journal article: High standards for rigor and contribution
+- Journal article: High standards for rigour and contribution
 - Conference paper: Balance novelty with presentation clarity
 - Student work: Educational feedback with developmental focus
 - Grant proposal: Emphasis on feasibility and impact
 
 **Discipline-Specific Norms:**
-- STEM fields: Emphasis on reproducibility and statistical rigor
+- STEM fields: Emphasis on reproducibility and statistical rigour
 - Social sciences: Balance quantitative and qualitative standards
 - Humanities: Focus on argumentation and scholarly interpretation
 
@@ -219,12 +219,12 @@ Search patterns for quick access:
 - "Literature Review rubric"
 - "Methodology assessment"
 - "Data quality indicators"
-- "Analysis rigor standards"
+- "Analysis rigour standards"
 - "Writing quality checklist"
 
 ### scripts/calculate_scores.py
 
-Python script for calculating aggregate evaluation scores from dimension-level ratings. Supports weighted averaging, threshold analysis, and score visualization.
+Python script for calculating aggregate evaluation scores from dimension-level ratings. Supports weighted averaging, threshold analysis, and score visualisation.
 
 Usage:
 ```bash
@@ -240,7 +240,7 @@ python scripts/calculate_scores.py --scores <dimension_scores.json> --output <re
 5. **Consider Context** - Adjust expectations based on work stage and purpose
 6. **Document Rationale** - Explain the reasoning behind assessments and scores
 7. **Encourage Strengths** - Explicitly acknowledge what the work does well
-8. **Prioritize Feedback** - Focus on high-impact improvements first
+8. **Prioritise Feedback** - Focus on high-impact improvements first
 
 ## Example Evaluation Workflow
 
@@ -255,11 +255,11 @@ python scripts/calculate_scores.py --scores <dimension_scores.json> --output <re
    - Methodology: Appropriate deep learning architecture with validation procedures
    - [Continue through all dimensions...]
 4. Calculate dimension scores and overall assessment
-5. Synthesize findings into structured report highlighting:
+5. Synthesise findings into structured report highlighting:
    - Strong methodology and reproducible code
    - Needs more diverse dataset evaluation
    - Writing could improve clarity in results section
-6. Provide prioritized recommendations with specific suggestions
+6. Provide prioritised recommendations with specific suggestions
 
 ## Integration with Scientific Writer
 
@@ -282,7 +282,7 @@ This skill integrates seamlessly with the scientific writer workflow:
 
 ## Notes
 
-- Evaluation rigor should match the work's purpose and stage
+- Evaluation rigour should match the work's purpose and stage
 - Some dimensions may not apply to all work types (e.g., data collection for purely theoretical papers)
 - Cultural and disciplinary differences in scholarly norms should be considered
 - This framework complements, not replaces, domain-specific expertise

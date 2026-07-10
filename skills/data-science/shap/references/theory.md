@@ -124,7 +124,7 @@ SHAP unifies several existing explanation methods by showing they're special cas
 
 **LRP's Approach**: Decompose neural network predictions by propagating relevance scores backward through layers.
 
-**Connection to SHAP**: LRP is a special case of SHAP with specific propagation rules. SHAP generalizes these rules with Shapley value theory.
+**Connection to SHAP**: LRP is a special case of SHAP with specific propagation rules. SHAP generalises these rules with Shapley value theory.
 
 ### Integrated Gradients
 
@@ -134,7 +134,7 @@ SHAP unifies several existing explanation methods by showing they're special cas
 
 ## SHAP Computation Methods
 
-Different SHAP explainers use specialized algorithms to compute Shapley values efficiently for specific model types.
+Different SHAP explainers use specialised algorithms to compute Shapley values efficiently for specific model types.
 
 ### Tree SHAP (TreeExplainer)
 
@@ -162,7 +162,7 @@ Different SHAP explainers use specialized algorithms to compute Shapley values e
 
 **Key Advantage**: Model-agnostic; works with any prediction function
 
-**Trade-off**: Slower than specialized explainers; approximate rather than exact
+**Trade-off**: Slower than specialised explainers; approximate rather than exact
 
 ### Deep SHAP (DeepExplainer)
 
@@ -201,7 +201,7 @@ Computing $f(S)$ (model output given only features in $S$) requires handling mis
 
 **1. Interventional (Marginal) Approach**:
 - Replace missing features with values from background dataset
-- Estimates: $E[f(x) | x_S]$ by marginalizing over $x_{\bar{S}}$
+- Estimates: $E[f(x) | x_S]$ by marginalising over $x_{\bar{S}}$
 - Interpretation: "What would the model predict if we didn't know features $\bar{S}$?"
 
 **2. Observational (Conditional) Approach**:
@@ -265,12 +265,12 @@ $$f(x) = E[f(X)] + \sum_{i=1}^{n} \phi_i(x)$$
 **Local (Instance-level)**:
 - SHAP values for single prediction: $\phi_i(x)$
 - Explains: "Why did the model predict $f(x)$ for this instance?"
-- Visualization: Waterfall, force plots
+- Visualisation: Waterfall, force plots
 
 **Global (Dataset-level)**:
 - Average absolute SHAP values: $E[|\phi_i(x)|]$
 - Explains: "Which features are most important overall?"
-- Visualization: Beeswarm, bar plots
+- Visualisation: Beeswarm, bar plots
 
 **Key Insight**: Global importance is the aggregation of local importances, maintaining consistency between instance and dataset explanations.
 
@@ -308,7 +308,7 @@ $$f(x) = E[f(X)] + \sum_{i=1}^{n} \phi_i(x)$$
 - Can be misleading (importance ≠ predictive power)
 
 **SHAP (Tree SHAP)**:
-- Based on model output (prediction behavior)
+- Based on model output (prediction behaviour)
 - Fair attribution through Shapley values
 - Provides instance-level explanations
 - Consistent and theoretically grounded
@@ -349,7 +349,7 @@ shap_interaction_values = explainer.shap_interaction_values(X)
 
 **Exact Computation**: $O(2^n)$ - intractable for large $n$
 
-**Specialized Algorithms**:
+**Specialised Algorithms**:
 - Tree SHAP: $O(TLD^2)$ - efficient for trees
 - Deep SHAP, Kernel SHAP: Approximations required
 
@@ -372,7 +372,7 @@ shap_interaction_values = explainer.shap_interaction_values(X)
 
 **Example**: Setting "Age=5" and "Has PhD=Yes" simultaneously
 
-**Implication**: SHAP values reflect model behavior on potentially unrealistic inputs
+**Implication**: SHAP values reflect model behaviour on potentially unrealistic inputs
 
 **Mitigation**: Use observational approach or carefully selected background data
 
@@ -409,7 +409,7 @@ Where $f_i(x_i)$ captures main effect of feature $i$, and $\phi_i \approx f_i(x_
 
 ### Relationship to Sensitivity Analysis
 
-SHAP generalizes sensitivity analysis:
+SHAP generalises sensitivity analysis:
 - **Sensitivity Analysis**: $\frac{\partial f}{\partial x_i}$ (local gradient)
 - **SHAP**: Integrated sensitivity over feature coalition space
 
@@ -420,14 +420,14 @@ Gradient-based methods (GradientExplainer, Integrated Gradients) approximate SHA
 ### Why Use SHAP?
 
 1. **Theoretical Guarantees**: Only method with consistency, local accuracy, and missingness
-2. **Unified Framework**: Connects and generalizes multiple explanation methods
+2. **Unified Framework**: Connects and generalises multiple explanation methods
 3. **Additive Decomposition**: Predictions precisely decompose into feature contributions
 4. **Model Comparison**: Consistency enables comparing feature importance across models
 5. **Versatility**: Works with any model type (with appropriate explainer)
 
 ### When to Be Cautious
 
-1. **Computational Cost**: May be slow for complex models without specialized explainers
+1. **Computational Cost**: May be slow for complex models without specialised explainers
 2. **Feature Correlation**: Standard approaches may create unrealistic samples
 3. **Interpretation**: Requires understanding baseline, units, and assumptions
 4. **Causality**: SHAP doesn't imply causation; use domain knowledge

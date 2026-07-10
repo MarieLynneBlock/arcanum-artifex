@@ -10,8 +10,8 @@ Sources endpoints provide access to information about the data sources used in F
 
 ## About Sources
 
-Sources in FRED represent the organizations that produce economic data. Examples include:
-- Bureau of Labor Statistics (BLS)
+Sources in FRED represent the organisations that produce economic data. Examples include:
+- Bureau of Labour Statistics (BLS)
 - Bureau of Economic Analysis (BEA)
 - Federal Reserve Board
 - U.S. Census Bureau
@@ -252,10 +252,10 @@ response = requests.get(
 | 3 | Federal Reserve Bank of Philadelphia | Regional surveys, coincident indexes |
 | 4 | Federal Reserve Bank of St. Louis | FRED-specific compilations |
 | 6 | Federal Reserve Bank of Dallas | Regional economic data |
-| 11 | Federal Reserve Bank of Kansas City | Labor market data |
+| 11 | Federal Reserve Bank of Kansas City | Labour market data |
 | 18 | Bureau of Economic Analysis (BEA) | GDP, personal income, trade |
 | 19 | U.S. Census Bureau | Population, housing, retail sales |
-| 22 | Bureau of Labor Statistics (BLS) | Employment, CPI, PPI |
+| 22 | Bureau of Labour Statistics (BLS) | Employment, CPI, PPI |
 | 31 | National Bureau of Economic Research | Business cycle dates |
 | 40 | International Monetary Fund | International financial data |
 | 41 | World Bank | Global development indicators |
@@ -391,7 +391,7 @@ def build_source_directory(api_key):
 |----|------|
 | 18 | Bureau of Economic Analysis |
 | 19 | U.S. Census Bureau |
-| 22 | Bureau of Labor Statistics |
+| 22 | Bureau of Labour Statistics |
 | 60 | Congressional Budget Office |
 | 61 | Office of Management and Budget |
 

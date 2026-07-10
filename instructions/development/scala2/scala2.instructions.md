@@ -10,7 +10,7 @@ Based on the [Databricks Scala Style Guide](https://github.com/databricks/scala-
 ## Core Principles
 
 ### Write Simple Code
-Code is written once but read and modified multiple times. Optimize for long-term readability and maintainability by writing simple code.
+Code is written once but read and modified multiple times. Optimise for long-term readability and maintainability by writing simple code.
 
 ### Immutability by Default
 - Always prefer `val` over `var`
@@ -717,7 +717,7 @@ private[this] val map = java.util.Collections.synchronizedMap(
 )
 ```
 
-### Explicit Synchronization
+### Explicit Synchronisation
 
 ```scala
 class Manager {
@@ -820,7 +820,7 @@ val uri = new java.net.URI("http://example.com")
 
 ## Summary
 
-1. **Write simple code** - Optimize for readability and maintainability
+1. **Write simple code** - Optimise for readability and maintainability
 2. **Use immutable data** - val, immutable collections, case classes
 3. **Avoid language features** - Limit implicits, avoid symbolic methods
 4. **Type public APIs** - Explicit types for methods and fields
@@ -829,6 +829,6 @@ val uri = new java.net.URI("http://example.com")
 7. **Follow naming conventions** - PascalCase, camelCase, UPPER_CASE
 8. **Keep methods small** - Rule of 30
 9. **Handle errors explicitly** - Option, Either, exceptions with @throws
-10. **Profile before optimizing** - Measure, don't guess
+10. **Profile before optimising** - Measure, don't guess
 
 For complete details, see the [Databricks Scala Style Guide](https://github.com/databricks/scala-style-guide).

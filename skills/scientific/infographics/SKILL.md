@@ -85,12 +85,12 @@ python skills/infographics/scripts/generate_infographic.py \
 
 Use the **infographics** skill when:
 - Presenting data or statistics in a visual format
-- Creating timeline visualizations for project milestones or history
+- Creating timeline visualisations for project milestones or history
 - Explaining processes, workflows, or step-by-step guides
 - Comparing options, products, or concepts side-by-side
-- Summarizing key points in an engaging visual format
-- Creating geographic or map-based data visualizations
-- Building hierarchical or organizational charts
+- Summarising key points in an engaging visual format
+- Creating geographic or map-based data visualisations
+- Building hierarchical or organisational charts
 - Designing social media content or marketing materials
 
 **Use scientific-schematics instead for:**
@@ -132,7 +132,7 @@ The research phase automatically:
 2. **Provides Context**: Background information for accurate representation
 3. **Finds Data Points**: Specific numbers, percentages, and dates
 4. **Cites Sources**: Mentions major studies or sources
-5. **Prioritizes Recency**: Focuses on 2023-2026 information
+5. **Prioritises Recency**: Focuses on 2023-2026 information
 
 ### When to Use Research
 
@@ -239,7 +239,7 @@ python skills/infographics/scripts/generate_infographic.py \
 
 Best for: Regional data, demographics, location-based statistics, global trends.
 
-**Key Elements:** Map visualization, color coding, data overlays, legend.
+**Key Elements:** Map visualisation, colour coding, data overlays, legend.
 
 ```bash
 python skills/infographics/scripts/generate_infographic.py \
@@ -269,7 +269,7 @@ python skills/infographics/scripts/generate_infographic.py \
 
 Best for: Explaining complex systems using familiar visual metaphors.
 
-**Key Elements:** Central metaphor image, labeled parts, connection lines.
+**Key Elements:** Central metaphor image, labelled parts, connection lines.
 
 ```bash
 python skills/infographics/scripts/generate_infographic.py \
@@ -284,7 +284,7 @@ python skills/infographics/scripts/generate_infographic.py \
 
 Best for: Personal branding, CVs, portfolio highlights, professional achievements.
 
-**Key Elements:** Photo area, skills visualization, timeline, contact info.
+**Key Elements:** Photo area, skills visualisation, timeline, contact info.
 
 ```bash
 python skills/infographics/scripts/generate_infographic.py \
@@ -299,7 +299,7 @@ python skills/infographics/scripts/generate_infographic.py \
 
 Best for: Instagram, LinkedIn, Twitter/X posts, shareable graphics.
 
-**Key Elements:** Bold headline, minimal text, maximum impact, vibrant colors.
+**Key Elements:** Bold headline, minimal text, maximum impact, vibrant colours.
 
 ```bash
 python skills/infographics/scripts/generate_infographic.py \
@@ -314,7 +314,7 @@ python skills/infographics/scripts/generate_infographic.py \
 
 ### Industry Styles (`--style`)
 
-| Style | Colors | Best For |
+| Style | Colours | Best For |
 |-------|--------|----------|
 | `corporate` | Navy, steel blue, gold | Business reports, finance |
 | `healthcare` | Medical blue, cyan, light cyan | Medical, wellness |
@@ -341,11 +341,11 @@ python skills/infographics/scripts/generate_infographic.py \
 
 ### Available Palettes (`--palette`)
 
-| Palette | Colors | Description |
+| Palette | Colours | Description |
 |---------|--------|-------------|
 | `wong` | Orange, sky blue, green, blue, vermillion | Most widely recommended |
 | `ibm` | Ultramarine, indigo, magenta, orange, gold | IBM's accessible palette |
-| `tol` | 12-color extended palette | For many categories |
+| `tol` | 12-colour extended palette | For many categories |
 
 ```bash
 # Wong's colorblind-safe palette
@@ -387,13 +387,13 @@ Gemini 3 Pro evaluates each infographic on:
    - Bold headlines
    - No overlapping
 
-3. **Data Visualization** (0-2 points)
+3. **Data Visualisation** (0-2 points)
    - Prominent numbers
    - Clear charts/icons
    - Proper labels
 
-4. **Color & Accessibility** (0-2 points)
-   - Professional colors
+4. **Colour & Accessibility** (0-2 points)
+   - Professional colours
    - Sufficient contrast
    - Colorblind-friendly
 
@@ -524,8 +524,8 @@ For detailed guidance, load these reference files:
 **Problem**: Text in infographic is unreadable
 - **Solution**: Reduce text content; use --type to specify layout type
 
-**Problem**: Colors clash or are inaccessible
-- **Solution**: Use `--palette wong` for colorblind-safe colors
+**Problem**: Colours clash or are inaccessible
+- **Solution**: Use `--palette wong` for colorblind-safe colours
 
 **Problem**: Quality score too low
 - **Solution**: Increase iterations with `--iterations 3`; use more specific prompt

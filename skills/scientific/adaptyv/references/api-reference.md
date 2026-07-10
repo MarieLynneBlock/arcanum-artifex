@@ -91,7 +91,7 @@ Check the current status of an experiment.
 
 #### List Experiments
 
-Retrieve all experiments for your organization.
+Retrieve all experiments for your organisation.
 
 **Endpoint:** `GET /experiments`
 
@@ -153,9 +153,9 @@ Download results from a completed experiment.
 
 ### Targets
 
-#### Search Target Catalog
+#### Search Target Catalogue
 
-Search the ACROBiosystems antigen catalog.
+Search the ACROBiosystems antigen catalogue.
 
 **Endpoint:** `GET /targets`
 
@@ -182,7 +182,7 @@ Search the ACROBiosystems antigen catalog.
 
 #### Request Custom Target
 
-Request an antigen not in the standard catalog.
+Request an antigen not in the standard catalogue.
 
 **Endpoint:** `POST /targets/request`
 
@@ -200,7 +200,7 @@ Request an antigen not in the standard catalog.
 
 #### Get Credits Balance
 
-Check your organization's credit balance and usage.
+Check your organisation's credit balance and usage.
 
 **Endpoint:** `GET /organization/credits`
 
@@ -269,7 +269,7 @@ Configure webhook URLs to receive notifications when experiments complete.
 ## Rate Limits
 
 - 100 requests per minute per API key
-- 1000 experiments per day per organization
+- 1000 experiments per day per organisation
 - Batch submissions encouraged for large-scale testing
 
 When rate limited, response includes:

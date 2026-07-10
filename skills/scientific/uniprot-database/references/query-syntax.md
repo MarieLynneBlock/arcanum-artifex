@@ -224,7 +224,7 @@ Test queries using:
 
 ## Common Patterns
 
-### Find well-characterized proteins
+### Find well-characterised proteins
 ```
 reviewed:true AND xref:pdb AND cc_function:*
 ```

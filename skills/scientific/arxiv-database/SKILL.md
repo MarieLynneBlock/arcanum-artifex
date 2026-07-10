@@ -153,7 +153,7 @@ for paper in results:
 |----------|-------------|
 | `stat.ML` | Machine Learning (Statistics) |
 | `stat.ME` | Methodology |
-| `math.OC` | Optimization and Control |
+| `math.OC` | Optimisation and Control |
 | `math.ST` | Statistics Theory |
 
 ### Other Relevant Categories

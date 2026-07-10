@@ -392,7 +392,7 @@ for file in files:
 
 1. **Close Files**: Always close files after writing to make them accessible
 2. **Use Properties**: Tag data with meaningful properties for easier discovery
-3. **Organize Folders**: Use logical folder structures
+3. **Organise Folders**: Use logical folder structures
 4. **Clean Up**: Remove temporary or obsolete data
 5. **Batch Operations**: Group operations when processing many objects
 6. **Error Handling**: Check object states before operations

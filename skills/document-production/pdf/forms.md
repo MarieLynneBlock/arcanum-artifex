@@ -52,7 +52,7 @@ If the PDF has fillable form fields:
 ```
 - Convert the PDF to PNGs (one image for each page) with this script (run from this file's directory):
 `python scripts/convert_pdf_to_images.py <file.pdf> <output_directory>`
-Then analyze the images to determine the purpose of each form field (make sure to convert the bounding box PDF coordinates to image coordinates).
+Then analyse the images to determine the purpose of each form field (make sure to convert the bounding box PDF coordinates to image coordinates).
 - Create a `field_values.json` file in this format with the values to be entered for each field:
 ```
 [
@@ -86,7 +86,7 @@ Run this script to extract text labels, lines, and checkboxes with their exact P
 This creates a JSON file containing:
 - **labels**: Every text element with exact coordinates (x0, top, x1, bottom in PDF points)
 - **lines**: Horizontal lines that define row boundaries
-- **checkboxes**: Small square rectangles that are checkboxes (with center coordinates)
+- **checkboxes**: Small square rectangles that are checkboxes (with centre coordinates)
 - **row_boundaries**: Row top/bottom positions calculated from horizontal lines
 
 **Check the results**: If `form_structure.json` has meaningful labels (text elements that correspond to form fields), use **Approach A: Structure-Based Coordinates**. If the PDF is scanned/image-based and has few or no labels, use **Approach B: Visual Estimation**.
@@ -97,7 +97,7 @@ This creates a JSON file containing:
 
 Use this when `extract_form_structure.py` found text labels in the PDF.
 
-### A.1: Analyze the Structure
+### A.1: Analyse the Structure
 
 Read form_structure.json and identify:
 
@@ -113,7 +113,7 @@ Read form_structure.json and identify:
 The structure extraction may not detect all form elements. Common cases:
 - **Circular checkboxes**: Only square rectangles are detected as checkboxes
 - **Complex graphics**: Decorative elements or non-standard form controls
-- **Faded or light-colored elements**: May not be extracted
+- **Faded or light-coloured elements**: May not be extracted
 
 If you see form fields in the PDF images that aren't in form_structure.json, you'll need to use **visual analysis** for those specific fields (see "Hybrid Approach" below).
 

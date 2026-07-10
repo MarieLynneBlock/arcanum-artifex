@@ -312,7 +312,7 @@ The Benchling Data Warehouse provides SQL access to Benchling data for analytics
 
 **Common Queries:**
 - Aggregate experimental results
-- Analyze inventory trends
+- Analyse inventory trends
 - Generate compliance reports
 - Export data for external analysis
 

@@ -108,7 +108,7 @@ This report provides a comprehensive exploratory data analysis of the file `{FIL
 
 ---
 
-## Visualizations
+## Visualisations
 
 ### Distribution Plots
 {DISTRIBUTION_PLOTS}
@@ -139,7 +139,7 @@ This report provides a comprehensive exploratory data analysis of the file `{FIL
 ### Tools and Methods
 - **Recommended Software:** {RECOMMENDED_SOFTWARE}
 - **Statistical Methods:** {STATISTICAL_METHODS}
-- **Visualization Tools:** {VIZ_TOOLS}
+- **Visualisation Tools:** {VIZ_TOOLS}
 
 ---
 

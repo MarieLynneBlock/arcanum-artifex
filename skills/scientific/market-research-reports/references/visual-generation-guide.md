@@ -1,6 +1,6 @@
 # Visual Generation Guide for Market Research Reports
 
-Complete prompts and guidance for generating visualizations in market research reports.
+Complete prompts and guidance for generating visualisations in market research reports.
 
 ---
 
@@ -16,7 +16,7 @@ Start every market report by generating these 5-6 core visuals:
 2. **TAM/SAM/SOM Diagram** - Market opportunity breakdown
 3. **Porter's Five Forces** - Competitive dynamics framework
 4. **Competitive Positioning Matrix** - Strategic positioning
-5. **Risk Heatmap** - Risk assessment visualization
+5. **Risk Heatmap** - Risk assessment visualisation
 6. **Executive Summary Infographic** (optional) - Report overview
 
 ### Extended Visuals (Generate as Needed - Priority 7+)
@@ -105,7 +105,7 @@ python skills/scientific-schematics/scripts/generate_schematic.py \
 
 **Tool:** scientific-schematics
 
-**Purpose:** Market opportunity sizing visualization
+**Purpose:** Market opportunity sizing visualisation
 
 **Command:**
 ```bash
@@ -1057,7 +1057,7 @@ python skills/market-research-reports/scripts/generate_market_visuals.py \
   --skip-existing
 ```
 
-**Default behavior**: Generates only the 5-6 core priority visuals. Use `--all` flag if you need comprehensive visual coverage for all sections.
+**Default behaviour**: Generates only the 5-6 core priority visuals. Use `--all` flag if you need comprehensive visual coverage for all sections.
 
 ---
 
@@ -1066,8 +1066,8 @@ python skills/market-research-reports/scripts/generate_market_visuals.py \
 Before including visuals in the report, verify:
 
 - [ ] All text is readable at intended size
-- [ ] Colors are consistent across all visuals
-- [ ] Color scheme is colorblind-friendly
+- [ ] Colours are consistent across all visuals
+- [ ] Colour scheme is colorblind-friendly
 - [ ] Data labels are accurate
 - [ ] Legends are clear and complete
 - [ ] Titles are descriptive

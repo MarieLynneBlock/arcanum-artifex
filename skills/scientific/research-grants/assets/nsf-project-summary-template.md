@@ -1,6 +1,6 @@
 # NSF Project Summary Template
 
-**IMPORTANT**: NSF requires three labeled sections in the project summary (max 1 page):
+**IMPORTANT**: NSF requires three labelled sections in the project summary (max 1 page):
 1. Overview
 2. Intellectual Merit  
 3. Broader Impacts
@@ -18,7 +18,7 @@
 This should be accessible to a broad audience including non-scientists. Avoid jargon.]
 
 **Example:**
-This project investigates how coastal wetlands respond to rising sea levels and increased storm intensity caused by climate change. Using a combination of field observations, remote sensing, and computer modeling across 20 sites along the Atlantic coast, we will determine whether wetlands can migrate inland fast enough to keep pace with sea level rise. Results will inform coastal management policies and help predict the fate of critical ecosystems that protect shorelines and support fisheries. This work will train 5 graduate students and 10 undergraduates, with priority recruitment from underrepresented groups through partnerships with minority-serving institutions.
+This project investigates how coastal wetlands respond to rising sea levels and increased storm intensity caused by climate change. Using a combination of field observations, remote sensing, and computer modelling across 20 sites along the Atlantic coast, we will determine whether wetlands can migrate inland fast enough to keep pace with sea level rise. Results will inform coastal management policies and help predict the fate of critical ecosystems that protect shorelines and support fisheries. This work will train 5 graduate students and 10 undergraduates, with priority recruitment from underrepresented groups through partnerships with minority-serving institutions.
 
 ---
 
@@ -54,11 +54,11 @@ Be SPECIFIC with concrete activities, timelines, and assessment plans.]
 **Example:**
 This project will generate significant broader impacts through three integrated activities:
 
-**1. Education and Training**: We will train 5 PhD students and 10 undergraduates in interdisciplinary coastal science, emphasizing field methods, remote sensing, and quantitative modeling. Undergraduates will participate through summer research internships (10 weeks, $5,000 stipends) with mentorship from graduate students. We will recruit 50% of undergraduates from groups underrepresented in STEM through partnerships with 4 historically Black colleges and universities (HBCUs). Students will present results at the Annual Biogeographical Research Conference and co-author peer-reviewed publications.
+**1. Education and Training**: We will train 5 PhD students and 10 undergraduates in interdisciplinary coastal science, emphasising field methods, remote sensing, and quantitative modelling. Undergraduates will participate through summer research internships (10 weeks, $5,000 stipends) with mentorship from graduate students. We will recruit 50% of undergraduates from groups underrepresented in STEM through partnerships with 4 historically Black colleges and universities (HBCUs). Students will present results at the Annual Biogeographical Research Conference and co-author peer-reviewed publications.
 
-**2. Stakeholder Engagement and Policy Impact**: We will partner with 5 state coastal management agencies and The Nature Conservancy to translate research findings into management tools. Annual workshops will bring together 30 coastal managers, conservation practitioners, and researchers to co-develop decision-support frameworks. Results will inform state sea level rise adaptation plans, wetland restoration prioritization, and land acquisition strategies affecting 500,000 acres of coastal habitat.
+**2. Stakeholder Engagement and Policy Impact**: We will partner with 5 state coastal management agencies and The Nature Conservancy to translate research findings into management tools. Annual workshops will bring together 30 coastal managers, conservation practitioners, and researchers to co-develop decision-support frameworks. Results will inform state sea level rise adaptation plans, wetland restoration prioritisation, and land acquisition strategies affecting 500,000 acres of coastal habitat.
 
-**3. Public Science Communication**: We will create a publicly accessible web-based visualization tool showing projected wetland changes under different climate scenarios for the entire Atlantic coast. The tool will be promoted through social media, state agency websites, and science museums, with expected reach of 50,000 users. We will also develop bilingual (English/Spanish) educational materials for K-12 teachers, piloted in 10 schools serving predominantly underrepresented students.
+**3. Public Science Communication**: We will create a publicly accessible web-based visualisation tool showing projected wetland changes under different climate scenarios for the entire Atlantic coast. The tool will be promoted through social media, state agency websites, and science museums, with expected reach of 50,000 users. We will also develop bilingual (English/Spanish) educational materials for K-12 teachers, piloted in 10 schools serving predominantly underrepresented students.
 
 Impact will be assessed through pre/post surveys of student participants, tracking of research participants into STEM careers, documentation of policy adoptions by management agencies, and analytics on public engagement platform usage.
 

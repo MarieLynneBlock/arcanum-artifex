@@ -1,8 +1,8 @@
-# Protein Sequence Optimization
+# Protein Sequence Optimisation
 
 ## Overview
 
-Before submitting protein sequences for experimental testing, use computational tools to optimize sequences for improved expression, solubility, and stability. This pre-screening reduces experimental costs and increases success rates.
+Before submitting protein sequences for experimental testing, use computational tools to optimise sequences for improved expression, solubility, and stability. This pre-screening reduces experimental costs and increases success rates.
 
 ## Common Protein Expression Problems
 
@@ -56,10 +56,10 @@ def check_cysteines(sequence):
 
 **Solution:**
 - Use solubility prediction tools for pre-screening
-- Apply sequence optimization algorithms
+- Apply sequence optimisation algorithms
 - Add solubilizing tags if needed
 
-## Computational Tools for Optimization
+## Computational Tools for Optimisation
 
 ### NetSolP - Initial Solubility Screening
 
@@ -98,7 +98,7 @@ print(f"Solubility score: {result['score']}")
 **When to use:**
 - First-pass filtering of large libraries
 - Quick validation of designed sequences
-- Prioritizing sequences for experimental testing
+- Prioritising sequences for experimental testing
 
 ### SoluProt - Comprehensive Solubility Prediction
 
@@ -136,7 +136,7 @@ soluble_variants = [r for r in results if r['predicted_soluble']]
 
 **Interpretation:**
 - Score > 0.6: High solubility confidence
-- Score 0.4-0.6: Uncertain, may need optimization
+- Score 0.4-0.6: Uncertain, may need optimisation
 - Score < 0.4: Likely problematic
 
 **When to use:**
@@ -193,7 +193,7 @@ for i, variant in enumerate(optimized_variants):
 - **Aggressive** (temperature=0.5): More mutations, higher risk
 
 **When to use:**
-- Primary tool for sequence optimization
+- Primary tool for sequence optimisation
 - Default starting point for improving problematic sequences
 - Generating diverse soluble variants
 
@@ -203,7 +203,7 @@ for i, variant in enumerate(optimized_variants):
 - Validate key functional residues are preserved
 - Test multiple temperature settings
 
-### ESM (Evolutionary Scale Modeling) - Sequence Likelihood
+### ESM (Evolutionary Scale Modelling) - Sequence Likelihood
 
 **Purpose:** Assess how "natural" a protein sequence appears based on evolutionary patterns.
 
@@ -402,12 +402,12 @@ else:
 - pSAE > 35%: High aggregation risk
 
 **When to use:**
-- Analyzing designed structures
+- Analysing designed structures
 - Post-AlphaFold validation
 - Identifying aggregation hotspots
 - Guiding surface mutations
 
-## Recommended Optimization Workflow
+## Recommended Optimisation Workflow
 
 ### Step 1: Initial Screening (Fast)
 
@@ -453,7 +453,7 @@ def detailed_assessment(filtered_sequences):
     return results
 ```
 
-### Step 3: Sequence Optimization (If needed)
+### Step 3: Sequence Optimisation (If needed)
 
 ```python
 def optimize_problematic_sequences(sequences_needing_optimization):
@@ -574,7 +574,7 @@ top_sequences_for_testing = optimized_library[:50]
 
 1. **Always pre-screen** before experimental testing
 2. **Use NetSolP first** for fast filtering of large libraries
-3. **Apply SolubleMPNN** as default optimization tool
+3. **Apply SolubleMPNN** as default optimisation tool
 4. **Validate with ESM** to avoid unnatural sequences
 5. **Calculate pSAE** for structure-based validation
 6. **Test multiple variants** per design to account for prediction uncertainty
@@ -583,7 +583,7 @@ top_sequences_for_testing = optimized_library[:50]
 
 ## Integration with Adaptyv
 
-After computational optimization, submit sequences to Adaptyv:
+After computational optimisation, submit sequences to Adaptyv:
 
 ```python
 # After optimization pipeline
@@ -624,11 +624,11 @@ response = requests.post(
 - Lower temperature parameter for conservative changes
 - Manually revert problematic mutations
 
-**Issue: ESM scores are low after optimization**
-- Optimization may be too aggressive
+**Issue: ESM scores are low after optimisation**
+- Optimisation may be too aggressive
 - Try lower temperature in SolubleMPNN
 - Balance between solubility and naturalness
-- Consider that some optimization may require non-natural mutations
+- Consider that some optimisation may require non-natural mutations
 
 **Issue: Predictions don't match experimental results**
 - Predictions are probabilistic, not deterministic

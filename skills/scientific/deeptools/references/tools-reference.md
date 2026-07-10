@@ -1,6 +1,6 @@
 # deepTools Complete Tool Reference
 
-This document provides a comprehensive reference for all deepTools command-line utilities organized by category.
+This document provides a comprehensive reference for all deepTools command-line utilities organised by category.
 
 ## BAM and bigWig File Processing Tools
 
@@ -51,30 +51,30 @@ Similar to multiBamSummary but operates on bigWig files instead of BAM files. Us
 
 ### bamCoverage
 
-Converts BAM alignment files into normalized coverage tracks in bigWig or bedGraph formats. Calculates coverage as number of reads per bin.
+Converts BAM alignment files into normalised coverage tracks in bigWig or bedGraph formats. Calculates coverage as number of reads per bin.
 
 **Key Parameters:**
 - `--bam, -b`: Input BAM file (required)
 - `--outFileName, -o`: Output filename (required)
 - `--outFileFormat, -of`: Output type (bigwig or bedgraph)
-- `--normalizeUsing`: Normalization method
+- `--normalizeUsing`: Normalisation method
   - **RPKM**: Reads Per Kilobase per Million mapped reads
   - **CPM**: Counts Per Million mapped reads
   - **BPM**: Bins Per Million mapped reads
   - **RPGC**: Reads per genomic content (requires --effectiveGenomeSize)
-  - **None**: No normalization (default)
+  - **None**: No normalisation (default)
 - `--effectiveGenomeSize`: Mappable genome size (required for RPGC)
 - `--binSize`: Resolution in base pairs (default: 50)
 - `--extendReads, -e`: Extend reads to fragment length (recommended for ChIP-seq, NOT for RNA-seq)
-- `--centerReads`: Center reads at fragment length for sharper signals
+- `--centerReads`: Centre reads at fragment length for sharper signals
 - `--ignoreDuplicates`: Count identical reads only once
 - `--minMappingQuality`: Filter reads below quality threshold
 - `--minFragmentLength / --maxFragmentLength`: Fragment length filtering
 - `--smoothLength`: Window averaging for noise reduction
-- `--MNase`: Analyze MNase-seq data for nucleosome positioning
+- `--MNase`: Analyse MNase-seq data for nucleosome positioning
 - `--Offset`: Position-specific offsets (useful for RiboSeq, GROseq)
 - `--filterRNAstrand`: Separate forward/reverse strand reads
-- `--ignoreForNormalization`: Exclude chromosomes from normalization (e.g., sex chromosomes)
+- `--ignoreForNormalization`: Exclude chromosomes from normalisation (e.g., sex chromosomes)
 - `--numberOfProcessors, -p`: Parallel processing
 
 **Important Notes:**
@@ -100,7 +100,7 @@ bamCoverage --bam rnaseq.bam --outFileName forward.bw \
 
 ### bamCompare
 
-Compares two BAM files by generating bigWig or bedGraph files, normalizing for sequencing depth differences. Processes genome in equal-sized bins and performs per-bin calculations.
+Compares two BAM files by generating bigWig or bedGraph files, normalising for sequencing depth differences. Processes genome in equal-sized bins and performs per-bin calculations.
 
 **Comparison Methods:**
 - **log2** (default): Log2 ratio of samples
@@ -111,7 +111,7 @@ Compares two BAM files by generating bigWig or bedGraph files, normalizing for s
 - **reciprocal_ratio**: Negative inverse for ratios < 0
 - **first/second**: Output scaled signal from single file
 
-**Normalization Methods:**
+**Normalisation Methods:**
 - **readCount** (default): Compensates for sequencing depth
 - **SES**: Selective enrichment statistics
 - **RPKM**: Reads per kilobase per million
@@ -125,7 +125,7 @@ Compares two BAM files by generating bigWig or bedGraph files, normalizing for s
 - `--outFileName, -o`: Output filename (required)
 - `--outFileFormat`: bigwig or bedgraph
 - `--operation`: Comparison method (see above)
-- `--scaleFactorsMethod`: Normalization method (see above)
+- `--scaleFactorsMethod`: Normalisation method (see above)
 - `--binSize`: Bin width for output (default: 50bp)
 - `--pseudocount`: Avoid division by zero (default: 1)
 - `--extendReads`: Extend reads to fragment length
@@ -190,8 +190,8 @@ Filters BAM files by various quality metrics on-the-fly. Useful for creating fil
 Calculates scores per genomic region and prepares matrices for plotHeatmap and plotProfile. Processes bigWig score files and BED/GTF region files.
 
 **Modes:**
-- **reference-point**: Signal distribution relative to specific position (TSS, TES, or center)
-- **scale-regions**: Signal across regions standardized to uniform lengths
+- **reference-point**: Signal distribution relative to specific position (TSS, TES, or centre)
+- **scale-regions**: Signal across regions standardised to uniform lengths
 
 **Key Parameters:**
 - `-R`: Region file(s) in BED/GTF format (required)
@@ -237,7 +237,7 @@ Quality control tool primarily for ChIP-seq experiments. Assesses whether antibo
 - `--extendReads, -e`: Extend reads to fragment length
 - `--ignoreDuplicates`: Count identical reads once
 - `--minMappingQuality`: Mapping quality filter
-- `--centerReads`: Center reads at fragment length
+- `--centerReads`: Centre reads at fragment length
 - `--minFragmentLength / --maxFragmentLength`: Fragment filters
 - `--outRawCounts`: Save per-bin read counts
 - `--outQualityMetrics`: Output QC metrics (Jensen-Shannon distance)
@@ -260,10 +260,10 @@ plotFingerprint -b input.bam chip1.bam chip2.bam \
 
 ### plotCoverage
 
-Visualizes average read distribution across the genome. Shows genome coverage and helps determine if sequencing depth is adequate.
+Visualises average read distribution across the genome. Shows genome coverage and helps determine if sequencing depth is adequate.
 
 **Key Parameters:**
-- `--bamfiles, -b`: BAM files to analyze (required)
+- `--bamfiles, -b`: BAM files to analyse (required)
 - `--plotFile, -o`: Output plot filename (required)
 - `--ignoreDuplicates`: Remove PCR duplicates
 - `--minMappingQuality`: Quality threshold
@@ -289,14 +289,14 @@ Determines fragment length distribution for paired-end sequencing data. Essentia
 
 ### plotCorrelation
 
-Analyzes sample correlations from multiBamSummary or multiBigwigSummary outputs. Shows how similar different samples are.
+Analyses sample correlations from multiBamSummary or multiBigwigSummary outputs. Shows how similar different samples are.
 
 **Correlation Methods:**
 - **Pearson**: Measures metric differences; sensitive to outliers; appropriate for normally distributed data
 - **Spearman**: Rank-based; less influenced by outliers; better for non-normal distributions
 
-**Visualization Options:**
-- **heatmap**: Color intensity with hierarchical clustering (complete linkage)
+**Visualisation Options:**
+- **heatmap**: Colour intensity with hierarchical clustering (complete linkage)
 - **scatterplot**: Pairwise scatter plots with correlation coefficients
 
 **Key Parameters:**
@@ -309,7 +309,7 @@ Analyzes sample correlations from multiBamSummary or multiBigwigSummary outputs.
 - `--outFileCorMatrix`: Export correlation matrix
 - `--labels`: Custom sample names
 - `--plotTitle`: Plot title
-- `--colorMap`: Color scheme (50+ options)
+- `--colorMap`: Colour scheme (50+ options)
 - `--plotNumbers`: Display correlation values on heatmap
 
 **Common Usage:**
@@ -336,13 +336,13 @@ Generates principal component analysis plots from multiBamSummary or multiBigwig
 - `--labels, -l`: Custom sample labels
 - `--plotTitle, -T`: Plot title
 - `--plotHeight / --plotWidth`: Dimensions in centimeters
-- `--colors`: Custom symbol colors
+- `--colors`: Custom symbol colours
 - `--markers`: Symbol shapes
 - `--transpose`: Perform PCA on transposed matrix (rows=samples)
 - `--ntop`: Use top N variable rows (default: 1000)
 - `--PCs`: Components to plot (default: 1 2)
 - `--log2`: Log2-transform data before analysis
-- `--rowCenter`: Center each row at 0
+- `--rowCenter`: Centre each row at 0
 
 **Common Usage:**
 ```bash
@@ -352,11 +352,11 @@ plotPCA -in readCounts.npz -o PCA_plot.png \
 
 ---
 
-## Visualization Tools
+## Visualisation Tools
 
 ### plotHeatmap
 
-Creates genomic region heatmaps from computeMatrix output. Generates publication-quality visualizations.
+Creates genomic region heatmaps from computeMatrix output. Generates publication-quality visualisations.
 
 **Key Parameters:**
 - `--matrixFile, -m`: Matrix from computeMatrix (required)
@@ -372,12 +372,12 @@ Creates genomic region heatmaps from computeMatrix output. Generates publication
 - `--hclust`: Hierarchical clustering (slower for >1000 regions)
 - `--silhouette`: Calculate cluster quality metrics
 
-**Visual Customization:**
+**Visual Customisation:**
 - `--heatmapHeight / --heatmapWidth`: Dimensions (3-100 cm)
 - `--whatToShow`: plot, heatmap, colorbar (combinations)
 - `--alpha`: Transparency (0-1)
-- `--colorMap`: 50+ color schemes
-- `--colorList`: Custom gradient colors
+- `--colorMap`: 50+ colour schemes
+- `--colorList`: Custom gradient colours
 - `--zMin / --zMax`: Intensity scale limits
 - `--boxAroundHeatmaps`: yes/no (default: yes)
 
@@ -408,7 +408,7 @@ Generates profile plots showing scores across genomic regions using computeMatri
 - `--matrixFile, -m`: Matrix from computeMatrix (required)
 - `--outFileName, -o`: Output image (png, eps, pdf, svg) (required)
 - `--plotType`: lines, fill, se, std, overlapped_lines, heatmap
-- `--colors`: Color palette (names or hex codes)
+- `--colors`: Colour palette (names or hex codes)
 - `--plotHeight / --plotWidth`: Dimensions in centimeters
 - `--yMin / --yMax`: Y-axis range
 - `--averageType`: mean, median, min, max, std, sum
@@ -442,12 +442,12 @@ plotProfile -m matrix.gz -o profile.png --plotType se \
 
 ### plotEnrichment
 
-Calculates and visualizes signal enrichment across genomic regions. Measures percentage of alignments overlapping region groups. Useful for FRiP (Fragment in Peaks) scores.
+Calculates and visualises signal enrichment across genomic regions. Measures percentage of alignments overlapping region groups. Useful for FRiP (Fragment in Peaks) scores.
 
 **Key Parameters:**
 - `--bamfiles, -b`: Indexed BAM files (required)
 - `--BED`: Region files in BED/GTF format (required)
-- `--plotFile, -o`: Output visualization (png, pdf, eps, svg)
+- `--plotFile, -o`: Output visualisation (png, pdf, eps, svg)
 - `--labels, -l`: Custom sample identifiers
 - `--outRawCounts`: Export numerical data
 - `--perSample`: Group by sample instead of feature (default)
@@ -458,7 +458,7 @@ Calculates and visualizes signal enrichment across genomic regions. Measures per
 - `--minMappingQuality`: Quality threshold
 - `--samFlagInclude / --samFlagExclude`: SAM flag filters
 - `--ignoreDuplicates`: Remove duplicates
-- `--centerReads`: Center reads for sharper signal
+- `--centerReads`: Centre reads for sharper signal
 
 **Common Usage:**
 ```bash
@@ -498,10 +498,10 @@ computeMatrixOperations subset -m matrix.gz --samples 0 2 -o subset.gz
 
 ### estimateReadFiltering
 
-Predicts the impact of various filtering parameters without actually filtering. Helps optimize filtering strategies before running full analyses.
+Predicts the impact of various filtering parameters without actually filtering. Helps optimise filtering strategies before running full analyses.
 
 **Key Parameters:**
-- `--bamfiles, -b`: BAM files to analyze
+- `--bamfiles, -b`: BAM files to analyse
 - `--sampleSize`: Number of reads to sample (default: 100,000)
 - `--binSize`: Bin size for analysis
 - `--distanceBetweenBins`: Spacing between sampled bins
@@ -529,5 +529,5 @@ Many deepTools commands share these filtering and performance options:
 
 **Read Processing:**
 - `--extendReads`: Extend to fragment length
-- `--centerReads`: Center at fragment midpoint
+- `--centerReads`: Centre at fragment midpoint
 - `--ignoreDuplicates`: Count unique reads only

@@ -105,9 +105,9 @@ items = [r for r in model.reactions if r.lower_bound < 0]
 "PFK" in model.reactions
 ```
 
-## Optimization
+## Optimisation
 
-### Basic Optimization
+### Basic Optimisation
 
 ```python
 # Full optimization (returns Solution object)

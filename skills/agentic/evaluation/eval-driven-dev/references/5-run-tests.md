@@ -54,8 +54,8 @@ This step is strictly about fixing what you built in previous steps — the data
 
 **What is NOT a mechanical issue** (do NOT fix these here):
 
-- Application produces wrong/low-quality output → that's the application's behavior, analyzed in Step 6
-- Evaluator scores are low → that's a quality signal, analyzed in Step 6
+- Application produces wrong/low-quality output → that's the application's behaviour, analysed in Step 6
+- Evaluator scores are low → that's a quality signal, analysed in Step 6
 - LLM calls fail inside the application → report in Step 6, do not mock or work around
 - Evaluator scores fluctuate between runs → normal LLM non-determinism, not a bug
 

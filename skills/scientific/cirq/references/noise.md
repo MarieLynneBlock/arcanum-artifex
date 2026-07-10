@@ -1,6 +1,6 @@
-# Noise Modeling and Mitigation
+# Noise Modelling and Mitigation
 
-This guide covers noise models, noisy simulation, characterization, and error mitigation in Cirq.
+This guide covers noise models, noisy simulation, characterisation, and error mitigation in Cirq.
 
 ## Noise Channels
 
@@ -78,7 +78,7 @@ circuit = cirq.Circuit(
 )
 ```
 
-### Generalized Amplitude Damping
+### Generalised Amplitude Damping
 
 ```python
 # Generalized amplitude damping
@@ -257,7 +257,7 @@ class ReadoutNoiseModel(cirq.NoiseModel):
 readout_noise = ReadoutNoiseModel(p0_given_1=0.02, p1_given_0=0.01)
 ```
 
-## Noise Characterization
+## Noise Characterisation
 
 ### Randomized Benchmarking
 
@@ -337,9 +337,9 @@ def xeb_fidelity(circuit, simulator, ideal_probs, repetitions=10000):
     return fidelity
 ```
 
-## Noise Visualization
+## Noise Visualisation
 
-### Heatmap Visualization
+### Heatmap Visualisation
 
 ```python
 import matplotlib.pyplot as plt
@@ -374,7 +374,7 @@ noise_metric = {q: np.random.random() * 0.01 for q in device.metadata.qubit_set}
 plot_noise_heatmap(device, noise_metric)
 ```
 
-### Gate Fidelity Visualization
+### Gate Fidelity Visualisation
 
 ```python
 def plot_gate_fidelities(calibration_data):
@@ -506,10 +506,10 @@ result = simulator.run(circuit, repetitions=1000)
 1. **Use density matrix simulator for noisy simulations**: State vector simulators cannot model mixed states
 2. **Match noise model to hardware**: Use calibration data when available
 3. **Include all error sources**: Gate errors, decoherence, readout errors
-4. **Characterize before mitigating**: Understand noise before applying mitigation
+4. **Characterise before mitigating**: Understand noise before applying mitigation
 5. **Consider error propagation**: Noise compounds through circuit depth
 6. **Use appropriate benchmarking**: RB for gate errors, XEB for full circuit fidelity
-7. **Visualize noise patterns**: Identify problematic qubits and gates
+7. **Visualise noise patterns**: Identify problematic qubits and gates
 8. **Apply targeted mitigation**: Focus on dominant error sources
 9. **Validate mitigation**: Verify that mitigation improves results
-10. **Keep circuits shallow**: Minimize noise accumulation
+10. **Keep circuits shallow**: Minimise noise accumulation

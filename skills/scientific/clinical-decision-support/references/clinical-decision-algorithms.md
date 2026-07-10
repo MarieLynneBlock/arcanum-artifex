@@ -11,7 +11,7 @@ Clinical decision algorithms provide systematic, step-by-step guidance for diagn
 **Decision Nodes**
 - **Question/Criteria**: Clear, measurable clinical parameter
 - **Binary vs Multi-Way**: Yes/no (simple) vs multiple options (complex)
-- **Objective**: Lab value, imaging finding vs Subjective: Clinical judgment
+- **Objective**: Lab value, imaging finding vs Subjective: Clinical judgement
 
 **Action Nodes**
 - **Treatment**: Specific intervention with dosing
@@ -42,7 +42,7 @@ Clinical decision algorithms provide systematic, step-by-step guidance for diagn
 - Maximum 7 decision points per pathway (cognitive load)
 - Visual hierarchy (most common path highlighted)
 - Printable single-page format preferred
-- Color coding for urgency/safety
+- Colour coding for urgency/safety
 
 **Completeness**
 - All possible scenarios covered
@@ -416,7 +416,7 @@ Clinical Application:
 \tikzstyle{io} = [trapezium, draw, fill=purple!20, text width=5em, text centered, minimum height=3em]
 ```
 
-**Color Coding by Urgency**
+**Colour Coding by Urgency**
 - **Red**: Life-threatening, immediate action required
 - **Orange**: Urgent, action within hours
 - **Yellow**: Semi-urgent, action within 24-48 hours
@@ -507,7 +507,7 @@ Clinical Application:
 **Outcome Metrics**
 - Appropriateness of care (concordance with guidelines)
 - Clinical outcomes (mortality, morbidity, readmissions)
-- Resource utilization (length of stay, unnecessary tests)
+- Resource utilisation (length of stay, unnecessary tests)
 - Safety (adverse events, errors)
 
 **User Experience Metrics**
@@ -550,7 +550,7 @@ Clinical Application:
 **Mitigation Strategies**
 - Simplify algorithms (≤7 decision points per pathway preferred)
 - Champion network (local opinion leaders promoting algorithm)
-- Customize to local context (allow flexibility for clinical judgment)
+- Customise to local context (allow flexibility for clinical judgement)
 - Measure and report outcomes (demonstrate value)
 - Provide resources (ensure algorithm-recommended options available)
 
@@ -593,7 +593,7 @@ Next Review Date: July 1, 2024
 
 **Routine Updates (Annually)**
 - Minor evidence updates
-- Optimization based on local performance data
+- Optimisation based on local performance data
 - Formatting or usability improvements
 - Addition of new clinical scenarios encountered
 

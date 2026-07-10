@@ -9,7 +9,7 @@ Vectorized environments stack multiple independent environment instances into a 
 **Benefits:**
 - **Speed:** Parallel execution significantly accelerates training
 - **Sample efficiency:** Collect more diverse experiences faster
-- **Required for:** Frame stacking and normalization wrappers
+- **Required for:** Frame stacking and normalisation wrappers
 - **Better for:** On-policy algorithms (PPO, A2C)
 
 ## VecEnv Types
@@ -209,7 +209,7 @@ model.learn(total_timesteps=50000)
 
 ### VecNormalize
 
-Normalizes observations and rewards using running statistics.
+Normalises observations and rewards using running statistics.
 
 ```python
 from stable_baselines3.common.vec_env import VecNormalize
@@ -250,7 +250,7 @@ model = PPO.load("ppo_pendulum", env=env)
 
 **Important:**
 - Statistics are NOT saved with model - save separately
-- Disable training and reward normalization during evaluation
+- Disable training and reward normalisation during evaluation
 
 ### VecFrameStack
 
@@ -276,7 +276,7 @@ model.learn(total_timesteps=1000000)
 
 ### VecVideoRecorder
 
-Records videos of agent behavior.
+Records videos of agent behaviour.
 
 ```python
 from stable_baselines3.common.vec_env import VecVideoRecorder
@@ -383,7 +383,7 @@ env.set_attr("difficulty", "hard")
 env.set_attr("max_steps", 1000, indices=[1, 3])
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Choosing Number of Environments
 
@@ -409,7 +409,7 @@ env = make_vec_env("Pendulum-v1", n_envs=n_envs)
 model = SAC("MlpPolicy", env, gradient_steps=-1)  # 1 grad step per env step
 ```
 
-### CPU Core Utilization
+### CPU Core Utilisation
 
 ```python
 import multiprocessing
@@ -454,7 +454,7 @@ if __name__ == "__main__":
     env = SubprocVecEnv([make_env for _ in range(4)])
 ```
 
-### Issue: Different behavior between single and vectorized env
+### Issue: Different behaviour between single and vectorized env
 
 **Cause:** Auto-reset in vectorized environments.
 
@@ -498,7 +498,7 @@ env = make_vec_env("CartPole-v1", n_envs=8, vec_env_cls=DummyVecEnv)
    - Divide `eval_freq`, `save_freq` by `n_envs` in callbacks
    - Maintain same `n_steps * n_envs` for on-policy algorithms
 
-3. **Save normalization statistics:**
+3. **Save normalisation statistics:**
    - Always save VecNormalize stats with model
    - Disable training during evaluation
 
@@ -533,7 +533,7 @@ for _ in range(1000):
     obs, rewards, dones, infos = env.step(action)
 ```
 
-### With Normalization
+### With Normalisation
 
 ```python
 from stable_baselines3 import PPO

@@ -4,7 +4,7 @@ This document provides detailed information about the data fields available in H
 
 ## Metabolite Entry Structure
 
-Each HMDB metabolite entry contains 130+ data fields organized into several categories:
+Each HMDB metabolite entry contains 130+ data fields organised into several categories:
 
 ### Chemical Data Fields
 
@@ -90,7 +90,7 @@ For each biofluid (blood, urine, saliva, CSF, feces, sweat):
 
 **Biochemical Context:**
 - `reactions`: Biochemical reactions involving the metabolite
-- `reaction_enzymes`: Enzymes catalyzing reactions
+- `reaction_enzymes`: Enzymes catalysing reactions
 - `cofactors`: Required cofactors
 - `inhibitors`: Known enzyme inhibitors
 

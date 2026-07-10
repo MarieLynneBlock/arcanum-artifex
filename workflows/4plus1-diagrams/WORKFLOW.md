@@ -62,7 +62,7 @@ The workflow extends — does **not** replace — the `4plus1-models` skill work
    3. **If Miro selected**:
       - Use Miro rules from `skills/miro-diagram-generator/SKILL.md`, workflow templates from `templates/miro/`, and per-view conventions from `references/notation-miro.md`.
       - Add a `Canonical source reference` section with the source path and the canonical Mermaid/PlantUML content, so the prompt remains usable when copied outside the repository.
-      - For Physical view, keep the `.puml` as source of truth, then expand its exact elements and relationships into a Sidekick-optimized object manifest before layout instructions. Do not ask Miro to parse raw PlantUML. Zones are allowed as visual grouping only; they must not introduce new infrastructure.
+      - For Physical view, keep the `.puml` as source of truth, then expand its exact elements and relationships into a Sidekick-optimised object manifest before layout instructions. Do not ask Miro to parse raw PlantUML. Zones are allowed as visual grouping only; they must not introduce new infrastructure.
       - For BPMN swimlane process views, enforce the same shared semantic palette mapping via `references/notation-miro.md`.
       - Generate a Miro board setup prompt.
       - Write to `diagrams/miro/<view>-miro-prompt.md`.

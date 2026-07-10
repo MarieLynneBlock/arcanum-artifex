@@ -2,13 +2,13 @@
 
 ## Core Modules
 
-Molfeat is organized into several key modules that provide different aspects of molecular featurization:
+Molfeat is organised into several key modules that provide different aspects of molecular featurization:
 
 - **`molfeat.store`** - Manages model loading, listing, and registration
 - **`molfeat.calc`** - Provides calculators for single-molecule featurization
 - **`molfeat.trans`** - Offers scikit-learn compatible transformers for batch processing
 - **`molfeat.utils`** - Utility functions for data handling
-- **`molfeat.viz`** - Visualization tools for molecular features
+- **`molfeat.viz`** - Visualisation tools for molecular features
 
 ---
 
@@ -51,7 +51,7 @@ Computes molecular fingerprints. Supports 15+ fingerprint methods.
 - `topological` - Topological torsion fingerprints
 - `topological-count` - Counted topological torsions
 
-**Specialized Fingerprints:**
+**Specialised Fingerprints:**
 - `map4` - MinHashed atom-pair fingerprint up to 4 bonds
 - `secfp` - SMILES extended connectivity fingerprint
 - `erg` - Extended reduced graphs
@@ -311,7 +311,7 @@ transformer = store.load("ChemBERTa-77M-MLM")
 - `description` - Model description
 - `version` - Model version
 - `authors` - Model authors
-- `tags` - Categorization tags
+- `tags` - Categorisation tags
 - `usage()` - Display usage examples
 - `load(**kwargs)` - Load the model
 
@@ -421,7 +421,7 @@ loader = DataLoader(dataset, batch_size=32)
 
 ## Performance Tips
 
-1. **Parallelization**: Use `n_jobs=-1` to utilize all CPU cores
+1. **Parallelization**: Use `n_jobs=-1` to utilise all CPU cores
 2. **Batch Processing**: Process multiple molecules at once instead of loops
 3. **Caching**: Leverage built-in caching for pretrained models
 4. **Data Types**: Use float32 instead of float64 when precision allows

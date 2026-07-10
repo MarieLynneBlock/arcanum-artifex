@@ -370,7 +370,7 @@ sync = ProcessSynchronizer('sync.sync')
 z = zarr.open_array('data.zarr', mode='r+', synchronizer=sync)
 ```
 
-**Note:** Synchronization only needed for:
+**Note:** Synchronisation only needed for:
 - Concurrent writes that may span chunk boundaries
 - Not needed for reads (always safe)
 - Not needed if each process writes to separate chunks
@@ -437,7 +437,7 @@ ds = xr.open_zarr('data.zarr')
 ds.to_netcdf('data.nc')
 ```
 
-## Performance Optimization Quick Checklist
+## Performance Optimisation Quick Checklist
 
 1. **Chunk size**: 1-10 MB per chunk
 2. **Chunk shape**: Align with access pattern

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Effective slide design enhances comprehension, maintains audience attention, and ensures your scientific message is communicated clearly. This guide covers visual hierarchy, typography, color theory, layout principles, and accessibility considerations for creating professional scientific presentations.
+Effective slide design enhances comprehension, maintains audience attention, and ensures your scientific message is communicated clearly. This guide covers visual hierarchy, typography, colour theory, layout principles, and accessibility considerations for creating professional scientific presentations.
 
 ## Core Design Principles
 
@@ -38,7 +38,7 @@ GOOD: Three separate slides:
 
 ### 2. Visual Hierarchy
 
-Guide attention to the most important elements through size, color, and position.
+Guide attention to the most important elements through size, colour, and position.
 
 **Hierarchy Levels**:
 1. **Primary**: Main message or key data (largest, highest contrast)
@@ -53,20 +53,20 @@ Guide attention to the most important elements through size, color, and position
 - Supporting text: Medium (18-24pt)
 - Labels and notes: Smallest but legible (14-18pt)
 
-**Color**:
+**Colour**:
 - High contrast for key elements
-- Accent colors for emphasis
-- Muted colors for background or secondary info
+- Accent colours for emphasis
+- Muted colours for background or secondary info
 
 **Position**:
-- Top-left or top-center: Primary content (Western reading pattern)
-- Center: Focal point for key visuals
+- Top-left or top-centre: Primary content (Western reading pattern)
+- Centre: Focal point for key visuals
 - Bottom or sides: Supporting details
 
 **Weight**:
 - Bold for emphasis on key terms
 - Regular weight for body text
-- Light weight for de-emphasized content
+- Light weight for de-emphasised content
 
 ### 3. Consistency
 
@@ -74,7 +74,7 @@ Maintain visual consistency throughout the presentation.
 
 **Elements to Keep Consistent**:
 - **Fonts**: Same font family for all slides
-- **Colors**: Defined color palette (3-5 colors)
+- **Colours**: Defined colour palette (3-5 colours)
 - **Layouts**: Similar slides use same structure
 - **Spacing**: Margins and padding uniform
 - **Style**: Figure formats, bullet styles, numbering
@@ -158,13 +158,13 @@ Caption: 16pt
 
 **Alignment**:
 - **Left-aligned**: Best for body text (natural reading)
-- **Center-aligned**: Titles, short phrases, key messages
+- **Centre-aligned**: Titles, short phrases, key messages
 - **Right-aligned**: Rarely used (occasionally for design balance)
 - **Justified**: Avoid (creates awkward spacing)
 
 **Emphasis**:
 - ✅ **Bold** for key terms (use sparingly)
-- ✅ Color for emphasis (consistent meaning)
+- ✅ Colour for emphasis (consistent meaning)
 - ✅ Size increase for importance
 - ❌ Avoid italics (hard to read from distance)
 - ❌ Avoid underline (confused with hyperlinks)
@@ -201,11 +201,11 @@ BETTER:
 • Largest effect to date
 ```
 
-## Color Theory
+## Colour Theory
 
-### Color Palettes for Scientific Presentations
+### Colour Palettes for Scientific Presentations
 
-**Purpose-Driven Color Selection**:
+**Purpose-Driven Colour Selection**:
 
 **Professional/Academic** (Conservative):
 - Navy blue (#1C3D5A), gray (#4A5568), white (#FFFFFF)
@@ -223,12 +223,12 @@ BETTER:
 - White on dark gray (#2D3748)
 - Use: Large venues, virtual presentations, accessibility priority
 
-**Data Visualization** (Color-blind Safe):
+**Data Visualisation** (Colour-blind Safe):
 - Blue (#0173B2), orange (#DE8F05), green (#029E73), red (#CC78BC)
 - Based on Wong/IBM palettes
 - Use: Figures with categorical data, bar charts, line plots
 
-### Color Psychology in Science
+### Colour Psychology in Science
 
 **Blue**:
 - Associations: Trust, stability, professionalism, intelligence
@@ -238,7 +238,7 @@ BETTER:
 **Green**:
 - Associations: Growth, health, nature, sustainability
 - Use: Biology, environmental science, health outcomes
-- Caution: Avoid red-green combinations (color blindness)
+- Caution: Avoid red-green combinations (colour blindness)
 
 **Red/Orange**:
 - Associations: Energy, urgency, warning, importance
@@ -252,10 +252,10 @@ BETTER:
 
 **Gray**:
 - Associations: Neutrality, professionalism, sophistication
-- Use: Backgrounds, de-emphasized content, grounding
+- Use: Backgrounds, de-emphasised content, grounding
 - Caution: Can feel dull if overused
 
-### Color Contrast and Accessibility
+### Colour Contrast and Accessibility
 
 **WCAG Standards** (Web Content Accessibility Guidelines):
 - **Level AA**: 4.5:1 contrast ratio for normal text
@@ -270,7 +270,7 @@ BETTER:
 **Low Contrast Combinations** (Avoid):
 - ❌ Light gray on white
 - ❌ Yellow on white
-- ❌ Pastel colors on white backgrounds
+- ❌ Pastel colours on white backgrounds
 - ❌ Red on black (difficult to read)
 
 **Testing Contrast**:
@@ -278,19 +278,19 @@ BETTER:
 - Print slide in grayscale (should remain legible)
 - View from distance (simulate audience perspective)
 
-### Color Blindness Considerations
+### Colour Blindness Considerations
 
-**Prevalence**: ~8% of men, ~0.5% of women have color vision deficiency
+**Prevalence**: ~8% of men, ~0.5% of women have colour vision deficiency
 
-**Most Common**: Red-green color blindness (protanopia/deuteranopia)
+**Most Common**: Red-green colour blindness (protanopia/deuteranopia)
 
 **Safe Practices**:
 - ✅ Use blue/orange instead of red/green
-- ✅ Add patterns or shapes in addition to color
-- ✅ Use color AND other differentiators (shape, size, position)
-- ✅ Test with color blindness simulator
+- ✅ Add patterns or shapes in addition to colour
+- ✅ Use colour AND other differentiators (shape, size, position)
+- ✅ Test with colour blindness simulator
 
-**Color-Blind Safe Palettes**:
+**Colour-Blind Safe Palettes**:
 ```
 Primary: Blue (#0173B2)
 Contrast: Orange (#DE8F05)  [NOT green]
@@ -301,7 +301,7 @@ Additional: Magenta (#CC78BC), Teal (#029E73)
 - Don't rely solely on red vs. green lines
 - Use different line styles (solid, dashed, dotted)
 - Use symbols (circle, square, triangle) for scatter plots
-- Label directly on plot rather than color legend only
+- Label directly on plot rather than colour legend only
 
 ## Layout and Composition
 
@@ -323,7 +323,7 @@ Divide slide into 3×3 grid; place key elements at intersections or along lines.
 ```
 
 **Benefits**:
-- More visually interesting than centered layouts
+- More visually interesting than centred layouts
 - Natural eye flow
 - Professional appearance
 - Guides attention strategically
@@ -433,10 +433,10 @@ Use: Multiple related items, comparisons
 - Align right edges of figures
 - Align top edges of items in row
 
-**Center Alignment**:
-- Center title on slide
-- Center key messages
-- Center lone figures
+**Centre Alignment**:
+- Centre title on slide
+- Centre key messages
+- Centre lone figures
 
 **Grid Alignment**:
 - Use invisible grid
@@ -450,7 +450,7 @@ Use: Multiple related items, comparisons
 
 ## Background Design
 
-### Background Colors
+### Background Colours
 
 **Best Practices**:
 
@@ -474,10 +474,10 @@ Use: Multiple related items, comparisons
 - Modern, sophisticated
 - Good for dark venues
 - Reduces eye strain in dark rooms
-- Makes colors pop
+- Makes colours pop
 
 **Disadvantages**:
-- Requires light-colored text
+- Requires light-coloured text
 - Can be difficult in bright rooms
 - Some projectors handle poorly
 
@@ -507,7 +507,7 @@ Use: Multiple related items, comparisons
 
 **Avoid**:
 - Decorative borders
-- Thick, colorful frames
+- Thick, colourful frames
 - Clipart-style elements
 - 3D effects and shadows
 
@@ -523,9 +523,9 @@ Use: Multiple related items, comparisons
 
 **Best Practices**:
 - ✅ Consistent style (all outline or all filled)
-- ✅ Simple, recognizable designs
+- ✅ Simple, recognisable designs
 - ✅ Appropriate size (not too large or small)
-- ✅ Limited color palette matching theme
+- ✅ Limited colour palette matching theme
 - ❌ Avoid clipart or cartoonish graphics (unless appropriate)
 - ❌ Don't use for decoration only (should convey meaning)
 
@@ -564,7 +564,7 @@ Use: Multiple related items, comparisons
 
 **Guidelines**:
 - Keep shapes simple (rectangles, circles, lines)
-- Use brand colors
+- Use brand colours
 - Maintain consistency
 - Avoid 3D effects
 - Don't overuse
@@ -577,7 +577,7 @@ Use: Multiple related items, comparisons
 - **Progressive disclosure**: Reveal bullet points one at a time
 - **Build complex figures**: Add layers incrementally
 - **Show process**: Illustrate sequential steps
-- **Emphasize transitions**: Highlight connections
+- **Emphasise transitions**: Highlight connections
 - **Control pacing**: Prevent audience from reading ahead
 
 **Inappropriate Uses**:
@@ -600,7 +600,7 @@ Use: Multiple related items, comparisons
 - Keep simple (fade or disappear)
 
 **Emphasis**:
-- Color change for highlighting
+- Colour change for highlighting
 - Bold/underline to draw attention
 - Grow slightly for importance
 - Use very sparingly
@@ -653,7 +653,7 @@ Use: Multiple related items, comparisons
 
 **Distracting Backgrounds**:
 - Problem: Competes with content
-- Fix: Simple, solid colors or subtle gradients
+- Fix: Simple, solid colours or subtle gradients
 
 **Overuse of Effects**:
 - Problem: Looks amateurish, distracting
@@ -663,23 +663,23 @@ Use: Multiple related items, comparisons
 - Problem: Appears careless
 - Fix: Use alignment tools, grids, and guides
 
-### Color Mistakes
+### Colour Mistakes
 
 **Insufficient Contrast**:
 - Problem: Hard to read
 - Fix: Test with contrast checker, use dark on light or light on dark
 
-**Too Many Colors**:
+**Too Many Colours**:
 - Problem: Chaotic, unprofessional
-- Fix: Limit to 3-5 colors total
+- Fix: Limit to 3-5 colours total
 
 **Red-Green Combinations**:
-- Problem: Invisible to color-blind audience members
+- Problem: Invisible to colour-blind audience members
 - Fix: Use blue-orange or add patterns/shapes
 
-**Clashing Colors**:
+**Clashing Colours**:
 - Problem: Visually jarring
-- Fix: Use color palette tools, test combinations
+- Fix: Use colour palette tools, test combinations
 
 ## Accessibility
 
@@ -689,12 +689,12 @@ Use: Multiple related items, comparisons
 - High contrast text (minimum 4.5:1, preferably 7:1)
 - Large fonts (minimum 18pt, prefer 24pt+)
 - Simple, clear fonts
-- No reliance on color alone to convey meaning
+- No reliance on colour alone to convey meaning
 
-**Color Blindness**:
+**Colour Blindness**:
 - Avoid red-green combinations
-- Use patterns, shapes, or labels in addition to color
-- Test with color blindness simulator
+- Use patterns, shapes, or labels in addition to colour
+- Test with colour blindness simulator
 - Provide alternative visual cues
 
 **Cognitive Considerations**:
@@ -726,7 +726,7 @@ Use: Multiple related items, comparisons
 ### Step 1: Define Visual Identity
 
 Before creating slides:
-1. **Color palette**: Choose 3-5 colors
+1. **Colour palette**: Choose 3-5 colours
 2. **Fonts**: Select 1-2 font families
 3. **Style**: Decide on overall aesthetic (minimal, bold, traditional)
 4. **Templates**: Create master slides for different types
@@ -739,7 +739,7 @@ Design 4-6 slide layouts:
 3. **Content slide**: Standard text/bullets
 4. **Figure slide**: Large visual focus
 5. **Two-column**: Text + figure side-by-side
-6. **Closing**: Questions, contact, acknowledgments
+6. **Closing**: Questions, contact, acknowledgements
 
 ### Step 3: Apply Consistently
 
@@ -756,7 +756,7 @@ Review checklist:
 - [ ] Every slide has clear focus
 - [ ] Text is minimal and readable
 - [ ] Visual hierarchy is clear
-- [ ] Colors are consistent and accessible
+- [ ] Colours are consistent and accessible
 - [ ] Alignment is precise
 - [ ] White space is adequate
 - [ ] Animations are purposeful
@@ -790,11 +790,11 @@ Review checklist:
 
 ### Design Resources
 
-**Color Tools**:
+**Colour Tools**:
 - Coolors.co: Palette generator
-- Adobe Color: Color scheme creator
+- Adobe Colour: Colour scheme creator
 - WebAIM Contrast Checker: Accessibility testing
-- Coblis: Color blindness simulator
+- Coblis: Colour blindness simulator
 
 **Icon Sources**:
 - Font Awesome: General icons
@@ -810,7 +810,7 @@ Review checklist:
 
 ## Summary Checklist
 
-Before finalizing your slide design:
+Before finalising your slide design:
 
 **Typography**:
 - [ ] Font size ≥18pt minimum, preferably 24pt+ for body
@@ -818,11 +818,11 @@ Before finalizing your slide design:
 - [ ] Sans-serif fonts used throughout
 - [ ] Consistent font family (1-2 max)
 
-**Color**:
+**Colour**:
 - [ ] High contrast text-background (4.5:1 minimum)
-- [ ] Limited color palette (3-5 colors)
-- [ ] Color-blind safe combinations
-- [ ] Consistent color use throughout
+- [ ] Limited colour palette (3-5 colours)
+- [ ] Colour-blind safe combinations
+- [ ] Consistent colour use throughout
 
 **Layout**:
 - [ ] One main idea per slide
@@ -839,7 +839,7 @@ Before finalizing your slide design:
 **Accessibility**:
 - [ ] Readable from back of room
 - [ ] Works in various lighting conditions
-- [ ] No reliance on color alone
+- [ ] No reliance on colour alone
 - [ ] Clear without audio (for recorded talks)
 
 **Professional Polish**:

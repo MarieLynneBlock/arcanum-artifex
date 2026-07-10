@@ -21,7 +21,7 @@ This skill should be used when:
 - Checking statistical assumptions and diagnostics
 - Calculating effect sizes and conducting power analyses
 - Reporting statistical results in APA format
-- Analyzing experimental or observational data for research
+- Analysing experimental or observational data for research
 
 ---
 
@@ -34,7 +34,7 @@ This skill should be used when:
 
 ### 2. Assumption Checking
 - Automatically verify all relevant assumptions before running tests
-- Provide diagnostic visualizations (Q-Q plots, residual plots, box plots)
+- Provide diagnostic visualisations (Q-Q plots, residual plots, box plots)
 - Recommend remedial actions when assumptions are violated
 
 ### 3. Statistical Testing
@@ -192,8 +192,8 @@ Primary libraries for statistical analysis:
 - **scipy.stats**: Core statistical tests
 - **statsmodels**: Advanced regression and diagnostics
 - **pingouin**: User-friendly statistical testing with effect sizes
-- **pymc**: Bayesian statistical modeling
-- **arviz**: Bayesian visualization and diagnostics
+- **pymc**: Bayesian statistical modelling
+- **arviz**: Bayesian visualisation and diagnostics
 
 ### Example Analyses
 
@@ -531,7 +531,7 @@ See `references/bayesian-statistics.md` for comprehensive guidance on:
 
 1. **Intuitive interpretation**: "Given the data, there is a 95% probability the parameter is in this interval"
 2. **Evidence for null**: Can quantify support for no effect
-3. **Flexible**: No p-hacking concerns; can analyze data as it arrives
+3. **Flexible**: No p-hacking concerns; can analyse data as it arrives
 4. **Uncertainty quantification**: Full posterior distribution
 
 ---
@@ -550,7 +550,7 @@ This skill includes comprehensive reference materials:
 
 ### Scripts Directory
 
-- **assumption_checks.py**: Automated assumption checking with visualizations
+- **assumption_checks.py**: Automated assumption checking with visualisations
   - `comprehensive_assumption_check()`: Complete workflow
   - `check_normality()`: Normality testing with Q-Q plots
   - `check_homogeneity_of_variance()`: Levene's test with box plots
@@ -566,7 +566,7 @@ This skill includes comprehensive reference materials:
 3. **Report effect sizes** with confidence intervals
 4. **Report all planned analyses** including non-significant results
 5. **Distinguish statistical from practical significance**
-6. **Visualize data** before and after analysis
+6. **Visualise data** before and after analysis
 7. **Check diagnostics** for regression/ANOVA (residual plots, VIF, etc.)
 8. **Conduct sensitivity analyses** to assess robustness
 9. **Share data and code** for reproducibility
@@ -602,7 +602,7 @@ When beginning a statistical analysis:
 - [ ] Run primary analysis
 - [ ] Calculate effect sizes with confidence intervals
 - [ ] Conduct post-hoc tests if needed (with corrections)
-- [ ] Create visualizations
+- [ ] Create visualisations
 - [ ] Write results following reporting-standards.md
 - [ ] Conduct sensitivity analyses
 - [ ] Share data and code
@@ -619,7 +619,7 @@ For questions about:
 - **Reporting**: See references/reporting-standards.md
 
 **Key textbooks**:
-- Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences*
+- Cohen, J. (1988). *Statistical Power Analysis for the Behavioural Sciences*
 - Field, A. (2013). *Discovering Statistics Using IBM SPSS Statistics*
 - Gelman, A., & Hill, J. (2006). *Data Analysis Using Regression and Multilevel/Hierarchical Models*
 - Kruschke, J. K. (2014). *Doing Bayesian Data Analysis*

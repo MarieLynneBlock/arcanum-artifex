@@ -6,7 +6,7 @@
 3. [Device Selection](#device-selection)
 4. [Device Configuration](#device-configuration)
 5. [Custom Devices](#custom-devices)
-6. [Performance Optimization](#performance-optimization)
+6. [Performance Optimisation](#performance-optimisation)
 
 ## Built-in Simulators
 
@@ -460,7 +460,7 @@ class CustomGate(qml.operation.Operation):
 qml.ops.CustomGate = CustomGate
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Batch Execution
 

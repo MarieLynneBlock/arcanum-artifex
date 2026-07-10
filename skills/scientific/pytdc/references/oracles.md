@@ -1,12 +1,12 @@
 # TDC Molecule Generation Oracles
 
-Oracles are functions that evaluate the quality of generated molecules across specific dimensions. TDC provides 17+ oracle functions for molecular optimization tasks in de novo drug design.
+Oracles are functions that evaluate the quality of generated molecules across specific dimensions. TDC provides 17+ oracle functions for molecular optimisation tasks in de novo drug design.
 
 ## Overview
 
 Oracles measure molecular properties and serve two main purposes:
 
-1. **Goal-Directed Generation**: Optimize molecules to maximize/minimize specific properties
+1. **Goal-Directed Generation**: Optimise molecules to maximise/minimise specific properties
 2. **Distribution Learning**: Evaluate whether generated molecules match desired property distributions
 
 ## Using Oracles
@@ -28,7 +28,7 @@ scores = oracle(['SMILES1', 'SMILES2', 'SMILES3'])
 
 ### Oracle Categories
 
-TDC oracles are organized into several categories based on the molecular property being evaluated.
+TDC oracles are organised into several categories based on the molecular property being evaluated.
 
 ## Biochemical Oracles
 
@@ -175,7 +175,7 @@ score = oracle(smiles)
 
 ## Composite Oracles
 
-Combine multiple properties for multi-objective optimization.
+Combine multiple properties for multi-objective optimisation.
 
 **Isomer Meta**
 ```python
@@ -183,7 +183,7 @@ oracle = Oracle(name='Isomer_Meta')
 score = oracle(smiles)
 ```
 - Evaluates specific isomeric properties
-- Used for stereochemistry optimization
+- Used for stereochemistry optimisation
 
 **Median Molecules**
 ```python
@@ -225,7 +225,7 @@ scores = oracle(smiles_list, training_set)
 - Measures how different generated molecules are from training set
 - Higher scores indicate more novel structures
 
-## Specialized Oracles
+## Specialised Oracles
 
 **ASKCOS - Retrosynthesis Scoring**
 ```python
@@ -254,9 +254,9 @@ score = oracle(smiles)
 - Predicts binding affinity in kcal/mol
 - More negative scores indicate stronger binding
 
-## Multi-Objective Optimization
+## Multi-Objective Optimisation
 
-Combine multiple oracles for multi-property optimization:
+Combine multiple oracles for multi-property optimisation:
 
 ```python
 from tdc import Oracle
@@ -288,7 +288,7 @@ score = multi_objective_score('CC(C)Cc1ccc(cc1)C(C)C(O)=O')
 
 ### Reliability
 - Oracles are ML models trained on specific datasets
-- May not generalize to all chemical spaces
+- May not generalise to all chemical spaces
 - Use multiple oracles to validate results
 
 ### Batch Processing

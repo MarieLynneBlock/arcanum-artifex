@@ -2,7 +2,7 @@
 
 ## Overview
 
-PathML provides efficient data management solutions for handling large-scale pathology datasets through HDF5 storage, tile management strategies, and optimized batch processing workflows. The framework enables seamless storage and retrieval of images, masks, features, and metadata in formats optimized for machine learning pipelines and downstream analysis.
+PathML provides efficient data management solutions for handling large-scale pathology datasets through HDF5 storage, tile management strategies, and optimised batch processing workflows. The framework enables seamless storage and retrieval of images, masks, features, and metadata in formats optimised for machine learning pipelines and downstream analysis.
 
 ## HDF5 Integration
 
@@ -10,7 +10,7 @@ HDF5 (Hierarchical Data Format) is the primary storage format for processed Path
 - Efficient compression and chunked storage
 - Fast random access to subsets of data
 - Support for arbitrarily large datasets
-- Hierarchical organization of heterogeneous data types
+- Hierarchical organisation of heterogeneous data types
 - Cross-platform compatibility
 
 ### Saving to HDF5
@@ -48,7 +48,7 @@ dataset.to_hdf5("processed_dataset.h5")
 
 ### HDF5 File Structure
 
-PathML HDF5 files are organized hierarchically:
+PathML HDF5 files are organised hierarchically:
 
 ```
 processed_dataset.h5
@@ -144,7 +144,7 @@ wsi.generate_tiles(
     pad=False
 )
 ```
-- **Use case:** Segmentation, detection (reduces boundary artifacts)
+- **Use case:** Segmentation, detection (reduces boundary artefacts)
 - **Pros:** Better boundary handling, smoother stitching
 - **Cons:** More tiles, redundant computation
 
@@ -229,7 +229,7 @@ for i in range(len(wsi.tiles)):
 
 ### Directory Structure for Large Projects
 
-Organize pathology projects with consistent structure:
+Organise pathology projects with consistent structure:
 
 ```
 project/
@@ -588,11 +588,11 @@ def validate_files(manifest_path):
 validate_files('metadata/checksums.csv')
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Compression Settings
 
-Optimize HDF5 compression for speed vs. size:
+Optimise HDF5 compression for speed vs. size:
 
 ```python
 import h5py
@@ -628,7 +628,7 @@ with h5py.File('output.h5', 'w') as f:
 
 ### Chunking Strategy
 
-Optimize chunked storage for access patterns:
+Optimise chunked storage for access patterns:
 
 ```python
 # For tile-based access (access one tile at a time)
@@ -698,9 +698,9 @@ subset = features_mmap[1000:2000]  # Only loads requested rows
 
 5. **Version datasets:** Use DVC or similar tools to version large datasets
 
-6. **Optimize storage:** Balance compression level with I/O performance
+6. **Optimise storage:** Balance compression level with I/O performance
 
-7. **Organize by cohort:** Structure directories by study cohort for clarity
+7. **Organise by cohort:** Structure directories by study cohort for clarity
 
 8. **Regular backups:** Back up both data and metadata to remote storage
 
@@ -716,7 +716,7 @@ subset = features_mmap[1000:2000]  # Only loads requested rows
 - Use appropriate data types (uint8 for images vs. float64)
 
 **Issue: Slow HDF5 read/write**
-- Optimize chunk size for access pattern
+- Optimise chunk size for access pattern
 - Reduce compression level for faster I/O
 - Use SSD storage instead of HDD
 - Enable parallel HDF5 with MPI

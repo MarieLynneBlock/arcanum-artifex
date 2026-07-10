@@ -118,7 +118,7 @@ weights = np.array([0.1, 0.2, 0.3])
 gradients = grad_fn(weights)
 ```
 
-### 3. Optimize Parameters
+### 3. Optimise Parameters
 
 ```python
 from pennylane import numpy as np
@@ -189,7 +189,7 @@ shape = StronglyEntanglingLayers.shape(n_layers, n_wires)
 weights = np.random.random(shape)
 ```
 
-## Debugging and Visualization
+## Debugging and Visualisation
 
 ### Print Circuit Structure
 
@@ -216,7 +216,7 @@ For detailed information on specific topics:
 - **Quantum ML**: See `references/quantum-ml.md`
 - **Chemistry applications**: See `references/quantum-chemistry.md`
 - **Device management**: See `references/devices-backends.md`
-- **Optimization**: See `references/optimization.md`
+- **Optimisation**: See `references/optimization.md`
 - **Advanced features**: See `references/advanced-features.md`
 
 ## Resources

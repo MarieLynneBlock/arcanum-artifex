@@ -2,18 +2,18 @@
 
 Quick reference for using the `market_research.sty` style package.
 
-## Color Palette
+## Colour Palette
 
-### Primary Colors
-| Color Name | RGB | Hex | Usage |
+### Primary Colours
+| Colour Name | RGB | Hex | Usage |
 |------------|-----|-----|-------|
 | `primaryblue` | (0, 51, 102) | `#003366` | Headers, titles, links |
 | `secondaryblue` | (51, 102, 153) | `#336699` | Subsections, secondary elements |
 | `lightblue` | (173, 216, 230) | `#ADD8E6` | Key insight box backgrounds |
 | `accentblue` | (0, 120, 215) | `#0078D7` | Accent highlights, opportunity boxes |
 
-### Secondary Colors
-| Color Name | RGB | Hex | Usage |
+### Secondary Colours
+| Colour Name | RGB | Hex | Usage |
 |------------|-----|-----|-------|
 | `accentgreen` | (0, 128, 96) | `#008060` | Market data boxes, positive indicators |
 | `lightgreen` | (200, 230, 201) | `#C8E6C9` | Market data box backgrounds |
@@ -21,8 +21,8 @@ Quick reference for using the `market_research.sty` style package.
 | `alertred` | (198, 40, 40) | `#C62828` | Critical risks |
 | `recommendpurple` | (103, 58, 183) | `#673AB7` | Recommendation boxes |
 
-### Neutral Colors
-| Color Name | RGB | Hex | Usage |
+### Neutral Colours
+| Colour Name | RGB | Hex | Usage |
 |------------|-----|-----|-------|
 | `darkgray` | (66, 66, 66) | `#424242` | Body text |
 | `mediumgray` | (117, 117, 117) | `#757575` | Secondary text |
@@ -407,7 +407,7 @@ Use `\resizebox` or `adjustbox`:
 }
 ```
 
-### Color Not Appearing
+### Colour Not Appearing
 Ensure `xcolor` package is loaded with `[table]` option (already included in style file).
 
 ---

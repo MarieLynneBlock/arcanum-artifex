@@ -264,7 +264,7 @@ Handle relations with few examples:
 
 ### Inductive Learning
 
-Generalize to unseen entities:
+Generalise to unseen entities:
 - KBGAT and other GNN-based methods
 - Use entity features/descriptions
 - Critical for evolving knowledge graphs
@@ -285,7 +285,7 @@ Identify genes associated with diseases:
 1. Model gene-disease-pathway networks
 2. Predict missing gene-disease links
 3. Incorporate protein interactions, expression data
-4. Prioritize candidates for validation
+4. Prioritise candidates for validation
 
 ### Protein Function Prediction
 
@@ -297,7 +297,7 @@ Link proteins to biological processes:
 ## Common Issues and Solutions
 
 **Issue: Poor performance on specific relation types**
-- Solution: Analyze relation patterns, choose appropriate model, or use relation-specific models
+- Solution: Analyse relation patterns, choose appropriate model, or use relation-specific models
 
 **Issue: Overfitting on small graphs**
 - Solution: Reduce embedding dimension, increase regularization, or use simpler models
@@ -306,7 +306,7 @@ Link proteins to biological processes:
 - Solution: Reduce negative samples, use DistMult for efficiency, or implement mini-batch training
 
 **Issue: Cannot handle new entities**
-- Solution: Use inductive models (KBGAT), incorporate entity features, or pre-compute embeddings for new entities based on their neighbors
+- Solution: Use inductive models (KBGAT), incorporate entity features, or pre-compute embeddings for new entities based on their neighbours
 
 ## Best Practices
 
@@ -315,6 +315,6 @@ Link proteins to biological processes:
 3. Tune embedding dimension (typically 500-2000)
 4. Apply regularization to prevent overfitting
 5. Use filtered evaluation metrics
-6. Analyze performance per relation type
+6. Analyse performance per relation type
 7. Consider relation-specific models for heterogeneous graphs
 8. Validate predictions with domain experts

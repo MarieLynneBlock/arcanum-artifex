@@ -13,7 +13,7 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 ## Working Mode
 
 - Prefer updating existing markdown and JSON content over creating new structures.
-- Do not invent product capabilities or undocumented behavior.
+- Do not invent product capabilities or undocumented behaviour.
 - Use `[TODO]` rather than filling gaps with speculation.
 - There is no build or test pipeline; validate changes by checking Markdown links, JSON syntax, YAML frontmatter, and nearby consistency.
 - Use British spelling in prose for customisation-related terms; preserve existing file and folder names even when they use US spelling.
@@ -32,7 +32,7 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 
 ## Standards
 
-- All content must reflect documented Copilot behavior.
+- All content must reflect documented Copilot behaviour.
 - Every skill, workflow, instruction, prompt, and agent must stand alone without runtime links to other repo paths.
 - When an asset depends on other material, vendor the needed files into the asset folder instead of linking outward.
 - The `_blank` suffix on template files is a lab-only convention. Remove it when deploying to real projects.
@@ -41,7 +41,7 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 
 - [README.md](../README.md): top-level source of truth for the repo layout and philosophy.
 - [skills/README.md](../skills/README.md): skill library conventions and deployment locations.
-- [instructions/README.md](../instructions/README.md): instruction-file organization and indexing.
+- [instructions/README.md](../instructions/README.md): instruction-file organisation and indexing.
 - [workflows/README.md](../workflows/README.md): workflow packaging rules and bundled asset expectations.
 - [agents/README.md](../agents/README.md): custom agent taxonomy, placement, and reuse expectations.
 - [prompts/](prompts/): repo-scoped review prompts for skills, agents, and workflows.

@@ -19,12 +19,12 @@ This document provides guidelines for reporting statistical analyses according t
 1. **Hypotheses**: Clearly stated, directional when appropriate
 2. **Sample size justification**: Power analysis or other rationale
 3. **Data collection stopping rule**: When will you stop collecting data?
-4. **Variables**: All variables collected (not just those analyzed)
+4. **Variables**: All variables collected (not just those analysed)
 5. **Exclusion criteria**: Rules for excluding participants/data points
 6. **Statistical analyses**: Planned tests, including:
    - Primary analysis
    - Secondary analyses
-   - Exploratory analyses (labeled as such)
+   - Exploratory analyses (labelled as such)
    - Handling of missing data
    - Multiple comparison corrections
    - Assumption checks
@@ -307,7 +307,7 @@ This document provides guidelines for reporting statistical analyses according t
 - T-tests: Cohen's d or Hedges' g
 - ANOVA: η², η²_p, or ω²
 - Correlation: r (already is an effect size)
-- Regression: β (standardized), R², f²
+- Regression: β (standardised), R², f²
 - Chi-square: Cramér's V or φ
 
 **With confidence intervals**:
@@ -452,7 +452,7 @@ This document provides guidelines for reporting statistical analyses according t
 - [ ] Test statistics with df and p-values
 - [ ] Effect sizes with confidence intervals
 - [ ] All planned analyses reported (including non-significant)
-- [ ] Figures/tables properly formatted and labeled
+- [ ] Figures/tables properly formatted and labelled
 - [ ] Multiple comparisons corrections described
 - [ ] Missing data handling explained
 - [ ] Limitations discussed

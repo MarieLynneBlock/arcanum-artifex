@@ -9,7 +9,7 @@ This document serves two purposes:
 
 **Derive use cases from the capability inventory** in `pixie_qa/00-project-analysis.md`. **Derive eval criteria from the hard problems / failure modes** — not generic quality dimensions like "factuality" or "relevance".
 
-Keep this concise — it's a planning artifact, not a comprehensive spec.
+Keep this concise — it's a planning artefact, not a comprehensive spec.
 
 ---
 
@@ -17,7 +17,7 @@ Keep this concise — it's a planning artifact, not a comprehensive spec.
 
 ### 1. Use cases
 
-List the distinct scenarios the app handles. Derive these from the **capability inventory** in `pixie_qa/00-project-analysis.md` — each capability should map to at least one use case. Each use case becomes a category of dataset items. **Each use case description must be a concise one-liner that conveys both (a) what the input is and (b) what the expected behavior or outcome is.** The description should be specific enough that someone unfamiliar with the app can understand the scenario and its success criteria.
+List the distinct scenarios the app handles. Derive these from the **capability inventory** in `pixie_qa/00-project-analysis.md` — each capability should map to at least one use case. Each use case becomes a category of dataset items. **Each use case description must be a concise one-liner that conveys both (a) what the input is and (b) what the expected behaviour or outcome is.** The description should be specific enough that someone unfamiliar with the app can understand the scenario and its success criteria.
 
 When possible, indicate the **expected difficulty level** for each use case — e.g., "routine" for straightforward cases, "challenging" for edge cases or failure-mode scenarios. This guides dataset creation (Step 4) to include entries across a range of difficulty levels rather than clustering at easy cases.
 
@@ -26,7 +26,7 @@ When possible, indicate the **expected difficulty level** for each use case — 
 - "Reroute to human agent on account lookup difficulties"
 - "Answer billing question using customer's plan details from CRM"
 - "Decline to answer questions outside the support domain"
-- "Summarize research findings including all queried sub-topics"
+- "Summarise research findings including all queried sub-topics"
 
 **Bad use case descriptions (too vague):**
 

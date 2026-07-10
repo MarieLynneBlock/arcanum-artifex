@@ -302,7 +302,7 @@ df.to_sql('edges', conn, if_exists='replace', index=False)
 conn.close()
 ```
 
-## Graph Formats for Visualization
+## Graph Formats for Visualisation
 
 ### DOT Format (Graphviz)
 ```python
@@ -333,7 +333,7 @@ with open('cytoscape.json', 'r') as f:
 G = nx.cytoscape_graph(data)
 ```
 
-## Specialized Formats
+## Specialised Formats
 
 ### Matrix Market Format
 ```python
@@ -372,7 +372,7 @@ nx.write_shp(G, 'network')
 - Best for: Complete graph serialization with all metadata
 
 **JSON** - Web-friendly, JavaScript integration
-- Best for: Web applications, d3.js visualizations
+- Best for: Web applications, d3.js visualisations
 
 **Pickle** - Fast, preserves Python objects, binary
 - Best for: Python-only storage, complex attributes
@@ -383,7 +383,7 @@ nx.write_shp(G, 'network')
 **NumPy/SciPy** - Numerical computation, sparse matrices
 - Best for: Matrix operations, scientific computing
 
-**DOT** - Visualization, Graphviz integration
+**DOT** - Visualisation, Graphviz integration
 - Best for: Creating visual diagrams
 
 ## Performance Considerations

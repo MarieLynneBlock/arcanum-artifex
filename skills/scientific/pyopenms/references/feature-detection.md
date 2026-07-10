@@ -6,7 +6,7 @@ Feature detection identifies persistent signals (chromatographic peaks) in LC-MS
 
 ## Feature Detection Basics
 
-A feature represents a chromatographic peak characterized by:
+A feature represents a chromatographic peak characterised by:
 - m/z value (mass-to-charge ratio)
 - Retention time (RT)
 - Intensity
@@ -50,7 +50,7 @@ ms.FeatureXMLFile().store("features.featureXML", features)
 
 ### Feature Finder for Metabolomics
 
-Optimized for small molecules:
+Optimised for small molecules:
 
 ```python
 # Create feature finder for metabolomics
@@ -371,9 +371,9 @@ for feature in feature_map:
 
 ## Best Practices
 
-### Parameter Optimization
+### Parameter Optimisation
 
-Optimize parameters for your data type:
+Optimise parameters for your data type:
 
 ```python
 # Test different tolerance values
@@ -392,7 +392,7 @@ for tol in mz_tolerances:
 
 ### Visual Inspection
 
-Export features for visualization:
+Export features for visualisation:
 
 ```python
 # Convert to DataFrame for plotting

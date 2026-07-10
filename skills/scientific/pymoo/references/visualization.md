@@ -1,15 +1,15 @@
-# Pymoo Visualization Reference
+# Pymoo Visualisation Reference
 
-Comprehensive reference for visualization capabilities in pymoo.
+Comprehensive reference for visualisation capabilities in pymoo.
 
 ## Overview
 
-Pymoo provides eight visualization types for analyzing multi-objective optimization results. All plots wrap matplotlib and accept standard matplotlib keyword arguments for customization.
+Pymoo provides eight visualisation types for analysing multi-objective optimisation results. All plots wrap matplotlib and accept standard matplotlib keyword arguments for customisation.
 
-## Core Visualization Types
+## Core Visualisation Types
 
 ### 1. Scatter Plots
-**Purpose:** Visualize objective space for 2D, 3D, or higher dimensions
+**Purpose:** Visualise objective space for 2D, 3D, or higher dimensions
 **Best for:** Pareto fronts, solution distributions, algorithm comparisons
 
 **Usage:**
@@ -35,7 +35,7 @@ plot.show()
 - `labels`: Axis labels list
 
 **Add method parameters:**
-- `color`: Color specification
+- `color`: Colour specification
 - `alpha`: Transparency (0-1)
 - `s`: Marker size
 - `marker`: Marker style
@@ -64,11 +64,11 @@ plot.show()
 - `title`: Plot title
 - `figsize`: Figure size
 - `labels`: Objective labels
-- `bounds`: Normalization bounds (min, max) per objective
-- `normalize_each_axis`: Normalize to [0,1] per axis (default: True)
+- `bounds`: Normalisation bounds (min, max) per objective
+- `normalize_each_axis`: Normalise to [0,1] per axis (default: True)
 
 **Best practices:**
-- Normalize for different objective scales
+- Normalise for different objective scales
 - Use transparency for overlapping lines
 - Limit number of solutions for clarity (<1000)
 
@@ -88,7 +88,7 @@ plot.show()
 **Parameters:**
 - `bins`: Number of bins per dimension (default: 20)
 - `cmap`: Colormap name (e.g., "viridis", "plasma", "hot")
-- `norm`: Normalization method
+- `norm`: Normalisation method
 
 **Interpretation:**
 - Bright regions: High solution density
@@ -112,9 +112,9 @@ plot.show()
 ```
 
 **Parameters:**
-- `bounds`: [min, max] per objective for normalization
+- `bounds`: [min, max] per objective for normalisation
 - `labels`: Objective names
-- `reverse`: Reverse specific objectives (for minimization display)
+- `reverse`: Reverse specific objectives (for minimisation display)
 
 **Use cases:**
 - Decision making between few solutions
@@ -137,7 +137,7 @@ plot.show()
 ```
 
 ### 6. Radviz
-**Purpose:** Dimensional reduction for visualization
+**Purpose:** Dimensional reduction for visualisation
 **Best for:** High-dimensional data exploration, pattern recognition
 
 **Mechanism:** Projects high-dimensional points onto 2D circle, dimension anchors on perimeter
@@ -152,7 +152,7 @@ plot.show()
 ```
 
 **Parameters:**
-- `endpoint_style`: Anchor point visualization
+- `endpoint_style`: Anchor point visualisation
 - `labels`: Dimension labels
 
 **Interpretation:**
@@ -161,7 +161,7 @@ plot.show()
 - Clusters: Similar solutions
 
 ### 7. Star Coordinates
-**Purpose:** Alternative high-dimensional visualization
+**Purpose:** Alternative high-dimensional visualisation
 **Best for:** Comparing multi-dimensional datasets
 
 **Mechanism:** Each dimension as axis from origin, points plotted based on values
@@ -181,8 +181,8 @@ plot.show()
 - `labels`: Dimension labels
 
 ### 8. Video/Animation
-**Purpose:** Show optimization progress over time
-**Best for:** Understanding convergence behavior, presentations
+**Purpose:** Show optimisation progress over time
+**Best for:** Understanding convergence behaviour, presentations
 
 **Usage:**
 ```python
@@ -194,10 +194,10 @@ anim.save("optimization_progress.mp4")
 ```
 
 **Requirements:**
-- Algorithm must store history (use `save_history=True` in minimize)
+- Algorithm must store history (use `save_history=True` in minimise)
 - ffmpeg installed for video export
 
-**Customization:**
+**Customisation:**
 - Frame rate
 - Plot type per frame
 - Overlay information (generation, hypervolume, etc.)
@@ -237,9 +237,9 @@ plot.add(
 )
 ```
 
-### Normalization
+### Normalisation
 
-Normalize objectives to [0,1] for fair comparison:
+Normalise objectives to [0,1] for fair comparison:
 
 ```python
 plot = PCP(normalize_each_axis=True, bounds=[min_bounds, max_bounds])
@@ -255,9 +255,9 @@ plot.add(result.F)
 plot.save("my_plot.png", dpi=300)
 ```
 
-## Visualization Selection Guide
+## Visualisation Selection Guide
 
-**Choose visualization based on:**
+**Choose visualisation based on:**
 
 | Problem Type | Primary Plot | Secondary Plot |
 |--------------|--------------|----------------|
@@ -274,7 +274,7 @@ plot.save("my_plot.png", dpi=300)
 - PCP + Petal: Population overview + individual solutions
 - Scatter + Video: Final result + convergence process
 
-## Common Visualization Workflows
+## Common Visualisation Workflows
 
 ### 1. Algorithm Comparison
 ```python
@@ -317,7 +317,7 @@ for i, sol in enumerate(candidates):
 plot.show()
 ```
 
-### 4. Convergence Visualization
+### 4. Convergence Visualisation
 ```python
 from pymoo.optimize import minimize
 
@@ -344,10 +344,10 @@ plot.show()
 ## Tips and Best Practices
 
 1. **Use appropriate alpha:** For overlapping points, use `alpha=0.3-0.7`
-2. **Normalize objectives:** Different scales? Normalize for fair visualization
+2. **Normalise objectives:** Different scales? Normalise for fair visualisation
 3. **Label clearly:** Always provide meaningful labels and legends
 4. **Limit data points:** >10000 points? Sample or use heatmap
-5. **Color schemes:** Use colorblind-friendly palettes
+5. **Colour schemes:** Use colorblind-friendly palettes
 6. **Save high-res:** Use `dpi=300` for publications
 7. **Interactive exploration:** Consider plotly for interactive plots
 8. **Combine views:** Show multiple perspectives for comprehensive analysis

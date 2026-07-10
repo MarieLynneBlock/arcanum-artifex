@@ -436,7 +436,7 @@ dataloader = DataLoader(dataset, batch_size=16, shuffle=True, num_workers=4)
 
 ## Data Augmentation
 
-Apply augmentations to improve model generalization:
+Apply augmentations to improve model generalisation:
 
 ```python
 import albumentations as A
@@ -663,7 +663,7 @@ train_for_n_epochs(model, train_loader, optimizer, num_epochs=50)
 
 2. **Apply appropriate data augmentation:**
    - Rotate, flip for orientation invariance
-   - Color jitter to handle staining variations
+   - Colour jitter to handle staining variations
    - Elastic deformation for biological variability
 
 3. **Monitor multiple metrics:**
@@ -676,12 +676,12 @@ train_for_n_epochs(model, train_loader, optimizer, num_epochs=50)
    - Focal loss for hard examples
 
 5. **Validate on diverse tissue types:**
-   - Ensure generalization across different tissues
+   - Ensure generalisation across different tissues
    - Test on held-out anatomical sites
 
-6. **Optimize for inference:**
+6. **Optimise for inference:**
    - Export to ONNX for faster deployment
-   - Batch tiles for efficient GPU utilization
+   - Batch tiles for efficient GPU utilisation
    - Use mixed precision (FP16) when possible
 
 7. **Save checkpoints regularly:**

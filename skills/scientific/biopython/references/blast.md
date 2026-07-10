@@ -211,7 +211,7 @@ makedb_cline = NcbimakeblastdbCommandline(
 stdout, stderr = makedb_cline()
 ```
 
-## Analyzing BLAST Results
+## Analysing BLAST Results
 
 ### Extract Best Hits
 

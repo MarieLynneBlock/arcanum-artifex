@@ -80,7 +80,7 @@ python -m inference \
 
 **Use Cases**:
 - Protein structure not available in PDB
-- Modeling mutations or variants
+- Modelling mutations or variants
 - De novo protein design validation
 
 **Note**: ESMFold folding adds computation time (30s-5min depending on sequence length)
@@ -254,7 +254,7 @@ for pose in results/diffdock_poses/*.sdf; do
 done
 ```
 
-### Example: DiffDock + OpenMM Energy Minimization
+### Example: DiffDock + OpenMM Energy Minimisation
 
 ```python
 # minimize_poses.py
@@ -305,7 +305,7 @@ Navigate to `http://localhost:7860` in web browser
 - Upload protein PDB or enter sequence
 - Input ligand SMILES or upload structure
 - Adjust inference parameters via GUI
-- Visualize results interactively
+- Visualise results interactively
 - Download predictions directly
 
 ### Online Alternative
@@ -385,8 +385,8 @@ Or pre-process PDB to include only relevant chains.
 1. **Start Simple**: Test with single complex before batch processing
 2. **GPU Essential**: Use GPU for reasonable performance
 3. **Multiple Samples**: Generate 10-40 samples for robust predictions
-4. **Validate Results**: Use molecular visualization and complementary scoring
+4. **Validate Results**: Use molecular visualisation and complementary scoring
 5. **Consider Confidence**: Use confidence scores for initial ranking, not final decisions
 6. **Iterate Parameters**: Adjust temperature/steps for specific systems
 7. **Pre-compute Embeddings**: For repeated use of same protein
-8. **Combine Tools**: Integrate with scoring functions and energy minimization
+8. **Combine Tools**: Integrate with scoring functions and energy minimisation

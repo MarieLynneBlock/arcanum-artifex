@@ -1,6 +1,6 @@
 # Scanpy Plotting Guide
 
-Comprehensive guide for creating publication-quality visualizations with scanpy.
+Comprehensive guide for creating publication-quality visualisations with scanpy.
 
 ## General Plotting Principles
 
@@ -12,7 +12,7 @@ All scanpy plotting functions follow consistent patterns:
 
 ## Essential Quality Control Plots
 
-### Visualize QC Metrics
+### Visualise QC Metrics
 
 ```python
 # Violin plots for QC metrics
@@ -35,7 +35,7 @@ sc.pl.violin(adata, ['n_genes_by_counts', 'total_counts'],
              groupby='sample', save='_post_filter.pdf')
 ```
 
-## Dimensionality Reduction Visualizations
+## Dimensionality Reduction Visualisations
 
 ### PCA Plots
 
@@ -87,7 +87,7 @@ sc.pl.tsne(adata, color='leiden', legend_loc='right margin', save='_tsne.pdf')
 sc.pl.tsne(adata, color='leiden', save='_tsne_default.pdf')
 ```
 
-## Clustering Visualizations
+## Clustering Visualisations
 
 ### Basic Cluster Plots
 
@@ -115,7 +115,7 @@ sc.tl.dendrogram(adata, groupby='leiden')
 sc.pl.dendrogram(adata, groupby='leiden', save='_dendrogram.pdf')
 ```
 
-## Marker Gene Visualizations
+## Marker Gene Visualisations
 
 ### Ranked Marker Genes
 
@@ -176,7 +176,7 @@ sc.pl.umap(adata, color='CD3D', cmap='Reds',
            vmin=0, vmax=3, save='_umap_cd3d.pdf')
 ```
 
-## Trajectory and Pseudotime Visualizations
+## Trajectory and Pseudotime Visualisations
 
 ### PAGA Plots
 
@@ -208,7 +208,7 @@ sc.pl.heatmap(adata, var_names=genes, groupby='leiden',
               save='_pseudotime_heatmap.pdf')
 ```
 
-## Advanced Visualizations
+## Advanced Visualisations
 
 ### Tracks Plot (Gene Expression Trends)
 
@@ -256,7 +256,7 @@ plt.savefig('figures/multi_panel.pdf')
 plt.show()
 ```
 
-## Publication-Quality Customization
+## Publication-Quality Customisation
 
 ### High-Quality Settings
 
@@ -270,7 +270,7 @@ sc.settings.figdir = './figures/'
 sc.settings.file_format_figs = 'pdf'  # or 'svg'
 ```
 
-### Custom Color Palettes
+### Custom Colour Palettes
 
 ```python
 # Use custom colors
@@ -318,7 +318,7 @@ for gene in ['CD3D', 'CD14', 'MS4A1']:
     sc.pl.umap(adata, color=gene, save=f'_{gene}.pdf')
 ```
 
-## Common Customization Parameters
+## Common Customisation Parameters
 
 ### Layout Parameters
 - `figsize`: Figure size (width, height)
@@ -328,11 +328,11 @@ for gene in ['CD3D', 'CD14', 'MS4A1']:
 - `legend_fontsize`: Font size for legend
 - `size`: Point size
 
-### Color Parameters
-- `color`: Variable(s) to color by
-- `palette`: Color palette (e.g., 'Set1', 'viridis')
+### Colour Parameters
+- `color`: Variable(s) to colour by
+- `palette`: Colour palette (e.g., 'Set1', 'viridis')
 - `cmap`: Colormap for continuous variables
-- `vmin`, `vmax`: Color scale limits
+- `vmin`, `vmax`: Colour scale limits
 - `use_raw`: Use raw counts for gene expression
 
 ### Saving Parameters
@@ -344,9 +344,9 @@ for gene in ['CD3D', 'CD14', 'MS4A1']:
 
 1. **Use vector formats**: PDF or SVG for scalable graphics
 2. **High DPI**: Set dpi=300 or higher for raster images
-3. **Consistent styling**: Use the same color palette across figures
+3. **Consistent styling**: Use the same colour palette across figures
 4. **Clear labels**: Ensure gene names and cell types are readable
 5. **White background**: Use `facecolor='white'` for publications
 6. **Remove clutter**: Set `frameon=False` for cleaner appearance
 7. **Legend placement**: Use 'on data' for compact figures
-8. **Color blind friendly**: Consider palettes like 'colorblind' or 'Set2'
+8. **Colour blind friendly**: Consider palettes like 'colorblind' or 'Set2'

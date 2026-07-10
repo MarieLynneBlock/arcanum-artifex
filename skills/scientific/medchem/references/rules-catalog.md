@@ -1,6 +1,6 @@
-# Medchem Rules and Filters Catalog
+# Medchem Rules and Filters Catalogue
 
-Comprehensive catalog of all available medicinal chemistry rules, structural alerts, and filters in medchem.
+Comprehensive catalogue of all available medicinal chemistry rules, structural alerts, and filters in medchem.
 
 ## Table of Contents
 
@@ -123,7 +123,7 @@ mc.rules.basic_rules.golden_triangle(mol)
 
 **Reference:** Oprea et al., J Chem Inf Comput Sci (2001) 41:1308-1315
 
-**Purpose:** Identify lead-like compounds for optimization
+**Purpose:** Identify lead-like compounds for optimisation
 
 **Criteria:**
 - Molecular Weight: 200-350 Da
@@ -136,7 +136,7 @@ mc.rules.basic_rules.golden_triangle(mol)
 mc.rules.basic_rules.rule_of_oprea(mol)
 ```
 
-**Rationale:** Lead compounds should have "room to grow" during optimization
+**Rationale:** Lead compounds should have "room to grow" during optimisation
 
 ---
 
@@ -195,7 +195,7 @@ mc.rules.basic_rules.rule_of_three(mol)
 ```
 
 **Notes:**
-- Fragments are grown into leads during optimization
+- Fragments are grown into leads during optimisation
 - Lower complexity allows more starting points
 
 ---
@@ -495,7 +495,7 @@ lilly_filter = mc.structural.LillyDemeritsFilters()
 
 ---
 
-### Lead Optimization
+### Lead Optimisation
 
 Recommended filters:
 - Rule of Drug
@@ -568,7 +568,7 @@ complexity_filter = mc.complexity.ComplexityFilter(max_complexity=250)
 - **Modality:** Small molecules vs PROTACs vs molecular glues
 - **Administration Route:** Oral vs IV vs topical
 - **Disease Area:** CNS vs oncology vs infectious disease
-- **Stage:** Screening vs hit-to-lead vs lead optimization
+- **Stage:** Screening vs hit-to-lead vs lead optimisation
 
 ### Complementing with Machine Learning
 

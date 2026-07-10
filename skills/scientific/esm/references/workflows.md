@@ -132,7 +132,7 @@ print(f"\nAnalysis results: {analysis}")
 
 ## Workflow 2: Protein Variant Library Generation
 
-Generate and analyze a library of protein variants for directed evolution.
+Generate and analyse a library of protein variants for directed evolution.
 
 ### Objective
 
@@ -288,9 +288,9 @@ print("Variant library saved to: variant_library.fasta")
 print("Representatives saved to: representative_variants.fasta")
 ```
 
-## Workflow 3: Structure-Based Sequence Optimization
+## Workflow 3: Structure-Based Sequence Optimisation
 
-Optimize a protein sequence to improve stability while maintaining function.
+Optimise a protein sequence to improve stability while maintaining function.
 
 ### Objective
 
@@ -530,7 +530,7 @@ for name, sequence in test_sequences.items():
 
 ## Workflow 5: Embedding-Based Clustering and Analysis
 
-Cluster and analyze a large protein dataset using ESM C embeddings.
+Cluster and analyse a large protein dataset using ESM C embeddings.
 
 ### Complete Implementation
 

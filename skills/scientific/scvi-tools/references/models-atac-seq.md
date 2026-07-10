@@ -1,6 +1,6 @@
 # ATAC-seq and Chromatin Accessibility Models
 
-This document covers models for analyzing single-cell ATAC-seq and chromatin accessibility data in scvi-tools.
+This document covers models for analysing single-cell ATAC-seq and chromatin accessibility data in scvi-tools.
 
 ## PeakVI
 
@@ -14,7 +14,7 @@ This document covers models for analyzing single-cell ATAC-seq and chromatin acc
 - Integrates multiple ATAC-seq datasets
 
 **When to Use**:
-- Analyzing scATAC-seq peak count matrices
+- Analysing scATAC-seq peak count matrices
 - Integrating multiple ATAC-seq experiments
 - Batch correction of chromatin accessibility data
 - Dimensionality reduction for ATAC-seq
@@ -64,14 +64,14 @@ da_results = model.differential_accessibility(
 
 **Outputs**:
 - `get_latent_representation()`: Low-dimensional embeddings for cells
-- `get_accessibility_estimates()`: Normalized accessibility values
+- `get_accessibility_estimates()`: Normalised accessibility values
 - `differential_accessibility()`: Statistical testing for differential peaks
 - `get_region_factors()`: Peak-specific scaling factors
 
 **Best Practices**:
 1. Filter out low-quality peaks (present in very few cells)
 2. Include batch information if integrating multiple samples
-3. Use latent representations for clustering and UMAP visualization
+3. Use latent representations for clustering and UMAP visualisation
 4. Consider using `region_factors=True` for datasets with high technical variation
 5. Store latent embeddings in `adata.obsm` for downstream analysis with scanpy
 
@@ -86,7 +86,7 @@ da_results = model.differential_accessibility(
 - Enables fine-grained analysis of chromatin state
 
 **When to Use**:
-- Analyzing fragment-level ATAC-seq data
+- Analysing fragment-level ATAC-seq data
 - Need quantitative accessibility measurements
 - Higher resolution analysis than binary peak calls
 - Investigating gradual changes in chromatin accessibility
@@ -135,7 +135,7 @@ accessibility = model.get_accessibility_estimates()
 - Want to incorporate DNA sequence information
 - Interested in TF motif analysis
 - Need interpretable models (which sequences drive accessibility)
-- Analyzing regulatory elements and TF binding sites
+- Analysing regulatory elements and TF binding sites
 - Predicting accessibility from sequence alone
 
 **Data Requirements**:
@@ -195,7 +195,7 @@ predictions = model.predict_accessibility(new_sequences)
 - Have peak count matrices (most common format)
 - Need fast, efficient batch correction
 - Want straightforward differential accessibility
-- Prioritize computational efficiency
+- Prioritise computational efficiency
 
 **Advantages**:
 - Fast training and inference
@@ -226,7 +226,7 @@ predictions = model.predict_accessibility(new_sequences)
 **Advantages**:
 - Sequence-based, biologically interpretable
 - Motif and TF analysis built-in
-- Predictive modeling capabilities
+- Predictive modelling capabilities
 - In silico perturbation experiments
 
 ## Workflow Example: Complete ATAC-seq Analysis
@@ -311,7 +311,7 @@ See `models-multimodal.md` for more details on multimodal integration.
    - Larger values for more heterogeneous datasets
 
 5. **Downstream Analysis**:
-   - Use latent representations for clustering and visualization
+   - Use latent representations for clustering and visualisation
    - Link peaks to genes for regulatory analysis
    - Perform motif enrichment on cluster-specific peaks
 

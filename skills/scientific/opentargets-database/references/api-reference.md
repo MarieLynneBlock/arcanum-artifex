@@ -26,7 +26,7 @@ No authentication is required for the GraphQL API. All data is freely accessible
 
 ## Rate Limits
 
-For systematic queries involving multiple targets or diseases, use dataset downloads or BigQuery instead of repeated API calls. The API is optimized for single-entity and exploratory queries.
+For systematic queries involving multiple targets or diseases, use dataset downloads or BigQuery instead of repeated API calls. The API is optimised for single-entity and exploratory queries.
 
 ## GraphQL Query Structure
 
@@ -234,7 +234,7 @@ else:
 
 ## Best Practices
 
-1. **Request only needed fields** - Minimize data transfer and improve response time
+1. **Request only needed fields** - Minimise data transfer and improve response time
 2. **Use variables** - Make queries reusable and safer
 3. **Handle pagination** - Most list fields support pagination with `page: {size: N, index: M}`
 4. **Explore the schema** - Use the GraphQL browser to discover available fields

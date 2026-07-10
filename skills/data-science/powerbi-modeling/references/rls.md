@@ -140,7 +140,7 @@ security_role_operations(
 ## Testing RLS
 
 ### In Power BI Desktop
-1. Modeling tab > View As
+1. Modelling tab > View As
 2. Select role(s) to test
 3. Optionally specify user identity
 4. Verify data filtering
@@ -170,9 +170,9 @@ IF(
 **Problem:** Expensive, doesn't scale
 **Solution:** Create proper relationships, let filters flow
 
-### 3. Expecting Intersection Behavior
+### 3. Expecting Intersection Behaviour
 **Problem:** Multiple roles = UNION (additive), not intersection
-**Solution:** Design roles with union behavior in mind
+**Solution:** Design roles with union behaviour in mind
 
 ### 4. Forgetting About DirectQuery
 **Problem:** RLS filters become WHERE clauses

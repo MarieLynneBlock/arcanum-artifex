@@ -1,6 +1,6 @@
 ---
 name: pennylane
-description: Hardware-agnostic quantum ML framework with automatic differentiation. Use when training quantum circuits via gradients, building hybrid quantum-classical models, or needing device portability across IBM/Google/Rigetti/IonQ. Best for variational algorithms (VQE, QAOA), quantum neural networks, and integration with PyTorch/JAX/TensorFlow. For hardware-specific optimizations use qiskit (IBM) or cirq (Google); for open quantum systems use qutip.
+description: Hardware-agnostic quantum ML framework with automatic differentiation. Use when training quantum circuits via gradients, building hybrid quantum-classical models, or needing device portability across IBM/Google/Rigetti/IonQ. Best for variational algorithms (VQE, QAOA), quantum neural networks, and integration with PyTorch/JAX/TensorFlow. For hardware-specific optimisations use qiskit (IBM) or cirq (Google); for open quantum systems use qutip.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -41,7 +41,7 @@ uv pip install pennylane-ionq
 
 ## Quick Start
 
-Build a quantum circuit and optimize its parameters:
+Build a quantum circuit and optimise its parameters:
 
 ```python
 import pennylane as qml
@@ -92,7 +92,7 @@ Simulate molecules and compute ground state energies. See `references/quantum-ch
 - Molecular Hamiltonian generation
 - Variational Quantum Eigensolver (VQE)
 - UCCSD ansatz for chemistry
-- Geometry optimization and dissociation curves
+- Geometry optimisation and dissociation curves
 - Molecular property calculations
 
 ### 4. Device Management
@@ -101,10 +101,10 @@ Execute on simulators or quantum hardware. See `references/devices-backends.md` 
 - Built-in simulators (default.qubit, lightning.qubit, default.mixed)
 - Hardware plugins (IBM, Amazon Braket, Google, Rigetti, IonQ)
 - Device selection and configuration
-- Performance optimization and caching
+- Performance optimisation and caching
 - GPU acceleration and JIT compilation
 
-### 5. Optimization
+### 5. Optimisation
 
 Train quantum circuits with various optimizers. See `references/optimization.md` for:
 - Built-in optimizers (Adam, gradient descent, momentum, RMSProp)
@@ -117,7 +117,7 @@ Train quantum circuits with various optimizers. See `references/optimization.md`
 
 Leverage templates, transforms, and compilation. See `references/advanced-features.md` for:
 - Circuit templates and layers
-- Transforms and circuit optimization
+- Transforms and circuit optimisation
 - Pulse-level programming
 - Catalyst JIT compilation
 - Noise models and error mitigation
@@ -198,7 +198,7 @@ For comprehensive coverage of specific topics, consult the reference files:
 - **Quantum ML**: `references/quantum-ml.md` - Hybrid models, framework integration, QNNs
 - **Quantum chemistry**: `references/quantum-chemistry.md` - VQE, molecular Hamiltonians, chemistry workflows
 - **Devices**: `references/devices-backends.md` - Simulators, hardware plugins, device configuration
-- **Optimization**: `references/optimization.md` - Optimizers, gradients, variational algorithms
+- **Optimisation**: `references/optimization.md` - Optimizers, gradients, variational algorithms
 - **Advanced**: `references/advanced-features.md` - Templates, transforms, JIT compilation, noise
 
 ## Best Practices
@@ -209,7 +209,7 @@ For comprehensive coverage of specific topics, consult the reference files:
 4. **Initialize carefully** - Use small random values to avoid barren plateaus
 5. **Monitor gradients** - Check for vanishing gradients in deep circuits
 6. **Cache devices** - Reuse device objects to reduce initialization overhead
-7. **Profile circuits** - Use `qml.specs()` to analyze circuit complexity
+7. **Profile circuits** - Use `qml.specs()` to analyse circuit complexity
 8. **Test locally** - Validate on simulators before submitting to hardware
 9. **Use templates** - Leverage built-in templates for common circuit patterns
 10. **Compile when possible** - Use Catalyst JIT for performance-critical code

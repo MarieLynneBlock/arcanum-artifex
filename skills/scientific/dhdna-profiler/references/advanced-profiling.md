@@ -5,7 +5,7 @@
 ### Academic Writing
 
 **Focus dimensions:** Analytical Depth (1), Linguistic Precision (4), Domain Expertise (9), Metacognition (12)
-**Look for:** Citation patterns, argument structure, hedging language, methodological rigor
+**Look for:** Citation patterns, argument structure, hedging language, methodological rigour
 **Typical topology:** Linear or Dialectic
 
 ### Creative Writing
@@ -23,7 +23,7 @@
 ### Technical Documentation
 
 **Focus dimensions:** Analytical Depth (1), Domain Expertise (9), Linguistic Precision (4), Metacognition (12)
-**Look for:** Precision vs. ambiguity ratio, abstraction levels, error acknowledgment
+**Look for:** Precision vs. ambiguity ratio, abstraction levels, error acknowledgement
 **Typical topology:** Linear
 
 ### Personal Journaling / Reflection
@@ -48,7 +48,7 @@ For longitudinal analysis (profiling the same person over time), add the tempora
 
 **String 4: The Temporal Attractor**
 
-- How has this person's cognitive profile shifted over the analyzed time period?
+- How has this person's cognitive profile shifted over the analysed time period?
 - Which dimensions are growing? Which are shrinking?
 - What future cognitive state is the current trajectory pointing toward?
 

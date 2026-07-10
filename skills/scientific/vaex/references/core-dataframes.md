@@ -8,7 +8,7 @@ A Vaex DataFrame is the central data structure for working with large tabular da
 - Use **lazy evaluation** - operations are not executed until needed
 - Work **out-of-core** - data doesn't need to fit in RAM
 - Support **virtual columns** - computed columns with no memory overhead
-- Enable **billion-row-per-second** processing through optimized C++ backend
+- Enable **billion-row-per-second** processing through optimised C++ backend
 
 ## Opening Existing Files
 
@@ -363,5 +363,5 @@ filtered = df[df.x > 10]
 ## Related Resources
 
 - For data manipulation and filtering: See `data-processing.md`
-- For performance optimization: See `performance.md`
+- For performance optimisation: See `performance.md`
 - For file format details: See `io-operations.md`

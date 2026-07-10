@@ -250,7 +250,7 @@ Perplexity models have different pricing tiers:
 - Sonar Reasoning Pro: $0.005-0.010
 - Sonar Pro Search: $0.020-0.050+ (most comprehensive)
 
-**Cost optimization strategies:**
+**Cost optimisation strategies:**
 1. Use `sonar` for simple fact lookups
 2. Default to `sonar-pro` for most queries
 3. Reserve `sonar-pro-search` for complex analysis
@@ -352,7 +352,7 @@ Use with `scientific-critical-thinking` skill:
 3. **Downgrade for simplicity**: Use sonar for basic facts
 4. **Use reasoning models**: When step-by-step analysis needed
 
-### Cost Optimization
+### Cost Optimisation
 
 1. **Choose appropriate models**: Match model to query complexity
 2. **Set token limits**: Use `--max-tokens` to control costs
@@ -439,7 +439,7 @@ This skill provides:
 3. **Simple setup**: Single OpenRouter API key, no separate Perplexity account
 4. **Comprehensive guidance**: Detailed references for query design and model selection
 5. **Cost-effective**: Pay-as-you-go pricing with usage monitoring
-6. **Scientific focus**: Optimized for research, literature search, and technical queries
+6. **Scientific focus**: Optimised for research, literature search, and technical queries
 7. **Easy integration**: Works seamlessly with other scientific skills
 
 Conduct AI-powered web searches to find current information, recent research, and grounded answers with source citations.

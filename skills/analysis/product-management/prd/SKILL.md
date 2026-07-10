@@ -38,7 +38,7 @@ Before writing a single line of the PRD, you **MUST** interrogate the user to fi
 
 ### Phase 2: Analysis & Scoping
 
-Synthesize the user's input. Identify dependencies and hidden complexities.
+Synthesise the user's input. Identify dependencies and hidden complexities.
 
 - Map out the **User Flow**.
 - Define **Non-Goals** to protect the timeline.

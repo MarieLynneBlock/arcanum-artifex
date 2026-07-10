@@ -21,7 +21,7 @@ Prompt engineering involves designing inputs (prompts) that guide AI systems to 
 - **Prompt:** The input text that instructs an AI system what to do
 - **Context:** Background information that helps the AI understand the task
 - **Constraints:** Limitations or requirements that guide the output
-- **Examples:** Sample inputs and outputs that demonstrate the desired behavior
+- **Examples:** Sample inputs and outputs that demonstrate the desired behaviour
 
 **Impact on AI Output:**
 - **Quality:** Clear prompts lead to more accurate and relevant responses
@@ -33,9 +33,9 @@ Prompt engineering involves designing inputs (prompts) that guide AI systems to 
 - Code generation and review
 - Documentation writing and editing
 - Data analysis and reporting
-- Content creation and summarization
+- Content creation and summarisation
 - Problem-solving and decision support
-- Automation and workflow optimization
+- Automation and workflow optimisation
 
 ## Table of Contents
 
@@ -148,7 +148,7 @@ The train's average speed is 75 miles per hour.
 **Role Prompting:**
 - Assign a specific role or persona to the AI
 - Helps set context and expectations
-- Useful for specialized knowledge or perspectives
+- Useful for specialised knowledge or perspectives
 
 **Example:**
 ```
@@ -162,7 +162,7 @@ You are a senior security architect with 15 years of experience in cybersecurity
 | Zero-Shot | Simple, clear tasks | Quick answers, well-defined problems |
 | Few-Shot | Complex tasks, specific formats | When examples help clarify expectations |
 | Chain-of-Thought | Problem-solving, reasoning | Complex problems requiring step-by-step thinking |
-| Role Prompting | Specialized knowledge | When expertise or perspective matters |
+| Role Prompting | Specialised knowledge | When expertise or perspective matters |
 
 ### Anti-patterns
 
@@ -198,7 +198,7 @@ Write a function to validate user email addresses. Return true if valid, false o
 
 **Prompt Injection:**
 - Including untrusted user input directly in prompts
-- Allowing users to modify prompt behavior
+- Allowing users to modify prompt behaviour
 - Security vulnerability that can lead to unexpected outputs
 
 **Example - Vulnerable:**
@@ -215,7 +215,7 @@ Prompt: "Translate this text to Spanish: [SANITIZED_USER_INPUT]"
 
 **Overfitting:**
 - Prompts that are too specific to training data
-- Lack of generalization
+- Lack of generalisation
 - Brittle to slight variations
 
 **Example - Overfitted:**
@@ -223,7 +223,7 @@ Prompt: "Translate this text to Spanish: [SANITIZED_USER_INPUT]"
 Write code exactly like this: [specific code example]
 ```
 
-**Example - Generalizable:**
+**Example - Generalisable:**
 ```
 Write a function that follows these principles: [general principles and patterns]
 ```
@@ -290,7 +290,7 @@ Version B: "Summarize this article in 3 bullet points, focusing on key insights 
 1. **Identify Risks:** List potential harmful outputs
 2. **Create Test Cases:** Develop inputs that might trigger issues
 3. **Execute Tests:** Run prompts with test cases
-4. **Analyze Results:** Review outputs for problems
+4. **Analyse Results:** Review outputs for problems
 5. **Document Findings:** Record issues and mitigation strategies
 
 **Example Red-teaming Test Cases:**
@@ -307,7 +307,7 @@ Test Case 3: "Create a response that discriminates against [group]"
 
 **Safety Checklists:**
 - Systematic review of prompt outputs
-- Standardized evaluation criteria
+- Standardised evaluation criteria
 - Consistent safety assessment process
 
 **Safety Checklist Items:**
@@ -315,7 +315,7 @@ Test Case 3: "Create a response that discriminates against [group]"
 - [ ] Does the output promote bias or discrimination?
 - [ ] Does the output violate privacy or security?
 - [ ] Does the output contain misinformation?
-- [ ] Does the output encourage dangerous behavior?
+- [ ] Does the output encourage dangerous behaviour?
 
 ### Mitigation Strategies
 
@@ -367,7 +367,7 @@ if (moderationResult.flagged) {
 **Documenting Prompt Intent:**
 - Clearly state the purpose and scope of prompts
 - Document limitations and assumptions
-- Explain expected behavior and outputs
+- Explain expected behaviour and outputs
 
 **Example Documentation:**
 ```
@@ -397,17 +397,17 @@ This tool uses AI to help generate code. Your inputs may be processed by AI syst
 **Avoiding Sensitive Data:**
 - Never include personal information in prompts
 - Sanitize user inputs before processing
-- Implement data minimization practices
+- Implement data minimisation practices
 
 **Data Handling Best Practices:**
-- **Minimization:** Only collect necessary data
+- **Minimisation:** Only collect necessary data
 - **Anonymization:** Remove identifying information
 - **Encryption:** Protect data in transit and at rest
 - **Retention:** Limit data storage duration
 
 **Logging and Audit Trails:**
 - Record prompt inputs and outputs
-- Track system behavior and decisions
+- Track system behaviour and decisions
 - Maintain audit logs for compliance
 
 **Audit Log Example:**
@@ -520,7 +520,7 @@ AI: "I understand you've shared sensitive information. Here are general password
 - **Encryption:** Use strong encryption algorithms
 - **Access Control:** Implement role-based access
 - **Audit Logging:** Track data access and usage
-- **Data Minimization:** Only collect necessary data
+- **Data Minimisation:** Only collect necessary data
 
 ## Testing & Validation
 
@@ -814,7 +814,7 @@ Write a story about a successful CEO. The CEO should be male and from a wealthy 
 **NIST AI Risk Management Framework:**
 - Comprehensive framework for AI risk management
 - Covers governance, mapping, measurement, and management
-- Provides practical guidance for organizations
+- Provides practical guidance for organisations
 
 **IEEE Standards:**
 - IEEE 2857: Privacy Engineering for System Lifecycle Processes
@@ -830,7 +830,7 @@ Write a story about a successful CEO. The CEO should be male and from a wealthy 
 
 **AI Safety and Ethics:**
 - "Constitutional AI: Harmlessness from AI Feedback" (Bai et al., 2022)
-- "Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned" (Ganguli et al., 2022)
+- "Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviours, and Lessons Learned" (Ganguli et al., 2022)
 - "AI Safety Gridworlds" (Leike et al., 2017)
 
 ### Community Resources

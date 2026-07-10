@@ -2,7 +2,7 @@
 
 ## Overview
 
-PubChem is the world's largest freely available chemical database maintained by the National Center for Biotechnology Information (NCBI). It contains over 110 million unique chemical structures and over 270 million bioactivities from more than 770 data sources.
+PubChem is the world's largest freely available chemical database maintained by the National Centre for Biotechnology Information (NCBI). It contains over 110 million unique chemical structures and over 270 million bioactivities from more than 770 data sources.
 
 ## Database Structure
 
@@ -307,7 +307,7 @@ except TimeoutError:
 
 ## PUG-View API
 
-PUG-View provides access to full textual annotations and specialized reports.
+PUG-View provides access to full textual annotations and specialised reports.
 
 ### Key Endpoints
 

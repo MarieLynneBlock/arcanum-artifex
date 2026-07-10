@@ -1,15 +1,15 @@
 # Quantum Algorithms and Applications
 
-Qiskit supports a wide range of quantum algorithms for optimization, chemistry, machine learning, and physics simulations.
+Qiskit supports a wide range of quantum algorithms for optimisation, chemistry, machine learning, and physics simulations.
 
 ## Table of Contents
 
-1. [Optimization Algorithms](#optimization-algorithms)
+1. [Optimisation Algorithms](#optimisation-algorithms)
 2. [Chemistry and Materials Science](#chemistry-and-materials-science)
 3. [Machine Learning](#machine-learning)
 4. [Algorithm Libraries](#algorithm-libraries)
 
-## Optimization Algorithms
+## Optimisation Algorithms
 
 ### Variational Quantum Eigensolver (VQE)
 
@@ -17,7 +17,7 @@ VQE finds the minimum eigenvalue of a Hamiltonian using a hybrid quantum-classic
 
 **Use Cases:**
 - Molecular ground state energy
-- Combinatorial optimization
+- Combinatorial optimisation
 - Materials simulation
 
 **Implementation:**
@@ -83,13 +83,13 @@ energy, params = vqe_algorithm(hamiltonian, qc, backend, np.random.rand(10))
 print(f"Ground state energy: {energy}")
 ```
 
-### Quantum Approximate Optimization Algorithm (QAOA)
+### Quantum Approximate Optimisation Algorithm (QAOA)
 
-QAOA solves combinatorial optimization problems like MaxCut, TSP, and graph coloring.
+QAOA solves combinatorial optimisation problems like MaxCut, TSP, and graph colouring.
 
 **Use Cases:**
 - MaxCut problems
-- Portfolio optimization
+- Portfolio optimisation
 - Vehicle routing
 - Scheduling problems
 
@@ -441,9 +441,9 @@ pe = PhaseEstimation(num_evaluation_qubits=3, quantum_instance=backend)
 result = pe.estimate(unitary=unitary, state_preparation=initial_state)
 ```
 
-### Qiskit Optimization
+### Qiskit Optimisation
 
-Optimization problem solvers:
+Optimisation problem solvers:
 
 ```bash
 uv pip install qiskit-optimization
@@ -455,7 +455,7 @@ uv pip install qiskit-optimization
 - Linear programming
 - Constraint satisfaction
 
-**Example: Portfolio Optimization**
+**Example: Portfolio Optimisation**
 ```python
 from qiskit_optimization.applications import PortfolioOptimization
 from qiskit_optimization.algorithms import MinimumEigenOptimizer
@@ -599,7 +599,7 @@ with open(f'checkpoint_{iteration}.json', 'w') as f:
 - [Qiskit Textbook](https://qiskit.org/learn)
 - [Qiskit Nature Documentation](https://qiskit.org/ecosystem/nature)
 - [Qiskit Machine Learning Documentation](https://qiskit.org/ecosystem/machine-learning)
-- [Qiskit Optimization Documentation](https://qiskit.org/ecosystem/optimization)
+- [Qiskit Optimisation Documentation](https://qiskit.org/ecosystem/optimization)
 
 **Research Papers:**
 - VQE: Peruzzo et al., Nature Communications (2014)

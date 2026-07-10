@@ -1,14 +1,14 @@
-# Scientific Color Palettes and Guidelines
+# Scientific Colour Palettes and Guidelines
 
 ## Overview
 
-Color choice in scientific visualization is critical for accessibility, clarity, and accurate data representation. This reference provides colorblind-friendly palettes and best practices for color usage.
+Colour choice in scientific visualisation is critical for accessibility, clarity, and accurate data representation. This reference provides colorblind-friendly palettes and best practices for colour usage.
 
 ## Colorblind-Friendly Palettes
 
 ### Okabe-Ito Palette (Recommended for Categories)
 
-The Okabe-Ito palette is specifically designed to be distinguishable by people with all forms of color blindness.
+The Okabe-Ito palette is specifically designed to be distinguishable by people with all forms of colour blindness.
 
 ```python
 # Okabe-Ito colors (RGB values)
@@ -71,7 +71,7 @@ wong_palette = {
 
 ### Paul Tol Palettes
 
-Paul Tol has designed multiple scientifically-optimized palettes for different use cases.
+Paul Tol has designed multiple scientifically-optimised palettes for different use cases.
 
 **Bright Palette (up to 7 categories):**
 ```python
@@ -96,7 +96,7 @@ Sequential colormaps represent data from low to high values with a single hue.
 
 ### Perceptually Uniform Colormaps
 
-These colormaps have uniform perceptual change across the color scale.
+These colormaps have uniform perceptual change across the colour scale.
 
 **Viridis (default in Matplotlib):**
 - Colorblind-friendly
@@ -107,7 +107,7 @@ plt.imshow(data, cmap='viridis')
 ```
 
 **Cividis:**
-- Optimized for colorblind viewers
+- Optimised for colorblind viewers
 - Designed specifically for deuteranopia/protanopia
 ```python
 plt.imshow(data, cmap='cividis')
@@ -128,7 +128,7 @@ plt.imshow(data, cmap='plasma')
 
 ## Diverging Colormaps (Negative to Positive)
 
-Diverging colormaps have a neutral middle color with two contrasting colors at extremes.
+Diverging colormaps have a neutral middle colour with two contrasting colours at extremes.
 
 ### Colorblind-Safe Diverging Maps
 
@@ -200,15 +200,15 @@ fluorophore_alt = {
 }
 ```
 
-## Color Usage Best Practices
+## Colour Usage Best Practices
 
-### Categorical Data (Qualitative Color Schemes)
+### Categorical Data (Qualitative Colour Schemes)
 
 **Do:**
-- Use distinct, saturated colors from Okabe-Ito or Wong palette
+- Use distinct, saturated colours from Okabe-Ito or Wong palette
 - Limit to 7-8 categories max in one plot
-- Use consistent colors for same categories across figures
-- Add patterns/markers when colors alone might be insufficient
+- Use consistent colours for same categories across figures
+- Add patterns/markers when colours alone might be insufficient
 
 **Don't:**
 - Use red/green combinations
@@ -219,8 +219,8 @@ fluorophore_alt = {
 
 **Do:**
 - Use perceptually uniform colormaps (viridis, plasma, cividis)
-- Choose diverging maps when data has meaningful center point
-- Include colorbar with labeled ticks
+- Choose diverging maps when data has meaningful centre point
+- Include colorbar with labelled ticks
 - Test appearance in grayscale
 
 **Don't:**
@@ -231,11 +231,11 @@ fluorophore_alt = {
 ## Testing for Colorblind Accessibility
 
 ### Online Simulators
-- **Coblis**: https://www.color-blindness.com/coblis-color-blindness-simulator/
-- **Color Oracle**: Free downloadable tool for Windows/Mac/Linux
+- **Coblis**: https://www.colour-blindness.com/coblis-colour-blindness-simulator/
+- **Colour Oracle**: Free downloadable tool for Windows/Mac/Linux
 - **Sim Daltonism**: Mac application
 
-### Types of Color Vision Deficiency
+### Types of Colour Vision Deficiency
 - **Deuteranopia** (~5% of males): Cannot distinguish green
 - **Protanopia** (~2% of males): Cannot distinguish red
 - **Tritanopia** (<1%): Cannot distinguish blue (rare)
@@ -281,7 +281,7 @@ sns.set_palette(tol_muted)
 sns.heatmap(data, cmap='viridis', annot=True)
 ```
 
-### Plotly with Discrete Colors
+### Plotly with Discrete Colours
 ```python
 import plotly.express as px
 
@@ -306,20 +306,20 @@ fig.savefig('figure_gray.png', dpi=300, colormap='gray')
 1. Use different line styles (solid, dashed, dotted)
 2. Use different marker shapes (circles, squares, triangles)
 3. Add hatching patterns to bars
-4. Ensure sufficient luminance contrast between colors
+4. Ensure sufficient luminance contrast between colours
 
-## Color Spaces
+## Colour Spaces
 
 ### RGB vs CMYK
 - **RGB** (Red, Green, Blue): For digital/screen display
 - **CMYK** (Cyan, Magenta, Yellow, Black): For print
 
-**Important:** Colors appear different in print vs. screen. When preparing for print:
-1. Convert to CMYK color space
-2. Check color appearance in CMYK preview
+**Important:** Colours appear different in print vs. screen. When preparing for print:
+1. Convert to CMYK colour space
+2. Check colour appearance in CMYK preview
 3. Ensure sufficient contrast remains
 
-### Matplotlib Color Spaces
+### Matplotlib Colour Spaces
 ```python
 # Save for print (CMYK)
 # Note: Direct CMYK support limited; use PDF and let publisher convert
@@ -333,16 +333,16 @@ fig.savefig('figure.png', dpi=300)
 
 1. **Using jet/rainbow colormap**: Not perceptually uniform; avoid
 2. **Red-green combinations**: ~8% of males cannot distinguish
-3. **Too many colors**: More than 7-8 becomes difficult to distinguish
-4. **Inconsistent color meaning**: Same color should mean same thing across figures
+3. **Too many colours**: More than 7-8 becomes difficult to distinguish
+4. **Inconsistent colour meaning**: Same colour should mean same thing across figures
 5. **Missing colorbar**: Always include for continuous data
-6. **Low contrast**: Ensure colors differ sufficiently
-7. **Relying solely on color**: Add texture, patterns, or markers
+6. **Low contrast**: Ensure colours differ sufficiently
+7. **Relying solely on colour**: Add texture, patterns, or markers
 
 ## Resources
 
 - **ColorBrewer**: http://colorbrewer2.org/ - Choose palettes by colorblind-safe option
 - **Paul Tol's palettes**: https://personal.sron.nl/~pault/
-- **Okabe-Ito palette origin**: "Color Universal Design" (Okabe & Ito, 2008)
-- **Matplotlib colormaps**: https://matplotlib.org/stable/tutorials/colors/colormaps.html
-- **Seaborn palettes**: https://seaborn.pydata.org/tutorial/color_palettes.html
+- **Okabe-Ito palette origin**: "Colour Universal Design" (Okabe & Ito, 2008)
+- **Matplotlib colormaps**: https://matplotlib.org/stable/tutorials/colours/colormaps.html
+- **Seaborn palettes**: https://seaborn.pydata.org/tutorial/colour_palettes.html

@@ -96,7 +96,7 @@ For large queries that exceed pagination limits, use the stream endpoint:
 
 The stream endpoint returns all results without pagination, suitable for downloading complete datasets.
 
-### 5. Customizing Retrieved Fields
+### 5. Customising Retrieved Fields
 
 Specify exactly which fields to retrieve for efficient data transfer.
 
@@ -168,7 +168,7 @@ See `/references/query-syntax.md` for comprehensive syntax documentation.
 2. **Specify format explicitly**: Choose the most appropriate format (FASTA for sequences, TSV for tabular data, JSON for programmatic parsing)
 3. **Use field selection**: Only request fields you need to reduce bandwidth and processing time
 4. **Handle pagination**: For large result sets, implement proper pagination or use the stream endpoint
-5. **Cache results**: Store frequently accessed data locally to minimize API calls
+5. **Cache results**: Store frequently accessed data locally to minimise API calls
 6. **Rate limiting**: Be respectful of API resources; implement delays for large batch operations
 7. **Check data quality**: TrEMBL entries are computational predictions; Swiss-Prot entries are manually reviewed
 
@@ -178,7 +178,7 @@ See `/references/query-syntax.md` for comprehensive syntax documentation.
 `uniprot_client.py` - Python client with helper functions for common UniProt operations including search, retrieval, ID mapping, and streaming.
 
 ### references/
-- `api-fields.md` - Complete list of available fields for customizing queries
+- `api-fields.md` - Complete list of available fields for customising queries
 - `id-mapping-databases.md` - Supported databases for ID mapping operations
 - `query-syntax.md` - Comprehensive query syntax with advanced examples
 - `api-examples.md` - Code examples in multiple languages (Python, curl, R)

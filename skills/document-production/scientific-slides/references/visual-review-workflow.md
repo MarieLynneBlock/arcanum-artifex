@@ -48,12 +48,12 @@ Visual review is a critical quality assurance step for presentations, allowing y
 - Text cut off by shapes or slide edges
 - Images overlapping with text
 - Inconsistent spacing between slides
-- Color rendering differences
+- Colour rendering differences
 - Font substitution problems
 
 **Projection Issues**:
 - Content visible on laptop but cut off when projected
-- Colors looking different on projector
+- Colours looking different on projector
 - Low contrast elements becoming invisible
 - Small details disappearing
 
@@ -62,7 +62,7 @@ Visual review is a critical quality assurance step for presentations, allowing y
 - **Catch layout errors early**: Fix before printing or presenting
 - **Verify readability**: Ensure text is large enough and high contrast
 - **Check consistency**: Spot inconsistencies across slides
-- **Test accessibility**: Verify color contrast and clarity
+- **Test accessibility**: Verify colour contrast and clarity
 - **Validate design**: Ensure professional appearance
 
 ## Conversion: PDF to Images
@@ -126,10 +126,10 @@ python scripts/thumbnail.py presentation.pptx slides/slide --individual
 ```
 
 **Advantages**:
-- Optimized for PowerPoint files
+- Optimised for PowerPoint files
 - Can create overview grids
 - Handles .pptx format directly
-- Customizable layout
+- Customisable layout
 
 ### Method 3: Using ImageMagick
 
@@ -199,7 +199,7 @@ pip install pymupdf
 - Check consistency across similar slides
 - Verify uniform spacing and alignment
 - Ensure consistent font sizes
-- Check color scheme consistency
+- Check colour scheme consistency
 
 **Step 4: Distance Test**
 - View images at reduced size (simulates projection)
@@ -249,7 +249,7 @@ Review each slide for these common problems:
 - [ ] Misaligned text boxes
 - [ ] Uneven margins
 - [ ] Inconsistent element positioning
-- [ ] Off-center titles
+- [ ] Off-centre titles
 - [ ] Unaligned bullet points
 
 **Spacing Problems**:
@@ -259,20 +259,20 @@ Review each slide for these common problems:
 - [ ] Uneven gaps in multi-column layouts
 - [ ] Poor distribution of content
 
-#### Color and Contrast
+#### Colour and Contrast
 
 **Visibility**:
 - [ ] Insufficient contrast (text vs background)
-- [ ] Colors too similar (hard to distinguish)
+- [ ] Colours too similar (hard to distinguish)
 - [ ] Text on busy backgrounds
 - [ ] Light text on light background
 - [ ] Dark text on dark background
 
 **Consistency**:
-- [ ] Inconsistent color schemes between slides
-- [ ] Unexpected color changes
-- [ ] Clashing color combinations
-- [ ] Poor color choices for data visualization
+- [ ] Inconsistent colour schemes between slides
+- [ ] Unexpected colour changes
+- [ ] Clashing colour combinations
+- [ ] Poor colour choices for data visualisation
 
 #### Figures and Graphics
 
@@ -288,7 +288,7 @@ Review each slide for these common problems:
 - [ ] Axis labels too small
 - [ ] Legend text illegible
 - [ ] Complex figures without explanation
-- [ ] Figures not centered or aligned
+- [ ] Figures not centred or aligned
 
 #### Technical Issues
 
@@ -297,7 +297,7 @@ Review each slide for these common problems:
 - [ ] Special characters not displaying
 - [ ] Equations rendering incorrectly
 - [ ] Broken images or missing files
-- [ ] Incorrect colors (RGB vs CMYK)
+- [ ] Incorrect colours (RGB vs CMYK)
 
 **Consistency**:
 - [ ] Slide numbers incorrect or missing
@@ -430,12 +430,12 @@ Slide 8: text problem
 
 ### Issue 3: Poor Contrast
 
-**Problem**: Text difficult to read due to color choices
+**Problem**: Text difficult to read due to colour choices
 
 **Identification**:
 - Squinting required to read text
 - Text fades into background
-- Colors too similar
+- Colours too similar
 
 **Solutions**:
 
@@ -455,7 +455,7 @@ Slide 8: text problem
 ```
 
 **PowerPoint**:
-- Choose high-contrast color combinations
+- Choose high-contrast colour combinations
 - Use dark text on light background or vice versa
 - Avoid pastels for text
 - Test with WebAIM contrast checker
@@ -489,7 +489,7 @@ theme_set(theme_minimal(base_size = 16))
 **PowerPoint**:
 - Minimum 18pt for body text, 24pt preferred
 - Recreate figures with larger labels
-- Use direct labeling instead of legends
+- Use direct labelling instead of legends
 - Simplify complex figures
 - Split dense content across multiple slides
 
@@ -526,7 +526,7 @@ theme_set(theme_minimal(base_size = 16))
 ```
 
 **PowerPoint**:
-- Use alignment tools (Align Left/Center/Right)
+- Use alignment tools (Align Left/Centre/Right)
 - Enable gridlines and guides
 - Use snap to grid
 - Distribute objects evenly
@@ -556,7 +556,7 @@ theme_set(theme_minimal(base_size = 16))
 9. Complete when no critical issues remain
 ```
 
-### Prioritization Strategy
+### Prioritisation Strategy
 
 **Fix Immediately** (Block presentation):
 - Text overflow making content unreadable
@@ -574,7 +574,7 @@ theme_set(theme_minimal(base_size = 16))
 - Minor misalignments
 - Small spacing inconsistencies
 - Cosmetic improvements
-- Non-critical color adjustments
+- Non-critical colour adjustments
 
 ### Stopping Criteria
 
@@ -703,7 +703,7 @@ for slide_num in range(1, 26):
 **Common Oversights**:
 - Backup slides (review these too!)
 - Title slide (first impression matters)
-- Acknowledgments slide (often forgotten)
+- Acknowledgements slide (often forgotten)
 - Last slide (visible during Q&A)
 
 ## Tools and Resources
@@ -733,20 +733,20 @@ for slide_num in range(1, 26):
 - **Colour Contrast Analyser**: Desktop application
 - **Chrome DevTools**: Built-in contrast checking
 
-### Color Blindness Simulators
+### Colour Blindness Simulators
 
-- **Coblis**: https://www.color-blindness.com/coblis-color-blindness-simulator/
-- **Color Oracle**: Free desktop application
-- **Photoshop/GIMP**: Built-in color blindness filters
+- **Coblis**: https://www.colour-blindness.com/coblis-colour-blindness-simulator/
+- **Colour Oracle**: Free desktop application
+- **Photoshop/GIMP**: Built-in colour blindness filters
 
 ## Summary Checklist
 
-Before finalizing your presentation:
+Before finalising your presentation:
 
 **Conversion**:
 - [ ] PDF converted to images at adequate resolution (150-300 DPI)
 - [ ] All slides converted (including backup slides)
-- [ ] Images saved in organized directory
+- [ ] Images saved in organised directory
 
 **Visual Inspection**:
 - [ ] All slides reviewed systematically

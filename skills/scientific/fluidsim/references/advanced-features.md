@@ -220,7 +220,7 @@ sim.time_stepping.start()
         )
 ```
 
-### Analyzing Parametric Studies
+### Analysing Parametric Studies
 
 ```python
 import os
@@ -316,7 +316,7 @@ sim = SimulCustom(params)
 sim.time_stepping.start()
 ```
 
-## Online Visualization
+## Online Visualisation
 
 Display fields during simulation:
 
@@ -360,7 +360,7 @@ sim = Simul(params)
 sim.time_stepping.start()
 ```
 
-## Memory and Performance Optimization
+## Memory and Performance Optimisation
 
 ### Reduce Memory Usage
 
@@ -373,7 +373,7 @@ params.output.periods_save.spect_energy_budg = 0  # disable energy budget
 params.output.periods_save.phys_fields = 10.0  # save less frequently
 ```
 
-### Optimize FFT Performance
+### Optimise FFT Performance
 
 ```python
 import os
@@ -386,7 +386,7 @@ os.environ["FLUIDSIM_TYPE_FFT3D"] = "fft3d.with_fftw"
 # os.environ["FLUIDSIM_TYPE_FFT2D"] = "fft2d.with_mkl"
 ```
 
-### Time Step Optimization
+### Time Step Optimisation
 
 ```python
 # Use adaptive time stepping

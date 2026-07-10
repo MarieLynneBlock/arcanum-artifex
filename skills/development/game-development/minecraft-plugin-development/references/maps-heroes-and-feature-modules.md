@@ -33,7 +33,7 @@ Observed traits:
 
 - one game owns one copied map instance
 - teams are assigned to configured island spawn locations
-- chests are grouped by island, middle, or center role
+- chests are grouped by island, middle, or centre role
 - countdowns control cage removal, game start, refill timing, and game end
 - visibility and chat are scoped to players in the same game instance
 

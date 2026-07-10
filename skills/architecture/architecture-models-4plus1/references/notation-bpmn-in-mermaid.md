@@ -2,7 +2,7 @@
 
 Mermaid doesn't support true BPMN 2.0. For cross-functional process views, we approximate BPMN using Mermaid `flowchart` with subgraphs as swimlanes. This covers ~80% of BPMN use cases and renders everywhere Mermaid renders.
 
-For the remaining 20% (event-subprocess, compensating transactions, full message correlation), push to a real BPMN tool — bpmn.io or Camunda Modeler — and embed the resulting `.png` / `.svg` alongside the Mermaid source.
+For the remaining 20% (event-subprocess, compensating transactions, full message correlation), push to a real BPMN tool — bpmn.io or Camunda Modeller — and embed the resulting `.png` / `.svg` alongside the Mermaid source.
 
 ## When "Mermaid swimlane" is enough
 
@@ -152,7 +152,7 @@ When using Mermaid-swimlane for BPMN, state these caveats in the view doc:
 ## When the user explicitly wants bpmn.io / Camunda output
 
 - Produce a BPMN 2.0 XML file describing the process. Reference: https://github.com/bpmn-io/bpmn-js
-- Recommend the user open it in https://demo.bpmn.io/ or Camunda Modeler to edit visually.
+- Recommend the user open it in https://demo.bpmn.io/ or Camunda Modeller to edit visually.
 - Still produce the Mermaid version alongside for readability in code reviews and Markdown documents.
 
 BPMN XML starter skeleton (the user can import this into bpmn.io):

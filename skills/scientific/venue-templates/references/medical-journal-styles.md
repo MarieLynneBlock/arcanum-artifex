@@ -8,7 +8,7 @@ Comprehensive writing guide for NEJM, Lancet, JAMA, BMJ, Annals of Internal Medi
 
 ## Overview
 
-Medical journals prioritize **clinical relevance**, **patient outcomes**, and **evidence-based practice**. Writing must be precise, evidence-focused, and directly applicable to clinical decision-making.
+Medical journals prioritise **clinical relevance**, **patient outcomes**, and **evidence-based practice**. Writing must be precise, evidence-focused, and directly applicable to clinical decision-making.
 
 ### Key Philosophy
 
@@ -22,7 +22,7 @@ Medical journals prioritize **clinical relevance**, **patient outcomes**, and **
 
 ### Target Reader
 
-- Practicing physicians and clinicians
+- Practising physicians and clinicians
 - Clinical researchers
 - Healthcare policymakers
 - Medical educators
@@ -33,8 +33,8 @@ Medical journals prioritize **clinical relevance**, **patient outcomes**, and **
 | Characteristic | Description |
 |---------------|-------------|
 | **Evidence-focused** | Appropriate hedging based on study design |
-| **Patient-centered** | Focus on patient outcomes, not just biomarkers |
-| **Clinical** | Emphasize practical applicability |
+| **Patient-centred** | Focus on patient outcomes, not just biomarkers |
+| **Clinical** | Emphasise practical applicability |
 | **Precise** | Exact numbers, confidence intervals, NNT |
 | **Measured** | Claims match evidence strength |
 
@@ -50,7 +50,7 @@ Medical journals prioritize **clinical relevance**, **patient outcomes**, and **
 
 ### Overview
 
-Most major medical journals require **structured abstracts** with labeled sections. This is one of the few venues where structured abstracts are expected.
+Most major medical journals require **structured abstracts** with labelled sections. This is one of the few venues where structured abstracts are expected.
 
 ### Standard Structure (IMRAD-based)
 
@@ -280,7 +280,7 @@ cardiovascular event within the past 30 days.
 ### Structure
 
 **Opening: Participant Flow**
-- Screening, enrollment, randomization, follow-up, analysis
+- Screening, enrolment, randomization, follow-up, analysis
 - Reference CONSORT flow diagram
 
 **Baseline Characteristics**
@@ -521,7 +521,7 @@ Standard presentation:
 
 ### Clinical Relevance
 - [ ] Clinical implications stated
-- [ ] Patient-centered outcomes emphasized
+- [ ] Patient-centred outcomes emphasised
 - [ ] Generalizability discussed
 
 ---

@@ -2,7 +2,7 @@
 
 ## Overview
 
-PyTorch Lightning supports multiple logging integrations for experiment tracking and visualization. By default, Lightning uses TensorBoard, but you can easily switch to or combine multiple loggers.
+PyTorch Lightning supports multiple logging integrations for experiment tracking and visualisation. By default, Lightning uses TensorBoard, but you can easily switch to or combine multiple loggers.
 
 ## Supported Loggers
 
@@ -60,7 +60,7 @@ trainer = L.Trainer(logger=wandb_logger)
 **Features:**
 - Cloud-based experiment tracking
 - Model versioning
-- Artifact management
+- Artefact management
 - Collaborative features
 - Hyperparameter sweeps
 
@@ -218,7 +218,7 @@ self.log("batch_size", batch.size(0), reduce_fx="sum")
 ```
 
 #### `sync_dist` (bool)
-Synchronize metric across devices in distributed training. Default: False.
+Synchronise metric across devices in distributed training. Default: False.
 
 ```python
 self.log("loss", loss, sync_dist=True)
@@ -505,7 +505,7 @@ self.log("train_loss", loss, on_step=True, on_epoch=True)
 self.log("val_acc", acc, prog_bar=True)
 ```
 
-### 3. Synchronize Metrics in Distributed Training
+### 3. Synchronise Metrics in Distributed Training
 
 ```python
 # Ensure correct aggregation across GPUs

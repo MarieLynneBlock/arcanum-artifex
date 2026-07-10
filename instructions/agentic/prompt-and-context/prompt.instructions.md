@@ -10,7 +10,7 @@ Instructions for creating effective and maintainable prompt files that guide Git
 ## Scope and Principles
 - Target audience: maintainers and contributors authoring reusable prompts for Copilot Chat.
 - Goals: predictable behaviour, clear expectations, minimal permissions, and portability across repositories.
-- Primary references: VS Code documentation on prompt files and organization-specific conventions.
+- Primary references: VS Code documentation on prompt files and organisation-specific conventions.
 
 ## Frontmatter Requirements
 
@@ -31,7 +31,7 @@ Every prompt file should include YAML frontmatter with the following fields:
 
 - Use consistent quoting (single quotes recommended) and keep one field per line for readability and version control clarity
 - If `tools` are specified and the current agent is `ask` or `edit`, the default agent becomes `agent`
-- Preserve any additional metadata (`language`, `tags`, `visibility`, etc.) required by your organization
+- Preserve any additional metadata (`language`, `tags`, `visibility`, etc.) required by your organisation
 
 ## File Naming and Placement
 - Use kebab-case filenames ending with `.prompt.md` and store them under `.github/prompts/` unless your workspace standard specifies another directory.
@@ -39,7 +39,7 @@ Every prompt file should include YAML frontmatter with the following fields:
 
 ## Body Structure
 - Start with an `#` level heading that matches the prompt intent so it surfaces well in Quick Pick search.
-- Organize content with predictable sections. Recommended baseline: `Mission` or `Primary Directive`, `Scope & Preconditions`, `Inputs`, `Workflow` (step-by-step), `Output Expectations`, and `Quality Assurance`.
+- Organise content with predictable sections. Recommended baseline: `Mission` or `Primary Directive`, `Scope & Preconditions`, `Inputs`, `Workflow` (step-by-step), `Output Expectations`, and `Quality Assurance`.
 - Adjust section names to fit the domain, but retain the logical flow: why → context → inputs → actions → outputs → validation.
 - Reference related prompts or instruction files using relative links to aid discoverability.
 
@@ -54,9 +54,9 @@ Every prompt file should include YAML frontmatter with the following fields:
 - Warn about destructive operations (file creation, edits, terminal commands) and include guard rails or confirmation steps in the workflow.
 
 ## Instruction Tone and Style
-- Write in direct, imperative sentences targeted at Copilot (for example, “Analyze”, “Generate”, “Summarize”).
+- Write in direct, imperative sentences targeted at Copilot (for example, “Analyse”, “Generate”, “Summarise”).
 - Keep sentences short and unambiguous, following Google Developer Documentation translation best practices to support localization.
-- Avoid idioms, humor, or culturally specific references; favor neutral, inclusive language.
+- Avoid idioms, humour, or culturally specific references; favour neutral, inclusive language.
 
 ## Output Definition
 - Specify the format, structure, and location of expected results (for example, “Create `docs/adr/adr-XXXX.md` using the template below”).

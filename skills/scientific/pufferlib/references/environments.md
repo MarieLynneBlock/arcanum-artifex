@@ -196,7 +196,7 @@ PufferLib provides the Ocean suite with 20+ pre-built environments:
 
 #### Arcade Games
 - **Atari**: Classic Atari 2600 games via Arcade Learning Environment
-- **Procgen**: Procedurally generated games for generalization testing
+- **Procgen**: Procedurally generated games for generalisation testing
 
 #### Grid-Based
 - **Minigrid**: Partially observable gridworld environments
@@ -209,7 +209,7 @@ PufferLib provides the Ocean suite with 20+ pre-built environments:
 - **MAgent**: Large-scale multi-agent scenarios
 - **Neural MMO**: Massively multi-agent survival game
 
-#### Specialized
+#### Specialised
 - **Pokemon Red**: Classic Pokemon game environment
 - **GPUDrive**: High-performance driving simulator
 - **Griddly**: Grid-based game engine
@@ -240,7 +240,7 @@ env = pufferlib.make('pettingzoo-knights-archers-zombies', num_agents=4)
 ### Development Workflow
 
 1. **Prototype in Python**: Start with pure Python PufferEnv
-2. **Optimize Critical Paths**: Identify bottlenecks
+2. **Optimise Critical Paths**: Identify bottlenecks
 3. **Implement in C**: Rewrite performance-critical code in C
 4. **Create Bindings**: Use Python C API
 5. **Compile**: Build as extension module
@@ -253,7 +253,7 @@ env = pufferlib.make('pettingzoo-knights-archers-zombies', num_agents=4)
 - **Training with Python env**: ~400k total SPS
 - **Training with C env**: ~4M total SPS
 
-### Python Optimization Tips
+### Python Optimisation Tips
 
 ```python
 # Use NumPy operations instead of Python loops

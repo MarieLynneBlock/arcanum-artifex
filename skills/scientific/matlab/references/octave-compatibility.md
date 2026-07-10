@@ -523,7 +523,7 @@ pkg unload control
 | signal | Signal processing |
 | image | Image processing |
 | statistics | Statistical functions |
-| optim | Optimization algorithms |
+| optim | Optimisation algorithms |
 | io | Input/output functions |
 | struct | Structure manipulation |
 | symbolic | Symbolic math (via SymPy) |

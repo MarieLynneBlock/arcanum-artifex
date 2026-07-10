@@ -42,7 +42,7 @@ NSF evaluates broader impacts across five main areas. **You don't need to addres
 - Service learning projects
 - Maker spaces or hands-on workshops
 
-*Example*: "We will transform our introductory physics course (250 students/year) by implementing studio-style physics instruction based on results from this research. The new curriculum will include 3D visualization tools for electromagnetic fields, inquiry-based problem sets, and peer instruction protocols."
+*Example*: "We will transform our introductory physics course (250 students/year) by implementing studio-style physics instruction based on results from this research. The new curriculum will include 3D visualisation tools for electromagnetic fields, inquiry-based problem sets, and peer instruction protocols."
 
 **Professional Development**:
 - Workshops for faculty or teachers
@@ -110,18 +110,18 @@ NSF evaluates broader impacts across five main areas. **You don't need to addres
 - Open-access databases
 - Software tools and platforms
 - Analysis pipelines
-- Standardized protocols
+- Standardised protocols
 - Data repositories
 
-*Example*: "We will develop and maintain EcoDataHub, an open-source platform for ecological time-series analysis. The platform will include automated data cleaning, standardized analysis workflows, interactive visualization tools, and cloud computing integration. Software will be documented, version-controlled on GitHub, and supported through user forums and quarterly webinars. We expect 1,000+ users within 3 years based on community surveys."
+*Example*: "We will develop and maintain EcoDataHub, an open-source platform for ecological time-series analysis. The platform will include automated data cleaning, standardised analysis workflows, interactive visualisation tools, and cloud computing integration. Software will be documented, version-controlled on GitHub, and supported through user forums and quarterly webinars. We expect 1,000+ users within 3 years based on community surveys."
 
 **Biological or Physical Resources**:
-- Living stock centers (model organisms, cell lines)
+- Living stock centres (model organisms, cell lines)
 - Specimen collections
 - Reagent repositories
 - Seed banks or tissue collections
 
-*Example*: "We will establish a publicly accessible repository of 500 sequenced bacterial strains isolated from extreme environments. Each strain will include full genome sequence, phenotypic characterization, and growth protocols. Materials will be available through the ATCC with metadata deposited in NCBI BioProject."
+*Example*: "We will establish a publicly accessible repository of 500 sequenced bacterial strains isolated from extreme environments. Each strain will include full genome sequence, phenotypic characterisation, and growth protocols. Materials will be available through the ATCC with metadata deposited in NCBI BioProject."
 
 **Standards and Protocols**:
 - Community standards
@@ -130,7 +130,7 @@ NSF evaluates broader impacts across five main areas. **You don't need to addres
 - Quality control metrics
 - Interoperability frameworks
 
-*Example*: "Working with 20 international laboratories, we will develop and validate standardized protocols for single-cell RNA sequencing analysis. The resulting guidelines will address batch effects, quality control, normalization methods, and statistical best practices. Protocols will be published in peer-reviewed literature and deposited in protocols.io."
+*Example*: "Working with 20 international laboratories, we will develop and validate standardised protocols for single-cell RNA sequencing analysis. The resulting guidelines will address batch effects, quality control, normalisation methods, and statistical best practices. Protocols will be published in peer-reviewed literature and deposited in protocols.io."
 
 ### 4. Broadly Disseminate to Enhance Scientific and Technological Understanding
 
@@ -154,7 +154,7 @@ NSF evaluates broader impacts across five main areas. **You don't need to addres
 - Citizen science projects
 - Community workshops
 
-*Example*: "We will collaborate with the Museum of Science and Industry to create a permanent interactive exhibit on climate modeling. The exhibit will allow visitors to manipulate climate variables and observe predicted outcomes using simplified versions of our models. We anticipate 500,000 annual visitors. We will also host quarterly 'Climate Science Saturday' public lectures reaching 2,000 community members annually."
+*Example*: "We will collaborate with the Museum of Science and Industry to create a permanent interactive exhibit on climate modelling. The exhibit will allow visitors to manipulate climate variables and observe predicted outcomes using simplified versions of our models. We anticipate 500,000 annual visitors. We will also host quarterly 'Climate Science Saturday' public lectures reaching 2,000 community members annually."
 
 **Media and Communications**:
 - Blog posts and articles
@@ -172,7 +172,7 @@ NSF evaluates broader impacts across five main areas. **You don't need to addres
 - Stakeholder workshops
 - Regulatory science contributions
 
-*Example*: "We will organize annual workshops bringing together researchers, water utilities, environmental regulators, and community advocates to discuss implications of our research for drinking water policy. Findings will be synthesized into policy briefs distributed to state and federal agencies. PI will participate in the AAAS Science and Technology Policy Fellowship to engage directly with EPA rulemaking."
+*Example*: "We will organise annual workshops bringing together researchers, water utilities, environmental regulators, and community advocates to discuss implications of our research for drinking water policy. Findings will be synthesised into policy briefs distributed to state and federal agencies. PI will participate in the AAAS Science and Technology Policy Fellowship to engage directly with EPA rulemaking."
 
 **Citizen Science**:
 - Community-based data collection
@@ -180,7 +180,7 @@ NSF evaluates broader impacts across five main areas. **You don't need to addres
 - Volunteer monitoring programs
 - Crowdsourcing platforms
 
-*Example*: "We will launch a citizen science program enlisting 500 volunteers across the Midwest to monitor pollinator populations using our smartphone app. Participants will receive training materials, identification guides, and regular feedback on their observations. Data will contribute directly to our research while building public understanding of pollinator ecology. Results will be visualized on an interactive public dashboard."
+*Example*: "We will launch a citizen science program enlisting 500 volunteers across the Midwest to monitor pollinator populations using our smartphone app. Participants will receive training materials, identification guides, and regular feedback on their observations. Data will contribute directly to our research while building public understanding of pollinator ecology. Results will be visualised on an interactive public dashboard."
 
 ### 5. Benefit Society
 
@@ -216,7 +216,7 @@ NSF evaluates broader impacts across five main areas. **You don't need to addres
 *Example*: "Our soil carbon sequestration practices will be implemented on 1,000 acres of working farmland in partnership with 15 Iowa farmers. We will provide training, monitoring support, and carbon credit market access. If successful, practices could sequester 100,000 tons of CO2 equivalent annually if adopted across 10% of Midwest cropland, while increasing farmer income by $50-100/acre through carbon credits."
 
 **National and Homeland Security**:
-- Defense applications
+- Defence applications
 - Cybersecurity
 - Critical infrastructure protection
 - Emergency response
@@ -258,7 +258,7 @@ Years 3-5: National dissemination through CourseSource, workshops at 2 professio
 **Include**:
 - Quantitative metrics (number of participants, downloads, users)
 - Qualitative assessment (surveys, interviews, focus groups)
-- Learning outcomes or behavioral changes
+- Learning outcomes or behavioural changes
 - Longitudinal tracking
 - Comparison to baseline or control groups
 
@@ -271,7 +271,7 @@ Years 3-5: National dissemination through CourseSource, workshops at 2 professio
 - Institutional programs (REU sites, AGEP, LSAMP, etc.)
 - Community partnerships already established
 - Shared facilities or resources
-- Professional societies and organizations
+- Professional societies and organisations
 
 **Example**:
 "We will integrate with our institution's existing NSF REU site in Materials Science, adding 2 additional positions focused on our research area. This leverages established recruitment pipelines with 15 partner institutions, professional development programming, and assessment infrastructure while expanding opportunities for undergraduate researchers."
@@ -285,7 +285,7 @@ Years 3-5: National dissemination through CourseSource, workshops at 2 professio
 - Letters of commitment from partners
 
 **Example**:
-"The university has committed $50,000 annually in cost-share to sustain the high school outreach program beyond the grant period. The program will be integrated into our Center for STEM Education, ensuring administrative support, space, and continuity. Our partner school districts have committed teacher time and classroom access (see letters of commitment in supplementary documents)."
+"The university has committed $50,000 annually in cost-share to sustain the high school outreach program beyond the grant period. The program will be integrated into our Centre for STEM Education, ensuring administrative support, space, and continuity. Our partner school districts have committed teacher time and classroom access (see letters of commitment in supplementary documents)."
 
 ### Align with Research Plan
 
@@ -321,7 +321,7 @@ These are baseline expectations, not broader impacts.
 
 ❌ "We will run a summer camp for underrepresented students."
 
-✅ "We will run a 4-week summer camp for 30 students (60% from underrepresented groups). We will assess impact through pre/post content knowledge tests, science identity surveys, and tracking of STEM course enrollment. We expect 80% of participants to enroll in advanced science courses the following year."
+✅ "We will run a 4-week summer camp for 30 students (60% from underrepresented groups). We will assess impact through pre/post content knowledge tests, science identity surveys, and tracking of STEM course enrolment. We expect 80% of participants to enrol in advanced science courses the following year."
 
 ### Mistake 4: Unrealistic Scope
 
@@ -356,7 +356,7 @@ If proposing extensive broader impacts activities but have no history of such wo
 - **Participant support**: Stipends, travel, housing for students/teachers
 - **Materials and supplies**: Educational materials, outreach equipment, workshop supplies
 - **Travel**: Conference presentations of broader impacts work, site visits to partners
-- **Subawards**: Payments to partnering institutions or organizations
+- **Subawards**: Payments to partnering institutions or organisations
 - **Evaluation**: External evaluator for assessment
 
 **Example Budget**:
@@ -383,10 +383,10 @@ If proposing extensive broader impacts activities but have no history of such wo
 - **SACNAS**: Society for Advancement of Chicanos/Hispanics and Native Americans in Science
 - **ABRCMS**: Annual Biomedical Research Conference for Minority Students
 - **NSBE, SWE, AISES**: Professional societies for underrepresented groups
-- **Science museums and centers**: Partner for public engagement
-- **School districts and community organizations**: For K-12 outreach
+- **Science museums and centres**: Partner for public engagement
+- **School districts and community organisations**: For K-12 outreach
 
 ---
 
-**Key Takeaway**: Effective broader impacts are specific, measurable, assessed, integrated with the research plan, and demonstrate institutional commitment. They should be planned with the same rigor as the research itself, with dedicated resources, timelines, milestones, and evaluation strategies. Generic statements about "training students" or "disseminating results" are insufficient—NSF expects concrete plans that demonstrably benefit society.
+**Key Takeaway**: Effective broader impacts are specific, measurable, assessed, integrated with the research plan, and demonstrate institutional commitment. They should be planned with the same rigour as the research itself, with dedicated resources, timelines, milestones, and evaluation strategies. Generic statements about "training students" or "disseminating results" are insufficient—NSF expects concrete plans that demonstrably benefit society.
 

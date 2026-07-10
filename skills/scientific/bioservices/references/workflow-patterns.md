@@ -18,7 +18,7 @@ This document describes detailed multi-step workflows for common bioinformatics 
 
 **Goal:** Given a protein name, retrieve sequence, find homologs, identify pathways, and discover interactions.
 
-**Example:** Analyzing human ZAP70 protein
+**Example:** Analysing human ZAP70 protein
 
 ### Step 1: UniProt Search and Identifier Retrieval
 
@@ -134,10 +134,10 @@ if kegg_mapping:
 ```
 
 **Output:**
-- path:hsa04064 - NF-kappa B signaling pathway
+- path:hsa04064 - NF-kappa B signalling pathway
 - path:hsa04650 - Natural killer cell mediated cytotoxicity
-- path:hsa04660 - T cell receptor signaling pathway
-- path:hsa04662 - B cell receptor signaling pathway
+- path:hsa04660 - T cell receptor signalling pathway
+- path:hsa04662 - B cell receptor signalling pathway
 
 ### Step 5: Protein-Protein Interactions
 
@@ -210,7 +210,7 @@ if annotations:
 
 ## Pathway Discovery and Network Analysis
 
-**Goal:** Analyze all pathways for an organism and extract protein interaction networks.
+**Goal:** Analyse all pathways for an organism and extract protein interaction networks.
 
 **Example:** Human (hsa) pathway analysis
 
@@ -658,7 +658,7 @@ nx.write_gml(G, "protein_network.gml")
 print("\nNetwork exported to protein_network.gml")
 ```
 
-**Output:** NetworkX graph exported in GML format for Cytoscape visualization.
+**Output:** NetworkX graph exported in GML format for Cytoscape visualisation.
 
 ---
 

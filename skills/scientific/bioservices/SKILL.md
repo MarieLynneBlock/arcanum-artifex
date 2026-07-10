@@ -10,13 +10,13 @@ metadata:
 
 ## Overview
 
-BioServices is a Python package providing programmatic access to approximately 40 bioinformatics web services and databases. Retrieve biological data, perform cross-database queries, map identifiers, analyze sequences, and integrate multiple biological resources in Python workflows. The package handles both REST and SOAP/WSDL protocols transparently.
+BioServices is a Python package providing programmatic access to approximately 40 bioinformatics web services and databases. Retrieve biological data, perform cross-database queries, map identifiers, analyse sequences, and integrate multiple biological resources in Python workflows. The package handles both REST and SOAP/WSDL protocols transparently.
 
 ## When to Use This Skill
 
 This skill should be used when:
 - Retrieving protein sequences, annotations, or structures from UniProt, PDB, Pfam
-- Analyzing metabolic pathways and gene functions via KEGG or Reactome
+- Analysing metabolic pathways and gene functions via KEGG or Reactome
 - Searching compound databases (ChEBI, ChEMBL, PubChem) for chemical information
 - Converting identifiers between different biological databases (KEGG↔UniProt, compound IDs)
 - Running sequence similarity searches (BLAST, MUSCLE alignment)
@@ -216,7 +216,7 @@ BioServices excels at combining multiple services for comprehensive analysis. Co
 
 ### Complete Protein Analysis Pipeline
 
-Execute a full protein characterization workflow:
+Execute a full protein characterisation workflow:
 
 ```bash
 python scripts/protein_analysis_workflow.py ZAP70_HUMAN your.email@example.com
@@ -231,13 +231,13 @@ This script demonstrates:
 
 ### Pathway Network Analysis
 
-Analyze all pathways for an organism:
+Analyse all pathways for an organism:
 
 ```bash
 python scripts/pathway_analysis.py hsa output_directory/
 ```
 
-Extracts and analyzes:
+Extracts and analyses:
 - All pathway IDs for organism
 - Protein-protein interactions per pathway
 - Interaction type distributions
@@ -277,7 +277,7 @@ Different services return data in various formats:
 
 ### Rate Limiting and Verbosity
 
-Control API request behavior:
+Control API request behaviour:
 
 ```python
 from bioservices import KEGG
@@ -315,7 +315,7 @@ List all organisms: `k.list("organism")` or `k.organismIds`
 BioServices works well with:
 - **BioPython**: Sequence analysis on retrieved FASTA data
 - **Pandas**: Tabular data manipulation
-- **PyMOL**: 3D structure visualization (retrieve PDB IDs)
+- **PyMOL**: 3D structure visualisation (retrieve PDB IDs)
 - **NetworkX**: Network analysis of pathway interactions
 - **Galaxy**: Custom tool wrappers for workflow platforms
 
@@ -325,7 +325,7 @@ BioServices works well with:
 
 Executable Python scripts demonstrating complete workflows:
 
-- `protein_analysis_workflow.py`: End-to-end protein characterization
+- `protein_analysis_workflow.py`: End-to-end protein characterisation
 - `pathway_analysis.py`: KEGG pathway discovery and network extraction
 - `compound_cross_reference.py`: Multi-database compound searching
 - `batch_id_converter.py`: Bulk identifier mapping utility

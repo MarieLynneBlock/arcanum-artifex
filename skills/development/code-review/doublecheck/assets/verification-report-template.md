@@ -79,7 +79,7 @@ Full results for every extracted claim, grouped by confidence rating.
 
 ## What Was Not Checked
 
-[List any claims that could not be evaluated -- paywalled sources, claims requiring specialized databases, unfalsifiable assertions, etc.]
+[List any claims that could not be evaluated -- paywalled sources, claims requiring specialised databases, unfalsifiable assertions, etc.]
 
 ---
 

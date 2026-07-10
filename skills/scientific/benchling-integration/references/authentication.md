@@ -266,7 +266,7 @@ Use OAuth instead of API keys when multiple users interact through your app. Thi
 **403 Forbidden:**
 - Valid credentials but insufficient permissions
 - User doesn't have access to the requested resource
-- App not granted access to the organization/project
+- App not granted access to the organisation/project
 
 **Solution:**
 - Check user/app permissions in Benchling

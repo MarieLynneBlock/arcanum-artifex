@@ -40,7 +40,7 @@ Show:
 - Events as circles (`((like this))`)
 - Solid arrows for sequence flow, dashed arrows for message flow between lanes
 
-If the process genuinely requires full BPMN (with event-subprocess, compensating transactions, message correlation), push to external BPMN tooling (bpmn.io, Camunda Modeler) and embed the resulting image. Mermaid is the 80% solution, not the 100%.
+If the process genuinely requires full BPMN (with event-subprocess, compensating transactions, message correlation), push to external BPMN tooling (bpmn.io, Camunda Modeller) and embed the resulting image. Mermaid is the 80% solution, not the 100%.
 
 ### Audience (c) — Executive
 Use **Mermaid flowchart (`flowchart LR`)** at very high abstraction. Show 5–8 nodes max, each being a business-level activity. No technical detail. One diagram for the headline flow; omit error paths unless the executive specifically asked.

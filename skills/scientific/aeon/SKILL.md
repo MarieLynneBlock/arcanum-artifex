@@ -1,6 +1,6 @@
 ---
 name: aeon
-description: This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialized algorithms beyond standard ML approaches. Particularly suited for univariate and multivariate time series analysis with scikit-learn compatible APIs.
+description: This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialised algorithms beyond standard ML approaches. Particularly suited for univariate and multivariate time series analysis with scikit-learn compatible APIs.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -20,7 +20,7 @@ Apply this skill when:
 - Clustering similar time series patterns
 - Forecasting future values
 - Finding repeated patterns (motifs) or unusual subsequences (discords)
-- Comparing time series with specialized distance metrics
+- Comparing time series with specialised distance metrics
 - Extracting features from temporal data
 
 ## Installation
@@ -33,7 +33,7 @@ uv pip install aeon
 
 ### 1. Time Series Classification
 
-Categorize time series into predefined classes. See `references/classification.md` for complete algorithm catalog.
+Categorise time series into predefined classes. See `references/classification.md` for complete algorithm catalogue.
 
 **Quick Start:**
 ```python
@@ -179,7 +179,7 @@ X_normalized = scaler.fit_transform(X_train)
 
 ## Distance Metrics
 
-Specialized temporal distance measures. See `references/distances.md` for complete catalog.
+Specialised temporal distance measures. See `references/distances.md` for complete catalogue.
 
 **Usage:**
 ```python
@@ -282,7 +282,7 @@ clf.fit(X_train_features, y_train)
 predictions = clf.predict(X_test_features)
 ```
 
-### Anomaly Detection with Visualization
+### Anomaly Detection with Visualisation
 
 ```python
 from aeon.anomaly_detection import STOMP
@@ -304,7 +304,7 @@ plt.show()
 
 ### Data Preparation
 
-1. **Normalize**: Most algorithms benefit from z-normalization
+1. **Normalise**: Most algorithms benefit from z-normalisation
    ```python
    from aeon.transformations.collection import Normalizer
    normalizer = Normalizer()

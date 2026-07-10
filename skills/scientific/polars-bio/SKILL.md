@@ -283,7 +283,7 @@ result = pb.overlap(
 
 ### Return Types and Collecting Results
 
-All interval operations and `pb.sql()` return a **LazyFrame** by default. Use `.collect()` to materialize results, or pass `output_type="polars.DataFrame"` for eager evaluation:
+All interval operations and `pb.sql()` return a **LazyFrame** by default. Use `.collect()` to materialise results, or pass `output_type="polars.DataFrame"` for eager evaluation:
 
 ```python
 # Lazy (default) - collect when needed

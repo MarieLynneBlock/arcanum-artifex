@@ -338,7 +338,7 @@ Many endpoints share these parameters:
 ## Best Practices
 
 1. **Use batch endpoints** for multiple queries (more efficient)
-2. **Cache responses** to minimize API calls
+2. **Cache responses** to minimise API calls
 3. **Check rate limit headers** in responses
 4. **Handle 429 errors** by respecting `Retry-After` header
 5. **Use appropriate content types** for sequence data

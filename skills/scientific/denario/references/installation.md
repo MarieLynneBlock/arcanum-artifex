@@ -36,7 +36,7 @@ uv pip install "denario[app]"
 
 ### Method 3: Building from Source
 
-For development or customization:
+For development or customisation:
 
 ```bash
 # Clone the repository
@@ -114,7 +114,7 @@ Denario automatically installs key dependencies:
 - **LangGraph**: Graph-based agent workflows
 - **pandas**: Data manipulation
 - **scikit-learn**: Machine learning tools
-- **matplotlib/seaborn**: Visualization
+- **matplotlib/seaborn**: Visualisation
 - **streamlit**: GUI framework (with `[app]` extra)
 
 ## LaTeX Setup

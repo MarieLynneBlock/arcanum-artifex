@@ -5,7 +5,7 @@
 2. [Elementary Math](#elementary-math)
 3. [Calculus and Integration](#calculus-and-integration)
 4. [Differential Equations](#differential-equations)
-5. [Optimization](#optimization)
+5. [Optimisation](#optimisation)
 6. [Statistics](#statistics)
 7. [Signal Processing](#signal-processing)
 8. [Interpolation and Fitting](#interpolation-and-fitting)
@@ -301,9 +301,9 @@ function res = bcfun(ya, yb)
 end
 ```
 
-## Optimization
+## Optimisation
 
-### Unconstrained Optimization
+### Unconstrained Optimisation
 
 ```matlab
 % Single variable, bounded

@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-This skill helps medical device manufacturers prepare comprehensive documentation for ISO 13485:2016 certification. It provides tools, templates, references, and guidance to create, review, and gap-analyze all required Quality Management System (QMS) documentation.
+This skill helps medical device manufacturers prepare comprehensive documentation for ISO 13485:2016 certification. It provides tools, templates, references, and guidance to create, review, and gap-analyse all required Quality Management System (QMS) documentation.
 
 **What this skill provides:**
 - Gap analysis of existing documentation
@@ -26,7 +26,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 - Creating or updating QMS documentation
 - Preparing for certification audit
 - Transitioning from FDA QSR to QMSR
-- Harmonizing with EU MDR requirements
+- Harmonising with EU MDR requirements
 
 ## Core Workflow
 
@@ -50,15 +50,15 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
    - Identify which of the 31 required procedures are present
    - Identify missing key documents (Quality Manual, MDF, etc.)
    - Calculate compliance percentage
-   - Prioritize missing documentation
+   - Prioritise missing documentation
 
 4. **Present findings to user:**
-   - Summarize what exists
+   - Summarise what exists
    - Clearly list what's missing
-   - Provide prioritized action plan
+   - Provide prioritised action plan
    - Estimate effort required
 
-**Output:** Comprehensive gap analysis report with prioritized action items
+**Output:** Comprehensive gap analysis report with prioritised action items
 
 ### 2. Understand Requirements (Reference Consultation)
 
@@ -92,7 +92,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 - **Clause 4:** QMS requirements, documentation, risk management, software validation
 - **Clause 5:** Management responsibility, quality policy, objectives, management review
 - **Clause 6:** Resources, competence, training, infrastructure
-- **Clause 7:** Product realization, design, purchasing, production, traceability
+- **Clause 7:** Product realisation, design, purchasing, production, traceability
 - **Clause 8:** Measurement, audits, CAPA, complaints, data analysis
 
 ### 3. Create Documentation (Template-Based Generation)
@@ -108,20 +108,20 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 
 1. **Identify what needs to be created:**
    - Based on gap analysis or user request
-   - Prioritize critical documents first (Quality Manual, CAPA, Complaints, Audits)
+   - Prioritise critical documents first (Quality Manual, CAPA, Complaints, Audits)
 
 2. **Select appropriate template:**
    - Use Quality Manual template for QM
    - Use procedure templates as examples for SOPs
-   - Adapt structure to organization's needs
+   - Adapt structure to organisation's needs
 
-3. **Customize template with user-specific information:**
+3. **Customise template with user-specific information:**
    - Replace all placeholder text: [COMPANY NAME], [DATE], [NAME], etc.
    - Tailor scope to user's actual operations
    - Add or remove sections based on applicability
-   - Ensure consistency with organization's processes
+   - Ensure consistency with organisation's processes
 
-4. **Key customization areas:**
+4. **Key customisation areas:**
    - Company information and addresses
    - Product types and classifications
    - Applicable regulatory requirements
@@ -151,7 +151,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 8. Management Review
 9. Risk Management
 
-**Phase 3 - Product Realization (High Priority):**
+**Phase 3 - Product Realisation (High Priority):**
 10. Design and Development (if applicable)
 11. Purchasing
 12. Production and Service Provision
@@ -169,7 +169,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 20. Customer Communication
 21. Data Analysis
 
-**Phase 6 - Specialized (If Applicable):**
+**Phase 6 - Specialised (If Applicable):**
 22. Installation (if applicable)
 23. Servicing (if applicable)
 24. Sterilization (if applicable)
@@ -186,7 +186,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
    - Understand structure and required content
    - Review examples provided
 
-2. **Gather organization information:**
+2. **Gather organisation information:**
    - Legal company name and addresses
    - Product types and classifications
    - Organizational structure
@@ -228,7 +228,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 1. **Understand the requirement:**
    - Read relevant clause in `references/iso-13485-requirements.md`
    - Understand WHAT must be documented
-   - Identify WHO, WHEN, WHERE for your organization
+   - Identify WHO, WHEN, WHERE for your organisation
 
 2. **Use template structure:**
    - Follow CAPA or Document Control templates as examples
@@ -255,8 +255,8 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 
 1. Read ISO 13485 Clauses 8.5.2 and 8.5.3 from references
 2. Use `assets/templates/procedures/capa-procedure-template.md`
-3. Customize:
-   - CAPA prioritization criteria for your organization
+3. Customise:
+   - CAPA prioritisation criteria for your organisation
    - Root cause analysis methods you'll use
    - Approval authorities and responsibilities
    - Timeframes based on your operations
@@ -271,7 +271,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 
 **What is an MDF:**
 - File for each medical device type or family
-- Replaces separate DHF, DMR, DHR (per FDA QMSR harmonization)
+- Replaces separate DHF, DMR, DHR (per FDA QMSR harmonisation)
 - Contains all documentation about the device
 
 **Required contents per ISO 13485 Clause 4.2.3:**
@@ -313,21 +313,21 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
    - Define action required
    - Assign responsibility and target date
 
-3. **Summarize by clause:**
+3. **Summarise by clause:**
    - Calculate compliance percentage per clause
    - Identify highest-risk gaps
-   - Prioritize actions
+   - Prioritise actions
 
 4. **Create action plan:**
    - List all gaps
-   - Prioritize: Critical > High > Medium > Low
+   - Prioritise: Critical > High > Medium > Low
    - Assign owners and dates
    - Estimate resources needed
 
 5. **Output:**
    - Completed gap analysis checklist
    - Summary report with compliance percentages
-   - Prioritized action plan
+   - Prioritised action plan
    - Timeline and milestones
 
 ## Common Scenarios
@@ -356,7 +356,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 4. **Key milestones:**
    - Month 1-2: Foundation documents (Quality Manual, policies)
    - Month 3-4: Core processes (CAPA, Complaints, Audits)
-   - Month 5-6: Product realization processes
+   - Month 5-6: Product realisation processes
    - Month 7-8: Supporting processes
    - Month 9-10: Internal audits and refinement
    - Month 11-12: Management review and certification audit
@@ -377,7 +377,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
    - Go deeper than automated analysis
    - Assess quality of existing documents, not just presence
 
-3. **Provide prioritized gap list:**
+3. **Provide prioritised gap list:**
    - Missing mandatory procedures
    - Incomplete procedures
    - Quality issues with existing documents
@@ -402,16 +402,16 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 2. **Use template:**
    - Start with CAPA procedure template
    - Explain each section's purpose
-   - Show what needs customization
+   - Show what needs customisation
 
 3. **Gather user-specific info:**
-   - How are CAPAs initiated in their organization?
+   - How are CAPAs initiated in their organisation?
    - Who are the responsible parties?
-   - What prioritization criteria make sense?
+   - What prioritisation criteria make sense?
    - What RCA methods will they use?
    - What are appropriate timeframes?
 
-4. **Create customized procedure:**
+4. **Create customised procedure:**
    - Replace all placeholders
    - Adapt to user's processes
    - Ensure completeness
@@ -424,12 +424,12 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 
 ### Scenario 4: Updating for Regulatory Changes
 
-**User request:** "We need to update our QMS for FDA QMSR harmonization."
+**User request:** "We need to update our QMS for FDA QMSR harmonisation."
 
 **Approach:**
 
 1. **Explain changes:**
-   - FDA 21 CFR Part 820 harmonized with ISO 13485
+   - FDA 21 CFR Part 820 harmonised with ISO 13485
    - Now called QMSR (effective Feb 2, 2026)
    - Key change: Medical Device File replaces DHF/DMR/DHR
 
@@ -487,7 +487,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 5. **Final preparation:**
    - Brief management and staff
    - Prepare audit schedule
-   - Organize evidence and records
+   - Organise evidence and records
    - Designate escorts and support personnel
 
 ## Best Practices
@@ -543,7 +543,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 1. **Copying ISO 13485 text verbatim**
    - Write in your own words
    - Describe YOUR processes
-   - Make it actionable for your organization
+   - Make it actionable for your organisation
 
 2. **Making procedures too detailed**
    - Procedures should be stable
@@ -568,7 +568,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 ## Resources
 
 ### scripts/
-- `gap_analyzer.py` - Automated tool to analyze existing documentation and identify gaps against ISO 13485 requirements
+- `gap_analyzer.py` - Automated tool to analyse existing documentation and identify gaps against ISO 13485 requirements
 
 ### references/
 - `iso-13485-requirements.md` - Complete breakdown of ISO 13485:2016 requirements clause by clause
@@ -624,7 +624,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 ### Key Regulatory Requirements
 
 **FDA (United States):**
-- 21 CFR Part 820 (now QMSR) - harmonized with ISO 13485 as of Feb 2026
+- 21 CFR Part 820 (now QMSR) - harmonised with ISO 13485 as of Feb 2026
 - Device classification determines requirements
 - Establishment registration and device listing required
 
@@ -641,11 +641,11 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 
 **Other Regions:**
 - Australia TGA, Japan PMDA, China NMPA, etc.
-- Often require or recognize ISO 13485 certification
+- Often require or recognise ISO 13485 certification
 
 ### Document Retention
 
-**Minimum retention:** Lifetime of medical device as defined by organization
+**Minimum retention:** Lifetime of medical device as defined by organisation
 
 **Typical retention periods:**
 - Design documents: Life of device + 5-10 years

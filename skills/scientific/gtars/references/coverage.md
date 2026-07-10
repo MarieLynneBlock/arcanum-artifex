@@ -123,7 +123,7 @@ coverage = gtars.uniwig.coverage_from_bed("atac_fragments.bed", resolution=1)
 peaks = coverage.call_peaks(threshold=10)
 ```
 
-### ChIP-seq Peak Visualization
+### ChIP-seq Peak Visualisation
 
 Create coverage tracks for ChIP-seq data:
 
@@ -164,7 +164,7 @@ fold_change = treatment.divide(control)
 diff_regions = fold_change.find_regions(threshold=2.0)
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 - Use appropriate resolution for data scale
 - BigWig format recommended for large datasets

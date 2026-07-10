@@ -355,7 +355,7 @@ with ThreadPoolExecutor(max_workers=4) as executor:
 
 ## Breaking Changes (v0.0.1 to v0.1.0)
 
-1. **Dependencies**: Now organized into optional feature groups
+1. **Dependencies**: Now organised into optional feature groups
    ```bash
    # Old
    pip install markitdown

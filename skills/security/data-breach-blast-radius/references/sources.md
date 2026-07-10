@@ -86,8 +86,8 @@ Every number, formula, and classification in this skill is sourced from a public
 **HHS OCR penalty tiers (current inflation-adjusted 2024 amounts):**
 - Tier A (no knowledge): $137–$68,928 per violation, $2,067,813 annual cap
 - Tier B (reasonable cause): $1,379–$68,928, $2,067,813 annual cap
-- Tier C (willful, corrected): $13,785–$68,928, $2,067,813 annual cap
-- Tier D (willful, not corrected): $68,928–$1,919,173, $1,919,173 annual cap
+- Tier C (wilful, corrected): $13,785–$68,928, $2,067,813 annual cap
+- Tier D (wilful, not corrected): $68,928–$1,919,173, $1,919,173 annual cap
 
 **URL for current amounts:** https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/examples/all-cases/index.html
 
@@ -123,7 +123,7 @@ Every number, formula, and classification in this skill is sourced from a public
 **Source:** IBM Security — "Cost of a Data Breach Report" (published annually since 2005)
 **URL:** https://www.ibm.com/reports/data-breach
 **Publisher:** IBM Security + Ponemon Institute
-**Methodology (2024 edition):** Survey of 604 organizations across 17 industries in 16 countries/regions. Each breach involved 2,170–113,954 compromised records.
+**Methodology (2024 edition):** Survey of 604 organisations across 17 industries in 16 countries/regions. Each breach involved 2,170–113,954 compromised records.
 
 **Last-verified figures (IBM 2024 edition):**
 | Metric | Value | Source |
@@ -166,10 +166,10 @@ The scoring formula structure is adapted from established risk quantification fr
 |-----------|---------|
 | Tier Weight × Exposure Likelihood | OWASP Risk Rating Methodology — https://owasp.org/www-community/OWASP_Risk_Rating_Methodology |
 | Completeness Factor | FAIR (Factor Analysis of Information Risk) model — https://www.fairinstitute.org/ |
-| Population Scale normalization | CVSS v4.0 Attack Scale metric — https://www.first.org/cvss/v4-0/ |
+| Population Scale normalisation | CVSS v4.0 Attack Scale metric — https://www.first.org/cvss/v4-0/ |
 | Context multipliers | GDPR recitals 75, 91 (special categories increase risk level) — https://gdpr-info.eu/recital-75-gdpr/ |
 
-**What the formula is NOT:** It is not a legally recognized standard. It is a planning heuristic based on accepted risk frameworks, producing a relative score to compare exposure vectors — not an absolute prediction of breach cost.
+**What the formula is NOT:** It is not a legally recognised standard. It is a planning heuristic based on accepted risk frameworks, producing a relative score to compare exposure vectors — not an absolute prediction of breach cost.
 
 ---
 

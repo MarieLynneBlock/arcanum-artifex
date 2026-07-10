@@ -82,15 +82,15 @@ The International Council for Harmonisation (ICH) E3 guideline defines the struc
 
 **4.1 Investigators**
 - List of principal investigators by site
-- Site addresses and enrollment
+- Site addresses and enrolment
 - Coordinating investigator (if applicable)
 
 **4.2 Administrative Structure**
 - Sponsor personnel and roles
 - CRO involvement (if applicable)
 - Monitoring procedures
-- Data management organization
-- Statistical analysis organization
+- Data management organisation
+- Statistical analysis organisation
 
 **4.3 Study Monitoring and Quality Assurance**
 - Monitoring procedures and frequency
@@ -146,7 +146,7 @@ The International Council for Harmonisation (ICH) E3 guideline defines the struc
 - Study flow diagram (patient flowchart)
 
 **7.2 Sample Size**
-- Target enrollment
+- Target enrolment
 - Sample size justification
 - Power calculation assumptions:
   - Expected effect size
@@ -204,7 +204,7 @@ The International Council for Harmonisation (ICH) E3 guideline defines the struc
 
 #### Section 9: Efficacy Evaluation
 
-**9.1 Data Sets Analyzed**
+**9.1 Data Sets Analysed**
 - Intent-to-treat (ITT) population
 - Per-protocol (PP) population
 - Modified ITT
@@ -394,7 +394,7 @@ Comprehensive set of tables and figures for efficacy and safety data.
 - Safety analyses
 
 **SAP Timing:**
-- Finalized before database lock
+- Finalised before database lock
 - Amendments documented with rationale
 
 ## CONSORT (Consolidated Standards of Reporting Trials)
@@ -435,11 +435,11 @@ CONSORT guidelines promote transparent and complete reporting of randomized cont
 - **10. Additional analyses**: Subgroup or adjusted analyses
 
 #### Results - Participant Flow
-- **11a. Enrollment**: Numbers screened, randomized, allocated
+- **11a. Enrolment**: Numbers screened, randomized, allocated
 - **11b. Losses and exclusions**: For each group, losses and exclusions after randomization
 - **12. Recruitment**: Dates defining recruitment and follow-up periods
 - **13a. Baseline**: Baseline demographic and clinical characteristics
-- **13b. Baseline comparability**: Numbers analyzed in each group
+- **13b. Baseline comparability**: Numbers analysed in each group
 
 #### Results - Outcomes and Estimation
 - **14a. Outcomes**: For primary and secondary outcomes, results for each group
@@ -494,7 +494,7 @@ An adverse event or suspected adverse reaction is considered serious if it:
 - Results in persistent or significant disability/incapacity
 - Is a congenital anomaly/birth defect
 - Requires intervention to prevent permanent impairment or damage (device-related)
-- Other medically important events (based on medical judgment)
+- Other medically important events (based on medical judgement)
 
 ### SAE Report Components
 
@@ -633,7 +633,7 @@ and smoking history.
 ### MedDRA Coding
 
 **MedDRA (Medical Dictionary for Regulatory Activities):**
-- Standardized medical terminology for regulatory communication
+- Standardised medical terminology for regulatory communication
 - Hierarchical structure:
   - SOC (System Organ Class) - highest level
   - HLGT (High Level Group Term)

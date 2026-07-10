@@ -23,9 +23,9 @@
 - Extraordinary claims require extraordinary evidence
 
 ### 5. Systematic Observation
-- Use standardized, rigorous methods
+- Use standardised, rigorous methods
 - Control for confounding variables
-- Minimize observer bias through blinding and protocols
+- Minimise observer bias through blinding and protocols
 
 ## The Scientific Process
 
@@ -115,7 +115,7 @@
 4. **Appeal to authority** - "Expert X says" without evidence
 5. **Anecdotal evidence** - Relying on personal stories over systematic data
 6. **Correlation implies causation** - Confusing association with causality
-7. **Post hoc rationalization** - Explaining results after the fact without prediction
+7. **Post hoc rationalisation** - Explaining results after the fact without prediction
 8. **Ignoring base rates** - Not considering prior probability
 9. **Confirmation bias** - Seeking only evidence that supports beliefs
 10. **Publication bias** - Only positive results get published

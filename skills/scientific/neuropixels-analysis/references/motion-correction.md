@@ -1,6 +1,6 @@
 # Motion/Drift Correction Reference
 
-Mechanical drift during acute probe insertion is a major challenge for Neuropixels recordings. This guide covers detection, estimation, and correction of motion artifacts.
+Mechanical drift during acute probe insertion is a major challenge for Neuropixels recordings. This guide covers detection, estimation, and correction of motion artefacts.
 
 ## Why Motion Correction Matters
 
@@ -13,7 +13,7 @@ Mechanical drift during acute probe insertion is a major challenge for Neuropixe
 
 ## Detection: Check Before Sorting
 
-**Always visualize drift before running spike sorting!**
+**Always visualise drift before running spike sorting!**
 
 ```python
 import spikeinterface.full as si
@@ -145,7 +145,7 @@ spatial_bins = data['spatial_bins']
 
 ## DREDge: State-of-the-Art Method
 
-DREDge (Decentralized Registration of Electrophysiology Data) is currently the best-performing motion correction method.
+DREDge (Decentralised Registration of Electrophysiology Data) is currently the best-performing motion correction method.
 
 ### Using DREDge Preset
 
@@ -283,7 +283,7 @@ motion = estimate_motion(..., win_step_um=25, win_sigma_um=75)
 peaks = detect_peaks(..., detect_threshold=4)  # Lower threshold
 ```
 
-### Edge Artifacts
+### Edge Artefacts
 
 ```python
 rec_corrected = interpolate_motion(
@@ -295,7 +295,7 @@ rec_corrected = interpolate_motion(
 
 ## Validation
 
-After correction, re-visualize to confirm:
+After correction, re-visualise to confirm:
 
 ```python
 # Re-detect peaks on corrected recording

@@ -122,7 +122,7 @@ Clinical correlation with patient history and prior results recommended.
 
 **QC Notes:**
 - [X] Specimen collected in appropriate tube
-- [X] Specimen adequately labeled
+- [X] Specimen adequately labelled
 - [X] Specimen volume sufficient
 - [X] No hemolysis, lipemia, or icterus
 - [X] Specimen processed within acceptable time
@@ -200,7 +200,7 @@ Examples:
 ### Urinalysis
 
 **Physical Examination:**
-- Color: [Yellow / Amber / Other]
+- Colour: [Yellow / Amber / Other]
 - Clarity: [Clear / Cloudy / Turbid]
 - Specific Gravity: [1.005-1.030]
 

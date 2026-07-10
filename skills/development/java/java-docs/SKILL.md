@@ -15,7 +15,7 @@ metadata:
 - Use `@throws` or `@exception` to document exceptions thrown by methods.
 - Use `@see` for references to other types or members.
 - Use `{@inheritDoc}` to inherit documentation from base classes or interfaces.
-  - Unless there is major behavior change, in which case you should document the differences.
+  - Unless there is major behaviour change, in which case you should document the differences.
 - Use `@param <T>` for type parameters in generic types or methods.
 - Use `{@code}` for inline code snippets.
 - Use `<pre>{@code ... }</pre>` for code blocks.

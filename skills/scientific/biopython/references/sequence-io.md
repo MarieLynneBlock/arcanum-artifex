@@ -2,7 +2,7 @@
 
 ## Overview
 
-Bio.Seq provides the `Seq` object for biological sequences with specialized methods, while Bio.SeqIO offers a unified interface for reading, writing, and converting sequence files across multiple formats.
+Bio.Seq provides the `Seq` object for biological sequences with specialised methods, while Bio.SeqIO offers a unified interface for reading, writing, and converting sequence files across multiple formats.
 
 ## The Seq Object
 

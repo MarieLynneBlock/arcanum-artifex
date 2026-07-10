@@ -31,7 +31,7 @@ fits.open('file.fits', mode='append')     # Add HDUs to file
 
 ### Memory Mapping
 
-For large files, use memory mapping (default behavior):
+For large files, use memory mapping (default behaviour):
 
 ```python
 hdul = fits.open('large_file.fits', memmap=True)
@@ -364,7 +364,7 @@ table.write('output.fits', format='fits', overwrite=True)
 3. **Use memory mapping** for large files to conserve RAM
 4. **Use .section** for remote files to avoid full downloads
 5. **Check HDU structure** with `.info()` before accessing data
-6. **Verify data types** before operations to avoid unexpected behavior
+6. **Verify data types** before operations to avoid unexpected behaviour
 7. **Use convenience functions** for simple one-off operations
 
 ## Common Issues

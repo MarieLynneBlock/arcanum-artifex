@@ -18,7 +18,7 @@ Ennen kuin korjaat yhtään patternia, sisäistä miten suomalainen kirjoittaja 
 
 **Lyhyys on voimaa.** Lyhyt virke ei ole laiska — se on täsmällinen. Pitkä virke on perusteltava.
 
-**Toisto on sallittu.** Suomessa saman sanan käyttö kahdesti on normaalia. Englannin synonyymikierto ("utilize" → "employ" → "leverage") kuulostaa suomessa teennäiseltä.
+**Toisto on sallittu.** Suomessa saman sanan käyttö kahdesti on normaalia. Englannin synonyymikierto ("utilise" → "employ" → "leverage") kuulostaa suomessa teennäiseltä.
 
 **Innostus epäilyttää.** Suomalainen kirjoittaja ei huuda eikä hehkuta. Kuiva toteamus on vahvempi kuin huutomerkki. "Ihan hyvä" on kehu.
 

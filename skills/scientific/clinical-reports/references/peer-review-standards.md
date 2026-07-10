@@ -4,7 +4,7 @@
 
 ### Purpose
 
-Peer review ensures that clinical manuscripts meet standards for scientific rigor, ethical conduct, and clear communication before publication.
+Peer review ensures that clinical manuscripts meet standards for scientific rigour, ethical conduct, and clear communication before publication.
 
 **Objectives:**
 - Assess scientific validity and methodology
@@ -62,7 +62,7 @@ Peer review ensures that clinical manuscripts meet standards for scientific rigo
 - What makes this case worth reporting?
 - Is the condition rare or presentation unusual?
 - Does it challenge existing knowledge?
-- Are there clinical lessons that can be generalized?
+- Are there clinical lessons that can be generalised?
 
 **Red flags:**
 - Common presentation of common condition
@@ -120,7 +120,7 @@ Peer review ensures that clinical manuscripts meet standards for scientific rigo
 ### Writing Quality
 
 **Structure:**
-- Logical flow and organization
+- Logical flow and organisation
 - CARE guideline structure followed
 - Clear, concise writing
 - Appropriate medical terminology
@@ -148,7 +148,7 @@ Peer review ensures that clinical manuscripts meet standards for scientific rigo
 - Underpowered study claiming equivalence
 - Inappropriate statistical methods
 - Lack of blinding when feasible
-- Selection bias in enrollment
+- Selection bias in enrolment
 
 ### CONSORT Compliance
 
@@ -180,7 +180,7 @@ Peer review ensures that clinical manuscripts meet standards for scientific rigo
 - Exclusion reasons provided
 - Number randomized clear
 - Dropouts and reasons documented
-- Lost to follow-up minimized and explained
+- Lost to follow-up minimised and explained
 - ITT and per-protocol analyses specified
 - CONSORT diagram complete and accurate
 
@@ -195,12 +195,12 @@ Peer review ensures that clinical manuscripts meet standards for scientific rigo
 
 **Secondary outcomes:**
 - Pre-specified in protocol
-- Analyzed appropriately
+- Analysed appropriately
 - Multiple comparison correction if needed
 - Not over-interpreted if underpowered
 
 **Exploratory outcomes:**
-- Clearly labeled as exploratory or post-hoc
+- Clearly labelled as exploratory or post-hoc
 - Not given same weight as primary
 - Hypothesis-generating, not confirmatory
 
@@ -426,7 +426,7 @@ Peer review ensures that clinical manuscripts meet standards for scientific rigo
 
 **Assess:**
 - Logical flow from introduction through discussion
-- Sections appropriately organized
+- Sections appropriately organised
 - Figures and tables support text
 - Supplementary materials appropriate
 
@@ -434,7 +434,7 @@ Peer review ensures that clinical manuscripts meet standards for scientific rigo
 
 **Clarity:**
 - Clear, concise language
-- Jargon minimized and defined
+- Jargon minimised and defined
 - Abbreviations defined at first use
 - Consistent terminology
 
@@ -541,7 +541,7 @@ Peer review ensures that clinical manuscripts meet standards for scientific rigo
 - Numbered
 - Significant issues affecting validity, interpretation, or impact
 - Specific and actionable
-- Prioritized
+- Prioritised
 
 **Minor comments:**
 - Numbered
@@ -568,7 +568,7 @@ Peer review ensures that clinical manuscripts meet standards for scientific rigo
 ### Specific and Actionable Feedback
 
 **Good:**
-"The sample size calculation (page 8) does not account for expected dropout rate. Please revise to include expected dropout and explain how this affects enrollment targets."
+"The sample size calculation (page 8) does not account for expected dropout rate. Please revise to include expected dropout and explain how this affects enrolment targets."
 
 **Poor:**
 "Sample size is inadequate."

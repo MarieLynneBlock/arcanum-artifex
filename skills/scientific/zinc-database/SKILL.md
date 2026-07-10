@@ -49,7 +49,7 @@ All ZINC22 searches can be performed programmatically via the CartBlanche22 API:
 
 **Base URL**: `https://cartblanche22.docking.org/`
 
-All API endpoints return data in text or JSON format with customizable fields.
+All API endpoints return data in text or JSON format with customisable fields.
 
 ## Core Capabilities
 
@@ -100,7 +100,7 @@ curl "https://cartblanche22.docking.org/smiles.txt:smiles=c1ccccc1&dist=3&output
 
 ### 3. Search by Supplier Codes
 
-Query compounds from specific chemical suppliers or retrieve all molecules from particular catalogs.
+Query compounds from specific chemical suppliers or retrieve all molecules from particular catalogues.
 
 **Web interface**: https://cartblanche22.docking.org/search/catitems
 
@@ -111,7 +111,7 @@ curl "https://cartblanche22.docking.org/catitems.txt:catitem_id=SUPPLIER-CODE-12
 
 **Use cases**:
 - Verify compound availability from specific vendors
-- Retrieve all compounds from a catalog
+- Retrieve all compounds from a catalogue
 - Cross-reference supplier codes with ZINC IDs
 
 ### 4. Random Compound Sampling
@@ -128,7 +128,7 @@ curl "https://cartblanche22.docking.org/substance/random.txt:count=100"
 **Parameters**:
 - `count`: Number of random compounds to retrieve (default: 100)
 - `subset`: Filter by subset (e.g., 'lead-like', 'drug-like', 'fragment')
-- `output_fields`: Customize returned data fields
+- `output_fields`: Customise returned data fields
 
 **Example - Random lead-like molecules**:
 ```bash
@@ -173,7 +173,7 @@ curl "https://cartblanche22.docking.org/substance/random.txt:count=1000&subset=l
    curl "https://cartblanche22.docking.org/smiles.txt:smiles=CC(C)Cc1ccc(cc1)C(C)C(=O)O&dist=5&output_fields=zinc_id,smiles,catalogs" > analogs.txt
    ```
 
-3. **Analyze results** to identify purchasable analogs:
+3. **Analyse results** to identify purchasable analogs:
    ```python
    import pandas as pd
 
@@ -215,17 +215,17 @@ curl "https://cartblanche22.docking.org/substance/random.txt:count=1000&subset=l
    curl "https://cartblanche22.docking.org/substance/random.txt:count=5000&subset=lead-like&output_fields=zinc_id,smiles,tranche" > chemical_space_sample.txt
    ```
 
-3. **Analyze chemical diversity** and prepare for virtual screening
+3. **Analyse chemical diversity** and prepare for virtual screening
 
 ## Output Fields
 
-Customize API responses with the `output_fields` parameter:
+Customise API responses with the `output_fields` parameter:
 
 **Available fields**:
 - `zinc_id`: ZINC identifier
 - `smiles`: SMILES string representation
 - `sub_id`: Internal substance ID
-- `supplier_code`: Vendor catalog number
+- `supplier_code`: Vendor catalogue number
 - `catalogs`: List of suppliers offering the compound
 - `tranche`: Encoded molecular properties (H-count, LogP, MW, reactivity phase)
 
@@ -236,7 +236,7 @@ curl "https://cartblanche22.docking.org/substances.txt:zinc_id=ZINC000000000001&
 
 ## Tranche System
 
-ZINC organizes compounds into "tranches" based on molecular properties:
+ZINC organises compounds into "tranches" based on molecular properties:
 
 **Format**: `H##P###M###-phase`
 
@@ -259,7 +259,7 @@ For molecular docking, 3D structures are available via file repositories:
 
 **File repository**: https://files.docking.org/zinc22/
 
-Structures are organized by tranches and available in multiple formats:
+Structures are organised by tranches and available in multiple formats:
 - MOL2: Multi-molecule format with 3D coordinates
 - SDF: Structure-data file format
 - DB2.GZ: Compressed database format for DOCK
@@ -325,7 +325,7 @@ df['tranche_props'] = df['tranche'].apply(parse_tranche)
 
 ## Best Practices
 
-### Query Optimization
+### Query Optimisation
 
 - **Start specific**: Begin with exact searches before expanding to similarity searches
 - **Use appropriate distance parameters**: Small dist values (1-3) for close analogs, larger (5-10) for diverse analogs
@@ -341,7 +341,7 @@ df['tranche_props'] = df['tranche'].apply(parse_tranche)
 
 ### Data Quality
 
-- **Verify availability**: Supplier catalogs change; confirm compound availability before large orders
+- **Verify availability**: Supplier catalogues change; confirm compound availability before large orders
 - **Check stereochemistry**: SMILES may not fully specify stereochemistry; verify 3D structures
 - **Validate structures**: Use cheminformatics tools (RDKit, OpenBabel) to verify structure validity
 - **Cross-reference**: When possible, cross-check with other databases (PubChem, ChEMBL)
@@ -355,7 +355,7 @@ Comprehensive documentation including:
 - Complete API endpoint reference
 - URL syntax and parameter specifications
 - Advanced query patterns and examples
-- File repository organization and access
+- File repository organisation and access
 - Bulk download methods
 - Error handling and troubleshooting
 - Integration with molecular docking software
@@ -395,7 +395,7 @@ ZINC explicitly states: **"We do not guarantee the quality of any molecule for a
 When using ZINC in publications, cite the appropriate version:
 
 **ZINC22**:
-Irwin, J. J., et al. "ZINC22—A Free Multi-Billion-Scale Database of Tangible Compounds for Ligand Discovery." *Journal of Chemical Information and Modeling* 2023.
+Irwin, J. J., et al. "ZINC22—A Free Multi-Billion-Scale Database of Tangible Compounds for Ligand Discovery." *Journal of Chemical Information and Modelling* 2023.
 
 **ZINC15**:
-Irwin, J. J., et al. "ZINC15 – Ligand Discovery for Everyone." *Journal of Chemical Information and Modeling* 2020, 60, 6065–6073.
+Irwin, J. J., et al. "ZINC15 – Ligand Discovery for Everyone." *Journal of Chemical Information and Modelling* 2020, 60, 6065–6073.

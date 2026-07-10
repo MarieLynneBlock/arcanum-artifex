@@ -1,8 +1,8 @@
-# Data Visualization for Slides
+# Data Visualisation for Slides
 
 ## Overview
 
-Effective data visualization in presentations differs fundamentally from journal figures. While publications prioritize comprehensive detail, presentation slides must emphasize clarity, impact, and immediate comprehension. This guide covers adapting figures for slides, choosing appropriate chart types, and avoiding common visualization mistakes.
+Effective data visualisation in presentations differs fundamentally from journal figures. While publications prioritise comprehensive detail, presentation slides must emphasise clarity, impact, and immediate comprehension. This guide covers adapting figures for slides, choosing appropriate chart types, and avoiding common visualisation mistakes.
 
 ## Key Principles for Presentation Figures
 
@@ -44,16 +44,16 @@ Presentation Version:
 - Large, readable labels
 ```
 
-### 2. Emphasize Visual Hierarchy
+### 2. Emphasise Visual Hierarchy
 
 **Guide Attention**:
 - Make key result visually dominant
-- De-emphasize background or comparison data
-- Use size, color, and position strategically
+- De-emphasise background or comparison data
+- Use size, colour, and position strategically
 
 **Techniques**:
 
-**Color Emphasis**:
+**Colour Emphasis**:
 ```
 Main Result: Bold, saturated color (e.g., blue)
 Comparison: Muted gray or desaturated color
@@ -74,7 +74,7 @@ Add shapes: Circle key region
 Add color highlights: Background shading for important area
 ```
 
-### 3. Maximize Readability
+### 3. Maximise Readability
 
 **Font Sizes for Presentations**:
 - **Axis labels**: 18-24pt minimum
@@ -102,14 +102,14 @@ Instead of showing complete figure at once:
 1. **Baseline**: Show axes and basic setup
 2. **Data Group 1**: Add first dataset
 3. **Data Group 2**: Add comparison dataset
-4. **Highlight**: Emphasize key difference
+4. **Highlight**: Emphasise key difference
 5. **Interpretation**: Add annotation with finding
 
 **Benefits**:
 - Controls audience attention
 - Prevents information overload
 - Guides interpretation
-- Emphasizes narrative structure
+- Emphasises narrative structure
 
 **Implementation**:
 - PowerPoint: Use animation to reveal layers
@@ -125,7 +125,7 @@ Instead of showing complete figure at once:
 - Showing counts or frequencies
 - Highlighting differences between groups
 
-**Presentation Optimization**:
+**Presentation Optimisation**:
 ```
 ✅ DO:
 - Large, clear bars with adequate spacing
@@ -154,7 +154,7 @@ After: Top 6 categories only, large fonts, direct labels, key bar highlighted
 - Continuous data relationships
 - Comparing trajectories
 
-**Presentation Optimization**:
+**Presentation Optimisation**:
 ```
 ✅ DO:
 - Thick lines (2-4pt)
@@ -184,7 +184,7 @@ After: Top 6 categories only, large fonts, direct labels, key bar highlighted
 - Distributions
 - Outliers
 
-**Presentation Optimization**:
+**Presentation Optimisation**:
 ```
 ✅ DO:
 - Large, distinct markers (8-12pt)
@@ -213,7 +213,7 @@ After: Top 6 categories only, large fonts, direct labels, key bar highlighted
 - Showing variability and outliers
 - Multiple group comparisons
 
-**Presentation Optimization**:
+**Presentation Optimisation**:
 ```
 ✅ DO:
 - Large, clear boxes
@@ -239,7 +239,7 @@ If your audience may be unfamiliar, briefly explain: "Box shows middle 50% of da
 - Gene expression or correlation patterns
 - Large datasets with patterns
 
-**Presentation Optimization**:
+**Presentation Optimisation**:
 ```
 ✅ DO:
 - Large cells (readable grid)
@@ -268,7 +268,7 @@ If your audience may be unfamiliar, briefly explain: "Box shows middle 50% of da
 - Pathways and networks
 - Hierarchical structures
 
-**Presentation Optimization**:
+**Presentation Optimisation**:
 ```
 ✅ DO:
 - Large nodes and labels
@@ -323,9 +323,9 @@ If your audience may be unfamiliar, briefly explain: "Box shows middle 50% of da
 - Compare ≤ 3 curves per plot
 ```
 
-## Color in Data Visualizations
+## Colour in Data Visualisations
 
-### Sequential Color Scales
+### Sequential Colour Scales
 
 **When to Use**: Ordered data (low to high)
 
@@ -337,9 +337,9 @@ If your audience may be unfamiliar, briefly explain: "Box shows middle 50% of da
 
 **Avoid**:
 - Rainbow scales (non-uniform perception)
-- Red-green scales (color blindness)
+- Red-green scales (colour blindness)
 
-### Diverging Color Scales
+### Diverging Colour Scales
 
 **When to Use**: Data with meaningful midpoint (e.g., +/− change, correlation from -1 to +1)
 
@@ -350,15 +350,15 @@ If your audience may be unfamiliar, briefly explain: "Box shows middle 50% of da
 
 **Key Principle**: Midpoint should be visually neutral (white or light gray)
 
-### Categorical Colors
+### Categorical Colours
 
 **When to Use**: Distinct groups with no order
 
 **Good Practices**:
-- Maximum 5-7 colors for clarity
+- Maximum 5-7 colours for clarity
 - High contrast between adjacent categories
-- Color-blind safe combinations
-- Consistent color mapping across slides
+- Colour-blind safe combinations
+- Consistent colour mapping across slides
 
 **Example Set**:
 ```
@@ -369,9 +369,9 @@ Purple (#CC78BC)
 Red (#CA3542)
 ```
 
-### Highlight Colors
+### Highlight Colours
 
-**Strategy**: Use color to direct attention
+**Strategy**: Use colour to direct attention
 
 ```
 Main Result: Bright, saturated color (e.g., blue)
@@ -382,9 +382,9 @@ Background: Very light gray or white
 **Example Application**:
 - Bar chart: Key bar in blue, others in light gray
 - Line plot: Main line in bold blue, reference lines in thin gray
-- Scatter: Group of interest in color, others faded
+- Scatter: Group of interest in colour, others faded
 
-## Common Visualization Mistakes
+## Common Visualisation Mistakes
 
 ### Mistake 1: Overwhelming Complexity
 
@@ -431,7 +431,7 @@ Background: Very light gray or white
 
 **Solution**:
 - Remove all non-data ink
-- Maximize data-ink ratio
+- Maximise data-ink ratio
 - Clean, minimal design
 - Let data be the focus
 
@@ -443,7 +443,7 @@ Background: Very light gray or white
 - Bar charts not starting at zero
 - Truncated y-axes exaggerating differences
 - Inconsistent scales between panels
-- Log scales without clear labeling
+- Log scales without clear labelling
 
 **Solution**:
 - Bar charts: Always start at zero
@@ -451,25 +451,25 @@ Background: Very light gray or white
 - Label log scales explicitly
 - Maintain consistent scales for comparisons
 
-### Mistake 5: Poor Color Choices
+### Mistake 5: Poor Colour Choices
 
-**Problem**: Colors reduce clarity or accessibility
+**Problem**: Colours reduce clarity or accessibility
 
 **Examples**:
-- Red-green for color-blind audience
+- Red-green for colour-blind audience
 - Low contrast (yellow on white)
-- Too many colors
-- Inconsistent color meaning
+- Too many colours
+- Inconsistent colour meaning
 
 **Solution**:
-- Use color-blind safe palettes
+- Use colour-blind safe palettes
 - Test contrast (minimum 4.5:1)
-- Limit to 5-7 colors maximum
+- Limit to 5-7 colours maximum
 - Consistent meaning across slides
 
 ### Mistake 6: Missing Context
 
-**Problem**: Audience can't interpret visualization
+**Problem**: Audience can't interpret visualisation
 
 **Missing Elements**:
 - Axis labels or units
@@ -486,7 +486,7 @@ Background: Very light gray or white
 
 ### Mistake 7: Inefficient Chart Type
 
-**Problem**: Wrong visualization for data type
+**Problem**: Wrong visualisation for data type
 
 **Examples**:
 - Pie chart for >5 categories (use bar chart)
@@ -574,7 +574,7 @@ Slide 3: Highlight specific points in zoomed view
 - PowerPoint/Keynote (basic editing)
 - Python/R (programmatic recreation)
 
-### Step 3: Optimize for Projection
+### Step 3: Optimise for Projection
 
 **Check**:
 - ✅ Readable from 10 feet away
@@ -587,7 +587,7 @@ Slide 3: Highlight specific points in zoomed view
 - View on different screens
 - Project if possible before talk
 - Print at small scale (simulates distance)
-- Check in grayscale (color-blind simulation)
+- Check in grayscale (colour-blind simulation)
 
 ### Step 4: Add Context and Annotations
 
@@ -595,7 +595,7 @@ Slide 3: Highlight specific points in zoomed view
 - Arrows pointing to key features
 - Text boxes with key findings ("p < 0.001")
 - Circles or rectangles highlighting regions
-- Color coding matched to verbal description
+- Colour coding matched to verbal description
 - Reference lines or benchmarks
 
 **Verbal Integration**:
@@ -612,7 +612,7 @@ Slide 3: Highlight specific points in zoomed view
 - Original has small fonts
 - Too many panels for one slide
 - Multiple comparisons to parse
-- Colors not accessible
+- Colours not accessible
 - Data available to you
 
 **Reuse When**:
@@ -680,13 +680,13 @@ Before including a figure in your presentation:
 **Readability**:
 - [ ] Font sizes ≥18pt for labels
 - [ ] Thick lines (2-4pt) and large markers (8-12pt)
-- [ ] High contrast colors
+- [ ] High contrast colours
 - [ ] Readable from back of room
 
 **Design**:
 - [ ] Minimal chart junk (removed gridlines, simplify)
-- [ ] Axes clearly labeled with units
-- [ ] Color-blind friendly palette
+- [ ] Axes clearly labelled with units
+- [ ] Colour-blind friendly palette
 - [ ] Consistent style with other figures
 
 **Context**:

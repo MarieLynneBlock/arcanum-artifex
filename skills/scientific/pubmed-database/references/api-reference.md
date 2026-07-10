@@ -144,7 +144,7 @@ Returns WebEnv and QueryKey for use in subsequent requests
 - `id` - UID(s) from source database
 
 **Optional Parameters**:
-- `cmd` - Link command (neighbor, neighbor_history, prlinks, llinks, etc.)
+- `cmd` - Link command (neighbour, neighbour_history, prlinks, llinks, etc.)
 - `linkname` - Specific link type to retrieve
 - `term` - Filter results with search query
 - `holding` - Filter by library holdings

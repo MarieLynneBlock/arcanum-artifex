@@ -1,6 +1,6 @@
 ---
 name: medchem
-description: Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering.
+description: Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritisation and library filtering.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,14 +10,14 @@ metadata:
 
 ## Overview
 
-Medchem is a Python library for molecular filtering and prioritization in drug discovery workflows. Apply hundreds of well-established and novel molecular filters, structural alerts, and medicinal chemistry rules to efficiently triage and prioritize compound libraries at scale. Rules and filters are context-specific—use as guidelines combined with domain expertise.
+Medchem is a Python library for molecular filtering and prioritisation in drug discovery workflows. Apply hundreds of well-established and novel molecular filters, structural alerts, and medicinal chemistry rules to efficiently triage and prioritise compound libraries at scale. Rules and filters are context-specific—use as guidelines combined with domain expertise.
 
 ## When to Use This Skill
 
 This skill should be used when:
 - Applying drug-likeness rules (Lipinski, Veber, etc.) to compound libraries
 - Filtering molecules by structural alerts or PAINS patterns
-- Prioritizing compounds for lead optimization
+- Prioritising compounds for lead optimisation
 - Assessing compound quality and medicinal chemistry properties
 - Detecting reactive or problematic functional groups
 - Calculating molecular complexity metrics
@@ -191,11 +191,11 @@ has_matches = group.has_match(mol_list)
 matches = group.get_matches(mol)
 ```
 
-### 5. Named Catalogs
+### 5. Named Catalogues
 
 Access curated collections of chemical structures through `medchem.catalogs`.
 
-**Available Catalogs:**
+**Available Catalogues:**
 - Functional groups
 - Protecting groups
 - Common reagents
@@ -265,7 +265,7 @@ results = constraints(mols=mol_list, n_jobs=-1)
 
 ### 8. Medchem Query Language
 
-Use a specialized query language for complex filtering criteria.
+Use a specialised query language for complex filtering criteria.
 
 **Query Examples:**
 ```
@@ -322,9 +322,9 @@ filtered_df = df[df["drug_like"]]
 filtered_df.to_csv("filtered_compounds.csv", index=False)
 ```
 
-### Pattern 2: Lead Optimization Filtering
+### Pattern 2: Lead Optimisation Filtering
 
-Apply stricter criteria during lead optimization.
+Apply stricter criteria during lead optimisation.
 
 ```python
 import medchem as mc
@@ -386,8 +386,8 @@ mol_with_groups = [mol for mol, match in zip(mol_list, matches) if match]
 ### references/api-guide.md
 Comprehensive API reference covering all medchem modules with detailed function signatures, parameters, and return types.
 
-### references/rules-catalog.md
-Complete catalog of available rules, filters, and alerts with descriptions, thresholds, and literature references.
+### references/rules-catalogue.md
+Complete catalogue of available rules, filters, and alerts with descriptions, thresholds, and literature references.
 
 ### scripts/filter_molecules.py
 Production-ready script for batch filtering workflows. Supports multiple input formats (CSV, SDF, SMILES), configurable filter combinations, and detailed reporting.

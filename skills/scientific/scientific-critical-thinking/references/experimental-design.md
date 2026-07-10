@@ -50,14 +50,14 @@
 **Consider:**
 - [ ] Can you randomly assign participants?
 - [ ] Can you manipulate the independent variable?
-- [ ] Is the outcome rare (favor case-control) or common?
+- [ ] Is the outcome rare (favour case-control) or common?
 - [ ] Do you need to establish temporal sequence?
 - [ ] What's feasible given ethical, practical constraints?
 
 ## Variables
 
 ### Independent Variables (Manipulated/Predictor)
-- [ ] Clearly defined and operationalized
+- [ ] Clearly defined and operationalised
 - [ ] Appropriate levels/categories chosen
 - [ ] Manipulation is sufficient to test hypothesis
 - [ ] Manipulation check planned (if applicable)
@@ -83,14 +83,14 @@
 
 ### Extraneous Variables
 - [ ] Potential sources of noise identified
-- [ ] Standardized procedures to minimize
+- [ ] Standardised procedures to minimise
 - [ ] Environmental factors controlled
-- [ ] Time of day, setting, equipment standardized
+- [ ] Time of day, setting, equipment standardised
 
 ## Sampling
 
 ### Population Definition
-- [ ] **Target population:** Who you want to generalize to
+- [ ] **Target population:** Who you want to generalise to
 - [ ] **Accessible population:** Who you can actually sample from
 - [ ] **Sample:** Who actually participates
 - [ ] Difference between these documented
@@ -137,7 +137,7 @@
   - Coin flips (for very small studies)
 - [ ] **Allocation concealment:**
   - Sequence generated before recruitment
-  - Allocation hidden until after enrollment
+  - Allocation hidden until after enrolment
   - Sequentially numbered, sealed envelopes (if needed)
 - [ ] **Stratified randomization:**
   - Balance important variables across groups
@@ -177,14 +177,14 @@
 ### Protocol Development
 - [ ] **Detailed, written protocol:**
   - Step-by-step procedures
-  - Scripts for standardized instructions
+  - Scripts for standardised instructions
   - Decision rules for handling issues
   - Data collection forms
 - [ ] Pilot tested before main study
 - [ ] Staff trained to criterion
 - [ ] Compliance monitoring planned
 
-### Standardization
+### Standardisation
 - [ ] Same instructions for all participants
 - [ ] Same equipment and materials
 - [ ] Same environment/setting when possible
@@ -202,7 +202,7 @@
   - Inter-rater reliability established
 - [ ] **How collected:**
   - Valid, reliable instruments
-  - Standardized administration
+  - Standardised administration
   - Multiple methods if possible (triangulation)
 
 ## Measurement
@@ -233,16 +233,16 @@
 - [ ] Recall periods appropriate
 - [ ] Cultural appropriateness considered
 
-## Bias Minimization
+## Bias Minimisation
 
 ### Selection Bias
 - [ ] Random sampling when possible
 - [ ] Clearly defined eligibility criteria
 - [ ] Document who declines and why
-- [ ] Minimize self-selection
+- [ ] Minimise self-selection
 
 ### Performance Bias
-- [ ] Standardized protocols
+- [ ] Standardised protocols
 - [ ] Blinding of providers
 - [ ] Monitor protocol adherence
 - [ ] Document deviations
@@ -250,11 +250,11 @@
 ### Detection Bias
 - [ ] Blinding of outcome assessors
 - [ ] Objective measures when possible
-- [ ] Standardized assessment procedures
+- [ ] Standardised assessment procedures
 - [ ] Multiple raters with reliability checks
 
 ### Attrition Bias
-- [ ] Strategies to minimize dropout
+- [ ] Strategies to minimise dropout
 - [ ] Track reasons for dropout
 - [ ] Compare dropouts to completers
 - [ ] Intention-to-treat analysis planned
@@ -297,7 +297,7 @@
   - One-tailed or two-tailed
 - [ ] **Secondary analyses:**
   - Clearly designated as secondary
-  - Exploratory analyses labeled as such
+  - Exploratory analyses labelled as such
 - [ ] **Multiple comparisons:**
   - Adjustment method specified (if needed)
   - Primary outcome protects from inflation
@@ -345,7 +345,7 @@
 
 ### Risk-Benefit Analysis
 - [ ] Potential benefits outweigh risks
-- [ ] Risks minimized
+- [ ] Risks minimised
 - [ ] Vulnerable populations protected
 - [ ] Data safety monitoring (if high risk)
 
@@ -474,7 +474,7 @@
 - [ ] Measures are valid and reliable
 - [ ] Confounds are controlled
 - [ ] Randomization and blinding implemented
-- [ ] Data collection is standardized
+- [ ] Data collection is standardised
 - [ ] Analysis plan is prespecified
 - [ ] Ethical approval obtained
 - [ ] Study is preregistered
@@ -487,8 +487,8 @@
 
 **Good experimental design is about:**
 - Asking clear questions
-- Minimizing bias
-- Maximizing validity
+- Minimising bias
+- Maximising validity
 - Appropriate inference
 - Transparency
 - Reproducibility

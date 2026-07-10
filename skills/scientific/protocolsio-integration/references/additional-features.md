@@ -42,7 +42,7 @@ Update profile information.
 - `first_name`: First name
 - `last_name`: Last name
 - `email`: Email address
-- `affiliation`: Institution or organization
+- `affiliation`: Institution or organisation
 - `bio`: Profile bio/description
 - `location`: Geographic location
 - `website`: Personal or lab website URL
@@ -178,7 +178,7 @@ Retrieve all experiment records for a protocol.
 
 **Use Cases:**
 - Track reproducibility across multiple experiments
-- Document troubleshooting and optimization
+- Document troubleshooting and optimisation
 - Share successful modifications with collaborators
 - Build institutional knowledge base
 - Support lab notebook requirements
@@ -237,12 +237,12 @@ curl -H "Authorization: Bearer YOUR_TOKEN" \
 
 ### Export Organization Data
 
-Export all protocols and workspace data from an organization.
+Export all protocols and workspace data from an organisation.
 
 **Endpoint:** `GET /organizations/{organization_id}/export`
 
 **Path Parameters:**
-- `organization_id`: The organization's unique identifier
+- `organization_id`: The organisation's unique identifier
 
 **Query Parameters:**
 - `format`: Export format
@@ -300,7 +300,7 @@ Track all protocol executions:
 2. Document execution: `POST /protocols/{id}/runs`
 3. Upload result files to workspace
 4. Link files in experiment record
-5. Analyze success rates across runs
+5. Analyse success rates across runs
 
 ### 3. Notification System Integration
 
@@ -311,9 +311,9 @@ Build custom notification system:
 3. Send to internal communication system
 4. Mark as read: `PATCH /notifications/{id}`
 
-### 4. Profile Synchronization
+### 4. Profile Synchronisation
 
-Keep profiles synchronized across systems:
+Keep profiles synchronised across systems:
 
 1. Retrieve profile: `GET /profile`
 2. Compare with internal system
@@ -381,7 +381,7 @@ Most API responses follow this structure:
    - Cite protocols in publications
 
 5. **Data Export**
-   - Export organization data regularly
+   - Export organisation data regularly
    - Test restore procedures
    - Store exports securely
    - Document export procedures

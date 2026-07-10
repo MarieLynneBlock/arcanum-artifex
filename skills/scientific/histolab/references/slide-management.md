@@ -83,7 +83,7 @@ slide.save_thumbnail()  # Saves to processed_path
 scaled_thumbnail = slide.scaled_image(scale_factor=32)
 ```
 
-## Slide Visualization
+## Slide Visualisation
 
 ```python
 # Display slide thumbnail with matplotlib
@@ -133,10 +133,10 @@ slide_path = slide.scaled_image
 
 ## Best Practices
 
-1. **Always specify processed_path**: Organize outputs in dedicated directories
+1. **Always specify processed_path**: Organise outputs in dedicated directories
 2. **Check dimensions before processing**: Large slides can exceed memory limits
 3. **Use appropriate pyramid levels**: Extract tiles at levels matching your analysis resolution
-4. **Preview with thumbnails**: Use thumbnails for quick visualization before heavy processing
+4. **Preview with thumbnails**: Use thumbnails for quick visualisation before heavy processing
 5. **Monitor memory usage**: Level 0 operations on large slides require significant RAM
 
 ## Common Workflows

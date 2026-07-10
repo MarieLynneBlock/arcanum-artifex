@@ -74,8 +74,8 @@
    - 6.3 [Infrastructure](#63-infrastructure)
    - 6.4 [Work Environment and Contamination Control](#64-work-environment-and-contamination-control)
 
-7. [Product Realization](#7-product-realization)
-   - 7.1 [Planning of Product Realization](#71-planning-of-product-realization)
+7. [Product Realisation](#7-product-realisation)
+   - 7.1 [Planning of Product Realisation](#71-planning-of-product-realisation)
    - 7.2 [Customer-Related Processes](#72-customer-related-processes)
    - 7.3 [Design and Development](#73-design-and-development)
    - 7.4 [Purchasing](#74-purchasing)
@@ -91,7 +91,7 @@
 
 9. [Appendices](#9-appendices)
    - Appendix A: [List of Documented Procedures](#appendix-a-list-of-documented-procedures)
-   - Appendix B: [Organization Chart](#appendix-b-organization-chart)
+   - Appendix B: [Organization Chart](#appendix-b-organisation-chart)
    - Appendix C: [Process Map](#appendix-c-process-map)
    - Appendix D: [Definitions and Abbreviations](#appendix-d-definitions-and-abbreviations)
    - Appendix E: [Applicable Regulatory Requirements](#appendix-e-applicable-regulatory-requirements)
@@ -107,7 +107,7 @@
 **Manufacturing Site(s):** [LIST ALL MANUFACTURING SITES]
 **Type of Business:** [e.g., Medical Device Manufacturer, Contract Manufacturer, etc.]
 
-[COMPANY NAME] was [established/founded] in [YEAR] and specializes in [BRIEF DESCRIPTION OF BUSINESS FOCUS].
+[COMPANY NAME] was [established/founded] in [YEAR] and specialises in [BRIEF DESCRIPTION OF BUSINESS FOCUS].
 
 **Mission Statement:** [INSERT COMPANY MISSION STATEMENT]
 
@@ -144,7 +144,7 @@ All recipients of controlled copies are responsible for ensuring they are using 
 | DMR | Device Master Record |
 | FDA | U.S. Food and Drug Administration |
 | IFU | Instructions for Use |
-| ISO | International Organization for Standardization |
+| ISO | International Organization for Standardisation |
 | MDF | Medical Device File |
 | MDR | Medical Device Regulation (EU) |
 | M&M Equipment | Monitoring and Measuring Equipment |
@@ -203,7 +203,7 @@ The QMS is designed to comply with the following standards and regulatory requir
 - **Canada:** Canadian Medical Devices Regulations (SOR/98-282)
 - [OTHER APPLICABLE REGIONAL REQUIREMENTS]
 
-**Recognized Standards:**
+**Recognised Standards:**
 - [LIST PRODUCT-SPECIFIC STANDARDS, e.g., IEC 60601, ISO 10993, etc.]
 
 ### 2.4 Exclusions and Justifications
@@ -264,7 +264,7 @@ Example:]
 > - Maintaining competent and motivated personnel
 > - Responding promptly and effectively to feedback and complaints
 >
-> This policy applies to all employees, contractors, and suppliers. This policy is reviewed annually and communicated throughout the organization.
+> This policy applies to all employees, contractors, and suppliers. This policy is reviewed annually and communicated throughout the organisation.
 >
 > [SIGNATURE]
 > [NAME], Chief Executive Officer
@@ -272,7 +272,7 @@ Example:]
 
 ### 3.2 Quality Objectives
 
-The organization has established the following measurable quality objectives to support the Quality Policy:
+The organisation has established the following measurable quality objectives to support the Quality Policy:
 
 | Objective | Measurement | Target | Responsibility | Review Frequency |
 |-----------|-------------|--------|----------------|------------------|
@@ -318,7 +318,7 @@ The QMS processes have been identified and are documented in this Quality Manual
 - Internal communication
 - Resource management
 
-**Product Realization Processes:**
+**Product Realisation Processes:**
 - [Design and development - if applicable]
 - Purchasing
 - Production and service provision
@@ -343,8 +343,8 @@ The QMS processes have been identified and are documented in this Quality Manual
 The QMS processes are interconnected and operate as a system. Process interactions are illustrated in the Process Map (Appendix C). Key interactions include:
 
 - Management review provides direction and resources for all processes
-- Product realization processes transform customer requirements into conforming products
-- Support processes enable effective product realization
+- Product realisation processes transform customer requirements into conforming products
+- Support processes enable effective product realisation
 - Monitoring processes provide feedback for improvement
 - Risk management is integrated throughout all processes
 - All processes contribute to meeting quality objectives
@@ -365,7 +365,7 @@ Outsourcing does not relieve [COMPANY NAME] of responsibility for conformity to 
 
 #### 4.1.4 Risk Management
 
-[COMPANY NAME] has established documented requirements for risk management throughout product realization in accordance with ISO 14971. Risk management is integrated into:
+[COMPANY NAME] has established documented requirements for risk management throughout product realisation in accordance with ISO 14971. Risk management is integrated into:
 
 - Design and development (when applicable)
 - Production and process control
@@ -404,7 +404,7 @@ The QMS documentation includes:
 
 **Tier 2:** Documented Procedures (SOPs)
 - The [31+] documented procedures required by ISO 13485:2016
-- Additional procedures established by the organization
+- Additional procedures established by the organisation
 - Referenced in Appendix A
 
 **Tier 3:** Work Instructions (WIs)

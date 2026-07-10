@@ -1,6 +1,6 @@
 ---
 name: plotly
-description: Interactive visualization library. Use when you need hover info, zoom, pan, or web-embeddable charts. Best for dashboards, exploratory analysis, and presentations. For static publication figures use matplotlib or scientific-visualization.
+description: Interactive visualisation library. Use when you need hover info, zoom, pan, or web-embeddable charts. Best for dashboards, exploratory analysis, and presentations. For static publication figures use matplotlib or scientific-visualisation.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -8,7 +8,7 @@ metadata:
 
 # Plotly
 
-Python graphing library for creating interactive, publication-quality visualizations with 40+ chart types.
+Python graphing library for creating interactive, publication-quality visualisations with 40+ chart types.
 
 ## Quick Start
 
@@ -34,20 +34,20 @@ fig.show()
 ## Choosing Between APIs
 
 ### Use Plotly Express (px)
-For quick, standard visualizations with sensible defaults:
+For quick, standard visualisations with sensible defaults:
 - Working with pandas DataFrames
 - Creating common chart types (scatter, line, bar, histogram, etc.)
-- Need automatic color encoding and legends
+- Need automatic colour encoding and legends
 - Want minimal code (1-5 lines)
 
 See [reference/plotly-express.md](references/plotly-express.md) for complete guide.
 
 ### Use Graph Objects (go)
-For fine-grained control and custom visualizations:
+For fine-grained control and custom visualisations:
 - Chart types not in Plotly Express (3D mesh, isosurface, complex financial charts)
 - Building complex multi-trace figures from scratch
 - Need precise control over individual components
-- Creating specialized visualizations with custom shapes and annotations
+- Creating specialised visualisations with custom shapes and annotations
 
 See [reference/graph-objects.md](references/graph-objects.md) for complete guide.
 
@@ -62,7 +62,7 @@ fig.add_hline(y=10)                     # Add shapes
 
 ### 1. Chart Types
 
-Plotly supports 40+ chart types organized into categories:
+Plotly supports 40+ chart types organised into categories:
 
 **Basic Charts:** scatter, line, bar, pie, area, bubble
 
@@ -72,11 +72,11 @@ Plotly supports 40+ chart types organized into categories:
 
 **Financial Charts:** candlestick, OHLC, waterfall, funnel, time series
 
-**Maps:** scatter maps, choropleth, density maps (geographic visualization)
+**Maps:** scatter maps, choropleth, density maps (geographic visualisation)
 
 **3D Charts:** scatter3d, surface, mesh, cone, volume
 
-**Specialized:** sunburst, treemap, sankey, parallel coordinates, gauge
+**Specialised:** sunburst, treemap, sankey, parallel coordinates, gauge
 
 For detailed examples and usage of all chart types, see [reference/chart-types.md](references/chart-types.md).
 
@@ -97,8 +97,8 @@ fig = px.scatter(df, x='x', y='y', template='plotly_dark')
 # Built-in: plotly_white, plotly_dark, ggplot2, seaborn, simple_white
 ```
 
-**Customization:** Control every aspect of appearance:
-- Colors (discrete sequences, continuous scales)
+**Customisation:** Control every aspect of appearance:
+- Colours (discrete sequences, continuous scales)
 - Fonts and text
 - Axes (ranges, ticks, grids)
 - Legends
@@ -110,7 +110,7 @@ For complete layout and styling options, see [reference/layouts-styling.md](refe
 ### 3. Interactivity
 
 Built-in interactive features:
-- Hover tooltips with customizable data
+- Hover tooltips with customisable data
 - Pan and zoom
 - Legend toggling
 - Box/lasso selection
@@ -156,7 +156,7 @@ For complete export options, see [reference/export-interactivity.md](references/
 
 ## Common Workflows
 
-### Scientific Data Visualization
+### Scientific Data Visualisation
 
 ```python
 import plotly.express as px
@@ -251,10 +251,10 @@ app.run_server(debug=True)
 
 ## Reference Files
 
-- **[plotly-express.md](references/plotly-express.md)** - High-level API for quick visualizations
+- **[plotly-express.md](references/plotly-express.md)** - High-level API for quick visualisations
 - **[graph-objects.md](references/graph-objects.md)** - Low-level API for fine-grained control
-- **[chart-types.md](references/chart-types.md)** - Complete catalog of 40+ chart types with examples
-- **[layouts-styling.md](references/layouts-styling.md)** - Subplots, templates, colors, customization
+- **[chart-types.md](references/chart-types.md)** - Complete catalogue of 40+ chart types with examples
+- **[layouts-styling.md](references/layouts-styling.md)** - Subplots, templates, colours, customisation
 - **[export-interactivity.md](references/export-interactivity.md)** - Export options and interactive features
 
 ## Additional Resources

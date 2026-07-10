@@ -252,7 +252,7 @@ Example:
 
 Example: "The patient stated: 'I thought I was having a heart attack, but the pain was different than I expected. I'm grateful the doctors figured out what was wrong so quickly.'"
 
-This section is optional but encouraged as it provides valuable patient-centered information.
+This section is optional but encouraged as it provides valuable patient-centred information.
 
 #### Informed Consent (1 item)
 
@@ -317,7 +317,7 @@ Examples:
 
 ### 18 HIPAA Identifiers to Remove
 
-Complete list of protected health information (PHI) that must be removed for Safe Harbor de-identification:
+Complete list of protected health information (PHI) that must be removed for Safe Harbour de-identification:
 
 1. **Names** - Patient name, family members' names, healthcare provider names
 2. **Geographic subdivisions smaller than state** - Street addresses, cities, counties, ZIP codes (can keep first 3 digits if >20,000 people in area)
@@ -354,7 +354,7 @@ Complete list of protected health information (PHI) that must be removed for Saf
 **Location:**
 - State or country acceptable
 - Remove city, hospital name, specific clinic
-- Example: "A community hospital in the Midwest" or "A tertiary care center in California"
+- Example: "A community hospital in the Midwest" or "A tertiary care centre in California"
 
 **Rare Conditions:**
 - Very rare conditions may themselves be identifying
@@ -367,7 +367,7 @@ Complete list of protected health information (PHI) that must be removed for Saf
 - Crop images to show only relevant clinical findings
 - Consider using illustrations instead of photographs
 - Black bars over eyes are NOT sufficient
-- Get explicit consent for recognizable images
+- Get explicit consent for recognisable images
 
 **Pathology and Imaging:**
 - Remove patient identifiers from image headers
@@ -396,7 +396,7 @@ Complete list of protected health information (PHI) that must be removed for Saf
 - Objective and factual
 - Avoid sensationalism
 - Respectful toward patient and healthcare team
-- Avoid value judgments
+- Avoid value judgements
 - Focus on clinical facts and medical reasoning
 
 ### Tense
@@ -426,7 +426,7 @@ Many journals require a "Learning Points" or "Key Messages" section with 3-5 bul
 **Characteristics of good learning points:**
 - Concise (1-2 sentences each)
 - Clinically actionable
-- Generalizable beyond this specific case
+- Generalisable beyond this specific case
 - Focus on diagnosis, treatment, or recognition
 - Avoid overgeneralization
 
@@ -494,7 +494,7 @@ Many journals require a "Learning Points" or "Key Messages" section with 3-5 bul
 - First author: Primary writer, often junior physician/trainee
 - Senior author: Attending physician, supervisor
 - Co-authors: Contributing specialists, consultants
-- Acknowledgments: Contributors not meeting authorship criteria
+- Acknowledgements: Contributors not meeting authorship criteria
 
 ## Submission Process
 
@@ -543,7 +543,7 @@ Focus on diagnostic reasoning process, differential diagnosis, and key diagnosti
 
 ### Rare Disease or Presentation
 
-Emphasize rarity, epidemiology, and contribution to medical knowledge about the condition.
+Emphasise rarity, epidemiology, and contribution to medical knowledge about the condition.
 
 ### Adverse Drug Reaction
 

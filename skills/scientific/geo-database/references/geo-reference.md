@@ -143,8 +143,8 @@ https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi
 - `db` (required): Target database
 - `id` (required): UID from source database
 - `cmd`: Link command type
-  - "neighbor": Return linked UIDs (default)
-  - "neighbor_score": Return scored links
+  - "neighbour": Return linked UIDs (default)
+  - "neighbour_score": Return scored links
   - "acheck": Check for links
   - "ncheck": Count links
   - "llinks": Return URLs to LinkOut resources
@@ -708,7 +708,7 @@ expression_df = pd.DataFrame(expression_data)
 
 **Cause:** Different platform versions or sample processing
 
-**Solution:** Standardize using platform annotation:
+**Solution:** Standardise using platform annotation:
 ```python
 # Get common probe set
 all_probes = set()
@@ -793,7 +793,7 @@ sparse_matrix = sp.csr_matrix(expression_df.values)
 - Probe IDs format: `1007_s_at`, `1053_at`
 - Multiple probe sets per gene common
 - Check for `_at`, `_s_at`, `_x_at` suffixes
-- May need RMA or MAS5 normalization
+- May need RMA or MAS5 normalisation
 
 ### Illumina Arrays
 

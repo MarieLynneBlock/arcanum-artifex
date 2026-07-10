@@ -56,7 +56,7 @@ Create specific instruction files:
 - `testing.instructions.md` - Testing standards and practices
 - `documentation.instructions.md` - Documentation requirements
 - `security.instructions.md` - Security best practices
-- `performance.instructions.md` - Performance optimization guidelines
+- `performance.instructions.md` - Performance optimisation guidelines
 - `code-review.instructions.md` - Code review standards and GitHub review guidelines
 
 ### 3. `.github/skills/` Directory
@@ -92,7 +92,7 @@ Create Coding Agent workflow file:
 - Job name MUST be `copilot-setup-steps`
 - Include proper triggers (workflow_dispatch, push, pull_request on the workflow file)
 - Set appropriate permissions (minimum required)
-- Customize steps based on the technology stack provided
+- Customise steps based on the technology stack provided
 
 ## Content Guidelines
 
@@ -178,7 +178,7 @@ description: "Java Spring Boot development standards"
 - **Java Development**: Spring Boot, Quarkus, testing, documentation
 - **Database Development**: PostgreSQL, SQL Server, and general database best practices
 - **Azure Development**: Infrastructure as Code, serverless functions
-- **Security & Performance**: Security frameworks, accessibility, performance optimization
+- **Security & Performance**: Security frameworks, accessibility, performance optimisation
 
 ## File Structure Standards
 
@@ -294,7 +294,7 @@ The plan consists of a Markdown document that describes the implementation plan,
 4. **Generate main copilot-instructions.md** with project-wide standards
 5. **Create language-specific instruction files** using awesome-copilot references with attribution
 6. **Generate reusable skills** tailored to project needs
-7. **Set up specialized agents**, fetching from awesome-copilot where applicable (especially for expert engineer agents matching the tech stack)
+7. **Set up specialised agents**, fetching from awesome-copilot where applicable (especially for expert engineer agents matching the tech stack)
 8. **Create the GitHub Actions workflow for Coding Agent** (`copilot-setup-steps.yml`) — skip if user does not use GitHub Actions
 9. **Validate** all files follow proper formatting and include necessary frontmatter
 
@@ -304,7 +304,7 @@ After creating all files, provide the user with:
 
 1. **VS Code setup instructions** - How to enable and configure the files
 2. **Usage examples** - How to use each skill and agent
-3. **Customization tips** - How to modify files for their specific needs
+3. **Customisation tips** - How to modify files for their specific needs
 4. **Testing recommendations** - How to verify the setup works correctly
 
 ## Quality Checklist

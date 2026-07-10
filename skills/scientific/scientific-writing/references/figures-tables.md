@@ -2,9 +2,9 @@
 
 ## Overview
 
-Figures and tables are essential components of scientific papers, serving to display data patterns, summarize results, and provide evidence for conclusions. Effective visual displays enhance comprehension and can sustain reader interest while illustrating trends, patterns, and relationships not easily conveyed through text alone.
+Figures and tables are essential components of scientific papers, serving to display data patterns, summarise results, and provide evidence for conclusions. Effective visual displays enhance comprehension and can sustain reader interest while illustrating trends, patterns, and relationships not easily conveyed through text alone.
 
-A recent Nature Cell Biology checklist (2025) emphasizes that creating clear and engaging scientific figures is crucial for communicating complex data with clarity, accessibility, and design excellence.
+A recent Nature Cell Biology checklist (2025) emphasises that creating clear and engaging scientific figures is crucial for communicating complex data with clarity, accessibility, and design excellence.
 
 ## When to Use Tables vs. Figures
 
@@ -12,7 +12,7 @@ A recent Nature Cell Biology checklist (2025) emphasizes that creating clear and
 - Presenting precise numerical values that readers need to reference
 - Comparing exact measurements across multiple variables
 - Showing detailed statistical outputs
-- Data cannot be adequately summarized in 1-2 sentences
+- Data cannot be adequately summarised in 1-2 sentences
 - Readers need access to specific data points
 - Displaying demographic or baseline characteristics
 - Presenting multiple related statistical tests
@@ -95,7 +95,7 @@ differences in age, BMI, or blood pressure (all p > 0.15)."
 
 **Maintain uniform formatting across all display items:**
 - Font types and sizes
-- Color schemes
+- Colour schemes
 - Terminology and abbreviations
 - Axis labels and units
 - Statistical annotation methods
@@ -103,7 +103,7 @@ differences in age, BMI, or blood pressure (all p > 0.15)."
 
 **Example of inconsistency to avoid:**
 - Figure 1 uses "standard error" while Figure 2 uses "SE"
-- Figure 1 has blue/red color scheme while Figure 2 uses green/yellow
+- Figure 1 has blue/red colour scheme while Figure 2 uses green/yellow
 - Table 1 reports p-values as "p = 0.023" while Table 2 uses "p-value = .023"
 
 ### 4. Optimal Quantity
@@ -122,9 +122,9 @@ differences in age, BMI, or blood pressure (all p > 0.15)."
 - Don't include too many variables in one figure
 - Use clear, readable fonts (minimum 8-10 pt in final size)
 - Provide adequate spacing between elements
-- Use high contrast (especially for color-blind accessibility)
+- Use high contrast (especially for colour-blind accessibility)
 - Remove unnecessary grid lines, borders, or decoration
-- Maximize data-ink ratio (Tufte principle: minimize non-data ink)
+- Maximise data-ink ratio (Tufte principle: minimise non-data ink)
 
 ## Figure Types and When to Use Them
 
@@ -160,7 +160,7 @@ differences in age, BMI, or blood pressure (all p > 0.15)."
 - Illustrating dose-response relationships
 
 **Design guidelines:**
-- Use different line styles or colors for groups
+- Use different line styles or colours for groups
 - Include data point markers for sparse data
 - Show error bars or shaded confidence intervals
 - Label axes clearly with units
@@ -232,16 +232,16 @@ differences in age, BMI, or blood pressure (all p > 0.15)."
 - Representing clustering or grouping
 
 **Design guidelines:**
-- Use color scales that are perceptually uniform
-- Include color scale bar with units
+- Use colour scales that are perceptually uniform
+- Include colour scale bar with units
 - Consider hierarchical clustering for rows/columns
-- Use appropriate color scheme (diverging vs. sequential)
+- Use appropriate colour scheme (diverging vs. sequential)
 - Make axes labels readable
 
 **Common mistakes:**
-- Poor color choice (rainbow scales are often misleading)
+- Poor colour choice (rainbow scales are often misleading)
 - Too many rows/columns making labels unreadable
-- No color scale bar
+- No colour scale bar
 
 **Example applications:**
 - Gene expression across samples
@@ -419,15 +419,15 @@ n.s. or NS = not significant
 
 ## Accessibility Considerations
 
-### Color-Blind Friendly Design
+### Colour-Blind Friendly Design
 
 **Recommendations:**
-- Use color palettes designed for color-blind accessibility
-- Don't rely on color alone (add patterns, shapes, or labels)
+- Use colour palettes designed for colour-blind accessibility
+- Don't rely on colour alone (add patterns, shapes, or labels)
 - Test figures in grayscale
 - Avoid red-green combinations
 
-**Color-blind safe palettes:**
+**Colour-blind safe palettes:**
 - Blue-Orange
 - Purple-Yellow
 - Colorbrewer2.org palettes
@@ -437,7 +437,7 @@ n.s. or NS = not significant
 
 **Ensure readability:**
 - Dark text on light background (or vice versa)
-- Avoid low-contrast color combinations (gray on gray)
+- Avoid low-contrast colour combinations (gray on gray)
 - Use thick enough lines (minimum 0.5-1 pt)
 - Large enough text (minimum 8-10 pt after scaling)
 
@@ -447,7 +447,7 @@ n.s. or NS = not significant
 - Use vector formats when possible (PDF, EPS, SVG)
 - Minimum 300 dpi for raster images (TIFF, PNG)
 - Test appearance at final print size
-- Ensure color figures work in grayscale if printed
+- Ensure colour figures work in grayscale if printed
 
 ## Technical Requirements
 
@@ -466,7 +466,7 @@ n.s. or NS = not significant
 **Avoid:**
 - Low-resolution screenshots
 - Figures copied from presentations (usually too low resolution)
-- Heavily compressed JPEGs (artifacts)
+- Heavily compressed JPEGs (artefacts)
 
 ### Resolution Requirements
 
@@ -490,13 +490,13 @@ n.s. or NS = not significant
 
 **Allowed:**
 - Brightness/contrast adjustment applied to entire image
-- Color balance adjustment
+- Colour balance adjustment
 - Cropping (with notation)
 - Rotation
 
 **NOT allowed:**
 - Selective editing (e.g., enhancing bands in gels)
-- Removing background artifacts
+- Removing background artefacts
 - Splicing images without clear indication
 - Any manipulation that obscures, eliminates, or misrepresents data
 
@@ -578,7 +578,7 @@ better cognitive function.
 **Check journal guidelines for:**
 - Preferred file formats
 - Resolution requirements
-- Color specifications (RGB vs. CMYK)
+- Colour specifications (RGB vs. CMYK)
 - Maximum number of display items
 - Dimension requirements
 - Font restrictions
@@ -594,7 +594,7 @@ better cognitive function.
 - [ ] Correct file format and resolution
 - [ ] Appropriate size/dimensions
 - [ ] High enough quality for print
-- [ ] Color-blind friendly (if using color)
+- [ ] Colour-blind friendly (if using colour)
 - [ ] Permissions obtained (if adapting from others' work)
 
 ## Common Pitfalls to Avoid
@@ -607,11 +607,11 @@ better cognitive function.
 5. **Cherry-picking** data without showing full picture
 
 ### Design Issues
-6. **Poor color choices** (not color-blind friendly)
+6. **Poor colour choices** (not colour-blind friendly)
 7. **Inconsistent formatting** across displays
 8. **Cluttered or busy designs**
 9. **Too small text** at final size
-10. **Misleading visualizations** (truncated axes, 3D distortions)
+10. **Misleading visualisations** (truncated axes, 3D distortions)
 
 ### Technical Issues
 11. **Insufficient resolution** (pixelated when printed)
@@ -623,12 +623,12 @@ better cognitive function.
 ## Tools for Creating Figures
 
 ### Graphing Software
-- **R (ggplot2)**: Highly customizable, publication-quality, reproducible
+- **R (ggplot2)**: Highly customisable, publication-quality, reproducible
 - **Python (matplotlib, seaborn)**: Flexible, programmable, widely used
 - **GraphPad Prism**: User-friendly, statistics integrated, common in life sciences
 - **Origin**: Advanced graphing, popular in physics/engineering
-- **Excel**: Basic graphs, widely available, limited customization
-- **MATLAB**: Technical computing, good for complex visualizations
+- **Excel**: Basic graphs, widely available, limited customisation
+- **MATLAB**: Technical computing, good for complex visualisations
 
 ### Image Processing
 - **ImageJ/Fiji**: Free, powerful, widely used in microscopy
@@ -656,7 +656,7 @@ better cognitive function.
 | **Number allowed** | 4-10 display items for research articles | Nature (4-6), PLOS ONE (unlimited), Science (4-5) |
 | **File format** | TIFF, EPS, PDF, AI, or specific formats | Nature (EPS/PDF for line art), Cell (TIFF preferred) |
 | **Resolution** | 300-1000 dpi depending on type | JAMA (300-600 dpi), Nature (300+ dpi) |
-| **Color** | RGB vs. CMYK | Print journals: CMYK; Online: RGB |
+| **Colour** | RGB vs. CMYK | Print journals: CMYK; Online: RGB |
 | **Dimensions** | Single vs. double column widths | Nature (89mm or 183mm), Science (specific templates) |
 | **Figure legends** | Length limits, specific format | Some journals: 150 word max per legend |
 | **Table format** | Editable vs. image | Most prefer editable tables, not images |
@@ -699,7 +699,7 @@ better cognitive function.
 **What reviewers check:**
 - **Necessity**: Each figure/table supports conclusions
 - **Quality**: Professional appearance, sufficient resolution
-- **Clarity**: Self-explanatory with captions; proper labeling
+- **Clarity**: Self-explanatory with captions; proper labelling
 - **Statistics**: Error bars, sample sizes, significance indicators
 - **Consistency**: Formatting uniform across display items
 
@@ -773,19 +773,19 @@ Figure 1. Architecture of proposed model. (a) Encoder with 12 transformer layers
 - [ ] Meets journal's RGB/CMYK requirements?
 - [ ] Self-explanatory caption with all abbreviations defined?
 - [ ] Caption length within journal limits?
-- [ ] All symbols/colors explained in caption or legend?
+- [ ] All symbols/colours explained in caption or legend?
 - [ ] Error bars included and defined?
 - [ ] Sample sizes noted?
 - [ ] Statistical tests described?
-- [ ] Axes labeled with units?
+- [ ] Axes labelled with units?
 - [ ] Readable text at final print size?
-- [ ] Works in grayscale or color-blind friendly?
+- [ ] Works in grayscale or colour-blind friendly?
 - [ ] Referenced in text in correct order?
 - [ ] Style matches target journal's published figures?
 
 **For every table:**
 - [ ] Clear, descriptive title?
-- [ ] Title capitalization matches journal style?
+- [ ] Title capitalisation matches journal style?
 - [ ] Column headers include units?
 - [ ] Appropriate numerical precision?
 - [ ] Abbreviations defined in footnotes?

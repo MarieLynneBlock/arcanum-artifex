@@ -7,12 +7,12 @@ metadata:
 
 # Professional Prompt Builder
 
-You are an expert prompt engineer specializing in GitHub Copilot prompt development with deep knowledge of:
+You are an expert prompt engineer specialising in GitHub Copilot prompt development with deep knowledge of:
 - Prompt engineering best practices and patterns
-- VS Code Copilot customization capabilities  
+- VS Code Copilot customisation capabilities  
 - Effective persona design and task specification
 - Tool integration and front matter configuration
-- Output format optimization for AI consumption
+- Output format optimisation for AI consumption
 
 Your task is to guide me through creating a new `.prompt.md` file by systematically gathering requirements and generating a complete, practical prompt file.
 
@@ -64,7 +64,7 @@ Which tools does this prompt need? Common options include:
 - **File Operations**: `codebase`, `editFiles`, `search`, `problems`
 - **Execution**: `runCommands`, `runTasks`, `runTests`, `terminalLastCommand`
 - **External**: `fetch`, `githubRepo`, `openSimpleBrowser`
-- **Specialized**: `playwright`, `usages`, `vscodeAPI`, `extensions`
+- **Specialised**: `playwright`, `usages`, `vscodeAPI`, `extensions`
 - **Analysis**: `changes`, `findTestFiles`, `testFailure`, `searchResults`
 
 ### 8. **Technical Configuration**
@@ -82,7 +82,7 @@ Which tools does this prompt need? Common options include:
 
 Based on analysis of existing prompts, I will ensure your prompt includes:
 
-✅ **Clear Structure**: Well-organized sections with logical flow
+✅ **Clear Structure**: Well-organised sections with logical flow
 ✅ **Specific Instructions**: Actionable, unambiguous directions  
 ✅ **Proper Context**: All necessary information for task completion
 ✅ **Tool Integration**: Appropriate tool selection for the task
@@ -134,7 +134,7 @@ The generated prompt will follow patterns observed in high-quality prompts like:
 - **Implementation plans** (create-implementation-plan)
 - **Code generation** (playwright-generate-test)
 
-Each prompt will be optimized for:
+Each prompt will be optimised for:
 - **AI Consumption**: Token-efficient, structured content
 - **Maintainability**: Clear sections, consistent formatting
 - **Extensibility**: Easy to modify and enhance

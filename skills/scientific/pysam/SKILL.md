@@ -16,7 +16,7 @@ Pysam is a Python module for reading, manipulating, and writing genomic datasets
 
 This skill should be used when:
 - Working with sequencing alignment files (BAM/CRAM)
-- Analyzing genetic variants (VCF/BCF)
+- Analysing genetic variants (VCF/BCF)
 - Extracting reference sequences or gene regions
 - Processing raw sequencing data (FASTQ)
 - Calculating coverage or read depth
@@ -66,7 +66,7 @@ fasta.close()
 
 ### 1. Alignment File Operations (SAM/BAM/CRAM)
 
-Use the `AlignmentFile` class to work with aligned sequencing reads. This is appropriate for analyzing mapping results, calculating coverage, extracting reads, or quality control.
+Use the `AlignmentFile` class to work with aligned sequencing reads. This is appropriate for analysing mapping results, calculating coverage, extracting reads, or quality control.
 
 **Common operations:**
 - Open and read BAM/SAM/CRAM files
@@ -84,7 +84,7 @@ Use the `AlignmentFile` class to work with aligned sequencing reads. This is app
 - Pileup analysis for coverage
 - Writing and creating BAM files
 - Coordinate systems and indexing
-- Performance optimization tips
+- Performance optimisation tips
 
 ### 2. Variant File Operations (VCF/BCF)
 
@@ -140,7 +140,7 @@ Pysam excels at integrating multiple file types for comprehensive genomic analys
 - Annotate variants with coverage information
 - Extract sequences around variant positions
 - Filter alignments or variants based on multiple criteria
-- Generate coverage tracks for visualization
+- Generate coverage tracks for visualisation
 - Quality control across multiple data types
 
 **Reference:** See `references/common-workflows.md` for detailed examples of:
@@ -150,7 +150,7 @@ Pysam excels at integrating multiple file types for comprehensive genomic analys
 - Sequence extraction (variant contexts, gene sequences)
 - Read filtering and subsetting
 - Integration patterns (BAM+VCF, VCF+BED, etc.)
-- Performance optimization for complex workflows
+- Performance optimisation for complex workflows
 
 ## Key Concepts
 
@@ -195,7 +195,7 @@ Specify format when opening files:
 1. **Always use indexed files** for random access operations
 2. **Use `pileup()` for column-wise analysis** instead of repeated fetch operations
 3. **Use `count()` for counting** instead of iterating and counting manually
-4. **Process regions in parallel** when analyzing independent genomic regions
+4. **Process regions in parallel** when analysing independent genomic regions
 5. **Close files explicitly** to free resources
 6. **Use `until_eof=True`** for sequential processing without index
 7. **Avoid multiple iterators** unless necessary (use `multiple_iterators=True` if needed)
@@ -255,7 +255,7 @@ Detailed documentation for each major capability:
 For detailed information on specific operations, refer to the appropriate reference document:
 
 - Working with BAM files or calculating coverage → `alignment-files.md`
-- Analyzing variants or genotypes → `variant-files.md`
+- Analysing variants or genotypes → `variant-files.md`
 - Extracting sequences or processing FASTQ → `sequence-files.md`
 - Complex workflows integrating multiple file types → `common-workflows.md`
 

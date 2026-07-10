@@ -88,7 +88,7 @@ Posters are viewed from 3-6 feet (1-2 meters) away:
 1. **Limit fonts**: Use 1-2 font families maximum
 2. **Hierarchy**: Establish clear size hierarchy
 3. **Weight**: Use bold for emphasis, not italics
-4. **Alignment**: Left-align body text, center title
+4. **Alignment**: Left-align body text, centre title
 5. **Spacing**: Generous line spacing (1.2-1.5)
 6. **Consistency**: Same fonts for similar elements
 
@@ -143,11 +143,11 @@ Posters are viewed from 3-6 feet (1-2 meters) away:
 
 ---
 
-## Color Schemes
+## Colour Schemes
 
 ### Colorblind-Safe Palettes
 
-Use colorblind-friendly color combinations:
+Use colorblind-friendly colour combinations:
 
 **Okabe-Ito Palette** (Recommended):
 - Orange: `#E69F00`
@@ -164,19 +164,19 @@ Use colorblind-friendly color combinations:
 - Good for heatmaps and gradients
 - Colorblind-safe and perceptually uniform
 
-### Color Usage Guidelines
+### Colour Usage Guidelines
 
 **Background**:
 - **White or light gray**: Most common, professional
-- **Light colored**: Pale blue, beige (use cautiously)
+- **Light coloured**: Pale blue, beige (use cautiously)
 - **Avoid dark backgrounds**: Harder to read, expensive to print
 
 **Text**:
 - **Dark on light**: Black or dark gray text on white/light backgrounds
 - **Contrast ratio**: At least 4.5:1 (WCAG AA standard)
 
-**Accent Colors**:
-- Use 2-3 accent colors maximum
+**Accent Colours**:
+- Use 2-3 accent colours maximum
 - Section headers, key findings
 - Consistent throughout poster
 
@@ -185,9 +185,9 @@ Use colorblind-friendly color combinations:
 - Sufficient contrast
 - Test in grayscale
 
-### Color Contrast Tools
+### Colour Contrast Tools
 - WebAIM Contrast Checker: https://webaim.org/resources/contrastchecker/
-- Coblis (Color Blindness Simulator): https://www.color-blindness.com/coblis-color-blindness-simulator/
+- Coblis (Colour Blindness Simulator): https://www.colour-blindness.com/coblis-colour-blindness-simulator/
 
 ---
 
@@ -242,7 +242,7 @@ Use colorblind-friendly color combinations:
 
 ### Optional Sections
 - **Abstract**: Sometimes included, often omitted
-- **Acknowledgments**: Funding, collaborators
+- **Acknowledgements**: Funding, collaborators
 - **Future Work**: Next steps
 
 ---
@@ -252,7 +252,7 @@ Use colorblind-friendly color combinations:
 ### Figures and Plots
 
 **Principles**:
-1. **Simplify**: Remove clutter, emphasize key points
+1. **Simplify**: Remove clutter, emphasise key points
 2. **Enlarge**: Make larger than in paper
 3. **Label clearly**: Large axis labels, legends
 4. **Standalone**: Each figure tells a complete story
@@ -324,9 +324,9 @@ Use colorblind-friendly color combinations:
 ### tikzposter
 
 **Description**: Modern poster package using TikZ  
-**Best For**: Colorful, modern designs  
+**Best For**: Colourful, modern designs  
 **Pros**:
-- Highly customizable
+- Highly customisable
 - Modern, attractive themes
 - Block-based layout
 
@@ -374,7 +374,7 @@ Use colorblind-friendly color combinations:
 **For Printing**:
 - **PDF**: Universal standard
 - **High resolution**: 300 dpi minimum, 600 dpi for photos
-- **Color space**: RGB for most printers (check with printer)
+- **Colour space**: RGB for most printers (check with printer)
 - **Embed fonts**: Ensure all fonts embedded
 - **Flatten**: No transparency issues
 
@@ -382,7 +382,7 @@ Use colorblind-friendly color combinations:
 
 Before printing:
 1. **Proofread**: Check for typos, errors
-2. **Colors**: Check in print preview
+2. **Colours**: Check in print preview
 3. **Resolution**: Zoom to 100%, check figure quality
 4. **Margins**: Verify nothing cut off
 5. **Test print**: Print small version (A4) to check layout
@@ -395,7 +395,7 @@ Before printing:
 3. **Online services**: 
    - Vistaprint
    - Printful
-   - Academic Poster Printing (specialized)
+   - Academic Poster Printing (specialised)
 
 **Cost**: Typically $50-150 for A0 glossy poster
 
@@ -404,7 +404,7 @@ Before printing:
 | Paper Type | Description | Best For |
 |-----------|-------------|----------|
 | **Matte** | Non-reflective finish | Well-lit venues, minimal glare |
-| **Glossy** | Shiny, vibrant colors | Photos, colorful figures |
+| **Glossy** | Shiny, vibrant colours | Photos, colourful figures |
 | **Satin/Semi-gloss** | Between matte and glossy | Balanced option (recommended) |
 | **Fabric** | Wrinkle-resistant, rollable | Travel, re-use |
 
@@ -447,7 +447,7 @@ Generate QR codes linking to:
 ✓ **Keep text minimal** (30-40% of poster)  
 ✓ **Use visuals** (60-70% figures, plots, images)  
 ✓ **Tell a story** (clear narrative flow)  
-✓ **Colorblind-safe colors**  
+✓ **Colorblind-safe colours**  
 ✓ **Test readability** (view from 6 feet away)  
 ✓ **Include contact info** (email, QR code)  
 ✓ **Proofread** (multiple times!)
@@ -456,7 +456,7 @@ Generate QR codes linking to:
 
 ✗ **Don't use small fonts** (<24pt body text)  
 ✗ **Don't overcrowd** (leave white space)  
-✗ **Don't use complex tables** (simplify or visualize)  
+✗ **Don't use complex tables** (simplify or visualise)  
 ✗ **Don't use full paragraphs** (use bullets)  
 ✗ **Don't use many fonts** (1-2 max)  
 ✗ **Don't use low-res images** (<300 dpi)  
@@ -501,7 +501,7 @@ Generate QR codes linking to:
 
 ### Visual Accessibility
 
-1. **Color contrast**: High contrast (4.5:1 minimum)
+1. **Colour contrast**: High contrast (4.5:1 minimum)
 2. **Colorblind-safe**: Use Okabe-Ito or similar palettes
 3. **Font size**: Large enough to read from distance
 4. **Font choice**: Clear, sans-serif fonts
@@ -519,7 +519,7 @@ Generate QR codes linking to:
 - [ ] Proofread all text (typos, grammar)
 - [ ] Check author names and affiliations
 - [ ] Verify all figures are high resolution (300+ dpi)
-- [ ] Ensure colorblind-safe color schemes
+- [ ] Ensure colorblind-safe colour schemes
 - [ ] Test readability from 6 feet away (print small version)
 - [ ] Verify poster dimensions match conference requirements
 - [ ] Check that fonts are embedded in PDF
@@ -619,7 +619,7 @@ Generate QR codes linking to:
 2. **Fonts**: Large (28pt+ body, 72pt+ title)
 3. **Layout**: 2-3 columns, generous white space
 4. **Visuals**: 60-70% visual content
-5. **Colors**: Colorblind-safe, high contrast
+5. **Colours**: Colorblind-safe, high contrast
 6. **Content**: Tell a story, keep text minimal
 7. **Quality**: 300+ dpi, test print
 8. **Accessibility**: Readable from distance, clear hierarchy

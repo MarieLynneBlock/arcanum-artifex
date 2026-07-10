@@ -40,7 +40,7 @@ Convert molecule to SMARTS pattern.
 ### `to_selfies(mol)`
 Convert molecule to SELFIES (Self-Referencing Embedded Strings) format.
 
-## Sanitization and Standardization
+## Sanitization and Standardisation
 
 ### `sanitize_mol(mol, ...)`
 Enhanced version of RDKit's sanitize operation using mol→SMILES→mol conversion and aromatic nitrogen fixing.
@@ -48,14 +48,14 @@ Enhanced version of RDKit's sanitize operation using mol→SMILES→mol conversi
 - **Returns**: Sanitized molecule or None if sanitization fails
 
 ### `standardize_mol(mol, disconnect_metals=False, normalize=True, reionize=True, ...)`
-Apply comprehensive standardization procedures including:
+Apply comprehensive standardisation procedures including:
 - Metal disconnection
-- Normalization (charge corrections)
+- Normalisation (charge corrections)
 - Reionization
 - Fragment handling (largest fragment selection)
 
 ### `standardize_smiles(smiles, ...)`
-Apply SMILES standardization procedures directly to a SMILES string.
+Apply SMILES standardisation procedures directly to a SMILES string.
 
 ### `fix_mol(mol)`
 Attempt to fix molecular structure issues automatically.

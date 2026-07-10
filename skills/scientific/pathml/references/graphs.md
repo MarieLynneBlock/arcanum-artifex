@@ -67,7 +67,7 @@ adjacency = cell_graph.adjacency_matrix  # Adjacency matrix
 
 ### Connectivity Methods
 
-**K-Nearest Neighbors (KNN):**
+**K-Nearest Neighbours (KNN):**
 ```python
 # Connect each cell to its k nearest neighbors
 graph = CellGraph.from_instance_map(
@@ -292,7 +292,7 @@ composition = cell_graph.compute_cell_type_composition(
 
 ### Neighborhood Analysis
 
-Analyze cell neighborhoods and microenvironments:
+Analyse cell neighborhoods and microenvironments:
 
 ```python
 from pathml.graph import analyze_neighborhoods
@@ -458,9 +458,9 @@ for batch in loader:
     optimizer.step()
 ```
 
-## Visualization
+## Visualisation
 
-### Graph Visualization
+### Graph Visualisation
 
 ```python
 import matplotlib.pyplot as plt
@@ -609,18 +609,18 @@ plt.show()
 
 **Computational efficiency:**
 - Parallelize feature extraction across cells
-- Use KNN for faster neighbor queries
+- Use KNN for faster neighbour queries
 - Cache computed features
 
 ## Best Practices
 
 1. **Choose appropriate connectivity:** KNN for uniform analysis, radius for physical interactions, contact for direct cell-cell communication
 
-2. **Normalize features:** Scale morphological and intensity features for GNN compatibility
+2. **Normalise features:** Scale morphological and intensity features for GNN compatibility
 
 3. **Handle edge effects:** Exclude boundary cells or use tissue masks to define valid regions
 
-4. **Validate graph construction:** Visualize graphs on small regions before large-scale processing
+4. **Validate graph construction:** Visualise graphs on small regions before large-scale processing
 
 5. **Combine multiple feature types:** Morphology + intensity + texture provides rich representations
 
@@ -642,7 +642,7 @@ plt.show()
 - Use tissue masks to exclude invalid regions
 
 **Issue: Inconsistent feature scales**
-- Normalize features: `(x - mean) / std`
+- Normalise features: `(x - mean) / std`
 - Use robust scaling for outliers
 
 ## Additional Resources

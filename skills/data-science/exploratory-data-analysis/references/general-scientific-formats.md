@@ -181,10 +181,10 @@ This reference covers general-purpose scientific data formats used across multip
 - Memory-efficient sampling
 - Dataset relationships
 - File size and efficiency
-- Access patterns optimization
+- Access patterns optimisation
 
 ### .zarr - Chunked Array Storage
-**Description:** Cloud-optimized chunked arrays
+**Description:** Cloud-optimised chunked arrays
 **Typical Data:** Large N-dimensional arrays
 **Use Cases:** Cloud storage, parallel computing, streaming
 **Python Libraries:**
@@ -192,7 +192,7 @@ This reference covers general-purpose scientific data formats used across multip
 - `xarray`: Zarr backend support
 **EDA Approach:**
 - Array metadata and dimensions
-- Chunk size optimization
+- Chunk size optimisation
 - Compression codec and ratio
 - Synchronizer and store type
 - Multi-scale hierarchies
@@ -421,7 +421,7 @@ This reference covers general-purpose scientific data formats used across multip
 - Quality flags
 - Conversion to HDF5 or NetCDF
 
-## Specialized Scientific Formats
+## Specialised Scientific Formats
 
 ### .fits - Flexible Image Transport System
 **Description:** Astronomy data format

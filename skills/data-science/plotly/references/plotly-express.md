@@ -1,6 +1,6 @@
 # Plotly Express - High-Level API
 
-Plotly Express (px) is a high-level interface for creating data visualizations with minimal code (typically 1-5 lines).
+Plotly Express (px) is a high-level interface for creating data visualisations with minimal code (typically 1-5 lines).
 
 ## Installation
 
@@ -11,10 +11,10 @@ uv pip install plotly
 ## Key Advantages
 
 - Concise syntax for common chart types
-- Automatic color encoding and legends
+- Automatic colour encoding and legends
 - Works seamlessly with pandas DataFrames
 - Smart defaults for layout and styling
-- Returns graph_objects.Figure for further customization
+- Returns graph_objects.Figure for further customisation
 
 ## Basic Usage Pattern
 
@@ -56,9 +56,9 @@ fig.show()
 - `px.scatter_mapbox()` - Mapbox scatter plots
 - `px.density_mapbox()` - Density heatmaps on maps
 
-### Specialized
+### Specialised
 - `px.sunburst()` - Hierarchical sunburst charts
-- `px.treemap()` - Treemap visualizations
+- `px.treemap()` - Treemap visualisations
 - `px.funnel()` - Funnel charts
 - `px.parallel_coordinates()` - Parallel coordinates
 - `px.scatter_matrix()` - Scatter matrix (SPLOM)
@@ -148,7 +148,7 @@ fig = px.scatter(
 
 ## Animation
 
-Create animated visualizations:
+Create animated visualisations:
 
 ```python
 fig = px.scatter(
@@ -163,7 +163,7 @@ fig = px.scatter(
 
 ## Hover Data
 
-Customize hover tooltips:
+Customise hover tooltips:
 
 ```python
 fig = px.scatter(
@@ -177,9 +177,9 @@ fig = px.scatter(
 )
 ```
 
-## Further Customization
+## Further Customisation
 
-Plotly Express returns a `graph_objects.Figure` that can be further customized:
+Plotly Express returns a `graph_objects.Figure` that can be further customised:
 
 ```python
 fig = px.scatter(df, x="x", y="y")
@@ -203,11 +203,11 @@ fig.add_hline(y=0, line_dash="dash")
 Use Plotly Express when:
 - Creating standard chart types quickly
 - Working with pandas DataFrames
-- Need automatic color/size encoding
+- Need automatic colour/size encoding
 - Want sensible defaults with minimal code
 
 Use graph_objects when:
 - Building custom chart types not in px
 - Need fine-grained control over every element
 - Creating complex multi-trace figures
-- Building specialized visualizations
+- Building specialised visualisations

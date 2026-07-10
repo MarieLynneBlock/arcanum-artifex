@@ -22,7 +22,7 @@ transform = Compose([Transform1(), Transform2(), Transform3()])
 ## General Transforms
 
 ### NormalizeFeatures
-**Purpose**: Row-normalizes node features to sum to 1
+**Purpose**: Row-normalises node features to sum to 1
 **Use case**: Feature scaling, probability-like features
 ```python
 from torch_geometric.transforms import NormalizeFeatures
@@ -151,7 +151,7 @@ transform = LargestConnectedComponents(num_components=1)
 ```
 
 ### KNNGraph
-**Purpose**: Creates edges based on k-nearest neighbors
+**Purpose**: Creates edges based on k-nearest neighbours
 **Use case**: Point clouds, spatial data
 **Parameters**: `k`, `loop`, `force_undirected`, `flow`
 ```python
@@ -288,8 +288,8 @@ transform = SVDFeatureReduction(out_channels=64)
 
 ## Vision/Spatial Transforms
 
-### Center
-**Purpose**: Centers node positions
+### Centre
+**Purpose**: Centres node positions
 **Use case**: Point cloud preprocessing
 ```python
 from torch_geometric.transforms import Center
@@ -297,8 +297,8 @@ transform = Center()
 ```
 
 ### NormalizeScale
-**Purpose**: Normalizes positions to unit sphere
-**Use case**: Point cloud normalization
+**Purpose**: Normalises positions to unit sphere
+**Use case**: Point cloud normalisation
 ```python
 from torch_geometric.transforms import NormalizeScale
 transform = NormalizeScale()
@@ -494,7 +494,7 @@ from torch_geometric.transforms import VirtualNode
 transform = VirtualNode()
 ```
 
-## Specialized Transforms
+## Specialised Transforms
 
 ### ToSLIC
 **Purpose**: Converts images to superpixel graphs (SLIC algorithm)
@@ -506,7 +506,7 @@ transform = ToSLIC(num_segments=75)
 ```
 
 ### GCNNorm
-**Purpose**: Applies GCN-style normalization to edges
+**Purpose**: Applies GCN-style normalisation to edges
 **Use case**: Preprocessing for GCN
 **Parameters**: `add_self_loops`
 ```python

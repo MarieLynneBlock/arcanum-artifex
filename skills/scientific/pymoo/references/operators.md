@@ -4,7 +4,7 @@ Comprehensive reference for genetic operators in pymoo.
 
 ## Sampling Operators
 
-Sampling operators initialize populations at the start of optimization.
+Sampling operators initialize populations at the start of optimisation.
 
 ### Random Sampling
 **Purpose:** Generate random initial solutions
@@ -69,7 +69,7 @@ Crossover operators recombine parent solutions to create offspring.
 ### For Continuous Variables
 
 #### Simulated Binary Crossover (SBX)
-**Purpose:** Primary crossover for continuous optimization
+**Purpose:** Primary crossover for continuous optimisation
 **Mechanism:** Simulates single-point crossover of binary-encoded variables
 **Parameters:**
 - `prob`: Crossover probability (default: 0.9)
@@ -138,7 +138,7 @@ crossover = UniformCrossover(prob=0.5)
 
 #### Order Crossover (OX)
 **Purpose:** Preserve relative order from parents
-**Use case:** Traveling salesman, scheduling problems
+**Use case:** Travelling salesman, scheduling problems
 
 **Usage:**
 ```python
@@ -160,7 +160,7 @@ Mutation operators introduce variation to maintain diversity.
 ### For Continuous Variables
 
 #### Polynomial Mutation (PM)
-**Purpose:** Primary mutation for continuous optimization
+**Purpose:** Primary mutation for continuous optimisation
 **Mechanism:** Polynomial probability distribution
 **Parameters:**
 - `prob`: Per-variable mutation probability

@@ -18,11 +18,11 @@ This skill should be used when the user:
 - Works with biological sequences (DNA, RNA, protein)
 - Needs to read/write biological file formats (FASTA, FASTQ, GenBank, Newick, BIOM, etc.)
 - Performs sequence alignments or searches for motifs
-- Constructs or analyzes phylogenetic trees
+- Constructs or analyses phylogenetic trees
 - Calculates diversity metrics (alpha/beta diversity, UniFrac distances)
 - Performs ordination analysis (PCoA, CCA, RDA)
 - Runs statistical tests on biological/ecological data (PERMANOVA, ANOSIM, Mantel)
-- Analyzes microbiome or community ecology data
+- Analyses microbiome or community ecology data
 - Works with protein embeddings from language models
 - Needs to manipulate biological data tables
 
@@ -30,7 +30,7 @@ This skill should be used when the user:
 
 ### 1. Sequence Manipulation
 
-Work with biological sequences using specialized classes for DNA, RNA, and protein data.
+Work with biological sequences using specialised classes for DNA, RNA, and protein data.
 
 **Key operations:**
 - Read/write sequences from FASTA, FASTQ, GenBank, EMBL formats
@@ -102,13 +102,13 @@ consensus = msa.consensus()
 
 ### 3. Phylogenetic Trees
 
-Construct, manipulate, and analyze phylogenetic trees representing evolutionary relationships.
+Construct, manipulate, and analyse phylogenetic trees representing evolutionary relationships.
 
 **Key capabilities:**
-- Tree construction from distance matrices (UPGMA, WPGMA, Neighbor Joining, GME, BME)
+- Tree construction from distance matrices (UPGMA, WPGMA, Neighbour Joining, GME, BME)
 - Tree manipulation (pruning, rerooting, traversal)
 - Distance calculations (patristic, cophenetic, Robinson-Foulds)
-- ASCII visualization
+- ASCII visualisation
 - Newick format I/O
 
 **Common patterns:**
@@ -136,7 +136,7 @@ rf_distance = tree.robinson_foulds(other_tree)
 ```
 
 **Important notes:**
-- Use `nj()` for neighbor joining (classic phylogenetic method)
+- Use `nj()` for neighbour joining (classic phylogenetic method)
 - Use `upgma()` for UPGMA (assumes molecular clock)
 - GME and BME are highly scalable for large trees
 - Trees can be rooted or unrooted; some metrics require specific rooting
@@ -180,7 +180,7 @@ print(get_alpha_diversity_metrics())
 
 ### 5. Ordination Methods
 
-Reduce high-dimensional biological data to visualizable lower-dimensional spaces.
+Reduce high-dimensional biological data to visualisable lower-dimensional spaces.
 
 **Key capabilities:**
 - PCoA (Principal Coordinate Analysis) from distance matrices
@@ -329,7 +329,7 @@ Work with feature tables (OTU/ASV tables) common in microbiome research.
 - BIOM format I/O (HDF5 and JSON)
 - Integration with pandas, polars, AnnData, numpy
 - Data augmentation techniques (phylomix, mixup, compositional methods)
-- Sample/feature filtering and normalization
+- Sample/feature filtering and normalisation
 - Metadata integration
 
 **Common patterns:**
@@ -365,7 +365,7 @@ Work with protein language model embeddings for downstream analysis.
 **Key capabilities:**
 - Store embeddings from protein language models (ESM, ProtTrans, etc.)
 - Convert embeddings to distance matrices
-- Generate ordination objects for visualization
+- Generate ordination objects for visualisation
 - Export to numpy/pandas for ML workflows
 
 **Common patterns:**
@@ -389,8 +389,8 @@ df = embedding.to_dataframe()
 **Important notes:**
 - Embeddings bridge protein language models with traditional bioinformatics
 - Compatible with scikit-bio's distance/ordination/statistics ecosystem
-- SequenceEmbedding and ProteinEmbedding provide specialized functionality
-- Useful for sequence clustering, classification, and visualization
+- SequenceEmbedding and ProteinEmbedding provide specialised functionality
+- Useful for sequence clustering, classification, and visualisation
 
 ## Best Practices
 
@@ -400,7 +400,7 @@ uv pip install scikit-bio
 ```
 
 ### Performance Considerations
-- Use generators for large sequence files to minimize memory usage
+- Use generators for large sequence files to minimise memory usage
 - For massive phylogenetic trees, prefer GME or BME over NJ
 - Beta diversity calculations can be parallelized with `partial_beta_diversity()`
 - BIOM format (HDF5) more efficient than JSON for large tables
@@ -409,14 +409,14 @@ uv pip install scikit-bio
 - Sequences interoperate with Biopython via standard formats
 - Tables integrate with pandas, polars, and AnnData
 - Distance matrices compatible with scikit-learn
-- Ordination results visualizable with matplotlib/seaborn/plotly
-- Works seamlessly with QIIME 2 artifacts (BIOM, trees, distance matrices)
+- Ordination results visualisable with matplotlib/seaborn/plotly
+- Works seamlessly with QIIME 2 artefacts (BIOM, trees, distance matrices)
 
 ### Common Workflows
 1. **Microbiome diversity analysis**: Read BIOM table → Calculate alpha/beta diversity → Ordination (PCoA) → Statistical testing (PERMANOVA)
 2. **Phylogenetic analysis**: Read sequences → Align → Build distance matrix → Construct tree → Calculate phylogenetic distances
 3. **Sequence processing**: Read FASTQ → Quality filter → Trim/clean → Find motifs → Translate → Write FASTA
-4. **Comparative genomics**: Read sequences → Pairwise alignment → Calculate distances → Build tree → Analyze clades
+4. **Comparative genomics**: Read sequences → Pairwise alignment → Calculate distances → Build tree → Analyse clades
 
 ## Reference Documentation
 
@@ -424,7 +424,7 @@ For detailed API information, parameter specifications, and advanced usage examp
 - Complete method signatures and parameters for all capabilities
 - Extended code examples for complex workflows
 - Troubleshooting common issues
-- Performance optimization tips
+- Performance optimisation tips
 - Integration patterns with other libraries
 
 ## Additional Resources

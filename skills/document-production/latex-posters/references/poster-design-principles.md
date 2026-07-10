@@ -2,23 +2,23 @@
 
 ## Overview
 
-Effective poster design balances visual appeal, readability, and scientific content. This guide covers typography, color theory, visual hierarchy, accessibility, and evidence-based design principles for research posters.
+Effective poster design balances visual appeal, readability, and scientific content. This guide covers typography, colour theory, visual hierarchy, accessibility, and evidence-based design principles for research posters.
 
 ## Core Design Principles
 
 ### 1. Visual Hierarchy
 
-Guide viewers through content in logical order using size, color, position, and contrast.
+Guide viewers through content in logical order using size, colour, position, and contrast.
 
 **Hierarchy Levels**:
 
 1. **Primary (Title)**: Largest, most prominent
    - Size: 72-120pt
-   - Position: Top center or top spanning
+   - Position: Top centre or top spanning
    - Weight: Bold
    - Purpose: Capture attention from 20+ feet
 
-2. **Secondary (Section Headers)**: Organize content
+2. **Secondary (Section Headers)**: Organise content
    - Size: 48-72pt
    - Weight: Bold or semi-bold
    - Purpose: Section navigation, readable from 10 feet
@@ -77,11 +77,11 @@ Empty space is not wasted space—it enhances readability and guides attention.
 
 ### 3. Alignment and Grid Systems
 
-Proper alignment creates professional, organized appearance.
+Proper alignment creates professional, organised appearance.
 
 **Alignment Types**:
 - **Left-aligned text**: Most readable for body text (Western audiences)
-- **Center-aligned**: Headers, titles, symmetric layouts
+- **Centre-aligned**: Headers, titles, symmetric layouts
 - **Right-aligned**: Rarely used, special cases only
 - **Justified**: Avoid (creates uneven spacing)
 
@@ -135,8 +135,8 @@ Weak Fallow      Terminal Area
 ```
 
 **Implementation Strategy**:
-1. Place most important content in "hot zones" (top-left, center)
-2. Create visual paths with arrows, lines, or color
+1. Place most important content in "hot zones" (top-left, centre)
+2. Create visual paths with arrows, lines, or colour
 3. Use numbering for sequential information (Methods steps)
 4. Design left-to-right, top-to-bottom flow (Western audiences)
 5. Position conclusions prominently (bottom-right is natural endpoint)
@@ -236,13 +236,13 @@ Weak Fallow      Terminal Area
 \end{spacing}
 ```
 
-## Color Theory for Posters
+## Colour Theory for Posters
 
-### Color Psychology and Meaning
+### Colour Psychology and Meaning
 
-Colors convey meaning and affect viewer perception:
+Colours convey meaning and affect viewer perception:
 
-| Color | Associations | Use Cases |
+| Colour | Associations | Use Cases |
 |-------|--------------|-----------|
 | **Blue** | Trust, professionalism, science | Academic, medical, technology |
 | **Green** | Nature, health, growth | Environmental, biology, health |
@@ -252,7 +252,7 @@ Colors convey meaning and affect viewer perception:
 | **Gray** | Neutral, professional, modern | Technology, minimal designs |
 | **Yellow** | Optimism, attention, caution | Highlights, energy, caution areas |
 
-### Color Scheme Types
+### Colour Scheme Types
 
 **1. Monochromatic**: Variations of single hue
 - **Pros**: Harmonious, professional, easy to execute
@@ -266,7 +266,7 @@ Colors convey meaning and affect viewer perception:
 \definecolor{lightblue}{RGB}{204,229,255}
 ```
 
-**2. Analogous**: Adjacent colors on color wheel
+**2. Analogous**: Adjacent colours on colour wheel
 - **Pros**: Harmonious, visually comfortable
 - **Cons**: Low contrast, may lack excitement
 - **Use**: Nature/biology topics, smooth gradients
@@ -278,7 +278,7 @@ Colors convey meaning and affect viewer perception:
 \definecolor{green}{RGB}{51,153,102}
 ```
 
-**3. Complementary**: Opposite colors on wheel
+**3. Complementary**: Opposite colours on wheel
 - **Pros**: High contrast, vibrant, energetic
 - **Cons**: Can be overwhelming if intense
 - **Use**: Drawing attention, modern designs
@@ -289,7 +289,7 @@ Colors convey meaning and affect viewer perception:
 \definecolor{accent}{RGB}{255,127,0}     % Orange
 ```
 
-**4. Triadic**: Three evenly spaced colors
+**4. Triadic**: Three evenly spaced colours
 - **Pros**: Balanced, vibrant, visually rich
 - **Cons**: Can appear busy if not balanced
 - **Use**: Multi-topic posters, creative fields
@@ -318,18 +318,18 @@ Ensure readability with sufficient contrast:
 - Black on light cyan
 
 **Poor Contrast (Avoid)**:
-- ❌ Red on green (color-blind issue)
+- ❌ Red on green (colour-blind issue)
 - ❌ Yellow on white
 - ❌ Light gray on white
 - ❌ Blue on black (hard to read)
-- ❌ Any pure colors on each other
+- ❌ Any pure colours on each other
 
 **Contrast Ratio Standards**:
 - Minimum: 4.5:1 (WCAG AA)
 - Recommended: 7:1 (WCAG AAA)
 - Test at: https://webaim.org/resources/contrastchecker/
 
-**LaTeX Color Contrast**:
+**LaTeX Colour Contrast**:
 ```latex
 % High contrast header
 \setbeamercolor{block title}{bg=black, fg=white}
@@ -340,25 +340,25 @@ Ensure readability with sufficient contrast:
 % Check contrast manually or use online tools
 ```
 
-### Color-Blind Friendly Palettes
+### Colour-Blind Friendly Palettes
 
-~8% of males and ~0.5% of females have color vision deficiency.
+~8% of males and ~0.5% of females have colour vision deficiency.
 
-**Safe Color Combinations**:
+**Safe Colour Combinations**:
 - Blue + Orange (most universally distinguishable)
 - Blue + Yellow
 - Blue + Red
 - Purple + Green (use with caution)
 
 **Avoid**:
-- ❌ Red + Green (indistinguishable to most common color blindness)
+- ❌ Red + Green (indistinguishable to most common colour blindness)
 - ❌ Green + Brown
 - ❌ Blue + Purple (can be problematic)
 - ❌ Light green + Yellow
 
 **Recommended Palettes**:
 
-**IBM Color Blind Safe** (excellent accessibility):
+**IBM Colour Blind Safe** (excellent accessibility):
 ```latex
 \definecolor{ibmblue}{RGB}{100,143,255}
 \definecolor{ibmmagenta}{RGB}{254,97,0}
@@ -388,7 +388,7 @@ Ensure readability with sufficient contrast:
 
 ### Institutional Branding
 
-Match university or department colors:
+Match university or department colours:
 
 ```latex
 % Example: Stanford colors
@@ -413,13 +413,13 @@ Design posters usable by the widest range of people:
 **1. Visual Accessibility**:
 - High contrast text (minimum 4.5:1 ratio)
 - Large font sizes (24pt+ body text)
-- Color-blind safe palettes
+- Colour-blind safe palettes
 - Clear visual hierarchy
-- Avoid relying solely on color to convey information
+- Avoid relying solely on colour to convey information
 
 **2. Cognitive Accessibility**:
 - Clear, simple language
-- Logical organization
+- Logical organisation
 - Consistent layout
 - Visual cues for navigation (arrows, numbers)
 - Avoid clutter and information overload
@@ -448,9 +448,9 @@ Asterisks indicate significance: *p<0.05, **p<0.01.}
 Don't rely on single sensory channel:
 
 **Use Redundant Encoding**:
-- Color + Shape (not just color for categories)
-- Color + Pattern (hatching, stippling)
-- Color + Label (text labels on graph elements)
+- Colour + Shape (not just colour for categories)
+- Colour + Pattern (hatching, stippling)
+- Colour + Label (text labels on graph elements)
 - Text + Icons (visual + verbal)
 
 **Example**:
@@ -483,7 +483,7 @@ Left        Right
 **Power Points** (intersections):
 - Top-left: Primary section start
 - Top-right: Logos, QR codes
-- Center: Key figure or main result
+- Centre: Key figure or main result
 - Bottom-right: Conclusions, contact
 
 ### Balance and Symmetry
@@ -502,7 +502,7 @@ Left        Right
 
 **Visual Weight Balance**:
 - Large elements = heavy weight
-- Dark colors = heavy weight
+- Dark colours = heavy weight
 - Dense text = heavy weight
 - Distribute weight evenly across poster
 
@@ -518,7 +518,7 @@ Left        Right
 ```
 
 **Similarity**: Similar items are perceived as grouped
-- Use consistent colors for related sections
+- Use consistent colours for related sections
 - Same border styles for similar content types
 
 **Continuity**: Eyes follow lines and paths
@@ -575,7 +575,7 @@ Strategic use of icons enhances comprehension:
 **Guidelines**:
 - Keep consistent width (2-5pt typical)
 - Use sparingly (not every element needs a border)
-- Match border color to content or theme
+- Match border colour to content or theme
 - Ensure sufficient padding inside borders
 
 ```latex
@@ -601,7 +601,7 @@ Strategic use of icons enhances comprehension:
 **Background Options**:
 
 **Plain (Recommended)**:
-- White or very light color
+- White or very light colour
 - Maximum readability
 - Professional
 - Print-friendly
@@ -620,7 +620,7 @@ Strategic use of icons enhances comprehension:
 - ❌ Busy backgrounds
 - ❌ Images behind text
 - ❌ High contrast backgrounds
-- ❌ Repeating patterns that cause visual artifacts
+- ❌ Repeating patterns that cause visual artefacts
 
 ```latex
 % Gradient background in tikzposter
@@ -653,13 +653,13 @@ Strategic use of icons enhances comprehension:
 
 **2. Poor Contrast**
 - ❌ Light text on light background
-- ❌ Colored text on colored background
+- ❌ Coloured text on coloured background
 - ✅ Solution: Dark on light or light on dark, test contrast ratio
 
 **3. Font Size Too Small**
 - ❌ Body text under 24pt
 - ❌ Trying to fit full paper content
-- ✅ Solution: 30pt+ body text, prioritize key findings
+- ✅ Solution: 30pt+ body text, prioritise key findings
 
 **4. Cluttered Layout**
 - ❌ No white space
@@ -681,10 +681,10 @@ Strategic use of icons enhances comprehension:
 - ❌ Unreadable legends
 - ✅ Solution: Vector graphics (PDF/SVG), large labels, clear legends
 
-**7. Color Overload**
-- ❌ Too many colors (>5 distinct hues)
-- ❌ Neon or overly saturated colors
-- ✅ Solution: Limit to 2-3 main colors, use tints/shades for variation
+**7. Colour Overload**
+- ❌ Too many colours (>5 distinct hues)
+- ❌ Neon or overly saturated colours
+- ✅ Solution: Limit to 2-3 main colours, use tints/shades for variation
 
 **8. Ignoring Visual Hierarchy**
 - ❌ All text same size
@@ -709,7 +709,7 @@ Strategic use of icons enhances comprehension:
 - [ ] Title visible and readable from 20+ feet
 - [ ] Body text minimum 24pt, ideally 30pt+
 - [ ] High contrast (4.5:1 minimum) throughout
-- [ ] Color-blind friendly palette
+- [ ] Colour-blind friendly palette
 - [ ] Less than 800 words total
 - [ ] White space around all elements
 - [ ] Consistent alignment and spacing
@@ -733,7 +733,7 @@ Strategic use of icons enhances comprehension:
 - [ ] References cited appropriately
 - [ ] No typos or grammatical errors
 - [ ] Figures have descriptive captions
-- [ ] Data visualizations are clear and honest
+- [ ] Data visualisations are clear and honest
 - [ ] Statistical significance properly indicated
 
 ## Evidence-Based Design Recommendations
@@ -751,7 +751,7 @@ Research on poster effectiveness shows:
 
 3. **High contrast improves recall** by 40%
    - Dark on light > light on dark for comprehension
-   - Color contrast aids memory retention
+   - Colour contrast aids memory retention
 
 4. **White space increases comprehension** by 20%
    - Don't fear empty space
@@ -767,10 +767,10 @@ Research on poster effectiveness shows:
 
 ## Resources and Tools
 
-### Color Tools
-- **Coolors.co**: Generate color palettes
-- **Adobe Color**: Color wheel and accessibility checker
-- **ColorBrewer**: Scientific visualization palettes
+### Colour Tools
+- **Coolors.co**: Generate colour palettes
+- **Adobe Colour**: Colour wheel and accessibility checker
+- **ColorBrewer**: Scientific visualisation palettes
 - **WebAIM Contrast Checker**: Test contrast ratios
 
 ### Design Resources
@@ -780,13 +780,13 @@ Research on poster effectiveness shows:
 - **Font Awesome**: Icon fonts for LaTeX
 
 ### Testing Tools
-- **Coblis**: Color blindness simulator
-- **Vischeck**: Another color blindness checker
+- **Coblis**: Colour blindness simulator
+- **Vischeck**: Another colour blindness checker
 - **Accessibility Checker**: WCAG compliance
 
 ### LaTeX Packages
-- `xcolor`: Extended color support
-- `tcolorbox`: Colored boxes and frames
+- `xcolor`: Extended colour support
+- `tcolorbox`: Coloured boxes and frames
 - `fontawesome5`: Icon fonts
 - `qrcode`: QR code generation
 - `tikz`: Custom graphics
@@ -795,7 +795,7 @@ Research on poster effectiveness shows:
 
 Effective poster design requires balancing aesthetics, readability, and scientific content. Follow these core principles:
 
-1. **Less is more**: Prioritize key messages over comprehensive detail
+1. **Less is more**: Prioritise key messages over comprehensive detail
 2. **Size matters**: Make text large enough to read from distance
 3. **Contrast is critical**: Ensure all text is highly readable
 4. **Accessibility first**: Design for diverse audiences

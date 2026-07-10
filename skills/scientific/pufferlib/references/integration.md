@@ -2,7 +2,7 @@
 
 ## Overview
 
-PufferLib provides an emulation layer that enables seamless integration with popular RL frameworks including Gymnasium, OpenAI Gym, PettingZoo, and many specialized environment libraries. The emulation layer flattens observation and action spaces for efficient vectorization while maintaining compatibility.
+PufferLib provides an emulation layer that enables seamless integration with popular RL frameworks including Gymnasium, OpenAI Gym, PettingZoo, and many specialised environment libraries. The emulation layer flattens observation and action spaces for efficient vectorization while maintaining compatibility.
 
 ## Gymnasium Integration
 
@@ -539,7 +539,7 @@ gym_env = AnotherWrapper(gym_env)
 env = pufferlib.emulate(gym_env, num_envs=256)
 ```
 
-### Minimize Wrapper Overhead
+### Minimise Wrapper Overhead
 
 ```python
 # BAD: Too many wrappers

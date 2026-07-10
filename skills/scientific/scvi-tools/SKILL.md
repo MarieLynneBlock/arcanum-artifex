@@ -1,6 +1,6 @@
 ---
 name: scvi-tools
-description: Deep generative models for single-cell omics. Use when you need probabilistic batch correction (scVI), transfer learning, differential expression with uncertainty, or multi-modal integration (TOTALVI, MultiVI). Best for advanced modeling, batch effects, multimodal data. For standard analysis pipelines use scanpy.
+description: Deep generative models for single-cell omics. Use when you need probabilistic batch correction (scVI), transfer learning, differential expression with uncertainty, or multi-modal integration (TOTALVI, MultiVI). Best for advanced modelling, batch effects, multimodal data. For standard analysis pipelines use scanpy.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,41 +10,41 @@ metadata:
 
 ## Overview
 
-scvi-tools is a comprehensive Python framework for probabilistic models in single-cell genomics. Built on PyTorch and PyTorch Lightning, it provides deep generative models using variational inference for analyzing diverse single-cell data modalities.
+scvi-tools is a comprehensive Python framework for probabilistic models in single-cell genomics. Built on PyTorch and PyTorch Lightning, it provides deep generative models using variational inference for analysing diverse single-cell data modalities.
 
 ## When to Use This Skill
 
 Use this skill when:
-- Analyzing single-cell RNA-seq data (dimensionality reduction, batch correction, integration)
+- Analysing single-cell RNA-seq data (dimensionality reduction, batch correction, integration)
 - Working with single-cell ATAC-seq or chromatin accessibility data
 - Integrating multimodal data (CITE-seq, multiome, paired/unpaired datasets)
-- Analyzing spatial transcriptomics data (deconvolution, spatial mapping)
+- Analysing spatial transcriptomics data (deconvolution, spatial mapping)
 - Performing differential expression analysis on single-cell data
 - Conducting cell type annotation or transfer learning tasks
-- Working with specialized single-cell modalities (methylation, cytometry, RNA velocity)
+- Working with specialised single-cell modalities (methylation, cytometry, RNA velocity)
 - Building custom probabilistic models for single-cell analysis
 
 ## Core Capabilities
 
-scvi-tools provides models organized by data modality:
+scvi-tools provides models organised by data modality:
 
 ### 1. Single-Cell RNA-seq Analysis
 Core models for expression analysis, batch correction, and integration. See `references/models-scrna-seq.md` for:
 - **scVI**: Unsupervised dimensionality reduction and batch correction
 - **scANVI**: Semi-supervised cell type annotation and integration
-- **AUTOZI**: Zero-inflation detection and modeling
+- **AUTOZI**: Zero-inflation detection and modelling
 - **VeloVI**: RNA velocity analysis
 - **contrastiveVI**: Perturbation effect isolation
 
 ### 2. Chromatin Accessibility (ATAC-seq)
-Models for analyzing single-cell chromatin data. See `references/models-atac-seq.md` for:
+Models for analysing single-cell chromatin data. See `references/models-atac-seq.md` for:
 - **PeakVI**: Peak-based ATAC-seq analysis and integration
-- **PoissonVI**: Quantitative fragment count modeling
+- **PoissonVI**: Quantitative fragment count modelling
 - **scBasset**: Deep learning approach with motif analysis
 
 ### 3. Multimodal & Multi-omics Integration
 Joint analysis of multiple data types. See `references/models-multimodal.md` for:
-- **totalVI**: CITE-seq protein and RNA joint modeling
+- **totalVI**: CITE-seq protein and RNA joint modelling
 - **MultiVI**: Paired and unpaired multi-omic integration
 - **MrVI**: Multi-resolution cross-sample analysis
 
@@ -55,8 +55,8 @@ Spatially-resolved transcriptomics analysis. See `references/models-spatial.md` 
 - **Tangram**: Spatial mapping and integration
 - **scVIVA**: Cell-environment relationship analysis
 
-### 5. Specialized Modalities
-Additional specialized analysis tools. See `references/models-specialized.md` for:
+### 5. Specialised Modalities
+Additional specialised analysis tools. See `references/models-specialized.md` for:
 - **MethylVI/MethylANVI**: Single-cell methylation analysis
 - **CytoVI**: Flow/mass cytometry batch correction
 - **Solo**: Doublet detection
@@ -106,7 +106,7 @@ sc.tl.leiden(adata)
 - **Raw counts required**: Models expect unnormalized count data for optimal performance
 - **Unified API**: Consistent interface across all models (setup → train → extract)
 - **AnnData-centric**: Seamless integration with the scanpy ecosystem
-- **GPU acceleration**: Automatic utilization of available GPUs
+- **GPU acceleration**: Automatic utilisation of available GPUs
 - **Batch correction**: Handle technical variation through covariate registration
 
 ## Common Analysis Tasks
@@ -156,13 +156,13 @@ scvi-tools is built on:
 - **Variational inference**: Approximate posterior distributions for scalable Bayesian inference
 - **Deep generative models**: VAE architectures that learn complex data distributions
 - **Amortized inference**: Shared neural networks for efficient learning across cells
-- **Probabilistic modeling**: Principled uncertainty quantification and statistical testing
+- **Probabilistic modelling**: Principled uncertainty quantification and statistical testing
 
 See `references/theoretical-foundations.md` for detailed background on the mathematical framework.
 
 ## Additional Resources
 
-- **Workflows**: `references/workflows.md` contains common workflows, best practices, hyperparameter tuning, and GPU optimization
+- **Workflows**: `references/workflows.md` contains common workflows, best practices, hyperparameter tuning, and GPU optimisation
 - **Model References**: Detailed documentation for each model category in the `references/` directory
 - **Official Documentation**: https://docs.scvi-tools.org/en/stable/
 - **Tutorials**: https://docs.scvi-tools.org/en/stable/tutorials/index.html

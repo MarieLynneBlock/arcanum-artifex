@@ -1,6 +1,6 @@
-# Circuit Transpilation and Optimization
+# Circuit Transpilation and Optimisation
 
-Transpilation is the process of rewriting a quantum circuit to match the topology and gate set of a specific quantum device, while optimizing for execution on noisy quantum computers.
+Transpilation is the process of rewriting a quantum circuit to match the topology and gate set of a specific quantum device, while optimising for execution on noisy quantum computers.
 
 ## Why Transpilation?
 
@@ -9,8 +9,8 @@ Transpilation is the process of rewriting a quantum circuit to match the topolog
 **Solution**: Transpilation transforms circuits to:
 1. Use only hardware-native gates (basis gates)
 2. Respect physical qubit connectivity
-3. Minimize circuit depth and gate count
-4. Optimize for reduced errors on noisy devices
+3. Minimise circuit depth and gate count
+4. Optimise for reduced errors on noisy devices
 
 ## Basic Transpilation
 
@@ -28,9 +28,9 @@ qc.cx(1, 2)
 transpiled_qc = transpile(qc, backend=backend)
 ```
 
-### Optimization Levels
+### Optimisation Levels
 
-Choose optimization level 0-3:
+Choose optimisation level 0-3:
 
 ```python
 # Level 0: No optimization (fastest)
@@ -70,7 +70,7 @@ qc_transpiled = transpile(qc, coupling_map=coupling)
 
 ### 3. Routing Stage
 - Inserts SWAP gates to satisfy connectivity constraints
-- Minimizes additional SWAP overhead
+- Minimises additional SWAP overhead
 
 ### 4. Translation Stage
 - Converts gates to hardware basis gates
@@ -82,7 +82,7 @@ basis_gates = ['cx', 'id', 'rz', 'sx', 'x']
 qc_transpiled = transpile(qc, basis_gates=basis_gates)
 ```
 
-### 5. Optimization Stage
+### 5. Optimisation Stage
 - Reduces gate count and circuit depth
 - Applies gate cancellation and commutation rules
 - Uses **virtual permutation elision** (levels 2-3)
@@ -91,11 +91,11 @@ qc_transpiled = transpile(qc, basis_gates=basis_gates)
 ### 6. Scheduling Stage
 - Adds timing information for pulse-level control
 
-## Advanced Optimization Features
+## Advanced Optimisation Features
 
 ### Virtual Permutation Elision
 
-At optimization levels 2-3, Qiskit analyzes commutation structure to eliminate unnecessary SWAP gates by tracking virtual qubit permutations.
+At optimisation levels 2-3, Qiskit analyses commutation structure to eliminate unnecessary SWAP gates by tracking virtual qubit permutations.
 
 ### Gate Cancellation
 
@@ -148,7 +148,7 @@ qc_transpiled = transpile(
 
 ## Transpiling for Simulators
 
-Even for simulators, transpilation can optimize circuits:
+Even for simulators, transpilation can optimise circuits:
 
 ```python
 from qiskit_aer import AerSimulator
@@ -224,10 +224,10 @@ Some backends support gates beyond {CX, RZ, SX, X}:
 print(backend.configuration().basis_gates)
 ```
 
-### 3. Minimize Two-Qubit Gates
+### 3. Minimise Two-Qubit Gates
 
 Two-qubit gates have significantly higher error rates:
-- Design algorithms to minimize CNOT gates
+- Design algorithms to minimise CNOT gates
 - Use gate identities to reduce counts
 
 ### 4. Test with Simulators First
@@ -267,20 +267,20 @@ Transpilation depends on specific device (Rigetti, IonQ, etc.)
 ## Performance Tips
 
 1. **Cache transpiled circuits** - Transpilation is expensive, reuse when possible
-2. **Use appropriate optimization level** - Level 3 is slow but best for production
+2. **Use appropriate optimisation level** - Level 3 is slow but best for production
 3. **Leverage v2.2 speed improvements** - Update to latest Qiskit for 83x speedup
 4. **Parallelize transpilation** - Qiskit automatically parallelizes when transpiling multiple circuits
 
 ## Common Issues and Solutions
 
 ### Issue: Circuit too deep after transpilation
-**Solution**: Use higher optimization level or redesign circuit with fewer layers
+**Solution**: Use higher optimisation level or redesign circuit with fewer layers
 
 ### Issue: Too many SWAP gates inserted
 **Solution**: Adjust initial_layout to better match qubit topology
 
 ### Issue: Transpilation takes too long
-**Solution**: Reduce optimization level or update to Qiskit v2.2+ for speed improvements
+**Solution**: Reduce optimisation level or update to Qiskit v2.2+ for speed improvements
 
 ### Issue: Unexpected gate decompositions
 **Solution**: Check basis_gates and consider specifying custom decomposition rules

@@ -732,7 +732,7 @@ plt.show()
 
 ## Effect Sizes
 
-**Cohen's d** (standardized mean difference):
+**Cohen's d** (standardised mean difference):
 
 ```python
 def cohens_d(group1, group2):

@@ -1,10 +1,10 @@
 # COBRApy Comprehensive Workflows
 
-This document provides detailed step-by-step workflows for common COBRApy tasks in metabolic modeling.
+This document provides detailed step-by-step workflows for common COBRApy tasks in metabolic modelling.
 
-## Workflow 1: Complete Knockout Study with Visualization
+## Workflow 1: Complete Knockout Study with Visualisation
 
-This workflow demonstrates how to perform a comprehensive gene knockout study and visualize the results.
+This workflow demonstrates how to perform a comprehensive gene knockout study and visualise the results.
 
 ```python
 import pandas as pd
@@ -79,7 +79,7 @@ double_results.to_csv("double_gene_deletions.csv")
 synthetic_lethals.to_csv("synthetic_lethals.csv")
 ```
 
-## Workflow 2: Media Design and Optimization
+## Workflow 2: Media Design and Optimisation
 
 This workflow shows how to systematically design growth media and find minimal media compositions.
 

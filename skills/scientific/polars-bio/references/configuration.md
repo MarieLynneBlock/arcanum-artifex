@@ -2,7 +2,7 @@
 
 ## Overview
 
-polars-bio uses a global configuration system based on `set_option` and `get_option` to control execution behavior, coordinate systems, parallelism, and streaming modes.
+polars-bio uses a global configuration system based on `set_option` and `get_option` to control execution behaviour, coordinate systems, parallelism, and streaming modes.
 
 ## set_option / get_option
 

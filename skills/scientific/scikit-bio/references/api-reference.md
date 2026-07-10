@@ -266,7 +266,7 @@ rf_dist, max_rf = tree.robinson_foulds(other_tree, proportion=False)
 tip_distances = tree.tip_tip_distances()
 ```
 
-### Tree Visualization
+### Tree Visualisation
 
 ```python
 # ASCII art visualization

@@ -2,11 +2,11 @@
 
 ## Definition
 
-Effective genome size refers to the length of the "mappable" genome - regions that can be uniquely mapped by sequencing reads. This metric is crucial for proper normalization in many deepTools commands.
+Effective genome size refers to the length of the "mappable" genome - regions that can be uniquely mapped by sequencing reads. This metric is crucial for proper normalisation in many deepTools commands.
 
 ## Why It Matters
 
-- Required for RPGC normalization (`--normalizeUsing RPGC`)
+- Required for RPGC normalisation (`--normalizeUsing RPGC`)
 - Affects accuracy of coverage calculations
 - Must match your data processing approach (filtered vs unfiltered reads)
 
@@ -54,14 +54,14 @@ For quality-filtered reads, values vary by read length:
 
 The effective genome size is most commonly used with:
 
-### bamCoverage with RPGC normalization
+### bamCoverage with RPGC normalisation
 ```bash
 bamCoverage --bam input.bam --outFileName output.bw \
     --normalizeUsing RPGC \
     --effectiveGenomeSize 2913022398
 ```
 
-### bamCompare with RPGC normalization
+### bamCompare with RPGC normalisation
 ```bash
 bamCompare -b1 treatment.bam -b2 control.bam \
     --outFileName comparison.bw \

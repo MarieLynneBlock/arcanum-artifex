@@ -222,7 +222,7 @@ Example: Appendicitis, Atypical presentation, Elderly, Diagnostic imaging
 ## Discussion
 
 **Paragraph 1: Summary and Significance**
-[Briefly summarize the case and state its significance]
+[Briefly summarise the case and state its significance]
 
 **Paragraph 2: Literature Review**
 [Review similar cases in the literature]
@@ -284,7 +284,7 @@ This case report received no specific grant from any funding agency in the publi
 
 [OR: This work was supported by [funding source and grant number]]
 
-## Acknowledgments
+## Acknowledgements
 
 [Acknowledge contributors who do not meet authorship criteria, providers who cared for patient, etc.]
 
@@ -316,7 +316,7 @@ Use the CARE checklist to ensure all required elements are included:
 - [ ] Informed consent statement
 - [ ] All 18 HIPAA identifiers removed
 - [ ] References formatted correctly
-- [ ] Figures/tables labeled and referenced
+- [ ] Figures/tables labelled and referenced
 - [ ] Word count within journal limits
 
 ---

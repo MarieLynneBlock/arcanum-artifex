@@ -27,16 +27,16 @@ xelatex your_document.tex
 xelatex your_document.tex
 ```
 
-## Color Scheme Reference
+## Colour Scheme Reference
 
-### Hypothesis Colors
+### Hypothesis Colours
 - **Hypothesis 1**: Deep Blue (RGB: 0, 102, 153) - Use for first hypothesis
 - **Hypothesis 2**: Forest Green (RGB: 0, 128, 96) - Use for second hypothesis
 - **Hypothesis 3**: Royal Purple (RGB: 102, 51, 153) - Use for third hypothesis
 - **Hypothesis 4**: Teal (RGB: 0, 128, 128) - Use for fourth hypothesis (if needed)
 - **Hypothesis 5**: Burnt Orange (RGB: 204, 85, 0) - Use for fifth hypothesis (if needed)
 
-### Utility Colors
+### Utility Colours
 - **Predictions**: Amber (RGB: 255, 191, 0) - For testable predictions
 - **Evidence**: Light Blue (RGB: 102, 178, 204) - For supporting evidence
 - **Comparisons**: Steel Gray (RGB: 108, 117, 125) - For critical comparisons
@@ -468,7 +468,7 @@ Already handled by style package, but you can adjust:
 **Issue: "File hypothesis_generation.sty not found"**
 - Solution: Ensure the .sty file is in the same directory as your .tex file, or in your LaTeX path
 
-**Issue: Boxes don't have colors**
+**Issue: Boxes don't have colours**
 - Solution: Compile with XeLaTeX or LuaLaTeX, not pdfLaTeX
 - Command: `xelatex yourfile.tex`
 
@@ -529,10 +529,10 @@ tlmgr install tcolorbox xcolor fontspec fancyhdr titlesec enumitem booktabs natb
 
 ## Style Consistency Tips
 
-1. **Color Usage**
-   - Always use the same color for each hypothesis throughout the document
+1. **Colour Usage**
+   - Always use the same colour for each hypothesis throughout the document
    - H1 = blue, H2 = green, H3 = purple, etc.
-   - Don't mix colors for the same hypothesis
+   - Don't mix colours for the same hypothesis
 
 2. **Box Usage**
    - Main text: Hypothesis boxes, prediction boxes, comparison boxes
@@ -557,12 +557,12 @@ tlmgr install tcolorbox xcolor fontspec fancyhdr titlesec enumitem booktabs natb
 
 ## Quick Checklist
 
-Before finalizing your document:
+Before finalising your document:
 
 - [ ] Title page has phenomenon name
 - [ ] **Main text is 4 pages maximum**
 - [ ] Executive summary is concise (0.5-1 page)
-- [ ] Each hypothesis in its own colored box
+- [ ] Each hypothesis in its own coloured box
 - [ ] 3-5 hypotheses presented (not more)
 - [ ] Each hypothesis has brief mechanistic explanation (1-2 paragraphs)
 - [ ] Each hypothesis has 2-3 most essential evidence points with citations
@@ -579,7 +579,7 @@ Before finalizing your document:
 - [ ] Appendix D has supplementary evidence
 - [ ] 10-15 citations in main text (selective)
 - [ ] 50+ total citations in full document
-- [ ] All boxes use correct colors
+- [ ] All boxes use correct colours
 - [ ] Document compiles without errors
 - [ ] References formatted correctly
 - [ ] **Compiled PDF checked visually for overflow issues**

@@ -35,7 +35,7 @@ applyTo: '**/*.cs'
 
 - Guide users through creating a new .NET project with the appropriate templates.
 - Explain the purpose of each generated file and folder to build understanding of the project structure.
-- Demonstrate how to organize code using feature folders or domain-driven design principles.
+- Demonstrate how to organise code using feature folders or domain-driven design principles.
 - Show proper separation of concerns with models, services, and data access layers.
 - Explain the Program.cs and configuration system in ASP.NET Core 10 including environment-specific settings.
 
@@ -64,10 +64,10 @@ applyTo: '**/*.cs'
 ## Validation and Error Handling
 
 - Guide the implementation of model validation using data annotations and FluentValidation.
-- Explain the validation pipeline and how to customize validation responses.
+- Explain the validation pipeline and how to customise validation responses.
 - Demonstrate a global exception handling strategy using middleware.
 - Show how to create consistent error responses across the API.
-- Explain problem details (RFC 9457) implementation for standardized error responses.
+- Explain problem details (RFC 9457) implementation for standardised error responses.
 
 ## API Versioning and Documentation
 
@@ -90,18 +90,18 @@ applyTo: '**/*.cs'
 - Always include test cases for critical paths of the application.
 - Guide users through creating unit tests.
 - Do not emit "Act", "Arrange" or "Assert" comments.
-- Copy existing style in nearby files for test method names and capitalization.
+- Copy existing style in nearby files for test method names and capitalisation.
 - Explain integration testing approaches for API endpoints.
 - Demonstrate how to mock dependencies for effective testing.
 - Show how to test authentication and authorization logic.
 - Explain test-driven development principles as applied to API development.
 
-## Performance Optimization
+## Performance Optimisation
 
 - Guide users on implementing caching strategies (in-memory, distributed, response caching).
 - Explain asynchronous programming patterns and why they matter for API performance.
 - Demonstrate pagination, filtering, and sorting for large data sets.
-- Show how to implement compression and other performance optimizations.
+- Show how to implement compression and other performance optimisations.
 - Explain how to measure and benchmark API performance.
 
 ## Deployment and DevOps
