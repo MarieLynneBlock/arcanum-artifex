@@ -107,7 +107,7 @@ for name in compound_names:
 df = pd.DataFrame(all_properties)
 ```
 
-**Available Properties**: MolecularFormula, MolecularWeight, CanonicalSMILES, IsomericSMILES, InChI, InChIKey, IUPACName, XLogP, TPSA, HBondDonorCount, HBondAcceptorCount, RotatableBondCount, Complexity, Charge, and many more (see `references/api_reference.md` for complete list).
+**Available Properties**: MolecularFormula, MolecularWeight, CanonicalSMILES, IsomericSMILES, InChI, InChIKey, IUPACName, XLogP, TPSA, HBondDonorCount, HBondAcceptorCount, RotatableBondCount, Complexity, Charge, and many more (see `references/api-reference.md` for complete list).
 
 ### 3. Similarity Search
 
@@ -525,7 +525,7 @@ print(f"Found {len(filtered_hits)} compounds with desired substructure")
 
 ## Reference Documentation
 
-For detailed API documentation, including complete property lists, URL patterns, advanced query options, and more examples, consult `references/api_reference.md`. This comprehensive reference includes:
+For detailed API documentation, including complete property lists, URL patterns, advanced query options, and more examples, consult `references/api-reference.md`. This comprehensive reference includes:
 
 - Complete PUG-REST API endpoint documentation
 - Full list of available molecular properties

@@ -67,11 +67,11 @@ After connecting, assess the model against best practices:
 ### 3. Provide Targeted Guidance
 
 Based on analysis, guide improvements using references:
-- Star schema design: See [STAR-SCHEMA.md](references/STAR-SCHEMA.md)
-- Relationship configuration: See [RELATIONSHIPS.md](references/RELATIONSHIPS.md)
-- DAX measures and naming: See [MEASURES-DAX.md](references/MEASURES-DAX.md)
-- Performance optimization: See [PERFORMANCE.md](references/PERFORMANCE.md)
-- Row-level security: See [RLS.md](references/RLS.md)
+- Star schema design: See [star-schema.md](references/star-schema.md)
+- Relationship configuration: See [relationships.md](references/relationships.md)
+- DAX measures and naming: See [measures-dax.md](references/measures-dax.md)
+- Performance optimization: See [performance.md](references/performance.md)
+- Row-level security: See [rls.md](references/rls.md)
 
 ## Quick Reference: Model Quality Checklist
 

@@ -453,7 +453,7 @@ af_structures = [s for s in data['structures'] if s['provider'] == 'AlphaFold DB
 
 ## Resources
 
-### references/api_reference.md
+### references/api-reference.md
 
 Comprehensive API documentation covering:
 - Complete REST API endpoint specifications

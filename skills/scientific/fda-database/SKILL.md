@@ -195,7 +195,7 @@ breed_query = fda.query("animalandveterinary", "event",
            "animal.breed.breed_component:*Labrador*")
 ```
 
-**Reference:** See `references/animal_veterinary.md` for detailed documentation
+**Reference:** See `references/animal-veterinary.md` for detailed documentation
 
 ### Substances & Other
 
@@ -453,11 +453,11 @@ drug_name = clean_drug_name(user_input)
 ## API Reference
 
 For detailed information about:
-- **Authentication and rate limits** → See `references/api_basics.md`
+- **Authentication and rate limits** → See `references/api-basics.md`
 - **Drug databases** → See `references/drugs.md`
 - **Device databases** → See `references/devices.md`
 - **Food databases** → See `references/foods.md`
-- **Animal/veterinary databases** → See `references/animal_veterinary.md`
+- **Animal/veterinary databases** → See `references/animal-veterinary.md`
 - **Substance databases** → See `references/other.md`
 
 ## Scripts
@@ -504,7 +504,7 @@ python scripts/fda_examples.py
 - **Solution**: Try broader search terms, check spelling, use wildcards
 
 **Issue**: Invalid query syntax
-- **Solution**: Review query syntax in `references/api_basics.md`
+- **Solution**: Review query syntax in `references/api-basics.md`
 
 **Issue**: Missing fields in results
 - **Solution**: Not all records contain all fields; always check field existence

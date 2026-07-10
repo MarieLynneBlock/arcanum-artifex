@@ -52,7 +52,7 @@ for spectrum in exp:
     print(f"Spectrum: {len(mz)} peaks")
 ```
 
-**For detailed file handling**: See `references/file_io.md`
+**For detailed file handling**: See `references/file-io.md`
 
 ### 2. Signal Processing
 
@@ -69,7 +69,7 @@ gaussian.setParameters(params)
 gaussian.filterExperiment(exp)
 ```
 
-**For algorithm details**: See `references/signal_processing.md`
+**For algorithm details**: See `references/signal-processing.md`
 
 ### 3. Feature Detection
 
@@ -81,7 +81,7 @@ ff = ms.FeatureFinder()
 ff.run("centroided", exp, features, params, ms.FeatureMap())
 ```
 
-**For complete workflows**: See `references/feature_detection.md`
+**For complete workflows**: See `references/feature-detection.md`
 
 ### 4. Peptide and Protein Identification
 
@@ -129,7 +129,7 @@ PyOpenMS uses these primary objects:
 - **PeptideIdentification**: Search results for peptides
 - **ProteinIdentification**: Search results for proteins
 
-**For detailed documentation**: See `references/data_structures.md`
+**For detailed documentation**: See `references/data-structures.md`
 
 ## Common Workflows
 
@@ -206,9 +206,9 @@ PyOpenMS integrates with:
 
 ## References
 
-- `references/file_io.md` - Comprehensive file format handling
-- `references/signal_processing.md` - Signal processing algorithms
-- `references/feature_detection.md` - Feature detection and linking
+- `references/file-io.md` - Comprehensive file format handling
+- `references/signal-processing.md` - Signal processing algorithms
+- `references/feature-detection.md` - Feature detection and linking
 - `references/identification.md` - Peptide and protein identification
 - `references/metabolomics.md` - Metabolomics-specific workflows
-- `references/data_structures.md` - Core objects and data structures
+- `references/data-structures.md` - Core objects and data structures

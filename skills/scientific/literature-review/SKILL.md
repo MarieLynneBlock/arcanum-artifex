@@ -201,7 +201,7 @@ Literature reviews follow a structured, multi-phase workflow:
 
 1. **Create Review Document** from template:
    ```bash
-   cp assets/review_template.md my_literature_review.md
+   cp assets/review-template.md my_literature_review.md
    ```
 
 2. **Write Thematic Synthesis** (NOT study-by-study summaries):
@@ -258,7 +258,7 @@ Literature reviews follow a structured, multi-phase workflow:
    - Re-run verification until all citations pass
 
 3. **Format Citations Consistently**:
-   - Choose one citation style and use throughout (see `references/citation_styles.md`)
+   - Choose one citation style and use throughout (see `references/citation-styles.md`)
    - Common styles: APA, Nature, Vancouver, Chicago, IEEE
    - Use verification script output to format citations correctly
    - Ensure in-text citations match reference list format
@@ -380,7 +380,7 @@ Expand search via citation networks:
 
 ## Citation Style Guide
 
-Detailed formatting guidelines are in `references/citation_styles.md`. Quick reference:
+Detailed formatting guidelines are in `references/citation-styles.md`. Quick reference:
 
 ### APA (7th Edition)
 - In-text: (Smith et al., 2023)
@@ -496,7 +496,7 @@ Complete workflow for a biomedical literature review:
 
 ```bash
 # 1. Create review document from template
-cp assets/review_template.md crispr_sickle_cell_review.md
+cp assets/review-template.md crispr_sickle_cell_review.md
 
 # 2. Search multiple databases using appropriate skills
 # - Use gget skill for PubMed, bioRxiv
@@ -575,11 +575,11 @@ This skill works seamlessly with other scientific skills:
 - `scripts/search_databases.py`: Process, deduplicate, and format search results
 
 **References:**
-- `references/citation_styles.md`: Detailed citation formatting guide (APA, Nature, Vancouver, Chicago, IEEE)
-- `references/database_strategies.md`: Comprehensive database search strategies
+- `references/citation-styles.md`: Detailed citation formatting guide (APA, Nature, Vancouver, Chicago, IEEE)
+- `references/database-strategies.md`: Comprehensive database search strategies
 
 **Assets:**
-- `assets/review_template.md`: Complete literature review template with all sections
+- `assets/review-template.md`: Complete literature review template with all sections
 
 ### External Resources
 

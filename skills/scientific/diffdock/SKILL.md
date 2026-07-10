@@ -209,7 +209,7 @@ The analysis script:
    - Novel protein families: May underperform
 3. **Multiple Samples**: Review top 3-5 predictions, look for consensus
 
-**For detailed guidance:** Read `references/confidence_and_limitations.md` using the Read tool
+**For detailed guidance:** Read `references/confidence-and-limitations.md` using the Read tool
 
 ## Parameter Customization
 
@@ -250,7 +250,7 @@ python -m inference \
 3. Flexible Ligands: Increased torsion temperature
 4. Rigid Ligands: Decreased torsion temperature
 
-**For complete parameter reference:** Read `references/parameters_reference.md` using the Read tool
+**For complete parameter reference:** Read `references/parameters-reference.md` using the Read tool
 
 ## Advanced Techniques
 
@@ -322,7 +322,7 @@ Use OpenMM + OpenFE or GROMACS for FEP/TI calculations
 - Binding affinity prediction → Combine with scoring functions
 - Membrane proteins → Not specifically trained, use with caution
 
-**For complete limitations:** Read `references/confidence_and_limitations.md` using the Read tool
+**For complete limitations:** Read `references/confidence-and-limitations.md` using the Read tool
 
 ## Troubleshooting
 
@@ -393,7 +393,7 @@ Or use the online demo without installation:
 
 ### Reference Documentation (`references/`)
 
-**`parameters_reference.md`**: Complete parameter documentation
+**`parameters-reference.md`**: Complete parameter documentation
 - All command-line options and configuration parameters
 - Default values and acceptable ranges
 - Temperature parameters for controlling diversity
@@ -404,7 +404,7 @@ Read this file when users need:
 - Fine-tuning guidance for specific systems
 - Alternative sampling strategies
 
-**`confidence_and_limitations.md`**: Confidence score interpretation and tool limitations
+**`confidence-and-limitations.md`**: Confidence score interpretation and tool limitations
 - Detailed confidence score interpretation
 - When to trust predictions
 - Scope and limitations of DiffDock
@@ -417,7 +417,7 @@ Read this file when users need:
 - Guidance on combining with other tools
 - Validation strategies
 
-**`workflows_examples.md`**: Comprehensive workflow examples
+**`workflows-examples.md`**: Comprehensive workflow examples
 - Detailed installation instructions
 - Step-by-step examples for all workflows
 - Advanced integration patterns

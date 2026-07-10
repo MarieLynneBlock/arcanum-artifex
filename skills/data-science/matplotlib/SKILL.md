@@ -166,7 +166,7 @@ ax.boxplot([data1, data2, data3], labels=['A', 'B', 'C'])
 ax.violinplot([data1, data2, data3], positions=[1, 2, 3])
 ```
 
-For comprehensive plot type examples and variations, refer to `references/plot_types.md`.
+For comprehensive plot type examples and variations, refer to `references/plot-types.md`.
 
 ### 4. Styling and Customization
 
@@ -201,7 +201,7 @@ ax.annotate('important point', xy=(x, y), xytext=(x+1, y+1),
             arrowprops=dict(arrowstyle='->', color='red'))
 ```
 
-For detailed styling options and colormap guidelines, see `references/styling_guide.md`.
+For detailed styling options and colormap guidelines, see `references/styling-guide.md`.
 
 ### 5. Saving Figures
 
@@ -329,10 +329,10 @@ python scripts/style_configurator.py
 
 For comprehensive information, consult the reference documents:
 
-- **`references/plot_types.md`** - Complete catalog of plot types with code examples and use cases
-- **`references/styling_guide.md`** - Detailed styling options, colormaps, and customization
-- **`references/api_reference.md`** - Core classes and methods reference
-- **`references/common_issues.md`** - Troubleshooting guide for common problems
+- **`references/plot-types.md`** - Complete catalog of plot types with code examples and use cases
+- **`references/styling-guide.md`** - Detailed styling options, colormaps, and customization
+- **`references/api-reference.md`** - Core classes and methods reference
+- **`references/common-issues.md`** - Troubleshooting guide for common problems
 
 ## Integration with Other Tools
 

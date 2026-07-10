@@ -2,7 +2,7 @@
 
 # ZenUML Sequence Diagram
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
 
 **Syntax keyword:** `zenuml`
 **Best for:** Code-like sequence diagrams, method-call-style interactions, developers familiar with programming syntax

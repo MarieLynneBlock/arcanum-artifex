@@ -455,6 +455,6 @@ Special reactions representing metabolite import/export:
 
 For detailed workflows and API patterns, refer to:
 - `references/workflows.md` - Comprehensive step-by-step workflow examples
-- `references/api_quick_reference.md` - Common function signatures and patterns
+- `references/api-quick-reference.md` - Common function signatures and patterns
 
 Official documentation: https://cobrapy.readthedocs.io/en/latest/

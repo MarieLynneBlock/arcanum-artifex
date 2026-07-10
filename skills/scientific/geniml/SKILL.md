@@ -95,7 +95,7 @@ Build reference peak sets (universes) from BED file collections using multiple s
 - **ML (Maximum Likelihood)**: Probabilistic modeling of positions
 - **HMM (Hidden Markov Model)**: Complex state modeling
 
-**Reference:** See `references/consensus_peaks.md` for method comparison, parameters, and examples.
+**Reference:** See `references/consensus-peaks.md` for method comparison, parameters, and examples.
 
 ### 5. Utilities: Supporting Tools
 

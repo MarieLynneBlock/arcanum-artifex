@@ -270,29 +270,29 @@ cp assets/analysis_template.py my_analysis.py
 python my_analysis.py
 ```
 
-### reference/standard_workflow.md
+### reference/standard-workflow.md
 Detailed step-by-step workflow with explanations for each stage.
 
-### reference/api_reference.md
+### reference/api-reference.md
 Quick function reference organized by module.
 
-### reference/plotting_guide.md
+### reference/plotting-guide.md
 Comprehensive visualization guide for publication-quality figures.
 
 ## Detailed Reference Guides
 
 | Topic | Reference |
 |-------|-----------|
-| Full workflow | [references/standard_workflow.md](reference/standard_workflow.md) |
-| API reference | [references/api_reference.md](reference/api_reference.md) |
-| Plotting guide | [references/plotting_guide.md](reference/plotting_guide.md) |
-| Preprocessing | [references/PREPROCESSING.md](reference/PREPROCESSING.md) |
-| Spike sorting | [references/SPIKE_SORTING.md](reference/SPIKE_SORTING.md) |
-| Motion correction | [references/MOTION_CORRECTION.md](reference/MOTION_CORRECTION.md) |
-| Quality metrics | [references/QUALITY_METRICS.md](reference/QUALITY_METRICS.md) |
-| Automated curation | [references/AUTOMATED_CURATION.md](reference/AUTOMATED_CURATION.md) |
-| AI-assisted curation | [references/AI_CURATION.md](reference/AI_CURATION.md) |
-| Waveform analysis | [references/ANALYSIS.md](reference/ANALYSIS.md) |
+| Full workflow | [references/standard-workflow.md](reference/standard-workflow.md) |
+| API reference | [references/api-reference.md](reference/api-reference.md) |
+| Plotting guide | [references/plotting-guide.md](reference/plotting-guide.md) |
+| Preprocessing | [references/preprocessing.md](reference/preprocessing.md) |
+| Spike sorting | [references/spike-sorting.md](reference/spike-sorting.md) |
+| Motion correction | [references/motion-correction.md](reference/motion-correction.md) |
+| Quality metrics | [references/quality-metrics.md](reference/quality-metrics.md) |
+| Automated curation | [references/automated-curation.md](reference/automated-curation.md) |
+| AI-assisted curation | [references/ai-curation.md](reference/ai-curation.md) |
+| Waveform analysis | [references/analysis.md](reference/analysis.md) |
 
 ## Installation
 

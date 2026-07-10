@@ -42,7 +42,7 @@ Search ClinVar using the web interface at https://www.ncbi.nlm.nih.gov/clinvar/
 
 #### Programmatic Access via E-utilities
 
-Access ClinVar programmatically using NCBI's E-utilities API. Refer to `references/api_reference.md` for comprehensive API documentation including:
+Access ClinVar programmatically using NCBI's E-utilities API. Refer to `references/api-reference.md` for comprehensive API documentation including:
 - **esearch** - Search for variants matching criteria
 - **esummary** - Retrieve variant summaries
 - **efetch** - Download full XML records
@@ -64,7 +64,7 @@ curl "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term
 
 #### Understanding Classifications
 
-ClinVar uses standardized terminology for variant classifications. Refer to `references/clinical_significance.md` for detailed interpretation guidelines.
+ClinVar uses standardized terminology for variant classifications. Refer to `references/clinical-significance.md` for detailed interpretation guidelines.
 
 **Key germline classification terms (ACMG/AMP):**
 - **Pathogenic (P)** - Variant causes disease (~99% probability)
@@ -92,7 +92,7 @@ ClinVar uses standardized terminology for variant classifications. Refer to `ref
 
 Download complete datasets from `ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/`
 
-Refer to `references/data_formats.md` for comprehensive documentation on file formats and processing.
+Refer to `references/data-formats.md` for comprehensive documentation on file formats and processing.
 
 **Update schedule:**
 - Monthly releases: First Thursday of each month (complete dataset, archived)
@@ -239,7 +239,7 @@ Organizations can submit variant interpretations to ClinVar.
 
 **Submission methods:**
 - Web submission portal: https://submit.ncbi.nlm.nih.gov/subs/clinvar/
-- API submission (requires service account): See `references/api_reference.md`
+- API submission (requires service account): See `references/api-reference.md`
 - Batch submission via Excel templates
 
 **Requirements:**
@@ -340,11 +340,11 @@ Contact: clinvar@ncbi.nlm.nih.gov for submission account setup.
 
 This skill includes comprehensive reference documentation:
 
-- **`references/api_reference.md`** - Complete E-utilities API documentation with examples for esearch, esummary, efetch, and elink; includes rate limits, authentication, and Python/Biopython code samples
+- **`references/api-reference.md`** - Complete E-utilities API documentation with examples for esearch, esummary, efetch, and elink; includes rate limits, authentication, and Python/Biopython code samples
 
-- **`references/clinical_significance.md`** - Detailed guide to interpreting clinical significance classifications, review status star ratings, conflict resolution, and best practices for variant interpretation
+- **`references/clinical-significance.md`** - Detailed guide to interpreting clinical significance classifications, review status star ratings, conflict resolution, and best practices for variant interpretation
 
-- **`references/data_formats.md`** - Documentation for XML, VCF, and tab-delimited file formats; FTP directory structure, processing examples, and format selection guidance
+- **`references/data-formats.md`** - Documentation for XML, VCF, and tab-delimited file formats; FTP directory structure, processing examples, and format selection guidance
 
 ### External Resources
 

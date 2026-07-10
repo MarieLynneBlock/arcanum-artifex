@@ -246,7 +246,7 @@ Specify format by appending `/json` or `/txt` to API URLs. When format is omitte
 
 ### references/
 
-Detailed API reference documentation is available in `references/api_reference.md`, including:
+Detailed API reference documentation is available in `references/api-reference.md`, including:
 - Complete REST API endpoint specifications
 - All available contexts (compound, study, refmet, metstat, gene, protein, moverz)
 - Input/output parameter details

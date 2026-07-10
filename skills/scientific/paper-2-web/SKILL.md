@@ -193,7 +193,7 @@ python pipeline_light.py \
   --paper_latex_root "path/to/paper"
 ```
 
-→ **See `references/usage_examples.md` for comprehensive workflow examples**
+→ **See `references/usage-examples.md` for comprehensive workflow examples**
 
 ---
 
@@ -462,7 +462,7 @@ This skill includes comprehensive reference documentation:
 - **`references/paper2web.md`**: Detailed Paper2Web documentation with all features
 - **`references/paper2video.md`**: Comprehensive Paper2Video guide including talking-head setup
 - **`references/paper2poster.md`**: Complete Paper2Poster documentation with design templates
-- **`references/usage_examples.md`**: Real-world examples and workflow patterns
+- **`references/usage-examples.md`**: Real-world examples and workflow patterns
 
 **External Resources**:
 - GitHub Repository: https://github.com/YuhangChen1/Paper2All

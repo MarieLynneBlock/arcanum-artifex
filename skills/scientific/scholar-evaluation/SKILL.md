@@ -84,7 +84,7 @@ Ask the user to clarify if the scope is ambiguous.
 
 Systematically evaluate the work across the ScholarEval dimensions. For each applicable dimension, assess quality, identify strengths and weaknesses, and provide scores where appropriate.
 
-Refer to `references/evaluation_framework.md` for detailed criteria and rubrics for each dimension.
+Refer to `references/evaluation-framework.md` for detailed criteria and rubrics for each dimension.
 
 **Core Evaluation Dimensions:**
 
@@ -210,7 +210,7 @@ Adjust evaluation approach based on:
 
 ## Resources
 
-### references/evaluation_framework.md
+### references/evaluation-framework.md
 
 Detailed evaluation criteria, rubrics, and quality indicators for each ScholarEval dimension. Load this reference when conducting evaluations to access specific assessment guidelines and scoring rubrics.
 
@@ -248,7 +248,7 @@ python scripts/calculate_scores.py --scores <dimension_scores.json> --output <re
 
 **Response Process:**
 1. Identify work type (empirical research paper) and scope (comprehensive evaluation)
-2. Load `references/evaluation_framework.md` for detailed criteria
+2. Load `references/evaluation-framework.md` for detailed criteria
 3. Systematically assess each dimension:
    - Problem formulation: Clear research question about ML model performance
    - Literature review: Comprehensive coverage of recent ML and drug discovery work

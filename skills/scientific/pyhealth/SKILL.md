@@ -100,7 +100,7 @@ This skill includes comprehensive reference documentation organized by functiona
 
 ### 2. Medical Coding Translation
 
-**File**: `references/medical_coding.md`
+**File**: `references/medical-coding.md`
 
 **Read when:**
 - Translating between medical coding systems
@@ -184,7 +184,7 @@ This skill includes comprehensive reference documentation organized by functiona
 
 ### 6. Training and Evaluation
 
-**File**: `references/training_evaluation.md`
+**File**: `references/training-evaluation.md`
 
 **Read when:**
 - Training models with the Trainer class
@@ -226,8 +226,8 @@ uv pip install pyhealth
 1. Load MIMIC-IV dataset → Read `references/datasets.md`
 2. Apply mortality prediction task → Read `references/tasks.md`
 3. Select interpretable model (RETAIN) → Read `references/models.md`
-4. Train and evaluate → Read `references/training_evaluation.md`
-5. Interpret predictions for clinical use → Read `references/training_evaluation.md`
+4. Train and evaluate → Read `references/training-evaluation.md`
+5. Interpret predictions for clinical use → Read `references/training-evaluation.md`
 
 ### Use Case 2: Safe Medication Recommendation
 
@@ -237,8 +237,8 @@ uv pip install pyhealth
 1. Load EHR dataset (MIMIC-IV or OMOP) → Read `references/datasets.md`
 2. Apply drug recommendation task → Read `references/tasks.md`
 3. Use SafeDrug model with DDI constraints → Read `references/models.md`
-4. Preprocess medication codes → Read `references/medical_coding.md`
-5. Evaluate with multi-label metrics → Read `references/training_evaluation.md`
+4. Preprocess medication codes → Read `references/medical-coding.md`
+5. Evaluate with multi-label metrics → Read `references/training-evaluation.md`
 
 ### Use Case 3: Hospital Readmission Prediction
 
@@ -249,7 +249,7 @@ uv pip install pyhealth
 2. Apply readmission prediction task → Read `references/tasks.md`
 3. Handle class imbalance in preprocessing → Read `references/preprocessing.md`
 4. Train Transformer model → Read `references/models.md`
-5. Calibrate predictions and assess fairness → Read `references/training_evaluation.md`
+5. Calibrate predictions and assess fairness → Read `references/training-evaluation.md`
 
 ### Use Case 4: Sleep Disorder Diagnosis
 
@@ -260,14 +260,14 @@ uv pip install pyhealth
 2. Apply sleep staging task → Read `references/tasks.md`
 3. Preprocess EEG signals (filtering, segmentation) → Read `references/preprocessing.md`
 4. Train CNN or RNN model → Read `references/models.md`
-5. Evaluate per-stage performance → Read `references/training_evaluation.md`
+5. Evaluate per-stage performance → Read `references/training-evaluation.md`
 
 ### Use Case 5: Medical Code Translation
 
 **Objective**: Standardize diagnoses across different coding systems
 
 **Approach:**
-1. Read `references/medical_coding.md` for comprehensive guidance
+1. Read `references/medical-coding.md` for comprehensive guidance
 2. Use CrossMap to translate between ICD-9, ICD-10, CCS
 3. Group codes into clinically meaningful categories
 4. Integrate with dataset processing
@@ -281,7 +281,7 @@ uv pip install pyhealth
 2. Apply ICD coding task → Read `references/tasks.md`
 3. Preprocess clinical text → Read `references/preprocessing.md`
 4. Use TransformersModel (ClinicalBERT) → Read `references/models.md`
-5. Evaluate with multi-label metrics → Read `references/training_evaluation.md`
+5. Evaluate with multi-label metrics → Read `references/training-evaluation.md`
 
 ## Best Practices
 
@@ -320,7 +320,7 @@ uv pip install pyhealth
 
 ### Clinical Deployment
 
-1. **Calibrate predictions**: Ensure probabilities are reliable (see `references/training_evaluation.md`)
+1. **Calibrate predictions**: Ensure probabilities are reliable (see `references/training-evaluation.md`)
 
 2. **Assess fairness**: Evaluate across demographic groups to detect bias
 
@@ -479,10 +479,10 @@ print("\nModel saved successfully!")
 For detailed information on each component, refer to the comprehensive reference files in the `references/` directory:
 
 - **datasets.md**: Data structures, loading, and splitting (4,500 words)
-- **medical_coding.md**: Code translation and standardization (3,800 words)
+- **medical-coding.md**: Code translation and standardization (3,800 words)
 - **tasks.md**: Clinical prediction tasks and custom task creation (4,200 words)
 - **models.md**: Model architectures and selection guidelines (5,100 words)
 - **preprocessing.md**: Data processors and preprocessing workflows (4,600 words)
-- **training_evaluation.md**: Training, metrics, calibration, interpretability (5,900 words)
+- **training-evaluation.md**: Training, metrics, calibration, interpretability (5,900 words)
 
 **Total comprehensive documentation**: ~28,000 words across modular reference files.

@@ -401,6 +401,6 @@ Detailed documentation for each topic:
 - `references/scaling.md` — Autoscaling, concurrency, .map(), limits
 - `references/resources.md` — CPU, memory, disk, timeout configuration
 - `references/examples.md` — Common use cases and patterns
-- `references/api_reference.md` — Key API classes and methods
+- `references/api-reference.md` — Key API classes and methods
 
 Read these files when detailed information is needed beyond this overview.

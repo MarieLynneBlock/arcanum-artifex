@@ -306,7 +306,7 @@ ds_uncompressed.save_as('compressed_jpeg.dcm')
 - `JPEG2000Lossless` - JPEG 2000 lossless
 - `RLELossless` - Run-Length Encoding lossless
 
-See `references/transfer_syntaxes.md` for complete list.
+See `references/transfer-syntaxes.md` for complete list.
 
 ### Working with DICOM Sequences
 
@@ -394,8 +394,8 @@ python scripts/extract_metadata.py file.dcm --output metadata.txt
 
 Detailed reference information is available in the `references/` directory:
 
-- **common_tags.md**: Comprehensive list of commonly used DICOM tags organized by category (Patient, Study, Series, Image, etc.)
-- **transfer_syntaxes.md**: Complete reference of DICOM transfer syntaxes and compression formats
+- **common-tags.md**: Comprehensive list of commonly used DICOM tags organized by category (Patient, Study, Series, Image, etc.)
+- **transfer-syntaxes.md**: Complete reference of DICOM transfer syntaxes and compression formats
 
 ## Common Issues and Solutions
 

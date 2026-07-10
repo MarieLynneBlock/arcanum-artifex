@@ -394,7 +394,7 @@ For detailed endpoint documentation:
 - **Tags endpoints** - See `references/tags.md`
 - **Sources endpoints** - See `references/sources.md`
 - **GeoFRED endpoints** - See `references/geofred.md`
-- **API basics** - See `references/api_basics.md`
+- **API basics** - See `references/api-basics.md`
 
 ## Scripts
 

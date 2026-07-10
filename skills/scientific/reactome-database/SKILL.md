@@ -110,7 +110,7 @@ pathway_info = content.query_by_id("R-HSA-69278")
 version = content.get_database_version()
 ```
 
-**For detailed API endpoints and parameters**, refer to `references/api_reference.md` in this skill.
+**For detailed API endpoints and parameters**, refer to `references/api-reference.md` in this skill.
 
 ## Performing Pathway Analysis
 
@@ -263,7 +263,7 @@ python scripts/reactome_query.py version
 - **Data Downloads**: https://reactome.org/download-data
 - **reactome2py Docs**: https://reactome.github.io/reactome2py/
 
-For comprehensive API endpoint documentation, see `references/api_reference.md` in this skill.
+For comprehensive API endpoint documentation, see `references/api-reference.md` in this skill.
 
 ## Current Database Statistics (Version 94, September 2025)
 

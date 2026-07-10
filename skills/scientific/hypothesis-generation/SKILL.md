@@ -92,7 +92,7 @@ Search existing scientific literature to ground hypotheses in current evidence. 
 - Begin with broad searches to understand the landscape
 - Narrow to specific mechanisms, pathways, or theories
 - Look for contradictory findings or unresolved debates
-- Consult `references/literature_search_strategies.md` for detailed search techniques
+- Consult `references/literature-search-strategies.md` for detailed search techniques
 
 ### 3. Synthesize Existing Evidence
 
@@ -122,7 +122,7 @@ Develop 3-5 distinct hypotheses that could explain the phenomenon. Each hypothes
 
 ### 5. Evaluate Hypothesis Quality
 
-Assess each hypothesis against established quality criteria from `references/hypothesis_quality_criteria.md`:
+Assess each hypothesis against established quality criteria from `references/hypothesis-quality-criteria.md`:
 
 **Testability:** Can the hypothesis be empirically tested?
 **Falsifiability:** What observations would disprove it?
@@ -136,7 +136,7 @@ Explicitly note the strengths and weaknesses of each hypothesis.
 
 ### 6. Design Experimental Tests
 
-For each viable hypothesis, propose specific experiments or studies to test it. Consult `references/experimental_design_patterns.md` for common approaches:
+For each viable hypothesis, propose specific experiments or studies to test it. Consult `references/experimental-design-patterns.md` for common approaches:
 
 **Experimental design elements:**
 - What would be measured or observed?
@@ -262,7 +262,7 @@ To prevent content from overflowing on pages, follow these critical guidelines:
 
 6. **Appendix Page Management:** In appendices, use `\newpage` between major sections to avoid overflow in detailed content areas.
 
-**Quick Reference:** See `assets/FORMATTING_GUIDE.md` for detailed examples of all box types, color schemes, and common formatting patterns.
+**Quick Reference:** See `assets/formatting-guide.md` for detailed examples of all box types, color schemes, and common formatting patterns.
 
 ## Quality Standards
 
@@ -278,19 +278,19 @@ Ensure all generated hypotheses meet these standards:
 
 ### references/
 
-- `hypothesis_quality_criteria.md` - Framework for evaluating hypothesis quality (testability, falsifiability, parsimony, explanatory power, scope, consistency)
-- `experimental_design_patterns.md` - Common experimental approaches across domains (RCTs, observational studies, lab experiments, computational models)
-- `literature_search_strategies.md` - Effective search techniques for PubMed and general scientific sources
+- `hypothesis-quality-criteria.md` - Framework for evaluating hypothesis quality (testability, falsifiability, parsimony, explanatory power, scope, consistency)
+- `experimental-design-patterns.md` - Common experimental approaches across domains (RCTs, observational studies, lab experiments, computational models)
+- `literature-search-strategies.md` - Effective search techniques for PubMed and general scientific sources
 
 ### assets/
 
 - `hypothesis_generation.sty` - LaTeX style package providing colored boxes, professional formatting, and custom environments for hypothesis reports
 - `hypothesis_report_template.tex` - Complete LaTeX template with main text structure and comprehensive appendix sections
-- `FORMATTING_GUIDE.md` - Quick reference guide with examples of all box types, color schemes, citation practices, and troubleshooting tips
+- `formatting-guide.md` - Quick reference guide with examples of all box types, color schemes, citation practices, and troubleshooting tips
 
 ### Related Skills
 
 When preparing hypothesis-driven research for publication, consult the **venue-templates** skill for writing style guidance:
-- `venue_writing_styles.md` - Master guide comparing styles across venues
+- `venue-writing-styles.md` - Master guide comparing styles across venues
 - Venue-specific guides for Nature/Science, Cell Press, medical journals, and ML/CS conferences
-- `reviewer_expectations.md` - What reviewers look for when evaluating research hypotheses
+- `reviewer-expectations.md` - What reviewers look for when evaluating research hypotheses

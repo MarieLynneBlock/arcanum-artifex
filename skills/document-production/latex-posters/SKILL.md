@@ -573,7 +573,7 @@ For detailed guidance on creating schematics, refer to the **scientific-schemati
 
 ### 1. LaTeX Poster Packages
 
-Support for three major LaTeX poster packages, each with distinct advantages. For detailed comparison and package-specific guidance, refer to `references/latex_poster_packages.md`.
+Support for three major LaTeX poster packages, each with distinct advantages. For detailed comparison and package-specific guidance, refer to `references/latex-poster-packages.md`.
 
 **beamerposter**:
 - Extension of the Beamer presentation class
@@ -595,7 +595,7 @@ Support for three major LaTeX poster packages, each with distinct advantages. Fo
 
 ### 2. Poster Layout and Structure
 
-Create effective poster layouts following visual communication principles. For comprehensive layout guidance, refer to `references/poster_layout_design.md`.
+Create effective poster layouts following visual communication principles. For comprehensive layout guidance, refer to `references/poster-layout-design.md`.
 
 **Common Poster Sections**:
 - **Header/Title**: Title, authors, affiliations, logos
@@ -614,7 +614,7 @@ Create effective poster layouts following visual communication principles. For c
 
 ### 3. Design Principles for Research Posters
 
-Apply evidence-based design principles for maximum impact. For detailed design guidance, refer to `references/poster_design_principles.md`.
+Apply evidence-based design principles for maximum impact. For detailed design guidance, refer to `references/poster-design-principles.md`.
 
 **Typography**:
 - Title: 72-120pt for visibility from distance
@@ -1585,10 +1585,10 @@ Helper scripts available in `scripts/` directory:
 
 Comprehensive reference files for detailed guidance:
 
-- `references/latex_poster_packages.md`: Detailed comparison of beamerposter, tikzposter, and baposter with examples
-- `references/poster_layout_design.md`: Layout principles, grid systems, and visual flow
-- `references/poster_design_principles.md`: Typography, color theory, visual hierarchy, and accessibility
-- `references/poster_content_guide.md`: Content organization, writing style, and section-specific guidance
+- `references/latex-poster-packages.md`: Detailed comparison of beamerposter, tikzposter, and baposter with examples
+- `references/poster-layout-design.md`: Layout principles, grid systems, and visual flow
+- `references/poster-design-principles.md`: Typography, color theory, visual hierarchy, and accessibility
+- `references/poster-content-guide.md`: Content organization, writing style, and section-specific guidance
 
 ## Templates
 

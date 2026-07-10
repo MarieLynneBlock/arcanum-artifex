@@ -29,7 +29,7 @@ Vaex provides six primary capability areas, each documented in detail in the ref
 
 ### 1. DataFrames and Data Loading
 
-Load and create Vaex DataFrames from various sources including files (HDF5, CSV, Arrow, Parquet), pandas DataFrames, NumPy arrays, and dictionaries. Reference `references/core_dataframes.md` for:
+Load and create Vaex DataFrames from various sources including files (HDF5, CSV, Arrow, Parquet), pandas DataFrames, NumPy arrays, and dictionaries. Reference `references/core-dataframes.md` for:
 - Opening large files efficiently
 - Converting from pandas/NumPy/Arrow
 - Working with example datasets
@@ -37,7 +37,7 @@ Load and create Vaex DataFrames from various sources including files (HDF5, CSV,
 
 ### 2. Data Processing and Manipulation
 
-Perform filtering, create virtual columns, use expressions, and aggregate data without loading everything into memory. Reference `references/data_processing.md` for:
+Perform filtering, create virtual columns, use expressions, and aggregate data without loading everything into memory. Reference `references/data-processing.md` for:
 - Filtering and selections
 - Virtual columns and expressions
 - Groupby operations and aggregations
@@ -63,7 +63,7 @@ Create interactive visualizations of large datasets including heatmaps, histogra
 
 ### 5. Machine Learning Integration
 
-Build ML pipelines with transformers, encoders, and integration with scikit-learn, XGBoost, and other frameworks. Reference `references/machine_learning.md` for:
+Build ML pipelines with transformers, encoders, and integration with scikit-learn, XGBoost, and other frameworks. Reference `references/machine-learning.md` for:
 - Feature scaling and encoding
 - PCA and dimensionality reduction
 - K-means clustering
@@ -72,7 +72,7 @@ Build ML pipelines with transformers, encoders, and integration with scikit-lear
 
 ### 6. I/O Operations
 
-Efficiently read and write data in various formats with optimal performance. Reference `references/io_operations.md` for:
+Efficiently read and write data in various formats with optimal performance. Reference `references/io-operations.md` for:
 - File format recommendations
 - Export strategies
 - Working with Apache Arrow
@@ -117,11 +117,11 @@ df.export_hdf5('output.hdf5')
 
 The reference files contain detailed information about each capability area. Load references into context based on the specific task:
 
-- **Basic operations**: Start with `references/core_dataframes.md` and `references/data_processing.md`
+- **Basic operations**: Start with `references/core-dataframes.md` and `references/data-processing.md`
 - **Performance issues**: Check `references/performance.md`
 - **Visualization tasks**: Use `references/visualization.md`
-- **ML pipelines**: Reference `references/machine_learning.md`
-- **File I/O**: Consult `references/io_operations.md`
+- **ML pipelines**: Reference `references/machine-learning.md`
+- **File I/O**: Consult `references/io-operations.md`
 
 ## Best Practices
 
@@ -171,9 +171,9 @@ df['is_adult'] = df.age >= 18
 
 This skill includes reference documentation in the `references/` directory:
 
-- `core_dataframes.md` - DataFrame creation, loading, and basic structure
-- `data_processing.md` - Filtering, expressions, aggregations, and transformations
+- `core-dataframes.md` - DataFrame creation, loading, and basic structure
+- `data-processing.md` - Filtering, expressions, aggregations, and transformations
 - `performance.md` - Optimization strategies and lazy evaluation
 - `visualization.md` - Plotting and interactive visualizations
-- `machine_learning.md` - ML pipelines and model integration
-- `io_operations.md` - File formats and data import/export
+- `machine-learning.md` - ML pipelines and model integration
+- `io-operations.md` - File formats and data import/export

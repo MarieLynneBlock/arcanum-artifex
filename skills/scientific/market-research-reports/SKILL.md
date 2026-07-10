@@ -744,7 +744,7 @@ Asia-Pacific & \$10.5B & 23.2\% & 18.7\% \\
 \end{table}
 ```
 
-For complete formatting reference, see `assets/FORMATTING_GUIDE.md`.
+For complete formatting reference, see `assets/formatting-guide.md`.
 
 ---
 
@@ -864,15 +864,15 @@ Before finalizing the report, verify:
 
 Load these files for detailed guidance:
 
-- **`references/report_structure_guide.md`**: Detailed section-by-section content requirements
-- **`references/visual_generation_guide.md`**: Complete prompts for generating all visual types
-- **`references/data_analysis_patterns.md`**: Templates for Porter's, PESTLE, SWOT, etc.
+- **`references/report-structure-guide.md`**: Detailed section-by-section content requirements
+- **`references/visual-generation-guide.md`**: Complete prompts for generating all visual types
+- **`references/data-analysis-patterns.md`**: Templates for Porter's, PESTLE, SWOT, etc.
 
 ### Assets
 
 - **`assets/market_research.sty`**: LaTeX style package
 - **`assets/market_report_template.tex`**: Complete LaTeX template
-- **`assets/FORMATTING_GUIDE.md`**: Quick reference for box environments and styling
+- **`assets/formatting-guide.md`**: Quick reference for box environments and styling
 
 ### Scripts
 

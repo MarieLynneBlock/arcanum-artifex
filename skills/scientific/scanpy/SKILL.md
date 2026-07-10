@@ -230,7 +230,7 @@ sc.pl.dotplot(adata, var_names=genes, groupby='cell_type',
               save='_dotplot.pdf')
 ```
 
-Refer to `references/plotting_guide.md` for comprehensive visualization examples.
+Refer to `references/plotting-guide.md` for comprehensive visualization examples.
 
 ### Trajectory Inference
 
@@ -315,7 +315,7 @@ python scripts/qc_analysis.py input.h5ad --output filtered.h5ad \
     --mt-threshold 5 --min-genes 200 --min-cells 3
 ```
 
-### references/standard_workflow.md
+### references/standard-workflow.md
 Complete step-by-step workflow with detailed explanations and code examples for:
 - Data loading and setup
 - Quality control with visualization
@@ -330,7 +330,7 @@ Complete step-by-step workflow with detailed explanations and code examples for:
 
 Read this reference when performing a complete analysis from scratch.
 
-### references/api_reference.md
+### references/api-reference.md
 Quick reference guide for scanpy functions organized by module:
 - Reading/writing data (`sc.read_*`, `adata.write_*`)
 - Preprocessing (`sc.pp.*`)
@@ -341,7 +341,7 @@ Quick reference guide for scanpy functions organized by module:
 
 Use this for quick lookup of function signatures and common parameters.
 
-### references/plotting_guide.md
+### references/plotting-guide.md
 Comprehensive visualization guide including:
 - Quality control plots
 - Dimensionality reduction visualizations

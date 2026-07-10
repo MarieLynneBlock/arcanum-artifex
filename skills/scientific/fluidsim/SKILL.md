@@ -81,7 +81,7 @@ sim.output.phys_fields.plot("vorticity")
 sim.output.spatial_means.plot()
 ```
 
-See `references/simulation_workflow.md` for complete examples, restarting simulations, and cluster deployment.
+See `references/simulation-workflow.md` for complete examples, restarting simulations, and cluster deployment.
 
 ### 3. Available Solvers
 
@@ -180,7 +180,7 @@ sim.output.phys_fields.plot()
 
 **Advanced visualization**: Open `.h5` files in ParaView or VisIt for 3D visualization.
 
-See `references/output_analysis.md` for detailed analysis workflows, parametric study analysis, and data export.
+See `references/output-analysis.md` for detailed analysis workflows, parametric study analysis, and data export.
 
 ### 6. Advanced Features
 
@@ -216,7 +216,7 @@ for nu in [1e-3, 5e-4, 1e-4]:
     sim.time_stepping.start()
 ```
 
-See `references/advanced_features.md` for forcing types, custom solvers, cluster submission, and performance optimization.
+See `references/advanced-features.md` for forcing types, custom solvers, cluster submission, and performance optimization.
 
 ## Common Use Cases
 
@@ -340,7 +340,7 @@ df = sim.output.spatial_means.load()
 **Reference files**:
 - `references/installation.md`: Complete installation instructions
 - `references/solvers.md`: Available solvers and selection guide
-- `references/simulation_workflow.md`: Detailed workflow examples
+- `references/simulation-workflow.md`: Detailed workflow examples
 - `references/parameters.md`: Comprehensive parameter documentation
-- `references/output_analysis.md`: Output types and analysis methods
-- `references/advanced_features.md`: Forcing, MPI, parametric studies, custom solvers
+- `references/output-analysis.md`: Output types and analysis methods
+- `references/advanced-features.md`: Forcing, MPI, parametric studies, custom solvers

@@ -632,9 +632,9 @@ Detailed guides in `references/`:
 
 | File | Contents |
 | ---- | -------- |
-| `references/system_requirements.md` | Hardware tiers, GPU/CPU selection, memory estimation formulas |
-| `references/api_reference.md` | Full `ForecastConfig` docs, `from_pretrained` options, output shapes |
-| `references/data_preparation.md` | Input formats, NaN handling, CSV loading, covariate setup |
+| `references/system-requirements.md` | Hardware tiers, GPU/CPU selection, memory estimation formulas |
+| `references/api-reference.md` | Full `ForecastConfig` docs, `from_pretrained` options, output shapes |
+| `references/data-preparation.md` | Input formats, NaN handling, CSV loading, covariate setup |
 
 ## Common Pitfalls
 

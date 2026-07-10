@@ -51,7 +51,7 @@ kegg_ids = u.mapping(fr="UniProtKB_AC-ID", to="KEGG", query="P43403")
 - `retrieve()`: Get protein entries in various formats (FASTA, XML, tab)
 - `mapping()`: Convert identifiers between databases
 
-Reference: `references/services_reference.md` for complete UniProt API details.
+Reference: `references/services-reference.md` for complete UniProt API details.
 
 ### 2. Pathway Discovery and Analysis
 
@@ -90,7 +90,7 @@ sif_data = k.pathway2sif("hsa04660")
 - `parse_kgml_pathway()`: Extract structured pathway data
 - `pathway2sif()`: Get protein interaction networks
 
-Reference: `references/workflow_patterns.md` for complete pathway analysis workflows.
+Reference: `references/workflow-patterns.md` for complete pathway analysis workflows.
 
 ### 3. Compound Database Searches
 
@@ -118,7 +118,7 @@ chembl_id = u.get_compound_id_from_kegg("C11222")  # Returns CHEMBL278315
 3. Use UniChem for KEGG → ChEMBL mapping
 4. ChEBI IDs are often provided in KEGG entries
 
-Reference: `references/identifier_mapping.md` for complete cross-database mapping guide.
+Reference: `references/identifier-mapping.md` for complete cross-database mapping guide.
 
 ### 4. Sequence Analysis
 
@@ -174,7 +174,7 @@ chembl_from_kegg = u.get_compound_id_from_kegg("C11222")
 - UniProtKB ↔ Ensembl
 - UniProtKB ↔ PDB
 - UniProtKB ↔ RefSeq
-- And many more (see `references/identifier_mapping.md`)
+- And many more (see `references/identifier-mapping.md`)
 
 ### 6. Gene Ontology Queries
 
@@ -336,9 +336,9 @@ Scripts can be executed directly or adapted for specific use cases.
 
 Detailed documentation loaded as needed:
 
-- `services_reference.md`: Comprehensive list of all 40+ services with methods
-- `workflow_patterns.md`: Detailed multi-step analysis workflows
-- `identifier_mapping.md`: Complete guide to cross-database ID conversion
+- `services-reference.md`: Comprehensive list of all 40+ services with methods
+- `workflow-patterns.md`: Detailed multi-step analysis workflows
+- `identifier-mapping.md`: Complete guide to cross-database ID conversion
 
 Load references when working with specific services or complex integration tasks.
 
@@ -355,4 +355,4 @@ Dependencies are automatically managed. Package is tested on Python 3.9-3.12.
 For detailed API documentation and advanced features, refer to:
 - Official documentation: https://bioservices.readthedocs.io/
 - Source code: https://github.com/cokelaer/bioservices
-- Service-specific references in `references/services_reference.md`
+- Service-specific references in `references/services-reference.md`

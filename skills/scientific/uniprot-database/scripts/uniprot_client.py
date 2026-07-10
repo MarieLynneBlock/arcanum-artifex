@@ -156,7 +156,7 @@ def map_ids(ids: List[str], from_db: str, to_db: str,
     Note:
         - Maximum 100,000 IDs per job
         - Results stored for 7 days
-        - See id_mapping_databases.md for all supported databases
+        - See id-mapping-databases.md for all supported databases
     """
     if len(ids) > 100000:
         raise ValueError("Maximum 100,000 IDs allowed per mapping job")

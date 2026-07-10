@@ -321,7 +321,7 @@ For detailed guidance on creating schematics, refer to the scientific-schematics
 
 ### 1. Presentation Structure and Organization
 
-Build presentations with clear narrative flow and appropriate structure for different contexts. For detailed guidance, refer to `references/presentation_structure.md`.
+Build presentations with clear narrative flow and appropriate structure for different contexts. For detailed guidance, refer to `references/presentation-structure.md`.
 
 **Universal Story Arc**:
 1. **Hook**: Grab attention (30-60 seconds)
@@ -341,7 +341,7 @@ Build presentations with clear narrative flow and appropriate structure for diff
 
 ### 2. Slide Design Principles
 
-Create professional, readable, and accessible slides that enhance understanding. For complete design guidelines, refer to `references/slide_design_principles.md`.
+Create professional, readable, and accessible slides that enhance understanding. For complete design guidelines, refer to `references/slide-design-principles.md`.
 
 **ANTI-PATTERN: Avoid Dry, Text-Heavy Presentations**
 
@@ -406,7 +406,7 @@ Create professional, readable, and accessible slides that enhance understanding.
 
 ### 3. Data Visualization for Slides
 
-Adapt scientific figures for presentation context. For detailed guidance, refer to `references/data_visualization_slides.md`.
+Adapt scientific figures for presentation context. For detailed guidance, refer to `references/data-visualization-slides.md`.
 
 **Key Differences from Journal Figures**:
 - Simplify, don't replicate
@@ -432,7 +432,7 @@ Adapt scientific figures for presentation context. For detailed guidance, refer 
 
 ### 4. Talk-Specific Guidance
 
-Different presentation contexts require different approaches. For comprehensive guidance on each type, refer to `references/talk_types_guide.md`.
+Different presentation contexts require different approaches. For comprehensive guidance on each type, refer to `references/talk-types-guide.md`.
 
 **Conference Talks** (10-20 minutes):
 - Structure: Brief intro → minimal methods → key results → quick conclusion
@@ -508,7 +508,7 @@ python scripts/slides_to_pdf.py slides/*.png -o presentation.pdf
 Use Nano Banana Pro with `--visual-only` to generate images, then build PPTX with text.
 
 **Key Resources**:
-- `assets/powerpoint_design_guide.md`: Complete PowerPoint design guide
+- `assets/powerpoint-design-guide.md`: Complete PowerPoint design guide
 - PPTX skill's `html2pptx.md`: Programmatic creation workflow
 - PPTX skill's scripts: `rearrange.py`, `inventory.py`, `replace.py`, `thumbnail.py`
 
@@ -530,7 +530,7 @@ Use Nano Banana Pro with `--visual-only` to generate images, then build PPTX wit
 
 **Best for**: Mathematical content, consistent formatting, version control
 
-**Reference**: See `references/beamer_guide.md` for complete documentation
+**Reference**: See `references/beamer-guide.md` for complete documentation
 
 **Templates Available**:
 - `assets/beamer_template_conference.tex`: 15-minute conference talk
@@ -553,7 +553,7 @@ Use Nano Banana Pro with `--visual-only` to generate images, then build PPTX wit
 
 ### 6. Visual Review and Iteration
 
-Implement iterative improvement through visual inspection. For complete workflow, refer to `references/visual_review_workflow.md`.
+Implement iterative improvement through visual inspection. For complete workflow, refer to `references/visual-review-workflow.md`.
 
 **Visual Validation Workflow**:
 
@@ -610,7 +610,7 @@ Repeat Steps 1-5 until no critical issues remain.
 
 ### 7. Timing and Pacing
 
-Ensure presentations fit allocated time. For comprehensive timing guidance, refer to `assets/timing_guidelines.md`.
+Ensure presentations fit allocated time. For comprehensive timing guidance, refer to `assets/timing-guidelines.md`.
 
 **The One-Slide-Per-Minute Rule**:
 - General guideline: ~1 slide per minute
@@ -721,14 +721,14 @@ and discussion (slides 13-14) BEFORE creating slides.
 **Choose Implementation Method**:
 
 **Option A: PowerPoint (via PPTX skill)**
-1. Read `assets/powerpoint_design_guide.md`
+1. Read `assets/powerpoint-design-guide.md`
 2. Read `skills/document-production/pptx/SKILL.md`
 3. Choose approach (programmatic or template-based)
 4. Create master slides with consistent design
 5. Build presentation following outline
 
 **Option B: LaTeX Beamer**
-1. Read `references/beamer_guide.md`
+1. Read `references/beamer-guide.md`
 2. Select appropriate template from `assets/`
 3. Customize theme and colors
 4. Write content in LaTeX
@@ -1053,12 +1053,12 @@ From `skills/document-production/pptx/scripts/`:
 
 Comprehensive guides for specific aspects:
 
-- **`references/presentation_structure.md`**: Detailed structure for all talk types, timing allocation, opening/closing strategies, transition techniques
-- **`references/slide_design_principles.md`**: Typography, color theory, layout, accessibility, visual hierarchy, design workflow
-- **`references/data_visualization_slides.md`**: Simplifying figures, chart types, progressive disclosure, common mistakes, recreation workflow
-- **`references/talk_types_guide.md`**: Specific guidance for conferences, seminars, defenses, grants, journal clubs, with examples
-- **`references/beamer_guide.md`**: Complete LaTeX Beamer documentation, themes, customization, advanced features, compilation
-- **`references/visual_review_workflow.md`**: PDF to images conversion, systematic inspection, issue documentation, iterative improvement
+- **`references/presentation-structure.md`**: Detailed structure for all talk types, timing allocation, opening/closing strategies, transition techniques
+- **`references/slide-design-principles.md`**: Typography, color theory, layout, accessibility, visual hierarchy, design workflow
+- **`references/data-visualization-slides.md`**: Simplifying figures, chart types, progressive disclosure, common mistakes, recreation workflow
+- **`references/talk-types-guide.md`**: Specific guidance for conferences, seminars, defenses, grants, journal clubs, with examples
+- **`references/beamer-guide.md`**: Complete LaTeX Beamer documentation, themes, customization, advanced features, compilation
+- **`references/visual-review-workflow.md`**: PDF to images conversion, systematic inspection, issue documentation, iterative improvement
 
 ## Assets
 
@@ -1070,8 +1070,8 @@ Comprehensive guides for specific aspects:
 
 ### Guides
 
-- **`assets/powerpoint_design_guide.md`**: Complete PowerPoint design and implementation guide
-- **`assets/timing_guidelines.md`**: Comprehensive timing, pacing, and practice strategies
+- **`assets/powerpoint-design-guide.md`**: Complete PowerPoint design and implementation guide
+- **`assets/timing-guidelines.md`**: Comprehensive timing, pacing, and practice strategies
 
 ## Quick Start Guide
 

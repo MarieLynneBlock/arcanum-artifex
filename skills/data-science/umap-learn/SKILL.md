@@ -471,6 +471,6 @@ UMAP uses stochastic optimization, so results will vary slightly between runs wi
 ### references/
 
 Contains detailed API documentation:
-- `api_reference.md`: Complete UMAP class parameters and methods
+- `api-reference.md`: Complete UMAP class parameters and methods
 
 Load these references when detailed parameter information or advanced method usage is needed.

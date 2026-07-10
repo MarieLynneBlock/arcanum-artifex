@@ -166,7 +166,7 @@ for paper in results:
 | `eess.SP` | Signal Processing |
 | `physics.comp-ph` | Computational Physics |
 
-Full list: see [references/api_reference.md](references/api_reference.md).
+Full list: see [references/api-reference.md](references/api-reference.md).
 
 ## Query Syntax
 
@@ -359,4 +359,4 @@ results = searcher.search(query=query, max_results=20)
 
 ## Reference Documentation
 
-- **API Reference**: See [references/api_reference.md](references/api_reference.md) for full endpoint specs, all categories, and response schemas
+- **API Reference**: See [references/api-reference.md](references/api-reference.md) for full endpoint specs, all categories, and response schemas

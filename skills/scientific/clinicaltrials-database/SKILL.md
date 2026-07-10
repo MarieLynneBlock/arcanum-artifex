@@ -403,7 +403,7 @@ Run the script directly for example usage:
 python3 scripts/query_clinicaltrials.py
 ```
 
-### references/api_reference.md
+### references/api-reference.md
 
 Detailed API documentation including:
 
@@ -501,4 +501,4 @@ if 'resultsSection' in study:
 - **API Version**: 2.0 (released March 2024)
 - **API Specification**: OpenAPI 3.0
 
-For complete technical details, see `references/api_reference.md`.
+For complete technical details, see `references/api-reference.md`.

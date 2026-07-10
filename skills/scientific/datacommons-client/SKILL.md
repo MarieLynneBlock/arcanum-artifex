@@ -232,7 +232,7 @@ Comprehensive documentation for each endpoint is available in the `references/` 
 - **`references/observation.md`**: Complete Observation API documentation with all methods, parameters, response formats, and common use cases
 - **`references/node.md`**: Complete Node API documentation for graph exploration, property queries, and hierarchy navigation
 - **`references/resolve.md`**: Complete Resolve API documentation for entity identification and DCID resolution
-- **`references/getting_started.md`**: Quickstart guide with end-to-end examples and common patterns
+- **`references/getting-started.md`**: Quickstart guide with end-to-end examples and common patterns
 
 ## Additional Resources
 

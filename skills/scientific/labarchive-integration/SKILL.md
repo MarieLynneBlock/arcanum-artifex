@@ -55,7 +55,7 @@ access_password: YOUR_ACCESS_PASSWORD
 - Australia: `https://auapi.labarchives.com/api`
 - UK: `https://ukapi.labarchives.com/api`
 
-For detailed authentication instructions and troubleshooting, refer to `references/authentication_guide.md`.
+For detailed authentication instructions and troubleshooting, refer to `references/authentication-guide.md`.
 
 ### 2. User Information Retrieval
 
@@ -117,7 +117,7 @@ python3 scripts/notebook_operations.py backup --uid USER_ID --nbid NOTEBOOK_ID -
 https://<api_url>/notebooks/notebook_backup?uid=<UID>&nbid=<NOTEBOOK_ID>&json=true&no_attachments=false
 ```
 
-For comprehensive API method documentation, refer to `references/api_reference.md`.
+For comprehensive API method documentation, refer to `references/api-reference.md`.
 
 ### 4. Entry and Attachment Management
 
@@ -260,6 +260,6 @@ This skill includes bundled resources to support LabArchives API integration:
 
 ### references/
 
-- `api_reference.md`: Comprehensive API endpoint documentation with parameters and examples
-- `authentication_guide.md`: Detailed authentication setup and configuration instructions
+- `api-reference.md`: Comprehensive API endpoint documentation with parameters and examples
+- `authentication-guide.md`: Detailed authentication setup and configuration instructions
 - `integrations.md`: Third-party integration setup guides and use cases

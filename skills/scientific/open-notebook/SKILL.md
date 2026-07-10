@@ -265,7 +265,7 @@ Core endpoint groups:
 - `/api/models` - AI model configuration and discovery
 - `/api/credentials` - Provider credential management
 
-For complete API reference with all endpoints and request/response formats, see `references/api_reference.md`.
+For complete API reference with all endpoints and request/response formats, see `references/api-reference.md`.
 
 ## Architecture
 

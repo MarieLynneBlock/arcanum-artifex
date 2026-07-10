@@ -531,7 +531,7 @@ Python script with ready-to-use functions for common ClinPGx queries:
 
 Consult this script for implementation examples with proper rate limiting and error handling.
 
-### references/api_reference.md
+### references/api-reference.md
 
 Comprehensive API documentation including:
 

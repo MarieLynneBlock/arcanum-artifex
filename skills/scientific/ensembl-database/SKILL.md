@@ -249,7 +249,7 @@ uv pip install requests
 
 ### references/
 
-- `api_endpoints.md`: Comprehensive documentation of all 17 API endpoint categories with examples and parameters
+- `api-endpoints.md`: Comprehensive documentation of all 17 API endpoint categories with examples and parameters
 
 ### scripts/
 

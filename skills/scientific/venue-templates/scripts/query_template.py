@@ -194,11 +194,11 @@ def print_requirements(venue):
     skill_path = get_skill_path()
     
     if template['category'] == "journals":
-        print(f"   {skill_path}/references/journals_formatting.md")
+        print(f"   {skill_path}/references/journals-formatting.md")
     elif template['category'] == "posters":
-        print(f"   {skill_path}/references/posters_guidelines.md")
+        print(f"   {skill_path}/references/posters-guidelines.md")
     elif template['category'] == "grants":
-        print(f"   {skill_path}/references/grants_requirements.md")
+        print(f"   {skill_path}/references/grants-requirements.md")
     
     print()
 

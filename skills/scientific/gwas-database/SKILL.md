@@ -542,7 +542,7 @@ print(f"Unique variants: {df['variant'].nunique()}")
 
 ## Resources
 
-### references/api_reference.md
+### references/api-reference.md
 
 Comprehensive API documentation including:
 - Detailed endpoint specifications for both APIs

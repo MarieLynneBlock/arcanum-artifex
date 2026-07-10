@@ -289,7 +289,7 @@ from pymoo.algorithms.soo.nonconvex.sres import SRES
 algorithm = SRES()
 ```
 
-**See:** `references/constraints_mcdm.md` for comprehensive constraint handling guide
+**See:** `references/constraints-mcdm.md` for comprehensive constraint handling guide
 
 ### Workflow 6: Decision Making from Pareto Front
 
@@ -333,7 +333,7 @@ print(f"Objective values: {best_objectives}")
 
 **See:**
 - `scripts/decision_making_example.py` for complete example
-- `references/constraints_mcdm.md` for detailed MCDM methods
+- `references/constraints-mcdm.md` for detailed MCDM methods
 
 ### Workflow 7: Visualization
 
@@ -522,7 +522,7 @@ Detailed documentation for in-depth understanding:
 - **problems.md**: Benchmark test problems (ZDT, DTLZ, WFG) with characteristics
 - **operators.md**: Genetic operators (sampling, selection, crossover, mutation) with configuration
 - **visualization.md**: All visualization types with examples and selection guide
-- **constraints_mcdm.md**: Constraint handling techniques and multi-criteria decision making methods
+- **constraints-mcdm.md**: Constraint handling techniques and multi-criteria decision making methods
 
 **Search patterns for references:**
 - Algorithm details: `grep -r "NSGA-II\|NSGA-III\|MOEA/D" references/`

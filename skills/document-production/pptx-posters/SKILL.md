@@ -402,12 +402,12 @@ This skill works with:
 Available in `assets/` directory:
 
 - `poster_html_template.html`: Main HTML poster template (36×48 inches)
-- `poster_quality_checklist.md`: Pre-submission validation checklist
+- `poster-quality-checklist.md`: Pre-submission validation checklist
 
 ## References
 
 Available in `references/` directory:
 
-- `poster_content_guide.md`: Content organization and writing guidelines
-- `poster_design_principles.md`: Typography, color theory, and visual hierarchy
-- `poster_layout_design.md`: Layout principles and grid systems
+- `poster-content-guide.md`: Content organization and writing guidelines
+- `poster-design-principles.md`: Typography, color theory, and visual hierarchy
+- `poster-layout-design.md`: Layout principles and grid systems

@@ -348,7 +348,7 @@ Results integrate with computational workflows:
 ## Support and Troubleshooting
 
 **Common issues:**
-- Low expression → Consider sequence optimization (see protein_optimization.md)
+- Low expression → Consider sequence optimization (see protein-optimization.md)
 - Poor binding → Verify target specification and expected range
 - Variable results → Check sequence quality and controls
 - Incomplete data → Contact support with experiment ID

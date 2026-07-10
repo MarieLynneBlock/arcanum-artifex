@@ -105,7 +105,7 @@ y_pred = forecaster.predict(fh=[1, 2, 3, 4, 5])
 
 ### 5. Anomaly Detection
 
-Identify unusual patterns or outliers. See `references/anomaly_detection.md` for detectors.
+Identify unusual patterns or outliers. See `references/anomaly-detection.md` for detectors.
 
 **Quick Start:**
 ```python
@@ -133,7 +133,7 @@ change_points = segmenter.fit_predict(y)
 
 ### 7. Similarity Search
 
-Find similar patterns within or across time series. See `references/similarity_search.md`.
+Find similar patterns within or across time series. See `references/similarity-search.md`.
 
 **Quick Start:**
 ```python
@@ -226,7 +226,7 @@ predictions = clf.predict(X_test)
 
 ## Datasets and Benchmarking
 
-Load standard benchmarks and evaluate performance. See `references/datasets_benchmarking.md`.
+Load standard benchmarks and evaluate performance. See `references/datasets-benchmarking.md`.
 
 **Load Datasets:**
 ```python
@@ -355,13 +355,13 @@ Detailed information available in `references/`:
 - `regression.md` - Regression methods
 - `clustering.md` - Clustering algorithms
 - `forecasting.md` - Forecasting approaches
-- `anomaly_detection.md` - Anomaly detection methods
+- `anomaly-detection.md` - Anomaly detection methods
 - `segmentation.md` - Segmentation algorithms
-- `similarity_search.md` - Pattern matching and motif discovery
+- `similarity-search.md` - Pattern matching and motif discovery
 - `transformations.md` - Feature extraction and preprocessing
 - `distances.md` - Time series distance metrics
 - `networks.md` - Deep learning architectures
-- `datasets_benchmarking.md` - Data loading and evaluation tools
+- `datasets-benchmarking.md` - Data loading and evaluation tools
 
 ## Additional Resources
 

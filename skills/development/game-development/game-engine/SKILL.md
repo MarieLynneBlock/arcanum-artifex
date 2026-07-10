@@ -109,7 +109,7 @@ Starter templates are available in the `assets/` folder. Each template provides 
 | `paddle-game-template.md` | 2D Breakout-style game with pure JavaScript |
 | `2d-maze-game.md` | Maze game with device orientation controls |
 | `2d-platform-game.md` | Platformer game using Phaser framework |
-| `gameBase-template-repo.md` | Game base template repository structure |
+| `game-base-template-repo.md` | Game base template repository structure |
 | `simple-2d-engine.md` | Simple 2D platformer engine with collisions |
 
 ## Reference Documentation

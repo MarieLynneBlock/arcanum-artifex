@@ -20,11 +20,11 @@ Skill for generating **concise, clinician-focused** medical treatment plans acro
 
 ### 📚 Reference Files (5 comprehensive guides)
 
-- `treatment_plan_standards.md` - Professional standards, documentation requirements, legal considerations
-- `goal_setting_frameworks.md` - SMART goals, patient-centered outcomes, shared decision-making
-- `intervention_guidelines.md` - Evidence-based treatments, pharmacological and non-pharmacological
-- `regulatory_compliance.md` - HIPAA compliance, billing documentation, quality measures
-- `specialty_specific_guidelines.md` - Detailed guidelines for each treatment plan type
+- `treatment-plan-standards.md` - Professional standards, documentation requirements, legal considerations
+- `goal-setting-frameworks.md` - SMART goals, patient-centered outcomes, shared decision-making
+- `intervention-guidelines.md` - Evidence-based treatments, pharmacological and non-pharmacological
+- `regulatory-compliance.md` - HIPAA compliance, billing documentation, quality measures
+- `specialty-specific-guidelines.md` - Detailed guidelines for each treatment plan type
 
 ### 📄 LaTeX Templates (7 professional templates)
 
@@ -277,7 +277,7 @@ All treatment plans use SMART criteria for goal-setting:
 8. **Define monitoring** - Outcome measures, assessment frequency
 9. **Validate completeness** - `python check_completeness.py plan.tex`
 10. **Quality check** - `python validate_treatment_plan.py plan.tex`
-11. **Review quality checklist** - Compare to `quality_checklist.md`
+11. **Review quality checklist** - Compare to `quality-checklist.md`
 12. **Generate PDF** - `pdflatex plan.tex`
 13. **Review with patient** - Shared decision-making, confirm understanding
 14. **Implement and document** - Execute plan, track progress in clinical notes

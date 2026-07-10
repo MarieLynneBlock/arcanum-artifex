@@ -40,7 +40,7 @@ Establish secure connections to OMERO servers, manage sessions, handle authentic
 - Manage connection lifecycle with context managers
 
 ### 2. Data Access & Retrieval
-**File**: `references/data_access.md`
+**File**: `references/data-access.md`
 
 Navigate OMERO's hierarchical data structure (Projects → Datasets → Images) and screening data (Screens → Plates → Wells). Retrieve objects, query by attributes, and access metadata.
 
@@ -62,7 +62,7 @@ Create and manage annotations including tags, key-value pairs, file attachments,
 - Query annotations by namespace
 
 ### 4. Image Processing & Rendering
-**File**: `references/image_processing.md`
+**File**: `references/image-processing.md`
 
 Access raw pixel data as NumPy arrays, manipulate rendering settings, create derived images, and manage physical dimensions.
 
@@ -165,17 +165,17 @@ with BlitzGateway(username, password, host=host, port=port) as conn:
 
 **For data exploration:**
 - Start with `references/connection.md` to establish connection
-- Use `references/data_access.md` to navigate hierarchy
+- Use `references/data-access.md` to navigate hierarchy
 - Check `references/metadata.md` for annotation details
 
 **For image analysis:**
-- Use `references/image_processing.md` for pixel data access
+- Use `references/image-processing.md` for pixel data access
 - Use `references/rois.md` for region-based analysis
 - Use `references/tables.md` to store results
 
 **For automation:**
 - Use `references/scripts.md` for server-side processing
-- Use `references/data_access.md` for batch data retrieval
+- Use `references/data-access.md` for batch data retrieval
 
 **For advanced operations:**
 - Use `references/advanced.md` for permissions and deletion
@@ -186,9 +186,9 @@ with BlitzGateway(username, password, host=host, port=port) as conn:
 ### Workflow 1: Retrieve and Analyze Images
 
 1. Connect to OMERO server (`references/connection.md`)
-2. Navigate to dataset (`references/data_access.md`)
-3. Retrieve images from dataset (`references/data_access.md`)
-4. Access pixel data as NumPy array (`references/image_processing.md`)
+2. Navigate to dataset (`references/data-access.md`)
+3. Retrieve images from dataset (`references/data-access.md`)
+4. Access pixel data as NumPy array (`references/image-processing.md`)
 5. Perform analysis
 6. Store results as table or file annotation (`references/tables.md` or `references/metadata.md`)
 

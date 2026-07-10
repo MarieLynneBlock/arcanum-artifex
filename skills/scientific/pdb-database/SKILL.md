@@ -286,7 +286,7 @@ The `rcsb-api` package provides unified access to both Search and Data APIs thro
 
 This skill includes reference documentation in the `references/` directory:
 
-### references/api_reference.md
+### references/api-reference.md
 Comprehensive API documentation covering:
 - Detailed API endpoint specifications
 - Advanced query patterns and examples

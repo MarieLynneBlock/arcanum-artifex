@@ -503,14 +503,14 @@ print(ds.results_df.nsmallest(20, "pvalue"))
 
 For comprehensive details beyond this workflow-oriented guide:
 
-- **API Reference** (`references/api_reference.md`): Complete documentation of PyDESeq2 classes, methods, and data structures. Use when needing detailed parameter information or understanding object attributes.
+- **API Reference** (`references/api-reference.md`): Complete documentation of PyDESeq2 classes, methods, and data structures. Use when needing detailed parameter information or understanding object attributes.
 
-- **Workflow Guide** (`references/workflow_guide.md`): In-depth guide covering complete analysis workflows, data loading patterns, multi-factor designs, troubleshooting, and best practices. Use when handling complex experimental designs or encountering issues.
+- **Workflow Guide** (`references/workflow-guide.md`): In-depth guide covering complete analysis workflows, data loading patterns, multi-factor designs, troubleshooting, and best practices. Use when handling complex experimental designs or encountering issues.
 
 Load these references into context when users need:
-- Detailed API documentation: `Read references/api_reference.md`
-- Comprehensive workflow examples: `Read references/workflow_guide.md`
-- Troubleshooting guidance: `Read references/workflow_guide.md` (see Troubleshooting section)
+- Detailed API documentation: `Read references/api-reference.md`
+- Comprehensive workflow examples: `Read references/workflow-guide.md`
+- Troubleshooting guidance: `Read references/workflow-guide.md` (see Troubleshooting section)
 
 ## Key Reminders
 

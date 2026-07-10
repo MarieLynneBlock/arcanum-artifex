@@ -49,7 +49,7 @@ ENA organizes data into hierarchical object types:
 
 ### 2. Programmatic Access
 
-ENA provides multiple REST APIs for data access. Consult `references/api_reference.md` for detailed endpoint documentation.
+ENA provides multiple REST APIs for data access. Consult `references/api-reference.md` for detailed endpoint documentation.
 
 **Key APIs:**
 
@@ -191,7 +191,7 @@ This skill includes detailed reference documentation for working with ENA:
 
 ### references/
 
-**api_reference.md** - Comprehensive API endpoint documentation including:
+**api-reference.md** - Comprehensive API endpoint documentation including:
 - Detailed parameters for Portal API and Browser API
 - Response format specifications
 - Advanced query syntax and operators

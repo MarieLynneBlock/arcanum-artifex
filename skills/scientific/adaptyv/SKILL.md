@@ -95,10 +95,10 @@ Before submitting sequences, optimize them for better expression and stability:
 - ipTM - Interface stability assessment
 - pSAE - Hydrophobic exposure quantification
 
-See `reference/protein_optimization.md` for detailed optimization workflows and tool usage.
+See `reference/protein-optimization.md` for detailed optimization workflows and tool usage.
 
 ## API Reference
-For complete API documentation including all endpoints, request/response formats, and authentication details, see `reference/api_reference.md`.
+For complete API documentation including all endpoints, request/response formats, and authentication details, see `reference/api-reference.md`.
 
 ## Examples
 For concrete code examples covering common use cases (experiment submission, status tracking, result retrieval, batch processing), see `reference/examples.md`.

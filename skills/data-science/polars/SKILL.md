@@ -91,7 +91,7 @@ df = result.collect()  # Now executes optimized query
 - Projection pushdown
 - Parallel execution
 
-For detailed concepts, load `references/core_concepts.md`.
+For detailed concepts, load `references/core-concepts.md`.
 
 ## Common Operations
 
@@ -232,7 +232,7 @@ df = pl.read_json("file.json")
 df.write_json("output.json")
 ```
 
-For comprehensive I/O documentation, load `references/io_guide.md`.
+For comprehensive I/O documentation, load `references/io-guide.md`.
 
 ## Transformations
 
@@ -312,7 +312,7 @@ df.with_columns(
 )
 ```
 
-For comprehensive migration guide, load `references/pandas_migration.md`.
+For comprehensive migration guide, load `references/pandas-migration.md`.
 
 ## Best Practices
 
@@ -367,18 +367,18 @@ pl.col("x").is_null()
 pl.col("x").drop_nulls()
 ```
 
-For additional best practices and patterns, load `references/best_practices.md`.
+For additional best practices and patterns, load `references/best-practices.md`.
 
 ## Resources
 
 This skill includes comprehensive reference documentation:
 
 ### references/
-- `core_concepts.md` - Detailed explanations of expressions, lazy evaluation, and type system
+- `core-concepts.md` - Detailed explanations of expressions, lazy evaluation, and type system
 - `operations.md` - Comprehensive guide to all common operations with examples
-- `pandas_migration.md` - Complete migration guide from pandas to Polars
-- `io_guide.md` - Data I/O operations for all supported formats
+- `pandas-migration.md` - Complete migration guide from pandas to Polars
+- `io-guide.md` - Data I/O operations for all supported formats
 - `transformations.md` - Joins, concatenation, pivots, and reshaping operations
-- `best_practices.md` - Performance optimization tips and common patterns
+- `best-practices.md` - Performance optimization tips and common patterns
 
 Load these references as needed when users require detailed information about specific topics.

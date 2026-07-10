@@ -398,7 +398,7 @@ with model:
 - Approximate (may underestimate uncertainty)
 - Good for large models or quick exploration
 
-**See:** `references/sampling_inference.md` for detailed sampling guide
+**See:** `references/sampling-inference.md` for detailed sampling guide
 
 ## Diagnostic Scripts
 
@@ -509,7 +509,7 @@ This skill includes:
 
 - **`distributions.md`**: Comprehensive catalog of PyMC distributions organized by category (continuous, discrete, multivariate, mixture, time series). Use when selecting priors or likelihoods.
 
-- **`sampling_inference.md`**: Detailed guide to sampling algorithms (NUTS, Metropolis, SMC), variational inference (ADVI, SVGD), and handling sampling issues. Use when encountering convergence problems or choosing inference methods.
+- **`sampling-inference.md`**: Detailed guide to sampling algorithms (NUTS, Metropolis, SMC), variational inference (ADVI, SVGD), and handling sampling issues. Use when encountering convergence problems or choosing inference methods.
 
 - **`workflows.md`**: Complete workflow examples and code patterns for common model types, data preparation, prior selection, and model validation. Use as a cookbook for standard Bayesian analyses.
 

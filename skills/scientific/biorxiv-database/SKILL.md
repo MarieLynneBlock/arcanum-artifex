@@ -470,7 +470,7 @@ Results: 7/7 tests passed (100%)
 ## Reference Documentation
 
 For detailed API specifications, endpoint documentation, and response schemas, refer to:
-- `references/api_reference.md` - Complete bioRxiv API documentation
+- `references/api-reference.md` - Complete bioRxiv API documentation
 
 The reference file includes:
 - Full API endpoint specifications

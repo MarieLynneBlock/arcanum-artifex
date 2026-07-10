@@ -90,7 +90,7 @@ python scripts/search_google_scholar.py "machine learning protein folding" \
   --output ml_proteins.json
 ```
 
-**Advanced Search Strategies** (see `references/google_scholar_search.md`):
+**Advanced Search Strategies** (see `references/google-scholar-search.md`):
 - Use quotation marks for exact phrases: `"deep learning"`
 - Search by author: `author:LeCun`
 - Search in title: `intitle:"neural networks"`
@@ -125,7 +125,7 @@ python scripts/search_pubmed.py \
   --output alzheimers_trials.json
 ```
 
-**Advanced PubMed Queries** (see `references/pubmed_search.md`):
+**Advanced PubMed Queries** (see `references/pubmed-search.md`):
 - Use MeSH terms: `"Diabetes Mellitus"[MeSH]`
 - Field tags: `"cancer"[Title]`, `"Smith J"[Author]`
 - Boolean operators: `AND`, `OR`, `NOT`
@@ -180,7 +180,7 @@ python scripts/extract_metadata.py --url "https://www.nature.com/articles/s41586
 python scripts/extract_metadata.py --input identifiers.txt --output citations.bib
 ```
 
-**Metadata Sources** (see `references/metadata_extraction.md`):
+**Metadata Sources** (see `references/metadata-extraction.md`):
 
 1. **CrossRef API**: Primary source for DOIs
    - Comprehensive metadata for journal articles
@@ -219,7 +219,7 @@ python scripts/extract_metadata.py --input identifiers.txt --output citations.bi
 
 #### Understanding BibTeX Entry Types
 
-See `references/bibtex_formatting.md` for complete guide.
+See `references/bibtex-formatting.md` for complete guide.
 
 **Common Entry Types**:
 - `@article`: Journal articles (most common)
@@ -320,7 +320,7 @@ python scripts/validate_citations.py references.bib \
   --verbose
 ```
 
-**Validation Checks** (see `references/citation_validation.md`):
+**Validation Checks** (see `references/citation-validation.md`):
 
 1. **DOI Verification**:
    - DOI resolves correctly via doi.org
@@ -484,7 +484,7 @@ Always prioritize papers based on citation count, venue quality, and author repu
 - Filter by top venues using `source:Nature` or `source:Science`
 - Search for papers by known field leaders using `author:LastName`
 
-**Advanced Operators** (full list in `references/google_scholar_search.md`):
+**Advanced Operators** (full list in `references/google-scholar-search.md`):
 ```
 "exact phrase"           # Exact phrase matching
 author:lastname          # Search by author
@@ -550,7 +550,7 @@ The scripts use NCBI E-utilities API for programmatic access:
 - **ESummary**: Get summary information
 - **ELink**: Find related articles
 
-See `references/pubmed_search.md` for complete API documentation.
+See `references/pubmed-search.md` for complete API documentation.
 
 ## Tools and Scripts
 
@@ -1032,11 +1032,11 @@ python scripts/extract_metadata.py \
 ### Bundled Resources
 
 **References** (in `references/`):
-- `google_scholar_search.md`: Complete Google Scholar search guide
-- `pubmed_search.md`: PubMed and E-utilities API documentation
-- `metadata_extraction.md`: Metadata sources and field requirements
-- `citation_validation.md`: Validation criteria and quality checks
-- `bibtex_formatting.md`: BibTeX entry types and formatting rules
+- `google-scholar-search.md`: Complete Google Scholar search guide
+- `pubmed-search.md`: PubMed and E-utilities API documentation
+- `metadata-extraction.md`: Metadata sources and field requirements
+- `citation-validation.md`: Validation criteria and quality checks
+- `bibtex-formatting.md`: BibTeX entry types and formatting rules
 
 **Scripts** (in `scripts/`):
 - `search_google_scholar.py`: Google Scholar search automation
@@ -1048,7 +1048,7 @@ python scripts/extract_metadata.py \
 
 **Assets** (in `assets/`):
 - `bibtex_template.bib`: Example BibTeX entries for all types
-- `citation_checklist.md`: Quality assurance checklist
+- `citation-checklist.md`: Quality assurance checklist
 
 ### External Resources
 

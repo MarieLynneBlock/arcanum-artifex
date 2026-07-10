@@ -106,7 +106,7 @@ print(f"{adata.n_obs} observations × {adata.n_vars} variables")
 
 Understand the AnnData object structure including X, obs, var, layers, obsm, varm, obsp, varp, uns, and raw components.
 
-**See**: `references/data_structure.md` for comprehensive information on:
+**See**: `references/data-structure.md` for comprehensive information on:
 - Core components (X, obs, var, layers, obsm, varm, obsp, varp, uns, raw)
 - Creating AnnData objects from various sources
 - Accessing and manipulating data components
@@ -116,7 +116,7 @@ Understand the AnnData object structure including X, obs, var, layers, obsm, var
 
 Read and write data in various formats with support for compression, backed mode, and cloud storage.
 
-**See**: `references/io_operations.md` for details on:
+**See**: `references/io-operations.md` for details on:
 - Native formats (h5ad, zarr)
 - Alternative formats (CSV, MTX, Loom, 10X, Excel)
 - Backed mode for large datasets
@@ -207,7 +207,7 @@ adata.strings_to_categoricals()
 
 Follow recommended patterns for memory efficiency, performance, and reproducibility.
 
-**See**: `references/best_practices.md` for guidelines on:
+**See**: `references/best-practices.md` for guidelines on:
 - Memory management (sparse matrices, categoricals, backed mode)
 - Views vs copies
 - Data storage optimization

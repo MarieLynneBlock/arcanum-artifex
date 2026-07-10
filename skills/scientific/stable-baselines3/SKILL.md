@@ -76,7 +76,7 @@ from stable_baselines3.common.env_checker import check_env
 check_env(env, warn=True)
 ```
 
-See `scripts/custom_env_template.py` for a complete custom environment template and `references/custom_environments.md` for comprehensive guidance.
+See `scripts/custom_env_template.py` for a complete custom environment template and `references/custom-environments.md` for comprehensive guidance.
 
 ### 3. Vectorized Environments
 
@@ -107,7 +107,7 @@ When using multiple environments with off-policy algorithms (SAC, TD3, DQN), set
 - Environments auto-reset after episodes
 - Terminal observations available via `infos[env_idx]["terminal_observation"]`
 
-See `references/vectorized_envs.md` for detailed information on wrappers and advanced usage.
+See `references/vectorized-envs.md` for detailed information on wrappers and advanced usage.
 
 ### 4. Callbacks for Monitoring and Control
 
@@ -281,9 +281,9 @@ model.learn(total_timesteps=10000)
 
 ### references/
 - `algorithms.md`: Detailed algorithm comparison and selection guide
-- `custom_environments.md`: Comprehensive custom environment creation guide
+- `custom-environments.md`: Comprehensive custom environment creation guide
 - `callbacks.md`: Complete callback system reference
-- `vectorized_envs.md`: Vectorized environment usage and wrappers
+- `vectorized-envs.md`: Vectorized environment usage and wrappers
 
 ## Installation
 

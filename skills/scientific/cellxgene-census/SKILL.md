@@ -397,7 +397,7 @@ Key fields for filtering:
 
 This skill includes detailed reference documentation:
 
-### references/census_schema.md
+### references/census-schema.md
 Comprehensive documentation of:
 - Census data structure and organization
 - All available metadata fields
@@ -407,7 +407,7 @@ Comprehensive documentation of:
 
 **When to read:** When you need detailed schema information, full list of metadata fields, or complex filter syntax.
 
-### references/common_patterns.md
+### references/common-patterns.md
 Examples and patterns for:
 - Exploratory queries (metadata only)
 - Small-to-medium queries (AnnData)

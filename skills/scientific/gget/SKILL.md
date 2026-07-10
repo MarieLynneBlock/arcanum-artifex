@@ -858,8 +858,8 @@ gget ref -w dna -d homo_sapiens
 This skill includes reference documentation for detailed module information:
 
 ### references/
-- `module_reference.md` - Comprehensive parameter reference for all modules
-- `database_info.md` - Information about queried databases and their update frequencies
+- `module-reference.md` - Comprehensive parameter reference for all modules
+- `database-info.md` - Information about queried databases and their update frequencies
 - `workflows.md` - Extended workflow examples and use cases
 
 For additional help:

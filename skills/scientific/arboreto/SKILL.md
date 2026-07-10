@@ -49,7 +49,7 @@ For standard GRN inference workflows including:
 - Filtering by transcription factors
 - Output format and interpretation
 
-**See**: `references/basic_inference.md`
+**See**: `references/basic-inference.md`
 
 **Use the ready-to-run script**: `scripts/basic_grn_inference.py` for standard inference tasks:
 ```bash
@@ -113,7 +113,7 @@ client = Client('tcp://scheduler:8786')
 network = grnboost2(expression_data=matrix, client_or_address=client)
 ```
 
-**For cluster setup, performance optimization, and large-scale workflows**: `references/distributed_computing.md`
+**For cluster setup, performance optimization, and large-scale workflows**: `references/distributed-computing.md`
 
 ## Installation
 

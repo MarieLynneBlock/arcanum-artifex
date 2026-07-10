@@ -663,8 +663,8 @@ This skill includes reference materials for deeper exploration:
 
 ### references/
 
-- `function_reference.md` - Comprehensive listing of all seaborn functions with parameters and examples
-- `objects_interface.md` - Detailed guide to the modern seaborn.objects API
+- `function-reference.md` - Comprehensive listing of all seaborn functions with parameters and examples
+- `objects-interface.md` - Detailed guide to the modern seaborn.objects API
 - `examples.md` - Common use cases and code patterns for different analysis scenarios
 
 Load reference files as needed for detailed function signatures, advanced parameters, or specific examples.

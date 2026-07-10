@@ -337,7 +337,7 @@ Ready-to-use Python functions demonstrating common ChEMBL query patterns:
 
 Consult this script for implementation details and usage examples.
 
-### references/api_reference.md
+### references/api-reference.md
 
 Comprehensive API documentation including:
 

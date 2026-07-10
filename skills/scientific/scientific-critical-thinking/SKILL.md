@@ -110,7 +110,7 @@ Evaluate research methodology for rigor, validity, and potential flaws.
    - Is outcome assessment standardized?
    - Are multiple measures used to triangulate findings?
 
-**Reference:** See `references/scientific_method.md` for detailed principles and `references/experimental_design.md` for comprehensive design checklist.
+**Reference:** See `references/scientific-method.md` for detailed principles and `references/experimental-design.md` for comprehensive design checklist.
 
 ### 2. Bias Detection
 
@@ -158,7 +158,7 @@ Identify and evaluate potential sources of bias that could distort findings.
    - Could unmeasured confounding explain findings?
    - Are there plausible alternative explanations?
 
-**Reference:** See `references/common_biases.md` for comprehensive bias taxonomy with detection and mitigation strategies.
+**Reference:** See `references/common-biases.md` for comprehensive bias taxonomy with detection and mitigation strategies.
 
 ### 3. Statistical Analysis Evaluation
 
@@ -222,7 +222,7 @@ Critically assess statistical methods, interpretation, and reporting.
    - Texas sharpshooter fallacy (pattern finding in noise)
    - Simpson's paradox (confounding by subgroups)
 
-**Reference:** See `references/statistical_pitfalls.md` for detailed pitfalls and correct practices.
+**Reference:** See `references/statistical-pitfalls.md` for detailed pitfalls and correct practices.
 
 ### 4. Evidence Quality Assessment
 
@@ -285,7 +285,7 @@ Evaluate the strength and quality of evidence systematically.
    - Specificity of relationship
    - Strength of association
 
-**Reference:** See `references/evidence_hierarchy.md` for detailed hierarchy, GRADE system, and quality assessment tools.
+**Reference:** See `references/evidence-hierarchy.md` for detailed hierarchy, GRADE system, and quality assessment tools.
 
 ### 5. Logical Fallacy Identification
 
@@ -341,7 +341,7 @@ Detect and name logical errors in scientific arguments and claims.
 - Identify what evidence would be needed for valid inference
 - Note that fallacious reasoning doesn't prove the conclusion false—just that this argument doesn't support it
 
-**Reference:** See `references/logical_fallacies.md` for comprehensive fallacy catalog with examples and detection strategies.
+**Reference:** See `references/logical-fallacies.md` for comprehensive fallacy catalog with examples and detection strategies.
 
 ### 6. Research Design Guidance
 
@@ -403,7 +403,7 @@ Provide constructive guidance for planning rigorous studies.
    - Distinguish confirmatory from exploratory analyses
    - Commit to data/code sharing
 
-**Reference:** See `references/experimental_design.md` for comprehensive design checklist covering all stages from question to dissemination.
+**Reference:** See `references/experimental-design.md` for comprehensive design checklist covering all stages from question to dissemination.
 
 ### 7. Claim Evaluation
 
@@ -524,17 +524,17 @@ Systematically evaluate scientific claims for validity and support.
 
 This skill includes comprehensive reference materials that provide detailed frameworks for critical evaluation:
 
-- **`references/scientific_method.md`** - Core principles of scientific methodology, the scientific process, critical evaluation criteria, red flags in scientific claims, causal inference standards, peer review, and open science principles
+- **`references/scientific-method.md`** - Core principles of scientific methodology, the scientific process, critical evaluation criteria, red flags in scientific claims, causal inference standards, peer review, and open science principles
 
-- **`references/common_biases.md`** - Comprehensive taxonomy of cognitive, experimental, methodological, statistical, and analysis biases with detection and mitigation strategies
+- **`references/common-biases.md`** - Comprehensive taxonomy of cognitive, experimental, methodological, statistical, and analysis biases with detection and mitigation strategies
 
-- **`references/statistical_pitfalls.md`** - Common statistical errors and misinterpretations including p-value misunderstandings, multiple comparisons problems, sample size issues, effect size mistakes, correlation/causation confusion, regression pitfalls, and meta-analysis issues
+- **`references/statistical-pitfalls.md`** - Common statistical errors and misinterpretations including p-value misunderstandings, multiple comparisons problems, sample size issues, effect size mistakes, correlation/causation confusion, regression pitfalls, and meta-analysis issues
 
-- **`references/evidence_hierarchy.md`** - Traditional evidence hierarchy, GRADE system, study quality assessment criteria, domain-specific considerations, evidence synthesis principles, and practical decision frameworks
+- **`references/evidence-hierarchy.md`** - Traditional evidence hierarchy, GRADE system, study quality assessment criteria, domain-specific considerations, evidence synthesis principles, and practical decision frameworks
 
-- **`references/logical_fallacies.md`** - Logical fallacies common in scientific discourse organized by type (causation, generalization, authority, relevance, structure, statistical) with examples and detection strategies
+- **`references/logical-fallacies.md`** - Logical fallacies common in scientific discourse organized by type (causation, generalization, authority, relevance, structure, statistical) with examples and detection strategies
 
-- **`references/experimental_design.md`** - Comprehensive experimental design checklist covering research questions, hypotheses, study design selection, variables, sampling, blinding, randomization, control groups, procedures, measurement, bias minimization, data management, statistical planning, ethical considerations, validity threats, and reporting standards
+- **`references/experimental-design.md`** - Comprehensive experimental design checklist covering research questions, hypotheses, study design selection, variables, sampling, blinding, randomization, control groups, procedures, measurement, bias minimization, data management, statistical planning, ethical considerations, validity threats, and reporting standards
 
 **When to consult references:**
 - Load references into context when detailed frameworks are needed

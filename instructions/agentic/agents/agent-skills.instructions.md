@@ -160,7 +160,7 @@ Skills can include additional files that Copilot accesses on-demand:
 | Folder | Purpose | Loaded into Context? | Example Files |
 |--------|---------|---------------------|---------------|
 | `scripts/` | Executable automation that performs specific operations | When executed | `helper.py`, `validate.sh`, `build.ts` |
-| `references/` | Documentation the AI agent reads to inform decisions | Yes, when referenced | `api_reference.md`, `schema.md`, `workflow_guide.md` |
+| `references/` | Documentation the AI agent reads to inform decisions | Yes, when referenced | `api-reference.md`, `schema.md`, `workflow-guide.md` |
 | `assets/` | **Static files used AS-IS** in output (not modified by the AI agent) | No | `logo.png`, `brand-template.pptx`, `custom-font.ttf` |
 | `templates/` | **Starter code/scaffolds that the AI agent MODIFIES** and builds upon | Yes, when referenced | `viewer.html` (insert algorithm), `hello-world/` (extend) |
 
@@ -174,7 +174,7 @@ Skills can include additional files that Copilot accesses on-demand:
 │   ├── helper.py         # Python script
 │   └── helper.ps1        # PowerShell script
 ├── references/           # Optional: Documentation loaded into context
-│   ├── api_reference.md
+│   ├── api-reference.md
 │   ├── workflow-setup.md     # Detailed workflow (>5 steps)
 │   └── workflow-deployment.md
 ├── assets/               # Optional: Static files used AS-IS in output
@@ -210,7 +210,7 @@ Use relative paths to reference files within the skill directory:
 
 Run the [helper script](./scripts/helper.py) to automate common tasks.
 
-See [API reference](./references/api_reference.md) for detailed documentation.
+See [API reference](./references/api-reference.md) for detailed documentation.
 
 Use the [scaffold](./templates/scaffold.py) as a starting point.
 ```

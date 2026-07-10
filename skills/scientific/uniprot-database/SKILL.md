@@ -82,7 +82,7 @@ Map protein identifiers between different database systems and retrieve multiple
 - Ensembl, RefSeq, EMBL
 - PDB, AlphaFoldDB
 - KEGG, GO terms
-- And many more (see `/references/id_mapping_databases.md`)
+- And many more (see `/references/id-mapping-databases.md`)
 
 **Limitations:**
 - Maximum 100,000 IDs per job
@@ -114,7 +114,7 @@ Specify exactly which fields to retrieve for efficient data transfer.
 
 **Example:** `https://rest.uniprot.org/uniprotkb/search?query=insulin&fields=accession,gene_names,organism_name,length,sequence&format=tsv`
 
-See `/references/api_fields.md` for complete field list.
+See `/references/api-fields.md` for complete field list.
 
 ## Python Implementation
 
@@ -160,7 +160,7 @@ gene:BRCA*
 protein_name:kinase*
 ```
 
-See `/references/query_syntax.md` for comprehensive syntax documentation.
+See `/references/query-syntax.md` for comprehensive syntax documentation.
 
 ## Best Practices
 
@@ -178,10 +178,10 @@ See `/references/query_syntax.md` for comprehensive syntax documentation.
 `uniprot_client.py` - Python client with helper functions for common UniProt operations including search, retrieval, ID mapping, and streaming.
 
 ### references/
-- `api_fields.md` - Complete list of available fields for customizing queries
-- `id_mapping_databases.md` - Supported databases for ID mapping operations
-- `query_syntax.md` - Comprehensive query syntax with advanced examples
-- `api_examples.md` - Code examples in multiple languages (Python, curl, R)
+- `api-fields.md` - Complete list of available fields for customizing queries
+- `id-mapping-databases.md` - Supported databases for ID mapping operations
+- `query-syntax.md` - Comprehensive query syntax with advanced examples
+- `api-examples.md` - Code examples in multiple languages (Python, curl, R)
 
 ## Additional Resources
 

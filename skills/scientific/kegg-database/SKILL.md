@@ -22,7 +22,7 @@ This skill should be used when querying pathways, genes, compounds, enzymes, dis
 
 The skill provides:
 1. Python helper functions (`scripts/kegg_api.py`) for all KEGG REST API operations
-2. Comprehensive reference documentation (`references/kegg_reference.md`) with detailed API specifications
+2. Comprehensive reference documentation (`references/kegg-reference.md`) with detailed API specifications
 
 When users request KEGG data, determine which operation is needed and use the appropriate function from `scripts/kegg_api.py`.
 
@@ -315,7 +315,7 @@ KEGG organizes pathways into seven major categories. When interpreting pathway I
 6. **Human Diseases** (e.g., `map05200` - Pathways in cancer, `map05010` - Alzheimer disease)
 7. **Drug Development** (chronological and target-based classifications)
 
-Reference `references/kegg_reference.md` for detailed pathway lists and classifications.
+Reference `references/kegg-reference.md` for detailed pathway lists and classifications.
 
 ## Important Identifiers and Formats
 
@@ -350,7 +350,7 @@ Respect these constraints when using the KEGG API:
 
 ## Detailed Reference
 
-For comprehensive API documentation, database specifications, organism codes, and advanced usage, refer to `references/kegg_reference.md`. This includes:
+For comprehensive API documentation, database specifications, organism codes, and advanced usage, refer to `references/kegg-reference.md`. This includes:
 
 - Complete list of KEGG databases
 - Detailed API operation syntax

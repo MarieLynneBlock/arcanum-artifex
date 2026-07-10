@@ -348,7 +348,7 @@ df['tranche_props'] = df['tranche'].apply(parse_tranche)
 
 ## Resources
 
-### references/api_reference.md
+### references/api-reference.md
 
 Comprehensive documentation including:
 

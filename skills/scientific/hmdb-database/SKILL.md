@@ -190,4 +190,4 @@ These databases share similar structure and identifiers, enabling integrated que
 
 ## Reference Documentation
 
-See `references/hmdb_data_fields.md` for detailed information about available data fields and their meanings.
+See `references/hmdb-data-fields.md` for detailed information about available data fields and their meanings.

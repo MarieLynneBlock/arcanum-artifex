@@ -420,7 +420,7 @@ uv pip install scikit-bio
 
 ## Reference Documentation
 
-For detailed API information, parameter specifications, and advanced usage examples, refer to `references/api_reference.md` which contains comprehensive documentation on:
+For detailed API information, parameter specifications, and advanced usage examples, refer to `references/api-reference.md` which contains comprehensive documentation on:
 - Complete method signatures and parameters for all capabilities
 - Extended code examples for complex workflows
 - Troubleshooting common issues

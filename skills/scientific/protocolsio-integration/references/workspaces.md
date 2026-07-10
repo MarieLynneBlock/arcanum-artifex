@@ -126,7 +126,7 @@ Create a new protocol within a specific workspace.
 
 **Endpoint:** `POST /workspaces/{workspace_id}/protocols`
 
-**Request Body**: Same parameters as standard protocol creation (see protocols_api.md)
+**Request Body**: Same parameters as standard protocol creation (see protocols-api.md)
 
 **Note**: The protocol will be created within the workspace and inherit workspace permissions
 

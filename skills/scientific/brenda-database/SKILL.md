@@ -662,7 +662,7 @@ def extract_multiple_values(data, field_name):
 
 ## Reference Documentation
 
-For detailed BRENDA documentation, see `references/api_reference.md`. This includes:
+For detailed BRENDA documentation, see `references/api-reference.md`. This includes:
 - Complete SOAP API method documentation
 - Full parameter lists and formats
 - EC number structure and validation

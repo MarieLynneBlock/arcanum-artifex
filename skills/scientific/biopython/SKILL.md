@@ -65,7 +65,7 @@ This skill provides comprehensive documentation organized by functionality area.
 
 ### 1. Sequence Handling (Bio.Seq & Bio.SeqIO)
 
-**Reference:** `references/sequence_io.md`
+**Reference:** `references/sequence-io.md`
 
 Use for:
 - Creating and manipulating biological sequences
@@ -243,7 +243,7 @@ When a user asks about a specific Biopython task:
 Example search patterns for reference files:
 ```bash
 # Find information about specific functions
-grep -n "SeqIO.parse" references/sequence_io.md
+grep -n "SeqIO.parse" references/sequence-io.md
 
 # Find examples of specific tasks
 grep -n "BLAST" references/blast.md
@@ -421,7 +421,7 @@ To locate information in reference files, use these search patterns:
 grep -n "function_name" references/*.md
 
 # Find examples of specific tasks
-grep -n "example" references/sequence_io.md
+grep -n "example" references/sequence-io.md
 
 # Find all occurrences of a module
 grep -n "Bio.Seq" references/*.md

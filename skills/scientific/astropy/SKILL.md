@@ -160,11 +160,11 @@ Transform between pixel coordinates in images and world coordinates.
 - Access WCS parameters (reference pixel, projection, scale)
 - Create custom WCS objects
 
-**See:** `references/wcs_and_other_modules.md` for WCS operations and transformations.
+**See:** `references/wcs-and-other-modules.md` for WCS operations and transformations.
 
 ## Additional Capabilities
 
-The `references/wcs_and_other_modules.md` file also covers:
+The `references/wcs-and-other-modules.md` file also covers:
 
 ### NDData and CCDData
 Containers for n-dimensional datasets with metadata, uncertainty, masking, and WCS information.
@@ -325,4 +325,4 @@ For detailed information on specific modules:
 - `references/fits.md` - FITS file operations and manipulation
 - `references/tables.md` - Table creation, I/O, and operations
 - `references/time.md` - Time formats, scales, and calculations
-- `references/wcs_and_other_modules.md` - WCS, NDData, modeling, visualization, constants, and utilities
+- `references/wcs-and-other-modules.md` - WCS, NDData, modeling, visualization, constants, and utilities

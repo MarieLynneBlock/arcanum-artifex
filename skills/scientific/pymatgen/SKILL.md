@@ -138,7 +138,7 @@ trans = PrimitiveCellTransformation()
 primitive = trans.apply_transformation(struct)
 ```
 
-**Reference:** See `references/core_classes.md` for comprehensive documentation of Structure, Lattice, Molecule, and related classes.
+**Reference:** See `references/core-classes.md` for comprehensive documentation of Structure, Lattice, Molecule, and related classes.
 
 ### 2. File Format Conversion
 
@@ -164,7 +164,7 @@ python scripts/structure_converter.py POSCAR structure.cif
 python scripts/structure_converter.py *.cif --output-dir ./poscar_files --format poscar
 ```
 
-**Reference:** See `references/io_formats.md` for detailed documentation of all supported formats and code integrations.
+**Reference:** See `references/io-formats.md` for detailed documentation of all supported formats and code integrations.
 
 ### 3. Structure Analysis and Symmetry
 
@@ -208,7 +208,7 @@ python scripts/structure_analyzer.py POSCAR --symmetry --neighbors
 python scripts/structure_analyzer.py structure.cif --symmetry --export json
 ```
 
-**Reference:** See `references/analysis_modules.md` for detailed documentation of all analysis capabilities.
+**Reference:** See `references/analysis-modules.md` for detailed documentation of all analysis capabilities.
 
 ### 4. Phase Diagrams and Thermodynamics
 
@@ -255,7 +255,7 @@ python scripts/phase_diagram_generator.py Li-Fe-O --output li_fe_o.png
 python scripts/phase_diagram_generator.py Li-Fe-O --analyze "LiFeO2" --show
 ```
 
-**Reference:** See `references/analysis_modules.md` (Phase Diagrams section) and `references/transformations_workflows.md` (Workflow 2) for detailed examples.
+**Reference:** See `references/analysis-modules.md` (Phase Diagrams section) and `references/transformations-workflows.md` (Workflow 2) for detailed examples.
 
 ### 5. Electronic Structure Analysis
 
@@ -298,7 +298,7 @@ plotter.add_dos("Total DOS", dos)
 plotter.show()
 ```
 
-**Reference:** See `references/analysis_modules.md` (Electronic Structure section) and `references/io_formats.md` (VASP section).
+**Reference:** See `references/analysis-modules.md` (Electronic Structure section) and `references/io-formats.md` (VASP section).
 
 ### 6. Surface and Interface Analysis
 
@@ -360,7 +360,7 @@ adsorbate = Molecule("O", [[0, 0, 0]])
 ads_struct = asf.add_adsorbate(adsorbate, ads_sites["ontop"][0])
 ```
 
-**Reference:** See `references/analysis_modules.md` (Surface and Interface section) and `references/transformations_workflows.md` (Workflows 3 and 9).
+**Reference:** See `references/analysis-modules.md` (Surface and Interface section) and `references/transformations-workflows.md` (Workflows 3 and 9).
 
 ### 7. Materials Project Database Access
 
@@ -398,7 +398,7 @@ with MPRester() as mpr:
     entries = mpr.get_entries_in_chemsys("Li-Fe-O")
 ```
 
-**Reference:** See `references/materials_project_api.md` for comprehensive API documentation and examples.
+**Reference:** See `references/materials-project-api.md` for comprehensive API documentation and examples.
 
 ### 8. Computational Workflow Setup
 
@@ -445,7 +445,7 @@ pwin = PWInput(struct, control={"calculation": "scf"})
 pwin.write_file("pw.in")
 ```
 
-**Reference:** See `references/io_formats.md` (Electronic Structure Code I/O section) and `references/transformations_workflows.md` for workflow examples.
+**Reference:** See `references/io-formats.md` (Electronic Structure Code I/O section) and `references/transformations-workflows.md` for workflow examples.
 
 ### 9. Advanced Analysis
 
@@ -487,7 +487,7 @@ mag_structs = trans.apply_transformation(struct, return_ranked_list=True)
 lowest_energy_struct = mag_structs[0]['structure']
 ```
 
-**Reference:** See `references/analysis_modules.md` for comprehensive analysis module documentation.
+**Reference:** See `references/analysis-modules.md` for comprehensive analysis module documentation.
 
 ## Bundled Resources
 
@@ -513,11 +513,11 @@ All scripts include detailed help: `python scripts/script_name.py --help`
 
 Comprehensive documentation loaded into context as needed:
 
-- **`core_classes.md`**: Element, Structure, Lattice, Molecule, Composition classes
-- **`io_formats.md`**: File format support and code integration (VASP, Gaussian, etc.)
-- **`analysis_modules.md`**: Phase diagrams, surfaces, electronic structure, symmetry
-- **`materials_project_api.md`**: Complete Materials Project API guide
-- **`transformations_workflows.md`**: Transformations framework and common workflows
+- **`core-classes.md`**: Element, Structure, Lattice, Molecule, Composition classes
+- **`io-formats.md`**: File format support and code integration (VASP, Gaussian, etc.)
+- **`analysis-modules.md`**: Phase diagrams, surfaces, electronic structure, symmetry
+- **`materials-project-api.md`**: Complete Materials Project API guide
+- **`transformations-workflows.md`**: Transformations framework and common workflows
 
 Load references when detailed information is needed about specific modules or workflows.
 
@@ -584,7 +584,7 @@ E_surf = (slab_vasprun.final_energy - len(slab) * bulk_E_per_atom) / (2 * slab.s
 E_surf *= 16.021766  # Convert eV/Ų to J/m²
 ```
 
-**More workflows:** See `references/transformations_workflows.md` for 10 detailed workflow examples.
+**More workflows:** See `references/transformations-workflows.md` for 10 detailed workflow examples.
 
 ## Best Practices
 

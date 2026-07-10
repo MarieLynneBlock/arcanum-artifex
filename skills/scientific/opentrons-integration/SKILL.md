@@ -565,6 +565,6 @@ def run(protocol: protocol_api.ProtocolContext):
 
 ## Resources
 
-For detailed API documentation, see `references/api_reference.md` in this skill directory.
+For detailed API documentation, see `references/api-reference.md` in this skill directory.
 
 For example protocol templates, see `scripts/` directory.

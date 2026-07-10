@@ -566,6 +566,6 @@ df['complex'] = (df.x.log() * df.y.sqrt() + df.z ** 3).values
 
 ## Related Resources
 
-- For DataFrame basics: See `core_dataframes.md`
-- For data operations: See `data_processing.md`
-- For file I/O optimization: See `io_operations.md`
+- For DataFrame basics: See `core-dataframes.md`
+- For data operations: See `data-processing.md`
+- For file I/O optimization: See `io-operations.md`

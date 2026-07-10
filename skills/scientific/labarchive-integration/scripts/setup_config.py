@@ -198,7 +198,7 @@ def main():
     print("1. Add config.yaml to .gitignore if using version control")
     print("2. Use notebook_operations.py to list and backup notebooks")
     print("3. Use entry_operations.py to create entries and upload files")
-    print("\nFor more information, see references/authentication_guide.md")
+    print("\nFor more information, see references/authentication-guide.md")
 
 
 if __name__ == '__main__':

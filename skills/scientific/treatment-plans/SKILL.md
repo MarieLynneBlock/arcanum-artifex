@@ -866,7 +866,7 @@ Validation includes:
 
 ### Quality Checklist
 
-Review treatment plans against the quality checklist (`quality_checklist.md`):
+Review treatment plans against the quality checklist (`quality-checklist.md`):
 
 **Clinical Quality**
 - [ ] Diagnosis is accurate and properly coded (ICD-10)
@@ -1065,7 +1065,7 @@ python generate_template.py --type mental_health --output depression_treatment_p
 1. **Create treatment plan** using appropriate LaTeX template
 2. **Check completeness**: `python check_completeness.py plan.tex`
 3. **Validate quality**: `python validate_treatment_plan.py plan.tex`
-4. **Review checklist**: Compare against `quality_checklist.md`
+4. **Review checklist**: Compare against `quality-checklist.md`
 5. **Generate PDF**: `pdflatex plan.tex`
 6. **Review with patient**: Ensure understanding and agreement
 7. **Implement and document**: Track progress in clinical notes

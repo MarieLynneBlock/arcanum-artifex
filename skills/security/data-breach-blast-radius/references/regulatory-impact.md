@@ -2,9 +2,9 @@
 
 Fine formulas, breach notification timelines, cost benchmarks, and jurisdiction detection patterns for all major global data protection regulations.
 
-> **Disclaimer:** This reference is for risk planning and developer education only. All fine estimates are approximations based on publicly available legal texts and benchmarks cited in `SOURCES.md`. Consult qualified legal counsel for actual regulatory guidance in your jurisdiction.
+> **Disclaimer:** This reference is for risk planning and developer education only. All fine estimates are approximations based on publicly available legal texts and benchmarks cited in `sources.md`. Consult qualified legal counsel for actual regulatory guidance in your jurisdiction.
 
-> **Verifying these numbers:** Every fine formula in this file is sourced from the regulation's primary legal text. See `references/SOURCES.md` for the exact statute/article URL for each figure. If any number looks wrong, check SOURCES.md first — if it's genuinely outdated, please open a PR.
+> **Verifying these numbers:** Every fine formula in this file is sourced from the regulation's primary legal text. See `references/sources.md` for the exact statute/article URL for each figure. If any number looks wrong, check sources.md first — if it's genuinely outdated, please open a PR.
 
 ---
 
@@ -172,7 +172,7 @@ When annual revenue/turnover is unknown, use these conservative estimates:
 | Large enterprise (500–5K employees) | €100M–€1B | €2M–€20M | €5M–€40M |
 | Multinational | > €1B | €10M (capped at 2%) | €20M (capped at 4%) |
 
-**Historic GDPR fines for calibration (all publicly verified — links in SOURCES.md):**
+**Historic GDPR fines for calibration (all publicly verified — links in sources.md):**
 - Meta: €1.2B (2023) — cross-border data transfer violations
 - Amazon: €746M (2021) — cookie consent violations
 - WhatsApp: €225M (2021) — transparency violations
@@ -259,7 +259,7 @@ Daily fine possible during non-compliance period.
 
 ## Breach Notification Timeline Reference
 
-**All timelines are sourced from primary legal texts.** See `SOURCES.md` for exact article/section URLs for each regulation.
+**All timelines are sourced from primary legal texts.** See `sources.md` for exact article/section URLs for each regulation.
 
 How fast you must notify regulators and affected individuals after discovering a breach:
 

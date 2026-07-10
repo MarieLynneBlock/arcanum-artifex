@@ -135,8 +135,8 @@ python scripts/batch_gene_lookup.py --ids 672,7157,5594 --output results.json
 
 For detailed API documentation including endpoints, parameters, response formats, and examples, refer to:
 
-- `references/api_reference.md` - Comprehensive API documentation for E-utilities and Datasets API
-- `references/common_workflows.md` - Additional examples and use case patterns
+- `references/api-reference.md` - Comprehensive API documentation for E-utilities and Datasets API
+- `references/common-workflows.md` - Additional examples and use case patterns
 
 Search these references when needing specific API endpoint details, parameter options, or response structure information.
 
@@ -172,5 +172,5 @@ This skill includes:
 - `batch_gene_lookup.py` - Handle multiple gene queries efficiently
 
 ### references/
-- `api_reference.md` - Detailed API documentation for both E-utilities and Datasets API
-- `common_workflows.md` - Examples of common gene queries and use cases
+- `api-reference.md` - Detailed API documentation for both E-utilities and Datasets API
+- `common-workflows.md` - Examples of common gene queries and use cases

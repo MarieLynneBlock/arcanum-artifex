@@ -60,7 +60,7 @@ Use this skill when:
    python scripts/perplexity_search.py --check-setup
    ```
 
-See `references/openrouter_setup.md` for detailed setup instructions, troubleshooting, and security best practices.
+See `references/openrouter-setup.md` for detailed setup instructions, troubleshooting, and security best practices.
 
 ### Basic Usage
 
@@ -101,7 +101,7 @@ Access models via `--model` parameter:
 - Simple fact lookups → `sonar`
 - Cost-sensitive bulk queries → `sonar`
 
-See `references/model_comparison.md` for detailed comparison, use cases, pricing, and performance characteristics.
+See `references/model-comparison.md` for detailed comparison, use cases, pricing, and performance characteristics.
 
 ## Crafting Effective Queries
 
@@ -142,7 +142,7 @@ Break complex questions into clear components:
 **Example:**
 "What improvements does AlphaFold3 offer over AlphaFold2 for protein structure prediction, according to research published between 2023 and 2024? Include specific accuracy metrics and benchmarks."
 
-See `references/search_strategies.md` for comprehensive guidance on query design, domain-specific patterns, and advanced techniques.
+See `references/search-strategies.md` for comprehensive guidance on query design, domain-specific patterns, and advanced techniques.
 
 ## Common Use Cases
 
@@ -297,7 +297,7 @@ uv pip install litellm
 - Add credits at https://openrouter.ai/account
 - Enable auto-recharge to prevent interruptions
 
-See `references/openrouter_setup.md` for comprehensive troubleshooting guide.
+See `references/openrouter-setup.md` for comprehensive troubleshooting guide.
 
 ## Integration with Other Skills
 
@@ -377,9 +377,9 @@ Use with `scientific-critical-thinking` skill:
 - `scripts/setup_env.py`: Environment setup and validation helper
 
 **References:**
-- `references/search_strategies.md`: Comprehensive query design guide
-- `references/model_comparison.md`: Detailed model comparison and selection guide
-- `references/openrouter_setup.md`: Complete setup, troubleshooting, and security guide
+- `references/search-strategies.md`: Comprehensive query design guide
+- `references/model-comparison.md`: Detailed model comparison and selection guide
+- `references/openrouter-setup.md`: Complete setup, troubleshooting, and security guide
 
 **Assets:**
 - `assets/.env.example`: Example environment file template

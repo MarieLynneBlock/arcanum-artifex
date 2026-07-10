@@ -470,8 +470,8 @@ print(result.text_content)
 
 ## Next Steps
 
-- See `references/api_reference.md` for complete API documentation
-- Check `references/file_formats.md` for format-specific details
+- See `references/api-reference.md` for complete API documentation
+- Check `references/file-formats.md` for format-specific details
 - Review `scripts/batch_convert.py` for automation examples
 - Explore `scripts/convert_with_ai.py` for AI-enhanced conversions
 

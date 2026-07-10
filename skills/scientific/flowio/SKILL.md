@@ -557,7 +557,7 @@ Access these segments via FlowData attributes:
 
 For comprehensive API documentation including all parameters, methods, exceptions, and FCS keyword reference, consult the detailed reference file:
 
-**Read:** `references/api_reference.md`
+**Read:** `references/api-reference.md`
 
 The reference includes:
 - Complete FlowData class documentation

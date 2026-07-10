@@ -754,7 +754,7 @@ For quick analysis without coding, use GEO2R:
 
 ## Resources
 
-### references/geo_reference.md
+### references/geo-reference.md
 
 Comprehensive reference documentation covering:
 - Detailed E-utilities API specifications and endpoints

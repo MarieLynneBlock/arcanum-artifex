@@ -91,7 +91,7 @@ clean_smiles = dm.standardize_smiles(smiles)
 
 ### 2. Reading and Writing Molecular Files
 
-Refer to `references/io_module.md` for comprehensive I/O documentation.
+Refer to `references/io-module.md` for comprehensive I/O documentation.
 
 **Reading files**:
 ```python
@@ -137,7 +137,7 @@ dm.to_sdf(mols, "s3://bucket/output.sdf")
 
 ### 3. Molecular Descriptors and Properties
 
-Refer to `references/descriptors_viz.md` for detailed descriptor documentation.
+Refer to `references/descriptors-viz.md` for detailed descriptor documentation.
 
 **Computing descriptors for a single molecule**:
 ```python
@@ -215,7 +215,7 @@ dist_matrix = squareform(dm.pdist(mols))
 
 ### 5. Clustering and Diversity Selection
 
-Refer to `references/core_api.md` for clustering details.
+Refer to `references/core-api.md` for clustering details.
 
 **Butina clustering**:
 ```python
@@ -251,7 +251,7 @@ centroids = dm.pick_centroids(
 
 ### 6. Scaffold Analysis
 
-Refer to `references/fragments_scaffolds.md` for complete scaffold documentation.
+Refer to `references/fragments-scaffolds.md` for complete scaffold documentation.
 
 **Extracting Murcko scaffolds**:
 ```python
@@ -304,7 +304,7 @@ test_mols = [mol for scaf in test_scaffolds for mol in scaffold_to_mols[scaf]]
 
 ### 7. Molecular Fragmentation
 
-Refer to `references/fragments_scaffolds.md` for fragmentation details.
+Refer to `references/fragments-scaffolds.md` for fragmentation details.
 
 **BRICS fragmentation** (16 bond types):
 ```python
@@ -340,7 +340,7 @@ def fragment_score(mol, reference_fragments):
 
 ### 8. 3D Conformer Generation
 
-Refer to `references/conformers_module.md` for detailed conformer documentation.
+Refer to `references/conformers-module.md` for detailed conformer documentation.
 
 **Generating conformers**:
 ```python
@@ -384,7 +384,7 @@ sasa = conf.GetDoubleProp('rdkit_free_sasa')
 
 ### 9. Visualization
 
-Refer to `references/descriptors_viz.md` for visualization documentation.
+Refer to `references/descriptors-viz.md` for visualization documentation.
 
 **Basic molecule grid**:
 ```python
@@ -437,7 +437,7 @@ dm.viz.conformers(
 
 ### 10. Chemical Reactions
 
-Refer to `references/reactions_data.md` for reactions documentation.
+Refer to `references/reactions-data.md` for reactions documentation.
 
 **Applying reactions**:
 ```python
@@ -597,12 +597,12 @@ dm.viz.to_image(
 
 For detailed API documentation, consult these reference files:
 
-- **`references/core_api.md`**: Core namespace functions (conversions, standardization, fingerprints, clustering)
-- **`references/io_module.md`**: File I/O operations (read/write SDF, CSV, Excel, remote files)
-- **`references/conformers_module.md`**: 3D conformer generation, clustering, SASA calculations
-- **`references/descriptors_viz.md`**: Molecular descriptors and visualization functions
-- **`references/fragments_scaffolds.md`**: Scaffold extraction, BRICS/RECAP fragmentation
-- **`references/reactions_data.md`**: Chemical reactions and toy datasets
+- **`references/core-api.md`**: Core namespace functions (conversions, standardization, fingerprints, clustering)
+- **`references/io-module.md`**: File I/O operations (read/write SDF, CSV, Excel, remote files)
+- **`references/conformers-module.md`**: 3D conformer generation, clustering, SASA calculations
+- **`references/descriptors-viz.md`**: Molecular descriptors and visualization functions
+- **`references/fragments-scaffolds.md`**: Scaffold extraction, BRICS/RECAP fragmentation
+- **`references/reactions-data.md`**: Chemical reactions and toy datasets
 
 ## Best Practices
 

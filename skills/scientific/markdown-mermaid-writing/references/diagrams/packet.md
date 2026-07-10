@@ -2,7 +2,7 @@
 
 # Packet Diagram
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
 
 **Syntax keyword:** `packet-beta`
 **Best for:** Network protocol headers, data structure layouts, binary format documentation, bit-level specifications

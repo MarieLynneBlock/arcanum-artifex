@@ -511,9 +511,9 @@ better sleep, lower blood pressure, emotional balance"
 
 For detailed guidance, load these reference files:
 
-- **`references/infographic_types.md`**: Extended templates for all 10+ types
-- **`references/design_principles.md`**: Visual hierarchy, layout, typography
-- **`references/color_palettes.md`**: Full palette specifications
+- **`references/infographic-types.md`**: Extended templates for all 10+ types
+- **`references/design-principles.md`**: Visual hierarchy, layout, typography
+- **`references/color-palettes.md`**: Full palette specifications
 
 ---
 
