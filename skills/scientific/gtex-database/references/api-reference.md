@@ -86,7 +86,7 @@ Significant single-tissue cis-eQTLs.
 ```
 
 **Key fields:**
-- `slope`: effect of alt allele on expression (log2 scale after rank normalization)
+- `slope`: effect of alt allele on expression (log2 scale after rank normalisation)
 - `pval`: nominal p-value
 - `qval`: FDR-adjusted q-value
 - `maf`: minor allele frequency in the GTEx cohort
@@ -116,7 +116,7 @@ List of all available tissues.
 **Response fields:**
 - `tissueSiteDetailId`: API identifier (use this in queries)
 - `tissueSiteDetail`: Display name
-- `colorHex`: Color for visualization
+- `colorHex`: Colour for visualisation
 - `samplingSite`: Anatomical location
 
 #### `GET /reference/gene`

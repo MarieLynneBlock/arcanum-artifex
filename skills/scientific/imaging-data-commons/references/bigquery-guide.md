@@ -384,11 +384,11 @@ idc_client.download_from_selection(
 )
 ```
 
-## Cost and Optimization
+## Cost and Optimisation
 
 **Pricing:** $5 per TB scanned (first 1 TB/month free). Most users stay within free tier.
 
-**Minimize data scanned:**
+**Minimise data scanned:**
 - Select only needed columns (not `SELECT *`)
 - Filter early with `WHERE` clauses
 - Use `LIMIT` when testing
@@ -401,7 +401,7 @@ query_job = client.query(query, job_config=bigquery.QueryJobConfig(dry_run=True)
 print(f"Query will scan {query_job.total_bytes_processed / 1e9:.2f} GB")
 ```
 
-**Use materialized tables:** IDC provides both views (`table_name_view`) and materialized tables (`table_name`). Always use the materialized tables (faster, lower cost).
+**Use materialised tables:** IDC provides both views (`table_name_view`) and materialised tables (`table_name`). Always use the materialised tables (faster, lower cost).
 
 ## Clinical Data
 

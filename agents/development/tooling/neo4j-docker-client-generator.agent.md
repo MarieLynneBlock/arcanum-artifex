@@ -186,7 +186,7 @@ Before creating pull request, verify:
 
 **What to INCLUDE:**
 - ✅ Pydantic models for type safety
-- ✅ Repository pattern for query organization
+- ✅ Repository pattern for query organisation
 - ✅ Type hints everywhere
 - ✅ Basic error handling
 - ✅ Context managers for connections

@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-ClinVar is NCBI's freely accessible archive of reports on relationships between human genetic variants and phenotypes, with supporting evidence. The database aggregates information about genomic variation and its relationship to human health, providing standardized variant classifications used in clinical genetics and research.
+ClinVar is NCBI's freely accessible archive of reports on relationships between human genetic variants and phenotypes, with supporting evidence. The database aggregates information about genomic variation and its relationship to human health, providing standardised variant classifications used in clinical genetics and research.
 
 ## When to Use This Skill
 
@@ -64,7 +64,7 @@ curl "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term
 
 #### Understanding Classifications
 
-ClinVar uses standardized terminology for variant classifications. Refer to `references/clinical-significance.md` for detailed interpretation guidelines.
+ClinVar uses standardised terminology for variant classifications. Refer to `references/clinical-significance.md` for detailed interpretation guidelines.
 
 **Key germline classification terms (ACMG/AMP):**
 - **Pathogenic (P)** - Variant causes disease (~99% probability)
@@ -124,7 +124,7 @@ wget ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/xml/clinvar_variation/ClinVarVariati
 wget ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
 ```
 
-### 4. Process and Analyze ClinVar Data
+### 4. Process and Analyse ClinVar Data
 
 #### Working with XML Files
 
@@ -286,7 +286,7 @@ Contact: clinvar@ncbi.nlm.nih.gov for submission account setup.
    bcftools view -i 'INFO/CLNSIG~"Pathogenic"' annotated_variants.vcf
    ```
 
-### Example 3: Analyze Variants for a Specific Disease
+### Example 3: Analyse Variants for a Specific Disease
 
 **Objective:** Study all variants associated with hereditary breast cancer.
 
@@ -296,8 +296,8 @@ Contact: clinvar@ncbi.nlm.nih.gov for submission account setup.
    hereditary breast cancer[disorder] OR "Breast-ovarian cancer, familial"[disorder]
    ```
 2. Download results as CSV or retrieve via E-utilities
-3. Filter by review status to prioritize high-confidence variants
-4. Analyze distribution across genes (BRCA1, BRCA2, PALB2, etc.)
+3. Filter by review status to prioritise high-confidence variants
+4. Analyse distribution across genes (BRCA1, BRCA2, PALB2, etc.)
 5. Examine variants with conflicting interpretations separately
 
 ### Example 4: Bulk Download and Database Construction

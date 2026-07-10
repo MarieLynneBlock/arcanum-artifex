@@ -7,8 +7,8 @@ This category contains skills for 4+1 views, ADRs, and technology-stack blueprin
 | Skill | Description |
 | --- | --- |
 | [architecture-models-4plus1](architecture-models-4plus1/SKILL.md) | Produce Philippe Kruchten's 4+1 architectural view model for a software system, with rendered diagrams (Mermaid primary, PlantUML fallback for deployment) AND Miro RISEN prompts for each view. |
-| [create-architectural-decision-record](create-architectural-decision-record/SKILL.md) | Create an Architectural Decision Record (ADR) document for AI-optimized decision documentation. |
-| [technology-stack-blueprint-generator](technology-stack-blueprint-generator/SKILL.md) | Comprehensive technology stack blueprint generator that analyzes codebases to create detailed architectural documentation. |
+| [create-architectural-decision-record](create-architectural-decision-record/SKILL.md) | Create an Architectural Decision Record (ADR) document for AI-optimised decision documentation. |
+| [technology-stack-blueprint-generator](technology-stack-blueprint-generator/SKILL.md) | Comprehensive technology stack blueprint generator that analyses codebases to create detailed architectural documentation. |
 
 ## Add a skill here
 

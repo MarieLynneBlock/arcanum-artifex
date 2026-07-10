@@ -26,7 +26,7 @@ Scientific figures must be clear, accurate, and accessible. Publication-ready fi
   - Use for: photographs, microscopy, images with continuous tone
   - TIFF: Lossless, widely accepted
   - PNG: Lossless, good for web and supplementary materials
-  - **Never use JPEG**: Lossy compression introduces artifacts
+  - **Never use JPEG**: Lossy compression introduces artefacts
 
 ### Size Specifications
 - **Single column**: 85-90 mm (3.35-3.54 inches) width
@@ -56,24 +56,24 @@ Scientific figures must be clear, accurate, and accessible. Publication-ready fi
 - Avoid abbreviations unless space-constrained (define in caption)
 - No text smaller than 5-6 pt at final size
 
-## Color Usage
+## Colour Usage
 
-### Color Selection Principles
-1. **Colorblind-friendly**: ~8% of males have color vision deficiency
+### Colour Selection Principles
+1. **Colorblind-friendly**: ~8% of males have colour vision deficiency
    - Avoid red/green combinations
    - Use blue/orange, blue/yellow, or add texture/pattern
    - Test with colorblindness simulators
 
-2. **Purposeful color**: Color should convey meaning, not just aesthetics
-   - Use color to distinguish categories or highlight key data
-   - Maintain consistency across figures (same treatment = same color)
+2. **Purposeful colour**: Colour should convey meaning, not just aesthetics
+   - Use colour to distinguish categories or highlight key data
+   - Maintain consistency across figures (same treatment = same colour)
 
 3. **Print considerations**:
-   - Colors may appear different in print vs. screen
-   - Use CMYK color space for print, RGB for digital
+   - Colours may appear different in print vs. screen
+   - Use CMYK colour space for print, RGB for digital
    - Ensure sufficient contrast (especially for grayscale conversion)
 
-### Recommended Color Palettes
+### Recommended Colour Palettes
 - **Qualitative (categories)**: ColorBrewer, Okabe-Ito palette
 - **Sequential (low to high)**: Viridis, Cividis, Blues, Oranges
 - **Diverging (negative to positive)**: RdBu, PuOr, BrBG (ensure colorblind-safe)
@@ -120,7 +120,7 @@ Scientific figures must be clear, accurate, and accessible. Publication-ready fi
 
 ## Data Representation Best Practices
 
-### Statistical Rigor
+### Statistical Rigour
 - **Error bars**: Always show uncertainty (SD, SEM, CI) and state which in caption
 - **Sample size**: Indicate n in figure or caption
 - **Significance**: Mark statistical significance clearly (*, **, ***)
@@ -144,8 +144,8 @@ Scientific figures must be clear, accurate, and accessible. Publication-ready fi
 ## Accessibility
 
 ### Colorblind Considerations
-- Test with online simulators (e.g., Coblis, Color Oracle)
-- Use patterns/textures in addition to color
+- Test with online simulators (e.g., Coblis, Colour Oracle)
+- Use patterns/textures in addition to colour
 - Provide alternative representations in supplementary materials if needed
 
 ### Visual Impairment
@@ -163,11 +163,11 @@ Scientific figures must be clear, accurate, and accessible. Publication-ready fi
 1. **Font too small**: Text unreadable at final print size
 2. **Low resolution**: Pixelated or blurry images
 3. **Chart junk**: Unnecessary grid lines, 3D effects, decorations
-4. **Poor color choices**: Red/green combinations, low contrast
+4. **Poor colour choices**: Red/green combinations, low contrast
 5. **Missing elements**: No axis labels, no units, no error bars
 6. **Inconsistent styling**: Different fonts/sizes within figure or between figures
 7. **Data distortion**: Truncated axes, inappropriate scales, 3D effects
-8. **JPEG compression**: Artifacts around text and lines
+8. **JPEG compression**: Artefacts around text and lines
 9. **Too much information**: Cramming too many data series into one plot
 10. **Inaccessible legends**: Legends outside the figure boundary after export
 
@@ -180,9 +180,9 @@ Before submission, verify:
 - [ ] Figure dimensions match journal specifications
 - [ ] All text is readable at final size (minimum 6-7 pt)
 - [ ] Fonts are consistent and embedded (for PDF/EPS)
-- [ ] Colors are colorblind-friendly
+- [ ] Colours are colorblind-friendly
 - [ ] Figure is interpretable in grayscale
-- [ ] All axes are labeled with units
+- [ ] All axes are labelled with units
 - [ ] Error bars or uncertainty indicators are present
 - [ ] Statistical significance is marked if applicable
 - [ ] Panel labels are present and consistent (A, B, C)
@@ -199,7 +199,7 @@ Always consult the specific journal's author guidelines. Common variations inclu
 - **Nature journals**: RGB, 300 DPI minimum, specific size requirements
 - **Science**: EPS or high-res TIFF, specific font requirements
 - **Cell Press**: PDF or EPS preferred, Arial or Helvetica fonts
-- **PLOS**: TIFF or EPS, specific color space requirements
+- **PLOS**: TIFF or EPS, specific colour space requirements
 - **ACS journals**: Application files (AI, EPS) or high-res TIFF
 
 See `journal-requirements.md` for detailed specifications from major publishers.

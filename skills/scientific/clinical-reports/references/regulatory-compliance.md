@@ -21,7 +21,7 @@ HIPAA Privacy Rule protects individually identifiable health information (Protec
 
 ### 18 HIPAA Identifiers
 
-These identifiers must be removed for Safe Harbor de-identification:
+These identifiers must be removed for Safe Harbour de-identification:
 
 1. **Names**
 2. **Geographic subdivisions smaller than state** (except first 3 digits of ZIP if >20,000 people)
@@ -44,7 +44,7 @@ These identifiers must be removed for Safe Harbor de-identification:
 
 ### De-identification Methods
 
-#### Method 1: Safe Harbor
+#### Method 1: Safe Harbour
 
 Remove all 18 identifiers AND have no actual knowledge that remaining information could be used to identify the individual.
 
@@ -140,8 +140,8 @@ Statistical/scientific analysis demonstrating that risk of re-identification is 
 **Civil penalties (per violation):**
 - Tier 1: $100-$50,000 (unknowing)
 - Tier 2: $1,000-$50,000 (reasonable cause)
-- Tier 3: $10,000-$50,000 (willful neglect, corrected)
-- Tier 4: $50,000-$1.9M (willful neglect, not corrected)
+- Tier 3: $10,000-$50,000 (wilful neglect, corrected)
+- Tier 4: $50,000-$1.9M (wilful neglect, not corrected)
 
 **Criminal penalties:**
 - Knowingly obtaining PHI: Up to $50,000 and/or 1 year
@@ -241,7 +241,7 @@ Must include:
 
 **Closed system:**
 - Access limited to authorized individuals
-- Within a single organization
+- Within a single organisation
 - Less stringent requirements
 
 **Open system:**
@@ -280,7 +280,7 @@ International ethical and scientific quality standard for designing, conducting,
 - Ensure credibility of clinical trial data
 
 **Regulatory adoption:**
-- FDA recognizes ICH-GCP (E6)
+- FDA recognises ICH-GCP (E6)
 - Required for studies supporting regulatory submissions
 
 ### Principles of ICH-GCP
@@ -343,7 +343,7 @@ International ethical and scientific quality standard for designing, conducting,
 **After trial:**
 - Final report
 - Documentation of investigational product destruction
-- Samples of labels and labeling
+- Samples of labels and labelling
 - Post-study access to investigational product (if applicable)
 
 ### Investigator Responsibilities
@@ -467,7 +467,7 @@ International ethical and scientific quality standard for designing, conducting,
 - No member may participate in review of study in which member has conflicting interest
 
 **IRB review criteria:**
-- Risks minimized
+- Risks minimised
 - Risks reasonable in relation to benefits
 - Selection of subjects equitable
 - Informed consent obtained and documented

@@ -94,7 +94,7 @@ c_icrs.transform_to(FK5(equinox='J1975'))  # Custom frame parameters
 ### Galactic Frames
 - **Galactic**: IAU 1958 galactic coordinates
 - **Supergalactic**: De Vaucouleurs supergalactic coordinates
-- **Galactocentric**: Galactic center-based 3D coordinates
+- **Galactocentric**: Galactic centre-based 3D coordinates
 
 ### Horizontal Frames
 - **AltAz**: Altitude-azimuth (observer-dependent)
@@ -167,9 +167,9 @@ print(f"Separation: {sep.arcsec} arcsec")
 pa = c1.position_angle(c2)
 ```
 
-## Catalog Matching
+## Catalogue Matching
 
-Match coordinates to catalog sources:
+Match coordinates to catalogue sources:
 
 ```python
 # Single target matching
@@ -186,7 +186,7 @@ matches = target.separation(catalog) < 1*u.arcsec
 
 ## Named Objects
 
-Retrieve coordinates from online catalogs:
+Retrieve coordinates from online catalogues:
 
 ```python
 # Query by name (requires internet)

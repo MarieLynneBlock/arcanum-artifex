@@ -48,7 +48,7 @@ Use web search only when current best practice, product behaviour, or public doc
 
 ## Process
 
-1. Normalize the provided target to a skill folder and confirm it exists.
+1. Normalise the provided target to a skill folder and confirm it exists.
 2. Inventory the skill folder recursively before judging it.
 3. Read `SKILL.md` first, then inspect all linked or bundled resources.
 4. Search the selected folder for consistency risks, including:
@@ -96,7 +96,7 @@ List optional improvements that would make the skill clearer, more reusable, mor
 
 **Resource And Packaging Checks**
 
-Summarize what bundled resources, links, paths, scripts, schemas, examples, and external prerequisites were checked.
+Summarise what bundled resources, links, paths, scripts, schemas, examples, and external prerequisites were checked.
 
 **Validation Performed**
 

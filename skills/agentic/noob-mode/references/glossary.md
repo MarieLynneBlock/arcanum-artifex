@@ -1,6 +1,6 @@
 # Noob Mode Glossary
 
-A plain-English reference for technical terms you'll encounter when using Copilot CLI. Organized by category.
+A plain-English reference for technical terms you'll encounter when using Copilot CLI. Organised by category.
 
 ---
 
@@ -38,7 +38,7 @@ A plain-English reference for technical terms you'll encounter when using Copilo
 
 ### Fork
 **Plain English:** Making your own personal copy of someone else's project on the server.
-**Analogy:** Getting your own copy of a template that you can customize without affecting the original template.
+**Analogy:** Getting your own copy of a template that you can customise without affecting the original template.
 **Example in context:** "Fork this repo" = "Create your own copy of this project."
 
 ### Diff
@@ -190,7 +190,7 @@ A plain-English reference for technical terms you'll encounter when using Copilo
 **Example in context:** "The client sends a request" = "Your program asks the server for something."
 
 ### Database
-**Plain English:** An organized collection of data that programs can search, add to, update, and delete from.
+**Plain English:** An organised collection of data that programs can search, add to, update, and delete from.
 **Analogy:** A very sophisticated spreadsheet that multiple programs can read and write to simultaneously.
 **Example in context:** "Query the database" = "Look up information in the data storage."
 
@@ -210,7 +210,7 @@ A plain-English reference for technical terms you'll encounter when using Copilo
 **Example in context:** "Import the auth module" = "Load the piece of code that handles login/security."
 
 ### Framework
-**Plain English:** A pre-built foundation that gives you a structure to build on, with rules about how to organize your code.
+**Plain English:** A pre-built foundation that gives you a structure to build on, with rules about how to organise your code.
 **Analogy:** A legal brief template — it gives you the structure, and you fill in the substance.
 **Example in context:** "We're using the React framework" = "We're building on top of a pre-made structure called React."
 
@@ -260,8 +260,8 @@ A plain-English reference for technical terms you'll encounter when using Copilo
 
 ### JSON (JavaScript Object Notation)
 **Plain English:** A standard format for structuring data that's easy for both humans and computers to read.
-**Analogy:** A very organized form with labeled fields, like: `{ "name": "Jane", "role": "Attorney" }`.
-**Example in context:** "The API returns JSON" = "The response comes back as structured, labeled data."
+**Analogy:** A very organised form with labelled fields, like: `{ "name": "Jane", "role": "Attorney" }`.
+**Example in context:** "The API returns JSON" = "The response comes back as structured, labelled data."
 
 ### Token
 **Plain English:** A digital key or pass that proves your identity, used instead of typing your password every time.
@@ -288,7 +288,7 @@ A plain-English reference for technical terms you'll encounter when using Copilo
 
 ### REST (RESTful API)
 **Plain English:** A common style for building web APIs, where you use standard web addresses and actions (GET, POST, etc.) to interact with data.
-**Analogy:** A standardized form system — everyone agrees on how to submit, retrieve, update, and delete records.
+**Analogy:** A standardised form system — everyone agrees on how to submit, retrieve, update, and delete records.
 **Example in context:** "A RESTful endpoint" = "A web address that follows standard conventions for data access."
 
 ---
@@ -311,9 +311,9 @@ A plain-English reference for technical terms you'll encounter when using Copilo
 **Example in context:** "I need your approval" = "I'm asking permission before I do this."
 
 ### Context Window
-**Plain English:** The total amount of conversation and information Copilot can remember at one time. When it fills up, older parts get summarized or forgotten.
+**Plain English:** The total amount of conversation and information Copilot can remember at one time. When it fills up, older parts get summarised or forgotten.
 **Analogy:** The size of your desk — you can only have so many papers spread out before you need to file some away.
-**Example in context:** "The context window is getting full" = "I'm running low on working memory and may need to summarize our earlier conversation."
+**Example in context:** "The context window is getting full" = "I'm running low on working memory and may need to summarise our earlier conversation."
 
 ### Model
 **Plain English:** The AI brain that powers Copilot. Different models (Sonnet, GPT, Gemini) have different strengths.
@@ -326,9 +326,9 @@ A plain-English reference for technical terms you'll encounter when using Copilo
 **Example in context:** "This uses 1,000 tokens" = "This is about 750 words' worth of AI processing."
 
 ### Skill
-**Plain English:** A specialized capability you can add to Copilot CLI for a specific type of task.
+**Plain English:** A specialised capability you can add to Copilot CLI for a specific type of task.
 **Analogy:** A specialist you can call in — like bringing in a tax expert vs. a contracts expert.
-**Example in context:** "Activate a skill" = "Turn on a specialized capability."
+**Example in context:** "Activate a skill" = "Turn on a specialised capability."
 
 ### Plugin
 **Plain English:** An add-on that extends what Copilot CLI can do, provided by a third party.
@@ -342,8 +342,8 @@ A plain-English reference for technical terms you'll encounter when using Copilo
 
 ### Custom Instructions
 **Plain English:** A file that tells Copilot how to behave — your preferences, rules, and style requirements.
-**Analogy:** A brief you give a new associate: "Here's how I like my memos formatted, and here's what to prioritize."
-**Example in context:** "Toggle custom instructions" = "Turn on or off a specific set of behavior rules for Copilot."
+**Analogy:** A brief you give a new associate: "Here's how I like my memos formatted, and here's what to prioritise."
+**Example in context:** "Toggle custom instructions" = "Turn on or off a specific set of behaviour rules for Copilot."
 
 ---
 

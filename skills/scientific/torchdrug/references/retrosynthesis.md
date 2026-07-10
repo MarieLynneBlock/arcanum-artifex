@@ -14,7 +14,7 @@ The standard benchmark dataset for retrosynthesis derived from US patent literat
 - 50,017 reaction examples
 - Single-step reactions
 - Filtered for quality and canonicalization
-- Contains atom mapping for reaction center identification
+- Contains atom mapping for reaction centre identification
 
 **Reaction Types:**
 - Diverse organic reactions
@@ -37,10 +37,10 @@ TorchDrug decomposes retrosynthesis into a multi-step pipeline:
 
 ### 1. CenterIdentification
 
-Identifies the reaction center - which bonds were formed/broken in the forward reaction.
+Identifies the reaction centre - which bonds were formed/broken in the forward reaction.
 
 **Input:** Product molecule
-**Output:** Probability for each bond of being part of reaction center
+**Output:** Probability for each bond of being part of reaction centre
 
 **Purpose:**
 - Locate where chemistry happened
@@ -53,22 +53,22 @@ Identifies the reaction center - which bonds were formed/broken in the forward r
 - Attention mechanisms to highlight reactive regions
 
 **Evaluation Metrics:**
-- **Top-K Accuracy**: Correct reaction center in top K predictions
+- **Top-K Accuracy**: Correct reaction centre in top K predictions
 - **Bond-level F1**: Precision and recall for bond predictions
 
 ### 2. SynthonCompletion
 
-Given the product and identified reaction center, predict the reactant structures (synthons).
+Given the product and identified reaction centre, predict the reactant structures (synthons).
 
 **Input:**
 - Product molecule
-- Identified reaction center (broken/formed bonds)
+- Identified reaction centre (broken/formed bonds)
 
 **Output:**
 - Predicted reactant molecules (synthons)
 
 **Process:**
-1. Break bonds at reaction center
+1. Break bonds at reaction centre
 2. Modify atom environments (valence, charges)
 3. Determine leaving groups and protecting groups
 4. Generate complete reactant structures
@@ -86,21 +86,21 @@ Given the product and identified reaction center, predict the reactant structure
 
 ### 3. Retrosynthesis (End-to-End)
 
-Combines center identification and synthon completion into a unified pipeline.
+Combines centre identification and synthon completion into a unified pipeline.
 
 **Input:** Target product molecule
 **Output:** Ranked list of reactant sets (synthesis pathways)
 
 **Workflow:**
-1. Identify top-K reaction centers
-2. For each center, generate reactant candidates
+1. Identify top-K reaction centres
+2. For each centre, generate reactant candidates
 3. Rank combinations by model confidence
 4. Filter for commercial availability and feasibility
 
 **Advantages:**
 - Single model to train and deploy
-- Joint optimization of subtasks
-- Error propagation from center identification accounted for
+- Joint optimisation of subtasks
+- Error propagation from centre identification accounted for
 
 ## Training Workflows
 
@@ -150,7 +150,7 @@ task_retro = tasks.Retrosynthesis(
 Pre-train on large reaction datasets (e.g., USPTO-full with 1M+ reactions), then fine-tune on specific reaction classes.
 
 **Benefits:**
-- Better generalization to rare reaction types
+- Better generalisation to rare reaction types
 - Improved performance on small datasets
 - Learn general reaction patterns
 
@@ -174,7 +174,7 @@ Train jointly on:
 **RGCN (Relational Graph Convolutional Network):**
 - Handles multiple bond types (single, double, triple, aromatic)
 - Edge-type-specific transformations
-- Good for reaction center identification
+- Good for reaction centre identification
 
 **GIN (Graph Isomorphism Network):**
 - Powerful message passing
@@ -183,7 +183,7 @@ Train jointly on:
 
 **GAT (Graph Attention Network):**
 - Attention weights highlight important atoms/bonds
-- Interpretable reaction center predictions
+- Interpretable reaction centre predictions
 - Flexible for various reaction types
 
 ### Sequence-Based Models
@@ -279,7 +279,7 @@ Recursively apply retrosynthesis to each predicted reactant until reaching comme
 
 **A\* Search:**
 - Heuristic-guided search
-- Optimizes for cost, complexity, or feasibility
+- Optimises for cost, complexity, or feasibility
 - Efficient for finding best routes
 
 ### Route Scoring
@@ -290,7 +290,7 @@ Rank synthetic routes by:
 3. **Commercial Availability**: How many steps to buyable compounds
 4. **Reaction Feasibility**: Likelihood each step works
 5. **Overall Yield**: Estimated end-to-end yield
-6. **Cost**: Reagents, labor, equipment
+6. **Cost**: Reagents, labour, equipment
 7. **Green Chemistry**: Environmental impact, safety
 
 ### Stopping Criteria
@@ -368,7 +368,7 @@ Train forward reaction prediction models to validate retrosynthetic proposals:
 
 **Robotic Synthesis:**
 - Automated execution of planned routes
-- Real-time optimization
+- Real-time optimisation
 - Data generation for model improvement
 
 ## Best Practices
@@ -396,12 +396,12 @@ Train forward reaction prediction models to validate retrosynthetic proposals:
 
 - Virtual library design
 - Retrosynthetic filtering of generated molecules
-- Prioritize synthesizable compounds
+- Prioritise synthesisable compounds
 
 ### Process Chemistry
 
 - Route scouting for large-scale synthesis
-- Cost optimization
+- Cost optimisation
 - Green chemistry alternatives
 
 ### Synthetic Method Development
@@ -424,13 +424,13 @@ Train forward reaction prediction models to validate retrosynthetic proposals:
 - End-to-end multi-step planning
 - Incorporation of reaction conditions
 - Stereoselective retrosynthesis
-- Integration with robotics for closed-loop optimization
+- Integration with robotics for closed-loop optimisation
 - Semi-template methods (balance templates and templates-free)
 - Uncertainty quantification for predictions
 
 ### Emerging Techniques
 
 - Large language models for chemistry (ChemGPT, MolT5)
-- Reinforcement learning for route optimization
+- Reinforcement learning for route optimisation
 - Graph transformers for long-range interactions
 - Self-supervised pre-training on reaction databases

@@ -143,7 +143,7 @@ q_income = quarterly.income_statement()
 
 ## Multi-Period Analysis
 
-Use `XBRLS` to analyze trends across multiple filings:
+Use `XBRLS` to analyse trends across multiple filings:
 
 ```python
 from edgar.xbrl import XBRLS

@@ -1,6 +1,6 @@
 # Seaborn Objects Interface
 
-The `seaborn.objects` interface provides a modern, declarative API for building visualizations through composition. This guide covers the complete objects interface introduced in seaborn 0.12+.
+The `seaborn.objects` interface provides a modern, declarative API for building visualisations through composition. This guide covers the complete objects interface introduced in seaborn 0.12+.
 
 ## Core Concept
 
@@ -8,7 +8,7 @@ The objects interface separates **what you want to show** (data and mappings) fr
 
 1. Creating a `Plot` object with data and aesthetic mappings
 2. Adding layers with `.add()` combining marks and statistical transformations
-3. Customizing with `.scale()`, `.label()`, `.limit()`, `.theme()`, etc.
+3. Customising with `.scale()`, `.label()`, `.limit()`, `.theme()`, etc.
 4. Rendering with `.show()` or `.save()`
 
 ## Basic Usage
@@ -42,7 +42,7 @@ so.Plot(data=None, x=None, y=None, color=None, alpha=None,
 **Parameters:**
 - `data` - DataFrame or dict of data vectors
 - `x, y` - Variables for position
-- `color` - Variable for color encoding
+- `color` - Variable for colour encoding
 - `alpha` - Variable for transparency
 - `marker` - Variable for marker shape
 - `pointsize` - Variable for point size
@@ -154,7 +154,7 @@ p.add(so.Dot(), alpha=0.5)
 
 #### scale()
 
-Customize how data maps to visual properties.
+Customise how data maps to visual properties.
 
 ```python
 Plot.scale(**scales)
@@ -330,11 +330,11 @@ so.Dot(artist_kws=None, **kwargs)
 ```
 
 **Properties:**
-- `color` - Fill color
+- `color` - Fill colour
 - `alpha` - Transparency
-- `fillcolor` - Alternate color property
+- `fillcolor` - Alternate colour property
 - `fillalpha` - Alternate alpha property
-- `edgecolor` - Edge color
+- `edgecolor` - Edge colour
 - `edgealpha` - Edge transparency
 - `edgewidth` - Edge line width
 - `marker` - Marker style
@@ -356,13 +356,13 @@ so.Line(artist_kws=None, **kwargs)
 ```
 
 **Properties:**
-- `color` - Line color
+- `color` - Line colour
 - `alpha` - Transparency
 - `linewidth` - Line width
 - `linestyle` - Line style ("-", "--", "-.", ":")
 - `marker` - Marker at data points
 - `pointsize` - Marker size
-- `edgecolor` - Marker edge color
+- `edgecolor` - Marker edge colour
 - `edgewidth` - Marker edge width
 
 **Example:**
@@ -396,9 +396,9 @@ so.Bar(artist_kws=None, **kwargs)
 ```
 
 **Properties:**
-- `color` - Fill color
+- `color` - Fill colour
 - `alpha` - Transparency
-- `edgecolor` - Edge color
+- `edgecolor` - Edge colour
 - `edgealpha` - Edge transparency
 - `edgewidth` - Edge line width
 - `width` - Bar width (data units)
@@ -433,9 +433,9 @@ so.Area(artist_kws=None, **kwargs)
 ```
 
 **Properties:**
-- `color` - Fill color
+- `color` - Fill colour
 - `alpha` - Transparency
-- `edgecolor` - Edge color
+- `edgecolor` - Edge colour
 - `edgealpha` - Edge transparency
 - `edgewidth` - Edge line width
 - `baseline` - Baseline value (default: 0)
@@ -471,7 +471,7 @@ so.Range(artist_kws=None, **kwargs)
 ```
 
 **Properties:**
-- `color` - Line and marker color
+- `color` - Line and marker colour
 - `alpha` - Transparency
 - `linewidth` - Line width
 - `marker` - Marker style at endpoints
@@ -492,7 +492,7 @@ so.Dash(artist_kws=None, **kwargs)
 ```
 
 **Properties:**
-- `color` - Line color
+- `color` - Line colour
 - `alpha` - Transparency
 - `linewidth` - Line width
 - `width` - Dash length (data units)
@@ -511,11 +511,11 @@ so.Text(artist_kws=None, **kwargs)
 ```
 
 **Properties:**
-- `color` - Text color
+- `color` - Text colour
 - `alpha` - Transparency
 - `fontsize` - Font size
-- `halign` - Horizontal alignment: "left", "center", "right"
-- `valign` - Vertical alignment: "bottom", "center", "top"
+- `halign` - Horizontal alignment: "left", "centre", "right"
+- `valign` - Vertical alignment: "bottom", "centre", "top"
 - `offset` - (x, y) offset from point
 
 Requires `text` mapping.
@@ -587,7 +587,7 @@ so.Hist(stat='count', bins='auto', binwidth=None, binrange=None,
 - `bins` - Number of bins, bin method, or edges
 - `binwidth` - Width of bins
 - `binrange` - (min, max) range for binning
-- `common_norm` - Normalize across groups together
+- `common_norm` - Normalise across groups together
 - `common_bins` - Use same bins for all groups
 - `cumulative` - Cumulative histogram
 
@@ -742,16 +742,16 @@ so.Plot(df, x='x', y='y').add(so.Dot(), so.Shift(x=1))
 
 ### Norm
 
-Normalize values.
+Normalise values.
 
 ```python
 so.Norm(func='max', where=None, by=None, percent=False)
 ```
 
 **Parameters:**
-- `func` - Normalization: "max", "sum", "area", or callable
+- `func` - Normalisation: "max", "sum", "area", or callable
 - `where` - Apply to which axis: "x", "y", or None
-- `by` - Grouping variables for separate normalization
+- `by` - Grouping variables for separate normalisation
 - `percent` - Show as percentage
 
 **Example:**
@@ -777,7 +777,7 @@ so.Continuous(values=None, norm=None, trans=None)
 
 **Parameters:**
 - `values` - Explicit value range (min, max)
-- `norm` - Normalization function
+- `norm` - Normalisation function
 - `trans` - Transformation: "log", "sqrt", "symlog", "logit", "pow10", or callable
 
 **Example:**
@@ -799,7 +799,7 @@ so.Nominal(values=None, order=None)
 ```
 
 **Parameters:**
-- `values` - Explicit values (e.g., colors, markers)
+- `values` - Explicit values (e.g., colours, markers)
 - `order` - Category order
 
 **Example:**

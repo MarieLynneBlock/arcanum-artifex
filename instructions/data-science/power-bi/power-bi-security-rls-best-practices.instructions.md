@@ -501,4 +501,4 @@ RETURN
     )
 ```
 
-Remember: Security is layered - implement defense in depth with proper authentication, authorization, data encryption, network security, and comprehensive auditing. Regularly review and test security implementations to ensure they meet current requirements and compliance standards.
+Remember: Security is layered - implement defence in depth with proper authentication, authorization, data encryption, network security, and comprehensive auditing. Regularly review and test security implementations to ensure they meet current requirements and compliance standards.

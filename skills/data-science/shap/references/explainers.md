@@ -4,7 +4,7 @@ This document provides comprehensive information about all SHAP explainer classe
 
 ## Overview
 
-SHAP provides specialized explainers for different model types, each optimized for specific architectures. The general `shap.Explainer` class automatically selects the appropriate algorithm based on the model type.
+SHAP provides specialised explainers for different model types, each optimised for specific architectures. The general `shap.Explainer` class automatically selects the appropriate algorithm based on the model type.
 
 ## Core Explainer Classes
 
@@ -148,11 +148,11 @@ shap_values = explainer.shap_values(X_test[:10])
 - `save(file)` / `load(file)`: Persist and restore explainer objects
 
 **When to Use**:
-- For black-box models where specialized explainers aren't available
+- For black-box models where specialised explainers aren't available
 - When working with custom prediction functions
 - For any model type (neural networks, SVMs, ensemble methods, etc.)
 - When model-agnostic explanations are needed
-- **Note**: Slower than specialized explainers; use only when no specialized option exists
+- **Note**: Slower than specialised explainers; use only when no specialised option exists
 
 **Example**:
 ```python
@@ -177,7 +177,7 @@ shap_values = explainer.shap_values(X_test[:10])
 
 ### LinearExplainer
 
-**Purpose**: Specialized explainer for linear models that accounts for feature correlations.
+**Purpose**: Specialised explainer for linear models that accounts for feature correlations.
 
 **Constructor Parameters**:
 - `model`: Linear model or tuple of (coefficients, intercept)
@@ -254,7 +254,7 @@ shap_values = explainer.shap_values(X_test[:10])
 - `max_evals`: Maximum number of model evaluations per sample
 
 **When to Use**:
-- When exact Shapley values are needed but specialized explainers aren't available
+- When exact Shapley values are needed but specialised explainers aren't available
 - For small feature sets where permutation is tractable
 - As a more accurate alternative to KernelExplainer (but slower)
 

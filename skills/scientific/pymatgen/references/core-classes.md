@@ -4,7 +4,7 @@ This reference documents the fundamental classes in `pymatgen.core` that form th
 
 ## Architecture Principles
 
-Pymatgen follows an object-oriented design where elements, sites, and structures are represented as objects. The framework emphasizes periodic boundary conditions for crystal representation while maintaining flexibility for molecular systems.
+Pymatgen follows an object-oriented design where elements, sites, and structures are represented as objects. The framework emphasises periodic boundary conditions for crystal representation while maintaining flexibility for molecular systems.
 
 **Unit Conventions**: All units in pymatgen are typically assumed to be in atomic units:
 - Lengths: angstroms (Å)
@@ -204,8 +204,8 @@ poscar_string = struct.to(fmt="poscar")
 
 **Analysis:**
 - `get_distance(i, j)`: Distance between sites i and j
-- `get_neighbors(site, r)`: Get neighbors within radius r
-- `get_all_neighbors(r)`: Get all neighbors for all sites
+- `get_neighbors(site, r)`: Get neighbours within radius r
+- `get_all_neighbors(r)`: Get all neighbours for all sites
 - `get_space_group_info()`: Get space group information
 - `matches(other_struct)`: Check if structures match
 
@@ -243,10 +243,10 @@ mol = Molecule.from_file("molecule.mol")
 
 ### Key methods
 - `get_covalent_bonds()`: Returns bonds based on covalent radii
-- `get_neighbors(site, r)`: Get neighbors within radius
+- `get_neighbors(site, r)`: Get neighbours within radius
 - `get_zmatrix()`: Get Z-matrix representation
 - `get_distance(i, j)`: Distance between sites
-- `get_centered_molecule()`: Center molecule at origin
+- `get_centered_molecule()`: Centre molecule at origin
 
 ### Key properties
 - `species`: List of species
@@ -254,7 +254,7 @@ mol = Molecule.from_file("molecule.mol")
 - `num_sites`: Number of atoms
 - `charge`: Total charge of molecule
 - `spin_multiplicity`: Spin multiplicity
-- `center_of_mass`: Center of mass coordinates
+- `center_of_mass`: Centre of mass coordinates
 
 ## Serialization
 
@@ -303,10 +303,10 @@ Represents substrate-film combinations for heterojunction analysis.
 Represents crystallographic grain boundaries.
 
 ### Spectrum
-Represents spectroscopic data with methods for normalization and processing.
+Represents spectroscopic data with methods for normalisation and processing.
 
 **Key methods:**
-- `normalize(mode="max")`: Normalize spectrum
+- `normalize(mode="max")`: Normalise spectrum
 - `smear(sigma)`: Apply Gaussian smearing
 
 ## Best Practices

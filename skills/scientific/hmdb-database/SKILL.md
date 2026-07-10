@@ -1,7 +1,7 @@
 ---
 name: hmdb-database
 description: Access Human Metabolome Database (220K+ metabolites). Search by name/ID/structure, retrieve chemical properties, biomarker data, NMR/MS spectra, pathways, for metabolomics and identification.
-license: HMDB is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes requires explicit permission of the authors and explicit acknowledgment of the source material (HMDB) and the original publication (see the HMDB citing page). We ask that users who download significant portions of the database cite the HMDB paper in any resulting publications.
+license: HMDB is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes requires explicit permission of the authors and explicit acknowledgement of the source material (HMDB) and the original publication (see the HMDB citing page). We ask that users who download significant portions of the database cite the HMDB paper in any resulting publications.
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -118,7 +118,7 @@ HMDB offers bulk data downloads at https://www.hmdb.ca/downloads in multiple for
 HMDB does not provide a public REST API. Programmatic access requires contacting the development team:
 
 - **Academic/Research groups:** Contact eponine@ualberta.ca (Eponine) or samackay@ualberta.ca (Scott)
-- **Commercial organizations:** Contact samackay@ualberta.ca (Scott) for customized API access
+- **Commercial organisations:** Contact samackay@ualberta.ca (Scott) for customised API access
 
 **Alternative Programmatic Access:**
 - **R/Bioconductor**: Use the `hmdbQuery` package for R-based queries

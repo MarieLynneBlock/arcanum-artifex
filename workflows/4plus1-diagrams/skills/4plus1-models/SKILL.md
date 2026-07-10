@@ -41,7 +41,7 @@ Reference files per view: `references/logical-view.md`, `references/process-view
 Decide which mode the user is in. If ambiguous, ask.
 
 - **Zero-input mode** — user gives a short description and expects a draft with explicit assumptions.
-- **Interview mode** — user has real context and wants rigor.
+- **Interview mode** — user has real context and wants rigour.
 - **Partial mode** — user wants only one or a subset of views.
 
 ### Step 2 — Determine audience (ALWAYS ASK unless user pre-stated it)
@@ -101,7 +101,7 @@ Use `templates/view-template.md`.
 
 Verify:
 - consistent naming across views
-- process behaviors map to deployable units
+- process behaviours map to deployable units
 - scenarios exercise elements from core views
 
 If writing to disk, run:

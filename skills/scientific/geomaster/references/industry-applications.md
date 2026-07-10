@@ -169,7 +169,7 @@ def estimate_flood_extent(dem_path, river_path, return_period):
     return flood_extent
 ```
 
-### Wildfire Risk Modeling
+### Wildfire Risk Modelling
 
 ```python
 def wildfire_risk_assessment(vegetation_path, dem_path, weather_data, infrastructure_path):
@@ -268,7 +268,7 @@ def power_line_corridor_analysis(power_lines_path, vegetation_height_path, buffe
     return priority, work_orders
 ```
 
-### Pipeline Route Optimization
+### Pipeline Route Optimisation
 
 ```python
 def optimize_pipeline_route(origin, destination, constraints_path, cost_surface_path):

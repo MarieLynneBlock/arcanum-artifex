@@ -5,7 +5,7 @@
 ### GlyTouCan
 - **URL**: https://glytoucan.org/
 - **Content**: Unique accession numbers (GTC IDs) for glycan structures
-- **Use**: Standardized glycan identification across databases
+- **Use**: Standardised glycan identification across databases
 - **Format**: GlycoCT, WURCS, IUPAC
 
 ```python
@@ -112,7 +112,7 @@ M9    = High mannose 9 (Man9GlcNAc2)
 ```
 
 ### Symbol Nomenclature for Glycans (SNFG)
-Standard colored symbols for publications:
+Standard coloured symbols for publications:
 - Blue circle = Glucose
 - Green circle = Mannose
 - Yellow circle = Galactose

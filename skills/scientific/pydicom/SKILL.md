@@ -104,7 +104,7 @@ plt.axis('off')
 plt.show()
 ```
 
-**Working with color images:**
+**Working with colour images:**
 
 ```python
 # RGB images have shape (rows, columns, 3)
@@ -394,7 +394,7 @@ python scripts/extract_metadata.py file.dcm --output metadata.txt
 
 Detailed reference information is available in the `references/` directory:
 
-- **common-tags.md**: Comprehensive list of commonly used DICOM tags organized by category (Patient, Study, Series, Image, etc.)
+- **common-tags.md**: Comprehensive list of commonly used DICOM tags organised by category (Patient, Study, Series, Image, etc.)
 - **transfer-syntaxes.md**: Complete reference of DICOM transfer syntaxes and compression formats
 
 ## Common Issues and Solutions
@@ -417,7 +417,7 @@ Detailed reference information is available in the `references/` directory:
 2. **Preserve file metadata** when modifying files by using `save_as()` with `write_like_original=True`
 3. **Use Transfer Syntax UIDs** to understand compression format before processing pixel data
 4. **Handle exceptions** when reading files from untrusted sources
-5. **Apply proper windowing** (VOI LUT) for medical image visualization
+5. **Apply proper windowing** (VOI LUT) for medical image visualisation
 6. **Maintain spatial information** (pixel spacing, slice thickness) when processing 3D volumes
 7. **Verify anonymization** thoroughly before sharing medical data
 8. **Use UIDs correctly** - generate new UIDs when creating new instances, preserve them when modifying

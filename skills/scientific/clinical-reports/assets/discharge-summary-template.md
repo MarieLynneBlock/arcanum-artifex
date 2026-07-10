@@ -29,7 +29,7 @@ Example: "Acute decompensated heart failure"
 
 ## Discharge Diagnoses
 
-[Numbered list, prioritized by clinical significance]
+[Numbered list, prioritised by clinical significance]
 
 **Primary Diagnosis:**
 1. [Primary diagnosis with ICD-10 code]
@@ -52,7 +52,7 @@ Example:
 
 ## Hospital Course
 
-[Comprehensive yet concise narrative of hospital stay - can be organized chronologically or by problem]
+[Comprehensive yet concise narrative of hospital stay - can be organised chronologically or by problem]
 
 ### Chronological Format:
 
@@ -60,7 +60,7 @@ Example:
 
 [Patient Name] was admitted to the [service] service with [chief complaint/presenting problem]. On presentation, patient was [clinical status]. Initial workup revealed [key findings].
 
-[Description of key events, interventions, and response to treatment organized by day or by problem]
+[Description of key events, interventions, and response to treatment organised by day or by problem]
 
 **Hospital Day 1:** [Events and interventions]
 
@@ -68,7 +68,7 @@ Example:
 
 **Hospital Day 4-7:** [Continued treatment, consultations, procedures]
 
-**Final Hospital Days:** [Stabilization, preparation for discharge]
+**Final Hospital Days:** [Stabilisation, preparation for discharge]
 
 ### Problem-Based Format (Alternative):
 
@@ -416,7 +416,7 @@ Topics discussed with patient and/or family:
 ## Template Completion Checklist
 
 - [ ] All discharge diagnoses listed with ICD-10 codes
-- [ ] Hospital course summarized clearly
+- [ ] Hospital course summarised clearly
 - [ ] All procedures documented
 - [ ] Discharge medications reconciled and clearly marked (new/changed/continued/stopped)
 - [ ] Follow-up appointments scheduled or timeframe provided

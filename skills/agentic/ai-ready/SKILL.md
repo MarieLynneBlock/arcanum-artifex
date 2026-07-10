@@ -32,7 +32,7 @@ This package does not vendor the upstream ai-ready skill. Before installing it, 
    Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/johnpapa/ai-ready/main/skills/ai-ready/SKILL.md" -OutFile "$HOME/.copilot/skills/ai-ready/SKILL.md"
    ```
 
-   For reproducible behavior, the user can replace `main` in the URL with a specific tag or commit SHA.
+   For reproducible behaviour, the user can replace `main` in the URL with a specific tag or commit SHA.
 2. Suggest the user review the downloaded skill before loading it to confirm it contains expected instructions:
    ```bash
    head -20 ~/.copilot/skills/ai-ready/SKILL.md

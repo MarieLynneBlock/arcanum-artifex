@@ -19,7 +19,7 @@ Build web-based games and game engines using HTML5 Canvas, WebGL, and JavaScript
 - Working with tilemaps, sprites, or animations
 - Adding audio to web games
 - Implementing multiplayer features with WebRTC or WebSockets
-- Optimizing game performance
+- Optimising game performance
 - Publishing and distributing web games
 
 ## Prerequisites
@@ -41,7 +41,7 @@ Every game engine revolves around the game loop -- a continuous cycle of:
 2. **Update State** - Update game object positions, physics, AI, and logic
 3. **Render** - Draw the current game state to the screen
 
-Use `requestAnimationFrame` for smooth, browser-optimized rendering.
+Use `requestAnimationFrame` for smooth, browser-optimised rendering.
 
 ### Rendering
 
@@ -94,7 +94,7 @@ Use `requestAnimationFrame` for smooth, browser-optimized rendering.
 
 ### Publishing a Game
 
-1. Optimize assets (compress images, minify code)
+1. Optimise assets (compress images, minify code)
 2. Test across browsers and devices
 3. Choose distribution platform (web, app stores, game portals)
 4. Implement monetization if needed
@@ -136,6 +136,6 @@ Detailed reference material is available in the `references/` folder. Consult th
 | Game runs at different speeds | Use delta time in update calculations instead of fixed values |
 | Collision detection is inconsistent | Use continuous collision detection or reduce time steps for fast-moving objects |
 | Audio does not play | Browsers require user interaction before playing audio; trigger playback from a click handler |
-| Performance is poor | Profile with browser dev tools, reduce draw calls, use object pooling, and optimize asset sizes |
-| Touch controls are unresponsive | Prevent default touch behavior and handle touch events separately from mouse events |
+| Performance is poor | Profile with browser dev tools, reduce draw calls, use object pooling, and optimise asset sizes |
+| Touch controls are unresponsive | Prevent default touch behaviour and handle touch events separately from mouse events |
 | WebGL context lost | Handle the `webglcontextlost` event and restore state on `webglcontextrestored` |

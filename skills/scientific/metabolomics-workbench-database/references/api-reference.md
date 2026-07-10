@@ -96,7 +96,7 @@ Access metabolomics research study metadata and experimental results.
 | `institute` | Institute name | UCSD |
 | `last_name` | Investigator last name | Smith |
 | `metabolite_id` | Metabolite registry number | 11 |
-| `refmet_name` | RefMet standardized name | Glucose |
+| `refmet_name` | RefMet standardised name | Glucose |
 | `kegg_id` | KEGG compound ID | C00031 |
 
 ### Output Items
@@ -146,7 +146,7 @@ curl "https://www.metabolomicsworkbench.org/rest/study/study_id/ST000001/mwtab/t
 
 ## Context 3: RefMet
 
-Query the standardized metabolite nomenclature database with hierarchical classification.
+Query the standardised metabolite nomenclature database with hierarchical classification.
 
 ### Input Items
 
@@ -160,7 +160,7 @@ Query the standardized metabolite nomenclature database with hierarchical classi
 | `super_class` | Super class name | Organic compounds |
 | `main_class` | Main class name | Carbohydrates |
 | `sub_class` | Sub class name | Monosaccharides |
-| `match` | Name matching/standardization | citrate |
+| `match` | Name matching/standardisation | citrate |
 | `refmet_id` | RefMet identifier | 12345 |
 | `all` | Retrieve all RefMet entries | (no value needed) |
 
@@ -169,7 +169,7 @@ Query the standardized metabolite nomenclature database with hierarchical classi
 | Output Item | Description |
 |-------------|-------------|
 | `all` | All available RefMet data |
-| `name` | Standardized RefMet name |
+| `name` | Standardised RefMet name |
 | `inchi_key` | InChI Key |
 | `pubchem_cid` | PubChem CID |
 | `exactmass` | Exact mass |
@@ -206,10 +206,10 @@ curl "https://www.metabolomicsworkbench.org/rest/refmet/all/json"
 
 RefMet provides four-level structural resolution:
 
-1. **Super Class**: Broadest categorization (e.g., "Organic compounds", "Lipids")
+1. **Super Class**: Broadest categorisation (e.g., "Organic compounds", "Lipids")
 2. **Main Class**: Major biochemical categories (e.g., "Fatty Acids", "Carbohydrates")
 3. **Sub Class**: More specific groupings (e.g., "Monosaccharides", "Amino acids")
-4. **Individual Metabolite**: Specific compound with standardized name
+4. **Individual Metabolite**: Specific compound with standardised name
 
 ## Context 4: MetStat
 

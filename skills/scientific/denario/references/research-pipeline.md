@@ -140,7 +140,7 @@ den.get_results()
 
 **Output:** Creates results including:
 - Computed statistics
-- Generated figures and visualizations
+- Generated figures and visualisations
 - Data tables
 - Analysis findings
 
@@ -344,11 +344,11 @@ project_dir/
 
 ### Multiagent Orchestration
 
-Denario uses AG2 and LangGraph frameworks to coordinate multiple specialized agents:
+Denario uses AG2 and LangGraph frameworks to coordinate multiple specialised agents:
 
 - **Idea Agent**: Generates research hypotheses from data descriptions
 - **Method Agent**: Develops analytical methodologies
-- **Execution Agent**: Runs computations and creates visualizations
+- **Execution Agent**: Runs computations and creates visualisations
 - **Writing Agent**: Produces publication-ready manuscripts
 
 These agents collaborate automatically, with each stage building on previous outputs.
@@ -360,7 +360,7 @@ Denario integrates with common scientific Python libraries:
 - **pandas**: Data manipulation and analysis
 - **scikit-learn**: Machine learning algorithms
 - **scipy**: Scientific computing and statistics
-- **matplotlib/seaborn**: Visualization
+- **matplotlib/seaborn**: Visualisation
 - **numpy**: Numerical operations
 
 When generating results, denario can automatically write and execute code using these libraries.

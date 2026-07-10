@@ -1,20 +1,20 @@
 # SimPy Real-Time Simulations
 
-This guide covers real-time simulation capabilities in SimPy, where simulation time is synchronized with wall-clock time.
+This guide covers real-time simulation capabilities in SimPy, where simulation time is synchronised with wall-clock time.
 
 ## Overview
 
-Real-time simulations synchronize simulation time with actual wall-clock time. This is useful for:
+Real-time simulations synchronise simulation time with actual wall-clock time. This is useful for:
 
 - **Hardware-in-the-loop (HIL)** testing
 - **Human interaction** with simulations
-- **Algorithm behavior analysis** under real-time constraints
+- **Algorithm behaviour analysis** under real-time constraints
 - **System integration** testing
 - **Demonstration** purposes
 
 ## RealtimeEnvironment
 
-Replace the standard `Environment` with `simpy.rt.RealtimeEnvironment` to enable real-time synchronization.
+Replace the standard `Environment` with `simpy.rt.RealtimeEnvironment` to enable real-time synchronisation.
 
 ### Basic Usage
 
@@ -139,7 +139,7 @@ print('Simulation completed (slower than real-time)')
 - Development and debugging
 - Computation time is unpredictable
 - Acceptable to run slower than target rate
-- Analyzing worst-case behavior
+- Analysing worst-case behaviour
 
 ## Hardware-in-the-Loop Example
 
@@ -364,7 +364,7 @@ env.process(periodic_task(env, 'Task', period=2.0, duration=0.5))
 env.run(until=6)
 ```
 
-### Synchronized Multi-Device Control
+### Synchronised Multi-Device Control
 
 ```python
 import simpy.rt
@@ -389,7 +389,7 @@ env.run(until=5)
 ## Limitations
 
 1. **Performance**: Real-time simulation adds overhead; not suitable for high-frequency events
-2. **Synchronization**: Single-threaded; all processes share same time base
+2. **Synchronisation**: Single-threaded; all processes share same time base
 3. **Precision**: Limited by Python's time resolution and system scheduling
 4. **Strict mode**: May raise errors frequently with computationally intensive processes
 5. **Platform-dependent**: Timing accuracy varies across operating systems

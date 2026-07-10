@@ -69,7 +69,7 @@ If a sidecar class has its own threat surface (e.g., MISE auth bypass), it gets 
 
 ---
 
-## Pre-Render Checklist (VERIFY BEFORE FINALIZING)
+## Pre-Render Checklist (VERIFY BEFORE FINALISING)
 
 After drawing ANY diagram, verify:
 
@@ -86,13 +86,13 @@ After drawing ANY diagram, verify:
 
 ---
 
-## Color Palette
+## Colour Palette
 
-> **⛔ CRITICAL: Use ONLY these exact hex codes. Do NOT invent colors, use Chakra UI colors (#4299E1, #48BB78, #E53E3E), Tailwind colors, or any other palette. The colors below are from ColorBrewer qualitative palettes for colorblind accessibility. COPY the classDef lines VERBATIM from this file.**
+> **⛔ CRITICAL: Use ONLY these exact hex codes. Do NOT invent colours, use Chakra UI colours (#4299E1, #48BB78, #E53E3E), Tailwind colours, or any other palette. The colours below are from ColorBrewer qualitative palettes for colorblind accessibility. COPY the classDef lines VERBATIM from this file.**
 
-These colors are shared across ALL Mermaid diagrams. Colors are from ColorBrewer qualitative palettes — designed for colorblind accessibility.
+These colours are shared across ALL Mermaid diagrams. Colours are from ColorBrewer qualitative palettes — designed for colorblind accessibility.
 
-| Color Role | Fill | Stroke | Used For |
+| Colour Role | Fill | Stroke | Used For |
 |------------|------|--------|----------|
 | Blue | `#6baed6` | `#2171b5` | Services/Processes |
 | Amber | `#fdae61` | `#d94701` | External Interactors |
@@ -118,7 +118,7 @@ These colors are shared across ALL Mermaid diagrams. Colors are from ColorBrewer
 
 Every Mermaid diagram — flowchart and sequence — MUST include an `%%{init}%%` block that forces a white background. This ensures diagrams render correctly in dark themes.
 
-> **⛔ CRITICAL: Do NOT add `primaryColor`, `secondaryColor`, `tertiaryColor`, or ANY custom color keys to themeVariables. The init block controls ONLY the background and line color. ALL element colors come from classDef lines — never from themeVariables. If you add color overrides to themeVariables, they will BREAK the classDef palette.**
+> **⛔ CRITICAL: Do NOT add `primaryColor`, `secondaryColor`, `tertiaryColor`, or ANY custom colour keys to themeVariables. The init block controls ONLY the background and line colour. ALL element colours come from classDef lines — never from themeVariables. If you add colour overrides to themeVariables, they will BREAK the classDef palette.**
 
 ### Flowchart Init Block
 
@@ -174,9 +174,9 @@ Followed by `flowchart LR` on line 2. NEVER use `flowchart TB`.
 ### ClassDef & Shapes
 
 ```
-classDef process fill:#6baed6,stroke:#2171b5,stroke-width:2px,color:#000000
-classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,color:#000000
-classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,color:#000000
+classDef process fill:#6baed6,stroke:#2171b5,stroke-width:2px,colour:#000000
+classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,colour:#000000
+classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,colour:#000000
 ```
 
 | Element Type | Shape Syntax | Example |
@@ -211,9 +211,9 @@ Bidirectional:   A <-->|"Label"| B
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#ffffff', 'primaryColor': '#ffffff', 'lineColor': '#666666' }}}%%
 flowchart LR
-    classDef process fill:#6baed6,stroke:#2171b5,stroke-width:2px,color:#000000
-    classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,color:#000000
-    classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,color:#000000
+    classDef process fill:#6baed6,stroke:#2171b5,stroke-width:2px,colour:#000000
+    classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,colour:#000000
+    classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,colour:#000000
     linkStyle default stroke:#666666,stroke-width:2px
 
     User["User/Browser"]:::external
@@ -234,9 +234,9 @@ flowchart LR
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#ffffff', 'primaryColor': '#ffffff', 'lineColor': '#666666' }}}%%
 flowchart LR
-    classDef process fill:#6baed6,stroke:#2171b5,stroke-width:2px,color:#000000
-    classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,color:#000000
-    classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,color:#000000
+    classDef process fill:#6baed6,stroke:#2171b5,stroke-width:2px,colour:#000000
+    classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,colour:#000000
+    classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,colour:#000000
     linkStyle default stroke:#666666,stroke-width:2px
 
     User["User/Browser"]:::external
@@ -278,9 +278,9 @@ Used in: `0.1-architecture.md` only
 ### ClassDef & Shapes
 
 ```
-classDef service fill:#6baed6,stroke:#2171b5,stroke-width:2px,color:#000000
-classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,color:#000000
-classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,color:#000000
+classDef service fill:#6baed6,stroke:#2171b5,stroke-width:2px,colour:#000000
+classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,colour:#000000
+classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,colour:#000000
 ```
 
 | Element Type | Shape Syntax | Notes |
@@ -325,9 +325,9 @@ The architecture diagram shows **what the system does** (logical components and 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#ffffff', 'primaryColor': '#ffffff', 'lineColor': '#666666' }}}%%
 flowchart LR
-    classDef service fill:#6baed6,stroke:#2171b5,stroke-width:2px,color:#000000
-    classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,color:#000000
-    classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,color:#000000
+    classDef service fill:#6baed6,stroke:#2171b5,stroke-width:2px,colour:#000000
+    classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,colour:#000000
+    classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,colour:#000000
     linkStyle default stroke:#666666,stroke-width:2px
 
     User(["User"]):::external
@@ -356,9 +356,9 @@ flowchart LR
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#ffffff', 'primaryColor': '#ffffff', 'lineColor': '#666666' }}}%%
 flowchart LR
-    classDef service fill:#6baed6,stroke:#2171b5,stroke-width:2px,color:#000000
-    classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,color:#000000
-    classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,color:#000000
+    classDef service fill:#6baed6,stroke:#2171b5,stroke-width:2px,colour:#000000
+    classDef external fill:#fdae61,stroke:#d94701,stroke-width:2px,colour:#000000
+    classDef datastore fill:#74c476,stroke:#238b45,stroke-width:2px,colour:#000000
     linkStyle default stroke:#666666,stroke-width:2px
 
     User(["User"]):::external

@@ -9,12 +9,12 @@ Every SHAP analysis follows a general workflow:
 1. **Train Model**: Build and train the machine learning model
 2. **Select Explainer**: Choose appropriate explainer based on model type
 3. **Compute SHAP Values**: Generate explanations for test samples
-4. **Visualize Results**: Use plots to understand feature impacts
+4. **Visualise Results**: Use plots to understand feature impacts
 5. **Interpret and Act**: Draw conclusions and make decisions
 
 ## Workflow 1: Basic Model Explanation
 
-**Use Case**: Understanding feature importance and prediction behavior for a trained model
+**Use Case**: Understanding feature importance and prediction behaviour for a trained model
 
 ```python
 import shap
@@ -53,7 +53,7 @@ shap.plots.waterfall(shap_values[0])
 
 ## Workflow 2: Model Debugging and Validation
 
-**Use Case**: Identifying and fixing model issues, validating expected behavior
+**Use Case**: Identifying and fixing model issues, validating expected behaviour
 
 ```python
 # Step 1: Compute SHAP values
@@ -140,7 +140,7 @@ print(f"V2 Score: {model_v2.score(X_test_v2, y_test):.4f}")
 
 **Feature Engineering Insights from SHAP**:
 - Strong nonlinear patterns → Try transformations (log, sqrt, polynomial)
-- Color-coded interactions in scatter → Create interaction terms
+- Colour-coded interactions in scatter → Create interaction terms
 - Redundant features in clustering → Remove or combine
 - Unexpected importance → Investigate for data quality issues
 
@@ -208,7 +208,7 @@ for name, shap_vals in shap_values_dict.items():
 
 ## Workflow 5: Fairness and Bias Analysis
 
-**Use Case**: Detecting and analyzing model bias across demographic groups
+**Use Case**: Detecting and analysing model bias across demographic groups
 
 ```python
 # Step 1: Identify protected attributes
@@ -318,7 +318,7 @@ shap.plots.waterfall(shap_exp[0])
 **Deep Learning Considerations**:
 - Background dataset size affects accuracy and speed
 - Multi-output handling (classification vs. regression)
-- Specialized plots for image/text data
+- Specialised plots for image/text data
 - Computational cost (consider GPU acceleration)
 
 ## Workflow 7: Production Deployment
@@ -531,7 +531,7 @@ plt.plot(pd_result['grid_values'][0], pd_result['average'][0])
 ```
 
 ### Technique 3: Conditional Expectations
-Analyze SHAP values conditioned on other features:
+Analyse SHAP values conditioned on other features:
 ```python
 # High Income group
 high_income = X_test['Income'] > X_test['Income'].median()

@@ -153,9 +153,9 @@ Labels: epic, size: large, [component], [phase]
 - [Specific KPI 2]: Target Y units, measured via [tool/method]
 ```
 
-## Step 3: Prioritization (When Multiple Requests)
+## Step 3: Prioritisation (When Multiple Requests)
 
-Ask these questions to help prioritize:
+Ask these questions to help prioritise:
 
 **Impact vs Effort:**
 - "How many users does this affect?" (impact)

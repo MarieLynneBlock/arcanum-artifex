@@ -27,7 +27,7 @@ Primary method for retrieving observations with flexible entity specification.
 - `filter_facet_ids`: Filter by specific facet IDs
 
 **Response Structure:**
-Data organized hierarchically by variable → entity, with metadata about "facets" (data sources) including:
+Data organised hierarchically by variable → entity, with metadata about "facets" (data sources) including:
 - Provenance URLs
 - Measurement methods
 - Observation periods
@@ -66,7 +66,7 @@ response = client.observation.fetch(
 Discovers which statistical variables contain data for given entities.
 
 **Input:** Entity DCIDs only
-**Output:** Dictionary of available variables organized by entity
+**Output:** Dictionary of available variables organised by entity
 
 **Example Usage:**
 ```python

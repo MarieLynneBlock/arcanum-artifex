@@ -2,7 +2,7 @@
 
 ## Overview
 
-Different presentation contexts require different approaches, structures, and emphasis. This guide provides detailed guidance for common scientific talk types: conference presentations, academic seminars, thesis defenses, grant pitches, and journal club presentations.
+Different presentation contexts require different approaches, structures, and emphasis. This guide provides detailed guidance for common scientific talk types: conference presentations, academic seminars, thesis defences, grant pitches, and journal club presentations.
 
 ## Conference Talks
 
@@ -61,7 +61,7 @@ Conclusion (1 minute, 1-2 slides):
 - ✅ Clearly state why this work matters
 - ✅ Preview main finding early ("spoiler alert" acceptable)
 - ❌ Don't spend >2 minutes on background
-- ❌ Don't start with "I'm honored to be here..."
+- ❌ Don't start with "I'm honoured to be here..."
 
 **Content**:
 - ✅ Focus on 1-2 key findings (not everything from paper)
@@ -102,7 +102,7 @@ Slide 7: Conclusion + Contact (30 seconds)
 
 **Key Principles**:
 - ONE main message only
-- Maximize visuals, minimize text
+- Maximise visuals, minimise text
 - No methods details (just mention approach)
 - Practice exact timing rigorously
 - Make memorable impression
@@ -217,7 +217,7 @@ Conclusion (2-3 minutes, 2-3 slides):
 - Build in natural pause points
 - Don't rush (you have time)
 - Vary delivery speed and tone
-- Use humor appropriately
+- Use humour appropriately
 - Monitor audience engagement
 
 ### Job Talk Considerations
@@ -227,7 +227,7 @@ Conclusion (2-3 minutes, 2-3 slides):
 - Demonstrate independent thinking
 - Show you can mentor students
 - Explain funding strategy
-- Fit with department emphasized
+- Fit with department emphasised
 - Teaching philosophy may be discussed
 
 **Structure Adaptation**:
@@ -236,7 +236,7 @@ Conclusion (2-3 minutes, 2-3 slides):
 - Discuss collaborative opportunities
 - Mention grant applications/funding
 
-## Thesis and Dissertation Defenses
+## Thesis and Dissertation Defences
 
 ### Context and Expectations
 
@@ -254,7 +254,7 @@ Conclusion (2-3 minutes, 2-3 slides):
 - May include private committee discussion
 - Career milestone, significant pressure
 
-### Structure for 45-Minute Defense
+### Structure for 45-Minute Defence
 
 **Recommended Slide Count**: 40-50 slides
 
@@ -303,7 +303,7 @@ Conclusions (2-3 minutes, 2-3 slides):
 - Acknowledgments
 ```
 
-### Defense Best Practices
+### Defence Best Practices
 
 **Preparation**:
 - ✅ Practice extensively (5+ times)
@@ -322,7 +322,7 @@ Conclusions (2-3 minutes, 2-3 slides):
 - ✅ Show theoretical contribution
 - ✅ Demonstrate independent thinking
 - ✅ Acknowledge contributions of others
-- ❌ Don't minimize limitations
+- ❌ Don't minimise limitations
 - ❌ Don't oversell findings
 - ❌ Don't ignore null results
 
@@ -340,7 +340,7 @@ Conclusions (2-3 minutes, 2-3 slides):
 **Handling Difficult Questions**:
 - **Critique of methods**: Acknowledge limitation, explain rationale, note in future work
 - **Alternative interpretations**: "That's an interesting perspective. I focused on X because... but Y is worth exploring"
-- **Why didn't you do X?**: "That would be valuable. Due to [constraint], I prioritized... Future work should examine that"
+- **Why didn't you do X?**: "That would be valuable. Due to [constraint], I prioritised... Future work should examine that"
 - **Contradiction in results**: "You're right that seems inconsistent. One possible explanation is..."
 
 ## Grant Pitches and Funding Presentations
@@ -496,7 +496,7 @@ Critical Analysis (3-5 minutes, 1-2 slides):
 - ✅ Look up unfamiliar methods or concepts
 - ✅ Check other papers from same group
 - ✅ Prepare critical questions for discussion
-- ❌ Don't just summarize without analysis
+- ❌ Don't just summarise without analysis
 
 **Presentation**:
 - ✅ Explain paper clearly (not everyone may have read it)
@@ -586,7 +586,7 @@ Funding Ask (2-3 minutes):
 - ✅ Simple, clear language (no jargon)
 - ✅ Focus on benefits and outcomes
 - ✅ Use business metrics (TAM, SAM, SOM)
-- ✅ Emphasize competitive advantages
+- ✅ Emphasise competitive advantages
 - ❌ Don't use academic terminology
 - ❌ Don't focus on mechanistic details
 - ❌ Don't ignore commercial viability
@@ -668,7 +668,7 @@ Summary (5 minutes):
 | Lightning | 5-7 min | General | Minimal | One key finding |
 | Conference | 15 min | Specialists | Moderate | Main results |
 | Seminar | 45-60 min | Experts | Deep | Comprehensive |
-| Defense | 45-60 min | Committee | Complete | All studies |
+| Defence | 45-60 min | Committee | Complete | All studies |
 | Grant | 15-20 min | Mixed | Moderate | Impact & feasibility |
 | Journal Club | 30-45 min | Lab group | Critical | Methods & interpretation |
 | Industry | 15-30 min | Non-scientists | Applied | Business case |

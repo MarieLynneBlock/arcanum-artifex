@@ -123,7 +123,7 @@ This guide covers all common entry types and formatting rules.
 - `pages`: Page range
 - `address`: Conference location
 - `month`: Conference month
-- `organization`: Organizing body
+- `organization`: Organising body
 - `publisher`: Publisher
 - `doi`: DOI
 
@@ -467,9 +467,9 @@ author = {Smith, J. & Doe, J.} % Ampersand (wrong)
 author = {Smith J}             % No comma
 ```
 
-### Title Capitalization
+### Title Capitalisation
 
-**Protect capitalization** with braces:
+**Protect capitalisation** with braces:
 
 ```bibtex
 % Proper nouns, acronyms, formulas
@@ -479,7 +479,7 @@ title = {The {Ising} Model in Statistical Physics}
 title = {{CRISPR-Cas9} Gene Editing Technology}
 ```
 
-**Reason**: Citation styles may change capitalization. Braces protect.
+**Reason**: Citation styles may change capitalisation. Braces protect.
 
 **Examples**:
 ```bibtex
@@ -663,7 +663,7 @@ title = {\ce{H2O} Molecular Dynamics}
 **Rules**:
 - Most important fields first
 - Consistent across entries
-- Use formatter to standardize
+- Use formatter to standardise
 
 ## Best Practices
 
@@ -671,7 +671,7 @@ title = {\ce{H2O} Molecular Dynamics}
 
 Use same format throughout:
 - Author name format
-- Title capitalization
+- Title capitalisation
 - Journal names
 - Citation key style
 
@@ -683,7 +683,7 @@ Always include:
 - Volume and pages for articles
 - Publisher for books
 
-### 3. Protect Capitalization
+### 3. Protect Capitalisation
 
 Use braces for:
 - Proper nouns: `{AlphaFold}`
@@ -724,7 +724,7 @@ python scripts/format_bibtex.py references.bib
 Benefits:
 - Consistent formatting
 - Catch syntax errors
-- Standardize field order
+- Standardise field order
 - Fix common issues
 
 ## Common Mistakes
@@ -761,7 +761,7 @@ author = {Smith, John and Doe, Jane}
 }
 ```
 
-### 3. Unprotected Capitalization
+### 3. Unprotected Capitalisation
 
 **Wrong**:
 ```bibtex
@@ -894,7 +894,7 @@ BibTeX formatting essentials:
 ✓ **Choose correct entry type** (@article, @book, etc.)  
 ✓ **Include all required fields**  
 ✓ **Use `and` for multiple authors**  
-✓ **Protect capitalization** with braces  
+✓ **Protect capitalisation** with braces  
 ✓ **Use `--` for page ranges**  
 ✓ **Include DOI** for modern papers  
 ✓ **Validate syntax** before compilation  

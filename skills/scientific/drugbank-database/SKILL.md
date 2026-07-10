@@ -1,6 +1,6 @@
 ---
 name: drugbank-database
-description: Access and analyze comprehensive drug information from the DrugBank database including drug properties, interactions, targets, pathways, chemical structures, and pharmacology data. This skill should be used when working with pharmaceutical data, drug discovery research, pharmacology studies, drug-drug interaction analysis, target identification, chemical similarity searches, ADMET predictions, or any task requiring detailed drug and drug target information from DrugBank.
+description: Access and analyse comprehensive drug information from the DrugBank database including drug properties, interactions, targets, pathways, chemical structures, and pharmacology data. This skill should be used when working with pharmaceutical data, drug discovery research, pharmacology studies, drug-drug interaction analysis, target identification, chemical similarity searches, ADMET predictions, or any task requiring detailed drug and drug target information from DrugBank.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -22,7 +22,7 @@ Download and access DrugBank data using Python with proper authentication. The s
 - Managing credentials securely via environment variables or config files
 - Downloading specific or latest database versions
 - Opening and parsing XML data efficiently
-- Working with cached data to optimize performance
+- Working with cached data to optimise performance
 
 **When to use**: Setting up DrugBank access, downloading database updates, initial project configuration.
 
@@ -43,11 +43,11 @@ Extract comprehensive drug information from the database including identifiers, 
 
 **When to use**: Retrieving specific drug information, building drug databases, pharmacology research, literature review, drug profiling.
 
-**Reference**: See `references/drug-queries.md` for XML navigation, query functions, data extraction methods, and performance optimization.
+**Reference**: See `references/drug-queries.md` for XML navigation, query functions, data extraction methods, and performance optimisation.
 
 ### 3. Drug-Drug Interactions Analysis
 
-Analyze drug-drug interactions (DDIs) including mechanism, clinical significance, and interaction networks for pharmacovigilance and clinical decision support.
+Analyse drug-drug interactions (DDIs) including mechanism, clinical significance, and interaction networks for pharmacovigilance and clinical decision support.
 
 **Analysis capabilities**:
 - Extract all interactions for specific drugs
@@ -55,7 +55,7 @@ Analyze drug-drug interactions (DDIs) including mechanism, clinical significance
 - Classify interactions by severity and mechanism
 - Check interactions between drug pairs
 - Identify drugs with most interactions
-- Analyze polypharmacy regimens for safety
+- Analyse polypharmacy regimens for safety
 - Create interaction matrices and network graphs
 - Perform community detection in interaction networks
 - Calculate interaction risk scores
@@ -71,11 +71,11 @@ Access detailed information about drug-protein interactions including targets, e
 **Target analysis capabilities**:
 - Extract drug targets with actions (inhibitor, agonist, antagonist)
 - Identify metabolic enzymes (CYP450, Phase II enzymes)
-- Analyze transporters (uptake, efflux) for ADME studies
+- Analyse transporters (uptake, efflux) for ADME studies
 - Map drugs to biological pathways (SMPDB)
 - Find drugs targeting specific proteins
 - Identify drugs with shared targets for repurposing
-- Analyze polypharmacology and off-target effects
+- Analyse polypharmacology and off-target effects
 - Extract Gene Ontology (GO) terms for targets
 - Cross-reference with UniProt for protein data
 
@@ -97,10 +97,10 @@ Perform structure-based analysis including molecular similarity searches, proper
 - Find structurally similar drugs for repurposing
 - Create similarity matrices for drug clustering
 - Predict oral absorption and BBB permeability
-- Analyze chemical space with PCA and clustering
+- Analyse chemical space with PCA and clustering
 - Export chemical property databases
 
-**When to use**: Structure-activity relationship (SAR) studies, drug similarity searches, QSAR modeling, drug-likeness assessment, ADMET prediction, chemical space exploration.
+**When to use**: Structure-activity relationship (SAR) studies, drug similarity searches, QSAR modelling, drug-likeness assessment, ADMET prediction, chemical space exploration.
 
 **Reference**: See `references/chemical-analysis.md` for structure extraction, similarity calculations, fingerprint generation, ADMET predictions, and chemical space analysis.
 
@@ -176,7 +176,7 @@ Document the version used in publications and analysis scripts.
 
 ## Reference Documentation
 
-All detailed implementation guidance is organized in modular reference files:
+All detailed implementation guidance is organised in modular reference files:
 
 - **references/data-access.md**: Authentication, download, parsing, API access, caching
 - **references/drug-queries.md**: XML navigation, query methods, data extraction, indexing

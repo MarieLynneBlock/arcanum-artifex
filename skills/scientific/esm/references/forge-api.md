@@ -404,7 +404,7 @@ def generate_with_full_retry(client, protein, config, max_retries=3):
             raise
 ```
 
-## Cost Optimization
+## Cost Optimisation
 
 ### Strategies to Reduce Costs
 

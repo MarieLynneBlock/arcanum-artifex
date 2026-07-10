@@ -126,7 +126,7 @@ print(f"Fit time: {cv_results['fit_time'].mean():.3f}s")
 
 **cross_val_predict**
 - Get predictions for each sample when it was in validation set
-- Useful for analyzing errors
+- Useful for analysing errors
 ```python
 from sklearn.model_selection import cross_val_predict
 

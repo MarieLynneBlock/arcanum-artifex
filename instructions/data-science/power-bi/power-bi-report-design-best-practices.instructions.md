@@ -1,9 +1,9 @@
 ---
-description: 'Comprehensive Power BI report design and visualization best practices based on Microsoft guidance for creating effective, accessible, and performant reports and dashboards.'
+description: 'Comprehensive Power BI report design and visualisation best practices based on Microsoft guidance for creating effective, accessible, and performant reports and dashboards.'
 applyTo: '**/*.{pbix,md,json,txt}'
 ---
 
-# Power BI Report Design and Visualization Best Practices
+# Power BI Report Design and Visualisation Best Practices
 
 ## Overview
 This document provides comprehensive instructions for designing effective, accessible, and performant Power BI reports and dashboards following Microsoft's official guidance and user experience best practices.
@@ -11,7 +11,7 @@ This document provides comprehensive instructions for designing effective, acces
 ## Fundamental Design Principles
 
 ### 1. Information Architecture
-**Visual Hierarchy** - Organize information by importance:
+**Visual Hierarchy** - Organise information by importance:
 - **Primary**: Key metrics, KPIs, most critical insights (top-left, header area)
 - **Secondary**: Supporting details, trends, comparisons (main body)
 - **Tertiary**: Filters, controls, navigation elements (sidebars, footers)
@@ -34,13 +34,13 @@ Report Page Layout:
 
 ### 2. User Experience Principles
 **Clarity**: Every element should have a clear purpose and meaning
-**Consistency**: Use consistent styling, colors, and interactions across all reports
+**Consistency**: Use consistent styling, colours, and interactions across all reports
 **Context**: Provide sufficient context for users to interpret data correctly
 **Action**: Guide users toward actionable insights and decisions
 
 ## Chart Type Selection Guidelines
 
-### 1. Comparison Visualizations
+### 1. Comparison Visualisations
 ```
 Bar/Column Charts:
 ✅ Comparing categories or entities
@@ -81,7 +81,7 @@ Example Use Cases:
 - Performance metrics tracking
 ```
 
-### 2. Composition Visualizations
+### 2. Composition Visualisations
 ```
 Pie/Donut Charts:
 ✅ Parts-of-whole relationships
@@ -120,7 +120,7 @@ Example Use Cases:
 - Employee distribution by department and level
 ```
 
-### 3. Relationship and Distribution Visualizations
+### 3. Relationship and Distribution Visualisations
 ```
 Scatter Plots:
 ✅ Correlation between two continuous variables
@@ -333,7 +333,7 @@ Configuration Best Practices:
 
 ## Visual Design and Formatting
 
-### 1. Color Strategy
+### 1. Colour Strategy
 ```
 Color Usage Hierarchy:
 
@@ -432,7 +432,7 @@ Visual Hierarchy: Use size, color, and spacing to indicate importance
 Balance: Distribute visual weight evenly across the page
 ```
 
-## Performance Optimization for Reports
+## Performance Optimisation for Reports
 
 ### 1. Visual Performance Guidelines
 ```
@@ -456,7 +456,7 @@ Performance Testing:
 ✅ Check different network conditions
 ```
 
-### 2. Loading Performance Optimization
+### 2. Loading Performance Optimisation
 ```
 Initial Page Load:
 ✅ Minimize visuals on landing page
@@ -567,7 +567,7 @@ Testing for Accessibility:
 ✅ Regular accessibility audits
 ```
 
-## Advanced Visualization Techniques
+## Advanced Visualisation Techniques
 
 ### 1. Conditional Formatting
 ```

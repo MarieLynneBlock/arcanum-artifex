@@ -337,7 +337,7 @@ print(qml.draw(circuit, wire_order=[0,1,2])(params))
 fig, ax = qml.draw_mpl(circuit)(params)
 ```
 
-### Analyzing Circuit Structure
+### Analysing Circuit Structure
 
 ```python
 # Get circuit specs
@@ -382,12 +382,12 @@ commuted = qml.transforms.commute_controlled(tape)
 ## Best Practices
 
 1. **Use native gates** - Prefer gates supported by target device
-2. **Minimize circuit depth** - Reduce decoherence effects
+2. **Minimise circuit depth** - Reduce decoherence effects
 3. **Encode efficiently** - Choose encoding matching data structure
 4. **Reuse circuits** - Cache compiled circuits when possible
 5. **Validate measurements** - Ensure observables are Hermitian
 6. **Check qubit count** - Verify device has sufficient wires
-7. **Profile circuits** - Use `qml.specs()` to analyze complexity
+7. **Profile circuits** - Use `qml.specs()` to analyse complexity
 
 ## Common Patterns
 

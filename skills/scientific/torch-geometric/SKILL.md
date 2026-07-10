@@ -21,7 +21,7 @@ This skill should be used when working with:
 - **Citation networks**: Paper classification, recommendation systems
 - **3D geometric data**: Point clouds, meshes, molecular structures
 - **Heterogeneous graphs**: Multi-type nodes and edges (e.g., knowledge graphs)
-- **Large-scale graph learning**: Neighbor sampling, distributed training
+- **Large-scale graph learning**: Neighbour sampling, distributed training
 
 ## Quick Start
 
@@ -118,7 +118,7 @@ for batch in loader:
 GNNs in PyG follow a neighborhood aggregation scheme:
 1. Transform node features
 2. Propagate messages along edges
-3. Aggregate messages from neighbors
+3. Aggregate messages from neighbours
 4. Update node representations
 
 ### Using Pre-Built Layers
@@ -408,7 +408,7 @@ for epoch in range(100):
         print(f'Epoch {epoch}, Loss: {total_loss / len(loader):.4f}')
 ```
 
-### Large-Scale Graphs with Neighbor Sampling
+### Large-Scale Graphs with Neighbour Sampling
 
 For large graphs, use `NeighborLoader` to sample subgraphs:
 
@@ -651,7 +651,7 @@ See the GNN cheatsheet at `references/layer_capabilities.md`.
 This skill includes detailed reference documentation:
 
 - **`references/layers-reference.md`**: Complete listing of all 40+ GNN layers with descriptions and capabilities
-- **`references/datasets-reference.md`**: Comprehensive dataset catalog organized by category
+- **`references/datasets-reference.md`**: Comprehensive dataset catalogue organised by category
 - **`references/transforms-reference.md`**: All available transforms and their use cases
 - **`references/api_patterns.md`**: Common API patterns and coding examples
 
@@ -659,7 +659,7 @@ This skill includes detailed reference documentation:
 
 Utility scripts are provided in `scripts/`:
 
-- **`scripts/visualize_graph.py`**: Visualize graph structure using networkx and matplotlib
+- **`scripts/visualize_graph.py`**: Visualise graph structure using networkx and matplotlib
 - **`scripts/create_gnn_template.py`**: Generate boilerplate code for common GNN architectures
 - **`scripts/benchmark_model.py`**: Benchmark model performance on standard datasets
 

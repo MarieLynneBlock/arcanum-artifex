@@ -1,10 +1,10 @@
-# Visualization
+# Visualisation
 
 ## Overview
 
-Histolab provides several built-in visualization methods to help inspect slides, preview tile locations, visualize masks, and assess extraction quality. Proper visualization is essential for validating preprocessing pipelines, debugging extraction issues, and presenting results.
+Histolab provides several built-in visualisation methods to help inspect slides, preview tile locations, visualise masks, and assess extraction quality. Proper visualisation is essential for validating preprocessing pipelines, debugging extraction issues, and presenting results.
 
-## Slide Visualization
+## Slide Visualisation
 
 ### Thumbnail Display
 
@@ -41,7 +41,7 @@ plt.title(f"Slide at 32x downsample")
 plt.show()
 ```
 
-## Mask Visualization
+## Mask Visualisation
 
 ### Using locate_mask()
 
@@ -59,7 +59,7 @@ slide.locate_mask(biggest_mask)
 
 This displays the slide thumbnail with mask boundaries overlaid in red.
 
-### Manual Mask Visualization
+### Manual Mask Visualisation
 
 ```python
 import matplotlib.pyplot as plt
@@ -159,9 +159,9 @@ score_tiler = ScoreTiler(
 score_tiler.locate_tiles(slide, n_tiles=15)
 ```
 
-This displays colored rectangles on the slide thumbnail indicating where tiles will be extracted.
+This displays coloured rectangles on the slide thumbnail indicating where tiles will be extracted.
 
-### Custom Tile Location Visualization
+### Custom Tile Location Visualisation
 
 ```python
 import matplotlib.pyplot as plt
@@ -195,7 +195,7 @@ for coord in tile_coords:
 plt.show()
 ```
 
-## Tile Visualization
+## Tile Visualisation
 
 ### Display Extracted Tiles
 
@@ -277,7 +277,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Quality Assessment Visualization
+## Quality Assessment Visualisation
 
 ### Tile Score Distribution
 
@@ -348,7 +348,7 @@ plt.savefig("score_comparison.png", dpi=150, bbox_inches='tight')
 plt.show()
 ```
 
-## Multi-Slide Visualization
+## Multi-Slide Visualisation
 
 ### Slide Collection Thumbnails
 
@@ -405,7 +405,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Filter Effect Visualization
+## Filter Effect Visualisation
 
 ### Before and After Filtering
 
@@ -435,7 +435,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-### Multi-Step Filter Visualization
+### Multi-Step Filter Visualisation
 
 ```python
 from histolab.filters.image_filters import RgbToGrayscale, OtsuThreshold
@@ -465,7 +465,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Exporting Visualizations
+## Exporting Visualisations
 
 ### High-Resolution Exports
 
@@ -510,7 +510,7 @@ with PdfPages('slide_report.pdf') as pdf:
     plt.close()
 ```
 
-## Interactive Visualization (Jupyter)
+## Interactive Visualisation (Jupyter)
 
 ### IPython Widgets for Exploration
 
@@ -542,6 +542,6 @@ def explore_dilation(disk_size):
 2. **Use side-by-side comparisons**: Show before/after for filter effects
 3. **Label clearly**: Include titles, axes labels, and legends
 4. **Export high-resolution**: Use 300 DPI for publication-quality figures
-5. **Save intermediate visualizations**: Document processing steps
+5. **Save intermediate visualisations**: Document processing steps
 6. **Use colormaps appropriately**: 'gray' for binary masks, 'viridis' for heatmaps
-7. **Create reusable visualization functions**: Standardize reporting across projects
+7. **Create reusable visualisation functions**: Standardise reporting across projects

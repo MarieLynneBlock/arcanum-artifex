@@ -131,7 +131,7 @@ Before generating XML, sketch the logical placement:
 
 ### Step 5 — Apply Correct Styles
 
-Use the standard semantic color palette for consistency:
+Use the standard semantic colour palette for consistency:
 
 | Purpose | fillColor | strokeColor |
 |---|---|---|
@@ -188,7 +188,7 @@ edgeStyle=orthogonalEdgeStyle;html=1;
 edgeStyle=entityRelationEdgeStyle;html=1;endArrow=ERmany;startArrow=ERone;
 ```
 
-> See `references/style-reference.md` for the complete style key catalog and `references/shape-libraries.md` for all shape library names.
+> See `references/style-reference.md` for the complete style key catalogue and `references/shape-libraries.md` for all shape library names.
 
 ### Step 6 — Save and Validate
 
@@ -340,7 +340,7 @@ Arrow styles by relationship type:
 | Relationship | Style String |
 |---|---|
 | Inheritance (extends) | `edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=0;` |
-| Realization (implements) | `edgeStyle=orthogonalEdgeStyle;dashed=1;html=1;endArrow=block;endFill=0;` |
+| Realisation (implements) | `edgeStyle=orthogonalEdgeStyle;dashed=1;html=1;endArrow=block;endFill=0;` |
 | Composition | `edgeStyle=orthogonalEdgeStyle;html=1;startArrow=diamond;startFill=1;endArrow=none;` |
 | Aggregation | `edgeStyle=orthogonalEdgeStyle;html=1;startArrow=diamond;startFill=0;endArrow=none;` |
 | Dependency | `edgeStyle=orthogonalEdgeStyle;dashed=1;html=1;endArrow=open;endFill=0;` |
@@ -398,7 +398,7 @@ python skills/draw-io-diagram-generator/scripts/add-shape.py docs/arch.drawio "N
 - Keep labels concise — 3 words or fewer per shape where possible
 
 **Style consistency**
-- Use the semantic color palette from Section 3 Step 5 consistently across a project
+- Use the semantic colour palette from Section 3 Step 5 consistently across a project
 - Prefer `edgeStyle=orthogonalEdgeStyle` for clean right-angle connectors
 - Do not inline arbitrary HTML in labels unless necessary
 
@@ -466,7 +466,7 @@ All companion files are in `skills/draw-io-diagram-generator/` (relative to the 
 | File | Contents |
 |---|---|
 | `references/drawio-xml-schema.md` | Complete mxfile / mxGraphModel / mxCell attribute reference, coordinate system, reserved cells, validation rules |
-| `references/style-reference.md` | All style keys with allowed values, vertex and edge style keys, shape catalog, semantic color palette |
+| `references/style-reference.md` | All style keys with allowed values, vertex and edge style keys, shape catalogue, semantic colour palette |
 | `references/shape-libraries.md` | All shape library categories (General, Flowchart, UML, ER, Network, BPMN, Mockup, K8s) with style strings |
 | `assets/templates/` | Ready-to-use `.drawio` templates per generic diagram type |
 | `scripts/validate-drawio.py` | Python script to validate XML structure of any .drawio file |

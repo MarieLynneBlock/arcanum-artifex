@@ -183,7 +183,7 @@ client = Client(
 - Scales to hundreds of machines
 - Requires cluster setup
 - Network communication overhead
-- Advanced features (adaptive scaling, task prioritization)
+- Advanced features (adaptive scaling, task prioritisation)
 
 **Example with Dask-Jobqueue (HPC)**:
 ```python

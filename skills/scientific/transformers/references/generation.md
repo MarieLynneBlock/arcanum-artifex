@@ -69,7 +69,7 @@ outputs = model.generate(
 )
 ```
 
-**Use for**: Translations, summarization, where quality is critical.
+**Use for**: Translations, summarisation, where quality is critical.
 
 ### Contrastive Search
 
@@ -326,7 +326,7 @@ outputs = model.generate(**inputs, max_new_tokens=50)
 translation = tokenizer.decode(outputs[0], skip_special_tokens=True)
 ```
 
-## Optimization
+## Optimisation
 
 ### Caching
 
@@ -419,7 +419,7 @@ outputs = model.generate(
 )
 ```
 
-### Translation/Summarization
+### Translation/Summarisation
 
 ```python
 outputs = model.generate(

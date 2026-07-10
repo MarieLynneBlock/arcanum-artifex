@@ -1,6 +1,6 @@
 ---
 name: omero-integration
-description: Microscopy data management platform. Access images via Python, retrieve datasets, analyze pixels, manage ROIs/annotations, batch processing, for high-content screening and microscopy workflows.
+description: Microscopy data management platform. Access images via Python, retrieve datasets, analyse pixels, manage ROIs/annotations, batch processing, for high-content screening and microscopy workflows.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,14 +10,14 @@ metadata:
 
 ## Overview
 
-OMERO is an open-source platform for managing, visualizing, and analyzing microscopy images and metadata. Access images via Python API, retrieve datasets, analyze pixels, manage ROIs and annotations, for high-content screening and microscopy workflows.
+OMERO is an open-source platform for managing, visualising, and analysing microscopy images and metadata. Access images via Python API, retrieve datasets, analyse pixels, manage ROIs and annotations, for high-content screening and microscopy workflows.
 
 ## When to Use This Skill
 
 This skill should be used when:
 - Working with OMERO Python API (omero-py) to access microscopy data
 - Retrieving images, datasets, projects, or screening data programmatically
-- Analyzing pixel data and creating derived images
+- Analysing pixel data and creating derived images
 - Creating or managing ROIs (regions of interest) on microscopy images
 - Adding annotations, tags, or metadata to OMERO objects
 - Storing measurement results in OMERO tables
@@ -75,12 +75,12 @@ Access raw pixel data as NumPy arrays, manipulate rendering settings, create der
 ### 5. Regions of Interest (ROIs)
 **File**: `references/rois.md`
 
-Create, retrieve, and analyze ROIs with various shapes (rectangles, ellipses, polygons, masks, points, lines). Extract intensity statistics from ROI regions.
+Create, retrieve, and analyse ROIs with various shapes (rectangles, ellipses, polygons, masks, points, lines). Extract intensity statistics from ROI regions.
 
 **Common scenarios:**
 - Draw rectangular ROIs on images
 - Create polygon masks for segmentation
-- Analyze pixel intensities within ROIs
+- Analyse pixel intensities within ROIs
 - Export ROI coordinates
 
 ### 6. OMERO Tables
@@ -183,7 +183,7 @@ with BlitzGateway(username, password, host=host, port=port) as conn:
 
 ## Common Workflows
 
-### Workflow 1: Retrieve and Analyze Images
+### Workflow 1: Retrieve and Analyse Images
 
 1. Connect to OMERO server (`references/connection.md`)
 2. Navigate to dataset (`references/data-access.md`)
@@ -241,7 +241,7 @@ finally:
 ## Notes
 
 - OMERO uses group-based permissions (READ-ONLY, READ-ANNOTATE, READ-WRITE)
-- Images in OMERO are organized hierarchically: Project > Dataset > Image
+- Images in OMERO are organised hierarchically: Project > Dataset > Image
 - Screening data uses: Screen > Plate > Well > WellSample > Image
 - Always close connections to free server resources
 - Use context managers for automatic resource management

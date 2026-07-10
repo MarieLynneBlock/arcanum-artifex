@@ -203,7 +203,7 @@ Check denario's documentation for specific model selection APIs.
 - **Google Cloud**: Monitor in Cloud Console → Billing
 - Set up billing alerts to avoid unexpected charges
 
-### Cost Optimization Tips
+### Cost Optimisation Tips
 
 1. **Use appropriate model tiers**
    - GPT-3.5 for simpler tasks

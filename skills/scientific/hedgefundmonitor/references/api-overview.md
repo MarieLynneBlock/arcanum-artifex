@@ -76,11 +76,11 @@ Mnemonics are unique identifiers for each time series. Format varies by dataset:
 | tff | `TFF-{SERIES}` | `TFF-DLRINDEX_NET_SPEC` |
 | scoos | `SCOOS-{SERIES}` | varies |
 
-Mnemonics are **case-insensitive** in query parameters (the API normalizes to uppercase in responses).
+Mnemonics are **case-insensitive** in query parameters (the API normalises to uppercase in responses).
 
 ## Subseries (label)
 
-Each mnemonic can have multiple subseries labeled:
+Each mnemonic can have multiple subseries labelled:
 - `aggregation` — the main data series (always present, default returned)
 - `disclosure_edits` — version of the data with certain values masked for disclosure protection
 

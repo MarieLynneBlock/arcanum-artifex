@@ -22,7 +22,7 @@ description: "[One sentence — what this prompt is for. Shown in the prompt pic
     edit        — Copilot proposes file edits
     <name>      — run a specific agent (built-in or custom .agent.md), with tools
 
-  Docs: https://code.visualstudio.com/docs/copilot/copilot-customization#_reusable-prompt-files-experimental
+  Docs: https://code.visualstudio.com/docs/copilot/copilot-customisation#_reusable-prompt-files-experimental
 -->
 
 [Describe the task or context for this prompt. Be specific — Copilot uses this as the full instruction.]

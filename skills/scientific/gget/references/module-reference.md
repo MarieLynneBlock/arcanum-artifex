@@ -193,10 +193,10 @@ Predict 3D protein structures using AlphaFold2.
 | `-q/--quiet` | flag | Suppress progress | False |
 
 **Python-only:**
-- `plot` (bool): Generate 3D visualization (default: True)
+- `plot` (bool): Generate 3D visualisation (default: True)
 - `show_sidechains` (bool): Include side chains (default: True)
 
-**Note:** Multiple sequences automatically trigger multimer modeling
+**Note:** Multiple sequences automatically trigger multimer modelling
 
 **Returns:** PDB structure file, JSON alignment error data, optional 3D plot
 
@@ -294,7 +294,7 @@ Perform enrichment analysis using Enrichr/modEnrichr.
 - 'pathway' → KEGG_2021_Human
 - 'transcription' → ChEA_2016
 - 'ontology' → GO_Biological_Process_2021
-- 'diseases_drugs' → GWAS_Catalog_2019
+- 'diseases_drugs' → GWAS_Catalogue_2019
 - 'celltypes' → PanglaoDB_Augmented_2021
 
 **Returns:** Pathway/function associations with adjusted p-values, overlapping gene counts

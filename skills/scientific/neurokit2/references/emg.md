@@ -30,7 +30,7 @@ signals, info = nk.emg_process(emg_signal, sampling_rate=1000)
 - `info`: Dictionary with activation parameters
 
 **Typical workflow:**
-- Process raw EMG → Extract amplitude → Detect activations → Analyze features
+- Process raw EMG → Extract amplitude → Detect activations → Analyse features
 
 ## Preprocessing Functions
 
@@ -44,7 +44,7 @@ cleaned_emg = nk.emg_clean(emg_signal, sampling_rate=1000)
 
 **Filtering approach (BioSPPy method):**
 - Fourth-order Butterworth high-pass filter (100 Hz)
-- Removes low-frequency movement artifacts and baseline drift
+- Removes low-frequency movement artefacts and baseline drift
 - Removes DC offset
 - Signal detrending
 
@@ -52,7 +52,7 @@ cleaned_emg = nk.emg_clean(emg_signal, sampling_rate=1000)
 - EMG frequency content: 20-500 Hz (dominant: 50-150 Hz)
 - High-pass at 100 Hz isolates muscle activity
 - Removes ECG contamination (especially in trunk muscles)
-- Removes motion artifacts (<20 Hz)
+- Removes motion artefacts (<20 Hz)
 
 **EMG signal characteristics:**
 - Random, zero-mean oscillations during contraction
@@ -148,7 +148,7 @@ activity = nk.emg_activation(amplitude, method='bimodal')
 
 ## Analysis Functions
 
-### emg_analyze()
+### emg_analyse()
 
 Automatically select event-related or interval-related analysis.
 
@@ -162,7 +162,7 @@ analysis = nk.emg_analyze(signals, sampling_rate=1000)
 
 ### emg_eventrelated()
 
-Analyze EMG responses to discrete events/stimuli.
+Analyse EMG responses to discrete events/stimuli.
 
 ```python
 results = nk.emg_eventrelated(epochs)
@@ -183,7 +183,7 @@ results = nk.emg_eventrelated(epochs)
 
 ### emg_intervalrelated()
 
-Analyze extended EMG recordings.
+Analyse extended EMG recordings.
 
 ```python
 results = nk.emg_intervalrelated(signals, sampling_rate=1000)
@@ -201,7 +201,7 @@ results = nk.emg_intervalrelated(signals, sampling_rate=1000)
 - Fatigue monitoring during sustained tasks
 - Postural muscle assessment
 
-## Simulation and Visualization
+## Simulation and Visualisation
 
 ### emg_simulate()
 
@@ -229,7 +229,7 @@ synthetic_emg = nk.emg_simulate(duration=10, sampling_rate=1000, burst_number=3,
 
 ### emg_plot()
 
-Visualize processed EMG signal.
+Visualise processed EMG signal.
 
 ```python
 nk.emg_plot(signals, info, static=True)
@@ -241,7 +241,7 @@ nk.emg_plot(signals, info, static=True)
 - Detected activation periods
 - Onset/offset markers
 
-**Interactive mode:** Set `static=False` for Plotly visualization
+**Interactive mode:** Set `static=False` for Plotly visualisation
 
 ## Practical Considerations
 
@@ -269,7 +269,7 @@ nk.emg_plot(signals, info, static=True)
 **Muscle-specific guidelines:**
 - Follow SENIAM (Surface EMG for Non-Invasive Assessment of Muscles) recommendations
 - Palpate muscle during contraction to locate belly
-- Align electrodes with muscle fiber direction
+- Align electrodes with muscle fibre direction
 
 **Common muscles in psychophysiology:**
 - **Corrugator supercilii**: Frowning, negative affect (above eyebrow)
@@ -286,10 +286,10 @@ nk.emg_plot(signals, info, static=True)
 - High-pass filtering (>100 Hz) usually sufficient
 - If persistent: template subtraction, ICA
 
-**Motion artifacts:**
+**Motion artefacts:**
 - Low-frequency disturbances
 - Electrode cable movement
-- Secure electrodes, minimize cable motion
+- Secure electrodes, minimise cable motion
 
 **Electrode issues:**
 - Poor contact: high impedance, low amplitude
@@ -322,7 +322,7 @@ signals, info = nk.emg_process(emg_raw, sampling_rate=1000)
 analysis = nk.emg_analyze(signals, sampling_rate=1000)
 ```
 
-**Normalization:**
+**Normalisation:**
 ```python
 # Maximum voluntary contraction (MVC) normalization
 mvc_amplitude = np.max(mvc_emg_amplitude)  # From separate MVC trial
@@ -353,7 +353,7 @@ normalized_emg = (amplitude / mvc_amplitude) * 100  # Express as % MVC
 **Sports science:**
 - Muscle activation patterns during exercise
 - Fatigue assessment (median frequency shift)
-- Training optimization
+- Training optimisation
 
 **Biofeedback:**
 - Relaxation training (reduce muscle tension)

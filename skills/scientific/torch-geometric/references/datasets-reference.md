@@ -1,6 +1,6 @@
 # PyTorch Geometric Datasets Reference
 
-This document provides a comprehensive catalog of all datasets available in `torch_geometric.datasets`.
+This document provides a comprehensive catalogue of all datasets available in `torch_geometric.datasets`.
 
 ## Citation Networks
 
@@ -426,7 +426,7 @@ dataset = PPI(root='/tmp/PPI', split='train')
 ## Small Classic Graphs
 
 ### KarateClub
-**Usage**: Community detection, visualization
+**Usage**: Community detection, visualisation
 **Description**: Zachary's karate club network
 - 34 nodes, 78 edges, 2 communities
 

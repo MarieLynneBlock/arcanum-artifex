@@ -211,7 +211,7 @@ image.setActiveChannels(all_channels)
 image.setActiveChannels([2])
 ```
 
-### Set Channel Colors
+### Set Channel Colours
 
 ```python
 # Set channel colors (hex format)

@@ -87,4 +87,4 @@ The trained model saves embeddings that can be used for:
 - Similarity searches across genomic regions
 - Clustering region sets
 - Feature vectors for downstream ML tasks
-- Visualization via dimensionality reduction (t-SNE, UMAP)
+- Visualisation via dimensionality reduction (t-SNE, UMAP)

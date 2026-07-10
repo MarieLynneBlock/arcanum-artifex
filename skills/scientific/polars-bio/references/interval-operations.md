@@ -66,7 +66,7 @@ result = df1.lazy().pb.overlap(df2, suffixes=("_1", "_2")).collect()
 | `algorithm` | str | `"Coitrees"` | Interval algorithm |
 | `low_memory` | bool | `False` | Low memory mode |
 | `output_type` | str | `"polars.LazyFrame"` | Output format: `"polars.LazyFrame"`, `"polars.DataFrame"`, `"pandas.DataFrame"` |
-| `projection_pushdown` | bool | `True` | Enable projection pushdown optimization |
+| `projection_pushdown` | bool | `True` | Enable projection pushdown optimisation |
 
 ### Output Schema
 
@@ -135,7 +135,7 @@ nearest = pb.nearest(df1, df2, distance=False)
 | `on_cols` | list[str] | `None` | Additional join columns |
 | `cols1` | list[str] | `["chrom", "start", "end"]` | Column names in df1 |
 | `cols2` | list[str] | `["chrom", "start", "end"]` | Column names in df2 |
-| `k` | int | `1` | Number of nearest neighbors to find |
+| `k` | int | `1` | Number of nearest neighbours to find |
 | `overlap` | bool | `True` | Include overlapping intervals in results |
 | `distance` | bool | `True` | Include distance column in output |
 | `output_type` | str | `"polars.LazyFrame"` | Output format |
@@ -352,7 +352,7 @@ DataFusion streaming is enabled by default for interval operations. Data is proc
 Use `scan_*` functions and lazy DataFrames for:
 - Files larger than available RAM
 - When only a subset of results is needed
-- Pipeline operations where intermediate results can be optimized away
+- Pipeline operations where intermediate results can be optimised away
 
 ```python
 # Lazy pipeline

@@ -25,7 +25,7 @@ The Latch platform provides four main areas of functionality:
 
 ### 2. Data Management
 - Cloud storage abstractions (LatchFile, LatchDir)
-- Structured data organization with Registry (Projects → Tables → Records)
+- Structured data organisation with Registry (Projects → Tables → Records)
 - Type-safe data operations with links and enums
 - Automatic file transfer between local and cloud
 - Glob pattern matching for file selection
@@ -35,7 +35,7 @@ The Latch platform provides four main areas of functionality:
 - Custom resource specifications (CPU, memory, GPU, storage)
 - GPU support (K80, V100, A100)
 - Timeout and storage configuration
-- Cost optimization strategies
+- Cost optimisation strategies
 
 ### 4. Verified Workflows
 - Production-ready pre-built pipelines
@@ -102,7 +102,7 @@ This skill should be used when encountering any of the following scenarios:
 - Working with `@workflow`, `@task` decorators
 
 **Data Management:**
-- "Organize my sequencing data in Latch Registry"
+- "Organise my sequencing data in Latch Registry"
 - "How do I use LatchFile and LatchDir?"
 - "Set up sample tracking in Latch"
 - Working with `latch:///` paths
@@ -110,7 +110,7 @@ This skill should be used when encountering any of the following scenarios:
 **Resource Configuration:**
 - "Configure GPU for AlphaFold on Latch"
 - "My task is running out of memory"
-- "How do I optimize workflow costs?"
+- "How do I optimise workflow costs?"
 - Working with task decorators
 
 **Verified Workflows:**
@@ -121,7 +121,7 @@ This skill should be used when encountering any of the following scenarios:
 
 ## Detailed Documentation
 
-This skill includes comprehensive reference documentation organized by capability:
+This skill includes comprehensive reference documentation organised by capability:
 
 ### references/workflow-creation.md
 **Read this for:**
@@ -165,7 +165,7 @@ This skill includes comprehensive reference documentation organized by capabilit
 - Custom CPU, memory, GPU configuration
 - GPU types (K80, V100, A100)
 - Timeout and storage settings
-- Resource optimization strategies
+- Resource optimisation strategies
 - Cost-effective workflow design
 - Monitoring and debugging
 
@@ -299,7 +299,7 @@ def registry_workflow(sample_id: str, table_id: str):
 ### Resource Configuration
 10. Right-size resources (don't over-allocate)
 11. Use GPU only when algorithms support it
-12. Monitor execution metrics and optimize
+12. Monitor execution metrics and optimise
 13. Design for parallel execution when possible
 
 ### Development Workflow

@@ -392,7 +392,7 @@ for job in jobs:
 ## Best Practices
 
 1. **Job Naming**: Use descriptive names for easier tracking
-2. **Tags and Properties**: Tag jobs for organization and searchability
+2. **Tags and Properties**: Tag jobs for organisation and searchability
 3. **Resource Selection**: Choose appropriate instance types for workload
 4. **Error Handling**: Check job state and handle failures gracefully
 5. **Parallel Processing**: Use subjobs for independent parallel tasks

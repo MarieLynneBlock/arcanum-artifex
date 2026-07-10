@@ -1,6 +1,6 @@
 # Regions of Interest (ROIs)
 
-This reference covers creating, retrieving, and analyzing ROIs in OMERO.
+This reference covers creating, retrieving, and analysing ROIs in OMERO.
 
 ## ROI Overview
 
@@ -374,7 +374,7 @@ for roi in result.rois:
             print(f"    Mask: ({x}, {y}) {width}x{height}")
 ```
 
-## Analyzing ROI Intensities
+## Analysing ROI Intensities
 
 ### Get Statistics for ROI Shapes
 
@@ -636,10 +636,10 @@ with BlitzGateway(USERNAME, PASSWORD, host=HOST, port=PORT) as conn:
 
 ## Best Practices
 
-1. **Organize Shapes**: Group related shapes in single ROIs
+1. **Organise Shapes**: Group related shapes in single ROIs
 2. **Label Shapes**: Use textValue for identification
 3. **Set Z and T**: Always specify Z-section and timepoint
-4. **Color Coding**: Use consistent colors for shape types
+4. **Colour Coding**: Use consistent colours for shape types
 5. **Validate Coordinates**: Ensure shapes are within image bounds
 6. **Batch Creation**: Create multiple ROIs in single transaction when possible
 7. **Delete Unused**: Remove temporary or test ROIs

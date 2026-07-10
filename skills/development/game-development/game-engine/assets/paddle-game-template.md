@@ -72,7 +72,7 @@ ctx.closePath();
 
 - The first two parameters (`20, 40`) set the top-left corner coordinates.
 - The second two parameters (`50, 50`) set the width and height.
-- `fillStyle` sets the fill color.
+- `fillStyle` sets the fill colour.
 - `fill()` renders the shape as a solid fill.
 
 ### Drawing a Circle
@@ -87,7 +87,7 @@ ctx.fill();
 ctx.closePath();
 ```
 
-- `240, 160` -- center x, y coordinates.
+- `240, 160` -- centre x, y coordinates.
 - `20` -- radius.
 - `0` -- start angle (radians).
 - `Math.PI * 2` -- end angle (full circle).
@@ -95,7 +95,7 @@ ctx.closePath();
 
 ### Drawing a Stroked Rectangle (Outline Only)
 
-Use `stroke()` instead of `fill()` for outlines, and `strokeStyle` for outline color:
+Use `stroke()` instead of `fill()` for outlines, and `strokeStyle` for outline colour:
 
 ```javascript
 ctx.beginPath();
@@ -105,7 +105,7 @@ ctx.stroke();
 ctx.closePath();
 ```
 
-- Uses an RGB color with 50% alpha transparency.
+- Uses an RGB colour with 50% alpha transparency.
 - `stroke()` draws only the outline, not a solid fill.
 
 ### Key Methods Reference
@@ -116,9 +116,9 @@ ctx.closePath();
 | `closePath()` | Close the current path |
 | `rect(x, y, width, height)` | Define a rectangle |
 | `arc(x, y, radius, startAngle, endAngle, counterclockwise)` | Define a circle or arc |
-| `fillStyle` | Set the fill color |
-| `fill()` | Fill the shape with the fill color |
-| `strokeStyle` | Set the stroke (outline) color |
+| `fillStyle` | Set the fill colour |
+| `fill()` | Fill the shape with the fill colour |
+| `strokeStyle` | Set the stroke (outline) colour |
 | `stroke()` | Draw an outline of the shape |
 
 ### Complete Code for Step 1
@@ -198,7 +198,7 @@ let x = canvas.width / 2;
 let y = canvas.height - 30;
 ```
 
-This starts the ball at the horizontal center, near the bottom of the canvas.
+This starts the ball at the horizontal centre, near the bottom of the canvas.
 
 ### Adding Velocity Variables
 
@@ -403,7 +403,7 @@ let paddleX = (canvas.width - paddleWidth) / 2;
 ```
 
 - `paddleHeight` and `paddleWidth` define the paddle dimensions.
-- `paddleX` starts the paddle centered horizontally. It is a `let` because it will change as the player moves it.
+- `paddleX` starts the paddle centred horizontally. It is a `let` because it will change as the player moves it.
 
 ### Drawing the Paddle
 
@@ -923,7 +923,7 @@ for (let c = 0; c < brickColumnCount; c++) {
 
 ### The collisionDetection() Function
 
-Loop through every brick and check if the ball's center is within the brick's bounding box:
+Loop through every brick and check if the ball's centre is within the brick's bounding box:
 
 ```javascript
 function collisionDetection() {
@@ -947,10 +947,10 @@ function collisionDetection() {
 ```
 
 **Collision conditions (all four must be true simultaneously):**
-- `x > b.x` -- ball center is to the right of the brick's left edge.
-- `x < b.x + brickWidth` -- ball center is to the left of the brick's right edge.
-- `y > b.y` -- ball center is below the brick's top edge.
-- `y < b.y + brickHeight` -- ball center is above the brick's bottom edge.
+- `x > b.x` -- ball centre is to the right of the brick's left edge.
+- `x < b.x + brickWidth` -- ball centre is to the left of the brick's right edge.
+- `y > b.y` -- ball centre is below the brick's top edge.
+- `y < b.y + brickHeight` -- ball centre is above the brick's bottom edge.
 
 When a collision is detected:
 - `dy = -dy` reverses the ball's vertical direction (bounce).
@@ -1098,7 +1098,7 @@ function draw() {
 | Method/Property | Purpose |
 |-----------------|---------|
 | `ctx.font` | Set font size and family |
-| `ctx.fillStyle` | Set text color |
+| `ctx.fillStyle` | Set text colour |
 | `ctx.fillText(text, x, y)` | Draw filled text at coordinates |
 
 ---
@@ -1133,7 +1133,7 @@ function mouseMoveHandler(e) {
 - `canvas.offsetLeft` -- the distance from the canvas's left edge to the viewport's left edge.
 - `relativeX` -- the mouse position relative to the canvas (not the viewport).
 - The boundary check (`relativeX > 0 && relativeX < canvas.width`) ensures the paddle only moves when the mouse is over the canvas.
-- `paddleX = relativeX - paddleWidth / 2` centers the paddle under the mouse cursor by subtracting half the paddle width.
+- `paddleX = relativeX - paddleWidth / 2` centres the paddle under the mouse cursor by subtracting half the paddle width.
 
 ### Complete Event Listener Setup (Keyboard + Mouse)
 
@@ -1199,11 +1199,11 @@ if (y + dy < ballRadius) {
 **What happens when a life is lost:**
 - `lives--` decrements the lives counter.
 - If `lives` reaches `0`, the game ends with an alert and page reload.
-- Otherwise, the ball resets to center-bottom, velocity resets, and the paddle resets to center.
+- Otherwise, the ball resets to centre-bottom, velocity resets, and the paddle resets to centre.
 
 ### Upgrading to requestAnimationFrame
 
-Replace `setInterval` with `requestAnimationFrame` for a smoother, browser-optimized game loop:
+Replace `setInterval` with `requestAnimationFrame` for a smoother, browser-optimised game loop:
 
 **Old approach (remove):**
 ```javascript

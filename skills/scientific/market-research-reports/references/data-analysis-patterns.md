@@ -208,7 +208,7 @@ For each force, assess: **HIGH**, **MEDIUM**, or **LOW**
 |--------|---------------|-------|--------|--------------|
 | Demographics | | ↑ ↓ → | H/M/L | |
 | Cultural attitudes | | ↑ ↓ → | H/M/L | |
-| Consumer behavior | | ↑ ↓ → | H/M/L | |
+| Consumer behaviour | | ↑ ↓ → | H/M/L | |
 | Education levels | | ↑ ↓ → | H/M/L | |
 | Health consciousness | | ↑ ↓ → | H/M/L | |
 | Work-life balance | | ↑ ↓ → | H/M/L | |
@@ -301,7 +301,7 @@ For each force, assess: **HIGH**, **MEDIUM**, or **LOW**
 | | **Strengths** | **Weaknesses** |
 |---|---------------|----------------|
 | **Opportunities** | **SO Strategies** (use strengths to capture opportunities) | **WO Strategies** (overcome weaknesses to capture opportunities) |
-| **Threats** | **ST Strategies** (use strengths to mitigate threats) | **WT Strategies** (minimize weaknesses and avoid threats) |
+| **Threats** | **ST Strategies** (use strengths to mitigate threats) | **WT Strategies** (minimise weaknesses and avoid threats) |
 
 ---
 
@@ -320,7 +320,7 @@ For each force, assess: **HIGH**, **MEDIUM**, or **LOW**
 | **Stars** | High | High | Market leaders in growing markets | Invest to maintain position |
 | **Cash Cows** | Low | High | Market leaders in mature markets | Harvest for cash flow |
 | **Question Marks** | High | Low | Small share in growing markets | Invest selectively or divest |
-| **Dogs** | Low | Low | Small share in mature markets | Divest or minimize investment |
+| **Dogs** | Low | Low | Small share in mature markets | Divest or minimise investment |
 
 ### Product/Business Unit Analysis
 

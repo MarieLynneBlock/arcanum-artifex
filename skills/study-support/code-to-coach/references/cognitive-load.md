@@ -77,7 +77,7 @@ itemsToProcess.forEach(processItem);
 
 ---
 
-### Strategy 2: Minimize Mutable State
+### Strategy 2: Minimise Mutable State
 
 **Principle**: Reduce the number of variables that change, and reduce how often they change.
 

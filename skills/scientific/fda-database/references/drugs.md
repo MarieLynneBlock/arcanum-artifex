@@ -4,7 +4,7 @@ This reference covers all FDA drug-related API endpoints accessible through open
 
 ## Overview
 
-The FDA drug databases provide access to information about pharmaceutical products, including adverse events, labeling, recalls, approvals, and shortages. All endpoints follow the openFDA API structure and return JSON-formatted data.
+The FDA drug databases provide access to information about pharmaceutical products, including adverse events, labelling, recalls, approvals, and shortages. All endpoints follow the openFDA API structure and return JSON-formatted data.
 
 ## Available Endpoints
 
@@ -59,13 +59,13 @@ params = {
 }
 ```
 
-### 2. Drug Product Labeling
+### 2. Drug Product Labelling
 
 **Endpoint**: `https://api.fda.gov/drug/label.json`
 
 **Purpose**: Access structured product information including prescribing information, warnings, indications, and usage for FDA-approved and marketed drug products.
 
-**Data Source**: Structured Product Labeling (SPL)
+**Data Source**: Structured Product Labelling (SPL)
 
 **Key Fields**:
 - `openfda.brand_name` - Brand name(s) of the drug
@@ -200,7 +200,7 @@ params = {
 **Classification Levels**:
 - **Class I**: Dangerous or defective products that could cause serious health problems or death
 - **Class II**: Products that might cause temporary health problems or pose slight threat of serious nature
-- **Class III**: Products unlikely to cause adverse health reaction but violate FDA labeling/manufacturing regulations
+- **Class III**: Products unlikely to cause adverse health reaction but violate FDA labelling/manufacturing regulations
 
 **Common Use Cases**:
 - Quality assurance monitoring

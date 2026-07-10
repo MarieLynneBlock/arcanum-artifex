@@ -62,10 +62,10 @@ results = deseq2(
 ```
 
 **Features:**
-- Normalization and variance stabilization
+- Normalisation and variance stabilisation
 - Differential expression testing
 - MA plots and volcano plots
-- PCA visualization
+- PCA visualisation
 - Annotated results tables
 
 ### Pathway Analysis
@@ -148,7 +148,7 @@ structure = alphafold(
 
 **Features:**
 - Monomer and multimer prediction
-- Template-based modeling option
+- Template-based modelling option
 - MSA generation
 - Confidence metrics (pLDDT, PAE)
 - PDB structure output
@@ -161,7 +161,7 @@ structure = alphafold(
 
 ### ColabFold
 
-**Optimized AlphaFold Alternative:**
+**Optimised AlphaFold Alternative:**
 ```python
 from latch.verified import colabfold
 
@@ -224,9 +224,9 @@ results = scvelo(
 **Features:**
 - Spliced/unspliced quantification
 - Velocity estimation
-- Dynamical modeling
+- Dynamical modelling
 - Trajectory inference
-- Visualization
+- Visualisation
 
 ### emptyDropsR (Cell Calling)
 
@@ -287,7 +287,7 @@ tree = phylogenetics(
 **Features:**
 - Multiple tree-building methods
 - Bootstrap support
-- Tree visualization
+- Tree visualisation
 - Model selection
 
 ## Workflow Integration
@@ -345,7 +345,7 @@ def complete_rnaseq_analysis(
 2. Custom preprocessing steps
 3. Integration with proprietary tools
 4. Experimental pipelines
-5. Highly specialized workflows
+5. Highly specialised workflows
 
 ### Combining Verified and Custom
 

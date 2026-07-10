@@ -307,7 +307,7 @@ Reactome automatically detects and processes various identifier types:
 
 ### JSON Objects
 
-Entity objects contain standardized fields:
+Entity objects contain standardised fields:
 ```json
 {
   "stId": "R-HSA-69278",

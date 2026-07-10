@@ -39,34 +39,34 @@ audience         depth  biology   experts    researchers    only
 
 ### Core Philosophy
 
-High-impact multidisciplinary journals prioritize **broad significance** over technical depth. The question is not "Is this technically sound?" but "Why should a scientist outside this field care?"
+High-impact multidisciplinary journals prioritise **broad significance** over technical depth. The question is not "Is this technically sound?" but "Why should a scientist outside this field care?"
 
 ### Key Writing Principles
 
 1. **Start with the big picture**: Open with why this matters to science/society
-2. **Minimize jargon**: Define specialized terms; prefer common words
+2. **Minimise jargon**: Define specialised terms; prefer common words
 3. **Tell a story**: Results should flow as a narrative, not a data dump
-4. **Emphasize implications**: What does this change about our understanding?
+4. **Emphasise implications**: What does this change about our understanding?
 5. **Accessible figures**: Schematics and models over raw data plots
 
 ### Structural Differences
 
-**Nature/Science** vs. **Specialized Journals**:
+**Nature/Science** vs. **Specialised Journals**:
 
-| Element | Nature/Science | Specialized Journal |
+| Element | Nature/Science | Specialised Journal |
 |---------|---------------|---------------------|
 | Introduction | 3-4 paragraphs, broad → specific | Extensive literature review |
 | Methods | Often in supplement or brief | Full detail in main text |
-| Results | Organized by finding/story | Organized by experiment |
+| Results | Organised by finding/story | Organised by experiment |
 | Discussion | Implications first, then caveats | Detailed comparison to literature |
-| Figures | Conceptual schematics valued | Raw data emphasized |
+| Figures | Conceptual schematics valued | Raw data emphasised |
 
 ### Example: Same Finding, Different Styles
 
 **Nature style**:
 > "We discovered that protein X acts as a molecular switch controlling cell fate decisions during development, resolving a longstanding question about how stem cells choose their destiny."
 
-**Specialized journal style**:
+**Specialised journal style**:
 > "Using CRISPR-Cas9 knockout in murine embryonic stem cells (mESCs), we demonstrate that protein X (encoded by gene ABC1) regulates the expression of pluripotency factors Oct4, Sox2, and Nanog through direct promoter binding, as confirmed by ChIP-seq analysis (n=3 biological replicates, FDR < 0.05)."
 
 ---
@@ -75,15 +75,15 @@ High-impact multidisciplinary journals prioritize **broad significance** over te
 
 ### Core Philosophy
 
-Medical journals prioritize **clinical relevance** and **patient outcomes**. Every finding must connect to practice.
+Medical journals prioritise **clinical relevance** and **patient outcomes**. Every finding must connect to practice.
 
 ### Key Writing Principles
 
-1. **Patient-centered language**: "Patients receiving treatment X" not "Treatment X subjects"
+1. **Patient-centred language**: "Patients receiving treatment X" not "Treatment X subjects"
 2. **Evidence strength**: Careful hedging based on study design
-3. **Clinical actionability**: "So what?" for practicing physicians
+3. **Clinical actionability**: "So what?" for practising physicians
 4. **Absolute numbers**: Report absolute risk reduction, not just relative
-5. **Structured abstracts**: Required with labeled sections
+5. **Structured abstracts**: Required with labelled sections
 
 ### Structured Abstract Format (Medical)
 
@@ -120,7 +120,7 @@ ML conferences value **novelty**, **rigorous experiments**, and **reproducibilit
 2. **Baselines are critical**: Compare against strong, recent baselines
 3. **Ablations expected**: Show what parts of your method matter
 4. **Reproducibility**: Seeds, hyperparameters, compute requirements
-5. **Limitations section**: Honest acknowledgment (increasingly required)
+5. **Limitations section**: Honest acknowledgement (increasingly required)
 
 ### Introduction Structure (ML Conferences)
 
@@ -142,7 +142,7 @@ Our contributions are as follows:
 
 ML abstracts are **dense and numbers-focused**:
 
-> "We present TransformerX, a novel architecture for long-range sequence modeling that achieves O(n log n) complexity while maintaining expressivity. On the Long Range Arena benchmark, TransformerX achieves 86.2% average accuracy, outperforming Transformer (65.4%) and Performer (78.1%). On language modeling, TransformerX matches GPT-2 perplexity (18.4) using 40% fewer parameters. We provide theoretical analysis showing TransformerX can approximate any continuous sequence-to-sequence function."
+> "We present TransformerX, a novel architecture for long-range sequence modelling that achieves O(n log n) complexity while maintaining expressivity. On the Long Range Arena benchmark, TransformerX achieves 86.2% average accuracy, outperforming Transformer (65.4%) and Performer (78.1%). On language modelling, TransformerX matches GPT-2 perplexity (18.4) using 40% fewer parameters. We provide theoretical analysis showing TransformerX can approximate any continuous sequence-to-sequence function."
 
 ### Experiment Section Expectations
 
@@ -167,7 +167,7 @@ ML abstracts are **dense and numbers-focused**:
 
 ### CHI (Human-Computer Interaction)
 
-- **User-centered**: Focus on humans, not just technology
+- **User-centred**: Focus on humans, not just technology
 - **Study design details**: Participant recruitment, IRB approval
 - **Qualitative accepted**: Interview studies, ethnography valid
 - **Design implications**: Concrete takeaways for practitioners
@@ -190,7 +190,7 @@ When converting a journal paper to conference format:
 
 1. **Condense introduction**: Remove extensive background
 2. **Add contribution list**: Explicitly enumerate contributions
-3. **Restructure results**: Organize as experiments, add ablations
+3. **Restructure results**: Organise as experiments, add ablations
 4. **Remove separate discussion**: Integrate interpretation briefly
 5. **Add reproducibility section**: Seeds, hyperparameters, code
 
@@ -204,9 +204,9 @@ When expanding a conference paper to journal:
 4. **Extended discussion**: Implications, limitations, future work
 5. **Appendix → main text**: Move important details up
 
-### Specialized → High-Impact Journal
+### Specialised → High-Impact Journal
 
-When targeting Nature/Science/Cell from a specialized venue:
+When targeting Nature/Science/Cell from a specialised venue:
 
 1. **Lead with significance**: Why does this matter broadly?
 2. **Reduce jargon by 80%**: Replace technical terms
@@ -256,7 +256,7 @@ When targeting Nature/Science/Cell from a specialized venue:
 ❌ Too technical: "We used CRISPR-Cas9 with sgRNAs targeting exon 3..."
 ✅ Accessible: "Using gene-editing technology, we disabled the gene..."
 
-❌ Dry opening: "Protein X is involved in cellular signaling..."
+❌ Dry opening: "Protein X is involved in cellular signalling..."
 ✅ Engaging opening: "How do cells decide their fate? We discovered that..."
 
 ### ML Conference Submissions
@@ -291,7 +291,7 @@ When targeting Nature/Science/Cell from a specialized venue:
 - [ ] Non-specialist can understand abstract
 - [ ] Story-driven results narrative
 - [ ] Conceptual figures included
-- [ ] Implications emphasized
+- [ ] Implications emphasised
 
 ### ML Conferences
 - [ ] Contribution list in introduction
@@ -302,7 +302,7 @@ When targeting Nature/Science/Cell from a specialized venue:
 
 ### Medical Journals
 - [ ] Structured abstract (if required)
-- [ ] Patient-centered language
+- [ ] Patient-centred language
 - [ ] Evidence strength appropriate
 - [ ] Absolute numbers reported
 - [ ] CONSORT/STROBE compliance

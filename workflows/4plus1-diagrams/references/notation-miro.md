@@ -87,7 +87,7 @@ Notes:
 
 ### Physical view
 
-Before writing layout instructions for a Physical view prompt, treat the canonical `.puml` as the source of truth and copy its element names and relationship labels into the prompt. The Miro prompt is a Sidekick-optimized drawing brief derived from PlantUML; it must not ask Miro to parse raw PlantUML syntax. Zones are visual grouping aids; they must be derived from the PlantUML deployment boundaries and must not introduce CDN/WAF, load balancers, caches, databases, runners, or protocols that are absent from the canonical source.
+Before writing layout instructions for a Physical view prompt, treat the canonical `.puml` as the source of truth and copy its element names and relationship labels into the prompt. The Miro prompt is a Sidekick-optimised drawing brief derived from PlantUML; it must not ask Miro to parse raw PlantUML syntax. Zones are visual grouping aids; they must be derived from the PlantUML deployment boundaries and must not introduce CDN/WAF, load balancers, caches, databases, runners, or protocols that are absent from the canonical source.
 
 For cloud-agnostic Physical views, prefer a Draw.io-like lane layout: three or more tall vertical zone containers with visible headers, nested boundary containers inside each lane, and components placed inside those boundaries. These are ordinary visual lane containers, not BPMN lanes. Show containment through placement, not `contains` arrows. Do not add `Start` or `End` nodes to a physical deployment view.
 

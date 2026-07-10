@@ -1,12 +1,12 @@
 ---
-description: 'Comprehensive Power BI data modeling best practices based on Microsoft guidance for creating efficient, scalable, and maintainable semantic models using star schema principles.'
+description: 'Comprehensive Power BI data modelling best practices based on Microsoft guidance for creating efficient, scalable, and maintainable semantic models using star schema principles.'
 applyTo: '**/*.{pbix,md,json,txt}'
 ---
 
-# Power BI Data Modeling Best Practices
+# Power BI Data Modelling Best Practices
 
 ## Overview
-This document provides comprehensive instructions for designing efficient, scalable, and maintainable Power BI semantic models following Microsoft's official guidance and dimensional modeling best practices.
+This document provides comprehensive instructions for designing efficient, scalable, and maintainable Power BI semantic models following Microsoft's official guidance and dimensional modelling best practices.
 
 ## Star Schema Design Principles
 
@@ -144,7 +144,7 @@ Referential Integrity:
 ❌ Don't enable if source data has orphaned records
 ```
 
-## Storage Mode Optimization
+## Storage Mode Optimisation
 
 ### 1. Import Mode Best Practices
 ```
@@ -200,7 +200,7 @@ Optimization Requirements:
 - Implement query reduction techniques
 ```
 
-#### DirectQuery Performance Optimization
+#### DirectQuery Performance Optimisation
 ```
 Database Optimization:
 ✅ Create indexes on frequently filtered columns
@@ -252,7 +252,7 @@ Configuration:
 - Enables efficient cross-source relationships
 ```
 
-## Advanced Modeling Patterns
+## Advanced Modelling Patterns
 
 ### 1. Date Table Design
 ```
@@ -345,9 +345,9 @@ Relationship Configuration:
 - Hide bridge table from report view
 ```
 
-## Performance Optimization Strategies
+## Performance Optimisation Strategies
 
-### 1. Model Size Optimization
+### 1. Model Size Optimisation
 ```
 Column Optimization:
 ✅ Remove unused columns completely
@@ -550,7 +550,7 @@ Technical Validation:
 - Always avoid through proper design
 ```
 
-## Advanced Data Modeling Patterns
+## Advanced Data Modelling Patterns
 
 ### 1. Slowly Changing Dimensions Implementation
 ```powerquery
@@ -636,4 +636,4 @@ plot_relationship_metadata(relationships)
 }
 ```
 
-Remember: Always validate your model design with business users and test with realistic data volumes and usage patterns. Use Power BI's built-in tools like Performance Analyzer and DAX Studio for optimization and debugging.
+Remember: Always validate your model design with business users and test with realistic data volumes and usage patterns. Use Power BI's built-in tools like Performance Analyzer and DAX Studio for optimisation and debugging.

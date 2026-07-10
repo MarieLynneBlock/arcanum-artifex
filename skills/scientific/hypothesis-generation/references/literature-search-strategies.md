@@ -35,7 +35,7 @@ Use WebFetch with PubMed URLs for:
 
 #### 1. Start with Review Articles
 
-**Why:** Reviews synthesize literature, identify key concepts, and provide comprehensive reference lists.
+**Why:** Reviews synthesise literature, identify key concepts, and provide comprehensive reference lists.
 
 **Search strategy:**
 - Add "review" to search terms
@@ -48,7 +48,7 @@ Use WebFetch with PubMed URLs for:
 
 #### 2. Use MeSH Terms (Medical Subject Headings)
 
-**Why:** MeSH terms are standardized vocabulary that captures concept variations.
+**Why:** MeSH terms are standardised vocabulary that captures concept variations.
 
 **Strategy:**
 - PubMed auto-suggests MeSH terms
@@ -137,7 +137,7 @@ Use WebSearch for:
 **Include field-specific terminology:**
 - Chemistry: "mechanism," "reaction pathway," "synthesis"
 - Physics: "model," "theory," "experimental validation"
-- Materials science: "properties," "characterization," "synthesis"
+- Materials science: "properties," "characterisation," "synthesis"
 - Ecology: "population dynamics," "community structure"
 
 #### 2. Target Academic Sources
@@ -286,7 +286,7 @@ Citation counts indicate influence and importance in the field. Interpret citati
 | 0-3 years | 100+ | Highly Influential - significant impact already |
 | 3-7 years | 100+ | Significant - established contribution |
 | 3-7 years | 500+ | Landmark - major contribution to field |
-| 7+ years | 500+ | Seminal - widely recognized important work |
+| 7+ years | 500+ | Seminal - widely recognised important work |
 | 7+ years | 1000+ | Foundational - field-defining paper |
 
 **Field-specific considerations:**
@@ -302,12 +302,12 @@ Citation counts indicate influence and importance in the field. Interpret citati
 - **Medicine:** NEJM (IF ~175), Lancet (IF ~170), JAMA (IF ~120), BMJ (IF ~93)
 - **Field Flagships:** Nature Medicine, Nature Biotechnology, Nature Methods, Nature Genetics
 
-**Tier 2 - High-Impact Specialized (Strong Preference):**
+**Tier 2 - High-Impact Specialised (Strong Preference):**
 - Impact Factor >10
 - Examples: JAMA Internal Medicine, Annals of Internal Medicine, Circulation, Blood
 - Top ML/AI conferences: NeurIPS, ICML, ICLR (equivalent to IF 15-25)
 
-**Tier 3 - Respected Specialized (Include When Relevant):**
+**Tier 3 - Respected Specialised (Include When Relevant):**
 - Impact Factor 5-10
 - Established society journals
 - Well-indexed specialty journals
@@ -353,7 +353,7 @@ For ML/AI and computer science topics, conference rankings matter:
 **B (Good) - Equivalent to Tier-3 Journals:**
 - COLING, CoNLL (NLP)
 - WACV, BMVC (Computer Vision)
-- Most ACM/IEEE specialized conferences
+- Most ACM/IEEE specialised conferences
 
 ## Evaluating Source Quality
 
@@ -440,7 +440,7 @@ For ML/AI and computer science topics, conference rankings matter:
 - Limitations noted by authors
 - How it relates to hypothesis
 
-### Organizing Findings
+### Organising Findings
 
 **Group by:**
 - Supporting evidence for hypothesis A, B, C
@@ -456,13 +456,13 @@ For ML/AI and computer science topics, conference rankings matter:
 
 ### Citation Organization for Hypothesis Reports
 
-**For report structure:** Organize citations for two audiences:
+**For report structure:** Organise citations for two audiences:
 
 **Main Text (15-20 key citations):**
 - Most influential papers (highly cited, seminal studies)
 - Recent definitive evidence (last 2-3 years)
 - Key papers directly supporting each hypothesis (3-5 per hypothesis)
-- Major reviews synthesizing the field
+- Major reviews synthesising the field
 
 **Appendix A: Comprehensive Literature Review (40-60+ citations):**
 - **Historical context:** Foundational papers establishing field
@@ -512,8 +512,8 @@ For ML/AI and computer science topics, conference rankings matter:
    - Use "cited by" for recent work
    - Identify seminal studies
 
-6. **Synthesize findings (20-30 min):**
-   - Summarize evidence for each hypothesis
+6. **Synthesise findings (20-30 min):**
+   - Summarise evidence for each hypothesis
    - Note patterns and contradictions
    - Identify knowledge gaps
 

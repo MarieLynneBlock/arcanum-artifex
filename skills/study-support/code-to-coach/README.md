@@ -18,7 +18,7 @@ This skill transforms code analysis into a **coaching and teaching dialogue**. I
 ### Reference Materials (Domain Knowledge)
 - **[code-smells.md](./references/code-smells.md)** — 10 common anti-patterns (long functions, deep nesting, magic numbers, duplication, etc.) with refactoring strategies
 - **[best-practices.md](./references/best-practices.md)** — 12 language-agnostic principles (SRP, DRY, fail fast, dependency injection, separation of concerns, naming, documentation, immutability, composition, invalid states, measurement, explicitness)
-- **[cognitive-load.md](./references/cognitive-load.md)** — 9 strategies to reduce mental friction in code (limit nesting, minimize mutations, reduce scope, clear flow, naming patterns, separate concerns, document assumptions, abstractions, parameter limits)
+- **[cognitive-load.md](./references/cognitive-load.md)** — 9 strategies to reduce mental friction in code (limit nesting, minimise mutations, reduce scope, clear flow, naming patterns, separate concerns, document assumptions, abstractions, parameter limits)
 - **[context-discovery.md](./references/context-discovery.md)** — Questions to ask when orienting yourself to unfamiliar code
 - **[refactoring-priorities.md](./references/refactoring-priorities.md)** — Framework for prioritising improvements (impact × effort matrix, categorisation from URGENT to DEFER)
 
@@ -163,7 +163,7 @@ code-to-coach/
 ### The Nine Cognitive Load Strategies (from cognitive-load.md)
 
 1. Limit nesting depth (<4 levels)
-2. Minimize mutable state
+2. Minimise mutable state
 3. Reduce variable scope
 4. Use clear, chunked logic flow
 5. Enforce consistent naming patterns

@@ -169,7 +169,7 @@ def load_model():
     model.load_state_dict(torch.load("/data/model.pt"))
 ```
 
-- Optimized for write-once, read-many workloads (model weights, datasets)
+- Optimised for write-once, read-many workloads (model weights, datasets)
 - CLI access: `modal volume ls`, `modal volume put`, `modal volume get`
 - Background auto-commits every few seconds
 

@@ -6,7 +6,7 @@ Bio.PDB provides tools for working with macromolecular 3D structures from PDB an
 
 ## SMCRA Architecture
 
-The Bio.PDB module organizes structures hierarchically:
+The Bio.PDB module organises structures hierarchically:
 
 ```
 Structure
@@ -238,7 +238,7 @@ for residue_key in dssp:
     print(f"Residue {residue_key[1]}: {acc:.2f} relative accessibility")
 ```
 
-### Neighbor Search
+### Neighbour Search
 
 Find nearby atoms efficiently:
 
@@ -538,7 +538,7 @@ def find_binding_site(structure, ligand_chain, ligand_res_id, distance=5.0):
     return list(binding_site)
 ```
 
-### Calculate Center of Mass
+### Calculate Centre of Mass
 
 ```python
 import numpy as np

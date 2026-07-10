@@ -1,6 +1,6 @@
 # Seaborn Function Reference
 
-This document provides a comprehensive reference for all major seaborn functions, organized by category.
+This document provides a comprehensive reference for all major seaborn functions, organised by category.
 
 ## Relational Plots
 
@@ -11,15 +11,15 @@ This document provides a comprehensive reference for all major seaborn functions
 **Key Parameters:**
 - `data` - DataFrame, array, or dict of arrays
 - `x, y` - Variables for x and y axes
-- `hue` - Grouping variable for color encoding
+- `hue` - Grouping variable for colour encoding
 - `size` - Grouping variable for size encoding
 - `style` - Grouping variable for marker style
-- `palette` - Color palette name or list
+- `palette` - Colour palette name or list
 - `hue_order` - Order for categorical hue levels
-- `hue_norm` - Normalization for numeric hue (tuple or Normalize object)
+- `hue_norm` - Normalisation for numeric hue (tuple or Normalise object)
 - `sizes` - Size range for size encoding (tuple or dict)
 - `size_order` - Order for categorical size levels
-- `size_norm` - Normalization for numeric size
+- `size_norm` - Normalisation for numeric size
 - `markers` - Marker style(s) (string, list, or dict)
 - `style_order` - Order for categorical style levels
 - `legend` - How to draw legend: "auto", "brief", "full", or False
@@ -39,7 +39,7 @@ sns.scatterplot(data=df, x='height', y='weight',
 **Key Parameters:**
 - `data` - DataFrame, array, or dict of arrays
 - `x, y` - Variables for x and y axes
-- `hue` - Grouping variable for color encoding
+- `hue` - Grouping variable for colour encoding
 - `size` - Grouping variable for line width
 - `style` - Grouping variable for line style (dashes)
 - `units` - Grouping variable for sampling units (no aggregation within units)
@@ -50,7 +50,7 @@ sns.scatterplot(data=df, x='height', y='weight',
 - `sort` - Sort data before plotting
 - `err_style` - "band" or "bars" for error representation
 - `err_kws` - Additional parameters for error representation
-- `markers` - Marker style(s) for emphasizing data points
+- `markers` - Marker style(s) for emphasising data points
 - `dashes` - Dash style(s) for lines
 - `legend` - How to draw legend
 - `ax` - Matplotlib axes to plot on
@@ -101,10 +101,10 @@ sns.relplot(data=df, x='time', y='measurement',
 - `bins` - Number of bins, bin edges, or method ("auto", "fd", "doane", "scott", "stone", "rice", "sturges", "sqrt")
 - `binwidth` - Width of bins (overrides bins)
 - `binrange` - Range for binning (tuple)
-- `discrete` - Treat x as discrete (centers bars on values)
+- `discrete` - Treat x as discrete (centres bars on values)
 - `cumulative` - Compute cumulative distribution
 - `common_bins` - Use same bins for all hue levels
-- `common_norm` - Normalize across hue levels
+- `common_norm` - Normalise across hue levels
 - `multiple` - How to handle hue: "layer", "dodge", "stack", "fill"
 - `element` - Visual element: "bars", "step", "poly"
 - `fill` - Fill bars/elements
@@ -114,7 +114,7 @@ sns.relplot(data=df, x='time', y='measurement',
 - `line_kws` - Parameters for step/poly elements
 - `thresh` - Minimum count threshold for bins
 - `pthresh` - Minimum probability threshold
-- `pmax` - Maximum probability for color scaling
+- `pmax` - Maximum probability for colour scaling
 - `log_scale` - Log scale for axis (bool or base)
 - `legend` - Whether to show legend
 - `ax` - Matplotlib axes
@@ -135,11 +135,11 @@ sns.histplot(data=df, x='measurement', hue='condition',
 - `x, y` - Variables (y optional for bivariate)
 - `hue` - Grouping variable
 - `weights` - Variable for weighting observations
-- `palette` - Color palette
+- `palette` - Colour palette
 - `hue_order` - Order for hue levels
-- `hue_norm` - Normalization for numeric hue
+- `hue_norm` - Normalisation for numeric hue
 - `multiple` - How to handle hue: "layer", "stack", "fill"
-- `common_norm` - Normalize across hue levels
+- `common_norm` - Normalise across hue levels
 - `common_grid` - Use same grid for all hue levels
 - `cumulative` - Compute cumulative distribution
 - `bw_method` - Method for bandwidth: "scott", "silverman", or scalar
@@ -176,9 +176,9 @@ sns.kdeplot(data=df, x='var1', y='var2',
 - `weights` - Variable for weighting observations
 - `stat` - "proportion" or "count"
 - `complementary` - Plot complementary CDF (1 - ECDF)
-- `palette` - Color palette
+- `palette` - Colour palette
 - `hue_order` - Order for hue levels
-- `hue_norm` - Normalization for numeric hue
+- `hue_norm` - Normalisation for numeric hue
 - `log_scale` - Log scale for axis
 - `legend` - Whether to show legend
 - `ax` - Matplotlib axes
@@ -199,9 +199,9 @@ sns.ecdfplot(data=df, x='response_time', hue='treatment',
 - `hue` - Grouping variable
 - `height` - Height of ticks (proportion of axis)
 - `expand_margins` - Add margin space for rug
-- `palette` - Color palette
+- `palette` - Colour palette
 - `hue_order` - Order for hue levels
-- `hue_norm` - Normalization for numeric hue
+- `hue_norm` - Normalisation for numeric hue
 - `legend` - Whether to show legend
 - `ax` - Matplotlib axes
 
@@ -253,7 +253,7 @@ sns.displot(data=df, x='measurement', hue='treatment',
 - `joint_kws` - Parameters for joint plot
 - `marginal_kws` - Parameters for marginal plots
 - `hue_order` - Order for hue levels
-- `palette` - Color palette
+- `palette` - Colour palette
 
 **Example:**
 ```python
@@ -268,9 +268,9 @@ sns.jointplot(data=df, x='var1', y='var2', hue='group',
 
 **Key Parameters:**
 - `data` - DataFrame
-- `hue` - Grouping variable for color encoding
+- `hue` - Grouping variable for colour encoding
 - `hue_order` - Order for hue levels
-- `palette` - Color palette
+- `palette` - Colour palette
 - `vars` - Variables to plot (default: all numeric)
 - `x_vars, y_vars` - Variables for x and y axes (non-square grid)
 - `kind` - "scatter", "kde", "hist", "reg"
@@ -306,10 +306,10 @@ sns.pairplot(data=df, hue='species', palette='Set2',
 - `jitter` - Amount of jitter: True, float, or False
 - `dodge` - Separate hue levels side-by-side
 - `orient` - "v" or "h" (usually inferred)
-- `color` - Single color for all elements
-- `palette` - Color palette
+- `color` - Single colour for all elements
+- `palette` - Colour palette
 - `size` - Marker size
-- `edgecolor` - Marker edge color
+- `edgecolor` - Marker edge colour
 - `linewidth` - Marker edge width
 - `native_scale` - Use numeric scale for categorical axis
 - `formatter` - Formatter for categorical axis
@@ -351,9 +351,9 @@ sns.swarmplot(data=df, x='day', y='total_bill',
 - `order` - Order for categorical levels
 - `hue_order` - Order for hue levels
 - `orient` - "v" or "h"
-- `color` - Single color for boxes
-- `palette` - Color palette
-- `saturation` - Color saturation intensity
+- `color` - Single colour for boxes
+- `palette` - Colour palette
+- `saturation` - Colour saturation intensity
 - `width` - Width of boxes
 - `dodge` - Separate hue levels side-by-side
 - `fliersize` - Size of outlier markers
@@ -437,12 +437,12 @@ sns.boxenplot(data=df, x='day', y='total_bill',
 - `units` - Identifier for sampling units
 - `weights` - Observation weights
 - `orient` - "v" or "h"
-- `color` - Single bar color
-- `palette` - Color palette
-- `saturation` - Color saturation
+- `color` - Single bar colour
+- `palette` - Colour palette
+- `saturation` - Colour saturation
 - `width` - Bar width
 - `dodge` - Separate hue levels side-by-side
-- `errcolor` - Error bar color
+- `errcolor` - Error bar colour
 - `errwidth` - Error bar line width
 - `capsize` - Error bar cap width
 - `native_scale` - Use numeric scale
@@ -547,7 +547,7 @@ sns.catplot(data=df, x='day', y='total_bill',
 - `dropna` - Drop missing values
 - `x_jitter, y_jitter` - Add jitter to data
 - `label` - Label for legend
-- `color` - Color for all elements
+- `color` - Colour for all elements
 - `marker` - Marker style
 - `scatter_kws` - Parameters for scatter
 - `line_kws` - Parameters for regression line
@@ -569,7 +569,7 @@ All parameters from `regplot()`, plus:
 - `hue` - Grouping variable
 - `col` - Column facets
 - `row` - Row facets
-- `palette` - Color palette
+- `palette` - Colour palette
 - `col_wrap` - Wrap columns
 - `height` - Facet height
 - `aspect` - Aspect ratio
@@ -609,19 +609,19 @@ sns.residplot(data=df, x='x', y='y', lowess=True,
 
 ### heatmap()
 
-**Purpose:** Plot rectangular data as a color-encoded matrix.
+**Purpose:** Plot rectangular data as a colour-encoded matrix.
 
 **Key Parameters:**
 - `data` - 2D array-like data
 - `vmin, vmax` - Anchor values for colormap
 - `cmap` - Colormap name or object
-- `center` - Value at colormap center
+- `center` - Value at colormap centre
 - `robust` - Use robust quantiles for colormap range
 - `annot` - Annotate cells: True, False, or array
 - `fmt` - Format string for annotations (e.g., ".2f")
 - `annot_kws` - Parameters for annotations
 - `linewidths` - Width of cell borders
-- `linecolor` - Color of cell borders
+- `linecolor` - Colour of cell borders
 - `cbar` - Draw colorbar
 - `cbar_kws` - Colorbar parameters
 - `cbar_ax` - Axes for colorbar
@@ -649,13 +649,13 @@ All parameters from `heatmap()`, plus:
 - `pivot_kws` - Parameters for pivoting (if needed)
 - `method` - Linkage method: "single", "complete", "average", "weighted", "centroid", "median", "ward"
 - `metric` - Distance metric for clustering
-- `standard_scale` - Standardize data: 0 (rows), 1 (columns), or None
-- `z_score` - Z-score normalize data: 0 (rows), 1 (columns), or None
+- `standard_scale` - Standardise data: 0 (rows), 1 (columns), or None
+- `z_score` - Z-score normalise data: 0 (rows), 1 (columns), or None
 - `row_cluster, col_cluster` - Cluster rows/columns
 - `row_linkage, col_linkage` - Precomputed linkage matrices
-- `row_colors, col_colors` - Additional color annotations
+- `row_colors, col_colors` - Additional colour annotations
 - `dendrogram_ratio` - Ratio of dendrogram to heatmap
-- `colors_ratio` - Ratio of color annotations to heatmap
+- `colors_ratio` - Ratio of colour annotations to heatmap
 - `cbar_pos` - Colorbar position (tuple: x, y, width, height)
 - `tree_kws` - Parameters for dendrogram
 - `figsize` - Figure size

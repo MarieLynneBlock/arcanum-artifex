@@ -1,12 +1,12 @@
 # SimPy Process Interaction
 
-This guide covers the mechanisms for processes to interact and synchronize in SimPy simulations.
+This guide covers the mechanisms for processes to interact and synchronise in SimPy simulations.
 
 ## Interaction Mechanisms Overview
 
 SimPy provides three primary ways for processes to interact:
 
-1. **Event-based passivation/reactivation** - Shared events for signaling
+1. **Event-based passivation/reactivation** - Shared events for signalling
 2. **Waiting for process termination** - Yielding process objects
 3. **Interruption** - Forcefully resuming paused processes
 
@@ -73,7 +73,7 @@ for i in range(3):
 env.run()
 ```
 
-### Barrier Synchronization
+### Barrier Synchronisation
 
 ```python
 import simpy
@@ -315,7 +315,7 @@ env.run()
 
 ## Advanced Patterns
 
-### Producer-Consumer with Signaling
+### Producer-Consumer with Signalling
 
 ```python
 import simpy
@@ -413,7 +413,7 @@ env.run()
 
 2. **Exception handling**: Always wrap interrupt-prone code in try-except blocks
 
-3. **Event lifecycle**: Remember that events can only be triggered once; create new events for repeated signaling
+3. **Event lifecycle**: Remember that events can only be triggered once; create new events for repeated signalling
 
 4. **Process references**: Store process objects if you need to interrupt them later
 

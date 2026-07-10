@@ -177,7 +177,7 @@ c = client.submit(func3, a, b)  # Depends on both a and b
 result = c.result()
 ```
 
-## Data Movement Optimization
+## Data Movement Optimisation
 
 ### Scatter Data
 Pre-scatter important data to avoid repeated transfers:
@@ -517,7 +517,7 @@ for future in as_completed(futures):
 ### Monitor Dashboard
 View the Dask dashboard to see:
 - Task progress
-- Worker utilization
+- Worker utilisation
 - Memory usage
 - Task dependencies
 

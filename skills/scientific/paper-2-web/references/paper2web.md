@@ -7,7 +7,7 @@ Paper2Web converts academic papers into interactive, explorable academic homepag
 ## Core Capabilities
 
 ### 1. Layout-Aware Generation
-- Analyzes paper structure and content organization
+- Analyses paper structure and content organisation
 - Creates responsive, multi-section layouts
 - Adapts design based on paper type (research article, review, preprint, etc.)
 
@@ -50,7 +50,7 @@ python pipeline_all.py \
 1. **LaTeX source** (preferred for best results)
    - Main file: `main.tex`
    - Include all referenced figures, tables, and bibliography files
-   - Organize in a single directory per paper
+   - Organise in a single directory per paper
 
 2. **PDF files**
    - High-quality PDF with selectable text
@@ -84,12 +84,12 @@ output/paper_name/website/
 └── data/               # Structured data (optional)
 ```
 
-## Customization Options
+## Customisation Options
 
 ### Visual Design
 The generated websites automatically include:
-- Professional color schemes based on paper content
-- Typography optimized for readability
+- Professional colour schemes based on paper content
+- Typography optimised for readability
 - Consistent spacing and visual hierarchy
 - Dark mode support (optional)
 
@@ -98,7 +98,7 @@ Standard sections include:
 - Abstract
 - Key findings/contributions
 - Methodology overview
-- Results and visualizations
+- Results and visualisations
 - Discussion and implications
 - References and citations
 - Author information and affiliations
@@ -115,7 +115,7 @@ Paper2Web includes built-in evaluation:
 
 ### Aesthetic Metrics
 - Layout balance and spacing
-- Color harmony
+- Colour harmony
 - Typography consistency
 - Visual hierarchy effectiveness
 
@@ -137,7 +137,7 @@ Paper2Web includes built-in evaluation:
 When enabled with Google Search API:
 - Automatically finds institution logos
 - Matches author affiliations
-- Downloads and optimizes logo images
+- Downloads and optimises logo images
 - Integrates into website header
 
 ### Citation Integration
@@ -157,7 +157,7 @@ When enabled with Google Search API:
 ### Input Preparation
 1. **Use LaTeX when possible**: Provides best structure extraction
 2. **Include all assets**: Figures, tables, and bibliography files
-3. **Clean formatting**: Remove compilation artifacts and temporary files
+3. **Clean formatting**: Remove compilation artefacts and temporary files
 4. **High-quality figures**: Use vector formats (PDF, SVG) when available
 
 ### Model Selection
@@ -165,7 +165,7 @@ When enabled with Google Search API:
 - **GPT-4.1**: Latest features, higher cost
 - **GPT-3.5-turbo**: Faster processing, acceptable for simple papers
 
-### Output Optimization
+### Output Optimisation
 1. Review generated content for accuracy
 2. Check that all figures render correctly
 3. Test interactive elements functionality
@@ -177,7 +177,7 @@ When enabled with Google Search API:
 - Complex mathematical equations may require manual review
 - Multi-column layouts in PDF may affect extraction quality
 - Large papers (>50 pages) may require extended processing time
-- Some specialized figure types may need manual adjustment
+- Some specialised figure types may need manual adjustment
 
 ## Integration with Other Components
 

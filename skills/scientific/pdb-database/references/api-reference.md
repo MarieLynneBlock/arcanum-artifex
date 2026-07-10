@@ -17,7 +17,7 @@ RCSB PDB provides multiple programmatic interfaces:
 
 ### Core Data Objects
 
-The Data API organizes information hierarchically:
+The Data API organises information hierarchically:
 
 - **core_entry**: PDB entries or Computed Structure Models (CSM IDs start with AF_ or MA_)
 - **core_polymer_entity**: Protein, DNA, and RNA entities
@@ -464,7 +464,7 @@ def fetch_with_retry(url, max_retries=5, initial_delay=1):
 2. **Cache results** to avoid redundant queries
 3. **Process in chunks** rather than all at once
 4. **Add delays** between requests to respect rate limits
-5. **Use GraphQL** for complex queries to minimize requests
+5. **Use GraphQL** for complex queries to minimise requests
 
 ```python
 import time

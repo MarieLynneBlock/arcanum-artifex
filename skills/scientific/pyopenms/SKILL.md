@@ -29,7 +29,7 @@ print(pyopenms.__version__)
 
 ## Core Capabilities
 
-PyOpenMS organizes functionality into these domains:
+PyOpenMS organises functionality into these domains:
 
 ### 1. File I/O and Data Formats
 
@@ -56,7 +56,7 @@ for spectrum in exp:
 
 ### 2. Signal Processing
 
-Process raw spectral data with smoothing, filtering, centroiding, and normalization.
+Process raw spectral data with smoothing, filtering, centroiding, and normalisation.
 
 Basic spectrum processing:
 
@@ -195,7 +195,7 @@ PyOpenMS integrates with:
 - **Pandas**: Export data to DataFrames
 - **NumPy**: Work with peak arrays
 - **Scikit-learn**: Machine learning on MS data
-- **Matplotlib/Seaborn**: Visualization
+- **Matplotlib/Seaborn**: Visualisation
 - **R**: Via rpy2 bridge
 
 ## Resources

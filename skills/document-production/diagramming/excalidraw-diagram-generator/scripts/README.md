@@ -62,7 +62,7 @@ skills/excalidraw-diagram-generator/libraries/aws-architecture-icons/
 ### Benefits
 
 - **Token Efficiency**: AI can first read the lightweight `reference.md` to find relevant icons, then load only the specific icon files needed
-- **Organization**: Icons are organized in a clear directory structure
+- **Organization**: Icons are organised in a clear directory structure
 - **Extensibility**: Users can add multiple library sets side-by-side
 
 ### Recommended Workflow
@@ -95,7 +95,7 @@ When using third-party icon libraries:
 - **GCP Icons**: Subject to Google's terms
 - **Other libraries**: Check each library's license
 
-This script is for personal/organizational use. Redistribution of split icon files should comply with the original library's license terms.
+This script is for personal/organisational use. Redistribution of split icon files should comply with the original library's license terms.
 
 ## add-icon-to-diagram.py
 
@@ -164,7 +164,7 @@ python add-arrow.py <diagram-path> <from-x> <from-y> <to-x> <to-y> [OPTIONS]
 
 **Options**
 - `--style {solid|dashed|dotted}` : Line style (default: `solid`)
-- `--color HEX` : Arrow color (default: `#1e1e1e`)
+- `--color HEX` : Arrow colour (default: `#1e1e1e`)
 - `--label TEXT` : Add a text label on the arrow
 -- `--use-edit-suffix` : Edit via `.excalidraw.edit` to avoid editor overwrite issues (enabled by default; pass `--no-use-edit-suffix` to disable)
 

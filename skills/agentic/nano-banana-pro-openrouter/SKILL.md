@@ -56,11 +56,11 @@ uv run scripts/generate_image.py \
 - Use `--resolution` with `1K`, `2K`, or `4K`.
 - Default is `1K` if not specified.
 
-## System prompt customization
+## System prompt customisation
 
-The skill reads an optional system prompt from `assets/SYSTEM_TEMPLATE`. This allows you to customize the image generation behavior without modifying code.
+The skill reads an optional system prompt from `assets/SYSTEM_TEMPLATE`. This allows you to customise the image generation behaviour without modifying code.
 
-## Behavior and constraints
+## Behaviour and constraints
 
 - Accept up to 3 input images via repeated `--input-image`.
 - `--filename` accepts relative paths (saves to current directory) or absolute paths.
@@ -74,7 +74,7 @@ If the script exits non-zero, check stderr against these common blockers:
 | Symptom | Resolution |
 |---------|------------|
 | `OPENROUTER_API_KEY is not set` | Ask the user to set it. PowerShell: `$env:OPENROUTER_API_KEY = "sk-or-..."` / bash: `export OPENROUTER_API_KEY="sk-or-..."` |
-| `uv: command not found` or not recognized | macOS/Linux: <code>curl -LsSf https://astral.sh/uv/install.sh &#124; sh</code>. Windows: <code>powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 &#124; iex"</code>. Then restart the terminal. |
+| `uv: command not found` or not recognised | macOS/Linux: <code>curl -LsSf https://astral.sh/uv/install.sh &#124; sh</code>. Windows: <code>powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 &#124; iex"</code>. Then restart the terminal. |
 | `AuthenticationError` / HTTP 401 | Key is invalid or has no credits. Verify at <https://openrouter.ai/settings/keys>. |
 
 For transient errors (HTTP 429, network timeouts), retry once after 30 seconds. Do not retry the same error more than twice — surface the issue to the user instead.

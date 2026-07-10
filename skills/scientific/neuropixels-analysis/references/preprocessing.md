@@ -134,7 +134,7 @@ rec_corrected = si.correct_motion(
 )
 ```
 
-### Motion Visualization
+### Motion Visualisation
 ```python
 si.plot_motion(motion, temporal_bins, spatial_bins)
 ```
@@ -175,9 +175,9 @@ rec_whitened = si.whiten(recording, mode='local', local_radius_um=100)
 rec_whitened = si.whiten(recording, mode='global')
 ```
 
-## Artifact Removal
+## Artefact Removal
 
-### Remove Stimulation Artifacts
+### Remove Stimulation Artefacts
 ```python
 # Define artifact times (in samples)
 triggers = [10000, 20000, 30000]  # Sample indices

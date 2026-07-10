@@ -354,7 +354,7 @@ def query_gnomad_sv(gene_symbol):
    - BS1: AF > disease prevalence threshold → Benign Supporting
    - PM2: Absent or very rare in gnomAD → Pathogenic Moderate
 
-### Workflow 2: Gene Prioritization in Rare Disease
+### Workflow 2: Gene Prioritisation in Rare Disease
 
 1. Query constraint scores for candidate genes
 2. Filter for pLI > 0.9 (haploinsufficient) or LOEUF < 0.35

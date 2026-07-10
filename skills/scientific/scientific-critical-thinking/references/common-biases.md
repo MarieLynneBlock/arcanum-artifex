@@ -106,8 +106,8 @@
 
 **Mitigation:**
 - Evaluate methodology independently of results
-- Value rigor and transparency
-- Recognize role of chance
+- Value rigour and transparency
+- Recognise role of chance
 
 ## Experimental and Methodological Biases
 
@@ -123,13 +123,13 @@
 
 **Detection:**
 - Compare characteristics of participants vs. target population
-- Analyze dropout patterns
+- Analyse dropout patterns
 - Consider who is missing from the sample
 
 **Mitigation:**
 - Random sampling
-- Track and analyze non-responders
-- Use strategies to minimize dropout
+- Track and analyse non-responders
+- Use strategies to minimise dropout
 - Report participant flow diagrams
 
 ### 10. Observer Bias (Detection Bias)
@@ -143,7 +143,7 @@
 **Mitigation:**
 - Blinding of observers/assessors
 - Objective, automated measurements
-- Standardized protocols
+- Standardised protocols
 - Inter-rater reliability checks
 
 ### 11. Performance Bias
@@ -155,7 +155,7 @@
 - Differential adherence to protocols
 
 **Mitigation:**
-- Standardize all procedures
+- Standardise all procedures
 - Blind participants and providers
 - Use placebo controls
 - Monitor protocol adherence
@@ -171,7 +171,7 @@
 
 **Mitigation:**
 - Use validated, objective measures
-- Standardize data collection
+- Standardise data collection
 - Blind participants to hypotheses
 - Verify self-reports with objective data
 
@@ -251,7 +251,7 @@
 - Mix positive and negative items
 - Use multiple response formats
 - Blind participants to hypotheses
-- Use behavioral measures
+- Use behavioural measures
 
 ## Statistical and Analysis Biases
 
@@ -305,7 +305,7 @@
 **Description:** Extreme measurements tend to be followed by less extreme ones.
 
 **Manifestations:**
-- Treatment effects in extreme groups may be regression artifacts
+- Treatment effects in extreme groups may be regression artefacts
 - "Sophomore slump" in high performers
 
 **Mitigation:**
@@ -336,7 +336,7 @@
 5. Preregistration
 
 ### Data Collection
-1. Standardized protocols
+1. Standardised protocols
 2. Validated instruments
 3. Objective measures when possible
 4. Multiple observers/raters

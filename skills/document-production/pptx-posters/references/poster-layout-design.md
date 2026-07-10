@@ -2,7 +2,7 @@
 
 ## Overview
 
-Effective poster layout organizes content for maximum impact and comprehension. This guide covers grid systems, spatial organization, visual flow, and layout patterns for research posters.
+Effective poster layout organises content for maximum impact and comprehension. This guide covers grid systems, spatial organisation, visual flow, and layout patterns for research posters.
 
 ## Grid Systems and Column Layouts
 
@@ -183,7 +183,7 @@ Effective poster layout organizes content for maximum impact and comprehension. 
 **Characteristics**:
 - Dynamic, modern appearance
 - Flexible content arrangement
-- Emphasizes hierarchy
+- Emphasises hierarchy
 - Requires design expertise
 - Best for creative fields
 
@@ -286,11 +286,11 @@ BOTTOM LEFT → → → → → → → → → → → → END
 **Design Strategy**:
 1. **Top-left**: Title and introduction (entry point)
 2. **Top-right**: Institution logo, QR code
-3. **Center**: Key result or main figure
+3. **Centre**: Key result or main figure
 4. **Bottom-right**: Conclusions and contact (exit point)
 
 **Content Placement**:
-- Critical information at corners and center
+- Critical information at corners and centre
 - Support information along diagonal paths
 - Use arrows or visual cues to reinforce flow
 
@@ -336,7 +336,7 @@ Classic newspaper layout principle:
 +------------------+------------------+
 ```
 
-**Optimization**:
+**Optimisation**:
 - **Primary Area** (top-left): Introduction, problem statement
 - **Strong Fallow** (top-right): Supporting figure, logo
 - **Weak Fallow** (bottom-left): Methods details, references
@@ -365,10 +365,10 @@ Guide viewers explicitly through content:
 \end{tikzpicture}
 ```
 
-**Color Progression**:
+**Colour Progression**:
 - Light to dark shades indicating progression
-- Cool to warm colors showing importance increase
-- Consistent color for related sections
+- Cool to warm colours showing importance increase
+- Consistent colour for related sections
 
 ## Spatial Organization Strategies
 
@@ -378,14 +378,14 @@ Guide viewers explicitly through content:
 
 **Essential Elements**:
 - **Title**: Concise, descriptive (10-15 words max)
-- **Authors**: Full names, presenting author emphasized
+- **Authors**: Full names, presenting author emphasised
 - **Affiliations**: Institutions, departments
 - **Logos**: University, funding agencies (2-4 max)
 - **Conference info** (optional): Name, date, location
 
 **Layout Options**:
 
-**Centered**:
+**Centred**:
 ```
 +----------------------------------------+
 |  [Logo]    POSTER TITLE HERE    [Logo]|
@@ -454,7 +454,7 @@ Discussion/Conclusions
 [Methods] [Results 2] [Discussion]
 ```
 
-**3. Centralized Main Figure**:
+**3. Centralised Main Figure**:
 ```
 [Intro]  [Main Figure]  [Discussion]
 [Methods]   (center)    [Conclusions]
@@ -472,7 +472,7 @@ Discussion/Conclusions
 
 **Common Elements**:
 - References (abbreviated, 5-10 key citations)
-- Acknowledgments (funding, collaborators)
+- Acknowledgements (funding, collaborators)
 - Contact information
 - QR codes (paper, code, data)
 - Social media handles (optional)
@@ -551,7 +551,7 @@ Discussion/Conclusions
 **Active White Space**: Intentionally placed for specific purpose
 - Around key figures (draws attention)
 - Between major sections (creates clear separation)
-- Above/below titles (emphasizes hierarchy)
+- Above/below titles (emphasises hierarchy)
 
 **Passive White Space**: Natural result of layout
 - Margins and borders
@@ -588,9 +588,9 @@ Discussion/Conclusions
 - Hierarchical sizing (larger = more important)
 - Clear headers and structure
 
-**Callout Blocks**: Emphasized information
+**Callout Blocks**: Emphasised information
 - Key findings or quotes
-- Different color or style
+- Different colour or style
 - Visually distinct
 
 **Reference Blocks**: Supporting info
@@ -649,7 +649,7 @@ Discussion/Conclusions
 [Methods Diagram]
 ```
 
-**2. Color Coding**: Use color to show relationships
+**2. Colour Coding**: Use colour to show relationships
 - All "Methods" blocks in blue
 - All "Results" blocks in green
 - Conclusions in orange
@@ -708,7 +708,7 @@ Discussion/Conclusions
 **Landscape (Horizontal)**:
 - **Pros**: Wide figures, natural for timelines, modern feel
 - **Cons**: Harder to read from distance, less common
-- **Best for**: Timelines, wide data visualizations, non-traditional venues
+- **Best for**: Timelines, wide data visualisations, non-traditional venues
 
 **LaTeX Orientation**:
 ```latex
@@ -743,7 +743,7 @@ Discussion/Conclusions
 
 **Emphasis**: Visual results, clear methodology
 
-### Computational/Modeling
+### Computational/Modelling
 
 **Typical Flow**:
 ```
@@ -832,7 +832,7 @@ Discussion/Conclusions
 **4. Refinement**:
 - Fine-tune alignment
 - Balance visual weight
-- Optimize white space
+- Optimise white space
 
 **5. Testing**:
 - Print at reduced scale (25%)
@@ -843,7 +843,7 @@ Discussion/Conclusions
 
 **Visual Balance**:
 - [ ] No single area feels too heavy or too light
-- [ ] Color distributed evenly across poster
+- [ ] Colour distributed evenly across poster
 - [ ] Text and figures balanced
 - [ ] White space well-distributed
 

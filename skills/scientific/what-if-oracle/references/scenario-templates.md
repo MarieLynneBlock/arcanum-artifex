@@ -13,7 +13,7 @@ Reference guide for domain-specific scenario analysis configurations.
 - Funding rounds
 
 **Branch emphasis:** Likely Case + Contrarian + Second Order
-**Key tension:** Speed vs. thoroughness — startups can't afford to analyze forever
+**Key tension:** Speed vs. thoroughness — startups can't afford to analyse forever
 
 **Template prompt:**
 
@@ -85,7 +85,7 @@ Reference guide for domain-specific scenario analysis configurations.
 
 **Template prompt:**
 
-> "What if [geopolitical event] happens? My exposure: [how it affects me/my organization]. Time horizon: [relevant period]."
+> "What if [geopolitical event] happens? My exposure: [how it affects me/my organisation]. Time horizon: [relevant period]."
 
 ## Crisis Response
 

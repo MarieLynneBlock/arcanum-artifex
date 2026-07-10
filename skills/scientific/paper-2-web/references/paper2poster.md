@@ -9,20 +9,20 @@ Paper2Poster automatically generates professional academic posters from research
 ### 1. Content Extraction
 - Identifies key findings and contributions
 - Extracts important figures and tables
-- Summarizes methodology
+- Summarises methodology
 - Highlights results and conclusions
 - Preserves citations and references
 
 ### 2. Layout Design
 - Creates balanced, professional layouts
-- Optimizes content density and white space
+- Optimises content density and white space
 - Establishes clear visual hierarchy
 - Supports multiple poster sizes
 - Adapts to different content types
 
 ### 3. Visual Design
-- Applies color schemes and branding
-- Optimizes typography for readability
+- Applies colour schemes and branding
+- Optimises typography for readability
 - Ensures figure quality and sizing
 - Creates cohesive visual identity
 - Maintains academic presentation standards
@@ -67,8 +67,8 @@ python pipeline_all.py \
 
 **Design Options:**
 - `--poster-template`: Template style (default: modern)
-- `--color-scheme`: Color palette selection
-- `--institution-branding`: Include institution colors and logos
+- `--color-scheme`: Colour palette selection
+- `--institution-branding`: Include institution colours and logos
 - `--font-family`: Typography selection
 
 ## Standard Poster Sizes
@@ -169,23 +169,23 @@ output/paper_name/poster/
    - Selected key references
    - Author contact information
    - QR codes for paper/website
-   - Acknowledgments
+   - Acknowledgements
 
 ## Design Templates
 
 ### Modern Template (Default)
 - Clean, minimalist design
-- Bold colors for headers
+- Bold colours for headers
 - Ample white space
 - Modern typography
 - Focus on visual hierarchy
 
 ### Academic Template
 - Traditional academic styling
-- Conservative color palette
+- Conservative colour palette
 - Dense information layout
 - Classic serif typography
-- Standard section organization
+- Standard section organisation
 
 ### Visual Template
 - Image-focused layout
@@ -201,19 +201,19 @@ output/paper_name/poster/
 - Technical figure emphasis
 - Engineering/CS aesthetic
 
-## Color Schemes
+## Colour Schemes
 
 ### Predefined Schemes
-- **Institutional**: Uses institution branding colors
+- **Institutional**: Uses institution branding colours
 - **Professional**: Navy blue and gray palette
-- **Vibrant**: Bold, eye-catching colors
+- **Vibrant**: Bold, eye-catching colours
 - **Nature**: Green and earth tones
 - **Tech**: Modern blue and cyan
 - **Warm**: Orange and red accents
 - **Cool**: Blue and purple tones
 
-### Custom Color Schemes
-Specify custom colors in configuration:
+### Custom Colour Schemes
+Specify custom colours in configuration:
 ```json
 {
   "primary": "#1E3A8A",
@@ -244,15 +244,15 @@ Specify custom colors in configuration:
 
 ### Automated Checks
 - **Text readability**: Minimum font size verification
-- **Color contrast**: Accessibility compliance
+- **Colour contrast**: Accessibility compliance
 - **Figure quality**: Resolution and clarity checks
 - **Layout balance**: Content distribution analysis
-- **Branding consistency**: Logo and color verification
+- **Branding consistency**: Logo and colour verification
 
 ### Manual Review Checklist
 1. ☐ All figures are high resolution and clear
 2. ☐ Text is readable from 3-6 feet away
-3. ☐ Color scheme is professional and consistent
+3. ☐ Colour scheme is professional and consistent
 4. ☐ No text overlaps or layout issues
 5. ☐ Institution logos are correct and high quality
 6. ☐ QR codes work and link to correct URLs
@@ -266,7 +266,7 @@ Specify custom colors in configuration:
 ### File Specifications
 - **Format**: PDF/X-1a or PDF/X-4 for professional printing
 - **Resolution**: 300 DPI minimum, 600 DPI for fine details
-- **Color mode**: CMYK for print (system auto-converts from RGB)
+- **Colour mode**: CMYK for print (system auto-converts from RGB)
 - **Bleed**: 0.125" bleed on all sides (automatically added)
 - **Fonts**: All fonts embedded in PDF
 
@@ -297,33 +297,33 @@ Automatically generates QR codes for:
 When enabled:
 - Extracts institution from author affiliations
 - Searches for official logos (requires Google Search API)
-- Applies institution color schemes
+- Applies institution colour schemes
 - Matches brand guidelines
 
 ### Interactive Elements (Digital Posters)
 For digital display or virtual conferences:
 - Clickable links and references
 - Embedded videos in figures
-- Interactive data visualizations
+- Interactive data visualisations
 - Animated transitions
 
 ## Best Practices
 
-### Content Optimization
+### Content Optimisation
 1. **Focus on key findings**: Poster should tell story at a glance
 2. **Limit text**: Use bullet points, avoid paragraphs
-3. **Prioritize visuals**: Figures should dominate the space
+3. **Prioritise visuals**: Figures should dominate the space
 4. **Clear flow**: Guide viewer through logical progression
 5. **Highlight contributions**: Make novelty obvious
 
-### Design Optimization
+### Design Optimisation
 1. **Use contrast**: Ensure text is easily readable
 2. **Maintain hierarchy**: Size indicates importance
 3. **Balance content**: Avoid crowding any section
-4. **Consistent styling**: Same fonts, colors throughout
+4. **Consistent styling**: Same fonts, colours throughout
 5. **White space**: Don't fill every inch
 
-### Figure Optimization
+### Figure Optimisation
 1. **Large enough**: Minimum 6" width for main figures
 2. **High resolution**: 300 DPI minimum
 3. **Clear labels**: Axis labels, legends readable
@@ -333,14 +333,14 @@ For digital display or virtual conferences:
 ## Limitations
 
 - Complex equations may need manual adjustment for readability
-- Very long papers may require content prioritization
+- Very long papers may require content prioritisation
 - Custom branding requires manual specification or API access
 - Multi-language support limited to common languages
-- 3D visualizations may lose quality in 2D poster format
+- 3D visualisations may lose quality in 2D poster format
 
 ## Integration with Other Components
 
 Combine Paper2Poster with:
-- **Paper2Web**: Use matching visual design and color scheme
+- **Paper2Web**: Use matching visual design and colour scheme
 - **Paper2Video**: Create poster walk-through video
 - **AutoPR**: Generate social media graphics from poster

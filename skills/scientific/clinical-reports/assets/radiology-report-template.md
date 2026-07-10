@@ -86,7 +86,7 @@ Technical quality: [Adequate / Limited by bowel gas / Limited by body habitus]
 
 ## Findings
 
-[Systematic, comprehensive description of findings organized by anatomical region or organ system]
+[Systematic, comprehensive description of findings organised by anatomical region or organ system]
 
 ### [Region/Organ 1]
 
@@ -247,7 +247,7 @@ Consider PET/CT for further characterization if clinically indicated.
 **Be specific:**
 - Provide measurements (size in 3 dimensions for masses)
 - Describe location precisely
-- Use standardized terminology (RadLex)
+- Use standardised terminology (RadLex)
 - Quantify when possible
 
 **Be clear:**
@@ -293,7 +293,7 @@ Consider PET/CT for further characterization if clinically indicated.
 ### Differential Diagnosis Language
 
 **Definite:** "Consistent with..."  
-**Probable:** "Most likely represents..." or "Favors..."  
+**Probable:** "Most likely represents..." or "Favours..."  
 **Possible:** "Suggestive of..." or "Differential diagnosis includes..."  
 **Uncertain:** "Cannot exclude..." or "Consider..."
 
@@ -303,8 +303,8 @@ Consider PET/CT for further characterization if clinically indicated.
 - Specify modality, timing, and what to assess
 - "Recommend CT chest in 6-12 months to assess stability"
 
-**Further characterization:**
-- "Consider MRI for further characterization"
+**Further characterisation:**
+- "Consider MRI for further characterisation"
 - "Ultrasound correlation recommended"
 
 **Clinical correlation:**

@@ -6,7 +6,7 @@ Create professional, publication-ready research posters for conferences and acad
 
 This skill provides comprehensive guidance for creating research posters with three major LaTeX packages:
 - **beamerposter**: Traditional academic posters, familiar Beamer syntax
-- **tikzposter**: Modern, colorful designs with TikZ integration
+- **tikzposter**: Modern, colourful designs with TikZ integration
 - **baposter**: Structured multi-column layouts with automatic positioning
 
 ## Quick Start
@@ -15,16 +15,16 @@ This skill provides comprehensive guidance for creating research posters with th
 
 Browse templates in `assets/`:
 - `beamerposter_template.tex` - Classic academic style
-- `tikzposter_template.tex` - Modern, colorful design
+- `tikzposter_template.tex` - Modern, colourful design
 - `baposter_template.tex` - Structured multi-column layout
 
-### 2. Customize Content
+### 2. Customise Content
 
 Edit the template with your research:
 - Title, authors, affiliations
 - Introduction, methods, results, conclusions
 - Replace placeholder figures with your images
-- Update references and acknowledgments
+- Update references and acknowledgements
 
 ### 3. Configure for Full Page
 
@@ -69,7 +69,7 @@ xelatex poster.tex
 
 ### Full Page Coverage
 
-All templates configured to maximize content area:
+All templates configured to maximise content area:
 - Minimal outer margins (5-15mm)
 - Optimal spacing between columns (15-20mm)
 - Proper block padding for readability
@@ -81,7 +81,7 @@ All templates configured to maximize content area:
 - Page size verification
 - Font embedding check
 - Image resolution analysis
-- File size optimization
+- File size optimisation
 
 **Manual Verification** (`assets/poster-quality-checklist.md`):
 - Visual inspection at 100% zoom
@@ -93,7 +93,7 @@ All templates configured to maximize content area:
 
 All templates follow evidence-based poster design:
 - **Typography**: 72pt+ title, 48-72pt headers, 24-36pt body text
-- **Color**: High contrast (≥4.5:1), color-blind friendly palettes
+- **Colour**: High contrast (≥4.5:1), colour-blind friendly palettes
 - **Layout**: Clear visual hierarchy, logical flow
 - **Content**: 300-800 words maximum, 40-50% visual content
 
@@ -118,21 +118,21 @@ Templates support all standard sizes:
    - Detailed comparison of beamerposter, tikzposter, baposter
    - Package-specific syntax and examples
    - Strengths, limitations, best use cases
-   - Theme and color customization
+   - Theme and colour customisation
    - Compilation tips and troubleshooting
 
 2. **`poster-design-principles.md`** (807 lines)
    - Visual hierarchy and white space
    - Typography: font selection, sizing, readability
-   - Color theory: schemes, contrast, accessibility
-   - Color-blind friendly palettes
+   - Colour theory: schemes, contrast, accessibility
+   - Colour-blind friendly palettes
    - Icons, graphics, and visual elements
    - Common design mistakes to avoid
 
 3. **`poster-layout-design.md`** (650+ lines)
    - Grid systems (2, 3, 4-column layouts)
    - Visual flow and reading patterns
-   - Spatial organization strategies
+   - Spatial organisation strategies
    - White space management
    - Block and box design
    - Layout patterns by research type
@@ -185,10 +185,10 @@ Templates support all standard sizes:
   - **baposter**: Multi-section posters, structured layouts
 
 **3. Content Integration**
-- Copy template and customize
+- Copy template and customise
 - Replace placeholder text
 - Add figures and ensure high resolution
-- Configure colors to match branding
+- Configure colours to match branding
 
 **4. Compilation & Review**
 - Compile to PDF
@@ -200,7 +200,7 @@ Templates support all standard sizes:
 - **Critical step!** Print at 25% scale
 - A0 → A4 paper, 36×48" → Letter paper
 - View from 2-3 feet (simulates 8-12 feet for full poster)
-- Verify readability and colors
+- Verify readability and colours
 
 **6. Revisions**
 - Fix any issues identified
@@ -297,10 +297,10 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 \
 - ✅ 300-800 words, 30pt+ body text, 1-3 key findings
 
 ### Design
-- ❌ Poor color contrast (<4.5:1)
-- ❌ Red-green color combinations (color-blind issue)
+- ❌ Poor colour contrast (<4.5:1)
+- ❌ Red-green colour combinations (colour-blind issue)
 - ❌ Cluttered layout with no white space
-- ✅ High contrast, accessible colors, generous spacing
+- ✅ High contrast, accessible colours, generous spacing
 
 ### Technical
 - ❌ Wrong poster dimensions
@@ -316,7 +316,7 @@ Quick reference for choosing the right package:
 |---------|--------------|------------|----------|
 | **Learning Curve** | Easy (Beamer users) | Moderate | Moderate |
 | **Aesthetics** | Traditional | Modern | Professional |
-| **Customization** | Moderate | High (TikZ) | Structured |
+| **Customisation** | Moderate | High (TikZ) | Structured |
 | **Compilation Speed** | Fast | Slower | Fast-Medium |
 | **Best For** | Academic conferences | Creative designs | Multi-column layouts |
 
@@ -384,9 +384,9 @@ pdflatex my_poster.tex
 ## Additional Resources
 
 ### Online Tools
-- **Color contrast checker**: https://webaim.org/resources/contrastchecker/
-- **Color blindness simulator**: https://www.color-blindness.com/coblis-color-blindness-simulator/
-- **Color palette generator**: https://coolors.co/
+- **Colour contrast checker**: https://webaim.org/resources/contrastchecker/
+- **Colour blindness simulator**: https://www.colour-blindness.com/coblis-colour-blindness-simulator/
+- **Colour palette generator**: https://coolors.co/
 
 ### LaTeX Packages
 - `beamerposter`: Extends Beamer for poster-sized documents
@@ -394,7 +394,7 @@ pdflatex my_poster.tex
 - `baposter`: Box-based automatic poster layout
 - `qrcode`: Generate QR codes in LaTeX
 - `graphicx`: Include images
-- `tcolorbox`: Colored boxes and frames
+- `tcolorbox`: Coloured boxes and frames
 
 ### Further Reading
 - All reference documents in `references/` directory

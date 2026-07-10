@@ -1,10 +1,10 @@
 # LaminDB Ontology Management
 
-This document covers biological ontology management in LaminDB through the Bionty plugin, including accessing, searching, and annotating data with standardized biological terms.
+This document covers biological ontology management in LaminDB through the Bionty plugin, including accessing, searching, and annotating data with standardised biological terms.
 
 ## Overview
 
-LaminDB integrates the `bionty` plugin to manage standardized biological ontologies, enabling consistent metadata curation and data annotation across research projects. Bionty provides access to 20+ curated biological ontologies covering genes, proteins, cell types, tissues, diseases, and more.
+LaminDB integrates the `bionty` plugin to manage standardised biological ontologies, enabling consistent metadata curation and data annotation across research projects. Bionty provides access to 20+ curated biological ontologies covering genes, proteins, cell types, tissues, diseases, and more.
 
 ## Available Ontologies
 
@@ -14,7 +14,7 @@ LaminDB provides access to multiple curated ontology sources:
 |----------|----------------|-------------|
 | **Gene** | Ensembl | Genes across organisms (human, mouse, etc.) |
 | **Protein** | UniProt | Protein sequences and annotations |
-| **CellType** | Cell Ontology (CL) | Standardized cell type classifications |
+| **CellType** | Cell Ontology (CL) | Standardised cell type classifications |
 | **CellLine** | Cell Line Ontology (CLO) | Cell line annotations |
 | **Tissue** | Uberon | Anatomical structures and tissues |
 | **Disease** | Mondo, DOID | Disease classifications |
@@ -135,7 +135,7 @@ gdt_cell.children.to_dataframe()
 gdt_cell.query_children().to_dataframe()
 ```
 
-### Visualizing Hierarchies
+### Visualising Hierarchies
 
 ```python
 # Visualize parent hierarchy
@@ -149,7 +149,7 @@ t_cell = bt.CellType.get(name="T cell")
 t_cell.view_parents(with_children=True)  # Shows T cell subtypes
 ```
 
-## Standardizing and Validating Data
+## Standardising and Validating Data
 
 ### Validation
 
@@ -170,7 +170,7 @@ invalid = [t for t, valid in zip(terms, bt.CellType.validate(terms)) if not vali
 print(f"Invalid terms: {invalid}")
 ```
 
-### Standardization with Synonyms
+### Standardisation with Synonyms
 
 Convert non-standard terms to validated names:
 
@@ -464,8 +464,8 @@ ln.Artifact.filter(
 ## Best Practices
 
 1. **Import ontologies first**: Call `import_source()` before validation
-2. **Use standardization**: Leverage synonym mapping to handle variations
-3. **Validate early**: Check terms before creating artifacts
+2. **Use standardisation**: Leverage synonym mapping to handle variations
+3. **Validate early**: Check terms before creating artefacts
 4. **Set organism context**: Specify organism for gene-related queries
 5. **Add custom synonyms**: Register common variations in your domain
 6. **Use public lookup**: Access `lookup(public=True)` for term discovery

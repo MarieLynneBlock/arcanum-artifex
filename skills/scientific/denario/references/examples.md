@@ -342,7 +342,7 @@ den.get_paper(journal=Journal.APS)
 
 ## Time-Series Analysis Example
 
-Specialized example for temporal data.
+Specialised example for temporal data.
 
 ### Example: Economic Forecasting
 
@@ -381,7 +381,7 @@ den.get_paper(journal=Journal.APS)
 
 Complete ML workflow with validation.
 
-### Example: Predictive Modeling
+### Example: Predictive Modelling
 
 ```python
 den = Denario(project_dir="./ml_pipeline")

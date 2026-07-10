@@ -556,7 +556,7 @@ Match governance strictness to risk level:
 | **Most-restrictive-wins** | When composing policies, deny always overrides allow |
 | **Deterministic decisions** | Use explicit policy checks for allow/deny/review rather than asking an LLM to decide permissions |
 | **Pre-flight intent check** | Classify intent *before* tool execution, not after |
-| **Trust decay** | Trust scores should decay over time — require ongoing good behavior |
+| **Trust decay** | Trust scores should decay over time — require ongoing good behaviour |
 | **Append-only audit** | Never modify or delete audit entries — immutability enables compliance |
 | **Audit redaction** | Store enough detail to investigate, but redact secrets, credentials, and unnecessary personal data |
 | **Structured denials** | Return consistent denial reasons so users, operators, and tests can distinguish policy failures |

@@ -2,7 +2,7 @@
 
 Anchor examples for each criterion at scores **1**, **5**, and **10**. Use these to calibrate estimates. Interpolate for intermediate scores.
 
-All scales are 1–10. See the main [SKILL.md](../SKILL.md) for formal definitions and the prioritization formula.
+All scales are 1–10. See the main [SKILL.md](../SKILL.md) for formal definitions and the prioritisation formula.
 
 Anchors are drawn from multiple domains — pick the row closest to your countermeasure's character and adjust. If your domain isn't represented, reason by analogy.
 
@@ -25,7 +25,7 @@ Anchors are drawn from multiple domains — pick the row closest to your counter
 | Score | Platform / DevEx | Security | SRE / Ops | App Dev / Governance |
 |-------|------------------|----------|-----------|----------------------|
 | **1** | Flipping an org-level toggle — single admin, < 1 hour, no purchase. | Enabling a free advisory scanner in alert-only mode. | Adjusting an alert threshold. | Adding a `CONTRIBUTING.md`. |
-| **5** | Rolling out org-wide rulesets across 50–200 repos — cross-team coordination, a week of engineering, no new SKU. | Implementing a secrets manager for one business unit. | Standing up centralized logging for a mid-size estate. | Refactoring a shared library used by ~10 services. |
+| **5** | Rolling out org-wide rulesets across 50–200 repos — cross-team coordination, a week of engineering, no new SKU. | Implementing a secrets manager for one business unit. | Standing up centralised logging for a mid-size estate. | Refactoring a shared library used by ~10 services. |
 | **10** | Enterprise-wide GHAS rollout on unlicensed repos — new seat purchase, procurement, security-team ownership, training funded for months. | Replacing identity provider; zero-trust program. | Multi-region active/active rearchitecture. | Re-platforming a monolith to services; multi-quarter, funded team. |
 
 ## Ease of Deployment

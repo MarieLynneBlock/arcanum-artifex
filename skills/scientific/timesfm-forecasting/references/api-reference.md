@@ -69,7 +69,7 @@ point_forecast, quantile_forecast = model.forecast(
 
 **Raises**: `RuntimeError` if model is not compiled.
 
-**Key behaviors**:
+**Key behaviours**:
 
 - Leading NaN values are stripped automatically
 - Internal NaN values are linearly interpolated
@@ -104,7 +104,7 @@ point, quantiles = model.forecast_with_covariates(
 
 ## `timesfm.ForecastConfig`
 
-Immutable dataclass controlling all forecast behavior.
+Immutable dataclass controlling all forecast behaviour.
 
 ```python
 @dataclasses.dataclass(frozen=True)
@@ -142,11 +142,11 @@ Maximum forecast horizon.
 
 #### `normalize_inputs` (bool, default=False)
 
-Whether to z-normalize each series before feeding to the model.
+Whether to z-normalise each series before feeding to the model.
 
-- **True** (RECOMMENDED): Normalizes each series to zero mean, unit variance
+- **True** (RECOMMENDED): Normalises each series to zero mean, unit variance
 - **False**: Raw values are passed directly
-- **When False is OK**: Only if your series are already normalized or very close to scale 1.0
+- **When False is OK**: Only if your series are already normalised or very close to scale 1.0
 
 #### `per_core_batch_size` (int, default=1)
 

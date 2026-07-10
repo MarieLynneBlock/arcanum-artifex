@@ -1,6 +1,6 @@
-# Generalized Linear Models (GLM) Reference
+# Generalised Linear Models (GLM) Reference
 
-This document provides comprehensive guidance on generalized linear models in statsmodels, including families, link functions, and applications.
+This document provides comprehensive guidance on generalised linear models in statsmodels, including families, link functions, and applications.
 
 ## Overview
 
@@ -72,7 +72,7 @@ For count data (non-negative integers).
 **When to use:**
 - Count outcomes (number of events)
 - Rare events
-- Rate modeling (with offset)
+- Rate modelling (with offset)
 
 **Common links:**
 - Log (default): log(μ)
@@ -598,7 +598,7 @@ print("Multiplicative effects on mean:", effects)
 2. **Verify link function**: Use canonical links unless there's a reason not to
 3. **Examine residuals**: Deviance residuals should be approximately normal
 4. **Test for overdispersion**: Especially for Poisson models
-5. **Use offsets appropriately**: For rate modeling with varying exposure
+5. **Use offsets appropriately**: For rate modelling with varying exposure
 6. **Consider robust SEs**: When variance assumptions questionable
 7. **Compare models**: Use AIC/BIC for non-nested, LR test for nested
 8. **Interpret on original scale**: Transform coefficients (e.g., exp for log link)

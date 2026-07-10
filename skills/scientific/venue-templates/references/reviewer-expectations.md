@@ -8,7 +8,7 @@ Understanding what reviewers look for at different venues is essential for craft
 
 ## Overview
 
-Reviewers at different venues prioritize different aspects. Understanding these priorities helps you:
+Reviewers at different venues prioritise different aspects. Understanding these priorities helps you:
 1. Frame your contribution appropriately
 2. Anticipate likely criticisms
 3. Prepare effective rebuttals
@@ -24,7 +24,7 @@ Reviewers at different venues prioritize different aspects. Understanding these 
 |----------|--------|-------------|
 | **Broad significance** | Critical | Impact beyond the specific subfield |
 | **Novelty** | Critical | First to show this or major advance |
-| **Technical rigor** | High | Sound methodology, appropriate controls |
+| **Technical rigour** | High | Sound methodology, appropriate controls |
 | **Clarity** | High | Accessible to non-specialists |
 | **Completeness** | Moderate | Thorough but not exhaustive |
 
@@ -40,7 +40,7 @@ Reviewers at different venues prioritize different aspects. Understanding these 
 **At Editorial Stage**:
 - Findings not significant enough for broad audience
 - Incremental advance over prior work
-- Too specialized for the journal
+- Too specialised for the journal
 - Topic doesn't fit current editorial interests
 
 **At Review Stage**:
@@ -81,7 +81,7 @@ Reviewers at different venues prioritize different aspects. Understanding these 
 | Priority | Weight | Description |
 |----------|--------|-------------|
 | **Clinical relevance** | Critical | Will this change practice? |
-| **Methodological rigor** | Critical | CONSORT/STROBE compliance |
+| **Methodological rigour** | Critical | CONSORT/STROBE compliance |
 | **Patient outcomes** | Critical | Focus on what matters to patients |
 | **Statistical validity** | High | Appropriate analysis, power |
 | **Generalizability** | High | Applicability to broader populations |
@@ -126,7 +126,7 @@ Reviewers at different venues prioritize different aspects. Understanding these 
 | **Mechanistic insight** | Critical | How does this work? |
 | **Depth of investigation** | Critical | Multiple approaches, comprehensive |
 | **Biological significance** | High | Importance for the field |
-| **Technical rigor** | High | Quantification, statistics, replication |
+| **Technical rigour** | High | Quantification, statistics, replication |
 | **Novelty** | Moderate-High | New findings, not just confirmation |
 
 ### Review Process
@@ -161,9 +161,9 @@ Reviewers at different venues prioritize different aspects. Understanding these 
 | **Novelty** | Critical | New method, insight, or perspective |
 | **Technical soundness** | Critical | Correct implementation, fair comparisons |
 | **Significance** | High | Advances the field |
-| **Experimental rigor** | High | Strong baselines, proper ablations |
+| **Experimental rigour** | High | Strong baselines, proper ablations |
 | **Reproducibility** | Moderate-High | Can others replicate? |
-| **Clarity** | Moderate | Well-written and organized |
+| **Clarity** | Moderate | Well-written and organised |
 
 ### Review Process
 
@@ -181,7 +181,7 @@ Typical NeurIPS/ICML scoring:
 |-----------|-------------|------------------|
 | **Soundness** | 1-4 | Technical correctness |
 | **Contribution** | 1-4 | Significance of results |
-| **Presentation** | 1-4 | Clarity and organization |
+| **Presentation** | 1-4 | Clarity and organisation |
 | **Overall** | 1-10 | Holistic assessment |
 | **Confidence** | 1-5 | Reviewer expertise |
 
@@ -205,7 +205,7 @@ Typical NeurIPS/ICML scoring:
 
 ❌ "We compare against methods from 2018" (outdated baselines)
 ❌ "Our method achieves 0.5% improvement" (marginal gain)
-❌ "We evaluate on one dataset" (limited generalization)
+❌ "We evaluate on one dataset" (limited generalisation)
 ❌ "Implementation details are in the supplementary" (core info missing)
 ❌ "We leave ablations for future work" (incomplete evaluation)
 
@@ -224,22 +224,22 @@ Typical NeurIPS/ICML scoring:
 | Priority | Weight | Description |
 |----------|--------|-------------|
 | **Contribution to HCI** | Critical | New design, insight, or method |
-| **User-centered approach** | High | Focus on human needs |
+| **User-centred approach** | High | Focus on human needs |
 | **Appropriate evaluation** | High | Matches claims and contribution |
 | **Design rationale** | Moderate-High | Justified design decisions |
 | **Implications** | Moderate | Guidance for future work |
 
 ### Contribution Types
 
-CHI explicitly categorizes contributions:
+CHI explicitly categorises contributions:
 
 | Type | What Reviewers Expect |
 |------|----------------------|
 | **Empirical** | Rigorous user study, clear findings |
-| **Artifact** | Novel system/tool, evaluation of use |
+| **Artefact** | Novel system/tool, evaluation of use |
 | **Methodological** | New research method, validation |
 | **Theoretical** | Conceptual framework, intellectual contribution |
-| **Survey** | Comprehensive, well-organized coverage |
+| **Survey** | Comprehensive, well-organised coverage |
 
 ### What Gets a Paper Rejected
 
@@ -296,7 +296,7 @@ Reviewers check for:
 
 **Reviewer**: "The paper lacks analysis of failure cases. When and why does the proposed method fail?"
 
-**Response**: "We have added Section 5.4 on error analysis. We manually examined 100 errors and categorized them into three types: (1) complex coreference chains (42%), (2) implicit references (31%), and (3) domain-specific knowledge requirements (27%). Figure 4 shows representative examples of each. This analysis reveals that our method particularly struggles with implicit references, which we discuss as a direction for future work."
+**Response**: "We have added Section 5.4 on error analysis. We manually examined 100 errors and categorised them into three types: (1) complex coreference chains (42%), (2) implicit references (31%), and (3) domain-specific knowledge requirements (27%). Figure 4 shows representative examples of each. This analysis reveals that our method particularly struggles with implicit references, which we discuss as a direction for future work."
 
 ---
 
@@ -308,7 +308,7 @@ Reviewers check for:
 |----------|--------|-------------|
 | **Scalability** | High | Handles large datasets |
 | **Practical impact** | High | Real-world applicability |
-| **Experimental rigor** | High | Comprehensive evaluation |
+| **Experimental rigour** | High | Comprehensive evaluation |
 | **Technical novelty** | Moderate-High | New method or application |
 | **Reproducibility** | Moderate | Code/data availability |
 
@@ -338,7 +338,7 @@ Reviewers check for:
 ✅ **Acknowledge valid criticisms**: Show you understand the concern
 ✅ **Be concise**: Reviewers read many rebuttals
 ✅ **Stay professional**: Even for unfair reviews
-✅ **Prioritize critical issues**: Address major concerns first
+✅ **Prioritise critical issues**: Address major concerns first
 
 ### Don'ts
 
@@ -402,7 +402,7 @@ Before submitting, review your paper as a reviewer would:
 - [ ] Is reproducibility information complete?
 
 ### HCI Conferences
-- [ ] Is the user-centered perspective clear?
+- [ ] Is the user-centred perspective clear?
 - [ ] Is the evaluation appropriate for claims?
 - [ ] Are design implications actionable?
 

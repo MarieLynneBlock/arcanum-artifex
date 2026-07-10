@@ -1,6 +1,6 @@
 # Hardening Playbook
 
-Prioritized controls to reduce data breach blast radius. Controls are organized by **impact category** and include tech-stack-specific implementation patterns. Each control includes a **blast radius reduction estimate**.
+Prioritised controls to reduce data breach blast radius. Controls are organised by **impact category** and include tech-stack-specific implementation patterns. Each control includes a **blast radius reduction estimate**.
 
 > **How to use:** After identifying exposure vectors, match each to a control below. Sort your hardening roadmap by `(Blast_Radius_Reduction × Severity) / Effort`.
 
@@ -11,7 +11,7 @@ Prioritized controls to reduce data breach blast radius. Controls are organized 
 | Priority | Control | Blast Radius Reduction | Effort | Category |
 |----------|---------|----------------------|--------|---------|
 | P0 | Fix IDOR/BOLA — add ownership checks | 90% for affected vector | Low | Authorization |
-| P0 | Remove sensitive fields from API responses | 85% for affected fields | Low | Data Minimization |
+| P0 | Remove sensitive fields from API responses | 85% for affected fields | Low | Data Minimisation |
 | P0 | Revoke publicly accessible storage (S3/Blob) | 100% for affected store | Low | Access Control |
 | P0 | Remove plaintext credentials from code/logs | 100% for affected secret | Low | Secrets |
 | P1 | Add field-level encryption for T1 data | 80% for encrypted fields | Medium | Encryption |
@@ -24,7 +24,7 @@ Prioritized controls to reduce data breach blast radius. Controls are organized 
 | P2 | Column-level encryption for T2 sensitive data | 70% for encrypted columns | Medium | Encryption |
 | P3 | Implement data retention + auto-deletion | 40% reduction in stale data exposure | High | Data Lifecycle |
 | P3 | Separate analytics store from production PII | 60% for analytics breach | High | Architecture |
-| P3 | Pseudonymize behavioral tracking data | 70% for behavioral data | Medium | Pseudonymization |
+| P3 | Pseudonymize behavioural tracking data | 70% for behavioural data | Medium | Pseudonymization |
 
 ---
 
@@ -385,7 +385,7 @@ scheduler.start()
 
 ---
 
-### 10. Pseudonymize Behavioral and Analytics Data
+### 10. Pseudonymize Behavioural and Analytics Data
 
 Replace direct user identifiers in analytics with pseudonymous tokens.
 

@@ -10,9 +10,9 @@ Load this guide when you need:
 - Complete end-to-end workflow examples for training dataset creation
 - Patterns for multi-step data selection and download workflows
 - Examples of license-aware data handling for commercial use
-- Visualization workflows for data preview before download
+- Visualisation workflows for data preview before download
 
-For core API patterns (query, download, visualize, citations), see the "Core Capabilities" section in the main SKILL.md.
+For core API patterns (query, download, visualise, citations), see the "Core Capabilities" section in the main SKILL.md.
 
 ## Prerequisites
 
@@ -110,7 +110,7 @@ for _, row in manufacturers.head(3).iterrows():
     )
 ```
 
-## Use Case 3: Visualize Series Without Downloading
+## Use Case 3: Visualise Series Without Downloading
 
 **Objective:** Preview imaging data before committing to download
 
@@ -135,7 +135,7 @@ for _, row in series_list.iterrows():
     # webbrowser.open(viewer_url)  # Uncomment to open automatically
 ```
 
-For additional visualization options, see the [IDC Portal getting started guide](https://learn.canceridc.dev/portal/getting-started) or [SlicerIDCBrowser](https://github.com/ImagingDataCommons/SlicerIDCBrowser) for 3D Slicer integration.
+For additional visualisation options, see the [IDC Portal getting started guide](https://learn.canceridc.dev/portal/getting-started) or [SlicerIDCBrowser](https://github.com/ImagingDataCommons/SlicerIDCBrowser) for 3D Slicer integration.
 
 ## Use Case 4: License-Aware Batch Download for Commercial Use
 
@@ -180,7 +180,7 @@ cc_by_data.to_csv('commercial_dataset_manifest_CC-BY_ONLY.csv', index=False)
 
 ## Resources
 
-- Main SKILL.md for core API patterns (query, download, visualize)
+- Main SKILL.md for core API patterns (query, download, visualise)
 - `references/clinical-data-guide.md` for clinical data integration workflows
 - `references/sql-patterns.md` for additional SQL query patterns
 - `references/index-tables-guide.md` for complex join patterns

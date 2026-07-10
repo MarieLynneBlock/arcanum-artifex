@@ -48,7 +48,7 @@ Use quotation marks for exact phrases:
 ### What is MeSH?
 
 MeSH is a controlled vocabulary thesaurus for indexing biomedical literature:
-- **Hierarchical structure**: Organized in tree structures
+- **Hierarchical structure**: Organised in tree structures
 - **Consistent indexing**: Same concept always tagged the same way
 - **Comprehensive**: Covers diseases, drugs, anatomy, techniques, etc.
 - **Professional curation**: NLM indexers assign MeSH terms
@@ -210,7 +210,7 @@ Combine search terms with Boolean logic.
 
 ### AND
 
-Both terms must be present (default behavior):
+Both terms must be present (default behaviour):
 
 ```
 diabetes AND treatment
@@ -694,7 +694,7 @@ python scripts/extract_metadata.py \
    ```
 
 3. **Use field tags appropriately**:
-   - `[MeSH]` for standardized concepts
+   - `[MeSH]` for standardised concepts
    - `[Title/Abstract]` for specific terms
    - `[Author]` for known authors
    - `[Journal]` for specific venues
@@ -718,7 +718,7 @@ python scripts/extract_metadata.py \
    ... AND 2020:2024[Publication Date]
    ```
 
-### Optimizing Results
+### Optimising Results
 
 1. **Too many results**: Add filters
    - Restrict publication type

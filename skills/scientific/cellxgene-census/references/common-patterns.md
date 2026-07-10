@@ -239,7 +239,7 @@ sce.pp.scanorama_integrate(adatas)
 ## Best Practices
 
 ### 1. Always Filter for Primary Data
-Unless specifically analyzing duplicates, always include `is_primary_data == True`:
+Unless specifically analysing duplicates, always include `is_primary_data == True`:
 ```python
 obs_value_filter="cell_type == 'B cell' and is_primary_data == True"
 ```
@@ -258,13 +258,13 @@ with cellxgene_census.open_soma() as census:
 ```
 
 ### 4. Select Only Needed Columns
-Minimize data transfer by selecting only required metadata columns:
+Minimise data transfer by selecting only required metadata columns:
 ```python
 obs_column_names=["cell_type", "tissue_general", "disease"]  # Not all columns
 ```
 
 ### 5. Check Dataset Presence for Gene Queries
-When analyzing specific genes, check which datasets measured them:
+When analysing specific genes, check which datasets measured them:
 ```python
 presence = cellxgene_census.get_presence_matrix(
     census,
@@ -348,4 +348,4 @@ for tissue in tissues:
 4. **Inconsistent versioning**: Results not reproducible without specifying version
 5. **Overly broad queries**: Start with focused queries, expand as needed
 6. **Ignoring dataset presence**: Some genes not measured in all datasets
-7. **Wrong count normalization**: Be aware of UMI vs read count differences
+7. **Wrong count normalisation**: Be aware of UMI vs read count differences

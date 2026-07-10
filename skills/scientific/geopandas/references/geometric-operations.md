@@ -32,7 +32,7 @@ boundaries = gdf.geometry.boundary
 
 ### Centroid
 
-Get center point of each geometry:
+Get centre point of each geometry:
 
 ```python
 centroids = gdf.geometry.centroid

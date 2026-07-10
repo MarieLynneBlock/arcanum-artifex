@@ -1,4 +1,4 @@
-# Mapping and Visualization
+# Mapping and Visualisation
 
 GeoPandas provides plotting through matplotlib integration.
 
@@ -20,7 +20,7 @@ gdf.plot(edgecolor='black', linewidth=0.5)
 
 ## Choropleth Maps
 
-Color features based on data values:
+Colour features based on data values:
 
 ```python
 # Basic choropleth
@@ -53,7 +53,7 @@ gdf.plot(column='population', scheme='quantiles', k=7,
          classification_kwds={'pct': [10, 20, 30, 40, 50, 60, 70, 80, 90]})
 ```
 
-### Legend Customization
+### Legend Customisation
 
 ```python
 # Position legend outside plot

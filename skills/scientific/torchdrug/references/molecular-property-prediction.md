@@ -30,7 +30,7 @@ Molecular property prediction involves predicting chemical, physical, or biologi
 - **QM8** (21,786 molecules): Electronic spectra and excited state properties
 - **QM9** (133,885 molecules): Geometric, energetic, electronic, and thermodynamic properties
 - **PCQM4M** (3,803,453 molecules): Large-scale quantum chemistry dataset
-- **ZINC250k/2M** (250k/2M molecules): Drug-like compounds for generative modeling
+- **ZINC250k/2M** (250k/2M molecules): Drug-like compounds for generative modelling
 
 ## Task Types
 
@@ -67,7 +67,7 @@ task = tasks.PropertyPrediction(model, task=dataset.tasks,
 
 ### MultipleBinaryClassification
 
-Specialized task for multi-label scenarios where each molecule can have multiple binary labels (e.g., Tox21, SIDER).
+Specialised task for multi-label scenarios where each molecule can have multiple binary labels (e.g., Tox21, SIDER).
 
 **Key Features:**
 - Handles missing labels gracefully
@@ -166,4 +166,4 @@ dataset = datasets.BBBP("~/molecule-datasets/",
 - Solution: Reduce batch size, use gradient accumulation, or implement graph sampling
 
 **Issue: Slow training**
-- Solution: Use GPU acceleration, optimize data loading with multiple workers, or use mixed precision training
+- Solution: Use GPU acceleration, optimise data loading with multiple workers, or use mixed precision training

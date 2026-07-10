@@ -692,7 +692,7 @@ regime_probs = results.smoothed_marginal_probabilities
 ## Best Practices
 
 1. **Check stationarity**: Difference if needed, verify with ADF/KPSS tests
-2. **Plot data**: Always visualize before modeling
+2. **Plot data**: Always visualise before modelling
 3. **Identify seasonality**: Use appropriate seasonal models (SARIMAX, Holt-Winters)
 4. **Model selection**: Use AIC/BIC and out-of-sample validation
 5. **Residual diagnostics**: Check for autocorrelation, normality, heteroskedasticity

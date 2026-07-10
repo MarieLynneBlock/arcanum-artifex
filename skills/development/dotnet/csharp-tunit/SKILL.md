@@ -30,8 +30,8 @@ Your goal is to help me write effective unit tests with TUnit, covering both sta
 
 ## Standard Tests
 
-- Keep tests focused on a single behavior
-- Avoid testing multiple behaviors in one test method
+- Keep tests focused on a single behaviour
+- Avoid testing multiple behaviours in one test method
 - Use TUnit's fluent assertion syntax with `await Assert.That()`
 - Include only the assertions needed to verify the test case
 - Make tests independent and idempotent (can run in any order)
@@ -72,7 +72,7 @@ Your goal is to help me write effective unit tests with TUnit, covering both sta
 ## Test Organization
 
 - Group tests by feature or component
-- Use `[Category("CategoryName")]` for test categorization
+- Use `[Category("CategoryName")]` for test categorisation
 - Use `[DisplayName("Custom Test Name")]` for custom test names
 - Consider using `TestContext` for test diagnostics and information
 - Use conditional attributes like custom `[WindowsOnly]` for platform-specific tests

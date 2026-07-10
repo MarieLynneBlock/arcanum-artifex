@@ -7,18 +7,18 @@
 
 ## Overview
 
-Transforms a digital image into a living, fluorescent bacterial artwork printed on an agar omni-tray. Customers submit a pixel art design and colors are mapped to distinct fluorescent E. coli strains. Overnight cultures are prepared from frozen glycerol stocks, diluted, and dispensed onto selective LB-chloramphenicol agar plates via Echo acoustic liquid handling at 50 nL per spot. Plates are incubated at 30 deg C for 16 hours, followed by 4 deg C for 12 hours to stabilize colony morphology and fluorescence. High-resolution photographs are captured under UV illumination and delivered digitally.
+Transforms a digital image into a living, fluorescent bacterial artwork printed on an agar omni-tray. Customers submit a pixel art design and colours are mapped to distinct fluorescent E. coli strains. Overnight cultures are prepared from frozen glycerol stocks, diluted, and dispensed onto selective LB-chloramphenicol agar plates via Echo acoustic liquid handling at 50 nL per spot. Plates are incubated at 30 deg C for 16 hours, followed by 4 deg C for 12 hours to stabilise colony morphology and fluorescence. High-resolution photographs are captured under UV illumination and delivered digitally.
 
 ## Input
 
 - **Image file:** `.png` or `.svg` format
 - **Resolution:** 48x48 to 96x96 pixels
-- **Color mapping:** Match image colors to the fluorescent strain palette
+- **Colour mapping:** Match image colours to the fluorescent strain palette
 - **Orientation:** Confirm plate orientation and multi-plate designs (identical vs. distinct)
 
-## Available Fluorescent E. coli Strains (11 colors)
+## Available Fluorescent E. coli Strains (11 colours)
 
-| Strain/Protein | Color |
+| Strain/Protein | Colour |
 |---|---|
 | sfGFP | Green |
 | mRFP | Red |
@@ -61,7 +61,7 @@ Transforms a digital image into a living, fluorescent bacterial artwork printed 
 
 ### Post-Processing
 
-1. Transfer to 4 deg C for 12 hours (fluorescence stabilization)
+1. Transfer to 4 deg C for 12 hours (fluorescence stabilisation)
 2. UV illumination photography
 3. Image processing and delivery
 
@@ -84,4 +84,4 @@ Transforms a digital image into a living, fluorescent bacterial artwork printed 
 - Unique scientific art and gifts
 - Conference displays and promotional materials
 - Lab team celebrations
-- Visualizing biological art concepts
+- Visualising biological art concepts

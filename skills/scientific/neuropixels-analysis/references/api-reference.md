@@ -1,6 +1,6 @@
 # API Reference
 
-Quick reference for neuropixels_analysis functions organized by module.
+Quick reference for neuropixels_analysis functions organised by module.
 
 ## Core Module
 
@@ -215,7 +215,7 @@ Compute quality metrics for all units.
 - `amplitude_cv`: Amplitude coefficient of variation
 - `sliding_rp_violation`: Sliding window refractory violations
 - `d_prime`: Isolation quality
-- `nearest_neighbor`: Nearest-neighbor overlap
+- `nearest_neighbor`: Nearest-neighbour overlap
 
 ## Curation Module
 
@@ -277,7 +277,7 @@ Returns:
 - `'metrics'`: Quality metrics dict
 - `'unit_id'`: Unit ID
 
-### analyze_unit_visually
+### analyse_unit_visually
 
 ```python
 npa.analyze_unit_visually(
@@ -290,7 +290,7 @@ npa.analyze_unit_visually(
 ) -> dict
 ```
 
-Analyze unit using vision-language model.
+Analyse unit using vision-language model.
 
 **Tasks:**
 - `'quality_assessment'`: Classify as good/mua/noise
@@ -343,7 +343,7 @@ session.save()
 session = npa.CurationSession.load(session_dir)
 ```
 
-## Visualization Module
+## Visualisation Module
 
 ### plot_drift
 

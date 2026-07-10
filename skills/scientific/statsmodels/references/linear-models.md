@@ -1,6 +1,6 @@
 # Linear Regression Models Reference
 
-This document provides detailed guidance on linear regression models in statsmodels, including OLS, GLS, WLS, quantile regression, and specialized variants.
+This document provides detailed guidance on linear regression models in statsmodels, including OLS, GLS, WLS, quantile regression, and specialised variants.
 
 ## Core Model Classes
 
@@ -107,7 +107,7 @@ weights = 1 / np.exp(variance_model.fittedvalues)
 wls_results = sm.WLS(y, X, weights=weights).fit()
 ```
 
-### GLS (Generalized Least Squares)
+### GLS (Generalised Least Squares)
 
 Handles arbitrary covariance structure (Σ). Superclass for other regression methods.
 
@@ -126,7 +126,7 @@ results = model.fit()
 
 ### GLSAR (GLS with Autoregressive Errors)
 
-Feasible generalized least squares with AR(p) errors for time series data.
+Feasible generalised least squares with AR(p) errors for time series data.
 
 **When to use:**
 - Time series regression with autocorrelated errors
@@ -194,7 +194,7 @@ plt.show()
 
 ### Quantile Regression
 
-Analyzes conditional quantiles rather than conditional mean.
+Analyses conditional quantiles rather than conditional mean.
 
 **When to use:**
 - Interest in quantiles (median, 90th percentile, etc.)

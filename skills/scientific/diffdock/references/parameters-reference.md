@@ -49,7 +49,7 @@ This document provides comprehensive details on all DiffDock configuration param
   - Example: `--out_dir results/user_predictions/`
 
 - **`--save_visualisation`**: Export predicted molecules as SDF files
-  - Enables visualization of results
+  - Enables visualisation of results
 
 ## Inference Parameters
 
@@ -114,7 +114,7 @@ This document provides comprehensive details on all DiffDock configuration param
   - Default: `10`
   - Larger values increase throughput but require more memory
 
-- **`--tqdm`**: Enable progress bar visualization
+- **`--tqdm`**: Enable progress bar visualisation
   - Useful for monitoring long-running jobs
 
 ### Protein Structure
@@ -124,7 +124,7 @@ This document provides comprehensive details on all DiffDock configuration param
 
 - **`--esm_embeddings_path`**: Path to pre-computed ESM2 protein embeddings
   - Speeds up inference by reusing embeddings
-  - Optional optimization
+  - Optional optimisation
 
 ### Dataset Options
 - **`--split`**: Dataset split to use (train/test/val)

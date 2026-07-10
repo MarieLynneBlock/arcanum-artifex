@@ -18,7 +18,7 @@ When selecting layers, consider these capability flags:
 ### Standard Graph Convolutions
 
 **GCNConv** - Graph Convolutional Network layer
-- Implements spectral graph convolution with symmetric normalization
+- Implements spectral graph convolution with symmetric normalisation
 - Supports: SparseTensor, edge_weight, Bipartite, Lazy
 - Use for: Citation networks, social networks, general graph learning
 - Example: `GCNConv(in_channels, out_channels, improved=False, cached=True)`
@@ -30,9 +30,9 @@ When selecting layers, consider these capability flags:
 - Example: `SAGEConv(in_channels, out_channels, aggr='mean')`
 
 **GATConv** - Graph Attention Network layer
-- Multi-head attention mechanism for adaptive neighbor weighting
+- Multi-head attention mechanism for adaptive neighbour weighting
 - Supports: SparseTensor, edge_attr, Bipartite, Static, Lazy
-- Use for: Tasks requiring variable neighbor importance
+- Use for: Tasks requiring variable neighbour importance
 - Example: `GATConv(in_channels, out_channels, heads=8, dropout=0.6)`
 
 **GraphConv** - Simple graph convolution (Morris et al.)
@@ -65,7 +65,7 @@ When selecting layers, consider these capability flags:
 - Use for: Fast training, shallow models
 - Example: `SGConv(in_channels, out_channels, K=2)`
 
-**APPNP** - Approximate Personalized Propagation of Neural Predictions
+**APPNP** - Approximate Personalised Propagation of Neural Predictions
 - Separates feature transformation from propagation
 - Supports: SparseTensor, edge_weight, Lazy
 - Use for: Deep propagation without oversmoothing
@@ -130,8 +130,8 @@ When selecting layers, consider these capability flags:
 - Use for: Deep GNNs, complex features
 - Example: `ResGatedGraphConv(in_channels, out_channels)`
 
-**GENConv** - Generalized Graph Convolution
-- Generalizes multiple GNN variants
+**GENConv** - Generalised Graph Convolution
+- Generalises multiple GNN variants
 - Supports: SparseTensor, edge_weight, edge_attr, Bipartite, Lazy
 - Use for: Flexible architecture exploration
 - Example: `GENConv(in_channels, out_channels, aggr='softmax', num_layers=2)`
@@ -226,7 +226,7 @@ When selecting layers, consider these capability flags:
 - Example: `PowerMeanAggregation(learn=True)`
 
 **LSTMAggregation** - LSTM-based aggregation
-- Sequential processing of neighbors
+- Sequential processing of neighbours
 - Example: `LSTMAggregation(in_channels, out_channels)`
 
 **SetTransformerAggregation** - Set Transformer aggregation
@@ -295,34 +295,34 @@ When selecting layers, consider these capability flags:
 - Pools nodes within clusters
 - Example: `avg_pool(cluster, data)`
 
-## Normalization Layers
+## Normalisation Layers
 
-**BatchNorm** - Batch normalization
-- Normalizes features across batch
+**BatchNorm** - Batch normalisation
+- Normalises features across batch
 - Example: `BatchNorm(in_channels)`
 
-**LayerNorm** - Layer normalization
-- Normalizes features per sample
+**LayerNorm** - Layer normalisation
+- Normalises features per sample
 - Example: `LayerNorm(in_channels)`
 
-**InstanceNorm** - Instance normalization
-- Normalizes per sample and graph
+**InstanceNorm** - Instance normalisation
+- Normalises per sample and graph
 - Example: `InstanceNorm(in_channels)`
 
-**GraphNorm** - Graph normalization
-- Graph-specific normalization
+**GraphNorm** - Graph normalisation
+- Graph-specific normalisation
 - Example: `GraphNorm(in_channels)`
 
-**PairNorm** - Pair normalization
+**PairNorm** - Pair normalisation
 - Prevents oversmoothing in deep GNNs
 - Example: `PairNorm(scale_individually=False)`
 
-**MessageNorm** - Message normalization
-- Normalizes messages during passing
+**MessageNorm** - Message normalisation
+- Normalises messages during passing
 - Example: `MessageNorm(learn_scale=True)`
 
-**DiffGroupNorm** - Differentiable Group Normalization
-- Learnable grouping for normalization
+**DiffGroupNorm** - Differentiable Group Normalisation
+- Learnable grouping for normalisation
 - Example: `DiffGroupNorm(in_channels, groups=10)`
 
 ## Model Architectures
@@ -428,8 +428,8 @@ These are useful when working with small, fully-connected, or densely represente
 1. **Start simple**: Begin with GCNConv or GATConv for most tasks
 2. **Consider data type**: Use molecular layers (SchNet, DimeNet) for 3D structures
 3. **Check capabilities**: Match layer capabilities to your data (edge features, bipartite, etc.)
-4. **Deep networks**: Use normalization (PairNorm, LayerNorm) and JumpingKnowledge for deep GNNs
-5. **Large graphs**: Use scalable layers (SAGE, Cluster-GCN) with neighbor sampling
+4. **Deep networks**: Use normalisation (PairNorm, LayerNorm) and JumpingKnowledge for deep GNNs
+5. **Large graphs**: Use scalable layers (SAGE, Cluster-GCN) with neighbour sampling
 6. **Heterogeneous**: Use RGCNConv, HGTConv, or to_hetero() conversion
 7. **Lazy initialization**: Use lazy layers when input dimensions vary or are unknown
 
@@ -451,7 +451,7 @@ class GNN(torch.nn.Module):
         return global_mean_pool(x, batch)
 ```
 
-### Deep GNN with Normalization
+### Deep GNN with Normalisation
 ```python
 class DeepGNN(torch.nn.Module):
     def __init__(self, in_channels, hidden_channels, num_layers, out_channels):

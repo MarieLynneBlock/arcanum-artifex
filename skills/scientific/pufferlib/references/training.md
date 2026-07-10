@@ -2,7 +2,7 @@
 
 ## Overview
 
-PuffeRL is PufferLib's high-performance training algorithm based on CleanRL's PPO with LSTMs, enhanced with proprietary research improvements. It achieves training at millions of steps per second through optimized vectorization and efficient implementation.
+PuffeRL is PufferLib's high-performance training algorithm based on CleanRL's PPO with LSTMs, enhanced with proprietary research improvements. It achieves training at millions of steps per second through optimised vectorization and efficient implementation.
 
 ## Training Workflow
 
@@ -206,7 +206,7 @@ PufferLib provides a real-time terminal dashboard showing:
 - Current SPS
 - Episode statistics
 - Loss values
-- GPU utilization
+- GPU utilisation
 
 ## Checkpointing
 
@@ -262,12 +262,12 @@ protein = Protein(
 best_config = protein.optimize()
 ```
 
-## Performance Optimization Tips
+## Performance Optimisation Tips
 
-### Maximizing Throughput
+### Maximising Throughput
 
-1. **Batch Size**: Increase batch_size to fully utilize GPU
-2. **Num Envs**: Balance between CPU and GPU utilization
+1. **Batch Size**: Increase batch_size to fully utilise GPU
+2. **Num Envs**: Balance between CPU and GPU utilisation
 3. **Compile**: Enable torch.compile for 10-20% speedup
 4. **Workers**: Adjust num_workers based on environment complexity
 5. **Device**: Always use 'cuda' for neural network training
@@ -339,7 +339,7 @@ for stage in stages:
 ### Low Performance
 
 - Check environment is vectorized correctly
-- Verify GPU utilization with `nvidia-smi`
+- Verify GPU utilisation with `nvidia-smi`
 - Increase batch_size to saturate GPU
 - Enable compile mode
 - Profile with `torch.profiler`

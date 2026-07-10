@@ -52,7 +52,7 @@ cleaned_eda = nk.eda_clean(eda_signal, sampling_rate=100, method='neurokit')
 
 **Rationale:**
 - EDA frequency content typically 0-3 Hz
-- Remove high-frequency noise and motion artifacts
+- Remove high-frequency noise and motion artefacts
 - Preserve slow SCRs (typical rise time 1-3 seconds)
 
 ### eda_phasic()
@@ -69,7 +69,7 @@ tonic, phasic = nk.eda_phasic(eda_cleaned, sampling_rate=100, method='cvxeda')
 ```python
 tonic, phasic = nk.eda_phasic(eda_cleaned, sampling_rate=100, method='cvxeda')
 ```
-- Convex optimization approach (Greco et al., 2016)
+- Convex optimisation approach (Greco et al., 2016)
 - Sparse phasic driver model
 - Most physiologically accurate
 - Computationally intensive but superior decomposition
@@ -95,7 +95,7 @@ tonic, phasic = nk.eda_phasic(eda_cleaned, sampling_rate=100, method='highpass')
 tonic, phasic = nk.eda_phasic(eda_cleaned, sampling_rate=100, method='sparseda')
 ```
 - Sparse deconvolution approach
-- Alternative optimization method
+- Alternative optimisation method
 
 **Returns:**
 - `tonic`: Slow-varying skin conductance level (SCL)
@@ -115,7 +115,7 @@ peaks, info = nk.eda_peaks(eda_phasic, sampling_rate=100, method='neurokit',
 ```
 
 **Methods:**
-- `'neurokit'`: Optimized for reliability, configurable thresholds
+- `'neurokit'`: Optimised for reliability, configurable thresholds
 - `'gamboa2008'`: Gamboa's algorithm
 - `'kim2004'`: Kim's approach
 - `'vanhalem2020'`: Van Halem's method
@@ -155,7 +155,7 @@ corrected_peaks = nk.eda_fixpeaks(peaks)
 
 ## Analysis Functions
 
-### eda_analyze()
+### eda_analyse()
 
 Automatically select appropriate analysis type based on data duration.
 
@@ -172,7 +172,7 @@ analysis = nk.eda_analyze(signals, sampling_rate=100)
 
 ### eda_eventrelated()
 
-Analyze stimulus-locked EDA epochs for event-related responses.
+Analyse stimulus-locked EDA epochs for event-related responses.
 
 ```python
 results = nk.eda_eventrelated(epochs)
@@ -201,7 +201,7 @@ results = nk.eda_eventrelated(epochs)
 
 ### eda_intervalrelated()
 
-Analyze extended EDA recordings for overall arousal and activation patterns.
+Analyse extended EDA recordings for overall arousal and activation patterns.
 
 ```python
 results = nk.eda_intervalrelated(signals, sampling_rate=100)
@@ -212,7 +212,7 @@ results = nk.eda_intervalrelated(signals, sampling_rate=100)
 - `SCR_Peaks_Amplitude_Mean`: Average SCR amplitude
 - `EDA_Tonic_Mean`, `EDA_Tonic_SD`: Tonic level statistics
 - `EDA_Sympathetic`: Sympathetic nervous system index
-- `EDA_SympatheticN`: Normalized sympathetic index
+- `EDA_SympatheticN`: Normalised sympathetic index
 - `EDA_Autocorrelation`: Temporal structure (lag 4 seconds)
 - `EDA_Phasic_*`: Mean, SD, min, max of phasic component
 
@@ -227,7 +227,7 @@ results = nk.eda_intervalrelated(signals, sampling_rate=100)
 - Baseline sympathetic activity
 - Long-term affective state
 
-## Specialized Analysis Functions
+## Specialised Analysis Functions
 
 ### eda_sympathetic()
 
@@ -251,7 +251,7 @@ sympathetic = nk.eda_sympathetic(signals, sampling_rate=100, method='posada',
 
 **Returns:**
 - `EDA_Sympathetic`: Sympathetic index (absolute)
-- `EDA_SympatheticN`: Normalized sympathetic index (0-1)
+- `EDA_SympatheticN`: Normalised sympathetic index (0-1)
 
 **Interpretation:**
 - Higher values: increased sympathetic arousal
@@ -282,7 +282,7 @@ autocorr = nk.eda_autocor(eda_phasic, sampling_rate=100, lag=4)
 
 **Use case:**
 - Assess signal quality
-- Characterize response patterns
+- Characterise response patterns
 - Distinguish sustained vs. transient arousal
 
 ### eda_changepoints()
@@ -304,7 +304,7 @@ changepoints = nk.eda_changepoints(eda_phasic, penalty=10000, show=False)
 
 **Returns:**
 - Indices of detected changepoints
-- Optional visualization of segments
+- Optional visualisation of segments
 
 **Use cases:**
 - Identify state transitions in continuous monitoring
@@ -312,11 +312,11 @@ changepoints = nk.eda_changepoints(eda_phasic, penalty=10000, show=False)
 - Detect phase changes in experiments
 - Automated epoch definition
 
-## Visualization
+## Visualisation
 
 ### eda_plot()
 
-Create static or interactive visualizations of processed EDA.
+Create static or interactive visualisations of processed EDA.
 
 ```python
 nk.eda_plot(signals, info, static=True)
@@ -389,7 +389,7 @@ synthetic_eda = nk.eda_simulate(duration=10, sampling_rate=100, scr_number=3,
 - Allow 5-10 minute adaptation period
 
 **Excessive noise:**
-- Movement artifacts: minimize participant motion
+- Movement artefacts: minimise participant motion
 - Electrical interference: check grounding, shielding
 - Thermal effects: control room temperature
 
@@ -476,7 +476,7 @@ results = nk.eda_eventrelated(epochs)
 - **0.01-0.05 µS**: Small but detectable
 - **0.05-0.2 µS**: Moderate response
 - **>0.2 µS**: Large response
-- **Context-dependent**: Normalize within-subject
+- **Context-dependent**: Normalise within-subject
 
 **SCR frequency:**
 - **Resting**: 1-3 SCRs per minute (typical)
@@ -492,6 +492,6 @@ results = nk.eda_eventrelated(epochs)
 ## References
 
 - Boucsein, W. (2012). Electrodermal activity (2nd ed.). Springer Science & Business Media.
-- Greco, A., Valenza, G., & Scilingo, E. P. (2016). cvxEDA: A convex optimization approach to electrodermal activity processing. IEEE Transactions on Biomedical Engineering, 63(4), 797-804.
+- Greco, A., Valenza, G., & Scilingo, E. P. (2016). cvxEDA: A convex optimisation approach to electrodermal activity processing. IEEE Transactions on Biomedical Engineering, 63(4), 797-804.
 - Posada-Quintero, H. F., Florian, J. P., Orjuela-Cañón, A. D., Aljama-Corrales, T., Charleston-Villalobos, S., & Chon, K. H. (2016). Power spectral density analysis of electrodermal activity for sympathetic function assessment. Annals of biomedical engineering, 44(10), 3124-3135.
 - Dawson, M. E., Schell, A. M., & Filion, D. L. (2017). The electrodermal system. In Handbook of psychophysiology (pp. 217-243). Cambridge University Press.

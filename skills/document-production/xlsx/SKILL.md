@@ -18,15 +18,15 @@ metadata:
 
 ### Preserve Existing Templates (when updating templates)
 - Study and EXACTLY match existing format, style, and conventions when modifying files
-- Never impose standardized formatting on files with established patterns
+- Never impose standardised formatting on files with established patterns
 - Existing template conventions ALWAYS override these guidelines
 
 ## Financial models
 
-### Color Coding Standards
+### Colour Coding Standards
 Unless otherwise stated by the user or existing template
 
-#### Industry-Standard Color Conventions
+#### Industry-Standard Colour Conventions
 - **Blue text (RGB: 0,0,255)**: Hardcoded inputs, and numbers users will change for scenarios
 - **Black text (RGB: 0,0,0)**: ALL formulas and calculations
 - **Green text (RGB: 0,128,0)**: Links pulling from other worksheets within same workbook
@@ -69,16 +69,16 @@ Unless otherwise stated by the user or existing template
 
 ## Overview
 
-A user may ask you to create, edit, or analyze the contents of an .xlsx file. You have different tools and workflows available for different tasks.
+A user may ask you to create, edit, or analyse the contents of an .xlsx file. You have different tools and workflows available for different tasks.
 
 ## Important Requirements
 
 **LibreOffice Required for Formula Recalculation**: You can assume LibreOffice is installed for recalculating formula values using the `scripts/recalc.py` script. The script automatically configures LibreOffice on first run, including in sandboxed environments where Unix sockets are restricted (handled by `scripts/office/soffice.py`)
 
-## Reading and analyzing data
+## Reading and analysing data
 
 ### Data analysis with pandas
-For data analysis, visualization, and basic operations, use **pandas** which provides powerful data manipulation capabilities:
+For data analysis, visualisation, and basic operations, use **pandas** which provides powerful data manipulation capabilities:
 
 ```python
 import pandas as pd

@@ -191,7 +191,7 @@ Use this table format with learners. The columns generalise to any agentic workf
 |---|---|---|
 | Clarity & naming | Strong | The file states it is a launcher and names the three things it delegates to. |
 | Single responsibility | Strong | No workflow logic is duplicated. |
-| Contract strength | Strong | "Required behavior" is four bullets. |
+| Contract strength | Strong | "Required behaviour" is four bullets. |
 | Drift surface | Low | Almost nothing here can drift — there is almost nothing here. |
 | Mechanical testability | Good | `smoke-test.py` requires the file path and validates frontmatter. |
 

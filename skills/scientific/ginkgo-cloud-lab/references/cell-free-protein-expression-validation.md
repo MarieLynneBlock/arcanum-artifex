@@ -7,7 +7,7 @@
 
 ## Overview
 
-Fastest path from a protein sequence to a quantitative go/no-go readout on expression. Uses a proprietary reconstituted E. coli transcription-translation (cell-free protein synthesis, CFPS) system. Reactions complete in 4-16 hours. Designed for early-stage screening, novel construct evaluation, and rapid triage of candidate sequences before committing resources to downstream optimization or purification.
+Fastest path from a protein sequence to a quantitative go/no-go readout on expression. Uses a proprietary reconstituted E. coli transcription-translation (cell-free protein synthesis, CFPS) system. Reactions complete in 4-16 hours. Designed for early-stage screening, novel construct evaluation, and rapid triage of candidate sequences before committing resources to downstream optimisation or purification.
 
 ## Input
 
@@ -66,6 +66,6 @@ Fastest path from a protein sequence to a quantitative go/no-go readout on expre
 ## Use Cases
 
 - Screening candidate protein sequences for expressibility
-- Go/no-go decisions before investing in optimization
+- Go/no-go decisions before investing in optimisation
 - Evaluating novel constructs in a cell-free system
 - Comparing expression levels across sequence variants

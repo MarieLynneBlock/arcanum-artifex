@@ -28,8 +28,8 @@ commonly violated by default chart palettes. **Never use red and green as the pr
 Always simulate your charts before sharing. Tools:
 
 ### Browser-based (no install)
-- **Coblis** — https://www.color-blindness.com/coblis-color-blindness-simulator/ (upload screenshot)
-- **Adobe Color** — https://color.adobe.com/create/color-accessibility (checks palette conflicts)
+- **Coblis** — https://www.colour-blindness.com/coblis-colour-blindness-simulator/ (upload screenshot)
+- **Adobe Colour** — https://colour.adobe.com/create/colour-accessibility (checks palette conflicts)
 - **Chromatic Vision Simulator** — browser extension, real-time page simulation
 
 ### Python — programmatic simulation
@@ -110,7 +110,7 @@ OKABE_ITO = [
     "#CC79A7",  # pink/mauve — safe
 ]
 ```
-Reference: Okabe M, Ito K (2002). "Color Universal Design". *J-stage.*
+Reference: Okabe M, Ito K (2002). "Colour Universal Design". *J-stage.*
 
 ### Nord categorical — colourblind-aware ordering
 Nord's Frost + Aurora colours are softer than Okabe-Ito but still performant for CVD if ordered correctly.
@@ -415,7 +415,7 @@ html.Span("📊", **{"aria-hidden": "true"})
 
 ## Further Reading
 
-- Okabe M, Ito K (2002). *Color Universal Design (CUD)*. https://jfly.uni-koeln.de/color/
+- Okabe M, Ito K (2002). *Colour Universal Design (CUD)*. https://jfly.uni-koeln.de/colour/
 - WCAG 2.1 Success Criteria 1.4.3 (Contrast, Minimum): https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum
 - WCAG 2.1 Success Criteria 2.1.1 (Keyboard): https://www.w3.org/WAI/WCAG21/quickref/#keyboard
 - Crameri F et al. (2020). "The misuse of colour in science communication." *Nature Communications* 11, 5444.

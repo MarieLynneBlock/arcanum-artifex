@@ -14,8 +14,8 @@ SOAP (Subjective, Objective, Assessment, Plan) is the standard format for progre
 - Documenting response to treatment
 
 **Benefits:**
-- Standardized structure
-- Organized clinical reasoning
+- Standardised structure
+- Organised clinical reasoning
 - Facilitates communication
 - Supports billing and coding
 - Legal documentation
@@ -81,10 +81,10 @@ travel or sick contacts.
 - Age appropriateness
 - Nutritional status
 - Hygiene
-- Affect and behavior
+- Affect and behaviour
 
 **Physical Examination by System:**
-- Organized head-to-toe or by systems
+- Organised head-to-toe or by systems
 - Relevant findings for presenting complaint
 - Include pertinent positives and negatives
 
@@ -165,7 +165,7 @@ A:
 **Elements to include:**
 - Diagnostic plan (further testing, imaging, referrals)
 - Therapeutic plan (medications, procedures, therapies)
-- Patient education and counseling
+- Patient education and counselling
 - Follow-up arrangements
 - Specific instructions for patient
 - Return precautions (when to seek urgent care)
@@ -177,7 +177,7 @@ A:
 - Duration
 - Indication
 
-**Plan organization:**
+**Plan organisation:**
 - By problem (matches assessment)
 - By intervention type (diagnostics, therapeutics, education)
 
@@ -226,7 +226,7 @@ Patient verbalized understanding and agreement with plan.
 - Document time for time-based billing
 
 **Legal considerations:**
-- Document facts, not opinions or judgment
+- Document facts, not opinions or judgement
 - Quote patient when relevant
 - Document non-compliance objectively
 - Never alter records
@@ -278,7 +278,7 @@ Patient verbalized understanding and agreement with plan.
 **Structure:**
 - Opening statement (demographics, presenting problem)
 - Chronological description
-- Symptom characterization
+- Symptom characterisation
 - Prior workup or treatment
 - What prompted presentation now
 
@@ -451,7 +451,7 @@ All other systems reviewed and negative.
 
 #### Physical Examination
 
-**General organization:**
+**General organisation:**
 - Vital signs first
 - General appearance
 - Systematic examination head-to-toe
@@ -619,7 +619,7 @@ Principal reason for hospitalization
 
 #### Discharge Diagnosis
 
-**Format:** Numbered list, prioritized
+**Format:** Numbered list, prioritised
 
 **Example:**
 ```

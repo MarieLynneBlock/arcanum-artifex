@@ -1,6 +1,6 @@
 # Matplotlib Styling Guide
 
-Comprehensive guide for styling and customizing matplotlib visualizations.
+Comprehensive guide for styling and customising matplotlib visualisations.
 
 ## Colormaps
 
@@ -12,7 +12,7 @@ Best for ordered data that progresses from low to high values.
 - `plasma`
 - `inferno`
 - `magma`
-- `cividis` (optimized for colorblind viewers)
+- `cividis` (optimised for colorblind viewers)
 
 **Usage:**
 ```python
@@ -27,7 +27,7 @@ Traditional colormaps for ordered data.
 - `BuPu`, `GnBu`, `PuBu`, `YlGnBu`
 
 **3. Diverging**
-Best for data with a meaningful center point (e.g., zero, mean).
+Best for data with a meaningful centre point (e.g., zero, mean).
 - `coolwarm` (blue to red)
 - `RdBu` (red-blue)
 - `RdYlBu` (red-yellow-blue)
@@ -42,8 +42,8 @@ im = ax.imshow(data, cmap='coolwarm', vmin=-1, vmax=1)
 
 **4. Qualitative**
 Best for categorical/nominal data without inherent ordering.
-- `tab10` (10 distinct colors)
-- `tab20` (20 distinct colors)
+- `tab10` (10 distinct colours)
+- `tab20` (20 distinct colours)
 - `Set1`, `Set2`, `Set3`
 - `Pastel1`, `Pastel2`
 - `Dark2`, `Accent`, `Paired`
@@ -68,7 +68,7 @@ Best for cyclic data (e.g., phase, angle).
 3. **Consider colorblind users** - Use `viridis`, `cividis`, or test with colorblind simulators
 4. **Match colormap to data type**:
    - Sequential: increasing/decreasing data
-   - Diverging: data with meaningful center
+   - Diverging: data with meaningful centre
    - Qualitative: categories
 5. **Reverse colormaps** - Add `_r` suffix: `viridis_r`, `coolwarm_r`
 
@@ -279,9 +279,9 @@ plt.rcParams['savefig.pad_inches'] = 0.1
 plt.rcParams['savefig.transparent'] = False
 ```
 
-## Color Palettes
+## Colour Palettes
 
-### Named Color Sets
+### Named Colour Sets
 
 ```python
 # Tableau colors
@@ -294,7 +294,7 @@ css_colors = ['steelblue', 'coral', 'teal', 'goldenrod', 'crimson']
 custom_colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']
 ```
 
-### Color Cycles
+### Colour Cycles
 
 ```python
 # Set default color cycle
@@ -382,7 +382,7 @@ ax.set_xlabel(r'Time $t$ (s)')
 
 ## Spines and Grids
 
-### Spine Customization
+### Spine Customisation
 
 ```python
 # Hide specific spines
@@ -398,7 +398,7 @@ ax.spines['left'].set_color('red')
 ax.spines['bottom'].set_linewidth(2)
 ```
 
-### Grid Customization
+### Grid Customisation
 
 ```python
 # Basic grid
@@ -416,7 +416,7 @@ ax.grid(True, axis='y')  # Only horizontal lines
 ax.set_axisbelow(True)  # Grid behind data
 ```
 
-## Legend Customization
+## Legend Customisation
 
 ### Legend Positioning
 
@@ -563,7 +563,7 @@ plt.rcParams.update({
 })
 ```
 
-## Color Accessibility
+## Colour Accessibility
 
 ### Colorblind-Friendly Palettes
 

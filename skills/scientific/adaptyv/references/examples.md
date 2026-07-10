@@ -452,7 +452,7 @@ results = download_results("exp_expression123")
 expression_df = parse_expression_results(results)
 ```
 
-## Target Catalog
+## Target Catalogue
 
 ### Search for Targets
 
@@ -622,7 +622,7 @@ experiment_id = complete_binding_workflow(
 )
 ```
 
-### Optimization + Testing Pipeline
+### Optimisation + Testing Pipeline
 
 ```python
 # Combine computational optimization with experimental testing

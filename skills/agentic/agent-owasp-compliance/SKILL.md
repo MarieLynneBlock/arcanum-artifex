@@ -75,7 +75,7 @@ This skill includes local, copyable review assets:
 | ASI-07 | Insecure Identity | Cryptographic agent identity, not just string names |
 | ASI-08 | Policy Bypass | Deterministic policy enforcement, no LLM-based permission checks |
 | ASI-09 | Supply Chain Integrity | Signed plugins/tools, integrity verification, dependency auditing |
-| ASI-10 | Behavioral Anomaly | Drift detection, circuit breakers, kill switch capability |
+| ASI-10 | Behavioural Anomaly | Drift detection, circuit breakers, kill switch capability |
 
 ---
 
@@ -299,7 +299,7 @@ Verify policy enforcement is deterministic — not LLM-based.
 - Policy evaluation uses deterministic logic (YAML rules, code predicates)
 - No LLM calls in the enforcement path
 - Policy checks cannot be skipped or overridden by the agent
-- Fail-closed behavior (if policy check errors, action is denied)
+- Fail-closed behaviour (if policy check errors, action is denied)
 
 **Failing:** Agent decides its own permissions via prompt ("Am I allowed to...?").
 **Passing:** PolicyEvaluator.evaluate() returns allow/deny in <0.1ms, no LLM involved.
@@ -323,9 +323,9 @@ Verify agent plugins and tools have integrity verification.
 
 ---
 
-## Check ASI-10: Behavioral Anomaly
+## Check ASI-10: Behavioural Anomaly
 
-Verify the system can detect and respond to agent behavioral drift.
+Verify the system can detect and respond to agent behavioural drift.
 
 **Evidence to collect:** circuit breaker configuration, anomaly rules, kill-switch procedure, monitoring dashboards, alert history, incident runbooks.
 **Positive signals:** thresholds for repeated failures, kill switch tested, trust decay or anomaly scoring, alerts tied to response ownership.

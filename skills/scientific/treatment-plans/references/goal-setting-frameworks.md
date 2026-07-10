@@ -2,7 +2,7 @@
 
 ## Overview
 
-Effective treatment goals are the cornerstone of successful patient care. This reference provides comprehensive guidance on creating SMART goals, patient-centered outcome selection, and shared decision-making processes for treatment planning across all medical specialties.
+Effective treatment goals are the cornerstone of successful patient care. This reference provides comprehensive guidance on creating SMART goals, patient-centred outcome selection, and shared decision-making processes for treatment planning across all medical specialties.
 
 ## SMART Goals Framework
 
@@ -46,7 +46,7 @@ Goals must include quantifiable metrics or observable criteria to track progress
   - Scales: Pain (0-10 NRS), PHQ-9, GAD-7, FIM
   - Functional: Distance walked, ROM degrees, strength grades
   
-- **Qualitative Observable**: Behaviors that can be observed and verified
+- **Qualitative Observable**: Behaviours that can be observed and verified
   - "Patient demonstrates proper insulin injection technique"
   - "Patient ambulates 150 feet with walker independently"
   - "Patient follows 2-step commands"
@@ -94,7 +94,7 @@ Goals must be realistic given patient's capabilities, resources, and circumstanc
 Goals must align with patient values, priorities, and overall treatment objectives.
 
 **Relevance Criteria**:
-- **Patient-centered**: Matters to the patient, reflects their priorities
+- **Patient-centred**: Matters to the patient, reflects their priorities
 - **Clinically meaningful**: Achieving goal improves health or quality of life
 - **Aligned with diagnosis**: Goal addresses the condition being treated
 - **Appropriate timing**: Right goal for current phase of treatment
@@ -142,7 +142,7 @@ Goals must have specific deadlines or timeframes for achievement.
 
 ### Step 1: Assess Baseline
 - Identify current status: symptoms, lab values, functional level
-- Use standardized assessments when available
+- Use standardised assessments when available
 - Document quantitative baseline
 
 ### Step 2: Identify Desired Outcome
@@ -157,7 +157,7 @@ Goals must have specific deadlines or timeframes for achievement.
 
 ### Step 4: Add Measurement
 - How will progress be tracked?
-- What metric or observable behavior?
+- What metric or observable behaviour?
 - Baseline → Target value
 
 ### Step 5: Reality Check (Achievable?)
@@ -209,7 +209,7 @@ Useful for rehabilitation and functional goals:
 4. **Quality of Life Goals**: Overall well-being
    - Example: "Return to hobbies, improve sleep quality"
 
-## Patient-Centered Outcome Measures (PCOMs)
+## Patient-Centred Outcome Measures (PCOMs)
 
 ### Definition
 Outcomes that matter most to patients, beyond traditional clinical metrics.
@@ -243,7 +243,7 @@ Outcomes that matter most to patients, beyond traditional clinical metrics.
 
 **Example Integration**:
 - **Clinical goal**: "Reduce HbA1c from 8.5% to <7% in 3 months"
-- **Linked patient-centered goal**: "Improve energy levels to play with grandchildren without fatigue"
+- **Linked patient-centred goal**: "Improve energy levels to play with grandchildren without fatigue"
 - Both goals documented, progress on both tracked
 
 ## Shared Decision-Making in Goal Setting
@@ -261,7 +261,7 @@ Collaborative process where clinicians and patients jointly:
 **Steps**:
 
 1. **Choice Awareness**: Acknowledge multiple possible goals/approaches
-   - "We could focus on aggressive HbA1c lowering vs. minimizing hypoglycemia risk. What's more important to you?"
+   - "We could focus on aggressive HbA1c lowering vs. minimising hypoglycemia risk. What's more important to you?"
 
 2. **Option Presentation**: Present goal options with pros/cons
    - "Option A: Intensive BP control (<120/80) reduces stroke risk but requires more medications. Option B: Standard control (<140/90) is easier but slightly higher stroke risk."
@@ -270,7 +270,7 @@ Collaborative process where clinicians and patients jointly:
    - "How do you feel about taking multiple medications?" "How much does avoiding injections matter to you?"
 
 4. **Preference Integration**: Incorporate preferences into goals
-   - If patient prioritizes avoiding medications → "Control BP with lifestyle changes and one medication if possible"
+   - If patient prioritises avoiding medications → "Control BP with lifestyle changes and one medication if possible"
 
 5. **Decision**: Agree on goals together
    - "It sounds like you'd like to try intensive lifestyle changes for 3 months before adding another medication. Let's plan for that."
@@ -298,7 +298,7 @@ Tools to facilitate SDM:
 
 ### Pediatric
 - Developmental stage-appropriate goals
-- Family-centered (involve parents/caregivers)
+- Family-centred (involve parents/caregivers)
 - Growth and development milestones
 - School/social functioning
 - Transition planning (pediatric to adult care)
@@ -318,10 +318,10 @@ Tools to facilitate SDM:
 - Dignity and autonomy
 
 ### Complex Multi-Morbidity
-- Prioritize most impactful goals
+- Prioritise most impactful goals
 - Coordinate goals across conditions (when treatments overlap, even better)
 - Avoid conflicting treatments
-- Minimize treatment burden
+- Minimise treatment burden
 - Realistic expectations with multiple conditions
 
 ## Common Goal-Setting Pitfalls
@@ -332,7 +332,7 @@ Tools to facilitate SDM:
 
 ### Pitfall 2: Too Many Goals
 **Problem**: Overwhelming patient with 10+ goals  
-**Solution**: Prioritize 3-5 key goals, build on success
+**Solution**: Prioritise 3-5 key goals, build on success
 
 ### Pitfall 3: All-or-Nothing Thinking
 **Problem**: Goal is "cure" or "perfection"  
@@ -362,7 +362,7 @@ Tools to facilitate SDM:
 **Long-term**: "Maintain HbA1c <7% for 6+ months, prevent microvascular complications, and improve energy levels to engage in daily walking for 30 minutes."
 
 ### Heart Failure
-**Short-term**: "Achieve euvolemia (no edema, stable weight within 2 lbs) within 2 weeks through furosemide dose optimization and sodium restriction <2000mg/day."
+**Short-term**: "Achieve euvolemia (no edema, stable weight within 2 lbs) within 2 weeks through furosemide dose optimisation and sodium restriction <2000mg/day."
 
 **Long-term**: "Maintain NYHA Class II functional status, prevent HF hospitalizations, and walk 1/4 mile without dyspnea within 3 months."
 
@@ -394,13 +394,13 @@ Tools to facilitate SDM:
 - Motivational interviewing "change talk" to elicit goals
 
 ### Assessment Tools
-- Goal Attainment Scaling (GAS): Personalized outcome measure
+- Goal Attainment Scaling (GAS): Personalised outcome measure
 - Canadian Occupational Performance Measure (COPM): Patient-identified functional goals
 - Patient-Reported Outcomes Measurement Information System (PROMIS)
 
 ### Patient Education
 - "Setting Health Goals" handouts
-- Goal visualization exercises
+- Goal visualisation exercises
 - Tracking apps and logs
 
 ---

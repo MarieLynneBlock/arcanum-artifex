@@ -2,7 +2,7 @@
 
 ## Overview
 
-Rigorous outcome analysis is essential for clinical decision support documents. This guide covers survival analysis, response assessment, statistical testing, and data visualization for patient cohort analyses and treatment evaluation.
+Rigorous outcome analysis is essential for clinical decision support documents. This guide covers survival analysis, response assessment, statistical testing, and data visualisation for patient cohort analyses and treatment evaluation.
 
 ## Survival Analysis
 
@@ -112,7 +112,7 @@ Biomarker+ (vs -)     0.71    0.48-1.05      0.089
 **Model Selection**
 - **Forward selection**: Start with empty model, add significant variables
 - **Backward elimination**: Start with all variables, remove non-significant
-- **Clinical judgment**: Include known prognostic factors regardless of p-value
+- **Clinical judgement**: Include known prognostic factors regardless of p-value
 - **Parsimony**: Avoid overfitting, rule of thumb 1 variable per 10-15 events
 
 ## Response Assessment
@@ -355,7 +355,7 @@ Example: Detect ORR difference 45% vs 30% (15 percentage points)
 - With 10% dropout: n = 105 per group (210 total)
 ```
 
-## Data Visualization
+## Data Visualisation
 
 ### Survival Curves
 
@@ -391,7 +391,7 @@ Or in caption: Log-rank test p=0.010; Cox model HR=0.62 (95% CI 0.43-0.89)
 
 ### Waterfall Plots
 
-**Purpose**: Visualize individual patient responses to treatment
+**Purpose**: Visualise individual patient responses to treatment
 
 **Construction**
 - **X-axis**: Individual patients (anonymized patient IDs)
@@ -400,7 +400,7 @@ Or in caption: Log-rank test p=0.010; Cox model HR=0.62 (95% CI 0.43-0.89)
   - Positive values: Tumor growth
   - Negative values: Tumor shrinkage
 - **Ordering**: Sorted from best response (left) to worst (right)
-- **Color coding**:
+- **Colour coding**:
   - Green/blue: CR or PR (≥30% decrease)
   - Yellow: SD (-30% to +20%)
   - Red: PD (≥20% increase)
@@ -460,14 +460,14 @@ Biomarker Status
 - **X-axis**: Time from treatment start (weeks or months)
 - **Y-axis**: % change from baseline tumor burden
 - **Lines**: One line per patient connecting assessments
-- **Color coding**: By response category or biomarker status
+- **Colour coding**: By response category or biomarker status
 - **Reference lines**: 0% (no change), +20% (PD threshold), -30% (PR threshold)
 
 **Clinical Insights**
 - Identify delayed responders (initial SD then PR)
 - Detect early progression (rapid upward trajectory)
 - Assess depth of response (maximum tumor shrinkage)
-- Duration visualization (when lines cross PD threshold)
+- Duration visualisation (when lines cross PD threshold)
 
 ### Swimmer Plots
 
@@ -483,7 +483,7 @@ Biomarker Status
   - ■ Progressive disease (end of bar)
   - ◆ Death
   - | Dose modification
-- **Color**: Response status (CR=green, PR=blue, SD=yellow, PD=red)
+- **Colour**: Response status (CR=green, PR=blue, SD=yellow, PD=red)
 
 **Example**
 ```
@@ -558,7 +558,7 @@ Pt-004        ●PR════════════════════�
 
 **Handling Strategies**
 - **Complete case analysis**: Exclude patients with missing data (biased if not MCAR)
-- **Multiple imputation**: Generate multiple plausible datasets, analyze each, pool results
+- **Multiple imputation**: Generate multiple plausible datasets, analyse each, pool results
 - **Maximum likelihood**: Estimate parameters using all available data
 - **Sensitivity analysis**: Assess robustness to missing data assumptions
 
@@ -577,7 +577,7 @@ Pt-004        ●PR════════════════════�
 - Allocated to intervention (n=)
 - Lost to follow-up (n=, reasons)
 - Discontinued intervention (n=, reasons)
-- Analyzed (n=)
+- Analysed (n=)
 
 **Baseline Table**
 - Demographics and clinical characteristics
@@ -623,7 +623,7 @@ Pt-004        ●PR════════════════════�
 ### R Packages for Survival Analysis
 - **survival**: Core package (Surv, survfit, coxph, survdiff)
 - **survminer**: Publication-ready Kaplan-Meier plots (ggsurvplot)
-- **rms**: Regression modeling strategies
+- **rms**: Regression modelling strategies
 - **flexsurv**: Flexible parametric survival models
 
 ### Python Libraries

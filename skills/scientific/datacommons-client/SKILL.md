@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-Provides comprehensive access to the Data Commons Python API v2 for querying statistical observations, exploring the knowledge graph, and resolving entity identifiers. Data Commons aggregates data from census bureaus, health organizations, environmental agencies, and other authoritative sources into a unified knowledge graph.
+Provides comprehensive access to the Data Commons Python API v2 for querying statistical observations, exploring the knowledge graph, and resolving entity identifiers. Data Commons aggregates data from census bureaus, health organisations, environmental agencies, and other authoritative sources into a unified knowledge graph.
 
 ## Installation
 

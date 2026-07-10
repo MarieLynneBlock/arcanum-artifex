@@ -1,6 +1,6 @@
 ---
 name: alphafold-database
-description: Access AlphaFold 200M+ AI-predicted protein structures. Retrieve structures by UniProt ID, download PDB/mmCIF files, analyze confidence metrics (pLDDT, PAE), for drug discovery and structural biology.
+description: Access AlphaFold 200M+ AI-predicted protein structures. Retrieve structures by UniProt ID, download PDB/mmCIF files, analyse confidence metrics (pLDDT, PAE), for drug discovery and structural biology.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -18,7 +18,7 @@ This skill should be used when working with AI-predicted protein structures in s
 
 - Retrieving protein structure predictions by UniProt ID or protein name
 - Downloading PDB/mmCIF coordinate files for structural analysis
-- Analyzing prediction confidence metrics (pLDDT, PAE) to assess reliability
+- Analysing prediction confidence metrics (pLDDT, PAE) to assess reliability
 - Accessing bulk proteome datasets via Google Cloud Platform
 - Comparing predicted structures with experimental data
 - Performing structure-based drug discovery or protein engineering
@@ -261,7 +261,7 @@ download_proteome(83333)
 download_proteome(9606)
 ```
 
-### 5. Parsing and Analyzing Structures
+### 5. Parsing and Analysing Structures
 
 Work with downloaded AlphaFold structures using BioPython:
 
@@ -408,19 +408,19 @@ af_structures = [s for s in data['structures'] if s['provider'] == 'AlphaFold DB
 
 ### Drug Discovery
 - Retrieve target protein structures for docking studies
-- Analyze binding site conformations
+- Analyse binding site conformations
 - Identify druggable pockets in predicted structures
 - Compare structures across homologs
 
 ### Protein Engineering
 - Identify stable/unstable regions using pLDDT
 - Design mutations in high-confidence regions
-- Analyze domain architectures using PAE
+- Analyse domain architectures using PAE
 - Model protein variants and mutations
 
 ### Evolutionary Studies
 - Compare ortholog structures across species
-- Analyze conservation of structural features
+- Analyse conservation of structural features
 - Study domain evolution patterns
 - Identify functionally important regions
 

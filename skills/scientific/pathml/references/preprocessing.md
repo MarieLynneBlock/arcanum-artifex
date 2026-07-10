@@ -2,7 +2,7 @@
 
 ## Overview
 
-PathML provides a modular preprocessing architecture based on composable transforms organized into pipelines. Transforms are individual operations that modify images, create masks, or extract features. Pipelines chain transforms together to create reproducible, scalable preprocessing workflows for computational pathology.
+PathML provides a modular preprocessing architecture based on composable transforms organised into pipelines. Transforms are individual operations that modify images, create masks, or extract features. Pipelines chain transforms together to create reproducible, scalable preprocessing workflows for computational pathology.
 
 ## Pipeline Architecture
 
@@ -47,9 +47,9 @@ PathML provides transforms in six major categories:
 1. **Image Modification** - Blur, rescale, histogram equalization
 2. **Mask Creation** - Tissue detection, nucleus detection, thresholding
 3. **Mask Modification** - Morphological operations on masks
-4. **Stain Processing** - H&E stain normalization and separation
-5. **Quality Control** - Artifact detection, white space labeling
-6. **Specialized** - Multiparametric imaging, cell segmentation
+4. **Stain Processing** - H&E stain normalisation and separation
+5. **Quality Control** - Artefact detection, white space labelling
+6. **Specialised** - Multiparametric imaging, cell segmentation
 
 ## Image Modification Transforms
 
@@ -155,7 +155,7 @@ transform = TissueDetectionHE(
 )
 ```
 - Creates binary tissue mask
-- Filters small regions and artifacts
+- Filters small regions and artefacts
 - Stores mask in `tile.masks['tissue']`
 
 **NucleusDetectionHE:**
@@ -233,11 +233,11 @@ transform = MorphClose(
 - Dilation followed by erosion
 - Fills small holes in mask
 
-## Stain Normalization
+## Stain Normalisation
 
 ### StainNormalizationHE
 
-Normalize H&E staining across slides to account for variations in staining procedure and scanners:
+Normalise H&E staining across slides to account for variations in staining procedure and scanners:
 
 ```python
 from pathml.preprocessing import StainNormalizationHE
@@ -251,7 +251,7 @@ transform = StainNormalizationHE(
 ```
 
 **Target modes:**
-- `'normalize'` - Normalize both stains to reference
+- `'normalize'` - Normalise both stains to reference
 - `'hematoxylin'` - Extract hematoxylin channel only
 - `'eosin'` - Extract eosin channel only
 
@@ -275,8 +275,8 @@ transform = StainNormalizationHE(
 1. Convert RGB to optical density (OD)
 2. Estimate stain matrix (H&E vectors)
 3. Decompose into stain concentrations
-4. Normalize to reference stain distribution
-5. Reconstruct normalized RGB image
+4. Normalise to reference stain distribution
+5. Reconstruct normalised RGB image
 
 **Example with tissue mask:**
 ```python
@@ -294,7 +294,7 @@ pipeline = Pipeline([
 
 ## Quality Control Transforms
 
-### Artifact Detection
+### Artefact Detection
 
 **LabelArtifactTileHE:**
 ```python
@@ -306,7 +306,7 @@ transform = LabelArtifactTileHE(
     bubble_threshold=0.5  # Threshold for bubble detection
 )
 ```
-- Detects pen markings, bubbles, and other artifacts
+- Detects pen markings, bubbles, and other artefacts
 - Labels affected tiles for filtering
 
 **LabelWhiteSpaceHE:**
@@ -573,7 +573,7 @@ for tile in wsi.tiles:
         pipeline.run(tile)
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Memory Management
 
@@ -663,10 +663,10 @@ pipeline = Pipeline([
 1. **Order transforms appropriately:**
    - Quality control first (LabelWhiteSpace, LabelArtifact)
    - Noise reduction early (Blur)
-   - Tissue detection before stain normalization
-   - Stain normalization before color-dependent operations
+   - Tissue detection before stain normalisation
+   - Stain normalisation before colour-dependent operations
 
-2. **Use tissue masks for stain normalization:**
+2. **Use tissue masks for stain normalisation:**
    - Improves accuracy by excluding background
    - `TissueDetectionHE()` then `StainNormalizationHE(tissue_mask_name='tissue')`
 
@@ -683,7 +683,7 @@ pipeline = Pipeline([
    - Avoid reprocessing computationally expensive transforms
 
 6. **Validate preprocessing on sample images:**
-   - Visualize intermediate steps
+   - Visualise intermediate steps
    - Tune parameters on representative samples before batch processing
 
 7. **Handle edge cases:**
@@ -692,7 +692,7 @@ pipeline = Pipeline([
 
 ## Common Issues and Solutions
 
-**Issue: Stain normalization produces artifacts**
+**Issue: Stain normalisation produces artefacts**
 - Use tissue mask to exclude background
 - Try different stain estimation method (macenko vs. vahadane)
 - Verify optical density parameters match your images
@@ -709,14 +709,14 @@ pipeline = Pipeline([
 - Reduce min_region_size to capture smaller tissue fragments
 
 **Issue: Nucleus detection is inaccurate**
-- Verify stain separation quality (visualize hematoxylin channel)
+- Verify stain separation quality (visualise hematoxylin channel)
 - Adjust threshold parameter
-- Apply stain normalization before nucleus detection
+- Apply stain normalisation before nucleus detection
 
 ## Additional Resources
 
 - **PathML Preprocessing API:** https://pathml.readthedocs.io/en/latest/api_preprocessing_reference.html
-- **Stain Normalization Methods:**
-  - Macenko et al. 2009: "A method for normalizing histology slides for quantitative analysis"
-  - Vahadane et al. 2016: "Structure-Preserving Color Normalization and Sparse Stain Separation"
+- **Stain Normalisation Methods:**
+  - Macenko et al. 2009: "A method for normalising histology slides for quantitative analysis"
+  - Vahadane et al. 2016: "Structure-Preserving Colour Normalisation and Sparse Stain Separation"
 - **DeepCell Mesmer:** https://www.deepcell.org/ (cell segmentation model)

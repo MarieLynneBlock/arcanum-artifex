@@ -48,7 +48,7 @@ with open('chart.png', 'wb') as f:
     f.write(img_bytes)
 ```
 
-### Customizing Export
+### Customising Export
 
 ```python
 fig.write_image(
@@ -163,7 +163,7 @@ Plotly figures automatically support:
 - **Legend toggling** - Click to hide/show traces
 - **Double-click** - Reset axes
 
-### Hover Customization
+### Hover Customisation
 
 ```python
 # Hover mode
@@ -447,7 +447,7 @@ fig.write_html('chart.html', config=config)
 - `modeBarButtonsToRemove`: List of buttons to hide
 - `modeBarButtonsToAdd`: Custom buttons
 - `scrollZoom`: Enable scroll to zoom
-- `doubleClick`: Double-click behavior ('reset', 'autosize', 'reset+autosize', False)
+- `doubleClick`: Double-click behaviour ('reset', 'autosize', 'reset+autosize', False)
 - `showAxisDragHandles`: Show axis drag handles
 - `editable`: Allow editing
 - `responsive`: Responsive sizing

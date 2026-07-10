@@ -23,10 +23,10 @@ complexity_indices = nk.complexity(signal, sampling_rate=1000, show=False)
 
 **Use case:**
 - Exploratory analysis to identify relevant measures
-- Comprehensive signal characterization
+- Comprehensive signal characterisation
 - Comparative studies across signals
 
-## Parameter Optimization
+## Parameter Optimisation
 
 Before computing complexity measures, optimal embedding parameters should be determined:
 
@@ -55,8 +55,8 @@ optimal_m = nk.complexity_dimension(signal, delay=None, dimension_max=20,
 ```
 
 **Methods:**
-- `'afn'`: Average False Nearest Neighbors
-- `'fnn'`: False Nearest Neighbors
+- `'afn'`: Average False Nearest Neighbours
+- `'fnn'`: False Nearest Neighbours
 - `'correlation'`: Correlation dimension saturation
 
 **Use for:** Entropy calculations, phase space reconstruction
@@ -71,7 +71,7 @@ optimal_r = nk.complexity_tolerance(signal, method='sd', show=False)
 
 **Methods:**
 - `'sd'`: Standard deviation-based (0.1-0.25 × SD typical)
-- `'maxApEn'`: Maximize ApEn
+- `'maxApEn'`: Maximise ApEn
 - `'recurrence'`: Based on recurrence rate
 
 **Use for:** Approximate entropy, sample entropy
@@ -220,7 +220,7 @@ spec_ent = nk.entropy_spectral(signal, sampling_rate=1000, bands=None)
 ```
 
 **Method:**
-- Normalized Shannon entropy of power spectrum
+- Normalised Shannon entropy of power spectrum
 - Quantifies frequency distribution regularity
 
 **Interpretation:**
@@ -263,16 +263,16 @@ diff_ent = nk.entropy_differential(signal)
 ```python
 tsallis = nk.entropy_tsallis(signal, q=2)
 ```
-- Generalized entropy with parameter q
+- Generalised entropy with parameter q
 - q=1 reduces to Shannon entropy
 
 **Rényi Entropy:**
 ```python
 renyi = nk.entropy_renyi(signal, alpha=2)
 ```
-- Generalized entropy with parameter α
+- Generalised entropy with parameter α
 
-**Additional specialized entropies:**
+**Additional specialised entropies:**
 - `entropy_attention()`: Attention entropy
 - `entropy_grid()`: Grid-based entropy
 - `entropy_increment()`: Increment entropy
@@ -281,11 +281,11 @@ renyi = nk.entropy_renyi(signal, alpha=2)
 - `entropy_symbolicdynamic()`: Symbolic dynamics entropy
 - `entropy_range()`: Range entropy
 - `entropy_phase()`: Phase entropy
-- `entropy_quadratic()`, `entropy_cumulative_residual()`, `entropy_rate()`: Specialized variants
+- `entropy_quadratic()`, `entropy_cumulative_residual()`, `entropy_rate()`: Specialised variants
 
 ## Fractal Dimension Measures
 
-Fractal dimensions characterize self-similarity and roughness.
+Fractal dimensions characterise self-similarity and roughness.
 
 ### fractal_katz()
 
@@ -339,7 +339,7 @@ pfd = nk.fractal_petrosian(signal)
 
 ### fractal_sevcik()
 
-Sevcik Fractal Dimension - normalized waveform complexity.
+Sevcik Fractal Dimension - normalised waveform complexity.
 
 ```python
 sfd = nk.fractal_sevcik(signal)
@@ -347,7 +347,7 @@ sfd = nk.fractal_sevcik(signal)
 
 ### fractal_nld()
 
-Normalized Length Density - curve length-based measure.
+Normalised Length Density - curve length-based measure.
 
 ```python
 nld = nk.fractal_nld(signal)
@@ -434,10 +434,10 @@ mfdfa_results = nk.fractal_mfdfa(signal, q=None, show=False)
 
 **Method:**
 - Extends DFA to multiple q-orders
-- Characterizes multifractal spectrum
+- Characterises multifractal spectrum
 
 **Returns:**
-- Generalized Hurst exponents h(q)
+- Generalised Hurst exponents h(q)
 - Multifractal spectrum f(α)
 - Width indicates multifractality strength
 
@@ -561,7 +561,7 @@ hjorth = nk.complexity_hjorth(signal)
 **Use cases:**
 - EEG feature extraction
 - Seizure detection
-- Signal characterization
+- Signal characterisation
 
 ### complexity_decorrelation()
 
@@ -600,7 +600,7 @@ fisher = nk.fisher_information(signal, delay=1, dimension=2)
 
 **Use cases:**
 - Combine with Shannon entropy (Fisher-Shannon plane)
-- Characterize system complexity
+- Characterise system complexity
 
 ### fishershannon_information()
 
@@ -612,7 +612,7 @@ fs = nk.fishershannon_information(signal)
 
 **Method:**
 - Product of Fisher information and Shannon entropy
-- Characterizes order-disorder balance
+- Characterises order-disorder balance
 
 ### mutual_information()
 
@@ -623,7 +623,7 @@ mi = nk.mutual_information(signal1, signal2, method='knn')
 ```
 
 **Methods:**
-- `'knn'`: k-nearest neighbors (nonparametric)
+- `'knn'`: k-nearest neighbours (nonparametric)
 - `'kernel'`: Kernel density estimation
 - `'binning'`: Histogram-based
 
@@ -648,7 +648,7 @@ mi = nk.mutual_information(signal1, signal2, method='knn')
 ### Parameter Selection
 
 **General guidelines:**
-- Use parameter optimization functions first
+- Use parameter optimisation functions first
 - Or use conventional defaults:
   - Delay (τ): 1 for HRV, autocorrelation first minimum for EEG
   - Dimension (m): 2-3 typical
@@ -659,11 +659,11 @@ mi = nk.mutual_information(signal1, signal2, method='knn')
 - Report parameters used
 - Consider sensitivity analysis
 
-### Normalization and Preprocessing
+### Normalisation and Preprocessing
 
-**Standardization:**
+**Standardisation:**
 - Many measures sensitive to signal amplitude
-- Z-score normalization often recommended
+- Z-score normalisation often recommended
 - Detrending may be necessary
 
 **Stationarity:**

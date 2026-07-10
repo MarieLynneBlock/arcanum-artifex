@@ -40,7 +40,7 @@ Progression features rarely change only one number. A kill reward may affect coi
 Guidance:
 
 - Route rewards through one service or domain method instead of duplicating math in listeners.
-- Fire or call a domain-level event before finalizing rewards if other systems can modify the result.
+- Fire or call a domain-level event before finalising rewards if other systems can modify the result.
 - Clamp and validate player-facing amounts such as coins, XP, level, health, bounty, or cooldowns.
 - Mark profiles dirty after mutation and save in batches when the codebase uses dirty tracking.
 - Update visible UI from the main thread after persistence or reward computation completes.

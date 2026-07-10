@@ -97,7 +97,7 @@ def distributed():
 
 ## GPU Fallback Chains
 
-Specify a prioritized list of GPU types:
+Specify a prioritised list of GPU types:
 
 ```python
 @app.function(gpu=["H100", "A100-80GB", "L40S"])

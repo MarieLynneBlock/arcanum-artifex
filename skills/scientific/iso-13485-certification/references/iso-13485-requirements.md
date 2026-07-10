@@ -7,7 +7,7 @@ This document provides a comprehensive breakdown of ISO 13485:2016 requirements 
 1. [Clause 4: Quality Management System](#clause-4-quality-management-system)
 2. [Clause 5: Management Responsibility](#clause-5-management-responsibility)
 3. [Clause 6: Resource Management](#clause-6-resource-management)
-4. [Clause 7: Product Realization](#clause-7-product-realization)
+4. [Clause 7: Product Realisation](#clause-7-product-realisation)
 5. [Clause 8: Measurement, Analysis and Improvement](#clause-8-measurement-analysis-and-improvement)
 
 ## Clause 4: Quality Management System
@@ -24,13 +24,13 @@ This document provides a comprehensive breakdown of ISO 13485:2016 requirements 
 - Determine sequence and interaction of these processes
 - Determine criteria and methods for effective operation and control
 - Ensure availability of resources and information
-- Monitor, measure, and analyze processes
+- Monitor, measure, and analyse processes
 - Implement actions to achieve planned results and maintain effectiveness
 
 #### 4.1.3 Outsourced Processes
 - Control any QMS process that is outsourced
 - Ensure control is documented in the QMS
-- Outsourcing does not relieve the organization of responsibility
+- Outsourcing does not relieve the organisation of responsibility
 
 #### 4.1.4 General QMS Requirements
 - Establish, document, implement, and maintain QMS requirements per ISO 13485
@@ -38,7 +38,7 @@ This document provides a comprehensive breakdown of ISO 13485:2016 requirements 
 - Establish documented procedures for QMS activities
 
 #### 4.1.5 Risk Management
-- Establish documented requirements for risk management in product realization
+- Establish documented requirements for risk management in product realisation
 - Maintain risk management records
 - Ensure risk management is conducted according to documented requirements
 
@@ -59,7 +59,7 @@ QMS documentation must include:
 - Quality policy and quality objectives
 - Quality manual
 - Documented procedures and records required by ISO 13485
-- Documents required by organization for effective processes
+- Documents required by organisation for effective processes
 - Records required by ISO 13485
 - Medical device files as required by applicable regulatory requirements
 
@@ -122,10 +122,10 @@ Top management must provide evidence of commitment by:
 - Maintain documented requirements related to the medical device
 
 ### 5.3 Quality Policy
-- Appropriate to the organization
+- Appropriate to the organisation
 - Includes commitment to meet requirements and maintain QMS effectiveness
 - Provides framework for quality objectives
-- Communicated and understood within organization
+- Communicated and understood within organisation
 - Reviewed for continuing suitability
 
 ### 5.4 Planning
@@ -219,17 +219,17 @@ Infrastructure maintenance requirements:
 - When applicable to medical device, document requirements for control of contaminated or potentially contaminated product
 - Establish special arrangements for control of contaminated product
 
-## Clause 7: Product Realization
+## Clause 7: Product Realisation
 
-### 7.1 Planning of Product Realization
-Plan and develop processes needed for product realization including:
+### 7.1 Planning of Product Realisation
+Plan and develop processes needed for product realisation including:
 - Quality objectives and requirements for the product
 - Need to establish processes, documentation, and resources
 - Required verification, validation, monitoring, measurement, inspection, handling, storage, distribution, and traceability
 - Records to provide evidence of conformity
 
 Risk management requirements:
-- Establish documented requirements for risk management throughout product realization
+- Establish documented requirements for risk management throughout product realisation
 - Maintain risk management records
 
 ### 7.2 Customer-Related Processes
@@ -239,7 +239,7 @@ Determine:
 - Requirements specified by customer including delivery and post-delivery
 - Requirements not stated but necessary for specified or intended use
 - Applicable regulatory requirements
-- Any additional requirements determined by organization
+- Any additional requirements determined by organisation
 
 #### 7.2.2 Review of Requirements
 - Review product requirements before commitment
@@ -335,7 +335,7 @@ Establish and maintain design and development files for each type or family incl
 - Ensure purchased product conforms to purchase information
 - Establish documented processes for purchasing activities
 - Establish criteria for evaluation and selection of suppliers
-- Base criteria on ability to supply per organization's requirements
+- Base criteria on ability to supply per organisation's requirements
 - Monitor supplier performance
 - Maintain records of evaluations and follow-up actions
 - Establish process for notifying suppliers of changed product requirements
@@ -345,7 +345,7 @@ Purchasing information must include:
 - Requirements for approval of product, procedures, processes, equipment
 - Requirements for qualification of personnel
 - Quality management system requirements
-- Requirements for notification to organization of nonconforming product
+- Requirements for notification to organisation of nonconforming product
 - Agreement that suppliers provide notification of changes to purchased product
 - Agreement that purchase information be communicated to sub-tier suppliers
 
@@ -387,7 +387,7 @@ If applicable:
 #### 7.5.4 Servicing Activities
 If servicing is specified requirement:
 - Establish documented procedures, reference materials, and measurements for servicing
-- Analyze records of servicing for feedback into post-production phase
+- Analyse records of servicing for feedback into post-production phase
 - Maintain records of servicing activities
 
 #### 7.5.5 Particular Requirements for Sterile Medical Devices
@@ -414,7 +414,7 @@ Maintain records of validation of:
 - Sterile barrier systems
 
 #### 7.5.8 Identification
-- Establish documented procedures for product identification throughout realization
+- Establish documented procedures for product identification throughout realisation
 - Identify product by suitable means
 - Maintain records of identification where traceability is a requirement
 
@@ -432,7 +432,7 @@ Document procedures to maintain records of:
 - Maintain traceability records for defined period
 
 #### 7.5.10 Customer Property
-- Exercise care with customer property while under organization's control
+- Exercise care with customer property while under organisation's control
 - Identify, verify, protect, and safeguard customer property
 - Record and report to customer if lost, damaged, or unsuitable
 - Maintain records
@@ -480,8 +480,8 @@ Establish documented procedures for timely complaint handling including:
 - Requirements and responsibilities for receiving, recording, and evaluating complaints
 - Requirements and responsibilities for handling, investigating, and evaluating complaints
 - Requirements and responsibilities for reporting complaint information to regulatory authorities
-- Requirements for informing customer of organization's actions
-- Requirements to ensure complaint information not handled by organization is transferred to organization
+- Requirements for informing customer of organisation's actions
+- Requirements to ensure complaint information not handled by organisation is transferred to organisation
 - Maintain records of complaints and investigations
 
 #### 8.2.3 Reporting to Regulatory Authorities
@@ -492,7 +492,7 @@ Establish documented procedures to:
 
 #### 8.2.4 Internal Audit
 - Conduct internal audits at planned intervals
-- Determine if QMS conforms to ISO 13485 and organization's requirements
+- Determine if QMS conforms to ISO 13485 and organisation's requirements
 - Determine if QMS is effectively implemented and maintained
 - Plan audit program considering importance of processes, changes, and previous results
 - Define audit criteria, scope, frequency, and methods
@@ -550,7 +550,7 @@ Establish documented procedures for rework including:
 - Documentation of rework procedure before rework begins
 
 ### 8.4 Analysis of Data
-- Determine, collect, and analyze appropriate data from monitoring and measurement
+- Determine, collect, and analyse appropriate data from monitoring and measurement
 - Evaluate where continual improvement of QMS effectiveness can be made
 - Establish documented procedures for:
   - Analysis of data to provide information on customer satisfaction
@@ -594,8 +594,8 @@ Establish documented procedures for rework including:
 
 ## Key Regulatory Updates
 
-### FDA QMSR Harmonization (Effective February 2, 2026)
-- FDA 21 CFR Part 820 has been harmonized with ISO 13485:2016
+### FDA QMSR Harmonisation (Effective February 2, 2026)
+- FDA 21 CFR Part 820 has been harmonised with ISO 13485:2016
 - Renamed to QMSR (Quality Management System Regulation)
 - Medical Device File (MDF) replaces separate DHF, DMR, and DHR
 - Organizations should prepare for transition to unified documentation approach

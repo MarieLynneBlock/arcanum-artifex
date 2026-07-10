@@ -20,12 +20,12 @@ This skill should be used when searching for gene expression datasets, retrievin
 
 ### 1. Understanding GEO Data Organization
 
-GEO organizes data hierarchically using different accession types:
+GEO organises data hierarchically using different accession types:
 
 **Series (GSE):** A complete experiment with a set of related samples
 - Example: GSE123456
 - Contains experimental design, samples, and overall study information
-- Largest organizational unit in GEO
+- Largest organisational unit in GEO
 - Current count: 264,928+ series
 
 **Sample (GSM):** A single experimental sample or biological replicate
@@ -42,7 +42,7 @@ GEO organizes data hierarchically using different accession types:
 
 **DataSet (GDS):** Curated collections with consistent formatting
 - Example: GDS5678
-- Experimentally-comparable samples organized by study design
+- Experimentally-comparable samples organised by study design
 - Processed for differential analysis
 - Subset of GEO data (4,348 curated datasets)
 - Ideal for quick comparative analyses
@@ -408,7 +408,7 @@ wget -r -np -nd ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE123nnn/GSE123456/suppl/
 wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE123nnn/GSE123456/soft/GSE123456_family.soft.gz
 ```
 
-### 6. Analyzing GEO Data
+### 6. Analysing GEO Data
 
 **Quality Control and Preprocessing:**
 
@@ -687,7 +687,7 @@ Entrez.api_key = "your_api_key_here"
 - Perform meta-analyses across multiple datasets
 
 ### Drug Response Studies
-- Analyze gene expression changes after drug treatment
+- Analyse gene expression changes after drug treatment
 - Identify biomarkers for drug response
 - Compare drug effects across cell lines or patients
 - Build predictive models for drug sensitivity
@@ -712,9 +712,9 @@ Entrez.api_key = "your_api_key_here"
 
 **Series Matrix:** Tab-delimited expression matrix with samples as columns and genes/probes as rows. Fastest format for getting expression data.
 
-**MIAME Compliance:** Minimum Information About a Microarray Experiment - standardized annotation that GEO enforces for all submissions.
+**MIAME Compliance:** Minimum Information About a Microarray Experiment - standardised annotation that GEO enforces for all submissions.
 
-**Expression Value Types:** Different types of expression measurements (raw signal, normalized, log-transformed). Always check platform and processing methods.
+**Expression Value Types:** Different types of expression measurements (raw signal, normalised, log-transformed). Always check platform and processing methods.
 
 **Platform Annotation:** Maps probe/feature IDs to genes. Essential for biological interpretation of expression data.
 
@@ -761,7 +761,7 @@ Comprehensive reference documentation covering:
 - Complete SOFT and MINiML file format documentation
 - Advanced GEOparse usage patterns and examples
 - FTP directory structure and file naming conventions
-- Data processing pipelines and normalization methods
+- Data processing pipelines and normalisation methods
 - Troubleshooting common issues and error handling
 - Platform-specific considerations and quirks
 
@@ -795,7 +795,7 @@ Consult this reference for in-depth technical details, complex query patterns, o
 ### Common Pitfalls
 
 - Different platforms use different probe IDs (requires annotation mapping)
-- Expression values may be raw, normalized, or log-transformed (check metadata)
+- Expression values may be raw, normalised, or log-transformed (check metadata)
 - Sample metadata can be inconsistently formatted across studies
 - Not all series have series matrix files (older submissions)
 - Platform annotations may be outdated (genes renamed, IDs deprecated)

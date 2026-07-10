@@ -2,7 +2,7 @@
 
 ## Overview
 
-Adaptyv provides multiple experimental assay types for comprehensive protein characterization. Each experiment type has specific applications, workflows, and data outputs.
+Adaptyv provides multiple experimental assay types for comprehensive protein characterisation. Each experiment type has specific applications, workflows, and data outputs.
 
 ## Binding Assays
 
@@ -12,7 +12,7 @@ Measure protein-target interactions using biolayer interferometry (BLI), a label
 
 ### Use Cases
 
-- Antibody-antigen binding characterization
+- Antibody-antigen binding characterisation
 - Receptor-ligand interaction analysis
 - Protein-protein interaction studies
 - Affinity maturation screening
@@ -57,7 +57,7 @@ As molecules bind, the optical thickness increases, causing a wavelength shift p
 ### Sample Requirements
 
 - Protein sequence (standard amino acid codes)
-- Target specification (from catalog or custom request)
+- Target specification (from catalogue or custom request)
 - Buffer conditions (standard or custom)
 - Expected concentration range (optional, improves assay design)
 
@@ -89,12 +89,12 @@ As molecules bind, the optical thickness increases, causing a wavelength shift p
 
 ### Description
 
-Quantify protein expression levels in various host systems to assess producibility and optimize sequences for manufacturing.
+Quantify protein expression levels in various host systems to assess producibility and optimise sequences for manufacturing.
 
 ### Use Cases
 
 - Screening variants for high expression
-- Optimizing codon usage
+- Optimising codon usage
 - Identifying expression bottlenecks
 - Selecting candidates for scale-up
 - Comparing expression systems
@@ -145,7 +145,7 @@ Available expression platforms:
 
 ### Description
 
-Measure protein thermal stability to assess structural integrity, predict shelf-life, and identify stabilizing mutations.
+Measure protein thermal stability to assess structural integrity, predict shelf-life, and identify stabilising mutations.
 
 ### Use Cases
 
@@ -211,7 +211,7 @@ Measure enzymatic function including substrate turnover, catalytic efficiency, a
 - Screening enzyme variants for improved activity
 - Substrate specificity profiling
 - Inhibitor testing
-- pH and temperature optimization
+- pH and temperature optimisation
 - Mechanistic studies
 
 ### Assay Types
@@ -242,7 +242,7 @@ Measure enzymatic function including substrate turnover, catalytic efficiency, a
 ### Workflow
 
 1. **Sequence submission** - Provide enzyme sequences
-2. **Expression and purification** - Optimized for activity retention
+2. **Expression and purification** - Optimised for activity retention
 3. **Activity assay** - Substrate turnover measurements
 4. **Kinetic analysis** - Michaelis-Menten fitting
 5. **Results delivery** - Kinetic parameters and rankings
@@ -283,7 +283,7 @@ Measure enzymatic function including substrate turnover, catalytic efficiency, a
 
 - **Pilot studies** - 5-10 sequences to test feasibility
 - **Library screening** - 50-500 sequences for variant exploration
-- **Focused optimization** - 10-50 sequences for fine-tuning
+- **Focused optimisation** - 10-50 sequences for fine-tuning
 - **Large-scale campaigns** - 500+ sequences for ML-driven design
 
 ### Quality Control
@@ -310,16 +310,16 @@ Adaptyv includes automated QC steps:
 - Novel assay development (add 2-4 weeks)
 - Large batch sizes (may add 1 week)
 
-### Cost Optimization
+### Cost Optimisation
 
 1. **Batch submissions** - Lower per-sequence cost
-2. **Standard targets** - Catalog antigens are faster/cheaper
+2. **Standard targets** - Catalogue antigens are faster/cheaper
 3. **Standard conditions** - Custom buffers add cost
 4. **Computational pre-filtering** - Submit only promising candidates
 
 ## Combining Experiment Types
 
-For comprehensive protein characterization, combine multiple assays:
+For comprehensive protein characterisation, combine multiple assays:
 
 **Therapeutic antibody development:**
 1. Binding assay → Identify high-affinity binders
@@ -340,15 +340,15 @@ For comprehensive protein characterization, combine multiple assays:
 Results integrate with computational workflows:
 
 1. **Download raw data** via API
-2. **Parse results** into standardized format
+2. **Parse results** into standardised format
 3. **Feed into ML models** for next-round design
 4. **Track experiments** with metadata tags
-5. **Visualize trends** across design iterations
+5. **Visualise trends** across design iterations
 
 ## Support and Troubleshooting
 
 **Common issues:**
-- Low expression → Consider sequence optimization (see protein-optimization.md)
+- Low expression → Consider sequence optimisation (see protein-optimisation.md)
 - Poor binding → Verify target specification and expected range
 - Variable results → Check sequence quality and controls
 - Incomplete data → Contact support with experiment ID

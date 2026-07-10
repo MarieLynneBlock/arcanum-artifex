@@ -122,7 +122,7 @@ Read and write data in various formats with support for compression, backed mode
 - Backed mode for large datasets
 - Remote data access
 - Format conversion
-- Performance optimization
+- Performance optimisation
 
 Common commands:
 ```python
@@ -210,8 +210,8 @@ Follow recommended patterns for memory efficiency, performance, and reproducibil
 **See**: `references/best-practices.md` for guidelines on:
 - Memory management (sparse matrices, categoricals, backed mode)
 - Views vs copies
-- Data storage optimization
-- Performance optimization
+- Data storage optimisation
+- Performance optimisation
 - Working with raw data
 - Metadata management
 - Reproducibility

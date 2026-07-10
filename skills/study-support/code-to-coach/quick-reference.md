@@ -73,7 +73,7 @@
 | Strategy | How | Example |
 |----------|-----|---------|
 | **Limit nesting** | Keep depth <4 | Use filter().map() instead of nested loops |
-| **Minimize mutations** | One change per variable | Use immutable transformations |
+| **Minimise mutations** | One change per variable | Use immutable transformations |
 | **Reduce scope** | Declare near use | Move variable declaration down |
 | **Chunked flow** | Clear phases with comments | // Phase 1: Validate, // Phase 2: Process |
 | **Naming patterns** | `is_*`, `get_*`, `validate_*` | Learners predict function behaviour |

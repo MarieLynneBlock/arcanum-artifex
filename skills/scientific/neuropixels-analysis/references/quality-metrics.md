@@ -103,7 +103,7 @@ Contamination measure based on Mahalanobis distances.
 | > 0.1 | Contaminated |
 
 #### D-prime
-Discriminability between unit and nearest neighbor.
+Discriminability between unit and nearest neighbour.
 
 | Value | Interpretation |
 |-------|---------------|
@@ -183,7 +183,7 @@ Cluster cohesion vs separation (-1 to 1).
 | 0.25 - 0.5 | Moderate |
 | < 0.25 | Overlapping clusters |
 
-#### Nearest-Neighbor Metrics
+#### Nearest-Neighbour Metrics
 
 ```python
 analyzer.compute('quality_metrics',
@@ -193,8 +193,8 @@ analyzer.compute('quality_metrics',
 
 | Metric | Description | Good Value |
 |--------|-------------|------------|
-| `nn_hit_rate` | Fraction of spikes with same-unit neighbors | > 0.9 |
-| `nn_miss_rate` | Fraction of spikes with other-unit neighbors | < 0.1 |
+| `nn_hit_rate` | Fraction of spikes with same-unit neighbours | > 0.9 |
+| `nn_miss_rate` | Fraction of spikes with other-unit neighbours | < 0.1 |
 
 ## Standard Filtering Criteria
 
@@ -250,7 +250,7 @@ mua_query = """
 all_units = qm.query(mua_query).index.tolist()
 ```
 
-## Visualization
+## Visualisation
 
 ### Quality Metric Summary
 

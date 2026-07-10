@@ -51,7 +51,7 @@ hsa_info = kegg_info('hsa')  # Human genome
 
 List entry identifiers and names from KEGG databases.
 
-**When to use**: Getting all pathways for an organism, listing genes, retrieving compound catalogs.
+**When to use**: Getting all pathways for an organism, listing genes, retrieving compound catalogues.
 
 **Usage**:
 ```python
@@ -188,7 +188,7 @@ ko_groups = kegg_link('ko', 'hsa:10458')
 
 Check for drug-drug interactions.
 
-**When to use**: Analyzing drug combinations, checking for contraindications, pharmacological research.
+**When to use**: Analysing drug combinations, checking for contraindications, pharmacological research.
 
 **Usage**:
 ```python
@@ -305,13 +305,13 @@ mmu_glycolysis = kegg_get('mmu00010')
 
 ## Pathway Categories
 
-KEGG organizes pathways into seven major categories. When interpreting pathway IDs or recommending pathways to users:
+KEGG organises pathways into seven major categories. When interpreting pathway IDs or recommending pathways to users:
 
 1. **Metabolism** (e.g., `map00010` - Glycolysis, `map00190` - Oxidative phosphorylation)
 2. **Genetic Information Processing** (e.g., `map03010` - Ribosome, `map03040` - Spliceosome)
-3. **Environmental Information Processing** (e.g., `map04010` - MAPK signaling, `map02010` - ABC transporters)
+3. **Environmental Information Processing** (e.g., `map04010` - MAPK signalling, `map02010` - ABC transporters)
 4. **Cellular Processes** (e.g., `map04140` - Autophagy, `map04210` - Apoptosis)
-5. **Organismal Systems** (e.g., `map04610` - Complement cascade, `map04910` - Insulin signaling)
+5. **Organismal Systems** (e.g., `map04610` - Complement cascade, `map04910` - Insulin signalling)
 6. **Human Diseases** (e.g., `map05200` - Pathways in cancer, `map05010` - Alzheimer disease)
 7. **Drug Development** (chronological and target-based classifications)
 
@@ -368,7 +368,7 @@ For comprehensive API documentation, database specifications, organism codes, an
 
 ## Additional Tools
 
-For interactive pathway visualization and annotation:
+For interactive pathway visualisation and annotation:
 - **KEGG Mapper**: https://www.kegg.jp/kegg/mapper/
 - **BlastKOALA**: Automated genome annotation
 - **GhostKOALA**: Metagenome/metatranscriptome annotation

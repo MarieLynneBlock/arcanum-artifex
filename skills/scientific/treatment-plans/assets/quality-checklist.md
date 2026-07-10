@@ -2,7 +2,7 @@
 
 ## Overview
 
-Use this checklist to ensure treatment plans meet professional standards for completeness, quality, safety, and regulatory compliance. Review each section before finalizing the plan.
+Use this checklist to ensure treatment plans meet professional standards for completeness, quality, safety, and regulatory compliance. Review each section before finalising the plan.
 
 ---
 
@@ -29,8 +29,8 @@ Use this checklist to ensure treatment plans meet professional standards for com
 - [ ] Short-term goals present (1-3 months)
 - [ ] Long-term goals present (6-12 months)
 - [ ] Goals meet SMART criteria (see Section 2)
-- [ ] Patient-centered goals included
-- [ ] Goals are prioritized or organized
+- [ ] Patient-centred goals included
+- [ ] Goals are prioritised or organised
 
 ### ☐ Interventions
 - [ ] Pharmacological interventions specified
@@ -80,7 +80,7 @@ Use this checklist to ensure treatment plans meet professional standards for com
 - [ ] Provider signature line
 - [ ] Provider name and credentials
 - [ ] Date of plan
-- [ ] Patient acknowledgment (if applicable)
+- [ ] Patient acknowledgement (if applicable)
 
 ---
 
@@ -164,12 +164,12 @@ For each treatment goal, verify it meets SMART criteria:
 ### ☐ Preventive Care Integration
 - [ ] Age-appropriate screening included
 - [ ] Vaccination schedule noted
-- [ ] Lifestyle counseling documented
+- [ ] Lifestyle counselling documented
 - [ ] Health maintenance addressed
 
 ---
 
-## Section 4: Patient-Centered Care
+## Section 4: Patient-Centred Care
 
 ### ☐ Shared Decision-Making
 - [ ] Patient preferences documented
@@ -251,7 +251,7 @@ For each treatment goal, verify it meets SMART criteria:
 
 ### ☐ HIPAA Compliance
 - [ ] Protected health information (PHI) safeguarded
-- [ ] De-identification per Safe Harbor method (if sharing)
+- [ ] De-identification per Safe Harbour method (if sharing)
 - [ ] All 18 HIPAA identifiers removed (if de-identified)
 - [ ] Minimum necessary principle followed
 
@@ -306,7 +306,7 @@ For each treatment goal, verify it meets SMART criteria:
 - [ ] Logical flow and structure
 - [ ] Consistent formatting
 - [ ] Easy to locate key information
-- [ ] Headings and sections clearly labeled
+- [ ] Headings and sections clearly labelled
 
 ### ☐ Legibility (if handwritten or hybrid)
 - [ ] Handwriting legible
@@ -327,7 +327,7 @@ For each treatment goal, verify it meets SMART criteria:
 ### For General Medical Plans:
 - [ ] Chronic disease management protocols followed
 - [ ] Guideline-based targets used (HbA1c, BP, lipids)
-- [ ] Medication regimen optimized
+- [ ] Medication regimen optimised
 - [ ] Comorbidities addressed
 - [ ] Preventive care integrated
 
@@ -349,7 +349,7 @@ For each treatment goal, verify it meets SMART criteria:
 - [ ] Functional and recovery-oriented goals included
 
 ### For Chronic Disease Management Plans:
-- [ ] All active conditions prioritized
+- [ ] All active conditions prioritised
 - [ ] Medication synergies identified
 - [ ] Polypharmacy addressed
 - [ ] Care coordination plan clear
@@ -358,7 +358,7 @@ For each treatment goal, verify it meets SMART criteria:
 
 ### For Perioperative Plans:
 - [ ] Preoperative risk assessment (RCRI, ASA, Caprini)
-- [ ] Medical optimization documented
+- [ ] Medical optimisation documented
 - [ ] ERAS elements included (if applicable)
 - [ ] Postoperative milestones defined
 - [ ] Discharge criteria specified
@@ -369,7 +369,7 @@ For each treatment goal, verify it meets SMART criteria:
 - [ ] Pain type classified (nociceptive, neuropathic, nociplastic)
 - [ ] Multimodal analgesia approach
 - [ ] Opioid risk assessment (if opioids considered)
-- [ ] Functional goals emphasized (not just pain scores)
+- [ ] Functional goals emphasised (not just pain scores)
 - [ ] Psychological screening and intervention included
 - [ ] CDC opioid guidelines followed (if prescribing)
 
@@ -385,7 +385,7 @@ For each treatment goal, verify it meets SMART criteria:
 
 ### ☐ Completeness Verification
 - [ ] All placeholder text replaced with patient-specific information
-- [ ] All bracketed [fields] customized
+- [ ] All bracketed [fields] customised
 - [ ] No "TBD" or "to be completed" items remaining
 - [ ] All required sections complete
 
@@ -430,7 +430,7 @@ The following items are critical and must be present:
 - ✓ Emergency procedures
 - ✓ Provider signature
 
-If any critical item is missing, plan should not be finalized until corrected.
+If any critical item is missing, plan should not be finalised until corrected.
 
 ---
 
@@ -440,7 +440,7 @@ If any critical item is missing, plan should not be finalized until corrected.
 2. **Check boxes** as criteria are met
 3. **Note deficiencies** for correction
 4. **Calculate score** to assess overall quality
-5. **Address gaps** before finalizing
+5. **Address gaps** before finalising
 6. **Document review** with reviewer name and date
 
 **Reviewer**: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

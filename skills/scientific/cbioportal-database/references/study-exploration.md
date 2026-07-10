@@ -42,7 +42,7 @@
 
 | Study ID | Description |
 |----------|-------------|
-| `genie_14_1_public` | GENIE v14.1 (multi-center clinical sequencing) |
+| `genie_14_1_public` | GENIE v14.1 (multi-centre clinical sequencing) |
 
 ## Molecular Profile ID Naming Conventions
 
@@ -116,9 +116,9 @@ Each study has sample lists of different subsets:
 | `5'Flank` | 5' flanking |
 | `3'UTR` | 3' UTR |
 
-## OncoPrint Color Legend
+## OncoPrint Colour Legend
 
-cBioPortal uses consistent colors in OncoPrint:
+cBioPortal uses consistent colours in OncoPrint:
 - **Red**: Amplification
 - **Blue (dark)**: Deep deletion
 - **Green**: Missense mutation

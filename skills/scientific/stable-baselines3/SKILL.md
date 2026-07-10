@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-Stable Baselines3 (SB3) is a PyTorch-based library providing reliable implementations of reinforcement learning algorithms. This skill provides comprehensive guidance for training RL agents, creating custom environments, implementing callbacks, and optimizing training workflows using SB3's unified API.
+Stable Baselines3 (SB3) is a PyTorch-based library providing reliable implementations of reinforcement learning algorithms. This skill provides comprehensive guidance for training RL agents, creating custom environments, implementing callbacks, and optimising training workflows using SB3's unified API.
 
 ## Core Capabilities
 
@@ -59,14 +59,14 @@ Custom environments must inherit from `gymnasium.Env` and implement:
 - `__init__()`: Define action_space and observation_space
 - `reset(seed, options)`: Return initial observation and info dict
 - `step(action)`: Return observation, reward, terminated, truncated, info
-- `render()`: Visualization (optional)
+- `render()`: Visualisation (optional)
 - `close()`: Cleanup resources
 
 **Key Constraints:**
 - Image observations must be `np.uint8` in range [0, 255]
 - Use channel-first format when possible (channels, height, width)
-- SB3 normalizes images automatically by dividing by 255
-- Set `normalize_images=False` in policy_kwargs if pre-normalized
+- SB3 normalises images automatically by dividing by 255
+- Set `normalize_images=False` in policy_kwargs if pre-normalised
 - SB3 does NOT support `Discrete` or `MultiDiscrete` spaces with `start!=0`
 
 **Validation:**
@@ -81,7 +81,7 @@ See `scripts/custom_env_template.py` for a complete custom environment template 
 ### 3. Vectorized Environments
 
 **Purpose:**
-Vectorized environments run multiple environment instances in parallel, accelerating training and enabling certain wrappers (frame-stacking, normalization).
+Vectorized environments run multiple environment instances in parallel, accelerating training and enabling certain wrappers (frame-stacking, normalisation).
 
 **Types:**
 - **DummyVecEnv**: Sequential execution on current process (for lightweight environments)
@@ -98,7 +98,7 @@ model = PPO("MlpPolicy", env, verbose=1)
 model.learn(total_timesteps=25000)
 ```
 
-**Off-Policy Optimization:**
+**Off-Policy Optimisation:**
 When using multiple environments with off-policy algorithms (SAC, TD3, DQN), set `gradient_steps=-1` to perform one gradient update per environment step, balancing wall-clock time and sample efficiency.
 
 **API Differences:**
@@ -262,7 +262,7 @@ model.learn(total_timesteps=10000)
 4. **Validate environment**: Always run `check_env()` before training
 5. **Set up training**: Use `scripts/train_rl_agent.py` as starting template
 6. **Add monitoring**: Implement callbacks for evaluation and checkpointing
-7. **Optimize performance**: Consider vectorized environments for speed
+7. **Optimise performance**: Consider vectorized environments for speed
 8. **Evaluate and iterate**: Use `scripts/evaluate_agent.py` for assessment
 
 **Common Issues:**

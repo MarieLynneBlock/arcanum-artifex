@@ -2,7 +2,7 @@
 
 ## Most Common Commands
 
-### BAM to bigWig (normalized)
+### BAM to bigWig (normalised)
 ```bash
 bamCoverage --bam input.bam --outFileName output.bw \
     --normalizeUsing RPGC --effectiveGenomeSize 2913022398 \
@@ -44,7 +44,7 @@ plotFingerprint -b input.bam chip.bam -o fingerprint.png \
 | Mouse | mm10 | 2652783500 |
 | Fly | dm6 | 142573017 |
 
-## Common Normalization Methods
+## Common Normalisation Methods
 
 - **RPGC**: 1× genome coverage (requires --effectiveGenomeSize)
 - **CPM**: Counts per million (for fixed bins)
@@ -53,6 +53,6 @@ plotFingerprint -b input.bam chip.bam -o fingerprint.png \
 ## Typical Workflow
 
 1. **QC**: plotFingerprint, plotCorrelation
-2. **Coverage**: bamCoverage with normalization
+2. **Coverage**: bamCoverage with normalisation
 3. **Comparison**: bamCompare for treatment vs control
-4. **Visualization**: computeMatrix → plotHeatmap/plotProfile
+4. **Visualisation**: computeMatrix → plotHeatmap/plotProfile

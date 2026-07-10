@@ -438,7 +438,7 @@ Or run a function call:
 * Avoid complex quoting in `--eval` or `-batch`.
 * Use environment variables and read them inside MATLAB/Octave when inputs are complicated.
 
-### Different behavior between MATLAB and Octave
+### Different behaviour between MATLAB and Octave
 
 * Check for unsupported functions or toolbox calls.
 * Run minimal repro steps using `--eval` or `-batch` to isolate incompatibilities.

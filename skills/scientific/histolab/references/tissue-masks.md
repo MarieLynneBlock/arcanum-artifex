@@ -2,7 +2,7 @@
 
 ## Overview
 
-Tissue masks are binary representations that identify tissue regions within whole slide images. They are essential for filtering out background, artifacts, and non-tissue areas during tile extraction. Histolab provides several mask classes to accommodate different tissue segmentation needs.
+Tissue masks are binary representations that identify tissue regions within whole slide images. They are essential for filtering out background, artefacts, and non-tissue areas during tile extraction. Histolab provides several mask classes to accommodate different tissue segmentation needs.
 
 ## Mask Classes
 
@@ -44,7 +44,7 @@ mask_array = tissue_mask(slide)
 2. Applies Otsu thresholding to separate tissue from background
 3. Performs binary dilation to connect nearby tissue regions
 4. Removes small holes within tissue regions
-5. Filters out small objects (artifacts)
+5. Filters out small objects (artefacts)
 
 **Returns:** Binary NumPy array where:
 - `True` (or 1): Tissue pixels
@@ -77,12 +77,12 @@ mask_array = biggest_mask(slide)
 
 **Best for:**
 - Slides with a single primary tissue section
-- Excluding small artifacts or tissue fragments
+- Excluding small artefacts or tissue fragments
 - Focusing on main tissue area (default for most tilers)
 
-## Customizing Masks with Filters
+## Customising Masks with Filters
 
-Masks accept custom filter chains for specialized tissue detection:
+Masks accept custom filter chains for specialised tissue detection:
 
 ```python
 from histolab.masks import TissueMask
@@ -100,7 +100,7 @@ custom_mask = TissueMask(
 )
 ```
 
-## Visualizing Masks
+## Visualising Masks
 
 ### Using locate_mask()
 
@@ -115,9 +115,9 @@ mask = TissueMask()
 slide.locate_mask(mask)
 ```
 
-This displays the slide thumbnail with mask boundaries overlaid in a contrasting color.
+This displays the slide thumbnail with mask boundaries overlaid in a contrasting colour.
 
-### Manual Visualization
+### Manual Visualisation
 
 ```python
 import matplotlib.pyplot as plt
@@ -229,11 +229,11 @@ random_tiler = RandomTiler(
 
 ## Best Practices
 
-1. **Preview masks before extraction**: Use `locate_mask()` or manual visualization to verify mask quality
+1. **Preview masks before extraction**: Use `locate_mask()` or manual visualisation to verify mask quality
 2. **Choose appropriate mask type**: Use `TissueMask` for multiple tissue sections, `BiggestTissueBoxMask` for single main sections
-3. **Customize for specific stains**: Different stains (H&E, IHC) may require adjusted threshold parameters
-4. **Handle artifacts**: Use custom filters or masks to exclude pen marks, bubbles, or folds
-5. **Test on diverse slides**: Validate mask performance across slides with varying quality and artifacts
+3. **Customise for specific stains**: Different stains (H&E, IHC) may require adjusted threshold parameters
+4. **Handle artefacts**: Use custom filters or masks to exclude pen marks, bubbles, or folds
+5. **Test on diverse slides**: Validate mask performance across slides with varying quality and artefacts
 6. **Consider computational cost**: `TissueMask` is more comprehensive but computationally intensive than `BiggestTissueBoxMask`
 
 ## Common Issues and Solutions

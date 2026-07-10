@@ -161,7 +161,7 @@ load_best_model_at_end=True
 metric_for_best_model="accuracy"  # Metric to compare
 ```
 
-### Optimization
+### Optimisation
 
 **gradient_accumulation_steps**: Accumulate gradients over multiple steps
 ```python
@@ -260,7 +260,7 @@ trainer = Trainer(
 
 ### DataCollatorForLanguageModeling
 
-For masked language modeling:
+For masked language modelling:
 ```python
 from transformers import DataCollatorForLanguageModeling
 
@@ -288,7 +288,7 @@ data_collator = DataCollatorForSeq2Seq(
 
 ### Custom Trainer
 
-Override methods for custom behavior:
+Override methods for custom behaviour:
 
 ```python
 from transformers import Trainer
@@ -486,7 +486,7 @@ trainer.train(resume_from_checkpoint="./results/checkpoint-1000")
 - Increase batch size
 - Enable mixed precision (fp16/bf16)
 - Use multiple GPUs
-- Optimize data loading
+- Optimise data loading
 
 ## Best Practices
 

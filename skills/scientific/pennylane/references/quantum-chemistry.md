@@ -225,7 +225,7 @@ molecule = qchem.read_structure('molecule.xyz')
 symbols, coords = molecule
 ```
 
-### Geometry Optimization
+### Geometry Optimisation
 
 ```python
 def optimize_geometry(symbols, initial_coords, basis='sto-3g'):

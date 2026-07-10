@@ -1,12 +1,12 @@
 # Extraction Patterns
 
-Guide to using Parallel's Extract API for converting web pages into clean, LLM-optimized content.
+Guide to using Parallel's Extract API for converting web pages into clean, LLM-optimised content.
 
 ---
 
 ## Overview
 
-The Extract API converts any public URL into clean markdown. It handles JavaScript-heavy pages, PDFs, and complex layouts that simple HTTP fetching cannot parse. Results are optimized for LLM consumption.
+The Extract API converts any public URL into clean markdown. It handles JavaScript-heavy pages, PDFs, and complex layouts that simple HTTP fetching cannot parse. Results are optimised for LLM consumption.
 
 **Key capabilities:**
 - JavaScript rendering (SPAs, dynamic content)

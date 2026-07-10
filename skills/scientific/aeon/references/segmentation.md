@@ -13,7 +13,7 @@ Aeon provides algorithms to partition time series into regions with distinct cha
 ### Classification-Based
 - `ClaSPSegmenter` - Classification Score Profile
   - Uses classification performance to identify boundaries
-  - Discovers segments where classification distinguishes neighbors
+  - Discovers segments where classification distinguishes neighbours
   - **Use when**: Segments have different temporal patterns
 
 ### Fast Pattern-Based
@@ -23,11 +23,11 @@ Aeon provides algorithms to partition time series into regions with distinct cha
   - **Use when**: Large time series, need speed and pattern discovery
 
 ### Information Theory
-- `InformationGainSegmenter` - Information gain maximization
-  - Finds boundaries maximizing information gain
+- `InformationGainSegmenter` - Information gain maximisation
+  - Finds boundaries maximising information gain
   - **Use when**: Statistical differences between segments
 
-### Gaussian Modeling
+### Gaussian Modelling
 - `GreedyGaussianSegmenter` - Greedy Gaussian approximation
   - Models segments as Gaussian distributions
   - Incrementally adds change points
@@ -94,7 +94,7 @@ Segmenters return change point indices:
 ## Common Use Cases
 
 ### Regime Change Detection
-Identify when time series behavior fundamentally changes:
+Identify when time series behaviour fundamentally changes:
 
 ```python
 from aeon.segmentation import InformationGainSegmenter
@@ -142,14 +142,14 @@ hausdorff_err = hausdorff_error(y_true, y_pred)
 
 ## Best Practices
 
-1. **Normalize data**: Ensures change detection not dominated by scale
-2. **Choose appropriate metric**: Different algorithms optimize different criteria
-3. **Validate segments**: Visualize to verify meaningful boundaries
+1. **Normalise data**: Ensures change detection not dominated by scale
+2. **Choose appropriate metric**: Different algorithms optimise different criteria
+3. **Validate segments**: Visualise to verify meaningful boundaries
 4. **Handle noise**: Consider smoothing before segmentation
 5. **Domain knowledge**: Use expected segment count if known
 6. **Parameter tuning**: Adjust sensitivity parameters (thresholds, penalties)
 
-## Visualization
+## Visualisation
 
 ```python
 import matplotlib.pyplot as plt

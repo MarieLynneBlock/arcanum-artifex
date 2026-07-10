@@ -238,7 +238,7 @@ print(f"Generated {len(structures)} structures")
 
 ### Workflow 2: Phase Diagram Construction
 
-Build and analyze phase diagrams from Materials Project data.
+Build and analyse phase diagrams from Materials Project data.
 
 ```python
 from mp_api.client import MPRester
@@ -356,7 +356,7 @@ plotter.save_plot("band_structure.png")
 
 ### Workflow 5: Molecular Dynamics Setup
 
-Set up and analyze molecular dynamics simulations.
+Set up and analyse molecular dynamics simulations.
 
 ```python
 from pymatgen.core import Structure
@@ -392,7 +392,7 @@ md_input.write_input("./md_calc")
 
 ### Workflow 6: Diffusion Analysis
 
-Analyze ion diffusion from AIMD trajectories.
+Analyse ion diffusion from AIMD trajectories.
 
 ```python
 from pymatgen.io.vasp import Xdatcar
@@ -576,7 +576,7 @@ with MPRester() as mpr:
 3. **Documentation**: Track transformation history using `TransformedStructure`
 4. **Version control**: Store input parameters and scripts in git
 5. **Automation**: Use workflow managers (Fireworks, AiiDA) for complex pipelines
-6. **Data management**: Organize calculations in clear directory structures
+6. **Data management**: Organise calculations in clear directory structures
 7. **Validation**: Always validate intermediate results before proceeding
 
 ## Integration with Workflow Tools

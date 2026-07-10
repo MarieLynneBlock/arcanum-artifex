@@ -22,7 +22,7 @@ The Quality Manual is typically 20-50 pages and remains relatively stable over t
 The Quality Manual must include:
 
 ### a) Scope of the QMS
-- Define which parts of the organization are covered
+- Define which parts of the organisation are covered
 - Identify exclusions with justification
 - Specify product types covered
 - Define applicable regulatory requirements
@@ -102,8 +102,8 @@ The Quality Manual must include:
 - 6.3 Infrastructure
 - 6.4 Work Environment and Contamination Control
 
-#### Section 7: Product Realization (ISO 13485 Clause 7)
-- 7.1 Planning of Product Realization
+#### Section 7: Product Realisation (ISO 13485 Clause 7)
+- 7.1 Planning of Product Realisation
 - 7.2 Customer-Related Processes
 - 7.3 Design and Development
 - 7.4 Purchasing
@@ -142,7 +142,7 @@ The Quality Manual must include:
 The Quality Manual should be at a **policy level**, not operational level:
 
 **DO:**
-- State WHAT the organization does
+- State WHAT the organisation does
 - State WHY policies exist
 - Reference WHO is responsible
 - Reference WHERE to find detailed procedures
@@ -155,7 +155,7 @@ The Quality Manual should be at a **policy level**, not operational level:
 ### Example - Correct Level of Detail:
 
 **Good (Policy Level):**
-> "The organization has established a documented procedure for the control of nonconforming product. This procedure ensures that nonconforming product is identified, segregated, and dispositioned appropriately. The Quality Manager is responsible for reviewing all nonconformances and determining appropriate corrective actions. Refer to SOP-8.3-01 Control of Nonconforming Product."
+> "The organisation has established a documented procedure for the control of nonconforming product. This procedure ensures that nonconforming product is identified, segregated, and dispositioned appropriately. The Quality Manager is responsible for reviewing all nonconformances and determining appropriate corrective actions. Refer to SOP-8.3-01 Control of Nonconforming Product."
 
 **Too Detailed (Operational Level - Don't do this):**
 > "When a nonconforming product is identified, the inspector fills out Form NCR-001 and places a red tag on the product. The product is moved to the quarantine area in Building B, Row 5. The Quality Manager reviews the NCR within 24 hours and checks one of three boxes: Rework, Scrap, or Use As-Is. If rework is selected, the inspector..."
@@ -281,14 +281,14 @@ If product requires no installation:
 If servicing is not offered:
 > "Clause 7.5.4 Servicing Activities is excluded. [Company Name] does not provide servicing of medical devices after delivery to the customer. Products are intended for single use [or] servicing is performed by authorized service partners under separate contractual arrangements."
 
-**Important:** All exclusions must be justified based on the nature of the organization and products. Exclusions must not affect the organization's ability or responsibility to provide safe and effective medical devices that meet regulatory requirements.
+**Important:** All exclusions must be justified based on the nature of the organisation and products. Exclusions must not affect the organisation's ability or responsibility to provide safe and effective medical devices that meet regulatory requirements.
 
 ### Section 3: Quality Policy and Objectives
 
 #### 3.1 Quality Policy Statement
 
 **Requirements:**
-- Appropriate to the organization
+- Appropriate to the organisation
 - Includes commitment to meeting requirements
 - Includes commitment to maintaining QMS effectiveness
 - Provides framework for quality objectives
@@ -324,7 +324,7 @@ List measurable objectives that support the policy:
 - CAPA closure rates
 
 **Example:**
-> The organization has established the following measurable quality objectives:
+> The organisation has established the following measurable quality objectives:
 > 1. Customer satisfaction rating ≥ 4.5 out of 5.0
 > 2. Product defect rate < 0.5% of units shipped
 > 3. On-time delivery ≥ 95%
@@ -351,7 +351,7 @@ This section describes how you've implemented ISO 13485 Clause 4 requirements.
 
 List QMS processes:
 - Management processes (planning, review, communication)
-- Product realization processes (design, purchasing, production, etc.)
+- Product realisation processes (design, purchasing, production, etc.)
 - Support processes (HR, maintenance, document control, etc.)
 - Monitoring and measurement processes (audits, inspections, CAPA, etc.)
 
@@ -360,7 +360,7 @@ Reference the process map in Appendix C.
 #### 4.1.2 Process Interactions
 
 Describe how processes interact:
-> "The QMS processes are interconnected and sequential. Management review provides direction for all processes. Product realization processes transform customer requirements into delivered products. Support processes enable product realization. Monitoring processes provide feedback for continual improvement. A detailed process map showing interactions is provided in Appendix C."
+> "The QMS processes are interconnected and sequential. Management review provides direction for all processes. Product realisation processes transform customer requirements into delivered products. Support processes enable product realisation. Monitoring processes provide feedback for continual improvement. A detailed process map showing interactions is provided in Appendix C."
 
 #### 4.1.3 Outsourced Processes
 
@@ -372,7 +372,7 @@ If applicable, list outsourced processes and how they're controlled:
 #### 4.1.4 Risk Management
 
 Describe risk management approach:
-> "The organization has established documented requirements for risk management throughout product realization in accordance with ISO 14971. Risk management activities are integrated into design and development, production, and post-market surveillance. Risk management records are maintained as part of the Medical Device File. Refer to SOP-4.1.5 Risk Management."
+> "The organisation has established documented requirements for risk management throughout product realisation in accordance with ISO 14971. Risk management activities are integrated into design and development, production, and post-market surveillance. Risk management records are maintained as part of the Medical Device File. Refer to SOP-4.1.5 Risk Management."
 
 #### 4.1.5 Software Validation
 
@@ -381,7 +381,7 @@ Describe approach to software validation:
 
 #### 4.2 Documentation Requirements
 
-Describe the documentation structure (fulfill 4.2.2.d requirement):
+Describe the documentation structure (fulfil 4.2.2.d requirement):
 
 **Four-Tier Documentation Structure:**
 
@@ -414,15 +414,15 @@ Describe MDF structure:
 
 #### 4.2.4 Control of Documents
 
-Summarize document control process:
+Summarise document control process:
 > "All QMS documents are controlled per SOP-4.2.4 Control of Documents. This ensures documents are approved before use, reviewed and updated as necessary, properly identified with revision status, available at points of use, legible and identifiable, and protected from unintended use of obsolete versions."
 
 #### 4.2.5 Control of Records
 
-Summarize record control process:
-> "QMS records provide evidence of conformity and effective operation. Records are controlled per SOP-4.2.5 Control of Records to ensure they remain legible, readily identifiable, retrievable, and protected. Records are retained for at least the lifetime of the medical device as defined by the organization, and in accordance with applicable regulatory requirements."
+Summarise record control process:
+> "QMS records provide evidence of conformity and effective operation. Records are controlled per SOP-4.2.5 Control of Records to ensure they remain legible, readily identifiable, retrievable, and protected. Records are retained for at least the lifetime of the medical device as defined by the organisation, and in accordance with applicable regulatory requirements."
 
-### Sections 5-8: Management, Resources, Realization, Measurement
+### Sections 5-8: Management, Resources, Realisation, Measurement
 
 For these sections, follow this pattern for each clause:
 
@@ -435,7 +435,7 @@ For these sections, follow this pattern for each clause:
 
 > **8.2.2 Complaint Handling**
 >
-> The organization has established a documented procedure for timely complaint handling. All complaints are promptly received, recorded, evaluated, investigated, and appropriately resolved. Complaints are analyzed for trends and potential product quality or safety issues. Complaints that meet regulatory reporting criteria are reported to applicable regulatory authorities within required timeframes.
+> The organisation has established a documented procedure for timely complaint handling. All complaints are promptly received, recorded, evaluated, investigated, and appropriately resolved. Complaints are analysed for trends and potential product quality or safety issues. Complaints that meet regulatory reporting criteria are reported to applicable regulatory authorities within required timeframes.
 >
 > The Quality Assurance Manager is responsible for complaint handling and ensuring compliance with regulatory requirements.
 >
@@ -460,7 +460,7 @@ Include all 31 required procedures plus any additional procedures.
 
 #### Appendix B: Organization Chart
 
-Include a current organization chart showing:
+Include a current organisation chart showing:
 - Reporting relationships
 - Key quality functions
 - Management representative
@@ -482,11 +482,11 @@ Comprehensive list of terms and abbreviations used in the QMS.
 
 #### Appendix E: Applicable Regulatory Requirements
 
-Detailed list of all regulatory requirements applicable to your organization:
+Detailed list of all regulatory requirements applicable to your organisation:
 - FDA regulations and guidance documents
-- EU regulations and harmonized standards
+- EU regulations and harmonised standards
 - Other regional requirements
-- Recognized consensus standards (e.g., IEC 60601, ISO 14971, etc.)
+- Recognised consensus standards (e.g., IEC 60601, ISO 14971, etc.)
 
 ---
 
@@ -550,7 +550,7 @@ Detailed list of all regulatory requirements applicable to your organization:
 
 ### 6. Generic Quality Policy
 **Problem:** Quality policy that could apply to any company
-**Solution:** Make policy specific to your organization and products
+**Solution:** Make policy specific to your organisation and products
 
 ### 7. Outdated Content
 **Problem:** Manual doesn't reflect current operations
@@ -623,7 +623,7 @@ Use this checklist to verify your Quality Manual is complete:
 
 ## Example Quality Policy Statements
 
-Choose a style appropriate for your organization:
+Choose a style appropriate for your organisation:
 
 ### Example 1: Detailed Commitment
 > **QUALITY POLICY**
@@ -640,7 +640,7 @@ Choose a style appropriate for your organization:
 > - Responding promptly and effectively to feedback and complaints
 > - Fostering a culture of quality and accountability
 >
-> This policy applies to all employees, contractors, and suppliers. Every person in our organization is responsible for quality and for supporting our QMS. This policy is reviewed annually and communicated throughout the organization.
+> This policy applies to all employees, contractors, and suppliers. Every person in our organisation is responsible for quality and for supporting our QMS. This policy is reviewed annually and communicated throughout the organisation.
 >
 > [Signature Block]
 
@@ -651,7 +651,7 @@ Choose a style appropriate for your organization:
 >
 > [Signature Block]
 
-### Example 3: Patient-Centered
+### Example 3: Patient-Centred
 > **QUALITY POLICY**
 >
 > Our mission is to improve patient outcomes through innovative, high-quality medical devices. We achieve this by:

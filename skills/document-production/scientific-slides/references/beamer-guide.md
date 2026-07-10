@@ -2,7 +2,7 @@
 
 ## Overview
 
-Beamer is a LaTeX document class for creating presentations with professional, consistent formatting. It's particularly well-suited for scientific presentations containing equations, code, algorithms, and citations. This guide covers Beamer basics, themes, customization, and advanced features for effective scientific talks.
+Beamer is a LaTeX document class for creating presentations with professional, consistent formatting. It's particularly well-suited for scientific presentations containing equations, code, algorithms, and citations. This guide covers Beamer basics, themes, customisation, and advanced features for effective scientific talks.
 
 ## Why Use Beamer?
 
@@ -190,7 +190,7 @@ Beamer includes many built-in themes controlling overall layout:
 \usetheme{Boadilla}
 ```
 
-### Color Themes
+### Colour Themes
 
 ```latex
 % Blue themes
@@ -220,7 +220,7 @@ Beamer includes many built-in themes controlling overall layout:
 \usefonttheme{professionalfonts}    % Professional fonts
 ```
 
-### Custom Colors
+### Custom Colours
 
 ```latex
 % Define custom colors
@@ -259,7 +259,7 @@ Beamer includes many built-in themes controlling overall layout:
 
 ### Lists
 
-**Itemize**:
+**Itemise**:
 ```latex
 \begin{frame}{Bullet Points}
   \begin{itemize}
@@ -468,7 +468,7 @@ Beamer includes many built-in themes controlling overall layout:
 
 ### Overlay Specifications
 
-**Itemize with Overlays**:
+**Itemise with Overlays**:
 ```latex
 \begin{frame}{Sequential Bullets}
   \begin{itemize}
@@ -936,7 +936,7 @@ pdflatex -output-directory=build presentation.tex
 
 ### Don'ts
 
-- ❌ Don't use too many different fonts or colors
+- ❌ Don't use too many different fonts or colours
 - ❌ Don't fill slides with dense text
 - ❌ Don't use tiny font sizes
 - ❌ Don't include complex animations (limited support)
@@ -989,7 +989,7 @@ Solution: Check syntax <n-> vs <n-m>, test incremental builds
 
 ### Minimal Working Example
 
-See `assets/beamer_template_conference.tex` for a complete, customizable template for conference talks.
+See `assets/beamer_template_conference.tex` for a complete, customisable template for conference talks.
 
 ### Resources
 

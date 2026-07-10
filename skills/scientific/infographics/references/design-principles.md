@@ -35,19 +35,19 @@ Visual hierarchy guides the viewer's eye through your infographic in a deliberat
 - Key stats: Make numbers 2-4x larger than labels
 - Important icons: 1.5-2x larger than supporting icons
 
-**Color**: Bright and contrasting colors draw the eye
-- Use accent colors sparingly for emphasis
-- Reserve the brightest color for the most important element
-- Use muted colors for supporting information
+**Colour**: Bright and contrasting colours draw the eye
+- Use accent colours sparingly for emphasis
+- Reserve the brightest colour for the most important element
+- Use muted colours for supporting information
 
-**Position**: Top-left and center are seen first
-- Place most important content at top or center
+**Position**: Top-left and centre are seen first
+- Place most important content at top or centre
 - Supporting details toward bottom or edges
 - Reading flow: top-to-bottom, left-to-right (in Western cultures)
 
 **Contrast**: High contrast elements stand out
 - Dark on light or light on dark for key text
-- Colored elements against neutral backgrounds
+- Coloured elements against neutral backgrounds
 - Borders and shadows to lift key elements
 
 **White Space**: Isolation draws attention
@@ -101,7 +101,7 @@ Best for: Minimal content, landing pages, single-message infographics
 **Application:**
 - Logo/headline top-left
 - Key visual top-right
-- Diagonal eye movement through center
+- Diagonal eye movement through centre
 - Call-to-action bottom-right
 
 ### Single Column Layout
@@ -223,7 +223,7 @@ The optimal infographic balances visual and text content:
 - Illustrations
 - Photos
 - Decorative shapes
-- Color blocks
+- Colour blocks
 - Lines and connectors
 
 **Text Elements (40%)**
@@ -318,8 +318,8 @@ White space is the empty area between and around elements. It's not wasted space
 
 ### Typography Best Practices
 
-1. **Left-align body text** (easier to read than centered)
-2. **Center-align headlines** (for impact)
+1. **Left-align body text** (easier to read than centred)
+2. **Centre-align headlines** (for impact)
 3. **Limit line length** to 45-75 characters
 4. **Use bold sparingly** for emphasis
 5. **Avoid all caps** for body text (hard to read)
@@ -366,7 +366,7 @@ Every effective infographic tells a story with three parts:
 
 ### 3. Conclusion (Takeaway)
 
-**Purpose**: Summarize, call to action
+**Purpose**: Summarise, call to action
 
 **Elements:**
 - Key takeaway or summary
@@ -408,7 +408,7 @@ Use invisible grids to align elements consistently:
 - Easy to scan
 - Professional appearance
 
-**Center Alignment**
+**Centre Alignment**
 - Good for headlines
 - Creates symmetry
 - Use sparingly for text
@@ -423,33 +423,33 @@ Use invisible grids to align elements consistently:
 ### Alignment Best Practices
 
 1. **Pick one primary alignment** and stick to it
-2. **Align related elements** to the same edge or center
+2. **Align related elements** to the same edge or centre
 3. **Use invisible grid lines** for consistency
 4. **Avoid random placement**—everything should align to something
 5. **Create visual connections** through alignment
 
 ---
 
-## Color Usage
+## Colour Usage
 
-### Color Functions in Infographics
+### Colour Functions in Infographics
 
-1. **Establish hierarchy**: Bright colors for important items
-2. **Group related items**: Same color = same category
+1. **Establish hierarchy**: Bright colours for important items
+2. **Group related items**: Same colour = same category
 3. **Create contrast**: Distinguish between elements
-4. **Evoke emotions**: Colors carry psychological meaning
+4. **Evoke emotions**: Colours carry psychological meaning
 5. **Reinforce brand**: Consistent with brand identity
 
-### Color Distribution
+### Colour Distribution
 
 **60-30-10 Rule:**
-- **60%** Dominant color (background, large areas)
-- **30%** Secondary color (supporting elements)
-- **10%** Accent color (highlights, CTAs)
+- **60%** Dominant colour (background, large areas)
+- **30%** Secondary colour (supporting elements)
+- **10%** Accent colour (highlights, CTAs)
 
-### Color Psychology
+### Colour Psychology
 
-| Color | Association | Best For |
+| Colour | Association | Best For |
 |-------|-------------|----------|
 | Blue | Trust, professionalism, calm | Corporate, tech, healthcare |
 | Green | Growth, nature, money | Environmental, finance, health |
@@ -470,7 +470,7 @@ For accessibility (WCAG 2.1 AA):
 Tools to check contrast:
 - WebAIM Contrast Checker
 - Coolors Contrast Checker
-- Adobe Color Accessibility Tools
+- Adobe Colour Accessibility Tools
 
 ---
 
@@ -503,7 +503,7 @@ Tools to check contrast:
 3. **Maintain consistent size** for icons at the same hierarchy level
 4. **Add labels** when icon meaning isn't 100% clear
 5. **Match visual weight** of icons to surrounding elements
-6. **Consider color** carefully—single color often cleaner
+6. **Consider colour** carefully—single colour often cleaner
 7. **Avoid icon overload**—not everything needs an icon
 
 ### Icon Size Guidelines
@@ -517,7 +517,7 @@ Tools to check contrast:
 
 ---
 
-## Data Visualization Best Practices
+## Data Visualisation Best Practices
 
 ### Choosing Chart Types
 
@@ -538,9 +538,9 @@ Tools to check contrast:
 1. **Label everything**: Axes, data points, legends
 2. **Start Y-axis at zero** for bar charts (avoid misleading)
 3. **Limit pie slices** to 5-7 maximum
-4. **Use consistent colors** for same categories across charts
+4. **Use consistent colours** for same categories across charts
 5. **Remove chart junk**: No 3D effects, minimal gridlines
-6. **Highlight key data**: Use color to emphasize important points
+6. **Highlight key data**: Use colour to emphasise important points
 
 ### Number Presentation
 
@@ -555,7 +555,7 @@ Tools to check contrast:
 
 ### Visual Accessibility
 
-1. **Color alone shouldn't convey meaning**
+1. **Colour alone shouldn't convey meaning**
    - Add patterns, labels, or shapes
    - Works for colorblind users
 
@@ -567,12 +567,12 @@ Tools to check contrast:
    - Minimum 10pt for print
    - Minimum 12px for digital
 
-4. **Don't rely on color legends**
+4. **Don't rely on colour legends**
    - Label data directly when possible
 
 ### Colorblind-Safe Design
 
-- Use colorblind-safe palettes (see color-palettes.md)
+- Use colorblind-safe palettes (see colour-palettes.md)
 - Test with colorblindness simulators
 - Add patterns or textures for differentiation
 - Use labels and direct annotation
@@ -589,7 +589,7 @@ Tools to check contrast:
 
 ## Quality Checklist
 
-Before finalizing your infographic, verify:
+Before finalising your infographic, verify:
 
 ### Layout
 - [ ] Clear visual hierarchy
@@ -605,11 +605,11 @@ Before finalizing your infographic, verify:
 - [ ] Consistent styling for same elements
 - [ ] Left-aligned body text
 
-### Color
+### Colour
 - [ ] 60-30-10 distribution
 - [ ] Colorblind-safe palette
 - [ ] Sufficient contrast (4.5:1 text)
-- [ ] Consistent color meanings
+- [ ] Consistent colour meanings
 - [ ] Not overwhelming
 
 ### Content
@@ -622,12 +622,12 @@ Before finalizing your infographic, verify:
 ### Icons and Graphics
 - [ ] Consistent icon style
 - [ ] Appropriate sizes
-- [ ] Recognizable meanings
+- [ ] Recognisable meanings
 - [ ] Not overused
 
 ### Accessibility
 - [ ] Works in grayscale
-- [ ] Patterns/labels supplement color
+- [ ] Patterns/labels supplement colour
 - [ ] Readable at intended size
 - [ ] Logical flow without visual cues
 

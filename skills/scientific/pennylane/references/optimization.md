@@ -1,12 +1,12 @@
-# Optimization in PennyLane
+# Optimisation in PennyLane
 
 ## Table of Contents
 1. [Built-in Optimizers](#built-in-optimizers)
 2. [Gradient Computation](#gradient-computation)
 3. [Variational Algorithms](#variational-algorithms)
-4. [QAOA](#qaoa-quantum-approximate-optimization-algorithm)
+4. [QAOA](#qaoa-quantum-approximate-optimisation-algorithm)
 5. [Training Strategies](#training-strategies)
-6. [Optimization Challenges](#optimization-challenges)
+6. [Optimisation Challenges](#optimisation-challenges)
 
 ## Built-in Optimizers
 
@@ -291,7 +291,7 @@ for i in range(100):
     params = opt.step(cost_function, params)
 ```
 
-## QAOA (Quantum Approximate Optimization Algorithm)
+## QAOA (Quantum Approximate Optimisation Algorithm)
 
 ### Basic QAOA
 
@@ -576,7 +576,7 @@ def train_with_gradient_clipping(circuit, params, max_norm=1.0):
     return params
 ```
 
-## Optimization Challenges
+## Optimisation Challenges
 
 ### Barren Plateaus
 
@@ -666,6 +666,6 @@ def train_with_restarts(circuit, n_restarts=5):
 5. **Use learning rate schedules** - Decay learning rate over time
 6. **Try multiple restarts** - Escape local minima
 7. **Validate on test set** - Prevent overfitting
-8. **Profile optimization** - Identify bottlenecks
+8. **Profile optimisation** - Identify bottlenecks
 9. **Clip gradients** - Prevent instability
 10. **Start shallow** - Use fewer layers initially, then grow

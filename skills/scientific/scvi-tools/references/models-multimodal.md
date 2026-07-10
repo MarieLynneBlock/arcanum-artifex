@@ -14,7 +14,7 @@ This document covers models for joint analysis of multiple data modalities in sc
 - Handles batch effects in both RNA and protein layers
 
 **When to Use**:
-- Analyzing CITE-seq or REAP-seq data
+- Analysing CITE-seq or REAP-seq data
 - Joint RNA + surface protein measurements
 - Imputing missing proteins
 - Integrating protein and RNA information
@@ -204,7 +204,7 @@ atac_subset = adata[adata.obs["modality"].str.contains("ATAC")]
 **Purpose**: Multi-sample analysis accounting for sample-specific and shared variation.
 
 **Key Features**:
-- Simultaneously analyzes multiple samples/conditions
+- Simultaneously analyses multiple samples/conditions
 - Decomposes variation into:
   - Shared variation (common across samples)
   - Sample-specific variation

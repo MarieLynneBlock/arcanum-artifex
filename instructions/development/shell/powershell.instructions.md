@@ -62,7 +62,7 @@ function Get-UserProfile {
 - **Standard Parameters:**
   - Use common parameter names (`Path`, `Name`, `Force`)
   - Follow built-in cmdlet conventions
-  - Use aliases for specialized terms
+  - Use aliases for specialised terms
   - Document parameter purpose
 
 - **Parameter Names:**

@@ -21,7 +21,7 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 - Temporal dynamics (time-lapse)
 - Pixel size and spatial calibration
 - Histogram analysis per channel
-- Dynamic range utilization
+- Dynamic range utilisation
 
 ### .nd2 - Nikon NIS-Elements
 **Description:** Proprietary Nikon microscope format
@@ -111,15 +111,15 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 **Use Cases:** 3D rendering, time-lapse analysis
 **Python Libraries:**
 - `h5py`: Direct HDF5 access
-- `imaris_ims_file_reader`: Specialized reader
+- `imaris_ims_file_reader`: Specialised reader
 **EDA Approach:**
 - Resolution level analysis
 - Time point structure
-- Channel organization
+- Channel organisation
 - Dataset hierarchy
 - Thumbnail generation
 - Memory-mapped access strategies
-- Chunking optimization
+- Chunking optimisation
 
 ### .lsm - Zeiss LSM
 **Description:** Legacy Zeiss confocal format
@@ -220,7 +220,7 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 - Calibration data
 - Acquisition metadata
 - Time stamps
-- Multi-dimensional data organization
+- Multi-dimensional data organisation
 
 ## Medical and Biological Imaging
 
@@ -235,7 +235,7 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 **EDA Approach:**
 - Patient metadata extraction (anonymization check)
 - Modality-specific analysis
-- Series and study organization
+- Series and study organisation
 - Slice thickness and spacing
 - Window/level settings
 - Hounsfield units (CT)
@@ -302,12 +302,12 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 - Compression format
 - Data type and dimensions
 
-### .hdr / .img - Analyze Format
+### .hdr / .img - Analyse Format
 **Description:** Legacy medical imaging format
 **Typical Data:** Brain imaging (pre-NIfTI)
 **Use Cases:** Old neuroimaging datasets
 **Python Libraries:**
-- `nibabel`: Analyze support
+- `nibabel`: Analyse support
 - Conversion to NIfTI recommended
 **EDA Approach:**
 - Header-image pairing validation
@@ -327,7 +327,7 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 - `imageio`: `imageio.imread('file.png')`
 **EDA Approach:**
 - Bit depth analysis (8-bit, 16-bit)
-- Color mode (grayscale, RGB, palette)
+- Colour mode (grayscale, RGB, palette)
 - Metadata (PNG chunks)
 - Transparency handling
 - Compression efficiency
@@ -336,14 +336,14 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 ### .jpg / .jpeg - Joint Photographic Experts Group
 **Description:** Lossy compressed image format
 **Typical Data:** Natural images, photos
-**Use Cases:** Visualization, web graphics (not raw data)
+**Use Cases:** Visualisation, web graphics (not raw data)
 **Python Libraries:**
 - `PIL/Pillow`: Standard JPEG support
 - `scikit-image`: JPEG reading
 **EDA Approach:**
-- Compression artifacts detection
+- Compression artefacts detection
 - Quality factor estimation
-- Color space (RGB, grayscale)
+- Colour space (RGB, grayscale)
 - EXIF metadata
 - Quantization table analysis
 - Note: Not suitable for quantitative analysis
@@ -356,7 +356,7 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 - `PIL/Pillow`: BMP support
 - `scikit-image`: BMP reading
 **EDA Approach:**
-- Color depth
+- Colour depth
 - Palette analysis (if indexed)
 - File size efficiency
 - Pixel format validation
@@ -364,13 +364,13 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 ### .gif - Graphics Interchange Format
 **Description:** Image format with animation support
 **Typical Data:** Animated images, simple graphics
-**Use Cases:** Animations, time-lapse visualization
+**Use Cases:** Animations, time-lapse visualisation
 **Python Libraries:**
 - `PIL/Pillow`: GIF support
 - `imageio`: Better GIF animation support
 **EDA Approach:**
 - Frame count and timing
-- Palette limitations (256 colors)
+- Palette limitations (256 colours)
 - Loop count
 - Disposal method
 - Transparency handling
@@ -389,7 +389,7 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 - Viewbox and dimensions
 - Path complexity
 - Text element extraction
-- Layer organization
+- Layer organisation
 
 ### .eps - Encapsulated PostScript
 **Description:** Vector graphics format
@@ -423,7 +423,7 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 ### .fig - MATLAB Figure
 **Description:** MATLAB figure file
 **Typical Data:** MATLAB plots and figures
-**Use Cases:** MATLAB data visualization
+**Use Cases:** MATLAB data visualisation
 **Python Libraries:**
 - Custom parsers (MAT file structure)
 - Conversion to other formats
@@ -444,19 +444,19 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 - Dataset hierarchy
 - Chunk and compression strategy
 - Multi-resolution pyramid
-- Metadata organization
+- Metadata organisation
 - Memory-mapped access
 - Parallel I/O performance
 
 ### .zarr - Chunked Array Storage
-**Description:** Cloud-optimized array storage
+**Description:** Cloud-optimised array storage
 **Typical Data:** Large imaging datasets, OME-ZARR
 **Use Cases:** Cloud microscopy, large-scale analysis
 **Python Libraries:**
 - `zarr`: `zarr.open('file.zarr')`
 - `ome-zarr-py`: OME-ZARR support
 **EDA Approach:**
-- Chunk size optimization
+- Chunk size optimisation
 - Compression codec analysis
 - Multi-scale representation
 - Array dimensions and dtype
@@ -523,7 +523,7 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 
 ### .ome.tif / .ome.tiff - OME-TIFF
 **Description:** TIFF with OME-XML metadata
-**Typical Data:** Standardized microscopy with rich metadata
+**Typical Data:** Standardised microscopy with rich metadata
 **Use Cases:** Bio-Formats compatible storage
 **Python Libraries:**
 - `tifffile`: OME-TIFF support
@@ -549,7 +549,7 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 - Metadata compliance with OME-NGFF spec
 - Coordinate transformations
 - Label and ROI handling
-- Cloud storage optimization
+- Cloud storage optimisation
 - Chunk access patterns
 
 ### .klb - Keller Lab Block
@@ -615,6 +615,6 @@ This reference covers file formats used in microscopy, medical imaging, remote s
 - `openslide-python`: SCN support
 **EDA Approach:**
 - Tile structure analysis
-- Collection organization
+- Collection organisation
 - Metadata extraction
 - Magnification levels

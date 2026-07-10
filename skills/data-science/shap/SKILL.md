@@ -1,6 +1,6 @@
 ---
 name: shap
-description: Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this skill when explaining machine learning model predictions, computing feature importance, generating SHAP plots (waterfall, beeswarm, bar, scatter, force, heatmap), debugging models, analyzing model bias or fairness, comparing models, or implementing explainable AI. Works with tree-based models (XGBoost, LightGBM, Random Forest), deep learning (TensorFlow, PyTorch), linear models, and any black-box model.
+description: Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this skill when explaining machine learning model predictions, computing feature importance, generating SHAP plots (waterfall, beeswarm, bar, scatter, force, heatmap), debugging models, analysing model bias or fairness, comparing models, or implementing explainable AI. Works with tree-based models (XGBoost, LightGBM, Random Forest), deep learning (TensorFlow, PyTorch), linear models, and any black-box model.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -13,9 +13,9 @@ metadata:
 SHAP is a unified approach to explain machine learning model outputs using Shapley values from cooperative game theory. This skill provides comprehensive guidance for:
 
 - Computing SHAP values for any model type
-- Creating visualizations to understand feature importance
-- Debugging and validating model behavior
-- Analyzing fairness and bias
+- Creating visualisations to understand feature importance
+- Debugging and validating model behaviour
+- Analysing fairness and bias
 - Implementing explainable AI in production
 
 SHAP works with all model types: tree-based models (XGBoost, LightGBM, CatBoost, Random Forest), deep learning models (TensorFlow, PyTorch, Keras), linear models, and black-box models.
@@ -27,9 +27,9 @@ SHAP works with all model types: tree-based models (XGBoost, LightGBM, CatBoost,
 - "Generate SHAP plots" (waterfall, beeswarm, bar, scatter, force, heatmap, etc.)
 - "Why did my model make this prediction?"
 - "Calculate SHAP values for my model"
-- "Visualize feature importance using SHAP"
-- "Debug my model's behavior" or "validate my model"
-- "Check my model for bias" or "analyze fairness"
+- "Visualise feature importance using SHAP"
+- "Debug my model's behaviour" or "validate my model"
+- "Check my model for bias" or "analyse fairness"
 - "Compare feature importance across models"
 - "Implement explainable AI" or "add explanations to my model"
 - "Understand feature interactions"
@@ -81,7 +81,7 @@ shap_values = explainer(X_test)
 # - data: Original feature values
 ```
 
-### Step 3: Visualize Results
+### Step 3: Visualise Results
 
 **For Global Understanding** (entire dataset):
 ```python
@@ -180,14 +180,14 @@ shap.plots.waterfall(shap_values[0])
 2. Compute SHAP values for each
 3. Compare global feature importance
 4. Check consistency of feature rankings
-5. Analyze specific predictions across models
+5. Analyse specific predictions across models
 6. Select based on accuracy, interpretability, and consistency
 
 **See `references/workflows.md` for detailed model comparison workflow.**
 
 ### Workflow 5: Fairness and Bias Analysis
 
-**Goal**: Detect and analyze model bias across demographic groups
+**Goal**: Detect and analyse model bias across demographic groups
 
 **Steps**:
 1. Identify protected attributes (gender, race, age, etc.)
@@ -208,7 +208,7 @@ shap.plots.waterfall(shap_values[0])
 2. Create and save explainer
 3. Build explanation service
 4. Create API endpoints for predictions with explanations
-5. Implement caching and optimization
+5. Implement caching and optimisation
 6. Monitor explanation quality
 
 **See `references/workflows.md` for detailed production deployment workflow.**
@@ -314,7 +314,7 @@ for idx in error_indices[:5]:
     shap.plots.scatter(shap_values[:, "Suspicious_Feature"])
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Speed Considerations
 
@@ -326,7 +326,7 @@ for idx in error_indices[:5]:
 5. `KernelExplainer` - Slow (use only when necessary)
 6. `PermutationExplainer` - Very slow but accurate
 
-### Optimization Strategies
+### Optimisation Strategies
 
 **For Large Datasets**:
 ```python
@@ -341,7 +341,7 @@ for i in range(0, len(X_test), batch_size):
     all_shap_values.append(batch_shap)
 ```
 
-**For Visualizations**:
+**For Visualisations**:
 ```python
 # Sample subset for plots
 shap.plots.beeswarm(shap_values[:1000])
@@ -385,7 +385,7 @@ explainer = joblib.load('explainer.pkl')
 
 ### Issue: Slow computation
 **Problem**: Computing SHAP for very large datasets
-**Solution**: Sample subset, use batching, or ensure using specialized explainer (not KernelExplainer)
+**Solution**: Sample subset, use batching, or ensure using specialised explainer (not KernelExplainer)
 
 ## Integration with Other Tools
 
@@ -437,7 +437,7 @@ class ExplanationService:
 
 ## Reference Documentation
 
-This skill includes comprehensive reference documentation organized by topic:
+This skill includes comprehensive reference documentation organised by topic:
 
 ### references/explainers.md
 Complete guide to all explainer classes:
@@ -451,12 +451,12 @@ Complete guide to all explainer classes:
 Includes: Constructor parameters, methods, supported models, when to use, examples, performance considerations.
 
 ### references/plots.md
-Comprehensive visualization guide:
+Comprehensive visualisation guide:
 - **Waterfall plots** - Individual prediction breakdowns
 - **Beeswarm plots** - Global importance with value distributions
 - **Bar plots** - Clean feature importance summaries
 - **Scatter plots** - Feature-prediction relationships and interactions
-- **Force plots** - Interactive additive force visualizations
+- **Force plots** - Interactive additive force visualisations
 - **Heatmap plots** - Multi-sample comparison grids
 - **Violin plots** - Distribution-focused alternatives
 - **Decision plots** - Multiclass prediction paths
@@ -496,7 +496,7 @@ Includes: Mathematical foundations, proofs, comparisons, advanced topics.
 
 **When to load reference files**:
 - Load `explainers.md` when user needs detailed information about specific explainer types or parameters
-- Load `plots.md` when user needs detailed visualization guidance or exploring plot options
+- Load `plots.md` when user needs detailed visualisation guidance or exploring plot options
 - Load `workflows.md` when user has complex multi-step tasks (debugging, fairness analysis, production deployment)
 - Load `theory.md` when user asks about theoretical foundations, Shapley values, or mathematical details
 
@@ -516,19 +516,19 @@ Includes: Mathematical foundations, proofs, comparisons, advanced topics.
 
 ## Best Practices Summary
 
-1. **Choose the right explainer**: Use specialized explainers (TreeExplainer, DeepExplainer, LinearExplainer) when possible; avoid KernelExplainer unless necessary
+1. **Choose the right explainer**: Use specialised explainers (TreeExplainer, DeepExplainer, LinearExplainer) when possible; avoid KernelExplainer unless necessary
 
 2. **Start global, then go local**: Begin with beeswarm/bar plots for overall understanding, then dive into waterfall/scatter plots for details
 
-3. **Use multiple visualizations**: Different plots reveal different insights; combine global (beeswarm) + local (waterfall) + relationship (scatter) views
+3. **Use multiple visualisations**: Different plots reveal different insights; combine global (beeswarm) + local (waterfall) + relationship (scatter) views
 
 4. **Select appropriate background data**: Use 50-1000 representative samples from training data
 
 5. **Understand model output units**: Know whether explaining probabilities, log-odds, or raw outputs
 
-6. **Validate with domain knowledge**: SHAP shows model behavior; use domain expertise to interpret and validate
+6. **Validate with domain knowledge**: SHAP shows model behaviour; use domain expertise to interpret and validate
 
-7. **Optimize for performance**: Sample subsets for visualization, batch for large datasets, cache explainers in production
+7. **Optimise for performance**: Sample subsets for visualisation, batch for large datasets, cache explainers in production
 
 8. **Check for data leakage**: Unexpectedly high feature importance may indicate data quality issues
 

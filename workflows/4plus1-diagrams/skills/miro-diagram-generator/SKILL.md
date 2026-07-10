@@ -7,7 +7,7 @@ metadata:
 
 # Miro Diagram Generator
 
-Generates Miro prompt artifacts for architecture views.
+Generates Miro prompt artefacts for architecture views.
 
 This skill is output-track specific:
 - consumes canonical architecture view content

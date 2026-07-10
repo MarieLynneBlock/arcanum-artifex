@@ -16,7 +16,7 @@ This example demonstrates a patient cohort analysis stratified by molecular biom
 
 **Study Period**: January 2019 - December 2022
 
-**Data Source**: Single academic medical center, retrospective cohort analysis
+**Data Source**: Single academic medical centre, retrospective cohort analysis
 
 ## Biomarker Classification
 
@@ -109,7 +109,7 @@ No significant differences in toxicity between molecular subtypes:
    - Evidence: Mesenchymal GBM has high VEGF expression, angiogenic phenotype
    - GRADE: 2C (conditional recommendation, low-quality evidence from subset)
 
-3. **Clinical Trial Enrollment - Immunotherapy Combinations**:
+3. **Clinical Trial Enrolment - Immunotherapy Combinations**:
    - Rationale: High immune cell infiltration may predict immunotherapy benefit
    - Targets: PD-1/PD-L1 blockade ± anti-CTLA-4 or anti-angiogenic agents
    - Evidence: Ongoing trials (CheckMate-498, CheckMate-548 showed negative results, but did not select for immune-active)
@@ -122,7 +122,7 @@ No significant differences in toxicity between molecular subtypes:
 
 ### Prognostic Information
 
-**Counseling Patients**:
+**Counselling Patients**:
 - Mesenchymal-immune-active subtype associated with trend toward shorter survival (12.8 vs 16.3 months)
 - Not definitive due to small sample size and confidence intervals overlapping
 - Prospective validation needed
@@ -132,7 +132,7 @@ No significant differences in toxicity between molecular subtypes:
 
 1. **Small Sample Size**: n=18 in mesenchymal-immune-active group limits statistical power
 2. **Retrospective Design**: Potential selection bias, unmeasured confounders
-3. **Single Institution**: May not generalize to other populations
+3. **Single Institution**: May not generalise to other populations
 4. **Heterogeneous Recurrence Treatment**: Not all patients received bevacizumab; treatment selection bias
 5. **Molecular Classification**: Based on bulk tumor RNA-seq; intratumoral heterogeneity not captured
 6. **No Central Pathology Review**: Molecular classification performed locally
@@ -182,7 +182,7 @@ Median OS, months (95% CI)        12.8 (10.2-15.4)     16.3 (14.7-18.9) 1.72 (0.
 ## Key Takeaways
 
 1. **Molecular heterogeneity exists** in GBM with distinct subtypes
-2. **Mesenchymal-immune-active subtype** characterized by NF1 alterations, immune infiltration
+2. **Mesenchymal-immune-active subtype** characterised by NF1 alterations, immune infiltration
 3. **Trend toward worse prognosis** but not statistically significant (power limitations)
 4. **Potential bevacizumab benefit** hypothesis-generating, requires prospective validation
 5. **Immunotherapy target**: High immune infiltration rational for checkpoint inhibitor trials
@@ -190,7 +190,7 @@ Median OS, months (95% CI)        12.8 (10.2-15.4)     16.3 (14.7-18.9) 1.72 (0.
 
 ## References
 
-1. Verhaak RG, et al. Integrated genomic analysis identifies clinically relevant subtypes of glioblastoma characterized by abnormalities in PDGFRA, IDH1, EGFR, and NF1. Cancer Cell. 2010;17(1):98-110.
+1. Verhaak RG, et al. Integrated genomic analysis identifies clinically relevant subtypes of glioblastoma characterised by abnormalities in PDGFRA, IDH1, EGFR, and NF1. Cancer Cell. 2010;17(1):98-110.
 2. Wang Q, et al. Tumor Evolution of Glioma-Intrinsic Gene Expression Subtypes Associates with Immunological Changes in the Microenvironment. Cancer Cell. 2017;32(1):42-56.
 3. Stupp R, et al. Radiotherapy plus Concomitant and Adjuvant Temozolomide for Glioblastoma. NEJM. 2005;352(10):987-996.
 4. Gilbert MR, et al. Bevacizumab for Newly Diagnosed Glioblastoma. NEJM. 2014;370(8):699-708.

@@ -18,7 +18,7 @@ before the system goes live. Respond to verified requests within **30 calendar d
 | Right to erasure | 17 | `DELETE /api/v1/me` — scrub all stores per erasure checklist |
 | Right to restriction | 18 | `ProcessingRestricted` flag on user record; gate non-essential processing |
 | Right to portability | 20 | Same as access endpoint; structured, machine-readable (JSON) |
-| Right to object | 21 | Opt-out endpoint for legitimate-interest processing; honor immediately |
+| Right to object | 21 | Opt-out endpoint for legitimate-interest processing; honour immediately |
 | Automated decision-making | 22 | Expose a human review path + explanation of the logic |
 
 ### Erasure Checklist — MUST cover all stores
@@ -99,7 +99,7 @@ Update with **every** new feature that introduces a processing activity.
 
 | Basis | When to use |
 |---|---|
-| `Contract (6(1)(b))` | Processing necessary to fulfill the service contract |
+| `Contract (6(1)(b))` | Processing necessary to fulfil the service contract |
 | `Legitimate interest (6(1)(f))` | Fraud prevention, security, analytics (requires balancing test) |
 | `Consent (6(1)(a))` | Marketing, non-essential cookies, optional profiling |
 | `Legal obligation (6(1)(c))` | Tax records, anti-money-laundering |

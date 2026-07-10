@@ -123,7 +123,7 @@ adata.write_csvs('output_dir/')
 - Large file sizes, slow
 - Best for: Sharing with non-Python tools, small datasets
 
-### Optimize file size
+### Optimise file size
 ```python
 # Before saving, optimize:
 
@@ -184,7 +184,7 @@ for i in range(0, adata.n_obs, chunk_size):
 final_result = combine(results)
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Subsetting performance
 ```python

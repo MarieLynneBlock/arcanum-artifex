@@ -224,7 +224,7 @@ Run through these checks to confirm everything is working:
 
 ### "[Third common issue — might not be an error message but a symptom]"
 
-**Cause:** [What causes this behavior]
+**Cause:** [What causes this behaviour]
 
 **Fix:**
 

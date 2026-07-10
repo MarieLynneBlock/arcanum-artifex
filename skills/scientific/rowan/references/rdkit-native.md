@@ -16,7 +16,7 @@ The RDKit-native API provides a simplified interface for users working with RDKi
 2. [Tautomer Functions](#tautomer-functions)
 3. [Conformer Functions](#conformer-functions)
 4. [Energy Functions](#energy-functions)
-5. [Optimization Functions](#optimization-functions)
+5. [Optimisation Functions](#optimisation-functions)
 6. [Batch Processing Patterns](#batch-processing-patterns)
 
 ---
@@ -132,7 +132,7 @@ for smi, result in zip(smiles_list, results):
 
 ### `run_conformers`
 
-Generate and optimize conformer ensemble.
+Generate and optimise conformer ensemble.
 
 ```python
 import rowan
@@ -241,11 +241,11 @@ for mol, result in zip(mols_3d, results):
 
 ---
 
-## Optimization Functions
+## Optimisation Functions
 
 ### `run_optimization`
 
-Optimize molecular geometry.
+Optimise molecular geometry.
 
 ```python
 import rowan
@@ -270,16 +270,16 @@ optimized_mol = result.molecule
 - `mol` (rdkit.Chem.Mol): RDKit molecule (3D coordinates optional)
 
 **Returns:** `OptimizationResult` object with attributes:
-- `molecule`: rdkit.Chem.Mol - Optimized structure
+- `molecule`: rdkit.Chem.Mol - Optimised structure
 - `energy`: float - Final energy (Hartree)
-- `converged`: bool - Optimization convergence
-- `n_steps`: int - Number of optimization steps
+- `converged`: bool - Optimisation convergence
+- `n_steps`: int - Number of optimisation steps
 
 ---
 
 ### `batch_optimization`
 
-Optimize multiple molecules.
+Optimise multiple molecules.
 
 ```python
 import rowan
@@ -432,7 +432,7 @@ print(df[df['pka'].notna()].sort_values('pka'))
 | Input format | RDKit Mol | stjames.Molecule |
 | Output format | RDKit Mol + results | Workflow object |
 | Workflow control | Automatic | Manual wait/fetch |
-| Folder organization | No | Yes |
+| Folder organisation | No | Yes |
 | Advanced parameters | Default only | Full control |
 
 Use RDKit-native API for quick calculations; use full API for complex workflows or when you need fine-grained control.

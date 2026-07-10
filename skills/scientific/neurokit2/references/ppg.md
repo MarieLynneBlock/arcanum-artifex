@@ -47,7 +47,7 @@ cleaned_ppg = nk.ppg_clean(ppg_signal, sampling_rate=100, method='elgendi')
 **1. Elgendi (default):**
 - Butterworth bandpass filter (0.5-8 Hz)
 - Removes baseline drift and high-frequency noise
-- Optimized for peak detection reliability
+- Optimised for peak detection reliability
 
 **2. Nabian2018:**
 - Alternative filtering approach
@@ -73,7 +73,7 @@ peaks, info = nk.ppg_peaks(cleaned_ppg, sampling_rate=100, method='elgendi',
 - `'nabian2018'`: Nabian's approach
 - `'scipy'`: Simple scipy peak detection
 
-**Artifact correction:**
+**Artefact correction:**
 - Set `correct_artifacts=True` for physiological plausibility checks
 - Removes spurious peaks based on inter-beat interval outliers
 
@@ -100,7 +100,7 @@ peaks_dict = nk.ppg_findpeaks(cleaned_ppg, sampling_rate=100, method='elgendi')
 
 ## Analysis Functions
 
-### ppg_analyze()
+### ppg_analyse()
 
 Automatically select event-related or interval-related analysis.
 
@@ -114,7 +114,7 @@ analysis = nk.ppg_analyze(signals, sampling_rate=100)
 
 ### ppg_eventrelated()
 
-Analyze PPG responses to discrete events/stimuli.
+Analyse PPG responses to discrete events/stimuli.
 
 ```python
 results = nk.ppg_eventrelated(epochs)
@@ -132,7 +132,7 @@ results = nk.ppg_eventrelated(epochs)
 
 ### ppg_intervalrelated()
 
-Analyze extended PPG recordings.
+Analyse extended PPG recordings.
 
 ```python
 results = nk.ppg_intervalrelated(signals, sampling_rate=100)
@@ -181,7 +181,7 @@ quality = nk.ppg_quality(ppg_signal, sampling_rate=100, method='averageQRS')
 - Validate peak detection accuracy
 
 **Common quality issues:**
-- Motion artifacts: abrupt signal changes
+- Motion artefacts: abrupt signal changes
 - Poor sensor contact: low amplitude, noise
 - Vasoconstriction: reduced signal amplitude (cold, stress)
 
@@ -196,7 +196,7 @@ pulses = nk.ppg_segment(cleaned_ppg, peaks, sampling_rate=100)
 ```
 
 **Returns:**
-- Dictionary of pulse epochs, each centered on systolic peak
+- Dictionary of pulse epochs, each centred on systolic peak
 - Enables pulse-to-pulse comparison
 - Morphology analysis across conditions
 
@@ -217,7 +217,7 @@ methods_info = nk.ppg_methods(method='elgendi')
 - String documenting the processing pipeline
 - Useful for methods sections in publications
 
-## Simulation and Visualization
+## Simulation and Visualisation
 
 ### ppg_simulate()
 
@@ -236,12 +236,12 @@ synthetic_ppg = nk.ppg_simulate(duration=60, sampling_rate=100, heart_rate=70,
 
 **Use cases:**
 - Algorithm validation
-- Parameter optimization
+- Parameter optimisation
 - Educational demonstrations
 
 ### ppg_plot()
 
-Visualize processed PPG signal.
+Visualise processed PPG signal.
 
 ```python
 nk.ppg_plot(signals, info, static=True)
@@ -270,14 +270,14 @@ nk.ppg_plot(signals, info, static=True)
 
 **Common sites:**
 - **Fingertip**: Highest signal quality, most common
-- **Earlobe**: Less motion artifact, clinical use
+- **Earlobe**: Less motion artefact, clinical use
 - **Wrist**: Wearable devices (smartwatches)
 - **Forehead**: Reflectance mode, medical monitoring
 
 **Transmittance vs. Reflectance:**
 - **Transmittance**: Light passes through tissue (fingertip, earlobe)
   - Higher signal quality
-  - Less motion artifact
+  - Less motion artefact
 - **Reflectance**: Light reflected from tissue (wrist, forehead)
   - More susceptible to noise
   - Convenient for wearables
@@ -289,7 +289,7 @@ nk.ppg_plot(signals, info, static=True)
 - Sensor contact: adjust placement, clean skin
 - Vasoconstriction: environmental temperature, stress
 
-**Motion artifacts:**
+**Motion artefacts:**
 - Dominant issue in wearables
 - Adaptive filtering, accelerometer-based correction
 - Template matching, outlier rejection
@@ -377,7 +377,7 @@ hrv_indices = nk.hrv(info['PPG_Peaks'], sampling_rate=100)
 - Suitable for wearables
 
 **Disadvantages of PPG:**
-- More susceptible to motion artifacts
+- More susceptible to motion artefacts
 - Lower signal quality in poor perfusion
 - Pulse arrival time delay from heart
 - Cannot assess cardiac electrical activity
@@ -393,7 +393,7 @@ hrv_indices = nk.hrv(info['PPG_Peaks'], sampling_rate=100)
 **Heart rate from PPG:**
 - Same interpretation as ECG-derived heart rate
 - Slight delay (pulse arrival time) is negligible for rate calculation
-- Motion artifacts more common: validate with signal quality
+- Motion artefacts more common: validate with signal quality
 
 **Pulse amplitude:**
 - Reflects peripheral perfusion

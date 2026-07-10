@@ -28,8 +28,8 @@ Your goal is to help me write effective unit tests with NUnit, covering both sta
 
 ## Standard Tests
 
-- Keep tests focused on a single behavior
-- Avoid testing multiple behaviors in one test method
+- Keep tests focused on a single behaviour
+- Avoid testing multiple behaviours in one test method
 - Use clear assertions that express intent
 - Include only the assertions needed to verify the test case
 - Make tests independent and idempotent (can run in any order)

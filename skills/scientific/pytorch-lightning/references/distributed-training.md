@@ -97,7 +97,7 @@ trainer = L.Trainer(strategy="ddp_spawn", accelerator="gpu", devices=4)
    lr = base_lr * num_gpus
    ```
 
-3. **Synchronization:** Use `sync_dist=True` for metrics
+3. **Synchronisation:** Use `sync_dist=True` for metrics
    ```python
    self.log("val_loss", loss, sync_dist=True)
    ```

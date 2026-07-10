@@ -1,6 +1,6 @@
-# TDC Datasets Comprehensive Catalog
+# TDC Datasets Comprehensive Catalogue
 
-This document provides a comprehensive catalog of all available datasets in the Therapeutics Data Commons, organized by task category.
+This document provides a comprehensive catalogue of all available datasets in the Therapeutics Data Commons, organised by task category.
 
 ## Single-Instance Prediction Datasets
 
@@ -59,7 +59,7 @@ This document provides a comprehensive catalog of all available datasets in the 
 - `EyeIrritation` - Eye irritation (278 compounds)
 
 **Environmental Toxicity:**
-- `Tox21-AhR` - Nuclear receptor signaling (8,169 compounds)
+- `Tox21-AhR` - Nuclear receptor signalling (8,169 compounds)
 - `Tox21-AR` - Androgen receptor (9,362 compounds)
 - `Tox21-AR-LBD` - Androgen receptor ligand binding (8,343 compounds)
 - `Tox21-ARE` - Antioxidant response element (6,475 compounds)

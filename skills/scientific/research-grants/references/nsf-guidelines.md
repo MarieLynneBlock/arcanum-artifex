@@ -2,7 +2,7 @@
 
 ## Agency Overview
 
-**Mission**: To promote the progress of science; to advance the national health, prosperity, and welfare; to secure the national defense
+**Mission**: To promote the progress of science; to advance the national health, prosperity, and welfare; to secure the national defence
 
 **Annual Budget**: ~$9-10 billion
 
@@ -23,7 +23,7 @@
 4. **ENG** - Engineering
 5. **GEO** - Geosciences
 6. **MPS** - Mathematical and Physical Sciences
-7. **SBE** - Social, Behavioral, and Economic Sciences
+7. **SBE** - Social, Behavioural, and Economic Sciences
 8. **TIP** - Technology, Innovation, and Partnerships (formerly EDA)
 9. **OPP** - Office of Polar Programs
 10. **OISE** - Office of International Science and Engineering
@@ -40,7 +40,7 @@ NSF uses two equally weighted criteria for all proposals:
 - How important is the proposed activity to advancing knowledge and understanding within its own field or across different fields?
 - How well-qualified is the proposer (individual or team) to conduct the project?
 - To what extent does the proposed activity suggest and explore creative, original, or potentially transformative concepts?
-- How well-conceived and organized is the proposed activity?
+- How well-conceived and organised is the proposed activity?
 - Is there sufficient access to resources?
 
 **Writing Strategy**:
@@ -50,7 +50,7 @@ NSF uses two equally weighted criteria for all proposals:
 - Present innovative approach to address the gap
 - Show preliminary results or proof-of-concept
 - Demonstrate team qualifications
-- Present feasible, well-organized plan
+- Present feasible, well-organised plan
 
 ### Broader Impacts
 
@@ -92,11 +92,11 @@ NSF uses two equally weighted criteria for all proposals:
    - Develop shared instrumentation or facilities
    - Create cyberinfrastructure, software, or databases
    - Build collaborative networks
-   - Establish living stock centers or repositories
+   - Establish living stock centres or repositories
    - Develop standards or protocols
    - Create open-source tools
 
-   *Example*: "We will develop and maintain an open-source software platform for analyzing spatial transcriptomics data, with comprehensive documentation, tutorials, and user support forum. Software will be deposited on GitHub and indexed in bio.tools."
+   *Example*: "We will develop and maintain an open-source software platform for analysing spatial transcriptomics data, with comprehensive documentation, tutorials, and user support forum. Software will be deposited on GitHub and indexed in bio.tools."
 
 4. **Disseminate to enhance scientific and technological understanding**
    - Public outreach and science communication
@@ -106,7 +106,7 @@ NSF uses two equally weighted criteria for all proposals:
    - Policy briefs for decision-makers
    - Community science projects
 
-   *Example*: "We will partner with the City Science Museum to create a hands-on exhibit on AI and climate modeling, reaching 50,000+ annual visitors. Exhibit will include interactive simulations and bilingual materials. We will also host quarterly 'Science Saturdays' for local K-12 students."
+   *Example*: "We will partner with the City Science Museum to create a hands-on exhibit on AI and climate modelling, reaching 50,000+ annual visitors. Exhibit will include interactive simulations and bilingual materials. We will also host quarterly 'Science Saturdays' for local K-12 students."
 
 5. **Benefit society**
    - Economic development and competitiveness
@@ -130,7 +130,7 @@ NSF uses two equally weighted criteria for all proposals:
 
 ### Project Summary (1 page)
 
-**Required Structure** (NSF mandates three labeled sections):
+**Required Structure** (NSF mandates three labelled sections):
 
 **Overview** (first paragraph):
 - Research question and approach in accessible language
@@ -149,7 +149,7 @@ NSF uses two equally weighted criteria for all proposals:
 
 ### Project Description (15 pages for most programs)
 
-**No required structure, but typical organization**:
+**No required structure, but typical organisation**:
 
 1. **Introduction / Background** (1-2 pages)
    - Research question and significance
@@ -297,7 +297,7 @@ NSF uses two equally weighted criteria for all proposals:
 - Lead institution designated
 - All proposals must have identical titles (except institution name)
 - Project descriptions should be substantially similar
-- Clear division of labor
+- Clear division of labour
 - Coordination plan
 
 **Budget**: Each institution submits own budget for their portion
@@ -521,9 +521,9 @@ NSF uses two equally weighted criteria for all proposals:
 ### Major NSF Initiatives
 
 - **National AI Research Institutes**: $20M over 5 years per institute
-- **Science and Technology Centers (STCs)**: Large-scale collaborative centers
-- **Engineering Research Centers (ERCs)**: Engineering innovation ecosystems
-- **Materials Research Science and Engineering Centers (MRSECs)**: Materials research
+- **Science and Technology Centres (STCs)**: Large-scale collaborative centres
+- **Engineering Research Centres (ERCs)**: Engineering innovation ecosystems
+- **Materials Research Science and Engineering Centres (MRSECs)**: Materials research
 - **NSF Graduate Research Fellowship Program (GRFP)**: Student fellowships
 
 ## Tips for Competitive NSF Proposals

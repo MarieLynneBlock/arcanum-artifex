@@ -2,10 +2,10 @@
 
 # XY Chart
 
-> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `xychart-beta`
-**Best for:** Numeric data visualization, trends over time, bar/line comparisons, metric dashboards
+**Best for:** Numeric data visualisation, trends over time, bar/line comparisons, metric dashboards
 **When NOT to use:** Proportional breakdowns (use [Pie](pie.md)), qualitative comparisons (use [Quadrant](quadrant.md))
 
 > ⚠️ **Accessibility:** XY charts do **not** support `accTitle`/`accDescr`. Always place a descriptive _italic_ Markdown paragraph directly above the code block.

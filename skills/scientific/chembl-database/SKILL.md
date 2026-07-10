@@ -21,7 +21,7 @@ This skill should be used when:
 - **Bioactivity data**: Querying IC50, Ki, EC50, or other activity measurements
 - **Drug information**: Looking up approved drugs, mechanisms, or indications
 - **Structure searches**: Performing similarity or substructure searches
-- **Cheminformatics**: Analyzing molecular properties and drug-likeness
+- **Cheminformatics**: Analysing molecular properties and drug-likeness
 - **Target-ligand relationships**: Exploring compound-target interactions
 - **Drug discovery**: Identifying inhibitors, agonists, or bioactive molecules
 
@@ -174,7 +174,7 @@ indications = drug_indication.filter(molecule_chembl_id='CHEMBL25')
    compounds = [new_client.molecule.get(cid) for cid in compound_ids]
    ```
 
-### Workflow 2: Analyzing a Known Drug
+### Workflow 2: Analysing a Known Drug
 
 1. **Get drug information**:
    ```python
@@ -206,7 +206,7 @@ indications = drug_indication.filter(molecule_chembl_id='CHEMBL25')
        )
    ```
 
-3. **Analyze property-activity relationships** using molecular properties from results.
+3. **Analyse property-activity relationships** using molecular properties from results.
 
 ## Filter Operators
 
@@ -236,7 +236,7 @@ print(df['standard_value'].describe())
 print(df.groupby('standard_type').size())
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Caching
 
@@ -332,7 +332,7 @@ Ready-to-use Python functions demonstrating common ChEMBL query patterns:
 - `find_similar_compounds()` - Similarity searching
 - `substructure_search()` - Substructure matching
 - `get_drug_info()` - Retrieve drug information
-- `find_kinase_inhibitors()` - Specialized kinase inhibitor search
+- `find_kinase_inhibitors()` - Specialised kinase inhibitor search
 - `export_to_dataframe()` - Convert results to pandas DataFrame
 
 Consult this script for implementation details and usage examples.
@@ -361,13 +361,13 @@ Refer to this document when detailed API information is needed or when troublesh
 ### Units and Standards
 
 - Bioactivity values use standard units (nM, uM, etc.)
-- `pchembl_value` provides normalized activity (-log scale)
+- `pchembl_value` provides normalised activity (-log scale)
 - Check `standard_type` to understand measurement type (IC50, Ki, EC50, etc.)
 
 ### Rate Limiting
 
 - Respect ChEMBL's fair usage policies
-- Use caching to minimize repeated requests
+- Use caching to minimise repeated requests
 - Consider bulk downloads for large datasets
 - Avoid hammering the API with rapid consecutive requests
 

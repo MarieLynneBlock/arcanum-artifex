@@ -29,7 +29,7 @@ This skill should be used when:
 - "Run molecular docking" or "perform protein-ligand docking"
 - "Virtual screening" or "screen compound library"
 - "Where does this molecule bind?" or "predict binding site"
-- Structure-based drug design or lead optimization tasks
+- Structure-based drug design or lead optimisation tasks
 - Tasks involving PDB files + SMILES strings or ligand structures
 - Batch docking of multiple protein-ligand pairs
 
@@ -163,9 +163,9 @@ python -m inference \
   --out_dir results/screening/
 ```
 
-### Workflow 3: Analyzing Results
+### Workflow 3: Analysing Results
 
-After docking completes, analyze confidence scores and rank predictions:
+After docking completes, analyse confidence scores and rank predictions:
 
 ```bash
 # Analyze all results
@@ -211,7 +211,7 @@ The analysis script:
 
 **For detailed guidance:** Read `references/confidence-and-limitations.md` using the Read tool
 
-## Parameter Customization
+## Parameter Customisation
 
 ### Using Custom Configuration
 
@@ -296,7 +296,7 @@ done
 ```
 
 **MM/GBSA (More accurate, slower):**
-Use AmberTools MMPBSA.py or gmx_MMPBSA after energy minimization
+Use AmberTools MMPBSA.py or gmx_MMPBSA after energy minimisation
 
 **Free Energy Calculations (Most accurate):**
 Use OpenMM + OpenFE or GROMACS for FEP/TI calculations
@@ -318,7 +318,7 @@ Use OpenMM + OpenFE or GROMACS for FEP/TI calculations
 **DiffDock IS NOT Designed For:**
 - Large biomolecules (protein-protein docking) → Use DiffDock-PP or AlphaFold-Multimer
 - Large peptides (>20 residues) → Use alternative methods
-- Covalent docking → Use specialized covalent docking tools
+- Covalent docking → Use specialised covalent docking tools
 - Binding affinity prediction → Combine with scoring functions
 - Membrane proteins → Not specifically trained, use with caution
 
@@ -348,7 +348,7 @@ Use OpenMM + OpenFE or GROMACS for FEP/TI calculations
 - Cause: Missing dependencies or wrong environment
 - Solution: Run `python scripts/setup_check.py` to diagnose
 
-### Performance Optimization
+### Performance Optimisation
 
 **For Best Results:**
 1. Use GPU (essential for practical use)
@@ -379,7 +379,7 @@ Or use the online demo without installation:
 - Validate file paths and SMILES strings
 - Check for required columns and format issues
 
-**`analyze_results.py`**: Analyze confidence scores and rank predictions
+**`analyze_results.py`**: Analyse confidence scores and rank predictions
 - Parse results from single or batch runs
 - Generate statistical summaries
 - Export to CSV for downstream analysis
@@ -422,7 +422,7 @@ Read this file when users need:
 - Step-by-step examples for all workflows
 - Advanced integration patterns
 - Troubleshooting common issues
-- Best practices and optimization tips
+- Best practices and optimisation tips
 
 Read this file when users need:
 - Complete workflow examples with code
@@ -435,13 +435,13 @@ Read this file when users need:
 **`batch_template.csv`**: Template for batch processing
 - Pre-formatted CSV with required columns
 - Example entries showing different input types
-- Ready to customize with actual data
+- Ready to customise with actual data
 
 **`custom_inference_config.yaml`**: Configuration template
 - Annotated YAML with all parameters
 - Four preset configurations for common use cases
 - Detailed comments explaining each parameter
-- Ready to customize and use
+- Ready to customise and use
 
 ## Best Practices
 

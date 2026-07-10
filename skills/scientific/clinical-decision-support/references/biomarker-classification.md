@@ -28,7 +28,7 @@ Biomarkers are measurable indicators of biological state or condition. In clinic
 - **HIV viral load**: Predicts disease progression if untreated
 - **HCV genotype**: Predicts treatment duration needed
 
-**Application**: Risk stratification, treatment intensity selection, clinical trial enrollment
+**Application**: Risk stratification, treatment intensity selection, clinical trial enrolment
 
 ### Predictive Biomarkers
 
@@ -533,8 +533,8 @@ Note: Uveal melanoma has different biology (GNAQ, GNA11 mutations)
 
 **Data-Driven Approaches**
 - **Median split**: Simple but arbitrary, may not be optimal
-- **Tertiles/quartiles**: Categorizes into 3-4 groups
-- **ROC curve analysis**: Maximizes sensitivity and specificity
+- **Tertiles/quartiles**: Categorises into 3-4 groups
+- **ROC curve analysis**: Maximises sensitivity and specificity
 - **Maximally selected rank statistics**: Finds optimal prognostic cut-point
 - **Validation required**: Independent cohort confirmation essential
 
@@ -594,9 +594,9 @@ Note: Uveal melanoma has different biology (GNAQ, GNA11 mutations)
 - **Li-Fraumeni (TP53)**: Diverse cancers at young age
 - **PTEN (Cowden syndrome)**: Breast, thyroid, endometrial cancer
 
-**Genetic Counseling**
-- Pre-test counseling: Implications for patient and family
-- Post-test counseling: Management, surveillance, family testing
+**Genetic Counselling**
+- Pre-test counselling: Implications for patient and family
+- Post-test counselling: Management, surveillance, family testing
 - Informed consent: Genetic discrimination concerns (GINA protections)
 
 ### Somatic (Tumor-Only) Testing

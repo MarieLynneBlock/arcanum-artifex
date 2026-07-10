@@ -33,7 +33,7 @@ pip install --upgrade gget
 - **Website:** https://genome.ucsc.edu/
 - **Notes:**
   - Multiple genome assemblies available (hg38, mm39, etc.)
-  - BLAT optimized for vertebrate genomes
+  - BLAT optimised for vertebrate genomes
 
 ### Protein & Structure Databases
 
@@ -47,7 +47,7 @@ pip install --upgrade gget
   - Swiss-Prot: manually annotated and reviewed
   - TrEMBL: automatically annotated
 
-#### NCBI (National Center for Biotechnology Information)
+#### NCBI (National Centre for Biotechnology Information)
 - **Used by:** gget info, gget bgee (for non-Ensembl species)
 - **Description:** Gene and protein databases with extensive cross-references
 - **Update frequency:** Continuous updates
@@ -87,7 +87,7 @@ pip install --upgrade gget
   - **Protein:** nr (non-redundant), swissprot, pdbaa, refseq_protein
 - **Notes:**
   - nt and nr are very large databases
-  - Consider specialized databases for faster, more focused searches
+  - Consider specialised databases for faster, more focused searches
 
 ### Expression & Correlation Databases
 
@@ -141,7 +141,7 @@ pip install --upgrade gget
   - KEGG pathways
   - Gene Ontology (GO)
   - Transcription factor targets (ChEA)
-  - Disease associations (GWAS Catalog)
+  - Disease associations (GWAS Catalogue)
   - Cell type markers (PanglaoDB)
 - **Notes:**
   - Supports multiple model organisms
@@ -276,8 +276,8 @@ To ensure reproducibility in analyses:
 - Use PDB flag in gget info only when needed (increases runtime)
 
 ### BLAST/BLAT
-- Start with default parameters, then optimize
-- Use specialized databases (swissprot, refseq_protein) for focused searches
+- Start with default parameters, then optimise
+- Use specialised databases (swissprot, refseq_protein) for focused searches
 - Consider E-value cutoffs based on query length
 
 ### Expression Databases

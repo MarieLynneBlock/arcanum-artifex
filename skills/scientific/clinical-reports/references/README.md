@@ -90,7 +90,7 @@ python validate_trial_report.py my_csr.md
 - Literature review integration
 
 ### Regulatory Compliance
-- **HIPAA** - Privacy protection, 18 identifier removal, Safe Harbor method
+- **HIPAA** - Privacy protection, 18 identifier removal, Safe Harbour method
 - **FDA** - 21 CFR Parts 11, 50, 56, 312 compliance
 - **ICH-GCP** - Good Clinical Practice standards
 - **ALCOA-CCEA** - Data integrity principles

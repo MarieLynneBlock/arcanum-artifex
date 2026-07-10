@@ -99,7 +99,7 @@ A method for exploring ideas from six distinct perspectives, ensuring comprehens
 
 **Usage:** Allow intuitive responses without justification
 
-### Black Hat (Critical Judgment)
+### Black Hat (Critical Judgement)
 - What could go wrong?
 - What are the weaknesses?
 - Why might this fail?
@@ -127,9 +127,9 @@ A method for exploring ideas from six distinct perspectives, ensuring comprehens
 - What's the big picture?
 - What have we learned?
 - What should we do next?
-- How do we organize these ideas?
+- How do we organise these ideas?
 
-**Usage:** Step back to synthesize and plan
+**Usage:** Step back to synthesise and plan
 
 ## Morphological Analysis
 
@@ -175,7 +175,7 @@ Identify competing requirements and find principles that resolve them.
 #### Principles for Resolution:
 1. **Segmentation** - Divide into parts, increase modularity
 2. **Taking out** - Remove interfering components
-3. **Local quality** - Optimize each part for its specific function
+3. **Local quality** - Optimise each part for its specific function
 4. **Asymmetry** - Break symmetry for advantage
 5. **Merging** - Combine similar operations
 6. **Universality** - Make objects perform multiple functions
@@ -188,7 +188,7 @@ Identify competing requirements and find principles that resolve them.
 Imagine the perfect solution where the problem solves itself or disappears.
 
 **Questions:**
-- What if the system optimized itself?
+- What if the system optimised itself?
 - What if the measurement didn't require intervention?
 - What if the sample prepared itself?
 
@@ -236,10 +236,10 @@ Adapt the natural strategy to your scientific context:
 - **Lotus leaf → Self-cleaning surfaces**: Superhydrophobic micro-textures
 - **Firefly bioluminescence → Imaging**: Luciferase reporters
 - **Shark skin → Antibacterial surfaces**: Microscale patterns inhibit bacteria
-- **Octopus camouflage → Adaptive materials**: Responsive color-changing systems
+- **Octopus camouflage → Adaptive materials**: Responsive colour-changing systems
 
 ### Nature's Strategies:
-- **Self-assembly**: Components organize without external direction
+- **Self-assembly**: Components organise without external direction
 - **Adaptation**: Systems adjust to environmental changes
 - **Resilience**: Systems recover from disturbance
 - **Efficiency**: Maximum output for minimum input

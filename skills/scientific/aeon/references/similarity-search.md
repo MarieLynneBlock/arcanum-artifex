@@ -1,16 +1,16 @@
 # Similarity Search
 
-Aeon provides tools for finding similar patterns within and across time series, including subsequence search, motif discovery, and approximate nearest neighbors.
+Aeon provides tools for finding similar patterns within and across time series, including subsequence search, motif discovery, and approximate nearest neighbours.
 
-## Subsequence Nearest Neighbors (SNN)
+## Subsequence Nearest Neighbours (SNN)
 
 Find most similar subsequences within a time series.
 
 ### MASS Algorithm
 - `MassSNN` - Mueen's Algorithm for Similarity Search
-  - Fast normalized cross-correlation for similarity
+  - Fast normalised cross-correlation for similarity
   - Computes distance profile efficiently
-  - **Use when**: Need exact nearest neighbor distances, large series
+  - **Use when**: Need exact nearest neighbour distances, large series
 
 ### STOMP-Based Motif Discovery
 - `StompMotif` - Discovers recurring patterns (motifs)
@@ -27,7 +27,7 @@ Find most similar subsequences within a time series.
 
 Find similar time series across collections.
 
-### Approximate Nearest Neighbors (ANN)
+### Approximate Nearest Neighbours (ANN)
 - `RandomProjectionIndexANN` - Locality-sensitive hashing
   - Uses random projections with cosine similarity
   - Builds index for fast approximate search
@@ -168,7 +168,7 @@ neighbors = ann.kneighbors(query_series, k=10)
    - Too large: Misses fine-grained patterns
    - Rule of thumb: 10-20% of series length
 
-2. **Normalization**: Most methods assume z-normalized subsequences
+2. **Normalisation**: Most methods assume z-normalised subsequences
    - Handles amplitude variations
    - Focus on shape similarity
 

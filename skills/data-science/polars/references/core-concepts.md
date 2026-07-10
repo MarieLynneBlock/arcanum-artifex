@@ -6,7 +6,7 @@ Expressions are the foundation of Polars' API. They are composable units that de
 
 ### What are Expressions?
 
-An expression describes a transformation on data. It only materializes (executes) within specific contexts:
+An expression describes a transformation on data. It only materialises (executes) within specific contexts:
 - `select()` - Select and transform columns
 - `with_columns()` - Add or modify columns
 - `filter()` - Filter rows
@@ -117,7 +117,7 @@ Polars has a strict type system based on Apache Arrow.
 
 **Text:**
 - `Utf8` / `String` - UTF-8 encoded strings
-- `Categorical` - Categorized strings (low cardinality)
+- `Categorical` - Categorised strings (low cardinality)
 - `Enum` - Fixed set of string values
 
 **Temporal:**
@@ -217,7 +217,7 @@ final = result.select("name", "age")  # Selects immediately
 
 ### Lazy Evaluation (LazyFrame)
 
-Operations build a query plan, optimized before execution:
+Operations build a query plan, optimised before execution:
 
 ```python
 import polars as pl
@@ -236,9 +236,9 @@ df = lf3.collect()  # NOW executes optimized plan
 - Performance is critical
 - Streaming required
 
-### Query Optimization
+### Query Optimisation
 
-Polars automatically optimizes lazy queries:
+Polars automatically optimises lazy queries:
 
 **Predicate Pushdown:**
 Filter operations pushed to data source when possible:
@@ -283,7 +283,7 @@ result = lf.filter(pl.col("age") > 25).collect(streaming=True)
 **Streaming limitations:**
 - Not all operations support streaming
 - May be slower for small data
-- Some operations require materializing entire dataset
+- Some operations require materialising entire dataset
 
 ### Converting Between Eager and Lazy
 
@@ -364,7 +364,7 @@ df.with_columns(
 
 **Benefits:**
 - Prevents silent bugs
-- Predictable behavior
+- Predictable behaviour
 - Better performance
 - Clearer code intent
 

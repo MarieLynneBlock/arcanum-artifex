@@ -1,6 +1,6 @@
 # Standard Neuropixels Analysis Workflow
 
-Complete step-by-step guide for analyzing Neuropixels recordings from raw data to curated units.
+Complete step-by-step guide for analysing Neuropixels recordings from raw data to curated units.
 
 ## Overview
 
@@ -66,7 +66,7 @@ rec_preprocessed = rec
 
 ### IBL-Style Destriping
 
-For recordings with strong artifacts:
+For recordings with strong artefacts:
 
 ```python
 from ibldsp.voltage import decompress_destripe_cbin
@@ -377,7 +377,7 @@ print(f"Good units: {len(good_units)}/{len(labels)}")
 
 ## Tips for Success
 
-1. **Always visualize drift** before deciding on motion correction
+1. **Always visualise drift** before deciding on motion correction
 2. **Save preprocessed data** to avoid recomputing
 3. **Compare multiple sorters** for critical experiments
 4. **Review uncertain units manually** - don't trust automated curation blindly

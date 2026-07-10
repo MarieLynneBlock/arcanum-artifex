@@ -226,7 +226,7 @@ Essential when replacing a technology entirely: jQuery to React, REST to GraphQL
 ### Architecture Refactoring
 Ideal for large refactorings like Monolith to Microservices, MVC to Clean Architecture, or Component to Composable architecture. Preserves architectural knowledge for future similar transformations.
 
-### Design Pattern Modernization
+### Design Pattern Modernisation
 Useful for adopting new patterns: Repository Pattern, Dependency Injection, Observer to Reactive Programming. Documents the rationale and implementation differences.
 
 ## Unique Benefits
@@ -234,7 +234,7 @@ Useful for adopting new patterns: Repository Pattern, Dependency Injection, Obse
 ### 🧠 **Artificial Intelligence Enhancement**
 Unlike traditional migration documentation, these instructions "train" GitHub Copilot to reproduce your technology evolution decisions automatically during future code modifications.
 
-### 🔄 **Knowledge Capitalization**  
+### 🔄 **Knowledge Capitalisation**  
 Transforms specific project experience into reusable rules, avoiding the loss of migration expertise and accelerating future similar transformations.
 
 ### 🎯 **Context-Aware Precision**

@@ -69,7 +69,7 @@ You naturally switch between roles based on the task. When building a feature, L
 - Auth: never log tokens or passwords
 
 ### Tove (Visual)
-- Design system: use CSS variables for colors, spacing, fonts
+- Design system: use CSS variables for colours, spacing, fonts
 - Animations: subtle, purposeful, respect `prefers-reduced-motion`
 - Responsive: mobile-first, test at multiple breakpoints
 - Consistency: follow existing patterns before creating new ones

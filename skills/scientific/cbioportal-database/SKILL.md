@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-cBioPortal for Cancer Genomics (https://www.cbioportal.org/) is an open-access resource for exploring, visualizing, and analyzing multidimensional cancer genomics data. It hosts data from The Cancer Genome Atlas (TCGA), AACR Project GENIE, MSK-IMPACT, and hundreds of other cancer studies — covering mutations, copy number alterations (CNA), structural variants, mRNA/protein expression, methylation, and clinical data for thousands of cancer samples.
+cBioPortal for Cancer Genomics (https://www.cbioportal.org/) is an open-access resource for exploring, visualising, and analysing multidimensional cancer genomics data. It hosts data from The Cancer Genome Atlas (TCGA), AACR Project GENIE, MSK-IMPACT, and hundreds of other cancer studies — covering mutations, copy number alterations (CNA), structural variants, mRNA/protein expression, methylation, and clinical data for thousands of cancer samples.
 
 **Key resources:**
 - cBioPortal website: https://www.cbioportal.org/

@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [Protein Management](#protein-management)
-2. [Folder Organization](#folder-organization)
+2. [Folder Organization](#folder-organisation)
 3. [Project Management](#project-management)
 4. [Best Practices](#best-practices)
 
@@ -84,7 +84,7 @@ proteins = rowan.list_proteins(name="EGFR")
 
 ### Sanitize Protein
 
-Clean up protein structure (remove waters, artifacts, fix residues).
+Clean up protein structure (remove waters, artefacts, fix residues).
 
 ```python
 import rowan
@@ -102,7 +102,7 @@ print(f"Sanitized: {protein.sanitized}")
 - Removes non-protein molecules (waters, ligands, ions)
 - Fixes missing atoms in residues
 - Resolves alternate conformations
-- Standardizes residue names
+- Standardises residue names
 
 ---
 
@@ -161,7 +161,7 @@ protein.delete()
 
 ### Folder Class
 
-Folders provide hierarchical organization for workflows.
+Folders provide hierarchical organisation for workflows.
 
 **Attributes:**
 
@@ -233,7 +233,7 @@ folder.update(starred=True)
 
 ### Print Folder Tree
 
-Visualize folder hierarchy.
+Visualise folder hierarchy.
 
 ```python
 import rowan
@@ -306,7 +306,7 @@ for wf in workflows:
 
 ### Project Class
 
-Projects are top-level containers for organizing folders and workflows.
+Projects are top-level containers for organising folders and workflows.
 
 **Attributes:**
 
@@ -388,7 +388,7 @@ folder = rowan.create_folder(
 
 ## Best Practices
 
-### Organizing a Drug Discovery Campaign
+### Organising a Drug Discovery Campaign
 
 ```python
 import rowan

@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-Comprehensive toolkit for analyzing Neuropixels high-density neural recordings using current best practices from SpikeInterface, Allen Institute, and International Brain Laboratory (IBL). Supports the full workflow from raw data to publication-ready curated units.
+Comprehensive toolkit for analysing Neuropixels high-density neural recordings using current best practices from SpikeInterface, Allen Institute, and International Brain Laboratory (IBL). Supports the full workflow from raw data to publication-ready curated units.
 
 ## When to Use This Skill
 
@@ -22,7 +22,7 @@ This skill should be used when:
 - Running spike sorting (Kilosort4, SpykingCircus2, Mountainsort5)
 - Computing quality metrics (SNR, ISI violations, presence ratio)
 - Curating units using Allen/IBL criteria
-- Creating visualizations of neural data
+- Creating visualisations of neural data
 - Exporting results to Phy or NWB
 
 ## Supported Hardware & Formats
@@ -161,7 +161,7 @@ labels = npa.curate(metrics, method='allen')  # 'allen', 'ibl', 'strict'
 
 ### 6. AI-Assisted Curation (For Uncertain Units)
 
-When using this skill with Claude Code, Claude can directly analyze waveform plots and provide expert curation decisions. For programmatic API access:
+When using this skill with Claude Code, Claude can directly analyse waveform plots and provide expert curation decisions. For programmatic API access:
 
 ```python
 from anthropic import Anthropic
@@ -263,7 +263,7 @@ python scripts/export_to_phy.py metrics/analyzer --output phy_export/
 ```
 
 ### assets/analysis_template.py
-Complete analysis template. Copy and customize:
+Complete analysis template. Copy and customise:
 ```bash
 cp assets/analysis_template.py my_analysis.py
 # Edit parameters and run
@@ -274,10 +274,10 @@ python my_analysis.py
 Detailed step-by-step workflow with explanations for each stage.
 
 ### reference/api-reference.md
-Quick function reference organized by module.
+Quick function reference organised by module.
 
 ### reference/plotting-guide.md
-Comprehensive visualization guide for publication-quality figures.
+Comprehensive visualisation guide for publication-quality figures.
 
 ## Detailed Reference Guides
 
@@ -339,7 +339,7 @@ project/
 ## Additional Resources
 
 - **SpikeInterface Docs**: https://spikeinterface.readthedocs.io/
-- **Neuropixels Tutorial**: https://spikeinterface.readthedocs.io/en/stable/how_to/analyze_neuropixels.html
+- **Neuropixels Tutorial**: https://spikeinterface.readthedocs.io/en/stable/how_to/analyse_neuropixels.html
 - **Kilosort4 GitHub**: https://github.com/MouseLand/Kilosort
 - **IBL Neuropixel Tools**: https://github.com/int-brain-lab/ibl-neuropixel
 - **Allen Institute ecephys**: https://github.com/AllenInstitute/ecephys_spike_sorting

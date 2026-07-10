@@ -1,6 +1,6 @@
 ---
 name: scientific-schematics
-description: Create publication-quality scientific diagrams using Nano Banana 2 AI with smart iterative refinement. Uses Gemini 3.1 Pro Preview for quality review. Only regenerates if quality is below threshold for your document type. Specialized in neural network architectures, system diagrams, flowcharts, biological pathways, and complex scientific visualizations.
+description: Create publication-quality scientific diagrams using Nano Banana 2 AI with smart iterative refinement. Uses Gemini 3.1 Pro Preview for quality review. Only regenerates if quality is below threshold for your document type. Specialised in neural network architectures, system diagrams, flowcharts, biological pathways, and complex scientific visualisations.
 license: MIT license
 allowed-tools: Read Write Edit Bash
 metadata:
@@ -85,7 +85,7 @@ Get an API key at: https://openrouter.ai/keys
 ✓ **Good prompts** (specific, detailed):
 - "CONSORT flowchart showing participant flow from screening (n=500) through randomization to final analysis"
 - "Transformer neural network architecture with encoder stack on left, decoder stack on right, showing multi-head attention and cross-attention connections"
-- "Biological signaling cascade: EGFR receptor → RAS → RAF → MEK → ERK → nucleus, with phosphorylation steps labeled"
+- "Biological signalling cascade: EGFR receptor → RAS → RAF → MEK → ERK → nucleus, with phosphorylation steps labelled"
 - "Block diagram of IoT system: sensors → microcontroller → WiFi module → cloud server → mobile app"
 
 ✗ **Avoid vague prompts**:
@@ -105,7 +105,7 @@ Get an API key at: https://openrouter.ai/keys
 - High contrast for readability
 - Clear, readable labels (minimum 10pt)
 - Professional typography (sans-serif fonts)
-- Colorblind-friendly colors (Okabe-Ito palette)
+- Colorblind-friendly colours (Okabe-Ito palette)
 - Proper spacing to prevent crowding
 - Scale bars, legends, axes where appropriate
 
@@ -115,7 +115,7 @@ This skill should be used when:
 - Creating neural network architecture diagrams (Transformers, CNNs, RNNs, etc.)
 - Illustrating system architectures and data flow diagrams
 - Drawing methodology flowcharts for study design (CONSORT, PRISMA)
-- Visualizing algorithm workflows and processing pipelines
+- Visualising algorithm workflows and processing pipelines
 - Creating circuit diagrams and electrical schematics
 - Depicting biological pathways and molecular interactions
 - Generating network topologies and hierarchical structures
@@ -133,7 +133,7 @@ python scripts/generate_schematic.py "your diagram description" -o output.png
 **That's it!** The AI handles:
 - ✓ Layout and composition
 - ✓ Labels and annotations
-- ✓ Colors and styling
+- ✓ Colours and styling
 - ✓ Quality review and refinement
 - ✓ Publication-ready output
 
@@ -144,7 +144,7 @@ python scripts/generate_schematic.py "your diagram description" -o output.png
 - Circuit diagrams
 - System architectures
 - Block diagrams
-- Any scientific visualization
+- Any scientific visualisation
 
 **No coding, no templates, no manual drawing required.**
 
@@ -334,7 +334,7 @@ python scripts/generate_schematic.py "neural network" -o nn.png --doc-type journ
 ✓ "Show time progression with timestamps"
 ```
 
-**5. Mention Color Requirements:**
+**5. Mention Colour Requirements:**
 ```
 ✓ "Use colorblind-friendly colors"
 ✓ "Grayscale-compatible design"
@@ -434,7 +434,7 @@ python scripts/generate_schematic.py "diagram" -o out.png -v
 
 1. **Resolution** - Vector preferred, or 300+ DPI for raster
 2. **File format** - PDF for LaTeX, SVG for web, PNG as fallback
-3. **Color space** - RGB for digital, CMYK for print (convert if needed)
+3. **Colour space** - RGB for digital, CMYK for print (convert if needed)
 4. **Line weights** - Minimum 0.5 pt, typical 1-2 pt
 5. **Text size** - 7-8 pt minimum at final size
 
@@ -482,7 +482,7 @@ python scripts/generate_schematic.py "diagram" -o out.png -v
 **Problem**: Colorblind simulation shows poor contrast
 - **Solution**: Switch to Okabe-Ito palette explicitly in code
 - **Solution**: Add redundant encoding (shapes, patterns, line styles)
-- **Solution**: Increase color saturation and lightness differences
+- **Solution**: Increase colour saturation and lightness differences
 
 **Problem**: High-severity overlaps detected
 - **Solution**: Review overlap_report.json for exact positions
@@ -496,7 +496,7 @@ python scripts/generate_schematic.py "diagram" -o out.png -v
 
 ### Accessibility Problems
 
-**Problem**: Colors indistinguishable in grayscale
+**Problem**: Colours indistinguishable in grayscale
 - **Solution**: Run accessibility checker: `verify_accessibility(image_path)`
 - **Solution**: Add patterns, shapes, or line styles for redundancy
 - **Solution**: Increase contrast between adjacent elements
@@ -508,8 +508,8 @@ python scripts/generate_schematic.py "diagram" -o out.png -v
 
 **Problem**: Accessibility checks consistently fail
 - **Solution**: Review accessibility_report.json for specific failures
-- **Solution**: Increase color contrast by at least 20%
-- **Solution**: Test with actual grayscale conversion before finalizing
+- **Solution**: Increase colour contrast by at least 20%
+- **Solution**: Test with actual grayscale conversion before finalising
 
 ## Resources and References
 
@@ -517,7 +517,7 @@ python scripts/generate_schematic.py "diagram" -o out.png -v
 
 Load these files for comprehensive information on specific topics:
 
-- **`references/diagram_types.md`** - Catalog of scientific diagram types with examples
+- **`references/diagram_types.md`** - Catalogue of scientific diagram types with examples
 - **`references/best-practices.md`** - Publication standards and accessibility guidelines
 
 ### External Resources
@@ -537,7 +537,7 @@ Load these files for comprehensive information on specific topics:
 This skill works synergistically with:
 
 - **Scientific Writing** - Diagrams follow figure best practices
-- **Scientific Visualization** - Shares color palettes and styling
+- **Scientific Visualisation** - Shares colour palettes and styling
 - **LaTeX Posters** - Generate diagrams for poster presentations
 - **Research Grants** - Methodology diagrams for proposals
 - **Peer Review** - Evaluate diagram clarity and accessibility
@@ -549,7 +549,7 @@ Before submitting diagrams, verify:
 ### Visual Quality
 - [ ] High-quality image format (PNG from AI generation)
 - [ ] No overlapping elements (AI handles automatically)
-- [ ] Adequate spacing between all components (AI optimizes)
+- [ ] Adequate spacing between all components (AI optimises)
 - [ ] Clean, professional alignment
 - [ ] All arrows connect properly to intended targets
 
@@ -557,12 +557,12 @@ Before submitting diagrams, verify:
 - [ ] Colorblind-safe palette (Okabe-Ito) used
 - [ ] Works in grayscale (tested with accessibility checker)
 - [ ] Sufficient contrast between elements (verified)
-- [ ] Redundant encoding where appropriate (shapes + colors)
+- [ ] Redundant encoding where appropriate (shapes + colours)
 - [ ] Colorblind simulation passes all checks
 
 ### Typography and Readability
 - [ ] Text minimum 7-8 pt at final size
-- [ ] All elements labeled clearly and completely
+- [ ] All elements labelled clearly and completely
 - [ ] Consistent font family and sizing
 - [ ] No text overlaps or cutoffs
 - [ ] Units included where applicable
@@ -585,7 +585,7 @@ Before submitting diagrams, verify:
 ### Documentation and Version Control
 - [ ] Source files (.tex, .py) saved for future revision
 - [ ] Quality reports archived in `quality_reports/` directory
-- [ ] Configuration parameters documented (colors, spacing, sizes)
+- [ ] Configuration parameters documented (colours, spacing, sizes)
 - [ ] Git commit includes source, output, and quality reports
 - [ ] README or comments explain how to regenerate figure
 

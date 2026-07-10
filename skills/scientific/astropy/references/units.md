@@ -129,7 +129,7 @@ abundance = 8.5 * u.dex(u.cm**-3)
 ### Flux
 `u.Jy, u.mJy, u.erg / u.s / u.cm**2`
 
-## Performance Optimization
+## Performance Optimisation
 
 Pre-compute composite units for array operations:
 

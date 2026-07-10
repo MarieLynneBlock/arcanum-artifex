@@ -190,7 +190,7 @@ CrossRef `type` field values:
 
 ### PubMed E-utilities API
 
-**Specialized for biomedical literature** - Curated metadata with MeSH terms.
+**Specialised for biomedical literature** - Curated metadata with MeSH terms.
 
 **Base URL**: `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/`
 
@@ -411,7 +411,7 @@ GET https://api.datacite.org/dois/10.5281/zenodo.1234567
 
 **Optional but recommended**:
 - `pages`: Page range
-- `organization`: Organizing body
+- `organization`: Organising body
 - `publisher`: Publisher
 - `address`: Conference location
 - `month`: Conference month
@@ -688,7 +688,7 @@ python scripts/extract_metadata.py \
 
 **Issue**: Authors publish under different name formats.
 
-**Standardization**:
+**Standardisation**:
 ```
 # Common variations
 John Smith
@@ -814,14 +814,14 @@ DOIs provide:
 
 Spot-check:
 - Author names match publication
-- Title matches (including capitalization)
+- Title matches (including capitalisation)
 - Year is correct
 - Journal name is complete
 
 ### 3. Handle Special Characters
 
 **LaTeX special characters**:
-- Protect capitalization: `{AlphaFold}`
+- Protect capitalisation: `{AlphaFold}`
 - Handle accents: `M{\"u}ller` or use Unicode
 - Chemical formulas: `H$_2$O` or `\ce{H2O}`
 

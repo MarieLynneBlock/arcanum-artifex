@@ -84,7 +84,7 @@ data = av_get("INFLATION")
 # unit: percent (YoY change in CPI)
 ```
 
-## Labor Market
+## Labour Market
 
 ### UNEMPLOYMENT — Unemployment Rate
 

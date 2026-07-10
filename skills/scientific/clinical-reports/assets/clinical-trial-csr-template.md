@@ -167,9 +167,9 @@ Informed consent was obtained from all participants before any study-specific pr
 
 # INVESTIGATORS AND STUDY ADMINISTRATIVE STRUCTURE (Section 3)
 
-## 3.1 Investigators and Study Centers
+## 3.1 Investigators and Study Centres
 
-[Table listing all investigators, sites, and enrollment]
+[Table listing all investigators, sites, and enrolment]
 
 | Site No. | Investigator | Institution | City, Country | Subjects Enrolled |
 |----------|--------------|-------------|---------------|-------------------|
@@ -260,7 +260,7 @@ Informed consent was obtained from all participants before any study-specific pr
 - Formulation: [Tablet, capsule, injection]
 - Dose: [Dose and regimen]
 - Route: [PO, IV, SC, etc.]
-- Packaging and labeling: [Description]
+- Packaging and labelling: [Description]
 
 **Comparator:**
 [Similar details for comparator or placebo]

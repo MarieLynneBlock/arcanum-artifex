@@ -326,7 +326,7 @@ briefing = researcher.research(
 
 ## Recipe 8: Technical Documentation Gathering
 
-**Goal:** Collect and synthesize technical documentation for a framework or API.
+**Goal:** Collect and synthesise technical documentation for a framework or API.
 
 **APIs:** Search + Extract
 

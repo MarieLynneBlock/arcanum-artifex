@@ -101,7 +101,7 @@ Field tags limit searches to specific parts of PubMed records. Format: `term[tag
 - Can search without field tag, but [au] ensures accuracy
 
 **Corporate Authors**:
-Search organizations as authors:
+Search organisations as authors:
 ```
 world health organization[au]
 ```
@@ -288,7 +288,7 @@ Use Advanced Search to see how PubMed translated your query in the Search Detail
 ## Advanced Search Strategies
 
 ### Clinical Queries
-PubMed provides specialized filters for clinical research:
+PubMed provides specialised filters for clinical research:
 
 **Study Categories**:
 - Therapy (narrow/broad)
@@ -302,7 +302,7 @@ PubMed provides specialized filters for clinical research:
 - Differential diagnosis
 - Clinical description
 - Management
-- Genetic counseling
+- Genetic counselling
 
 ### Hedges and Filters
 Pre-built search strategies for specific purposes:

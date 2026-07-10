@@ -1,6 +1,6 @@
 ---
 name: minecraft-plugin-development
-description: 'Use this skill when building or modifying Minecraft server plugins for Paper, Spigot, or Bukkit, including plugin.yml setup, commands, listeners, schedulers, player state, team or arena systems, persistent progression, economy or profile data, configuration files, Adventure text, and version-safe API usage. Trigger for requests like "build a Minecraft plugin", "add a Paper command", "fix a Bukkit listener", "create plugin.yml", "implement a minigame mechanic", "add a perk or quest system", or "debug server plugin behavior".'
+description: 'Use this skill when building or modifying Minecraft server plugins for Paper, Spigot, or Bukkit, including plugin.yml setup, commands, listeners, schedulers, player state, team or arena systems, persistent progression, economy or profile data, configuration files, Adventure text, and version-safe API usage. Trigger for requests like "build a Minecraft plugin", "add a Paper command", "fix a Bukkit listener", "create plugin.yml", "implement a minigame mechanic", "add a perk or quest system", or "debug server plugin behaviour".'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -15,7 +15,7 @@ For grounded implementation patterns drawn from real Paper plugins, load these r
 
 - [`references/project-patterns.md`](references/project-patterns.md) for high-level architecture patterns seen in real gameplay plugins
 - [`references/bootstrap-registration.md`](references/bootstrap-registration.md) for `onEnable`, command wiring, listener registration, and shutdown expectations
-- [`references/state-sessions-and-phases.md`](references/state-sessions-and-phases.md) for player session modeling, game phases, match state, and reconnect-safe logic
+- [`references/state-sessions-and-phases.md`](references/state-sessions-and-phases.md) for player session modelling, game phases, match state, and reconnect-safe logic
 - [`references/config-data-and-async.md`](references/config-data-and-async.md) for config managers, database-backed player data, async flushes, and UI refresh tasks
 - [`references/maps-heroes-and-feature-modules.md`](references/maps-heroes-and-feature-modules.md) for map rotation, hero or class systems, and modular feature growth
 - [`references/minigame-instance-flow.md`](references/minigame-instance-flow.md) for arena instances, countdowns, loot refreshes, wave systems, visibility isolation, and entity-to-game ownership
@@ -44,7 +44,7 @@ When this skill triggers:
    - timers and scheduled tasks
    - team, arena, or match state
    - config and persistence
-5. Make the smallest coherent change that keeps registration, config, and runtime behavior aligned.
+5. Make the smallest coherent change that keeps registration, config, and runtime behaviour aligned.
 
 If the plugin is gameplay-heavy or stateful, read [`references/project-patterns.md`](references/project-patterns.md) and [`references/state-sessions-and-phases.md`](references/state-sessions-and-phases.md) before editing.
 
@@ -104,7 +104,7 @@ When the feature affects match-heavy minigames or persistent-brawl gameplay, loo
 
 For multi-arena plugins, isolate per-game visibility, chat recipients, scoreboards, loot, and entity ownership. Do not let one arena observe or mutate another arena by accident.
 
-### Favor config-driven values
+### Favour config-driven values
 
 When the feature includes damage, cooldowns, rewards, durations, messages, map settings, or toggles:
 
@@ -113,7 +113,7 @@ When the feature includes damage, cooldowns, rewards, durations, messages, map s
 - keep key names stable and readable
 - validate or sanitize missing values
 
-### Be careful with reload behavior
+### Be careful with reload behaviour
 
 - Avoid promising safe hot reload unless the code already supports it well.
 - On config reload, ensure in-memory caches, scheduled tasks, and gameplay state are handled consistently.
@@ -158,7 +158,7 @@ For event listeners:
 - guard early and return early
 - check whether the current player, arena, or game phase should handle the event
 - avoid doing expensive work in hot events such as move, damage, or interact spam
-- centralize repeated checks where practical
+- centralise repeated checks where practical
 
 ### Scheduled Tasks
 
@@ -198,7 +198,7 @@ For per-player or per-match state:
 When the project uses Adventure or MiniMessage:
 
 - follow the existing formatting approach
-- avoid mixing legacy color codes and Adventure styles without a reason
+- avoid mixing legacy colour codes and Adventure styles without a reason
 - keep message templates configurable when messages are gameplay-facing
 
 ## High-Risk Areas
@@ -237,7 +237,7 @@ When the requested change touches plugin startup, async data, match flow, class 
 Before finishing, verify as many of these as the task allows:
 
 - the command, listener, or feature is registered correctly
-- `plugin.yml` matches the implemented behavior
+- `plugin.yml` matches the implemented behaviour
 - imports and API types match the targeted server stack
 - scheduler usage is safe
 - config keys referenced in code exist or have defaults

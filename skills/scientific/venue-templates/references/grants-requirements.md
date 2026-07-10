@@ -38,7 +38,7 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 
 ### NSF Project Summary (1 page)
 
-**Required Sections** (clearly labeled):
+**Required Sections** (clearly labelled):
 
 1. **Overview** (1-2 paragraphs)
    - Concise description of research activity
@@ -114,7 +114,7 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 
 ### NSF Broader Impacts
 
-**NSF-Recognized Categories** (demonstrate ≥1):
+**NSF-Recognised Categories** (demonstrate ≥1):
 1. **Advance discovery while promoting teaching/learning**
 2. **Broaden participation** of underrepresented groups
 3. **Disseminate broadly** to enhance scientific/technological understanding
@@ -174,7 +174,7 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 
 1. **Intellectual Merit**:
    - What is the potential to advance knowledge?
-   - How well-conceived and organized?
+   - How well-conceived and organised?
    - Qualifications of PI and team?
    - Availability of resources?
 
@@ -280,7 +280,7 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 - **Importance**: Critical barrier to progress
 - **Knowledge gap**: What's not known
 - **Impact**: How project advances field
-- **Rigor**: Scientific premise/prior work
+- **Rigour**: Scientific premise/prior work
 - **References**: Cite key literature
 
 #### 2. Innovation (typically 1-2 pages)
@@ -295,14 +295,14 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 - **Experimental design**: Detailed methods
 - **Expected outcomes**: What results mean
 - **Potential problems & alternatives**: Mitigation strategies
-- **Rigor and reproducibility**: Controls, replication, statistics
+- **Rigour and reproducibility**: Controls, replication, statistics
 - **Timeline**: When each aim completed
 
 **Additional Approach Content**:
 - Preliminary data (critical for R01)
 - Power analyses for sample sizes
 - Statistical analysis plans
-- Rigor of prior research cited
+- Rigour of prior research cited
 
 ---
 
@@ -310,7 +310,7 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 
 **Sections** (NIH format):
 1. **Personal Statement** (4 sentences explaining why you're suited)
-2. **Positions, Honors, and Scientific Appointments**
+2. **Positions, Honours, and Scientific Appointments**
 3. **Contributions to Science** (Up to 5 contributions, up to 4 pubs each)
 4. **Research Support** (current and completed grants, overlap checked)
 
@@ -324,7 +324,7 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 1. **Significance**: Importance, impact
 2. **Investigator(s)**: Qualifications, track record
 3. **Innovation**: Novel concepts, methods
-4. **Approach**: Feasibility, rigor, design
+4. **Approach**: Feasibility, rigour, design
 5. **Environment**: Institutional support, resources
 
 **Additional Considerations** (not scored but noted):
@@ -334,7 +334,7 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 - Inclusion of women, minorities, children
 - Budget appropriateness
 
-**Overall Impact Score**: 1-9 (synthesizes all criteria)
+**Overall Impact Score**: 1-9 (synthesises all criteria)
 
 ---
 
@@ -500,11 +500,11 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 
 ---
 
-## DARPA (Defense Advanced Research Projects Agency)
+## DARPA (Defence Advanced Research Projects Agency)
 
 ### Overview
 
-**Agency**: Defense Advanced Research Projects Agency (DoD)  
+**Agency**: Defence Advanced Research Projects Agency (DoD)  
 **Mission**: High-risk, high-reward research for national security  
 **Typical Award**: $500K-$5M per year, 2-4 years  
 **Success Rate**: 5-15% (highly competitive)
@@ -550,7 +550,7 @@ Comprehensive requirements and formatting guidelines for major federal and priva
    - Innovation justification
 
 4. **Management Plan** (2-3 pages)
-   - Team organization
+   - Team organisation
    - Key personnel roles
    - Collaboration approach
    - Milestone schedule (Gantt chart)
@@ -583,7 +583,7 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 - Must show mitigation strategies
 
 **National Security Relevance**:
-- Clear connection to defense applications
+- Clear connection to defence applications
 - Dual-use (civilian + military) often valuable
 
 **Metrics for Success**:
@@ -595,8 +595,8 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 ### DARPA Budget
 
 **Full Cost Accounting**: Detailed justification required
-- **Labor**: Hourly rates, hours per task
-- **Materials**: Itemized
+- **Labour**: Hourly rates, hours per task
+- **Materials**: Itemised
 - **Equipment**: Justification for purchases
 - **Travel**: Specific trips with purpose
 - **Subcontracts**: Detailed subcontract budgets
@@ -632,7 +632,7 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 **Key Emphases**:
 - Scalability and sustainability
 - Impact in low-resource settings
-- Partnerships with local organizations
+- Partnerships with local organisations
 - Data-driven decision making
 
 ---
@@ -745,7 +745,7 @@ Comprehensive requirements and formatting guidelines for major federal and priva
 
 **1 week before**:
 - Institutional review/approval
-- Budget finalization
+- Budget finalisation
 - Submission system upload
 
 **2 days before**:

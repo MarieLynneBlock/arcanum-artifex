@@ -84,9 +84,9 @@ flowchart LR
     C1 --> D3
     C1 --> C3
 
-    style C3 fill:#ff6b6b,color:#fff
-    style D1 fill:#ff6b6b,color:#fff
-    style B3 fill:#ffa500,color:#fff
+    style C3 fill:#ff6b6b,colour:#fff
+    style D1 fill:#ff6b6b,colour:#fff
+    style B3 fill:#ffa500,colour:#fff
 ```
 
 ---

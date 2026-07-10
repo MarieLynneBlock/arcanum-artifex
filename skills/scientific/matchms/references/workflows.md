@@ -256,7 +256,7 @@ for i, query in enumerate(processed_queries):
 
 ## Workflow 5: Building a Reusable Processing Pipeline
 
-Create a standardized pipeline for consistent processing.
+Create a standardised pipeline for consistent processing.
 
 ```python
 from matchms import SpectrumProcessor
@@ -311,7 +311,7 @@ for dataset_file in datasets:
 
 ---
 
-## Workflow 6: Format Conversion and Standardization
+## Workflow 6: Format Conversion and Standardisation
 
 Convert between different mass spectrometry file formats.
 

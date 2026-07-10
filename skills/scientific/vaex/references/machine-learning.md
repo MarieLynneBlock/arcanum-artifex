@@ -724,5 +724,5 @@ df = df.join(avg_by_category, on='category', rsuffix='_category_mean')
 ## Related Resources
 
 - For data preprocessing: See `data-processing.md`
-- For performance optimization: See `performance.md`
+- For performance optimisation: See `performance.md`
 - For DataFrame operations: See `core-dataframes.md`

@@ -233,7 +233,7 @@ def calculate_flow_direction_d8(dem):
     return flow_dir
 ```
 
-### Flood Inundation Modeling
+### Flood Inundation Modelling
 
 ```python
 def flood_inundation(dem, flood_level, roughness=0.03):

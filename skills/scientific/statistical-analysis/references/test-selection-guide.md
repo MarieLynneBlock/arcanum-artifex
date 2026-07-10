@@ -46,7 +46,7 @@ This guide provides a decision tree for selecting appropriate statistical tests 
 - **Single continuous predictor**: Simple linear regression
 - **Multiple continuous/categorical predictors**: Multiple linear regression
 - **Categorical predictors**: ANOVA/ANCOVA framework
-- **Non-linear relationships**: Polynomial regression or generalized additive models (GAM)
+- **Non-linear relationships**: Polynomial regression or generalised additive models (GAM)
 
 #### Binary Outcome
 - **Single predictor**: Logistic regression
@@ -60,7 +60,7 @@ This guide provides a decision tree for selecting appropriate statistical tests 
 
 #### Time-to-Event Outcome
 - **Comparing survival curves**: Log-rank test
-- **Modeling with covariates**: Cox proportional hazards regression
+- **Modelling with covariates**: Cox proportional hazards regression
 - **Parametric survival models**: Weibull, exponential, log-normal
 
 ### 3. Agreement and Reliability

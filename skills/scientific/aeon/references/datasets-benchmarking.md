@@ -169,7 +169,7 @@ X_train, X_test, y_train, y_test = stratified_resample(
 
 ### Performance Metrics
 
-Specialized metrics for time series tasks:
+Specialised metrics for time series tasks:
 
 **Anomaly Detection Metrics**:
 ```python

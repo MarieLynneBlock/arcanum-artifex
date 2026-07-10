@@ -1,6 +1,6 @@
 # Single-Cell RNA-seq Models
 
-This document covers core models for analyzing single-cell RNA sequencing data in scvi-tools.
+This document covers core models for analysing single-cell RNA sequencing data in scvi-tools.
 
 ## scVI (Single-Cell Variational Inference)
 
@@ -10,7 +10,7 @@ This document covers core models for analyzing single-cell RNA sequencing data i
 - Deep generative model based on variational autoencoders (VAE)
 - Learns low-dimensional latent representations that capture biological variation
 - Automatically corrects for batch effects and technical covariates
-- Enables normalized gene expression estimation
+- Enables normalised gene expression estimation
 - Supports differential expression analysis
 
 **When to Use**:
@@ -49,24 +49,24 @@ normalized = model.get_normalized_expression()
 
 **Outputs**:
 - `get_latent_representation()`: Batch-corrected low-dimensional embeddings
-- `get_normalized_expression()`: Denoised, normalized expression values
+- `get_normalized_expression()`: Denoised, normalised expression values
 - `differential_expression()`: Probabilistic DE testing between groups
 - `get_feature_correlation_matrix()`: Gene-gene correlation estimates
 
 ## scANVI (Single-Cell ANnotation using Variational Inference)
 
-**Purpose**: Semi-supervised cell type annotation and integration using labeled and unlabeled cells.
+**Purpose**: Semi-supervised cell type annotation and integration using labelled and unlabeled cells.
 
 **Key Features**:
 - Extends scVI with cell type labels
-- Leverages partially labeled datasets for annotation transfer
+- Leverages partially labelled datasets for annotation transfer
 - Performs simultaneous batch correction and cell type prediction
 - Enables query-to-reference mapping
 
 **When to Use**:
 - Annotating new datasets using reference labels
 - Transfer learning from well-annotated to unlabeled datasets
-- Joint analysis of labeled and unlabeled cells
+- Joint analysis of labelled and unlabeled cells
 - Building cell type classifiers with uncertainty quantification
 
 **Basic Usage**:
@@ -107,7 +107,7 @@ predictions = scanvi_model.predict()
 
 ## AUTOZI
 
-**Purpose**: Automatic identification and modeling of zero-inflated genes in scRNA-seq data.
+**Purpose**: Automatic identification and modelling of zero-inflated genes in scRNA-seq data.
 
 **Key Features**:
 - Distinguishes biological zeros from technical dropout
@@ -117,7 +117,7 @@ predictions = scanvi_model.predict()
 
 **When to Use**:
 - Detecting which genes are affected by technical dropout
-- Improving imputation and normalization for sparse datasets
+- Improving imputation and normalisation for sparse datasets
 - Understanding the extent of zero-inflation in your data
 
 **Basic Usage**:
@@ -135,14 +135,14 @@ zi_probs = model.get_alphas_betas()
 **Purpose**: RNA velocity analysis using variational inference.
 
 **Key Features**:
-- Joint modeling of spliced and unspliced RNA counts
+- Joint modelling of spliced and unspliced RNA counts
 - Probabilistic estimation of RNA velocity
 - Accounts for technical noise and batch effects
 - Provides uncertainty quantification for velocity estimates
 
 **When to Use**:
 - Inferring cellular dynamics and differentiation trajectories
-- Analyzing spliced/unspliced count data
+- Analysing spliced/unspliced count data
 - RNA velocity analysis with batch correction
 
 **Basic Usage**:
@@ -174,7 +174,7 @@ velocities = model.get_velocity()
 - Enables discovery of treatment-specific effects
 
 **When to Use**:
-- Analyzing perturbation experiments (drug screens, CRISPR, etc.)
+- Analysing perturbation experiments (drug screens, CRISPR, etc.)
 - Identifying genes responding specifically to treatments
 - Separating treatment effects from background variation
 - Comparing control vs. perturbed conditions
@@ -263,9 +263,9 @@ doublet_scores = predictions["doublet"]
 adata.obs["doublet_score"] = doublet_scores
 ```
 
-## Amortized LDA (Topic Modeling)
+## Amortized LDA (Topic Modelling)
 
-**Purpose**: Topic modeling for gene expression using Latent Dirichlet Allocation.
+**Purpose**: Topic modelling for gene expression using Latent Dirichlet Allocation.
 
 **Key Features**:
 - Discovers gene expression programs (topics)
@@ -297,10 +297,10 @@ topic_gene_loadings = model.get_topic_distribution()
 **Choose scVI when**:
 - Starting with unsupervised analysis
 - Need batch correction and integration
-- Want normalized expression and DE analysis
+- Want normalised expression and DE analysis
 
 **Choose scANVI when**:
-- Have some labeled cells for training
+- Have some labelled cells for training
 - Need cell type annotation
 - Want to transfer labels from reference to query
 
@@ -315,7 +315,7 @@ topic_gene_loadings = model.get_topic_distribution()
 - Need RNA velocity with batch correction
 
 **Choose contrastiveVI when**:
-- Analyzing perturbation experiments
+- Analysing perturbation experiments
 - Need to separate treatment effects
 - Want to identify condition-specific programs
 

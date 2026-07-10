@@ -69,9 +69,9 @@ Increases from 1 req/sec → 10 req/sec.
 - `/works` - 240M+ scholarly documents
 - `/authors` - Researcher profiles
 - `/sources` - Journals, repositories, conferences
-- `/institutions` - Universities, research organizations
+- `/institutions` - Universities, research organisations
 - `/topics` - Subject classifications (3-level hierarchy)
-- `/publishers` - Publishing organizations
+- `/publishers` - Publishing organisations
 - `/funders` - Funding agencies
 - `/text` - Tag your own text with topics/keywords (POST)
 

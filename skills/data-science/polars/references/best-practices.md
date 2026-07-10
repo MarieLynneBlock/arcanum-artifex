@@ -2,7 +2,7 @@
 
 Comprehensive guide to writing efficient Polars code and avoiding common pitfalls.
 
-## Performance Optimization
+## Performance Optimisation
 
 ### 1. Use Lazy Evaluation
 
@@ -21,7 +21,7 @@ result = lf.filter(pl.col("age") > 25).select("name", "age").collect()
 **Benefits of lazy evaluation:**
 - Predicate pushdown (filter at source)
 - Projection pushdown (read only needed columns)
-- Query optimization
+- Query optimisation
 - Parallel execution planning
 
 ### 2. Filter and Select Early
@@ -87,7 +87,7 @@ result = lf.filter(pl.col("value") > 100).collect(streaming=True)
 lf.filter(pl.col("value") > 100).sink_parquet("output.parquet")
 ```
 
-### 5. Optimize Data Types
+### 5. Optimise Data Types
 
 Choose appropriate data types to reduce memory and improve performance:
 
@@ -107,7 +107,7 @@ df = pl.read_csv(
 )
 ```
 
-**Type optimization guidelines:**
+**Type optimisation guidelines:**
 - Use smallest integer type that fits your data
 - Use `Categorical` for strings with low cardinality (<50% unique)
 - Use `Date` instead of `Datetime` when time isn't needed
@@ -115,7 +115,7 @@ df = pl.read_csv(
 
 ### 6. Parallel Operations
 
-Structure code to maximize parallelization:
+Structure code to maximise parallelization:
 
 ```python
 # Bad: Sequential pipe operations disable parallelization

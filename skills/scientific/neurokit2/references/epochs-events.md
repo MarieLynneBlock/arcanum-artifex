@@ -51,7 +51,7 @@ high_arousal = nk.events_find(eda_signal, threshold='auto', duration_min=100)
 
 ### events_plot()
 
-Visualize event timing relative to signals.
+Visualise event timing relative to signals.
 
 ```python
 nk.events_plot(events, signal)
@@ -103,7 +103,7 @@ epochs = nk.epochs_create(data, events, sampling_rate=1000,
 
 ### Event Labels and Conditions
 
-Organize events by type and experimental conditions:
+Organise events by type and experimental conditions:
 
 ```python
 # Example: Emotional picture experiment
@@ -152,13 +152,13 @@ for key, epoch in epochs.items():
 **When to baseline correct:**
 - **ERPs**: Always (isolates event-related change)
 - **Cardiac/EDA**: Usually (removes inter-individual baseline differences)
-- **Absolute measures**: Sometimes not desired (e.g., analyzing absolute amplitude)
+- **Absolute measures**: Sometimes not desired (e.g., analysing absolute amplitude)
 
-## Epoch Analysis and Visualization
+## Epoch Analysis and Visualisation
 
 ### epochs_plot()
 
-Visualize individual or averaged epochs.
+Visualise individual or averaged epochs.
 
 ```python
 nk.epochs_plot(epochs, column='ECG_Rate', condition=None, show=True)
@@ -174,7 +174,7 @@ nk.epochs_plot(epochs, column='ECG_Rate', condition=None, show=True)
 - Optional: Shaded error (SEM or SD)
 
 **Use cases:**
-- Visualize event-related responses
+- Visualise event-related responses
 - Compare conditions
 - Identify outlier epochs
 
@@ -247,7 +247,7 @@ epochs_array = nk.epochs_to_array(epochs, column='ECG_Rate')
 
 ## Signal-Specific Event-Related Analysis
 
-NeuroKit2 provides specialized event-related analysis for each signal type:
+NeuroKit2 provides specialised event-related analysis for each signal type:
 
 ### ECG Event-Related
 ```python
@@ -394,7 +394,7 @@ type1_epochs = {k: v for k, v in epochs.items() if v['Label'][0] == 'type1'}
 type2_epochs = {k: v for k, v in epochs.items() if v['Label'][0] == 'type2'}
 ```
 
-### Quality Control and Artifact Rejection
+### Quality Control and Artefact Rejection
 
 ```python
 # Remove epochs with excessive noise or artifacts
@@ -454,7 +454,7 @@ results = nk.ecg_eventrelated(clean_epochs)
 - Anticipation and prediction error
 
 **Psychophysiology:**
-- Cardiac defense response
+- Cardiac defence response
 - Orienting vs. defensive reflexes
 - Respiratory changes during emotion
 
@@ -466,6 +466,6 @@ results = nk.ecg_eventrelated(clean_epochs)
 ## References
 
 - Luck, S. J. (2014). An introduction to the event-related potential technique (2nd ed.). MIT press.
-- Bradley, M. M., & Lang, P. J. (2000). Measuring emotion: Behavior, feeling, and physiology. In R. D. Lane & L. Nadel (Eds.), Cognitive neuroscience of emotion (pp. 242-276). Oxford University Press.
+- Bradley, M. M., & Lang, P. J. (2000). Measuring emotion: Behaviour, feeling, and physiology. In R. D. Lane & L. Nadel (Eds.), Cognitive neuroscience of emotion (pp. 242-276). Oxford University Press.
 - Boucsein, W. (2012). Electrodermal activity (2nd ed.). Springer.
-- Gratton, G., Coles, M. G., & Donchin, E. (1983). A new method for off-line removal of ocular artifact. Electroencephalography and clinical neurophysiology, 55(4), 468-484.
+- Gratton, G., Coles, M. G., & Donchin, E. (1983). A new method for off-line removal of ocular artefact. Electroencephalography and clinical neurophysiology, 55(4), 468-484.

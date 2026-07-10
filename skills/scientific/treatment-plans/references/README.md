@@ -2,7 +2,7 @@
 
 ## Overview
 
-Skill for generating **concise, clinician-focused** medical treatment plans across all clinical specialties. Provides LaTeX/PDF templates with SMART goal frameworks, evidence-based interventions, regulatory compliance, and validation tools for patient-centered care planning.
+Skill for generating **concise, clinician-focused** medical treatment plans across all clinical specialties. Provides LaTeX/PDF templates with SMART goal frameworks, evidence-based interventions, regulatory compliance, and validation tools for patient-centred care planning.
 
 **Default to 1-page format** for most cases - think "quick reference card" not "comprehensive textbook".
 
@@ -15,13 +15,13 @@ Skill for generating **concise, clinician-focused** medical treatment plans acro
 3. **Rehabilitation Treatment Plans** - Physical therapy, occupational therapy, cardiac/pulmonary rehab
 4. **Mental Health Treatment Plans** - Psychiatric care, depression, anxiety, PTSD, substance use
 5. **Chronic Disease Management Plans** - Complex multimorbidity, long-term care coordination
-6. **Perioperative Care Plans** - Preoperative optimization, ERAS protocols, postoperative recovery
+6. **Perioperative Care Plans** - Preoperative optimisation, ERAS protocols, postoperative recovery
 7. **Pain Management Plans** - Acute and chronic pain, multimodal analgesia, opioid-sparing strategies
 
 ### 📚 Reference Files (5 comprehensive guides)
 
 - `treatment-plan-standards.md` - Professional standards, documentation requirements, legal considerations
-- `goal-setting-frameworks.md` - SMART goals, patient-centered outcomes, shared decision-making
+- `goal-setting-frameworks.md` - SMART goals, patient-centred outcomes, shared decision-making
 - `intervention-guidelines.md` - Evidence-based treatments, pharmacological and non-pharmacological
 - `regulatory-compliance.md` - HIPAA compliance, billing documentation, quality measures
 - `specialty-specific-guidelines.md` - Detailed guidelines for each treatment plan type
@@ -31,7 +31,7 @@ Skill for generating **concise, clinician-focused** medical treatment plans acro
 - `one_page_treatment_plan.tex` - **FIRST CHOICE** - Dense, scannable 1-page format (like precision oncology reports)
 - `general_medical_treatment_plan.tex` - Comprehensive medical care planning
 - `rehabilitation_treatment_plan.tex` - Functional restoration and therapy
-- `mental_health_treatment_plan.tex` - Psychiatric and behavioral health
+- `mental_health_treatment_plan.tex` - Psychiatric and behavioural health
 - `chronic_disease_management_plan.tex` - Long-term disease management
 - `perioperative_care_plan.tex` - Surgical and procedural care
 - `pain_management_plan.tex` - Multimodal pain treatment
@@ -110,7 +110,7 @@ All templates include these essential sections:
 **Short-term goals** (1-3 months):
 - Specific, measurable outcomes
 - Realistic targets with defined timeframes
-- Patient-centered priorities
+- Patient-centred priorities
 
 **Long-term goals** (6-12 months):
 - Disease control targets
@@ -121,7 +121,7 @@ All templates include these essential sections:
 ### 4. Interventions
 
 - **Pharmacological**: Medications with dosages, frequencies, monitoring
-- **Non-pharmacological**: Lifestyle modifications, behavioral interventions, education
+- **Non-pharmacological**: Lifestyle modifications, behavioural interventions, education
 - **Procedural**: Planned procedures, specialist referrals, diagnostic testing
 
 ### 5. Timeline and Schedule
@@ -243,7 +243,7 @@ Key Components:
 All treatment plans use SMART criteria for goal-setting:
 
 - **Specific**: Clear, well-defined outcome (not vague)
-- **Measurable**: Quantifiable metrics or observable behaviors
+- **Measurable**: Quantifiable metrics or observable behaviours
 - **Achievable**: Realistic given patient capabilities and resources
 - **Relevant**: Aligned with patient priorities and values
 - **Time-bound**: Specific timeframe for achievement
@@ -270,7 +270,7 @@ All treatment plans use SMART criteria for goal-setting:
 1. **Assess patient** - Complete history, physical, diagnostic testing
 2. **Select template** - Choose appropriate template for clinical context
 3. **Generate template** - `python generate_template.py --type [type]`
-4. **Customize plan** - Fill in patient-specific information (de-identified)
+4. **Customise plan** - Fill in patient-specific information (de-identified)
 5. **Set SMART goals** - Define measurable short and long-term goals
 6. **Specify interventions** - Evidence-based pharmacological and non-pharmacological
 7. **Create timeline** - Schedule appointments, milestones, reassessments
@@ -298,7 +298,7 @@ All treatment plans use SMART criteria for goal-setting:
 
 ## Best Practices
 
-### Patient-Centered Care
+### Patient-Centred Care
 ✓ Involve patients in goal-setting and decision-making  
 ✓ Respect cultural beliefs and language preferences  
 ✓ Address health literacy with appropriate language  
@@ -313,7 +313,7 @@ All treatment plans use SMART criteria for goal-setting:
 ✓ Update plans based on emerging evidence  
 
 ### Regulatory Compliance
-✓ De-identify per HIPAA Safe Harbor method (18 identifiers)  
+✓ De-identify per HIPAA Safe Harbour method (18 identifiers)  
 ✓ Document medical necessity for billing support  
 ✓ Include informed consent documentation  
 ✓ Sign and date all treatment plans  
@@ -339,7 +339,7 @@ All treatment plans use SMART criteria for goal-setting:
 ### Clinical Reports
 - **SOAP Notes**: Document treatment plan implementation and progress
 - **H&P Documents**: Initial assessment informs treatment planning
-- **Discharge Summaries**: Summarize treatment plan execution
+- **Discharge Summaries**: Summarise treatment plan execution
 - **Progress Notes**: Track goal achievement and plan modifications
 
 ### Scientific Writing
@@ -435,7 +435,7 @@ Treatment plans must demonstrate:
 - American Academy of Family Physicians (AAFP)
 - Specialty society guidelines (ADA, ACC, AHA, APA, etc.)
 - Joint Commission standards
-- Centers for Medicare & Medicaid Services (CMS)
+- Centres for Medicare & Medicaid Services (CMS)
 
 ## Frequently Asked Questions
 
@@ -460,11 +460,11 @@ Use the `chronic_disease_management_plan.tex` template for complex multimorbidit
 
 ### Can I modify the LaTeX templates?
 
-Yes! Templates are designed to be customized. Modify sections, add specialty-specific content, or adjust formatting to meet your needs.
+Yes! Templates are designed to be customised. Modify sections, add specialty-specific content, or adjust formatting to meet your needs.
 
 ### How do I ensure HIPAA compliance?
 
-- Remove all 18 HIPAA identifiers (see Safe Harbor method)
+- Remove all 18 HIPAA identifiers (see Safe Harbour method)
 - Use age ranges instead of exact ages (e.g., "60-65" not "63")
 - Remove specific dates, use relative timelines
 - Omit geographic identifiers smaller than state

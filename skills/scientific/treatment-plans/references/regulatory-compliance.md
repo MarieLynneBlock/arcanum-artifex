@@ -17,7 +17,7 @@ Treatment plans must comply with multiple federal and state regulations governin
 
 **Definition**: Any information about health status, provision of healthcare, or payment for healthcare that can be linked to a specific individual.
 
-**18 HIPAA Identifiers** (Safe Harbor Method):
+**18 HIPAA Identifiers** (Safe Harbour Method):
 1. Names
 2. Geographic subdivisions smaller than state (street address, city, county, ZIP code if <20,000 people)
 3. Dates (birth, admission, discharge, death) - except year
@@ -39,7 +39,7 @@ Treatment plans must comply with multiple federal and state regulations governin
 
 ### De-identification for Sharing Treatment Plans
 
-**Safe Harbor Method**: Remove all 18 identifiers listed above
+**Safe Harbour Method**: Remove all 18 identifiers listed above
 
 **Practical De-identification**:
 - **Name**: Use "Patient" or de-identified code (e.g., "PT-001")
@@ -306,11 +306,11 @@ Use, disclose, or request only the minimum amount of PHI necessary to accomplish
 
 ### The Joint Commission
 
-**Applicable to**: Hospitals, ambulatory care, behavioral health, long-term care, laboratories.
+**Applicable to**: Hospitals, ambulatory care, behavioural health, long-term care, laboratories.
 
 **Standards Relevant to Treatment Plans**:
 
-**Patient-Centered Care (PC)**:
+**Patient-Centred Care (PC)**:
 - Individualized care planning
 - Patient and family involvement
 - Cultural and language needs addressed
@@ -336,14 +336,14 @@ Use, disclose, or request only the minimum amount of PHI necessary to accomplish
 
 ### CARF (Commission on Accreditation of Rehabilitation Facilities)
 
-**Applicable to**: Rehabilitation, behavioral health, employment services.
+**Applicable to**: Rehabilitation, behavioural health, employment services.
 
 **Standards for Treatment Plans**:
 - Comprehensive assessment drives plan
 - Individualized goals
 - Measurable, time-specific objectives
 - Regular team review and updates
-- Person-centered (patient directs goals)
+- Person-centred (patient directs goals)
 - Transition and discharge planning
 - Outcomes measurement
 

@@ -1,6 +1,6 @@
 ---
 name: clinical-decision-support
-description: Generate professional clinical decision support (CDS) documents for pharmaceutical and clinical research settings, including patient cohort analyses (biomarker-stratified with outcomes) and treatment recommendation reports (evidence-based guidelines with decision algorithms). Supports GRADE evidence grading, statistical analysis (hazard ratios, survival curves, waterfall plots), biomarker integration, and regulatory compliance. Outputs publication-ready LaTeX/PDF format optimized for drug development, clinical research, and evidence synthesis.
+description: Generate professional clinical decision support (CDS) documents for pharmaceutical and clinical research settings, including patient cohort analyses (biomarker-stratified with outcomes) and treatment recommendation reports (evidence-based guidelines with decision algorithms). Supports GRADE evidence grading, statistical analysis (hazard ratios, survival curves, waterfall plots), biomarker integration, and regulatory compliance. Outputs publication-ready LaTeX/PDF format optimised for drug development, clinical research, and evidence synthesis.
 license: MIT License
 allowed-tools: Read Write Edit Bash
 metadata:
@@ -11,12 +11,12 @@ metadata:
 
 ## Description
 
-Generate professional clinical decision support (CDS) documents for pharmaceutical companies, clinical researchers, and medical decision-makers. This skill specializes in analytical, evidence-based documents that inform treatment strategies and drug development:
+Generate professional clinical decision support (CDS) documents for pharmaceutical companies, clinical researchers, and medical decision-makers. This skill specialises in analytical, evidence-based documents that inform treatment strategies and drug development:
 
 1. **Patient Cohort Analysis** - Biomarker-stratified group analyses with statistical outcome comparisons
 2. **Treatment Recommendation Reports** - Evidence-based clinical guidelines with GRADE grading and decision algorithms
 
-All documents are generated as publication-ready LaTeX/PDF files optimized for pharmaceutical research, regulatory submissions, and clinical guideline development.
+All documents are generated as publication-ready LaTeX/PDF files optimised for pharmaceutical research, regulatory submissions, and clinical guideline development.
 
 **Note:** For individual patient treatment plans at the bedside, use the `treatment-plans` skill instead. This skill focuses on group-level analyses and evidence synthesis for pharmaceutical/research settings.
 
@@ -53,7 +53,7 @@ All documents are generated as publication-ready LaTeX/PDF files optimized for p
 - **Evidence Grading**: GRADE system (1A/1B/2A/2B/2C), Oxford CEBM levels, quality of evidence assessment
 - **Clinical Terminology**: SNOMED-CT, LOINC, proper medical nomenclature, trial nomenclature
 - **Regulatory Compliance**: HIPAA de-identification, confidentiality headers, ICH-GCP alignment
-- **Professional Formatting**: Compact 0.5in margins, color-coded recommendations, publication-ready, suitable for regulatory submissions
+- **Professional Formatting**: Compact 0.5in margins, colour-coded recommendations, publication-ready, suitable for regulatory submissions
 
 ## Pharmaceutical and Research Use Cases
 
@@ -87,13 +87,13 @@ This skill is specifically designed for pharmaceutical and clinical research app
 
 Use this skill when you need to:
 
-- **Analyze patient cohorts** stratified by biomarkers, molecular subtypes, or clinical characteristics
+- **Analyse patient cohorts** stratified by biomarkers, molecular subtypes, or clinical characteristics
 - **Generate treatment recommendation reports** with evidence grading for clinical guidelines or pharmaceutical strategies
 - **Compare outcomes** between patient subgroups with statistical analysis (survival, response rates, hazard ratios)
 - **Produce pharmaceutical research documents** for drug development, clinical trials, or regulatory submissions
 - **Develop clinical practice guidelines** with GRADE evidence grading and decision algorithms
 - **Document biomarker-guided therapy selection** at the population level (not individual patients)
-- **Synthesize evidence** from multiple trials or real-world data sources
+- **Synthesise evidence** from multiple trials or real-world data sources
 - **Create clinical decision algorithms** with flowcharts for treatment sequencing
 
 **Do NOT use this skill for:**
@@ -105,7 +105,7 @@ Use this skill when you need to:
 
 **⚠️ MANDATORY: Every clinical decision support document MUST include at least 1-2 AI-generated figures using the scientific-schematics skill.**
 
-This is not optional. Clinical decision documents require clear visual algorithms. Before finalizing any document:
+This is not optional. Clinical decision documents require clear visual algorithms. Before finalising any document:
 1. Generate at minimum ONE schematic or diagram (e.g., clinical decision algorithm, treatment pathway, or biomarker stratification tree)
 2. For cohort analyses: include patient flow diagram
 3. For treatment recommendations: include decision flowchart
@@ -131,9 +131,9 @@ The AI will automatically:
 - Treatment pathway diagrams
 - Biomarker stratification trees
 - Patient cohort flow diagrams (CONSORT-style)
-- Survival curve visualizations
+- Survival curve visualisations
 - Molecular mechanism diagrams
-- Any complex concept that benefits from visualization
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -152,14 +152,14 @@ The first page of every CDS document should contain ONLY the executive summary w
    - Main title (e.g., "Biomarker-Stratified Cohort Analysis" or "Evidence-Based Treatment Recommendations")
    - Subtitle with disease state and focus
    
-2. **Report Information Box** (using colored tcolorbox)
+2. **Report Information Box** (using coloured tcolorbox)
    - Document type and purpose
    - Date of analysis/report
    - Disease state and patient population
    - Author/institution (if applicable)
    - Analysis framework or methodology
    
-3. **Key Findings Boxes** (3-5 colored boxes using tcolorbox)
+3. **Key Findings Boxes** (3-5 coloured boxes using tcolorbox)
    - **Primary Results** (blue box): Main efficacy/outcome findings
    - **Biomarker Insights** (green box): Key molecular subtype findings
    - **Clinical Implications** (yellow/orange box): Actionable treatment implications
@@ -169,7 +169,7 @@ The first page of every CDS document should contain ONLY the executive summary w
 **Visual Requirements:**
 - Use `\thispagestyle{empty}` to remove page numbers from page 1
 - All content must fit on page 1 (before `\newpage`)
-- Use colored tcolorbox environments with different colors for visual hierarchy
+- Use coloured tcolorbox environments with different colours for visual hierarchy
 - Boxes should be scannable and highlight most critical information
 - Use bullet points, not narrative paragraphs
 - End page 1 with `\newpage` before table of contents or detailed sections
@@ -262,7 +262,7 @@ The first page of every CDS document should contain ONLY the executive summary w
 ## Output Format
 
 **MANDATORY FIRST PAGE REQUIREMENT:**
-- **Page 1**: Full-page executive summary with 3-5 colored tcolorbox elements
+- **Page 1**: Full-page executive summary with 3-5 coloured tcolorbox elements
 - **Page 2**: Table of contents (optional)
 - **Page 3+**: Detailed sections with methods, results, figures, tables
 
@@ -273,11 +273,11 @@ The first page of every CDS document should contain ONLY the executive summary w
 - **First Page**: Always a complete executive summary spanning entire page 1 (see Document Structure section)
 
 **Visual Elements:**
-- **Colors**: 
+- **Colours**: 
   - Page 1 boxes: blue=data/information, green=biomarkers/recommendations, yellow/orange=clinical implications, red=warnings
   - Recommendation boxes (green=strong recommendation, yellow=conditional, blue=research needed)
-  - Biomarker stratification (color-coded molecular subtypes)
-  - Statistical significance (color-coded p-values, hazard ratios)
+  - Biomarker stratification (colour-coded molecular subtypes)
+  - Statistical significance (colour-coded p-values, hazard ratios)
 - **Tables**: 
   - Demographics with baseline characteristics
   - Biomarker frequency by subgroup
@@ -291,7 +291,7 @@ The first page of every CDS document should contain ONLY the executive summary w
   - TikZ decision algorithm flowcharts
   - Swimmer plots for individual patient timelines
 - **Statistics**: Hazard ratios with 95% CI, p-values, median survival times, landmark survival rates
-- **Compliance**: De-identification per HIPAA Safe Harbor, confidentiality notices for proprietary data
+- **Compliance**: De-identification per HIPAA Safe Harbour, confidentiality notices for proprietary data
 
 ## Integration
 
@@ -309,14 +309,14 @@ This skill integrates with:
 - **Focus**: Biomarker stratification, statistical comparisons, evidence grading
 - **Output**: Multi-page analytical documents (5-15 pages typical) with extensive figures and tables
 - **Use Cases**: Drug development, regulatory submissions, clinical practice guidelines, medical strategy
-- **Example**: "Analyze 60 HER2+ breast cancer patients by hormone receptor status with survival outcomes"
+- **Example**: "Analyse 60 HER2+ breast cancer patients by hormone receptor status with survival outcomes"
 
 **Treatment-Plans Skill:**
 - **Audience**: Clinicians, patients, care teams
 - **Scope**: Individual patient care planning
 - **Focus**: SMART goals, patient-specific interventions, monitoring plans
 - **Output**: Concise 1-4 page actionable care plans
-- **Use Cases**: Bedside clinical care, EMR documentation, patient-centered planning
+- **Use Cases**: Bedside clinical care, EMR documentation, patient-centred planning
 - **Example**: "Create treatment plan for a 55-year-old patient with newly diagnosed type 2 diabetes"
 
 **When to use each:**
@@ -414,7 +414,7 @@ This skill integrates with:
 
 1. **Patient Selection Transparency**: Clearly document inclusion/exclusion criteria, patient flow, and reasons for exclusions
 2. **Biomarker Clarity**: Specify assay methods, platforms (e.g., FoundationOne, Caris), cut-points, and validation status
-3. **Statistical Rigor**: 
+3. **Statistical Rigour**: 
    - Report hazard ratios with 95% confidence intervals, not just p-values
    - Include median follow-up time for survival analyses
    - Specify statistical tests used (log-rank, Cox regression, Fisher's exact)
@@ -456,16 +456,16 @@ This skill integrates with:
 
 1. **First Page Executive Summary (MANDATORY)**: 
    - ALWAYS create a complete executive summary on page 1 that spans the entire first page
-   - Use 3-5 colored tcolorbox elements to highlight key findings
+   - Use 3-5 coloured tcolorbox elements to highlight key findings
    - No table of contents or detailed sections on page 1
    - Use `\thispagestyle{empty}` and end with `\newpage`
    - This is the single most important page - it should be scannable in 60 seconds
-2. **De-identification**: Remove all 18 HIPAA identifiers before document generation (Safe Harbor method)
+2. **De-identification**: Remove all 18 HIPAA identifiers before document generation (Safe Harbour method)
 3. **Regulatory Compliance**: Include confidentiality notices for proprietary pharmaceutical data
-4. **Publication-Ready Formatting**: Use 0.5in margins, professional fonts, color-coded sections
+4. **Publication-Ready Formatting**: Use 0.5in margins, professional fonts, colour-coded sections
 5. **Reproducibility**: Document all statistical methods to enable replication
 6. **Conflict of Interest**: Disclose pharmaceutical funding or relationships when applicable
-7. **Visual Hierarchy**: Use colored boxes consistently (blue=data, green=biomarkers, yellow/orange=recommendations, red=warnings)
+7. **Visual Hierarchy**: Use coloured boxes consistently (blue=data, green=biomarkers, yellow/orange=recommendations, red=warnings)
 
 ## References
 
@@ -488,7 +488,7 @@ See the `assets/` directory for LaTeX templates:
 
 **Template Features:**
 - 0.5in margins for compact presentation
-- Color-coded recommendation boxes
+- Colour-coded recommendation boxes
 - Professional tables for demographics, biomarkers, outcomes
 - Built-in support for Kaplan-Meier curves, waterfall plots, forest plots
 - GRADE evidence grading tables
@@ -496,10 +496,10 @@ See the `assets/` directory for LaTeX templates:
 
 ## Scripts
 
-See the `scripts/` directory for analysis and visualization tools:
+See the `scripts/` directory for analysis and visualisation tools:
 - `generate_survival_analysis.py` - Kaplan-Meier curve generation with log-rank tests, hazard ratios, 95% CI
-- `create_waterfall_plot.py` - Best response visualization for cohort analyses
-- `create_forest_plot.py` - Subgroup analysis visualization with confidence intervals
+- `create_waterfall_plot.py` - Best response visualisation for cohort analyses
+- `create_forest_plot.py` - Subgroup analysis visualisation with confidence intervals
 - `create_cohort_tables.py` - Demographics, biomarker frequency, and outcomes tables
 - `build_decision_tree.py` - TikZ flowchart generation for treatment algorithms
 - `biomarker_classifier.py` - Patient stratification algorithms by molecular subtype

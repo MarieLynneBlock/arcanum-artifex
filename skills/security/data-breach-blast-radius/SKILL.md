@@ -11,7 +11,7 @@ You are a **Data Breach Impact Expert**. Your mission is to answer the most impo
 
 This skill performs a **proactive blast radius analysis**: a full audit of what sensitive data your codebase handles, how it flows, where it could leak, how many people would be affected, and what regulatory consequences would follow — before any breach occurs.
 
-> **Why this matters:** 83% of organizations have experienced more than one data breach (IBM Cost of a Data Breach Report). The global average breach cost was **$4.88M in 2024**, with the 2025 IBM report showing a 9% decrease — download the current edition at https://www.ibm.com/reports/data-breach. Organizations that identify and remediate exposure points before a breach consistently face lower regulatory fines due to demonstrable due diligence.
+> **Why this matters:** 83% of organisations have experienced more than one data breach (IBM Cost of a Data Breach Report). The global average breach cost was **$4.88M in 2024**, with the 2025 IBM report showing a 9% decrease — download the current edition at https://www.ibm.com/reports/data-breach. Organizations that identify and remediate exposure points before a breach consistently face lower regulatory fines due to demonstrable due diligence.
 
 > **What this skill produces vs. what is legally exact:**
 > - **Legally exact:** Regulatory fine maximums and breach notification timelines (sourced verbatim from GDPR Art. 83, CCPA § 1798.155, 45 CFR § 160.404, etc. — all cited in `references/sources.md`)
@@ -44,7 +44,7 @@ Unlike tools that only find vulnerabilities, this skill **quantifies business an
 4. **Identifies** all exposure vectors — where data could leak (API endpoints, logs, exports, caches, queues)
 5. **Calculates** the blast radius: estimated records affected, user population at risk, regulatory jurisdictions triggered
 6. **Quantifies** the regulatory impact (GDPR fines, CCPA penalties, HIPAA sanctions, breach notification costs)
-7. **Generates** a prioritized hardening roadmap ordered by impact-per-effort
+7. **Generates** a prioritised hardening roadmap ordered by impact-per-effort
 
 ---
 
@@ -54,9 +54,9 @@ Follow these steps **in order** every time:
 
 ### Step 1 — Scope & Stack Detection
 
-Determine what to analyze:
-- If a path was given (`/data-breach-blast-radius src/`), analyze that scope
-- If no path is given, analyze the **entire project**
+Determine what to analyse:
+- If a path was given (`/data-breach-blast-radius src/`), analyse that scope
+- If no path is given, analyse the **entire project**
 - Detect language(s) and frameworks (check `package.json`, `requirements.txt`, `go.mod`, `pom.xml`, `Cargo.toml`, `Gemfile`, `composer.json`, `.csproj`)
 - Identify the database layer (ORM models, schema files, migrations, Prisma schema, Entity Framework, Hibernate, SQLAlchemy, ActiveRecord)
 - Identify API layer (REST controllers, GraphQL schemas, gRPC proto files, OpenAPI specs)
@@ -177,7 +177,7 @@ Read `references/regulatory-impact.md` for fine calculation formulas and notific
 
 For each triggered jurisdiction:
 - Calculate the **maximum fine exposure** using formulas in `references/regulatory-impact.md`
-- Calculate the **minimum fine exposure** (realistic for first offense with cooperation)
+- Calculate the **minimum fine exposure** (realistic for first offence with cooperation)
 - Estimate the **breach notification cost** (legal, communications, credit monitoring)
 - Estimate the **reputational multiplier** (public-facing breach vs. internal tool)
 
@@ -209,7 +209,7 @@ The report MUST include:
 
 ### Step 7 — Hardening Roadmap
 
-Read `references/hardening-playbook.md` and generate a **prioritized action plan**:
+Read `references/hardening-playbook.md` and generate a **prioritised action plan**:
 
 For each critical or high-severity exposure vector:
 - **What to fix**: specific code/config change
@@ -226,7 +226,7 @@ Sort by: `(Impact × Severity) / Effort` — highest value first.
 
 - **Always** start with the Executive Summary — leadership reads this first
 - **Always** include the Sensitive Data Inventory table — this is the foundation
-- **Always** produce the Financial Impact Estimate — this drives organizational change
+- **Always** produce the Financial Impact Estimate — this drives organisational change
 - **Always** call `renderMermaidDiagram` for the Data Flow Map — never output raw Mermaid code blocks; the tool renders it as a visual diagram automatically
 - **Never** auto-apply any code changes — present the hardening roadmap for human review
 - **Be specific** — cite file paths, field names, and line numbers for every finding
@@ -254,8 +254,8 @@ Load on-demand as needed:
 
 | File | Use When | Content |
 |------|----------|---------|
-| `references/data-classification.md` | **Step 2 — always** | Complete taxonomy of PII, PHI, PCI-DSS, financial, credential, and behavioral data with detection patterns |
+| `references/data-classification.md` | **Step 2 — always** | Complete taxonomy of PII, PHI, PCI-DSS, financial, credential, and behavioural data with detection patterns |
 | `references/blast-radius-calculator.md` | **Step 4** | Scoring formulas, population scale estimators, completeness multipliers, exposure likelihood matrix |
 | `references/regulatory-impact.md` | **Step 5** | GDPR/CCPA/HIPAA/LGPD/PDPA fine formulas, notification timelines, breach cost benchmarks, jurisdiction detection patterns |
-| `references/hardening-playbook.md` | **Step 7** | Prioritized controls: encryption, access control, data minimization, tokenization, audit logging, anonymization patterns by tech stack |
+| `references/hardening-playbook.md` | **Step 7** | Prioritised controls: encryption, access control, data minimisation, tokenization, audit logging, anonymization patterns by tech stack |
 | `references/report-format.md` | **Step 6** | Full report template with Mermaid data flow diagram syntax, financial summary table, hardening roadmap format |

@@ -1,6 +1,6 @@
 ---
 name: scikit-survival
-description: Comprehensive toolkit for survival analysis and time-to-event modeling in Python using scikit-survival. Use this skill when working with censored survival data, performing time-to-event analysis, fitting Cox models, Random Survival Forests, Gradient Boosting models, or Survival SVMs, evaluating survival predictions with concordance index or Brier score, handling competing risks, or implementing any survival analysis workflow with the scikit-survival library.
+description: Comprehensive toolkit for survival analysis and time-to-event modelling in Python using scikit-survival. Use this skill when working with censored survival data, performing time-to-event analysis, fitting Cox models, Random Survival Forests, Gradient Boosting models, or Survival SVMs, evaluating survival predictions with concordance index or Brier score, handling competing risks, or implementing any survival analysis workflow with the scikit-survival library.
 license: GPL-3.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,21 +10,21 @@ metadata:
 
 ## Overview
 
-scikit-survival is a Python library for survival analysis built on top of scikit-learn. It provides specialized tools for time-to-event analysis, handling the unique challenge of censored data where some observations are only partially known.
+scikit-survival is a Python library for survival analysis built on top of scikit-learn. It provides specialised tools for time-to-event analysis, handling the unique challenge of censored data where some observations are only partially known.
 
 Survival analysis aims to establish connections between covariates and the time of an event, accounting for censored records (particularly right-censored data from studies where participants don't experience events during observation periods).
 
 ## When to Use This Skill
 
 Use this skill when:
-- Performing survival analysis or time-to-event modeling
+- Performing survival analysis or time-to-event modelling
 - Working with censored data (right-censored, left-censored, or interval-censored)
-- Fitting Cox proportional hazards models (standard or penalized)
+- Fitting Cox proportional hazards models (standard or penalised)
 - Building ensemble survival models (Random Survival Forests, Gradient Boosting)
 - Training Survival Support Vector Machines
 - Evaluating survival model performance (concordance index, Brier score, time-dependent AUC)
 - Estimating Kaplan-Meier or Nelson-Aalen curves
-- Analyzing competing risks
+- Analysing competing risks
 - Preprocessing survival data or handling missing values in survival datasets
 - Conducting any analysis using the scikit-survival library
 
@@ -37,7 +37,7 @@ scikit-survival provides multiple model families, each suited for different scen
 #### Cox Proportional Hazards Models
 **Use for**: Standard survival analysis with interpretable coefficients
 - `CoxPHSurvivalAnalysis`: Basic Cox model
-- `CoxnetSurvivalAnalysis`: Penalized Cox with elastic net for high-dimensional data
+- `CoxnetSurvivalAnalysis`: Penalised Cox with elastic net for high-dimensional data
 - `IPCRidge`: Ridge regression for accelerated failure time models
 
 **See**: `references/cox-models.md` for detailed guidance on Cox models, regularization, and interpretation
@@ -53,10 +53,10 @@ scikit-survival provides multiple model families, each suited for different scen
 
 #### Survival Support Vector Machines
 **Use for**: Medium-sized datasets with margin-based learning
-- `FastSurvivalSVM`: Linear SVM optimized for speed
+- `FastSurvivalSVM`: Linear SVM optimised for speed
 - `FastKernelSurvivalSVM`: Kernel SVM for non-linear relationships
 - `HingeLossSurvivalSVM`: SVM with hinge loss
-- `ClinicalKernelTransform`: Specialized kernel for clinical + molecular data
+- `ClinicalKernelTransform`: Specialised kernel for clinical + molecular data
 
 **See**: `references/svm-models.md` for detailed SVM guidance, kernel selection, and hyperparameter tuning
 
@@ -84,7 +84,7 @@ Start
 
 ### 2. Data Preparation and Preprocessing
 
-Before modeling, properly prepare survival data:
+Before modelling, properly prepare survival data:
 
 #### Creating Survival Outcomes
 ```python
@@ -100,7 +100,7 @@ y = Surv.from_dataframe('event', 'time', df)
 #### Essential Preprocessing Steps
 1. **Handle missing values**: Imputation strategies for features
 2. **Encode categorical variables**: One-hot encoding or label encoding
-3. **Standardize features**: Critical for SVMs and regularized Cox models
+3. **Standardise features**: Critical for SVMs and regularized Cox models
 4. **Validate data quality**: Check for negative times, sufficient events per feature
 5. **Train-test split**: Maintain similar censoring rates across splits
 
@@ -317,12 +317,12 @@ cv.fit(X, y)
 
 ## Best Practices
 
-1. **Always standardize features** for SVMs and regularized Cox models
+1. **Always standardise features** for SVMs and regularized Cox models
 2. **Use Uno's C-index** instead of Harrell's when censoring > 40%
 3. **Report multiple evaluation metrics** (C-index, integrated Brier score, time-dependent AUC)
 4. **Check proportional hazards assumption** for Cox models
 5. **Use cross-validation** for hyperparameter tuning with appropriate scorers
-6. **Validate data quality** before modeling (check for negative times, sufficient events per feature)
+6. **Validate data quality** before modelling (check for negative times, sufficient events per feature)
 7. **Compare multiple model types** to find best performance
 8. **Use permutation importance** for Random Survival Forests (not built-in importance)
 9. **Consider competing risks** when multiple event types exist
@@ -331,7 +331,7 @@ cv.fit(X, y)
 ## Common Pitfalls to Avoid
 
 1. **Using Harrell's C-index with high censoring** → Use Uno's C-index
-2. **Not standardizing features for SVMs** → Always standardize
+2. **Not standardising features for SVMs** → Always standardise
 3. **Forgetting to pass y_train to concordance_index_ipcw** → Required for IPCW calculation
 4. **Treating competing events as censored** → Use competing risks methods
 5. **Not checking for sufficient events per feature** → Rule of thumb: 10+ events per feature
@@ -343,7 +343,7 @@ cv.fit(X, y)
 
 This skill includes detailed reference files for specific topics:
 
-- **`references/cox-models.md`**: Complete guide to Cox proportional hazards models, penalized Cox (CoxNet), IPCRidge, regularization strategies, and interpretation
+- **`references/cox-models.md`**: Complete guide to Cox proportional hazards models, penalised Cox (CoxNet), IPCRidge, regularization strategies, and interpretation
 - **`references/ensemble-models.md`**: Random Survival Forests, Gradient Boosting, hyperparameter tuning, feature importance, and model selection
 - **`references/evaluation-metrics.md`**: Concordance index (Harrell's vs Uno's), time-dependent AUC, Brier score, comprehensive evaluation pipelines
 - **`references/data-handling.md`**: Data loading, preprocessing workflows, handling missing data, feature encoding, validation checks

@@ -21,7 +21,7 @@ ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/
 - **Weekly Updates**: Every Monday
   - Incremental updates to monthly release
   - Retained until next monthly release
-  - Allows synchronization with ClinVar website
+  - Allows synchronisation with ClinVar website
 
 ### Directory Structure
 
@@ -299,7 +299,7 @@ gene_counts = pathogenic.groupby('GeneSymbol').size().sort_values(ascending=Fals
 ### Known Limitations
 
 1. **VCF files exclude large variants** - Variants >10 kb not included
-2. **Historical data may be less accurate** - Older submissions had fewer standardization requirements
+2. **Historical data may be less accurate** - Older submissions had fewer standardisation requirements
 3. **Conflicting interpretations exist** - Multiple submitters may disagree
 4. **Not all variants have genomic coordinates** - Some HGVS expressions can't be mapped
 

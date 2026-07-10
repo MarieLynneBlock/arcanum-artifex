@@ -1,6 +1,6 @@
 # Scientific Reporting Standards and Guidelines
 
-This document catalogs major reporting standards and guidelines across scientific disciplines. When reviewing manuscripts, verify that authors have followed the appropriate guidelines for their study type and discipline.
+This document catalogues major reporting standards and guidelines across scientific disciplines. When reviewing manuscripts, verify that authors have followed the appropriate guidelines for their study type and discipline.
 
 ## Clinical Trials and Medical Research
 
@@ -10,9 +10,9 @@ This document catalogs major reporting standards and guidelines across scientifi
 - Trial design, participants, and interventions clearly described
 - Primary and secondary outcomes specified
 - Sample size calculation and statistical methods
-- Participant flow through trial (enrollment, allocation, follow-up, analysis)
+- Participant flow through trial (enrolment, allocation, follow-up, analysis)
 - Baseline characteristics of participants
-- Numbers analyzed in each group
+- Numbers analysed in each group
 - Outcomes and estimation with confidence intervals
 - Adverse events
 - Trial registration number and protocol access
@@ -106,10 +106,10 @@ This document catalogs major reporting standards and guidelines across scientifi
 **Key Requirements:**
 - Experimental design clearly described
 - Array design information
-- Samples (origin, preparation, labeling)
+- Samples (origin, preparation, labelling)
 - Hybridization procedures and parameters
 - Image acquisition and quantification
-- Normalization and data transformation
+- Normalisation and data transformation
 - Raw and processed data availability
 - Database accession numbers
 
@@ -122,7 +122,7 @@ This document catalogs major reporting standards and guidelines across scientifi
 - Sample information (source, preparation, QC)
 - Library preparation (protocol, adapters, size selection)
 - Sequencing platform and parameters
-- Data processing pipeline (alignment, quantification, normalization)
+- Data processing pipeline (alignment, quantification, normalisation)
 - Quality control metrics
 - Raw data deposition (SRA, GEO, ENA)
 - Processed data and analysis code availability
@@ -219,14 +219,14 @@ This document catalogs major reporting standards and guidelines across scientifi
 ## Chemistry and Chemical Biology
 
 ### MIRIBEL (Minimum Information Reporting in Bio-Nano Experimental Literature)
-**Purpose:** Nanomaterial characterization
+**Purpose:** Nanomaterial characterisation
 **Key Requirements:**
 - Nanomaterial composition and structure
-- Size, shape, and morphology characterization
+- Size, shape, and morphology characterisation
 - Surface chemistry and functionalization
 - Purity and stability
 - Experimental conditions
-- Characterization methods
+- Characterisation methods
 
 ## Quality Assessment and Bias
 
@@ -263,7 +263,7 @@ This document catalogs major reporting standards and guidelines across scientifi
 4. **Registration:** Studies pre-registered where applicable
 5. **Ethics:** Appropriate approvals and consent documented
 6. **Conflicts of Interest:** Disclosed for all authors
-7. **Statistical Rigor:** Methods appropriate and fully described
+7. **Statistical Rigour:** Methods appropriate and fully described
 8. **Completeness:** All outcomes reported, including negative results
 
 ### Red Flags for Non-Compliance

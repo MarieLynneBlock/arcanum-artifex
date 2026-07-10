@@ -6,7 +6,7 @@ Comprehensive guide to using Parallel's Task API for deep research, including pr
 
 ## Overview
 
-Deep Research transforms natural language research queries into comprehensive intelligence reports. Unlike simple search, it performs multi-step web exploration across authoritative sources and synthesizes findings with inline citations and confidence levels.
+Deep Research transforms natural language research queries into comprehensive intelligence reports. Unlike simple search, it performs multi-step web exploration across authoritative sources and synthesises findings with inline citations and confidence levels.
 
 **Key characteristics:**
 - Multi-step, multi-source research
@@ -32,7 +32,7 @@ Choosing the right processor is the most important decision. It determines resea
 | Background for grant proposal | `pro-fast` | Thorough but timely |
 | State-of-the-art review for a topic | `ultra-fast` | Maximum source coverage |
 | Quick question during writing | `core-fast` | Sub-2-minute response |
-| Breaking news or very recent events | `pro` (standard) | Freshest data prioritized |
+| Breaking news or very recent events | `pro` (standard) | Freshest data prioritised |
 | Large-scale data enrichment | `base-fast` | Cost-effective at scale |
 
 ### Processor Tiers Explained
@@ -316,7 +316,7 @@ for url in key_urls:
 
 ---
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Reducing Latency
 
@@ -332,7 +332,7 @@ for url in key_urls:
 3. **Batch related queries**: One well-crafted query > multiple simple ones
 4. **Cache results**: Store research output for reuse across sections
 
-### Maximizing Quality
+### Maximising Quality
 
 1. **Use `pro-fast` or `ultra-fast`**: More sources = better synthesis
 2. **Provide context**: "I'm writing a paper for Nature Medicine about..."
@@ -346,7 +346,7 @@ for url in key_urls:
 | Mistake | Impact | Fix |
 |---------|--------|-----|
 | Query too vague | Scattered, unfocused results | Add specific aspects and time bounds |
-| Query too long (>15K chars) | API rejection or degraded results | Summarize context, focus on key question |
+| Query too long (>15K chars) | API rejection or degraded results | Summarise context, focus on key question |
 | Wrong processor | Too slow or too shallow | Use decision matrix above |
 | Not using `description` | Report structure not aligned with needs | Add description to guide output |
 | Ignoring confidence levels | Using low-confidence data as fact | Check basis confidence before citing |

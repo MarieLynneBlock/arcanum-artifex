@@ -38,7 +38,7 @@ df[0:5]  # Row slice
 ### 4. Lazy Evaluation
 
 **Pandas:** Only eager evaluation
-**Polars:** Both eager (DataFrame) and lazy (LazyFrame) with query optimization
+**Polars:** Both eager (DataFrame) and lazy (LazyFrame) with query optimisation
 
 ### 5. Type Strictness
 
@@ -411,7 +411,7 @@ Consider staying with pandas when:
 Switch to Polars when:
 - Performance is critical
 - Working with large datasets (>1GB)
-- Need lazy evaluation and query optimization
+- Need lazy evaluation and query optimisation
 - Want better type safety
 - Need parallel execution by default
 - Starting a new project

@@ -77,7 +77,7 @@ Rule of Three for fragment screening libraries.
 rule_of_oprea(mol: Union[str, Chem.Mol]) -> bool
 ```
 
-Oprea's lead-like criteria for hit-to-lead optimization.
+Oprea's lead-like criteria for hit-to-lead optimisation.
 
 **Criteria:**
 - Molecular weight: 200-350 Da
@@ -353,13 +353,13 @@ matches = group.get_all_matches(mol_list)
 
 ---
 
-## Module: medchem.catalogs
+## Module: medchem.catalogues
 
 ### Class: NamedCatalogs
 
-Access to curated chemical catalogs.
+Access to curated chemical catalogues.
 
-**Available Catalogs:**
+**Available Catalogues:**
 - `"functional_groups"`: Common functional groups
 - `"protecting_groups"`: Protecting group structures
 - `"reagents"`: Common reagents
@@ -528,13 +528,13 @@ Process molecules in parallel batches.
 - `progress`: Show progress bar
 - `batch_size`: Size of processing batches
 
-### standardize_mol()
+### standardise_mol()
 
 ```python
 standardize_mol(mol: Chem.Mol) -> Chem.Mol
 ```
 
-Standardize molecule representation (sanitize, neutralize charges, etc.).
+Standardise molecule representation (sanitize, neutralize charges, etc.).
 
 ---
 

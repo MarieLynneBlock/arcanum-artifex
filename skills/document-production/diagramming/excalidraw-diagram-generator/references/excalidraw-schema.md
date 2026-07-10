@@ -217,9 +217,9 @@ interface Binding {
 }
 ```
 
-## Common Colors
+## Common Colours
 
-| Color Name | Hex Code | Use Case |
+| Colour Name | Hex Code | Use Case |
 |------------|----------|----------|
 | Black | `#1e1e1e` | Default stroke |
 | Light Blue | `#a5d8ff` | Primary entities |

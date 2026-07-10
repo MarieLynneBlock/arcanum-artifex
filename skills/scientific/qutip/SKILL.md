@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-QuTiP provides comprehensive tools for simulating and analyzing quantum mechanical systems. It handles both closed (unitary) and open (dissipative) quantum systems with multiple solvers optimized for different scenarios.
+QuTiP provides comprehensive tools for simulating and analysing quantum mechanical systems. It handles both closed (unitary) and open (dissipative) quantum systems with multiple solvers optimised for different scenarios.
 
 ## Installation
 
@@ -126,9 +126,9 @@ rho_ss = steadystate(H, c_ops)
 
 **See** `references/analysis.md` for entropy, fidelity, measurements, correlation functions, and steady state calculations.
 
-### 4. Visualization
+### 4. Visualisation
 
-Visualize quantum states and dynamics:
+Visualise quantum states and dynamics:
 
 ```python
 # Bloch sphere
@@ -149,11 +149,11 @@ hinton(rho)  # Hinton diagram
 matrix_histogram(H.full())  # 3D bars
 ```
 
-**See** `references/visualization.md` for Bloch sphere animations, Wigner functions, Q-functions, and matrix visualizations.
+**See** `references/visualization.md` for Bloch sphere animations, Wigner functions, Q-functions, and matrix visualisations.
 
 ### 5. Advanced Methods
 
-Specialized techniques for complex scenarios:
+Specialised techniques for complex scenarios:
 
 ```python
 # Floquet theory (periodic Hamiltonians)
@@ -172,7 +172,7 @@ psi = dicke(N, j, m)  # Dicke states
 Jz = jspin(N, 'z')  # Collective operators
 ```
 
-**See** `references/advanced.md` for Floquet theory, HEOM, permutational invariance, stochastic solvers, superoperators, and performance optimization.
+**See** `references/advanced.md` for Floquet theory, HEOM, permutational invariance, stochastic solvers, superoperators, and performance optimisation.
 
 ## Common Workflows
 

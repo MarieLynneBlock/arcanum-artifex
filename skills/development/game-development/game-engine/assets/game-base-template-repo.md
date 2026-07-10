@@ -188,7 +188,7 @@ Particle and visual effect management:
 - Particle pools
 - Screen flash
 - Slow-motion helpers
-- Color overlay effects
+- Colour overlay effects
 
 ---
 
@@ -293,7 +293,7 @@ Each frame:
   4. postUpdate()   -- Sprite position sync, camera update, rendering prep
 ```
 
-This ensures physics behavior is consistent regardless of frame rate, while rendering and visual updates remain smooth.
+This ensures physics behaviour is consistent regardless of frame rate, while rendering and visual updates remain smooth.
 
 ---
 

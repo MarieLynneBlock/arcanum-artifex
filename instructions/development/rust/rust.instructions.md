@@ -11,7 +11,7 @@ These instructions are based on [The Rust Book](https://doc.rust-lang.org/book/)
 
 ## General Instructions
 
-- Always prioritize readability, safety, and maintainability.
+- Always prioritise readability, safety, and maintainability.
 - Use strong typing and leverage Rust's ownership system for memory safety.
 - Break down complex functions into smaller, more manageable functions.
 - For algorithm-related code, include explanations of the approach used.
@@ -113,7 +113,7 @@ Eagerly implement common traits where appropriate:
 - Use semantic versioning in `Cargo.toml`.
 - Include comprehensive metadata: `description`, `license`, `repository`, `keywords`, `categories`.
 - Use feature flags for optional functionality.
-- Organize code into modules using `mod.rs` or named files.
+- Organise code into modules using `mod.rs` or named files.
 - Keep `main.rs` or `lib.rs` minimal - move logic to modules.
 
 ## Quality Checklist

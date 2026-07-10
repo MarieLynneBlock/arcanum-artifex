@@ -540,7 +540,7 @@ df = vaex.from_csv('large.csv', convert='large.hdf5')
 df = vaex.open('large.hdf5')  # Instant!
 ```
 
-### 3. Materialize Before Export
+### 3. Materialise Before Export
 
 ```python
 # If DataFrame has many virtual columns
@@ -699,5 +699,5 @@ fs.ls('s3://bucket-name/')
 ## Related Resources
 
 - For DataFrame creation: See `core-dataframes.md`
-- For performance optimization: See `performance.md`
+- For performance optimisation: See `performance.md`
 - For data processing: See `data-processing.md`

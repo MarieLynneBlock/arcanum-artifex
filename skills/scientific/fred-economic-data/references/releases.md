@@ -20,7 +20,7 @@ A "release" in FRED represents a publication of economic data, such as:
 - Gross Domestic Product (release_id=53)
 - Employment Situation (release_id=50)
 - Consumer Price Index (release_id=10)
-- Industrial Production and Capacity Utilization (release_id=13)
+- Industrial Production and Capacity Utilisation (release_id=13)
 
 Releases have scheduled publication dates and may contain multiple related series.
 
@@ -595,7 +595,7 @@ response = requests.get(
 | 53 | Gross Domestic Product |
 | 50 | Employment Situation |
 | 10 | Consumer Price Index |
-| 13 | G.17 Industrial Production and Capacity Utilization |
+| 13 | G.17 Industrial Production and Capacity Utilisation |
 | 21 | H.6 Money Stock Measures |
 | 18 | H.3 Aggregate Reserves of Depository Institutions |
 | 19 | H.4.1 Factors Affecting Reserve Balances |

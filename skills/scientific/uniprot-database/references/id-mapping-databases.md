@@ -174,7 +174,7 @@ databases = response.json()
 - `OrthoDB` - OrthoDB
 - `TreeFam` - TreeFam
 
-## Other Specialized Databases
+## Other Specialised Databases
 
 ### Glycosylation
 - `GlyConnect` - GlyConnect

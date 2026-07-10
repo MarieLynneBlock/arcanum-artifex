@@ -23,7 +23,7 @@ Following the Foundation Medicine model for genomic profiling reports, treatment
 - **Timeline Overview**: Brief treatment duration/phases (1 line)
 
 **Format Requirements:**
-- Use colored box (tcolorbox in LaTeX) to make it visually prominent
+- Use coloured box (tcolorbox in LaTeX) to make it visually prominent
 - Place immediately after title, before Patient Information section
 - Summary must fit on first page with patient demographics
 - Use concise, actionable language
@@ -33,7 +33,7 @@ Following the Foundation Medicine model for genomic profiling reports, treatment
 - **Preferred**: 1 page for most treatment plans (quick-reference format)
 - **Standard**: 3-4 pages for moderate complexity cases
 - **Extended**: 5-6 pages maximum for highly complex cases only
-- Prioritize brevity, clarity, and actionability over comprehensive detail
+- Prioritise brevity, clarity, and actionability over comprehensive detail
 - Think "clinical decision support card" not "comprehensive textbook"
 
 **Design Philosophy:**
@@ -70,7 +70,7 @@ Short-term goals (weeks to 3 months) and long-term goals (3-12+ months) should b
 
 #### Interventions
 - **Pharmacological**: Specific medications, doses, frequencies, rationales
-- **Non-pharmacological**: Lifestyle modifications, behavioral interventions, education
+- **Non-pharmacological**: Lifestyle modifications, behavioural interventions, education
 - **Procedural**: Planned procedures, specialist referrals, diagnostic testing
 
 #### Timeline and Schedule
@@ -165,7 +165,7 @@ Record that patient:
 #### Privacy and Confidentiality (HIPAA)
 - Protected Health Information (PHI) safeguarded
 - De-identification for sharing:
-  - Remove 18 HIPAA identifiers per Safe Harbor method
+  - Remove 18 HIPAA identifiers per Safe Harbour method
   - Names, dates (except year), geographic subdivisions smaller than state
   - Contact information (phone, fax, email, addresses)
   - Social Security numbers, medical record numbers, account numbers
@@ -200,7 +200,7 @@ Defensible documentation includes:
 
 ### Joint Commission Standards
 
-#### Patient-Centered Care
+#### Patient-Centred Care
 - Treatment plans developed with patient participation
 - Goals reflect patient values and preferences
 - Cultural and linguistic needs addressed
@@ -227,7 +227,7 @@ For rehabilitation treatment plans:
 - Patient and family involvement
 - Transition and discharge planning
 
-### Centers for Medicare & Medicaid Services (CMS)
+### Centres for Medicare & Medicaid Services (CMS)
 
 #### Conditions of Participation
 - Physician orders for treatment
@@ -250,11 +250,11 @@ For rehabilitation treatment plans:
 - Medication reconciliation
 - Care coordination with specialists
 
-### Behavioral Health
+### Behavioural Health
 - Mental status examination
 - Psychiatric diagnoses per DSM-5 criteria
 - Suicide/homicide risk assessment and safety planning
-- Measurable behavioral outcomes
+- Measurable behavioural outcomes
 - Crisis intervention plan
 - Substance use assessment
 - 42 CFR Part 2 compliance for substance use treatment
@@ -271,7 +271,7 @@ For rehabilitation treatment plans:
 ### Surgical/Perioperative
 - Indication for surgery documented
 - Preoperative risk assessment (ASA, RCRI)
-- Medical optimization plan
+- Medical optimisation plan
 - Enhanced Recovery After Surgery (ERAS) protocols when applicable
 - Postoperative milestones
 - Discharge criteria and planning
@@ -300,7 +300,7 @@ For rehabilitation treatment plans:
 - Avoidance of low-value care (100%)
 - Appropriate preventive care included ($\geq$95%)
 
-### Patient-Centered Metrics
+### Patient-Centred Metrics
 - Patient preferences documented ($\geq$90%)
 - Shared decision-making noted ($\geq$85%)
 - Culturally appropriate care (100%)
@@ -385,7 +385,7 @@ For rehabilitation treatment plans:
 
 **Scheduled Updates**:
 - Chronic disease management: Every 3-6 months minimum
-- Behavioral health: Every 30-90 days depending on acuity
+- Behavioural health: Every 30-90 days depending on acuity
 - Rehabilitation: Weekly to biweekly during active therapy
 - Annual comprehensive update for all chronic conditions
 
@@ -439,7 +439,7 @@ For rehabilitation treatment plans:
 ## Cultural Competence and Health Equity
 
 ### Culturally Appropriate Care
-- Recognize cultural health beliefs and practices
+- Recognise cultural health beliefs and practices
 - Address language barriers (interpreter services)
 - Respect religious and cultural preferences in treatment
 - Consider social determinants of health (housing, food security, transportation)

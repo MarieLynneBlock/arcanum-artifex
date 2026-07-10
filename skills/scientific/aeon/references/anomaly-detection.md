@@ -8,7 +8,7 @@ Detect anomalous time series within a collection:
 
 - `ClassificationAdapter` - Adapts classifiers for anomaly detection
   - Train on normal data, flag outliers during prediction
-  - **Use when**: Have labeled normal data, want classification-based approach
+  - **Use when**: Have labelled normal data, want classification-based approach
 
 - `OutlierDetectionAdapter` - Wraps sklearn outlier detectors
   - Works with IsolationForest, LOF, OneClassSVM
@@ -27,7 +27,7 @@ Use similarity metrics to identify anomalies:
   - **Use when**: Anomalies form sparse clusters
 
 - `KMeansAD` - K-means based anomaly detection
-  - Distance to nearest cluster center indicates anomaly
+  - Distance to nearest cluster centre indicates anomaly
   - **Use when**: Normal patterns cluster well
 
 - `LeftSTAMPi` - Left STAMP incremental
@@ -48,11 +48,11 @@ Use similarity metrics to identify anomalies:
 
 - `ROCKAD` - ROCKET-based semi-supervised detection
   - Uses ROCKET features for anomaly identification
-  - **Use when**: Have some labeled data, want feature-based approach
+  - **Use when**: Have some labelled data, want feature-based approach
 
 ### Distribution-Based Methods
 
-Analyze statistical distributions:
+Analyse statistical distributions:
 
 - `COPOD` - Copula-Based Outlier Detection
   - Models marginal and joint distributions
@@ -119,7 +119,7 @@ anomalies = anomaly_scores > threshold
 
 ## Evaluation Metrics
 
-Specialized metrics for anomaly detection:
+Specialised metrics for anomaly detection:
 
 ```python
 from aeon.benchmarking.metrics.anomaly_detection import (
@@ -147,8 +147,8 @@ f1 = range_f_score(y_true, y_pred, alpha=0.5)
 
 ## Best Practices
 
-1. **Normalize data**: Many methods sensitive to scale
+1. **Normalise data**: Many methods sensitive to scale
 2. **Choose window size**: For matrix profile methods, window size critical
 3. **Set threshold**: Use percentile-based or domain-specific thresholds
-4. **Validate results**: Visualize detections to verify meaningfulness
+4. **Validate results**: Visualise detections to verify meaningfulness
 5. **Handle seasonality**: Detrend/deseasonalize before detection

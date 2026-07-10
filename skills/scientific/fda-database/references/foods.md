@@ -122,13 +122,13 @@ params = {
 **Classification Levels**:
 - **Class I**: Dangerous or defective products that could cause serious health problems or death (e.g., undeclared allergens with severe risk, botulism contamination)
 - **Class II**: Products that might cause temporary health problems or pose slight threat (e.g., minor allergen issues, quality defects)
-- **Class III**: Products unlikely to cause adverse health reactions but violate FDA regulations (e.g., labeling errors, quality issues)
+- **Class III**: Products unlikely to cause adverse health reactions but violate FDA regulations (e.g., labelling errors, quality issues)
 
 **Common Recall Reasons**:
 - Undeclared allergens (milk, eggs, peanuts, tree nuts, soy, wheat, fish, shellfish, sesame)
 - Microbial contamination (Listeria, Salmonella, E. coli, etc.)
 - Foreign material contamination (metal, plastic, glass)
-- Labeling errors
+- Labelling errors
 - Improper processing/packaging
 - Chemical contamination
 
@@ -342,17 +342,17 @@ def get_recent_recalls_by_state(state_code, api_key, days=7):
 1. **Monitor allergen recalls** - Critical for food service and retail
 2. **Check distribution patterns** - Recalls may be regional or national
 3. **Track recall status** - Status changes from "Ongoing" to "Completed"
-4. **Filter by classification** - Prioritize Class I recalls for immediate action
+4. **Filter by classification** - Prioritise Class I recalls for immediate action
 5. **Use date ranges** - Focus on recent events for operational relevance
 6. **Cross-reference products** - Same product may appear in both adverse events and enforcement
 7. **Parse code_info carefully** - Lot numbers and UPCs vary in format
-8. **Consider product categories** - Industry codes help categorize products
+8. **Consider product categories** - Industry codes help categorise products
 9. **Track serious outcomes** - Hospitalization and death require immediate attention
 10. **Implement alert systems** - Automate monitoring for critical products/allergens
 
 ## Common Allergens to Monitor
 
-The FDA recognizes 9 major food allergens that must be declared:
+The FDA recognises 9 major food allergens that must be declared:
 1. Milk
 2. Eggs
 3. Fish

@@ -6,7 +6,7 @@ This reference covers creating and managing annotations in OMERO, including tags
 
 OMERO supports several annotation types:
 
-- **TagAnnotation**: Text labels for categorization
+- **TagAnnotation**: Text labels for categorisation
 - **MapAnnotation**: Key-value pairs for structured metadata
 - **FileAnnotation**: File attachments (PDFs, CSVs, analysis results, etc.)
 - **CommentAnnotation**: Free-text comments
@@ -676,7 +676,7 @@ with BlitzGateway(USERNAME, PASSWORD, host=HOST, port=PORT) as conn:
 
 ## Best Practices
 
-1. **Use Namespaces**: Always use namespaces to organize annotations
+1. **Use Namespaces**: Always use namespaces to organise annotations
 2. **Descriptive Tags**: Use clear, consistent tag names
 3. **Structured Metadata**: Prefer map annotations over comments for structured data
 4. **File Organization**: Use descriptive filenames and MIME types

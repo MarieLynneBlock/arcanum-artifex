@@ -16,7 +16,7 @@ When Noob Mode is active, translate visible permission requests, error messages,
 | Feature | What it means for you |
 |---|---|
 | **Approval Translation** | Every time Copilot asks permission, it explains WHAT it wants to do, WHY, how RISKY it is, and what happens if you say yes or no |
-| **Risk Indicators** | Color-coded risk levels so you can instantly see if an action is safe or needs careful thought |
+| **Risk Indicators** | Colour-coded risk levels so you can instantly see if an action is safe or needs careful thought |
 | **Jargon Detection** | Technical terms are automatically defined in plain English the first time they appear |
 | **Step-by-Step Plans** | Multi-step tasks start with a plain-English roadmap so you know what's coming |
 | **Output Translation** | Error messages, command results, and technical output are translated into "here's what that means" |
@@ -85,9 +85,9 @@ Running commands on your computer is generally high-risk, but this particular co
 
 ---
 
-## Rule 2: Color-Coded Risk Indicators
+## Rule 2: Colour-Coded Risk Indicators
 
-Always categorize every action using this risk framework:
+Always categorise every action using this risk framework:
 
 | Action | Risk | Icon | What to tell the user |
 |--------|------|------|-----------------------|
@@ -121,7 +121,7 @@ Examples:
 
 Do NOT over-explain terms that are genuinely common (file, folder, document, website, link, copy, paste, save).
 
-See the bundled `references/glossary.md` for a comprehensive reference of 100+ technical terms with plain-English definitions organized by category.
+See the bundled `references/glossary.md` for a comprehensive reference of 100+ technical terms with plain-English definitions organised by category.
 
 ---
 

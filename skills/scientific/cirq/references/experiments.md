@@ -257,7 +257,7 @@ print(f"Ground state energy: {result.fun}")
 print(f"Optimal parameters: {result.x}")
 ```
 
-### Quantum Approximate Optimization Algorithm (QAOA)
+### Quantum Approximate Optimisation Algorithm (QAOA)
 
 ```python
 def qaoa_circuit(graph, params, p_layers):
@@ -447,7 +447,7 @@ def process_fidelity(result1, result2):
     return fidelity
 ```
 
-## Visualization
+## Visualisation
 
 ### Plot Parameter Landscapes
 

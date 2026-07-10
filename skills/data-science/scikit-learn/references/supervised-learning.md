@@ -2,7 +2,7 @@
 
 ## Overview
 
-Supervised learning algorithms learn from labeled training data to make predictions on new data. Scikit-learn provides comprehensive implementations for both classification and regression tasks.
+Supervised learning algorithms learn from labelled training data to make predictions on new data. Scikit-learn provides comprehensive implementations for both classification and regression tasks.
 
 ## Linear Models
 
@@ -276,12 +276,12 @@ model = StackingClassifier(
 model.fit(X_train, y_train)
 ```
 
-## K-Nearest Neighbors
+## K-Nearest Neighbours
 
 **KNeighborsClassifier / KNeighborsRegressor**
 - Non-parametric method based on distance
 - Key parameters:
-  - `n_neighbors`: Number of neighbors (default=5)
+  - `n_neighbors`: Number of neighbours (default=5)
   - `weights`: 'uniform' or 'distance'
   - `metric`: Distance metric ('euclidean', 'manhattan', etc.)
 - Use when: Small dataset, simple baseline needed
@@ -375,4 +375,4 @@ model.fit(X_train_scaled, y_train)
 **Common starting points:**
 1. Logistic Regression (classification) / Linear Regression (regression) - fast baseline
 2. Random Forest - good default choice
-3. Gradient Boosting - optimize for best accuracy
+3. Gradient Boosting - optimise for best accuracy

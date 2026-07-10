@@ -1,6 +1,6 @@
 ---
 name: pytorch-lightning
-description: Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.
+description: Deep learning framework (PyTorch Lightning). Organise PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,13 +10,13 @@ metadata:
 
 ## Overview
 
-PyTorch Lightning is a deep learning framework that organizes PyTorch code to eliminate boilerplate while maintaining full flexibility. Automate training workflows, multi-device orchestration, and implement best practices for neural network training and scaling across multiple GPUs/TPUs.
+PyTorch Lightning is a deep learning framework that organises PyTorch code to eliminate boilerplate while maintaining full flexibility. Automate training workflows, multi-device orchestration, and implement best practices for neural network training and scaling across multiple GPUs/TPUs.
 
 ## When to Use This Skill
 
 This skill should be used when:
 - Building, training, or deploying neural networks using PyTorch Lightning
-- Organizing PyTorch code into LightningModules
+- Organising PyTorch code into LightningModules
 - Configuring Trainers for multi-GPU/TPU training
 - Implementing data pipelines with LightningDataModules
 - Working with callbacks, logging, and distributed training strategies (DDP, FSDP, DeepSpeed)
@@ -26,7 +26,7 @@ This skill should be used when:
 
 ### 1. LightningModule - Model Definition
 
-Organize PyTorch models into six logical sections:
+Organise PyTorch models into six logical sections:
 
 1. **Initialization** - `__init__()` and `setup()`
 2. **Training Loop** - `training_step(batch, batch_idx)`

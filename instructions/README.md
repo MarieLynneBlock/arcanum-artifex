@@ -1,6 +1,6 @@
 # Instructions
 
-Classified Copilot instruction files, organized to stay close to the existing `skills/` taxonomy for easier discovery.
+Classified Copilot instruction files, organised to stay close to the existing `skills/` taxonomy for easier discovery.
 
 ## Structure
 

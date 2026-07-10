@@ -117,7 +117,7 @@ buffer_1km = gdf.geometry.buffer(1000)  # 1000 meters
 
 ### Web Mercator Warning
 
-⚠️ **EPSG:3857 (Web Mercator) for visualization only**
+⚠️ **EPSG:3857 (Web Mercator) for visualisation only**
 
 ```python
 # DON'T use Web Mercator for area calculations

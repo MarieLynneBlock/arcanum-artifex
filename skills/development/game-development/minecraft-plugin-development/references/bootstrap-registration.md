@@ -46,7 +46,7 @@ Recommended rules:
 - always add new commands to `plugin.yml`
 - if a command may be optional or renamed, null-check `getCommand`
 - if tab completion exists, register it in the same change
-- keep usage, permission, and permission-message aligned with actual code behavior
+- keep usage, permission, and permission-message aligned with actual code behaviour
 
 ## Listener registration rules
 
@@ -57,7 +57,7 @@ Observed practices:
 
 Recommended rules:
 
-- keep registration centralized in the main plugin class or a clearly named bootstrap helper
+- keep registration centralised in the main plugin class or a clearly named bootstrap helper
 - inject services explicitly instead of having listeners discover globals everywhere
 - if a listener depends on a task, GUI, or manager, construct that dependency first
 
@@ -96,5 +96,5 @@ When generating code for startup or shutdown, mention:
 
 - which config or resource files must exist
 - which commands or listeners must be registered
-- what tasks must be started or canceled
+- what tasks must be started or cancelled
 - what resources require cleanup on disable

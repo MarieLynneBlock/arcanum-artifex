@@ -53,7 +53,7 @@ Follow these steps for every draw.io task:
 
 ## Mandatory Style Conventions
 
-### Semantic Color Palette — Use consistently across the project
+### Semantic Colour Palette — Use consistently across the project
 
 | Role | fillColor | strokeColor |
 |---|---|---|
@@ -64,7 +64,7 @@ Follow these steps for every draw.io task:
 | Neutral / Interface | `#f5f5f5` | `#666666` |
 | External / Partner | `#e1d5e7` | `#9673a6` |
 
-### BPMN Color Override — Process view only
+### BPMN Colour Override — Process view only
 
 When generating BPMN process diagrams (including `process-view-bpmn.drawio` in this workflow), map BPMN elements to the semantic palette above using this table:
 
@@ -102,7 +102,7 @@ edgeStyle=orthogonalEdgeStyle;html=1;
 | Architecture | `swimlane` per tier | `rounded=1` services, cloud/DB shapes | `orthogonalEdgeStyle` with labels |
 | Sequence | None | `mxgraph.uml.actor`, dashed lifeline edges | `endArrow=block` (sync), `endArrow=open;dashed=1` (return) |
 | ER Diagram | `shape=table;childLayout=tableLayout` | `shape=tableRow`, `shape=partialRectangle` | `entityRelationEdgeStyle;endArrow=ERmany;startArrow=ERone` |
-| UML Class | `swimlane` per class | text rows for attributes/methods | `endArrow=block;endFill=0` (inherit), `dashed=1` (realize) |
+| UML Class | `swimlane` per class | text rows for attributes/methods | `endArrow=block;endFill=0` (inherit), `dashed=1` (realise) |
 
 ---
 
@@ -138,7 +138,7 @@ edgeStyle=orthogonalEdgeStyle;html=1;
 - [ ] All vertex cells have `<mxGeometry as="geometry">`
 - [ ] All cells (except id=0) have a valid `parent`
 - [ ] XML is well-formed — no unclosed tags, no bare `&`, `<`, `>` in attribute values
-- [ ] Semantic color palette used consistently
+- [ ] Semantic colour palette used consistently
 - [ ] Title cell present on every page
 
 ```bash
@@ -155,7 +155,7 @@ python skills/draw-io-diagram-generator/scripts/validate-drawio.py <file.drawio>
 | `skills/draw-io-diagram-generator/SKILL.md` | Full agent workflow, XML recipes, troubleshooting |
 | `skills/draw-io-diagram-generator/references/drawio-xml-schema.md` | Complete mxCell attribute reference |
 | `skills/draw-io-diagram-generator/references/style-reference.md` | All style keys, shape names, edge types |
-| `skills/draw-io-diagram-generator/references/shape-libraries.md` | Shape library catalog with style strings |
+| `skills/draw-io-diagram-generator/references/shape-libraries.md` | Shape library catalogue with style strings |
 | `skills/draw-io-diagram-generator/assets/templates/` | Ready-to-use `.drawio` templates per diagram type |
 | `skills/draw-io-diagram-generator/scripts/validate-drawio.py` | XML structure validator |
 | `skills/draw-io-diagram-generator/scripts/add-shape.py` | CLI: add a shape to an existing diagram |

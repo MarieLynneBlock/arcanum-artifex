@@ -32,7 +32,7 @@ fig, axes = plt.subplots(2, 2, figsize=(12, 10))
 
 ### Axes
 
-The actual plotting area where data is visualized.
+The actual plotting area where data is visualised.
 
 **Creation:**
 ```python
@@ -73,7 +73,7 @@ ax = fig.add_subplot(111)  # Alternative method
 - `ax.text(x, y, text, fontsize=12)` - Add text
 - `ax.annotate(text, xy=(x, y), xytext=(x2, y2), arrowprops={})` - Annotate with arrow
 
-**Customization Methods:**
+**Customisation Methods:**
 
 **Labels and titles:**
 - `ax.set_xlabel(label, fontsize=12)` - Set x-axis label
@@ -89,7 +89,7 @@ ax = fig.add_subplot(111)  # Alternative method
 **Ticks:**
 - `ax.set_xticks(positions)` - Set x-tick positions
 - `ax.set_xticklabels(labels)` - Set x-tick labels
-- `ax.tick_params(axis='both', labelsize=10)` - Customize tick appearance
+- `ax.tick_params(axis='both', labelsize=10)` - Customise tick appearance
 
 **Grid and spines:**
 - `ax.grid(True, alpha=0.3, linestyle='--')` - Add grid
@@ -158,7 +158,7 @@ High-level interface for quick plotting.
 - `'x'` - X marker
 - `'D'`, `'d'` - Diamond markers
 
-### Color Specifications
+### Colour Specifications
 
 **Single character shortcuts:**
 - `'b'` - Blue
@@ -170,9 +170,9 @@ High-level interface for quick plotting.
 - `'k'` - Black
 - `'w'` - White
 
-**Named colors:**
+**Named colours:**
 - `'steelblue'`, `'coral'`, `'teal'`, etc.
-- See full list: https://matplotlib.org/stable/gallery/color/named_colors.html
+- See full list: https://matplotlib.org/stable/gallery/colour/named_colours.html
 
 **Other formats:**
 - Hex: `'#FF5733'`
@@ -239,7 +239,7 @@ ax.text(x, y, text,
 
 ## rcParams Configuration
 
-Common rcParams settings for global customization:
+Common rcParams settings for global customisation:
 
 ```python
 # Font settings

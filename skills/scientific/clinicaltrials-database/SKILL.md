@@ -17,10 +17,10 @@ ClinicalTrials.gov is a comprehensive registry of clinical studies conducted wor
 This skill should be used when working with clinical trial data in scenarios such as:
 
 - **Patient matching** - Finding recruiting trials for specific conditions or patient populations
-- **Research analysis** - Analyzing clinical trial trends, outcomes, or study designs
+- **Research analysis** - Analysing clinical trial trends, outcomes, or study designs
 - **Drug/intervention research** - Identifying trials testing specific drugs or interventions
 - **Geographic searches** - Locating trials in specific locations or regions
-- **Sponsor/organization tracking** - Finding trials conducted by specific institutions
+- **Sponsor/organisation tracking** - Finding trials conducted by specific institutions
 - **Data export** - Extracting clinical trial data for further analysis or reporting
 - **Trial monitoring** - Tracking status updates or results for specific trials
 - **Eligibility screening** - Reviewing inclusion/exclusion criteria for trials
@@ -162,7 +162,7 @@ for study in results['studies']:
 
 ### 4. Search by Sponsor/Organization
 
-Find trials conducted by specific organizations using the `query.spons` parameter.
+Find trials conducted by specific organisations using the `query.spons` parameter.
 
 **Example: Find trials sponsored by NCI**
 
@@ -186,7 +186,7 @@ for study in results['studies']:
 
 **Common use cases:**
 - Tracking institutional research portfolios
-- Analyzing funding organization priorities
+- Analysing funding organisation priorities
 - Identifying collaboration opportunities
 
 ### 5. Filter by Study Status
@@ -201,7 +201,7 @@ Filter trials by recruitment or completion status using the `filter.overallStatu
 - `SUSPENDED` - Temporarily halted
 - `TERMINATED` - Stopped prematurely
 - `COMPLETED` - Study has concluded
-- `WITHDRAWN` - Withdrawn prior to enrollment
+- `WITHDRAWN` - Withdrawn prior to enrolment
 
 **Example: Find recently completed trials with results**
 
@@ -336,7 +336,7 @@ print("Data exported to heart_disease_trials.csv")
 
 **Note:** CSV format returns a string instead of JSON dictionary.
 
-### 9. Extract and Summarize Study Information
+### 9. Extract and Summarise Study Information
 
 Extract key information for quick overview or reporting.
 
@@ -422,7 +422,7 @@ Load this reference when working with unfamiliar API features or troubleshooting
 
 The API has a rate limit of approximately 50 requests per minute. For bulk data retrieval:
 
-1. Use maximum page size (1000) to minimize requests
+1. Use maximum page size (1000) to minimise requests
 2. Implement exponential backoff on rate limit errors (429 status)
 3. Add delays between requests for large-scale data collection
 

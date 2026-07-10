@@ -29,7 +29,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 - **Figures**: 
   - Format: TIFF, EPS, PDF (vector preferred)
   - Resolution: 300-600 dpi for photos, 1000 dpi for line art
-  - Color: RGB or CMYK
+  - Colour: RGB or CMYK
   - Size: Fit to single column (89 mm) or double column (183 mm)
   - Legends: Provided separately, not embedded in figure
 - **Tables**: Editable format (Word, Excel), not as images
@@ -68,7 +68,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 **Formatting**: Same as Nature Communications (Nature family journals share similar formatting)
 
 **Discipline-Specific Notes**:
-- **Nature Methods**: Emphasize methodological innovation and validation
+- **Nature Methods**: Emphasise methodological innovation and validation
 - **Nature Biotechnology**: Focus on biotechnology applications and translation
 - **Nature Machine Intelligence**: AI/ML applications across disciplines
 
@@ -85,7 +85,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 - **Length**: 
   - Research Articles: 2,500 words (text only, excluding refs/figs)
   - Reports: 2,500 words maximum
-- **Structure**: Title, Authors, Affiliations, Abstract (≤125 words), Main text, Materials and Methods, References, Acknowledgments, Supplementary Materials
+- **Structure**: Title, Authors, Affiliations, Abstract (≤125 words), Main text, Materials and Methods, References, Acknowledgements, Supplementary Materials
 - **Format**: Single column for submission
 - **Font**: Times New Roman, 12pt
 - **Line spacing**: Double-spaced
@@ -97,7 +97,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 - **Figures**: 
   - Format: PDF, EPS, TIFF
   - Resolution: 300 dpi minimum
-  - Color: RGB
+  - Colour: RGB
   - Size: Maximum width 9 cm (single column) or 18.3 cm (double column)
   - Figures count toward page limit
 - **Tables**: Include in main text or as separate files
@@ -150,7 +150,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 - **Figures**:
   - Format: TIFF, EPS, PDF, PNG
   - Resolution: 300-600 dpi
-  - Color: RGB
+  - Colour: RGB
   - Legends: Provided in main text after references
 - **Tables**: Editable format, one per page
 - **Data Availability**: Statement required
@@ -167,7 +167,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 **Formatting**: Similar to PLOS ONE with discipline-specific variations
 
 **Key Differences**:
-- PLOS Biology: More selective, emphasizes broad significance
+- PLOS Biology: More selective, emphasises broad significance
 - PLOS Comp Bio: Focus on computational methods and models
 
 ---
@@ -183,7 +183,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 - **Length**: 
   - Articles: ~5,000 words (excluding Methods, References)
   - Short Articles: ~2,500 words
-- **Structure**: Summary (≤150 words), Keywords, Introduction, Results, Discussion, Experimental Procedures, Acknowledgments, Author Contributions, Declaration of Interests, References
+- **Structure**: Summary (≤150 words), Keywords, Introduction, Results, Discussion, Experimental Procedures, Acknowledgements, Author Contributions, Declaration of Interests, References
 - **Format**: Double-spaced
 - **Font**: 12pt
 - **Margins**: 1 inch all sides
@@ -194,7 +194,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 - **Figures**:
   - Format: TIFF, EPS preferred
   - Resolution: 300 dpi photos, 1000 dpi line art
-  - Color: RGB or CMYK
+  - Colour: RGB or CMYK
   - Multipanel figures common
 - **Tables**: Editable format
 - **eTOC Blurb**: 30-50 word summary required
@@ -221,7 +221,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 
 **Formatting Requirements**:
 - **Length**: Varies by transaction (typically 8-12 pages in final format)
-- **Structure**: Abstract, Index Terms, Introduction, [Body sections], Conclusion, Acknowledgment, References, Biographies
+- **Structure**: Abstract, Index Terms, Introduction, [Body sections], Conclusion, Acknowledgement, References, Biographies
 - **Format**: Two-column
 - **Font**: Times New Roman, 10pt
 - **Column spacing**: 0.17 inch (4.23 mm)
@@ -235,8 +235,8 @@ Comprehensive formatting requirements and submission guidelines for major scient
   - Example: [1] J. D. Watson and F. H. C. Crick, "Molecular structure of nucleic acids," *Nature*, vol. 171, pp. 737-738, Apr. 1953.
 - **Figures**:
   - Format: EPS, PDF (vector), TIFF (raster)
-  - Resolution: 600-1200 dpi line art, 300 dpi grayscale/color
-  - Color: RGB for online, CMYK for print if needed
+  - Resolution: 600-1200 dpi line art, 300 dpi grayscale/colour
+  - Colour: RGB for online, CMYK for print if needed
   - Position: Top or bottom of column
 - **Tables**: LaTeX table environment, positioned at top/bottom
 - **Equations**: Numbered consecutively
@@ -270,7 +270,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 
 **Formatting Requirements**:
 - **Length**: No strict limit
-- **Structure**: Abstract, CCS Concepts, Keywords, ACM Reference Format, Introduction, [Body], Conclusion, Acknowledgments, References
+- **Structure**: Abstract, CCS Concepts, Keywords, ACM Reference Format, Introduction, [Body], Conclusion, Acknowledgements, References
 - **Format**: Two-column (final), single-column for submission OK
 - **Font**: Depends on template (usually 9-10pt)
 - **Class**: Use `acmart` LaTeX document class
@@ -370,7 +370,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 
 **Formatting Requirements**:
 - **Length**: Varies by article type (Research Article ~12 pages, Brief Research Report ~4 pages)
-- **Structure**: Abstract, Keywords, Introduction, Materials and Methods, Results, Discussion, Conclusion, Data Availability Statement, Ethics Statement, Author Contributions, Funding, Acknowledgments, Conflict of Interest, References
+- **Structure**: Abstract, Keywords, Introduction, Materials and Methods, Results, Discussion, Conclusion, Data Availability Statement, Ethics Statement, Author Contributions, Funding, Acknowledgements, Conflict of Interest, References
 - **Format**: Single column
 - **Font**: Times New Roman, 12pt
 - **Line spacing**: Double
@@ -389,7 +389,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 
 ---
 
-## Specialized Journals
+## Specialised Journals
 
 ### PNAS (Proceedings of the National Academy of Sciences)
 
@@ -397,7 +397,7 @@ Comprehensive formatting requirements and submission guidelines for major scient
 - **Length**: 6 pages (text, figures, tables combined)
 - **Abstract**: 250 words max
 - **Significance Statement**: 120 words max (required)
-- **Structure**: Abstract, Significance, Main text, Materials and Methods, Acknowledgments, References
+- **Structure**: Abstract, Significance, Main text, Materials and Methods, Acknowledgements, References
 - **Format**: Single column
 - **Citations**: Numbered
 - **References**: PNAS style

@@ -14,7 +14,7 @@ This comprehensive checklist helps identify gaps between your current Quality Ma
 1. Assess current status
 2. Identify existing documentation
 3. Note gaps or deficiencies
-4. Prioritize actions needed
+4. Prioritise actions needed
 5. Assign responsibility and target dates
 
 ---
@@ -92,10 +92,10 @@ This comprehensive checklist helps identify gaps between your current Quality Ma
 
 | # | Requirement | Status | Evidence | Gaps | Action Required |
 |---|------------|--------|----------|------|-----------------|
-| 5.3.a | Policy appropriate to organization | | | | |
+| 5.3.a | Policy appropriate to organisation | | | | |
 | 5.3.b | Includes commitment to meet requirements and maintain effectiveness | | | | |
 | 5.3.c | Provides framework for quality objectives | | | | |
-| 5.3.d | Communicated and understood within organization | | | | |
+| 5.3.d | Communicated and understood within organisation | | | | |
 | 5.3.e | Reviewed for continuing suitability | | | | |
 
 ### 5.4 Planning
@@ -181,9 +181,9 @@ This comprehensive checklist helps identify gaps between your current Quality Ma
 
 ---
 
-## Clause 7: Product Realization
+## Clause 7: Product Realisation
 
-### 7.1 Planning of Product Realization
+### 7.1 Planning of Product Realisation
 
 | # | Requirement | Status | Evidence | Gaps | Action Required |
 |---|------------|--------|----------|------|-----------------|
@@ -202,7 +202,7 @@ This comprehensive checklist helps identify gaps between your current Quality Ma
 | 7.2.1.a | Requirements specified by customer determined | | | | |
 | 7.2.1.b | Requirements not stated but necessary determined | | | | |
 | 7.2.1.c | Applicable regulatory requirements determined | | | | |
-| 7.2.1.d | Additional requirements determined by organization | | | | |
+| 7.2.1.d | Additional requirements determined by organisation | | | | |
 | 7.2.2 | Product requirements reviewed before commitment | | | | |
 | 7.2.2 | Requirements defined and documented | | | | |
 | 7.2.2 | Differences resolved | | | | |
@@ -300,7 +300,7 @@ This comprehensive checklist helps identify gaps between your current Quality Ma
 | 7.5.3 | Verification of installation conducted | | | | |
 | 7.5.3 | Records of installation and verification maintained | | | | |
 | 7.5.4 | Servicing procedures documented (if applicable) | | | | |
-| 7.5.4 | Servicing records analyzed for feedback | | | | |
+| 7.5.4 | Servicing records analysed for feedback | | | | |
 | 7.5.4 | Records of servicing maintained | | | | |
 | 7.5.5 | Records of sterilization process parameters maintained (if applicable) | | | | |
 | 7.5.6 | Processes validated where output cannot be verified | | | | |
@@ -316,7 +316,7 @@ This comprehensive checklist helps identify gaps between your current Quality Ma
 | 7.5.7 | Sterilization process validation records maintained (if applicable) | | | | |
 | 7.5.7 | Sterile barrier system validation records maintained (if applicable) | | | | |
 | 7.5.8 | Product identification procedures documented | | | | |
-| 7.5.8 | Product identified by suitable means throughout realization | | | | |
+| 7.5.8 | Product identified by suitable means throughout realisation | | | | |
 | 7.5.8 | Records of identification maintained where traceability required | | | | |
 | 7.5.9.1 | Traceability extent defined and documented | | | | |
 | 7.5.9.1 | Distribution and location documented | | | | |
@@ -377,7 +377,7 @@ This comprehensive checklist helps identify gaps between your current Quality Ma
 | 8.2.2 | Requirements for handling, investigating complaints | | | | |
 | 8.2.2 | Requirements for reporting to regulatory authorities | | | | |
 | 8.2.2 | Requirements for informing customer of actions | | | | |
-| 8.2.2 | Complaint information transferred to organization | | | | |
+| 8.2.2 | Complaint information transferred to organisation | | | | |
 | 8.2.2 | Records of complaints and investigations maintained | | | | |
 | 8.2.3 | Regulatory reporting procedure established | | | | |
 | 8.2.3 | Notification to regulatory authorities per requirements | | | | |
@@ -432,7 +432,7 @@ This comprehensive checklist helps identify gaps between your current Quality Ma
 
 | # | Requirement | Status | Evidence | Gaps | Action Required |
 |---|------------|--------|----------|------|-----------------|
-| 8.4 | Appropriate data determined, collected, and analyzed | | | | |
+| 8.4 | Appropriate data determined, collected, and analysed | | | | |
 | 8.4 | Continual improvement opportunities evaluated | | | | |
 | 8.4 | Procedures for data analysis established | | | | |
 | 8.4.a | Analysis provides information on customer satisfaction | | | | |
@@ -468,7 +468,7 @@ This comprehensive checklist helps identify gaps between your current Quality Ma
 
 ---
 
-## Summary and Prioritization
+## Summary and Prioritisation
 
 ### Gap Summary by Clause
 
@@ -477,7 +477,7 @@ This comprehensive checklist helps identify gaps between your current Quality Ma
 | 4. QMS | | | | | | |
 | 5. Management | | | | | | |
 | 6. Resources | | | | | | |
-| 7. Product Realization | | | | | | |
+| 7. Product Realisation | | | | | | |
 | 8. Measurement & Improvement | | | | | | |
 | **TOTAL** | | | | | | |
 

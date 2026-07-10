@@ -18,7 +18,7 @@ This skill should be used when:
 
 - Querying gene information by symbol or Ensembl ID
 - Retrieving DNA, transcript, or protein sequences
-- Analyzing genetic variants using the Variant Effect Predictor (VEP)
+- Analysing genetic variants using the Variant Effect Predictor (VEP)
 - Finding orthologs and paralogs across species
 - Accessing regulatory features and genomic annotations
 - Converting coordinates between genome assemblies (e.g., GRCh37 to GRCh38)
@@ -279,7 +279,7 @@ uv pip install requests
 2. Find orthologs in target species
 3. Retrieve sequences for all orthologs
 4. Compare gene structures and features
-5. Analyze evolutionary conservation
+5. Analyse evolutionary conservation
 
 ## Species and Assembly Information
 

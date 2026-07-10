@@ -10,20 +10,20 @@ metadata:
 
 ## Overview
 
-Pymatgen is a comprehensive Python library for materials analysis that powers the Materials Project. Create, analyze, and manipulate crystal structures and molecules, compute phase diagrams and thermodynamic properties, analyze electronic structure (band structures, DOS), generate surfaces and interfaces, and access Materials Project's database of computed materials. Supports 100+ file formats from various computational codes.
+Pymatgen is a comprehensive Python library for materials analysis that powers the Materials Project. Create, analyse, and manipulate crystal structures and molecules, compute phase diagrams and thermodynamic properties, analyse electronic structure (band structures, DOS), generate surfaces and interfaces, and access Materials Project's database of computed materials. Supports 100+ file formats from various computational codes.
 
 ## When to Use This Skill
 
 This skill should be used when:
 - Working with crystal structures or molecular systems in materials science
 - Converting between structure file formats (CIF, POSCAR, XYZ, etc.)
-- Analyzing symmetry, space groups, or coordination environments
+- Analysing symmetry, space groups, or coordination environments
 - Computing phase diagrams or assessing thermodynamic stability
-- Analyzing electronic structure data (band gaps, DOS, band structures)
+- Analysing electronic structure data (band gaps, DOS, band structures)
 - Generating surfaces, slabs, or studying interfaces
 - Accessing the Materials Project database programmatically
 - Setting up high-throughput computational workflows
-- Analyzing diffusion, magnetism, or mechanical properties
+- Analysing diffusion, magnetism, or mechanical properties
 - Working with VASP, Gaussian, Quantum ESPRESSO, or other computational codes
 
 ## Quick Start Guide
@@ -168,7 +168,7 @@ python scripts/structure_converter.py *.cif --output-dir ./poscar_files --format
 
 ### 3. Structure Analysis and Symmetry
 
-Analyze structures for symmetry, coordination, and other properties.
+Analyse structures for symmetry, coordination, and other properties.
 
 **Symmetry analysis:**
 ```python
@@ -212,7 +212,7 @@ python scripts/structure_analyzer.py structure.cif --symmetry --export json
 
 ### 4. Phase Diagrams and Thermodynamics
 
-Construct phase diagrams and analyze thermodynamic stability.
+Construct phase diagrams and analyse thermodynamic stability.
 
 **Phase diagram construction:**
 ```python
@@ -259,7 +259,7 @@ python scripts/phase_diagram_generator.py Li-Fe-O --analyze "LiFeO2" --show
 
 ### 5. Electronic Structure Analysis
 
-Analyze band structures, density of states, and electronic properties.
+Analyse band structures, density of states, and electronic properties.
 
 **Band structure:**
 ```python
@@ -302,7 +302,7 @@ plotter.show()
 
 ### 6. Surface and Interface Analysis
 
-Generate slabs, analyze surfaces, and study interfaces.
+Generate slabs, analyse surfaces, and study interfaces.
 
 **Slab generation:**
 ```python
@@ -614,12 +614,12 @@ E_surf *= 16.021766  # Convert eV/Ų to J/m²
 1. **Use input sets**: Prefer `MPRelaxSet`, `MPStaticSet` over manual INCAR
 2. **Check convergence**: Always verify calculations converged
 3. **Track transformations**: Use `TransformedStructure` for provenance
-4. **Organize calculations**: Use clear directory structures
+4. **Organise calculations**: Use clear directory structures
 
 ### Performance
 
 1. **Reduce symmetry**: Use primitive cells when possible
-2. **Limit neighbor searches**: Specify reasonable cutoff radii
+2. **Limit neighbour searches**: Specify reasonable cutoff radii
 3. **Use appropriate methods**: Different analysis tools have different speed/accuracy tradeoffs
 4. **Parallelize when possible**: Many operations can be parallelized
 

@@ -6,18 +6,18 @@ metadata:
   skill-author: 'K-Dense Inc.'
 ---
 
-# Statsmodels: Statistical Modeling and Econometrics
+# Statsmodels: Statistical Modelling and Econometrics
 
 ## Overview
 
-Statsmodels is Python's premier library for statistical modeling, providing tools for estimation, inference, and diagnostics across a wide range of statistical methods. Apply this skill for rigorous statistical analysis, from simple linear regression to complex time series models and econometric analyses.
+Statsmodels is Python's premier library for statistical modelling, providing tools for estimation, inference, and diagnostics across a wide range of statistical methods. Apply this skill for rigorous statistical analysis, from simple linear regression to complex time series models and econometric analyses.
 
 ## When to Use This Skill
 
 This skill should be used when:
 - Fitting regression models (OLS, WLS, GLS, quantile regression)
-- Performing generalized linear modeling (logistic, Poisson, Gamma, etc.)
-- Analyzing discrete outcomes (binary, multinomial, count, ordinal)
+- Performing generalised linear modelling (logistic, Poisson, Gamma, etc.)
+- Analysing discrete outcomes (binary, multinomial, count, ordinal)
 - Conducting time series analysis (ARIMA, SARIMAX, VAR, forecasting)
 - Running statistical tests and diagnostics
 - Testing model assumptions (heteroskedasticity, autocorrelation, normality)
@@ -144,7 +144,7 @@ results.plot_diagnostics(figsize=(12, 8))
 plt.show()
 ```
 
-### Generalized Linear Models (GLM)
+### Generalised Linear Models (GLM)
 
 ```python
 import statsmodels.api as sm
@@ -172,7 +172,7 @@ if overdispersion > 1.5:
     print(nb_results.summary())
 ```
 
-## Core Statistical Modeling Capabilities
+## Core Statistical Modelling Capabilities
 
 ### 1. Linear Regression Models
 
@@ -181,7 +181,7 @@ Comprehensive suite of linear models for continuous outcomes with various error 
 **Available models:**
 - **OLS**: Standard linear regression with i.i.d. errors
 - **WLS**: Weighted least squares for heteroskedastic errors
-- **GLS**: Generalized least squares for arbitrary covariance structure
+- **GLS**: Generalised least squares for arbitrary covariance structure
 - **GLSAR**: GLS with autoregressive errors for time series
 - **Quantile Regression**: Conditional quantiles (robust to outliers)
 - **Mixed Effects**: Hierarchical/multilevel models with random effects
@@ -199,7 +199,7 @@ Comprehensive suite of linear models for continuous outcomes with various error 
 
 **Reference:** See `references/linear-models.md` for detailed guidance on model selection, diagnostics, and best practices.
 
-### 2. Generalized Linear Models (GLM)
+### 2. Generalised Linear Models (GLM)
 
 Flexible framework extending linear models to non-normal distributions.
 
@@ -259,7 +259,7 @@ Models for categorical and count outcomes.
 
 ### 4. Time Series Analysis
 
-Comprehensive time series modeling and forecasting capabilities.
+Comprehensive time series modelling and forecasting capabilities.
 
 **Univariate models:**
 - **AutoReg (AR)**: Autoregressive models
@@ -465,7 +465,7 @@ print(f"CV RMSE: {np.mean(cv_scores):.4f} ± {np.std(cv_scores):.4f}")
 1. **Comprehensive summary**: Use `.summary()` for detailed output
 2. **Document decisions**: Note transformations, excluded observations
 3. **Interpret carefully**: Account for link functions (e.g., exp(β) for log link)
-4. **Visualize**: Plot predictions, confidence intervals, diagnostics
+4. **Visualise**: Plot predictions, confidence intervals, diagnostics
 
 ## Common Workflows
 
@@ -529,7 +529,7 @@ Detailed coverage of linear regression models including:
 - Hypothesis testing and model comparison
 
 ### references/glm.md
-Complete guide to generalized linear models:
+Complete guide to generalised linear models:
 - All distribution families (Binomial, Poisson, Gamma, etc.)
 - Link functions and when to use each
 - Model fitting and interpretation
@@ -589,7 +589,7 @@ grep -r "SARIMAX" references/time-series.md
 1. **Forgetting constant term**: Always use `sm.add_constant()` unless no intercept desired
 2. **Ignoring assumptions**: Check residuals, heteroskedasticity, autocorrelation
 3. **Wrong model for outcome type**: Binary→Logit/Probit, Count→Poisson/NB, not OLS
-4. **Not checking convergence**: Look for optimization warnings
+4. **Not checking convergence**: Look for optimisation warnings
 5. **Misinterpreting coefficients**: Remember link functions (log, logit, etc.)
 6. **Using Poisson with overdispersion**: Check dispersion, use Negative Binomial if needed
 7. **Not using robust SEs**: When heteroskedasticity or clustering present

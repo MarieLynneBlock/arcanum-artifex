@@ -21,7 +21,7 @@
 - Concepts with unique identifiers
 - Descriptions (preferred and synonyms)
 - Relationships between concepts
-- Hierarchical organization
+- Hierarchical organisation
 
 **Example:**
 - Concept: Myocardial infarction
@@ -92,7 +92,7 @@
 - A00-B99: Infectious diseases
 - C00-D49: Neoplasms
 - E00-E89: Endocrine, nutritional, metabolic
-- F01-F99: Mental and behavioral
+- F01-F99: Mental and behavioural
 - G00-G99: Nervous system
 - I00-I99: Circulatory system
 - J00-J99: Respiratory system
@@ -152,7 +152,7 @@
 
 ### RxNorm
 
-**Purpose:** Normalized names for clinical drugs and drug delivery devices
+**Purpose:** Normalised names for clinical drugs and drug delivery devices
 
 **Structure:**
 - Includes brand and generic names
@@ -206,7 +206,7 @@
 - BMP: basic metabolic panel
 - CMP: comprehensive metabolic panel
 - LFTs: liver function tests
-- PT/INR: prothrombin time/international normalized ratio
+- PT/INR: prothrombin time/international normalised ratio
 - PTT/aPTT: partial thromboplastin time/activated PTT
 - ESR: erythrocyte sedimentation rate
 - CRP: C-reactive protein
@@ -359,7 +359,7 @@
 **Example:**
 - "Take one tablet by mouth twice daily with food for 10 days"
 - "Apply thin layer to affected area three times daily"
-- "Instill 1 drop in each eye every 4 hours while awake"
+- "Instil 1 drop in each eye every 4 hours while awake"
 
 ## Anatomical Terminology
 
@@ -584,5 +584,5 @@
 
 ---
 
-This reference provides comprehensive medical terminology, coding systems, abbreviations, and nomenclature standards. Use these guidelines to ensure accurate, standardized clinical documentation.
+This reference provides comprehensive medical terminology, coding systems, abbreviations, and nomenclature standards. Use these guidelines to ensure accurate, standardised clinical documentation.
 

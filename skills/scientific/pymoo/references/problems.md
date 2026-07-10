@@ -1,6 +1,6 @@
 # Pymoo Test Problems Reference
 
-Comprehensive reference for benchmark optimization problems in pymoo.
+Comprehensive reference for benchmark optimisation problems in pymoo.
 
 ## Single-Objective Test Problems
 
@@ -27,7 +27,7 @@ Comprehensive reference for benchmark optimization problems in pymoo.
 **Characteristics:**
 - Unimodal but narrow valley to global optimum
 - Tests algorithm's convergence in difficult landscape
-- Classic benchmark for continuous optimization
+- Classic benchmark for continuous optimisation
 
 ### Zakharov Function
 **Characteristics:**
@@ -38,7 +38,7 @@ Comprehensive reference for benchmark optimization problems in pymoo.
 ## Multi-Objective Test Problems (2-3 objectives)
 
 ### ZDT Test Suite
-**Purpose:** Standard benchmark for bi-objective optimization
+**Purpose:** Standard benchmark for bi-objective optimisation
 **Construction:** f₂(x) = g(x) · h(f₁(x), g(x)) where g(x) = 1 at Pareto-optimal solutions
 
 #### ZDT1
@@ -69,7 +69,7 @@ Comprehensive reference for benchmark optimization problems in pymoo.
 - **Variables:** 11 discrete (bitstring)
 - **Encoding:** x₁ uses 30 bits, x₂₋₁₁ use 5 bits each
 - **Pareto front:** Convex
-- **Purpose:** Tests discrete optimization and deceptive landscapes
+- **Purpose:** Tests discrete optimisation and deceptive landscapes
 
 #### ZDT6
 - **Variables:** 10 continuous
@@ -114,7 +114,7 @@ problem = ZDT1()  # or ZDT2(), ZDT3(), etc.
 **Characteristics:**
 - Engineering design problem
 - Multiple constraints
-- Practical optimization scenario
+- Practical optimisation scenario
 
 ### Omni-test
 **Characteristics:**
@@ -125,7 +125,7 @@ problem = ZDT1()  # or ZDT2(), ZDT3(), etc.
 ### SYM-PART
 **Characteristics:**
 - Symmetric problem structure
-- Tests specific algorithmic behaviors
+- Tests specific algorithmic behaviours
 
 ## Many-Objective Test Problems (4+ objectives)
 
@@ -196,7 +196,7 @@ problem = DTLZ1(n_var=7, n_obj=3)  # 7 variables, 3 objectives
 **Features:** Tunable constraint difficulty
 
 ### MODAct
-**Purpose:** Multi-objective optimization with active constraints
+**Purpose:** Multi-objective optimisation with active constraints
 **Features:** Realistic constraint scenarios
 
 ## Dynamic Multi-Objective Problems

@@ -19,7 +19,7 @@ This skill should be used when:
 - Accessing the Cancer Gene Census for curated cancer gene lists
 - Retrieving mutational signature profiles
 - Querying structural variants, copy number alterations, or gene fusions
-- Analyzing drug resistance mutations
+- Analysing drug resistance mutations
 - Working with cancer cell line genomics data
 - Integrating cancer mutation data into bioinformatics pipelines
 - Researching specific genes or mutations in cancer contexts

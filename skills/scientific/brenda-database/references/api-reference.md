@@ -259,7 +259,7 @@ Reactions use standard biochemical notation:
 #### Utility Functions
 
 **`split_entries(return_text: str) -> List[str]`**
-- **Purpose**: Normalize BRENDA responses to list format
+- **Purpose**: Normalise BRENDA responses to list format
 - **Parameters**: `return_text` - Raw response from BRENDA
 - **Returns**: List of individual data entries
 - **Features**: Handles both string and complex object responses
@@ -406,7 +406,7 @@ for org_data in comparison:
 
 ### Substrate Specificity
 
-**Analyze substrate preferences:**
+**Analyse substrate preferences:**
 ```python
 from scripts.brenda_queries import get_substrate_specificity
 
@@ -444,9 +444,9 @@ for enzyme in thermophilic:
     print(f"{enzyme['organism']}: {enzyme['optimal_temperature']}°C")
 ```
 
-### Kinetic Modeling
+### Kinetic Modelling
 
-**Extract parameters for modeling:**
+**Extract parameters for modelling:**
 ```python
 from scripts.brenda_queries import get_modeling_parameters
 
@@ -484,7 +484,7 @@ print(f"Optimal conditions: pH {model_data['ph']}, {model_data['temperature']}°
 - BRENDA data format can be inconsistent
 - Validate parsed data before use
 
-### Performance Optimization
+### Performance Optimisation
 
 **Query Efficiency:**
 - Use specific EC numbers when known
@@ -497,7 +497,7 @@ print(f"Optimal conditions: pH {model_data['ph']}, {model_data['temperature']}°
 - Use generators for large result sets
 - Clear parsed data when no longer needed
 
-**Network Optimization:**
+**Network Optimisation:**
 - Implement retry logic for network errors
 - Use appropriate timeouts
 - Monitor request frequency

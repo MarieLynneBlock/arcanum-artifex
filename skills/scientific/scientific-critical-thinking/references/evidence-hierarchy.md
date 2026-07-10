@@ -31,7 +31,7 @@
 **Strengths:**
 - Gold standard for establishing causation
 - Controls for known and unknown confounders
-- Minimizes selection bias
+- Minimises selection bias
 - Enables causal inference
 
 **Weaknesses:**
@@ -46,7 +46,7 @@
 - Was sample size adequate (power analysis)?
 - Was intention-to-treat analysis used?
 - Was attrition rate acceptable and balanced?
-- Are results generalizable?
+- Are results generalisable?
 
 ### Level 3: Cohort Studies
 **Description:** Observational studies following groups over time.
@@ -136,10 +136,10 @@
 **Use:** Primarily for hypothesis generation and clinical description.
 
 ### Level 7: Expert Opinion
-**Description:** Statements by recognized authorities.
+**Description:** Statements by recognised authorities.
 
 **Strengths:**
-- Synthesizes experience
+- Synthesises experience
 - Useful when no research available
 - May integrate multiple sources
 
@@ -182,7 +182,7 @@
    - Wrong population
    - Wrong comparison
    - Wrong outcome
-   - Too artificial to generalize
+   - Too artificial to generalise
 
 ## Alternative: GRADE System
 
@@ -308,7 +308,7 @@ GRADE (Grading of Recommendations Assessment, Development and Evaluation) assess
 - Preregistered studies
 - Large samples
 - Multiple measures
-- Behavioral (not just self-report) outcomes
+- Behavioural (not just self-report) outcomes
 - Cross-cultural replication
 
 ### Epidemiology
@@ -337,9 +337,9 @@ GRADE (Grading of Recommendations Assessment, Development and Evaluation) assess
 - Natural experiments
 - Instrumental variables
 - Regression discontinuity designs
-- Multiple operationalizations
+- Multiple operationalisations
 
-## Synthesizing Evidence Across Studies
+## Synthesising Evidence Across Studies
 
 ### Consistency
 **Strong evidence:**
@@ -412,7 +412,7 @@ GRADE (Grading of Recommendations Assessment, Development and Evaluation) assess
 - Ignoring limitations
 - Overgeneralizing
 - Spinning negative results
-- Post hoc rationalization
+- Post hoc rationalisation
 
 ### Context Red Flags
 - Industry funding without independence

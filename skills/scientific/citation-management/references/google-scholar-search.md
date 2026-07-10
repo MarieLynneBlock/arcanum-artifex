@@ -99,7 +99,7 @@ source:"Journal of Machine Learning Research"
 
 **Applications**:
 - Track publications in top-tier venues
-- Find papers in specialized journals
+- Find papers in specialised journals
 - Identify conference-specific work
 - Verify publication venue
 
@@ -413,7 +413,7 @@ time.sleep(random.uniform(3, 7))  # Random delay 3-7 seconds
 
 ## Tips and Best Practices
 
-### Search Optimization
+### Search Optimisation
 
 1. **Start simple, then refine**:
    ```
@@ -433,8 +433,8 @@ time.sleep(random.uniform(3, 7))  # Random delay 3-7 seconds
    - Source search in top journals
 
 3. **Check spelling and variations**:
-   - Color vs colour
-   - Optimization vs optimisation
+   - Colour vs colour
+   - Optimisation vs optimisation
    - Tumor vs tumour
    - Try common misspellings if few results
 
@@ -475,7 +475,7 @@ time.sleep(random.uniform(3, 7))  # Random delay 3-7 seconds
 1. **Use citation manager integration**:
    - Export to BibTeX
    - Import to Zotero, Mendeley, EndNote
-   - Maintain organized library
+   - Maintain organised library
 
 2. **Set up alerts** for ongoing research:
    - Google Scholar → Alerts
@@ -484,7 +484,7 @@ time.sleep(random.uniform(3, 7))  # Random delay 3-7 seconds
 
 3. **Create collections**:
    - Save papers to Google Scholar Library
-   - Organize by project or topic
+   - Organise by project or topic
    - Add labels and notes
 
 4. **Export systematically**:
@@ -540,7 +540,7 @@ python scripts/search_google_scholar.py "topic" \
 **For a specific paper**:
 1. Find the paper
 2. Click "Cited by X"
-3. Analyze citing papers:
+3. Analyse citing papers:
    - How is it being used?
    - What fields cite it?
    - Recent vs older citations?

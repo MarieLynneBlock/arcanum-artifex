@@ -278,7 +278,7 @@ The API returns an Atom 1.0 XML feed.
 | `math.NA` | Numerical Analysis |
 | `math.NT` | Number Theory |
 | `math.OA` | Operator Algebras |
-| `math.OC` | Optimization and Control |
+| `math.OC` | Optimisation and Control |
 | `math.PR` | Probability |
 | `math.QA` | Quantum Algebra |
 | `math.RA` | Rings and Algebras |
@@ -310,7 +310,7 @@ The API returns an Atom 1.0 XML feed.
 | Category | Name |
 |----------|------|
 | `q-bio.BM` | Biomolecules |
-| `q-bio.CB` | Cell Behavior |
+| `q-bio.CB` | Cell Behaviour |
 | `q-bio.GN` | Genomics |
 | `q-bio.MN` | Molecular Networks |
 | `q-bio.NC` | Neurons and Cognition |

@@ -126,7 +126,7 @@ Indicate regions where NUTS struggled.
 
 #### Energy Plot
 
-Visualizes Hamiltonian Monte Carlo energy transitions.
+Visualises Hamiltonian Monte Carlo energy transitions.
 
 ```python
 az.plot_energy(idata)
@@ -350,14 +350,14 @@ with model:
 |----------|-------------------|
 | Small-medium models, need full uncertainty | MCMC with NUTS |
 | Large models, initial exploration | ADVI |
-| Discrete parameters | Metropolis or marginalize |
-| Hierarchical models with divergences | Non-centered parameterization + NUTS |
+| Discrete parameters | Metropolis or marginalise |
+| Hierarchical models with divergences | Non-centred parameterization + NUTS |
 | Very large data | Minibatch ADVI |
 | Quick point estimates | MAP or ADVI |
 
 ### Reparameterization Tricks
 
-**Non-centered parameterization** for hierarchical models:
+**Non-centred parameterization** for hierarchical models:
 
 ```python
 # Centered (can cause divergences):

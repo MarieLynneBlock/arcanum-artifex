@@ -1,6 +1,6 @@
-# Step 6: Analyze Outcomes
+# Step 6: Analyse Outcomes
 
-**Why this step**: `pixie test` produced raw scores. Now you analyze those results to understand what they mean — completing pending evaluations, identifying patterns, validating hypotheses, and producing an actionable improvement plan. The analysis is structured in three phases that build on each other: entry-level → dataset-level → action plan.
+**Why this step**: `pixie test` produced raw scores. Now you analyse those results to understand what they mean — completing pending evaluations, identifying patterns, validating hypotheses, and producing an actionable improvement plan. The analysis is structured in three phases that build on each other: entry-level → dataset-level → action plan.
 
 ---
 
@@ -49,36 +49,36 @@ If you do any of the above, Step 6 is not done.
 
 If you are iterating across multiple fix/test cycles, every successful `pixie test` run creates a new `pixie_qa/results/<test_id>` directory and a new Step 6 obligation. The moment that directory exists, it becomes the analysis target for the current cycle.
 
-Before you edit application code, prompts, datasets, evaluators, or rerun `pixie test`, complete Step 6 for that exact results directory. Do not skip earlier cycles and analyze only the last run.
+Before you edit application code, prompts, datasets, evaluators, or rerun `pixie test`, complete Step 6 for that exact results directory. Do not skip earlier cycles and analyse only the last run.
 
 **Additional forbidden shortcut**:
 
-- Do not create a newer `pixie_qa/results/<test_id>` and leave an older one from the same task without Step 6 artifacts.
+- Do not create a newer `pixie_qa/results/<test_id>` and leave an older one from the same task without Step 6 artefacts.
 
 ---
 
 ## Writing principles
 
-Every analysis **detailed** artifact you produce must follow these principles:
+Every analysis **detailed** artefact you produce must follow these principles:
 
 - **Data-driven**: Every opinion or statement must be backed by concrete data from the evaluation run. Quote scores, cite entry indices, reference specific eval input/output content. No hand-waving. It is better to write nothing than to write something unsubstantiated.
 - **Evidence-first**: Present the raw data and evidence before drawing conclusions. The reader (another coding agent) should be able to independently verify your conclusions from the evidence you cite.
 - **Traceable**: For every conclusion, provide the chain: data source → observation → reasoning → conclusion. Another agent should be able to follow this chain backward to verify or challenge any claim.
-- **No selling**: Do not advocate, promote, or use value-laden language ("excellent", "robust", "impressive", "well-designed"). State what the data shows and what actions it implies. Let the reader form quality judgments.
+- **No selling**: Do not advocate, promote, or use value-laden language ("excellent", "robust", "impressive", "well-designed"). State what the data shows and what actions it implies. Let the reader form quality judgements.
 - **Action-oriented**: Every analysis should contribute to the end goal of concrete improvements to the evaluation pipeline or application. Do not write observations that don't lead somewhere.
 
-Every persisted analysis **summary** artifact must follow these principles:
+Every persisted analysis **summary** artefact must follow these principles:
 
-- **Concise**: The human reader should be able to understand the key findings and actions in under 2 minutes for any single artifact.
+- **Concise**: The human reader should be able to understand the key findings and actions in under 2 minutes for any single artefact.
 - **Conclusions-first**: Lead with what the reader needs to know (results, findings, actions), not with methodology or background.
 - **Plain language**: Avoid jargon. A non-technical stakeholder should be able to follow the summary.
 - **Consistent**: Summary conclusions must match the detailed version's evidence. Never add claims in the summary that aren't supported in the detailed version.
 
 ### Dual-variant pattern
 
-Every persisted analysis artifact in this step has two files:
+Every persisted analysis artefact in this step has two files:
 
-| Artifact         | Detailed file (for agent)   | Summary file (for human)            |
+| Artefact         | Detailed file (for agent)   | Summary file (for human)            |
 | ---------------- | --------------------------- | ----------------------------------- |
 | Dataset analysis | `dataset-{idx}/analysis.md` | `dataset-{idx}/analysis-summary.md` |
 | Action plan      | `action-plan.md`            | `action-plan-summary.md`            |
@@ -140,7 +140,7 @@ If `evaluations.jsonl` contains entries with `"status": "pending"`, you must gra
 - Use the criteria literally — do not expand or reinterpret beyond what's written
 - Consider the trace — distinguish between app logic problems and LLM quality issues
 - Be calibrated — reserve 1.0 for outputs that genuinely satisfy criteria fully
-- Do not penalize LLM non-determinism — different phrasing of a correct answer is not a failure
+- Do not penalise LLM non-determinism — different phrasing of a correct answer is not a failure
 - Do not defer to the user — if the evidence is sufficient to write "likely passes", it is sufficient to assign a score and update `evaluations.jsonl`
 
 ### 1c. Do not persist entry-level analysis files
@@ -157,11 +157,11 @@ You may take temporary scratch notes while reasoning, but they are not deliverab
 
 ## Phase 2: Dataset-level analysis
 
-After all entries in a dataset are analyzed, produce the dataset-level analysis. Write `analysis.md` in the dataset directory (`dataset-{idx}/analysis.md`).
+After all entries in a dataset are analysed, produce the dataset-level analysis. Write `analysis.md` in the dataset directory (`dataset-{idx}/analysis.md`).
 
 ### 2a. Aggregate the data
 
-Summarize across all entries in the dataset:
+Summarise across all entries in the dataset:
 
 - Pass/fail counts and overall pass rate
 - Per-evaluator statistics (pass rate, min/max/mean scores)
@@ -250,7 +250,7 @@ Maximum ~40 lines for the summary.
 
 ## Phase 3: Action plan (two files)
 
-After all datasets are analyzed, produce the action plan. Write **two files** at the test run root. Write the detailed version first, then derive the summary.
+After all datasets are analysed, produce the action plan. Write **two files** at the test run root. Write the detailed version first, then derive the summary.
 
 ### Detailed version: `{PIXIE_ROOT}/results/<test_id>/action-plan.md`
 
@@ -289,7 +289,7 @@ This file is for **agent consumption** — it provides specific, implementable i
 
 ### Summary version: `{PIXIE_ROOT}/results/<test_id>/action-plan-summary.md`
 
-This file is for **human review** — a prioritized list of improvements that a human can understand and approve in under 2 minutes.
+This file is for **human review** — a prioritised list of improvements that a human can understand and approve in under 2 minutes.
 
 **Template:**
 
@@ -307,7 +307,7 @@ This file is for **human review** — a prioritized list of improvements that a 
 
 Maximum ~30 lines for the summary.
 
-**Prioritization criteria**:
+**Prioritisation criteria**:
 
 - Systemic issues (affecting multiple entries/datasets) before isolated ones
 - Issues with clear, validated evidence before speculative ones
@@ -322,7 +322,7 @@ The action plan should have 3–5 items. Each must trace back to a validated hyp
 
 1. **Phase 1** (per entry): Read data → grade pending evaluations → update `evaluations.jsonl`
 2. **Phase 2** (per dataset): Aggregate → form 3 hypotheses → validate → write `dataset-{idx}/analysis.md` + `dataset-{idx}/analysis-summary.md`
-3. **Phase 3** (per test run): Synthesize → prioritize → write `action-plan.md` + `action-plan-summary.md`
+3. **Phase 3** (per test run): Synthesise → prioritise → write `action-plan.md` + `action-plan-summary.md`
 
 Process entries within a dataset concurrently (using subagents if available). Process phases sequentially — Phase 2 depends on Phase 1 outputs, Phase 3 depends on Phase 2 outputs.
 
@@ -330,7 +330,7 @@ Process entries within a dataset concurrently (using subagents if available). Pr
 
 ## Final verification
 
-Before you end your turn, run the Step 6 verifier script that ships beside `setup.sh` in this skill's `resources/` directory against the exact test run directory you analyzed.
+Before you end your turn, run the Step 6 verifier script that ships beside `setup.sh` in this skill's `resources/` directory against the exact test run directory you analysed.
 
 Example shape:
 

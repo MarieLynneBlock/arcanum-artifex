@@ -129,7 +129,7 @@ ccd = CCDData.read('image.fits', unit=u.adu)
 ccd.write('output.fits', overwrite=True)
 ```
 
-## Modeling (astropy.modeling)
+## Modelling (astropy.modelling)
 
 Framework for creating and fitting models to data.
 
@@ -186,11 +186,11 @@ composite = models.Gaussian1D(amp=10, mean=5, stddev=1) | \
             models.Scale(factor=2)  # Scale output
 ```
 
-## Visualization (astropy.visualization)
+## Visualisation (astropy.visualisation)
 
-Tools for visualizing astronomical images and data.
+Tools for visualising astronomical images and data.
 
-### Image Normalization
+### Image Normalisation
 
 ```python
 from astropy.visualization import simple_norm

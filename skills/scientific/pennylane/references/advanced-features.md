@@ -656,12 +656,12 @@ estimate_resources(n_qubits=20, depth=100)
 ## Best Practices
 
 1. **Use templates** - Leverage built-in templates for common patterns
-2. **Apply transforms** - Optimize circuits with transforms before execution
+2. **Apply transforms** - Optimise circuits with transforms before execution
 3. **Compile with JIT** - Use Catalyst for performance-critical code
 4. **Consider noise** - Include noise models for realistic hardware simulation
 5. **Estimate resources** - Profile circuits before running on hardware
 6. **Use adaptive circuits** - Implement mid-circuit measurements for flexibility
-7. **Optimize pulses** - Fine-tune pulse parameters for hardware control
+7. **Optimise pulses** - Fine-tune pulse parameters for hardware control
 8. **Cache compilations** - Reuse compiled circuits
 9. **Monitor performance** - Track execution times and resource usage
 10. **Test thoroughly** - Validate on simulators before hardware deployment

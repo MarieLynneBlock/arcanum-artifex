@@ -6,7 +6,7 @@ The CZ CELLxGENE Census is a versioned collection of single-cell data built on t
 
 ## High-Level Structure
 
-The Census is organized as a `SOMACollection` with two main components:
+The Census is organised as a `SOMACollection` with two main components:
 
 ### 1. census_info
 Summary information including:
@@ -33,7 +33,7 @@ census["census_data"]["homo_sapiens"].obs
 RNA measurement data including:
 - **X**: Data matrices with layers:
   - `raw`: Raw count data
-  - `normalized`: (if available) Normalized counts
+  - `normalized`: (if available) Normalised counts
 - **var**: Gene metadata
 - **feature_dataset_presence_matrix**: Sparse boolean array showing which genes were measured in each dataset
 
@@ -48,31 +48,31 @@ RNA measurement data including:
 
 **Cell Type:**
 - `cell_type`: Human-readable cell type name
-- `cell_type_ontology_term_id`: Standardized ontology term (e.g., "CL:0000236")
+- `cell_type_ontology_term_id`: Standardised ontology term (e.g., "CL:0000236")
 
 **Tissue:**
 - `tissue`: Specific tissue name
 - `tissue_general`: Broader tissue category (useful for grouping)
-- `tissue_ontology_term_id`: Standardized ontology term
+- `tissue_ontology_term_id`: Standardised ontology term
 
 **Assay:**
 - `assay`: Sequencing technology used
-- `assay_ontology_term_id`: Standardized ontology term
+- `assay_ontology_term_id`: Standardised ontology term
 
 **Disease:**
 - `disease`: Disease status or condition
-- `disease_ontology_term_id`: Standardized ontology term
+- `disease_ontology_term_id`: Standardised ontology term
 
 **Donor:**
 - `donor_id`: Unique donor identifier
 - `sex`: Biological sex (male, female, unknown)
 - `self_reported_ethnicity`: Ethnicity information
 - `development_stage`: Life stage (adult, child, embryonic, etc.)
-- `development_stage_ontology_term_id`: Standardized ontology term
+- `development_stage_ontology_term_id`: Standardised ontology term
 
 **Organism:**
 - `organism`: Scientific name (Homo sapiens, Mus musculus)
-- `organism_ontology_term_id`: Standardized ontology term
+- `organism_ontology_term_id`: Standardised ontology term
 
 **Technical:**
 - `suspension_type`: Sample preparation type (cell, nucleus, na)
@@ -137,8 +137,8 @@ The Census includes all data from CZ CELLxGENE Discover meeting:
 
 1. **Species**: Human (*Homo sapiens*) or mouse (*Mus musculus*)
 2. **Technology**: Approved sequencing technologies for RNA
-3. **Count Type**: Raw counts only (no processed/normalized-only data)
-4. **Metadata**: Standardized following CELLxGENE schema
+3. **Count Type**: Raw counts only (no processed/normalised-only data)
+4. **Metadata**: Standardised following CELLxGENE schema
 5. **Both spatial and non-spatial data**: Includes traditional and spatial transcriptomics
 
 ## Important Data Characteristics
@@ -150,7 +150,7 @@ Cells may appear across multiple datasets. Use `is_primary_data == True` to filt
 The Census includes:
 - **Molecule counts**: From UMI-based methods
 - **Full-gene sequencing read counts**: From non-UMI methods
-These may need different normalization approaches.
+These may need different normalisation approaches.
 
 ### Versioning
 Census releases are versioned (e.g., "2023-07-25", "stable"). Always specify version for reproducible analysis:

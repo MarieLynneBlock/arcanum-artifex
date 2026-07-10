@@ -2,7 +2,7 @@
 
 ## Overview
 
-TorchDrug provides a comprehensive collection of pre-built model architectures for various graph-based learning tasks. This reference catalogs all available models with their characteristics, use cases, and implementation details.
+TorchDrug provides a comprehensive collection of pre-built model architectures for various graph-based learning tasks. This reference catalogues all available models with their characteristics, use cases, and implementation details.
 
 ## Graph Neural Networks
 
@@ -13,7 +13,7 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 
 **Characteristics:**
 - Simple and efficient aggregation
-- Normalized adjacency matrix convolution
+- Normalised adjacency matrix convolution
 - Works well for homophilic graphs
 - Good baseline for many tasks
 
@@ -26,7 +26,7 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 - `input_dim`: Node feature dimension
 - `hidden_dims`: List of hidden layer dimensions
 - `edge_input_dim`: Edge feature dimension (optional)
-- `batch_norm`: Apply batch normalization
+- `batch_norm`: Apply batch normalisation
 - `activation`: Activation function (relu, elu, etc.)
 - `dropout`: Dropout rate
 
@@ -41,13 +41,13 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 **Paper:** Graph Attention Networks (Veličković et al., 2018)
 
 **Characteristics:**
-- Learns attention weights for neighbors
-- Different importance for different neighbors
+- Learns attention weights for neighbours
+- Different importance for different neighbours
 - Multi-head attention for robustness
 - Handles varying node degrees naturally
 
 **Best For:**
-- When neighbor importance varies
+- When neighbour importance varies
 - Heterogeneous graphs
 - Interpretable predictions
 
@@ -93,7 +93,7 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 ### RGCN (Relational Graph Convolutional Network)
 
 **Type:** Multi-relational message passing
-**Paper:** Modeling Relational Data with Graph Convolutional Networks (Schlichtkrull et al., 2018)
+**Paper:** Modelling Relational Data with Graph Convolutional Networks (Schlichtkrull et al., 2018)
 
 **Characteristics:**
 - Handles multiple edge/relation types
@@ -221,7 +221,7 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 **Use Cases:**
 - Virtual screening
 - Molecular similarity search
-- QSAR modeling
+- QSAR modelling
 
 ## Protein-Specific Models
 
@@ -255,7 +255,7 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 - Contact prediction
 - Binding site identification
 
-### ESM (Evolutionary Scale Modeling)
+### ESM (Evolutionary Scale Modelling)
 
 **Type:** Protein language model (transformer)
 **Paper:** Biological structure and function emerge from scaling unsupervised learning (Rives et al., 2021)
@@ -331,7 +331,7 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 ### TransE (Translation Embedding)
 
 **Type:** Translation-based embedding
-**Paper:** Translating Embeddings for Modeling Multi-relational Data (Bordes et al., 2013)
+**Paper:** Translating Embeddings for Modelling Multi-relational Data (Bordes et al., 2013)
 
 **Characteristics:**
 - h + r ≈ t (head + relation ≈ tail)
@@ -373,7 +373,7 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 **Type:** Bilinear model
 
 **Characteristics:**
-- Symmetric relation modeling
+- Symmetric relation modelling
 - Fast and efficient
 - Cannot model antisymmetric relations
 
@@ -413,7 +413,7 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 
 ### GraphAutoregressiveFlow
 
-**Type:** Normalizing flow for molecules
+**Type:** Normalising flow for molecules
 
 **Characteristics:**
 - Exact likelihood computation
@@ -443,7 +443,7 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 **Type:** Contrastive learning
 
 **Characteristics:**
-- Maximizes mutual information
+- Maximises mutual information
 - Graph-level and node-level contrast
 - Unsupervised pre-training
 - Good for small datasets
@@ -466,7 +466,7 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 **Use Cases:**
 - Pre-train GearNet on protein structures
 - Transfer to property prediction
-- Limited labeled data scenarios
+- Limited labelled data scenarios
 
 ## Model Selection Guide
 
@@ -489,11 +489,11 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 
 **Molecular Generation:**
 1. GraphAutoregressiveFlow (exact likelihood)
-2. GCPN with GIN backbone (property optimization)
+2. GCPN with GIN backbone (property optimisation)
 
 **Retrosynthesis:**
 1. GIN (synthon completion)
-2. RGCN (center identification with bond types)
+2. RGCN (centre identification with bond types)
 
 ### By Dataset Size
 
@@ -534,7 +534,7 @@ TorchDrug provides a comprehensive collection of pre-built model architectures f
 1. **Start Simple**: Begin with GCN or GIN baseline
 2. **Use Pre-trained**: ESM for proteins, InfoGraph for molecules
 3. **Tune Depth**: 3-5 layers typically sufficient
-4. **Batch Normalization**: Usually helps (except KG embeddings)
+4. **Batch Normalisation**: Usually helps (except KG embeddings)
 5. **Residual Connections**: Important for deep networks
 6. **Readout Function**: "mean" usually works well
 7. **Edge Features**: Include when available (bonds, distances)

@@ -7,7 +7,7 @@ Guide to automated spike sorting curation using Bombcell, UnitRefine, and other 
 Manual curation is:
 - **Slow**: Hours per recording session
 - **Subjective**: Inter-rater variability
-- **Non-reproducible**: Hard to standardize
+- **Non-reproducible**: Hard to standardise
 
 Automated tools provide consistent, reproducible quality classification.
 
@@ -27,7 +27,7 @@ Automated tools provide consistent, reproducible quality classification.
 Bombcell classifies units into 4 categories:
 1. **Single somatic units** - Well-isolated single neurons
 2. **Multi-unit activity (MUA)** - Mixed neuronal signals
-3. **Noise** - Non-neural artifacts
+3. **Noise** - Non-neural artefacts
 4. **Non-somatic** - Axonal or dendritic signals
 
 ### Installation
@@ -288,7 +288,7 @@ manual_labels = si.read_phy('phy_review/').get_property('quality')
 
 ## Best Practices
 
-1. **Always visualize** - Don't blindly trust automated results
+1. **Always visualise** - Don't blindly trust automated results
 2. **Document thresholds** - Record exact parameters used
 3. **Validate** - Compare automated vs manual on subset
 4. **Be conservative** - When in doubt, exclude the unit

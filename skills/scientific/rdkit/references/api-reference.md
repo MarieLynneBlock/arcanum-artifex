@@ -1,6 +1,6 @@
 # RDKit API Reference
 
-This document provides a comprehensive reference for RDKit's Python API, organized by functionality.
+This document provides a comprehensive reference for RDKit's Python API, organised by functionality.
 
 ## Core Module: rdkit.Chem
 
@@ -73,7 +73,7 @@ The fundamental module for working with molecules.
 
 **Stereochemistry:**
 
-- `Chem.FindMolChiralCenters(mol, includeUnassigned=False, useLegacyImplementation=False)` - Find chiral centers
+- `Chem.FindMolChiralCenters(mol, includeUnassigned=False, useLegacyImplementation=False)` - Find chiral centres
 - `Chem.FindPotentialStereo(mol, cleanIt=True)` - Find potential stereocenters
 
 ### Substructure Searching
@@ -143,10 +143,10 @@ Extended chemistry functionality.
 - `AllChem.ConstrainedEmbed(mol, core, useTethers=True)` - Constrained embedding
 - `AllChem.GenerateDepictionMatching2DStructure(mol, reference, refPattern=None)` - Align to template
 
-### Force Field Optimization
+### Force Field Optimisation
 
-- `AllChem.UFFOptimizeMolecule(mol, maxIters=200, confId=-1)` - UFF optimization
-- `AllChem.MMFFOptimizeMolecule(mol, maxIters=200, confId=-1, mmffVariant='MMFF94')` - MMFF optimization
+- `AllChem.UFFOptimizeMolecule(mol, maxIters=200, confId=-1)` - UFF optimisation
+- `AllChem.MMFFOptimizeMolecule(mol, maxIters=200, confId=-1, mmffVariant='MMFF94')` - MMFF optimisation
 - `AllChem.UFFGetMoleculeForceField(mol, confId=-1)` - Get UFF force field object
 - `AllChem.MMFFGetMoleculeForceField(mol, pyMMFFMolProperties, confId=-1)` - Get MMFF force field
 
@@ -203,7 +203,7 @@ Molecular descriptor calculations.
 
 ## rdkit.Chem.Draw
 
-Molecular visualization.
+Molecular visualisation.
 
 ### Image Generation
 
@@ -213,11 +213,11 @@ Molecular visualization.
 - `Draw.MolsMatrixToGridImage(mols, molsPerRow=3, subImgSize=(200,200), legends=None)` - Nested grid
 - `Draw.ReactionToImage(rxn, subImgSize=(200,200))` - Reaction image
 
-### Fingerprint Visualization
+### Fingerprint Visualisation
 
-- `Draw.DrawMorganBit(mol, bitId, bitInfo, whichExample=0)` - Visualize Morgan bit
+- `Draw.DrawMorganBit(mol, bitId, bitInfo, whichExample=0)` - Visualise Morgan bit
 - `Draw.DrawMorganBits(bits, mol, bitInfo, molsPerRow=3)` - Multiple Morgan bits
-- `Draw.DrawRDKitBit(mol, bitId, bitInfo, whichExample=0)` - Visualize RDKit bit
+- `Draw.DrawRDKitBit(mol, bitId, bitInfo, whichExample=0)` - Visualise RDKit bit
 
 ### IPython Integration
 
@@ -265,7 +265,7 @@ Scaffold analysis.
 
 ## rdkit.Chem.rdMolHash
 
-Molecular hashing and standardization.
+Molecular hashing and standardisation.
 
 - `rdMolHash.MolHash(mol, hashFunction)` - Generate hash
   - `rdMolHash.HashFunction.AnonymousGraph` - Anonymized structure
@@ -279,12 +279,12 @@ Molecular hashing and standardization.
 
 ## rdkit.Chem.MolStandardize
 
-Molecule standardization.
+Molecule standardisation.
 
-- `rdMolStandardize.Normalize(mol)` - Normalize functional groups
+- `rdMolStandardize.Normalize(mol)` - Normalise functional groups
 - `rdMolStandardize.Reionize(mol)` - Fix ionization state
 - `rdMolStandardize.RemoveFragments(mol)` - Remove small fragments
-- `rdMolStandardize.Cleanup(mol)` - Full cleanup (normalize + reionize + remove)
+- `rdMolStandardize.Cleanup(mol)` - Full cleanup (normalise + reionize + remove)
 - `rdMolStandardize.Uncharger()` - Create uncharger object
   - `.uncharge(mol)` - Remove charges
 - `rdMolStandardize.TautomerEnumerator()` - Enumerate tautomers

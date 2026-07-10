@@ -4,15 +4,15 @@ This document provides comprehensive documentation for TDC's data processing, ev
 
 ## Overview
 
-TDC provides utilities organized into four main categories:
+TDC provides utilities organised into four main categories:
 1. **Dataset Splits** - Train/validation/test partitioning strategies
-2. **Model Evaluation** - Standardized performance metrics
+2. **Model Evaluation** - Standardised performance metrics
 3. **Data Processing** - Molecule conversion, filtering, and transformation
 4. **Entity Retrieval** - Database queries and conversions
 
 ## 1. Dataset Splits
 
-Dataset splitting is crucial for evaluating model generalization. TDC provides multiple splitting strategies designed for therapeutic ML.
+Dataset splitting is crucial for evaluating model generalisation. TDC provides multiple splitting strategies designed for therapeutic ML.
 
 ### Basic Split Usage
 
@@ -49,7 +49,7 @@ split = data.get_split(method='random', seed=1)
 
 **Not recommended for:**
 - Realistic drug discovery scenarios
-- Evaluating generalization to new chemical matter
+- Evaluating generalisation to new chemical matter
 
 #### Scaffold Split
 Splits based on molecular scaffolds (Bemis-Murcko scaffolds) - ensures test molecules are structurally distinct from training.
@@ -60,7 +60,7 @@ split = data.get_split(method='scaffold', seed=1)
 
 **When to use:**
 - Default for most single prediction tasks
-- Evaluating generalization to new chemical series
+- Evaluating generalisation to new chemical series
 - Realistic drug discovery scenarios
 
 **How it works:**
@@ -79,14 +79,14 @@ data = DTI(name='BindingDB_Kd')
 split = data.get_split(method='cold_drug', seed=1)
 ```
 - Test set contains drugs not seen during training
-- Evaluates generalization to new compounds
+- Evaluates generalisation to new compounds
 
 **Cold Target Split:**
 ```python
 split = data.get_split(method='cold_target', seed=1)
 ```
 - Test set contains targets not seen during training
-- Evaluates generalization to new proteins
+- Evaluates generalisation to new proteins
 
 **Cold Drug-Target Split:**
 ```python
@@ -129,7 +129,7 @@ Maintains label distribution across train/valid/test sets.
 
 ## 2. Model Evaluation
 
-TDC provides standardized evaluation metrics for different task types.
+TDC provides standardised evaluation metrics for different task types.
 
 ### Basic Evaluator Usage
 
@@ -223,7 +223,7 @@ score = evaluator(y_true, y_pred)
 
 **Best for:**
 - Continuous predictions
-- Penalizes large errors heavily
+- Penalises large errors heavily
 
 **Range:** 0-∞ (lower is better)
 
@@ -386,7 +386,7 @@ filtered_smiles = mol_filter(smiles_list)
 - `Inpharmatica` - Inpharmatica filters
 - `LINT` - Pfizer LINT filters
 
-### Label Distribution Visualization
+### Label Distribution Visualisation
 
 ```python
 # Visualize label distribution

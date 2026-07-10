@@ -154,7 +154,7 @@ for i in range(flow.channel_count):
 
 **Channel Type Identification:**
 
-FlowIO automatically categorizes channels:
+FlowIO automatically categorises channels:
 
 ```python
 # Get indices by channel type
@@ -602,4 +602,4 @@ df = pd.DataFrame(flow.as_array(), columns=flow.pnn_labels)
 
 ## Summary
 
-FlowIO provides essential FCS file handling capabilities for flow cytometry workflows. Use it for parsing, metadata extraction, and file creation. For simple file operations and data extraction, FlowIO is sufficient. For complex analysis including compensation and gating, integrate with FlowKit or other specialized tools.
+FlowIO provides essential FCS file handling capabilities for flow cytometry workflows. Use it for parsing, metadata extraction, and file creation. For simple file operations and data extraction, FlowIO is sufficient. For complex analysis including compensation and gating, integrate with FlowKit or other specialised tools.

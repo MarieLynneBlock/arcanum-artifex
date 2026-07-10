@@ -1,4 +1,4 @@
-# Protein Modeling
+# Protein Modelling
 
 ## Overview
 
@@ -44,7 +44,7 @@ TorchDrug provides extensive support for protein-related tasks including sequenc
 ### Large-Scale Protein Databases
 
 - **AlphaFoldDB**: Access to 200M+ predicted protein structures
-- **ProteinNet**: Standardized dataset for structure prediction
+- **ProteinNet**: Standardised dataset for structure prediction
 
 ## Task Types
 
@@ -79,7 +79,7 @@ Predict interactions between protein pairs or protein-ligand pairs.
 
 ### ContactPrediction
 
-Specialized task for predicting spatial proximity between residues in folded structures.
+Specialised task for predicting spatial proximity between residues in folded structures.
 
 **Applications:**
 - Structure prediction from sequence
@@ -90,7 +90,7 @@ Specialized task for predicting spatial proximity between residues in folded str
 
 ### Sequence-Based Models
 
-**ESM (Evolutionary Scale Modeling):**
+**ESM (Evolutionary Scale Modelling):**
 - Pre-trained transformer model on 250M sequences
 - State-of-the-art for sequence-only tasks
 - Available in multiple sizes (ESM-1b, ESM-2)
@@ -115,7 +115,7 @@ Specialized task for predicting spatial proximity between residues in folded str
 
 **GearNet (Geometry-Aware Relational Graph Network):**
 - Incorporates 3D geometric information
-- Edge types based on sequential, radius, and K-nearest neighbors
+- Edge types based on sequential, radius, and K-nearest neighbours
 - State-of-the-art for structure-based tasks
 - Supports both backbone and full-atom representations
 
@@ -150,7 +150,7 @@ Specialized task for predicting spatial proximity between residues in folded str
 - Captures primary structure
 
 **Spatial Edges:**
-- K-nearest neighbors in 3D space
+- K-nearest neighbours in 3D space
 - Radius cutoff (e.g., Cα atoms within 10Å)
 - Captures tertiary structure
 
@@ -204,7 +204,7 @@ task = tasks.PropertyPrediction(
 
 Train on multiple related tasks simultaneously:
 - Joint prediction of function, localization, and stability
-- Improves generalization and data efficiency
+- Improves generalisation and data efficiency
 - Shares representations across tasks
 
 ### Best Practices
@@ -236,13 +236,13 @@ Train on multiple related tasks simultaneously:
 
 ### Antibody Design
 - Predict binding affinity
-- Optimize antibody sequences
+- Optimise antibody sequences
 - Predict immunogenicity
 
 ### Drug Target Identification
 - Predict protein function
 - Identify druggable sites
-- Analyze protein-ligand interactions
+- Analyse protein-ligand interactions
 
 ### Protein Structure Prediction
 - Predict secondary structure from sequence
@@ -265,7 +265,7 @@ protein = data.Protein.from_pdb("alphafold_structure.pdb")
 
 ### ESMFold Integration
 
-Use ESMFold for structure prediction, then analyze with TorchDrug models.
+Use ESMFold for structure prediction, then analyse with TorchDrug models.
 
 ### Rosetta/PyRosetta
 

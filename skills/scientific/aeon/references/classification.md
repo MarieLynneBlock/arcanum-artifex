@@ -16,7 +16,7 @@ Apply random convolutional transformations for efficient feature extraction:
 
 ## Deep Learning Classifiers
 
-Neural network architectures optimized for temporal sequences:
+Neural network architectures optimised for temporal sequences:
 
 - `FCNClassifier` - Fully convolutional network
 - `ResNetClassifier` - Residual networks with skip connections
@@ -41,7 +41,7 @@ Transform time series into symbolic representations:
 
 ## Distance-Based Classifiers
 
-Leverage specialized time series distance metrics:
+Leverage specialised time series distance metrics:
 
 - `KNeighborsTimeSeriesClassifier` - k-NN with temporal distances (DTW, LCSS, ERP, etc.)
 - `ElasticEnsemble` - Combines multiple elastic distance measures

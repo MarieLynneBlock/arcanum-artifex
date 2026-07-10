@@ -14,7 +14,7 @@ Calculates probabilities or quasi-probabilities of bitstrings from quantum circu
 Computes expectation values of observables for quantum circuits. Use when you need:
 - Energy calculations
 - Observable measurements
-- Variational algorithm optimization
+- Variational algorithm optimisation
 
 ## V2 Interface (Current Standard)
 

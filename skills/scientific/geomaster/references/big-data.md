@@ -304,7 +304,7 @@ for images, labels in loader:
 
 ## Efficient Data Formats
 
-### Cloud-Optimized GeoTIFF (COG)
+### Cloud-Optimised GeoTIFF (COG)
 
 ```python
 from rio_cogeo.cogeo import cog_translate

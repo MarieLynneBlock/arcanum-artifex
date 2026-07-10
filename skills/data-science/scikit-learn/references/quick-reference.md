@@ -382,7 +382,7 @@ feature_names = preprocessor.get_feature_names_out()
 | Problem | Algorithm | When to Use |
 |---------|-----------|-------------|
 | Linear reduction | PCA | Variance explanation |
-| Visualization | t-SNE | 2D/3D plots |
+| Visualisation | t-SNE | 2D/3D plots |
 | Non-negative data | NMF | Images, text |
 | Sparse data | TruncatedSVD | Text, recommender systems |
 

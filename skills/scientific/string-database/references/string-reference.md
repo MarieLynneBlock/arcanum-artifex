@@ -112,8 +112,8 @@ identifiers=9606.ENSP00000269305%0d9606.ENSP00000275493&required_score=700
 - `identifiers` (required): Protein IDs separated by `%0d`
 - `species`: NCBI taxon ID
 - `required_score`: Confidence threshold 0-1000
-- `network_flavor`: Visualization style
-  - `evidence`: Show evidence types as colored lines
+- `network_flavor`: Visualisation style
+  - `evidence`: Show evidence types as coloured lines
   - `confidence`: Show confidence as line thickness
   - `actions`: Show activating/inhibiting interactions
 - `add_nodes`: Add N interacting proteins (0-10)
@@ -169,7 +169,7 @@ identifiers=TP53&species=9606&limit=20&required_score=700
 
 **Enrichment Categories**:
 - **Gene Ontology**: Biological Process, Molecular Function, Cellular Component
-- **KEGG Pathways**: Metabolic and signaling pathways
+- **KEGG Pathways**: Metabolic and signalling pathways
 - **Pfam**: Protein domains
 - **InterPro**: Protein families and domains
 - **SMART**: Domain architecture
@@ -304,8 +304,8 @@ STRING provides combined confidence scores (0-1000) based on multiple evidence c
 3. **XML**: Extensible Markup Language
 4. **PSI-MI**: Proteomics Standards Initiative format
 5. **PSI-MITAB**: Tab-delimited PSI-MI format
-6. **PNG**: Image format (for network visualizations)
-7. **SVG**: Scalable vector graphics (for network visualizations)
+6. **PNG**: Image format (for network visualisations)
+7. **SVG**: Scalable vector graphics (for network visualisations)
 
 ### Format Selection
 
@@ -363,7 +363,7 @@ For differential expression/proteomics data:
 - Numeric values for each protein
 - Proper species identifier
 
-### Network Customization
+### Network Customisation
 
 **Network Size Control**:
 - `add_nodes=N`: Adds N most connected proteins
@@ -406,7 +406,7 @@ string_db <- STRINGdb$new(version="12", species=9606)
 
 ### Cytoscape
 
-STRING networks can be imported into Cytoscape for visualization and analysis:
+STRING networks can be imported into Cytoscape for visualisation and analysis:
 1. Use stringApp plugin
 2. Import TSV network data
 3. Apply layouts and styling
@@ -432,7 +432,7 @@ STRING data is freely available under **Creative Commons BY 4.0** license:
 
 - **STRING website**: https://string-db.org
 - **Download page**: https://string-db.org/cgi/download
-- **Help center**: https://string-db.org/help/
+- **Help centre**: https://string-db.org/help/
 - **API documentation**: https://string-db.org/help/api/
 - **Publications**: https://string-db.org/cgi/about
 

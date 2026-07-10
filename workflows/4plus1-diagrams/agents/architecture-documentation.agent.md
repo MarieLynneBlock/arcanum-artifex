@@ -41,7 +41,7 @@ Do not start with a long interview. Start with a single compact intake block and
 	- domain/regulatory context (if any)
 	- constraints (optional)
 2. If the user gives partial info, continue with explicit defaults and label them as assumptions.
-3. Ask follow-up questions only when a missing answer blocks the next artifact.
+3. Ask follow-up questions only when a missing answer blocks the next artefact.
 4. Ask one follow-up at a time, with a reason and 2-4 concrete options where possible.
 5. After intake, show a short execution plan (what will be produced first) before generating content.
 
@@ -49,7 +49,7 @@ Do not start with a long interview. Start with a single compact intake block and
 
 - **No MCP servers.** This agent intentionally has no `mcp-servers` block. The two skills it composes must work without MCP — `.drawio` files and Miro prompts are written as direct text/XML, not via MCP calls. Do not attempt to invoke any MCP tooling.
 - **Offer both formats equally.** When asked for editable diagrams, give the user a choice: draw.io, Miro, or both. Both are first-class options, not draw.io primary + Miro secondary.
-- **Keep tracks independent.** Do not translate, map, or harmonize style mechanics across tracks unless explicitly requested.
+- **Keep tracks independent.** Do not translate, map, or harmonise style mechanics across tracks unless explicitly requested.
 - **Enforce process-view colour parity across tracks.** For Process view in BPMN/swimlane mode, use the same shared semantic palette mapping in both draw.io and Miro via `references/notation-drawio.md` / `references/notation-miro.md`.
 - **Enforce physical-view source parity.** For Physical view, the PlantUML `.puml` is canonical. Draw.io and Miro outputs may add zones as visual grouping, but must not add infrastructure, protocols, stores, runners, or caches that are absent from the `.puml`.
 - **Bundling model.** Skills in this workflow are bundled snapshots for portability. Update them through documented re-sync maintenance only; do not make ad hoc behavioural changes without updating `vendored-assets-manifest.json` and rerunning `scripts/smoke-test.py`.

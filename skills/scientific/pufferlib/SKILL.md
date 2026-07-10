@@ -1,6 +1,6 @@
 ---
 name: pufferlib
-description: High-performance reinforcement learning framework optimized for speed and scale. Use when you need fast parallel training, vectorized environments, multi-agent systems, or integration with game environments (Atari, Procgen, NetHack). Achieves 2-10x speedups over standard implementations. For quick prototyping or standard algorithm implementations with extensive documentation, use stable-baselines3 instead.
+description: High-performance reinforcement learning framework optimised for speed and scale. Use when you need fast parallel training, vectorized environments, multi-agent systems, or integration with game environments (Atari, Procgen, NetHack). Achieves 2-10x speedups over standard implementations. For quick prototyping or standard algorithm implementations with extensive documentation, use stable-baselines3 instead.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,14 +10,14 @@ metadata:
 
 ## Overview
 
-PufferLib is a high-performance reinforcement learning library designed for fast parallel environment simulation and training. It achieves training at millions of steps per second through optimized vectorization, native multi-agent support, and efficient PPO implementation (PuffeRL). The library provides the Ocean suite of 20+ environments and seamless integration with Gymnasium, PettingZoo, and specialized RL frameworks.
+PufferLib is a high-performance reinforcement learning library designed for fast parallel environment simulation and training. It achieves training at millions of steps per second through optimised vectorization, native multi-agent support, and efficient PPO implementation (PuffeRL). The library provides the Ocean suite of 20+ environments and seamless integration with Gymnasium, PettingZoo, and specialised RL frameworks.
 
 ## When to Use This Skill
 
 Use this skill when:
 - **Training RL agents** with PPO on any environment (single or multi-agent)
 - **Creating custom environments** using the PufferEnv API
-- **Optimizing performance** for parallel environment simulation (vectorization)
+- **Optimising performance** for parallel environment simulation (vectorization)
 - **Integrating existing environments** from Gymnasium, PettingZoo, Atari, Procgen, etc.
 - **Developing policies** with CNN, LSTM, or custom architectures
 - **Scaling RL** to millions of steps per second for faster experimentation
@@ -27,7 +27,7 @@ Use this skill when:
 
 ### 1. High-Performance Training (PuffeRL)
 
-PuffeRL is PufferLib's optimized PPO+LSTM training algorithm achieving 1M-4M steps/second.
+PuffeRL is PufferLib's optimised PPO+LSTM training algorithm achieving 1M-4M steps/second.
 
 **Quick start training:**
 ```bash
@@ -68,7 +68,7 @@ for iteration in range(num_iterations):
 - Distributed multi-GPU/multi-node training
 - Logger integration (Weights & Biases, Neptune)
 - Checkpointing and resume training
-- Performance optimization tips
+- Performance optimisation tips
 - Curriculum learning patterns
 
 ### 2. Environment Development (PufferEnv)
@@ -115,13 +115,13 @@ class MyEnvironment(PufferEnv):
 - Observation and action space definitions
 - Multi-agent environment creation
 - Ocean suite (20+ pre-built environments)
-- Performance optimization (Python to C workflow)
+- Performance optimisation (Python to C workflow)
 - Environment wrappers and best practices
 - Debugging and validation techniques
 
 ### 3. Vectorization and Performance
 
-Achieve maximum throughput with optimized parallel simulation.
+Achieve maximum throughput with optimised parallel simulation.
 
 **Vectorization setup:**
 ```python
@@ -136,13 +136,13 @@ env = pufferlib.make('environment_name', num_envs=256, num_workers=8)
 # - With training: 400k-4M total SPS
 ```
 
-**Key optimizations:**
+**Key optimisations:**
 - Shared memory buffers for zero-copy observation passing
 - Busy-wait flags instead of pipes/queues
 - Surplus environments for async returns
 - Multiple environments per worker
 
-**For vectorization optimization**, read `references/vectorization.md` for:
+**For vectorization optimisation**, read `references/vectorization.md` for:
 - Architecture and performance characteristics
 - Worker and batch size configuration
 - Serial vs multiprocessing vs async modes
@@ -183,12 +183,12 @@ class Policy(nn.Module):
 
 **For complete policy development**, read `references/policies.md` for:
 - CNN policies for image observations
-- Recurrent policies with optimized LSTM (3x faster inference)
+- Recurrent policies with optimised LSTM (3x faster inference)
 - Multi-input policies for complex observations
 - Continuous action policies
 - Multi-agent policies (shared vs independent parameters)
 - Advanced architectures (attention, residual)
-- Observation normalization and gradient clipping
+- Observation normalisation and gradient clipping
 - Policy debugging and testing
 
 ### 5. Environment Integration
@@ -246,7 +246,7 @@ env = pufferlib.make('pettingzoo-knights-archers-zombies', num_envs=128)
 3. Configure hyperparameters for your task
 4. Run training with CLI or Python script
 5. Monitor with Weights & Biases or Neptune
-6. Refer to `references/training.md` for optimization
+6. Refer to `references/training.md` for optimisation
 
 ### For Creating Custom Environments
 
@@ -256,7 +256,7 @@ env = pufferlib.make('pettingzoo-knights-archers-zombies', num_envs=128)
 4. Test environment locally
 5. Vectorize with `pufferlib.emulate()` or `make()`
 6. Refer to `references/environments.md` for advanced patterns
-7. Optimize with `references/vectorization.md` if needed
+7. Optimise with `references/vectorization.md` if needed
 
 ### For Policy Development
 
@@ -269,13 +269,13 @@ env = pufferlib.make('pettingzoo-knights-archers-zombies', num_envs=128)
 3. Follow patterns in `references/policies.md`
 4. Test with environment before full training
 
-### For Performance Optimization
+### For Performance Optimisation
 
 1. Profile current throughput (steps per second)
 2. Check vectorization configuration (num_envs, num_workers)
-3. Optimize environment code (in-place ops, numpy vectorization)
+3. Optimise environment code (in-place ops, numpy vectorization)
 4. Consider C implementation for critical paths
-5. Use `references/vectorization.md` for systematic optimization
+5. Use `references/vectorization.md` for systematic optimisation
 
 ## Resources
 
@@ -304,7 +304,7 @@ env = pufferlib.make('pettingzoo-knights-archers-zombies', num_envs=128)
 - Monitoring and logging
 - Checkpointing
 - Protein hyperparameter tuning
-- Performance optimization
+- Performance optimisation
 - Common training patterns
 - Troubleshooting
 
@@ -314,13 +314,13 @@ env = pufferlib.make('pettingzoo-knights-archers-zombies', num_envs=128)
 - Multi-agent environments
 - Ocean suite environments
 - Custom environment development workflow
-- Python to C optimization path
+- Python to C optimisation path
 - Third-party environment integration
 - Wrappers and best practices
 - Debugging
 
-**vectorization.md** - Vectorization optimization:
-- Architecture and key optimizations
+**vectorization.md** - Vectorization optimisation:
+- Architecture and key optimisations
 - Vectorization modes (serial, multiprocessing, async)
 - Worker and batch configuration
 - Shared memory and zero-copy patterns
@@ -332,13 +332,13 @@ env = pufferlib.make('pettingzoo-knights-archers-zombies', num_envs=128)
 **policies.md** - Policy architecture guide:
 - Basic policy structure
 - CNN policies for images
-- LSTM policies with optimization
+- LSTM policies with optimisation
 - Multi-input policies
 - Continuous action policies
 - Multi-agent policies
 - Advanced architectures (attention, residual)
 - Observation processing and unflattening
-- Initialization and normalization
+- Initialization and normalisation
 - Debugging and testing
 
 **integration.md** - Framework integration guide:
@@ -362,7 +362,7 @@ env = pufferlib.make('pettingzoo-knights-archers-zombies', num_envs=128)
 
 4. **Read references as needed**: Each reference file is self-contained and focused on a specific capability
 
-5. **Optimize progressively**: Start with Python, profile, then optimize critical paths with C if needed
+5. **Optimise progressively**: Start with Python, profile, then optimise critical paths with C if needed
 
 6. **Leverage vectorization**: PufferLib's vectorization is key to achieving high throughput
 
@@ -409,7 +409,7 @@ env = pufferlib.emulate(MyTask, num_envs=256)
 trainer = PuffeRL(env=env, policy=my_policy)
 ```
 
-### High-Performance Optimization
+### High-Performance Optimisation
 ```python
 # Maximize throughput
 env = pufferlib.make(

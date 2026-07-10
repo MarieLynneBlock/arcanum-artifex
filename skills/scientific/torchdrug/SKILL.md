@@ -1,6 +1,6 @@
 ---
 name: torchdrug
-description: PyTorch-native graph neural networks for molecules and proteins. Use when building custom GNN architectures for drug discovery, protein modeling, or knowledge graph reasoning. Best for custom model development, protein property prediction, retrosynthesis. For pre-trained models and diverse featurizers use deepchem; for benchmark datasets use pytdc.
+description: PyTorch-native graph neural networks for molecules and proteins. Use when building custom GNN architectures for drug discovery, protein modelling, or knowledge graph reasoning. Best for custom model development, protein property prediction, retrosynthesis. For pre-trained models and diverse featurizers use deepchem; for benchmark datasets use pytdc.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-TorchDrug is a comprehensive PyTorch-based machine learning toolbox for drug discovery and molecular science. Apply graph neural networks, pre-trained models, and task definitions to molecules, proteins, and biological knowledge graphs, including molecular property prediction, protein modeling, knowledge graph reasoning, molecular generation, retrosynthesis planning, with 40+ curated datasets and 20+ model architectures.
+TorchDrug is a comprehensive PyTorch-based machine learning toolbox for drug discovery and molecular science. Apply graph neural networks, pre-trained models, and task definitions to molecules, proteins, and biological knowledge graphs, including molecular property prediction, protein modelling, knowledge graph reasoning, molecular generation, retrosynthesis planning, with 40+ curated datasets and 20+ model architectures.
 
 ## When to Use This Skill
 
@@ -105,12 +105,12 @@ Predict chemical, physical, and biological properties of molecules from structur
 - PropertyPrediction and MultipleBinaryClassification tasks
 
 **Reference:** See `references/molecular-property-prediction.md` for:
-- Complete dataset catalog
+- Complete dataset catalogue
 - Model selection guide
 - Training workflows and best practices
 - Feature engineering details
 
-### 2. Protein Modeling
+### 2. Protein Modelling
 
 Work with protein sequences, structures, and properties.
 
@@ -160,7 +160,7 @@ Generate novel molecular structures with desired properties.
 
 **Use Cases:**
 - De novo drug design
-- Lead optimization
+- Lead optimisation
 - Chemical space exploration
 - Property-guided generation
 
@@ -168,11 +168,11 @@ Generate novel molecular structures with desired properties.
 - Autoregressive generation
 - GCPN (policy-based generation)
 - GraphAutoregressiveFlow
-- Property optimization workflows
+- Property optimisation workflows
 
 **Reference:** See `references/molecular-generation.md` for:
 - Generation strategies (unconditional, conditional, scaffold-based)
-- Multi-objective optimization
+- Multi-objective optimisation
 - Validation and filtering
 - Integration with property prediction
 
@@ -182,25 +182,25 @@ Predict synthetic routes from target molecules to starting materials.
 
 **Use Cases:**
 - Synthesis planning
-- Route optimization
+- Route optimisation
 - Synthetic accessibility assessment
 - Multi-step planning
 
 **Key Components:**
 - USPTO-50k reaction dataset
-- CenterIdentification (reaction center prediction)
+- CenterIdentification (reaction centre prediction)
 - SynthonCompletion (reactant prediction)
 - End-to-end Retrosynthesis pipeline
 
 **Reference:** See `references/retrosynthesis.md` for:
-- Task decomposition (center ID → synthon completion)
+- Task decomposition (centre ID → synthon completion)
 - Multi-step synthesis planning
 - Commercial availability checking
 - Integration with other retrosynthesis tools
 
 ### 6. Graph Neural Network Models
 
-Comprehensive catalog of GNN architectures for different data types and tasks.
+Comprehensive catalogue of GNN architectures for different data types and tasks.
 
 **Available Models:**
 - General GNNs: GCN, GAT, GIN, RGCN, MPNN
@@ -226,7 +226,7 @@ Comprehensive catalog of GNN architectures for different data types and tasks.
 - Retrosynthesis reactions
 
 **Reference:** See `references/datasets.md` for:
-- Complete dataset catalog with sizes and tasks
+- Complete dataset catalogue with sizes and tasks
 - Dataset selection guide
 - Loading and preprocessing
 - Splitting strategies (random, scaffold)
@@ -275,17 +275,17 @@ Comprehensive catalog of GNN architectures for different data types and tasks.
 
 ### Workflow 4: De Novo Molecule Generation
 
-**Scenario:** Generate drug-like molecules optimized for target binding.
+**Scenario:** Generate drug-like molecules optimised for target binding.
 
 **Steps:**
 1. Train property predictor on activity data
-2. Choose generation approach: GCPN for RL-based optimization
+2. Choose generation approach: GCPN for RL-based optimisation
 3. Define reward function combining affinity, drug-likeness, synthesizability
 4. Generate candidates with property constraints
 5. Validate chemistry and filter by drug-likeness
 6. Rank by multi-objective scoring
 
-**Navigation:** `references/molecular-generation.md` → Conditional generation → Multi-objective optimization
+**Navigation:** `references/molecular-generation.md` → Conditional generation → Multi-objective optimisation
 
 ### Workflow 5: Retrosynthesis Planning
 
@@ -293,7 +293,7 @@ Comprehensive catalog of GNN architectures for different data types and tasks.
 
 **Steps:**
 1. Load dataset: `datasets.USPTO50k()`
-2. Train center identification model (RGCN)
+2. Train centre identification model (RGCN)
 3. Train synthon completion model (GIN)
 4. Combine into end-to-end retrosynthesis pipeline
 5. Apply recursively for multi-step planning
@@ -436,7 +436,7 @@ For deep dives into TorchDrug's architecture:
 Navigate to the appropriate reference file based on your task:
 
 1. **Molecular property prediction** → `molecular-property-prediction.md`
-2. **Protein modeling** → `protein-modeling.md`
+2. **Protein modelling** → `protein-modeling.md`
 3. **Knowledge graphs** → `knowledge-graphs.md`
 4. **Molecular generation** → `molecular-generation.md`
 5. **Retrosynthesis** → `retrosynthesis.md`

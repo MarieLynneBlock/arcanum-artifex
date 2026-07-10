@@ -17,7 +17,7 @@ This file is the discoverable launcher for this standalone bundle.
 - Workflow playbook: `WORKFLOW.md`
 - Prompt entrypoint: `prompts/4plus1-diagrams.prompt.md`
 
-## Required behavior
+## Required behaviour
 
 1. Open and follow `agents/architecture-documentation.agent.md` exactly.
 2. Use `WORKFLOW.md` as the execution source of truth.

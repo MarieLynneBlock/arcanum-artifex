@@ -26,7 +26,7 @@ Basic Cox proportional hazards model for survival analysis.
 ### Key Parameters
 - `alpha`: Regularization parameter (default: 0, no regularization)
 - `ties`: Method for handling tied event times ('breslow' or 'efron')
-- `n_iter`: Maximum number of iterations for optimization
+- `n_iter`: Maximum number of iterations for optimisation
 
 ### Example Usage
 ```python

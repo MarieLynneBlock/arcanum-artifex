@@ -2,7 +2,7 @@
 
 # Architecture Diagram
 
-> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `architecture-beta`
 **Best for:** Cloud infrastructure, service topology, deployment architecture, network layout
@@ -67,7 +67,7 @@ architecture-beta
 
 ## Complex Example
 
-_Multi-region cloud deployment with 3 nested groups (2 regional clusters + shared services) showing 9 services, cross-region database replication, CDN distribution, and centralized monitoring. Demonstrates how nested `group` + `in` syntax creates clear infrastructure boundaries:_
+_Multi-region cloud deployment with 3 nested groups (2 regional clusters + shared services) showing 9 services, cross-region database replication, CDN distribution, and centralised monitoring. Demonstrates how nested `group` + `in` syntax creates clear infrastructure boundaries:_
 
 ```mermaid
 architecture-beta

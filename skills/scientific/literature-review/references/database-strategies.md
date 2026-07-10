@@ -43,7 +43,7 @@ This document provides comprehensive guidance for searching multiple literature 
 - **Limitations**: No official API, rate limiting
 - **Export**: Use "Cite" feature for formatted citations
 
-### Specialized Databases
+### Specialised Databases
 
 #### ChEMBL / PubChem
 - **Access**: Use `gget` skill or `bioservices` skill
@@ -71,12 +71,12 @@ This document provides comprehensive guidance for searching multiple literature 
 #### AlphaFold Database
 - **Access**: Use `gget` skill with `alphafold` command
 - **Coverage**: 200M+ protein structure predictions
-- **Best for**: Structural biology, protein modeling
+- **Best for**: Structural biology, protein modelling
 
 #### PDB (Protein Data Bank)
 - **Access**: Use `gget` or direct API
 - **Coverage**: Experimental 3D structures of proteins, nucleic acids
-- **Best for**: Structural biology, drug design, molecular modeling
+- **Best for**: Structural biology, drug design, molecular modelling
 
 ### Citation & Reference Management
 
@@ -118,7 +118,7 @@ Identify 2-4 main concepts from your research question.
 #### Synonyms & Related Terms
 List alternative terms, abbreviations, and related concepts.
 
-**Tool**: Use MeSH (Medical Subject Headings) browser for standardized terms
+**Tool**: Use MeSH (Medical Subject Headings) browser for standardised terms
 
 #### Boolean Operators
 - **AND**: Narrows search (must include both terms)
@@ -157,7 +157,7 @@ Search at least 3 complementary databases:
 1. **Primary database**: PubMed (biomedical) or arXiv (computational)
 2. **Preprint server**: bioRxiv/medRxiv or arXiv
 3. **Comprehensive database**: Semantic Scholar or Google Scholar
-4. **Specialized database**: ChEMBL, UniProt, or field-specific
+4. **Specialised database**: ChEMBL, UniProt, or field-specific
 
 #### Database-Specific Syntax
 
@@ -245,9 +245,9 @@ All searches must be documented for reproducibility:
 
 ## Advanced Search Techniques
 
-### Prioritizing High-Impact Papers (CRITICAL)
+### Prioritising High-Impact Papers (CRITICAL)
 
-**Always prioritize papers based on citation count, venue quality, and author reputation.** Quality matters more than quantity.
+**Always prioritise papers based on citation count, venue quality, and author reputation.** Quality matters more than quantity.
 
 #### Citation Metrics in Database Searches
 
@@ -270,7 +270,7 @@ Use citation counts to identify influential work:
 
 #### Filtering by Journal Quality
 
-Prioritize papers from higher-tier venues:
+Prioritise papers from higher-tier venues:
 
 **Tier 1 (Always Prefer):**
 - Nature, Science, Cell, NEJM, Lancet, JAMA, PNAS
@@ -278,7 +278,7 @@ Prioritize papers from higher-tier venues:
 - Search tip: `source:Nature` or `journal:Nature` in Google Scholar
 
 **Tier 2 (High Priority):**
-- High-impact specialized journals (Impact Factor >10)
+- High-impact specialised journals (Impact Factor >10)
 - Top conferences: NeurIPS, ICML, ICLR, CVPR, ACL
 
 **Tier 3 (Include When Relevant):**
@@ -335,7 +335,7 @@ Review references in key papers:
 3. Check which references are cited by multiple papers
 4. Review those high-overlap references - these are likely seminal
 5. Repeat for newly identified key papers
-6. **Prioritize papers with high citation counts** at each step
+6. **Prioritise papers with high citation counts** at each step
 
 ### Author Search
 Follow prolific and reputable authors in the field:
@@ -343,7 +343,7 @@ Follow prolific and reputable authors in the field:
 - Check author profiles (ORCID, Google Scholar) for h-index and publication venues
 - Review recent publications and preprints
 - **Prefer authors with multiple Tier-1 publications** and high h-index (>40)
-- Look for senior authors who are recognized field leaders
+- Look for senior authors who are recognised field leaders
 
 ### Related Article Features
 Many databases suggest related articles:

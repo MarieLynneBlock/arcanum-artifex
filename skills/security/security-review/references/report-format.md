@@ -191,4 +191,4 @@ Apply to every finding:
 | **MEDIUM** | Vulnerability likely exists but depends on runtime context, config, or call path the agent couldn't fully trace. |
 | **LOW** | Suspicious pattern detected but could be a false positive. Flag for human review. |
 
-Never omit confidence — it helps developers prioritize their review effort.
+Never omit confidence — it helps developers prioritise their review effort.

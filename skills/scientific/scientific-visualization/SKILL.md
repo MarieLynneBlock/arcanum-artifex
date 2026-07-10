@@ -1,28 +1,28 @@
 ---
-name: scientific-visualization
+name: scientific-visualisation
 description: Meta-skill for publication-ready figures. Use when creating journal submission figures requiring multi-panel layouts, significance annotations, error bars, colorblind-safe palettes, and specific journal formatting (Nature, Science, Cell). Orchestrates matplotlib/seaborn/plotly with publication styles. For quick exploration use seaborn or plotly directly.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
 
-# Scientific Visualization
+# Scientific Visualisation
 
 ## Overview
 
-Scientific visualization transforms data into clear, accurate figures for publication. Create journal-ready plots with multi-panel layouts, error bars, significance markers, and colorblind-safe palettes. Export as PDF/EPS/TIFF using matplotlib, seaborn, and plotly for manuscripts.
+Scientific visualisation transforms data into clear, accurate figures for publication. Create journal-ready plots with multi-panel layouts, error bars, significance markers, and colorblind-safe palettes. Export as PDF/EPS/TIFF using matplotlib, seaborn, and plotly for manuscripts.
 
 ## When to Use This Skill
 
 This skill should be used when:
-- Creating plots or visualizations for scientific manuscripts
+- Creating plots or visualisations for scientific manuscripts
 - Preparing figures for journal submission (Nature, Science, Cell, PLOS, etc.)
 - Ensuring figures are colorblind-friendly and accessible
 - Making multi-panel figures with consistent styling
 - Exporting figures at correct resolution and format
 - Following specific publication guidelines
 - Improving existing figures to meet publication standards
-- Creating figures that need to work in both color and grayscale
+- Creating figures that need to work in both colour and grayscale
 
 ## Quick Start Guide
 
@@ -129,11 +129,11 @@ from figure_export import save_for_journal
 save_for_journal(fig, 'figure1', journal='nature', figure_type='combination')
 ```
 
-### 2. Color Selection - Colorblind Accessibility
+### 2. Colour Selection - Colorblind Accessibility
 
 **Always use colorblind-friendly palettes** (detailed in `references/color-palettes.md`):
 
-**Recommended: Okabe-Ito palette** (distinguishable by all types of color blindness):
+**Recommended: Okabe-Ito palette** (distinguishable by all types of colour blindness):
 ```python
 # Option 1: Use assets/color_palettes.py
 from color_palettes import OKABE_ITO_LIST, apply_palette
@@ -224,7 +224,7 @@ See `references/matplotlib-examples.md` Example 1 for complete code.
 **Key steps:**
 1. Apply publication style
 2. Set appropriate figure size for target journal
-3. Use colorblind-friendly colors
+3. Use colorblind-friendly colours
 4. Add error bars with correct representation (SEM, SD, or CI)
 5. Label axes with units
 6. Remove unnecessary spines
@@ -259,9 +259,9 @@ See `references/matplotlib-examples.md` Example 4 for complete code.
 
 **Key steps:**
 1. Use perceptually uniform colormap (`viridis`, `plasma`, `cividis`)
-2. Include labeled colorbar
+2. Include labelled colorbar
 3. For diverging data, use colorblind-safe diverging map (`RdBu_r`, `PuOr`)
-4. Set appropriate center value for diverging maps
+4. Set appropriate centre value for diverging maps
 5. Test appearance in grayscale
 
 **Using seaborn for correlation matrices:**
@@ -297,14 +297,14 @@ sns.heatmap(corr, mask=mask, annot=True, fmt='.2f',
 
 1. **Check resolution**: Verify DPI meets journal requirements
 2. **Check file format**: Use vector for plots, TIFF/PNG for images
-3. **Check colors**: Ensure colorblind-friendly
+3. **Check colours**: Ensure colorblind-friendly
 4. **Check fonts**: Minimum 6-7 pt at final size, sans-serif
-5. **Check labels**: All axes labeled with units
+5. **Check labels**: All axes labelled with units
 6. **Check size**: Matches journal column width
-7. **Test grayscale**: Figure interpretable without color
+7. **Test grayscale**: Figure interpretable without colour
 8. **Remove chart junk**: No unnecessary grids, 3D effects, shadows
 
-### Task 6: Create Colorblind-Friendly Visualizations
+### Task 6: Create Colorblind-Friendly Visualisations
 
 **Strategy:**
 1. Use approved palettes from `assets/color_palettes.py`
@@ -328,7 +328,7 @@ for i, (data, label) in enumerate(datasets):
              marker=markers[i % 4], label=label)
 ```
 
-## Statistical Rigor
+## Statistical Rigour
 
 **Always include:**
 - Error bars (SD, SEM, or CI - specify which in caption)
@@ -356,9 +356,9 @@ ax.text(1.5, max_y * 1.1, '***', ha='center', fontsize=8)
 
 ### Seaborn
 
-Seaborn provides a high-level, dataset-oriented interface for statistical graphics, built on matplotlib. It excels at creating publication-quality statistical visualizations with minimal code while maintaining full compatibility with matplotlib customization.
+Seaborn provides a high-level, dataset-oriented interface for statistical graphics, built on matplotlib. It excels at creating publication-quality statistical visualisations with minimal code while maintaining full compatibility with matplotlib customisation.
 
-**Key advantages for scientific visualization:**
+**Key advantages for scientific visualisation:**
 - Automatic statistical estimation and confidence intervals
 - Built-in support for multi-panel figures (faceting)
 - Colorblind-friendly palettes by default
@@ -486,7 +486,7 @@ plt.tight_layout()
 sns.despine()
 ```
 
-#### Color Palettes for Publications
+#### Colour Palettes for Publications
 
 Seaborn includes several colorblind-safe palettes:
 
@@ -527,7 +527,7 @@ sns.scatterplot(data=df, x='x', y='y', hue='group', ax=ax)
 g = sns.relplot(data=df, x='x', y='y', col='category', kind='scatter')
 ```
 
-#### Statistical Rigor with Seaborn
+#### Statistical Rigour with Seaborn
 
 Seaborn automatically computes and displays uncertainty:
 
@@ -668,10 +668,10 @@ fig.write_image('figure.png', scale=3)  # scale=3 gives ~300 DPI
   - Resolution and file format requirements
   - Typography guidelines
   - Layout and composition rules
-  - Statistical rigor requirements
+  - Statistical rigour requirements
   - Complete publication checklist
 
-- **`color-palettes.md`**: Color usage guide
+- **`color-palettes.md`**: Colour usage guide
   - Colorblind-friendly palette specifications with RGB values
   - Sequential and diverging colormap recommendations
   - Testing procedures for accessibility
@@ -709,7 +709,7 @@ fig.write_image('figure.png', scale=3)  # scale=3 gives ~300 DPI
 
 **Use these files in figures:**
 
-- **`color_palettes.py`**: Importable color definitions
+- **`color_palettes.py`**: Importable colour definitions
   - All recommended palettes as Python constants
   - `apply_palette()` helper function
   - Can be imported directly into notebooks/scripts
@@ -729,8 +729,8 @@ fig.write_image('figure.png', scale=3)  # scale=3 gives ~300 DPI
    from style_presets import configure_for_journal
    configure_for_journal('nature', 'single')
    ```
-3. **Create**: Build figure with proper labels, colors, statistics
-4. **Verify**: Check size, fonts, colors, accessibility
+3. **Create**: Build figure with proper labels, colours, statistics
+4. **Verify**: Check size, fonts, colours, accessibility
    ```python
    from figure_export import check_figure_size
    check_figure_size(fig, journal='nature')
@@ -745,14 +745,14 @@ fig.write_image('figure.png', scale=3)  # scale=3 gives ~300 DPI
 ## Common Pitfalls to Avoid
 
 1. **Font too small**: Text unreadable when printed at final size
-2. **JPEG format**: Never use JPEG for graphs/plots (creates artifacts)
-3. **Red-green colors**: ~8% of males cannot distinguish
+2. **JPEG format**: Never use JPEG for graphs/plots (creates artefacts)
+3. **Red-green colours**: ~8% of males cannot distinguish
 4. **Low resolution**: Pixelated figures in publication
 5. **Missing units**: Always label axes with units
 6. **3D effects**: Distorts perception, avoid completely
 7. **Chart junk**: Remove unnecessary gridlines, decorations
 8. **Truncated axes**: Start bar charts at zero unless scientifically justified
-9. **Inconsistent styling**: Different fonts/colors across figures in same manuscript
+9. **Inconsistent styling**: Different fonts/colours across figures in same manuscript
 10. **No error bars**: Always show uncertainty
 
 ## Final Checklist
@@ -763,9 +763,9 @@ Before submitting figures, verify:
 - [ ] File format is correct (vector for plots, TIFF for images)
 - [ ] Figure size matches journal specifications
 - [ ] All text readable at final size (≥6 pt)
-- [ ] Colors are colorblind-friendly
+- [ ] Colours are colorblind-friendly
 - [ ] Figure works in grayscale
-- [ ] All axes labeled with units
+- [ ] All axes labelled with units
 - [ ] Error bars present with definition in caption
 - [ ] Panel labels present and consistent
 - [ ] No chart junk or 3D effects

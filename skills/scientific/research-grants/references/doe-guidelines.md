@@ -106,7 +106,7 @@
 
 ### Office of Fossil Energy and Carbon Management (FECM)
 
-**Focus**: Carbon capture, utilization, and storage; hydrogen; critical minerals
+**Focus**: Carbon capture, utilisation, and storage; hydrogen; critical minerals
 
 ### Office of Nuclear Energy (NE)
 
@@ -150,7 +150,7 @@ DOE proposal requirements vary significantly by program office and FOA. **Always
    - Timeline to market (for applied programs)
 
 5. **Management Plan** (1-2 pages)
-   - Team organization and roles
+   - Team organisation and roles
    - Timeline and milestones
    - Risk management
    - Communication and reporting
@@ -165,7 +165,7 @@ DOE proposal requirements vary significantly by program office and FOA. **Always
 
 **Federal Cost Share**:
 - Specify DOE funding requested by year
-- Break down by category (labor, equipment, travel, etc.)
+- Break down by category (labour, equipment, travel, etc.)
 - Detailed justification for each item
 
 **Cost Share** (often required):
@@ -177,7 +177,7 @@ DOE proposal requirements vary significantly by program office and FOA. **Always
   - National labs: Varies
 
 **Budget Categories**:
-- Labor (personnel with hours/rates)
+- Labour (personnel with hours/rates)
 - Fringe benefits
 - Travel
 - Equipment and capital items
@@ -250,7 +250,7 @@ Proposals typically evaluated on:
    - Technical feasibility
    - Likelihood of success
    - Adequacy of project design
-   - Rigor of technical approach
+   - Rigour of technical approach
 
 3. **Competency of Personnel and Adequacy of Facilities** (20-25%)
    - Qualifications of PI and team
@@ -288,7 +288,7 @@ Proposals typically evaluated on:
 
 2. **Innovation/Technical Merit** (30%)
    - Novel approach or technology
-   - Technical rigor and feasibility
+   - Technical rigour and feasibility
    - Likelihood of meeting targets
    - Risk and risk mitigation
 
@@ -356,8 +356,8 @@ Proposals typically evaluated on:
 
 **Types**:
 - **Light Sources**: X-ray and neutron scattering (APS, NSLS-II, ALS, etc.)
-- **Nanoscale Science Centers**: Fabrication and characterization
-- **High-Performance Computing**: Supercomputing centers (OLCF, NERSC, ALCF)
+- **Nanoscale Science Centres**: Fabrication and characterisation
+- **High-Performance Computing**: Supercomputing centres (OLCF, NERSC, ALCF)
 - **Genomic Science**: JGI, EMSL
 - **Accelerators and Detectors**: Particle and nuclear physics facilities
 
@@ -514,7 +514,7 @@ Proposals typically evaluated on:
 ### Do's
 
 ✅ **Align with DOE mission** - Energy, environment, or national security relevance
-✅ **Emphasize impact** - How will this advance energy technology or science?
+✅ **Emphasise impact** - How will this advance energy technology or science?
 ✅ **Quantify outcomes** - Energy savings, efficiency gains, cost reductions
 ✅ **Show pathway to deployment** - For applied programs, how will technology reach market?
 ✅ **Leverage DOE capabilities** - National labs, user facilities, unique resources
@@ -552,15 +552,15 @@ Proposals typically evaluated on:
 
 ### Key Focus Areas
 
-- **Clean Energy Transition**: Renewable energy, storage, grid modernization
-- **Carbon Management**: Carbon capture, utilization, storage, removal
+- **Clean Energy Transition**: Renewable energy, storage, grid modernisation
+- **Carbon Management**: Carbon capture, utilisation, storage, removal
 - **Critical Materials**: Supply chain security, recycling, substitutes
 - **Advanced Manufacturing**: Energy-efficient processes, sustainable materials
 - **Quantum Information Science**: Computing, sensing, communications
 - **Fusion Energy**: Accelerating fusion development
-- **Hydrogen Economy**: Production, storage, utilization
+- **Hydrogen Economy**: Production, storage, utilisation
 - **Nuclear Energy**: Advanced reactors, microreactors, fuel cycle
-- **Climate Adaptation**: Climate modeling, resilience, impacts
+- **Climate Adaptation**: Climate modelling, resilience, impacts
 - **Energy Equity**: Environmental justice, workforce development
 
 ### Major Initiatives

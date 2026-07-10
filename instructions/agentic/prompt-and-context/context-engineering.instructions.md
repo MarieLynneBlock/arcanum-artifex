@@ -1,5 +1,5 @@
 ---
-description: 'Guidelines for structuring code and projects to maximize GitHub Copilot effectiveness through better context management'
+description: 'Guidelines for structuring code and projects to maximise GitHub Copilot effectiveness through better context management'
 applyTo: '**'
 ---
 
@@ -22,7 +22,7 @@ Principles for helping GitHub Copilot understand your codebase and provide bette
 ## Working with Copilot
 
 - **Keep relevant files open in tabs**: Copilot uses open tabs as context signals. Working on auth? Open auth-related files.
-- **Position cursor intentionally**: Copilot prioritizes code near your cursor. Put cursor where context matters.
+- **Position cursor intentionally**: Copilot prioritises code near your cursor. Put cursor where context matters.
 - **Use Copilot Chat for complex tasks**: Inline completions have minimal context. Chat mode sees more files.
 
 ## Context Hints

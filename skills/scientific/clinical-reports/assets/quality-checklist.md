@@ -24,7 +24,7 @@
 - [ ] Clear, professional language
 - [ ] Medical terminology used appropriately
 - [ ] Abbreviations defined or standard only
-- [ ] Logical organization and flow
+- [ ] Logical organisation and flow
 - [ ] Legible (if handwritten)
 - [ ] No ambiguous statements
 - [ ] Clinical reasoning clearly explained
@@ -106,7 +106,7 @@
 - [ ] Baseline demographics table
 - [ ] Primary endpoint results
 - [ ] All secondary endpoints reported
-- [ ] Adverse events summarized
+- [ ] Adverse events summarised
 - [ ] Individual SAE narratives included
 - [ ] Discussion and conclusions present
 - [ ] Appendices complete (protocol, CRFs, etc.)
@@ -122,7 +122,7 @@
 - [ ] Technique described
 - [ ] Findings systematic and comprehensive
 - [ ] Measurements provided for abnormalities
-- [ ] Impression summarizes key findings
+- [ ] Impression summarises key findings
 - [ ] Answers clinical question
 - [ ] Recommendations specified
 - [ ] Critical results communicated
@@ -130,7 +130,7 @@
 - [ ] Report signed and dated
 
 ### Pathology Report
-- [ ] Specimen labeled correctly
+- [ ] Specimen labelled correctly
 - [ ] Clinical history provided
 - [ ] Gross description detailed
 - [ ] Microscopic description comprehensive
@@ -276,7 +276,7 @@
 - [ ] Non-compliance documented objectively
 - [ ] No alterations to original record
 - [ ] Addendums used for corrections
-- [ ] Addendums clearly labeled
+- [ ] Addendums clearly labelled
 - [ ] All entries signed and dated
 - [ ] Authorship clear
 
@@ -293,7 +293,7 @@
 
 ## Final Review Checklist
 
-Before finalizing any clinical report:
+Before finalising any clinical report:
 
 - [ ] Read through entire document
 - [ ] Check for completeness

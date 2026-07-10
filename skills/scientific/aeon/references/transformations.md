@@ -41,7 +41,7 @@ Symbolic approximations for discrete representations:
 - `SAX` - Symbolic Aggregate approXimation
 - `PAA` - Piecewise Aggregate Approximation
 - `SFA` - Symbolic Fourier Approximation
-- `SFAFast` - Optimized SFA
+- `SFAFast` - Optimised SFA
 - `SFAWhole` - SFA on entire series (no windowing)
 - `BORF` - Bag-of-Receptive-Fields
 
@@ -70,25 +70,25 @@ Statistical summaries from time intervals:
 
 ### Preprocessing Transformations
 
-Data preparation and normalization:
+Data preparation and normalisation:
 
 - `MinMaxScaler` - Scale to [0, 1] range
-- `Normalizer` - Z-normalization (zero mean, unit variance)
-- `Centerer` - Center to zero mean
+- `Normalizer` - Z-normalisation (zero mean, unit variance)
+- `Centerer` - Centre to zero mean
 - `SimpleImputer` - Fill missing values
 - `DownsampleTransformer` - Reduce temporal resolution
 - `Tabularizer` - Convert time series to tabular format
 
-**Use when**: Need standardization, missing value handling, format conversion.
+**Use when**: Need standardisation, missing value handling, format conversion.
 
-### Specialized Transformations
+### Specialised Transformations
 
 Advanced analysis methods:
 
 - `MatrixProfile` - Computes distance profiles for pattern discovery
 - `DWTTransformer` - Discrete Wavelet Transform
 - `AutocorrelationFunctionTransformer` - ACF computation
-- `Dobin` - Distance-based Outlier BasIs using Neighbors
+- `Dobin` - Distance-based Outlier BasIs using Neighbours
 - `SignatureTransformer` - Path signature methods
 - `PLATransformer` - Piecewise Linear Approximation
 
@@ -132,7 +132,7 @@ Transform individual time series (e.g., for preprocessing in forecasting).
 
 ### Transformations
 
-- `BoxCoxTransformer` - Variance stabilization
+- `BoxCoxTransformer` - Variance stabilisation
 - `LogTransformer` - Logarithmic scaling
 - `ClaSPTransformer` - Classification Score Profile
 
@@ -200,7 +200,7 @@ y_smoothed = smoother.fit_transform(y)
 - **Comprehensive features**: TSFresh (with longer runtime)
 
 ### For Preprocessing:
-- **Normalization**: Normalizer, MinMaxScaler
+- **Normalisation**: Normalizer, MinMaxScaler
 - **Smoothing**: MovingAverage, SavitzkyGolayFilter
 - **Missing values**: SimpleImputer
 - **Frequency analysis**: DWTTransformer, Fourier methods

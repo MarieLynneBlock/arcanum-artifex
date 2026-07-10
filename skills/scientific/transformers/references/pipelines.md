@@ -56,7 +56,7 @@ unmasker = pipeline("fill-mask", model="bert-base-uncased")
 result = unmasker("Paris is the [MASK] of France")
 ```
 
-**summarization**: Summarize long texts
+**summarisation**: Summarise long texts
 ```python
 summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
 summary = summarizer("Long article text...", max_length=130, min_length=30)
@@ -217,7 +217,7 @@ for output in pipe(KeyDataset(dataset, "text")):
     print(output)
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### GPU Acceleration
 

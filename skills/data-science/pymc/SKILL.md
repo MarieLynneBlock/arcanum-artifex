@@ -1,16 +1,16 @@
 ---
 name: pymc
-description: Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posterior checks, for probabilistic programming and inference.
+description: Bayesian modelling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posterior checks, for probabilistic programming and inference.
 license: Apache License, Version 2.0
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
 
-# PyMC Bayesian Modeling
+# PyMC Bayesian Modelling
 
 ## Overview
 
-PyMC is a Python library for Bayesian modeling and probabilistic programming. Build, fit, validate, and compare Bayesian models using PyMC's modern API (version 5.x+), including hierarchical models, MCMC sampling (NUTS), variational inference, and model comparison (LOO, WAIC).
+PyMC is a Python library for Bayesian modelling and probabilistic programming. Build, fit, validate, and compare Bayesian models using PyMC's modern API (version 5.x+), including hierarchical models, MCMC sampling (NUTS), variational inference, and model comparison (LOO, WAIC).
 
 ## When to Use This Skill
 
@@ -46,8 +46,8 @@ X_scaled = (X - X_mean) / X_std
 ```
 
 **Key practices:**
-- Standardize continuous predictors (improves sampling efficiency)
-- Center outcomes when possible
+- Standardise continuous predictors (improves sampling efficiency)
+- Centre outcomes when possible
 - Handle missing data explicitly (treat as parameters)
 - Use named dimensions with `coords` for clarity
 
@@ -137,7 +137,7 @@ results = check_diagnostics(idata, var_names=['alpha', 'beta', 'sigma'])
 - **Trace plots**: Chains should mix well (fuzzy caterpillar)
 
 **If issues arise:**
-- Divergences → Increase `target_accept=0.95`, use non-centered parameterization
+- Divergences → Increase `target_accept=0.95`, use non-centred parameterization
 - Low ESS → Sample more draws, reparameterize to reduce correlation
 - High R-hat → Run longer, check for multimodality
 
@@ -158,7 +158,7 @@ az.plot_ppc(idata)
 - Are systematic deviations evident (model misspecification)?
 - Consider alternative models if fit is poor
 
-### 7. Analyze Results
+### 7. Analyse Results
 
 ```python
 # Summary statistics
@@ -223,7 +223,7 @@ with pm.Model() as logistic_model:
 
 ### Hierarchical Models
 
-For grouped data (use non-centered parameterization):
+For grouped data (use non-centred parameterization):
 
 ```python
 with pm.Model(coords={'groups': group_names}) as hierarchical_model:
@@ -243,7 +243,7 @@ with pm.Model(coords={'groups': group_names}) as hierarchical_model:
 
 **Use template:** `assets/hierarchical_model_template.py`
 
-**Critical:** Always use non-centered parameterization for hierarchical models to avoid divergences.
+**Critical:** Always use non-centred parameterization for hierarchical models to avoid divergences.
 
 ### Poisson Regression
 
@@ -326,7 +326,7 @@ averaged_pred, weights = model_averaging(models, var_name='y_obs')
 - `pm.Gamma('sigma', alpha=2, beta=1)` - More informative
 
 **Unbounded parameters**:
-- `pm.Normal('theta', mu=0, sigma=1)` - For standardized data
+- `pm.Normal('theta', mu=0, sigma=1)` - For standardised data
 - `pm.StudentT('theta', nu=3, mu=0, sigma=1)` - Robust to outliers
 
 **Positive parameters**:
@@ -440,7 +440,7 @@ Checks R-hat, ESS, divergences, and tree depth.
 
 **Solutions:**
 1. Increase `target_accept=0.95` or `0.99`
-2. Use non-centered parameterization (hierarchical models)
+2. Use non-centred parameterization (hierarchical models)
 3. Add stronger priors to constrain parameters
 4. Check for model misspecification
 
@@ -474,10 +474,10 @@ Checks R-hat, ESS, divergences, and tree depth.
 
 ### Model Building
 
-1. **Always standardize predictors** for better sampling
+1. **Always standardise predictors** for better sampling
 2. **Use weakly informative priors** (not flat)
 3. **Use named dimensions** (`dims`) for clarity
-4. **Non-centered parameterization** for hierarchical models
+4. **Non-centred parameterization** for hierarchical models
 5. **Check prior predictive** before fitting
 
 ### Sampling
@@ -507,7 +507,7 @@ This skill includes:
 
 ### References (`references/`)
 
-- **`distributions.md`**: Comprehensive catalog of PyMC distributions organized by category (continuous, discrete, multivariate, mixture, time series). Use when selecting priors or likelihoods.
+- **`distributions.md`**: Comprehensive catalogue of PyMC distributions organised by category (continuous, discrete, multivariate, mixture, time series). Use when selecting priors or likelihoods.
 
 - **`sampling-inference.md`**: Detailed guide to sampling algorithms (NUTS, Metropolis, SMC), variational inference (ADVI, SVGD), and handling sampling issues. Use when encountering convergence problems or choosing inference methods.
 
@@ -523,7 +523,7 @@ This skill includes:
 
 - **`linear_regression_template.py`**: Complete template for Bayesian linear regression with full workflow (data prep, prior checks, fitting, diagnostics, predictions).
 
-- **`hierarchical_model_template.py`**: Complete template for hierarchical/multilevel models with non-centered parameterization and group-level analysis.
+- **`hierarchical_model_template.py`**: Complete template for hierarchical/multilevel models with non-centred parameterization and group-level analysis.
 
 ## Quick Reference
 
@@ -562,8 +562,8 @@ with model:
 
 ## Additional Notes
 
-- PyMC integrates with ArviZ for visualization and diagnostics
-- Use `pm.model_to_graphviz(model)` to visualize model structure
+- PyMC integrates with ArviZ for visualisation and diagnostics
+- Use `pm.model_to_graphviz(model)` to visualise model structure
 - Save results with `idata.to_netcdf('results.nc')`
 - Load with `az.from_netcdf('results.nc')`
 - For very large models, consider minibatch ADVI or data subsampling

@@ -57,7 +57,7 @@ The AI will automatically:
 - Reference management system architectures
 - Citation style decision trees
 - Database integration diagrams
-- Any complex concept that benefits from visualization
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -107,7 +107,7 @@ python scripts/search_google_scholar.py "machine learning protein folding" \
 
 #### PubMed Search
 
-PubMed specializes in biomedical and life sciences literature (35+ million citations).
+PubMed specialises in biomedical and life sciences literature (35+ million citations).
 
 **Basic Search**:
 ```bash
@@ -261,7 +261,7 @@ See `references/bibtex-formatting.md` for complete guide.
 
 #### Formatting and Cleaning
 
-Use the formatter to standardize BibTeX files:
+Use the formatter to standardise BibTeX files:
 
 ```bash
 # Format and clean BibTeX file
@@ -291,10 +291,10 @@ python scripts/format_bibtex.py references.bib \
 ```
 
 **Formatting Operations**:
-- Standardize field order
+- Standardise field order
 - Consistent indentation and spacing
-- Proper capitalization in titles (protected with {})
-- Standardized author name format
+- Proper capitalisation in titles (protected with {})
+- Standardised author name format
 - Consistent citation key format
 - Remove unnecessary fields
 - Fix common errors (missing commas, braces)
@@ -432,7 +432,7 @@ This skill complements the `literature-review` skill:
 **Combined Workflow**:
 1. Use `literature-review` for comprehensive multi-database search
 2. Use `citation-management` to extract and validate all citations
-3. Use `literature-review` to synthesize findings thematically
+3. Use `literature-review` to synthesise findings thematically
 4. Use `citation-management` to verify final bibliography accuracy
 
 ```bash
@@ -452,7 +452,7 @@ python scripts/format_bibtex.py my_review_references.bib \
 
 **Finding Seminal and High-Impact Papers** (CRITICAL):
 
-Always prioritize papers based on citation count, venue quality, and author reputation:
+Always prioritise papers based on citation count, venue quality, and author reputation:
 
 **Citation Count Thresholds:**
 | Paper Age | Citations | Classification |
@@ -467,13 +467,13 @@ Always prioritize papers based on citation count, venue quality, and author repu
 **Venue Quality Tiers:**
 - **Tier 1 (Prefer):** Nature, Science, Cell, NEJM, Lancet, JAMA, PNAS
 - **Tier 2 (High Priority):** Impact Factor >10, top conferences (NeurIPS, ICML, ICLR)
-- **Tier 3 (Good):** Specialized journals (IF 5-10)
+- **Tier 3 (Good):** Specialised journals (IF 5-10)
 - **Tier 4 (Sparingly):** Lower-impact peer-reviewed venues
 
 **Author Reputation Indicators:**
 - Senior researchers with h-index >40
 - Multiple publications in Tier-1 venues
-- Leadership at recognized institutions
+- Leadership at recognised institutions
 - Awards and editorial positions
 
 **Search Strategies for High-Impact Papers:**
@@ -691,7 +691,7 @@ python scripts/validate_citations.py references.bib \
 Format and clean BibTeX files.
 
 **Features**:
-- Standardize formatting
+- Standardise formatting
 - Sort entries (by key, year, author)
 - Remove duplicates
 - Validate syntax
@@ -797,14 +797,14 @@ python scripts/doi_to_bibtex.py 10.1038/nature12345 --clipboard
 
 4. **Maintain consistency**:
    - Use consistent author name format
-   - Standardize journal abbreviations
+   - Standardise journal abbreviations
    - Use same DOI format (URL preferred)
 
 ### BibTeX Quality
 
 1. **Follow conventions**:
    - Use meaningful citation keys (FirstAuthor2024keyword)
-   - Protect capitalization in titles with {}
+   - Protect capitalisation in titles with {}
    - Use -- for page ranges (not single dash)
    - Include DOI field for all modern publications
 
@@ -814,7 +814,7 @@ python scripts/doi_to_bibtex.py 10.1038/nature12345 --clipboard
    - Consistent formatting
    - Validate syntax regularly
 
-3. **Organize systematically**:
+3. **Organise systematically**:
    - Sort by year or topic
    - Group related papers
    - Use separate files for different projects
@@ -851,7 +851,7 @@ python scripts/doi_to_bibtex.py 10.1038/nature12345 --clipboard
    - **Solution**: Run validation before final submission
 
 4. **Inconsistent formatting**: Mixed citation key styles, formatting
-   - **Solution**: Use format_bibtex.py to standardize
+   - **Solution**: Use format_bibtex.py to standardise
 
 5. **Duplicate entries**: Same paper cited multiple times with different keys
    - **Solution**: Use duplicate detection in validation
@@ -1008,7 +1008,7 @@ python scripts/extract_metadata.py \
 **Combined workflow**:
 1. Use literature-review for systematic search methodology
 2. Use citation-management to extract and validate citations
-3. Use literature-review to synthesize findings
+3. Use literature-review to synthesise findings
 4. Use citation-management to ensure bibliography accuracy
 
 ### Scientific Writing Skill
@@ -1103,7 +1103,7 @@ The citation-management skill provides:
 1. **Comprehensive search capabilities** for Google Scholar and PubMed
 2. **Automated metadata extraction** from DOI, PMID, arXiv ID, URLs
 3. **Citation validation** with DOI verification and completeness checking
-4. **BibTeX formatting** with standardization and cleaning tools
+4. **BibTeX formatting** with standardisation and cleaning tools
 5. **Quality assurance** through validation and reporting
 6. **Integration** with scientific writing workflow
 7. **Reproducibility** through documented search and extraction methods

@@ -33,7 +33,7 @@ Nature and Science are the world's premier multidisciplinary scientific journals
 |---------------|-------------|
 | **Accessible** | Avoid jargon; explain technical concepts |
 | **Engaging** | Hook the reader; tell a story |
-| **Significant** | Emphasize why this matters broadly |
+| **Significant** | Emphasise why this matters broadly |
 | **Confident** | State findings clearly (with appropriate hedging) |
 | **Active** | Use active voice; first person acceptable |
 
@@ -49,7 +49,7 @@ Nature and Science are the world's premier multidisciplinary scientific journals
 
 ### Style Requirements
 
-- **Flowing paragraphs** (NOT structured with labeled sections)
+- **Flowing paragraphs** (NOT structured with labelled sections)
 - **150-200 words** for Nature; up to 250 for Nature Communications
 - **No citations** in abstract
 - **No abbreviations** (or define at first use if essential)
@@ -170,7 +170,7 @@ protein function at scale."
 
 **Story-driven, not experiment-driven**
 
-Organize by **finding**, not by the chronological order of experiments:
+Organise by **finding**, not by the chronological order of experiments:
 
 ❌ **Experiment-driven** (avoid):
 > "We first performed experiment A. Next, we did experiment B. Then we conducted experiment C."
@@ -326,7 +326,7 @@ and knockout (d) cells. Scale bars, 10 μm.
 
 | Avoid | Prefer |
 |-------|--------|
-| utilize | use |
+| utilise | use |
 | methodology | method |
 | in order to | to |
 | a large number of | many |
@@ -363,7 +363,7 @@ and knockout (d) cells. Scale bars, 10 μm.
 
 ## Common Rejection Reasons
 
-1. **Not of sufficient broad interest**: Too specialized for Nature/Science
+1. **Not of sufficient broad interest**: Too specialised for Nature/Science
 2. **Incremental advance**: Not transformative enough
 3. **Overselling**: Claims not supported by data
 4. **Poor accessibility**: Too technical for general audience
@@ -379,12 +379,12 @@ and knockout (d) cells. Scale bars, 10 μm.
 - [ ] Significance to broad audience clear in first paragraph
 - [ ] Non-specialist can understand the abstract
 - [ ] Story-driven results (not experiment-by-experiment)
-- [ ] Implications emphasized in discussion
+- [ ] Implications emphasised in discussion
 - [ ] Limitations acknowledged specifically
 
 ### Style
 - [ ] Active voice predominates
-- [ ] Jargon minimized or explained
+- [ ] Jargon minimised or explained
 - [ ] Sentences vary in length
 - [ ] Paragraphs have clear topic sentences
 

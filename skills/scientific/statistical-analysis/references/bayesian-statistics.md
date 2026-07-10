@@ -45,7 +45,7 @@ Where:
 - **P(θ|D)**: Posterior distribution (belief about θ after seeing data)
 - **P(D|θ)**: Likelihood (probability of data given θ)
 - **P(θ)**: Prior distribution (belief about θ before seeing data)
-- **P(D)**: Marginal likelihood/evidence (normalizing constant)
+- **P(D)**: Marginal likelihood/evidence (normalising constant)
 
 ---
 
@@ -67,7 +67,7 @@ Where:
 **Advantages**:
 - Incorporates existing knowledge
 - More efficient (smaller samples needed)
-- Can stabilize estimates with small data
+- Can stabilise estimates with small data
 
 **Disadvantages**:
 - Subjective (but subjectivity can be strength)
@@ -288,7 +288,7 @@ hdi = az.hdi(posterior_samples, hdi_prob=0.95)
    - Skewed: Asymmetric uncertainty
    - Multimodal: Multiple plausible values
 
-**Visualization**:
+**Visualisation**:
 ```python
 import matplotlib.pyplot as plt
 import arviz as az
@@ -475,7 +475,7 @@ with regression_model:
 
 **Key concept**: Partial pooling
 - Complete pooling: Ignore groups (biased)
-- No pooling: Analyze groups separately (high variance)
+- No pooling: Analyse groups separately (high variance)
 - Partial pooling: Borrow strength across groups (Bayesian)
 
 **Example: Varying intercepts**:
@@ -637,8 +637,8 @@ p_value = np.mean(pred_means >= obs_mean)  # Bayesian p-value
 
 ## Key Python Packages
 
-- **PyMC**: Full Bayesian modeling framework
-- **ArviZ**: Visualization and diagnostics
+- **PyMC**: Full Bayesian modelling framework
+- **ArviZ**: Visualisation and diagnostics
 - **Bambi**: High-level interface for regression models
 - **PyStan**: Python interface to Stan
 - **TensorFlow Probability**: Bayesian inference with TensorFlow

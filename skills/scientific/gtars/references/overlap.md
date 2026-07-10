@@ -4,7 +4,7 @@ The overlaprs module provides efficient overlap detection between genomic interv
 
 ## IGD Index
 
-IGD (Integrated Genome Database) is a specialized data structure for fast genomic interval queries and overlap detection.
+IGD (Integrated Genome Database) is a specialised data structure for fast genomic interval queries and overlap detection.
 
 ### Building an IGD Index
 

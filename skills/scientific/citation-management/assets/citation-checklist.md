@@ -34,7 +34,7 @@ Use this checklist to ensure your citations are accurate, complete, and properly
 - [ ] Page ranges use double hyphen (--) not single (-)
 - [ ] No "pp." prefix in pages field
 - [ ] Author names use "and" separator (not semicolon or ampersand)
-- [ ] Capitalization protected in titles ({AlphaFold}, {CRISPR}, etc.)
+- [ ] Capitalisation protected in titles ({AlphaFold}, {CRISPR}, etc.)
 - [ ] Month names use standard abbreviations if included
 - [ ] Citation keys follow consistent format
 
@@ -82,7 +82,7 @@ python scripts/format_bibtex.py references.bib \
 
 **What this does**:
 - Removes duplicates
-- Standardizes formatting
+- Standardises formatting
 - Fixes common issues (page ranges, DOI format, etc.)
 - Sorts by year (newest first)
 
@@ -378,7 +378,7 @@ python scripts/format_bibtex.py references.bib \
 **Best Practice**:
 1. Validate throughout research process
 2. Use automated tools consistently
-3. Keep bibliography clean and organized
+3. Keep bibliography clean and organised
 4. Document any special cases
 5. Final validation 1-3 days before submission
 

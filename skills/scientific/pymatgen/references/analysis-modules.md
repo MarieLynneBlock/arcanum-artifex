@@ -1,6 +1,6 @@
 # Pymatgen Analysis Modules Reference
 
-This reference documents pymatgen's extensive analysis capabilities for materials characterization, property prediction, and computational analysis.
+This reference documents pymatgen's extensive analysis capabilities for materials characterisation, property prediction, and computational analysis.
 
 ## Phase Diagrams and Thermodynamics
 
@@ -526,5 +526,5 @@ prototype = matcher.get_prototypes(struct)
 3. **Consider symmetry**: Use `SpacegroupAnalyzer` to reduce computational cost
 4. **Check convergence**: Ensure input structures are well-converged
 5. **Use appropriate methods**: Different analyses have different accuracy/speed tradeoffs
-6. **Visualize results**: Use built-in plotters for quick validation
+6. **Visualise results**: Use built-in plotters for quick validation
 7. **Save intermediate results**: Complex analyses can be time-consuming

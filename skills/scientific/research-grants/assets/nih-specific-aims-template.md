@@ -57,13 +57,13 @@ Our long-term goal is to develop precision medicine approaches for type 2 diabet
 
 ## Specific Aim 1: Define molecular subtypes of T2D through integrated multi-omics analysis
 
-Current clinical classification of T2D lacks molecular granularity. Our preliminary clustering analysis identified 5 subtypes, but requires validation and mechanistic characterization.
+Current clinical classification of T2D lacks molecular granularity. Our preliminary clustering analysis identified 5 subtypes, but requires validation and mechanistic characterisation.
 
 **Working hypothesis**: T2D comprises at least five molecular subtypes with distinct genomic, transcriptomic, proteomic, and metabolomic signatures.
 
 **Approach**: We will (1) perform multi-omics profiling (genome, transcriptome, proteome, metabolome) on 2,000 T2D patients from three independent cohorts, (2) apply unsupervised clustering and machine learning to identify robust subtypes, and (3) validate subtypes in 1,000 independent patients. We will develop a streamlined classification algorithm using the minimal set of biomarkers sufficient for subtype assignment.
 
-**Expected outcomes**: We will define 5-7 molecular T2D subtypes, characterize their multi-omics signatures, and develop a clinically deployable classifier. This foundation will enable investigation of subtype-specific mechanisms (Aim 2) and treatment responses (Aim 3).
+**Expected outcomes**: We will define 5-7 molecular T2D subtypes, characterise their multi-omics signatures, and develop a clinically deployable classifier. This foundation will enable investigation of subtype-specific mechanisms (Aim 2) and treatment responses (Aim 3).
 
 ---
 
@@ -85,7 +85,7 @@ Molecular subtypes likely reflect distinct disease mechanisms, but causal pathwa
 
 **Working hypothesis**: Each T2D subtype is driven by a distinct combination of β-cell dysfunction, hepatic insulin resistance, adipose tissue inflammation, and incretin deficiency.
 
-**Approach**: Using patient-derived iPSCs, primary adipocytes, and liver organoids from each subtype, we will (1) assess β-cell function (insulin secretion dynamics, ER stress, apoptosis), (2) measure insulin signaling in hepatocytes and adipocytes using phosphoproteomics and glucose uptake assays, (3) profile immune cell infiltration and inflammatory cytokines in adipose tissue, and (4) measure GLP-1 secretion and receptor expression. We will perform integrative analysis relating cellular phenotypes to clinical outcomes in n=100 patients per subtype.
+**Approach**: Using patient-derived iPSCs, primary adipocytes, and liver organoids from each subtype, we will (1) assess β-cell function (insulin secretion dynamics, ER stress, apoptosis), (2) measure insulin signalling in hepatocytes and adipocytes using phosphoproteomics and glucose uptake assays, (3) profile immune cell infiltration and inflammatory cytokines in adipose tissue, and (4) measure GLP-1 secretion and receptor expression. We will perform integrative analysis relating cellular phenotypes to clinical outcomes in n=100 patients per subtype.
 
 **Expected outcomes**: We will define the primary pathophysiological defects in each subtype and identify targetable vulnerabilities. This mechanistic understanding will inform selection of appropriate therapies in Aim 3.
 
@@ -111,19 +111,19 @@ Current treatment algorithms do not account for molecular heterogeneity, leading
 
 **Approach**: We will (1) conduct retrospective analysis of treatment responses in 5,000 patients with known subtypes from electronic health records, (2) validate findings in a prospective observational cohort (n=500, 18-month follow-up), and (3) test predicted drug sensitivities in patient-derived cell models and humanized mice (n=15 per subtype per drug). Primary outcomes are HbA1c reduction, with secondary outcomes including weight, hypoglycemia, and cardiovascular risk markers.
 
-**Expected outcomes**: We will identify optimal first-line therapies for each subtype and develop a treatment algorithm. Retrospective data suggest subtype-guided therapy could improve HbA1c control by 0.8-1.2% compared to standard care. Results will inform an investigator-initiated clinical trial (resources available through our Clinical Research Center).
+**Expected outcomes**: We will identify optimal first-line therapies for each subtype and develop a treatment algorithm. Retrospective data suggest subtype-guided therapy could improve HbA1c control by 0.8-1.2% compared to standard care. Results will inform an investigator-initiated clinical trial (resources available through our Clinical Research Centre).
 
 ---
 
 ## Closing Paragraph: Impact and Significance (3-5 sentences)
 
-[Summarize expected outcomes, how it advances the field, and positive impact]
+[Summarise expected outcomes, how it advances the field, and positive impact]
 
 **Template:**
 The proposed research is significant because [why it matters]. Results will [specific advances - knowledge, tools, treatments]. We expect findings will [broader impact on field or health]. This work will [transformative potential or next steps].
 
 **Example:**
-The proposed research is significant because it will establish a molecular taxonomy of type 2 diabetes and identify subtype-specific treatment strategies, addressing a critical barrier to precision medicine in this prevalent disease. Results will provide mechanistic insights into T2D heterogeneity, immediately applicable biomarkers for patient stratification, and evidence-based treatment algorithms. We expect findings will enable personalized therapeutic approaches that substantially improve glycemic control and reduce complications for the 37 million Americans with T2D. This work will establish new paradigms for precision medicine in complex metabolic diseases and provide the foundation for a prospective subtype-guided treatment trial that could transform clinical practice.
+The proposed research is significant because it will establish a molecular taxonomy of type 2 diabetes and identify subtype-specific treatment strategies, addressing a critical barrier to precision medicine in this prevalent disease. Results will provide mechanistic insights into T2D heterogeneity, immediately applicable biomarkers for patient stratification, and evidence-based treatment algorithms. We expect findings will enable personalised therapeutic approaches that substantially improve glycemic control and reduce complications for the 37 million Americans with T2D. This work will establish new paradigms for precision medicine in complex metabolic diseases and provide the foundation for a prospective subtype-guided treatment trial that could transform clinical practice.
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Beyond patent search, PEDS, and trademarks, USPTO provides specialized APIs for citations, office actions, assignments, litigation, and other patent data.
+Beyond patent search, PEDS, and trademarks, USPTO provides specialised APIs for citations, office actions, assignments, litigation, and other patent data.
 
 ## 1. Enriched Citation API
 
@@ -16,7 +16,7 @@ Provides insights into patent evaluation processes and cited references for the 
 
 ### Purpose
 
-Analyze which references examiners cite during patent examination and how patents cite prior art.
+Analyse which references examiners cite during patent examination and how patents cite prior art.
 
 ### Key Features
 
@@ -94,7 +94,7 @@ Details rejection reasons and examination outcomes with bulk rejection data thro
 
 ### Use Cases
 
-- Analyze common rejection reasons
+- Analyse common rejection reasons
 - Identify problematic claim language
 - Prepare responses based on historical data
 - Portfolio analysis of rejection patterns
@@ -105,7 +105,7 @@ Details rejection reasons and examination outcomes with bulk rejection data thro
 
 ### Purpose
 
-Delivers bulk downloads of full-text office action documents organized by weekly release schedules.
+Delivers bulk downloads of full-text office action documents organised by weekly release schedules.
 
 ### Features
 
@@ -240,7 +240,7 @@ Access federal district court patent infringement cases.
 - Litigation risk analysis
 - Identify frequently litigated patents
 - Track litigation trends
-- Analyze venue preferences
+- Analyse venue preferences
 - Assess patent enforcement patterns
 
 ## 6. Cancer Moonshot Patent Data Set API
@@ -249,7 +249,7 @@ Access federal district court patent infringement cases.
 
 **Version:** v1.0.1
 
-Specialized dataset for cancer-related patent discoveries.
+Specialised dataset for cancer-related patent discoveries.
 
 ### Purpose
 
@@ -260,7 +260,7 @@ Search and download patents related to cancer research, treatment, and diagnosti
 - Curated cancer-related patents
 - Bulk data download
 - Classification by cancer type
-- Treatment modality categorization
+- Treatment modality categorisation
 
 ### Use Cases
 
@@ -373,7 +373,7 @@ def analyze_company_portfolio(company_name, api_key):
 
 1. **API Key Management** - Use environment variables, never hardcode
 2. **Rate Limiting** - Implement exponential backoff for all APIs
-3. **Caching** - Cache API responses to minimize redundant calls
+3. **Caching** - Cache API responses to minimise redundant calls
 4. **Error Handling** - Gracefully handle API errors and missing data
 5. **Data Validation** - Validate input formats before API calls
 6. **Combining APIs** - Use appropriate APIs together for comprehensive analysis
@@ -390,5 +390,5 @@ Single API key works across most USPTO APIs.
 
 - **Developer Portal**: https://developer.uspto.gov/
 - **Open Data Portal**: https://data.uspto.gov/
-- **API Catalog**: https://developer.uspto.gov/api-catalog
+- **API Catalogue**: https://developer.uspto.gov/api-catalogue
 - **Swagger Docs**: Available for individual APIs

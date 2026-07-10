@@ -71,7 +71,7 @@ cd output/genomics_web/website/
 - Include links to bioRxiv DOI
 - Add GitHub repository links
 - Include data availability section
-- Embed interactive visualizations if possible
+- Embed interactive visualisations if possible
 
 ---
 
@@ -200,7 +200,7 @@ python pipeline_light.py \
 # - Optimize file size for social media
 ```
 
-**Social Media Optimization**:
+**Social Media Optimisation**:
 - Square format (1:1) for Instagram
 - Horizontal format (16:9) for Twitter/LinkedIn
 - Vertical format (9:16) for TikTok/Stories
@@ -316,7 +316,7 @@ mkdir -p input/xhs_genomics/
 - Chinese language content
 - Platform-appropriate formatting
 - Visual-first presentation
-- Engagement optimizations
+- Engagement optimisations
 
 ---
 
@@ -405,7 +405,7 @@ python pipeline_light.py \
 
 ---
 
-## Quality Optimization Tips
+## Quality Optimisation Tips
 
 ### For Best Website Results
 1. Use LaTeX input with all assets
@@ -418,7 +418,7 @@ python pipeline_light.py \
 1. Provide high-resolution figures (300+ DPI)
 2. Specify exact poster dimensions needed
 3. Include institution branding information
-4. Use professional color scheme
+4. Use professional colour scheme
 5. Test print small preview before full poster
 
 ### For Best Video Results
@@ -429,8 +429,8 @@ python pipeline_light.py \
 5. Test audio quality and pacing
 
 ### For Best Overall Results
-1. Start with clean, well-organized LaTeX source
+1. Start with clean, well-organised LaTeX source
 2. Use GPT-4 or GPT-4.1 for highest quality
-3. Review all outputs before finalizing
+3. Review all outputs before finalising
 4. Iterate on any component that needs adjustment
 5. Combine components for cohesive presentation package

@@ -17,7 +17,7 @@ Different journals have specific technical requirements for figures. This refere
   - Combination (line art + images): 600 DPI
   - Photographs/microscopy: 300 DPI minimum
 
-- **Color space**: RGB (Nature is digital-first)
+- **Colour space**: RGB (Nature is digital-first)
 
 - **Dimensions**:
   - Single column: 89 mm (3.5 inches)
@@ -55,7 +55,7 @@ Example: `Smith_Fig1.pdf`
   - Photographs: 300 DPI minimum
   - Combination: 600 DPI minimum
 
-- **Color space**: RGB
+- **Colour space**: RGB
 
 - **Dimensions**:
   - Single column: 5.5 cm (2.17 inches)
@@ -91,7 +91,7 @@ Example: `abn1234_Fig1.eps`
   - Photographs: 300 DPI
   - Combination: 600 DPI
 
-- **Color space**: RGB
+- **Colour space**: RGB
 
 - **Dimensions**:
   - Single column: 85 mm (3.35 inches)
@@ -123,7 +123,7 @@ Example: `abn1234_Fig1.eps`
   - Minimum 300 DPI at final size (all figure types)
   - 600 DPI preferred for line art
 
-- **Color space**: RGB
+- **Colour space**: RGB
 
 - **Dimensions**:
   - Single column: 8.3 cm (3.27 inches)
@@ -137,7 +137,7 @@ Example: `abn1234_Fig1.eps`
 
 ### PLOS Specific Guidelines
 - Figures should be understandable without caption
-- Color required only if adding information
+- Colour required only if adding information
 - All figures convertible to grayscale
 - Panel labels optional but recommended
 - Open access: Figures must be CC-BY licensed
@@ -156,7 +156,7 @@ Example: `abn1234_Fig1.eps`
   - 600 DPI for line art and chemical structures
   - 1200 DPI for detailed structures
 
-- **Color space**: RGB or CMYK (check specific journal)
+- **Colour space**: RGB or CMYK (check specific journal)
 
 - **Dimensions**:
   - Single column: 3.25 inches (8.25 cm)
@@ -185,7 +185,7 @@ Example: `abn1234_Fig1.eps`
   - Photographs: 300 DPI minimum
   - Combination: 600 DPI minimum
 
-- **Color space**: RGB (for online); CMYK (for print journals)
+- **Colour space**: RGB (for online); CMYK (for print journals)
 
 - **Dimensions**: Vary by journal
   - Common single column: 90 mm
@@ -197,7 +197,7 @@ Example: `abn1234_Fig1.eps`
 
 ### Elsevier Specific Guidelines
 - Check individual journal guidelines (highly variable)
-- Some journals charge for color in print
+- Some journals charge for colour in print
 - Panel labels typically (A), (B), (C) or A, B, C
 - Graphical abstract often required (separate from figures)
 
@@ -212,7 +212,7 @@ Example: `abn1234_Fig1.eps`
   - Photographs/graphics: 300 DPI minimum at final size
   - Line art: 600 DPI minimum
 
-- **Color space**: RGB (online); CMYK (print)
+- **Colour space**: RGB (online); CMYK (print)
 
 - **Dimensions**:
   - Single column: 3.5 inches (8.9 cm)
@@ -224,7 +224,7 @@ Example: `abn1234_Fig1.eps`
 
 ### IEEE Specific Guidelines
 - Figures should be readable in black and white
-- Color figures incur no charge (online publication)
+- Colour figures incur no charge (online publication)
 - Panel labels: (a), (b), (c) in lowercase
 - Captions below figures (not on separate page)
 - Use IEEE graphics checker tool before submission
@@ -240,7 +240,7 @@ Example: `abn1234_Fig1.eps`
   - Minimum 600 DPI for line art
   - Minimum 300 DPI for photographs
 
-- **Color space**: RGB
+- **Colour space**: RGB
 
 - **Dimensions**:
   - Flexible, but consider readability
@@ -259,7 +259,7 @@ Example: `abn1234_Fig1.eps`
 ## Common Requirements Across Journals
 
 ### Universal Best Practices
-1. **Never use JPEG for graphs/plots**: Compression artifacts
+1. **Never use JPEG for graphs/plots**: Compression artefacts
 2. **Embed all fonts**: In PDF/EPS files
 3. **Layer structure**: Flatten images (merge layers in Photoshop)
 4. **RGB vs CMYK**: Most journals now RGB (digital-first)
@@ -292,8 +292,8 @@ Example: `abn1234_Fig1.eps`
 3. Verify resolution requirements
 4. Confirm size specifications (width × height)
 5. Check font requirements
-6. Verify color space (RGB vs CMYK)
-7. Check panel labeling style
+6. Verify colour space (RGB vs CMYK)
+7. Check panel labelling style
 8. Review supplementary materials requirements
 9. Confirm file naming conventions
 10. Check file size limits

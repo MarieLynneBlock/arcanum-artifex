@@ -554,7 +554,7 @@ except BenchlingError as e:
 
 ### Retry Strategy
 
-Customize retry behavior:
+Customise retry behaviour:
 
 ```python
 from benchling_sdk.benchling import Benchling

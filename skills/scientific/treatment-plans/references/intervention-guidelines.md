@@ -10,7 +10,7 @@ This reference provides comprehensive guidance on selecting, implementing, and d
 
 **Level I: Highest Quality**
 - Systematic reviews and meta-analyses of randomized controlled trials (RCTs)
-- Large multi-center RCTs
+- Large multi-centre RCTs
 
 **Level II: High Quality**
 - Individual RCTs
@@ -206,7 +206,7 @@ This reference provides comprehensive guidance on selecting, implementing, and d
 
 **Weight Management**:
 - Caloric deficit: 500-750 kcal/day for 1-2 lb/week weight loss
-- Behavior change strategies: Self-monitoring, stimulus control, goal-setting
+- Behaviour change strategies: Self-monitoring, stimulus control, goal-setting
 - Structured programs (Weight Watchers, MOVE!, etc.) more effective than self-directed
 - Pharmacotherapy (GLP-1 agonists, orlistat) or bariatric surgery for BMI $\geq$30-35 with comorbidities
 
@@ -244,7 +244,7 @@ This reference provides comprehensive guidance on selecting, implementing, and d
 1. **Ask**: Screen all patients for tobacco use
 2. **Advise**: Urge all tobacco users to quit
 3. **Assess**: Willingness to make quit attempt
-4. **Assist**: Aid in quitting (counseling + medication)
+4. **Assist**: Aid in quitting (counselling + medication)
 5. **Arrange**: Follow-up contact
 
 **Pharmacotherapy** (doubles quit rates):
@@ -253,12 +253,12 @@ This reference provides comprehensive guidance on selecting, implementing, and d
 - **Bupropion**: Alternative, also treats depression
 - **Combination**: NRT + varenicline/bupropion more effective
 
-**Counseling**:
+**Counselling**:
 - Quitline: 1-800-QUIT-NOW
-- Individual or group counseling
-- Cognitive-behavioral techniques
+- Individual or group counselling
+- Cognitive-behavioural techniques
 
-**Implementation**: Set quit date within 30 days, prescribe pharmacotherapy + counseling referral, follow up within 1 week of quit date.
+**Implementation**: Set quit date within 30 days, prescribe pharmacotherapy + counselling referral, follow up within 1 week of quit date.
 
 #### Sleep Hygiene
 
@@ -286,16 +286,16 @@ This reference provides comprehensive guidance on selecting, implementing, and d
 
 **Evidence**: Reduces stress hormones, improves mood, pain perception
 
-### Behavioral Interventions
+### Behavioural Interventions
 
-#### Cognitive Behavioral Therapy (CBT)
+#### Cognitive Behavioural Therapy (CBT)
 
 **Indications**: Depression, anxiety, insomnia, chronic pain, substance use
 
 **Core Components**:
 - Psychoeducation
 - Cognitive restructuring (identify and challenge distorted thoughts)
-- Behavioral activation (increase rewarding activities)
+- Behavioural activation (increase rewarding activities)
 - Problem-solving skills
 - Relapse prevention
 
@@ -309,11 +309,11 @@ This reference provides comprehensive guidance on selecting, implementing, and d
 
 #### Motivational Interviewing (MI)
 
-**Indication**: Ambivalence about behavior change (diet, exercise, substance use, medication adherence)
+**Indication**: Ambivalence about behaviour change (diet, exercise, substance use, medication adherence)
 
 **Principles**:
 - Express empathy
-- Develop discrepancy (between current behavior and goals/values)
+- Develop discrepancy (between current behaviour and goals/values)
 - Roll with resistance (don't argue)
 - Support self-efficacy
 
@@ -321,10 +321,10 @@ This reference provides comprehensive guidance on selecting, implementing, and d
 - Open-ended questions
 - Affirmations
 - Reflective listening
-- Summarizing
+- Summarising
 - Elicit "change talk"
 
-**Evidence**: Effective for initiating behavior change in multiple domains
+**Evidence**: Effective for initiating behaviour change in multiple domains
 
 ### Patient Education and Self-Management
 

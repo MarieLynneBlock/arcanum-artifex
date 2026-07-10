@@ -1,4 +1,4 @@
-# DARPA (Defense Advanced Research Projects Agency) Grant Writing Guidelines
+# DARPA (Defence Advanced Research Projects Agency) Grant Writing Guidelines
 
 ## Agency Overview
 
@@ -40,7 +40,7 @@
 - Human performance enhancement
 - Biotechnology for manufacturing
 
-#### 2. DSO (Defense Sciences Office)
+#### 2. DSO (Defence Sciences Office)
 **Focus**: High-risk, high-payoff research in physical and mathematical sciences
 
 **Example Programs**:
@@ -87,7 +87,7 @@
 - Tactical autonomy
 - Advanced weapons
 - Urban operations
-- Maneuver and logistics
+- Manoeuvre and logistics
 - Special operations support
 
 ## How DARPA Works
@@ -213,14 +213,14 @@
 - Alignment with DARPA program goals
 
 **Section 3: Technical Approach and Innovation** (10-20 pages)
-- Detailed technical plan organized by phase or thrust
+- Detailed technical plan organised by phase or thrust
 - Novel approaches and why they will work
 - Technical risks and mitigation strategies
 - Preliminary results or proof-of-concept data
 - Technical barriers and how to overcome them
 - Innovation and differentiation from existing work
 
-**Organized by Phase** (typical):
+**Organised by Phase** (typical):
 
 **Phase 1 (Feasibility)**: 12-18 months
 - Technical objectives and milestones
@@ -231,7 +231,7 @@
 
 **Phase 2 (Development)**: 18-24 months
 - Building on Phase 1 results
-- System integration and optimization
+- System integration and optimisation
 - Testing and validation
 - Prototype development
 - Metrics and evaluation
@@ -274,7 +274,7 @@
 
 **Detailed Budget**:
 - Costs by phase, task, and year
-- Labor (personnel, hours, rates)
+- Labour (personnel, hours, rates)
 - Materials and supplies
 - Equipment
 - Travel
@@ -285,7 +285,7 @@
 
 **Cost Narrative**:
 - Justification for each cost element
-- Labor categories and rates
+- Labour categories and rates
 - Basis of estimate
 - Cost realism analysis
 - Supporting documentation
@@ -421,9 +421,9 @@
 - Go/no-go decision points
 - Management approach for complex programs
 
-**Emphasize Transition**:
+**Emphasise Transition**:
 - Who will use the results?
-- Path to operationalization or commercialization
+- Path to operationalisation or commercialization
 - Engagement with potential users during program
 - IP strategy that enables transition
 
@@ -570,7 +570,7 @@
 - RF and millimeter-wave systems
 
 **Hypersonics and Advanced Materials**:
-- Hypersonic weapons and defense
+- Hypersonic weapons and defence
 - Advanced materials and manufacturing
 - Thermal management
 - Propulsion
@@ -585,7 +585,7 @@
 - Secure communications
 - Resilient networks
 - Spectrum dominance
-- Cyber defense
+- Cyber defence
 
 ## Tips for Competitive DARPA Proposals
 
@@ -600,7 +600,7 @@
 ✅ **Identify risks explicitly** - And explain mitigation
 ✅ **Show preliminary results** - Proof of concept or feasibility
 ✅ **Follow BAA exactly** - Format, page limits, content requirements
-✅ **Emphasize innovation** - What's revolutionary about your approach?
+✅ **Emphasise innovation** - What's revolutionary about your approach?
 
 ### Don'ts
 

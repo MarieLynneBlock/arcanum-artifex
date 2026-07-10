@@ -4,7 +4,7 @@ Comprehensive guide to different plot types in matplotlib with examples and use 
 
 ## 1. Line Plots
 
-**Use cases:** Time series, continuous data, trends, function visualization
+**Use cases:** Time series, continuous data, trends, function visualisation
 
 ### Basic Line Plot
 ```python
@@ -50,7 +50,7 @@ ax.errorbar(x, y, yerr=error, fmt='o-', linewidth=2,
 ax.scatter(x, y, s=50, alpha=0.6)
 ```
 
-### Sized and Colored Scatter
+### Sized and Coloured Scatter
 ```python
 scatter = ax.scatter(x, y, s=sizes*100, c=colors,
                      cmap='viridis', alpha=0.6, edgecolors='black')
@@ -136,7 +136,7 @@ ax.hist(data2, bins=30, alpha=0.5, label='Dataset 2')
 ax.legend()
 ```
 
-### Normalized Histogram (Density)
+### Normalised Histogram (Density)
 ```python
 ax.hist(data, bins=30, density=True, alpha=0.7,
         edgecolor='black', label='Empirical')
@@ -228,7 +228,7 @@ ax.set_yticklabels(corr.columns)
 
 ## 7. Contour Plots
 
-**Use cases:** 3D data on 2D plane, topography, function visualization
+**Use cases:** 3D data on 2D plane, topography, function visualisation
 
 ### Contour Lines
 ```python
@@ -310,7 +310,7 @@ ax.set_xticklabels(categories)
 
 ## 10. Stream and Quiver Plots
 
-**Use cases:** Vector fields, flow visualization
+**Use cases:** Vector fields, flow visualisation
 
 ### Quiver Plot (Vector Field)
 ```python
@@ -351,7 +351,7 @@ ax.legend()
 
 ## 12. 3D Plots
 
-**Use cases:** Three-dimensional data visualization
+**Use cases:** Three-dimensional data visualisation
 
 ### 3D Scatter
 ```python
@@ -399,7 +399,7 @@ ax.set_ylabel('Y')
 ax.set_zlabel('Z')
 ```
 
-## 13. Specialized Plots
+## 13. Specialised Plots
 
 ### Stem Plot
 ```python
@@ -468,9 +468,9 @@ ax.axvspan(start_date, end_date, alpha=0.2, color='gray')
 | Time series | Line plot | Area plot, Step plot |
 | Categorical vs continuous | Bar chart, Box plot | Violin plot, Strip plot |
 | Two categorical variables | Heatmap | Grouped bar chart |
-| Three continuous variables | 3D scatter, Contour | Color-coded scatter |
+| Three continuous variables | 3D scatter, Contour | Colour-coded scatter |
 | Proportions | Bar chart | Pie chart (use sparingly) |
 | Distributions comparison | Box plot, Violin plot | Overlaid histograms |
 | Correlation matrix | Heatmap | Clustered heatmap |
 | Vector field | Quiver plot, Stream plot | - |
-| Function visualization | Line plot, Contour | 3D surface |
+| Function visualisation | Line plot, Contour | 3D surface |

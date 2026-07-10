@@ -76,7 +76,7 @@ Gene/protein expression across tissues and cell types from multiple sources.
 
 **Expression Atlas**
 - RNA-Seq expression across tissues/conditions
-- Normalized expression levels (TPM, FPKM)
+- Normalised expression levels (TPM, FPKM)
 - Differential expression studies
 
 **GTEx (Genotype-Tissue Expression)**
@@ -91,7 +91,7 @@ Gene/protein expression across tissues and cell types from multiple sources.
 
 #### Expression Metrics:
 
-- **TPM (Transcripts Per Million)** - Normalized RNA abundance
+- **TPM (Transcripts Per Million)** - Normalised RNA abundance
 - **Tissue specificity** - Enrichment in specific tissues
 - **Protein level** - Correlation with RNA expression
 - **Subcellular location** - Where protein is found in cell
@@ -145,7 +145,7 @@ High-quality small molecules for target validation.
 #### Sources:
 
 **Probes & Drugs Portal**
-- Chemical probes with characterized selectivity
+- Chemical probes with characterised selectivity
 - Quality ratings and annotations
 - Target engagement data
 
@@ -263,7 +263,7 @@ Biological pathway annotations placing target in functional context.
 
 **Pathway Information:**
 - Curated biological pathways
-- Hierarchical organization
+- Hierarchical organisation
 - Pathway diagrams with target position
 
 **Applications:**
@@ -356,7 +356,7 @@ variables = {"ensemblId": "ENSG00000157764"}
 
 ## Annotation Interpretation Guidelines
 
-### For Target Prioritization:
+### For Target Prioritisation:
 
 1. **Druggability (Tractability):**
    - Clinical precedence >> Discovery precedence > Predicted

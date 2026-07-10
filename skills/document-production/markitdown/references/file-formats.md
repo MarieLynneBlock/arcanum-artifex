@@ -335,7 +335,7 @@ result = md.convert("data.csv")
 **Capabilities**:
 - Structured representation
 - Pretty formatting
-- Nested data visualization
+- Nested data visualisation
 
 **Best For**:
 - API responses

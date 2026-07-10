@@ -215,7 +215,7 @@ for n_latent in latent_dims:
 print(f"Best params: {best_params}")
 ```
 
-### Using Optuna for Hyperparameter Optimization
+### Using Optuna for Hyperparameter Optimisation
 
 ```python
 import optuna
@@ -534,13 +534,13 @@ print(f"Memory usage: {memory_gb:.2f} GB")
 
 ## Best Practices Summary
 
-1. **Always use raw counts**: Never log-normalize before scvi-tools
+1. **Always use raw counts**: Never log-normalise before scvi-tools
 2. **Feature selection**: Use highly variable genes for efficiency
 3. **Batch correction**: Register all known technical covariates
 4. **Early stopping**: Use validation set to prevent overfitting
 5. **Model saving**: Always save trained models
 6. **GPU usage**: Use GPU for large datasets (>10k cells)
 7. **Hyperparameter tuning**: Start with defaults, tune if needed
-8. **Validation**: Check batch correction visually (UMAP colored by batch)
+8. **Validation**: Check batch correction visually (UMAP coloured by batch)
 9. **Documentation**: Keep track of preprocessing steps
 10. **Reproducibility**: Set random seeds (`scvi.settings.seed = 0`)

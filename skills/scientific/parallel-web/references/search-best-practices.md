@@ -6,7 +6,7 @@ Comprehensive guide to getting the best results from Parallel's Search API.
 
 ## Core Concepts
 
-The Search API returns ranked, LLM-optimized excerpts from web sources based on natural language objectives. Results are designed to serve directly as model input, enabling faster reasoning and higher-quality completions.
+The Search API returns ranked, LLM-optimised excerpts from web sources based on natural language objectives. Results are designed to serve directly as model input, enabling faster reasoning and higher-quality completions.
 
 ### Key Advantages Over Traditional Search
 
@@ -20,7 +20,7 @@ The Search API returns ranked, LLM-optimized excerpts from web sources based on 
 
 ### Provide Both `objective` AND `search_queries`
 
-The `objective` describes your broader goal; `search_queries` ensures specific keywords are prioritized. Using both together gives significantly better results.
+The `objective` describes your broader goal; `search_queries` ensures specific keywords are prioritised. Using both together gives significantly better results.
 
 **Good:**
 ```python
@@ -45,7 +45,7 @@ searcher.search(search_queries=["Alzheimer's drugs"])
 
 ### Objective Writing Tips
 
-1. **State your broader task**: "I'm writing a research paper on...", "I'm analyzing the market for...", "I'm preparing a presentation about..."
+1. **State your broader task**: "I'm writing a research paper on...", "I'm analysing the market for...", "I'm preparing a presentation about..."
 2. **Be specific about source preferences**: "Prefer official government websites", "Focus on peer-reviewed journals", "From major news outlets"
 3. **Include freshness requirements**: "From the past 6 months", "Published in 2024-2025", "Most recent data available"
 4. **Specify content type**: "Technical documentation", "Clinical trial results", "Market analysis reports", "Product announcements"
@@ -84,13 +84,13 @@ from the past month."
 
 ## Search Modes
 
-Use the `mode` parameter to optimize for your workflow:
+Use the `mode` parameter to optimise for your workflow:
 
 | Mode | Best For | Excerpt Style | Latency |
 |------|----------|---------------|---------|
 | `one-shot` (default) | Direct queries, single-request workflows | Comprehensive, longer | Lower |
 | `agentic` | Multi-step reasoning loops, agent workflows | Concise, token-efficient | Slightly higher |
-| `fast` | Real-time applications, UI auto-complete | Minimal, speed-optimized | ~1 second |
+| `fast` | Real-time applications, UI auto-complete | Minimal, speed-optimised | ~1 second |
 
 ### When to Use Each Mode
 
@@ -101,10 +101,10 @@ Use the `mode` parameter to optimize for your workflow:
 - Any case where you'll make only one search call
 
 **`agentic`**:
-- Multi-step research workflows (search → analyze → search again)
+- Multi-step research workflows (search → analyse → search again)
 - Agent loops where token efficiency matters
 - Iterative refinement of research queries
-- When integrating with other tools (search → extract → synthesize)
+- When integrating with other tools (search → extract → synthesise)
 
 **`fast`**:
 - Live autocomplete or suggestion systems

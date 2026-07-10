@@ -20,7 +20,7 @@ This document provides detailed guidelines for formatting citations in various a
 
 **Format**: Author, A. A., & Author, B. B. (Year). Title of chapter. In E. E. Editor & F. F. Editor (Eds.), *Title of book* (pp. xx-xx). Publisher.
 
-**Example**: Brown, P. O., & Botstein, D. (2020). Exploring the new world of the genome with DNA microarrays. In M. B. Eisen & P. O. Brown (Eds.), *DNA microarrays: A molecular cloning manual* (pp. 1-45). Cold Spring Harbor Laboratory Press.
+**Example**: Brown, P. O., & Botstein, D. (2020). Exploring the new world of the genome with DNA microarrays. In M. B. Eisen & P. O. Brown (Eds.), *DNA microarrays: A molecular cloning manual* (pp. 1-45). Cold Spring Harbour Laboratory Press.
 
 ### Preprints
 
@@ -160,7 +160,7 @@ Most styles use hanging indents where the first line is flush left and subsequen
 
 ### Consistency
 Maintain consistent formatting throughout:
-- Capitalization (title case vs. sentence case)
+- Capitalisation (title case vs. sentence case)
 - Journal name abbreviations
 - DOI presentation
 - Author name format

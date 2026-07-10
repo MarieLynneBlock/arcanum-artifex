@@ -1,13 +1,13 @@
 # DeepChem API Reference
 
-This document provides a comprehensive reference for DeepChem's core APIs, organized by functionality.
+This document provides a comprehensive reference for DeepChem's core APIs, organised by functionality.
 
 ## Data Handling
 
 ### Data Loaders
 
 #### File Format Loaders
-- **CSVLoader**: Load tabular data from CSV files with customizable feature handling
+- **CSVLoader**: Load tabular data from CSV files with customisable feature handling
 - **UserCSVLoader**: User-defined CSV loading with flexible column specifications
 - **SDFLoader**: Process molecular structure files (SDF format)
 - **JsonLoader**: Import JSON-structured datasets
@@ -18,7 +18,7 @@ This document provides a comprehensive reference for DeepChem's core APIs, organ
 - **FASTQLoader**: Process FASTQ sequencing data with quality scores
 - **SAMLoader/BAMLoader/CRAMLoader**: Support sequence alignment formats
 
-#### Specialized Loaders
+#### Specialised Loaders
 - **DFTYamlLoader**: Process density functional theory computational data
 - **InMemoryLoader**: Load data directly from Python objects
 
@@ -26,7 +26,7 @@ This document provides a comprehensive reference for DeepChem's core APIs, organ
 
 - **NumpyDataset**: Wrap NumPy arrays for in-memory data manipulation
 - **DiskDataset**: Manage larger datasets stored on disk, reducing memory overhead
-- **ImageDataset**: Specialized container for image-based ML tasks
+- **ImageDataset**: Specialised container for image-based ML tasks
 
 ### Data Splitters
 
@@ -42,19 +42,19 @@ This document provides a comprehensive reference for DeepChem's core APIs, organ
 - **ScaffoldSplitter**: Divide molecules by structural scaffolds (prevents data leakage)
 - **ButinaSplitter**: Clustering-based molecular splitting
 - **FingerprintSplitter**: Split based on molecular fingerprint similarity
-- **MaxMinSplitter**: Maximize diversity between training/test sets
+- **MaxMinSplitter**: Maximise diversity between training/test sets
 - **MolecularWeightSplitter**: Split by molecular weight properties
 
 **Best Practice**: For drug discovery tasks, use ScaffoldSplitter to prevent overfitting on similar molecular structures.
 
 ### Transformers
 
-#### Normalization
-- **NormalizationTransformer**: Standard normalization (mean=0, std=1)
+#### Normalisation
+- **NormalizationTransformer**: Standard normalisation (mean=0, std=1)
 - **MinMaxTransformer**: Scale features to [0,1] range
 - **LogTransformer**: Apply log transformation
 - **PowerTransformer**: Box-Cox and Yeo-Johnson transformations
-- **CDFTransformer**: Cumulative distribution function normalization
+- **CDFTransformer**: Cumulative distribution function normalisation
 
 #### Task-Specific
 - **BalancingTransformer**: Address class imbalance
@@ -106,7 +106,7 @@ For recurrent networks and transformers:
 | Traditional ML | CircularFingerprint, RDKitDescriptors | Random Forest, XGBoost, SVM |
 | Deep learning (non-graph) | CircularFingerprint, Mol2VecFingerprint | Dense networks, CNN |
 | Sequence models | SmilesToSeq | LSTM, GRU, Transformer |
-| 3D molecular structures | CoulombMatrix | Specialized 3D models |
+| 3D molecular structures | CoulombMatrix | Specialised 3D models |
 | Quick baseline | RDKitDescriptors | Linear, Ridge, Lasso |
 
 ## Models

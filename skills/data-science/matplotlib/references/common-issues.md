@@ -249,7 +249,7 @@ ax.text(x, y, 'text', clip_on=True)
 fig, ax = plt.subplots(constrained_layout=True)
 ```
 
-## Color and Colormap Issues
+## Colour and Colormap Issues
 
 ### Issue: Colorbar Not Matching Plot
 
@@ -268,9 +268,9 @@ im1 = ax1.imshow(data1, norm=norm, cmap='viridis')
 im2 = ax2.imshow(data2, norm=norm, cmap='viridis')
 ```
 
-### Issue: Colors Look Wrong
+### Issue: Colours Look Wrong
 
-**Problem:** Unexpected colors in plots
+**Problem:** Unexpected colours in plots
 
 **Solutions:**
 ```python

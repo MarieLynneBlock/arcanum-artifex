@@ -1,6 +1,6 @@
 ---
 name: exploratory-data-analysis
-description: Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats. This skill should be used when analyzing any scientific data file to understand its structure, content, quality, and characteristics. Automatically detects file type and generates detailed markdown reports with format-specific analysis, quality metrics, and downstream analysis recommendations. Covers chemistry, bioinformatics, microscopy, spectroscopy, proteomics, metabolomics, and general scientific data formats.
+description: Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats. This skill should be used when analysing any scientific data file to understand its structure, content, quality, and characteristics. Automatically detects file type and generates detailed markdown reports with format-specific analysis, quality metrics, and downstream analysis recommendations. Covers chemistry, bioinformatics, microscopy, spectroscopy, proteomics, metabolomics, and general scientific data formats.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -17,7 +17,7 @@ Perform comprehensive exploratory data analysis (EDA) on scientific data files a
 - Comprehensive format-specific metadata extraction
 - Data quality and integrity assessment
 - Statistical summaries and distributions
-- Visualization recommendations
+- Visualisation recommendations
 - Downstream analysis suggestions
 - Markdown report generation
 
@@ -25,7 +25,7 @@ Perform comprehensive exploratory data analysis (EDA) on scientific data files a
 
 Use this skill when:
 - User provides a path to a scientific data file for analysis
-- User asks to "explore", "analyze", or "summarize" a data file
+- User asks to "explore", "analyse", or "summarise" a data file
 - User wants to understand the structure and content of scientific data
 - User needs a comprehensive report of a dataset before analysis
 - User wants to assess data quality or completeness
@@ -33,7 +33,7 @@ Use this skill when:
 
 ## Supported File Categories
 
-The skill has comprehensive coverage of scientific file formats organized into six major categories:
+The skill has comprehensive coverage of scientific file formats organised into six major categories:
 
 ### 1. Chemistry and Molecular Formats (60+ extensions)
 Structure files, computational chemistry outputs, molecular dynamics trajectories, and chemical databases.
@@ -128,26 +128,26 @@ Based on the format information from the reference file, perform appropriate ana
 For tabular data (CSV, TSV, Excel):
 - Load with pandas
 - Check dimensions, data types
-- Analyze missing values
+- Analyse missing values
 - Calculate summary statistics
 - Identify outliers
 - Check for duplicates
 
 For sequence data (FASTA, FASTQ):
 - Count sequences
-- Analyze length distributions
+- Analyse length distributions
 - Calculate GC content
 - Assess quality scores (FASTQ)
 
 For images (TIFF, ND2, CZI):
 - Check dimensions (X, Y, Z, C, T)
-- Analyze bit depth and value range
+- Analyse bit depth and value range
 - Extract metadata (channels, timestamps, spatial calibration)
 - Calculate intensity statistics
 
 For arrays (NPY, HDF5):
 - Check shape and dimensions
-- Analyze data type
+- Analyse data type
 - Calculate statistical summaries
 - Check for missing/invalid values
 
@@ -185,7 +185,7 @@ Create a markdown report with the following sections:
    - Preprocessing steps
    - Appropriate analyses
    - Tools and methods
-   - Visualization approaches
+   - Visualisation approaches
 
 #### Template Location
 Use `assets/report-template.md` as a guide for report structure.
@@ -247,11 +247,11 @@ Reference files are large (10,000+ words each). To efficiently use them:
 
 2. **Extract relevant sections:** Don't load entire reference files into context unnecessarily
 
-3. **Cache format info:** If analyzing multiple files of the same type, reuse the format information
+3. **Cache format info:** If analysing multiple files of the same type, reuse the format information
 
 ### Data Analysis
 
-1. **Sample large files:** For files with millions of records, analyze a representative sample
+1. **Sample large files:** For files with millions of records, analyse a representative sample
 2. **Handle errors gracefully:** Many scientific formats require specific libraries; provide clear installation instructions
 3. **Validate metadata:** Cross-check metadata consistency (e.g., stated dimensions vs actual data)
 4. **Consider data provenance:** Note instrument, software versions, processing steps
@@ -265,7 +265,7 @@ Reference files are large (10,000+ words each). To efficiently use them:
 
 ## Examples
 
-### Example 1: Analyzing a FASTQ file
+### Example 1: Analysing a FASTQ file
 
 ```python
 # User provides: "Analyze reads.fastq"
@@ -288,7 +288,7 @@ sequences = list(SeqIO.parse('reads.fastq', 'fastq'))
 # 5. Save as: reads_eda_report.md
 ```
 
-### Example 2: Analyzing a CSV dataset
+### Example 2: Analysing a CSV dataset
 
 ```python
 # User provides: "Explore experiment_results.csv"
@@ -312,7 +312,7 @@ df = pd.read_csv('experiment_results.csv')
 # 5. Save report
 ```
 
-### Example 3: Analyzing microscopy data
+### Example 3: Analysing microscopy data
 
 ```python
 # User provides: "Analyze cells.nd2"
@@ -341,7 +341,7 @@ with ND2Reader('cells.nd2') as images:
 
 ### Missing Libraries
 
-Many scientific formats require specialized libraries:
+Many scientific formats require specialised libraries:
 
 **Problem:** Import error when trying to read a file
 
@@ -402,7 +402,7 @@ The script supports automatic analysis for many common formats, but custom analy
 
 ### Multi-File Analysis
 
-When analyzing multiple related files:
+When analysing multiple related files:
 1. Perform individual EDA on each file
 2. Create a summary comparison report
 3. Identify relationships and dependencies
@@ -420,7 +420,7 @@ For data quality assessment:
 ### Preprocessing Recommendations
 
 Based on data characteristics, recommend:
-1. Normalization strategies
+1. Normalisation strategies
 2. Missing value imputation
 3. Outlier handling
 4. Batch correction

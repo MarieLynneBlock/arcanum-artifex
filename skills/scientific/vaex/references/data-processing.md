@@ -544,12 +544,12 @@ category_region_sales = df.groupby(['category', 'region']).agg({
 2. **Batch operations with delay=True** - Compute multiple aggregations at once
 3. **Avoid `.values` or `.to_pandas_df()`** - Keep operations lazy when possible
 4. **Use selections** - Multiple named selections are more efficient than creating new DataFrames
-5. **Leverage expressions** - They enable query optimization
-6. **Minimize sorting** - Sorting is expensive on large datasets
+5. **Leverage expressions** - They enable query optimisation
+6. **Minimise sorting** - Sorting is expensive on large datasets
 
 ## Related Resources
 
 - For DataFrame creation: See `core-dataframes.md`
-- For performance optimization: See `performance.md`
-- For visualization: See `visualization.md`
+- For performance optimisation: See `performance.md`
+- For visualisation: See `visualization.md`
 - For ML pipelines: See `machine-learning.md`

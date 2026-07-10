@@ -5,7 +5,7 @@
 2. [Framework Integration](#framework-integration)
 3. [Quantum Neural Networks](#quantum-neural-networks)
 4. [Variational Classifiers](#variational-classifiers)
-5. [Training and Optimization](#training-and-optimization)
+5. [Training and Optimisation](#training-and-optimisation)
 6. [Data Encoding Strategies](#data-encoding-strategies)
 7. [Transfer Learning](#transfer-learning)
 
@@ -370,7 +370,7 @@ def predict_class(x, weights):
     return softmax(logits)
 ```
 
-## Training and Optimization
+## Training and Optimisation
 
 ### Gradient-Based Training
 

@@ -23,7 +23,7 @@ Your goal is to iteratively refine your understanding of the task by:
 - Perform project explorations, using available tools, to further your understanding of the task
   - If something needs web research, do that
 - Clarifying technical and procedural requirements
-- Organizing the task into clear sections or steps
+- Organising the task into clear sections or steps
 - Ensuring your understanding of the task is as simple as it can be
 </refining>
 

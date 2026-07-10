@@ -68,7 +68,7 @@ clean_signal = nk.signal_sanitize(signal, interpolate=True)
 
 **Use cases:**
 - Handle missing data points
-- Remove artifacts marked as NaN
+- Remove artefacts marked as NaN
 - Prepare signal for algorithms requiring continuous data
 
 ### signal_resample()
@@ -100,7 +100,7 @@ filled = nk.signal_fillmissing(signal, method='linear')
 
 **Methods:**
 - `'linear'`: Linear interpolation
-- `'nearest'`: Nearest neighbor
+- `'nearest'`: Nearest neighbour
 - `'pad'`: Forward/backward fill
 - `'cubic'`: Cubic spline
 - `'polynomial'`: Polynomial fitting
@@ -122,7 +122,7 @@ detrended = nk.signal_detrend(signal, method='polynomial', order=1)
 
 **Use cases:**
 - Remove baseline drift
-- Stabilize mean before analysis
+- Stabilise mean before analysis
 - Prepare for stationarity-assuming algorithms
 
 ### signal_decompose()
@@ -197,7 +197,7 @@ binary = nk.signal_binarize(signal, method='threshold', threshold=0.5)
 
 ### signal_distort()
 
-Add controlled noise or artifacts for testing.
+Add controlled noise or artefacts for testing.
 
 ```python
 distorted = nk.signal_distort(signal, sampling_rate=1000, noise_amplitude=0.1,
@@ -207,8 +207,8 @@ distorted = nk.signal_distort(signal, sampling_rate=1000, noise_amplitude=0.1,
 **Parameters:**
 - `noise_amplitude`: Gaussian noise level
 - `noise_frequency`: Sinusoidal interference (e.g., powerline)
-- `artifacts_amplitude`: Random spike artifacts
-- `artifacts_number`: Number of artifacts to add
+- `artifacts_amplitude`: Random spike artefacts
+- `artifacts_number`: Number of artefacts to add
 
 **Use cases:**
 - Algorithm robustness testing
@@ -225,12 +225,12 @@ interpolated = nk.signal_interpolate(x_values, y_values, x_new=None, method='qua
 
 **Methods:**
 - `'linear'`, `'quadratic'`, `'cubic'`: Polynomial interpolation
-- `'nearest'`: Nearest neighbor
+- `'nearest'`: Nearest neighbour
 - `'monotone_cubic'`: Preserves monotonicity
 
 **Use case:**
 - Convert irregular samples to regular grid
-- Upsample for visualization
+- Upsample for visualisation
 - Align signals with different time bases
 
 ### signal_merge()
@@ -244,11 +244,11 @@ merged = nk.signal_merge(signal1, signal2, time1=None, time2=None, sampling_rate
 **Use case:**
 - Multi-modal signal integration
 - Combine data from different devices
-- Synchronize based on timestamps
+- Synchronise based on timestamps
 
 ### signal_flatline()
 
-Identify periods of constant signal (artifacts or sensor failure).
+Identify periods of constant signal (artefacts or sensor failure).
 
 ```python
 flatline_mask = nk.signal_flatline(signal, duration=5.0, sampling_rate=1000)
@@ -320,7 +320,7 @@ peaks_dict = nk.signal_findpeaks(signal, height_min=None, height_max=None,
 
 ### signal_fixpeaks()
 
-Correct detected peaks for artifacts and anomalies.
+Correct detected peaks for artefacts and anomalies.
 
 ```python
 corrected = nk.signal_fixpeaks(peaks, sampling_rate=1000, iterative=True,
@@ -338,7 +338,7 @@ corrected = nk.signal_fixpeaks(peaks, sampling_rate=1000, iterative=True,
 - Remove extra detected peaks (duplicates)
 
 **Use case:**
-- Artifact correction in R-R intervals
+- Artefact correction in R-R intervals
 - Improve HRV analysis quality
 - Respiratory or pulse peak correction
 
@@ -397,11 +397,11 @@ phase = nk.signal_phase(signal, method='hilbert')
 - `'wavelet'`: Wavelet-based phase
 
 **Returns:**
-- Phase in radians (-π to π) or 0 to 1 (normalized)
+- Phase in radians (-π to π) or 0 to 1 (normalised)
 
 **Use cases:**
 - Phase-locked analysis
-- Synchronization measures
+- Synchronisation measures
 - Phase-amplitude coupling
 
 ### signal_psd()
@@ -509,7 +509,7 @@ changepoints = nk.signal_changepoints(signal, penalty=10, method='pelt', show=Fa
 
 ### signal_synchrony()
 
-Assess synchronization between two signals.
+Assess synchronisation between two signals.
 
 ```python
 sync = nk.signal_synchrony(signal1, signal2, method='correlation')
@@ -548,7 +548,7 @@ smoothed = nk.signal_smooth(signal, method='convolution', kernel='boxzen', size=
 **Use cases:**
 - Noise reduction
 - Trend extraction
-- Visualization enhancement
+- Visualisation enhancement
 
 ### signal_timefrequency()
 
@@ -595,11 +595,11 @@ signal = nk.signal_simulate(duration=10, sampling_rate=1000, frequency=[5, 10],
 - Method validation
 - Educational demonstrations
 
-## Visualization
+## Visualisation
 
 ### signal_plot()
 
-Visualize signal and optional markers.
+Visualise signal and optional markers.
 
 ```python
 nk.signal_plot(signal, sampling_rate=1000, peaks=None, show=True)
@@ -619,13 +619,13 @@ nk.signal_plot(signal, sampling_rate=1000, peaks=None, show=True)
 - **Method**: Butterworth is safe default
 
 **Handling edge effects:**
-- Filtering introduces artifacts at signal edges
+- Filtering introduces artefacts at signal edges
 - Pad signal before filtering, then trim
 - Or discard initial/final seconds
 
 **Dealing with gaps:**
 - Small gaps: `signal_fillmissing()` with interpolation
-- Large gaps: Segment signal, analyze separately
+- Large gaps: Segment signal, analyse separately
 - Mark gaps as NaN, use interpolation carefully
 
 **Combining operations:**

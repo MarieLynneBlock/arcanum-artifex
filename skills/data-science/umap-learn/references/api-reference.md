@@ -8,19 +8,19 @@ Find low-dimensional embedding that approximates the underlying manifold of the 
 
 ### Core Parameters
 
-#### n_neighbors (int, default: 15)
+#### n_neighbours (int, default: 15)
 Size of the local neighborhood used for manifold approximation. Larger values result in more global views of the manifold, while smaller values preserve more local structure. Generally in the range 2 to 100.
 
 **Tuning guidance:**
 - Use 2-5 for very local structure
 - Use 10-20 for balanced local/global structure (typical)
-- Use 50-200 for emphasizing global structure
+- Use 50-200 for emphasising global structure
 
 #### n_components (int, default: 2)
 Dimension of the embedding space. Unlike t-SNE, UMAP scales well with increasing embedding dimensions.
 
 **Common values:**
-- 2-3: Visualization
+- 2-3: Visualisation
 - 5-10: Clustering preprocessing
 - 10-100: Feature engineering for downstream ML
 
@@ -49,7 +49,7 @@ Effective minimum distance between embedded points. Controls how tightly points 
 
 **Tuning guidance:**
 - Use 0.0 for clustering applications
-- Use 0.1-0.3 for visualization (balanced)
+- Use 0.1-0.3 for visualisation (balanced)
 - Use 0.5-0.99 for loose structure preservation
 
 #### spread (float, default: 1.0)
@@ -63,7 +63,7 @@ Number of training epochs. If None, automatically determined based on dataset si
 **Manual tuning:**
 - Smaller datasets may need 500+ epochs
 - Larger datasets may converge with 200 epochs
-- More epochs = better optimization but slower training
+- More epochs = better optimisation but slower training
 
 #### learning_rate (float, default: 1.0)
 Initial learning rate for the SGD optimizer. Higher values lead to faster convergence but may overshoot optimal solutions.
@@ -78,21 +78,21 @@ Initialization method for the embedding:
 ### Advanced Structural Parameters
 
 #### local_connectivity (int, default: 1.0)
-Number of nearest neighbors assumed to be locally connected. Higher values give more connected manifolds.
+Number of nearest neighbours assumed to be locally connected. Higher values give more connected manifolds.
 
 #### set_op_mix_ratio (float, default: 1.0)
 Interpolation between union and intersection when constructing fuzzy set unions. Value of 1.0 uses pure union, 0.0 uses pure intersection.
 
 #### repulsion_strength (float, default: 1.0)
-Weighting applied to negative samples in low-dimensional embedding optimization. Higher values push embedded points further apart.
+Weighting applied to negative samples in low-dimensional embedding optimisation. Higher values push embedded points further apart.
 
 #### negative_sample_rate (int, default: 5)
 Number of negative samples to select per positive sample. Higher values lead to greater repulsion between points and more spread-out embeddings but increase computational cost.
 
 ### Supervised Learning Parameters
 
-#### target_n_neighbors (int, default: -1)
-Number of nearest neighbors to use when constructing target simplicial set. If -1, uses n_neighbors value.
+#### target_n_neighbours (int, default: -1)
+Number of nearest neighbours to use when constructing target simplicial set. If -1, uses n_neighbours value.
 
 #### target_metric (str, default: 'categorical')
 Distance metric for target values (labels):
@@ -108,7 +108,7 @@ Weight applied to target information vs. data structure. Range 0.0 to 1.0:
 ### Transform Parameters
 
 #### transform_queue_size (float, default: 4.0)
-Size of the nearest neighbor search queue for transform operations. Larger values improve transform accuracy but increase memory usage and computation time.
+Size of the nearest neighbour search queue for transform operations. Larger values improve transform accuracy but increase memory usage and computation time.
 
 #### transform_seed (int, default: 42)
 Random seed for transform operations. Ensures reproducibility of transform results.
@@ -116,7 +116,7 @@ Random seed for transform operations. Ensures reproducibility of transform resul
 #### transform_mode (str, default: 'embedding')
 Method for transforming new data:
 - `'embedding'`: Standard approach (default)
-- `'graph'`: Use nearest neighbor graph
+- `'graph'`: Use nearest neighbour graph
 
 ### Performance Parameters
 
@@ -130,10 +130,10 @@ Whether to print progress messages during fitting.
 Whether to consider only unique data points. Set to True if you know your data contains many duplicates to improve performance.
 
 #### force_approximation_algorithm (bool, default: False)
-Force use of approximate nearest neighbor search even for small datasets. Can improve performance on large datasets.
+Force use of approximate nearest neighbour search even for small datasets. Can improve performance on large datasets.
 
 #### angular_rp_forest (bool, default: False)
-Whether to use angular random projection forest for nearest neighbor search. Can improve performance for normalized data in high dimensions.
+Whether to use angular random projection forest for nearest neighbour search. Can improve performance for normalised data in high dimensions.
 
 ### DensMAP Parameters
 
@@ -143,7 +143,7 @@ DensMAP is a variant that preserves local density information.
 Whether to use the DensMAP algorithm instead of standard UMAP. Preserves local density in addition to topological structure.
 
 #### dens_lambda (float, default: 2.0)
-Weight of density preservation term in DensMAP optimization. Higher values emphasize density preservation.
+Weight of density preservation term in DensMAP optimisation. Higher values emphasise density preservation.
 
 #### dens_frac (float, default: 0.3)
 Fraction of dataset used for density estimation in DensMAP.
@@ -172,7 +172,7 @@ Additional keyword arguments for the distance metric.
 Distance threshold for considering points disconnected. If None, uses max distance in the graph.
 
 #### precomputed_knn (tuple, default: (None, None, None))
-Precomputed k-nearest neighbors as (knn_indices, knn_dists, knn_search_index). Useful for reusing expensive computations.
+Precomputed k-nearest neighbours as (knn_indices, knn_dists, knn_search_index). Useful for reusing expensive computations.
 
 ## Methods
 
@@ -192,7 +192,7 @@ Fit the UMAP model to the data.
 - `_raw_data`: Copy of the training data
 - `_small_data`: Whether the dataset is considered small
 - `_metric_kwds`: Processed metric keyword arguments
-- `_n_neighbors`: Actual n_neighbors used
+- `_n_neighbors`: Actual n_neighbours used
 - `_initial_alpha`: Initial learning rate
 - `_a`, `_b`: Curve parameters
 
@@ -266,13 +266,13 @@ bool - Whether the dataset was considered small (uses different algorithm for sm
 str - Hash of the input data for caching purposes.
 
 ### _knn_indices
-array - Indices of k-nearest neighbors for each training point.
+array - Indices of k-nearest neighbours for each training point.
 
 ### _knn_dists
-array - Distances to k-nearest neighbors for each training point.
+array - Distances to k-nearest neighbours for each training point.
 
 ### _rp_forest
-list - Random projection forest used for approximate nearest neighbor search.
+list - Random projection forest used for approximate nearest neighbour search.
 
 ## ParametricUMAP Class
 
@@ -292,7 +292,7 @@ Keras model for decoding embeddings back to data space. Only used if parametric_
 Whether to use parametric reconstruction. Requires decoder model.
 
 #### autoencoder_loss (bool, default: False)
-Whether to include reconstruction loss in the optimization. Requires decoder model.
+Whether to include reconstruction loss in the optimisation. Requires decoder model.
 
 #### reconstruction_validation (tuple, default: None)
 Validation data (X_val, y_val) for monitoring reconstruction loss during training.
@@ -321,18 +321,18 @@ Same as UMAP class, but transform() and inverse_transform() use learned neural n
 
 ## Utility Functions
 
-### umap.nearest_neighbors(X, n_neighbors, metric, metric_kwds={}, angular=False, random_state=None)
-Compute k-nearest neighbors for the data.
+### umap.nearest_neighbours(X, n_neighbours, metric, metric_kwds={}, angular=False, random_state=None)
+Compute k-nearest neighbours for the data.
 
 **Returns:** (knn_indices, knn_dists, rp_forest)
 
-### umap.fuzzy_simplicial_set(X, n_neighbors, random_state, metric, metric_kwds={}, knn_indices=None, knn_dists=None, angular=False, set_op_mix_ratio=1.0, local_connectivity=1.0, apply_set_operations=True, verbose=False, return_dists=None)
+### umap.fuzzy_simplicial_set(X, n_neighbours, random_state, metric, metric_kwds={}, knn_indices=None, knn_dists=None, angular=False, set_op_mix_ratio=1.0, local_connectivity=1.0, apply_set_operations=True, verbose=False, return_dists=None)
 Construct fuzzy simplicial set representation of the data.
 
 **Returns:** Fuzzy simplicial set as sparse matrix
 
 ### umap.simplicial_set_embedding(data, graph, n_components, initial_alpha, a, b, gamma, negative_sample_rate, n_epochs, init, random_state, metric, metric_kwds, densmap, densmap_kwds, output_dens, output_metric, output_metric_kwds, euclidean_output, parallel=False, verbose=False)
-Perform the optimization to find a low-dimensional embedding.
+Perform the optimisation to find a low-dimensional embedding.
 
 **Returns:** Embedding array
 

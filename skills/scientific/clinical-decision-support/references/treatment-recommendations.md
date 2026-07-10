@@ -209,7 +209,7 @@ If Metastatic ER+/HER2-:
 
 **Tier III: Biological Plausibility**
 - Preclinical evidence only
-- Clinical trial enrollment strongly recommended
+- Clinical trial enrolment strongly recommended
 - Examples: Novel kinase fusions, rare resistance mutations
 
 ## Combination Therapy Protocols
@@ -217,7 +217,7 @@ If Metastatic ER+/HER2-:
 ### Rationale for Combinations
 
 **Mechanisms**
-- **Non-Overlapping Toxicity**: Maximize dose intensity of each agent
+- **Non-Overlapping Toxicity**: Maximise dose intensity of each agent
 - **Synergistic Activity**: Enhanced efficacy beyond additive effects
 - **Complementary Mechanisms**: Target multiple pathways simultaneously
 - **Prevent Resistance**: Decrease selection pressure for resistant clones
@@ -225,7 +225,7 @@ If Metastatic ER+/HER2-:
 **Combination Design Principles**
 - **Sequential**: Induction then consolidation (different regimens)
 - **Concurrent**: Administered together for synergy
-- **Alternating**: Rotate regimens to minimize resistance
+- **Alternating**: Rotate regimens to minimise resistance
 - **Intermittent**: Pulse dosing vs continuous exposure
 
 ### Drug Interaction Assessment

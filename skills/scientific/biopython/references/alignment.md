@@ -24,7 +24,7 @@ aligner = Align.PairwiseAligner()
 # - All gap scores: -1.0
 ```
 
-### Customizing Alignment Parameters
+### Customising Alignment Parameters
 
 ```python
 # Set scoring parameters

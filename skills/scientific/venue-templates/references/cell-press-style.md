@@ -8,7 +8,7 @@ Comprehensive writing guide for Cell, Neuron, Immunity, Molecular Cell, Developm
 
 ## Overview
 
-Cell Press journals emphasize **mechanistic depth**, **rigorous experimentation**, and **biological insight**. Unlike Nature/Science, which prioritize broad accessibility, Cell papers are written for biologists who appreciate technical detail and comprehensive data.
+Cell Press journals emphasise **mechanistic depth**, **rigorous experimentation**, and **biological insight**. Unlike Nature/Science, which prioritise broad accessibility, Cell papers are written for biologists who appreciate technical detail and comprehensive data.
 
 ### Key Philosophy
 
@@ -24,7 +24,7 @@ Cell Press has several distinctive elements not found in other journals:
 
 ### 1. Summary (Not Abstract)
 
-Cell uses "Summary" instead of "Abstract" - functionally similar but emphasizes synthesis.
+Cell uses "Summary" instead of "Abstract" - functionally similar but emphasises synthesis.
 
 ### 2. Graphical Abstract (REQUIRED)
 
@@ -51,7 +51,7 @@ A one-sentence summary of the paper.
 - Expert biologist in the relevant field
 - Familiar with techniques and terminology
 - Expects comprehensive data and mechanistic depth
-- Values rigor and reproducibility
+- Values rigour and reproducibility
 
 ### Tone Characteristics
 
@@ -117,7 +117,7 @@ A single-panel visual summary for the table of contents that captures the entire
 - **Layout**: Clean, uncluttered
 - **Content**: Show workflow, key finding, and mechanism
 - **Text**: Minimal labels, large readable fonts
-- **Color**: Vibrant but professional
+- **Colour**: Vibrant but professional
 
 ### Design Elements
 
@@ -273,7 +273,7 @@ Cell uses **declarative subheadings** stating the finding:
 
 - **Comprehensive detail**: Cell expects more methodological context in Results than Nature
 - **Figure-by-figure narrative**: Each major figure often corresponds to a results section
-- **Statistical rigor**: All quantifications with statistics
+- **Statistical rigour**: All quantifications with statistics
 - **Biological interpretation**: More interpretation woven in than pure Results sections
 
 ### Example Results Paragraph
@@ -302,7 +302,7 @@ Cell discussions are **thorough and mechanistic**:
 
 **Paragraph 1: Summary**
 - Restate key findings
-- Synthesize the main message
+- Synthesise the main message
 
 **Paragraphs 2-4: Mechanistic Interpretation**
 - Deep dive into how your findings fit with known biology
@@ -376,9 +376,9 @@ Cell papers are **figure-heavy** with extensive multi-panel figures:
 - **Data-dense**: Comprehensive experimental support
 - **Extended Data**: Supplementary figures for additional validation
 
-### Panel Labeling
+### Panel Labelling
 
-Panels labeled with lowercase letters: **(A)**, **(B)**, **(C)**
+Panels labelled with lowercase letters: **(A)**, **(B)**, **(C)**
 
 ### Figure Legend Format
 

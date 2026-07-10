@@ -232,11 +232,11 @@ FCS files consist of four segments:
 
 ## Channel Types
 
-FlowIO automatically categorizes channels:
+FlowIO automatically categorises channels:
 
 - **Scatter channels**: FSC (forward scatter), SSC (side scatter)
 - **Fluorescence channels**: FL1, FL2, FITC, PE, etc.
-- **Time channel**: Usually labeled "Time"
+- **Time channel**: Usually labelled "Time"
 
 Access indices via:
 - `flow_data.scatter_indices`

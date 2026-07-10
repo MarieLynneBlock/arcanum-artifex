@@ -4,13 +4,13 @@ This document provides a complete list of all mandatory documents and records re
 
 ## Overview
 
-ISO 13485:2016 requires organizations to establish and maintain **31 documented procedures** along with a **Quality Manual** and **Medical Device Files**. Additionally, numerous **records** must be maintained to provide evidence of conformity.
+ISO 13485:2016 requires organisations to establish and maintain **31 documented procedures** along with a **Quality Manual** and **Medical Device Files**. Additionally, numerous **records** must be maintained to provide evidence of conformity.
 
 **Important Notes:**
 - The 31 documented procedures do not need to be 31 separate documents
 - Multiple procedures can be combined into one document
 - One procedure can be split across multiple documents
-- Not all procedures may be applicable to every organization (exclusions must be justified)
+- Not all procedures may be applicable to every organisation (exclusions must be justified)
 - Additional documentation may be required by applicable regulatory requirements
 
 ## 1. Quality Manual (Required by 4.2.2)
@@ -23,7 +23,7 @@ ISO 13485:2016 requires organizations to establish and maintain **31 documented 
 - Description of interaction between QMS processes
 - Structure of documentation used in QMS
 
-**Applicable To:** All organizations
+**Applicable To:** All organisations
 
 ---
 
@@ -42,7 +42,7 @@ ISO 13485:2016 requires organizations to establish and maintain **31 documented 
 - Verification and validation information
 - Design and development file(s) when applicable
 
-**Applicable To:** All organizations for each device type/family
+**Applicable To:** All organisations for each device type/family
 
 ---
 
@@ -51,7 +51,7 @@ ISO 13485:2016 requires organizations to establish and maintain **31 documented 
 ### Clause 4: Quality Management System
 
 #### 1. Risk Management Procedures (4.1.5)
-**Description:** Requirements for risk management throughout product realization
+**Description:** Requirements for risk management throughout product realisation
 **Must Address:**
 - Risk management methodology
 - Risk analysis and evaluation
@@ -144,7 +144,7 @@ ISO 13485:2016 requires organizations to establish and maintain **31 documented 
 - Decontamination procedures
 - Special arrangements for control
 
-### Clause 7: Product Realization
+### Clause 7: Product Realisation
 
 #### 10. Customer Communication Procedure (7.2.3)
 **Description:** Communication with customers
@@ -246,9 +246,9 @@ ISO 13485:2016 requires organizations to establish and maintain **31 documented 
 - Maintenance of validation records
 
 #### 20. Product Identification and Traceability Procedures (7.5.8, 7.5.9)
-**Description:** Identification and traceability throughout realization
+**Description:** Identification and traceability throughout realisation
 **Must Address:**
-- Identification methods throughout realization
+- Identification methods throughout realisation
 - Traceability extent definition
 - Distribution and location tracking
 - Consignee identification
@@ -395,7 +395,7 @@ ISO 13485:2016 requires organizations to establish and maintain **31 documented 
 ## Additional Required Documentation
 
 ### Analysis of Data Procedure (8.4)
-While not explicitly called out as requiring a "documented procedure," organizations must establish processes for:
+While not explicitly called out as requiring a "documented procedure," organisations must establish processes for:
 - Data determination, collection, and analysis
 - Evaluation of continual improvement opportunities
 - Statistical techniques (if applicable)
@@ -532,7 +532,7 @@ While not explicitly required by ISO 13485, the following documents are commonly
 
 ### Additional Plans
 - Quality plan
-- Product realization plan
+- Product realisation plan
 - Validation plans
 - Clinical evaluation plans
 - Post-market surveillance plans
@@ -542,7 +542,7 @@ While not explicitly required by ISO 13485, the following documents are commonly
 - Material specifications
 - Test methods and protocols
 - Packaging specifications
-- Labeling artwork
+- Labelling artwork
 - Instructions for use
 
 ### Regulatory Documentation
@@ -564,7 +564,7 @@ Multiple procedures can be combined into single documents, such as:
 - "Product Identification and Traceability Procedure" (combines 7.5.8 and 7.5.9)
 
 ### Determining Applicability
-Not all procedures apply to all organizations. Common exclusions include:
+Not all procedures apply to all organisations. Common exclusions include:
 - Design and development (when only manufacturing per customer specifications)
 - Installation (when product doesn't require installation)
 - Servicing (when not offered)
@@ -585,7 +585,7 @@ Remember that applicable regulatory requirements may mandate additional document
 ## Record Retention
 
 Per ISO 13485:2016 (4.2.5), records must be retained for:
-- **Minimum:** The lifetime of the medical device as defined by the organization
+- **Minimum:** The lifetime of the medical device as defined by the organisation
 - **Additional:** Not less than the retention period of any resulting record
 - **Regulatory:** As specified by applicable regulatory requirements
 
@@ -598,7 +598,7 @@ Organizations must define the "lifetime" of their medical devices and establish 
 
 ## Transition to Medical Device File (MDF)
 
-With FDA QMSR harmonization (effective February 2, 2026), organizations should prepare for transitioning from separate files to a unified Medical Device File (MDF) that replaces:
+With FDA QMSR harmonisation (effective February 2, 2026), organisations should prepare for transitioning from separate files to a unified Medical Device File (MDF) that replaces:
 - **DHF** (Design History File)
 - **DMR** (Device Master Record)
 - **DHR** (Device History Record)

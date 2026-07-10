@@ -1,6 +1,6 @@
 # Scanpy API Quick Reference
 
-Quick reference for commonly used scanpy functions organized by module.
+Quick reference for commonly used scanpy functions organised by module.
 
 ## Import Convention
 
@@ -42,7 +42,7 @@ sc.pp.filter_cells(adata, min_genes=200)
 sc.pp.filter_genes(adata, min_cells=3)
 ```
 
-### Normalization and Transformation
+### Normalisation and Transformation
 
 ```python
 sc.pp.normalize_total(adata, target_sum=1e4)    # Normalize to target sum
@@ -156,7 +156,7 @@ sc.pl.violin(adata, keys=['gene1', 'gene2'], groupby='leiden')
 sc.pl.scatter(adata, x='gene1', y='gene2', color='leiden')
 ```
 
-### Marker Gene Visualization
+### Marker Gene Visualisation
 
 ```python
 sc.pl.rank_genes_groups(adata, n_genes=25, sharey=False)
@@ -165,7 +165,7 @@ sc.pl.rank_genes_groups_heatmap(adata, n_genes=10)
 sc.pl.rank_genes_groups_dotplot(adata, n_genes=5)
 ```
 
-### Trajectory Visualization
+### Trajectory Visualisation
 
 ```python
 sc.pl.paga(adata, color='leiden')                # PAGA graph
@@ -190,11 +190,11 @@ sc.pl.tracksplot(adata, var_names=genes, groupby='leiden')
 
 ## Common Parameters
 
-### Color Parameters
-- `color`: Variable(s) to color by (gene name, obs column)
+### Colour Parameters
+- `color`: Variable(s) to colour by (gene name, obs column)
 - `use_raw`: Use `.raw` attribute of adata
-- `palette`: Color palette to use
-- `vmin`, `vmax`: Color scale limits
+- `palette`: Colour palette to use
+- `vmin`, `vmax`: Colour scale limits
 
 ### Layout Parameters
 - `basis`: Embedding basis ('umap', 'tsne', 'pca', etc.)

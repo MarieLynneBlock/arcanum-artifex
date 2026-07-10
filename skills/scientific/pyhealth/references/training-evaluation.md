@@ -449,7 +449,7 @@ std_pred = np.std(ensemble_preds, axis=0)  # Uncertainty
 
 ## Interpretability
 
-### Attention Visualization
+### Attention Visualisation
 
 **For Transformer and RETAIN models:**
 
@@ -627,7 +627,7 @@ trainer.save("./models/mortality_transformer_final.pt")
 
 1. **Monitor multiple metrics**: Track both loss and task-specific metrics
 2. **Use validation set**: Prevent overfitting with early stopping
-3. **Gradient clipping**: Stabilize training (max_grad_norm=5.0)
+3. **Gradient clipping**: Stabilise training (max_grad_norm=5.0)
 4. **Learning rate scheduling**: Reduce LR on plateau
 5. **Checkpoint best model**: Save based on validation performance
 

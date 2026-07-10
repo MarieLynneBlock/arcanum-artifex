@@ -171,7 +171,7 @@ Retrieve all materials and reagents used in a protocol.
 
 **Response includes:**
 - Reagent names and descriptions
-- Catalog numbers
+- Catalogue numbers
 - Vendor information
 - Concentrations and amounts
 - Links to product pages

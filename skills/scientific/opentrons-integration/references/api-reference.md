@@ -163,7 +163,7 @@ Access via `pipette.flow_rate`:
 |--------|-------------|---------|
 | `load_liquid(liquid, volume)` | Load liquid into well | None |
 | `load_empty()` | Mark well as empty | None |
-| `from_center_cartesian(x, y, z)` | Get location from center | Location |
+| `from_center_cartesian(x, y, z)` | Get location from centre | Location |
 
 ### Location Methods
 
@@ -171,7 +171,7 @@ Access via `pipette.flow_rate`:
 |--------|-------------|---------|
 | `top(z=0)` | Get location at top of well | Location |
 | `bottom(z=0)` | Get location at bottom of well | Location |
-| `center()` | Get location at center of well | Location |
+| `center()` | Get location at centre of well | Location |
 
 ### Well Properties
 

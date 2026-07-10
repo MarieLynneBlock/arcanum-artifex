@@ -1,6 +1,6 @@
 ---
 name: dhdna-profiler
-description: Extract cognitive patterns and thinking fingerprints from any text. Use this skill when the user wants to analyze how someone thinks, understand cognitive style, profile writing or speech patterns, compare thinking styles between people, asks "what's my thinking style", "analyze how this person reasons", "cognitive profile", "thinking pattern", "DHDNA", "digital DNA", or wants to understand the mind behind any text. Also trigger when the user provides text and wants deeper insight into the author's reasoning patterns, decision-making style, or cognitive signature.
+description: Extract cognitive patterns and thinking fingerprints from any text. Use this skill when the user wants to analyse how someone thinks, understand cognitive style, profile writing or speech patterns, compare thinking styles between people, asks "what's my thinking style", "analyse how this person reasons", "cognitive profile", "thinking pattern", "DHDNA", "digital DNA", or wants to understand the mind behind any text. Also trigger when the user provides text and wants deeper insight into the author's reasoning patterns, decision-making style, or cognitive signature.
 license: MIT license
 allowed-tools: Read Write
 metadata:
@@ -25,18 +25,18 @@ When profiling text, score each dimension on a 1–10 scale based on evidence in
 
 | #   | Dimension                | What It Measures                                                 | Low Score (1-3)                    | High Score (8-10)                           |
 | --- | ------------------------ | ---------------------------------------------------------------- | ---------------------------------- | ------------------------------------------- |
-| 1   | **Analytical Depth**     | Logical rigor, structured reasoning, causal chains               | Intuitive, holistic, pattern-based | Systematic, proof-oriented, precise         |
+| 1   | **Analytical Depth**     | Logical rigour, structured reasoning, causal chains               | Intuitive, holistic, pattern-based | Systematic, proof-oriented, precise         |
 | 2   | **Creative Range**       | Novelty of connections, metaphor use, lateral thinking           | Conventional, incremental          | Paradigm-breaking, cross-domain synthesis   |
 | 3   | **Emotional Processing** | Emotional vocabulary, empathy signals, affect integration        | Detached, clinical                 | Emotionally rich, feeling-integrated        |
 | 4   | **Linguistic Precision** | Vocabulary sophistication, sentence architecture, rhetoric       | Simple, direct                     | Architecturally complex, nuanced            |
 | 5   | **Ethical Reasoning**    | Values signals, fairness concern, consequence awareness          | Pragmatic, outcome-focused         | Principle-driven, justice-oriented          |
-| 6   | **Strategic Thinking**   | Long-term planning, competitive awareness, resource optimization | Tactical, reactive                 | Multi-move, game-theoretic                  |
+| 6   | **Strategic Thinking**   | Long-term planning, competitive awareness, resource optimisation | Tactical, reactive                 | Multi-move, game-theoretic                  |
 | 7   | **Memory Integration**   | Reference to past experience, historical patterns, continuity    | Present-focused                    | Deep historical awareness, precedent-driven |
 | 8   | **Social Intelligence**  | Audience awareness, perspective-taking, relational framing       | Self-referential                   | Deeply other-aware, coalition-building      |
-| 9   | **Domain Expertise**     | Technical depth, specialized knowledge, jargon confidence        | Generalist                         | Deep specialist                             |
+| 9   | **Domain Expertise**     | Technical depth, specialised knowledge, jargon confidence        | Generalist                         | Deep specialist                             |
 | 10  | **Intuitive Reasoning**  | Gut-feel signals, heuristic shortcuts, pattern leaps             | Methodical, step-by-step           | Leap-of-faith, insight-driven               |
 | 11  | **Temporal Orientation** | Time-horizon of thinking — past, present, or future focus        | Present-anchored                   | Time-spanning, historical-to-futurist       |
-| 12  | **Metacognition**        | Self-awareness of own thinking, uncertainty acknowledgment       | Unreflective                       | Deeply self-aware, thinks about thinking    |
+| 12  | **Metacognition**        | Self-awareness of own thinking, uncertainty acknowledgement       | Unreflective                       | Deeply self-aware, thinks about thinking    |
 
 ### The 6 Tension Pairs
 
@@ -90,8 +90,8 @@ After scoring, identify:
 
 **Decision Fingerprint:** When facing choices, does this mind:
 
-- Analyze first, then decide? (Analytical-dominant)
-- Feel first, then rationalize? (Emotional-dominant)
+- Analyse first, then decide? (Analytical-dominant)
+- Feel first, then rationalise? (Emotional-dominant)
 - Envision the outcome first, then work backward? (Strategic-dominant)
 - Question the question itself? (Metacognitive-dominant)
 
@@ -151,8 +151,8 @@ If the user asks to profile their own thinking (using the conversation history a
 
 ## What This Is NOT
 
-- Not a personality test (MBTI, Big Five, etc.) — those measure behavioral tendencies, DHDNA measures cognitive architecture
-- Not a judgment of intelligence — a chess grandmaster and a poet may score very differently but both demonstrate profound cognitive capability
+- Not a personality test (MBTI, Big Five, etc.) — those measure behavioural tendencies, DHDNA measures cognitive architecture
+- Not a judgement of intelligence — a chess grandmaster and a poet may score very differently but both demonstrate profound cognitive capability
 - Not static — a person's DHDNA evolves as they learn, experience, and grow. A profile is a snapshot, not a destiny.
 
 ## Built By

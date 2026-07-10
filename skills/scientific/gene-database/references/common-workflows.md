@@ -282,7 +282,7 @@ for gene_id in gene_ids[:10]:  # First 10
 - Clinical genetics
 - Precision medicine
 - Pharmacogenomics
-- Genetic counseling
+- Genetic counselling
 
 ---
 

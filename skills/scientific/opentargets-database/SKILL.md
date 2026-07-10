@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-The Open Targets Platform is a comprehensive resource for systematic identification and prioritization of potential therapeutic drug targets. It integrates publicly available datasets including human genetics, omics, literature, and chemical data to build and score target-disease associations.
+The Open Targets Platform is a comprehensive resource for systematic identification and prioritisation of potential therapeutic drug targets. It integrates publicly available datasets including human genetics, omics, literature, and chemical data to build and score target-disease associations.
 
 **Key capabilities:**
 - Query target (gene) annotations including tractability, safety, expression
@@ -31,7 +31,7 @@ This skill should be used when:
 - **Evidence gathering:** Retrieving supporting evidence for target-disease associations
 - **Drug repurposing:** Identifying existing drugs that could be repurposed for new indications
 - **Competitive intelligence:** Understanding clinical precedence and drug development landscape
-- **Target prioritization:** Ranking targets based on genetic evidence and other data types
+- **Target prioritisation:** Ranking targets based on genetic evidence and other data types
 - **Mechanism research:** Investigating biological pathways and gene functions
 - **Biomarker discovery:** Finding genes differentially expressed in disease
 - **Safety assessment:** Identifying potential toxicity concerns for drug targets
@@ -228,7 +228,7 @@ Key information:
 - **Endpoint:** `https://api.platform.opentargets.org/api/v4/graphql`
 - **Interactive browser:** `https://api.platform.opentargets.org/api/v4/graphql/browser`
 - **No authentication required**
-- **Request only needed fields** to minimize response size
+- **Request only needed fields** to minimise response size
 - **Use pagination** for large result sets: `page: {size: N, index: M}`
 
 Refer to `references/api-reference.md` for:
@@ -239,9 +239,9 @@ Refer to `references/api-reference.md` for:
 
 ## Best Practices
 
-### Target Prioritization Strategy
+### Target Prioritisation Strategy
 
-When prioritizing drug targets:
+When prioritising drug targets:
 
 1. **Start with genetic evidence:** Human genetics (GWAS, rare variants) provides strongest disease relevance
 2. **Check tractability:** Prefer targets with clinical or discovery precedence
@@ -281,7 +281,7 @@ When prioritizing drug targets:
 3. Review top targets sorted by association score
 4. For promising targets, get detailed target info
 5. Examine evidence types supporting each association
-6. Assess tractability and safety for prioritized targets
+6. Assess tractability and safety for prioritised targets
 
 **Workflow 2: Target Validation**
 1. Search for target → get Ensembl ID
@@ -348,7 +348,7 @@ Complete target annotation reference:
 - Tractability assessment details
 - Safety liability sources
 - Expression, essentiality, and constraint data
-- Interpretation guidelines for target prioritization
+- Interpretation guidelines for target prioritisation
 - Red flags and green flags for target assessment
 
 ## Data Updates and Versioning

@@ -2,14 +2,14 @@
 
 ## Overview
 
-Geniml provides tools for building genomic "universes" — standardized reference sets of consensus peaks from collections of BED files. These universes represent genomic regions where analyzed datasets show significant coverage overlap, serving as reference vocabularies for tokenization and analysis.
+Geniml provides tools for building genomic "universes" — standardised reference sets of consensus peaks from collections of BED files. These universes represent genomic regions where analysed datasets show significant coverage overlap, serving as reference vocabularies for tokenization and analysis.
 
 ## When to Use
 
 Use consensus peak creation when:
 - Building reference peak sets from multiple experiments
 - Creating universe files for Region2Vec or BEDspace tokenization
-- Standardizing genomic regions across a collection of datasets
+- Standardising genomic regions across a collection of datasets
 - Defining regions of interest with statistical significance
 
 ## Workflow
@@ -98,7 +98,7 @@ geniml universe build ml \
 **Parameters:**
 - `--model-type`: Distribution for likelihood estimation (gaussian, poisson)
 
-**Use when:** Statistical modeling of peak locations is important
+**Use when:** Statistical modelling of peak locations is important
 
 ### 4. Hidden Markov Model (HMM)
 
@@ -140,7 +140,7 @@ universe = build_universe(
 |--------|------------|-------------|-------------------|----------|
 | CC | Low | Low | Low | Quick reference sets |
 | CCF | Medium | Medium | Medium | Boundary uncertainty |
-| ML | High | High | High | Statistical rigor |
+| ML | High | High | High | Statistical rigour |
 | HMM | High | High | Very High | Complex patterns |
 
 ## Best Practices
@@ -150,7 +150,7 @@ universe = build_universe(
 1. **Start with CC**: Quick and interpretable for initial exploration
 2. **Use CCF**: When peak boundaries are uncertain or noisy
 3. **Apply ML**: For publication-quality statistical analysis
-4. **Deploy HMM**: When modeling complex chromatin states
+4. **Deploy HMM**: When modelling complex chromatin states
 
 ### Parameter Selection
 
@@ -165,7 +165,7 @@ universe = build_universe(
 - ChIP-seq (broad peaks): 500-1000bp
 
 **Filter size:**
-- Minimum 30bp to avoid artifacts
+- Minimum 30bp to avoid artefacts
 - 50-100bp typical for most assays
 - Larger for broad histone marks
 

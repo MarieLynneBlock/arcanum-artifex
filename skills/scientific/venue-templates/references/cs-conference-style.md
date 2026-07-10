@@ -18,7 +18,7 @@ CS conferences span diverse subfields with distinct writing cultures. This guide
 
 > "Strong empirical results on standard benchmarks with insightful analysis."
 
-NLP papers balance empirical rigor with linguistic insight. Human evaluation is increasingly important alongside automatic metrics.
+NLP papers balance empirical rigour with linguistic insight. Human evaluation is increasingly important alongside automatic metrics.
 
 ## Audience and Tone
 
@@ -31,7 +31,7 @@ NLP papers balance empirical rigor with linguistic insight. Human evaluation is 
 | Characteristic | Description |
 |---------------|-------------|
 | **Task-focused** | Clear problem definition |
-| **Benchmark-oriented** | Standard datasets emphasized |
+| **Benchmark-oriented** | Standard datasets emphasised |
 | **Analysis-rich** | Error analysis, qualitative examples |
 | **Reproducible** | Full implementation details |
 
@@ -133,7 +133,7 @@ Inter-annotator κ = 0.72. Scale: 1-5 (higher is better).
 
 > "Technology in service of humans—understand users first, then design and evaluate."
 
-HCI papers are fundamentally **user-centered**. Technology novelty alone is insufficient; understanding human needs and demonstrating user benefit is essential.
+HCI papers are fundamentally **user-centred**. Technology novelty alone is insufficient; understanding human needs and demonstrating user benefit is essential.
 
 ## Audience and Tone
 
@@ -145,7 +145,7 @@ HCI papers are fundamentally **user-centered**. Technology novelty alone is insu
 ### Tone Characteristics
 | Characteristic | Description |
 |---------------|-------------|
-| **User-centered** | Focus on people, not technology |
+| **User-centred** | Focus on people, not technology |
 | **Design-informed** | Grounded in design thinking |
 | **Empirical** | User studies provide evidence |
 | **Reflective** | Consider broader implications |
@@ -255,7 +255,7 @@ provide granular controls and make visibility mutual.
 
 ## CHI-Specific Notes
 
-- **Contribution types**: Empirical, artifact, methodological, theoretical
+- **Contribution types**: Empirical, artefact, methodological, theoretical
 - **ACM format**: `acmart` document class with `sigchi` option
 - **Accessibility**: Alt text, inclusive language expected
 - **Contribution statement**: Required per-author contributions
@@ -268,7 +268,7 @@ provide granular controls and make visibility mutual.
 
 > "Scalable methods for real-world data with demonstrated practical impact."
 
-Data mining papers emphasize **scalability**, **real-world applicability**, and **solid experimental methodology**.
+Data mining papers emphasise **scalability**, **real-world applicability**, and **solid experimental methodology**.
 
 ## Audience and Tone
 
@@ -287,7 +287,7 @@ Data mining papers emphasize **scalability**, **real-world applicability**, and 
 
 ## KDD Abstract
 
-### Emphasize Scale and Application
+### Emphasise Scale and Application
 
 ```
 Fraud detection in e-commerce requires processing millions of 

@@ -2,10 +2,10 @@
 
 # Git Graph
 
-> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `gitGraph`
-**Best for:** Branching strategies, merge workflows, release processes, git-flow visualization
+**Best for:** Branching strategies, merge workflows, release processes, git-flow visualisation
 **When NOT to use:** General processes (use [Flowchart](flowchart.md)), project timelines (use [Gantt](gantt.md))
 
 ---

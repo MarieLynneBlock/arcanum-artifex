@@ -150,7 +150,7 @@ env.run()
 
 **Use cases:**
 - Parallel task completion
-- Barrier synchronization
+- Barrier synchronisation
 - Waiting for multiple resources
 
 ### AnyOf - Wait for Any Event
@@ -283,7 +283,7 @@ env.run()
 
 **Use cases:**
 - Broadcasting signals
-- Barrier synchronization
+- Barrier synchronisation
 - Coordinated process resumption
 
 ## Advanced Event Patterns

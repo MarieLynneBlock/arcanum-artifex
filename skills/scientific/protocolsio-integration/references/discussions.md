@@ -138,12 +138,12 @@ curl -X POST \
 
 ### 1. Discussion Thread Analysis
 
-To analyze discussions around a protocol:
+To analyse discussions around a protocol:
 
 1. Retrieve protocol comments: `GET /protocols/{id}/comments`
 2. For each step, retrieve step-specific comments
 3. Build a discussion thread tree using `parent_comment_id`
-4. Analyze feedback patterns and common issues
+4. Analyse feedback patterns and common issues
 
 ### 2. Collaborative Protocol Improvement
 

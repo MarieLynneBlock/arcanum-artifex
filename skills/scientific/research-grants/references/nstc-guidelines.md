@@ -223,7 +223,7 @@ latex nstc-proposal.ins
    - **Features**:
      - Includes official CM03.doc file for reference
      - Uses XeCJK with BiauKai (標楷體) font for Traditional Chinese
-     - Organized structure with separate section files (`background.tex`, `methods.tex`, `expected_outcomes.tex`)
+     - Organised structure with separate section files (`background.tex`, `methods.tex`, `expected_outcomes.tex`)
      - **Important**: Must use XeLaTeX or LuaLaTeX compiler
    - Based on Chen Wen-sheng's template
 
@@ -279,7 +279,7 @@ Based on Engineering Division (工程司) - Automation/Control field experience:
 
 **Quality Over Quantity**:
 - Select **highly relevant** literature, not just many papers
-- **Critical synthesis**: Don't just list papers - analyze strengths, weaknesses, and gaps
+- **Critical synthesis**: Don't just list papers - analyse strengths, weaknesses, and gaps
 - **Recency matters**: Include publications from the **last 2-3 years** to show awareness of current state-of-the-art
 - **Strategic positioning**: Use literature review to guide readers toward your research objectives
 
@@ -339,7 +339,7 @@ Based on Engineering Division (工程司) - Automation/Control field experience:
 - Join professional societies (e.g., IEEE, CAA)
 - Serve as reviewer for journals and conferences
 - Take on roles as Associate Editor (AE) or board member
-- **Why it matters**: Reviewers are more likely to recognize and trust researchers who are active in the community
+- **Why it matters**: Reviewers are more likely to recognise and trust researchers who are active in the community
 
 ---
 
@@ -356,7 +356,7 @@ Based on Engineering Division (工程司) - Automation/Control field experience:
 - **Consider alternatives**: If fundamental issues exist, consider different program types or focus areas
 
 **Professional Presentation**:
-- **Figures and tables**: Must be clear, numbered, and properly labeled
+- **Figures and tables**: Must be clear, numbered, and properly labelled
 - **Formatting**: Professional layout demonstrates attention to detail
 - **Proofreading**: Typos and formatting errors suggest carelessness
 
@@ -383,7 +383,7 @@ Before submitting, ask yourself:
 - [ ] Does my proposal align with national priorities or industrial needs?
 
 **Presentation**:
-- [ ] Are all figures clear and properly labeled?
+- [ ] Are all figures clear and properly labelled?
 - [ ] Is the writing clear and free of errors?
 - [ ] Does the budget align with proposed activities?
 - [ ] Have I included all required sections?
@@ -461,7 +461,7 @@ Reviewers evaluate proposals across four key dimensions:
 #### 3. **Appropriateness (適當性)**
 - Does the budget match the work scope?
 - Are personnel allocations reasonable?
-- Is existing equipment utilized effectively?
+- Is existing equipment utilised effectively?
 - Are expensive items properly justified?
 
 **Reviewer's Question**: Why do you need this expensive equipment when similar facilities exist?
@@ -525,7 +525,7 @@ Use SWOT to position your proposal strategically:
 
 **Example**:
 - **Weakness**: Lack of high-performance computing cluster
-- **Response**: Partner with National Center for High-performance Computing (國網中心)
+- **Response**: Partner with National Centre for High-performance Computing (國網中心)
 
 #### Fishbone Diagram (魚骨圖)
 
@@ -540,7 +540,7 @@ Use fishbone diagrams to demonstrate deep problem understanding:
     Sub-causes Sub-causes Sub-causes Sub-causes
 ```
 
-**Purpose**: Show reviewers you've thoroughly analyzed root causes, not just symptoms.
+**Purpose**: Show reviewers you've thoroughly analysed root causes, not just symptoms.
 
 #### Gantt Chart
 

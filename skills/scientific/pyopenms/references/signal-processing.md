@@ -2,7 +2,7 @@
 
 ## Overview
 
-PyOpenMS provides algorithms for processing raw mass spectrometry data including smoothing, filtering, peak picking, centroiding, normalization, and deconvolution.
+PyOpenMS provides algorithms for processing raw mass spectrometry data including smoothing, filtering, peak picking, centroiding, normalisation, and deconvolution.
 
 ## Algorithm Pattern
 
@@ -105,11 +105,11 @@ cwt_picker.setParameters(params)
 cwt_picker.pickExperiment(exp, exp_picked)
 ```
 
-## Normalization
+## Normalisation
 
 ### Normalizer
 
-Normalize peak intensities within spectra:
+Normalise peak intensities within spectra:
 
 ```python
 # Create normalizer
@@ -375,7 +375,7 @@ exp_processed = preprocess_experiment("raw_data.mzML", "processed_data.mzML")
 
 ## Best Practices
 
-### Parameter Optimization
+### Parameter Optimisation
 
 Test parameters on representative data:
 

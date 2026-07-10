@@ -61,7 +61,7 @@ hrv_time = nk.hrv_time(peaks, sampling_rate=1000)
 **Range measures:**
 - `HRV_MinNN`, `HRV_MaxNN`: Minimum and maximum NN intervals (ms)
 - `HRV_CVNN`: Coefficient of variation (SDNN/MeanNN)
-  - Normalized measure, useful for cross-subject comparison
+  - Normalised measure, useful for cross-subject comparison
 - `HRV_CVSD`: Coefficient of variation of successive differences (RMSSD/MeanNN)
 
 **Median-based statistics:**
@@ -86,7 +86,7 @@ hrv_time = nk.hrv_time(peaks, sampling_rate=1000)
 
 ### hrv_frequency()
 
-Analyze HRV power across frequency bands using spectral analysis.
+Analyse HRV power across frequency bands using spectral analysis.
 
 ```python
 hrv_freq = nk.hrv_frequency(peaks, sampling_rate=1000, ulf=(0, 0.0033), vlf=(0.0033, 0.04),
@@ -114,7 +114,7 @@ hrv_freq = nk.hrv_frequency(peaks, sampling_rate=1000, ulf=(0, 0.0033), vlf=(0.0
 **High Frequency (HF): 0.15-0.4 Hz**
 - Parasympathetic (vagal) activity
 - Respiratory sinus arrhythmia
-- Synchronized with breathing (respiratory rate range)
+- Synchronised with breathing (respiratory rate range)
 
 **Very-High Frequency (VHF): 0.4-0.5 Hz**
 - Rarely used, may reflect measurement noise
@@ -127,9 +127,9 @@ hrv_freq = nk.hrv_frequency(peaks, sampling_rate=1000, ulf=(0, 0.0033), vlf=(0.0
 - `HRV_TP`: Total power (variance of NN intervals)
 - `HRV_LFHF`: LF/HF ratio (sympathovagal balance)
 
-**Normalized power:**
-- `HRV_LFn`: LF power / (LF + HF) - normalized LF
-- `HRV_HFn`: HF power / (LF + HF) - normalized HF
+**Normalised power:**
+- `HRV_LFn`: LF power / (LF + HF) - normalised LF
+- `HRV_HFn`: HF power / (LF + HF) - normalised HF
 - `HRV_LnHF`: Natural logarithm of HF (log-normal distribution)
 
 **Peak frequencies:**
@@ -152,7 +152,7 @@ hrv_freq = nk.hrv_frequency(peaks, sampling_rate=1000, psd_method='lomb')
 ```
 - Handles unevenly sampled data
 - No interpolation required
-- Better for noisy or artifact-containing data
+- Better for noisy or artefact-containing data
 
 **Multitaper method:**
 ```python
@@ -233,7 +233,7 @@ hrv_nonlinear = nk.hrv_nonlinear(peaks, sampling_rate=1000)
 
 ### Heart Rate Asymmetry
 
-Analyzes whether heart rate accelerations and decelerations contribute differently to HRV.
+Analyses whether heart rate accelerations and decelerations contribute differently to HRV.
 
 - `HRV_GI`: Guzik's Index - asymmetry of short-term variability
 - `HRV_SI`: Slope Index - asymmetry of long-term variability
@@ -319,7 +319,7 @@ Quantifies abnormal short-term fluctuations reflecting autonomic dysregulation.
 - `HRV_LZC`: Lempel-Ziv complexity (algorithmic complexity)
 - `HRV_MFDFA`: Multifractal DFA indices
 
-## Specialized HRV Functions
+## Specialised HRV Functions
 
 ### hrv_rsa()
 
@@ -335,7 +335,7 @@ rsa = nk.hrv_rsa(peaks, rsp_signal, sampling_rate=1000, method='porges1980')
 
 **Requirements:**
 - Both ECG and respiratory signals
-- Synchronized timing
+- Synchronised timing
 - At least several breath cycles
 
 **Returns:**
@@ -409,7 +409,7 @@ peaks_dict = nk.intervals_to_peaks(rr_intervals, sampling_rate=1000)
 | Nonlinear (ApEn, SampEn) | 100-300 beats | 500+ beats |
 | DFA | 300 beats | 1000+ beats |
 
-### Artifact Management
+### Artefact Management
 
 **Preprocessing:**
 ```python
@@ -426,14 +426,14 @@ processed = nk.intervals_process(rr_intervals, interpolate=False)
 - Check for sudden jumps or missing beats
 - Assess signal quality before analysis
 
-### Standardization and Comparison
+### Standardisation and Comparison
 
 **Task Force Standards (1996):**
 - 5-minute recordings for short-term
 - Supine, controlled breathing recommended
 - 24-hour for long-term assessment
 
-**Normalization:**
+**Normalisation:**
 - Consider age, sex, fitness level effects
 - Time of day and circadian effects
 - Body position (supine vs. standing)

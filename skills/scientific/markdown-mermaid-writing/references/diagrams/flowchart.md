@@ -2,7 +2,7 @@
 
 # Flowchart
 
-> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `flowchart`
 **Best for:** Sequential processes, workflows, decision logic, troubleshooting trees
@@ -47,7 +47,7 @@ flowchart TB
 - Max 10 nodes — split larger flows into "Phase 1" / "Phase 2" diagrams
 - Max 3 decision points per diagram
 - Edge labels should be 1–4 words: `-->|Yes|`, `-->|All green|`
-- Use `classDef` for **semantic** coloring — decisions in amber, success in green, actions in blue
+- Use `classDef` for **semantic** colouring — decisions in amber, success in green, actions in blue
 
 ## Subgraph Pattern
 
@@ -105,7 +105,7 @@ flowchart TB
 
 ## Complex Example
 
-A 20+ node e-commerce order pipeline organized into 5 subgraphs, each representing a processing phase. Subgraphs connect through internal nodes, decision points route orders to exception handling, and color classes distinguish phases at a glance.
+A 20+ node e-commerce order pipeline organised into 5 subgraphs, each representing a processing phase. Subgraphs connect through internal nodes, decision points route orders to exception handling, and colour classes distinguish phases at a glance.
 
 ```mermaid
 flowchart TB
@@ -171,7 +171,7 @@ flowchart TB
 
 ### Why this works
 
-- **5 subgraphs map to real business phases** — intake, fulfillment, shipping, notification, and exceptions are how operations teams actually think about orders
+- **5 subgraphs map to real business phases** — intake, fulfilment, shipping, notification, and exceptions are how operations teams actually think about orders
 - **Exception handling is its own subgraph** — not scattered across phases. Agents and readers can see all failure paths in one place
-- **Color classes reinforce structure** — blue for intake, purple for fulfillment, green for shipping, amber for notifications, red for exceptions. Even without reading labels, the color pattern tells you which phase you're looking at
-- **Decisions route between subgraphs** — the diamonds (`{Payment valid?}`, `{In stock?}`, `{Delivered?}`) are the points where flow branches, and each branch leads to a clearly-labeled destination
+- **Colour classes reinforce structure** — blue for intake, purple for fulfilment, green for shipping, amber for notifications, red for exceptions. Even without reading labels, the colour pattern tells you which phase you're looking at
+- **Decisions route between subgraphs** — the diamonds (`{Payment valid?}`, `{In stock?}`, `{Delivered?}`) are the points where flow branches, and each branch leads to a clearly-labelled destination

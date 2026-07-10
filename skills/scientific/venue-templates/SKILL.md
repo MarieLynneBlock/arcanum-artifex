@@ -23,7 +23,7 @@ This skill should be used when:
 - Creating an academic research poster for conferences
 - Drafting grant proposals for federal agencies (NSF, NIH, DOE, DARPA) or private foundations
 - Checking formatting requirements and page limits for target venues
-- Customizing templates with author information and project details
+- Customising templates with author information and project details
 - Verifying document compliance with venue specifications
 
 ## Visual Enhancement with Scientific Schematics
@@ -53,9 +53,9 @@ The AI will automatically:
 - Conceptual framework diagrams
 - System architecture illustrations
 - Data flow diagrams
-- Experimental design visualizations
+- Experimental design visualisations
 - Research workflow diagrams
-- Any complex concept that benefits from visualization
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -139,12 +139,12 @@ Academic poster templates for conference presentations:
 
 **Template Packages**:
 - **beamerposter**: Classic academic poster template
-- **tikzposter**: Modern, colorful poster design
+- **tikzposter**: Modern, colourful poster design
 - **baposter**: Structured multi-column layout
 
 **Design Features**:
 - Optimal font sizes for readability at distance
-- Color schemes (colorblind-safe palettes)
+- Colour schemes (colorblind-safe palettes)
 - Grid layouts and column structures
 - QR code integration for supplementary materials
 
@@ -174,7 +174,7 @@ Templates and formatting requirements for major funding agencies:
 - Technology Readiness Level (TRL) descriptions
 - Commercialization and impact sections
 
-**DARPA (Defense Advanced Research Projects Agency)**:
+**DARPA (Defence Advanced Research Projects Agency)**:
 - BAA (Broad Agency Announcement) responses
 - Heilmeier Catechism framework
 - Technical approach and milestones
@@ -245,7 +245,7 @@ Template: assets/grants/nsf_proposal_template.tex
 
 ### Step 3: Review Formatting Requirements
 
-Check critical specifications before customizing:
+Check critical specifications before customising:
 
 **Key Requirements to Verify**:
 - Page limits (varies by venue)
@@ -258,9 +258,9 @@ Check critical specifications before customizing:
 - Anonymization (for double-blind review)
 - Supplementary material limits
 
-### Step 4: Customize Template
+### Step 4: Customise Template
 
-Use helper scripts or manual customization:
+Use helper scripts or manual customisation:
 
 **Option 1: Helper Script (Recommended)**:
 ```bash
@@ -346,7 +346,7 @@ This skill works seamlessly with other scientific skills:
 ### LaTeX Posters
 - This skill provides venue-agnostic poster templates
 - Use for conference-specific poster requirements
-- Integrate with visualization skills for figure creation
+- Integrate with visualisation skills for figure creation
 
 ## Template Categories
 
@@ -390,9 +390,9 @@ python scripts/query_template.py --list-all
 python scripts/query_template.py --venue "NeurIPS" --requirements
 ```
 
-### customize_template.py
+### customise_template.py
 
-Customize templates with author and project information:
+Customise templates with author and project information:
 
 ```bash
 # Basic customization
@@ -445,11 +445,11 @@ python scripts/validate_format.py \
 3. **Test compilation**: Compile template before adding content
 4. **Read comments**: Templates include helpful inline comments
 
-### Customization
+### Customisation
 1. **Preserve structure**: Don't remove required sections or packages
 2. **Follow placeholders**: Replace marked placeholder text systematically
 3. **Maintain formatting**: Don't override venue-specific formatting
-4. **Keep backups**: Save original template before customization
+4. **Keep backups**: Save original template before customisation
 
 ### Compliance
 1. **Check page limits**: Verify before final submission
@@ -491,7 +491,7 @@ python scripts/validate_format.py \
 
 ### Figure Requirements
 
-| Venue | Resolution | Format | Color |
+| Venue | Resolution | Format | Colour |
 |-------|-----------|--------|-------|
 | **Nature** | 300+ dpi | TIFF, EPS, PDF | RGB or CMYK |
 | **Science** | 300+ dpi | TIFF, PDF | RGB |
@@ -507,7 +507,7 @@ Beyond formatting, this skill provides comprehensive **writing style guides** th
 The same research written for Nature will read very differently than when written for NeurIPS:
 - **Nature/Science**: Accessible to non-specialists, story-driven, broad significance
 - **Cell Press**: Mechanistic depth, comprehensive data, graphical abstract required
-- **Medical journals**: Patient-centered, evidence-graded, structured abstracts
+- **Medical journals**: Patient-centred, evidence-graded, structured abstracts
 - **ML conferences**: Contribution bullets, ablation studies, reproducibility focus
 - **CS conferences**: Field-specific conventions, varying evaluation standards
 
@@ -536,7 +536,7 @@ Concrete examples are available in `assets/examples/`:
 1. **Identify target venue** and load the appropriate style guide
 2. **Review writing conventions**: Tone, voice, abstract format, structure
 3. **Check examples** for section-specific guidance
-4. **Review expectations**: What do reviewers at this venue prioritize?
+4. **Review expectations**: What do reviewers at this venue prioritise?
 5. **Apply formatting**: Use LaTeX template from `assets/`
 
 ---
@@ -573,7 +573,7 @@ Concrete examples are available in `assets/examples/`:
 
 **Scripts** (in `scripts/`):
 - `query_template.py`: Search and retrieve templates
-- `customize_template.py`: Customize with author info
+- `customize_template.py`: Customise with author info
 - `validate_format.py`: Check compliance with requirements
 
 ### External Resources
@@ -679,7 +679,7 @@ The venue-templates skill provides comprehensive access to:
 
 1. **50+ publication venue templates** across disciplines
 2. **Detailed formatting requirements** for journals, conferences, posters, grants
-3. **Helper scripts** for template discovery, customization, and validation
+3. **Helper scripts** for template discovery, customisation, and validation
 4. **Integration** with other scientific writing skills
 5. **Best practices** for successful academic submissions
 

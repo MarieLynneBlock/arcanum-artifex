@@ -1,13 +1,13 @@
 # Chemistry and Molecular File Formats Reference
 
-This reference covers file formats commonly used in computational chemistry, cheminformatics, molecular modeling, and related fields.
+This reference covers file formats commonly used in computational chemistry, cheminformatics, molecular modelling, and related fields.
 
 ## Structure File Formats
 
 ### .pdb - Protein Data Bank
 **Description:** Standard format for 3D structures of biological macromolecules
 **Typical Data:** Atomic coordinates, residue information, secondary structure, crystal structure data
-**Use Cases:** Protein structure analysis, molecular visualization, docking studies
+**Use Cases:** Protein structure analysis, molecular visualisation, docking studies
 **Python Libraries:**
 - `Biopython`: `Bio.PDB`
 - `MDAnalysis`: `MDAnalysis.Universe('file.pdb')`
@@ -67,7 +67,7 @@ This reference covers file formats commonly used in computational chemistry, che
 - Bond type statistics
 - Substructure identification
 - Conformational analysis
-- Energy minimization status check
+- Energy minimisation status check
 
 ### .sdf - Structure Data File
 **Description:** Multi-structure file format with associated data
@@ -88,14 +88,14 @@ This reference covers file formats commonly used in computational chemistry, che
 ### .xyz - XYZ Coordinates
 **Description:** Simple Cartesian coordinate format
 **Typical Data:** Atom types and 3D coordinates
-**Use Cases:** Quantum chemistry, geometry optimization, molecular dynamics
+**Use Cases:** Quantum chemistry, geometry optimisation, molecular dynamics
 **Python Libraries:**
 - `ASE`: `ase.io.read('file.xyz')`
 - `Open Babel`: `pybel.readfile('xyz', 'file.xyz')`
 - `cclib`: For parsing QM outputs with xyz
 **EDA Approach:**
 - Geometry analysis (bond lengths, angles, dihedrals)
-- Center of mass calculation
+- Centre of mass calculation
 - Moment of inertia
 - Molecular size metrics
 - Coordinate validation
@@ -136,7 +136,7 @@ This reference covers file formats commonly used in computational chemistry, che
 ### .mae - Maestro Format
 **Description:** Schrödinger's proprietary molecular structure format
 **Typical Data:** Structures, properties, annotations from Schrödinger suite
-**Use Cases:** Drug discovery, molecular modeling with Schrödinger tools
+**Use Cases:** Drug discovery, molecular modelling with Schrödinger tools
 **Python Libraries:**
 - `schrodinger.structure`: Requires Schrödinger installation
 - Custom parsers for basic reading
@@ -168,7 +168,7 @@ This reference covers file formats commonly used in computational chemistry, che
 ### .log - Gaussian Log File
 **Description:** Output from Gaussian quantum chemistry calculations
 **Typical Data:** Energies, geometries, frequencies, orbitals, populations
-**Use Cases:** QM calculations, geometry optimization, frequency analysis
+**Use Cases:** QM calculations, geometry optimisation, frequency analysis
 **Python Libraries:**
 - `cclib`: `cclib.io.ccread('file.log')`
 - `GaussianRunPack`: For Gaussian workflows
@@ -207,7 +207,7 @@ This reference covers file formats commonly used in computational chemistry, che
 - Orbital population analysis
 - Electron density distribution
 - Critical point analysis (QTAIM)
-- Molecular orbital visualization
+- Molecular orbital visualisation
 - Bonding analysis
 
 ### .fchk - Gaussian Formatted Checkpoint
@@ -228,7 +228,7 @@ This reference covers file formats commonly used in computational chemistry, che
 ### .cube - Gaussian Cube File
 **Description:** Volumetric data on a 3D grid
 **Typical Data:** Electron density, molecular orbitals, ESP on grid
-**Use Cases:** Visualization of volumetric properties
+**Use Cases:** Visualisation of volumetric properties
 **Python Libraries:**
 - `cclib`: `cclib.io.ccread('file.cube')`
 - `ase.io`: `ase.io.read('file.cube')`
@@ -357,7 +357,7 @@ This reference covers file formats commonly used in computational chemistry, che
 - System initialization check
 - Box vector validation
 - Velocity distribution (if restart)
-- Energy minimization status
+- Energy minimisation status
 
 ## Spectroscopy and Analytical Data
 
@@ -450,7 +450,7 @@ This reference covers file formats commonly used in computational chemistry, che
 - Noise level assessment
 - Acquisition parameter validation
 - Apodization function selection
-- Zero-filling optimization
+- Zero-filling optimisation
 - Phasing parameter estimation
 
 ### .ft - NMR Frequency-Domain Data
@@ -478,7 +478,7 @@ This reference covers file formats commonly used in computational chemistry, che
 **EDA Approach:**
 - Spectral resolution
 - Wavelength/wavenumber range
-- Baseline characterization
+- Baseline characterisation
 - Peak identification
 - Derivative spectra calculation
 
@@ -558,7 +558,7 @@ This reference covers file formats commonly used in computational chemistry, che
 
 ### .hdf5 / .h5 - Hierarchical Data Format
 **Description:** Container for scientific data arrays
-**Typical Data:** Large arrays, metadata, hierarchical organization
+**Typical Data:** Large arrays, metadata, hierarchical organisation
 **Use Cases:** Large dataset storage, computational results
 **Python Libraries:**
 - `h5py`: `h5py.File('file.h5', 'r')`
@@ -569,7 +569,7 @@ This reference covers file formats commonly used in computational chemistry, che
 - Array shape and dtype analysis
 - Metadata extraction
 - Memory-efficient data sampling
-- Chunk optimization analysis
+- Chunk optimisation analysis
 - Compression ratio assessment
 
 ### .pkl / .pickle - Python Pickle
@@ -629,7 +629,7 @@ This reference covers file formats commonly used in computational chemistry, che
 - Missing value patterns
 - Statistical summaries
 - Correlation analysis
-- Distribution visualization
+- Distribution visualisation
 - Outlier detection
 
 ### .json - JavaScript Object Notation

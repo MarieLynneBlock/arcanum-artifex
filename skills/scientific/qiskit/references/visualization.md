@@ -1,16 +1,16 @@
-# Visualization in Qiskit
+# Visualisation in Qiskit
 
-Qiskit provides comprehensive visualization tools for quantum circuits, measurement results, and quantum states.
+Qiskit provides comprehensive visualisation tools for quantum circuits, measurement results, and quantum states.
 
 ## Installation
 
-Install visualization dependencies:
+Install visualisation dependencies:
 
 ```bash
 uv pip install "qiskit[visualization]" matplotlib
 ```
 
-## Circuit Visualization
+## Circuit Visualisation
 
 ### Text-Based Drawings
 
@@ -52,7 +52,7 @@ with open('circuit.tex', 'w') as f:
     f.write(latex_source)
 ```
 
-## Customizing Circuit Drawings
+## Customising Circuit Drawings
 
 ### Styling Options
 
@@ -72,7 +72,7 @@ qc.draw('mpl', idle_wires=False)
 qc.draw('mpl', initial_state=True)
 ```
 
-### Color Customization
+### Colour Customisation
 
 ```python
 style = {
@@ -86,7 +86,7 @@ style = {
 qc.draw('mpl', style=style)
 ```
 
-## Result Visualization
+## Result Visualisation
 
 ### Histogram of Counts
 
@@ -133,11 +133,11 @@ target = {'00': 0.5, '11': 0.5}
 plot_histogram(counts, target=target)
 ```
 
-## State Visualization
+## State Visualisation
 
 ### Bloch Sphere
 
-Visualize single-qubit states on the Bloch sphere:
+Visualise single-qubit states on the Bloch sphere:
 
 ```python
 from qiskit.visualization import plot_bloch_vector
@@ -168,7 +168,7 @@ plot_bloch_multivector(state)
 
 ### State City Plot
 
-Visualize state amplitudes as a 3D city:
+Visualise state amplitudes as a 3D city:
 
 ```python
 from qiskit.visualization import plot_state_city
@@ -186,7 +186,7 @@ plot_state_city(state, color=['#FF6B6B', '#4ECDC4'])
 
 ### QSphere
 
-Visualize quantum states on a sphere:
+Visualise quantum states on a sphere:
 
 ```python
 from qiskit.visualization import plot_state_qsphere
@@ -206,7 +206,7 @@ state = Statevector.from_instruction(qc)
 plot_state_hinton(state)
 ```
 
-## Density Matrix Visualization
+## Density Matrix Visualisation
 
 ```python
 from qiskit.visualization import plot_state_density
@@ -220,9 +220,9 @@ state = DensityMatrix.from_instruction(qc)
 plot_state_density(state)
 ```
 
-## Gate Map Visualization
+## Gate Map Visualisation
 
-Visualize backend coupling map:
+Visualise backend coupling map:
 
 ```python
 from qiskit.visualization import plot_gate_map
@@ -238,7 +238,7 @@ plot_gate_map(backend)
 plot_gate_map(backend, plot_error_rates=True)
 ```
 
-## Error Map Visualization
+## Error Map Visualisation
 
 Display backend error rates:
 
@@ -258,7 +258,7 @@ transpiled_qc = transpile(qc, backend=backend)
 plot_circuit_layout(transpiled_qc, backend)
 ```
 
-## Pulse Visualization
+## Pulse Visualisation
 
 For pulse-level control:
 
@@ -285,7 +285,7 @@ composer = QuantumCircuitComposer()
 composer.show()
 ```
 
-### Interactive State Visualization
+### Interactive State Visualisation
 
 ```python
 from qiskit.visualization import plot_histogram
@@ -333,7 +333,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Saving Visualizations
+## Saving Visualisations
 
 ### Save to Various Formats
 
@@ -383,7 +383,7 @@ qc.draw('mpl', style='iqp')
 qc.draw('mpl', style='bw')  # Black and white
 ```
 
-## Troubleshooting Visualization
+## Troubleshooting Visualisation
 
 ### Common Issues
 
@@ -408,7 +408,7 @@ fig.savefig('large_circuit.png', dpi=150, bbox_inches='tight')
 %matplotlib inline
 ```
 
-**Issue**: LaTeX visualization not working
+**Issue**: LaTeX visualisation not working
 ```bash
 # Install LaTeX support
 uv pip install pylatexenc

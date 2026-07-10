@@ -1,13 +1,13 @@
 ---
 name: linkedin-post-formatter
-description: 'Format and draft compelling LinkedIn posts using Unicode bold/italic styling, visual separators, structured sections, and engagement-optimized patterns. USE FOR: draft LinkedIn post, format text for LinkedIn, create social media post, write thought leadership post, convert content to LinkedIn format, LinkedIn carousel text, Unicode bold italic formatting.'
+description: 'Format and draft compelling LinkedIn posts using Unicode bold/italic styling, visual separators, structured sections, and engagement-optimised patterns. USE FOR: draft LinkedIn post, format text for LinkedIn, create social media post, write thought leadership post, convert content to LinkedIn format, LinkedIn carousel text, Unicode bold italic formatting.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
 
 # LinkedIn Post Formatter
 
-Transform raw content, ideas, or technical material into polished, engagement-optimized LinkedIn posts using Unicode typography and proven structural patterns.
+Transform raw content, ideas, or technical material into polished, engagement-optimised LinkedIn posts using Unicode typography and proven structural patterns.
 
 ## Overview
 
@@ -154,7 +154,7 @@ Use these characters to create visual structure:
 8. **Character limit**: LinkedIn posts can be up to 3000 characters. Aim for 1500-2500 for optimal engagement.
 9. **No URLs in body**: LinkedIn suppresses reach for posts with links. Add links in comments instead. Mention "link in comments" or "grab it below" as CTA.
 
-## Engagement Optimization
+## Engagement Optimisation
 
 - **Opening hooks that work**: Questions, bold claims, "If you do X...", contrarian takes, surprising stats.
 - **Closing CTAs that work**: "♻️ 𝗥𝗲𝗽𝗼𝘀𝘁 if...", "Save this for later", "Tag someone who needs this", "What's your take? 👇"
@@ -163,7 +163,7 @@ Use these characters to create visual structure:
 
 ## Process
 
-1. Analyze the source content (text, HTML, image, or idea).
+1. Analyse the source content (text, HTML, image, or idea).
 2. Identify the best post structure pattern (Hook→Content→CTA, Listicle, Story→Lesson, Resource Share).
 3. Extract the core message and 3-5 key points.
 4. Apply Unicode bold/italic formatting to headers and emphasis words using `references/unicode-charmap.md`.

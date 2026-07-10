@@ -10,7 +10,7 @@ KEGG (Kyoto Encyclopedia of Genes and Genomes) is a comprehensive bioinformatics
 
 ## KEGG Databases
 
-KEGG integrates 16 primary databases organized into systems information, genomic information, chemical information, and health information categories:
+KEGG integrates 16 primary databases organised into systems information, genomic information, chemical information, and health information categories:
 
 ### Systems Information
 - **PATHWAY**: Manually drawn pathway maps for metabolism, genetic information processing, environmental information processing, cellular processes, organismal systems, human diseases, and drug development
@@ -19,7 +19,7 @@ KEGG integrates 16 primary databases organized into systems information, genomic
 
 ### Genomic Information
 - **GENOME**: Complete genomes with annotations
-- **GENES**: Gene catalogs for all organisms
+- **GENES**: Gene catalogues for all organisms
 - **ORTHOLOGY**: Ortholog groups (KO: KEGG Orthology)
 - **SSDB**: Sequence similarity database
 
@@ -182,7 +182,7 @@ Retrieves drug-drug interaction information extracted from Japanese drug labels.
 
 ## Pathway Classification
 
-KEGG organizes pathways into seven major categories:
+KEGG organises pathways into seven major categories:
 
 ### 1. Metabolism
 Carbohydrate, energy, lipid, nucleotide, amino acid, glycan biosynthesis and metabolism, cofactor and vitamin metabolism, terpenoid and polyketide metabolism, secondary metabolite biosynthesis, xenobiotics biodegradation
@@ -205,7 +205,7 @@ Membrane transport, signal transduction
 
 **Example pathways**:
 - `map02010` - ABC transporters
-- `map04010` - MAPK signaling pathway
+- `map04010` - MAPK signalling pathway
 
 ### 4. Cellular Processes
 Transport and catabolism, cell growth and death, cellular community, cell motility
@@ -219,7 +219,7 @@ Immune, endocrine, circulatory, digestive, nervous, sensory, development, enviro
 
 **Example pathways**:
 - `map04610` - Complement and coagulation cascades
-- `map04910` - Insulin signaling pathway
+- `map04910` - Insulin signalling pathway
 
 ### 6. Human Diseases
 Cancer, immune diseases, neurodegenerative diseases, cardiovascular diseases, metabolic diseases, infectious diseases
@@ -276,7 +276,7 @@ Chronological classification and target-based classification
 2. For bulk operations, batch entries using + (up to 10)
 3. Cache results locally to reduce API calls
 4. Use specific organism codes when possible for faster results
-5. For pathway visualization, use the web interface or KGML/JSON formats
+5. For pathway visualisation, use the web interface or KGML/JSON formats
 6. Parse tab-delimited output carefully (consistent format across operations)
 
 ## Integration with Other Tools

@@ -1,6 +1,6 @@
 ---
 name: umap-learn
-description: UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualization, clustering preprocessing (HDBSCAN), supervised/parametric UMAP, for high-dimensional data.
+description: UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualisation, clustering preprocessing (HDBSCAN), supervised/parametric UMAP, for high-dimensional data.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-UMAP (Uniform Manifold Approximation and Projection) is a dimensionality reduction technique for visualization and general non-linear dimensionality reduction. Apply this skill for fast, scalable embeddings that preserve local and global structure, supervised learning, and clustering preprocessing.
+UMAP (Uniform Manifold Approximation and Projection) is a dimensionality reduction technique for visualisation and general non-linear dimensionality reduction. Apply this skill for fast, scalable embeddings that preserve local and global structure, supervised learning, and clustering preprocessing.
 
 ## Quick Start
 
@@ -40,7 +40,7 @@ reducer.fit(scaled_data)
 embedding = reducer.embedding_  # Access the trained embedding
 ```
 
-**Critical preprocessing requirement:** Always standardize features to comparable scales before applying UMAP to ensure equal weighting across dimensions.
+**Critical preprocessing requirement:** Always standardise features to comparable scales before applying UMAP to ensure equal weighting across dimensions.
 
 ### Typical Workflow
 
@@ -72,18 +72,18 @@ plt.show()
 
 ## Parameter Tuning Guide
 
-UMAP has four primary parameters that control the embedding behavior. Understanding these is crucial for effective usage.
+UMAP has four primary parameters that control the embedding behaviour. Understanding these is crucial for effective usage.
 
-### n_neighbors (default: 15)
+### n_neighbours (default: 15)
 
 **Purpose:** Balances local versus global structure in the embedding.
 
 **How it works:** Controls the size of the local neighborhood UMAP examines when learning manifold structure.
 
 **Effects by value:**
-- **Low values (2-5):** Emphasizes fine local detail but may fragment data into disconnected components
+- **Low values (2-5):** Emphasises fine local detail but may fragment data into disconnected components
 - **Medium values (15-20):** Balanced view of both local structure and global relationships (recommended starting point)
-- **High values (50-200):** Prioritizes broad topological structure at the expense of fine-grained details
+- **High values (50-200):** Prioritises broad topological structure at the expense of fine-grained details
 
 **Recommendation:** Start with 15 and adjust based on results. Increase for more global structure, decrease for more local detail.
 
@@ -95,22 +95,22 @@ UMAP has four primary parameters that control the embedding behavior. Understand
 
 **Effects by value:**
 - **Low values (0.0-0.1):** Creates clumped embeddings useful for clustering; reveals fine topological details
-- **High values (0.5-0.99):** Prevents tight packing; emphasizes broad topological preservation over local structure
+- **High values (0.5-0.99):** Prevents tight packing; emphasises broad topological preservation over local structure
 
-**Recommendation:** Use 0.0 for clustering applications, 0.1-0.3 for visualization, 0.5+ for loose structure.
+**Recommendation:** Use 0.0 for clustering applications, 0.1-0.3 for visualisation, 0.5+ for loose structure.
 
 ### n_components (default: 2)
 
 **Purpose:** Determines the dimensionality of the embedded output space.
 
-**Key feature:** Unlike t-SNE, UMAP scales well in the embedding dimension, enabling use beyond visualization.
+**Key feature:** Unlike t-SNE, UMAP scales well in the embedding dimension, enabling use beyond visualisation.
 
 **Common uses:**
-- **2-3 dimensions:** Visualization
+- **2-3 dimensions:** Visualisation
 - **5-10 dimensions:** Clustering preprocessing (better preserves density than 2D)
 - **10-50 dimensions:** Feature engineering for downstream ML models
 
-**Recommendation:** Use 2 for visualization, 5-10 for clustering, higher for ML pipelines.
+**Recommendation:** Use 2 for visualisation, 5-10 for clustering, higher for ML pipelines.
 
 ### metric (default: 'euclidean')
 
@@ -159,7 +159,7 @@ embedding = umap.UMAP().fit_transform(data, y=labels)
 - Preserves internal structure within each class
 - Maintains global relationships between classes
 
-**When to use:** When you have labeled data and want to separate known classes while keeping meaningful point embeddings.
+**When to use:** When you have labelled data and want to separate known classes while keeping meaningful point embeddings.
 
 ### Semi-Supervised UMAP
 
@@ -174,11 +174,11 @@ semi_labels[unlabeled_indices] = -1
 embedding = umap.UMAP().fit_transform(data, y=semi_labels)
 ```
 
-**When to use:** When labeling is expensive or you have more data than labels available.
+**When to use:** When labelling is expensive or you have more data than labels available.
 
 ### Metric Learning with UMAP
 
-Train a supervised embedding on labeled data, then apply to new unlabeled data:
+Train a supervised embedding on labelled data, then apply to new unlabeled data:
 
 ```python
 # Train on labeled data
@@ -201,10 +201,10 @@ UMAP serves as effective preprocessing for density-based clustering algorithms l
 
 ### Best Practices for Clustering
 
-**Key principle:** Configure UMAP differently for clustering than for visualization.
+**Key principle:** Configure UMAP differently for clustering than for visualisation.
 
 **Recommended parameters:**
-- **n_neighbors:** Increase to ~30 (default 15 is too local and can create artificial fine-grained clusters)
+- **n_neighbours:** Increase to ~30 (default 15 is too local and can create artificial fine-grained clusters)
 - **min_dist:** Set to 0.0 (pack points densely within clusters for clearer boundaries)
 - **n_components:** Use 5-10 dimensions (maintains performance while improving density preservation vs. 2D)
 
@@ -244,7 +244,7 @@ print(f"Number of clusters: {len(set(labels)) - (1 if -1 in labels else 0)}")
 print(f"Noise points: {sum(labels == -1)}")
 ```
 
-### Visualization After Clustering
+### Visualisation After Clustering
 
 ```python
 # Create 2D embedding for visualization (separate from clustering)
@@ -328,7 +328,7 @@ predictions = pipeline.predict(X_test)
 
 ### Parametric UMAP
 
-Parametric UMAP replaces direct embedding optimization with a learned neural network mapping function.
+Parametric UMAP replaces direct embedding optimisation with a learned neural network mapping function.
 
 **Key differences from standard UMAP:**
 - Uses TensorFlow/Keras to train encoder networks
@@ -374,7 +374,7 @@ embedding = embedder.fit_transform(data)
 - Need efficient transformation of new data after training
 - Require reconstruction capabilities (inverse transforms)
 - Want to combine UMAP with autoencoders
-- Working with complex data types (images, sequences) benefiting from specialized architectures
+- Working with complex data types (images, sequences) benefiting from specialised architectures
 
 **When to use standard UMAP:**
 - Need simplicity and quick prototyping
@@ -401,7 +401,7 @@ reconstructed = reducer.inverse_transform(embedding)
 
 **Use cases:**
 - Understanding structure of embedded data
-- Visualizing smooth transitions between clusters
+- Visualising smooth transitions between clusters
 - Exploring interpolations between data points
 - Generating synthetic samples in embedding space
 
@@ -421,7 +421,7 @@ reconstructed_samples = reducer.inverse_transform(grid_points)
 
 ### AlignedUMAP
 
-For analyzing temporal or related datasets (e.g., time-series experiments, batch data):
+For analysing temporal or related datasets (e.g., time-series experiments, batch data):
 
 ```python
 from umap import AlignedUMAP
@@ -444,18 +444,18 @@ To ensure reproducible results, always set the `random_state` parameter:
 reducer = umap.UMAP(random_state=42)
 ```
 
-UMAP uses stochastic optimization, so results will vary slightly between runs without a fixed random state.
+UMAP uses stochastic optimisation, so results will vary slightly between runs without a fixed random state.
 
 ## Common Issues and Solutions
 
 **Issue:** Disconnected components or fragmented clusters
-- **Solution:** Increase `n_neighbors` to emphasize more global structure
+- **Solution:** Increase `n_neighbors` to emphasise more global structure
 
 **Issue:** Clusters too spread out or not well separated
 - **Solution:** Decrease `min_dist` to allow tighter packing
 
 **Issue:** Poor clustering results
-- **Solution:** Use clustering-specific parameters (n_neighbors=30, min_dist=0.0, n_components=5-10)
+- **Solution:** Use clustering-specific parameters (n_neighbours=30, min_dist=0.0, n_components=5-10)
 
 **Issue:** Transform results differ significantly from training
 - **Solution:** Ensure test data distribution matches training, or use Parametric UMAP

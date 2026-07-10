@@ -124,7 +124,7 @@ Phone:  \+?[0-9\s\-\(\)]{7,20}  (in a phone-named field)
 - `mac_address`, `device_mac`, `hardware_id`
 - `imei`, `imsi`, `device_id`, `advertising_id`, `idfa`, `gaid`
 
-### Authentication Artifacts
+### Authentication Artefacts
 **Detection patterns:**
 - `session_id`, `cookie_value`, `csrf_token` (if long-lived and user-identifying)
 - `remember_me_token`, `persistent_session`
@@ -140,7 +140,7 @@ Phone:  \+?[0-9\s\-\(\)]{7,20}  (in a phone-named field)
 - `city`, `state`, `country`, `region`, `zip_code`, `postal_code`
 - `time_zone`, `locale`, `language_preference`
 
-### Behavioral & Analytics Data
+### Behavioural & Analytics Data
 **Detection patterns:**
 - `user_agent`, `browser`, `device_type`, `os`
 - `search_query`, `search_history`, `browsing_history`
@@ -160,7 +160,7 @@ Phone:  \+?[0-9\s\-\(\)]{7,20}  (in a phone-named field)
 - System configuration values (non-secret)
 - Public user-facing content (blog posts, public profiles)
 - Anonymized aggregated statistics
-- Non-personal reference data (product catalog, country codes)
+- Non-personal reference data (product catalogue, country codes)
 - Internal system identifiers with no external exposure
 
 ---
@@ -243,7 +243,7 @@ Combination attacks — data that becomes more sensitive when combined:
 |-------|--------------|---------------|------|
 | Email (T3) | Password hash (T1) | T1 | Account takeover |
 | Name (T4) | DOB (T2) + Address (T2) | T2 | Full identity reconstruction |
-| IP address (T3) | Timestamps + User ID | T2 | Behavioral profiling |
+| IP address (T3) | Timestamps + User ID | T2 | Behavioural profiling |
 | City (T4) | Purchase history (T4) | T3 | De-anonymization risk |
 | Health category (T4) | Name + Email | T1 | HIPAA triggering |
 

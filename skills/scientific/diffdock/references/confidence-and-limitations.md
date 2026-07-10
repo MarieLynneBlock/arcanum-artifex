@@ -97,7 +97,7 @@ DiffDock was trained on:
 
 3. **Scoring and Refinement** (choose one or more):
    - **GNINA**: Deep learning-based scoring function
-   - **Molecular mechanics**: Energy minimization and refinement
+   - **Molecular mechanics**: Energy minimisation and refinement
    - **MM/GBSA or MM/PBSA**: Binding free energy estimation
    - **Free energy calculations**: FEP or TI for accurate affinity prediction
 
@@ -123,7 +123,7 @@ DiffDock should be combined with these tools for affinity prediction:
   - MMPBSA.py (AmberTools)
   - gmx_MMPBSA
 
-## Performance Optimization
+## Performance Optimisation
 
 ### For Best Results
 
@@ -174,7 +174,7 @@ For methodology details and benchmarking results, see:
    - Corso et al., arXiv:2210.01776
 
 2. **DiffDock-L Paper** (2024):
-   - Enhanced model with improved generalization
+   - Enhanced model with improved generalisation
    - Stärk et al., arXiv:2402.18396
 
 3. **PoseBusters Benchmark**:

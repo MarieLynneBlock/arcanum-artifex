@@ -1,7 +1,7 @@
 # Data Management
 
 ## Overview
-Latch provides comprehensive data management through cloud storage abstractions (LatchFile, LatchDir) and a structured Registry system for organizing experimental data.
+Latch provides comprehensive data management through cloud storage abstractions (LatchFile, LatchDir) and a structured Registry system for organising experimental data.
 
 ## Cloud Storage: LatchFile and LatchDir
 
@@ -89,7 +89,7 @@ results = data_dir.glob("*.{bam,sam}")
 
 ## Registry System
 
-The Registry provides structured data organization with projects, tables, and records.
+The Registry provides structured data organisation with projects, tables, and records.
 
 ### Registry Architecture
 

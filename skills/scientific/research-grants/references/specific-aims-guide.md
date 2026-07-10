@@ -76,7 +76,7 @@ The **Specific Aims page** is the most important page of your entire NIH grant a
 
 **Examples**:
 
-"Prior studies have identified numerous genetic mutations associated with PDAC development, including KRAS, TP53, SMAD4, and CDKN2A. However, the tumor microenvironment (TME), comprising immune cells, fibroblasts, and extracellular matrix, is increasingly recognized as a critical determinant of therapeutic resistance. Current models fail to recapitulate the complex TME architecture and cell-cell interactions that drive therapy resistance in vivo, limiting our ability to develop effective treatments. Understanding how the TME protects tumor cells from chemotherapy is essential for designing combination therapies that overcome resistance."
+"Prior studies have identified numerous genetic mutations associated with PDAC development, including KRAS, TP53, SMAD4, and CDKN2A. However, the tumor microenvironment (TME), comprising immune cells, fibroblasts, and extracellular matrix, is increasingly recognised as a critical determinant of therapeutic resistance. Current models fail to recapitulate the complex TME architecture and cell-cell interactions that drive therapy resistance in vivo, limiting our ability to develop effective treatments. Understanding how the TME protects tumor cells from chemotherapy is essential for designing combination therapies that overcome resistance."
 
 ### Third Paragraph: Long-Term Goal, Objective, Hypothesis, Rationale
 
@@ -104,7 +104,7 @@ The **Specific Aims page** is the most important page of your entire NIH grant a
 - Based on preliminary data or logical reasoning
 - Clear and specific
 
-*Example*: "Our central hypothesis is that CAF-secreted factors activate protective autophagy in tumor cells, conferring resistance to gemcitabine, and that dual inhibition of CAF signaling and autophagy will restore drug sensitivity."
+*Example*: "Our central hypothesis is that CAF-secreted factors activate protective autophagy in tumor cells, conferring resistance to gemcitabine, and that dual inhibition of CAF signalling and autophagy will restore drug sensitivity."
 
 **Alternative: Research Questions** (if hypothesis-testing isn't appropriate):
 - 2-3 focused questions
@@ -118,7 +118,7 @@ The **Specific Aims page** is the most important page of your entire NIH grant a
 - Logical basis for your approach
 - Why this approach will work
 
-*Example*: "This hypothesis is based on our preliminary data showing that CAF-conditioned medium protects tumor cells from gemcitabine-induced apoptosis by 60% (Fig. 1), and that this protection is blocked by autophagy inhibitors (Fig. 2). Proteomic analysis of CAF secretomes identified 15 candidate factors enriched in drug-resistant contexts (Table 1). These findings suggest a targetable pathway linking CAF signaling to tumor cell survival that could be exploited therapeutically."
+*Example*: "This hypothesis is based on our preliminary data showing that CAF-conditioned medium protects tumor cells from gemcitabine-induced apoptosis by 60% (Fig. 1), and that this protection is blocked by autophagy inhibitors (Fig. 2). Proteomic analysis of CAF secretomes identified 15 candidate factors enriched in drug-resistant contexts (Table 1). These findings suggest a targetable pathway linking CAF signalling to tumor cell survival that could be exploited therapeutically."
 
 ### Specific Aims (Main Section)
 
@@ -149,21 +149,21 @@ The **Specific Aims page** is the most important page of your entire NIH grant a
 
 *Working Hypothesis*: CAFs secrete specific growth factors and cytokines (including IL-6, CXCL12, and HGF) that activate pro-survival pathways in tumor cells.
 
-*Approach*: We will (1) validate candidate factors using neutralizing antibodies in co-culture assays, (2) measure activation of downstream signaling pathways (STAT3, PI3K/AKT, MAPK) in tumor cells, and (3) perform CRISPR screens in CAFs to identify factors required for resistance phenotype. We will use patient-derived CAFs and tumor cells to ensure clinical relevance.
+*Approach*: We will (1) validate candidate factors using neutralizing antibodies in co-culture assays, (2) measure activation of downstream signalling pathways (STAT3, PI3K/AKT, MAPK) in tumor cells, and (3) perform CRISPR screens in CAFs to identify factors required for resistance phenotype. We will use patient-derived CAFs and tumor cells to ensure clinical relevance.
 
-*Expected Outcomes*: We expect to identify 3-5 CAF-secreted factors sufficient and necessary for gemcitabine resistance, and define their signaling mechanisms. These will serve as therapeutic targets for Aims 2-3.
+*Expected Outcomes*: We expect to identify 3-5 CAF-secreted factors sufficient and necessary for gemcitabine resistance, and define their signalling mechanisms. These will serve as therapeutic targets for Aims 2-3.
 
 ---
 
 **Aim 2: Determine the mechanisms by which CAF signals activate protective autophagy in tumor cells.**
 
-*Rationale*: Our data show that CAF-mediated resistance requires autophagy (Fig. 2), but the signaling pathways linking CAF factors to autophagy activation remain unknown.
+*Rationale*: Our data show that CAF-mediated resistance requires autophagy (Fig. 2), but the signalling pathways linking CAF factors to autophagy activation remain unknown.
 
 *Working Hypothesis*: CAF-secreted factors activate mTOR-independent autophagy through AMPK and ULK1 phosphorylation.
 
-*Approach*: We will (1) measure autophagy flux in tumor cells exposed to CAF factors using LC3 turnover assays and electron microscopy, (2) define signaling pathways using phosphoproteomic analysis and pharmacologic inhibitors, and (3) validate pathways using genetic knockdowns (shRNA/CRISPR) of key nodes. Studies will be performed in 2D and 3D co-culture systems.
+*Approach*: We will (1) measure autophagy flux in tumor cells exposed to CAF factors using LC3 turnover assays and electron microscopy, (2) define signalling pathways using phosphoproteomic analysis and pharmacologic inhibitors, and (3) validate pathways using genetic knockdowns (shRNA/CRISPR) of key nodes. Studies will be performed in 2D and 3D co-culture systems.
 
-*Expected Outcomes*: We will define the signaling cascade from CAF factors to autophagy activation, identifying druggable nodes for combination therapy. Results will inform Aim 3 therapeutic strategies.
+*Expected Outcomes*: We will define the signalling cascade from CAF factors to autophagy activation, identifying druggable nodes for combination therapy. Results will inform Aim 3 therapeutic strategies.
 
 ---
 
@@ -171,7 +171,7 @@ The **Specific Aims page** is the most important page of your entire NIH grant a
 
 *Rationale*: Single-agent therapies targeting CAFs or autophagy have shown limited efficacy clinically, suggesting combination approaches are needed.
 
-*Working Hypothesis*: Dual inhibition of CAF signaling and autophagy will synergistically restore gemcitabine sensitivity in vivo.
+*Working Hypothesis*: Dual inhibition of CAF signalling and autophagy will synergistically restore gemcitabine sensitivity in vivo.
 
 *Approach*: Using patient-derived xenograft (PDX) models and genetically engineered mouse models (GEMM) of PDAC, we will test combinations of (1) gemcitabine + CAF pathway inhibitors identified in Aim 1, (2) gemcitabine + autophagy inhibitors, and (3) triple combinations. We will assess tumor growth, survival, and mechanism (IHC, RNA-seq) in n=10-15 mice per group.
 
@@ -193,7 +193,7 @@ The **Specific Aims page** is the most important page of your entire NIH grant a
 **Writing tips**:
 - Be confident but not arrogant
 - Connect back to opening (full circle)
-- Emphasize transformative potential
+- Emphasise transformative potential
 - Avoid over-promising
 
 **Examples**:
@@ -237,7 +237,7 @@ The **Specific Aims page** is the most important page of your entire NIH grant a
 ### Active and Specific
 
 **Aim statements should**:
-- Start with action verbs (Determine, Identify, Elucidate, Define, Characterize, Validate, Develop)
+- Start with action verbs (Determine, Identify, Elucidate, Define, Characterise, Validate, Develop)
 - Be specific and testable
 - Indicate what will be learned
 
@@ -308,7 +308,7 @@ The aims page is NOT a mini review article. Provide only enough background to es
 
 ### Mistake 7: Jargon-Heavy First Paragraph
 
-❌ Opening sentence full of abbreviations and specialized terminology
+❌ Opening sentence full of abbreviations and specialised terminology
 ❌ Assumes all reviewers are experts in your subfield
 
 ✅ Opening that's comprehensible to broad scientific audience
@@ -346,7 +346,7 @@ The aims page is NOT a mini review article. Provide only enough background to es
 - Typical: 1 small figure or panel showing most critical data
 
 **Tables**:
-- Can summarize preliminary data compactly
+- Can summarise preliminary data compactly
 - Show patient characteristics, gene lists, etc.
 - Must be readable
 
@@ -360,7 +360,7 @@ The aims page is NOT a mini review article. Provide only enough background to es
 **Avoid**:
 - Excessive formatting that looks cluttered
 - All caps (looks like shouting)
-- Colors (may not print/display correctly)
+- Colours (may not print/display correctly)
 
 ### The "Skim Test"
 
@@ -377,12 +377,12 @@ The aims page is NOT a mini review article. Provide only enough background to es
 **Early Stage Investigators**:
 - Show you've thought through challenges
 - Demonstrate strong mentorship and institutional support
-- Emphasize innovation while ensuring feasibility
+- Emphasise innovation while ensuring feasibility
 - Don't over-promise
 
 **Established Investigators**:
 - Show how this extends your research program
-- Emphasize track record implicitly
+- Emphasise track record implicitly
 - Can propose more ambitious aims if supported by extensive preliminary data
 - Show how this opens new directions
 
@@ -402,7 +402,7 @@ The aims page is NOT a mini review article. Provide only enough background to es
 
 ## Revision Checklist
 
-Before finalizing, ensure your aims page:
+Before finalising, ensure your aims page:
 
 **Content**:
 - [ ] Opens with compelling statement of importance

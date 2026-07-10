@@ -82,10 +82,10 @@
 - Correct for multiple comparisons
 
 ### Pitfall 8: Outcome Switching
-**Problem:** Analyzing many outcomes, reporting only significant ones.
+**Problem:** Analysing many outcomes, reporting only significant ones.
 
 **Detection signs:**
-- Secondary outcomes emphasized
+- Secondary outcomes emphasised
 - Incomplete outcome reporting
 - Discrepancy between registration and publication
 
@@ -148,11 +148,11 @@
 
 **Solutions:**
 - Always report effect sizes
-- Use standardized measures (Cohen's d, r, η²)
+- Use standardised measures (Cohen's d, r, η²)
 - Interpret using field conventions
 - Consider minimum clinically important difference
 
-### Pitfall 13: Misinterpreting Standardized Effect Sizes
+### Pitfall 13: Misinterpreting Standardised Effect Sizes
 **Problem:** Treating Cohen's d = 0.5 as "medium" without context.
 
 **Reality:**
@@ -208,10 +208,10 @@
 
 **Solution:** Consider confounders and look at appropriate level of analysis.
 
-## Regression and Modeling Pitfalls
+## Regression and Modelling Pitfalls
 
 ### Pitfall 18: Overfitting
-**Problem:** Model fits sample data well but doesn't generalize.
+**Problem:** Model fits sample data well but doesn't generalise.
 
 **Causes:**
 - Too many predictors relative to sample size
@@ -220,7 +220,7 @@
 
 **Solutions:**
 - Use cross-validation
-- Penalized regression (LASSO, ridge)
+- Penalised regression (LASSO, ridge)
 - Independent test set
 - Simpler models
 
@@ -308,8 +308,8 @@
 **Problem:** Using independent samples test for paired data (or vice versa).
 
 **Why wrong:**
-- Wastes power (paired data analyzed as independent)
-- Violates independence assumption (independent data analyzed as paired)
+- Wastes power (paired data analysed as independent)
+- Violates independence assumption (independent data analysed as paired)
 
 **Solution:** Match test to design.
 
@@ -396,7 +396,7 @@
 **Better approaches:**
 - Multiple imputation
 - Maximum likelihood methods
-- Analyze missingness patterns
+- Analyse missingness patterns
 
 ### Pitfall 35: Ignoring Missing Data Mechanisms
 **Problem:** Not considering why data are missing.
@@ -406,7 +406,7 @@
 - MAR (Missing at Random): Can impute
 - MNAR (Missing Not at Random): May bias results
 
-**Solution:** Analyze patterns, use appropriate methods, consider sensitivity analyses.
+**Solution:** Analyse patterns, use appropriate methods, consider sensitivity analyses.
 
 ## Publication and Reporting Issues
 
@@ -440,7 +440,7 @@
 
 **Best practice:** Share data unless privacy concerns prohibit.
 
-## Cross-Validation and Generalization
+## Cross-Validation and Generalisation
 
 ### Pitfall 39: No Cross-Validation
 **Problem:** Testing model on same data used to build it.
@@ -456,7 +456,7 @@
 **Problem:** Information from test set leaking into training.
 
 **Examples:**
-- Normalizing before splitting
+- Normalising before splitting
 - Feature selection on full dataset
 - Including temporal information
 

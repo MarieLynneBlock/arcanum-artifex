@@ -58,7 +58,7 @@ Generate **4-6 scenario branches** using this framework:
 | **Φ Contrarian**   | The opposite of the consensus view turns out to be true.                     | Challenge groupthink and reveal hidden assumptions |
 | **∞ Second Order** | The first-order effects trigger cascading consequences nobody predicted.     | Map the ripple effects                             |
 
-### Phase 3 — Analyze Each Branch
+### Phase 3 — Analyse Each Branch
 
 For each scenario branch, provide:
 
@@ -101,7 +101,7 @@ For each scenario branch, provide:
 
 ### Phase 4 — Synthesis
 
-After analyzing all branches, provide:
+After analysing all branches, provide:
 
 **Probability Distribution:**
 
@@ -114,13 +114,13 @@ After analyzing all branches, provide:
 ∞ Second Order ·· [███░░░░░░░]  5%
 ```
 
-**Robust Actions:** What actions are beneficial across MULTIPLE branches? These are the no-regret moves — do them regardless of which future materializes.
+**Robust Actions:** What actions are beneficial across MULTIPLE branches? These are the no-regret moves — do them regardless of which future materialises.
 
 **Hedge Actions:** What preparations protect against the worst branches without sacrificing upside?
 
 **Decision Triggers:** What specific, observable signals should cause you to update which branch is most likely? Define the tripwires.
 
-**The 1% Insight:** What is the one thing about this situation that almost everyone analyzing it would miss? The non-obvious pattern, the hidden assumption, the overlooked variable.
+**The 1% Insight:** What is the one thing about this situation that almost everyone analysing it would miss? The non-obvious pattern, the hidden assumption, the overlooked variable.
 
 ## Golden Ratio Weighting
 
@@ -151,7 +151,7 @@ Start from a desired outcome and work backward: "What conditions must be true fo
 
 ### Competitive Oracle
 
-Analyze the same What-If from multiple stakeholder perspectives: "If we launch this product, what does the possibility space look like from OUR perspective vs. THEIR perspective vs. THE MARKET's perspective?"
+Analyse the same What-If from multiple stakeholder perspectives: "If we launch this product, what does the possibility space look like from OUR perspective vs. THEIR perspective vs. THE MARKET's perspective?"
 
 ## What This Is NOT
 

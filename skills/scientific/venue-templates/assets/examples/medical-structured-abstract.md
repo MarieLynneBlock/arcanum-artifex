@@ -1,6 +1,6 @@
 # Medical Journal Structured Abstract Examples
 
-Examples of structured abstracts for NEJM, Lancet, JAMA, and BMJ showing the labeled section format expected at medical journals.
+Examples of structured abstracts for NEJM, Lancet, JAMA, and BMJ showing the labelled section format expected at medical journals.
 
 ---
 
@@ -41,7 +41,7 @@ cardiovascular death, regardless of the presence of diabetes.
 ```
 
 **Key Features**:
-- Four labeled sections (BACKGROUND, METHODS, RESULTS, CONCLUSIONS)
+- Four labelled sections (BACKGROUND, METHODS, RESULTS, CONCLUSIONS)
 - Background: 2 sentences (problem + gap)
 - Methods: Study design, population, intervention, primary outcome
 - Results: Primary outcome with HR and 95% CI, key secondary outcomes
@@ -264,7 +264,7 @@ that statin use protects against Parkinson's disease.
 | **Results label** | RESULTS | FINDINGS | RESULTS | RESULTS |
 | **Conclusions label** | CONCLUSIONS | INTERPRETATION | CONCLUSIONS AND RELEVANCE | CONCLUSIONS |
 | **Unique sections** | — | Funding in abstract | IMPORTANCE | What is known/adds |
-| **Decimal style** | Period (.) | Centered dot (·) | Period (.) | Period (.) |
+| **Decimal style** | Period (.) | Centred dot (·) | Period (.) | Period (.) |
 
 ---
 
@@ -282,7 +282,7 @@ that statin use protects against Parkinson's disease.
 - Primary outcome with definition
 
 ### Results
-- Number enrolled and analyzed
+- Number enrolled and analysed
 - Primary outcome with effect size and 95% CI
 - Key secondary outcomes
 - P-values for primary comparisons

@@ -2,7 +2,7 @@
 
 ## Overview
 
-polars-bio integrates Apache DataFusion's SQL engine, enabling SQL queries on bioinformatics files and Polars DataFrames. Register files as tables and query them using standard SQL syntax. All queries return a **LazyFrame** — call `.collect()` to materialize results.
+polars-bio integrates Apache DataFusion's SQL engine, enabling SQL queries on bioinformatics files and Polars DataFrames. Register files as tables and query them using standard SQL syntax. All queries return a **LazyFrame** — call `.collect()` to materialise results.
 
 ## Register Functions
 

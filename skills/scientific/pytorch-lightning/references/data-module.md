@@ -2,7 +2,7 @@
 
 ## Overview
 
-A LightningDataModule is a reusable, shareable class that encapsulates all data processing steps in PyTorch Lightning. It solves the problem of scattered data preparation logic by standardizing how datasets are managed and shared across projects.
+A LightningDataModule is a reusable, shareable class that encapsulates all data processing steps in PyTorch Lightning. It solves the problem of scattered data preparation logic by standardising how datasets are managed and shared across projects.
 
 ## Core Problem It Solves
 
@@ -11,16 +11,16 @@ In traditional PyTorch workflows, data handling is fragmented across multiple fi
 - "What transforms were applied?"
 - "How was the data prepared?"
 
-DataModules centralize this information for reproducibility and reusability.
+DataModules centralise this information for reproducibility and reusability.
 
 ## Five Processing Steps
 
-A DataModule organizes data handling into five phases:
+A DataModule organises data handling into five phases:
 
 1. **Download/tokenize/process** - Initial data acquisition
 2. **Clean and save** - Persist processed data to disk
 3. **Load into Dataset** - Create PyTorch Dataset objects
-4. **Apply transforms** - Data augmentation, normalization, etc.
+4. **Apply transforms** - Data augmentation, normalisation, etc.
 5. **Wrap in DataLoader** - Configure batching and loading
 
 ## Main Methods

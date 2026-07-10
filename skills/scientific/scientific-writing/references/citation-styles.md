@@ -2,7 +2,7 @@
 
 ## Overview
 
-Citation styles provide standardized formats for acknowledging sources in scientific writing. Different disciplines prefer different styles, and journals typically specify which style to use. The five most common citation styles in science are AMA, Vancouver, APA, Chicago, and IEEE.
+Citation styles provide standardised formats for acknowledging sources in scientific writing. Different disciplines prefer different styles, and journals typically specify which style to use. The five most common citation styles in science are AMA, Vancouver, APA, Chicago, and IEEE.
 
 ## Choosing the Right Style
 
@@ -224,9 +224,9 @@ Chapter Author, A. A., & Chapter Author, B. B. (Year). Chapter title. In E. E. E
 Author, A. A. (Year, Month Day). Page title. Website Name. URL
 ```
 
-### Capitalization Rules
-- Sentence case for article and book titles (capitalize only first word and proper nouns)
-- Title case for journal names (capitalize all major words)
+### Capitalisation Rules
+- Sentence case for article and book titles (capitalise only first word and proper nouns)
+- Title case for journal names (capitalise all major words)
 
 **Example:**
 ```
@@ -426,7 +426,7 @@ Smith JD, Johnson AB, Williams CD. Effectiveness of cognitive behavioral therapy
 - Automatic formatting in multiple styles
 - In-text citation insertion
 - Reference list generation
-- PDF organization
+- PDF organisation
 - Sharing capabilities
 
 ### Verifying Citations
@@ -527,7 +527,7 @@ When converting between citation styles:
 2. **Check these elements** that vary by style:
    - In-text citation format (numbered vs. author-date)
    - Author name format (initials vs. full names)
-   - Title capitalization (sentence case vs. title case)
+   - Title capitalisation (sentence case vs. title case)
    - Journal name formatting (abbreviated vs. full)
    - Punctuation (periods, commas, semicolons)
    - Use of italics and bold
@@ -621,7 +621,7 @@ Some journals use modified versions of standard styles:
 **Key elements to check when converting:**
 - In-text format (switch numbered ↔ author-date)
 - Journal name abbreviation style
-- Article title capitalization
+- Article title capitalisation
 - Author name format (initials vs. full names)
 - DOI format and inclusion
 - Issue number inclusion/exclusion

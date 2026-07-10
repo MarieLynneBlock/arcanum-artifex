@@ -4,7 +4,7 @@
 
 ### HPO Structure
 
-HPO is organized hierarchically:
+HPO is organised hierarchically:
 - **Root**: HP:0000001 (All)
   - HP:0000118 (Phenotypic abnormality)
     - HP:0000478 (Abnormality of the eye)
@@ -42,7 +42,7 @@ HPO is organized hierarchically:
 | HP:0001270 | Motor delay |
 | HP:0002167 | Neurological speech impairment |
 | HP:0000716 | Depressivity |
-| HP:0000729 | Autistic behavior |
+| HP:0000729 | Autistic behaviour |
 | HP:0001332 | Dystonia |
 | HP:0002071 | Abnormality of extrapyramidal motor function |
 

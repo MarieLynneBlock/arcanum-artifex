@@ -1,6 +1,6 @@
 ---
 name: diagnose
-description: "Perform a systematic diagnostic scan of an AI workflow across 5 quality dimensions — prompt quality, context efficiency, tool health, architecture fitness, and safety — producing a scored report with prioritized remediation actions."
+description: "Perform a systematic diagnostic scan of an AI workflow across 5 quality dimensions — prompt quality, context efficiency, tool health, architecture fitness, and safety — producing a scored report with prioritised remediation actions."
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -25,7 +25,7 @@ Evaluate:
 
 - Context budget allocation (planned vs. ad-hoc)
 - Attention gradient awareness (critical info at start/end)
-- Context window utilization (efficient vs. wasteful)
+- Context window utilisation (efficient vs. wasteful)
 - State management (explicit vs. implicit)
 - Memory strategy (appropriate for conversation length)
 
@@ -102,7 +102,7 @@ Invoke this skill when you want to:
 
 - Find hidden problems before a workflow goes to production
 - Audit an existing agent for quality and reliability
-- Get a prioritized remediation plan with concrete next steps
+- Get a prioritised remediation plan with concrete next steps
 - Health-check a workflow after significant changes
 
 Provide the workflow description, prompt text, tool list, or agent configuration as context. The more detail you provide, the more precise the findings.

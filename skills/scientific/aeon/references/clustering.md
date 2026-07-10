@@ -1,13 +1,13 @@
 # Time Series Clustering
 
-Aeon provides clustering algorithms adapted for temporal data with specialized distance metrics and averaging methods.
+Aeon provides clustering algorithms adapted for temporal data with specialised distance metrics and averaging methods.
 
 ## Partitioning Algorithms
 
 Standard k-means/k-medoids adapted for time series:
 
 - `TimeSeriesKMeans` - K-means with temporal distance metrics (DTW, Euclidean, etc.)
-- `TimeSeriesKMedoids` - Uses actual time series as cluster centers
+- `TimeSeriesKMedoids` - Uses actual time series as cluster centres
 - `TimeSeriesKShape` - Shape-based clustering algorithm
 - `TimeSeriesKernelKMeans` - Kernel-based variant for nonlinear patterns
 
@@ -24,10 +24,10 @@ Efficient clustering for large collections:
 
 ## Elastic Distance Clustering
 
-Specialized for alignment-based similarity:
+Specialised for alignment-based similarity:
 
 - `KASBA` - K-means with shift-invariant elastic averaging
-- `ElasticSOM` - Self-organizing map using elastic distances
+- `ElasticSOM` - Self-organising map using elastic distances
 
 **Use when**: Time series have temporal shifts or warping.
 
@@ -70,14 +70,14 @@ Build custom clustering pipelines:
 
 ## Averaging Methods
 
-Compute cluster centers for time series:
+Compute cluster centres for time series:
 
 - `mean_average` - Arithmetic mean
 - `ba_average` - Barycentric averaging with DTW
 - `kasba_average` - Shift-invariant averaging
 - `shift_invariant_average` - General shift-invariant method
 
-**Use when**: Need representative cluster centers for visualization or initialization.
+**Use when**: Need representative cluster centres for visualisation or initialization.
 
 ## Quick Start
 
@@ -113,7 +113,7 @@ Compatible distance metrics include:
 - Euclidean, Manhattan, Minkowski (lock-step)
 - DTW, DDTW, WDTW (elastic with alignment)
 - ERP, EDR, LCSS (edit-based)
-- MSM, TWE (specialized elastic)
+- MSM, TWE (specialised elastic)
 
 ## Evaluation
 

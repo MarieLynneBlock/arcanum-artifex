@@ -26,7 +26,7 @@ All processors inherit from `Processor` with standard interface:
 **Common Operations:**
 - Medical code tokenization
 - Categorical encoding
-- Feature normalization
+- Feature normalisation
 - Missing value handling
 
 **Usage:**
@@ -81,7 +81,7 @@ processed_seq = processor(diagnosis_sequences)
 
 **Use Cases:**
 - EHR with visits containing multiple events
-- Multi-level temporal modeling
+- Multi-level temporal modelling
 - Hierarchical attention models
 
 **Structure:**
@@ -98,8 +98,8 @@ processed_seq = processor(diagnosis_sequences)
 - Multi-level numeric features
 
 **Operations:**
-- Normalization
-- Standardization
+- Normalisation
+- Standardisation
 - Missing value imputation
 - Outlier handling
 
@@ -158,7 +158,7 @@ processed_ts = processor(timestamps, events)
 
 **Operations:**
 - Bandpass filtering
-- Artifact removal
+- Artefact removal
 - Segmentation
 - Feature extraction (frequency, amplitude)
 
@@ -179,13 +179,13 @@ processed_signal = processor(raw_eeg_signal)
 
 **ImageProcessor** (`ImageProcessor`)
 - Medical image preprocessing
-- Normalization and resizing
+- Normalisation and resizing
 - Augmentation support
-- Format standardization
+- Format standardisation
 
 **Operations:**
 - Resize to standard dimensions
-- Normalization (mean/std)
+- Normalisation (mean/std)
 - Windowing (for CT/MRI)
 - Data augmentation
 
@@ -274,7 +274,7 @@ processed_labels = processor(raw_label_sets)
 
 **RegressionLabelProcessor** (`RegressionLabelProcessor`)
 - Continuous value prediction
-- Target scaling and normalization
+- Target scaling and normalisation
 - Outlier handling
 
 **Use Cases:**
@@ -295,7 +295,7 @@ processor = RegressionLabelProcessor(
 processed_targets = processor(raw_values)
 ```
 
-## Specialized Processors
+## Specialised Processors
 
 ### Text Processing
 
@@ -328,7 +328,7 @@ processed_text = processor(clinical_notes)
 ### Model-Specific Processors
 
 **StageNetProcessor** (`StageNetProcessor`)
-- Specialized preprocessing for StageNet model
+- Specialised preprocessing for StageNet model
 - Chunk-based sequence processing
 - Stage-aware feature extraction
 
@@ -567,15 +567,15 @@ sample_processor = SampleProcessor(
    - Indicator variables
    - Special tokens
 
-### Normalization
+### Normalisation
 
-1. **Numeric features**: Always normalize
+1. **Numeric features**: Always normalise
    - Z-score: Standard scaling (mean=0, std=1)
    - Min-max: Range scaling [0, 1]
 
 2. **Compute statistics on training set only**: Prevent data leakage
 
-3. **Apply same normalization to val/test sets**
+3. **Apply same normalisation to val/test sets**
 
 ### Class Imbalance
 
@@ -585,7 +585,7 @@ sample_processor = SampleProcessor(
 
 3. **Evaluate with appropriate metrics**: AUROC, AUPRC, F1
 
-### Performance Optimization
+### Performance Optimisation
 
 1. **Cache processed data**: Save preprocessing results
 
@@ -599,7 +599,7 @@ sample_processor = SampleProcessor(
 
 1. **Check processed shapes**: Ensure correct dimensions
 
-2. **Verify value ranges**: After normalization
+2. **Verify value ranges**: After normalisation
 
 3. **Inspect samples**: Manually review processed data
 
@@ -628,7 +628,7 @@ sample_processor = SampleProcessor(
 
 **NaN Values:**
 - Handle missing data explicitly
-- Check normalization parameters
+- Check normalisation parameters
 - Verify imputation strategy
 
 **Class Imbalance:**

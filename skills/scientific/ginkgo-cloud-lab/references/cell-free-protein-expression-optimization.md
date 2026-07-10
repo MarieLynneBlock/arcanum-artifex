@@ -1,6 +1,6 @@
-# Cell Free Protein Expression Optimization
+# Cell Free Protein Expression Optimisation
 
-**URL:** https://cloud.ginkgo.bio/protocols/cell-free-protein-expression-optimization
+**URL:** https://cloud.ginkgo.bio/protocols/cell-free-protein-expression-optimisation
 **Status:** Ginkgo Certified
 **Price:** $199/sample (default: $597 for 1 protein x 3 replicates = 3 samples)
 **Turnaround:** 6-11 days
@@ -49,7 +49,7 @@ Design of Experiment (DoE) approach to expressing protein targets in a proprieta
 - HiG Centrifuge
 - Incubation & Storage
 
-## Optimization Variables
+## Optimisation Variables
 
 The DoE matrix can span up to 24 conditions per protein, varying:
 
@@ -77,7 +77,7 @@ The DoE matrix can span up to 24 conditions per protein, varying:
 
 ## Use Cases
 
-- Optimizing expression of difficult-to-express proteins
+- Optimising expression of difficult-to-express proteins
 - Membrane protein expression screening
 - Identifying optimal conditions for disulfide-bonded proteins
 - Cofactor-dependent protein expression

@@ -18,7 +18,7 @@ Review code for security vulnerabilities with focus on OWASP Top 10, Zero Trust 
 
 ## Step 0: Create Targeted Review Plan
 
-**Analyze what you're reviewing:**
+**Analyse what you're reviewing:**
 
 1. **Code type?**
    - Web API → OWASP Top 10
@@ -32,7 +32,7 @@ Review code for security vulnerabilities with focus on OWASP Top 10, Zero Trust 
    - Low: UI components, utilities
 
 3. **Business constraints?**
-   - Performance critical → Prioritize performance checks
+   - Performance critical → Prioritise performance checks
    - Security sensitive → Deep security review
    - Rapid prototype → Critical security only
 

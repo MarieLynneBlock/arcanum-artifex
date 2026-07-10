@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-Gtars is a high-performance Rust toolkit for manipulating, analyzing, and processing genomic interval data. It provides specialized tools for overlap detection, coverage analysis, tokenization for machine learning, and reference sequence management.
+Gtars is a high-performance Rust toolkit for manipulating, analysing, and processing genomic interval data. It provides specialised tools for overlap detection, coverage analysis, tokenization for machine learning, and reference sequence management.
 
 Use this skill when working with:
 - Genomic interval files (BED format)
@@ -53,7 +53,7 @@ gtars = { version = "0.1", features = ["tokenizers", "overlaprs"] }
 
 ## Core Capabilities
 
-Gtars is organized into specialized modules, each focused on specific genomic analysis tasks:
+Gtars is organised into specialised modules, each focused on specific genomic analysis tasks:
 
 ### 1. Overlap Detection and IGD Indexing
 
@@ -82,7 +82,7 @@ Generate coverage tracks from sequencing data with the uniwig module.
 
 **When to use:**
 - ATAC-seq accessibility profiles
-- ChIP-seq coverage visualization
+- ChIP-seq coverage visualisation
 - RNA-seq read coverage
 - Differential coverage analysis
 
@@ -135,7 +135,7 @@ See `references/refget.md` for reference sequence operations.
 
 ### 5. Fragment Processing
 
-Split and analyze fragment files, particularly useful for single-cell genomics data.
+Split and analyse fragment files, particularly useful for single-cell genomics data.
 
 **When to use:**
 - Processing single-cell ATAC-seq data
@@ -189,7 +189,7 @@ overlapping_peaks.to_bed("peaks_in_promoters.bed")
 
 ### Workflow 2: Coverage Track Pipeline
 
-Generate coverage tracks for visualization:
+Generate coverage tracks for visualisation:
 
 ```bash
 # Step 1: Generate coverage

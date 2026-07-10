@@ -23,9 +23,9 @@ Apply to all shapes and edges.
 
 | Key | Values | Default | Description |
 | ----- | -------- | --------- | ------------- |
-| `fillColor` | `#hex` / `none` | `#FFFFFF` | Shape fill color (draw.io default; use semantic palette for project diagrams) |
-| `strokeColor` | `#hex` / `none` | `#000000` | Border/line color (draw.io default; use semantic palette for project diagrams) |
-| `fontColor` | `#hex` | `#000000` | Text color |
+| `fillColor` | `#hex` / `none` | `#FFFFFF` | Shape fill colour (draw.io default; use semantic palette for project diagrams) |
+| `strokeColor` | `#hex` / `none` | `#000000` | Border/line colour (draw.io default; use semantic palette for project diagrams) |
+| `fontColor` | `#hex` | `#000000` | Text colour |
 | `fontSize` | integer | `11` | Font size in pt |
 | `fontStyle` | bitmask (see below) | `0` | Bold/italic/underline |
 | `fontFamily` | string | `Helvetica` | Font family name |
@@ -74,7 +74,7 @@ Combine by addition: `3` = bold + italic, `5` = bold + underline, `7` = bold + i
 
 | Key | Values | Description |
 | ----- | -------- | ------------- |
-| `shape` | see Shape Catalog | Override default rectangle shape |
+| `shape` | see Shape Catalogue | Override default rectangle shape |
 | `rounded` | `0`/`1` | Rounded corners on rectangle |
 | `arcSize` | 0–50 | Corner radius % (when `rounded=1`) |
 | `perimeter` | function name | Connection perimeter type |
@@ -88,7 +88,7 @@ Combine by addition: `3` = bold + italic, `5` = bold + underline, `7` = bold + i
 | `swimlaneBody` | `0`/`1` | Show swimlane body |
 | `fillOpacity` | 0–100 | Fill-only opacity (independent of `opacity`) |
 | `strokeOpacity` | 0–100 | Stroke-only opacity |
-| `gradientColor` | `#hex` / `none` | Gradient end color |
+| `gradientColor` | `#hex` / `none` | Gradient end colour |
 | `gradientDirection` | `north`/`south`/`east`/`west` | Gradient direction |
 | `sketch` | `0`/`1` | Rough hand-drawn style |
 | `comic` | `0`/`1` | Comic/cartoon line style |
@@ -96,7 +96,7 @@ Combine by addition: `3` = bold + italic, `5` = bold + underline, `7` = bold + i
 
 ---
 
-## Shape Catalog
+## Shape Catalogue
 
 ### Basic Shapes
 
@@ -237,8 +237,8 @@ Use the AWS4 library. Common shapes:
 | `curved` | `0`/`1` | Curved line segments |
 | `orthogonal` | `0`/`1` | Force orthogonal routing |
 | `jettySize` | `auto`/integer | Source/target jet size |
-| `exitX` | 0.0–1.0 | Source exit point X (0=left, 0.5=center, 1=right) |
-| `exitY` | 0.0–1.0 | Source exit point Y (0=top, 0.5=center, 1=bottom) |
+| `exitX` | 0.0–1.0 | Source exit point X (0=left, 0.5=centre, 1=right) |
+| `exitY` | 0.0–1.0 | Source exit point Y (0=top, 0.5=centre, 1=bottom) |
 | `exitDx` | float | Source exit X offset (px) |
 | `exitDy` | float | Source exit Y offset (px) |
 | `entryX` | 0.0–1.0 | Target entry point X |
@@ -252,7 +252,7 @@ Use the AWS4 library. Common shapes:
 | `endSize` | integer | End arrow head size (px) |
 | `startSize` | integer | Start arrow head size (px) |
 | `labelBackgroundColor` | `#hex`/`none` | Label background fill |
-| `labelBorderColor` | `#hex`/`none` | Label border color |
+| `labelBorderColor` | `#hex`/`none` | Label border colour |
 
 ### `edgeStyle` Values
 
@@ -286,9 +286,9 @@ Use the AWS4 library. Common shapes:
 
 ---
 
-## Color Palette
+## Colour Palette
 
-### Semantic Colors (Recommended for Consistent Diagrams)
+### Semantic Colours (Recommended for Consistent Diagrams)
 
 | Meaning | Fill | Stroke | Usage |
 | --------- | ------ | -------- | ------- |

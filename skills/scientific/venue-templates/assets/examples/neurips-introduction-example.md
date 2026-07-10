@@ -54,7 +54,7 @@ grouped-query attention) to efficient variants.
 ```
 
 **Key features**:
-- Organized categorization of prior work
+- Organised categorisation of prior work
 - Complexity stated for each approach
 - Limitations clearly identified
 - Quantified shortcomings (2-5% degradation)

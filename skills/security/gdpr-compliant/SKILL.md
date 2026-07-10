@@ -25,7 +25,7 @@ For deep dives, read the reference files in `references/`:
 |---|---|
 | Lawfulness, fairness, transparency | Document legal basis for every processing activity in the RoPA |
 | Purpose limitation | Data collected for purpose A **MUST NOT** be reused for purpose B without a new legal basis |
-| Data minimization | Collect only fields with a documented business need today |
+| Data minimisation | Collect only fields with a documented business need today |
 | Accuracy | Provide update endpoints; propagate corrections to downstream stores |
 | Storage limitation | Define TTL at schema design time — never after |
 | Integrity & confidentiality | Encrypt at rest and in transit; restrict and audit access |
@@ -49,7 +49,7 @@ For deep dives, read the reference files in `references/`:
 
 ---
 
-## 3. Data Minimization
+## 3. Data Minimisation
 
 **MUST**
 - Map every DTO/model field to a concrete business need. Remove undocumented fields.
@@ -92,7 +92,7 @@ For deep dives, read the reference files in `references/`:
 | Session / refresh tokens | 30–90 days |
 | Email / notification logs | 6 months |
 | Inactive user accounts | 12 months after last login → notify → delete |
-| Payment records | As required by tax law (7–10 years), minimized |
+| Payment records | As required by tax law (7–10 years), minimised |
 | Analytics events | 13 months |
 
 **SHOULD**

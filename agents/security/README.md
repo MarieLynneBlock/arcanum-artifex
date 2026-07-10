@@ -1,6 +1,6 @@
 # Security Agents
 
-Custom `.agent.md` definitions for threat modeling, compliance, security review, and breach analysis.
+Custom `.agent.md` definitions for threat modelling, compliance, security review, and breach analysis.
 
 ## Agents
 

@@ -1,6 +1,6 @@
 # Circuit Transformations
 
-This guide covers circuit optimization, compilation, and manipulation using Cirq's transformation framework.
+This guide covers circuit optimisation, compilation, and manipulation using Cirq's transformation framework.
 
 ## Transformer Framework
 
@@ -153,7 +153,7 @@ circuit = cirq.Circuit(Toffoli()(q0, q1, q2))
 decomposed = cirq.decompose(circuit)
 ```
 
-## Circuit Optimization
+## Circuit Optimisation
 
 ### Eject Z Gates
 
@@ -325,7 +325,7 @@ simplified = merge_single_qubit_gates_to_phxz(circuit)
 simplified = merge_k_qubit_unitaries(circuit, k=2)
 ```
 
-### Commutation-Based Optimization
+### Commutation-Based Optimisation
 
 ```python
 # Commute Z gates through CNOT
@@ -408,9 +408,9 @@ print(f"Optimized: {optimized_counts}")
 ## Best Practices
 
 1. **Start with high-level transformers**: Use built-in transformers before writing custom ones
-2. **Chain transformers**: Apply multiple optimizations in sequence
+2. **Chain transformers**: Apply multiple optimisations in sequence
 3. **Validate after transformation**: Ensure circuit correctness and device compatibility
 4. **Measure improvement**: Track depth and gate count reduction
 5. **Use appropriate gatesets**: Match target hardware capabilities
-6. **Consider commutativity**: Exploit gate commutation for optimization
+6. **Consider commutativity**: Exploit gate commutation for optimisation
 7. **Test on small circuits first**: Verify transformers work correctly before scaling

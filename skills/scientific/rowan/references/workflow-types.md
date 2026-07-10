@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [Property Prediction Workflows](#property-prediction-workflows)
-2. [Molecular Modeling Workflows](#molecular-modeling-workflows)
+2. [Molecular Modelling Workflows](#molecular-modelling-workflows)
 3. [Protein-Ligand Workflows](#protein-ligand-workflows)
 4. [Spectroscopy Workflows](#spectroscopy-workflows)
 5. [Advanced Workflows](#advanced-workflows)
@@ -161,7 +161,7 @@ workflow = rowan.submit_workflow(
 
 ---
 
-## Molecular Modeling Workflows
+## Molecular Modelling Workflows
 
 ### Single-Point Energy
 
@@ -182,9 +182,9 @@ workflow = rowan.submit_basic_calculation_workflow(
 
 ---
 
-### Geometry Optimization
+### Geometry Optimisation
 
-Optimize molecular geometry to minimum energy.
+Optimise molecular geometry to minimum energy.
 
 ```python
 workflow = rowan.submit_basic_calculation_workflow(
@@ -195,9 +195,9 @@ workflow = rowan.submit_basic_calculation_workflow(
 ```
 
 **Output:**
-- `final_molecule`: Optimized structure
+- `final_molecule`: Optimised structure
 - `energy`: Final energy (Hartree)
-- `convergence`: Optimization details
+- `convergence`: Optimisation details
 
 ---
 
@@ -224,7 +224,7 @@ workflow = rowan.submit_basic_calculation_workflow(
 
 ### Conformer Search
 
-Generate and optimize conformer ensemble.
+Generate and optimise conformer ensemble.
 
 ```python
 workflow = rowan.submit_conformer_search_workflow(
@@ -277,7 +277,7 @@ workflow = rowan.submit_dihedral_scan_workflow(
 
 ---
 
-### Multistage Optimization
+### Multistage Optimisation
 
 Progressive refinement with multiple methods.
 
@@ -293,7 +293,7 @@ workflow = rowan.submit_workflow(
 ```
 
 **Output:**
-- `final_molecule`: Optimized structure
+- `final_molecule`: Optimised structure
 - `stage_energies`: Energy after each stage
 
 ---
@@ -567,7 +567,7 @@ All workflow submission functions accept:
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `name` | str | Workflow name (optional) |
-| `folder_uuid` | str | Organize in folder |
+| `folder_uuid` | str | Organise in folder |
 | `max_credits` | float | Credit limit |
 
 ### Method Selection
