@@ -6,13 +6,16 @@ Proven agent skills ready to deploy. Each skill is a folder — copy the folder 
 
 This library is organized by category:
 
+- [agentic/](agentic/)
 - [analysis/](analysis/)
+- [architecture/](architecture/)
 - [data-science/](data-science/)
 - [development/](development/)
 - [document-production/](document-production/)
+- [documentation/](documentation/)
 - [scientific/](scientific/)
-
-Note: your requested label "data science" is represented as `data-science` for file-system consistency.
+- [security/](security/)
+- [study-support/](study-support/)
 
 ## What are agent skills?
 
