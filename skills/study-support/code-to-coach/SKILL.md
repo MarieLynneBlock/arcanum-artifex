@@ -46,7 +46,7 @@ Use this skill when:
 - **Ask**: What is this code's job? Who calls it? What problem does it solve?
 - **Look for**: Business purpose, entry/exit points, dependencies
 - **Output**: 1–2 sentences of clear context (remove jargon)
-- **Tool**: Use [context-discovery.md](./reference/context-discovery.md)
+- **Tool**: Use [context-discovery.md](./references/context-discovery.md)
 
 ### Step 2: Deconstruct — Break Into Chunks
 - **Split** the code into logical units using the [deconstruction-model.md](./frameworks/deconstruction-model.md)
@@ -63,8 +63,8 @@ Use this skill when:
   - Testability & dependencies
   - Performance & resource use
   - Cognitive load (nesting depth, variable scope, mutability)
-- **Identify** code smells from [code-smells.md](./reference/code-smells.md)
-- **Note** best practices from [best-practices.md](./reference/best-practices.md)
+- **Identify** code smells from [code-smells.md](./references/code-smells.md)
+- **Note** best practices from [best-practices.md](./references/best-practices.md)
 - **Output**: Strengths, concerns, and refactoring opportunities with rationale
 
 ### Step 4: Teach — Explain the Why
@@ -73,14 +73,14 @@ Use this skill when:
   - *What problem does it solve?*
   - *What trade-offs were made?* (simplicity vs. performance, flexibility vs. maintainability, etc.)
   - *How would a learner *think* about this decision?*
-- **Reference**: Use [cognitive-load.md](./reference/cognitive-load.md) to frame clarity issues
+- **Reference**: Use [cognitive-load.md](./references/cognitive-load.md) to frame clarity issues
 - **Suggest**: Better names, clearer logic flow, or simpler patterns with *rationale*, not just opinion
 - **Output**: Coached explanation that builds intuition
 
 ### Step 5: Advise — Next Steps
-- **Prioritise** refactoring opportunities using [refactoring-priorities.md](./reference/refactoring-priorities.md)
+- **Prioritise** refactoring opportunities using [refactoring-priorities.md](./references/refactoring-priorities.md)
 - **Provide** specific, actionable suggestions (with code examples if helpful)
-- **Link** to [best-practices.md](./reference/best-practices.md) or language-specific resources
+- **Link** to [best-practices.md](./references/best-practices.md) or language-specific resources
 - **Output**: Numbered, actionable items ranked by impact and effort
 
 ## Templates & Guides
@@ -92,10 +92,10 @@ Use this skill when:
 
 ## Reference Materials
 
-- **[Code Smells](./reference/code-smells.md)** — Anti-patterns and their symptoms
-- **[Best Practices](./reference/best-practices.md)** — Language-agnostic principles for maintainability
-- **[Cognitive Load](./reference/cognitive-load.md)** — How to spot and reduce mental friction
-- **[Context Discovery](./reference/context-discovery.md)** — Questions to understand a codebase
+- **[Code Smells](./references/code-smells.md)** — Anti-patterns and their symptoms
+- **[Best Practices](./references/best-practices.md)** — Language-agnostic principles for maintainability
+- **[Cognitive Load](./references/cognitive-load.md)** — How to spot and reduce mental friction
+- **[Context Discovery](./references/context-discovery.md)** — Questions to understand a codebase
 
 ## Key Principles
 
@@ -125,7 +125,7 @@ A successful coaching session:
 ## Next Steps
 
 1. Choose a piece of code (function, class, or module)
-2. Orient yourself using [context-discovery.md](./reference/context-discovery.md)
+2. Orient yourself using [context-discovery.md](./references/context-discovery.md)
 3. Deconstruct using the [deconstruction-model.md](./frameworks/deconstruction-model.md)
 4. Analyse against the [analysis-rubric.md](./frameworks/analysis-rubric.md)
 5. Teach using the [teaching-script.md](./templates/teaching-script.md) skeleton

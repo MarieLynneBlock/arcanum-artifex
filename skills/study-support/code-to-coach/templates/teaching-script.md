@@ -354,8 +354,8 @@ Should I validate those, or document them?"
 4. Think about: What assumptions is the code making? Are they documented?
 
 **Additional resources**:
-- [Best Practices: Fail Fast, Fail Explicitly](../reference/best-practices.md)
-- [Code Smells: Missing Error Handling](../reference/code-smells.md)
+- [Best Practices: Fail Fast, Fail Explicitly](../references/best-practices.md)
+- [Code Smells: Missing Error Handling](../references/code-smells.md)
 - [Deconstruction Model: Breaking Code Into Chunks](../frameworks/deconstruction-model.md)
 
 **Questions?** Ask anytime. This pattern shows up everywhere.

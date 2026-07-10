@@ -450,4 +450,4 @@ Provide alternatives with rationale:
 
 ## Next: Code Smells Reference
 
-Use the [code-smells.md](../reference/code-smells.md) to identify specific anti-patterns, then return here to refactor them.
+Use the [code-smells.md](../references/code-smells.md) to identify specific anti-patterns, then return here to refactor them.

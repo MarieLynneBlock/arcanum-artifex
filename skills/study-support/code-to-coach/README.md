@@ -16,11 +16,11 @@ This skill transforms code analysis into a **coaching and teaching dialogue**. I
 - **[analysis-rubric.md](./frameworks/analysis-rubric.md)** — Criteria for evaluating code quality (6 dimensions: clarity, responsibility, error handling, testability, cognitive load, performance)
 
 ### Reference Materials (Domain Knowledge)
-- **[code-smells.md](./reference/code-smells.md)** — 10 common anti-patterns (long functions, deep nesting, magic numbers, duplication, etc.) with refactoring strategies
-- **[best-practices.md](./reference/best-practices.md)** — 12 language-agnostic principles (SRP, DRY, fail fast, dependency injection, separation of concerns, naming, documentation, immutability, composition, invalid states, measurement, explicitness)
-- **[cognitive-load.md](./reference/cognitive-load.md)** — 9 strategies to reduce mental friction in code (limit nesting, minimize mutations, reduce scope, clear flow, naming patterns, separate concerns, document assumptions, abstractions, parameter limits)
-- **[context-discovery.md](./reference/context-discovery.md)** — Questions to ask when orienting yourself to unfamiliar code
-- **[refactoring-priorities.md](./reference/refactoring-priorities.md)** — Framework for prioritising improvements (impact × effort matrix, categorisation from URGENT to DEFER)
+- **[code-smells.md](./references/code-smells.md)** — 10 common anti-patterns (long functions, deep nesting, magic numbers, duplication, etc.) with refactoring strategies
+- **[best-practices.md](./references/best-practices.md)** — 12 language-agnostic principles (SRP, DRY, fail fast, dependency injection, separation of concerns, naming, documentation, immutability, composition, invalid states, measurement, explicitness)
+- **[cognitive-load.md](./references/cognitive-load.md)** — 9 strategies to reduce mental friction in code (limit nesting, minimize mutations, reduce scope, clear flow, naming patterns, separate concerns, document assumptions, abstractions, parameter limits)
+- **[context-discovery.md](./references/context-discovery.md)** — Questions to ask when orienting yourself to unfamiliar code
+- **[refactoring-priorities.md](./references/refactoring-priorities.md)** — Framework for prioritising improvements (impact × effort matrix, categorisation from URGENT to DEFER)
 
 ### Templates (Structured Formats)
 - **[coaching-review-template.md](./templates/coaching-review-template.md)** — Structured format for delivering coaching-style feedback (strengths, observations, concerns by priority, next steps)
@@ -33,7 +33,7 @@ This skill transforms code analysis into a **coaching and teaching dialogue**. I
 ### Workflow: The Five-Step Coaching Cycle
 
 **1. Orient** — Scope and context
-   - Use [context-discovery.md](./reference/context-discovery.md) to understand the code's purpose, constraints, and history
+   - Use [context-discovery.md](./references/context-discovery.md) to understand the code's purpose, constraints, and history
    - Answer: "What is this code's job? Why does it exist? What are the constraints?"
 
 **2. Deconstruct** — Break into chunks
@@ -49,41 +49,41 @@ This skill transforms code analysis into a **coaching and teaching dialogue**. I
      - Testability & dependencies
      - Cognitive load
      - Performance & resource use
-   - Cross-reference with [code-smells.md](./reference/code-smells.md) for anti-patterns
+   - Cross-reference with [code-smells.md](./references/code-smells.md) for anti-patterns
 
 **4. Teach** — Explain the why
    - For each chunk, answer:
      - *Why was this pattern chosen?*
      - *What problem does it solve?*
      - *What trade-offs were made?*
-   - Use [cognitive-load.md](./reference/cognitive-load.md) to frame clarity issues
-   - Use [best-practices.md](./reference/best-practices.md) to justify suggestions
+   - Use [cognitive-load.md](./references/cognitive-load.md) to frame clarity issues
+   - Use [best-practices.md](./references/best-practices.md) to justify suggestions
 
 **5. Advise** — Next steps
-   - Use [refactoring-priorities.md](./reference/refactoring-priorities.md) to rank opportunities
+   - Use [refactoring-priorities.md](./references/refactoring-priorities.md) to rank opportunities
    - Use [coaching-review-template.md](./templates/coaching-review-template.md) to structure feedback
 
 ### Quick Start: Choose Your Path
 
 **I need to review someone's code:**
 → Use [coaching-review-template.md](./templates/coaching-review-template.md)
-→ Reference [analysis-rubric.md](./frameworks/analysis-rubric.md), [code-smells.md](./reference/code-smells.md), [refactoring-priorities.md](./reference/refactoring-priorities.md)
+→ Reference [analysis-rubric.md](./frameworks/analysis-rubric.md), [code-smells.md](./references/code-smells.md), [refactoring-priorities.md](./references/refactoring-priorities.md)
 
 **I need to explain code to someone:**
 → Use [teaching-script.md](./templates/teaching-script.md)
 → Reference [deconstruction-model.md](./frameworks/deconstruction-model.md)
 
 **I'm stuck understanding unfamiliar code:**
-→ Use [context-discovery.md](./reference/context-discovery.md)
+→ Use [context-discovery.md](./references/context-discovery.md)
 → Then use [deconstruction-model.md](./frameworks/deconstruction-model.md)
 
 **I see code smells but not sure what to fix first:**
-→ Use [refactoring-priorities.md](./reference/refactoring-priorities.md)
-→ Then reference [best-practices.md](./reference/best-practices.md)
+→ Use [refactoring-priorities.md](./references/refactoring-priorities.md)
+→ Then reference [best-practices.md](./references/best-practices.md)
 
 **I want to make code easier to understand:**
-→ Use [cognitive-load.md](./reference/cognitive-load.md)
-→ Reference [best-practices.md](./reference/best-practices.md)
+→ Use [cognitive-load.md](./references/cognitive-load.md)
+→ Reference [best-practices.md](./references/best-practices.md)
 
 ---
 
@@ -106,7 +106,7 @@ code-to-coach/
 ├── frameworks/
 │   ├── deconstruction-model.md       (How to break code into chunks)
 │   └── analysis-rubric.md            (6 criteria for evaluating quality)
-├── reference/
+├── references/
 │   ├── code-smells.md                (10 anti-patterns and fixes)
 │   ├── best-practices.md             (12 language-agnostic principles)
 │   ├── cognitive-load.md             (9 strategies to reduce mental friction)
@@ -192,25 +192,25 @@ A successful coaching session meets these criteria:
 1. Read [SKILL.md](./SKILL.md) (overview)
 2. Read [analysis-rubric.md](./frameworks/analysis-rubric.md) (evaluation dimensions)
 3. Read [coaching-review-template.md](./templates/coaching-review-template.md) (structured feedback)
-4. Read [refactoring-priorities.md](./reference/refactoring-priorities.md) (prioritisation)
+4. Read [refactoring-priorities.md](./references/refactoring-priorities.md) (prioritisation)
 
 ### Path 2: Learn to Teach Code (40 min)
 1. Read [SKILL.md](./SKILL.md) (overview)
 2. Read [deconstruction-model.md](./frameworks/deconstruction-model.md) (breaking into chunks)
 3. Read [teaching-script.md](./templates/teaching-script.md) (teaching structure)
-4. Read [cognitive-load.md](./reference/cognitive-load.md) (making it understandable)
+4. Read [cognitive-load.md](./references/cognitive-load.md) (making it understandable)
 
 ### Path 3: Understand a Codebase (45 min)
-1. Read [context-discovery.md](./reference/context-discovery.md) (orientation questions)
+1. Read [context-discovery.md](./references/context-discovery.md) (orientation questions)
 2. Read [deconstruction-model.md](./frameworks/deconstruction-model.md) (break into chunks)
 3. Read [analysis-rubric.md](./frameworks/analysis-rubric.md) (evaluate quality)
-4. Read [code-smells.md](./reference/code-smells.md) (identify patterns)
+4. Read [code-smells.md](./references/code-smells.md) (identify patterns)
 
 ### Path 4: Improve Existing Code (60 min)
-1. Read [code-smells.md](./reference/code-smells.md) (identify issues)
-2. Read [best-practices.md](./reference/best-practices.md) (understand principles)
-3. Read [refactoring-priorities.md](./reference/refactoring-priorities.md) (prioritise)
-4. Read [cognitive-load.md](./reference/cognitive-load.md) (reduce friction)
+1. Read [code-smells.md](./references/code-smells.md) (identify issues)
+2. Read [best-practices.md](./references/best-practices.md) (understand principles)
+3. Read [refactoring-priorities.md](./references/refactoring-priorities.md) (prioritise)
+4. Read [cognitive-load.md](./references/cognitive-load.md) (reduce friction)
 
 ---
 
@@ -265,8 +265,8 @@ To adopt this skill in your project:
 
 - **To review code**: Start with [coaching-review-template.md](./templates/coaching-review-template.md)
 - **To explain code**: Start with [teaching-script.md](./templates/teaching-script.md)
-- **To understand a codebase**: Start with [context-discovery.md](./reference/context-discovery.md)
-- **To improve code**: Start with [code-smells.md](./reference/code-smells.md)
+- **To understand a codebase**: Start with [context-discovery.md](./references/context-discovery.md)
+- **To improve code**: Start with [code-smells.md](./references/code-smells.md)
 
 ---
 

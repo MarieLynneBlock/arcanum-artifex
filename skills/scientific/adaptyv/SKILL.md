@@ -78,7 +78,7 @@ Adaptyv supports multiple assay types:
 - **Thermostability** - Characterize protein thermal stability
 - **Enzyme activity** - Assess enzymatic function
 
-See `reference/experiments.md` for detailed information on each experiment type and workflows.
+See `references/experiments.md` for detailed information on each experiment type and workflows.
 
 ## Protein Sequence Optimization
 Before submitting sequences, optimize them for better expression and stability:
@@ -95,13 +95,13 @@ Before submitting sequences, optimize them for better expression and stability:
 - ipTM - Interface stability assessment
 - pSAE - Hydrophobic exposure quantification
 
-See `reference/protein-optimization.md` for detailed optimization workflows and tool usage.
+See `references/protein-optimization.md` for detailed optimization workflows and tool usage.
 
 ## API Reference
-For complete API documentation including all endpoints, request/response formats, and authentication details, see `reference/api-reference.md`.
+For complete API documentation including all endpoints, request/response formats, and authentication details, see `references/api-reference.md`.
 
 ## Examples
-For concrete code examples covering common use cases (experiment submission, status tracking, result retrieval, batch processing), see `reference/examples.md`.
+For concrete code examples covering common use cases (experiment submission, status tracking, result retrieval, batch processing), see `references/examples.md`.
 
 ## Important Notes
 - Platform is currently in alpha/beta phase with features subject to change

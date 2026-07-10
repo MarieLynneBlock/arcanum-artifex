@@ -250,7 +250,7 @@ to make it clearer.
 
 **Resources**:
 - RFC 5322 (official email standard) — describes the full spec
-- [Best practices: Fail fast, fail explicitly](../reference/best-practices.md)
+- [Best practices: Fail fast, fail explicitly](../references/best-practices.md)
 ```
 
 ---
