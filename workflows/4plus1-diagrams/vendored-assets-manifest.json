@@ -1,6 +1,6 @@
 {
   "manifest_version": 1,
-  "generated_at_utc": "2026-05-16T09:06:11Z",
+  "generated_at_utc": "2026-07-10T07:38:29Z",
   "assets": [
     {
       "id": "skill-4plus1-models",
@@ -14,7 +14,7 @@
       "last_sync_utc": "2026-05-16T00:00:00Z",
       "integrity": {
         "algo": "sha256-tree-v1",
-        "hash": "9072dd6cef0bd8e7175753a34dc2478f7d5da6339cf25a0d3803c26cc0aff186"
+        "hash": "b0c0a014fc61d76bae2e2d38322af05e6b891ce9b064a5f2a58cab558ae1c7f8"
       }
     },
     {
@@ -59,7 +59,7 @@
       "last_sync_utc": "2026-05-16T00:00:00Z",
       "integrity": {
         "algo": "sha256-tree-v1",
-        "hash": "58df2e4bdd222946a5f33d575bc7e4a83aa3ef09e6ee8fcce2731eef0dca1ce5"
+        "hash": "a8fcc9bf112c628c53d6dd80e30a6b1c2fd44acb1f3e3ba66d4b02aa96508591"
       }
     },
     {
@@ -74,7 +74,7 @@
       "last_sync_utc": "2026-05-16T00:00:00Z",
       "integrity": {
         "algo": "sha256-tree-v1",
-        "hash": "3f4e371e9c4a6abbc9c13902ecdc2854bbe5b0c3c8546acc7d71df2c31bdba37"
+        "hash": "85989cc15ed7f9fdab6a50943be60ea24aa99a20bdf5ac8ec802933c56a43a83"
       }
     }
   ]
