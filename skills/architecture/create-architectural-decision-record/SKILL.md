@@ -1,6 +1,6 @@
 ---
-description: 'Create an Architectural Decision Record (ADR) document for AI-optimized decision documentation.'
 name: create-architectural-decision-record
+description: 'Create an Architectural Decision Record (ADR) document for AI-optimized decision documentation.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---

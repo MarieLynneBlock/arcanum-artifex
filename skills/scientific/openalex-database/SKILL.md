@@ -1,6 +1,6 @@
 ---
-description: Query and analyze scholarly literature using the OpenAlex database. This skill should be used when searching for academic papers, analyzing research trends, finding works by authors or institutions, tracking citations, discovering open access publications, or conducting bibliometric analysis across 240M+ scholarly works. Use for literature searches, research output analysis, citation analysis, and academic database queries.
 name: openalex-database
+description: Query and analyze scholarly literature using the OpenAlex database. This skill should be used when searching for academic papers, analyzing research trends, finding works by authors or institutions, tracking citations, discovering open access publications, or conducting bibliometric analysis across 240M+ scholarly works. Use for literature searches, research output analysis, citation analysis, and academic database queries.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -416,7 +416,7 @@ source = client.get_entity('sources', 'issn:0028-0836')
 ## Reference Documentation
 
 ### Detailed API Reference
-See `references/api_guide.md` for:
+See `references/api-guide.md` for:
 - Complete filter syntax
 - All available endpoints
 - Response structures
@@ -425,7 +425,7 @@ See `references/api_guide.md` for:
 - Rate limiting details
 
 ### Common Query Examples
-See `references/common_queries.md` for:
+See `references/common-queries.md` for:
 - Complete working examples
 - Real-world use cases
 - Complex query patterns
@@ -465,7 +465,7 @@ If encountering 403 errors:
 
 ### Empty Results
 If searches return no results:
-1. Check filter syntax (see `references/api_guide.md`)
+1. Check filter syntax (see `references/api-guide.md`)
 2. Use two-step pattern for entity lookups (don't filter by names)
 3. Verify entity IDs are correct format
 

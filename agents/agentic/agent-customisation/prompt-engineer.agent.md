@@ -1,9 +1,10 @@
 ---
-description: 'Prompt quality reviewer and refiner focused on analysis-first prompt improvement, structure clarity, and practical rewrite guidance.'
 name: 'Prompt Engineer'
+description: 'Prompt quality reviewer and refiner focused on analysis-first prompt improvement, structure clarity, and practical rewrite guidance.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Prompt Engineer

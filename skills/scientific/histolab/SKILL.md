@@ -1,6 +1,6 @@
 ---
-description: Lightweight WSI tile extraction and preprocessing. Use for basic slide processing tissue detection, tile extraction, stain normalization for H&E images. Best for simple pipelines, dataset preparation, quick tile-based analysis. For advanced spatial proteomics, multiplexed imaging, or deep learning pipelines use pathml.
 name: histolab
+description: Lightweight WSI tile extraction and preprocessing. Use for basic slide processing tissue detection, tile extraction, stain normalization for H&E images. Best for simple pipelines, dataset preparation, quick tile-based analysis. For advanced spatial proteomics, multiplexed imaging, or deep learning pipelines use pathml.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -59,7 +59,7 @@ Load, inspect, and work with whole slide images in various formats.
 
 **Key classes:** `Slide`
 
-**Reference:** `references/slide_management.md` contains comprehensive documentation on:
+**Reference:** `references/slide-management.md` contains comprehensive documentation on:
 - Slide initialization and configuration
 - Built-in sample datasets (prostate, ovarian, breast, heart, kidney tissues)
 - Accessing slide properties and metadata
@@ -100,7 +100,7 @@ Automatically identify tissue regions and filter background/artifacts.
 
 **Key classes:** `TissueMask`, `BiggestTissueBoxMask`, `BinaryMask`
 
-**Reference:** `references/tissue_masks.md` contains comprehensive documentation on:
+**Reference:** `references/tissue-masks.md` contains comprehensive documentation on:
 - TissueMask: Segments all tissue regions using automated filters
 - BiggestTissueBoxMask: Returns bounding box of largest tissue region (default)
 - BinaryMask: Base class for custom mask implementations
@@ -156,7 +156,7 @@ Extract smaller regions from large WSI using different strategies.
 - `tissue_percent`: Minimum tissue coverage (default 80%)
 - `extraction_mask`: Mask defining extraction region
 
-**Reference:** `references/tile_extraction.md` contains comprehensive documentation on:
+**Reference:** `references/tile-extraction.md` contains comprehensive documentation on:
 - Detailed explanation of each tiler strategy
 - Available scorers (NucleiScorer, CellularityScorer, custom)
 - Tile preview with `locate_tiles()`
@@ -225,7 +225,7 @@ Apply image processing filters for tissue detection, quality control, and prepro
 **Composition:** Chain multiple filters together
 - `Compose`: Create filter pipelines
 
-**Reference:** `references/filters_preprocessing.md` contains comprehensive documentation on:
+**Reference:** `references/filters-preprocessing.md` contains comprehensive documentation on:
 - Detailed explanation of each filter type
 - Filter composition and chaining
 - Common preprocessing pipelines (tissue detection, pen removal, nuclei enhancement)
@@ -618,7 +618,7 @@ tiler.extract(slide, extraction_mask=custom_mask)
 
 This skill includes detailed reference documentation in the `references/` directory:
 
-### references/slide_management.md
+### references/slide-management.md
 Comprehensive guide to loading, inspecting, and working with whole slide images:
 - Slide initialization and configuration
 - Built-in sample datasets
@@ -628,7 +628,7 @@ Comprehensive guide to loading, inspecting, and working with whole slide images:
 - Multi-slide processing workflows
 - Best practices and common patterns
 
-### references/tissue_masks.md
+### references/tissue-masks.md
 Complete documentation on tissue detection and masking:
 - TissueMask, BiggestTissueBoxMask, BinaryMask classes
 - How tissue detection filters work
@@ -638,7 +638,7 @@ Complete documentation on tissue detection and masking:
 - Integration with tile extraction
 - Best practices and troubleshooting
 
-### references/tile_extraction.md
+### references/tile-extraction.md
 Detailed explanation of tile extraction strategies:
 - RandomTiler, GridTiler, ScoreTiler comparison
 - Available scorers (NucleiScorer, CellularityScorer, custom)
@@ -649,7 +649,7 @@ Detailed explanation of tile extraction strategies:
 - Performance optimization
 - Troubleshooting common issues
 
-### references/filters_preprocessing.md
+### references/filters-preprocessing.md
 Complete filter reference and preprocessing guide:
 - Image filters (color conversion, thresholding, contrast)
 - Morphological filters (dilation, erosion, opening, closing)

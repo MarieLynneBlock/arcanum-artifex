@@ -1,6 +1,6 @@
 ---
+name: 'Project Documenter'
 description: "Generates professional MS Word project documentation with draw.io architecture diagrams and embedded PNG images. Automatically discovers any project's technology stack, architecture, and code structure. Produces Markdown, draw.io diagrams, PNG exports, and .docx output."
-name: "Project Documenter"
 tools:
   [
     "execute/runInTerminal",
@@ -18,7 +18,8 @@ tools:
     "todo",
   ]
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Project Documentation Agent

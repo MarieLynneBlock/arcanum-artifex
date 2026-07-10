@@ -2,7 +2,7 @@
 
 # State Diagram
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
 
 **Syntax keyword:** `stateDiagram-v2`
 **Best for:** State machines, lifecycle flows, status transitions, object lifecycles

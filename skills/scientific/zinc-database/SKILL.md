@@ -1,6 +1,6 @@
 ---
-description: Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for docking, analog discovery, for virtual screening and drug discovery.
 name: zinc-database
+description: Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for docking, analog discovery, for virtual screening and drug discovery.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -348,7 +348,7 @@ df['tranche_props'] = df['tranche'].apply(parse_tranche)
 
 ## Resources
 
-### references/api_reference.md
+### references/api-reference.md
 
 Comprehensive documentation including:
 

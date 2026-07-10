@@ -1,6 +1,6 @@
 ---
-description: 'Expert skill for building web-based game engines and games using HTML5, Canvas, WebGL, and JavaScript. Use when asked to create games, build game engines, implement game physics, handle collision detection, set up game loops, manage sprites, add game controls, or work with 2D/3D rendering. Covers techniques for platformers, breakout-style games, maze games, tilemaps, audio, multiplayer via WebRTC, and publishing games.'
 name: game-engine
+description: 'Expert skill for building web-based game engines and games using HTML5, Canvas, WebGL, and JavaScript. Use when asked to create games, build game engines, implement game physics, handle collision detection, set up game loops, manage sprites, add game controls, or work with 2D/3D rendering. Covers techniques for platformers, breakout-style games, maze games, tilemaps, audio, multiplayer via WebRTC, and publishing games.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -109,7 +109,7 @@ Starter templates are available in the `assets/` folder. Each template provides 
 | `paddle-game-template.md` | 2D Breakout-style game with pure JavaScript |
 | `2d-maze-game.md` | Maze game with device orientation controls |
 | `2d-platform-game.md` | Platformer game using Phaser framework |
-| `gameBase-template-repo.md` | Game base template repository structure |
+| `game-base-template-repo.md` | Game base template repository structure |
 | `simple-2d-engine.md` | Simple 2D platformer engine with collisions |
 
 ## Reference Documentation

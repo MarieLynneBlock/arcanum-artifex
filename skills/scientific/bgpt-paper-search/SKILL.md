@@ -1,8 +1,8 @@
 ---
-description: Search scientific papers and retrieve structured experimental data extracted from full-text studies via the BGPT MCP server. Returns 25+ fields per paper including methods, results, sample sizes, quality scores, and conclusions. Use for literature reviews, evidence synthesis, and finding experimental details not available in abstracts alone.
 name: bgpt-paper-search
-allowed-tools: Bash
+description: Search scientific papers and retrieve structured experimental data extracted from full-text studies via the BGPT MCP server. Returns 25+ fields per paper including methods, results, sample sizes, quality scores, and conclusions. Use for literature reviews, evidence synthesis, and finding experimental details not available in abstracts alone.
 license: MIT
+allowed-tools: Bash
 metadata:
   skill-author: 'BGPT'
   website: https://bgpt.pro/mcp

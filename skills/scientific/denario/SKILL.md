@@ -1,6 +1,6 @@
 ---
-description: Multiagent AI system for scientific research assistance that automates research workflows from data analysis to publication. This skill should be used when generating research ideas from datasets, developing research methodologies, executing computational experiments, performing literature searches, or generating publication-ready papers in LaTeX format. Supports end-to-end research pipelines with customizable agent orchestration.
 name: denario
+description: Multiagent AI system for scientific research assistance that automates research workflows from data analysis to publication. This skill should be used when generating research ideas from datasets, developing research methodologies, executing computational experiments, performing literature searches, or generating publication-ready papers in LaTeX format. Supports end-to-end research pipelines with customizable agent orchestration.
 license: GPL-3.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -46,7 +46,7 @@ Denario requires API keys from supported LLM providers. Supported providers incl
 - OpenAI
 - Other LLM services compatible with AG2/LangGraph
 
-Store API keys securely using environment variables or `.env` files. For detailed configuration instructions including Vertex AI setup, see `references/llm_configuration.md`.
+Store API keys securely using environment variables or `.env` files. For detailed configuration instructions including Vertex AI setup, see `references/llm-configuration.md`.
 
 ## Core Research Workflow
 
@@ -125,7 +125,7 @@ The generated paper includes proper formatting for the specified journal, integr
 
 Denario supports multiple journal formatting styles:
 - `Journal.APS` - American Physical Society format
-- Additional journals may be available; check `references/research_pipeline.md` for the complete list
+- Additional journals may be available; check `references/research-pipeline.md` for the complete list
 
 ## Launching the GUI
 
@@ -199,14 +199,14 @@ For literature search functionality and additional workflow examples, see `refer
 
 For comprehensive documentation:
 - **Installation options**: `references/installation.md`
-- **LLM configuration**: `references/llm_configuration.md`
-- **Complete API reference**: `references/research_pipeline.md`
+- **LLM configuration**: `references/llm-configuration.md`
+- **Complete API reference**: `references/research-pipeline.md`
 - **Example workflows**: `references/examples.md`
 
 ## Troubleshooting
 
 Common issues and solutions:
-- **API key errors**: Ensure environment variables are set correctly (see `references/llm_configuration.md`)
+- **API key errors**: Ensure environment variables are set correctly (see `references/llm-configuration.md`)
 - **LaTeX compilation**: Install TeX distribution or use Docker image with pre-installed LaTeX
 - **Package conflicts**: Use virtual environments or Docker for isolation
 - **Python version**: Requires Python 3.12 or higher

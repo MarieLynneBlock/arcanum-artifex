@@ -1,9 +1,10 @@
 ---
-description: 'Agent skill builder for creating, reviewing, and packaging standalone SKILL.md folders. Use when: skill authoring, skill frontmatter, bundled assets, reusable workflow packaging, or skill customisation.'
 name: 'Skill Builder'
+description: 'Agent skill builder for creating, reviewing, and packaging standalone SKILL.md folders. Use when: skill authoring, skill frontmatter, bundled assets, reusable workflow packaging, or skill customisation.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Skill Builder

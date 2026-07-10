@@ -1,6 +1,6 @@
 ---
-description: "Use when creating, editing, or reviewing draw.io diagrams and mxGraph XML in .drawio, .drawio.svg, or .drawio.png files."
 name: 'Draw Io.instructions'
+description: "Use when creating, editing, or reviewing draw.io diagrams and mxGraph XML in .drawio, .drawio.svg, or .drawio.png files."
 applyTo: "**/*.drawio,**/*.drawio.svg,**/*.drawio.png"
 metadata:
   skill-author: 'Marie-Lynne Block'

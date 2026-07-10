@@ -1,9 +1,10 @@
 ---
-description: 'Customisation packager for auditing and fixing standalone copyability of agents, prompts, instructions, skills, workflows, and related assets.'
 name: 'Customisation Packager'
+description: 'Customisation packager for auditing and fixing standalone copyability of agents, prompts, instructions, skills, workflows, and related assets.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Customisation Packager

@@ -1,6 +1,6 @@
 ---
-description: Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering.
 name: medchem
+description: Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -383,10 +383,10 @@ mol_with_groups = [mol for mol, match in zip(mol_list, matches) if match]
 
 ## Resources
 
-### references/api_guide.md
+### references/api-guide.md
 Comprehensive API reference covering all medchem modules with detailed function signatures, parameters, and return types.
 
-### references/rules_catalog.md
+### references/rules-catalog.md
 Complete catalog of available rules, filters, and alerts with descriptions, thresholds, and literature references.
 
 ### scripts/filter_molecules.py

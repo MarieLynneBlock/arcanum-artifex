@@ -1,9 +1,10 @@
 ---
-description: 'Perform janitorial tasks on C#/.NET code including cleanup, modernization, and tech debt remediation.'
 name: '.NET Upgrade'
+description: 'Perform janitorial tasks on C#/.NET code including cleanup, modernization, and tech debt remediation.'
 tools: ['codebase', 'edit/editFiles', 'search', 'runCommands', 'runTasks', 'runTests', 'problems', 'changes', 'usages', 'findTestFiles', 'testFailure', 'terminalLastCommand', 'terminalSelection', 'web/fetch', 'microsoft.docs.mcp']
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # .NET Upgrade Collection

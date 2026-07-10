@@ -1,6 +1,6 @@
 ---
-description: 'Power BI semantic modeling assistant for building optimized data models. Use when working with Power BI semantic models, creating measures, designing star schemas, configuring relationships, implementing RLS, or optimizing model performance. Triggers on queries about DAX calculations, table relationships, dimension/fact table design, naming conventions, model documentation, cardinality, cross-filter direction, calculation groups, and data model best practices. Always connects to the active model first using power-bi-modeling MCP tools to understand the data structure before providing guidance.'
 name: powerbi-modeling
+description: 'Power BI semantic modeling assistant for building optimized data models. Use when working with Power BI semantic models, creating measures, designing star schemas, configuring relationships, implementing RLS, or optimizing model performance. Triggers on queries about DAX calculations, table relationships, dimension/fact table design, naming conventions, model documentation, cardinality, cross-filter direction, calculation groups, and data model best practices. Always connects to the active model first using power-bi-modeling MCP tools to understand the data structure before providing guidance.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -67,11 +67,11 @@ After connecting, assess the model against best practices:
 ### 3. Provide Targeted Guidance
 
 Based on analysis, guide improvements using references:
-- Star schema design: See [STAR-SCHEMA.md](references/STAR-SCHEMA.md)
-- Relationship configuration: See [RELATIONSHIPS.md](references/RELATIONSHIPS.md)
-- DAX measures and naming: See [MEASURES-DAX.md](references/MEASURES-DAX.md)
-- Performance optimization: See [PERFORMANCE.md](references/PERFORMANCE.md)
-- Row-level security: See [RLS.md](references/RLS.md)
+- Star schema design: See [star-schema.md](references/star-schema.md)
+- Relationship configuration: See [relationships.md](references/relationships.md)
+- DAX measures and naming: See [measures-dax.md](references/measures-dax.md)
+- Performance optimization: See [performance.md](references/performance.md)
+- Row-level security: See [rls.md](references/rls.md)
 
 ## Quick Reference: Model Quality Checklist
 

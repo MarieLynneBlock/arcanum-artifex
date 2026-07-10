@@ -1,8 +1,8 @@
 ---
-description: Write competitive research proposals for NSF, NIH, DOE, DARPA, and Taiwan NSTC. Agency-specific formatting, review criteria, budget preparation, broader impacts, significance statements, innovation narratives, and compliance with submission requirements.
 name: research-grants
-allowed-tools: Read Write Edit Bash
+description: Write competitive research proposals for NSF, NIH, DOE, DARPA, and Taiwan NSTC. Agency-specific formatting, review criteria, budget preparation, broader impacts, significance statements, innovation narratives, and compliance with submission requirements.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -201,11 +201,11 @@ The core technical narrative that presents the research plan in detail.
 - Risk assessment and mitigation
 
 For detailed agency-specific guidance, refer to:
-- `references/nsf_guidelines.md`
-- `references/nih_guidelines.md`
-- `references/doe_guidelines.md`
-- `references/darpa_guidelines.md`
-- `references/nstc_guidelines.md`
+- `references/nsf-guidelines.md`
+- `references/nih-guidelines.md`
+- `references/doe-guidelines.md`
+- `references/darpa-guidelines.md`
+- `references/nstc-guidelines.md`
 
 ### 3. Specific Aims (NIH) or Objectives (NSF/DOE/DARPA)
 
@@ -234,7 +234,7 @@ Clear, testable goals that structure the research plan.
 - Use parallel structure across aims
 - Clearly state what will be learned from each aim
 
-For detailed guidance, refer to `references/specific_aims_guide.md`.
+For detailed guidance, refer to `references/specific-aims-guide.md`.
 
 ### 4. Broader Impacts (NSF) / Significance (NIH)
 
@@ -288,7 +288,7 @@ NSF explicitly evaluates broader impacts. Address at least one of these areas:
 - Rigor of prior research in the field
 - Alignment with NIH mission and institute priorities
 
-For detailed guidance, refer to `references/broader_impacts.md`.
+For detailed guidance, refer to `references/broader-impacts.md`.
 
 ### 5. Innovation and Transformative Potential
 
@@ -603,7 +603,7 @@ Varies by program office, but generally includes:
 3. **PI Capability (主持人能力)**: Track record and expertise.
 4. **Value (價值)**: Academic contribution and societal/industrial impact.
 
-For detailed review criteria by agency, refer to `references/review_criteria.md` and `references/nstc_guidelines.md`.
+For detailed review criteria by agency, refer to `references/review_criteria.md` and `references/nstc-guidelines.md`.
 - **What if you succeed?** (Impact if the research works)
 - **What if you're right?** (Implications of your hypothesis)
 - **Who cares?** (Why it matters for national security)
@@ -920,12 +920,12 @@ This skill works effectively with:
 
 This skill includes comprehensive reference files covering specific aspects of grant writing:
 
-- `references/nsf_guidelines.md`: NSF-specific requirements, formatting, and strategies
-- `references/nih_guidelines.md`: NIH mechanisms, review criteria, and submission requirements
-- `references/doe_guidelines.md`: DOE programs, emphasis areas, and application procedures
-- `references/darpa_guidelines.md`: DARPA BAAs, program offices, and proposal strategies
-- `references/broader_impacts.md`: Strategies for compelling broader impacts statements
-- `references/specific_aims_guide.md`: Writing effective specific aims pages
+- `references/nsf-guidelines.md`: NSF-specific requirements, formatting, and strategies
+- `references/nih-guidelines.md`: NIH mechanisms, review criteria, and submission requirements
+- `references/doe-guidelines.md`: DOE programs, emphasis areas, and application procedures
+- `references/darpa-guidelines.md`: DARPA BAAs, program offices, and proposal strategies
+- `references/broader-impacts.md`: Strategies for compelling broader impacts statements
+- `references/specific-aims-guide.md`: Writing effective specific aims pages
 - `references/budget_preparation.md`: Budget development and justification
 - `references/review_criteria.md`: Detailed review criteria by agency
 - `references/timeline_planning.md`: Creating realistic timelines and milestones
@@ -936,10 +936,10 @@ Load these references as needed when working on specific aspects of grant writin
 
 ## Templates and Assets
 
-- `assets/nsf_project_summary_template.md`: NSF project summary structure
-- `assets/nih_specific_aims_template.md`: NIH specific aims page template
+- `assets/nsf-project-summary-template.md`: NSF project summary structure
+- `assets/nih-specific-aims-template.md`: NIH specific aims page template
 - `assets/timeline_gantt_template.md`: Timeline and Gantt chart examples
-- `assets/budget_justification_template.md`: Budget justification structure
+- `assets/budget-justification-template.md`: Budget justification structure
 - `assets/biosketch_templates/`: Agency-specific biosketch formats
 
 ## Scripts and Tools

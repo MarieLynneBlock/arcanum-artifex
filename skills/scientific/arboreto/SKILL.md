@@ -1,6 +1,6 @@
 ---
-description: Infer gene regulatory networks (GRNs) from gene expression data using scalable algorithms (GRNBoost2, GENIE3). Use when analyzing transcriptomics data (bulk RNA-seq, single-cell RNA-seq) to identify transcription factor-target gene relationships and regulatory interactions. Supports distributed computation for large-scale datasets.
 name: arboreto
+description: Infer gene regulatory networks (GRNs) from gene expression data using scalable algorithms (GRNBoost2, GENIE3). Use when analyzing transcriptomics data (bulk RNA-seq, single-cell RNA-seq) to identify transcription factor-target gene relationships and regulatory interactions. Supports distributed computation for large-scale datasets.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -49,7 +49,7 @@ For standard GRN inference workflows including:
 - Filtering by transcription factors
 - Output format and interpretation
 
-**See**: `references/basic_inference.md`
+**See**: `references/basic-inference.md`
 
 **Use the ready-to-run script**: `scripts/basic_grn_inference.py` for standard inference tasks:
 ```bash
@@ -113,7 +113,7 @@ client = Client('tcp://scheduler:8786')
 network = grnboost2(expression_data=matrix, client_or_address=client)
 ```
 
-**For cluster setup, performance optimization, and large-scale workflows**: `references/distributed_computing.md`
+**For cluster setup, performance optimization, and large-scale workflows**: `references/distributed-computing.md`
 
 ## Installation
 

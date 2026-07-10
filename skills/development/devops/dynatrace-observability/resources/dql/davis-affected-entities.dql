@@ -1,0 +1,7 @@
+fetch dt.davis.problems, from:now() - 7d
+| filter event.status == "ACTIVE"
+| filter dt.davis.is_duplicate == false
+| expand affected_entity_ids
+| summarize problem_count = countDistinct(event.id), by:{affected_entity_ids}
+| sort problem_count desc
+| limit 10

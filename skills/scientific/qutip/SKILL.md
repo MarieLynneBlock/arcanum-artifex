@@ -1,6 +1,6 @@
 ---
-description: Quantum physics simulation library for open quantum systems. Use when studying master equations, Lindblad dynamics, decoherence, quantum optics, or cavity QED. Best for physics research, open system dynamics, and educational simulations. NOT for circuit-based quantum computing—use qiskit, cirq, or pennylane for quantum algorithms and hardware execution.
 name: qutip
+description: Quantum physics simulation library for open quantum systems. Use when studying master equations, Lindblad dynamics, decoherence, quantum optics, or cavity QED. Best for physics research, open system dynamics, and educational simulations. NOT for circuit-based quantum computing—use qiskit, cirq, or pennylane for quantum algorithms and hardware execution.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -73,7 +73,7 @@ sx, sy, sz = sigmax(), sigmay(), sigmaz()  # Pauli matrices
 psi_AB = tensor(psi_A, psi_B)  # Tensor product
 ```
 
-**See** `references/core_concepts.md` for comprehensive coverage of quantum objects, states, operators, and tensor products.
+**See** `references/core-concepts.md` for comprehensive coverage of quantum objects, states, operators, and tensor products.
 
 ### 2. Time Evolution and Dynamics
 
@@ -98,7 +98,7 @@ result = mcsolve(H, psi0, tlist, c_ops, ntraj=500, e_ops=[num(N)])
 - `brmesolve`: Weak system-bath coupling
 - `fmmesolve`: Time-periodic Hamiltonians (Floquet)
 
-**See** `references/time_evolution.md` for detailed solver documentation, time-dependent Hamiltonians, and advanced options.
+**See** `references/time-evolution.md` for detailed solver documentation, time-dependent Hamiltonians, and advanced options.
 
 ### 3. Analysis and Measurement
 
@@ -301,8 +301,8 @@ plt.show()
 
 This skill includes detailed reference documentation:
 
-- **`references/core_concepts.md`**: Quantum objects, states, operators, tensor products, composite systems
-- **`references/time_evolution.md`**: All solvers (sesolve, mesolve, mcsolve, brmesolve, etc.), time-dependent Hamiltonians, solver options
+- **`references/core-concepts.md`**: Quantum objects, states, operators, tensor products, composite systems
+- **`references/time-evolution.md`**: All solvers (sesolve, mesolve, mcsolve, brmesolve, etc.), time-dependent Hamiltonians, solver options
 - **`references/visualization.md`**: Bloch sphere, Wigner functions, Q-functions, Fock distributions, matrix plots
 - **`references/analysis.md`**: Expectation values, entropy, fidelity, entanglement measures, correlation functions, steady states
 - **`references/advanced.md`**: Floquet theory, HEOM, permutational invariance, stochastic methods, superoperators, performance tips

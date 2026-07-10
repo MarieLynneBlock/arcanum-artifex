@@ -1,6 +1,6 @@
 ---
-description: Phylogenetic tree toolkit (ETE). Tree manipulation (Newick/NHX), evolutionary event detection, orthology/paralogy, NCBI taxonomy, visualization (PDF/SVG), for phylogenomics.
 name: etetoolkit
+description: Phylogenetic tree toolkit (ETE). Tree manipulation (Newick/NHX), evolutionary event detection, orthology/paralogy, NCBI taxonomy, visualization (PDF/SVG), for phylogenomics.
 license: GPL-3.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -516,7 +516,7 @@ for filename in os.listdir(input_dir):
 
 For comprehensive API documentation, code examples, and detailed guides, refer to the following resources in the `references/` directory:
 
-- **`api_reference.md`**: Complete API documentation for all ETE classes and methods (Tree, PhyloTree, ClusterTree, NCBITaxa), including parameters, return types, and code examples
+- **`api-reference.md`**: Complete API documentation for all ETE classes and methods (Tree, PhyloTree, ClusterTree, NCBITaxa), including parameters, return types, and code examples
 - **`workflows.md`**: Common workflow patterns organized by task (tree operations, phylogenetic analysis, tree comparison, taxonomy integration, clustering analysis)
 - **`visualization.md`**: Comprehensive visualization guide covering TreeStyle, NodeStyle, Faces, layout functions, and advanced visualization techniques
 
@@ -524,7 +524,7 @@ Load these references when detailed information is needed:
 
 ```python
 # To use API reference
-# Read references/api_reference.md for complete method signatures and parameters
+# Read references/api-reference.md for complete method signatures and parameters
 
 # To implement workflows
 # Read references/workflows.md for step-by-step workflow examples

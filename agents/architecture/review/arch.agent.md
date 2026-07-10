@@ -1,9 +1,10 @@
 ---
+name: 'Senior Cloud Architect'
 description: Expert in modern architecture design patterns, NFR requirements, and creating comprehensive architectural diagrams and documentation
-name: Senior Cloud Architect
 tools: []
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Senior Cloud Architect Agent

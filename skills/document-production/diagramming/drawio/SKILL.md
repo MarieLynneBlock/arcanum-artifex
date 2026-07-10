@@ -1,6 +1,6 @@
 ---
-description: Generate draw.io diagrams as .drawio files and export to PNG/SVG/PDF with embedded XML
 name: drawio
+description: Generate draw.io diagrams as .drawio files and export to PNG/SVG/PDF with embedded XML
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---

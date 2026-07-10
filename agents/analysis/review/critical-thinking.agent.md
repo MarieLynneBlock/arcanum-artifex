@@ -1,9 +1,10 @@
 ---
-description: 'Challenge assumptions and encourage critical thinking to ensure the best possible solution and outcomes.'
 name: 'Critical thinking mode instructions'
+description: 'Challenge assumptions and encourage critical thinking to ensure the best possible solution and outcomes.'
 tools: ['codebase', 'extensions', 'web/fetch', 'findTestFiles', 'githubRepo', 'problems', 'search', 'searchResults', 'usages']
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 # Critical thinking mode instructions
 

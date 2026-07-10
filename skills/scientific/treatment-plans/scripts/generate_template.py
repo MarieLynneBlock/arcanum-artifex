@@ -153,7 +153,7 @@ def display_success(output_path, template_key):
     
     print("\n4. DE-IDENTIFY BEFORE SHARING:")
     print("   - Remove all HIPAA identifiers (18 identifiers)")
-    print("   - See regulatory_compliance.md reference for details")
+    print("   - See regulatory-compliance.md reference for details")
     
     print("\n" + "="*70)
 

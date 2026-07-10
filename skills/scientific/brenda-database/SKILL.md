@@ -1,6 +1,6 @@
 ---
-description: Access BRENDA enzyme database via SOAP API. Retrieve kinetic parameters (Km, kcat), reaction equations, organism data, and substrate-specific enzyme information for biochemical research and metabolic pathway analysis.
 name: brenda-database
+description: Access BRENDA enzyme database via SOAP API. Retrieve kinetic parameters (Km, kcat), reaction equations, organism data, and substrate-specific enzyme information for biochemical research and metabolic pathway analysis.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -662,7 +662,7 @@ def extract_multiple_values(data, field_name):
 
 ## Reference Documentation
 
-For detailed BRENDA documentation, see `references/api_reference.md`. This includes:
+For detailed BRENDA documentation, see `references/api-reference.md`. This includes:
 - Complete SOAP API method documentation
 - Full parameter lists and formats
 - EC number structure and validation

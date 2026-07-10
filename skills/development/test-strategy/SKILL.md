@@ -1,6 +1,9 @@
 ---
-description: >
 name: test-strategy
+description: >-
+  Produces a test strategy document defining what to test, at which layer, with which tools, and
+  to what coverage standard. It applies the test pyramid model, surfaces coverage gaps in existing
+  codebases, and produces a concrete plan — not a generic "write more tests" recommendation.
 version: 1.0.0
 tags:
   - testing

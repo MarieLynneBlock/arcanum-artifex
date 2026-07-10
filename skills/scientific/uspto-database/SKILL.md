@@ -1,6 +1,6 @@
 ---
-description: Access USPTO APIs for patent/trademark searches, examination history (PEDS), assignments, citations, office actions, TSDR, for IP analysis and prior art searches.
 name: uspto-database
+description: Access USPTO APIs for patent/trademark searches, examination history (PEDS), assignments, citations, office actions, TSDR, for IP analysis and prior art searches.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -196,7 +196,7 @@ results = response.json()
 
 ### Reference Documentation
 
-See `references/patentsearch_api.md` for complete PatentSearch API documentation including:
+See `references/patentsearch-api.md` for complete PatentSearch API documentation including:
 - All available endpoints
 - Complete field reference
 - Query syntax and examples
@@ -292,7 +292,7 @@ print(f"Responses filed: {analysis['responses']}")
 
 ### Reference Documentation
 
-See `references/peds_api.md` for complete PEDS documentation including:
+See `references/peds-api.md` for complete PEDS documentation including:
 - All available data fields
 - Transaction code reference
 - Python library usage
@@ -386,7 +386,7 @@ def monitor_portfolio(serial_numbers, api_key):
 
 ### Reference Documentation
 
-See `references/trademark_api.md` for complete trademark API documentation including:
+See `references/trademark-api.md` for complete trademark API documentation including:
 - TSDR API reference
 - Trademark Assignment Search API
 - All status codes
@@ -483,7 +483,7 @@ Patent Trial and Appeal Board proceedings:
 
 ### Reference Documentation
 
-See `references/additional_apis.md` for comprehensive documentation on:
+See `references/additional-apis.md` for comprehensive documentation on:
 - Enriched Citation API
 - Office Action APIs (Text, Citations, Rejections)
 - Patent Litigation Cases API
@@ -593,10 +593,10 @@ def comprehensive_patent_analysis(patent_number, api_key):
 - **USPTO Docs**: https://docs.ip-tools.org/uspto-opendata-python/
 
 ### Reference Files
-- `references/patentsearch_api.md` - Complete PatentSearch API reference
-- `references/peds_api.md` - PEDS API and library documentation
-- `references/trademark_api.md` - Trademark APIs (TSDR and Assignment)
-- `references/additional_apis.md` - Citations, Office Actions, Litigation, PTAB
+- `references/patentsearch-api.md` - Complete PatentSearch API reference
+- `references/peds-api.md` - PEDS API and library documentation
+- `references/trademark-api.md` - Trademark APIs (TSDR and Assignment)
+- `references/additional-apis.md` - Citations, Office Actions, Litigation, PTAB
 
 ### Scripts
 - `scripts/patent_search.py` - PatentSearch API client

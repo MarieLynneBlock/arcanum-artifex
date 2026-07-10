@@ -1,6 +1,6 @@
 ---
-description: Query ClinicalTrials.gov via API v2. Search trials by condition, drug, location, status, or phase. Retrieve trial details by NCT ID, export data, for clinical research and patient matching.
 name: clinicaltrials-database
+description: Query ClinicalTrials.gov via API v2. Search trials by condition, drug, location, status, or phase. Retrieve trial details by NCT ID, export data, for clinical research and patient matching.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -403,7 +403,7 @@ Run the script directly for example usage:
 python3 scripts/query_clinicaltrials.py
 ```
 
-### references/api_reference.md
+### references/api-reference.md
 
 Detailed API documentation including:
 
@@ -501,4 +501,4 @@ if 'resultsSection' in study:
 - **API Version**: 2.0 (released March 2024)
 - **API Specification**: OpenAPI 3.0
 
-For complete technical details, see `references/api_reference.md`.
+For complete technical details, see `references/api-reference.md`.

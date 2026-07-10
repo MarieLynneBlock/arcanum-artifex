@@ -1,6 +1,7 @@
 ---
-description: >
 name: miro-board
+description: >-
+  Generates Miro board content in two modes:
 version: 1.0.0
 tags:
   - miro

@@ -1,8 +1,8 @@
 ---
-description: Create research posters using HTML/CSS that can be exported to PDF or PPTX. Use this skill ONLY when the user explicitly requests PowerPoint/PPTX poster format. For standard research posters, use latex-posters instead. This skill provides modern web-based poster design with responsive layouts and easy visual integration.
 name: pptx-posters
-allowed-tools: Read Write Edit Bash
+description: Create research posters using HTML/CSS that can be exported to PDF or PPTX. Use this skill ONLY when the user explicitly requests PowerPoint/PPTX poster format. For standard research posters, use latex-posters instead. This skill provides modern web-based poster design with responsive layouts and easy visual integration.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -402,12 +402,12 @@ This skill works with:
 Available in `assets/` directory:
 
 - `poster_html_template.html`: Main HTML poster template (36×48 inches)
-- `poster_quality_checklist.md`: Pre-submission validation checklist
+- `poster-quality-checklist.md`: Pre-submission validation checklist
 
 ## References
 
 Available in `references/` directory:
 
-- `poster_content_guide.md`: Content organization and writing guidelines
-- `poster_design_principles.md`: Typography, color theory, and visual hierarchy
-- `poster_layout_design.md`: Layout principles and grid systems
+- `poster-content-guide.md`: Content organization and writing guidelines
+- `poster-design-principles.md`: Typography, color theory, and visual hierarchy
+- `poster-layout-design.md`: Layout principles and grid systems

@@ -173,7 +173,7 @@ code-to-coach/
 ├── frameworks/
 │   ├── deconstruction-model.md
 │   └── analysis-rubric.md
-├── reference/
+├── references/
 │   ├── code-smells.md
 │   ├── best-practices.md
 │   ├── cognitive-load.md

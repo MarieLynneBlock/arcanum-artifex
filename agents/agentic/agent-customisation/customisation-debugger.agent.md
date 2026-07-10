@@ -1,9 +1,10 @@
 ---
-description: 'Customisation debugger for diagnosing why agents, prompts, instructions, or skills are not discovered, invoked, scoped, or followed as expected.'
 name: 'Customisation Debugger'
+description: 'Customisation debugger for diagnosing why agents, prompts, instructions, or skills are not discovered, invoked, scoped, or followed as expected.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Customisation Debugger

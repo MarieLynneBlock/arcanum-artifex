@@ -1,7 +1,7 @@
 ---
 name: agentic-eval
 description: >
-    Design and implement evaluation loops for AI agents, including reflection, evaluator-optimizer patterns, rubric scoring, LLM-as-judge review, test-driven refinement, convergence checks, and iteration logging.
+    Use when designing and implementing evaluation loops for AI agents, including reflection, evaluator-optimiser patterns, rubric scoring, LLM-as-judge review, test-driven refinement, convergence checks, and iteration logging.
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -50,6 +50,25 @@ When applying this skill, produce the assets needed to run and inspect an evalua
 
 Treat code blocks in this skill as adaptable Python-style skeletons. Replace `llm`, `run_tests`, model settings, and logging functions with project-specific implementations.
 
+## Evaluation History Schema
+
+Log enough detail to explain why the loop stopped and which candidate was selected:
+
+```json
+{
+    "iteration": 1,
+    "candidate_id": "draft-1",
+    "overall_score": 0.82,
+    "dimension_scores": {"accuracy": 0.8, "clarity": 0.9},
+    "feedback": ["Add evidence for the risk rating."],
+    "parse_status": "valid",
+    "improvement_delta": 0.07,
+    "stopping_reason": null
+}
+```
+
+Use `parse_status` values such as `valid`, `retry_valid`, or `failed_closed`. Final summaries should include the best candidate, the stopping reason, and any evaluator uncertainty or human-review escalation.
+
 ## Pattern 1: Basic Reflection
 
 Agent evaluates and improves its own output through self-critique.
@@ -58,9 +77,21 @@ Agent evaluates and improves its own output through self-critique.
 import json
 
 
+def parse_evaluation(raw_response: str, schema_prompt: str) -> dict:
+    try:
+        return json.loads(raw_response)
+    except json.JSONDecodeError:
+        retry = llm(f"Return only valid JSON for this schema: {schema_prompt}\nResponse: {raw_response}")
+        try:
+            return json.loads(retry)
+        except json.JSONDecodeError as exc:
+            raise ValueError({"parse_status": "failed_closed", "raw_response": raw_response}) from exc
+
+
 def reflect_and_refine(task: str, criteria: list[str], max_iterations: int = 3) -> str:
     """Generate with reflection loop."""
     output = llm(f"Complete this task:\n{task}")
+    schema_prompt = '{"criterion": {"status": "PASS|FAIL", "feedback": "..."}}'
     
     for i in range(max_iterations):
         # Self-critique
@@ -70,7 +101,7 @@ def reflect_and_refine(task: str, criteria: list[str], max_iterations: int = 3) 
         Rate each: PASS/FAIL with feedback as JSON.
         """)
         
-        critique_data = json.loads(critique)
+        critique_data = parse_evaluation(critique, schema_prompt)
         all_pass = all(c["status"] == "PASS" for c in critique_data.values())
         if all_pass:
             return output
@@ -100,13 +131,25 @@ class EvaluatorOptimizer:
     
     def generate(self, task: str) -> str:
         return llm(f"Complete: {task}")
+
+    def parse_evaluation(self, raw_response: str) -> dict:
+        schema_prompt = '{"overall_score": 0.0, "dimensions": {"accuracy": 0.0, "clarity": 0.0}, "evidence": []}'
+        try:
+            return json.loads(raw_response)
+        except json.JSONDecodeError:
+            retry = llm(f"Return only valid JSON for this schema: {schema_prompt}\nResponse: {raw_response}")
+            try:
+                return json.loads(retry)
+            except json.JSONDecodeError as exc:
+                raise ValueError({"parse_status": "failed_closed", "raw_response": raw_response}) from exc
     
     def evaluate(self, output: str, task: str) -> dict:
-        return json.loads(llm(f"""
+        raw_evaluation = llm(f"""
         Evaluate output for task: {task}
         Output: {output}
-        Return JSON: {{"overall_score": 0-1, "dimensions": {{"accuracy": ..., "clarity": ...}}}}
-        """))
+        Return JSON: {{"overall_score": 0-1, "dimensions": {{"accuracy": ..., "clarity": ...}}, "evidence": [...]}}
+        """)
+        return self.parse_evaluation(raw_evaluation)
     
     def optimize(self, output: str, feedback: dict) -> str:
         return llm(f"Improve based on feedback: {feedback}\nOutput: {output}")
@@ -190,7 +233,12 @@ RUBRIC = {
 }
 
 def evaluate_with_rubric(output: str, rubric: dict) -> float:
-    scores = json.loads(llm(f"Rate 1-5 for each dimension: {list(rubric.keys())}\nOutput: {output}"))
+    raw_scores = llm(f"Rate 1-5 for each dimension as JSON: {list(rubric.keys())}\nOutput: {output}")
+    try:
+        scores = json.loads(raw_scores)
+    except json.JSONDecodeError:
+        retry = llm(f"Return only valid JSON scores for: {list(rubric.keys())}\nResponse: {raw_scores}")
+        scores = json.loads(retry)
     return sum(scores[d] * rubric[d]["weight"] for d in rubric) / 5
 ```
 

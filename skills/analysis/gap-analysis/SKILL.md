@@ -1,6 +1,8 @@
 ---
-description: >
 name: gap-analysis
+description: >-
+  Provides a repeatable framework for identifying and prioritising gaps between where things are
+  now and where they need to be.
 version: 1.0.0
 tags:
   - analysis

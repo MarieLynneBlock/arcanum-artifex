@@ -1,6 +1,6 @@
 ---
-description: NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for ChIP-seq, RNA-seq, ATAC-seq visualization.
 name: deeptools
+description: NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for ChIP-seq, RNA-seq, ATAC-seq visualization.
 license: BSD license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -64,7 +64,7 @@ chmod +x qc_workflow.sh
 
 ### 3. Most Common Operations
 
-See `assets/quick_reference.md` for frequently used commands and parameters.
+See `assets/quick-reference.md` for frequently used commands and parameters.
 
 ## Installation
 
@@ -155,7 +155,7 @@ bamCompare -b1 treatment.bam -b2 control.bam -o ratio.bw \
 
 **Key tools:** bamCoverage, bamCompare, multiBamSummary, multiBigwigSummary, correctGCBias, alignmentSieve
 
-Complete reference: `references/tools_reference.md` → "BAM and bigWig File Processing Tools"
+Complete reference: `references/tools-reference.md` → "BAM and bigWig File Processing Tools"
 
 ### Quality Control
 
@@ -174,7 +174,7 @@ plotCorrelation -in counts.npz --corMethod pearson \
 
 **Key tools:** plotFingerprint, plotCoverage, plotCorrelation, plotPCA, bamPEFragmentSize
 
-Complete reference: `references/tools_reference.md` → "Quality Control Tools"
+Complete reference: `references/tools-reference.md` → "Quality Control Tools"
 
 ### Visualization
 
@@ -197,11 +197,11 @@ plotProfile -m matrix.gz -o profile.png \
 
 **Key tools:** computeMatrix, plotHeatmap, plotProfile, plotEnrichment
 
-Complete reference: `references/tools_reference.md` → "Visualization Tools"
+Complete reference: `references/tools-reference.md` → "Visualization Tools"
 
 ## Normalization Methods
 
-Choosing the correct normalization is critical for valid comparisons. Consult `references/normalization_methods.md` for comprehensive guidance.
+Choosing the correct normalization is critical for valid comparisons. Consult `references/normalization-methods.md` for comprehensive guidance.
 
 **Quick selection guide:**
 
@@ -218,7 +218,7 @@ Choosing the correct normalization is critical for valid comparisons. Consult `r
 - **BPM**: Bins per million
 - **None**: Raw counts (not recommended for comparisons)
 
-Full explanation: `references/normalization_methods.md`
+Full explanation: `references/normalization-methods.md`
 
 ## Effective Genome Sizes
 
@@ -232,7 +232,7 @@ RPGC normalization requires effective genome size. Common values:
 | *Drosophila* | dm6 | 142,573,017 | `--effectiveGenomeSize 142573017` |
 | *C. elegans* | ce10/ce11 | 100,286,401 | `--effectiveGenomeSize 100286401` |
 
-Complete table with read-length-specific values: `references/effective_genome_sizes.md`
+Complete table with read-length-specific values: `references/effective-genome-sizes.md`
 
 ## Common Parameters Across Tools
 
@@ -330,7 +330,7 @@ Common errors and solutions explained in script output.
 
 This skill includes comprehensive reference documentation:
 
-### references/tools_reference.md
+### references/tools-reference.md
 Complete documentation of all deepTools commands organized by category:
 - BAM and bigWig processing tools (9 tools)
 - Quality control tools (6 tools)
@@ -357,7 +357,7 @@ Complete workflow examples for common analyses:
 
 **Use this reference when:** Users need complete analysis pipelines or workflow examples.
 
-### references/normalization_methods.md
+### references/normalization-methods.md
 Comprehensive guide to normalization methods:
 - Detailed explanation of each method (RPGC, CPM, RPKM, BPM, etc.)
 - When to use each method
@@ -368,7 +368,7 @@ Comprehensive guide to normalization methods:
 
 **Use this reference when:** Users ask about normalization, comparing samples, or which method to use.
 
-### references/effective_genome_sizes.md
+### references/effective-genome-sizes.md
 Effective genome size values and usage:
 - Common organism values (human, mouse, fly, worm, zebrafish)
 - Read-length-specific values
@@ -421,7 +421,7 @@ chmod +x qc.sh
 
 ## Assets
 
-### assets/quick_reference.md
+### assets/quick-reference.md
 
 Quick reference card with most common commands, effective genome sizes, and typical workflow pattern.
 
@@ -440,7 +440,7 @@ Quick reference card with most common commands, effective genome sizes, and typi
 ### For Experienced Users
 
 1. Provide specific tool commands for requested operations
-2. Reference appropriate sections in `references/tools_reference.md`
+2. Reference appropriate sections in `references/tools-reference.md`
 3. Suggest optimizations and best practices
 4. Offer troubleshooting for issues
 
@@ -470,21 +470,21 @@ Quick reference card with most common commands, effective genome sizes, and typi
 ### Referencing Documentation
 
 When users need detailed information:
-- **Tool details**: Direct to specific sections in `references/tools_reference.md`
+- **Tool details**: Direct to specific sections in `references/tools-reference.md`
 - **Workflows**: Use `references/workflows.md` for complete analysis pipelines
-- **Normalization**: Consult `references/normalization_methods.md` for method selection
-- **Genome sizes**: Reference `references/effective_genome_sizes.md`
+- **Normalization**: Consult `references/normalization-methods.md` for method selection
+- **Genome sizes**: Reference `references/effective-genome-sizes.md`
 
 Search references using grep patterns:
 ```bash
 # Find tool documentation
-grep -A 20 "^### toolname" references/tools_reference.md
+grep -A 20 "^### toolname" references/tools-reference.md
 
 # Find workflow
 grep -A 50 "^## Workflow Name" references/workflows.md
 
 # Find normalization method
-grep -A 15 "^### Method Name" references/normalization_methods.md
+grep -A 15 "^### Method Name" references/normalization-methods.md
 ```
 
 ## Example Interactions
@@ -503,7 +503,7 @@ Response approach:
 Response approach:
 1. Ask about experiment type (ChIP-seq, RNA-seq, etc.)
 2. Ask about comparison goal (within-sample or between-sample)
-3. Consult `references/normalization_methods.md` selection guide
+3. Consult `references/normalization-methods.md` selection guide
 4. Recommend appropriate method with justification
 5. Provide command example with parameters
 

@@ -1,8 +1,8 @@
 ---
-description: Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR), audio (with transcription), HTML, CSV, JSON, XML, ZIP, YouTube URLs, EPubs and more.
 name: markitdown
-allowed-tools: Read Write Edit Bash
+description: Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR), audio (with transcription), HTML, CSV, JSON, XML, ZIP, YouTube URLs, EPubs and more.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -470,8 +470,8 @@ print(result.text_content)
 
 ## Next Steps
 
-- See `references/api_reference.md` for complete API documentation
-- Check `references/file_formats.md` for format-specific details
+- See `references/api-reference.md` for complete API documentation
+- Check `references/file-formats.md` for format-specific details
 - Review `scripts/batch_convert.py` for automation examples
 - Explore `scripts/convert_with_ai.py` for AI-enhanced conversions
 

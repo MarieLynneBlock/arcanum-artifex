@@ -20,20 +20,20 @@ clinical-decision-support/
 ├── README.md                    # This file
 │
 ├── references/                  # Clinical guidance documents
-│   ├── patient_cohort_analysis.md
-│   ├── treatment_recommendations.md
-│   ├── clinical_decision_algorithms.md
-│   ├── biomarker_classification.md
-│   ├── outcome_analysis.md
-│   └── evidence_synthesis.md
+│   ├── patient-cohort-analysis.md
+│   ├── treatment-recommendations.md
+│   ├── clinical-decision-algorithms.md
+│   ├── biomarker-classification.md
+│   ├── outcome-analysis.md
+│   └── evidence-synthesis.md
 │
 ├── assets/                      # Templates and examples
 │   ├── cohort_analysis_template.tex
 │   ├── treatment_recommendation_template.tex
 │   ├── clinical_pathway_template.tex
 │   ├── biomarker_report_template.tex
-│   ├── example_gbm_cohort.md
-│   ├── recommendation_strength_guide.md
+│   ├── example-gbm-cohort.md
+│   ├── recommendation-strength-guide.md
 │   └── color_schemes.tex
 │
 └── scripts/                     # Analysis and generation tools

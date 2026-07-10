@@ -107,22 +107,22 @@ For in-depth help on specific components:
 ## Reference Materials
 
 ### Agency Guidelines
-- `references/nsf_guidelines.md` - Comprehensive NSF guidance
-- `references/nih_guidelines.md` - NIH mechanisms and review criteria
-- `references/doe_guidelines.md` - DOE offices and programs
-- `references/darpa_guidelines.md` - DARPA structure and strategy
+- `references/nsf-guidelines.md` - Comprehensive NSF guidance
+- `references/nih-guidelines.md` - NIH mechanisms and review criteria
+- `references/doe-guidelines.md` - DOE offices and programs
+- `references/darpa-guidelines.md` - DARPA structure and strategy
 
 ### Specialized Guides
-- `references/broader_impacts.md` - NSF broader impacts strategies
-- `references/specific_aims_guide.md` - NIH Specific Aims page mastery
+- `references/broader-impacts.md` - NSF broader impacts strategies
+- `references/specific-aims-guide.md` - NIH Specific Aims page mastery
 - `references/budget_preparation.md` - Budget development (coming soon)
 - `references/review_criteria.md` - Comparative review criteria (coming soon)
 - `references/timeline_planning.md` - Project management (coming soon)
 
 ### Templates
-- `assets/nsf_project_summary_template.md`
-- `assets/nih_specific_aims_template.md`
-- `assets/budget_justification_template.md`
+- `assets/nsf-project-summary-template.md`
+- `assets/nih-specific-aims-template.md`
+- `assets/budget-justification-template.md`
 
 ## Success Metrics
 

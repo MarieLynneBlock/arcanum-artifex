@@ -1,6 +1,6 @@
 ---
-description: Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMILES to features, for QSAR and molecular ML.
 name: molfeat
+description: Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMILES to features, for QSAR and molecular ML.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -429,7 +429,7 @@ except FileNotFoundError:
 
 This skill includes comprehensive reference documentation:
 
-### references/api_reference.md
+### references/api-reference.md
 Complete API documentation covering:
 - `molfeat.calc` - All calculator classes and parameters
 - `molfeat.trans` - Transformer classes and methods
@@ -439,7 +439,7 @@ Complete API documentation covering:
 
 **When to load:** Reference when implementing specific calculators, understanding transformer parameters, or integrating with scikit-learn/PyTorch.
 
-### references/available_featurizers.md
+### references/available-featurizers.md
 Comprehensive catalog of all 100+ featurizers organized by category:
 - Transformer-based language models (ChemBERTa, ChemGPT)
 - Graph neural networks (GIN, Graphormer)
@@ -453,8 +453,8 @@ Comprehensive catalog of all 100+ featurizers organized by category:
 
 **Search tip:** Use grep to find specific featurizer types:
 ```bash
-grep -i "chembert" references/available_featurizers.md
-grep -i "pharmacophore" references/available_featurizers.md
+grep -i "chembert" references/available-featurizers.md
+grep -i "pharmacophore" references/available-featurizers.md
 ```
 
 ### references/examples.md

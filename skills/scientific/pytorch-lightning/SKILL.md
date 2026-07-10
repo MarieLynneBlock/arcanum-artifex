@@ -1,6 +1,6 @@
 ---
-description: Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.
 name: pytorch-lightning
+description: Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -37,7 +37,7 @@ Organize PyTorch models into six logical sections:
 
 **Quick template reference:** See `scripts/template_lightning_module.py` for a complete boilerplate.
 
-**Detailed documentation:** Read `references/lightning_module.md` for comprehensive method documentation, hooks, properties, and best practices.
+**Detailed documentation:** Read `references/lightning-module.md` for comprehensive method documentation, hooks, properties, and best practices.
 
 ### 2. Trainer - Training Automation
 
@@ -65,7 +65,7 @@ Encapsulate all data processing steps in a reusable class:
 
 **Quick template reference:** See `scripts/template_datamodule.py` for a complete boilerplate.
 
-**Detailed documentation:** Read `references/data_module.md` for method details and usage patterns.
+**Detailed documentation:** Read `references/data-module.md` for method details and usage patterns.
 
 ### 4. Callbacks - Extensible Training Logic
 
@@ -103,7 +103,7 @@ Choose the right strategy based on model size:
 
 Configure with: `Trainer(strategy="ddp", accelerator="gpu", devices=4)`
 
-**Detailed documentation:** Read `references/distributed_training.md` for strategy comparison and configuration.
+**Detailed documentation:** Read `references/distributed-training.md` for strategy comparison and configuration.
 
 ### 7. Best Practices
 
@@ -113,7 +113,7 @@ Configure with: `Trainer(strategy="ddp", accelerator="gpu", devices=4)`
 - Reproducibility - Use `seed_everything()` and `Trainer(deterministic=True)`
 - Debugging - Use `Trainer(fast_dev_run=True)` to test with 1 batch
 
-**Detailed documentation:** Read `references/best_practices.md` for common patterns and pitfalls.
+**Detailed documentation:** Read `references/best-practices.md` for common patterns and pitfalls.
 
 ## Quick Workflow
 
@@ -162,10 +162,10 @@ Executable Python templates for common PyTorch Lightning patterns:
 ### references/
 Detailed documentation for each PyTorch Lightning component:
 
-- `lightning_module.md` - Comprehensive LightningModule guide (methods, hooks, properties)
+- `lightning-module.md` - Comprehensive LightningModule guide (methods, hooks, properties)
 - `trainer.md` - Trainer configuration and parameters
-- `data_module.md` - LightningDataModule patterns and methods
+- `data-module.md` - LightningDataModule patterns and methods
 - `callbacks.md` - Built-in and custom callbacks
 - `logging.md` - Logger integrations and usage
-- `distributed_training.md` - DDP, FSDP, DeepSpeed comparison and setup
-- `best_practices.md` - Common patterns, tips, and pitfalls
+- `distributed-training.md` - DDP, FSDP, DeepSpeed comparison and setup
+- `best-practices.md` - Common patterns, tips, and pitfalls

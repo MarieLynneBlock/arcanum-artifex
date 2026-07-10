@@ -1,6 +1,6 @@
 ---
-description: Comprehensive biosignal processing toolkit for analyzing physiological data including ECG, EEG, EDA, RSP, PPG, EMG, and EOG signals. Use this skill when processing cardiovascular signals, brain activity, electrodermal responses, respiratory patterns, muscle activity, or eye movements. Applicable for heart rate variability analysis, event-related potentials, complexity measures, autonomic nervous system assessment, psychophysiology research, and multi-modal physiological signal integration.
 name: neurokit2
+description: Comprehensive biosignal processing toolkit for analyzing physiological data including ECG, EEG, EDA, RSP, PPG, EMG, and EOG signals. Use this skill when processing cardiovascular signals, brain activity, electrodermal responses, respiratory patterns, muscle activity, or eye movements. Applicable for heart rate variability analysis, event-related potentials, complexity measures, autonomic nervous system assessment, psychophysiology research, and multi-modal physiological signal integration.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -28,7 +28,7 @@ Apply this skill when working with:
 
 ### 1. Cardiac Signal Processing (ECG/PPG)
 
-Process electrocardiogram and photoplethysmography signals for cardiovascular analysis. See `references/ecg_cardiac.md` for detailed workflows.
+Process electrocardiogram and photoplethysmography signals for cardiovascular analysis. See `references/ecg-cardiac.md` for detailed workflows.
 
 **Primary workflows:**
 - ECG processing pipeline: cleaning → R-peak detection → delineation → quality assessment
@@ -166,7 +166,7 @@ features = nk.eog_features(signals, sampling_rate=500)
 
 ### 8. General Signal Processing
 
-Apply filtering, decomposition, and transformation operations to any signal. See `references/signal_processing.md` for comprehensive utilities.
+Apply filtering, decomposition, and transformation operations to any signal. See `references/signal-processing.md` for comprehensive utilities.
 
 **Key operations:**
 - Filtering (lowpass, highpass, bandpass, bandstop)
@@ -212,7 +212,7 @@ lyap = nk.complexity_lyapunov(signal, sampling_rate=1000)
 
 ### 10. Event-Related Analysis
 
-Create epochs around stimulus events and analyze physiological responses. See `references/epochs_events.md` for workflows.
+Create epochs around stimulus events and analyze physiological responses. See `references/epochs-events.md` for workflows.
 
 **Primary capabilities:**
 - Epoch creation from event markers
@@ -235,7 +235,7 @@ grand_average = nk.epochs_average(epochs)
 
 ### 11. Multi-Signal Integration
 
-Process multiple physiological signals simultaneously with unified output. See `references/bio_module.md` for integration workflows.
+Process multiple physiological signals simultaneously with unified output. See `references/bio-module.md` for integration workflows.
 
 **Key functions:**
 ```python
@@ -331,7 +331,7 @@ eda_epochs = nk.eda_eventrelated(epochs)
 
 This skill includes comprehensive reference documentation organized by signal type and analysis method:
 
-- **ecg_cardiac.md**: ECG/PPG processing, R-peak detection, delineation, quality assessment
+- **ecg-cardiac.md**: ECG/PPG processing, R-peak detection, delineation, quality assessment
 - **hrv.md**: Heart rate variability indices across all domains
 - **eeg.md**: EEG analysis, frequency bands, microstates, source localization
 - **eda.md**: Electrodermal activity processing and SCR analysis
@@ -339,10 +339,10 @@ This skill includes comprehensive reference documentation organized by signal ty
 - **ppg.md**: Photoplethysmography signal analysis
 - **emg.md**: Electromyography processing and activation detection
 - **eog.md**: Electrooculography and blink analysis
-- **signal_processing.md**: General signal utilities and transformations
+- **signal-processing.md**: General signal utilities and transformations
 - **complexity.md**: Entropy, fractal, and nonlinear measures
-- **epochs_events.md**: Event-related analysis and epoch creation
-- **bio_module.md**: Multi-signal integration workflows
+- **epochs-events.md**: Event-related analysis and epoch creation
+- **bio-module.md**: Multi-signal integration workflows
 
 Load specific reference files as needed using the Read tool to access detailed function documentation and parameters.
 

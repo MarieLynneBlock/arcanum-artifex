@@ -1,6 +1,6 @@
 ---
-description: Comprehensive toolkit for preparing ISO 13485 certification documentation for medical device Quality Management Systems. Use when users need help with ISO 13485 QMS documentation, including (1) conducting gap analysis of existing documentation, (2) creating Quality Manuals, (3) developing required procedures and work instructions, (4) preparing Medical Device Files, (5) understanding ISO 13485 requirements, or (6) identifying missing documentation for medical device certification. Also use when users mention medical device regulations, QMS certification, FDA QMSR, EU MDR, or need help with quality system documentation.
 name: iso-13485-certification
+description: Comprehensive toolkit for preparing ISO 13485 certification documentation for medical device Quality Management Systems. Use when users need help with ISO 13485 QMS documentation, including (1) conducting gap analysis of existing documentation, (2) creating Quality Manuals, (3) developing required procedures and work instructions, (4) preparing Medical Device Files, (5) understanding ISO 13485 requirements, or (6) identifying missing documentation for medical device certification. Also use when users mention medical device regulations, QMS certification, FDA QMSR, EU MDR, or need help with quality system documentation.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -101,7 +101,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 
 **Available templates:**
 - Quality Manual: `assets/templates/quality-manual-template.md`
-- CAPA Procedure: `assets/templates/procedures/CAPA-procedure-template.md`
+- CAPA Procedure: `assets/templates/procedures/capa-procedure-template.md`
 - Document Control: `assets/templates/procedures/document-control-procedure-template.md`
 
 **Process for document creation:**
@@ -254,7 +254,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 **Example: Creating CAPA Procedure**
 
 1. Read ISO 13485 Clauses 8.5.2 and 8.5.3 from references
-2. Use `assets/templates/procedures/CAPA-procedure-template.md`
+2. Use `assets/templates/procedures/capa-procedure-template.md`
 3. Customize:
    - CAPA prioritization criteria for your organization
    - Root cause analysis methods you'll use
@@ -578,7 +578,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 
 ### assets/templates/
 - `quality-manual-template.md` - Complete template for Quality Manual with all required sections
-- `procedures/CAPA-procedure-template.md` - Example CAPA procedure following best practices
+- `procedures/capa-procedure-template.md` - Example CAPA procedure following best practices
 - `procedures/document-control-procedure-template.md` - Example document control procedure
 
 ## Quick Reference

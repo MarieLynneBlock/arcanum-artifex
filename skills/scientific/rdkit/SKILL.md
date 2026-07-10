@@ -1,6 +1,6 @@
 ---
-description: Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity, reactions. For standard workflows with simpler interface, use datamol (wrapper around RDKit). Use rdkit for advanced control, custom sanitization, specialized algorithms.
 name: rdkit
+description: Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity, reactions. For standard workflows with simpler interface, use datamol (wrapper around RDKit). Use rdkit for advanced control, custom sanitization, specialized algorithms.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -760,9 +760,9 @@ suppl = Chem.MultithreadedSDMolSupplier('large.sdf', numWriterThreads=4)
 
 This skill includes detailed API reference documentation:
 
-- `api_reference.md` - Comprehensive listing of RDKit modules, functions, and classes organized by functionality
-- `descriptors_reference.md` - Complete list of available molecular descriptors with descriptions
-- `smarts_patterns.md` - Common SMARTS patterns for functional groups and structural features
+- `api-reference.md` - Comprehensive listing of RDKit modules, functions, and classes organized by functionality
+- `descriptors-reference.md` - Complete list of available molecular descriptors with descriptions
+- `smarts-patterns.md` - Common SMARTS patterns for functional groups and structural features
 
 Load these references when needing specific API details, parameter information, or pattern examples.
 

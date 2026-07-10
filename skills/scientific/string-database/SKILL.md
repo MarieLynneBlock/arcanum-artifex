@@ -1,6 +1,6 @@
 ---
-description: Query STRING API for protein-protein interactions (59M proteins, 20B interactions). Network analysis, GO/KEGG enrichment, interaction discovery, 5000+ species, for systems biology.
 name: string-database
+description: Query STRING API for protein-protein interactions (59M proteins, 20B interactions). Network analysis, GO/KEGG enrichment, interaction discovery, 5000+ species, for systems biology.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -28,7 +28,7 @@ This skill should be used when:
 
 The skill provides:
 1. Python helper functions (`scripts/string_api.py`) for all STRING REST API operations
-2. Comprehensive reference documentation (`references/string_reference.md`) with detailed API specifications
+2. Comprehensive reference documentation (`references/string-reference.md`) with detailed API specifications
 
 When users request STRING data, determine which operation is needed and use the appropriate function from `scripts/string_api.py`.
 
@@ -473,7 +473,7 @@ Only includes evidence for direct physical binding (experimental data and databa
 
 ## Detailed Reference
 
-For comprehensive API documentation, complete parameter lists, output formats, and advanced usage, refer to `references/string_reference.md`. This includes:
+For comprehensive API documentation, complete parameter lists, output formats, and advanced usage, refer to `references/string-reference.md`. This includes:
 
 - Complete API endpoint specifications
 - All supported output formats (TSV, JSON, XML, PSI-MI)

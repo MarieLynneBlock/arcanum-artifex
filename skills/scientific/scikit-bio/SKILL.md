@@ -1,6 +1,6 @@
 ---
-description: Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ordination (PCoA), PERMANOVA, FASTA/Newick I/O, for microbiome analysis.
 name: scikit-bio
+description: Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ordination (PCoA), PERMANOVA, FASTA/Newick I/O, for microbiome analysis.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -420,7 +420,7 @@ uv pip install scikit-bio
 
 ## Reference Documentation
 
-For detailed API information, parameter specifications, and advanced usage examples, refer to `references/api_reference.md` which contains comprehensive documentation on:
+For detailed API information, parameter specifications, and advanced usage examples, refer to `references/api-reference.md` which contains comprehensive documentation on:
 - Complete method signatures and parameters for all capabilities
 - Extended code examples for complex workflows
 - Troubleshooting common issues

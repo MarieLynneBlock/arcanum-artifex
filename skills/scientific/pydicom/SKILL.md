@@ -1,6 +1,6 @@
 ---
-description: Python library for working with DICOM (Digital Imaging and Communications in Medicine) files. Use this skill when reading, writing, or modifying medical imaging data in DICOM format, extracting pixel data from medical images (CT, MRI, X-ray, ultrasound), anonymizing DICOM files, working with DICOM metadata and tags, converting DICOM images to other formats, handling compressed DICOM data, or processing medical imaging datasets. Applies to tasks involving medical image analysis, PACS systems, radiology workflows, and healthcare imaging applications.
 name: pydicom
+description: Python library for working with DICOM (Digital Imaging and Communications in Medicine) files. Use this skill when reading, writing, or modifying medical imaging data in DICOM format, extracting pixel data from medical images (CT, MRI, X-ray, ultrasound), anonymizing DICOM files, working with DICOM metadata and tags, converting DICOM images to other formats, handling compressed DICOM data, or processing medical imaging datasets. Applies to tasks involving medical image analysis, PACS systems, radiology workflows, and healthcare imaging applications.
 license: https://github.com/pydicom/pydicom/blob/main/LICENSE
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -306,7 +306,7 @@ ds_uncompressed.save_as('compressed_jpeg.dcm')
 - `JPEG2000Lossless` - JPEG 2000 lossless
 - `RLELossless` - Run-Length Encoding lossless
 
-See `references/transfer_syntaxes.md` for complete list.
+See `references/transfer-syntaxes.md` for complete list.
 
 ### Working with DICOM Sequences
 
@@ -394,8 +394,8 @@ python scripts/extract_metadata.py file.dcm --output metadata.txt
 
 Detailed reference information is available in the `references/` directory:
 
-- **common_tags.md**: Comprehensive list of commonly used DICOM tags organized by category (Patient, Study, Series, Image, etc.)
-- **transfer_syntaxes.md**: Complete reference of DICOM transfer syntaxes and compression formats
+- **common-tags.md**: Comprehensive list of commonly used DICOM tags organized by category (Patient, Study, Series, Image, etc.)
+- **transfer-syntaxes.md**: Complete reference of DICOM transfer syntaxes and compression formats
 
 ## Common Issues and Solutions
 

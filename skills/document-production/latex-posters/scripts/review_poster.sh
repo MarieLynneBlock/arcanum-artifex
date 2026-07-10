@@ -207,7 +207,7 @@ echo -e "${BLUE}   Quality Check Complete${NC}"
 echo -e "${BLUE}═══════════════════════════════════════════════${NC}"
 echo ""
 echo -e "Review the checks above and complete manual verification."
-echo -e "For full checklist, see: ${BLUE}assets/poster_quality_checklist.md${NC}"
+echo -e "For full checklist, see: ${BLUE}assets/poster-quality-checklist.md${NC}"
 echo ""
 
 exit 0

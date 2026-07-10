@@ -1,6 +1,6 @@
 ---
-description: Comprehensive Python library for astronomy and astrophysics. This skill should be used when working with astronomical data including celestial coordinates, physical units, FITS files, cosmological calculations, time systems, tables, world coordinate systems (WCS), and astronomical data analysis. Use when tasks involve coordinate transformations, unit conversions, FITS file manipulation, cosmological distance calculations, time scale conversions, or astronomical data processing.
 name: astropy
+description: Comprehensive Python library for astronomy and astrophysics. This skill should be used when working with astronomical data including celestial coordinates, physical units, FITS files, cosmological calculations, time systems, tables, world coordinate systems (WCS), and astronomical data analysis. Use when tasks involve coordinate transformations, unit conversions, FITS file manipulation, cosmological distance calculations, time scale conversions, or astronomical data processing.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -160,11 +160,11 @@ Transform between pixel coordinates in images and world coordinates.
 - Access WCS parameters (reference pixel, projection, scale)
 - Create custom WCS objects
 
-**See:** `references/wcs_and_other_modules.md` for WCS operations and transformations.
+**See:** `references/wcs-and-other-modules.md` for WCS operations and transformations.
 
 ## Additional Capabilities
 
-The `references/wcs_and_other_modules.md` file also covers:
+The `references/wcs-and-other-modules.md` file also covers:
 
 ### NDData and CCDData
 Containers for n-dimensional datasets with metadata, uncertainty, masking, and WCS information.
@@ -325,4 +325,4 @@ For detailed information on specific modules:
 - `references/fits.md` - FITS file operations and manipulation
 - `references/tables.md` - Table creation, I/O, and operations
 - `references/time.md` - Time formats, scales, and calculations
-- `references/wcs_and_other_modules.md` - WCS, NDData, modeling, visualization, constants, and utilities
+- `references/wcs-and-other-modules.md` - WCS, NDData, modeling, visualization, constants, and utilities

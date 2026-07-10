@@ -1,6 +1,6 @@
 ---
-description: Access AlphaFold 200M+ AI-predicted protein structures. Retrieve structures by UniProt ID, download PDB/mmCIF files, analyze confidence metrics (pLDDT, PAE), for drug discovery and structural biology.
 name: alphafold-database
+description: Access AlphaFold 200M+ AI-predicted protein structures. Retrieve structures by UniProt ID, download PDB/mmCIF files, analyze confidence metrics (pLDDT, PAE), for drug discovery and structural biology.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -453,7 +453,7 @@ af_structures = [s for s in data['structures'] if s['provider'] == 'AlphaFold DB
 
 ## Resources
 
-### references/api_reference.md
+### references/api-reference.md
 
 Comprehensive API documentation covering:
 - Complete REST API endpoint specifications

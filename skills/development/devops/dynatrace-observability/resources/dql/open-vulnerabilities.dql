@@ -1,0 +1,7 @@
+fetch security.events, from:now() - 7d
+| filter event.type == "VULNERABILITY_STATE_REPORT_EVENT"
+| dedup {vulnerability.display_id, affected_entity.id}, sort: {timestamp desc}
+| filter vulnerability.resolution_status == "OPEN"
+| filter vulnerability.severity in ["CRITICAL", "HIGH"]
+| fields timestamp, vulnerability.display_id, vulnerability.title, vulnerability.severity, affected_entity.id, vulnerability.resolution_status
+| sort vulnerability.severity desc, timestamp desc

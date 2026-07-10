@@ -1,6 +1,9 @@
 ---
-description: >
 name: requirements-document
+description: >-
+  Generates a Business Requirements Document (BRD) or Functional Requirements Specification (FRS)
+  skeleton populated from the user's input. It structures requirements with unique IDs, priority,
+  source, and acceptance notes — making them traceable and reviewable.
 version: 1.0.0
 tags:
   - requirements

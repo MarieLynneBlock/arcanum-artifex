@@ -1,6 +1,6 @@
 ---
-description: This skill should be used when working with genomic interval data (BED files) for machine learning tasks. Use for training region embeddings (Region2Vec, BEDspace), single-cell ATAC-seq analysis (scEmbed), building consensus peaks (universes), or any ML-based analysis of genomic regions. Applies to BED file collections, scATAC-seq data, chromatin accessibility datasets, and region-based genomic feature learning.
 name: geniml
+description: This skill should be used when working with genomic interval data (BED files) for machine learning tasks. Use for training region embeddings (Region2Vec, BEDspace), single-cell ATAC-seq analysis (scEmbed), building consensus peaks (universes), or any ML-based analysis of genomic regions. Applies to BED file collections, scATAC-seq data, chromatin accessibility datasets, and region-based genomic feature learning.
 license: BSD-2-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -95,7 +95,7 @@ Build reference peak sets (universes) from BED file collections using multiple s
 - **ML (Maximum Likelihood)**: Probabilistic modeling of positions
 - **HMM (Hidden Markov Model)**: Complex state modeling
 
-**Reference:** See `references/consensus_peaks.md` for method comparison, parameters, and examples.
+**Reference:** See `references/consensus-peaks.md` for method comparison, parameters, and examples.
 
 ### 5. Utilities: Supporting Tools
 

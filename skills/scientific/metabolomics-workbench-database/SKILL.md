@@ -1,6 +1,6 @@
 ---
-description: Access NIH Metabolomics Workbench via REST API (4,200+ studies). Query metabolites, RefMet nomenclature, MS/NMR data, m/z searches, study metadata, for metabolomics and biomarker discovery.
 name: metabolomics-workbench-database
+description: Access NIH Metabolomics Workbench via REST API (4,200+ studies). Query metabolites, RefMet nomenclature, MS/NMR data, m/z searches, study metadata, for metabolomics and biomarker discovery.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -246,7 +246,7 @@ Specify format by appending `/json` or `/txt` to API URLs. When format is omitte
 
 ### references/
 
-Detailed API reference documentation is available in `references/api_reference.md`, including:
+Detailed API reference documentation is available in `references/api-reference.md`, including:
 - Complete REST API endpoint specifications
 - All available contexts (compound, study, refmet, metstat, gene, protein, moverz)
 - Input/output parameter details

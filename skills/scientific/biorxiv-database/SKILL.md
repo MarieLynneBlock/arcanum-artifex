@@ -1,6 +1,6 @@
 ---
-description: Efficient database search tool for bioRxiv preprint server. Use this skill when searching for life sciences preprints by keywords, authors, date ranges, or categories, retrieving paper metadata, downloading PDFs, or conducting literature reviews.
 name: biorxiv-database
+description: Efficient database search tool for bioRxiv preprint server. Use this skill when searching for life sciences preprints by keywords, authors, date ranges, or categories, retrieving paper metadata, downloading PDFs, or conducting literature reviews.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -470,7 +470,7 @@ Results: 7/7 tests passed (100%)
 ## Reference Documentation
 
 For detailed API specifications, endpoint documentation, and response schemas, refer to:
-- `references/api_reference.md` - Complete bioRxiv API documentation
+- `references/api-reference.md` - Complete bioRxiv API documentation
 
 The reference file includes:
 - Full API endpoint specifications

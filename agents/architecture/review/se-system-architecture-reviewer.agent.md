@@ -1,10 +1,11 @@
 ---
-description: 'System architecture review specialist with Well-Architected frameworks, design validation, and scalability analysis for AI and distributed systems'
 name: 'SE: Architect'
+description: 'System architecture review specialist with Well-Architected frameworks, design validation, and scalability analysis for AI and distributed systems'
 tools: ['search/codebase', 'edit/editFiles', 'search', 'web/fetch']
 model: GPT-5
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # System Architecture Reviewer

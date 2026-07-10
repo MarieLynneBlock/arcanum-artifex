@@ -1,6 +1,6 @@
 ---
-description: "Create professional infographics using Nano Banana Pro AI with smart iterative refinement. Uses Gemini 3 Pro for quality review. Integrates research-lookup and web search for accurate data. Supports 10 infographic types, 8 industry styles, and colorblind-safe palettes."
 name: infographics
+description: "Create professional infographics using Nano Banana Pro AI with smart iterative refinement. Uses Gemini 3 Pro for quality review. Integrates research-lookup and web search for accurate data. Supports 10 infographic types, 8 industry styles, and colorblind-safe palettes."
 allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'Marie-Lynne Block'
@@ -511,9 +511,9 @@ better sleep, lower blood pressure, emotional balance"
 
 For detailed guidance, load these reference files:
 
-- **`references/infographic_types.md`**: Extended templates for all 10+ types
-- **`references/design_principles.md`**: Visual hierarchy, layout, typography
-- **`references/color_palettes.md`**: Full palette specifications
+- **`references/infographic-types.md`**: Extended templates for all 10+ types
+- **`references/design-principles.md`**: Visual hierarchy, layout, typography
+- **`references/color-palettes.md`**: Full palette specifications
 
 ---
 

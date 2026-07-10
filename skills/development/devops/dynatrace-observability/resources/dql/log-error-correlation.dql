@@ -1,0 +1,5 @@
+fetch logs, from:now() - 2h
+| filter matchesPhrase(content, "ERROR_SEARCH_PHRASE")
+| fields timestamp, loglevel, content, trace_id, dt.entity.process_group
+| sort timestamp desc
+| limit 100

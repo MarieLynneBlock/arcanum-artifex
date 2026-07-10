@@ -1,6 +1,6 @@
 ---
-description: Access COSMIC cancer mutation database. Query somatic mutations, Cancer Gene Census, mutational signatures, gene fusions, for cancer research and precision oncology. Requires authentication.
 name: cosmic-database
+description: Access COSMIC cancer mutation database. Query somatic mutations, Cancer Gene Census, mutational signatures, gene fusions, for cancer research and precision oncology. Requires authentication.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -243,7 +243,7 @@ for record in vcf.fetch('17', 7577000, 7579000):  # TP53 region
 
 ## Data Reference
 
-For comprehensive information about COSMIC data structure, available files, and field descriptions, see `references/cosmic_data_reference.md`. This reference includes:
+For comprehensive information about COSMIC data structure, available files, and field descriptions, see `references/cosmic-data-reference.md`. This reference includes:
 
 - Complete list of available data types and files
 - Detailed field descriptions for each file type

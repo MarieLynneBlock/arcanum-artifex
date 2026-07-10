@@ -1,8 +1,8 @@
 ---
-description: This skill should be used when converting academic papers into promotional and presentation formats including interactive websites (Paper2Web), presentation videos (Paper2Video), and conference posters (Paper2Poster). Use this skill for tasks involving paper dissemination, conference preparation, creating explorable academic homepages, generating video abstracts, or producing print-ready posters from LaTeX or PDF sources.
 name: paper-2-web
-allowed-tools: Read Write Edit Bash
+description: This skill should be used when converting academic papers into promotional and presentation formats including interactive websites (Paper2Web), presentation videos (Paper2Video), and conference posters (Paper2Poster). Use this skill for tasks involving paper dissemination, conference preparation, creating explorable academic homepages, generating video abstracts, or producing print-ready posters from LaTeX or PDF sources.
 license: Unknown
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -193,7 +193,7 @@ python pipeline_light.py \
   --paper_latex_root "path/to/paper"
 ```
 
-→ **See `references/usage_examples.md` for comprehensive workflow examples**
+→ **See `references/usage-examples.md` for comprehensive workflow examples**
 
 ---
 
@@ -462,7 +462,7 @@ This skill includes comprehensive reference documentation:
 - **`references/paper2web.md`**: Detailed Paper2Web documentation with all features
 - **`references/paper2video.md`**: Comprehensive Paper2Video guide including talking-head setup
 - **`references/paper2poster.md`**: Complete Paper2Poster documentation with design templates
-- **`references/usage_examples.md`**: Real-world examples and workflow patterns
+- **`references/usage-examples.md`**: Real-world examples and workflow patterns
 
 **External Resources**:
 - GitHub Repository: https://github.com/YuhangChen1/Paper2All

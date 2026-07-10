@@ -255,8 +255,8 @@ class TestReferenceFiles(unittest.TestCase):
         return content
 
     def test_api_reference_exists_and_comprehensive(self):
-        """references/api_reference.md must exist and cover key API endpoints."""
-        content = self._read_reference("api_reference.md")
+        """references/api-reference.md must exist and cover key API endpoints."""
+        content = self._read_reference("api-reference.md")
         self.assertGreater(len(content), 3000, "API reference must be comprehensive")
         # Must cover core endpoint groups
         for endpoint_group in ["notebooks", "sources", "notes", "chat", "search"]:
@@ -268,7 +268,7 @@ class TestReferenceFiles(unittest.TestCase):
 
     def test_api_reference_has_http_methods(self):
         """API reference must document HTTP methods."""
-        content = self._read_reference("api_reference.md")
+        content = self._read_reference("api-reference.md")
         for method in ["GET", "POST", "PUT", "DELETE"]:
             self.assertIn(
                 method,
@@ -377,7 +377,7 @@ class TestSkillMdApiEndpointCoverage(unittest.TestCase):
     def setUpClass(cls):
         with open(SKILL_MD, "r") as f:
             cls.skill_content = f.read()
-        api_ref_path = os.path.join(REFERENCES_DIR, "api_reference.md")
+        api_ref_path = os.path.join(REFERENCES_DIR, "api-reference.md")
         with open(api_ref_path, "r") as f:
             cls.api_content = f.read()
         cls.combined = cls.skill_content + cls.api_content

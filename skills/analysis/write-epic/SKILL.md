@@ -1,6 +1,8 @@
 ---
-description: >
 name: write-epic
+description: >-
+  Produces a complete epic definition following Atlassian agile guidance. An epic captures a large
+  initiative that is too big for a single sprint and must be decomposed into user stories.
 version: 1.0.0
 tags:
   - agile

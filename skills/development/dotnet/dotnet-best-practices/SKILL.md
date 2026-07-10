@@ -1,6 +1,6 @@
 ---
-description: 'Ensure .NET/C# code meets best practices for the solution/project.'
 name: dotnet-best-practices
+description: 'Ensure .NET/C# code meets best practices for the solution/project.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---

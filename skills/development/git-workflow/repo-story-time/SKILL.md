@@ -1,6 +1,6 @@
 ---
-description: 'Generate a comprehensive repository summary and narrative story from commit history'
 name: repo-story-time
+description: 'Generate a comprehensive repository summary and narrative story from commit history'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---

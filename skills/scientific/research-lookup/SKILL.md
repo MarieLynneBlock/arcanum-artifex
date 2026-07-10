@@ -1,8 +1,8 @@
 ---
-description: Look up current research information using the Parallel Chat API (primary) or Perplexity sonar-pro-search (academic paper searches). Automatically routes queries to the best backend. Use for finding papers, gathering research data, and verifying scientific information.
 name: research-lookup
-allowed-tools: Read Write Edit Bash
+description: Look up current research information using the Parallel Chat API (primary) or Perplexity sonar-pro-search (academic paper searches). Automatically routes queries to the best backend. Use for finding papers, gathering research data, and verifying scientific information.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 compatibility: PARALLEL_API_KEY and OPENROUTER_API_KEY required
 metadata:
   skill-author: 'K-Dense Inc.'

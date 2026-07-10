@@ -351,7 +351,7 @@ class LabArchivesIntegration:
 
     def _authenticate(self):
         """Get user ID"""
-        # Implementation from authentication_guide.md
+        # Implementation from authentication-guide.md
         pass
 
     def export_data(self, source_data, nbid, title):

@@ -1,6 +1,6 @@
 ---
-description: Meta-skill for publication-ready figures. Use when creating journal submission figures requiring multi-panel layouts, significance annotations, error bars, colorblind-safe palettes, and specific journal formatting (Nature, Science, Cell). Orchestrates matplotlib/seaborn/plotly with publication styles. For quick exploration use seaborn or plotly directly.
 name: scientific-visualization
+description: Meta-skill for publication-ready figures. Use when creating journal submission figures requiring multi-panel layouts, significance annotations, error bars, colorblind-safe palettes, and specific journal formatting (Nature, Science, Cell). Orchestrates matplotlib/seaborn/plotly with publication styles. For quick exploration use seaborn or plotly directly.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -110,7 +110,7 @@ save_publication_figure(fig, 'treatment_comparison', formats=['pdf', 'png'], dpi
 
 ### 1. Resolution and File Format
 
-**Critical requirements** (detailed in `references/publication_guidelines.md`):
+**Critical requirements** (detailed in `references/publication-guidelines.md`):
 - **Raster images** (photos, microscopy): 300-600 DPI
 - **Line art** (graphs, plots): 600-1200 DPI or vector format
 - **Vector formats** (preferred): PDF, EPS, SVG
@@ -131,7 +131,7 @@ save_for_journal(fig, 'figure1', journal='nature', figure_type='combination')
 
 ### 2. Color Selection - Colorblind Accessibility
 
-**Always use colorblind-friendly palettes** (detailed in `references/color_palettes.md`):
+**Always use colorblind-friendly palettes** (detailed in `references/color-palettes.md`):
 
 **Recommended: Okabe-Ito palette** (distinguishable by all types of color blindness):
 ```python
@@ -154,7 +154,7 @@ plt.rcParams['axes.prop_cycle'] = plt.cycler(color=okabe_ito)
 
 ### 3. Typography and Text
 
-**Font guidelines** (detailed in `references/publication_guidelines.md`):
+**Font guidelines** (detailed in `references/publication-guidelines.md`):
 - Sans-serif fonts: Arial, Helvetica, Calibri
 - Minimum sizes at **final print size**:
   - Axis labels: 7-9 pt
@@ -177,7 +177,7 @@ mpl.rcParams['ytick.labelsize'] = 7
 
 ### 4. Figure Dimensions
 
-**Journal-specific widths** (detailed in `references/journal_requirements.md`):
+**Journal-specific widths** (detailed in `references/journal-requirements.md`):
 - **Nature**: Single 89 mm, Double 183 mm
 - **Science**: Single 55 mm, Double 175 mm
 - **Cell**: Single 85 mm, Double 178 mm
@@ -198,7 +198,7 @@ check_figure_size(fig, journal='nature')
 - Align panels along edges where possible
 - Use adequate white space between panels
 
-**Example implementation** (see `references/matplotlib_examples.md` for complete code):
+**Example implementation** (see `references/matplotlib-examples.md` for complete code):
 ```python
 from string import ascii_uppercase
 
@@ -219,7 +219,7 @@ for i, ax in enumerate([ax1, ax2, ...]):
 
 ### Task 1: Create a Publication-Ready Line Plot
 
-See `references/matplotlib_examples.md` Example 1 for complete code.
+See `references/matplotlib-examples.md` Example 1 for complete code.
 
 **Key steps:**
 1. Apply publication style
@@ -244,7 +244,7 @@ sns.despine()
 
 ### Task 2: Create a Multi-Panel Figure
 
-See `references/matplotlib_examples.md` Example 2 for complete code.
+See `references/matplotlib-examples.md` Example 2 for complete code.
 
 **Key steps:**
 1. Use `GridSpec` for flexible layout
@@ -255,7 +255,7 @@ See `references/matplotlib_examples.md` Example 2 for complete code.
 
 ### Task 3: Create a Heatmap with Proper Colormap
 
-See `references/matplotlib_examples.md` Example 4 for complete code.
+See `references/matplotlib-examples.md` Example 4 for complete code.
 
 **Key steps:**
 1. Use perceptually uniform colormap (`viridis`, `plasma`, `cividis`)
@@ -278,7 +278,7 @@ sns.heatmap(corr, mask=mask, annot=True, fmt='.2f',
 ### Task 4: Prepare Figure for Specific Journal
 
 **Workflow:**
-1. Check journal requirements: `references/journal_requirements.md`
+1. Check journal requirements: `references/journal-requirements.md`
 2. Configure matplotlib for journal:
    ```python
    from style_presets import configure_for_journal
@@ -293,7 +293,7 @@ sns.heatmap(corr, mask=mask, annot=True, fmt='.2f',
 
 ### Task 5: Fix an Existing Figure to Meet Publication Standards
 
-**Checklist approach** (full checklist in `references/publication_guidelines.md`):
+**Checklist approach** (full checklist in `references/publication-guidelines.md`):
 
 1. **Check resolution**: Verify DPI meets journal requirements
 2. **Check file format**: Use vector for plots, TIFF/PNG for images
@@ -352,7 +352,7 @@ ax.text(1.5, max_y * 1.1, '***', ha='center', fontsize=8)
 - Most control over publication details
 - Best for complex multi-panel figures
 - Use provided style files for consistent formatting
-- See `references/matplotlib_examples.md` for extensive examples
+- See `references/matplotlib-examples.md` for extensive examples
 
 ### Seaborn
 
@@ -642,8 +642,8 @@ sns.set_context('paper', font_scale=1.2)  # Increase if needed
 For more detailed seaborn information, see:
 - `scientific-packages/seaborn/SKILL.md` - Comprehensive seaborn documentation
 - `scientific-packages/seaborn/references/examples.md` - Practical use cases
-- `scientific-packages/seaborn/references/function_reference.md` - Complete API reference
-- `scientific-packages/seaborn/references/objects_interface.md` - Modern declarative API
+- `scientific-packages/seaborn/references/function-reference.md` - Complete API reference
+- `scientific-packages/seaborn/references/objects-interface.md` - Modern declarative API
 
 ### Plotly
 - Interactive figures for exploration
@@ -653,7 +653,7 @@ For more detailed seaborn information, see:
 fig.update_layout(
     font=dict(family='Arial, sans-serif', size=10),
     plot_bgcolor='white',
-    # ... see matplotlib_examples.md Example 8
+    # ... see matplotlib-examples.md Example 8
 )
 fig.write_image('figure.png', scale=3)  # scale=3 gives ~300 DPI
 ```
@@ -664,26 +664,26 @@ fig.write_image('figure.png', scale=3)  # scale=3 gives ~300 DPI
 
 **Load these as needed for detailed information:**
 
-- **`publication_guidelines.md`**: Comprehensive best practices
+- **`publication-guidelines.md`**: Comprehensive best practices
   - Resolution and file format requirements
   - Typography guidelines
   - Layout and composition rules
   - Statistical rigor requirements
   - Complete publication checklist
 
-- **`color_palettes.md`**: Color usage guide
+- **`color-palettes.md`**: Color usage guide
   - Colorblind-friendly palette specifications with RGB values
   - Sequential and diverging colormap recommendations
   - Testing procedures for accessibility
   - Domain-specific palettes (genomics, microscopy)
 
-- **`journal_requirements.md`**: Journal-specific specifications
+- **`journal-requirements.md`**: Journal-specific specifications
   - Technical requirements by publisher
   - File format and DPI specifications
   - Figure dimension requirements
   - Quick reference table
 
-- **`matplotlib_examples.md`**: Practical code examples
+- **`matplotlib-examples.md`**: Practical code examples
   - 10 complete working examples
   - Line plots, bar plots, heatmaps, multi-panel figures
   - Journal-specific figure examples

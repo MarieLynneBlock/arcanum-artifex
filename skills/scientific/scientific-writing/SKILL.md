@@ -1,8 +1,8 @@
 ---
-description: Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing prose. IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, reporting guidelines (CONSORT/STROBE/PRISMA), for research papers and journal submissions.
 name: scientific-writing
-allowed-tools: Read Write Edit Bash
+description: Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing prose. IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, reporting guidelines (CONSORT/STROBE/PRISMA), for research papers and journal submissions.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -135,7 +135,7 @@ For detailed guidance, refer to the scientific-schematics and generate-image ski
 - **Results**: Present findings objectively without interpretation
 - **Discussion**: Interpret results, acknowledge limitations, propose future directions
 
-For detailed guidance on IMRAD structure, refer to `references/imrad_structure.md`.
+For detailed guidance on IMRAD structure, refer to `references/imrad-structure.md`.
 
 **Alternative Structures**: Support discipline-specific formats including:
 - Review articles (narrative, systematic, scoping)
@@ -177,7 +177,7 @@ For detailed guidance on IMRAD structure, refer to `references/imrad_structure.m
 
 ### 3. Citation and Reference Management
 
-Apply citation styles correctly across disciplines. For comprehensive style guides, refer to `references/citation_styles.md`.
+Apply citation styles correctly across disciplines. For comprehensive style guides, refer to `references/citation-styles.md`.
 
 **Major Citation Styles:**
 - **AMA (American Medical Association)**: Numbered superscript citations, common in medicine
@@ -195,7 +195,7 @@ Apply citation styles correctly across disciplines. For comprehensive style guid
 
 ### 4. Figures and Tables
 
-Create effective data visualizations that enhance comprehension. For detailed best practices, refer to `references/figures_tables.md`.
+Create effective data visualizations that enhance comprehension. For detailed best practices, refer to `references/figures-tables.md`.
 
 **When to Use Tables vs. Figures:**
 - **Tables**: Precise numerical data, complex datasets, multiple variables requiring exact values
@@ -218,7 +218,7 @@ Create effective data visualizations that enhance comprehension. For detailed be
 
 ### 5. Reporting Guidelines by Study Type
 
-Ensure completeness and transparency by following established reporting standards. For comprehensive guideline details, refer to `references/reporting_guidelines.md`.
+Ensure completeness and transparency by following established reporting standards. For comprehensive guideline details, refer to `references/reporting-guidelines.md`.
 
 **Key Guidelines:**
 - **CONSORT**: Randomized controlled trials
@@ -236,7 +236,7 @@ Each guideline provides checklists ensuring all critical methodological elements
 
 ### 6. Writing Principles and Style
 
-Apply fundamental scientific writing principles. For detailed guidance, refer to `references/writing_principles.md`.
+Apply fundamental scientific writing principles. For detailed guidance, refer to `references/writing-principles.md`.
 
 **Clarity**:
 - Use precise, unambiguous language
@@ -483,8 +483,8 @@ xelatex report.tex
 For complete documentation, refer to:
 - `assets/scientific_report.sty`: The style package
 - `assets/scientific_report_template.tex`: Complete template example
-- `assets/REPORT_FORMATTING_GUIDE.md`: Quick reference guide
-- `references/professional_report_formatting.md`: Comprehensive formatting guide
+- `assets/report-formatting-guide.md`: Quick reference guide
+- `references/professional-report-formatting.md`: Comprehensive formatting guide
 
 ### 9. Journal-Specific Formatting
 
@@ -678,9 +678,9 @@ Different venues have dramatically different writing expectations:
 - **CS conferences (CHI, ACL)**: Field-specific conventions
 
 The venue-templates skill provides:
-- `venue_writing_styles.md`: Master style comparison
-- Venue-specific guides: `nature_science_style.md`, `cell_press_style.md`, `medical_journal_styles.md`, `ml_conference_style.md`, `cs_conference_style.md`
-- `reviewer_expectations.md`: What reviewers look for at each venue
+- `venue-writing-styles.md`: Master style comparison
+- Venue-specific guides: `nature-science-style.md`, `cell-press-style.md`, `medical-journal-styles.md`, `ml-conference-style.md`, `cs-conference-style.md`
+- `reviewer-expectations.md`: What reviewers look for at each venue
 - Writing examples in `assets/examples/`
 
 **Workflow**: First use this skill for general scientific writing principles (IMRAD, clarity, citations), then consult venue-templates for venue-specific style adaptation.
@@ -689,12 +689,12 @@ The venue-templates skill provides:
 
 This skill includes comprehensive reference files covering specific aspects of scientific writing:
 
-- `references/imrad_structure.md`: Detailed guide to IMRAD format and section-specific content
-- `references/citation_styles.md`: Complete citation style guides (APA, AMA, Vancouver, Chicago, IEEE)
-- `references/figures_tables.md`: Best practices for creating effective data visualizations
-- `references/reporting_guidelines.md`: Study-specific reporting standards and checklists
-- `references/writing_principles.md`: Core principles of effective scientific communication
-- `references/professional_report_formatting.md`: Guide to professional report styling with `scientific_report.sty`
+- `references/imrad-structure.md`: Detailed guide to IMRAD format and section-specific content
+- `references/citation-styles.md`: Complete citation style guides (APA, AMA, Vancouver, Chicago, IEEE)
+- `references/figures-tables.md`: Best practices for creating effective data visualizations
+- `references/reporting-guidelines.md`: Study-specific reporting standards and checklists
+- `references/writing-principles.md`: Core principles of effective scientific communication
+- `references/professional-report-formatting.md`: Guide to professional report styling with `scientific_report.sty`
 
 ## Assets
 
@@ -702,7 +702,7 @@ This skill includes LaTeX style packages and templates for professional report f
 
 - `assets/scientific_report.sty`: Professional LaTeX style package with Helvetica fonts, colored boxes, and attractive tables
 - `assets/scientific_report_template.tex`: Complete report template demonstrating all style features
-- `assets/REPORT_FORMATTING_GUIDE.md`: Quick reference guide for the style package
+- `assets/report-formatting-guide.md`: Quick reference guide for the style package
 
 **Key Features of `scientific_report.sty`:**
 - Helvetica font family for modern, professional appearance

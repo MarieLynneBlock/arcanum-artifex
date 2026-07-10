@@ -1,6 +1,6 @@
 ---
-description: 'Specialized agent for comprehensive change impact assessment and risk analysis in software systems using CAST Imaging'
 name: 'CAST Imaging Impact Analysis Agent'
+description: 'Specialized agent for comprehensive change impact assessment and risk analysis in software systems using CAST Imaging'
 tools: []
 mcp-servers:
   imaging-impact-analysis:
@@ -10,7 +10,8 @@ mcp-servers:
       'x-api-key': '${input:imaging-key}'
     args: []
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # CAST Imaging Impact Analysis Agent

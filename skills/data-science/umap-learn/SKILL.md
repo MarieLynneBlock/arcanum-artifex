@@ -1,6 +1,6 @@
 ---
-description: UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualization, clustering preprocessing (HDBSCAN), supervised/parametric UMAP, for high-dimensional data.
 name: umap-learn
+description: UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualization, clustering preprocessing (HDBSCAN), supervised/parametric UMAP, for high-dimensional data.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -471,6 +471,6 @@ UMAP uses stochastic optimization, so results will vary slightly between runs wi
 ### references/
 
 Contains detailed API documentation:
-- `api_reference.md`: Complete UMAP class parameters and methods
+- `api-reference.md`: Complete UMAP class parameters and methods
 
 Load these references when detailed parameter information or advanced method usage is needed.

@@ -1,9 +1,10 @@
 ---
-description: 'Terse, low-token responses. Minimal words, no fluff. Task fidelity preserved. Use when: optimise token usage, low-token mode, concise output, caveman mode, reduce verbosity, token-efficient, brief responses.'
 name: 'Caveman Mode'
+description: 'Terse, low-token responses. Minimal words, no fluff. Task fidelity preserved. Use when: optimise token usage, low-token mode, concise output, caveman mode, reduce verbosity, token-efficient, brief responses.'
 tools: ['read', 'search', 'edit', 'execute']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Caveman Mode

@@ -43,8 +43,9 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 - [skills/README.md](../skills/README.md): skill library conventions and deployment locations.
 - [instructions/README.md](../instructions/README.md): instruction-file organization and indexing.
 - [workflows/README.md](../workflows/README.md): workflow packaging rules and bundled asset expectations.
-- [guides/how-to/workflow-integration.md](../guides/how-to/workflow-integration.md): workflow expectations and limits.
-- [guides/practices/prompt-engineering.md](../guides/practices/prompt-engineering.md): prompt-writing patterns.
+- [agents/README.md](../agents/README.md): custom agent taxonomy, placement, and reuse expectations.
+- [prompts/](prompts/): repo-scoped review prompts for skills, agents, and workflows.
+- [.vscode/settings.json](../.vscode/settings.json): VS Code Copilot settings reference for this lab.
 
 ## Conventions
 
@@ -53,7 +54,7 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 - VS Code settings for Copilot go in `.vscode/settings.json`.
 - Skills are folder-based assets intended to be copied into `.github/skills/` in target projects.
 - Workflows are self-contained folders; keep their runtime dependencies under `assets/`.
-- Workflow and skill entry files (`SKILL.md`, `WORKFLOW.md`, `*.agent.md`) must include YAML frontmatter with `name`, `description`, and `metadata` — in that order:
+- Skill and workflow entry files (`SKILL.md`, `WORKFLOW.md`) must include YAML frontmatter with `name`, `description`, and `metadata` — in that order:
 
   ```yaml
   ---
@@ -63,6 +64,8 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
      skill-author: (author name)
   ---
   ```
+- Custom agent files (`*.agent.md`) must include a discovery-friendly `description` and `metadata.agent-author`; keep optional fields such as `name`, `tools`, and `model` only when they add clear value.
+- Instruction files (`*.instructions.md`) must include a useful `description`, an accurate `applyTo` glob, and `metadata.instruction-author` as the last frontmatter field when metadata is present.
 
 ## Agent Guardrails
 

@@ -1,6 +1,6 @@
 ---
-description: 'Pre-breach impact analysis: inventories sensitive data (PII, PHI, PCI-DSS, credentials), traces data flows, scores exposure vectors, and produces a regulatory blast radius report with fine ranges sourced verbatim from GDPR Art. 83, CCPA § 1798.155(a), and HIPAA 45 CFR § 160.404. Cost benchmarks from IBM Cost of a Data Breach Report (annually updated). All citations in references/SOURCES.md for verification. Use when asked: "assess breach impact", "what data could be exposed", "calculate blast radius", "data exposure analysis", "how bad would a breach be", "quantify data risk", "sensitive data inventory", "data flow security audit", "pre-breach assessment", "worst-case breach scenario", "breach readiness", "data risk report", "/data-breach-blast-radius". For any stack handling user data, health records, or financial information. Output labels law-sourced figures (exact) vs heuristic estimates (planning only). Does not replace legal counsel.'
 name: data-breach-blast-radius
+description: 'Pre-breach impact analysis: inventories sensitive data (PII, PHI, PCI-DSS, credentials), traces data flows, scores exposure vectors, and produces a regulatory blast radius report with fine ranges sourced verbatim from GDPR Art. 83, CCPA § 1798.155(a), and HIPAA 45 CFR § 160.404. Cost benchmarks from IBM Cost of a Data Breach Report (annually updated). All citations in references/sources.md for verification. Use when asked: "assess breach impact", "what data could be exposed", "calculate blast radius", "data exposure analysis", "how bad would a breach be", "quantify data risk", "sensitive data inventory", "data flow security audit", "pre-breach assessment", "worst-case breach scenario", "breach readiness", "data risk report", "/data-breach-blast-radius". For any stack handling user data, health records, or financial information. Output labels law-sourced figures (exact) vs heuristic estimates (planning only). Does not replace legal counsel.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -14,7 +14,7 @@ This skill performs a **proactive blast radius analysis**: a full audit of what 
 > **Why this matters:** 83% of organizations have experienced more than one data breach (IBM Cost of a Data Breach Report). The global average breach cost was **$4.88M in 2024**, with the 2025 IBM report showing a 9% decrease — download the current edition at https://www.ibm.com/reports/data-breach. Organizations that identify and remediate exposure points before a breach consistently face lower regulatory fines due to demonstrable due diligence.
 
 > **What this skill produces vs. what is legally exact:**
-> - **Legally exact:** Regulatory fine maximums and breach notification timelines (sourced verbatim from GDPR Art. 83, CCPA § 1798.155, 45 CFR § 160.404, etc. — all cited in `references/SOURCES.md`)
+> - **Legally exact:** Regulatory fine maximums and breach notification timelines (sourced verbatim from GDPR Art. 83, CCPA § 1798.155, 45 CFR § 160.404, etc. — all cited in `references/sources.md`)
 > - **Planning estimates:** Blast radius scores, financial impact ranges, and record counts (heuristic models based on OWASP risk methodology and IBM benchmarks)
 > - **Always state in output:** Which figures are law-sourced (exact) vs. model-derived (estimate)
 > - **Never replace** qualified legal counsel or a formal DPIA/risk assessment
@@ -99,7 +99,7 @@ For each sensitive data field found, record:
 | Field | Table/Source | Data Tier | Purpose | Encrypted? | Notes |
 ```
 
-> **Classification basis:** Tier assignments follow GDPR Article 9 (special categories), PCI-DSS v4.0, and HIPAA 45 CFR Part 164. See `references/data-classification.md` for the full taxonomy and `references/SOURCES.md` for primary source links.
+> **Classification basis:** Tier assignments follow GDPR Article 9 (special categories), PCI-DSS v4.0, and HIPAA 45 CFR Part 164. See `references/data-classification.md` for the full taxonomy and `references/sources.md` for primary source links.
 
 ---
 

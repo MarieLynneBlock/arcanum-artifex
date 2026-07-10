@@ -1,6 +1,6 @@
 ---
-description: Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, download coordinates (PDB/mmCIF), retrieve metadata, for structural biology and drug discovery.
 name: pdb-database
+description: Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, download coordinates (PDB/mmCIF), retrieve metadata, for structural biology and drug discovery.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -286,7 +286,7 @@ The `rcsb-api` package provides unified access to both Search and Data APIs thro
 
 This skill includes reference documentation in the `references/` directory:
 
-### references/api_reference.md
+### references/api-reference.md
 Comprehensive API documentation covering:
 - Detailed API endpoint specifications
 - Advanced query patterns and examples

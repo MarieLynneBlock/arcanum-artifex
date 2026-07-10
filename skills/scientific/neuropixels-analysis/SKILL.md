@@ -1,6 +1,6 @@
 ---
-description: Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correction, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, AI-assisted visual analysis, for Neuropixels 1.0/2.0 extracellular electrophysiology. Use when working with neural recordings, spike sorting, extracellular electrophysiology, or when the user mentions Neuropixels, SpikeGLX, Open Ephys, Kilosort, quality metrics, or unit curation.
 name: neuropixels-analysis
+description: Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correction, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, AI-assisted visual analysis, for Neuropixels 1.0/2.0 extracellular electrophysiology. Use when working with neural recordings, spike sorting, extracellular electrophysiology, or when the user mentions Neuropixels, SpikeGLX, Open Ephys, Kilosort, quality metrics, or unit curation.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -270,29 +270,29 @@ cp assets/analysis_template.py my_analysis.py
 python my_analysis.py
 ```
 
-### reference/standard_workflow.md
+### reference/standard-workflow.md
 Detailed step-by-step workflow with explanations for each stage.
 
-### reference/api_reference.md
+### reference/api-reference.md
 Quick function reference organized by module.
 
-### reference/plotting_guide.md
+### reference/plotting-guide.md
 Comprehensive visualization guide for publication-quality figures.
 
 ## Detailed Reference Guides
 
 | Topic | Reference |
 |-------|-----------|
-| Full workflow | [references/standard_workflow.md](reference/standard_workflow.md) |
-| API reference | [references/api_reference.md](reference/api_reference.md) |
-| Plotting guide | [references/plotting_guide.md](reference/plotting_guide.md) |
-| Preprocessing | [references/PREPROCESSING.md](reference/PREPROCESSING.md) |
-| Spike sorting | [references/SPIKE_SORTING.md](reference/SPIKE_SORTING.md) |
-| Motion correction | [references/MOTION_CORRECTION.md](reference/MOTION_CORRECTION.md) |
-| Quality metrics | [references/QUALITY_METRICS.md](reference/QUALITY_METRICS.md) |
-| Automated curation | [references/AUTOMATED_CURATION.md](reference/AUTOMATED_CURATION.md) |
-| AI-assisted curation | [references/AI_CURATION.md](reference/AI_CURATION.md) |
-| Waveform analysis | [references/ANALYSIS.md](reference/ANALYSIS.md) |
+| Full workflow | [references/standard-workflow.md](references/standard-workflow.md) |
+| API reference | [references/api-reference.md](references/api-reference.md) |
+| Plotting guide | [references/plotting-guide.md](references/plotting-guide.md) |
+| Preprocessing | [references/preprocessing.md](references/preprocessing.md) |
+| Spike sorting | [references/spike-sorting.md](references/spike-sorting.md) |
+| Motion correction | [references/motion-correction.md](references/motion-correction.md) |
+| Quality metrics | [references/quality-metrics.md](references/quality-metrics.md) |
+| Automated curation | [references/automated-curation.md](references/automated-curation.md) |
+| AI-assisted curation | [references/ai-curation.md](references/ai-curation.md) |
+| Waveform analysis | [references/analysis.md](references/analysis.md) |
 
 ## Installation
 

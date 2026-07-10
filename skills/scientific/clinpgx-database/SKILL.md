@@ -1,6 +1,6 @@
 ---
-description: Access ClinPGx pharmacogenomics data (successor to PharmGKB). Query gene-drug interactions, CPIC guidelines, allele functions, for precision medicine and genotype-guided dosing decisions.
 name: clinpgx-database
+description: Access ClinPGx pharmacogenomics data (successor to PharmGKB). Query gene-drug interactions, CPIC guidelines, allele functions, for precision medicine and genotype-guided dosing decisions.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -531,7 +531,7 @@ Python script with ready-to-use functions for common ClinPGx queries:
 
 Consult this script for implementation examples with proper rate limiting and error handling.
 
-### references/api_reference.md
+### references/api-reference.md
 
 Comprehensive API documentation including:
 

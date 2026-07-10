@@ -1,8 +1,8 @@
 ---
-description: Structured manuscript/grant review with checklist-based evaluation. Use when writing formal peer reviews with specific criteria methodology assessment, statistical validity, reporting standards compliance (CONSORT/STROBE), and constructive feedback. Best for actual review writing, manuscript revision. For evaluating claims/evidence quality use scientific-critical-thinking; for quantitative scoring frameworks use scholar-evaluation.
 name: peer-review
-allowed-tools: Read Write Edit Bash
+description: Structured manuscript/grant review with checklist-based evaluation. Use when writing formal peer reviews with specific criteria methodology assessment, statistical validity, reporting standards compliance (CONSORT/STROBE), and constructive feedback. Best for actual review writing, manuscript revision. For evaluating claims/evidence quality use scientific-critical-thinking; for quantitative scoring frameworks use scholar-evaluation.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -194,7 +194,7 @@ Assess whether the research meets modern standards for reproducibility and open 
 
 **Reporting Standards:**
 - Does the manuscript follow discipline-specific reporting guidelines (CONSORT, PRISMA, ARRIVE, MIAME, MINSEQE, etc.)?
-- See `references/reporting_standards.md` for common guidelines
+- See `references/reporting-standards.md` for common guidelines
 - Are all elements of the appropriate checklist addressed?
 
 ### Stage 5: Figure and Data Presentation
@@ -544,10 +544,10 @@ Slide 18: Alignment - title not centered
 
 This skill includes reference materials to support comprehensive peer review:
 
-### references/reporting_standards.md
+### references/reporting-standards.md
 Guidelines for major reporting standards across disciplines (CONSORT, PRISMA, ARRIVE, MIAME, STROBE, etc.) to evaluate completeness of methods and results reporting.
 
-### references/common_issues.md
+### references/common-issues.md
 Catalog of frequent methodological and statistical issues encountered in peer review, with guidance on identifying and addressing them.
 
 ## Final Checklist

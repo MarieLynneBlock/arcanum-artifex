@@ -1,6 +1,6 @@
 ---
-description: Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, heterogeneous graphs, molecular property prediction, for geometric deep learning.
 name: torch-geometric
+description: Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, heterogeneous graphs, molecular property prediction, for geometric deep learning.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -249,7 +249,7 @@ from torch_geometric.datasets import Reddit
 dataset = Reddit(root='/tmp/Reddit')
 ```
 
-Check `references/datasets_reference.md` for a comprehensive list.
+Check `references/datasets-reference.md` for a comprehensive list.
 
 ### Creating Custom Datasets
 
@@ -527,7 +527,7 @@ Common transforms:
 - **Sampling**: `RandomNodeSplit`, `RandomLinkSplit`
 - **Positional Encoding**: `AddLaplacianEigenvectorPE`, `AddRandomWalkPE`
 
-See `references/transforms_reference.md` for the full list.
+See `references/transforms-reference.md` for the full list.
 
 ### Model Explainability
 
@@ -650,9 +650,9 @@ See the GNN cheatsheet at `references/layer_capabilities.md`.
 
 This skill includes detailed reference documentation:
 
-- **`references/layers_reference.md`**: Complete listing of all 40+ GNN layers with descriptions and capabilities
-- **`references/datasets_reference.md`**: Comprehensive dataset catalog organized by category
-- **`references/transforms_reference.md`**: All available transforms and their use cases
+- **`references/layers-reference.md`**: Complete listing of all 40+ GNN layers with descriptions and capabilities
+- **`references/datasets-reference.md`**: Comprehensive dataset catalog organized by category
+- **`references/transforms-reference.md`**: All available transforms and their use cases
 - **`references/api_patterns.md`**: Common API patterns and coding examples
 
 ### Scripts

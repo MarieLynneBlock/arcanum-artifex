@@ -1,6 +1,9 @@
 ---
-description: >
 name: tradeoff-analysis
+description: >-
+  Provides a structured framework for comparing options under uncertainty. It surfaces criteria,
+  weights them by stated priorities, scores each option, and produces a transparent recommendation
+  — including the conditions under which a different option would be the right call.
 version: 1.0.0
 tags:
   - decision-making

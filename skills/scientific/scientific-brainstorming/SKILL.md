@@ -1,6 +1,6 @@
 ---
-description: Creative research ideation and exploration. Use for open-ended brainstorming sessions, exploring interdisciplinary connections, challenging assumptions, or identifying research gaps. Best for early-stage research planning when you do not have specific observations yet. For formulating testable hypotheses from data use hypothesis-generation.
 name: scientific-brainstorming
+description: Creative research ideation and exploration. Use for open-ended brainstorming sessions, exploring interdisciplinary connections, challenging assumptions, or identifying research gaps. Best for early-stage research planning when you do not have specific observations yet. For formulating testable hypotheses from data use hypothesis-generation.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -93,7 +93,7 @@ Help the scientist generate a wide range of ideas without judgment. The goal is 
 - Rapid-fire idea generation with the scientist
 - Build on their suggestions with "Yes, and..."
 - Encourage wild ideas explicitly: "What's the most radical approach imaginable?"
-- Consult references/brainstorming_methods.md for additional structured techniques
+- Consult references/brainstorming-methods.md for additional structured techniques
 
 ### Phase 3: Connection Making
 
@@ -168,7 +168,7 @@ Help crystallize insights and create concrete paths forward.
 
 ## Resources
 
-### references/brainstorming_methods.md
+### references/brainstorming-methods.md
 
 Contains detailed descriptions of structured brainstorming methodologies that can be consulted when standard techniques need supplementation:
 - SCAMPER framework (Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse)

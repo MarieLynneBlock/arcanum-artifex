@@ -1,6 +1,6 @@
 ---
-description: 'Specialized agent for comprehensive software application discovery and architectural mapping through static code analysis using CAST Imaging'
 name: 'CAST Imaging Software Discovery Agent'
+description: 'Specialized agent for comprehensive software application discovery and architectural mapping through static code analysis using CAST Imaging'
 tools: []
 mcp-servers:
   imaging-structural-search:
@@ -10,7 +10,8 @@ mcp-servers:
       'x-api-key': '${input:imaging-key}'
     args: []
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # CAST Imaging Software Discovery Agent

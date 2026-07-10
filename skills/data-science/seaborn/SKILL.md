@@ -1,6 +1,6 @@
 ---
-description: Statistical visualization with pandas integration. Use for quick exploration of distributions, relationships, and categorical comparisons with attractive defaults. Best for box plots, violin plots, pair plots, heatmaps. Built on matplotlib. For interactive plots use plotly; for publication styling use scientific-visualization.
 name: seaborn
+description: Statistical visualization with pandas integration. Use for quick exploration of distributions, relationships, and categorical comparisons with attractive defaults. Best for box plots, violin plots, pair plots, heatmaps. Built on matplotlib. For interactive plots use plotly; for publication styling use scientific-visualization.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -663,8 +663,8 @@ This skill includes reference materials for deeper exploration:
 
 ### references/
 
-- `function_reference.md` - Comprehensive listing of all seaborn functions with parameters and examples
-- `objects_interface.md` - Detailed guide to the modern seaborn.objects API
+- `function-reference.md` - Comprehensive listing of all seaborn functions with parameters and examples
+- `objects-interface.md` - Detailed guide to the modern seaborn.objects API
 - `examples.md` - Common use cases and code patterns for different analysis scenarios
 
 Load reference files as needed for detailed function signatures, advanced parameters, or specific examples.

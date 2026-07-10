@@ -2,7 +2,7 @@
 
 # Kanban Board
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
 
 **Syntax keyword:** `kanban`
 **Best for:** Task status boards, workflow columns, work-in-progress visualization, sprint status

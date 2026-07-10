@@ -2,7 +2,7 @@
 
 # Flowchart
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
 
 **Syntax keyword:** `flowchart`
 **Best for:** Sequential processes, workflows, decision logic, troubleshooting trees

@@ -1,0 +1,9 @@
+// Service golden signals. Infrastructure saturation (for example dt.host.cpu.usage)
+// has no dt.entity.service dimension, so query host or process-group saturation
+// separately and correlate by topology instead of adding it to this series.
+timeseries {
+  p95_response_time = percentile(dt.service.request.response_time, 95, scalar: true),
+  requests_per_second = sum(dt.service.request.count, scalar: true, rate: 1s),
+  failed_requests_per_minute = sum(dt.service.request.failure_count, scalar: true, rate: 1m)
+}, by: {dt.entity.service}, from:now() - 2h
+| fieldsAdd service_name = entityName(dt.entity.service)

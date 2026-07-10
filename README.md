@@ -1,11 +1,11 @@
-![Arcanum Artifex](assets/arcanum-artifex_banner.png)
+![Arcanum Artifex](assets/arcanum-artifex-banner.png)
 
 # Arcanum Artifex 🧙🏻‍♀️
 
 > Prompts, skills, and agents that survive contact with real workflows.  
 > No vendor loyalty. Occasionally heretical.
 
-Everything here has survived contact with real work. Skills, agents, instructions, and guides... tested across stacks, tools, and the kinds of projects that don't forgive sloppy prompts. Built on the open Agent Skills standard, so the same assets travel freely between Copilot, Claude Code, and anything else that follows the spec.
+Everything here has survived contact with real work. Skills, agents, instructions, and workflows... tested across stacks, tools, and the kinds of projects that don't forgive sloppy prompts. Built on the open Agent Skills standard, so the same assets travel freely between Copilot, Claude Code, and anything else that follows the spec.
 
 ---
 
@@ -18,7 +18,6 @@ Everything here has survived contact with real work. Skills, agents, instruction
 | [instructions/](instructions/) | Context files that shape AI behavior per stack or domain |
 | [workflows/](workflows/) | Orchestrated playbooks that link skills, instructions, agents, prompts and tools end-to-end |
 | [templates/](templates/) | Blank starters to copy into your own project |
-| [guides/](guides/) | Setup, practices, policy, and reference material |
 | [workshops/](workshops/) | Hands-on exercises for team onboarding |
 
 ---
@@ -95,19 +94,6 @@ templates/
 ├── prompts/         ← reusable .prompt.md files (VS Code 1.99+)
 ├── skills/          ← empty skill shell to fill in
 └── copilotignore_blank  ← rename to .copilotignore to exclude files from AI context
-```
-
----
-
-## Guides
-
-```text
-guides/
-├── setup/           ← install in VS Code, IntelliJ, PyCharm, Visual Studio, Eclipse
-├── guidelines/      ← responsible use, security, admin setup, manager and pilot guides
-├── how-to/          ← getting started by role: developer, analyst, architect, DevOps
-├── practices/       ← prompt engineering
-└── resources/       ← cheat sheet, FAQ, prompt library, privacy card, impact measurement
 ```
 
 ---

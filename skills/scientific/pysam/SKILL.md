@@ -1,6 +1,6 @@
 ---
-description: Genomic file toolkit. Read/write SAM/BAM/CRAM alignments, VCF/BCF variants, FASTA/FASTQ sequences, extract regions, calculate coverage, for NGS data processing pipelines.
 name: pysam
+description: Genomic file toolkit. Read/write SAM/BAM/CRAM alignments, VCF/BCF variants, FASTA/FASTQ sequences, extract regions, calculate coverage, for NGS data processing pipelines.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -77,7 +77,7 @@ Use the `AlignmentFile` class to work with aligned sequencing reads. This is app
 - Perform pileup analysis (base-by-base coverage)
 - Access read sequences, quality scores, and alignment information
 
-**Reference:** See `references/alignment_files.md` for detailed documentation on:
+**Reference:** See `references/alignment-files.md` for detailed documentation on:
 - Opening and reading alignment files
 - AlignedSegment attributes and methods
 - Region-based fetching with `fetch()`
@@ -99,7 +99,7 @@ Use the `VariantFile` class to work with genetic variants from variant calling p
 - Annotate variants with additional information
 - Subset samples or regions
 
-**Reference:** See `references/variant_files.md` for detailed documentation on:
+**Reference:** See `references/variant-files.md` for detailed documentation on:
 - Opening and reading variant files
 - VariantRecord attributes and methods
 - Accessing INFO and FORMAT fields
@@ -121,7 +121,7 @@ Use `FastaFile` for random access to reference sequences and `FastxFile` for rea
 - Filter reads by quality or length
 - Convert between FASTA and FASTQ formats
 
-**Reference:** See `references/sequence_files.md` for detailed documentation on:
+**Reference:** See `references/sequence-files.md` for detailed documentation on:
 - FASTA file access and indexing
 - Extracting sequences by region
 - Handling reverse complement for genes
@@ -143,7 +143,7 @@ Pysam excels at integrating multiple file types for comprehensive genomic analys
 - Generate coverage tracks for visualization
 - Quality control across multiple data types
 
-**Reference:** See `references/common_workflows.md` for detailed examples of:
+**Reference:** See `references/common-workflows.md` for detailed examples of:
 - Quality control workflows (BAM statistics, reference consistency)
 - Coverage analysis (per-base coverage, low coverage detection)
 - Variant analysis (annotation, filtering by read support)
@@ -242,21 +242,21 @@ except pysam.SamtoolsError as e:
 
 Detailed documentation for each major capability:
 
-- **alignment_files.md** - Complete guide to SAM/BAM/CRAM operations, including AlignmentFile class, AlignedSegment attributes, fetch operations, pileup analysis, and writing alignments
+- **alignment-files.md** - Complete guide to SAM/BAM/CRAM operations, including AlignmentFile class, AlignedSegment attributes, fetch operations, pileup analysis, and writing alignments
 
-- **variant_files.md** - Complete guide to VCF/BCF operations, including VariantFile class, VariantRecord attributes, genotype handling, INFO/FORMAT fields, and multi-sample operations
+- **variant-files.md** - Complete guide to VCF/BCF operations, including VariantFile class, VariantRecord attributes, genotype handling, INFO/FORMAT fields, and multi-sample operations
 
-- **sequence_files.md** - Complete guide to FASTA/FASTQ operations, including FastaFile and FastxFile classes, sequence extraction, quality score handling, and tabix-indexed file access
+- **sequence-files.md** - Complete guide to FASTA/FASTQ operations, including FastaFile and FastxFile classes, sequence extraction, quality score handling, and tabix-indexed file access
 
-- **common_workflows.md** - Practical examples of integrated bioinformatics workflows combining multiple file types, including quality control, coverage analysis, variant validation, and sequence extraction
+- **common-workflows.md** - Practical examples of integrated bioinformatics workflows combining multiple file types, including quality control, coverage analysis, variant validation, and sequence extraction
 
 ## Getting Help
 
 For detailed information on specific operations, refer to the appropriate reference document:
 
-- Working with BAM files or calculating coverage → `alignment_files.md`
-- Analyzing variants or genotypes → `variant_files.md`
-- Extracting sequences or processing FASTQ → `sequence_files.md`
-- Complex workflows integrating multiple file types → `common_workflows.md`
+- Working with BAM files or calculating coverage → `alignment-files.md`
+- Analyzing variants or genotypes → `variant-files.md`
+- Extracting sequences or processing FASTQ → `sequence-files.md`
+- Complex workflows integrating multiple file types → `common-workflows.md`
 
 Official documentation: https://pysam.readthedocs.io/

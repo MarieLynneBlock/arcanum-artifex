@@ -1,6 +1,6 @@
 ---
-description: Full-featured computational pathology toolkit. Use for advanced WSI analysis including multiplexed immunofluorescence (CODEX, Vectra), nucleus segmentation, tissue graph construction, and ML model training on pathology data. Supports 160+ slide formats. For simple tile extraction from H&E slides, histolab may be simpler.
 name: pathml
+description: Full-featured computational pathology toolkit. Use for advanced WSI analysis including multiplexed immunofluorescence (CODEX, Vectra), nucleus segmentation, tissue graph construction, and ML model training on pathology data. Supports 160+ slide formats. For simple tile extraction from H&E slides, histolab may be simpler.
 license: GPL-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -33,7 +33,7 @@ PathML provides six major capability areas documented in detail within reference
 
 Load whole-slide images from 160+ proprietary formats including Aperio SVS, Hamamatsu NDPI, Leica SCN, Zeiss ZVI, DICOM, and OME-TIFF. PathML automatically handles vendor-specific formats and provides unified interfaces for accessing image pyramids, metadata, and regions of interest.
 
-**See:** `references/image_loading.md` for supported formats, loading strategies, and working with different slide types.
+**See:** `references/image-loading.md` for supported formats, loading strategies, and working with different slide types.
 
 ### 2. Preprocessing Pipelines
 
@@ -61,7 +61,7 @@ Train and deploy deep learning models for nucleus detection, segmentation, and c
 - **HoVer-Net** - Simultaneous nucleus segmentation and classification
 - **HACTNet** - Hierarchical cell-type classification
 
-**See:** `references/machine_learning.md` for model training, evaluation, inference workflows, and working with public datasets.
+**See:** `references/machine-learning.md` for model training, evaluation, inference workflows, and working with public datasets.
 
 ### 5. Multiparametric Imaging
 
@@ -73,7 +73,7 @@ Analyze spatial proteomics and gene expression data from CODEX, Vectra, MERFISH,
 
 Efficiently store and manage large pathology datasets using HDF5 format. PathML handles tiles, masks, metadata, and extracted features in unified storage structures optimized for machine learning workflows.
 
-**See:** `references/data_management.md` for HDF5 integration, tile management, dataset organization, and batch processing strategies.
+**See:** `references/data-management.md` for HDF5 integration, tile management, dataset organization, and batch processing strategies.
 
 ## Quick Start
 
@@ -138,12 +138,12 @@ for tile in wsi.tiles:
 
 When working on specific tasks, refer to the appropriate reference file for comprehensive information:
 
-- **Loading images:** `references/image_loading.md`
+- **Loading images:** `references/image-loading.md`
 - **Preprocessing workflows:** `references/preprocessing.md`
 - **Spatial analysis:** `references/graphs.md`
-- **Model training:** `references/machine_learning.md`
+- **Model training:** `references/machine-learning.md`
 - **CODEX/multiplex IF:** `references/multiparametric.md`
-- **Data storage:** `references/data_management.md`
+- **Data storage:** `references/data-management.md`
 
 ## Resources
 
@@ -153,11 +153,11 @@ This skill includes comprehensive reference documentation organized by capabilit
 
 Documentation files providing in-depth coverage of PathML capabilities:
 
-- `image_loading.md` - Whole-slide image formats, loading strategies, slide classes
+- `image-loading.md` - Whole-slide image formats, loading strategies, slide classes
 - `preprocessing.md` - Complete transform catalog, pipeline construction, preprocessing workflows
 - `graphs.md` - Graph construction methods, feature extraction, spatial analysis
-- `machine_learning.md` - Model architectures, training workflows, evaluation, inference
+- `machine-learning.md` - Model architectures, training workflows, evaluation, inference
 - `multiparametric.md` - CODEX, Vectra, multiplex IF analysis, cell segmentation, quantification
-- `data_management.md` - HDF5 storage, tile management, batch processing, dataset organization
+- `data-management.md` - HDF5 storage, tile management, batch processing, dataset organization
 
 Load these references as needed when working on specific computational pathology tasks.

@@ -175,8 +175,14 @@ def check_entry_frontmatter(errors: list[str]) -> None:
         if metadata_idx != top_level_keys[-1][1]:
             add_error(errors, f"Entry frontmatter must have metadata as last field: {rel(path)}")
 
-        if metadata_idx + 1 >= len(fm_lines) or not re.match(r"^\s+skill-author: ", fm_lines[metadata_idx + 1]):
-            add_error(errors, f"Entry frontmatter missing skill-author metadata: {rel(path)}")
+        if path.name.endswith(".agent.md"):
+            author_key = "agent-author"
+        elif path.name == "WORKFLOW.md":
+            author_key = "workflow-author"
+        else:
+            author_key = "skill-author"
+        if metadata_idx + 1 >= len(fm_lines) or not re.match(rf"^\s+{author_key}: ", fm_lines[metadata_idx + 1]):
+            add_error(errors, f"Entry frontmatter missing {author_key} metadata: {rel(path)}")
 
 
 def check_markdown_links(errors: list[str]) -> None:

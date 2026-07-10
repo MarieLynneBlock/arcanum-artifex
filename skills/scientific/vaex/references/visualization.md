@@ -608,6 +608,6 @@ df.plot(df.x, df.y, f='log')
 
 ## Related Resources
 
-- For data aggregation: See `data_processing.md`
+- For data aggregation: See `data-processing.md`
 - For performance optimization: See `performance.md`
-- For DataFrame basics: See `core_dataframes.md`
+- For DataFrame basics: See `core-dataframes.md`

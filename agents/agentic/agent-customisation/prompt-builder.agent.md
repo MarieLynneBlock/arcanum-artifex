@@ -1,9 +1,10 @@
 ---
-description: 'Prompt-file builder for creating, revising, and validating standalone prompts with practical test cases and clear output constraints.'
 name: 'Prompt Builder'
+description: 'Prompt-file builder for creating, revising, and validating standalone prompts with practical test cases and clear output constraints.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Prompt Builder

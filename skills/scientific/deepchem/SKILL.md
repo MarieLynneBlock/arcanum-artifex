@@ -1,6 +1,6 @@
 ---
-description: Molecular ML with diverse featurizers and pre-built datasets. Use for property prediction (ADMET, toxicity) with traditional ML or GNNs when you want extensive featurization options and MoleculeNet benchmarks. Best for quick experiments with pre-trained models, diverse molecular representations. For graph-first PyTorch workflows use torchdrug; for benchmark datasets use pytdc.
 name: deepchem
+description: Molecular ML with diverse featurizers and pre-built datasets. Use for property prediction (ADMET, toxicity) with traditional ML or GNNs when you want extensive featurization options and MoleculeNet benchmarks. Best for quick experiments with pre-trained models, diverse molecular representations. For graph-first PyTorch workflows use torchdrug; for benchmark datasets use pytdc.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -111,7 +111,7 @@ features = fp.featurize(['CCO', 'c1ccccc1'])
 - **Large datasets (>100K)**: Graph featurizers (MolGraphConvFeaturizer, DMPNNFeaturizer)
 - **Transfer learning**: Pretrained model featurizers (GroverFeaturizer)
 
-See `references/api_reference.md` for complete featurizer documentation.
+See `references/api-reference.md` for complete featurizer documentation.
 
 ### 3. Data Splitting
 
@@ -226,7 +226,7 @@ test_score = model.evaluate(test, [metric])
 - **Quantum properties**: `load_qm7()`, `load_qm8()`, `load_qm9()`
 - **Materials**: `load_perovskite()`, `load_bandgap()`, `load_mp_formation_energy()`
 
-See `references/api_reference.md` for complete dataset list.
+See `references/api-reference.md` for complete dataset list.
 
 ### 6. Transfer Learning
 
@@ -542,7 +542,7 @@ uv pip install deepchem[all]
 
 This skill includes comprehensive reference documentation:
 
-### `references/api_reference.md`
+### `references/api-reference.md`
 Complete API documentation including:
 - All data loaders and their use cases
 - Dataset classes and when to use each

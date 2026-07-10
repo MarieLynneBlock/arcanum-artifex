@@ -2,7 +2,7 @@
 
 # Entity Relationship (ER) Diagram
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
 
 **Syntax keyword:** `erDiagram`
 **Best for:** Database schemas, data models, entity relationships, API data structures

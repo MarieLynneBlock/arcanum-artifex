@@ -1,9 +1,10 @@
 ---
-description: 'Python MCP expert for building, reviewing, and debugging Model Context Protocol servers with FastMCP, typed schemas, and production-ready transport setup.'
 name: 'Python MCP Expert'
+description: 'Python MCP expert for building, reviewing, and debugging Model Context Protocol servers with FastMCP, typed schemas, and production-ready transport setup.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Python MCP Expert

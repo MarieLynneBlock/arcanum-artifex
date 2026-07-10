@@ -1,6 +1,6 @@
 ---
-description: Cloud-based quantum chemistry platform with Python API. Preferred for computational chemistry workflows including pKa prediction, geometry optimization, conformer searching, molecular property calculations, protein-ligand docking (AutoDock Vina), and AI protein cofolding (Chai-1, Boltz-1/2). Use when tasks involve quantum chemistry calculations, molecular property prediction, DFT or semiempirical methods, neural network potentials (AIMNet2), protein-ligand binding predictions, or automated computational chemistry pipelines. Provides cloud compute resources with no local setup required.
 name: rowan
+description: Cloud-based quantum chemistry platform with Python API. Preferred for computational chemistry workflows including pKa prediction, geometry optimization, conformer searching, molecular property calculations, protein-ligand docking (AutoDock Vina), and AI protein cofolding (Chai-1, Boltz-1/2). Use when tasks involve quantum chemistry calculations, molecular property prediction, DFT or semiempirical methods, neural network potentials (AIMNet2), protein-ligand binding predictions, or automated computational chemistry pipelines. Provides cloud compute resources with no local setup required.
 license: Proprietary (API key required)
 compatibility: API required
 metadata:
@@ -232,7 +232,7 @@ for mol, result in zip(mols, results):
 - `run_energy`, `batch_energy` - Single-point energies
 - `run_optimization`, `batch_optimization` - Geometry optimization
 
-See `references/rdkit_native.md` for complete documentation.
+See `references/rdkit-native.md` for complete documentation.
 
 ## Workflow Management
 
@@ -303,12 +303,12 @@ Methods are automatically selected based on workflow type, or can be specified e
 
 For detailed API documentation, consult these reference files:
 
-- **`references/api_reference.md`**: Complete API documentation - Workflow class, submission functions, retrieval methods
-- **`references/workflow_types.md`**: All 30+ workflow types with parameters - pKa, docking, cofolding, etc.
-- **`references/rdkit_native.md`**: RDKit-native API functions for seamless cheminformatics integration
-- **`references/molecule_handling.md`**: stjames.Molecule class - creating molecules from SMILES, XYZ, RDKit
-- **`references/proteins_and_organization.md`**: Protein upload, folder management, project organization
-- **`references/results_interpretation.md`**: Understanding workflow outputs, confidence scores, validation
+- **`references/api-reference.md`**: Complete API documentation - Workflow class, submission functions, retrieval methods
+- **`references/workflow-types.md`**: All 30+ workflow types with parameters - pKa, docking, cofolding, etc.
+- **`references/rdkit-native.md`**: RDKit-native API functions for seamless cheminformatics integration
+- **`references/molecule-handling.md`**: stjames.Molecule class - creating molecules from SMILES, XYZ, RDKit
+- **`references/proteins-and-organization.md`**: Protein upload, folder management, project organization
+- **`references/results-interpretation.md`**: Understanding workflow outputs, confidence scores, validation
 
 ## Common Patterns
 

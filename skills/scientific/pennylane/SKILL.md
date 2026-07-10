@@ -1,6 +1,6 @@
 ---
-description: Hardware-agnostic quantum ML framework with automatic differentiation. Use when training quantum circuits via gradients, building hybrid quantum-classical models, or needing device portability across IBM/Google/Rigetti/IonQ. Best for variational algorithms (VQE, QAOA), quantum neural networks, and integration with PyTorch/JAX/TensorFlow. For hardware-specific optimizations use qiskit (IBM) or cirq (Google); for open quantum systems use qutip.
 name: pennylane
+description: Hardware-agnostic quantum ML framework with automatic differentiation. Use when training quantum circuits via gradients, building hybrid quantum-classical models, or needing device portability across IBM/Google/Rigetti/IonQ. Best for variational algorithms (VQE, QAOA), quantum neural networks, and integration with PyTorch/JAX/TensorFlow. For hardware-specific optimizations use qiskit (IBM) or cirq (Google); for open quantum systems use qutip.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -70,7 +70,7 @@ for i in range(100):
 
 ### 1. Quantum Circuit Construction
 
-Build circuits with gates, measurements, and state preparation. See `references/quantum_circuits.md` for:
+Build circuits with gates, measurements, and state preparation. See `references/quantum-circuits.md` for:
 - Single and multi-qubit gates
 - Controlled operations and conditional logic
 - Mid-circuit measurements and adaptive circuits
@@ -79,7 +79,7 @@ Build circuits with gates, measurements, and state preparation. See `references/
 
 ### 2. Quantum Machine Learning
 
-Create hybrid quantum-classical models. See `references/quantum_ml.md` for:
+Create hybrid quantum-classical models. See `references/quantum-ml.md` for:
 - Integration with PyTorch, JAX, TensorFlow
 - Quantum neural networks and variational classifiers
 - Data encoding strategies (angle, amplitude, basis, IQP)
@@ -88,7 +88,7 @@ Create hybrid quantum-classical models. See `references/quantum_ml.md` for:
 
 ### 3. Quantum Chemistry
 
-Simulate molecules and compute ground state energies. See `references/quantum_chemistry.md` for:
+Simulate molecules and compute ground state energies. See `references/quantum-chemistry.md` for:
 - Molecular Hamiltonian generation
 - Variational Quantum Eigensolver (VQE)
 - UCCSD ansatz for chemistry
@@ -97,7 +97,7 @@ Simulate molecules and compute ground state energies. See `references/quantum_ch
 
 ### 4. Device Management
 
-Execute on simulators or quantum hardware. See `references/devices_backends.md` for:
+Execute on simulators or quantum hardware. See `references/devices-backends.md` for:
 - Built-in simulators (default.qubit, lightning.qubit, default.mixed)
 - Hardware plugins (IBM, Amazon Braket, Google, Rigetti, IonQ)
 - Device selection and configuration
@@ -115,7 +115,7 @@ Train quantum circuits with various optimizers. See `references/optimization.md`
 
 ### 6. Advanced Features
 
-Leverage templates, transforms, and compilation. See `references/advanced_features.md` for:
+Leverage templates, transforms, and compilation. See `references/advanced-features.md` for:
 - Circuit templates and layers
 - Transforms and circuit optimization
 - Pulse-level programming
@@ -193,13 +193,13 @@ result_hw = circuit_def(dev_hw)(params)
 
 For comprehensive coverage of specific topics, consult the reference files:
 
-- **Getting started**: `references/getting_started.md` - Installation, basic concepts, first steps
-- **Quantum circuits**: `references/quantum_circuits.md` - Gates, measurements, circuit patterns
-- **Quantum ML**: `references/quantum_ml.md` - Hybrid models, framework integration, QNNs
-- **Quantum chemistry**: `references/quantum_chemistry.md` - VQE, molecular Hamiltonians, chemistry workflows
-- **Devices**: `references/devices_backends.md` - Simulators, hardware plugins, device configuration
+- **Getting started**: `references/getting-started.md` - Installation, basic concepts, first steps
+- **Quantum circuits**: `references/quantum-circuits.md` - Gates, measurements, circuit patterns
+- **Quantum ML**: `references/quantum-ml.md` - Hybrid models, framework integration, QNNs
+- **Quantum chemistry**: `references/quantum-chemistry.md` - VQE, molecular Hamiltonians, chemistry workflows
+- **Devices**: `references/devices-backends.md` - Simulators, hardware plugins, device configuration
 - **Optimization**: `references/optimization.md` - Optimizers, gradients, variational algorithms
-- **Advanced**: `references/advanced_features.md` - Templates, transforms, JIT compilation, noise
+- **Advanced**: `references/advanced-features.md` - Templates, transforms, JIT compilation, noise
 
 ## Best Practices
 

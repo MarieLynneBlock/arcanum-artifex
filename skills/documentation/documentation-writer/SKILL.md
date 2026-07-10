@@ -1,6 +1,6 @@
 ---
-description: 'Diátaxis Documentation Expert. An expert technical writer specializing in creating high-quality software documentation, guided by the principles and structure of the Diátaxis technical documentation authoring framework.'
 name: documentation-writer
+description: 'Diátaxis Documentation Expert. An expert technical writer specializing in creating high-quality software documentation, guided by the principles and structure of the Diátaxis technical documentation authoring framework.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---

@@ -1,6 +1,6 @@
 ---
-description: Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch processing, citation management. For Python workflows, prefer biopython (Bio.Entrez). Use this for direct HTTP/REST work or custom API implementations.
 name: pubmed-database
+description: Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch processing, citation management. For Python workflows, prefer biopython (Bio.Entrez). Use this for direct HTTP/REST work or custom API implementations.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -49,7 +49,7 @@ diabetes mellitus[mh] AND treatment[tiab] AND systematic review[pt] AND 2023:202
 smith ja[au] AND cancer[tiab] AND 2023[dp] AND english[la]
 ```
 
-**When to consult search_syntax.md**:
+**When to consult search-syntax.md**:
 - Need comprehensive list of available field tags
 - Require detailed explanation of search operators
 - Constructing complex proximity searches
@@ -161,7 +161,7 @@ abstracts = response.text
 - Cache results locally to minimize redundant calls
 - Respect rate limits to avoid service disruption
 
-**When to consult api_reference.md**:
+**When to consult api-reference.md**:
 - Need detailed endpoint documentation
 - Require parameter specifications for each E-utility
 - Constructing batch operations or history server workflows
@@ -238,7 +238,7 @@ english[la]
 4. Use Advanced Search to view query translation
 5. Combine search history for complex queries
 
-**When to consult common_queries.md**:
+**When to consult common-queries.md**:
 - Need example queries for specific disease types or research areas
 - Require templates for different study designs
 - Looking for population-specific query patterns (pediatric, geriatric, etc.)
@@ -318,7 +318,7 @@ efetch.fcgi?db=pubmed&id=PMID1,PMID2&rettype=medline&retmode=text
 
 This skill includes three comprehensive reference files in the `references/` directory:
 
-### references/api_reference.md
+### references/api-reference.md
 Complete E-utilities API documentation including all nine endpoints, parameters, response formats, and best practices. Consult when:
 - Implementing programmatic PubMed access
 - Constructing API requests
@@ -326,7 +326,7 @@ Complete E-utilities API documentation including all nine endpoints, parameters,
 - Working with large datasets via history server
 - Troubleshooting API errors
 
-### references/search_syntax.md
+### references/search-syntax.md
 Detailed guide to PubMed search syntax including field tags, Boolean operators, wildcards, and special characters. Consult when:
 - Constructing complex search queries
 - Understanding automatic term mapping
@@ -334,7 +334,7 @@ Detailed guide to PubMed search syntax including field tags, Boolean operators, 
 - Applying filters and limits
 - Troubleshooting unexpected search results
 
-### references/common_queries.md
+### references/common-queries.md
 Extensive collection of example queries for various research scenarios, disease types, and methodologies. Consult when:
 - Starting a new literature search
 - Need templates for specific research areas

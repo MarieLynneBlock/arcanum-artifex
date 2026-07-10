@@ -1,9 +1,10 @@
 ---
-description: 'Settings customisation builder for designing, reviewing, and fixing Copilot and editor configuration that controls discovery, scope, and behaviour of custom assets.'
 name: 'Settings Builder'
+description: 'Settings customisation builder for designing, reviewing, and fixing Copilot and editor configuration that controls discovery, scope, and behaviour of custom assets.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Settings Builder

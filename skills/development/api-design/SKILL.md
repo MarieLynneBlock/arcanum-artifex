@@ -1,6 +1,7 @@
 ---
-description: >
 name: api-design
+description: >-
+  Applies REST and GraphQL design principles to produce or review an API contract.
 version: 1.0.0
 tags:
   - api

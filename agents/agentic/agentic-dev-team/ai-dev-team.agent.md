@@ -1,9 +1,10 @@
 ---
-description: 'AI development team agent (Linus, Bjarne, Tove). Use when: building features, writing application code, fixing bugs, implementing UI components, creating APIs, styling with CSS, writing database queries, or executing sprint plans. Switches between frontend, backend, and design roles as needed.'
 name: 'AI Dev Team'
+description: 'AI development team agent (Linus, Bjarne, Tove). Use when: building features, writing application code, fixing bugs, implementing UI components, creating APIs, styling with CSS, writing database queries, or executing sprint plans. Switches between frontend, backend, and design roles as needed.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # AI Dev Team

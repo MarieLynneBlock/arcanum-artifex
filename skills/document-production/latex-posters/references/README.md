@@ -83,7 +83,7 @@ All templates configured to maximize content area:
 - Image resolution analysis
 - File size optimization
 
-**Manual Verification** (`assets/poster_quality_checklist.md`):
+**Manual Verification** (`assets/poster-quality-checklist.md`):
 - Visual inspection at 100% zoom
 - Reduced-scale print test (25%)
 - Typography and spacing review
@@ -114,14 +114,14 @@ Templates support all standard sizes:
 
 **Comprehensive Documentation** (in `references/`):
 
-1. **`latex_poster_packages.md`** (746 lines)
+1. **`latex-poster-packages.md`** (746 lines)
    - Detailed comparison of beamerposter, tikzposter, baposter
    - Package-specific syntax and examples
    - Strengths, limitations, best use cases
    - Theme and color customization
    - Compilation tips and troubleshooting
 
-2. **`poster_design_principles.md`** (807 lines)
+2. **`poster-design-principles.md`** (807 lines)
    - Visual hierarchy and white space
    - Typography: font selection, sizing, readability
    - Color theory: schemes, contrast, accessibility
@@ -129,7 +129,7 @@ Templates support all standard sizes:
    - Icons, graphics, and visual elements
    - Common design mistakes to avoid
 
-3. **`poster_layout_design.md`** (650+ lines)
+3. **`poster-layout-design.md`** (650+ lines)
    - Grid systems (2, 3, 4-column layouts)
    - Visual flow and reading patterns
    - Spatial organization strategies
@@ -137,7 +137,7 @@ Templates support all standard sizes:
    - Block and box design
    - Layout patterns by research type
 
-4. **`poster_content_guide.md`** (900+ lines)
+4. **`poster-content-guide.md`** (900+ lines)
    - Content strategy (3-5 minute rule)
    - Word budgets by section
    - Visual-to-text ratio (40-50% visual)
@@ -155,7 +155,7 @@ Templates support all standard sizes:
   - File size assessment
 
 **Checklists** (in `assets/`):
-- `poster_quality_checklist.md`: Comprehensive pre-printing checklist
+- `poster-quality-checklist.md`: Comprehensive pre-printing checklist
   - Pre-compilation checks
   - PDF quality verification
   - Visual inspection items
@@ -194,7 +194,7 @@ Templates support all standard sizes:
 - Compile to PDF
 - Run `review_poster.sh` for automated checks
 - Review visually at 100% zoom
-- Check against `poster_quality_checklist.md`
+- Check against `poster-quality-checklist.md`
 
 **5. Test Print**
 - **Critical step!** Print at 25% scale
@@ -398,8 +398,8 @@ pdflatex my_poster.tex
 
 ### Further Reading
 - All reference documents in `references/` directory
-- Quality checklist in `assets/poster_quality_checklist.md`
-- Package comparison in `references/latex_poster_packages.md`
+- Quality checklist in `assets/poster-quality-checklist.md`
+- Package comparison in `references/latex-poster-packages.md`
 
 ## Support
 
@@ -407,7 +407,7 @@ For issues or questions:
 - Review reference documentation in `references/`
 - Check troubleshooting section above
 - Run automated review: `./scripts/review_poster.sh`
-- Use quality checklist: `assets/poster_quality_checklist.md`
+- Use quality checklist: `assets/poster-quality-checklist.md`
 
 ## Version
 

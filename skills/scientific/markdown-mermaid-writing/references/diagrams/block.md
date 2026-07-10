@@ -2,7 +2,7 @@
 
 # Block Diagram
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
 
 **Syntax keyword:** `block-beta`
 **Best for:** System block composition, layered architectures, component topology where spatial layout matters

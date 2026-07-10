@@ -1,10 +1,11 @@
 ---
+name: 'Power Platform Expert'
 description: "Power Platform expert providing guidance on Code Apps, canvas apps, Dataverse, connectors, and Power Platform best practices"
-name: "Power Platform Expert"
 tools: []
 model: GPT-4.1
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Power Platform Expert

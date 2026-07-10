@@ -1,6 +1,6 @@
 ---
-description: '[TODO]'
 name: 'Workflow'
+description: '[TODO]'
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  workflow-author: 'Marie-Lynne Block'
 ---

@@ -1,0 +1,9 @@
+timeseries {
+  total_requests = sum(dt.service.request.count, scalar: true),
+  failed_requests = sum(dt.service.request.failure_count, scalar: true),
+  p50_response_time = percentile(dt.service.request.response_time, 50, scalar: true),
+  p95_response_time = percentile(dt.service.request.response_time, 95, scalar: true),
+  p99_response_time = percentile(dt.service.request.response_time, 99, scalar: true)
+}, by: {dt.entity.service}, from:"START_TIME", to:"END_TIME"
+| fieldsAdd service_name = entityName(dt.entity.service)
+| fieldsAdd failure_rate_percent = if(total_requests > 0, failed_requests / total_requests * 100, else:0)
