@@ -1,6 +1,6 @@
 # Security Skills
 
-This category contains skills for threat modeling, compliance, security review, and breach analysis.
+This category contains skills for threat modelling, compliance, security review, and breach analysis.
 
 ## Skills
 

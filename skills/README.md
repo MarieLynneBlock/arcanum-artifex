@@ -4,7 +4,7 @@ Proven agent skills ready to deploy. Each skill is a folder — copy the folder 
 
 ## Library structure
 
-This library is organized by category:
+This library is organised by category:
 
 - [agentic/](agentic/)
 - [analysis/](analysis/)
