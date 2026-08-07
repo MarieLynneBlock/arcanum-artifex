@@ -1,11 +1,5 @@
 # Copilot Instructions
 
-<!--
-  This file applies to every Copilot Chat session in this repo.
-  Keep instructions concise — Copilot appends this to every request.
-  Specific context is better than generic rules.
--->
-
 ## Project
 
 This is a documentation-first lab for GitHub Copilot resources: verified templates, prompt files, skills, agents, workflows, and guides. Treat every asset as vendor-agnostic and copyable on its own.
@@ -54,18 +48,50 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 - VS Code settings for Copilot go in `.vscode/settings.json`.
 - Skills are folder-based assets intended to be copied into `.github/skills/` in target projects.
 - Workflows are self-contained folders; keep their runtime dependencies under `assets/`.
-- Skill and workflow entry files (`SKILL.md`, `WORKFLOW.md`) must include YAML frontmatter with `name`, `description`, and `metadata` — in that order:
+
+- Skill and workflow entry files (`SKILL.md`, `WORKFLOW.md`) must include YAML frontmatter with `name`, `description`, and `metadata` — in that order. Use `skill-author` for skills and `workflow-author` for workflows:
 
   ```yaml
   ---
   name: (name)
   description: (description)
   metadata:
-     skill-author: (author name)
+    skill-author: (author name)
+    version: x.x.x
   ---
   ```
-- Custom agent files (`*.agent.md`) must include a discovery-friendly `description` and `metadata.agent-author`; keep optional fields such as `name`, `tools`, and `model` only when they add clear value.
-- Instruction files (`*.instructions.md`) must include a useful `description`, an accurate `applyTo` glob, and `metadata.instruction-author` as the last frontmatter field when metadata is present.
+
+  ```yaml
+  ---
+  name: (name)
+  description: (description)
+  metadata:
+    workflow-author: (author name)
+    version: x.x.x
+  ---
+  ```
+- Custom agent files (`*.agent.md`) must include a discovery-friendly `description` and `metadata.agent-author`; keep optional fields such as `name`, `tools`, and `model` only when they add clear value:
+
+  ```yaml
+  ---
+  description: (discovery-friendly description)
+  metadata:
+    agent-author: (author name)
+    version: x.x.x
+  ---
+  ```
+
+- Instruction files (`*.instructions.md`) must include a useful `description`, an accurate `applyTo` glob, and `metadata.instruction-author` as the last frontmatter field when metadata is present:
+
+  ```yaml
+  ---
+  description: (description)
+  applyTo: (glob)
+  metadata:
+    instruction-author: (author name)
+    version: x.x.x
+  ---
+  ```
 
 ## Agent Guardrails
 

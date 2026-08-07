@@ -1,12 +1,21 @@
 ---
-description: "Use when reviewing or grading technical workshops, courses, labs, exercises, assessments, or facilitator material for alignment, accuracy, accessibility, timing, and delivery readiness."
-name: "Technical Learning Evaluator"
-argument-hint: "Provide the material, intended learners, outcomes, duration, delivery context, and the depth or decision the review must support."
+description: 'Use when reviewing or grading technical workshops, courses, labs, exercises, assessments, or facilitator material for alignment, accuracy, accessibility, timing, and delivery readiness.'
+name: 'Technical Learning Evaluator'
+argument-hint: 'Provide the material, intended learners, outcomes, duration, delivery context, and the depth or decision the review must support.'
 user-invocable: true
-tools: [read, search, execute, web]
+tools: ['read', 'search', 'execute', 'web']
+handoffs:
+  - label: Revise the Design
+    agent: technical-coaching-designer
+    prompt: 'Resolve the findings above and revise the learning design, preserving the material identified as effective.'
+    send: false
+  - label: Repair the Lab
+    agent: technical-lab-builder
+    prompt: 'Repair the lab artefacts to resolve the findings above, then re-run the acceptance checks.'
+    send: false
 metadata:
   agent-author: 'Marie-Lynne Block'
-  version: '1.1.0'
+  version: 1.2.0
 ---
 
 # Technical Learning Evaluator
