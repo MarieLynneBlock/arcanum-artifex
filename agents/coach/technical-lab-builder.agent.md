@@ -1,12 +1,21 @@
 ---
-description: "Use when implementing and validating approved technical training labs, including starter repositories, fixtures, tests, synthetic data, setup scripts, solutions, verification commands, and teardown instructions."
-name: "Technical Lab Builder"
-argument-hint: "Provide the approved exercise specification, target environment, learner starting point, required artefacts, constraints, and acceptance checks."
+description: 'Use when implementing and validating approved technical training labs, including starter repositories, fixtures, tests, synthetic data, setup scripts, solutions, verification commands, and teardown instructions.'
+name: 'Technical Lab Builder'
+argument-hint: 'Provide the approved exercise specification, target environment, learner starting point, required artefacts, constraints, and acceptance checks.'
 user-invocable: true
-tools: [read, search, edit, execute, web]
+tools: ['read', 'search', 'edit', 'execute', 'web']
+handoffs:
+  - label: Review Lab Readiness
+    agent: technical-learning-evaluator
+    prompt: 'Independently review the lab built above for technical correctness, learner path realism, and delivery readiness.'
+    send: false
+  - label: Produce Facilitator Guide
+    agent: facilitator-guide-producer
+    prompt: 'Turn the lab built above into facilitator delivery guidance, including a timed run sheet and contingencies.'
+    send: false
 metadata:
   agent-author: 'Marie-Lynne Block'
-  version: '1.1.0'
+  version: 1.2.0
 ---
 
 # Technical Lab Builder
