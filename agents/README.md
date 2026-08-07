@@ -9,6 +9,8 @@ This library is organised close to the `skills/` taxonomy:
 - [agentic/](agentic/)
 - [analysis/](analysis/)
 - [architecture/](architecture/)
+- [coach/](coach/)
+- [data/](data/)
 - [development/](development/)
 - [documentation/](documentation/)
 - [scientific/](scientific/)
@@ -32,6 +34,8 @@ agents/
 ├── architecture/
 │   ├── domain/
 │   └── review/
+├── coach/
+├── data/
 ├── development/
 │   ├── cpp/
 │   ├── devops/
@@ -52,7 +56,7 @@ agents/
 
 ## Current size
 
-- Agent files in this folder: **80** (`*.agent.md`)
+- Agent files in this folder: **87** (`*.agent.md`)
 
 ## What are custom agents?
 
