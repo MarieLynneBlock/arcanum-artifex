@@ -2,7 +2,7 @@
 
 ## Overview
 
-PyOpenMS provides specialized tools for untargeted metabolomics analysis including feature detection optimized for small molecules, adduct grouping, compound identification, and integration with metabolomics databases.
+PyOpenMS provides specialised tools for untargeted metabolomics analysis including feature detection optimised for small molecules, adduct grouping, compound identification, and integration with metabolomics databases.
 
 ## Untargeted Metabolomics Pipeline
 
@@ -234,9 +234,9 @@ print(f"Found {len(ms2_spectra)} MS2 spectra")
 # (Requires external tool or custom implementation)
 ```
 
-## Data Normalization
+## Data Normalisation
 
-### Total Ion Current (TIC) Normalization
+### Total Ion Current (TIC) Normalisation
 
 ```python
 import numpy as np
@@ -447,7 +447,7 @@ export_for_metaboanalyst(df, "for_metaboanalyst.csv")
 - Use at least 3 biological replicates per group
 - Randomize sample injection order
 
-### Parameter Optimization
+### Parameter Optimisation
 
 Test parameters on pooled QC sample:
 

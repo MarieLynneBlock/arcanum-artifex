@@ -1,6 +1,6 @@
 # Game Development Terminology
 
-A comprehensive glossary of video game development terms and concepts, organized by category for quick reference.
+A comprehensive glossary of video game development terms and concepts, organised by category for quick reference.
 
 Source: https://www.gameindustrycareerguide.com/video-game-development-terms-glossary/
 
@@ -12,7 +12,7 @@ Source: https://www.gameindustrycareerguide.com/video-game-development-terms-glo
 A classification for games produced by large studios with significant budgets, large teams, and high production values. Examples include franchises like Call of Duty, Assassin's Creed, and The Last of Us.
 
 ### Indie
-Short for "independent." Refers to games developed by small teams or individuals without the financial backing of a major publisher. Indie games often emphasize creativity and innovation over production scale.
+Short for "independent." Refers to games developed by small teams or individuals without the financial backing of a major publisher. Indie games often emphasise creativity and innovation over production scale.
 
 ### Alpha
 An early phase of game development where the core features are implemented but the game is incomplete, unpolished, and likely contains significant bugs. Alpha builds are used for internal testing and feature validation.
@@ -88,7 +88,7 @@ An invisible geometric shape attached to a game entity used for collision detect
 A timer-based restriction that prevents a player from using an ability, item, or action again until a specified period has elapsed.
 
 ### Buff / Debuff
-Temporary modifications to a character's stats or abilities. A buff enhances capabilities (increased speed, damage, defense) while a debuff reduces them (slowed movement, reduced accuracy).
+Temporary modifications to a character's stats or abilities. A buff enhances capabilities (increased speed, damage, defence) while a debuff reduces them (slowed movement, reduced accuracy).
 
 ### Aggro
 Short for "aggravation." Refers to an enemy's hostility level toward the player. "Drawing aggro" means attracting an enemy's attention and attacks.
@@ -112,7 +112,7 @@ The strategies, character builds, or tactics that emerge as the most effective w
 A game balance change that reduces the power or effectiveness of a character, weapon, ability, or strategy. The opposite of a buff.
 
 ### Sandbox
-A game design approach that gives players freedom to explore and interact with the game world without a strict linear progression. Emphasizes player-driven experiences.
+A game design approach that gives players freedom to explore and interact with the game world without a strict linear progression. Emphasises player-driven experiences.
 
 ### Procedural Generation
 The algorithmic creation of game content (levels, terrain, items, quests) at runtime rather than by hand. Enables vast, varied game worlds with less manual content creation.
@@ -121,7 +121,7 @@ The algorithmic creation of game content (levels, terrain, items, quests) at run
 A game mechanic where a character's death is permanent, with no option to reload or respawn. The player must start over, often with a new character.
 
 ### Roguelike / Roguelite
-Game genres characterized by procedurally generated levels, permadeath, and turn-based or real-time combat. Roguelites are a lighter variant that may allow some persistent progression between runs.
+Game genres characterised by procedurally generated levels, permadeath, and turn-based or real-time combat. Roguelites are a lighter variant that may allow some persistent progression between runs.
 
 ---
 
@@ -143,7 +143,7 @@ The frequency at which the game server or simulation updates game state, measure
 The elapsed time between the current frame and the previous frame. Used to ensure game logic runs consistently regardless of frame rate variations.
 
 ### Physics Engine
-A system that simulates physical behaviors such as gravity, collisions, rigid body dynamics, soft body deformation, and ragdoll effects. Examples: Box2D, Bullet, PhysX, Havok.
+A system that simulates physical behaviours such as gravity, collisions, rigid body dynamics, soft body deformation, and ragdoll effects. Examples: Box2D, Bullet, PhysX, Havok.
 
 ### Collision Detection
 The process of determining when two or more game objects intersect or come into contact. Methods include bounding box (AABB), sphere, capsule, and mesh-based collision.
@@ -155,22 +155,22 @@ A technique that projects an invisible ray from a point in a specified direction
 Algorithms that calculate navigation routes through the game world for AI-controlled characters. Common approaches include A* (A-star), Dijkstra's algorithm, and navigation meshes (NavMesh).
 
 ### State Machine (FSM -- Finite State Machine)
-A programming pattern where an entity exists in one of a defined set of states, with rules governing transitions between states. Widely used for AI behavior, animation systems, and game flow management.
+A programming pattern where an entity exists in one of a defined set of states, with rules governing transitions between states. Widely used for AI behaviour, animation systems, and game flow management.
 
 ### Shader
-A program that runs on the GPU to control how vertices and pixels are rendered. Vertex shaders transform geometry; fragment (pixel) shaders compute color and lighting per pixel.
+A program that runs on the GPU to control how vertices and pixels are rendered. Vertex shaders transform geometry; fragment (pixel) shaders compute colour and lighting per pixel.
 
 ### LOD (Level of Detail)
 A technique that reduces the visual complexity of distant objects by swapping in lower-polygon models, simpler textures, or reduced effects. Improves rendering performance.
 
 ### Occlusion Culling
-An optimization that avoids rendering objects hidden behind other objects. If an object is completely occluded from the camera's view, it is excluded from the rendering pipeline.
+An optimisation that avoids rendering objects hidden behind other objects. If an object is completely occluded from the camera's view, it is excluded from the rendering pipeline.
 
 ### Frustum Culling
-An optimization that excludes objects outside the camera's visible cone (view frustum) from rendering calculations.
+An optimisation that excludes objects outside the camera's visible cone (view frustum) from rendering calculations.
 
 ### Draw Call
-A command sent to the GPU instructing it to render a set of geometry. Reducing draw calls through batching and instancing is a key optimization strategy.
+A command sent to the GPU instructing it to render a set of geometry. Reducing draw calls through batching and instancing is a key optimisation strategy.
 
 ### Sprite
 A 2D image or animation used in games. Sprites represent characters, items, effects, and environmental elements in 2D games.
@@ -197,7 +197,7 @@ The process of converting game objects, state, or data structures into a format 
 The delay between an action being initiated and its result being observed. In networking, latency (ping) is the round-trip time for data to travel between client and server.
 
 ### Netcode
-The networking code and architecture of a multiplayer game, including client-server communication, state synchronization, lag compensation, and prediction.
+The networking code and architecture of a multiplayer game, including client-server communication, state synchronisation, lag compensation, and prediction.
 
 ### Client-Server Architecture
 A networking model where a central server maintains the authoritative game state and clients send inputs and receive state updates. Reduces cheating and ensures consistency.
@@ -209,7 +209,7 @@ A networking model where game clients communicate directly with each other witho
 Techniques used in multiplayer games to mitigate the effects of network latency, such as client-side prediction, server reconciliation, and entity interpolation.
 
 ### Rubber Banding
-A visual artifact in multiplayer games where a player or object appears to snap back to a previous position due to a mismatch between client prediction and server correction.
+A visual artefact in multiplayer games where a player or object appears to snap back to a previous position due to a mismatch between client prediction and server correction.
 
 ---
 
@@ -219,7 +219,7 @@ A visual artifact in multiplayer games where a player or object appears to snap 
 Any piece of content used in the game, including 3D models, textures, sprites, sounds, music, animations, scripts, and level data.
 
 ### Texture
-A 2D image applied to the surface of a 3D model or used directly in 2D rendering. Textures provide color, detail, and material appearance.
+A 2D image applied to the surface of a 3D model or used directly in 2D rendering. Textures provide colour, detail, and material appearance.
 
 ### Normal Map
 A texture that stores surface orientation data per pixel, allowing flat surfaces to appear to have depth, bumps, and fine detail without additional geometry.
@@ -249,13 +249,13 @@ A system that generates and manages large numbers of small visual elements (part
 A 2D visual technique where background layers move at different speeds relative to the foreground, creating an illusion of depth.
 
 ### Voxel
-A volumetric pixel -- a value on a 3D grid analogous to a pixel on a 2D grid. Used in games like Minecraft for block-based world construction and in medical/scientific visualization.
+A volumetric pixel -- a value on a 3D grid analogous to a pixel on a 2D grid. Used in games like Minecraft for block-based world construction and in medical/scientific visualisation.
 
 ### Anti-Aliasing
 A rendering technique that smooths jagged edges (aliasing) along the borders of polygons and high-contrast boundaries. Methods include MSAA, FXAA, and TAA.
 
 ### Post-Processing
-Visual effects applied to the rendered frame after the main scene rendering is complete. Examples include bloom, motion blur, depth of field, color grading, and ambient occlusion.
+Visual effects applied to the rendered frame after the main scene rendering is complete. Examples include bloom, motion blur, depth of field, colour grading, and ambient occlusion.
 
 ---
 
@@ -311,7 +311,7 @@ A game update released on or before the official launch day to fix bugs, improve
 The systematic testing of a game to identify bugs, glitches, performance issues, and design problems. QA testers play the game repeatedly under various conditions to ensure quality.
 
 ### Bug
-An error, flaw, or unintended behavior in the game's code, design, or content. Bugs range from minor visual glitches to game-breaking crashes.
+An error, flaw, or unintended behaviour in the game's code, design, or content. Bugs range from minor visual glitches to game-breaking crashes.
 
 ### Exploit
 An unintended use of a game mechanic or bug that gives a player an unfair advantage. Exploits are typically patched once discovered.
@@ -348,7 +348,7 @@ A team-based competitive genre where players control individual characters with 
 A genre where a large number of players compete to be the last one standing in a shrinking play area.
 
 ### Metroidvania
-A sub-genre of action-adventure games characterized by interconnected maps, ability-gated exploration, and backtracking to previously inaccessible areas with newly acquired abilities.
+A sub-genre of action-adventure games characterised by interconnected maps, ability-gated exploration, and backtracking to previously inaccessible areas with newly acquired abilities.
 
 ### Soulslike
-Games inspired by the Dark Souls series, characterized by challenging combat, stamina-based mechanics, minimal hand-holding, and a strong emphasis on learning from failure.
+Games inspired by the Dark Souls series, characterised by challenging combat, stamina-based mechanics, minimal hand-holding, and a strong emphasis on learning from failure.

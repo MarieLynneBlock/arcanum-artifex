@@ -143,7 +143,7 @@ def main():
 
 ## Project Structure
 
-Modal apps are typically single Python files, but can be organized into modules:
+Modal apps are typically single Python files, but can be organised into modules:
 
 ```
 my-project/

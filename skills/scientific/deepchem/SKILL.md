@@ -1,6 +1,6 @@
 ---
-description: Molecular ML with diverse featurizers and pre-built datasets. Use for property prediction (ADMET, toxicity) with traditional ML or GNNs when you want extensive featurization options and MoleculeNet benchmarks. Best for quick experiments with pre-trained models, diverse molecular representations. For graph-first PyTorch workflows use torchdrug; for benchmark datasets use pytdc.
 name: deepchem
+description: Molecular ML with diverse featurizers and pre-built datasets. Use for property prediction (ADMET, toxicity) with traditional ML or GNNs when you want extensive featurization options and MoleculeNet benchmarks. Best for quick experiments with pre-trained models, diverse molecular representations. For graph-first PyTorch workflows use torchdrug; for benchmark datasets use pytdc.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-DeepChem is a comprehensive Python library for applying machine learning to chemistry, materials science, and biology. Enable molecular property prediction, drug discovery, materials design, and biomolecule analysis through specialized neural networks, molecular featurization methods, and pretrained models.
+DeepChem is a comprehensive Python library for applying machine learning to chemistry, materials science, and biology. Enable molecular property prediction, drug discovery, materials design, and biomolecule analysis through specialised neural networks, molecular featurization methods, and pretrained models.
 
 ## When to Use This Skill
 
@@ -23,13 +23,13 @@ This skill should be used when:
 - Implementing graph neural networks for molecules (GCN, GAT, MPNN, AttentiveFP)
 - Applying transfer learning with pretrained models (ChemBERTa, GROVER, MolFormer)
 - Predicting crystal/materials properties (bandgap, formation energy)
-- Analyzing protein or DNA sequences
+- Analysing protein or DNA sequences
 
 ## Core Capabilities
 
 ### 1. Molecular Data Loading and Processing
 
-DeepChem provides specialized loaders for various chemical data formats:
+DeepChem provides specialised loaders for various chemical data formats:
 
 ```python
 import deepchem as dc
@@ -111,7 +111,7 @@ features = fp.featurize(['CCO', 'c1ccccc1'])
 - **Large datasets (>100K)**: Graph featurizers (MolGraphConvFeaturizer, DMPNNFeaturizer)
 - **Transfer learning**: Pretrained model featurizers (GroverFeaturizer)
 
-See `references/api_reference.md` for complete featurizer documentation.
+See `references/api-reference.md` for complete featurizer documentation.
 
 ### 3. Data Splitting
 
@@ -139,7 +139,7 @@ train, test = splitter.train_test_split(dataset)
 **Available Splitters**:
 - `ScaffoldSplitter`: Split by molecular scaffolds (prevents leakage)
 - `ButinaSplitter`: Clustering-based molecular splitting
-- `MaxMinSplitter`: Maximize diversity between sets
+- `MaxMinSplitter`: Maximise diversity between sets
 - `RandomSplitter`: Random splitting
 - `RandomStratifiedSplitter`: Preserves class distributions
 
@@ -201,7 +201,7 @@ model.fit(train, nb_epoch=50)
 
 ### 5. MoleculeNet Benchmarks
 
-Quick access to 30+ curated benchmark datasets with standardized train/valid/test splits:
+Quick access to 30+ curated benchmark datasets with standardised train/valid/test splits:
 
 ```python
 # Load benchmark dataset
@@ -226,7 +226,7 @@ test_score = model.evaluate(test, [metric])
 - **Quantum properties**: `load_qm7()`, `load_qm8()`, `load_qm9()`
 - **Materials**: `load_perovskite()`, `load_bandgap()`, `load_mp_formation_energy()`
 
-See `references/api_reference.md` for complete dataset list.
+See `references/api-reference.md` for complete dataset list.
 
 ### 6. Transfer Learning
 
@@ -466,7 +466,7 @@ splitter = dc.splits.RandomSplitter()
 train, test = splitter.train_test_split(dataset)
 ```
 
-### Pattern 2: Normalize Features and Targets
+### Pattern 2: Normalise Features and Targets
 ```python
 transformers = [
     dc.trans.NormalizationTransformer(
@@ -520,7 +520,7 @@ model = dc.models.GCNModel(batch_size=32)  # Instead of 128
 - Use pretrained models (GROVER)
 
 ### Issue 3: Overfitting on Small Datasets
-**Problem**: Model memorizes training data.
+**Problem**: Model memorises training data.
 **Solutions**:
 - Use stronger regularization (increase dropout to 0.5)
 - Use simpler models (Random Forest instead of deep learning)
@@ -542,12 +542,12 @@ uv pip install deepchem[all]
 
 This skill includes comprehensive reference documentation:
 
-### `references/api_reference.md`
+### `references/api-reference.md`
 Complete API documentation including:
 - All data loaders and their use cases
 - Dataset classes and when to use each
-- Complete featurizer catalog with selection guide
-- Model catalog organized by category (50+ models)
+- Complete featurizer catalogue with selection guide
+- Model catalogue organised by category (50+ models)
 - MoleculeNet dataset descriptions
 - Metrics and evaluation functions
 - Common code patterns
@@ -558,7 +558,7 @@ Complete API documentation including:
 Eight detailed end-to-end workflows:
 1. Molecular property prediction from SMILES
 2. Using MoleculeNet benchmarks
-3. Hyperparameter optimization
+3. Hyperparameter optimisation
 4. Transfer learning with pretrained models
 5. Molecular generation with GANs
 6. Materials property prediction

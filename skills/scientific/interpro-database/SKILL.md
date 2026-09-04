@@ -1,6 +1,6 @@
 ---
-description: Query InterPro for protein family, domain, and functional site annotations. Integrates Pfam, PANTHER, PRINTS, SMART, SUPERFAMILY, and 11 other member databases. Use for protein function prediction, domain architecture analysis, evolutionary classification, and GO term mapping.
 name: interpro-database
+description: Query InterPro for protein family, domain, and functional site annotations. Integrates Pfam, PANTHER, PRINTS, SMART, SUPERFAMILY, and 11 other member databases. Use for protein function prediction, domain architecture analysis, evolutionary classification, and GO term mapping.
 license: CC0-1.0
 metadata:
   skill-author: 'Kuan-lin Huang'
@@ -208,7 +208,7 @@ kinase_entries = search_entries("kinase", entry_type="domain")
 
 ## Query Workflows
 
-### Workflow 1: Characterize an Unknown Protein
+### Workflow 1: Characterise an Unknown Protein
 
 1. **Run InterProScan** locally or via the web (https://www.ebi.ac.uk/interpro/search/sequence/) to scan a protein sequence
 2. **Parse results** to identify domain architecture

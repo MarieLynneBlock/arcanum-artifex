@@ -103,7 +103,7 @@ Common false positives to exclude:
 - Lorem ipsum text
 - HTML/CSS content
 - Base64-encoded non-sensitive config (but flag and note)
-- UUID/GUID (entropy is high but format is recognizable)
+- UUID/GUID (entropy is high but format is recognisable)
 
 ---
 
@@ -165,7 +165,7 @@ access_key = "AKIAIOSFODNN7EXAMPLE"
 
 ## Safe Patterns (Do NOT flag)
 
-These are intentional placeholders — recognize and skip:
+These are intentional placeholders — recognise and skip:
 ```
 "your-api-key-here"
 "<YOUR_API_KEY>"

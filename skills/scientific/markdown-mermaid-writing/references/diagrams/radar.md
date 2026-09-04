@@ -2,12 +2,12 @@
 
 # Radar Chart
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `radar-beta`
 **Mermaid version:** v11.6.0+
 **Best for:** Multi-dimensional comparisons, skill assessments, performance profiles, competitive analysis
-**When NOT to use:** Time series data (use [XY Chart](xy_chart.md)), simple proportions (use [Pie](pie.md))
+**When NOT to use:** Time series data (use [XY Chart](xy-chart.md)), simple proportions (use [Pie](pie.md))
 
 > ⚠️ **Accessibility:** Radar charts do **not** support `accTitle`/`accDescr`. Always place a descriptive _italic_ Markdown paragraph directly above the code block.
 
@@ -35,7 +35,7 @@ radar-beta
 
 - Define axes with `axis id["Label"]` — use short labels (1–2 words)
 - Define curves with `curve id["Label"]{val1, val2, ...}` matching axis order
-- Set `max` to normalize all values to the same scale
+- Set `max` to normalise all values to the same scale
 - `graticule` options: `circle` (default) or `polygon`
 - `ticks` controls the number of concentric rings (default 5)
 - `showLegend true` adds a legend for multiple curves

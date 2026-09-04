@@ -1,8 +1,8 @@
 ---
-description: Search the web, extract URL content, and run deep research using the Parallel Chat API and Extract API. Use for ALL web searches, research queries, and general information gathering. Provides synthesized summaries with citations.
 name: parallel-web
-allowed-tools: Read Write Edit Bash
+description: Search the web, extract URL content, and run deep research using the Parallel Chat API and Extract API. Use for ALL web searches, research queries, and general information gathering. Provides synthesised summaries with citations.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 compatibility: PARALLEL_API_KEY required
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -47,7 +47,7 @@ Use this skill for **ALL** of the following:
 
 ### 1. Web Search (`search` command)
 
-Search the web via the Parallel Chat API (`base` model) and get a **synthesized summary** with cited sources.
+Search the web via the Parallel Chat API (`base` model) and get a **synthesised summary** with cited sources.
 
 **Best for:** General web searches, current events, fact-finding, technical lookups, news, market data.
 
@@ -71,7 +71,7 @@ python scripts/parallel_web.py search "AI regulation landscape" --json -o result
 - `-o`: Output file path
 - `--json`: Output as JSON
 
-**Response includes:** Synthesized summary organized by themes, with inline citations and a sources list.
+**Response includes:** Synthesised summary organised by themes, with inline citations and a sources list.
 
 ### 2. Deep Research (`research` command)
 

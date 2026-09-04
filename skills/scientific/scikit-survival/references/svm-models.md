@@ -2,11 +2,11 @@
 
 ## Overview
 
-Survival Support Vector Machines (SVMs) adapt the traditional SVM framework to survival analysis with censored data. They optimize a ranking objective that encourages correct ordering of survival times.
+Survival Support Vector Machines (SVMs) adapt the traditional SVM framework to survival analysis with censored data. They optimise a ranking objective that encourages correct ordering of survival times.
 
 ### Core Idea
 
-SVMs for survival analysis learn a function f(x) that produces risk scores, where the optimization ensures that subjects with shorter survival times receive higher risk scores than those with longer times.
+SVMs for survival analysis learn a function f(x) that produces risk scores, where the optimisation ensures that subjects with shorter survival times receive higher risk scores than those with longer times.
 
 ## When to Use Survival SVMs
 
@@ -26,7 +26,7 @@ SVMs for survival analysis learn a function f(x) that produces risk scores, wher
 
 ### FastSurvivalSVM
 
-Linear survival SVM optimized for speed using coordinate descent.
+Linear survival SVM optimised for speed using coordinate descent.
 
 **When to Use:**
 - Linear relationships expected
@@ -100,7 +100,7 @@ Survival SVM using hinge loss, more similar to classification SVM.
 **When to Use:**
 - Want hinge loss instead of squared hinge
 - Sparse solutions desired
-- Similar behavior to classification SVMs
+- Similar behaviour to classification SVMs
 
 **Key Parameters:**
 - `alpha`: Regularization parameter
@@ -143,10 +143,10 @@ risk_scores = estimator.predict(X_test)
 
 ### MinlipSurvivalAnalysis
 
-Survival analysis using minimizing Lipschitz constant approach.
+Survival analysis using minimising Lipschitz constant approach.
 
 **When to Use:**
-- Want different optimization objective
+- Want different optimisation objective
 - Research applications
 - Alternative to standard survival SVMs
 
@@ -366,7 +366,7 @@ print(f"Test C-index: {c_index:.3f}")
 
 ### Feature Scaling
 
-**CRITICAL**: Always standardize features before using SVMs!
+**CRITICAL**: Always standardise features before using SVMs!
 
 ```python
 from sklearn.preprocessing import StandardScaler
@@ -392,7 +392,7 @@ For large datasets (>10,000 samples), prefer:
 - **Very large datasets**: Ensemble methods are faster
 - **Need survival functions**: Use Random Survival Forest or Cox models
 - **Need interpretability**: Use Cox models
-- **Very high dimensional**: Use penalized Cox (Coxnet) or gradient boosting with feature selection
+- **Very high dimensional**: Use penalised Cox (Coxnet) or gradient boosting with feature selection
 
 ## Model Selection Guide
 
@@ -407,5 +407,5 @@ For large datasets (>10,000 samples), prefer:
 - Start with **FastSurvivalSVM** for baseline
 - Try **FastKernelSurvivalSVM** with RBF if non-linearity expected
 - Use grid search to tune alpha and gamma
-- Always standardize features
+- Always standardise features
 - Compare with Random Survival Forest and Gradient Boosting

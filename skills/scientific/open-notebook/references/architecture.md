@@ -31,7 +31,7 @@ Open Notebook is built as a modern Python web application with a clear separatio
 
 ### FastAPI Backend
 
-The REST API is built with FastAPI and organized into routers:
+The REST API is built with FastAPI and organised into routers:
 
 - **20 route modules** covering notebooks, sources, notes, chat, search, podcasts, transformations, models, credentials, embeddings, settings, and more
 - Async/await throughout for non-blocking I/O
@@ -134,7 +134,7 @@ Notebook Content → Episode Profile → Script Generation (LLM)
 
 ## Key Design Decisions
 
-1. **Multi-provider by default**: Not locked to any single AI provider, enabling cost optimization and capability matching
+1. **Multi-provider by default**: Not locked to any single AI provider, enabling cost optimisation and capability matching
 2. **Async processing**: Long-running operations (source ingestion, podcast generation) run asynchronously with status polling
 3. **Self-hosted data**: All data stays on the user's infrastructure with encrypted credential storage
 4. **REST-first API**: Every UI action is backed by an API endpoint for automation

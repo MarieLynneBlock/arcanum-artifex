@@ -35,7 +35,7 @@ The **reference trace** at `pixie_qa/reference-trace.jsonl` is your primary sour
 
 ## 4a. Derive evaluator assignments
 
-The eval criteria artifact (`pixie_qa/02-eval-criteria.md`) maps each criterion to use cases. The evaluator mapping artifact (`pixie_qa/03-evaluator-mapping.md`) maps each criterion to a concrete evaluator name. Combine these:
+The eval criteria artefact (`pixie_qa/02-eval-criteria.md`) maps each criterion to use cases. The evaluator mapping artefact (`pixie_qa/03-evaluator-mapping.md`) maps each criterion to a concrete evaluator name. Combine these:
 
 1. **Dataset-level default evaluators**: Criteria marked as applying to "All" use cases → their evaluator names go in the top-level `"evaluators"` array.
 2. **Item-level evaluators**: Criteria that apply to only a subset → their evaluator names go in `"evaluators"` on the relevant rows only, using `"..."` to also include the defaults.
@@ -162,13 +162,13 @@ Create diverse entries guided by the reference trace and use cases:
 
 ### Entry quality checklist
 
-Before finalizing the dataset, verify each entry against these criteria:
+Before finalising the dataset, verify each entry against these criteria:
 
 **Input realism**:
 
-- Does `eval_input` contain world data that respects the synthesization boundary (see Step 2c)? User-authored parameters are fine; world data should be sourced, not fabricated from scratch.
+- Does `eval_input` contain world data that respects the synthesisation boundary (see Step 2c)? User-authored parameters are fine; world data should be sourced, not fabricated from scratch.
 - Does the world data in `eval_input` match the scale and complexity described in `00-project-analysis.md` "Realistic input characteristics"? If the analysis says inputs are typically 5KB–500KB, a 200-char input is not realistic.
-- Is the answer to the prompt non-trivial to extract from the input? A test where the answer is in a clearly labeled HTML tag or the first sentence doesn't test extraction quality.
+- Is the answer to the prompt non-trivial to extract from the input? A test where the answer is in a clearly labelled HTML tag or the first sentence doesn't test extraction quality.
 
 **Scenario diversity**:
 
@@ -185,7 +185,7 @@ Before finalizing the dataset, verify each entry against these criteria:
 
 - **Fabricating world data**: Hand-authoring content the app would normally fetch from external sources (e.g., writing HTML for a web scraper, writing "retrieved documents" for a RAG system). This removes real-world complexity.
 - **Uniform difficulty**: All entries have the same complexity level. Real workloads have a distribution — some easy, some hard, some edge cases.
-- **Obvious answers**: Every entry has the target information cleanly labeled and unambiguous. Real data often has the answer scattered, partially present, duplicated with variations, or embedded in noise.
+- **Obvious answers**: Every entry has the target information cleanly labelled and unambiguous. Real data often has the answer scattered, partially present, duplicated with variations, or embedded in noise.
 - **Round-trip authorship**: You wrote both the input and the expected output, so you know exactly what's there. A real evaluator tests whether the app can find information it hasn't seen before.
 - **Only happy paths**: No entry tests error conditions, edge cases, or known failure modes.
 - **Building all entries from the same toy trace with minor rephrasing**: If all entries have similar `input_data` and similar `eval_input` data, the dataset tests nothing meaningful. Each entry should represent a meaningfully different scenario.

@@ -129,9 +129,9 @@ shapes, implementing overlap tests, and designing a resolution strategy.
 #### Bounding Shapes
 
 - **AABB (Axis-Aligned Bounding Box)**: A rectangle whose sides are aligned with the
-  coordinate axes. Defined by a position (center or top-left corner) and half-widths.
+  coordinate axes. Defined by a position (centre or top-left corner) and half-widths.
   Fast overlap tests but imprecise for rotated or irregular shapes.
-- **Circle / Sphere colliders**: Defined by center and radius. Overlap test is a simple
+- **Circle / Sphere colliders**: Defined by centre and radius. Overlap test is a simple
   distance comparison.
 - **OBB (Oriented Bounding Box)**: A rotated rectangle. Uses the Separating Axis Theorem
   for overlap tests.
@@ -222,7 +222,7 @@ function computePenetration(a, b):
 |---|---|---|
 | **Uniform Grid** | Evenly distributed objects | Divide world into fixed cells; objects register in their cell(s). |
 | **Quadtree** | Non-uniform distribution | Recursively subdivide space into 4 quadrants. Efficient for sparse scenes. |
-| **Spatial Hash** | Dynamic scenes | Hash object positions to buckets. O(1) lookup for neighbors. |
+| **Spatial Hash** | Dynamic scenes | Hash object positions to buckets. O(1) lookup for neighbours. |
 | **Sweep and Prune** | Many moving objects | Sort by axis; only test overlapping intervals. |
 
 ### Practical Game Development Applications
@@ -247,7 +247,7 @@ function computePenetration(a, b):
 Velocity and speed are fundamental concepts for moving objects in games. **Speed** is a
 scalar (magnitude only), while **velocity** is a vector (magnitude and direction).
 Understanding the distinction is critical for implementing correct movement, physics,
-and AI steering behaviors.
+and AI steering behaviours.
 
 ### Mathematical / Algorithmic Concepts
 
@@ -281,9 +281,9 @@ position.y += velocity.y * deltaTime
 
 This is **Euler integration**, the simplest (first-order) integration method.
 
-#### Normalizing Direction
+#### Normalising Direction
 
-To move at a fixed speed in a given direction, normalize the direction vector and
+To move at a fixed speed in a given direction, normalise the direction vector and
 multiply by the desired speed:
 
 ```
@@ -345,7 +345,7 @@ function update(entity, deltaTime):
 - **Friction and drag**: Reduce velocity over time by multiplying by a damping factor
   to simulate surface friction or air resistance.
 - **AI steering**: Compute a desired velocity toward a target, then smoothly adjust the
-  current velocity toward it (seek, flee, arrive behaviors).
+  current velocity toward it (seek, flee, arrive behaviours).
 
 ---
 
@@ -355,7 +355,7 @@ function update(entity, deltaTime):
 
 ### What It Is
 
-A physics engine simulates real-world physical behaviors -- gravity, collisions, rigid
+A physics engine simulates real-world physical behaviours -- gravity, collisions, rigid
 body dynamics -- so that game objects move and interact realistically. The core loop of a
 physics engine consists of: applying forces, integrating motion, detecting collisions,
 and resolving collisions.
@@ -410,7 +410,7 @@ Each rigid body has:
 
 | Property | Description |
 |---|---|
-| `position` | Center of mass in world space |
+| `position` | Centre of mass in world space |
 | `velocity` | Linear velocity vector |
 | `acceleration` | Sum of all forces / mass |
 | `mass` | Resistance to linear acceleration |
@@ -627,14 +627,14 @@ In 3D:
 |v| = sqrt(v.x^2 + v.y^2 + v.z^2)
 ```
 
-**Optimization**: When only comparing distances (not needing the actual value), use
+**Optimisation**: When only comparing distances (not needing the actual value), use
 squared magnitude to avoid the expensive square root:
 
 ```
 |v|^2 = v.x^2 + v.y^2
 ```
 
-#### Normalization
+#### Normalisation
 
 Produces a unit vector (length 1) pointing in the same direction:
 
@@ -642,7 +642,7 @@ Produces a unit vector (length 1) pointing in the same direction:
 normalize(v) = v / |v| = (v.x / |v|, v.y / |v|)
 ```
 
-A normalized vector represents pure direction. Always check that `|v| > 0` before
+A normalised vector represents pure direction. Always check that `|v| > 0` before
 dividing to avoid division by zero.
 
 **Example**: Get the direction an entity is facing:
@@ -805,7 +805,7 @@ class Vector2D:
 
 ### Practical Game Development Applications
 
-- **Movement and steering**: Add velocity vectors to position; normalize direction
+- **Movement and steering**: Add velocity vectors to position; normalise direction
   vectors and multiply by speed for consistent movement.
 - **Distance checks**: Use squared magnitude for performance-friendly radius checks
   (e.g., "is this enemy within range?").
@@ -837,7 +837,7 @@ class Vector2D:
 | Euler Integration | Simple physics stepping | O(1) per body per step |
 | Verlet Integration | Constraint-based physics | O(1) per body per step |
 | Impulse Resolution | Collision response | O(iterations * contacts) |
-| Vector Normalization | Direction extraction | O(1) |
+| Vector Normalisation | Direction extraction | O(1) |
 | Dot Product | Angle/projection queries | O(1) |
 | Cross Product | Perpendicularity / winding | O(1) |
 | Reflection | Bounce / ricochet | O(1) |

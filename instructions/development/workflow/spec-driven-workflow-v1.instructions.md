@@ -7,7 +7,7 @@ applyTo: '**'
 **Specification-Driven Workflow:**
 Bridge the gap between requirements and implementation.
 
-**Maintain these artifacts at all times:**
+**Maintain these artefacts at all times:**
 
 - **`requirements.md`**: User stories and acceptance criteria in structured EARS notation.
 - **`design.md`**: Technical architecture, sequence diagrams, implementation considerations.
@@ -19,7 +19,7 @@ Bridge the gap between requirements and implementation.
 Use the detailed templates as the **primary source of truth** for all documentation.
 
 **Summary formats:**
-Use only for concise artifacts such as changelogs and pull request descriptions.
+Use only for concise artefacts such as changelogs and pull request descriptions.
 
 ### Detailed Documentation Templates
 
@@ -66,12 +66,12 @@ For use in pull request summaries or executive summaries.
 
 **Never skip any step. Use consistent terminology. Reduce ambiguity.**
 
-### **Phase 1: ANALYZE**
+### **Phase 1: ANALYSE**
 
 **Objective:**
 
 - Understand the problem.
-- Analyze the existing system.
+- Analyse the existing system.
 - Produce a clear, testable set of requirements.
 - Think about the possible solutions and their implications.
 
@@ -86,7 +86,7 @@ For use in pull request summaries or executive summaries.
       - Document a dependency graph with risks and mitigation strategies.
 - [ ] Map data flows and interactions.
       - Document system interaction diagrams and data models.
-- [ ] Catalog edge cases and failures.
+- [ ] Catalogue edge cases and failures.
       - Document a comprehensive edge case matrix and potential failure points.
 - [ ] Assess confidence.
       - Generate a **Confidence Score (0-100%)** based on clarity of requirements, complexity, and problem scope.
@@ -111,15 +111,15 @@ For use in pull request summaries or executive summaries.
     - Proceed with full, automated implementation.
     - Maintain standard comprehensive documentation.
   - **Medium Confidence (66–85%)**
-    - Prioritize a **Proof-of-Concept (PoC)** or **Minimum Viable Product (MVP)**.
+    - Prioritise a **Proof-of-Concept (PoC)** or **Minimum Viable Product (MVP)**.
     - Define clear success criteria for PoC/MVP.
     - Build and validate PoC/MVP first, then expand plan incrementally.
     - Document PoC/MVP goals, execution, and validation results.
   - **Low Confidence (<66%)**
     - Dedicate first phase to research and knowledge-building.
-    - Use semantic search and analyze similar implementations.
-    - Synthesize findings into a research document.
-    - Re-run ANALYZE phase after research.
+    - Use semantic search and analyse similar implementations.
+    - Synthesise findings into a research document.
+    - Re-run ANALYSE phase after research.
     - Escalate only if confidence remains low.
 
 - [ ] **Document technical design in `design.md`:**
@@ -182,7 +182,7 @@ For use in pull request summaries or executive summaries.
 - [ ] Verify performance.
       - Document metrics and profile critical sections.
 - [ ] Log execution traces.
-      - Document path analysis and runtime behavior.
+      - Document path analysis and runtime behaviour.
 
 **Critical Constraint:**
 
@@ -192,7 +192,7 @@ For use in pull request summaries or executive summaries.
 
 **Objective:**
 
-- Improve codebase, update documentation, and analyze performance.
+- Improve codebase, update documentation, and analyse performance.
 
 **Checklist:**
 
@@ -201,7 +201,7 @@ For use in pull request summaries or executive summaries.
 - [ ] Update all project documentation.
       - Ensure all READMEs, diagrams, and comments are current.
 - [ ] Identify potential improvements.
-      - Document backlog with prioritization.
+      - Document backlog with prioritisation.
 - [ ] Validate success criteria.
       - Document final verification matrix.
 - [ ] Perform meta-analysis.
@@ -226,10 +226,10 @@ For use in pull request summaries or executive summaries.
 - [ ] Prepare pull request (if applicable):
     1. Executive summary.
     2. Changelog from **Streamlined Action Log**.
-    3. Links to validation artifacts and Decision Records.
+    3. Links to validation artefacts and Decision Records.
     4. Links to final `requirements.md`, `design.md`, and `tasks.md`.
-- [ ] Finalize workspace.
-      - Archive intermediate files, logs, and temporary artifacts to `.agent_work/`.
+- [ ] Finalise workspace.
+      - Archive intermediate files, logs, and temporary artefacts to `.agent_work/`.
 - [ ] Continue to next task.
       - Document transition or completion.
 
@@ -243,8 +243,8 @@ For use in pull request summaries or executive summaries.
 
 **Checklist:**
 
-1. **Re-analyze**:
-   - Revisit the ANALYZE phase.
+1. **Re-analyse**:
+   - Revisit the ANALYSE phase.
    - Confirm all requirements and constraints are clear and complete.
 2. **Re-design**:
    - Revisit the DESIGN phase.
@@ -266,7 +266,7 @@ For use in pull request summaries or executive summaries.
 
 - **Code Quality**: Continuously assess code quality during implementation using static analysis.
 - **Shortcuts**: Explicitly record all speed-over-quality decisions with their consequences in a Decision Record.
-- **Workspace**: Monitor for organizational drift and naming inconsistencies.
+- **Workspace**: Monitor for organisational drift and naming inconsistencies.
 - **Documentation**: Track incomplete, outdated, or missing documentation.
 
 ### Auto-Issue Creation Template
@@ -281,9 +281,9 @@ For use in pull request summaries or executive summaries.
 **Effort**: [Estimate for resolution (e.g., T-shirt size: S, M, L)]
 ```
 
-### Remediation (Auto-Prioritized)
+### Remediation (Auto-Prioritised)
 
-- Risk-based prioritization with dependency analysis.
+- Risk-based prioritisation with dependency analysis.
 - Effort estimation to aid in future planning.
 - Propose migration strategies for large refactoring efforts.
 
@@ -292,7 +292,7 @@ For use in pull request summaries or executive summaries.
 ### Continuous Monitoring
 
 - **Static Analysis**: Linting for code style, quality, security vulnerabilities, and architectural rule adherence.
-- **Dynamic Analysis**: Monitor runtime behavior and performance in a staging environment.
+- **Dynamic Analysis**: Monitor runtime behaviour and performance in a staging environment.
 - **Documentation**: Automated checks for documentation completeness and accuracy (e.g., linking, format).
 
 ### Quality Metrics (Auto-Tracked)
@@ -310,7 +310,7 @@ For use in pull request summaries or executive summaries.
 - **Ubiquitous**: `THE SYSTEM SHALL [expected behavior]`
 - **Event-driven**: `WHEN [trigger event] THE SYSTEM SHALL [expected behavior]`
 - **State-driven**: `WHILE [in specific state] THE SYSTEM SHALL [expected behavior]`
-- **Unwanted behavior**: `IF [unwanted condition] THEN THE SYSTEM SHALL [required response]`
+- **Unwanted behaviour**: `IF [unwanted condition] THEN THE SYSTEM SHALL [required response]`
 - **Optional**: `WHERE [feature is included] THE SYSTEM SHALL [expected behavior]`
 - **Complex**: Combinations of the above patterns for sophisticated requirements
 

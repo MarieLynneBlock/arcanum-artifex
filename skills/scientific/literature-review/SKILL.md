@@ -1,8 +1,8 @@
 ---
-description: Conduct comprehensive, systematic literature reviews using multiple academic databases (PubMed, arXiv, bioRxiv, Semantic Scholar, etc.). This skill should be used when conducting systematic literature reviews, meta-analyses, research synthesis, or comprehensive literature searches across biomedical, scientific, and technical domains. Creates professionally formatted markdown documents and PDFs with verified citations in multiple citation styles (APA, Nature, Vancouver, etc.).
 name: literature-review
-allowed-tools: Read Write Edit Bash
+description: Conduct comprehensive, systematic literature reviews using multiple academic databases (PubMed, arXiv, bioRxiv, Semantic Scholar, etc.). This skill should be used when conducting systematic literature reviews, meta-analyses, research synthesis, or comprehensive literature searches across biomedical, scientific, and technical domains. Creates professionally formatted markdown documents and PDFs with verified citations in multiple citation styles (APA, Nature, Vancouver, etc.).
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -11,15 +11,15 @@ metadata:
 
 ## Overview
 
-Conduct systematic, comprehensive literature reviews following rigorous academic methodology. Search multiple literature databases, synthesize findings thematically, verify all citations for accuracy, and generate professional output documents in markdown and PDF formats.
+Conduct systematic, comprehensive literature reviews following rigorous academic methodology. Search multiple literature databases, synthesise findings thematically, verify all citations for accuracy, and generate professional output documents in markdown and PDF formats.
 
-This skill integrates with multiple scientific skills for database access (gget, bioservices, datacommons-client) and provides specialized tools for citation verification, result aggregation, and document generation.
+This skill integrates with multiple scientific skills for database access (gget, bioservices, datacommons-client) and provides specialised tools for citation verification, result aggregation, and document generation.
 
 ## When to Use This Skill
 
 Use this skill when:
 - Conducting a systematic literature review for research or publication
-- Synthesizing current knowledge on a specific topic across multiple sources
+- Synthesising current knowledge on a specific topic across multiple sources
 - Performing meta-analysis or scoping reviews
 - Writing the literature review section of a research paper or thesis
 - Investigating the state of the art in a research domain
@@ -30,7 +30,7 @@ Use this skill when:
 
 **⚠️ MANDATORY: Every literature review MUST include at least 1-2 AI-generated figures using the scientific-schematics skill.**
 
-This is not optional. Literature reviews without visual elements are incomplete. Before finalizing any document:
+This is not optional. Literature reviews without visual elements are incomplete. Before finalising any document:
 1. Generate at minimum ONE schematic or diagram (e.g., PRISMA flow diagram for systematic reviews)
 2. Prefer 2-3 figures for comprehensive reviews (search strategy flowchart, thematic synthesis diagram, conceptual framework)
 
@@ -54,10 +54,10 @@ The AI will automatically:
 - PRISMA flow diagrams for systematic reviews
 - Literature search strategy flowcharts
 - Thematic synthesis diagrams
-- Research gap visualization maps
+- Research gap visualisation maps
 - Citation network diagrams
 - Conceptual framework illustrations
-- Any complex concept that benefits from visualization
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -106,11 +106,11 @@ Literature reviews follow a structured, multi-phase workflow:
    - Search Semantic Scholar via API (200M+ papers, cross-disciplinary)
    - Use Google Scholar for comprehensive coverage (manual or careful scraping)
 
-   **Specialized Databases:**
+   **Specialised Databases:**
    - Use `gget alphafold` for protein structures
    - Use `gget cosmic` for cancer genomics
    - Use `datacommons-client` for demographic/statistical data
-   - Use specialized databases as appropriate for the domain
+   - Use specialised databases as appropriate for the domain
 
 2. **Document Search Parameters**:
    ```markdown
@@ -192,7 +192,7 @@ Literature reviews follow a structured, multi-phase workflow:
    - Rate each study: High, Moderate, Low, or Very Low quality
    - Consider excluding very low-quality studies
 
-3. **Organize by Themes**:
+3. **Organise by Themes**:
    - Identify 3-5 major themes across studies
    - Group studies by theme (studies may appear in multiple themes)
    - Note patterns, consensus, and controversies
@@ -201,12 +201,12 @@ Literature reviews follow a structured, multi-phase workflow:
 
 1. **Create Review Document** from template:
    ```bash
-   cp assets/review_template.md my_literature_review.md
+   cp assets/review-template.md my_literature_review.md
    ```
 
 2. **Write Thematic Synthesis** (NOT study-by-study summaries):
-   - Organize Results section by themes or research questions
-   - Synthesize findings across multiple studies within each theme
+   - Organise Results section by themes or research questions
+   - Synthesise findings across multiple studies within each theme
    - Compare and contrast different approaches and results
    - Identify consensus areas and points of controversy
    - Highlight the strongest evidence
@@ -258,7 +258,7 @@ Literature reviews follow a structured, multi-phase workflow:
    - Re-run verification until all citations pass
 
 3. **Format Citations Consistently**:
-   - Choose one citation style and use throughout (see `references/citation_styles.md`)
+   - Choose one citation style and use throughout (see `references/citation-styles.md`)
    - Common styles: APA, Nature, Vancouver, Chicago, IEEE
    - Use verification script output to format citations correctly
    - Ensure in-text citations match reference list format
@@ -291,7 +291,7 @@ Literature reviews follow a structured, multi-phase workflow:
    - [ ] PRISMA flow diagram included (for systematic reviews)
    - [ ] Search methodology fully documented
    - [ ] Inclusion/exclusion criteria clearly stated
-   - [ ] Results organized thematically (not study-by-study)
+   - [ ] Results organised thematically (not study-by-study)
    - [ ] Quality assessment completed
    - [ ] Limitations acknowledged
    - [ ] References complete and accurate
@@ -354,7 +354,7 @@ Access via direct API (requires API key, or use free tier):
 - Provides citation graphs and paper recommendations
 - Use for finding highly influential papers
 
-### Specialized Biomedical Databases
+### Specialised Biomedical Databases
 
 Use appropriate skills:
 - **ChEMBL**: `bioservices` skill for chemical bioactivity
@@ -380,7 +380,7 @@ Expand search via citation networks:
 
 ## Citation Style Guide
 
-Detailed formatting guidelines are in `references/citation_styles.md`. Quick reference:
+Detailed formatting guidelines are in `references/citation-styles.md`. Quick reference:
 
 ### APA (7th Edition)
 - In-text: (Smith et al., 2023)
@@ -394,11 +394,11 @@ Detailed formatting guidelines are in `references/citation_styles.md`. Quick ref
 - In-text: Superscript numbers^1,2^
 - Reference: Smith JD, Johnson ML, Williams KR. Title. Nat Rev Drug Discov. 2023;22(4):301-18.
 
-**Always verify citations** with verify_citations.py before finalizing.
+**Always verify citations** with verify_citations.py before finalising.
 
-### Prioritizing High-Impact Papers (CRITICAL)
+### Prioritising High-Impact Papers (CRITICAL)
 
-**Always prioritize influential, highly-cited papers from reputable authors and top venues.** Quality matters more than quantity in literature reviews.
+**Always prioritise influential, highly-cited papers from reputable authors and top venues.** Quality matters more than quantity in literature reviews.
 
 #### Citation Count Thresholds
 
@@ -415,20 +415,20 @@ Use citation counts to identify the most impactful papers:
 
 #### Journal and Venue Tiers
 
-Prioritize papers from higher-tier venues:
+Prioritise papers from higher-tier venues:
 
 - **Tier 1 (Always Prefer):** Nature, Science, Cell, NEJM, Lancet, JAMA, PNAS, Nature Medicine, Nature Biotechnology
-- **Tier 2 (Strong Preference):** High-impact specialized journals (IF>10), top conferences (NeurIPS, ICML for ML/AI)
-- **Tier 3 (Include When Relevant):** Respected specialized journals (IF 5-10)
+- **Tier 2 (Strong Preference):** High-impact specialised journals (IF>10), top conferences (NeurIPS, ICML for ML/AI)
+- **Tier 3 (Include When Relevant):** Respected specialised journals (IF 5-10)
 - **Tier 4 (Use Sparingly):** Lower-impact peer-reviewed venues
 
 #### Author Reputation Assessment
 
 Prefer papers from:
 - **Senior researchers** with high h-index (>40 in established fields)
-- **Leading research groups** at recognized institutions (Harvard, Stanford, MIT, Oxford, etc.)
+- **Leading research groups** at recognised institutions (Harvard, Stanford, MIT, Oxford, etc.)
 - **Authors with multiple Tier-1 publications** in the relevant field
-- **Researchers with recognized expertise** (awards, editorial positions, society fellows)
+- **Researchers with recognised expertise** (awards, editorial positions, society fellows)
 
 #### Identifying Seminal Papers
 
@@ -460,8 +460,8 @@ For any topic, identify foundational work by:
 4. **Consider dual screening**: For systematic reviews, have two reviewers screen independently
 
 ### Synthesis
-1. **Organize thematically**: Group by themes, NOT by individual studies
-2. **Synthesize across studies**: Compare, contrast, identify patterns
+1. **Organise thematically**: Group by themes, NOT by individual studies
+2. **Synthesise across studies**: Compare, contrast, identify patterns
 3. **Be critical**: Evaluate quality and consistency of evidence
 4. **Identify gaps**: Note what's missing or understudied
 
@@ -475,13 +475,13 @@ For any topic, identify foundational work by:
 1. **Be objective**: Present evidence fairly, acknowledge limitations
 2. **Be systematic**: Follow structured template
 3. **Be specific**: Include numbers, statistics, effect sizes where available
-4. **Be clear**: Use clear headings, logical flow, thematic organization
+4. **Be clear**: Use clear headings, logical flow, thematic organisation
 
 ## Common Pitfalls to Avoid
 
 1. **Single database search**: Misses relevant papers; always search multiple databases
 2. **No search documentation**: Makes review irreproducible; document all searches
-3. **Study-by-study summary**: Lacks synthesis; organize thematically instead
+3. **Study-by-study summary**: Lacks synthesis; organise thematically instead
 4. **Unverified citations**: Leads to errors; always run verify_citations.py
 5. **Too broad search**: Yields thousands of irrelevant results; refine with specific terms
 6. **Too narrow search**: Misses relevant papers; include synonyms and related terms
@@ -496,7 +496,7 @@ Complete workflow for a biomedical literature review:
 
 ```bash
 # 1. Create review document from template
-cp assets/review_template.md crispr_sickle_cell_review.md
+cp assets/review-template.md crispr_sickle_cell_review.md
 
 # 2. Search multiple databases using appropriate skills
 # - Use gget skill for PubMed, bioRxiv
@@ -557,9 +557,9 @@ This skill works seamlessly with other scientific skills:
 - **anndata**: Single-cell data (for methods sections)
 - **biopython**: Sequence analysis (for background sections)
 
-### Visualization Skills
+### Visualisation Skills
 - **matplotlib**: Generate figures and plots for review
-- **seaborn**: Statistical visualizations
+- **seaborn**: Statistical visualisations
 
 ### Writing Skills
 - **brand-guidelines**: Apply institutional branding to PDF
@@ -575,11 +575,11 @@ This skill works seamlessly with other scientific skills:
 - `scripts/search_databases.py`: Process, deduplicate, and format search results
 
 **References:**
-- `references/citation_styles.md`: Detailed citation formatting guide (APA, Nature, Vancouver, Chicago, IEEE)
-- `references/database_strategies.md`: Comprehensive database search strategies
+- `references/citation-styles.md`: Detailed citation formatting guide (APA, Nature, Vancouver, Chicago, IEEE)
+- `references/database-strategies.md`: Comprehensive database search strategies
 
 **Assets:**
-- `assets/review_template.md`: Complete literature review template with all sections
+- `assets/review-template.md`: Complete literature review template with all sections
 
 ### External Resources
 

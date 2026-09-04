@@ -1,6 +1,6 @@
 ---
-description: Access COSMIC cancer mutation database. Query somatic mutations, Cancer Gene Census, mutational signatures, gene fusions, for cancer research and precision oncology. Requires authentication.
 name: cosmic-database
+description: Access COSMIC cancer mutation database. Query somatic mutations, Cancer Gene Census, mutational signatures, gene fusions, for cancer research and precision oncology. Requires authentication.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -19,7 +19,7 @@ This skill should be used when:
 - Accessing the Cancer Gene Census for curated cancer gene lists
 - Retrieving mutational signature profiles
 - Querying structural variants, copy number alterations, or gene fusions
-- Analyzing drug resistance mutations
+- Analysing drug resistance mutations
 - Working with cancer cell line genomics data
 - Integrating cancer mutation data into bioinformatics pipelines
 - Researching specific genes or mutations in cancer contexts
@@ -243,7 +243,7 @@ for record in vcf.fetch('17', 7577000, 7579000):  # TP53 region
 
 ## Data Reference
 
-For comprehensive information about COSMIC data structure, available files, and field descriptions, see `references/cosmic_data_reference.md`. This reference includes:
+For comprehensive information about COSMIC data structure, available files, and field descriptions, see `references/cosmic-data-reference.md`. This reference includes:
 
 - Complete list of available data types and files
 - Detailed field descriptions for each file type

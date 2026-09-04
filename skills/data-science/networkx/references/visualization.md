@@ -1,8 +1,8 @@
-# NetworkX Graph Visualization
+# NetworkX Graph Visualisation
 
 ## Basic Drawing with Matplotlib
 
-### Simple Visualization
+### Simple Visualisation
 ```python
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -105,9 +105,9 @@ if nx.is_tree(G):
     plt.show()
 ```
 
-## Customizing Node Appearance
+## Customising Node Appearance
 
-### Node Colors
+### Node Colours
 ```python
 # Single color
 nx.draw(G, node_color='red')
@@ -162,9 +162,9 @@ nx.draw(G, pos=pos,
 plt.show()
 ```
 
-## Customizing Edge Appearance
+## Customising Edge Appearance
 
-### Edge Colors
+### Edge Colours
 ```python
 # Single color
 nx.draw(G, edge_color='gray')
@@ -301,7 +301,7 @@ plt.axis('off')
 plt.show()
 ```
 
-### Community Coloring
+### Community Colouring
 ```python
 from networkx.algorithms import community
 
@@ -363,7 +363,7 @@ plt.savefig('layouts_comparison.png', dpi=300)
 plt.close()
 ```
 
-## Interactive Visualization Libraries
+## Interactive Visualisation Libraries
 
 ### Plotly (Interactive)
 ```python
@@ -445,7 +445,7 @@ plt.show()
 nx.drawing.nx_pydot.write_dot(G, 'graph.dot')
 ```
 
-## Bipartite Graph Visualization
+## Bipartite Graph Visualisation
 
 ### Two-Set Layout
 ```python
@@ -471,7 +471,7 @@ nx.draw(B, pos=pos, with_labels=True,
 plt.show()
 ```
 
-## 3D Visualization
+## 3D Visualisation
 
 ### 3D Network Plot
 ```python
@@ -512,7 +512,7 @@ plt.show()
 - Consider downsampling or showing subgraphs for very large networks
 
 ### Aesthetics
-- Use consistent color schemes
+- Use consistent colour schemes
 - Scale node sizes meaningfully (e.g., by degree or importance)
 - Keep labels readable (adjust font size and position)
 - Use white space effectively (adjust figure size)
@@ -520,10 +520,10 @@ plt.show()
 ### Reproducibility
 - Always set random seeds for layouts: `nx.spring_layout(G, seed=42)`
 - Save layout positions for consistency across multiple plots
-- Document color/size mappings in legends or captions
+- Document colour/size mappings in legends or captions
 
 ### File Formats
 - PNG for raster images (web, presentations)
 - PDF for vector graphics (publications, scalable)
 - SVG for web and interactive applications
-- HTML for interactive visualizations
+- HTML for interactive visualisations

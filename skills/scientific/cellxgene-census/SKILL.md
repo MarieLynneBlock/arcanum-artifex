@@ -1,6 +1,6 @@
 ---
-description: Query the CELLxGENE Census (61M+ cells) programmatically. Use when you need expression data across tissues, diseases, or cell types from the largest curated single-cell atlas. Best for population-scale queries, reference atlas comparisons. For analyzing your own data use scanpy or scvi-tools.
 name: cellxgene-census
+description: Query the CELLxGENE Census (61M+ cells) programmatically. Use when you need expression data across tissues, diseases, or cell types from the largest curated single-cell atlas. Best for population-scale queries, reference atlas comparisons. For analysing your own data use scanpy or scvi-tools.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,11 +10,11 @@ metadata:
 
 ## Overview
 
-The CZ CELLxGENE Census provides programmatic access to a comprehensive, versioned collection of standardized single-cell genomics data from CZ CELLxGENE Discover. This skill enables efficient querying and analysis of millions of cells across thousands of datasets.
+The CZ CELLxGENE Census provides programmatic access to a comprehensive, versioned collection of standardised single-cell genomics data from CZ CELLxGENE Discover. This skill enables efficient querying and analysis of millions of cells across thousands of datasets.
 
 The Census includes:
 - **61+ million cells** from human and mouse
-- **Standardized metadata** (cell types, tissues, diseases, donors)
+- **Standardised metadata** (cell types, tissues, diseases, donors)
 - **Raw gene expression** matrices
 - **Pre-calculated embeddings** and statistics
 - **Integration with PyTorch, scanpy, and other analysis tools**
@@ -98,7 +98,7 @@ print(f"Found {len(unique_cell_types)} cell types in brain")
 tissue_counts = cell_metadata.groupby("tissue_general").size()
 ```
 
-**Important:** Always filter for `is_primary_data == True` to avoid counting duplicate cells unless specifically analyzing duplicates.
+**Important:** Always filter for `is_primary_data == True` to avoid counting duplicate cells unless specifically analysing duplicates.
 
 ### 3. Querying Expression Data (Small to Medium Scale)
 
@@ -304,7 +304,7 @@ adata = cellxgene_census.get_anndata(
 ## Key Concepts and Best Practices
 
 ### Always Filter for Primary Data
-Unless analyzing duplicates, always include `is_primary_data == True` in queries to avoid counting cells multiple times:
+Unless analysing duplicates, always include `is_primary_data == True` in queries to avoid counting cells multiple times:
 ```python
 obs_value_filter="cell_type == 'B cell' and is_primary_data == True"
 ```
@@ -341,13 +341,13 @@ obs_value_filter="tissue == 'peripheral blood mononuclear cell'"
 ```
 
 ### Select Only Needed Columns
-Minimize data transfer by specifying only required metadata columns:
+Minimise data transfer by specifying only required metadata columns:
 ```python
 obs_column_names=["cell_type", "tissue_general", "disease"]  # Not all columns
 ```
 
 ### Check Dataset Presence for Gene-Specific Queries
-When analyzing specific genes, verify which datasets measured them:
+When analysing specific genes, verify which datasets measured them:
 ```python
 presence = cellxgene_census.get_presence_matrix(
     census,
@@ -397,9 +397,9 @@ Key fields for filtering:
 
 This skill includes detailed reference documentation:
 
-### references/census_schema.md
+### references/census-schema.md
 Comprehensive documentation of:
-- Census data structure and organization
+- Census data structure and organisation
 - All available metadata fields
 - Value filter syntax and operators
 - SOMA object types
@@ -407,7 +407,7 @@ Comprehensive documentation of:
 
 **When to read:** When you need detailed schema information, full list of metadata fields, or complex filter syntax.
 
-### references/common_patterns.md
+### references/common-patterns.md
 Examples and patterns for:
 - Exploratory queries (metadata only)
 - Small-to-medium queries (AnnData)

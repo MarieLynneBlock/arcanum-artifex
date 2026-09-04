@@ -1,12 +1,12 @@
 # LaminDB Core Concepts
 
-This document covers the fundamental concepts and building blocks of LaminDB: Artifacts, Records, Runs, Transforms, Features, and data lineage tracking.
+This document covers the fundamental concepts and building blocks of LaminDB: Artefacts, Records, Runs, Transforms, Features, and data lineage tracking.
 
-## Artifacts
+## Artefacts
 
-Artifacts represent datasets in various formats (DataFrames, AnnData, SpatialData, Parquet, Zarr, etc.). They serve as the primary data objects in LaminDB.
+Artefacts represent datasets in various formats (DataFrames, AnnData, SpatialData, Parquet, Zarr, etc.). They serve as the primary data objects in LaminDB.
 
-### Creating and Saving Artifacts
+### Creating and Saving Artefacts
 
 **From file:**
 ```python
@@ -47,7 +47,7 @@ artifact = ln.Artifact.from_anndata(
 ).save()
 ```
 
-### Retrieving Artifacts
+### Retrieving Artefacts
 
 ```python
 # By key
@@ -60,7 +60,7 @@ artifact = ln.Artifact.get("aRt1Fact0uid000")
 artifact = ln.Artifact.filter(suffix=".h5ad").first()
 ```
 
-### Accessing Artifact Content
+### Accessing Artefact Content
 
 ```python
 # Get cached local path
@@ -75,7 +75,7 @@ with artifact.open() as f:
     chunk = f.read(1000)
 ```
 
-### Artifact Metadata
+### Artefact Metadata
 
 ```python
 # View all metadata
@@ -246,7 +246,7 @@ ln.Feature(name="cell_type", dtype=str).save()
 ln.Feature(name="treatment", dtype=str).save()
 ```
 
-### Annotating Artifacts with Features
+### Annotating Artefacts with Features
 
 ```python
 # Single values
@@ -296,8 +296,8 @@ LaminDB automatically captures execution context and relationships between data,
 
 - **Source code**: Script/notebook content and git commit
 - **Environment**: Python packages and versions
-- **Input artifacts**: Data loaded during execution
-- **Output artifacts**: Data created during execution
+- **Input artefacts**: Data loaded during execution
+- **Output artefacts**: Data created during execution
 - **Execution metadata**: Timestamps, user, parameters
 - **Computational dependencies**: Transform relationships
 
@@ -336,7 +336,7 @@ ln.Artifact.filter(run__in=runs).to_dataframe()
 
 ## Versioning
 
-LaminDB manages artifact versioning automatically when source data or code changes.
+LaminDB manages artefact versioning automatically when source data or code changes.
 
 ### Automatic Versioning
 
@@ -369,12 +369,12 @@ v2_data = artifact.load()
 ## Best Practices
 
 1. **Use meaningful keys**: Structure keys hierarchically (e.g., `project/experiment/sample.h5ad`)
-2. **Add descriptions**: Help future users understand artifact contents
+2. **Add descriptions**: Help future users understand artefact contents
 3. **Track consistently**: Call `ln.track()` at the start of every analysis
 4. **Define features upfront**: Create feature registry before annotation
 5. **Use typed features**: Specify dtypes for better validation
 6. **Leverage versioning**: Don't create new keys for minor changes
 7. **Document transforms**: Add docstrings to tracked functions
-8. **Set projects**: Group related work for easier organization and access control
+8. **Set projects**: Group related work for easier organisation and access control
 9. **Query efficiently**: Use filters before loading large datasets
-10. **Visualize lineage**: Use `view_lineage()` to understand data provenance
+10. **Visualise lineage**: Use `view_lineage()` to understand data provenance

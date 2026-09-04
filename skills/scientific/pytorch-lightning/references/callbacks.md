@@ -6,10 +6,10 @@ Callbacks enable adding arbitrary self-contained programs to training without cl
 
 ## Architecture
 
-Lightning organizes training logic across three components:
+Lightning organises training logic across three components:
 - **Trainer** - Engineering infrastructure
 - **LightningModule** - Research code
-- **Callbacks** - Non-essential functionality (monitoring, checkpointing, custom behaviors)
+- **Callbacks** - Non-essential functionality (monitoring, checkpointing, custom behaviours)
 
 ## Creating Custom Callbacks
 
@@ -232,7 +232,7 @@ trainer = L.Trainer(callbacks=[accumulator])
 
 ### StochasticWeightAveraging (SWA)
 
-Apply stochastic weight averaging for better generalization.
+Apply stochastic weight averaging for better generalisation.
 
 **Example:**
 ```python

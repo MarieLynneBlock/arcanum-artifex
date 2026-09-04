@@ -1,8 +1,8 @@
 ---
-description: Structured hypothesis formulation from observations. Use when you have experimental observations or data and need to formulate testable hypotheses with predictions, propose mechanisms, and design experiments to test them. Follows scientific method framework. For open-ended ideation use scientific-brainstorming; for automated LLM-driven hypothesis testing on datasets use hypogenic.
 name: hypothesis-generation
-allowed-tools: Read Write Edit Bash
+description: Structured hypothesis formulation from observations. Use when you have experimental observations or data and need to formulate testable hypotheses with predictions, propose mechanisms, and design experiments to test them. Follows scientific method framework. For open-ended ideation use scientific-brainstorming; for automated LLM-driven hypothesis testing on datasets use hypogenic.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -27,7 +27,7 @@ This skill should be used when:
 
 **⚠️ MANDATORY: Every hypothesis generation report MUST include at least 1-2 AI-generated figures using the scientific-schematics skill.**
 
-This is not optional. Hypothesis reports without visual elements are incomplete. Before finalizing any document:
+This is not optional. Hypothesis reports without visual elements are incomplete. Before finalising any document:
 1. Generate at minimum ONE schematic or diagram (e.g., hypothesis framework showing competing explanations)
 2. Prefer 2-3 figures for comprehensive reports (mechanistic pathway, experimental design flowchart, prediction decision tree)
 
@@ -53,8 +53,8 @@ The AI will automatically:
 - Mechanistic pathway diagrams
 - Prediction decision trees
 - Causal relationship diagrams
-- Theoretical model visualizations
-- Any complex concept that benefits from visualization
+- Theoretical model visualisations
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -92,16 +92,16 @@ Search existing scientific literature to ground hypotheses in current evidence. 
 - Begin with broad searches to understand the landscape
 - Narrow to specific mechanisms, pathways, or theories
 - Look for contradictory findings or unresolved debates
-- Consult `references/literature_search_strategies.md` for detailed search techniques
+- Consult `references/literature-search-strategies.md` for detailed search techniques
 
-### 3. Synthesize Existing Evidence
+### 3. Synthesise Existing Evidence
 
-Analyze and integrate findings from literature search:
+Analyse and integrate findings from literature search:
 
-- Summarize current understanding of the phenomenon
+- Summarise current understanding of the phenomenon
 - Identify established mechanisms or theories that may apply
 - Note conflicting evidence or alternative viewpoints
-- Recognize gaps, limitations, or unanswered questions
+- Recognise gaps, limitations, or unanswered questions
 - Identify analogies from related systems or domains
 
 ### 4. Generate Competing Hypotheses
@@ -122,7 +122,7 @@ Develop 3-5 distinct hypotheses that could explain the phenomenon. Each hypothes
 
 ### 5. Evaluate Hypothesis Quality
 
-Assess each hypothesis against established quality criteria from `references/hypothesis_quality_criteria.md`:
+Assess each hypothesis against established quality criteria from `references/hypothesis-quality-criteria.md`:
 
 **Testability:** Can the hypothesis be empirically tested?
 **Falsifiability:** What observations would disprove it?
@@ -136,7 +136,7 @@ Explicitly note the strengths and weaknesses of each hypothesis.
 
 ### 6. Design Experimental Tests
 
-For each viable hypothesis, propose specific experiments or studies to test it. Consult `references/experimental_design_patterns.md` for common approaches:
+For each viable hypothesis, propose specific experiments or studies to test it. Consult `references/experimental-design-patterns.md` for common approaches:
 
 **Experimental design elements:**
 - What would be measured or observed?
@@ -163,13 +163,13 @@ For each hypothesis, generate specific, quantitative predictions:
 
 ### 8. Present Structured Output
 
-Generate a professional LaTeX document using the template in `assets/hypothesis_report_template.tex`. The report should be well-formatted with colored boxes for visual organization and divided into a concise main text with comprehensive appendices.
+Generate a professional LaTeX document using the template in `assets/hypothesis_report_template.tex`. The report should be well-formatted with coloured boxes for visual organisation and divided into a concise main text with comprehensive appendices.
 
 **Document Structure:**
 
 **Main Text (Maximum 4 pages):**
 1. **Executive Summary** - Brief overview in summary box (0.5-1 page)
-2. **Competing Hypotheses** - Each hypothesis in its own colored box with brief mechanistic explanation and key evidence (2-2.5 pages for 3-5 hypotheses)
+2. **Competing Hypotheses** - Each hypothesis in its own coloured box with brief mechanistic explanation and key evidence (2-2.5 pages for 3-5 hypotheses)
    - **IMPORTANT:** Use `\newpage` before each hypothesis box to prevent content overflow
    - Each box should be ≤0.6 pages maximum
 3. **Testable Predictions** - Key predictions in amber boxes (0.5-1 page)
@@ -188,7 +188,7 @@ Keep main text highly concise - only the most essential information. All details
 - **Appendix C:** Quality assessment tables and detailed evaluations
 - **Appendix D:** Supplementary evidence and analogous systems
 
-**Colored Box Usage:**
+**Coloured Box Usage:**
 
 Use the custom box environments from `hypothesis_generation.sty`:
 
@@ -262,7 +262,7 @@ To prevent content from overflowing on pages, follow these critical guidelines:
 
 6. **Appendix Page Management:** In appendices, use `\newpage` between major sections to avoid overflow in detailed content areas.
 
-**Quick Reference:** See `assets/FORMATTING_GUIDE.md` for detailed examples of all box types, color schemes, and common formatting patterns.
+**Quick Reference:** See `assets/formatting-guide.md` for detailed examples of all box types, colour schemes, and common formatting patterns.
 
 ## Quality Standards
 
@@ -278,19 +278,19 @@ Ensure all generated hypotheses meet these standards:
 
 ### references/
 
-- `hypothesis_quality_criteria.md` - Framework for evaluating hypothesis quality (testability, falsifiability, parsimony, explanatory power, scope, consistency)
-- `experimental_design_patterns.md` - Common experimental approaches across domains (RCTs, observational studies, lab experiments, computational models)
-- `literature_search_strategies.md` - Effective search techniques for PubMed and general scientific sources
+- `hypothesis-quality-criteria.md` - Framework for evaluating hypothesis quality (testability, falsifiability, parsimony, explanatory power, scope, consistency)
+- `experimental-design-patterns.md` - Common experimental approaches across domains (RCTs, observational studies, lab experiments, computational models)
+- `literature-search-strategies.md` - Effective search techniques for PubMed and general scientific sources
 
 ### assets/
 
-- `hypothesis_generation.sty` - LaTeX style package providing colored boxes, professional formatting, and custom environments for hypothesis reports
+- `hypothesis_generation.sty` - LaTeX style package providing coloured boxes, professional formatting, and custom environments for hypothesis reports
 - `hypothesis_report_template.tex` - Complete LaTeX template with main text structure and comprehensive appendix sections
-- `FORMATTING_GUIDE.md` - Quick reference guide with examples of all box types, color schemes, citation practices, and troubleshooting tips
+- `formatting-guide.md` - Quick reference guide with examples of all box types, colour schemes, citation practices, and troubleshooting tips
 
 ### Related Skills
 
 When preparing hypothesis-driven research for publication, consult the **venue-templates** skill for writing style guidance:
-- `venue_writing_styles.md` - Master guide comparing styles across venues
+- `venue-writing-styles.md` - Master guide comparing styles across venues
 - Venue-specific guides for Nature/Science, Cell Press, medical journals, and ML/CS conferences
-- `reviewer_expectations.md` - What reviewers look for when evaluating research hypotheses
+- `reviewer-expectations.md` - What reviewers look for when evaluating research hypotheses

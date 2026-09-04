@@ -1,6 +1,6 @@
 ---
-description: This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialized algorithms beyond standard ML approaches. Particularly suited for univariate and multivariate time series analysis with scikit-learn compatible APIs.
 name: aeon
+description: This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialised algorithms beyond standard ML approaches. Particularly suited for univariate and multivariate time series analysis with scikit-learn compatible APIs.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -20,7 +20,7 @@ Apply this skill when:
 - Clustering similar time series patterns
 - Forecasting future values
 - Finding repeated patterns (motifs) or unusual subsequences (discords)
-- Comparing time series with specialized distance metrics
+- Comparing time series with specialised distance metrics
 - Extracting features from temporal data
 
 ## Installation
@@ -33,7 +33,7 @@ uv pip install aeon
 
 ### 1. Time Series Classification
 
-Categorize time series into predefined classes. See `references/classification.md` for complete algorithm catalog.
+Categorise time series into predefined classes. See `references/classification.md` for complete algorithm catalogue.
 
 **Quick Start:**
 ```python
@@ -105,7 +105,7 @@ y_pred = forecaster.predict(fh=[1, 2, 3, 4, 5])
 
 ### 5. Anomaly Detection
 
-Identify unusual patterns or outliers. See `references/anomaly_detection.md` for detectors.
+Identify unusual patterns or outliers. See `references/anomaly-detection.md` for detectors.
 
 **Quick Start:**
 ```python
@@ -133,7 +133,7 @@ change_points = segmenter.fit_predict(y)
 
 ### 7. Similarity Search
 
-Find similar patterns within or across time series. See `references/similarity_search.md`.
+Find similar patterns within or across time series. See `references/similarity-search.md`.
 
 **Quick Start:**
 ```python
@@ -179,7 +179,7 @@ X_normalized = scaler.fit_transform(X_train)
 
 ## Distance Metrics
 
-Specialized temporal distance measures. See `references/distances.md` for complete catalog.
+Specialised temporal distance measures. See `references/distances.md` for complete catalogue.
 
 **Usage:**
 ```python
@@ -226,7 +226,7 @@ predictions = clf.predict(X_test)
 
 ## Datasets and Benchmarking
 
-Load standard benchmarks and evaluate performance. See `references/datasets_benchmarking.md`.
+Load standard benchmarks and evaluate performance. See `references/datasets-benchmarking.md`.
 
 **Load Datasets:**
 ```python
@@ -282,7 +282,7 @@ clf.fit(X_train_features, y_train)
 predictions = clf.predict(X_test_features)
 ```
 
-### Anomaly Detection with Visualization
+### Anomaly Detection with Visualisation
 
 ```python
 from aeon.anomaly_detection import STOMP
@@ -304,7 +304,7 @@ plt.show()
 
 ### Data Preparation
 
-1. **Normalize**: Most algorithms benefit from z-normalization
+1. **Normalise**: Most algorithms benefit from z-normalisation
    ```python
    from aeon.transformations.collection import Normalizer
    normalizer = Normalizer()
@@ -355,13 +355,13 @@ Detailed information available in `references/`:
 - `regression.md` - Regression methods
 - `clustering.md` - Clustering algorithms
 - `forecasting.md` - Forecasting approaches
-- `anomaly_detection.md` - Anomaly detection methods
+- `anomaly-detection.md` - Anomaly detection methods
 - `segmentation.md` - Segmentation algorithms
-- `similarity_search.md` - Pattern matching and motif discovery
+- `similarity-search.md` - Pattern matching and motif discovery
 - `transformations.md` - Feature extraction and preprocessing
 - `distances.md` - Time series distance metrics
 - `networks.md` - Deep learning architectures
-- `datasets_benchmarking.md` - Data loading and evaluation tools
+- `datasets-benchmarking.md` - Data loading and evaluation tools
 
 ## Additional Resources
 

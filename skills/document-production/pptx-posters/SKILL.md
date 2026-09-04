@@ -1,8 +1,8 @@
 ---
-description: Create research posters using HTML/CSS that can be exported to PDF or PPTX. Use this skill ONLY when the user explicitly requests PowerPoint/PPTX poster format. For standard research posters, use latex-posters instead. This skill provides modern web-based poster design with responsive layouts and easy visual integration.
 name: pptx-posters
-allowed-tools: Read Write Edit Bash
+description: Create research posters using HTML/CSS that can be exported to PDF or PPTX. Use this skill ONLY when the user explicitly requests PowerPoint/PPTX poster format. For standard research posters, use latex-posters instead. This skill provides modern web-based poster design with responsive layouts and easy visual integration.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -51,7 +51,7 @@ This is the recommended approach for creating visually compelling posters:
 
 ### CRITICAL: Poster-Size Font Requirements
 
-**⚠️ ALL text within AI-generated visualizations MUST be poster-readable.**
+**⚠️ ALL text within AI-generated visualisations MUST be poster-readable.**
 
 When generating graphics for posters, you MUST include font size specifications in EVERY prompt. Poster graphics are viewed from 4-6 feet away, so text must be LARGE.
 
@@ -288,7 +288,7 @@ prs.save("poster.pptx")
 
 The provided template (`assets/poster_html_template.html`) includes:
 
-### CSS Variables for Customization
+### CSS Variables for Customisation
 
 ```css
 /* Poster dimensions */
@@ -361,7 +361,7 @@ body {
 
 - [ ] NO content cut off at ANY of the 4 edges (check carefully)
 - [ ] All images display correctly
-- [ ] Colors render as expected
+- [ ] Colours render as expected
 - [ ] Text readable at 25% scale
 - [ ] Graphics look SIMPLE (not like complex 7-stage workflows)
 
@@ -402,12 +402,12 @@ This skill works with:
 Available in `assets/` directory:
 
 - `poster_html_template.html`: Main HTML poster template (36×48 inches)
-- `poster_quality_checklist.md`: Pre-submission validation checklist
+- `poster-quality-checklist.md`: Pre-submission validation checklist
 
 ## References
 
 Available in `references/` directory:
 
-- `poster_content_guide.md`: Content organization and writing guidelines
-- `poster_design_principles.md`: Typography, color theory, and visual hierarchy
-- `poster_layout_design.md`: Layout principles and grid systems
+- `poster-content-guide.md`: Content organisation and writing guidelines
+- `poster-design-principles.md`: Typography, colour theory, and visual hierarchy
+- `poster-layout-design.md`: Layout principles and grid systems

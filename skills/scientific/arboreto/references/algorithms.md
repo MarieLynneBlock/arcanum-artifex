@@ -89,7 +89,7 @@ genie3(
 
 | Feature | GRNBoost2 | GENIE3 |
 |---------|-----------|--------|
-| **Speed** | Fast (optimized for large data) | Slower |
+| **Speed** | Fast (optimised for large data) | Slower |
 | **Method** | Gradient boosting | Random Forest |
 | **Best for** | Large-scale data (10k+ observations) | Small-medium datasets |
 | **Output format** | Same | Same |

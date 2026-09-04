@@ -1,6 +1,6 @@
 ---
-description: Direct REST API access to KEGG (academic use only). Pathway analysis, gene-pathway mapping, metabolic pathways, drug interactions, ID conversion. For Python workflows with multiple databases, prefer bioservices. Use this for direct HTTP/REST work or KEGG-specific control.
 name: kegg-database
+description: Direct REST API access to KEGG (academic use only). Pathway analysis, gene-pathway mapping, metabolic pathways, drug interactions, ID conversion. For Python workflows with multiple databases, prefer bioservices. Use this for direct HTTP/REST work or KEGG-specific control.
 license: Non-academic use of KEGG requires a commercial license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -22,7 +22,7 @@ This skill should be used when querying pathways, genes, compounds, enzymes, dis
 
 The skill provides:
 1. Python helper functions (`scripts/kegg_api.py`) for all KEGG REST API operations
-2. Comprehensive reference documentation (`references/kegg_reference.md`) with detailed API specifications
+2. Comprehensive reference documentation (`references/kegg-reference.md`) with detailed API specifications
 
 When users request KEGG data, determine which operation is needed and use the appropriate function from `scripts/kegg_api.py`.
 
@@ -51,7 +51,7 @@ hsa_info = kegg_info('hsa')  # Human genome
 
 List entry identifiers and names from KEGG databases.
 
-**When to use**: Getting all pathways for an organism, listing genes, retrieving compound catalogs.
+**When to use**: Getting all pathways for an organism, listing genes, retrieving compound catalogues.
 
 **Usage**:
 ```python
@@ -188,7 +188,7 @@ ko_groups = kegg_link('ko', 'hsa:10458')
 
 Check for drug-drug interactions.
 
-**When to use**: Analyzing drug combinations, checking for contraindications, pharmacological research.
+**When to use**: Analysing drug combinations, checking for contraindications, pharmacological research.
 
 **Usage**:
 ```python
@@ -305,17 +305,17 @@ mmu_glycolysis = kegg_get('mmu00010')
 
 ## Pathway Categories
 
-KEGG organizes pathways into seven major categories. When interpreting pathway IDs or recommending pathways to users:
+KEGG organises pathways into seven major categories. When interpreting pathway IDs or recommending pathways to users:
 
 1. **Metabolism** (e.g., `map00010` - Glycolysis, `map00190` - Oxidative phosphorylation)
 2. **Genetic Information Processing** (e.g., `map03010` - Ribosome, `map03040` - Spliceosome)
-3. **Environmental Information Processing** (e.g., `map04010` - MAPK signaling, `map02010` - ABC transporters)
+3. **Environmental Information Processing** (e.g., `map04010` - MAPK signalling, `map02010` - ABC transporters)
 4. **Cellular Processes** (e.g., `map04140` - Autophagy, `map04210` - Apoptosis)
-5. **Organismal Systems** (e.g., `map04610` - Complement cascade, `map04910` - Insulin signaling)
+5. **Organismal Systems** (e.g., `map04610` - Complement cascade, `map04910` - Insulin signalling)
 6. **Human Diseases** (e.g., `map05200` - Pathways in cancer, `map05010` - Alzheimer disease)
 7. **Drug Development** (chronological and target-based classifications)
 
-Reference `references/kegg_reference.md` for detailed pathway lists and classifications.
+Reference `references/kegg-reference.md` for detailed pathway lists and classifications.
 
 ## Important Identifiers and Formats
 
@@ -350,7 +350,7 @@ Respect these constraints when using the KEGG API:
 
 ## Detailed Reference
 
-For comprehensive API documentation, database specifications, organism codes, and advanced usage, refer to `references/kegg_reference.md`. This includes:
+For comprehensive API documentation, database specifications, organism codes, and advanced usage, refer to `references/kegg-reference.md`. This includes:
 
 - Complete list of KEGG databases
 - Detailed API operation syntax
@@ -368,7 +368,7 @@ For comprehensive API documentation, database specifications, organism codes, an
 
 ## Additional Tools
 
-For interactive pathway visualization and annotation:
+For interactive pathway visualisation and annotation:
 - **KEGG Mapper**: https://www.kegg.jp/kegg/mapper/
 - **BlastKOALA**: Automated genome annotation
 - **GhostKOALA**: Metagenome/metatranscriptome annotation

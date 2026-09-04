@@ -2,10 +2,10 @@
 
 # Mindmap
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `mindmap`
-**Best for:** Brainstorming, concept organization, knowledge hierarchies, topic breakdown
+**Best for:** Brainstorming, concept organisation, knowledge hierarchies, topic breakdown
 **When NOT to use:** Sequential processes (use [Flowchart](flowchart.md)), timelines (use [Timeline](timeline.md))
 
 > ⚠️ **Accessibility:** Mindmaps do **not** support `accTitle`/`accDescr`. Always place a descriptive _italic_ Markdown paragraph directly above the code block.
@@ -14,7 +14,7 @@
 
 ## Exemplar Diagram
 
-_Mindmap showing a platform engineering team's key responsibility areas organized into infrastructure, developer experience, security, and observability domains:_
+_Mindmap showing a platform engineering team's key responsibility areas organised into infrastructure, developer experience, security, and observability domains:_
 
 ```mermaid
 mindmap

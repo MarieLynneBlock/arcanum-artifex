@@ -1,6 +1,6 @@
 ---
-description: Query openFDA API for drugs, devices, adverse events, recalls, regulatory submissions (510k, PMA), substance identification (UNII), for FDA regulatory data analysis and safety research.
 name: fda-database
+description: Query openFDA API for drugs, devices, adverse events, recalls, regulatory submissions (510k, PMA), substance identification (UNII), for FDA regulatory data analysis and safety research.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,21 +10,21 @@ metadata:
 
 ## Overview
 
-Access comprehensive FDA regulatory data through openFDA, the FDA's initiative to provide open APIs for public datasets. Query information about drugs, medical devices, foods, animal/veterinary products, and substances using Python with standardized interfaces.
+Access comprehensive FDA regulatory data through openFDA, the FDA's initiative to provide open APIs for public datasets. Query information about drugs, medical devices, foods, animal/veterinary products, and substances using Python with standardised interfaces.
 
 **Key capabilities:**
 - Query adverse events for drugs, devices, foods, and veterinary products
-- Access product labeling, approvals, and regulatory submissions
+- Access product labelling, approvals, and regulatory submissions
 - Monitor recalls and enforcement actions
 - Look up National Drug Codes (NDC) and substance identifiers (UNII)
-- Analyze device classifications and clearances (510k, PMA)
+- Analyse device classifications and clearances (510k, PMA)
 - Track drug shortages and supply issues
 - Research chemical structures and substance relationships
 
 ## When to Use This Skill
 
 This skill should be used when working with:
-- **Drug research**: Safety profiles, adverse events, labeling, approvals, shortages
+- **Drug research**: Safety profiles, adverse events, labelling, approvals, shortages
 - **Medical device surveillance**: Adverse events, recalls, 510(k) clearances, PMA approvals
 - **Food safety**: Recalls, allergen tracking, adverse events, dietary supplements
 - **Veterinary medicine**: Animal drug adverse events by species and breed
@@ -91,7 +91,7 @@ Access 6 drug-related endpoints covering the full drug lifecycle from approval t
 
 **Endpoints:**
 1. **Adverse Events** - Reports of side effects, errors, and therapeutic failures
-2. **Product Labeling** - Prescribing information, warnings, indications
+2. **Product Labelling** - Prescribing information, warnings, indications
 3. **NDC Directory** - National Drug Code product information
 4. **Enforcement Reports** - Drug recalls and safety actions
 5. **Drugs@FDA** - Historical approval data since 1939
@@ -195,7 +195,7 @@ breed_query = fda.query("animalandveterinary", "event",
            "animal.breed.breed_component:*Labrador*")
 ```
 
-**Reference:** See `references/animal_veterinary.md` for detailed documentation
+**Reference:** See `references/animal-veterinary.md` for detailed documentation
 
 ### Substances & Other
 
@@ -260,7 +260,7 @@ def drug_safety_profile(fda, drug_name):
 
 ### Pattern 2: Temporal Trend Analysis
 
-Analyze trends over time using date ranges:
+Analyse trends over time using date ranges:
 
 ```python
 from datetime import datetime, timedelta
@@ -453,11 +453,11 @@ drug_name = clean_drug_name(user_input)
 ## API Reference
 
 For detailed information about:
-- **Authentication and rate limits** → See `references/api_basics.md`
+- **Authentication and rate limits** → See `references/api-basics.md`
 - **Drug databases** → See `references/drugs.md`
 - **Device databases** → See `references/devices.md`
 - **Food databases** → See `references/foods.md`
-- **Animal/veterinary databases** → See `references/animal_veterinary.md`
+- **Animal/veterinary databases** → See `references/animal-veterinary.md`
 - **Substance databases** → See `references/other.md`
 
 ## Scripts
@@ -504,7 +504,7 @@ python scripts/fda_examples.py
 - **Solution**: Try broader search terms, check spelling, use wildcards
 
 **Issue**: Invalid query syntax
-- **Solution**: Review query syntax in `references/api_basics.md`
+- **Solution**: Review query syntax in `references/api-basics.md`
 
 **Issue**: Missing fields in results
 - **Solution**: Not all records contain all fields; always check field existence

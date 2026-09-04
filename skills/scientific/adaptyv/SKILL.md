@@ -1,6 +1,6 @@
 ---
-description: Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experimental validation including binding assays, expression testing, thermostability measurements, enzyme activity assays, or protein sequence optimization. Also use for submitting experiments via API, tracking experiment status, downloading results, optimizing protein sequences for better expression using computational tools (NetSolP, SoluProt, SolubleMPNN, ESM), or managing protein design workflows with wet-lab validation.
 name: adaptyv
+description: Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experimental validation including binding assays, expression testing, thermostability measurements, enzyme activity assays, or protein sequence optimisation. Also use for submitting experiments via API, tracking experiment status, downloading results, optimising protein sequences for better expression using computational tools (NetSolP, SoluProt, SolubleMPNN, ESM), or managing protein design workflows with wet-lab validation.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -75,13 +75,13 @@ experiment_id = response.json()["experiment_id"]
 Adaptyv supports multiple assay types:
 - **Binding assays** - Test protein-target interactions using biolayer interferometry
 - **Expression testing** - Measure protein expression levels
-- **Thermostability** - Characterize protein thermal stability
+- **Thermostability** - Characterise protein thermal stability
 - **Enzyme activity** - Assess enzymatic function
 
-See `reference/experiments.md` for detailed information on each experiment type and workflows.
+See `references/experiments.md` for detailed information on each experiment type and workflows.
 
-## Protein Sequence Optimization
-Before submitting sequences, optimize them for better expression and stability:
+## Protein Sequence Optimisation
+Before submitting sequences, optimise them for better expression and stability:
 
 **Common issues to address:**
 - Unpaired cysteines that create unwanted disulfides
@@ -95,13 +95,13 @@ Before submitting sequences, optimize them for better expression and stability:
 - ipTM - Interface stability assessment
 - pSAE - Hydrophobic exposure quantification
 
-See `reference/protein_optimization.md` for detailed optimization workflows and tool usage.
+See `references/protein-optimization.md` for detailed optimisation workflows and tool usage.
 
 ## API Reference
-For complete API documentation including all endpoints, request/response formats, and authentication details, see `reference/api_reference.md`.
+For complete API documentation including all endpoints, request/response formats, and authentication details, see `references/api-reference.md`.
 
 ## Examples
-For concrete code examples covering common use cases (experiment submission, status tracking, result retrieval, batch processing), see `reference/examples.md`.
+For concrete code examples covering common use cases (experiment submission, status tracking, result retrieval, batch processing), see `references/examples.md`.
 
 ## Important Notes
 - Platform is currently in alpha/beta phase with features subject to change

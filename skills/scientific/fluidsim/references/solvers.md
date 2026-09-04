@@ -57,7 +57,7 @@ from fluidsim.solvers.ns3d.strat.solver import Simul  # 3D
 from fluidsim.solvers.sw1l.solver import Simul
 ```
 
-**Use for**: Geophysical flows, tsunami modeling, rotating flows
+**Use for**: Geophysical flows, tsunami modelling, rotating flows
 
 **Key features**: Rotating frame support, geostrophic balance
 

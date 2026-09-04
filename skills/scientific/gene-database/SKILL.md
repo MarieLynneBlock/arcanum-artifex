@@ -1,6 +1,6 @@
 ---
-description: Query NCBI Gene via E-utilities/Datasets API. Search by symbol/ID, retrieve gene info (RefSeqs, GO, locations, phenotypes), batch lookups, for gene annotation and functional analysis.
 name: gene-database
+description: Query NCBI Gene via E-utilities/Datasets API. Search by symbol/ID, retrieve gene info (RefSeqs, GO, locations, phenotypes), batch lookups, for gene annotation and functional analysis.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -14,14 +14,14 @@ NCBI Gene is a comprehensive database integrating gene information from diverse 
 
 ## When to Use This Skill
 
-This skill should be used when working with gene data including searching by gene symbol or ID, retrieving gene sequences and metadata, analyzing gene functions and pathways, or performing batch gene lookups.
+This skill should be used when working with gene data including searching by gene symbol or ID, retrieving gene sequences and metadata, analysing gene functions and pathways, or performing batch gene lookups.
 
 ## Quick Start
 
 NCBI provides two main APIs for gene data access:
 
 1. **E-utilities** (Traditional): Full-featured API for all Entrez databases with flexible querying
-2. **NCBI Datasets API** (Newer): Optimized for gene data retrieval with simplified workflows
+2. **NCBI Datasets API** (Newer): Optimised for gene data retrieval with simplified workflows
 
 Choose E-utilities for complex queries and cross-database searches. Choose Datasets API for straightforward gene data retrieval with metadata and sequences in a single request.
 
@@ -135,8 +135,8 @@ python scripts/batch_gene_lookup.py --ids 672,7157,5594 --output results.json
 
 For detailed API documentation including endpoints, parameters, response formats, and examples, refer to:
 
-- `references/api_reference.md` - Comprehensive API documentation for E-utilities and Datasets API
-- `references/common_workflows.md` - Additional examples and use case patterns
+- `references/api-reference.md` - Comprehensive API documentation for E-utilities and Datasets API
+- `references/common-workflows.md` - Additional examples and use case patterns
 
 Search these references when needing specific API endpoint details, parameter options, or response structure information.
 
@@ -156,7 +156,7 @@ Choose JSON for modern applications, XML for legacy systems requiring detailed m
 
 1. **Always specify organism** when searching by gene symbol to avoid ambiguity
 2. **Use Gene IDs** for precise lookups when available
-3. **Batch requests** when working with multiple genes to minimize API calls
+3. **Batch requests** when working with multiple genes to minimise API calls
 4. **Cache results** locally to reduce redundant queries
 5. **Include API key** in scripts for higher rate limits
 6. **Handle errors gracefully** with retry logic for transient failures
@@ -172,5 +172,5 @@ This skill includes:
 - `batch_gene_lookup.py` - Handle multiple gene queries efficiently
 
 ### references/
-- `api_reference.md` - Detailed API documentation for both E-utilities and Datasets API
-- `common_workflows.md` - Examples of common gene queries and use cases
+- `api-reference.md` - Detailed API documentation for both E-utilities and Datasets API
+- `common-workflows.md` - Examples of common gene queries and use cases

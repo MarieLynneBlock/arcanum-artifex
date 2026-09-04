@@ -2,7 +2,7 @@
 
 ## Overview
 
-scEmbed trains Region2Vec models on single-cell ATAC-seq datasets to generate cell embeddings for clustering and analysis. It provides an unsupervised machine learning framework for representing and analyzing scATAC-seq data in low-dimensional space.
+scEmbed trains Region2Vec models on single-cell ATAC-seq datasets to generate cell embeddings for clustering and analysis. It provides an unsupervised machine learning framework for representing and analysing scATAC-seq data in low-dimensional space.
 
 ## When to Use
 
@@ -104,7 +104,7 @@ adata.obsm['scembed_X'] = embeddings
 
 ### Step 5: Downstream Analysis
 
-Integrate with scanpy for clustering and visualization:
+Integrate with scanpy for clustering and visualisation:
 
 ```python
 import scanpy as sc
@@ -167,12 +167,12 @@ embeddings = model.encode(adata)
 
 The 10x Genomics PBMC 10k dataset (10,000 peripheral blood mononuclear cells) serves as a standard benchmark:
 - Contains diverse immune cell types
-- Well-characterized cell populations
+- Well-characterised cell populations
 - Available from 10x Genomics website
 
 ## Cell-Type Annotation
 
-After clustering, annotate cell types using k-nearest neighbors (KNN) with reference datasets:
+After clustering, annotate cell types using k-nearest neighbours (KNN) with reference datasets:
 
 ```python
 from geniml.scembed import annotate_celltypes

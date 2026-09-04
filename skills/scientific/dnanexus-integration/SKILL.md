@@ -1,6 +1,6 @@
 ---
-description: DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FASTQ/BAM/VCF, for genomics pipeline development and execution.
 name: dnanexus-integration
+description: DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FASTQ/BAM/VCF, for genomics pipeline development and execution.
 license: Unknown
 compatibility: Requires a DNAnexus account
 metadata:
@@ -17,7 +17,7 @@ DNAnexus is a cloud platform for biomedical data analysis and genomics. Build an
 
 This skill should be used when:
 - Creating, building, or modifying DNAnexus apps/applets
-- Uploading, downloading, searching, or organizing files and records
+- Uploading, downloading, searching, or organising files and records
 - Running analyses, monitoring jobs, creating workflows
 - Writing scripts using dxpy to interact with the platform
 - Setting up dxapp.json, managing dependencies, using Docker
@@ -26,7 +26,7 @@ This skill should be used when:
 
 ## Core Capabilities
 
-The skill is organized into five main areas, each with detailed reference documentation:
+The skill is organised into five main areas, each with detailed reference documentation:
 
 ### 1. App Development
 
@@ -65,7 +65,7 @@ The skill is organized into five main areas, each with detailed reference docume
 
 **Common Use Cases**:
 - Uploading sequencing data (FASTQ files)
-- Organizing analysis results
+- Organising analysis results
 - Searching for specific samples or experiments
 - Backing up data across projects
 - Managing reference genomes and annotations
@@ -118,7 +118,7 @@ The skill is organized into five main areas, each with detailed reference docume
 - Custom analysis pipelines
 - Batch processing workflows
 - Integration with external tools
-- Data migration and organization
+- Data migration and organisation
 
 **Reference**: See `references/python-sdk.md` for:
 - Complete dxpy class reference
@@ -155,7 +155,7 @@ The skill is organized into five main areas, each with detailed reference docume
 
 ## Quick Start Examples
 
-### Upload and Analyze Data
+### Upload and Analyse Data
 
 ```python
 import dxpy
@@ -322,7 +322,7 @@ variant_job = variant_applet.run({
 
 ### Pattern 3: Data Organization
 
-Organize analysis results systematically:
+Organise analysis results systematically:
 
 ```python
 # Create organized folder structure
@@ -350,7 +350,7 @@ result_file = dxpy.upload_local_file(
 1. **Error Handling**: Always wrap API calls in try-except blocks
 2. **Resource Management**: Choose appropriate instance types for workloads
 3. **Data Organization**: Use consistent folder structures and metadata
-4. **Cost Optimization**: Archive old data, use appropriate storage classes
+4. **Cost Optimisation**: Archive old data, use appropriate storage classes
 5. **Documentation**: Include clear descriptions in dxapp.json
 6. **Testing**: Test apps with various input types before production use
 7. **Version Control**: Use semantic versioning for apps

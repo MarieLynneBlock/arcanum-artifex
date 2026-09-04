@@ -2,7 +2,7 @@
 
 ## Overview
 
-Bio.Phylo provides a unified toolkit for reading, writing, analyzing, and visualizing phylogenetic trees. It supports multiple file formats including Newick, NEXUS, phyloXML, NeXML, and CDAO.
+Bio.Phylo provides a unified toolkit for reading, writing, analysing, and visualising phylogenetic trees. It supports multiple file formats including Newick, NEXUS, phyloXML, NeXML, and CDAO.
 
 ## Supported File Formats
 
@@ -245,7 +245,7 @@ internal = tree.get_nonterminals()[0]
 tree.root_with_outgroup(internal)
 ```
 
-## Tree Visualization
+## Tree Visualisation
 
 ### Basic ASCII Drawing
 
@@ -257,7 +257,7 @@ Phylo.draw_ascii(tree)
 Phylo.draw_ascii(tree, column_width=80)
 ```
 
-### Matplotlib Visualization
+### Matplotlib Visualisation
 
 ```python
 import matplotlib.pyplot as plt
@@ -278,7 +278,7 @@ plt.tight_layout()
 plt.savefig("tree.png", dpi=300)
 ```
 
-### Advanced Visualization Options
+### Advanced Visualisation Options
 
 ```python
 # Radial (circular) tree

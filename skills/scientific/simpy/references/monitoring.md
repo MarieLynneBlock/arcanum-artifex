@@ -1,6 +1,6 @@
 # SimPy Monitoring and Data Collection
 
-This guide covers techniques for collecting data and monitoring simulation behavior in SimPy.
+This guide covers techniques for collecting data and monitoring simulation behaviour in SimPy.
 
 ## Monitoring Strategy
 
@@ -456,7 +456,7 @@ plotter.plot('Process Value Over Time')
 
 ## Best Practices
 
-1. **Minimize overhead**: Only monitor what's necessary; excessive logging can slow simulations
+1. **Minimise overhead**: Only monitor what's necessary; excessive logging can slow simulations
 
 2. **Structured data**: Use classes or named tuples for complex data points
 
@@ -468,7 +468,7 @@ plotter.plot('Process Value Over Time')
 
 6. **Memory management**: For very long simulations, periodically flush data to disk
 
-7. **Validation**: Verify monitoring code doesn't affect simulation behavior
+7. **Validation**: Verify monitoring code doesn't affect simulation behaviour
 
 8. **Separation of concerns**: Keep monitoring code separate from simulation logic
 

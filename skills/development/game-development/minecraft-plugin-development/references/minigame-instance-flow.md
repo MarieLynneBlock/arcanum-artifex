@@ -85,7 +85,7 @@ Typical tasks:
 Rules:
 
 - store `BukkitTask` handles when cancellation matters
-- do not start a second task for the same game concern without canceling or checking the first
+- do not start a second task for the same game concern without cancelling or checking the first
 - countdown tasks should read the current game state on every tick and self-cancel when stale
 - delay tasks should re-check that the game still exists and is still running before acting
 - clean up tasks on game end and plugin shutdown
@@ -96,7 +96,7 @@ Sky-island and arena plugins often need config-driven resource distribution.
 
 Useful structure:
 
-- group container locations by role, such as island, middle, center, normal, rare, or overpowered
+- group container locations by role, such as island, middle, centre, normal, rare, or overpowered
 - load weighted loot from config
 - build a total loot pool for a group
 - shuffle items before placing them

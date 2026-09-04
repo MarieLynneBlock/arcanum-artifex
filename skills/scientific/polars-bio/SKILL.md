@@ -1,6 +1,6 @@
 ---
-description: High-performance genomic interval operations and bioinformatics file I/O on Polars DataFrames. Overlap, nearest, merge, coverage, complement, subtract for BED/VCF/BAM/GFF intervals. Streaming, cloud-native, faster bioframe alternative.
 name: polars-bio
+description: High-performance genomic interval operations and bioinformatics file I/O on Polars DataFrames. Overlap, nearest, merge, coverage, complement, subtract for BED/VCF/BAM/GFF intervals. Streaming, cloud-native, faster bioframe alternative.
 license: https://github.com/biodatageeks/polars-bio/blob/main/LICENSE
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -124,7 +124,7 @@ nearest = pb.nearest(df1, df2)
 result_df = result.collect()
 ```
 
-**Reference:** See `references/interval_operations.md` for detailed documentation on all operations, parameters, output schemas, and performance considerations.
+**Reference:** See `references/interval-operations.md` for detailed documentation on all operations, parameters, output schemas, and performance considerations.
 
 ### 2. Bioinformatics File I/O
 
@@ -160,7 +160,7 @@ df = pb.read_bed("s3://bucket/regions.bed",
                  allow_anonymous=True)
 ```
 
-**Reference:** See `references/file_io.md` for per-format column schemas, parameters, cloud storage options, and compression support.
+**Reference:** See `references/file-io.md` for per-format column schemas, parameters, cloud storage options, and compression support.
 
 ### 3. SQL Data Processing
 
@@ -183,7 +183,7 @@ pb.from_polars("my_intervals", df)
 result = pb.sql("SELECT * FROM my_intervals WHERE chrom = 'chr1'").collect()
 ```
 
-**Reference:** See `references/sql_processing.md` for register functions, SQL syntax, and examples.
+**Reference:** See `references/sql-processing.md` for register functions, SQL syntax, and examples.
 
 ### 4. Pileup Operations
 
@@ -200,7 +200,7 @@ depth_df = depth_lf.collect()
 depth_lf = pb.depth("aligned.bam", min_mapping_quality=20)
 ```
 
-**Reference:** See `references/pileup_operations.md` for parameters and integration patterns.
+**Reference:** See `references/pileup-operations.md` for parameters and integration patterns.
 
 ## Key Concepts
 
@@ -283,7 +283,7 @@ result = pb.overlap(
 
 ### Return Types and Collecting Results
 
-All interval operations and `pb.sql()` return a **LazyFrame** by default. Use `.collect()` to materialize results, or pass `output_type="polars.DataFrame"` for eager evaluation:
+All interval operations and `pb.sql()` return a **LazyFrame** by default. Use `.collect()` to materialise results, or pass `output_type="polars.DataFrame"` for eager evaluation:
 
 ```python
 # Lazy (default) - collect when needed
@@ -361,14 +361,14 @@ DataFusion streaming is enabled by default for interval operations, processing d
 
 Detailed documentation for each major capability:
 
-- **interval_operations.md** - All 8 interval operations with parameters, examples, output schemas, and performance tips. Core reference for genomic range arithmetic.
+- **interval-operations.md** - All 8 interval operations with parameters, examples, output schemas, and performance tips. Core reference for genomic range arithmetic.
 
-- **file_io.md** - Supported formats table, per-format column schemas, cloud storage configuration, compression support, and common parameters.
+- **file-io.md** - Supported formats table, per-format column schemas, cloud storage configuration, compression support, and common parameters.
 
-- **sql_processing.md** - Register functions, DataFusion SQL syntax, combining SQL with interval operations, and example queries.
+- **sql-processing.md** - Register functions, DataFusion SQL syntax, combining SQL with interval operations, and example queries.
 
-- **pileup_operations.md** - Per-base read depth computation from BAM/CRAM files, parameters, and integration with interval operations.
+- **pileup-operations.md** - Per-base read depth computation from BAM/CRAM files, parameters, and integration with interval operations.
 
 - **configuration.md** - Global settings (parallelism, coordinate systems, streaming modes), logging, and metadata management.
 
-- **bioframe_migration.md** - Operation mapping table, API differences, performance comparison, migration code examples, and pandas compatibility mode.
+- **bioframe-migration.md** - Operation mapping table, API differences, performance comparison, migration code examples, and pandas compatibility mode.

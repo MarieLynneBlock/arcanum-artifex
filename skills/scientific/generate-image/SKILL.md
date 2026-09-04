@@ -1,6 +1,6 @@
 ---
-description: Generate or edit images using AI models (FLUX, Nano Banana 2). Use for general-purpose image generation including photos, illustrations, artwork, visual assets, concept art, and any image that is not a technical diagram or schematic. For flowcharts, circuits, pathways, and technical diagrams, use the scientific-schematics skill instead.
 name: generate-image
+description: Generate or edit images using AI models (FLUX, Nano Banana 2). Use for general-purpose image generation including photos, illustrations, artwork, visual assets, concept art, and any image that is not a technical diagram or schematic. For flowcharts, circuits, pathways, and technical diagrams, use the scientific-schematics skill instead.
 license: MIT license
 compatibility: Requires an OpenRouter API key
 metadata:
@@ -24,7 +24,7 @@ Generate and edit high-quality images using OpenRouter's image generation models
 **Use scientific-schematics instead for:**
 - Flowcharts and process diagrams
 - Circuit diagrams and electrical schematics
-- Biological pathways and signaling cascades
+- Biological pathways and signalling cascades
 - System architecture diagrams
 - CONSORT diagrams and methodology flowcharts
 - Any technical/schematic diagrams
@@ -169,7 +169,7 @@ If the script fails, read the error message and address the issue before retryin
 
 ## Image Editing Tips
 
-- Be specific about what changes you want (e.g., "change the sky to sunset colors" vs "edit the sky")
+- Be specific about what changes you want (e.g., "change the sky to sunset colours" vs "edit the sky")
 - Reference specific elements in the image when possible
 - For best results, use clear and detailed editing instructions
 - Both Gemini 3.1 Flash Image Preview and FLUX.2 Pro support image editing through OpenRouter

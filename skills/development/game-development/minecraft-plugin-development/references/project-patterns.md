@@ -5,7 +5,7 @@ This reference captures architecture patterns observed in real Paper gameplay pl
 - match-heavy, multi-phase minigames with maps, teams, power selections, boss waves, scoreboards, and match-mode overlays
 - class-based persistent brawl modes with hero progression, map rotation, player data services, and async leaderboard refreshes
 
-Use this file when the user asks for repo structure, feature placement, or how to organize a growing Minecraft plugin.
+Use this file when the user asks for repo structure, feature placement, or how to organise a growing Minecraft plugin.
 
 ## Pattern 1: Central plugin bootstrap with explicit subsystems
 

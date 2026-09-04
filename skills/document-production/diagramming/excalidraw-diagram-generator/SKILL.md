@@ -1,6 +1,6 @@
 ---
-description: 'Generate Excalidraw diagrams from natural language descriptions. Use when asked to "create a diagram", "make a flowchart", "visualize a process", "draw a system architecture", "create a mind map", or "generate an Excalidraw file". Supports flowcharts, relationship diagrams, mind maps, and system architecture diagrams. Outputs .excalidraw JSON files that can be opened directly in Excalidraw.'
 name: excalidraw-diagram-generator
+description: 'Generate Excalidraw diagrams from natural language descriptions. Use when asked to "create a diagram", "make a flowchart", "visualise a process", "draw a system architecture", "create a mind map", or "generate an Excalidraw file". Supports flowcharts, relationship diagrams, mind maps, and system architecture diagrams. Outputs .excalidraw JSON files that can be opened directly in Excalidraw.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -15,7 +15,7 @@ Use this skill when users request:
 
 - "Create a diagram showing..."
 - "Make a flowchart for..."
-- "Visualize the process of..."
+- "Visualise the process of..."
 - "Draw the system architecture of..."
 - "Generate a mind map about..."
 - "Create an Excalidraw file for..."
@@ -25,9 +25,9 @@ Use this skill when users request:
 **Supported diagram types:**
 - 📊 **Flowcharts**: Sequential processes, workflows, decision trees
 - 🔗 **Relationship Diagrams**: Entity relationships, system components, dependencies
-- 🧠 **Mind Maps**: Concept hierarchies, brainstorming results, topic organization
+- 🧠 **Mind Maps**: Concept hierarchies, brainstorming results, topic organisation
 - 🏗️ **Architecture Diagrams**: System design, module interactions, data flow
-- 📈 **Data Flow Diagrams (DFD)**: Data flow visualization, data transformation processes
+- 📈 **Data Flow Diagrams (DFD)**: Data flow visualisation, data transformation processes
 - 🏊 **Business Flow (Swimlane)**: Cross-functional workflows, actor-based process flows
 - 📦 **Class Diagrams**: Object-oriented design, class structures and relationships
 - 🔄 **Sequence Diagrams**: Object interactions over time, message flows
@@ -35,7 +35,7 @@ Use this skill when users request:
 
 ## Prerequisites
 
-- Clear description of what should be visualized
+- Clear description of what should be visualised
 - Identification of key entities, steps, or concepts
 - Understanding of relationships or flow between elements
 
@@ -43,7 +43,7 @@ Use this skill when users request:
 
 ### Step 1: Understand the Request
 
-Analyze the user's description to determine:
+Analyse the user's description to determine:
 1. **Diagram type** (flowchart, relationship, mind map, architecture)
 2. **Key elements** (entities, steps, concepts)
 3. **Relationships** (flow, connections, hierarchy)
@@ -179,11 +179,11 @@ Structure the complete Excalidraw file:
 
 ### Layout Tips
 
-1. **Start positions**: Center important elements, use consistent spacing
+1. **Start positions**: Centre important elements, use consistent spacing
 2. **Spacing**: 
    - Horizontal gap: 200-300px between elements
    - Vertical gap: 100-150px between rows
-3. **Colors**: Use consistent color scheme
+3. **Colours**: Use consistent colour scheme
    - Primary elements: Light blue (`#a5d8ff`)
    - Secondary elements: Light green (`#b2f2bb`)
    - Important/Central: Yellow (`#ffd43b`)
@@ -233,7 +233,7 @@ Would you like me to start with the high-level view?"
 **User:** "Mind map about machine learning concepts"
 
 **Agent generates:**
-1. Center: "Machine Learning"
+1. Centre: "Machine Learning"
 2. Branches: Supervised Learning, Unsupervised Learning, Reinforcement Learning, Deep Learning
 3. Sub-topics under each branch
 4. Save as `machine-learning-mindmap.excalidraw`
@@ -246,7 +246,7 @@ Would you like me to start with the high-level view?"
 | Text doesn't fit in boxes | Increase box width or reduce font size |
 | Too many elements | Break into multiple diagrams |
 | Unclear layout | Use grid layout (rows/columns) or radial layout (mind maps) |
-| Colors inconsistent | Define color palette upfront based on element types |
+| Colours inconsistent | Define colour palette upfront based on element types |
 
 ## Advanced Techniques
 
@@ -299,13 +299,13 @@ Before delivering the diagram:
 - [ ] Text is readable (font size 16+)
 - [ ] **All text elements use `fontFamily: 5` (Excalifont)**
 - [ ] Arrows connect logically
-- [ ] Colors follow consistent scheme
+- [ ] Colours follow consistent scheme
 - [ ] File is valid JSON
 - [ ] Element count is reasonable (<20 for clarity)
 
 ## Icon Libraries (Optional Enhancement)
 
-For specialized diagrams (e.g., AWS/GCP/Azure architecture diagrams), you can use pre-made icon libraries from Excalidraw. This provides professional, standardized icons instead of basic shapes.
+For specialised diagrams (e.g., AWS/GCP/Azure architecture diagrams), you can use pre-made icon libraries from Excalidraw. This provides professional, standardised icons instead of basic shapes.
 
 ### When User Requests Icons
 
@@ -582,7 +582,7 @@ python scripts/add-arrow.py my-aws-diagram.excalidraw 565 330 650 350 --label "S
 
 **If no icon libraries are set up:**
 - Create diagrams using basic shapes (rectangles, ellipses, arrows)
-- Use color coding and text labels to distinguish components
+- Use colour coding and text labels to distinguish components
 - Inform user they can add icons later or set up libraries for future diagrams
 - The diagram will still be functional and clear, just less visually polished
 
@@ -596,7 +596,7 @@ See bundled references for:
 - `templates/mindmap-template.json` - Mind map starter
 - `scripts/split-excalidraw-library.py` - Tool to split `.excalidrawlib` files
 - `scripts/README.md` - Documentation for library tools
-- `scripts/.gitignore` - Prevents local Python artifacts from being committed
+- `scripts/.gitignore` - Prevents local Python artefacts from being committed
 
 ## Limitations
 
@@ -609,7 +609,7 @@ See bundled references for:
 ## Future Enhancements
 
 Potential improvements:
-- Auto-layout optimization algorithms
+- Auto-layout optimisation algorithms
 - Import from Mermaid/PlantUML syntax
 - Template library expansion
 - Interactive editing after generation

@@ -1,6 +1,6 @@
 ---
-description: Perform AI-powered web searches with real-time information using Perplexity models via LiteLLM and OpenRouter. This skill should be used when conducting web searches for current information, finding recent scientific literature, getting grounded answers with source citations, or accessing information beyond the model knowledge cutoff. Provides access to multiple Perplexity models including Sonar Pro, Sonar Pro Search (advanced agentic search), and Sonar Reasoning Pro through a single OpenRouter API key.
 name: perplexity-search
+description: Perform AI-powered web searches with real-time information using Perplexity models via LiteLLM and OpenRouter. This skill should be used when conducting web searches for current information, finding recent scientific literature, getting grounded answers with source citations, or accessing information beyond the model knowledge cutoff. Provides access to multiple Perplexity models including Sonar Pro, Sonar Pro Search (advanced agentic search), and Sonar Reasoning Pro through a single OpenRouter API key.
 license: MIT license
 compatibility: An OpenRouter API key is required to use Perplexity search
 metadata:
@@ -60,7 +60,7 @@ Use this skill when:
    python scripts/perplexity_search.py --check-setup
    ```
 
-See `references/openrouter_setup.md` for detailed setup instructions, troubleshooting, and security best practices.
+See `references/openrouter-setup.md` for detailed setup instructions, troubleshooting, and security best practices.
 
 ### Basic Usage
 
@@ -101,7 +101,7 @@ Access models via `--model` parameter:
 - Simple fact lookups → `sonar`
 - Cost-sensitive bulk queries → `sonar`
 
-See `references/model_comparison.md` for detailed comparison, use cases, pricing, and performance characteristics.
+See `references/model-comparison.md` for detailed comparison, use cases, pricing, and performance characteristics.
 
 ## Crafting Effective Queries
 
@@ -142,7 +142,7 @@ Break complex questions into clear components:
 **Example:**
 "What improvements does AlphaFold3 offer over AlphaFold2 for protein structure prediction, according to research published between 2023 and 2024? Include specific accuracy metrics and benchmarks."
 
-See `references/search_strategies.md` for comprehensive guidance on query design, domain-specific patterns, and advanced techniques.
+See `references/search-strategies.md` for comprehensive guidance on query design, domain-specific patterns, and advanced techniques.
 
 ## Common Use Cases
 
@@ -250,7 +250,7 @@ Perplexity models have different pricing tiers:
 - Sonar Reasoning Pro: $0.005-0.010
 - Sonar Pro Search: $0.020-0.050+ (most comprehensive)
 
-**Cost optimization strategies:**
+**Cost optimisation strategies:**
 1. Use `sonar` for simple fact lookups
 2. Default to `sonar-pro` for most queries
 3. Reserve `sonar-pro-search` for complex analysis
@@ -297,7 +297,7 @@ uv pip install litellm
 - Add credits at https://openrouter.ai/account
 - Enable auto-recharge to prevent interruptions
 
-See `references/openrouter_setup.md` for comprehensive troubleshooting guide.
+See `references/openrouter-setup.md` for comprehensive troubleshooting guide.
 
 ## Integration with Other Skills
 
@@ -352,7 +352,7 @@ Use with `scientific-critical-thinking` skill:
 3. **Downgrade for simplicity**: Use sonar for basic facts
 4. **Use reasoning models**: When step-by-step analysis needed
 
-### Cost Optimization
+### Cost Optimisation
 
 1. **Choose appropriate models**: Match model to query complexity
 2. **Set token limits**: Use `--max-tokens` to control costs
@@ -377,9 +377,9 @@ Use with `scientific-critical-thinking` skill:
 - `scripts/setup_env.py`: Environment setup and validation helper
 
 **References:**
-- `references/search_strategies.md`: Comprehensive query design guide
-- `references/model_comparison.md`: Detailed model comparison and selection guide
-- `references/openrouter_setup.md`: Complete setup, troubleshooting, and security guide
+- `references/search-strategies.md`: Comprehensive query design guide
+- `references/model-comparison.md`: Detailed model comparison and selection guide
+- `references/openrouter-setup.md`: Complete setup, troubleshooting, and security guide
 
 **Assets:**
 - `assets/.env.example`: Example environment file template
@@ -439,7 +439,7 @@ This skill provides:
 3. **Simple setup**: Single OpenRouter API key, no separate Perplexity account
 4. **Comprehensive guidance**: Detailed references for query design and model selection
 5. **Cost-effective**: Pay-as-you-go pricing with usage monitoring
-6. **Scientific focus**: Optimized for research, literature search, and technical queries
+6. **Scientific focus**: Optimised for research, literature search, and technical queries
 7. **Easy integration**: Works seamlessly with other scientific skills
 
 Conduct AI-powered web searches to find current information, recent research, and grounded answers with source citations.

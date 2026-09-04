@@ -1,6 +1,6 @@
 ---
-description: Google quantum computing framework. Use when targeting Google Quantum AI hardware, designing noise-aware circuits, or running quantum characterization experiments. Best for Google hardware, noise modeling, and low-level circuit design. For IBM hardware use qiskit; for quantum ML with autodiff use pennylane; for physics simulations use qutip.
 name: cirq
+description: Google quantum computing framework. Use when targeting Google Quantum AI hardware, designing noise-aware circuits, or running quantum characterisation experiments. Best for Google hardware, noise modelling, and low-level circuit design. For IBM hardware use qiskit; for quantum ML with autodiff use pennylane; for physics simulations use qutip.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -98,7 +98,7 @@ Common topics:
 - Single and two-qubit gates
 - Parameterized gates and operations
 - Custom gate decomposition
-- Circuit organization with moments
+- Circuit organisation with moments
 - Standard circuit patterns (Bell states, GHZ, QFT)
 - Import/export (OpenQASM, JSON)
 - Working with qudits and observables
@@ -112,19 +112,19 @@ Common topics:
 - Sampling and measurements
 - Parameter sweeps (single and multiple parameters)
 - Noisy simulation
-- State histograms and visualization
+- State histograms and visualisation
 - Quantum Virtual Machine (QVM)
 - Expectation values and observables
-- Performance optimization
+- Performance optimisation
 
 ### Circuit Transformation
-For information about optimizing, compiling, and manipulating quantum circuits, see:
+For information about optimising, compiling, and manipulating quantum circuits, see:
 - **[references/transformation.md](references/transformation.md)** - Complete guide to circuit transformations
 
 Common topics:
 - Transformer framework
 - Gate decomposition
-- Circuit optimization (merge gates, eject Z gates, drop negligible operations)
+- Circuit optimisation (merge gates, eject Z gates, drop negligible operations)
 - Circuit compilation for hardware
 - Qubit routing and SWAP insertion
 - Custom transformers
@@ -141,19 +141,19 @@ Supported providers:
 - **AQT** (cirq-aqt) - Alpine Quantum Technologies
 - **Pasqal** (cirq-pasqal) - Neutral atom quantum computers
 
-Topics include device representation, qubit selection, authentication, job management, and circuit optimization for hardware.
+Topics include device representation, qubit selection, authentication, job management, and circuit optimisation for hardware.
 
-### Noise Modeling
-For information about modeling noise, noisy simulation, characterization, and error mitigation, see:
-- **[references/noise.md](references/noise.md)** - Complete guide to noise modeling
+### Noise Modelling
+For information about modelling noise, noisy simulation, characterisation, and error mitigation, see:
+- **[references/noise.md](references/noise.md)** - Complete guide to noise modelling
 
 Common topics:
 - Noise channels (depolarizing, amplitude damping, phase damping)
 - Noise models (constant, gate-specific, qubit-specific, thermal)
 - Adding noise to circuits
 - Readout noise
-- Noise characterization (randomized benchmarking, XEB)
-- Noise visualization (heatmaps)
+- Noise characterisation (randomized benchmarking, XEB)
+- Noise visualisation (heatmaps)
 - Error mitigation techniques
 
 ### Quantum Experiments
@@ -165,7 +165,7 @@ Common topics:
 - Parameter sweeps and data collection
 - ReCirq framework structure
 - Common algorithms (VQE, QAOA, QPE)
-- Data analysis and visualization
+- Data analysis and visualisation
 - Statistical analysis and fidelity estimation
 - Parallel data collection
 
@@ -291,21 +291,21 @@ results = noise_comparison_study(circuit, noise_levels)
 3. **Hardware Execution**
    - Always test on simulators first
    - Select best qubits using calibration data
-   - Optimize circuits for target hardware gateset
+   - Optimise circuits for target hardware gateset
    - Implement error mitigation for production runs
    - Store expensive hardware results immediately
 
-4. **Circuit Optimization**
+4. **Circuit Optimisation**
    - Start with high-level built-in transformers
-   - Chain multiple optimizations in sequence
+   - Chain multiple optimisations in sequence
    - Track depth and gate count reduction
    - Validate correctness after transformation
 
-5. **Noise Modeling**
+5. **Noise Modelling**
    - Use realistic noise models from calibration data
    - Include all error sources (gate, decoherence, readout)
-   - Characterize before mitigating
-   - Keep circuits shallow to minimize noise accumulation
+   - Characterise before mitigating
+   - Keep circuits shallow to minimise noise accumulation
 
 6. **Experiments**
    - Structure experiments with clear separation (data generation, collection, analysis)
@@ -325,8 +325,8 @@ results = noise_comparison_study(circuit, noise_levels)
 ## Common Issues
 
 **Circuit too deep for hardware:**
-- Use circuit optimization transformers to reduce depth
-- See `transformation.md` for optimization techniques
+- Use circuit optimisation transformers to reduce depth
+- See `transformation.md` for optimisation techniques
 
 **Memory issues with simulation:**
 - Switch from density matrix to state vector simulator
@@ -340,4 +340,4 @@ results = noise_comparison_study(circuit, noise_levels)
 **Noisy simulation too slow:**
 - Density matrix simulation is O(2^2n) - consider reducing qubits
 - Use noise models selectively on critical operations only
-- See `simulation.md` for performance optimization
+- See `simulation.md` for performance optimisation

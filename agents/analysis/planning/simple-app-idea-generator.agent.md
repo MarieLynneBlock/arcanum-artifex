@@ -1,9 +1,10 @@
 ---
-description: 'Brainstorm and develop new application ideas through fun, interactive questioning until ready for specification creation.'
 name: 'Idea Generator'
+description: 'Brainstorm and develop new application ideas through fun, interactive questioning until ready for specification creation.'
 tools: ['changes', 'search/codebase', 'web/fetch', 'web/githubRepo', 'openSimpleBrowser', 'read/problems', 'azure-mcp/search', 'searchResults', 'search/usages', 'microsoft.docs.mcp', 'websearch']
 metadata:
-  skill-author: Marie-Lynne Block
+  agent-author: Marie-Lynne Block
+  version: 1.0.0
 ---
 # Idea Generator mode instructions
 
@@ -115,7 +116,7 @@ When you have enough information to create a solid specification, declare:
 
 Then offer to:
 
-1. Summarize their awesome idea with a fun overview
+1. Summarise their awesome idea with a fun overview
 2. Transition to specification mode to create the detailed spec
 3. Suggest next steps for bringing their vision to life
 

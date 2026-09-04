@@ -1,12 +1,12 @@
 ---
-description: Comprehensive toolkit for protein language models including ESM3 (generative multimodal protein design across sequence, structure, and function) and ESM C (efficient protein embeddings and representations). Use this skill when working with protein sequences, structures, or function prediction; designing novel proteins; generating protein embeddings; performing inverse folding; or conducting protein engineering tasks. Supports both local model usage and cloud-based Forge API for scalable inference.
 name: esm
+description: Comprehensive toolkit for protein language models including ESM3 (generative multimodal protein design across sequence, structure, and function) and ESM C (efficient protein embeddings and representations). Use this skill when working with protein sequences, structures, or function prediction; designing novel proteins; generating protein embeddings; performing inverse folding; or conducting protein engineering tasks. Supports both local model usage and cloud-based Forge API for scalable inference.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
 
-# ESM: Evolutionary Scale Modeling
+# ESM: Evolutionary Scale Modelling
 
 ## Overview
 
@@ -16,7 +16,7 @@ ESM provides state-of-the-art protein language models for understanding, generat
 
 ### 1. Protein Sequence Generation with ESM3
 
-Generate novel protein sequences with desired properties using multimodal generative modeling.
+Generate novel protein sequences with desired properties using multimodal generative modelling.
 
 **When to use:**
 - Designing proteins with specific functional properties
@@ -222,7 +222,7 @@ See `references/forge-api.md` for detailed Forge API documentation, authenticati
 - **Production quality:** Use `esm3-medium-2024-08` via Forge
 - **Maximum accuracy:** Use `esm3-large-2024-03` or `esmc-6b`
 - **High throughput:** Use Forge API with batch executor
-- **Cost optimization:** Use smaller models, implement caching strategies
+- **Cost optimisation:** Use smaller models, implement caching strategies
 
 ## Installation
 
@@ -252,7 +252,7 @@ No additional dependencies needed. Obtain Forge API token at https://forge.evolu
 For detailed examples and complete workflows, see `references/workflows.md` which includes:
 - Novel GFP design with chain-of-thought
 - Protein variant generation and screening
-- Structure-based sequence optimization
+- Structure-based sequence optimisation
 - Function prediction pipelines
 - Embedding-based clustering and analysis
 
@@ -261,7 +261,7 @@ For detailed examples and complete workflows, see `references/workflows.md` whic
 This skill includes comprehensive reference documentation:
 
 - `references/esm3-api.md` - ESM3 model architecture, API reference, generation parameters, and multimodal prompting
-- `references/esm-c-api.md` - ESM C model details, embedding strategies, and performance optimization
+- `references/esm-c-api.md` - ESM C model details, embedding strategies, and performance optimisation
 - `references/forge-api.md` - Forge platform documentation, authentication, batch processing, and deployment
 - `references/workflows.md` - Complete examples and common workflow patterns
 
@@ -278,7 +278,7 @@ These references contain detailed API specifications, parameter descriptions, an
 **For embedding tasks:**
 - Batch process sequences when possible for efficiency
 - Cache embeddings for repeated analyses
-- Normalize embeddings when computing similarities
+- Normalise embeddings when computing similarities
 - Use appropriate model size based on downstream task requirements
 
 **For production deployment:**
@@ -296,7 +296,7 @@ These references contain detailed API specifications, parameter descriptions, an
   - ESM3 Release: https://www.evolutionaryscale.ai/blog/esm3-release
   - ESM C Launch: https://www.evolutionaryscale.ai/blog/esm-cambrian
 - **Community:** Slack community at https://bit.ly/3FKwcWd
-- **Model Weights:** HuggingFace EvolutionaryScale organization
+- **Model Weights:** HuggingFace EvolutionaryScale organisation
 
 ## Responsible Use
 

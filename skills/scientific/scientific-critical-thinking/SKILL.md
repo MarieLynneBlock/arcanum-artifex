@@ -1,8 +1,8 @@
 ---
-description: Evaluate scientific claims and evidence quality. Use for assessing experimental design validity, identifying biases and confounders, applying evidence grading frameworks (GRADE, Cochrane Risk of Bias), or teaching critical analysis. Best for understanding evidence quality, identifying flaws. For formal peer review writing use peer-review.
 name: scientific-critical-thinking
-allowed-tools: Read Write Edit Bash
+description: Evaluate scientific claims and evidence quality. Use for assessing experimental design validity, identifying biases and confounders, applying evidence grading frameworks (GRADE, Cochrane Risk of Bias), or teaching critical analysis. Best for understanding evidence quality, identifying flaws. For formal peer review writing use peer-review.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -11,7 +11,7 @@ metadata:
 
 ## Overview
 
-Critical thinking is a systematic process for evaluating scientific rigor. Assess methodology, experimental design, statistical validity, biases, confounding, and evidence quality using GRADE and Cochrane ROB frameworks. Apply this skill for critical analysis of scientific claims.
+Critical thinking is a systematic process for evaluating scientific rigour. Assess methodology, experimental design, statistical validity, biases, confounding, and evidence quality using GRADE and Cochrane ROB frameworks. Apply this skill for critical analysis of scientific claims.
 
 ## When to Use This Skill
 
@@ -52,8 +52,8 @@ The AI will automatically:
 - Evidence quality assessment flowcharts
 - GRADE assessment methodology diagrams
 - Risk of bias evaluation frameworks
-- Validity assessment visualizations
-- Any complex concept that benefits from visualization
+- Validity assessment visualisations
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -63,7 +63,7 @@ For detailed guidance on creating schematics, refer to the scientific-schematics
 
 ### 1. Methodology Critique
 
-Evaluate research methodology for rigor, validity, and potential flaws.
+Evaluate research methodology for rigour, validity, and potential flaws.
 
 **Apply when:**
 - Reviewing research papers
@@ -85,7 +85,7 @@ Evaluate research methodology for rigor, validity, and potential flaws.
      - Evaluate confounding control
      - Assess selection bias
      - Review attrition/dropout patterns
-   - **External validity:** Do results generalize?
+   - **External validity:** Do results generalise?
      - Evaluate sample representativeness
      - Consider ecological validity of setting
      - Assess whether conditions match target application
@@ -107,10 +107,10 @@ Evaluate research methodology for rigor, validity, and potential flaws.
 4. **Measurement Quality**
    - Are instruments validated and reliable?
    - Are measures objective when possible, or subjective with acknowledged limitations?
-   - Is outcome assessment standardized?
+   - Is outcome assessment standardised?
    - Are multiple measures used to triangulate findings?
 
-**Reference:** See `references/scientific_method.md` for detailed principles and `references/experimental_design.md` for comprehensive design checklist.
+**Reference:** See `references/scientific-method.md` for detailed principles and `references/experimental-design.md` for comprehensive design checklist.
 
 ### 2. Bias Detection
 
@@ -158,7 +158,7 @@ Identify and evaluate potential sources of bias that could distort findings.
    - Could unmeasured confounding explain findings?
    - Are there plausible alternative explanations?
 
-**Reference:** See `references/common_biases.md` for comprehensive bias taxonomy with detection and mitigation strategies.
+**Reference:** See `references/common-biases.md` for comprehensive bias taxonomy with detection and mitigation strategies.
 
 ### 3. Statistical Analysis Evaluation
 
@@ -201,7 +201,7 @@ Critically assess statistical methods, interpretation, and reporting.
    - Are effect sizes reported alongside significance?
    - Are confidence intervals provided to show precision?
    - Is the effect size meaningful in practical terms?
-   - Are standardized effect sizes interpreted with field-specific context?
+   - Are standardised effect sizes interpreted with field-specific context?
 
 6. **Missing Data**
    - How much data is missing?
@@ -209,7 +209,7 @@ Critically assess statistical methods, interpretation, and reporting.
    - How is missing data handled (deletion, imputation, maximum likelihood)?
    - Could missing data bias results?
 
-7. **Regression and Modeling**
+7. **Regression and Modelling**
    - Is the model overfitted (too many predictors, no cross-validation)?
    - Are predictions made outside the data range (extrapolation)?
    - Are multicollinearity issues addressed?
@@ -222,7 +222,7 @@ Critically assess statistical methods, interpretation, and reporting.
    - Texas sharpshooter fallacy (pattern finding in noise)
    - Simpson's paradox (confounding by subgroups)
 
-**Reference:** See `references/statistical_pitfalls.md` for detailed pitfalls and correct practices.
+**Reference:** See `references/statistical-pitfalls.md` for detailed pitfalls and correct practices.
 
 ### 4. Evidence Quality Assessment
 
@@ -249,7 +249,7 @@ Evaluate the strength and quality of evidence systematically.
 
 2. **Quality Within Design Type**
    - Risk of bias assessment (use appropriate tool: Cochrane ROB, Newcastle-Ottawa, etc.)
-   - Methodological rigor
+   - Methodological rigour
    - Transparency and reporting completeness
    - Conflicts of interest
 
@@ -285,7 +285,7 @@ Evaluate the strength and quality of evidence systematically.
    - Specificity of relationship
    - Strength of association
 
-**Reference:** See `references/evidence_hierarchy.md` for detailed hierarchy, GRADE system, and quality assessment tools.
+**Reference:** See `references/evidence-hierarchy.md` for detailed hierarchy, GRADE system, and quality assessment tools.
 
 ### 5. Logical Fallacy Identification
 
@@ -305,8 +305,8 @@ Detect and name logical errors in scientific arguments and claims.
    - **Reverse causation:** Mistaking cause for effect
    - **Single cause fallacy:** Attributing complex outcomes to one factor
 
-2. **Generalization Fallacies**
-   - **Hasty generalization:** Broad conclusions from small samples
+2. **Generalisation Fallacies**
+   - **Hasty generalisation:** Broad conclusions from small samples
    - **Anecdotal fallacy:** Personal stories as proof
    - **Cherry-picking:** Selecting only supporting evidence
    - **Ecological fallacy:** Group patterns applied to individuals
@@ -341,7 +341,7 @@ Detect and name logical errors in scientific arguments and claims.
 - Identify what evidence would be needed for valid inference
 - Note that fallacious reasoning doesn't prove the conclusion false—just that this argument doesn't support it
 
-**Reference:** See `references/logical_fallacies.md` for comprehensive fallacy catalog with examples and detection strategies.
+**Reference:** See `references/logical-fallacies.md` for comprehensive fallacy catalogue with examples and detection strategies.
 
 ### 6. Research Design Guidance
 
@@ -367,12 +367,12 @@ Provide constructive guidance for planning rigorous studies.
    - Choose between-subjects, within-subjects, or mixed designs
    - Plan factorial designs if testing multiple factors
 
-3. **Bias Minimization Strategy**
+3. **Bias Minimisation Strategy**
    - Implement randomization when possible
    - Plan blinding at all feasible levels (participants, providers, assessors)
    - Identify and plan to control confounds (randomization, matching, stratification, statistical adjustment)
-   - Standardize all procedures
-   - Plan to minimize attrition
+   - Standardise all procedures
+   - Plan to minimise attrition
 
 4. **Sample Planning**
    - Conduct a priori power analysis (specify expected effect, desired power, alpha)
@@ -396,14 +396,14 @@ Provide constructive guidance for planning rigorous studies.
    - Plan to report effect sizes and confidence intervals
    - Consider multiple comparison corrections
 
-7. **Transparency and Rigor**
+7. **Transparency and Rigour**
    - Preregister study and analysis plan
    - Use reporting guidelines (CONSORT, STROBE, PRISMA)
    - Plan to report all outcomes, not just significant ones
    - Distinguish confirmatory from exploratory analyses
    - Commit to data/code sharing
 
-**Reference:** See `references/experimental_design.md` for comprehensive design checklist covering all stages from question to dissemination.
+**Reference:** See `references/experimental-design.md` for comprehensive design checklist covering all stages from question to dissemination.
 
 ### 7. Claim Evaluation
 
@@ -438,13 +438,13 @@ Systematically evaluate scientific claims for validity and support.
    - Is confidence proportional to evidence strength?
    - Are hedging words used appropriately?
    - Are limitations downplayed?
-   - Is speculation clearly labeled?
+   - Is speculation clearly labelled?
 
 5. **Check for Overgeneralization**
    - Do claims extend beyond the sample studied?
    - Are population restrictions acknowledged?
-   - Is context-dependence recognized?
-   - Are caveats about generalization included?
+   - Is context-dependence recognised?
+   - Are caveats about generalisation included?
 
 6. **Red Flags**
    - Causal language from correlational studies
@@ -468,7 +468,7 @@ Systematically evaluate scientific claims for validity and support.
    - Identify strengths as well as weaknesses
    - Suggest improvements rather than just criticizing
    - Distinguish between fatal flaws and minor limitations
-   - Recognize that all research has limitations
+   - Recognise that all research has limitations
 
 2. **Be Specific**
    - Point to specific instances (e.g., "Table 2 shows..." or "In the Methods section...")
@@ -486,12 +486,12 @@ Systematically evaluate scientific claims for validity and support.
    - Use same criteria across all studies
    - Don't apply stricter standards to findings you dislike
    - Acknowledge your own potential biases
-   - Base judgments on methodology, not results
+   - Base judgements on methodology, not results
 
 5. **Consider Context**
    - Acknowledge practical and ethical constraints
    - Consider field-specific norms for effect sizes and methods
-   - Recognize exploratory vs. confirmatory contexts
+   - Recognise exploratory vs. confirmatory contexts
    - Account for resource limitations in evaluating studies
 
 ### When Providing Critique
@@ -500,7 +500,7 @@ Systematically evaluate scientific claims for validity and support.
 
 1. **Summary:** Brief overview of what was evaluated
 2. **Strengths:** What was done well (important for credibility and learning)
-3. **Concerns:** Issues organized by severity
+3. **Concerns:** Issues organised by severity
    - Critical issues (threaten validity of main conclusions)
    - Important issues (affect interpretation but not fatally)
    - Minor issues (worth noting but don't change conclusions)
@@ -524,17 +524,17 @@ Systematically evaluate scientific claims for validity and support.
 
 This skill includes comprehensive reference materials that provide detailed frameworks for critical evaluation:
 
-- **`references/scientific_method.md`** - Core principles of scientific methodology, the scientific process, critical evaluation criteria, red flags in scientific claims, causal inference standards, peer review, and open science principles
+- **`references/scientific-method.md`** - Core principles of scientific methodology, the scientific process, critical evaluation criteria, red flags in scientific claims, causal inference standards, peer review, and open science principles
 
-- **`references/common_biases.md`** - Comprehensive taxonomy of cognitive, experimental, methodological, statistical, and analysis biases with detection and mitigation strategies
+- **`references/common-biases.md`** - Comprehensive taxonomy of cognitive, experimental, methodological, statistical, and analysis biases with detection and mitigation strategies
 
-- **`references/statistical_pitfalls.md`** - Common statistical errors and misinterpretations including p-value misunderstandings, multiple comparisons problems, sample size issues, effect size mistakes, correlation/causation confusion, regression pitfalls, and meta-analysis issues
+- **`references/statistical-pitfalls.md`** - Common statistical errors and misinterpretations including p-value misunderstandings, multiple comparisons problems, sample size issues, effect size mistakes, correlation/causation confusion, regression pitfalls, and meta-analysis issues
 
-- **`references/evidence_hierarchy.md`** - Traditional evidence hierarchy, GRADE system, study quality assessment criteria, domain-specific considerations, evidence synthesis principles, and practical decision frameworks
+- **`references/evidence-hierarchy.md`** - Traditional evidence hierarchy, GRADE system, study quality assessment criteria, domain-specific considerations, evidence synthesis principles, and practical decision frameworks
 
-- **`references/logical_fallacies.md`** - Logical fallacies common in scientific discourse organized by type (causation, generalization, authority, relevance, structure, statistical) with examples and detection strategies
+- **`references/logical-fallacies.md`** - Logical fallacies common in scientific discourse organised by type (causation, generalisation, authority, relevance, structure, statistical) with examples and detection strategies
 
-- **`references/experimental_design.md`** - Comprehensive experimental design checklist covering research questions, hypotheses, study design selection, variables, sampling, blinding, randomization, control groups, procedures, measurement, bias minimization, data management, statistical planning, ethical considerations, validity threats, and reporting standards
+- **`references/experimental-design.md`** - Comprehensive experimental design checklist covering research questions, hypotheses, study design selection, variables, sampling, blinding, randomization, control groups, procedures, measurement, bias minimisation, data management, statistical planning, ethical considerations, validity threats, and reporting standards
 
 **When to consult references:**
 - Load references into context when detailed frameworks are needed
@@ -564,6 +564,6 @@ This skill includes comprehensive reference materials that provide detailed fram
 **Goals of critical thinking:**
 1. Identify strengths and weaknesses accurately
 2. Determine what conclusions are supported
-3. Recognize limitations and uncertainties
+3. Recognise limitations and uncertainties
 4. Suggest improvements for future work
 5. Advance scientific understanding

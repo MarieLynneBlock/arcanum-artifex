@@ -2,7 +2,7 @@
 
 # Timeline
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `timeline`
 **Best for:** Chronological events, historical progression, milestones over time, release history
@@ -14,7 +14,7 @@
 
 ## Exemplar Diagram
 
-_Timeline of a startup's growth milestones from founding through Series A, organized by year and quarter:_
+_Timeline of a startup's growth milestones from founding through Series A, organised by year and quarter:_
 
 ```mermaid
 timeline

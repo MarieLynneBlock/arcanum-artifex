@@ -5,15 +5,15 @@ applyTo: '**/*.agent.md'
 
 # Custom Agent File Guidelines
 
-Instructions for creating effective and maintainable custom agent files that provide specialized expertise for specific development tasks in GitHub Copilot.
+Instructions for creating effective and maintainable custom agent files that provide specialised expertise for specific development tasks in GitHub Copilot.
 
 ## Project Context
 
 - Target audience: Developers creating custom agents for GitHub Copilot
 - File format: Markdown with YAML frontmatter
 - File naming convention: lowercase with hyphens (e.g., `test-specialist.agent.md`)
-- Location: `.github/agents/` directory (repository-level) or `agents/` directory (organization/enterprise-level)
-- Purpose: Define specialized agents with tailored expertise, tools, and instructions for specific tasks
+- Location: `.github/agents/` directory (repository-level) or `agents/` directory (organisation/enterprise-level)
+- Purpose: Define specialised agents with tailored expertise, tools, and instructions for specific tasks
 - Official documentation: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents
 
 ## Required Frontmatter
@@ -77,7 +77,7 @@ target: 'vscode'
 
 #### **mcp-servers** (OPTIONAL, Organization/Enterprise only)
 - Configure MCP servers available only to this agent
-- Only supported for organization/enterprise level agents
+- Only supported for organisation/enterprise level agents
 - See "MCP Server Configuration" section below
 
 #### **handoffs** (OPTIONAL, VS Code only)
@@ -130,7 +130,7 @@ Each handoff in the list must include the following properties:
 | `prompt` | string | No | The prompt text to pre-fill in the target agent's chat input |
 | `send` | boolean | No | If `true`, automatically submits the prompt to the target agent (default: `false`) |
 
-### Handoff Behavior
+### Handoff Behaviour
 
 - **Button Display**: Handoff buttons appear as interactive suggestions after a chat response completes
 - **Context Preservation**: When users select a handoff button, they switch to the target agent with conversation context maintained
@@ -141,7 +141,7 @@ Each handoff in the list must include the following properties:
 
 #### When to Use Handoffs
 
-- **Multi-step workflows**: Breaking down complex tasks across specialized agents
+- **Multi-step workflows**: Breaking down complex tasks across specialised agents
 - **Quality gates**: Ensuring review steps between implementation phases
 - **Guided processes**: Directing users through a structured development process
 - **Skill transitions**: Moving from planning/design to implementation/testing specialists
@@ -320,7 +320,7 @@ Agents can invoke other agents using the **agent invocation tool** (the `agent` 
 
 The recommended approach is **prompt-based orchestration**:
 - The orchestrator defines a step-by-step workflow in natural language.
-- Each step is delegated to a specialized agent.
+- Each step is delegated to a specialised agent.
 - The orchestrator passes only the essential context (e.g., base path, identifiers) and requires each sub-agent to read its own `.agent.md` spec for tools/constraints.
 
 ### How It Works
@@ -431,11 +431,11 @@ The orchestrator's tool permissions act as a ceiling for all invoked sub-agents.
 - Performing bulk transformations on big codebases
 - Orchestrating more than 5-10 sequential steps
 
-Each sub-agent invocation adds latency and context overhead. For high-volume processing, implement logic directly in a single agent instead. Use orchestration only for coordinating specialized tasks on focused, manageable datasets.
+Each sub-agent invocation adds latency and context overhead. For high-volume processing, implement logic directly in a single agent instead. Use orchestration only for coordinating specialised tasks on focused, manageable datasets.
 
 ## Agent Prompt Structure
 
-The markdown content below the frontmatter defines the agent's behavior, expertise, and instructions. Well-structured prompts typically include:
+The markdown content below the frontmatter defines the agent's behaviour, expertise, and instructions. Well-structured prompts typically include:
 
 1. **Agent Identity and Role**: Who the agent is and its primary role
 2. **Core Responsibilities**: What specific tasks the agent performs
@@ -445,20 +445,20 @@ The markdown content below the frontmatter defines the agent's behavior, experti
 
 ### Prompt Writing Best Practices
 
-- **Be Specific and Direct**: Use imperative mood ("Analyze", "Generate"); avoid vague terms
+- **Be Specific and Direct**: Use imperative mood ("Analyse", "Generate"); avoid vague terms
 - **Define Boundaries**: Clearly state scope limits and constraints
 - **Include Context**: Explain domain expertise and reference relevant frameworks
-- **Focus on Behavior**: Describe how the agent should think and work
+- **Focus on Behaviour**: Describe how the agent should think and work
 - **Use Structured Format**: Headers, bullets, and lists make prompts scannable
 
 ## Variable Definition and Extraction
 
-Agents can define dynamic parameters to extract values from user input and use them throughout the agent's behavior and sub-agent communications. This enables flexible, context-aware agents that adapt to user-provided data.
+Agents can define dynamic parameters to extract values from user input and use them throughout the agent's behaviour and sub-agent communications. This enables flexible, context-aware agents that adapt to user-provided data.
 
 ### When to Use Variables
 
 **Use variables when**:
-- Agent behavior depends on user input
+- Agent behaviour depends on user input
 - Need to pass dynamic values to sub-agents
 - Want to make agents reusable across different contexts
 - Require parameterized workflows
@@ -593,13 +593,13 @@ The sub-agent receives all necessary context embedded in the prompt. Variables a
 
 ### Real-World Example: Code Review Orchestrator
 
-Example of a simple orchestrator that validates code through multiple specialized agents:
+Example of a simple orchestrator that validates code through multiple specialised agents:
 
 1) Determine shared context:
 - `repositoryName`, `prNumber`
 - `basePath` (e.g., `projects/${repositoryName}/pr-${prNumber}`)
 
-2) Invoke specialized agents sequentially (each agent reads its own `.agent.md` spec):
+2) Invoke specialised agents sequentially (each agent reads its own `.agent.md` spec):
 
 ```text
 Step 1: Security Review
@@ -623,7 +623,7 @@ Output: projects/${repositoryName}/pr-${prNumber}/final-review.md
 
 #### Example: Conditional Step Orchestration (Code Review)
 
-This example shows a more complete orchestration with **pre-flight checks**, **conditional steps**, and **required vs optional** behavior.
+This example shows a more complete orchestration with **pre-flight checks**, **conditional steps**, and **required vs optional** behaviour.
 
 **Dynamic parameters (inputs):**
 - `repositoryName`, `prNumber`
@@ -654,7 +654,7 @@ This example shows a more complete orchestration with **pre-flight checks**, **c
   - Otherwise: invoke the sub-agent using the wrapper prompt and capture its summary.
   - Mark as **SUCCESS** or **FAILED**.
   - If the step is **Required** and failed: stop the pipeline and write a failure summary.
-5. End with a final summary section (overall status, artifacts, next actions).
+5. End with a final summary section (overall status, artefacts, next actions).
 
 **Sub-agent invocation prompt (example):**
 
@@ -750,7 +750,7 @@ Document valid values and constraints:
 
 ## MCP Server Configuration (Organization/Enterprise Only)
 
-MCP servers extend agent capabilities with additional tools. Only supported for organization and enterprise-level agents.
+MCP servers extend agent capabilities with additional tools. Only supported for organisation and enterprise-level agents.
 
 ### Configuration Format
 
@@ -815,7 +815,7 @@ env:
 - Filename becomes default agent name (if `name` not specified)
 - Allowed characters: `.`, `-`, `_`, `a-z`, `A-Z`, `0-9`
 
-## Agent Processing and Behavior
+## Agent Processing and Behaviour
 
 ### Versioning
 - Based on Git commit SHAs for the agent file
@@ -888,22 +888,22 @@ Each level can override settings from previous levels.
 ### Testing Specialist
 **Purpose**: Focus on test coverage and quality
 **Tools**: All tools (for comprehensive test creation)
-**Approach**: Analyze, identify gaps, write tests, avoid production code changes
+**Approach**: Analyse, identify gaps, write tests, avoid production code changes
 
 ### Implementation Planner
 **Purpose**: Create detailed technical plans and specifications
 **Tools**: Limited to `['read', 'search', 'edit']`
-**Approach**: Analyze requirements, create documentation, avoid implementation
+**Approach**: Analyse requirements, create documentation, avoid implementation
 
 ### Code Reviewer
 **Purpose**: Review code quality and provide feedback
 **Tools**: `['read', 'search']` only
-**Approach**: Analyze, suggest improvements, no direct modifications
+**Approach**: Analyse, suggest improvements, no direct modifications
 
 ### Refactoring Specialist
 **Purpose**: Improve code structure and maintainability
 **Tools**: `['read', 'search', 'edit']`
-**Approach**: Analyze patterns, propose refactorings, implement safely
+**Approach**: Analyse patterns, propose refactorings, implement safely
 
 ### Security Auditor
 **Purpose**: Identify security issues and vulnerabilities
@@ -951,7 +951,7 @@ Each level can override settings from previous levels.
 ### Integration Testing
 - Test agent with different file types in scope
 - Verify MCP server connectivity (if configured)
-- Check agent behavior with missing context
+- Check agent behaviour with missing context
 - Test error handling and edge cases
 - Validate agent switching and handoffs
 
@@ -972,12 +972,12 @@ Each level can override settings from previous levels.
 
 ### Community Resources
 - [Awesome Copilot Agents Collection](https://github.com/github/awesome-copilot/tree/main/agents)
-- [Customization Library Examples](https://docs.github.com/en/copilot/tutorials/customization-library/custom-agents)
+- [Customisation Library Examples](https://docs.github.com/en/copilot/tutorials/customization-library/custom-agents)
 - [Your First Custom Agent Tutorial](https://docs.github.com/en/copilot/tutorials/customization-library/custom-agents/your-first-custom-agent)
 
 ### Related Files
-- [Prompt Files Guidelines](./prompt.instructions.md) - For creating prompt files
-- [Instructions Guidelines](./instructions.instructions.md) - For creating instruction files
+- [Prompt Files Guidelines](../prompt-and-context/prompt.instructions.md) - For creating prompt files
+- [Agent Skills Guidelines](./agent-skills.instructions.md) - For creating agent skills
 
 ## Version Compatibility Notes
 

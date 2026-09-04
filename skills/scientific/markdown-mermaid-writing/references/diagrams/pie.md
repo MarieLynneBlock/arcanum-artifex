@@ -2,11 +2,11 @@
 
 # Pie Chart
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `pie`
 **Best for:** Simple proportional breakdowns, budget allocation, composition, survey results
-**When NOT to use:** Trends over time (use [XY Chart](xy_chart.md)), exact comparisons (use a table), more than 7 categories
+**When NOT to use:** Trends over time (use [XY Chart](xy-chart.md)), exact comparisons (use a table), more than 7 categories
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: Produce a complete Kruchten 4+1 architectural view model with diagram-as-code (Mermaid / PlantUML) and editable visual diagrams in draw.io or Miro. Choose one independent track. Loads 4plus1-models for core logic and exactly one output skill (draw-io-diagram-generator or miro-diagram-generator). No MCP dependency.
+description: Produce a complete Kruchten 4+1 architectural view model with diagram-as-code (Mermaid / PlantUML) and editable visual diagrams in draw.io, Miro, or both. Loads 4plus1-models for core logic and track-specific output skills. No MCP dependency.
 name: '4plus1 Diagrams.prompt'
 mode: agent
 metadata:
@@ -12,14 +12,14 @@ Run the `4plus1-diagrams` workflow.
 
 **Workflow source of truth:** `WORKFLOW.md`
 
-All skills and instructions this workflow needs are vendored locally in top-level workflow folders. The workflow folder is self-contained.
+All skills and instructions this workflow needs are bundled locally in top-level workflow folders. The workflow folder is self-contained.
 
 **Skill loading (track-aware):**
 
 1. Always load `skills/4plus1-models/SKILL.md` — the 4+1 method (authoritative).
-2. Load exactly one output skill based on the selected track:
-   - draw.io track: `skills/draw-io-diagram-generator/SKILL.md`
-   - Miro track: `skills/miro-diagram-generator/SKILL.md`
+2. Load output skills based on selected tracks:
+   - draw.io selected: `skills/draw-io-diagram-generator/SKILL.md`
+   - Miro selected: `skills/miro-diagram-generator/SKILL.md`
 
 **Workflow-local assets:**
 
@@ -38,12 +38,12 @@ All skills and instructions this workflow needs are vendored locally in top-leve
 1. Run `4plus1-models` Steps 1–4 (mode → audience → context → concerns) with a clear intake style:
    - Start with one compact question block (max 5 fields): system, audience, track, domain/regulatory context, constraints.
    - If answers are partial, proceed with explicit assumptions instead of asking many immediate follow-ups.
-   - Ask follow-ups only when a missing value blocks the next artifact, one at a time.
-2. Confirm the visual track from intake. If it was not provided, ask once: **"How would you like to deliver the diagrams? (A) draw.io (.drawio files for editing in VS Code, desktop, or web) or (B) Miro (collaboration prompts for team whiteboarding)?"** Use only the selected track's rules and assets.
+   - Ask follow-ups only when a missing value blocks the next artefact, one at a time.
+2. Confirm visual output selection from intake. If it was not provided, ask once: **"How would you like to deliver editable diagrams? (A) draw.io - edit in VS Code/desktop/web and export PNG/SVG, (B) Miro - collaborate in real time with AI-assisted layout and export PNG/SVG, or (C) both."** Use only each selected track's rules and assets.
 3. For each view (logical → process → development → physical → scenarios):
    - **For draw.io**: Generate the primary Mermaid/PlantUML per the skill's Step 5. Pick the matching draw.io skeleton, adapt it with real component names, apply conventions from `notation-drawio.md`. For BPMN process views, enforce the shared semantic palette mapping via `notation-drawio.md`. Defer mxGraph XML rules to `draw-io-diagram-generator`.
    - **For Miro**: Generate the primary Mermaid/PlantUML per the skill's Step 5. Use the Miro prompt template and `notation-miro.md` to generate a board setup prompt with component placement guidance. For BPMN swimlane process views, enforce the same shared semantic palette mapping via `notation-miro.md`.
-   - Verify component names match between the primary Mermaid/PlantUML source and the selected track output.
+   - Verify component names match between the primary Mermaid/PlantUML source and each selected track output.
    - For Physical view, treat the `.puml` as canonical and verify exact parity for node/container names, child elements, relationship endpoints, and relationship labels. Keep visual zones only as grouping around those canonical elements; remove skeleton placeholders that are not in the `.puml`.
 4. If outputting to disk, run `python skills/4plus1-models/scripts/validate-views.py <output-directory>` (for example `python skills/4plus1-models/scripts/validate-views.py docs/architecture`).
 5. **Format validation**:

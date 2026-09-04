@@ -1,6 +1,6 @@
 ---
-description: Query and download public cancer imaging data from NCI Imaging Data Commons using idc-index. Use for accessing large-scale radiology (CT, MR, PET) and pathology datasets for AI training or research. No authentication required. Query by metadata, visualize in browser, check licenses.
 name: imaging-data-commons
+description: Query and download public cancer imaging data from NCI Imaging Data Commons using idc-index. Use for accessing large-scale radiology (CT, MR, PET) and pathology datasets for AI training or research. No authentication required. Query by metadata, visualise in browser, check licenses.
 license: This skill is provided under the MIT License. IDC data itself has individual licensing (mostly CC-BY, some CC-NC) that must be respected when using the data.
 metadata:
   skill-author: 'Andrey Fedorov, @fedorov'
@@ -64,7 +64,7 @@ print(stats)
 **Core workflow:**
 1. Query metadata → `client.sql_query()`
 2. Download DICOM files → `client.download_from_selection()`
-3. Visualize in browser → `client.get_viewer_URL(seriesInstanceUID=...)`
+3. Visualise in browser → `client.get_viewer_URL(seriesInstanceUID=...)`
 
 ## When to Use This Skill
 
@@ -72,7 +72,7 @@ print(stats)
 - Selecting image subsets by cancer type, modality, anatomical site, or other metadata
 - Downloading DICOM data from IDC
 - Checking data licenses before use in research or commercial applications
-- Visualizing medical images in a browser without local DICOM viewer software
+- Visualising medical images in a browser without local DICOM viewer software
 
 ## Quick Navigation
 
@@ -80,7 +80,7 @@ print(stats)
 - IDC Data Model - Collection and analysis result hierarchy
 - Index Tables - Available tables and joining patterns
 - Installation - Package setup and version verification
-- Core Capabilities - Essential API patterns (query, download, visualize, license, citations, batch)
+- Core Capabilities - Essential API patterns (query, download, visualise, license, citations, batch)
 - Best Practices - Usage guidelines
 - Troubleshooting - Common issues and solutions
 
@@ -88,15 +88,15 @@ print(stats)
 
 | Guide | When to Load |
 |-------|--------------|
-| `index_tables_guide.md` | Complex JOINs, schema discovery, DataFrame access |
-| `use_cases.md` | End-to-end workflow examples (training datasets, batch downloads) |
-| `sql_patterns.md` | Quick SQL patterns for filter discovery, annotations, size estimation |
-| `clinical_data_guide.md` | Clinical/tabular data, imaging+clinical joins, value mapping |
-| `cloud_storage_guide.md` | Direct S3/GCS access, versioning, UUID mapping |
-| `dicomweb_guide.md` | DICOMweb endpoints, PACS integration |
-| `digital_pathology_guide.md` | Slide microscopy (SM), annotations (ANN), pathology workflows |
-| `bigquery_guide.md` | Full DICOM metadata, private elements (requires GCP) |
-| `cli_guide.md` | Command-line tools (`idc download`, manifest files) |
+| `index-tables-guide.md` | Complex JOINs, schema discovery, DataFrame access |
+| `use-cases.md` | End-to-end workflow examples (training datasets, batch downloads) |
+| `sql-patterns.md` | Quick SQL patterns for filter discovery, annotations, size estimation |
+| `clinical-data-guide.md` | Clinical/tabular data, imaging+clinical joins, value mapping |
+| `cloud-storage-guide.md` | Direct S3/GCS access, versioning, UUID mapping |
+| `dicomweb-guide.md` | DICOMweb endpoints, PACS integration |
+| `digital-pathology-guide.md` | Slide microscopy (SM), annotations (ANN), pathology workflows |
+| `bigquery-guide.md` | Full DICOM metadata, private elements (requires GCP) |
+| `cli-guide.md` | Command-line tools (`idc download`, manifest files) |
 
 ## IDC Data Model
 
@@ -112,8 +112,8 @@ Use `collection_id` to find original imaging data, may include annotations depos
 |------------|-------|---------|
 | `collection_id` | Dataset grouping | Filtering by project/study |
 | `PatientID` | Patient | Grouping images by patient |
-| `StudyInstanceUID` | DICOM study | Grouping of related series, visualization |
-| `SeriesInstanceUID` | DICOM series | Grouping of related series, visualization |
+| `StudyInstanceUID` | DICOM study | Grouping of related series, visualisation |
+| `SeriesInstanceUID` | DICOM series | Grouping of related series, visualisation |
 
 ## Index Tables
 
@@ -144,7 +144,7 @@ The `idc-index` package provides multiple metadata index tables, accessible via 
 
 ### Joining Tables
 
-**Key columns are not explicitly labeled, the following is a subset that can be used in joins.**
+**Key columns are not explicitly labelled, the following is a subset that can be used in joins.**
 
 | Join Column | Tables | Use Case |
 |-------------|--------|----------|
@@ -162,7 +162,7 @@ The `idc-index` package provides multiple metadata index tables, accessible via 
 
 **Note:** `Subjects`, `Updated`, and `Description` appear in multiple tables but have different meanings (counts vs identifiers, different update contexts).
 
-For detailed join examples, schema discovery patterns, key columns reference, and DataFrame access, see `references/index_tables_guide.md`.
+For detailed join examples, schema discovery patterns, key columns reference, and DataFrame access, see `references/index-tables-guide.md`.
 
 ### Clinical Data Access
 
@@ -177,7 +177,7 @@ tables = client.sql_query("SELECT DISTINCT table_name, column_label FROM clinica
 clinical_df = client.get_clinical_table("table_name")
 ```
 
-See `references/clinical_data_guide.md` for detailed workflows including value mapping patterns and joining clinical data with imaging.
+See `references/clinical-data-guide.md` for detailed workflows including value mapping patterns and joining clinical data with imaging.
 
 ## Data Access Options
 
@@ -189,9 +189,9 @@ See `references/clinical_data_guide.md` for detailed workflows including value m
 | DICOMweb proxy | No | Tool integration via DICOMweb API |
 | Cloud storage (S3/GCS) | No | Direct file access, bulk downloads, custom pipelines |
 
-**Cloud storage organization**
+**Cloud storage organisation**
 
-IDC maintains all DICOM files in public cloud storage buckets mirrored between AWS S3 and Google Cloud Storage. Files are organized by CRDC UUIDs (not DICOM UIDs) to support versioning.
+IDC maintains all DICOM files in public cloud storage buckets mirrored between AWS S3 and Google Cloud Storage. Files are organised by CRDC UUIDs (not DICOM UIDs) to support versioning.
 
 | Bucket (AWS / GCS) | License | Content |
 |--------------------|---------|---------|
@@ -201,7 +201,7 @@ IDC maintains all DICOM files in public cloud storage buckets mirrored between A
 
 Files are stored as `<crdc_series_uuid>/<crdc_instance_uuid>.dcm`. Access is free (no egress fees) via AWS CLI, gsutil, or s5cmd with anonymous access. Use `series_aws_url` column from the index for S3 URLs; GCS uses the same path structure.
 
-See `references/cloud_storage_guide.md` for bucket details, access commands, UUID mapping, and versioning.
+See `references/cloud-storage-guide.md` for bucket details, access commands, UUID mapping, and versioning.
 
 **DICOMweb access**
 
@@ -212,7 +212,7 @@ IDC data is available via DICOMweb interface (Google Cloud Healthcare API implem
 | Public proxy | No | Testing, moderate queries, daily quota |
 | Google Healthcare | Yes (GCP) | Production use, higher quotas |
 
-See `references/dicomweb_guide.md` for endpoint URLs, code examples, supported operations, and implementation details.
+See `references/dicomweb-guide.md` for endpoint URLs, code examples, supported operations, and implementation details.
 
 ## Installation and Setup
 
@@ -416,7 +416,7 @@ client.download_from_selection(
 
 Individual DICOM files are named using their CRDC instance UUID: `<crdc_instance_uuid>.dcm` (e.g., `0d73f84e-70ae-4eeb-96a0-1c613b5d9229.dcm`). This UUID-based naming:
 - Enables version tracking (UUIDs change when file content changes)
-- Matches cloud storage organization (`s3://idc-open-data/<crdc_series_uuid>/<crdc_instance_uuid>.dcm`)
+- Matches cloud storage organisation (`s3://idc-open-data/<crdc_series_uuid>/<crdc_instance_uuid>.dcm`)
 - Differs from DICOM UIDs (SOPInstanceUID) which are preserved inside the file metadata
 
 To identify files, use the `crdc_instance_uuid` column in queries or read DICOM metadata (SOPInstanceUID) from the files.
@@ -487,7 +487,7 @@ Then download:
 idc download ct_manifest.txt --download-dir ./ct_data
 ```
 
-### 4. Visualizing IDC Images
+### 4. Visualising IDC Images
 
 View DICOM data in browser without downloading:
 
@@ -640,14 +640,14 @@ For queries requiring full DICOM metadata, complex JOINs, clinical data tables, 
 - Full metadata: `dicom_metadata` (all DICOM tags)
 - Private elements: `OtherElements` column (vendor-specific tags like diffusion b-values)
 
-See `references/bigquery_guide.md` for setup, table schemas, query patterns, private element access, and cost optimization.
+See `references/bigquery-guide.md` for setup, table schemas, query patterns, private element access, and cost optimisation.
 
-**Before using BigQuery**, always check if a specialized index table already has the metadata you need:
+**Before using BigQuery**, always check if a specialised index table already has the metadata you need:
 1. Use `client.indices_overview` or the [idc-index indices reference](https://idc-index.readthedocs.io/en/latest/indices_reference.html) to discover all available tables and their columns
 2. Fetch the relevant index: `client.fetch_index("table_name")`
 3. Query locally with `client.sql_query()` (free, no GCP account needed)
 
-Common specialized indices: `seg_index` (segmentations), `ann_index` / `ann_group_index` (microscopy annotations), `sm_index` (slide microscopy), `collections_index` (collection metadata). Only use BigQuery if you need private DICOM elements or attributes not in any index.
+Common specialised indices: `seg_index` (segmentations), `ann_index` / `ann_group_index` (microscopy annotations), `sm_index` (slide microscopy), `collections_index` (collection metadata). Only use BigQuery if you need private DICOM elements or attributes not in any index.
 
 ### 8. Tool Selection Guide
 
@@ -655,8 +655,8 @@ Common specialized indices: `seg_index` (segmentations), `ann_index` / `ann_grou
 |------|------|-----------|
 | Programmatic queries & downloads | `idc-index` | This document |
 | Interactive exploration | IDC Portal | https://portal.imaging.datacommons.cancer.gov/ |
-| Complex metadata queries | BigQuery | `references/bigquery_guide.md` |
-| 3D visualization & analysis | SlicerIDCBrowser | https://github.com/ImagingDataCommons/SlicerIDCBrowser |
+| Complex metadata queries | BigQuery | `references/bigquery-guide.md` |
+| 3D visualisation & analysis | SlicerIDCBrowser | https://github.com/ImagingDataCommons/SlicerIDCBrowser |
 
 **Default choice:** Use `idc-index` for most tasks (no auth, easy API, batch downloads).
 
@@ -726,7 +726,7 @@ sitk.WriteImage(smoothed, "processed_volume.nii.gz")
 
 ## Common Use Cases
 
-See `references/use_cases.md` for complete end-to-end workflow examples including:
+See `references/use-cases.md` for complete end-to-end workflow examples including:
 - Building deep learning training datasets from lung CT scans
 - Comparing image quality across scanner manufacturers
 - Previewing data in browser before downloading
@@ -739,7 +739,7 @@ See `references/use_cases.md` for complete end-to-end workflow examples includin
 - **Generate citations for attribution** - Use `citations_from_selection()` to get properly formatted citations from `source_DOI` values; include these in publications
 - **Start with small queries** - Use `LIMIT` clause when exploring to avoid long downloads and understand data structure
 - **Use mini-index for simple queries** - Only use BigQuery when you need comprehensive metadata or complex JOINs
-- **Organize downloads with dirTemplate** - Use meaningful directory structures like `%collection_id/%PatientID/%Modality`
+- **Organise downloads with dirTemplate** - Use meaningful directory structures like `%collection_id/%PatientID/%Modality`
 - **Cache query results** - Save DataFrames to CSV files to avoid re-querying and ensure reproducibility
 - **Estimate size first** - Check collection size before downloading - some collection sizes are in terabytes!
 - **Save manifests** - Always save query results with Series UIDs for reproducibility and data provenance
@@ -757,12 +757,12 @@ See `references/use_cases.md` for complete end-to-end workflow examples includin
 - **Solution:**
   - Download smaller batches (e.g., 10-20 series at a time)
   - Check network connection
-  - Use `dirTemplate` to organize downloads by batch
+  - Use `dirTemplate` to organise downloads by batch
   - Implement retry logic with delays
 
 **Issue: `BigQuery quota exceeded` or billing errors**
 - **Cause:** BigQuery requires billing-enabled GCP project
-- **Solution:** Use idc-index mini-index for simple queries (no billing required), or see `references/bigquery_guide.md` for cost optimization tips
+- **Solution:** Use idc-index mini-index for simple queries (no billing required), or see `references/bigquery-guide.md` for cost optimisation tips
 
 **Issue: Series UID not found or no data returned**
 - **Cause:** Typo in UID, data not in current IDC version, or wrong field name
@@ -774,7 +774,7 @@ See `references/use_cases.md` for complete end-to-end workflow examples includin
 **Issue: Downloaded DICOM files won't open**
 - **Cause:** Corrupted download or incompatible viewer
 - **Solution:**
-  - Check DICOM object type (Modality and SOPClassUID attributes) - some object types require specialized tools
+  - Check DICOM object type (Modality and SOPClassUID attributes) - some object types require specialised tools
   - Verify file integrity (check file sizes)
   - Use pydicom to validate: `pydicom.dcmread(file, force=True)`
   - Try different DICOM viewer (3D Slicer, Horos, RadiAnt, QuPath)
@@ -782,29 +782,29 @@ See `references/use_cases.md` for complete end-to-end workflow examples includin
 
 ## Common SQL Query Patterns
 
-See `references/sql_patterns.md` for quick-reference SQL patterns including:
+See `references/sql-patterns.md` for quick-reference SQL patterns including:
 - Filter value discovery (modalities, body parts, manufacturers)
 - Annotation and segmentation queries (including seg_index, ann_index joins)
 - Slide microscopy queries (sm_index patterns)
 - Download size estimation
 - Clinical data linking
 
-For segmentation and annotation details, also see `references/digital_pathology_guide.md`.
+For segmentation and annotation details, also see `references/digital-pathology-guide.md`.
 
 ## Related Skills
 
-The following skills complement IDC workflows for downstream analysis and visualization:
+The following skills complement IDC workflows for downstream analysis and visualisation:
 
 ### DICOM Processing
 - **pydicom** - Read, write, and manipulate downloaded DICOM files. Use for extracting pixel data, reading metadata, anonymization, and format conversion. Essential for working with IDC radiology data (CT, MR, PET).
 
 ### Pathology and Slide Microscopy
-See `references/digital_pathology_guide.md` for DICOM-compatible tools (highdicom, wsidicom, TIA-Toolbox, Slim viewer).
+See `references/digital-pathology-guide.md` for DICOM-compatible tools (highdicom, wsidicom, TIA-Toolbox, Slim viewer).
 
-### Metadata Visualization
-- **matplotlib** - Low-level plotting for full customization. Use for creating static figures summarizing IDC query results (bar charts of modalities, histograms of series counts, etc.).
-- **seaborn** - Statistical visualization with pandas integration. Use for quick exploration of IDC metadata distributions, relationships between variables, and categorical comparisons with attractive defaults.
-- **plotly** - Interactive visualization. Use when you need hover info, zoom, and pan for exploring IDC metadata, or for creating web-embeddable dashboards of collection statistics.
+### Metadata Visualisation
+- **matplotlib** - Low-level plotting for full customisation. Use for creating static figures summarising IDC query results (bar charts of modalities, histograms of series counts, etc.).
+- **seaborn** - Statistical visualisation with pandas integration. Use for quick exploration of IDC metadata distributions, relationships between variables, and categorical comparisons with attractive defaults.
+- **plotly** - Interactive visualisation. Use when you need hover info, zoom, and pan for exploring IDC metadata, or for creating web-embeddable dashboards of collection statistics.
 
 ### Data Exploration
 - **exploratory-data-analysis** - Comprehensive EDA on scientific data files. Use after downloading IDC data to understand file structure, quality, and characteristics before analysis.

@@ -46,7 +46,7 @@ All diagrams automatically follow:
 - High contrast for readability
 - Clear labels (minimum 10pt font)
 - Professional typography
-- Colorblind-friendly colors
+- Colorblind-friendly colours
 - Proper spacing between elements
 - Scale bars, legends, axes where appropriate
 
@@ -183,10 +183,10 @@ for iteration in results['iterations']:
 ✓ "Include layer dimensions in each box"  
 ✓ "Show time progression with timestamps"
 
-### Mention Color Requirements
-✓ "Use colorblind-friendly colors"  
+### Mention Colour Requirements
+✓ "Use colorblind-friendly colours"  
 ✓ "Grayscale-compatible design"  
-✓ "Color-code by function: blue=input, green=processing, red=output"
+✓ "Colour-code by function: blue=input, green=processing, red=output"
 
 ## Review Log Format
 

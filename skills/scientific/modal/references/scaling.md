@@ -21,7 +21,7 @@ No configuration needed for basic autoscaling — it works out of the box.
 
 ## Configuration
 
-Fine-tune autoscaling behavior:
+Fine-tune autoscaling behaviour:
 
 ```python
 @app.function(
@@ -127,7 +127,7 @@ def web_service():
 
 ## Dynamic Batching
 
-Collect inputs into batches for efficient GPU utilization:
+Collect inputs into batches for efficient GPU utilisation:
 
 ```python
 @app.function(gpu="L40S")

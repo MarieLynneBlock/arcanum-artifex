@@ -227,7 +227,7 @@ RETURN
     )
 ```
 
-## Performance Optimization Techniques
+## Performance Optimisation Techniques
 
 ### 1. Efficient Variable Usage
 ```dax
@@ -250,7 +250,7 @@ RETURN
     DIVIDE(BaseCalculation - PreviousYear, PreviousYear)
 ```
 
-### 2. Context Transition Optimization
+### 2. Context Transition Optimisation
 ```dax
 // ✅ Minimize context transitions in iterator functions
 Total Product Profit = 
@@ -532,7 +532,7 @@ RETURN
     )
 ```
 
-### 5. Advanced Performance Optimization Techniques
+### 5. Advanced Performance Optimisation Techniques
 ```dax
 // Optimized running totals
 Running Total Optimized = 
@@ -792,4 +792,4 @@ RETURN
     "Result: " & Result & " | Duration: " & Duration & "s"
 ```
 
-Remember: Always validate DAX formulas with business users to ensure calculations match business requirements and expectations. Use Power BI's Performance Analyzer and DAX Studio for performance optimization and debugging.
+Remember: Always validate DAX formulas with business users to ensure calculations match business requirements and expectations. Use Power BI's Performance Analyzer and DAX Studio for performance optimisation and debugging.

@@ -47,15 +47,15 @@ How likely is this vector to be exploited in a realistic breach scenario?
 | 0.8 | **Very Likely** | Auth required but missing for this specific endpoint; or data leaked in logs accessible by most engineers |
 | 0.7 | **Likely** | Auth required but over-broad access (all users can see all data); missing field-level access control |
 | 0.6 | **Moderate** | Requires privilege escalation or chaining with another bug; internal system with broad developer access |
-| 0.5 | **Possible** | Requires significant attacker effort but no defense-in-depth; DB accessible from dev environment |
+| 0.5 | **Possible** | Requires significant attacker effort but no defence-in-depth; DB accessible from dev environment |
 | 0.3 | **Unlikely** | Multiple security controls in place; but controls are not verified by the codebase review |
-| 0.1 | **Remote** | Strong defense-in-depth: encryption, field masking, proper authz, rate limiting, anomaly detection all present |
+| 0.1 | **Remote** | Strong defence-in-depth: encryption, field masking, proper authz, rate limiting, anomaly detection all present |
 
 ---
 
 ## Factor 3: Population Scale (P)
 
-Normalize the estimated number of affected records to a 0–1 scale.
+Normalise the estimated number of affected records to a 0–1 scale.
 
 ### Estimating Record Counts
 
@@ -179,9 +179,9 @@ However — **financial impact** overrides score here because SSN exposure is Ti
 
 ---
 
-## Score Normalization
+## Score Normalisation
 
-The raw formula output typically ranges 0–8. Normalize to 0–100:
+The raw formula output typically ranges 0–8. Normalise to 0–100:
 
 ```
 Normalized_BRS = min(100, (raw_BRS / 8.0) × 100)

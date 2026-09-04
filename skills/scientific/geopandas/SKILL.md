@@ -1,6 +1,6 @@
 ---
-description: Python library for working with geospatial vector data including shapefiles, GeoJSON, and GeoPackage files. Use when working with geographic data for spatial analysis, geometric operations, coordinate transformations, spatial joins, overlay operations, choropleth mapping, or any task involving reading/writing/analyzing vector geographic data. Supports PostGIS databases, interactive maps, and integration with matplotlib/folium/cartopy. Use for tasks like buffer analysis, spatial joins between datasets, dissolving boundaries, clipping data, calculating areas/distances, reprojecting coordinate systems, creating maps, or converting between spatial file formats.
 name: geopandas
+description: Python library for working with geospatial vector data including shapefiles, GeoJSON, and GeoPackage files. Use when working with geographic data for spatial analysis, geometric operations, coordinate transformations, spatial joins, overlay operations, choropleth mapping, or any task involving reading/writing/analysing vector geographic data. Supports PostGIS databases, interactive maps, and integration with matplotlib/folium/cartopy. Use for tasks like buffer analysis, spatial joins between datasets, dissolving boundaries, clipping data, calculating areas/distances, reprojecting coordinate systems, creating maps, or converting between spatial file formats.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -144,7 +144,7 @@ dissolved = gdf.dissolve(by='region', aggfunc='sum')
 
 See [spatial-analysis.md](references/spatial-analysis.md) for analysis operations.
 
-### Visualization
+### Visualisation
 
 Create static and interactive maps:
 
@@ -162,7 +162,7 @@ gdf1.plot(ax=ax, color='blue')
 gdf2.plot(ax=ax, color='red')
 ```
 
-See [visualization.md](references/visualization.md) for mapping techniques.
+See [visualisation.md](references/visualization.md) for mapping techniques.
 
 ## Detailed Documentation
 
@@ -170,12 +170,12 @@ See [visualization.md](references/visualization.md) for mapping techniques.
 - **[Data I/O](references/data-io.md)** - Reading/writing files, PostGIS, Parquet
 - **[Geometric Operations](references/geometric-operations.md)** - Buffer, simplify, affine transforms
 - **[Spatial Analysis](references/spatial-analysis.md)** - Joins, overlay, dissolve, clipping
-- **[Visualization](references/visualization.md)** - Plotting, choropleth maps, interactive maps
+- **[Visualisation](references/visualization.md)** - Plotting, choropleth maps, interactive maps
 - **[CRS Management](references/crs-management.md)** - Coordinate reference systems and projections
 
 ## Common Workflows
 
-### Load, Transform, Analyze, Export
+### Load, Transform, Analyse, Export
 
 ```python
 # 1. Load data
@@ -234,7 +234,7 @@ buildings_near_roads = buildings[buildings.geometry.distance(roads.union_all()) 
 3. **Use Arrow for I/O**: Add `use_arrow=True` for 2-4x faster reading/writing
 4. **Simplify geometries**: Use `.simplify()` to reduce complexity when precision isn't critical
 5. **Batch operations**: Vectorized operations are much faster than iterating rows
-6. **Use appropriate CRS**: Projected CRS for area/distance, geographic for visualization
+6. **Use appropriate CRS**: Projected CRS for area/distance, geographic for visualisation
 
 ## Best Practices
 

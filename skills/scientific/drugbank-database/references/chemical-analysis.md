@@ -1,7 +1,7 @@
 # Chemical Properties and Similarity Analysis
 
 ## Overview
-DrugBank provides extensive chemical property data including molecular structures, physicochemical properties, and calculated descriptors. This information enables structure-based analysis, similarity searches, and QSAR modeling.
+DrugBank provides extensive chemical property data including molecular structures, physicochemical properties, and calculated descriptors. This information enables structure-based analysis, similarity searches, and QSAR modelling.
 
 ## Chemical Identifiers and Structures
 
@@ -585,6 +585,6 @@ export_chemical_properties()
 3. **Threshold Selection**: Tanimoto >0.85 = very similar, 0.7-0.85 = similar, <0.7 = different
 4. **Rule Application**: Lipinski's Ro5 and Veber's rules are guidelines, not absolute cutoffs
 5. **ADMET Prediction**: Use computational predictions as screening, validate experimentally
-6. **Chemical Space**: Visualize chemical space to understand drug diversity
-7. **Standardization**: Standardize molecules (neutralize, remove salts) before comparison
+6. **Chemical Space**: Visualise chemical space to understand drug diversity
+7. **Standardisation**: Standardise molecules (neutralize, remove salts) before comparison
 8. **Performance**: Cache computed fingerprints for large-scale similarity searches

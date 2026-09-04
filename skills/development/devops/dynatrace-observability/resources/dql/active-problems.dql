@@ -1,0 +1,6 @@
+fetch dt.davis.problems, from:now() - 2h
+| filter not(dt.davis.is_duplicate)
+| filter event.status == "ACTIVE"
+| fields event.start, display_id, event.name, event.category, affected_entity_ids
+| sort event.start desc
+| limit 20

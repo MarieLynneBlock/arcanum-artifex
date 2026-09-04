@@ -1,6 +1,6 @@
 ---
-description: Machine learning in Python with scikit-learn. Use when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.
 name: scikit-learn
+description: Machine learning in Python with scikit-learn. Use when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -121,13 +121,13 @@ Comprehensive algorithms for classification and regression tasks.
 - **Support Vector Machines**: SVC, SVR with various kernels
 - **Ensemble methods**: AdaBoost, Voting, Stacking
 - **Neural Networks**: MLPClassifier, MLPRegressor
-- **Others**: Naive Bayes, K-Nearest Neighbors
+- **Others**: Naive Bayes, K-Nearest Neighbours
 
 **When to use:**
 - Classification: Predicting discrete categories (spam detection, image classification, fraud detection)
 - Regression: Predicting continuous values (price prediction, demand forecasting)
 
-**See:** `references/supervised_learning.md` for detailed algorithm documentation, parameters, and usage examples.
+**See:** `references/supervised-learning.md` for detailed algorithm documentation, parameters, and usage examples.
 
 ### 2. Unsupervised Learning
 
@@ -146,11 +146,11 @@ Discover patterns in unlabeled data through clustering and dimensionality reduct
 - **Feature extraction**: FastICA, LatentDirichletAllocation
 
 **When to use:**
-- Customer segmentation, anomaly detection, data visualization
+- Customer segmentation, anomaly detection, data visualisation
 - Reducing feature dimensions, exploratory data analysis
-- Topic modeling, image compression
+- Topic modelling, image compression
 
-**See:** `references/unsupervised_learning.md` for detailed documentation.
+**See:** `references/unsupervised-learning.md` for detailed documentation.
 
 ### 3. Model Evaluation and Selection
 
@@ -175,19 +175,19 @@ Tools for robust model evaluation, cross-validation, and hyperparameter tuning.
 - Comparing model performance objectively
 - Finding optimal hyperparameters
 - Preventing overfitting through cross-validation
-- Understanding model behavior with learning curves
+- Understanding model behaviour with learning curves
 
-**See:** `references/model_evaluation.md` for comprehensive metrics and tuning strategies.
+**See:** `references/model-evaluation.md` for comprehensive metrics and tuning strategies.
 
 ### 4. Data Preprocessing
 
 Transform raw data into formats suitable for machine learning.
 
-**Scaling and normalization:**
+**Scaling and normalisation:**
 - StandardScaler (zero mean, unit variance)
 - MinMaxScaler (bounded range)
 - RobustScaler (robust to outliers)
-- Normalizer (sample-wise normalization)
+- Normalizer (sample-wise normalisation)
 
 **Encoding categorical variables:**
 - OneHotEncoder (nominal categories)
@@ -196,7 +196,7 @@ Transform raw data into formats suitable for machine learning.
 
 **Handling missing values:**
 - SimpleImputer (mean, median, most frequent)
-- KNNImputer (k-nearest neighbors)
+- KNNImputer (k-nearest neighbours)
 - IterativeImputer (multivariate imputation)
 
 **Feature engineering:**
@@ -234,7 +234,7 @@ Build reproducible, production-ready ML workflows.
 - When performing cross-validation with preprocessing steps
 - When hyperparameter tuning includes preprocessing parameters
 
-**See:** `references/pipelines_and_composition.md` for comprehensive pipeline patterns.
+**See:** `references/pipelines-and-composition.md` for comprehensive pipeline patterns.
 
 ## Example Scripts
 
@@ -255,7 +255,7 @@ This script demonstrates:
 
 ### Clustering Analysis
 
-Perform clustering analysis with algorithm comparison and visualization:
+Perform clustering analysis with algorithm comparison and visualisation:
 
 ```bash
 python scripts/clustering_analysis.py
@@ -265,30 +265,30 @@ This script demonstrates:
 - Finding optimal number of clusters (elbow method, silhouette analysis)
 - Comparing multiple clustering algorithms (K-Means, DBSCAN, Agglomerative, Gaussian Mixture)
 - Evaluating clustering quality without ground truth
-- Visualizing results with PCA projection
+- Visualising results with PCA projection
 
 ## Reference Documentation
 
 This skill includes comprehensive reference files for deep dives into specific topics:
 
 ### Quick Reference
-**File:** `references/quick_reference.md`
+**File:** `references/quick-reference.md`
 - Common import patterns and installation instructions
 - Quick workflow templates for common tasks
 - Algorithm selection cheat sheets
 - Common patterns and gotchas
-- Performance optimization tips
+- Performance optimisation tips
 
 ### Supervised Learning
-**File:** `references/supervised_learning.md`
+**File:** `references/supervised-learning.md`
 - Linear models (regression and classification)
 - Support Vector Machines
 - Decision Trees and ensemble methods
-- K-Nearest Neighbors, Naive Bayes, Neural Networks
+- K-Nearest Neighbours, Naive Bayes, Neural Networks
 - Algorithm selection guide
 
 ### Unsupervised Learning
-**File:** `references/unsupervised_learning.md`
+**File:** `references/unsupervised-learning.md`
 - All clustering algorithms with parameters and use cases
 - Dimensionality reduction techniques
 - Outlier and novelty detection
@@ -296,7 +296,7 @@ This skill includes comprehensive reference files for deep dives into specific t
 - Method selection guide
 
 ### Model Evaluation
-**File:** `references/model_evaluation.md`
+**File:** `references/model-evaluation.md`
 - Cross-validation strategies
 - Hyperparameter tuning methods
 - Classification, regression, and clustering metrics
@@ -305,14 +305,14 @@ This skill includes comprehensive reference files for deep dives into specific t
 
 ### Preprocessing
 **File:** `references/preprocessing.md`
-- Feature scaling and normalization
+- Feature scaling and normalisation
 - Encoding categorical variables
 - Missing value imputation
 - Feature engineering techniques
 - Custom transformers
 
 ### Pipelines and Composition
-**File:** `references/pipelines_and_composition.md`
+**File:** `references/pipelines-and-composition.md`
 - Pipeline construction and usage
 - ColumnTransformer for mixed data types
 - FeatureUnion for parallel transformations
@@ -412,7 +412,7 @@ This skill includes comprehensive reference files for deep dives into specific t
    labels = model.fit_predict(X_scaled)
    ```
 
-4. **Visualize with dimensionality reduction**
+4. **Visualise with dimensionality reduction**
    ```python
    from sklearn.decomposition import PCA
 

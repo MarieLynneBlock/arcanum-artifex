@@ -2,7 +2,7 @@
 
 ## Overview
 
-PyHealth provides 33+ models for healthcare prediction tasks, ranging from simple baselines to state-of-the-art deep learning architectures. Models are organized into general-purpose architectures and healthcare-specific models.
+PyHealth provides 33+ models for healthcare prediction tasks, ranging from simple baselines to state-of-the-art deep learning architectures. Models are organised into general-purpose architectures and healthcare-specific models.
 
 ## Model Base Class
 
@@ -160,7 +160,7 @@ model = RNN(
 - Multi-head self-attention
 - Position embeddings
 - Feed-forward networks
-- Layer normalization
+- Layer normalisation
 
 **Parameters:**
 - `num_heads`: Number of attention heads
@@ -249,7 +249,7 @@ model = GNN(
 
 **Key Features:**
 - Two-level attention (visits and features)
-- Temporal decay modeling
+- Temporal decay modelling
 - Clinically meaningful explanations
 - Published in NeurIPS 2016
 
@@ -286,13 +286,13 @@ feature_attention = outputs["feature_attention"]
 - Cross-visit convolutional attention
 - Temporal convolutional feature extraction
 - Multi-level attention mechanism
-- Good for longitudinal EHR modeling
+- Good for longitudinal EHR modelling
 
 ### Medication Recommendation Models
 
 **GAMENet** (`GAMENet`)
 - Graph-based medication recommendation
-- Drug-drug interaction modeling
+- Drug-drug interaction modelling
 - Memory network for patient history
 - Multi-hop reasoning
 
@@ -322,7 +322,7 @@ model = GAMENet(
 **SafeDrug** (`SafeDrug`)
 - Safety-aware drug recommendation
 - Molecular structure integration
-- DDI constraint optimization
+- DDI constraint optimisation
 - Balances efficacy and safety
 
 **Key Features:**
@@ -392,7 +392,7 @@ model = StageNet(
 **Agent** (`Agent`)
 - Reinforcement learning-based
 - Treatment recommendation
-- Action-value optimization
+- Action-value optimisation
 - Policy learning for sequential decisions
 
 **GRASP** (`GRASP`)
@@ -410,13 +410,13 @@ model = StageNet(
 - Contrastive learning approach
 - Self-supervised pre-training
 - Robust representations
-- Limited labeled data scenarios
+- Limited labelled data scenarios
 
 ### Medical Entity Linking
 
 **MedLink** (`MedLink`)
 - Medical entity linking to knowledge bases
-- Clinical concept normalization
+- Clinical concept normalisation
 - UMLS integration
 - Entity disambiguation
 
@@ -500,8 +500,8 @@ model = StageNet(
 - SparcNet
 
 **Moderate Interpretability:**
-- CNN (filter visualization)
-- Transformer (attention visualization)
+- CNN (filter visualisation)
+- Transformer (attention visualisation)
 - GNN (graph attention)
 
 **Black-Box Acceptable:**

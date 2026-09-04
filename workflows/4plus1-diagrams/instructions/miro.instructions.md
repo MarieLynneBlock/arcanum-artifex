@@ -1,6 +1,6 @@
 ---
-description: "Use when creating, editing, or reviewing Miro board setup prompts in -miro-prompt.md files for 4+1 architecture diagrams."
 name: 'Miro.instructions'
+description: "Use when creating, editing, or reviewing Miro board setup prompts in -miro-prompt.md files for 4+1 architecture diagrams."
 applyTo: "**/*miro-prompt*.md"
 metadata:
   skill-author: 'Marie-Lynne Block'
@@ -29,7 +29,7 @@ Every prompt **must follow the RISEN framework** (from SKILL.md):
 
 - **Extension**: `-miro-prompt.md`
 - **Pattern**: `<view-name>-miro-prompt.md` (e.g. `logical-view-miro-prompt.md`)
-- **Location**: Same directory as the corresponding `.mmd`/`.puml` diagram
+- **Location**: `diagrams/miro/` subfolder relative to the view output root (e.g. `diagrams/miro/logical-view-miro-prompt.md`) — see output structure in `WORKFLOW.md` §5
 - **One prompt per view** — do not combine multiple views
 
 ### Semantic colour palette and per-view shape rules

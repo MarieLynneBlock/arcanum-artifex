@@ -1,6 +1,6 @@
 ---
-description: Vendor-agnostic lab automation framework. Use when controlling multiple equipment types (Hamilton, Tecan, Opentrons, plate readers, pumps) or needing unified programming across different vendors. Best for complex workflows, multi-vendor setups, simulation. For Opentrons-only protocols with official API, opentrons-integration may be simpler.
 name: pylabrobot
+description: Vendor-agnostic lab automation framework. Use when controlling multiple equipment types (Hamilton, Tecan, Opentrons, plate readers, pumps) or needing unified programming across different vendors. Best for complex workflows, multi-vendor setups, simulation. For Opentrons-only protocols with official API, opentrons-integration may be simpler.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -72,10 +72,10 @@ Control environmental and material handling equipment:
 - **Pumps**: Cole Parmer Masterflex for fluid pumping operations
 - **Temperature Control**: Set and monitor temperatures during protocols
 
-### 6. Visualization & Simulation (`references/visualization.md`)
+### 6. Visualisation & Simulation (`references/visualization.md`)
 
-Visualize and simulate laboratory protocols:
-- **Browser Visualizer**: Real-time 3D visualization of deck state
+Visualise and simulate laboratory protocols:
+- **Browser Visualizer**: Real-time 3D visualisation of deck state
 - **Simulation Mode**: Test protocols without physical hardware
 - **State Tracking**: Monitor tip presence and liquid volumes visually
 - **Deck Editor**: Graphical tool for designing deck layouts
@@ -107,13 +107,13 @@ await lh.drop_tips()
 
 ## Working with References
 
-This skill organizes detailed information across multiple reference files. Load the relevant reference when:
+This skill organises detailed information across multiple reference files. Load the relevant reference when:
 - **Liquid Handling**: Writing pipetting protocols, tip management, transfers
 - **Resources**: Defining deck layouts, managing plates/tips, custom labware
 - **Hardware Backends**: Connecting to specific robots, switching platforms
 - **Analytical Equipment**: Integrating plate readers, scales, or analytical devices
 - **Material Handling**: Using heater shakers, incubators, centrifuges, pumps
-- **Visualization**: Simulating protocols, visualizing deck states
+- **Visualisation**: Simulating protocols, visualising deck states
 
 All reference files can be found in the `references/` directory and contain comprehensive examples, API usage patterns, and best practices.
 

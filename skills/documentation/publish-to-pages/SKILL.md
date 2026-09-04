@@ -1,6 +1,6 @@
 ---
-description: 'Publish presentations and web content to GitHub Pages. Converts PPTX, PDF, HTML, or Google Slides to a live GitHub Pages URL. Handles repo creation, file conversion, Pages enablement, and returns the live URL. Use when the user wants to publish, deploy, or share a presentation or HTML file via GitHub Pages.'
 name: publish-to-pages
+description: 'Publish presentations and web content to GitHub Pages. Converts PPTX, PDF, HTML, or Google Slides to a live GitHub Pages URL. Handles repo creation, file conversion, Pages enablement, and returns the live URL. Use when the user wants to publish, deploy, or share a presentation or HTML file via GitHub Pages.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -45,7 +45,7 @@ Both conversion scripts automatically detect large files and switch to **externa
 
 This keeps individual files well under GitHub's 100MB limit. Small files still produce a single self-contained HTML.
 
-You can force the behavior with `--external-assets` or `--no-external-assets`.
+You can force the behaviour with `--external-assets` or `--no-external-assets`.
 
 ### HTML
 No conversion needed. Use the file directly as `index.html`.

@@ -1,8 +1,8 @@
 ---
-description: Structured manuscript/grant review with checklist-based evaluation. Use when writing formal peer reviews with specific criteria methodology assessment, statistical validity, reporting standards compliance (CONSORT/STROBE), and constructive feedback. Best for actual review writing, manuscript revision. For evaluating claims/evidence quality use scientific-critical-thinking; for quantitative scoring frameworks use scholar-evaluation.
 name: peer-review
-allowed-tools: Read Write Edit Bash
+description: Structured manuscript/grant review with checklist-based evaluation. Use when writing formal peer reviews with specific criteria methodology assessment, statistical validity, reporting standards compliance (CONSORT/STROBE), and constructive feedback. Best for actual review writing, manuscript revision. For evaluating claims/evidence quality use scientific-critical-thinking; for quantitative scoring frameworks use scholar-evaluation.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -18,7 +18,7 @@ Peer review is a systematic process for evaluating scientific manuscripts. Asses
 This skill should be used when:
 - Conducting peer review of scientific manuscripts for journals
 - Evaluating grant proposals and research applications
-- Assessing methodology and experimental design rigor
+- Assessing methodology and experimental design rigour
 - Reviewing statistical analyses and reporting standards
 - Evaluating reproducibility and data availability
 - Checking compliance with reporting guidelines (CONSORT, STROBE, PRISMA)
@@ -51,9 +51,9 @@ The AI will automatically:
 - Evaluation criteria decision trees
 - Review process flowcharts
 - Methodology assessment frameworks
-- Quality assessment visualizations
+- Quality assessment visualisations
 - Reporting guidelines compliance diagrams
-- Any complex concept that benefits from visualization
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -83,7 +83,7 @@ Conduct a thorough evaluation of each manuscript section, documenting specific c
 #### Abstract and Title
 - **Accuracy:** Does the abstract accurately reflect the study's content and conclusions?
 - **Clarity:** Is the title specific, accurate, and informative?
-- **Completeness:** Are key findings and methods summarized appropriately?
+- **Completeness:** Are key findings and methods summarised appropriately?
 - **Accessibility:** Is the abstract comprehensible to a broad scientific audience?
 
 #### Introduction
@@ -95,7 +95,7 @@ Conduct a thorough evaluation of each manuscript section, documenting specific c
 
 #### Methods
 - **Reproducibility:** Can another researcher replicate the study from the description provided?
-- **Rigor:** Are the methods appropriate for addressing the research questions?
+- **Rigour:** Are the methods appropriate for addressing the research questions?
 - **Detail:** Are protocols, reagents, equipment, and parameters sufficiently described?
 - **Ethics:** Are ethical approvals, consent, and data handling properly documented?
 - **Statistics:** Are statistical methods appropriate, clearly described, and justified?
@@ -111,7 +111,7 @@ Conduct a thorough evaluation of each manuscript section, documenting specific c
 
 #### Results
 - **Presentation:** Are results presented logically and clearly?
-- **Figures/Tables:** Are visualizations appropriate, clear, and properly labeled?
+- **Figures/Tables:** Are visualisations appropriate, clear, and properly labelled?
 - **Statistics:** Are statistical results properly reported (effect sizes, confidence intervals, p-values)?
 - **Objectivity:** Are results presented without over-interpretation?
 - **Completeness:** Are all relevant results included, including negative results?
@@ -147,9 +147,9 @@ Conduct a thorough evaluation of each manuscript section, documenting specific c
 - **Accuracy:** Are citations accurate and appropriate?
 - **Self-citation:** Is there excessive or inappropriate self-citation?
 
-### Stage 3: Methodological and Statistical Rigor
+### Stage 3: Methodological and Statistical Rigour
 
-Evaluate the technical quality and rigor of the research with particular attention to common pitfalls.
+Evaluate the technical quality and rigour of the research with particular attention to common pitfalls.
 
 **Statistical Assessment:**
 - Are statistical assumptions met (normality, independence, homoscedasticity)?
@@ -194,21 +194,21 @@ Assess whether the research meets modern standards for reproducibility and open 
 
 **Reporting Standards:**
 - Does the manuscript follow discipline-specific reporting guidelines (CONSORT, PRISMA, ARRIVE, MIAME, MINSEQE, etc.)?
-- See `references/reporting_standards.md` for common guidelines
+- See `references/reporting-standards.md` for common guidelines
 - Are all elements of the appropriate checklist addressed?
 
 ### Stage 5: Figure and Data Presentation
 
-Evaluate the quality, clarity, and integrity of data visualization.
+Evaluate the quality, clarity, and integrity of data visualisation.
 
 **Quality Checks:**
-- Are figures high resolution and clearly labeled?
-- Are axes properly labeled with units?
+- Are figures high resolution and clearly labelled?
+- Are axes properly labelled with units?
 - Are error bars defined (SD, SEM, CI)?
 - Are statistical significance indicators explained?
-- Are color schemes appropriate and accessible (colorblind-friendly)?
+- Are colour schemes appropriate and accessible (colorblind-friendly)?
 - Are scale bars included for images?
-- Is data visualization appropriate for the data type?
+- Is data visualisation appropriate for the data type?
 
 **Integrity Checks:**
 - Are there signs of image manipulation (duplications, splicing)?
@@ -248,17 +248,17 @@ Verify that the research meets ethical standards and guidelines.
 
 ### Stage 7: Writing Quality and Clarity
 
-Assess the manuscript's clarity, organization, and accessibility.
+Assess the manuscript's clarity, organisation, and accessibility.
 
 **Structure and Organization:**
-- Is the manuscript logically organized?
+- Is the manuscript logically organised?
 - Do sections flow coherently?
 - Are transitions between ideas clear?
 - Is the narrative compelling and clear?
 
 **Writing Quality:**
 - Is the language clear, precise, and concise?
-- Are jargon and acronyms minimized and defined?
+- Are jargon and acronyms minimised and defined?
 - Is grammar and spelling correct?
 - Are sentences unnecessarily complex?
 - Is the passive voice overused?
@@ -270,7 +270,7 @@ Assess the manuscript's clarity, organization, and accessibility.
 
 ## Structuring Peer Review Reports
 
-Organize feedback in a hierarchical structure that prioritizes issues and provides actionable guidance.
+Organise feedback in a hierarchical structure that prioritises issues and provides actionable guidance.
 
 ### Summary Statement
 
@@ -343,7 +343,7 @@ Maintain a constructive, professional, and collegial tone throughout the review.
 - **Be balanced:** Acknowledge strengths as well as weaknesses
 - **Be respectful:** Remember that authors have invested significant effort
 - **Be objective:** Focus on the science, not the scientists
-- **Be thorough:** Don't overlook issues, but prioritize appropriately
+- **Be thorough:** Don't overlook issues, but prioritise appropriately
 - **Be clear:** Avoid ambiguous or vague criticism
 
 **Avoid:**
@@ -357,7 +357,7 @@ Maintain a constructive, professional, and collegial tone throughout the review.
 ## Special Considerations by Manuscript Type
 
 ### Original Research Articles
-- Emphasize rigor, reproducibility, and novelty
+- Emphasise rigour, reproducibility, and novelty
 - Assess significance and impact
 - Verify that conclusions are data-driven
 - Check for complete methods and appropriate controls
@@ -366,11 +366,11 @@ Maintain a constructive, professional, and collegial tone throughout the review.
 - Evaluate comprehensiveness of literature coverage
 - Assess search strategy and inclusion/exclusion criteria
 - Verify systematic approach and lack of bias
-- Check for critical analysis vs. mere summarization
+- Check for critical analysis vs. mere summarisation
 - For meta-analyses, evaluate statistical approach and heterogeneity
 
 ### Methods Papers
-- Emphasize validation and comparison to existing methods
+- Emphasise validation and comparison to existing methods
 - Assess reproducibility and availability of protocols/code
 - Evaluate improvements over existing approaches
 - Check for sufficient detail for implementation
@@ -381,7 +381,7 @@ Maintain a constructive, professional, and collegial tone throughout the review.
 - Verify that format is appropriate for findings
 
 ### Preprints
-- Recognize that these have not undergone formal peer review
+- Recognise that these have not undergone formal peer review
 - May be less polished than journal submissions
 - Still apply rigorous standards for scientific validity
 - Consider providing constructive feedback to help authors improve before journal submission
@@ -417,7 +417,7 @@ When reviewing scientific presentations (PowerPoint, Beamer, slide decks):
 **Visual Design and Readability:**
 - [ ] Text is large enough (minimum 18pt, ideally 24pt+ for body text)
 - [ ] High contrast between text and background (4.5:1 minimum, 7:1 preferred)
-- [ ] Color scheme is professional and colorblind-accessible
+- [ ] Colour scheme is professional and colorblind-accessible
 - [ ] Consistent visual design across all slides
 - [ ] White space is adequate (not cramped)
 - [ ] Fonts are clear and professional
@@ -436,7 +436,7 @@ When reviewing scientific presentations (PowerPoint, Beamer, slide decks):
 - [ ] Minimal text (3-6 bullets per slide maximum)
 - [ ] Bullet points are concise (5-7 words each)
 - [ ] Figures are simplified and clear (not copy-pasted from papers)
-- [ ] Data visualizations have large, readable labels
+- [ ] Data visualisations have large, readable labels
 - [ ] Citations are present and properly formatted
 - [ ] Results/data slides dominate the presentation (40-50% of content)
 
@@ -447,13 +447,13 @@ When reviewing scientific presentations (PowerPoint, Beamer, slide decks):
 - [ ] Title slide includes authors, affiliation, date
 - [ ] Introduction cites relevant background literature (3-5 papers)
 - [ ] Discussion cites comparison papers (3-5 papers)
-- [ ] Conclusions slide summarizes key findings
-- [ ] Acknowledgments/funding slide at end
+- [ ] Conclusions slide summarises key findings
+- [ ] Acknowledgements/funding slide at end
 
 **Scientific Content:**
 - [ ] Research question clearly stated
-- [ ] Methods adequately summarized (not excessive detail)
-- [ ] Results presented logically with clear visualizations
+- [ ] Methods adequately summarised (not excessive detail)
+- [ ] Results presented logically with clear visualisations
 - [ ] Statistical significance indicated appropriately
 - [ ] Conclusions supported by data shown
 - [ ] Limitations acknowledged where appropriate
@@ -476,7 +476,7 @@ When reviewing scientific presentations (PowerPoint, Beamer, slide decks):
 - Poorly simplified figures (axis labels too small)
 - Cramped layout with insufficient white space
 - Missing key structural elements (no conclusion slide)
-- Poor color choices (not colorblind-safe)
+- Poor colour choices (not colorblind-safe)
 - Minimal results content (<30% of slides)
 
 **Minor Issues (Suggestions for Improvement):**
@@ -485,7 +485,7 @@ When reviewing scientific presentations (PowerPoint, Beamer, slide decks):
 - Minor alignment inconsistencies
 - Could benefit from more white space
 - Additional citations would strengthen claims
-- Color scheme could be more modern
+- Colour scheme could be more modern
 
 #### Review Report Format for Presentations
 
@@ -513,7 +513,7 @@ Slide 18: Alignment - title not centered
 
 **Design and Accessibility:**
 - Overall visual appeal and professionalism
-- Color contrast and readability
+- Colour contrast and readability
 - Colorblind accessibility
 - Consistency across slides
 
@@ -544,20 +544,20 @@ Slide 18: Alignment - title not centered
 
 This skill includes reference materials to support comprehensive peer review:
 
-### references/reporting_standards.md
+### references/reporting-standards.md
 Guidelines for major reporting standards across disciplines (CONSORT, PRISMA, ARRIVE, MIAME, STROBE, etc.) to evaluate completeness of methods and results reporting.
 
-### references/common_issues.md
-Catalog of frequent methodological and statistical issues encountered in peer review, with guidance on identifying and addressing them.
+### references/common-issues.md
+Catalogue of frequent methodological and statistical issues encountered in peer review, with guidance on identifying and addressing them.
 
 ## Final Checklist
 
-Before finalizing the review, verify:
+Before finalising the review, verify:
 
 - [ ] Summary statement clearly conveys overall assessment
 - [ ] Major concerns are clearly identified and justified
 - [ ] Suggested revisions are specific and actionable
-- [ ] Minor issues are noted but properly categorized
+- [ ] Minor issues are noted but properly categorised
 - [ ] Statistical methods have been evaluated
 - [ ] Reproducibility and data availability assessed
 - [ ] Ethical considerations verified

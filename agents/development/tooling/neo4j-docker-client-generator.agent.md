@@ -1,6 +1,6 @@
 ---
+name: 'neo4j-docker-client-generator'
 description: AI agent that generates simple, high-quality Python Neo4j client libraries from GitHub issues with proper best practices
-name: neo4j-docker-client-generator
 tools: ['read', 'edit', 'search', 'shell', 'neo4j-local/neo4j-local-get_neo4j_schema', 'neo4j-local/neo4j-local-read_neo4j_cypher', 'neo4j-local/neo4j-local-write_neo4j_cypher']
 mcp-servers:
   neo4j-local:
@@ -25,7 +25,8 @@ mcp-servers:
       NEO4J_DATABASE: '${COPILOT_MCP_NEO4J_DATABASE}'
     tools: ["*"]
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Neo4j Python Client Generator
@@ -185,7 +186,7 @@ Before creating pull request, verify:
 
 **What to INCLUDE:**
 - ✅ Pydantic models for type safety
-- ✅ Repository pattern for query organization
+- ✅ Repository pattern for query organisation
 - ✅ Type hints everywhere
 - ✅ Basic error handling
 - ✅ Context managers for connections

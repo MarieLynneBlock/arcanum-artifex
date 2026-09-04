@@ -1,6 +1,6 @@
 ---
-description: Distributed computing for larger-than-RAM pandas/NumPy workflows. Use when you need to scale existing pandas/NumPy code beyond memory or across clusters. Best for parallel file processing, distributed ML, integration with existing pandas code. For out-of-core analytics on single machine use vaex; for in-memory speed use polars.
 name: dask
+description: Distributed computing for larger-than-RAM pandas/NumPy workflows. Use when you need to scale existing pandas/NumPy code beyond memory or across clusters. Best for parallel file processing, distributed ML, integration with existing pandas code. For out-of-core analytics on single machine use vaex; for in-memory speed use polars.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -45,7 +45,7 @@ Dask provides five main components, each suited to different use cases:
 - Reading data (single files, multiple files, glob patterns)
 - Common operations (filtering, groupby, joins, aggregations)
 - Custom operations with `map_partitions`
-- Performance optimization tips
+- Performance optimisation tips
 - Common patterns (ETL, time series, multi-file processing)
 
 **Quick Example**:
@@ -77,7 +77,7 @@ result = filtered.groupby('category').mean().compute()
 
 **Reference Documentation**: For comprehensive guidance on Dask Arrays, refer to `references/arrays.md` which includes:
 - Creating arrays (from NumPy, random, from disk)
-- Chunking strategies and optimization
+- Chunking strategies and optimisation
 - Common operations (arithmetic, reductions, linear algebra)
 - Custom operations with `map_blocks`
 - Integration with HDF5, Zarr, and XArray
@@ -234,7 +234,7 @@ result4 = computation.compute()  # Uses distributed with dashboard
 
 ## Best Practices
 
-For comprehensive performance optimization guidance, memory management strategies, and common pitfalls to avoid, refer to `references/best-practices.md`. Key principles include:
+For comprehensive performance optimisation guidance, memory management strategies, and common pitfalls to avoid, refer to `references/best-practices.md`. Key principles include:
 
 ### Start with Simpler Solutions
 Before using Dask, explore:
@@ -395,7 +395,7 @@ ddf = dd.from_dask_array(arr, columns=['col1', 'col2'])
 ```
 
 ### With Other Libraries
-- **XArray**: Wraps Dask arrays with labeled dimensions (geospatial, imaging)
+- **XArray**: Wraps Dask arrays with labelled dimensions (geospatial, imaging)
 - **Dask-ML**: Machine learning with scikit-learn compatible APIs
 - **Distributed**: Advanced cluster management and monitoring
 
@@ -448,6 +448,6 @@ All reference documentation files can be read as needed for detailed information
 - `references/bags.md` - Complete Dask Bag guide
 - `references/futures.md` - Complete Dask Futures and distributed computing guide
 - `references/schedulers.md` - Complete scheduler selection and configuration guide
-- `references/best-practices.md` - Comprehensive performance optimization and troubleshooting
+- `references/best-practices.md` - Comprehensive performance optimisation and troubleshooting
 
 Load these files when users need detailed information about specific Dask components, operations, or patterns beyond the quick guidance provided here.

@@ -1,6 +1,6 @@
 ---
-description: Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, workflows via API, build Benchling Apps, query Data Warehouse, for lab data management automation.
 name: benchling-integration
+description: Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, workflows via API, build Benchling Apps, query Data Warehouse, for lab data management automation.
 license: Unknown
 compatibility: Requires a Benchling account and API key
 metadata:
@@ -145,7 +145,7 @@ total = sequences.estimated_count()
 
 Entity types: `dna_sequences`, `rna_sequences`, `aa_sequences`, `custom_entities`, `mixtures`
 
-For comprehensive SDK reference and advanced patterns, refer to `references/sdk_reference.md`.
+For comprehensive SDK reference and advanced patterns, refer to `references/sdk-reference.md`.
 
 ### 3. Inventory Management
 
@@ -312,7 +312,7 @@ The Benchling Data Warehouse provides SQL access to Benchling data for analytics
 
 **Common Queries:**
 - Aggregate experimental results
-- Analyze inventory trends
+- Analyse inventory trends
 - Generate compliance reports
 - Export data for external analysis
 
@@ -386,8 +386,8 @@ The SDK handles unknown enum values and types gracefully:
 Detailed reference documentation for in-depth information:
 
 - **authentication.md** - Comprehensive authentication guide including OIDC, security best practices, and credential management
-- **sdk_reference.md** - Detailed Python SDK reference with advanced patterns, examples, and all entity types
-- **api_endpoints.md** - REST API endpoint reference for direct HTTP calls without the SDK
+- **sdk-reference.md** - Detailed Python SDK reference with advanced patterns, examples, and all entity types
+- **api-endpoints.md** - REST API endpoint reference for direct HTTP calls without the SDK
 
 Load these references as needed for specific integration requirements.
 

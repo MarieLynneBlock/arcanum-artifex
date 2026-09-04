@@ -332,7 +332,7 @@ G = nx.tensor_product(G1, G2)
 G = nx.strong_product(G1, G2)
 ```
 
-## Customization and Seeding
+## Customisation and Seeding
 
 ### Setting Random Seed
 Always set seed for reproducible graphs:
@@ -351,7 +351,7 @@ G_multi = nx.MultiGraph(G)
 ## Performance Considerations
 
 ### Fast Generators
-For large graphs, use optimized generators:
+For large graphs, use optimised generators:
 ```python
 # Fast ER graph (sparse)
 G = nx.fast_gnp_random_graph(n=10000, p=0.0001, seed=42)

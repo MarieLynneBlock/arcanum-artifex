@@ -5,11 +5,11 @@ applyTo: '**/*.{md,js,mjs,cjs,ts,tsx,jsx,py,json}'
 
 # Use Cliche Data in Documentation
 
-When updating or writing documentation for a tool, **never include real data** that was provided in prompts, local configuration, scripts, task files, or any other implementation-specific source. Documentation must use only generic, commonly recognized placeholder data that cannot expose sensitive information.
+When updating or writing documentation for a tool, **never include real data** that was provided in prompts, local configuration, scripts, task files, or any other implementation-specific source. Documentation must use only generic, commonly recognised placeholder data that cannot expose sensitive information.
 
 ## Why This Matters
 
-A tool's source code and local configuration often contain real names, real email addresses, real organization details, and real domain names. These values are necessary for the tool to function, but they have **no place in public-facing documentation**. Leaking real data into docs can expose:
+A tool's source code and local configuration often contain real names, real email addresses, real organisation details, and real domain names. These values are necessary for the tool to function, but they have **no place in public-facing documentation**. Leaking real data into docs can expose:
 
 - Internal business names and contacts
 - Email addresses and domain names
@@ -85,7 +85,7 @@ If a config file references real domains, real paths, or real credentials, repla
 
 ### When Writing Script Examples
 
-If a script automates a task for a specific organization, the documentation example must use a generic organization name and generic parameters.
+If a script automates a task for a specific organisation, the documentation example must use a generic organisation name and generic parameters.
 
 **Documentation example:**
 
@@ -108,8 +108,8 @@ node extractEmail.mjs --account acme --task download
 
 ## One Exception
 
-A word from real data may appear in documentation **only** if it is a common English word used in its ordinary sense and **not** in the context of an example. For instance, the word "development" is acceptable in a sentence like "This tool is under active development" even if it also appears in a real organization name.
+A word from real data may appear in documentation **only** if it is a common English word used in its ordinary sense and **not** in the context of an example. For instance, the word "development" is acceptable in a sentence like "This tool is under active development" even if it also appears in a real organisation name.
 
 ## Summary
 
-Documentation is public. Implementation data is private. Keep them separate. Every example in every doc file should pass a simple test: *could a stranger read this and learn nothing about the real users, clients, or organizations behind this tool?* If the answer is no, replace the data with cliche placeholders.
+Documentation is public. Implementation data is private. Keep them separate. Every example in every doc file should pass a simple test: *could a stranger read this and learn nothing about the real users, clients, or organisations behind this tool?* If the answer is no, replace the data with cliche placeholders.

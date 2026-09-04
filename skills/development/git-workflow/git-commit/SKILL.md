@@ -1,6 +1,6 @@
 ---
-description: 'Execute git commit with conventional commit message analysis, intelligent staging, and message generation. Use when user asks to commit changes, create a git commit, or mentions "/commit". Supports: (1) Auto-detecting type and scope from changes, (2) Generating conventional commit messages from diff, (3) Interactive commit with optional type/scope/description overrides, (4) Intelligent file staging for logical grouping'
 name: git-commit
+description: 'Execute git commit with conventional commit message analysis, intelligent staging, and message generation. Use when user asks to commit changes, create a git commit, or mentions "/commit". Supports: (1) Auto-detecting type and scope from changes, (2) Generating conventional commit messages from diff, (3) Interactive commit with optional type/scope/description overrides, (4) Intelligent file staging for logical grouping'
 license: MIT
 allowed-tools: Bash
 metadata:
@@ -11,7 +11,7 @@ metadata:
 
 ## Overview
 
-Create standardized, semantic git commits using the Conventional Commits specification. Analyze the actual diff to determine appropriate type, scope, and message.
+Create standardised, semantic git commits using the Conventional Commits specification. Analyse the actual diff to determine appropriate type, scope, and message.
 
 ## Conventional Commit Format
 
@@ -53,7 +53,7 @@ BREAKING CHANGE: `extends` key behavior changed
 
 ## Workflow
 
-### 1. Analyze Diff
+### 1. Analyse Diff
 
 ```bash
 # If files are staged, use staged diff
@@ -86,7 +86,7 @@ git add -p
 
 ### 3. Generate Commit Message
 
-Analyze the diff to determine:
+Analyse the diff to determine:
 
 - **Type**: What kind of change is this?
 - **Scope**: What area/module is affected?

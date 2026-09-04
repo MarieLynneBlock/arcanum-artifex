@@ -2,7 +2,7 @@
 
 ## Overview
 
-Evaluating survival models requires specialized metrics that account for censored data. scikit-survival provides three main categories of metrics:
+Evaluating survival models requires specialised metrics that account for censored data. scikit-survival provides three main categories of metrics:
 1. Concordance Index (C-index)
 2. Time-dependent ROC and AUC
 3. Brier Score

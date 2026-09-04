@@ -172,7 +172,7 @@ except gtars.ParseError as e:
 
 ## Configuration
 
-Configure gtars behavior:
+Configure gtars behaviour:
 
 ```python
 # Set global options

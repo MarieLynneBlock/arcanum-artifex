@@ -1,6 +1,6 @@
 ---
-applyTo: '**/*.ps1,**/*.psm1'
 description: 'PowerShell cmdlet and scripting best practices based on Microsoft guidelines'
+applyTo: '**/*.ps1,**/*.psm1'
 ---
 
 # PowerShell Cmdlet Development Guidelines
@@ -62,7 +62,7 @@ function Get-UserProfile {
 - **Standard Parameters:**
   - Use common parameter names (`Path`, `Name`, `Force`)
   - Follow built-in cmdlet conventions
-  - Use aliases for specialized terms
+  - Use aliases for specialised terms
   - Document parameter purpose
 
 - **Parameter Names:**

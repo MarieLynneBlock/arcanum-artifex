@@ -1,6 +1,6 @@
 ---
-description: Comprehensive toolkit for creating, analyzing, and visualizing complex networks and graphs in Python. Use when working with network/graph data structures, analyzing relationships between entities, computing graph algorithms (shortest paths, centrality, clustering), detecting communities, generating synthetic networks, or visualizing network topologies. Applicable to social networks, biological networks, transportation systems, citation networks, and any domain involving pairwise relationships.
 name: networkx
+description: Comprehensive toolkit for creating, analysing, and visualising complex networks and graphs in Python. Use when working with network/graph data structures, analysing relationships between entities, computing graph algorithms (shortest paths, centrality, clustering), detecting communities, generating synthetic networks, or visualising network topologies. Applicable to social networks, biological networks, transportation systems, citation networks, and any domain involving pairwise relationships.
 license: 3-clause BSD license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-NetworkX is a Python package for creating, manipulating, and analyzing complex networks and graphs. Use this skill when working with network or graph data structures, including social networks, biological networks, transportation systems, citation networks, knowledge graphs, or any system involving relationships between entities.
+NetworkX is a Python package for creating, manipulating, and analysing complex networks and graphs. Use this skill when working with network or graph data structures, including social networks, biological networks, transportation systems, citation networks, knowledge graphs, or any system involving relationships between entities.
 
 ## When to Use This Skill
 
@@ -21,8 +21,8 @@ Invoke this skill when tasks involve:
 - **Graph algorithms**: Running standard algorithms like Dijkstra's, PageRank, minimum spanning trees, maximum flow
 - **Network generation**: Creating synthetic networks (random, scale-free, small-world models) for testing or simulation
 - **Graph I/O**: Reading from or writing to various formats (edge lists, GraphML, JSON, CSV, adjacency matrices)
-- **Visualization**: Drawing and customizing network visualizations with matplotlib or interactive libraries
-- **Network comparison**: Checking isomorphism, computing graph metrics, analyzing structural properties
+- **Visualisation**: Drawing and customising network visualisations with matplotlib or interactive libraries
+- **Network comparison**: Checking isomorphism, computing graph metrics, analysing structural properties
 
 ## Core Capabilities
 
@@ -98,7 +98,7 @@ components = list(nx.connected_components(G))
 
 ### 3. Graph Generators
 
-Create synthetic networks for testing, simulation, or modeling:
+Create synthetic networks for testing, simulation, or modelling:
 
 **Classic Graphs**:
 ```python
@@ -134,7 +134,7 @@ G = nx.grid_2d_graph(m=5, n=7)
 G = nx.random_tree(n=100, seed=42)
 ```
 
-**Reference**: See `references/generators.md` for comprehensive coverage of all graph generators including classic, random, lattice, bipartite, and specialized network models with detailed parameters and use cases.
+**Reference**: See `references/generators.md` for comprehensive coverage of all graph generators including classic, random, lattice, bipartite, and specialised network models with detailed parameters and use cases.
 
 ### 4. Reading and Writing Graphs
 
@@ -186,11 +186,11 @@ G = nx.from_scipy_sparse_array(A)
 
 **Reference**: See `references/io.md` for complete documentation on all I/O formats including CSV, SQL databases, Cytoscape, DOT, and guidance on format selection for different use cases.
 
-### 5. Visualization
+### 5. Visualisation
 
-Create clear and informative network visualizations:
+Create clear and informative network visualisations:
 
-**Basic Visualization**:
+**Basic Visualisation**:
 ```python
 import matplotlib.pyplot as plt
 
@@ -204,7 +204,7 @@ nx.draw(G, pos=pos, with_labels=True, node_color='lightblue', node_size=500)
 plt.show()
 ```
 
-**Customization**:
+**Customisation**:
 ```python
 # Color by degree
 node_colors = [G.degree(n) for n in G.nodes()]
@@ -248,7 +248,7 @@ plt.savefig('network.png', dpi=300, bbox_inches='tight')
 plt.savefig('network.pdf', bbox_inches='tight')  # Vector format
 ```
 
-**Reference**: See `references/visualization.md` for extensive documentation on visualization techniques including layout algorithms, customization options, interactive visualizations with Plotly and PyVis, 3D networks, and publication-quality figure creation.
+**Reference**: See `references/visualization.md` for extensive documentation on visualisation techniques including layout algorithms, customisation options, interactive visualisations with Plotly and PyVis, 3D networks, and publication-quality figure creation.
 
 ## Working with NetworkX
 
@@ -287,7 +287,7 @@ Most NetworkX tasks follow this pattern:
    print(f"Connected: {nx.is_connected(G)}")
    ```
 
-3. **Analyze**:
+3. **Analyse**:
    ```python
    # Compute metrics
    degree_cent = nx.degree_centrality(G)
@@ -300,7 +300,7 @@ Most NetworkX tasks follow this pattern:
    communities = community.greedy_modularity_communities(G)
    ```
 
-4. **Visualize**:
+4. **Visualise**:
    ```python
    pos = nx.spring_layout(G, seed=42)
    nx.draw(G, pos=pos, with_labels=True)
@@ -415,16 +415,16 @@ This skill includes comprehensive reference documentation:
 Detailed guide on graph types, creating and modifying graphs, adding nodes and edges, managing attributes, examining structure, and working with subgraphs.
 
 ### references/algorithms.md
-Complete coverage of NetworkX algorithms including shortest paths, centrality measures, connectivity, clustering, community detection, flow algorithms, tree algorithms, matching, coloring, isomorphism, and graph traversal.
+Complete coverage of NetworkX algorithms including shortest paths, centrality measures, connectivity, clustering, community detection, flow algorithms, tree algorithms, matching, colouring, isomorphism, and graph traversal.
 
 ### references/generators.md
-Comprehensive documentation on graph generators including classic graphs, random models (Erdős-Rényi, Barabási-Albert, Watts-Strogatz), lattices, trees, social network models, and specialized generators.
+Comprehensive documentation on graph generators including classic graphs, random models (Erdős-Rényi, Barabási-Albert, Watts-Strogatz), lattices, trees, social network models, and specialised generators.
 
 ### references/io.md
 Complete guide to reading and writing graphs in various formats: edge lists, adjacency lists, GraphML, GML, JSON, CSV, Pandas DataFrames, NumPy arrays, SciPy sparse matrices, database integration, and format selection guidelines.
 
-### references/visualization.md
-Extensive documentation on visualization techniques including layout algorithms, customizing node and edge appearance, labels, interactive visualizations with Plotly and PyVis, 3D networks, bipartite layouts, and creating publication-quality figures.
+### references/visualisation.md
+Extensive documentation on visualisation techniques including layout algorithms, customising node and edge appearance, labels, interactive visualisations with Plotly and PyVis, 3D networks, bipartite layouts, and creating publication-quality figures.
 
 ## Additional Resources
 

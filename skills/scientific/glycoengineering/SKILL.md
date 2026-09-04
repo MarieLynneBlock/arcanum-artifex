@@ -1,6 +1,6 @@
 ---
-description: Analyze and engineer protein glycosylation. Scan sequences for N-glycosylation sequons (N-X-S/T), predict O-glycosylation hotspots, and access curated glycoengineering tools (NetOGlyc, GlycoShield, GlycoWorkbench). For glycoprotein engineering, therapeutic antibody optimization, and vaccine design.
 name: glycoengineering
+description: Analyse and engineer protein glycosylation. Scan sequences for N-glycosylation sequons (N-X-S/T), predict O-glycosylation hotspots, and access curated glycoengineering tools (NetOGlyc, GlycoShield, GlycoWorkbench). For glycoprotein engineering, therapeutic antibody optimisation, and vaccine design.
 license: Unknown
 metadata:
   skill-author: 'Kuan-lin Huang'
@@ -20,12 +20,12 @@ Glycosylation is the most common and complex post-translational modification (PT
 
 Use this skill when:
 
-- **Antibody engineering**: Optimize Fc glycosylation for enhanced ADCC, CDC, or reduced immunogenicity
+- **Antibody engineering**: Optimise Fc glycosylation for enhanced ADCC, CDC, or reduced immunogenicity
 - **Therapeutic protein design**: Identify glycosylation sites that affect half-life, stability, or immunogenicity
 - **Vaccine antigen design**: Engineer glycan shields to focus immune responses on conserved epitopes
-- **Biosimilar characterization**: Compare glycan patterns between reference and biosimilar
+- **Biosimilar characterisation**: Compare glycan patterns between reference and biosimilar
 - **Drug target analysis**: Does glycosylation affect target engagement for a receptor?
-- **Protein stability**: N-glycans often stabilize proteins; identify sites for stabilizing mutations
+- **Protein stability**: N-glycans often stabilise proteins; identify sites for stabilising mutations
 
 ## N-Glycosylation Sequon Analysis
 
@@ -223,10 +223,10 @@ def submit_netoglycv4(fasta_sequence: str) -> str:
 
 ### 2. GlycoShield-MD (Glycan Shielding Analysis)
 
-GlycoShield-MD analyzes how glycans shield protein surfaces during MD simulations:
+GlycoShield-MD analyses how glycans shield protein surfaces during MD simulations:
 - **URL**: https://gitlab.mpcdf.mpg.de/dioscuri-biophysics/glycoshield-md/
 - **Use**: Map glycan shielding on protein surface over MD trajectory
-- **Output**: Per-residue shielding fraction, visualization
+- **Output**: Per-residue shielding fraction, visualisation
 
 ```bash
 # Installation
@@ -324,7 +324,7 @@ Neu5Ac-Gal-GlcNAc-Man/
 - **Start with NetNGlyc/NetOGlyc** for computational prediction before experimental validation
 - **Verify with mass spectrometry**: Glycoproteomics (Byonic, Mascot) for site-specific glycan profiling
 - **Consider site context**: Not all predicted sequons are actually glycosylated (accessibility, cell type, protein conformation)
-- **For antibodies**: Fc N297 glycan is critical — always characterize this site first
+- **For antibodies**: Fc N297 glycan is critical — always characterise this site first
 - **Use GlyConnect** to check if your protein of interest has experimentally verified glycosylation data
 
 ## Additional Resources

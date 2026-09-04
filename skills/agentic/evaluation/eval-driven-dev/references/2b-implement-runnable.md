@@ -10,7 +10,7 @@
 
 The Runnable is how `pixie test` and `pixie trace` run your application. Think of it as a programmatic stand-in for a real user: it starts the app, sends it a request, and lets the app do its thing. The eval harness calls `run()` for each test case, passing in the user's input parameters. The app processes those parameters through its real code — real routing, real prompt assembly, real LLM calls, real response formatting — and the harness observes what happens via the `wrap()` instrumentation from Step 2a.
 
-**This means the Runnable should be simple.** It just wires up the app's real entry point to the harness interface. If your Runnable is getting complicated — if you're building custom logic, reimplementing app behavior, or replacing components — something is wrong.
+**This means the Runnable should be simple.** It just wires up the app's real entry point to the harness interface. If your Runnable is getting complicated — if you're building custom logic, reimplementing app behaviour, or replacing components — something is wrong.
 
 ## Four requirements
 
@@ -18,7 +18,7 @@ The Runnable is how `pixie test` and `pixie trace` run your application. Think o
 
 The Runnable calls the app's actual entry point — the same function, class, or endpoint a real user would trigger. It does not reimplement, shortcut, or substitute any part of the application.
 
-This includes the LLM. The app's LLM calls must go through the real code path — do not mock, fake, or replace application components. The whole point of eval-based testing is that LLM outputs are non-deterministic, so you use evaluators (not assertions) to score them. If you replace any component with a fake, you've eliminated the real behavior and the eval measures nothing.
+This includes the LLM. The app's LLM calls must go through the real code path — do not mock, fake, or replace application components. The whole point of eval-based testing is that LLM outputs are non-deterministic, so you use evaluators (not assertions) to score them. If you replace any component with a fake, you've eliminated the real behaviour and the eval measures nothing.
 
 **If the app won't run due to missing environment variables or configuration that you cannot resolve, stop and ask the user to fix the environment setup.** Do not work around it by mocking components.
 

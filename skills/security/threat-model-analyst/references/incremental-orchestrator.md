@@ -27,7 +27,7 @@ Use incremental analysis when ALL of these conditions are met:
 
 **NOT this workflow:**
 - First-time analysis (no baseline) → use `orchestrator.md`
-- "Analyze the security of this repo" with no mention of a prior report → use `orchestrator.md`
+- "Analyse the security of this repo" with no mention of a prior report → use `orchestrator.md`
 
 ---
 
@@ -109,7 +109,7 @@ Store as the "inherited inventory" — the structural foundation.
 ```
 
 **Do NOT read the full prose** from the old report's markdown files yet. Only load structured data. Read old report prose on-demand when:
-- Verifying if a specific code pattern was previously analyzed
+- Verifying if a specific code pattern was previously analysed
 - Resolving ambiguity about a component's role or classification
 - Historical context needed for a finding status decision
 
@@ -189,7 +189,7 @@ For EACH component in inherited inventory:
 Now generate all report files. **Read the relevant skill files before starting:**
 - `orchestrator.md` — mandatory rules 1–34 apply to all report files
 - `output-formats.md` — templates and format rules
-- `diagram-conventions.md` — diagram colors and styles
+- `diagram-conventions.md` — diagram colours and styles
 - **Before writing EACH file, read the corresponding skeleton from `skeletons/skeleton-*.md`** — copy VERBATIM and fill `[FILL]` placeholders
 
 **⛔ SUB-AGENT GOVERNANCE (MANDATORY — prevents the dual-folder bug):** The parent agent owns ALL file creation. Sub-agents are READ-ONLY helpers that search code, gather context, and run verification — they NEVER call `create_file` for report files. See the full Sub-Agent Governance rules in `orchestrator.md`. The ONLY exception is `threat-inventory.json` delegation for large repos — and even then, the sub-agent prompt must include the exact output file path and explicit instruction to write ONLY that one file.
@@ -226,7 +226,7 @@ Now generate all report files. **Read the relevant skill files before starting:*
 - **Removed components:** Show as dashed with gray fill — use `classDef removedComponent fill:#e9ecef,stroke:#6c757d,stroke-width:1px,stroke-dasharray:5`
 - **Same flow IDs** for unchanged flows
 - **New flows:** New IDs continuing the sequence
-- All standard DFD rules from `diagram-conventions.md` apply (flowchart LR, color palette, etc.)
+- All standard DFD rules from `diagram-conventions.md` apply (flowchart LR, colour palette, etc.)
 
   ⛔ **POST-DFD GATE:** After creating `1.1-threatmodel.mmd`, count elements and boundaries. If elements > 15 OR boundaries > 4 → create `1.2-threatmodel-summary.mmd` using `skeleton-summary-dfd.md` NOW. Do NOT proceed to Step 4c until the decision is made.
 
@@ -283,7 +283,7 @@ For each component, the STRIDE analysis approach depends on its change status:
 | Component Status | STRIDE Approach |
 |-----------------|-----------------|
 | **Unchanged** | Carry forward all threat entries from old report with `[STILL PRESENT]` annotation. Re-verify each threat's mitigation status against current code. |
-| **Modified** | Re-analyze the component with access to the diff. For each old threat: determine if `still_present`, `fixed`, `mitigated`, or `modified`. Discover new threats from the code changes → classify as `new_in_modified`. |
+| **Modified** | Re-analyse the component with access to the diff. For each old threat: determine if `still_present`, `fixed`, `mitigated`, or `modified`. Discover new threats from the code changes → classify as `new_in_modified`. |
 | **New** | Full fresh STRIDE-A analysis (same as single-analysis mode). All threats classified as `new_code`. |
 | **Removed** | Section header with note: "Component removed — all threats resolved with `removed_with_component` status." |
 
@@ -517,7 +517,7 @@ These vulnerabilities were present in the baseline code at commit `{baseline_sha
 
 - **Read `skeletons/skeleton-incremental-html.md` first** — use 8-section structure and CSS variables
 
-Generate a self-contained HTML file that visualizes the comparison. All data comes from the `change_status` fields already computed in `threat-inventory.json`.
+Generate a self-contained HTML file that visualises the comparison. All data comes from the `change_status` fields already computed in `threat-inventory.json`.
 
 **Structure:**
 
@@ -609,9 +609,9 @@ Generate a self-contained HTML file that visualizes the comparison. All data com
 
 **Styling rules:**
 - Self-contained: ALL CSS in inline `<style>` block. No CDN links.
-- Color conventions: green (#28a745) = fixed, red (#dc3545) = new vulnerability, amber (#fd7e14) = previously unidentified, gray (#6c757d) = still present, blue (#2171b5) = modified
+- Colour conventions: green (#28a745) = fixed, red (#dc3545) = new vulnerability, amber (#fd7e14) = previously unidentified, gray (#6c757d) = still present, blue (#2171b5) = modified
 - Print-friendly: include `@media print` styles
-- Use the same CSS color conventions defined above for visual consistency
+- Use the same CSS colour conventions defined above for visual consistency
 
 ---
 
@@ -648,7 +648,7 @@ After standard verification passes, run the incremental-specific checks from `ex
 
 These rules supplement (not replace) the 34 mandatory rules from `orchestrator.md`:
 
-### Rule I1: Old Report Assessment Judgments Are Preserved
+### Rule I1: Old Report Assessment Judgements Are Preserved
 
 When the new analysis would assign a different TMT category, component type, tier, or threat relevance than the old report → preserve the old report's value. Log the disagreement in Needs Verification with:
 - Old value
@@ -660,7 +660,7 @@ When the new analysis would assign a different TMT category, component type, tie
 
 ### Rule I2: No Silent Overrides
 
-The report body uses the OLD value for assessment judgments. Disagreements go to Needs Verification. The user must explicitly confirm any reclassification.
+The report body uses the OLD value for assessment judgements. Disagreements go to Needs Verification. The user must explicitly confirm any reclassification.
 
 ### Rule I3: Previously-Unidentified Must Be Verified
 

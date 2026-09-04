@@ -1,6 +1,6 @@
 ---
-description: Run and analyze molecular dynamics simulations with OpenMM and MDAnalysis. Set up protein/small molecule systems, define force fields, run energy minimization and production MD, analyze trajectories (RMSD, RMSF, contact maps, free energy surfaces). For structural biology, drug binding, and biophysics.
 name: molecular-dynamics
+description: Run and analyse molecular dynamics simulations with OpenMM and MDAnalysis. Set up protein/small molecule systems, define force fields, run energy minimisation and production MD, analyse trajectories (RMSD, RMSF, contact maps, free energy surfaces). For structural biology, drug binding, and biophysics.
 license: MIT
 metadata:
   skill-author: 'Kuan-lin Huang'
@@ -13,7 +13,7 @@ metadata:
 Molecular dynamics (MD) simulation computationally models the time evolution of molecular systems by integrating Newton's equations of motion. This skill covers two complementary tools:
 
 - **OpenMM** (https://openmm.org/): High-performance MD simulation engine with GPU support, Python API, and flexible force field support
-- **MDAnalysis** (https://mdanalysis.org/): Python library for reading, writing, and analyzing MD trajectories from all major simulation packages
+- **MDAnalysis** (https://mdanalysis.org/): Python library for reading, writing, and analysing MD trajectories from all major simulation packages
 
 **Installation:**
 ```bash
@@ -27,7 +27,7 @@ pip install openmm mdanalysis
 Use molecular dynamics when:
 
 - **Protein stability analysis**: How does a mutation affect protein dynamics?
-- **Drug binding simulations**: Characterize binding mode and residence time of a ligand
+- **Drug binding simulations**: Characterise binding mode and residence time of a ligand
 - **Conformational sampling**: Explore protein flexibility and conformational changes
 - **Protein-protein interaction**: Model interface dynamics and binding energetics
 - **RMSD/RMSF analysis**: Quantify structural fluctuations from a reference structure
@@ -92,7 +92,7 @@ def prepare_system_from_pdb(pdb_file, forcefield_name="amber14-all.xml",
     return modeller, system
 ```
 
-### 2. Energy Minimization
+### 2. Energy Minimisation
 
 ```python
 from openmm.app import *
@@ -436,11 +436,11 @@ def parameterize_ligand(smiles, ff_name="openff-2.0.0.offxml"):
 
 ## Best Practices
 
-- **Always minimize before MD**: Raw PDB structures have steric clashes
+- **Always minimise before MD**: Raw PDB structures have steric clashes
 - **Equilibrate before production**: NVT (50–100 ps) → NPT (100–500 ps) → Production
 - **Use GPU**: Simulations are 10–100× faster on GPU (CUDA/OpenCL)
 - **2 fs timestep with HBonds constraints**: Standard; use 4 fs with HMR (hydrogen mass repartitioning)
-- **Analyze only equilibrated trajectory**: Discard first 20–50% as equilibration
+- **Analyse only equilibrated trajectory**: Discard first 20–50% as equilibration
 - **Save checkpoints**: MD runs can fail; checkpoints allow restart
 - **Periodic boundary conditions**: Required for solvated systems
 - **PME for electrostatics**: More accurate than cutoff methods for charged systems

@@ -1,6 +1,9 @@
 ---
-description: >
 name: write-user-story
+description: >-
+  Produces a complete, ready-to-groom user story following the standard Atlassian/agile format. It
+  applies the INVEST criteria and the 3 Cs framework (Card, Conversation, Confirmation) to ensure
+  each story is well-scoped, valuable, and testable — not just syntactically correct.
 version: 1.0.0
 tags:
   - agile

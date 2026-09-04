@@ -64,12 +64,12 @@ applyTo: '**/*.{json,csx,md}'
 - Validate schema transformations work correctly with Copilot Studio
 - Verify authentication flows for all supported parameter sets
 - Ensure proper error handling for various failure scenarios
-- Test connection parameter configurations and dynamic behavior
+- Test connection parameter configurations and dynamic behaviour
 
 ## Additional Guidelines
 
 ### Power Platform Certification Requirements
-- Include comprehensive documentation (readme.md, CUSTOMIZE.md)
+- Include comprehensive documentation (readme.md, CUSTOMISE.md)
 - Provide clear setup and configuration instructions
 - Document all authentication options and security considerations
 - Include proper publisher and stack owner information
@@ -84,5 +84,5 @@ applyTo: '**/*.{json,csx,md}'
 ### Copilot Studio Integration
 - Ensure tool definitions work correctly within Copilot Studio's constraints
 - Test resource access and tool invocation from Copilot Studio interface
-- Validate that transformed schemas produce expected behavior in conversations
+- Validate that transformed schemas produce expected behaviour in conversations
 - Confirm proper integration with Copilot Studio's agent framework

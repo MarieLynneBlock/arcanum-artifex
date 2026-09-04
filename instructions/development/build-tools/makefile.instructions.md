@@ -12,8 +12,8 @@ Instructions for writing clean, maintainable, and portable GNU Make Makefiles. T
 - Write clear and maintainable makefiles that follow GNU Make conventions
 - Use descriptive target names that clearly indicate their purpose
 - Keep the default goal (first target) as the most common build operation
-- Prioritize readability over brevity when writing rules and recipes
-- Add comments to explain complex rules, variables, or non-obvious behavior
+- Prioritise readability over brevity when writing rules and recipes
+- Add comments to explain complex rules, variables, or non-obvious behaviour
 
 ## Naming Conventions
 
@@ -296,7 +296,7 @@ distclean: clean
 - Test with `make -B` to force rebuild all targets
 - Document any platform-specific requirements or GNU Make extensions used
 
-## Performance Optimization
+## Performance Optimisation
 
 - Use `:=` for variables that don't need recursive expansion (faster)
 - Avoid unnecessary use of `$(shell ...)` which creates subprocesses

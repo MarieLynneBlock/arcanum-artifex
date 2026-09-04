@@ -1,6 +1,6 @@
 ---
-description: Build and analyze phylogenetic trees using MAFFT (multiple alignment), IQ-TREE 2 (maximum likelihood), and FastTree (fast NJ/ML). Visualize with ETE3 or FigTree. For evolutionary analysis, microbial genomics, viral phylodynamics, protein family analysis, and molecular clock studies.
 name: phylogenetics
+description: Build and analyse phylogenetic trees using MAFFT (multiple alignment), IQ-TREE 2 (maximum likelihood), and FastTree (fast NJ/ML). Visualise with ETE3 or FigTree. For evolutionary analysis, microbial genomics, viral phylodynamics, protein family analysis, and molecular clock studies.
 license: Unknown
 metadata:
   skill-author: 'Kuan-lin Huang'
@@ -15,7 +15,7 @@ Phylogenetic analysis reconstructs the evolutionary history of biological sequen
 1. **MAFFT** — Multiple sequence alignment
 2. **IQ-TREE 2** — Maximum likelihood tree inference with model selection
 3. **FastTree** — Fast approximate maximum likelihood (for large datasets)
-4. **ETE3** — Python library for tree manipulation and visualization
+4. **ETE3** — Python library for tree manipulation and visualisation
 
 **Installation:**
 ```bash
@@ -213,7 +213,7 @@ def run_fasttree(aligned_fasta: str, output_tree: str,
     return output_tree
 ```
 
-### 5. Tree Analysis and Visualization with ETE3
+### 5. Tree Analysis and Visualisation with ETE3
 
 ```python
 from ete3 import Tree, TreeStyle, NodeStyle, TextFace, PhyloTree
@@ -398,7 +398,7 @@ def full_phylogenetic_analysis(
 - **IQ-TREE 2**: http://www.iqtree.org/ | Tutorial: https://www.iqtree.org/workshop/molevol2022
 - **FastTree**: http://www.microbesonline.org/fasttree/
 - **ETE3**: http://etetoolkit.org/
-- **FigTree** (GUI visualization): https://tree.bio.ed.ac.uk/software/figtree/
-- **iTOL** (web visualization): https://itol.embl.de/
+- **FigTree** (GUI visualisation): https://tree.bio.ed.ac.uk/software/figtree/
+- **iTOL** (web visualisation): https://itol.embl.de/
 - **MUSCLE** (alternative aligner): https://www.drive5.com/muscle/
 - **TrimAl** (alignment trimming): https://vicfero.github.io/trimal/

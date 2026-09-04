@@ -1,6 +1,6 @@
 # Miro conventions for 4+1 views
 
-Per-view conventions for the `4plus1-diagrams` workflow. **Mechanics of RISEN prompts (Role/Input/Steps/Expectation/Narrowing structure, template, validation rules) are owned by [`miro-diagram-generator`](../skills/miro-diagram-generator/SKILL.md) and the [Miro instruction file](../instructions/miro.instructions.md) (both vendored in top-level workflow folders).** This file only covers what is specific to each 4+1 view in Miro.
+Per-view conventions for the `4plus1-diagrams` workflow. **Mechanics of RISEN prompts (Role/Input/Steps/Expectation/Narrowing structure, template, validation rules) are owned by [`miro-diagram-generator`](../skills/miro-diagram-generator/SKILL.md) and the [Miro instruction file](../instructions/miro.instructions.md) (both bundled in top-level workflow folders).** This file only covers what is specific to each 4+1 view in Miro.
 
 ---
 
@@ -87,7 +87,7 @@ Notes:
 
 ### Physical view
 
-Before writing layout instructions for a Physical view prompt, treat the canonical `.puml` as the source of truth and copy its element names and relationship labels into the prompt. The Miro prompt is a Sidekick-optimized drawing brief derived from PlantUML; it must not ask Miro to parse raw PlantUML syntax. Zones are visual grouping aids; they must be derived from the PlantUML deployment boundaries and must not introduce CDN/WAF, load balancers, caches, databases, runners, or protocols that are absent from the canonical source.
+Before writing layout instructions for a Physical view prompt, treat the canonical `.puml` as the source of truth and copy its element names and relationship labels into the prompt. The Miro prompt is a Sidekick-optimised drawing brief derived from PlantUML; it must not ask Miro to parse raw PlantUML syntax. Zones are visual grouping aids; they must be derived from the PlantUML deployment boundaries and must not introduce CDN/WAF, load balancers, caches, databases, runners, or protocols that are absent from the canonical source.
 
 For cloud-agnostic Physical views, prefer a Draw.io-like lane layout: three or more tall vertical zone containers with visible headers, nested boundary containers inside each lane, and components placed inside those boundaries. These are ordinary visual lane containers, not BPMN lanes. Show containment through placement, not `contains` arrows. Do not add `Start` or `End` nodes to a physical deployment view.
 

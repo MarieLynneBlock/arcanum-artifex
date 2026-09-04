@@ -2,7 +2,7 @@
 
 # Kanban Board Documentation Template
 
-> **Back to [Markdown Style Guide](../markdown_style_guide.md)** — Read the style guide first for formatting, citation, and emoji rules.
+> **Back to [Markdown Style Guide](../markdown-style-guide.md)** — Read the style guide first for formatting, citation, and emoji rules.
 
 **Use this template for:** Tracking work items, sprint boards, project task management, release planning, or any scenario where you need a persistent, markdown-based view of work status. This board IS the tracking system — a file in your repo that evolves with your codebase.
 
@@ -12,7 +12,7 @@
 
 A kanban board's job is to make work visible. This template serves two purposes: (1) a living board that gets updated as work progresses, and (2) a historical snapshot when archived. The Mermaid diagram gives the instant visual overview; the tables give the detail. Together they answer: What's being worked on? What's blocked? What's done? What's next?
 
-When archived, the board becomes the historical record of what was worked on, what was blocked, and what was completed — all in git history, with full attribution and timestamps. This is the [Everything is Code](../markdown_style_guide.md#-everything-is-code) philosophy: project management data lives in the repo, versioned and portable.
+When archived, the board becomes the historical record of what was worked on, what was blocked, and what was completed — all in git history, with full attribution and timestamps. This is the [Everything is Code](../markdown-style-guide.md#-everything-is-code) philosophy: project management data lives in the repo, versioned and portable.
 
 ---
 
@@ -93,7 +93,7 @@ kanban
 
 ## 📋 Backlog
 
-_Prioritized top-to-bottom. Top items are next to be pulled. Include at least one placeholder item if empty._
+_Prioritised top-to-bottom. Top items are next to be pulled. Include at least one placeholder item if empty._
 
 | #   | Item              | Priority  | Estimate | Assignee | Notes                   |
 | --- | ----------------- | --------- | -------- | -------- | ----------------------- |

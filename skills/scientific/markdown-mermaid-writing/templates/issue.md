@@ -2,7 +2,7 @@
 
 # Issue Documentation Template
 
-> **Back to [Markdown Style Guide](../markdown_style_guide.md)** — Read the style guide first for formatting, citation, and emoji rules.
+> **Back to [Markdown Style Guide](../markdown-style-guide.md)** — Read the style guide first for formatting, citation, and emoji rules.
 
 **Use this template for:** Documenting bugs, feature requests, improvement proposals, incidents, or any trackable work item as a persistent markdown record. This file IS the issue — the full lifecycle from report through investigation, resolution, and lessons learned — in a format that's searchable, portable, and part of your codebase.
 
@@ -12,7 +12,7 @@
 
 An issue report is a contract between the reporter and the resolver. Vague issues get vague fixes. The best issue documents are so clear that anyone on the team — or any AI agent — could pick them up, understand the problem, and start working without asking a single clarifying question. Include everything. Assume the person reading this has zero prior context.
 
-This is the [Everything is Code](../markdown_style_guide.md#-everything-is-code) philosophy: any agent or team member can find, read, and update issues with file access alone. No API, no tokens, no platform lock-in. `grep docs/project/issues/` beats searching Jira every time.
+This is the [Everything is Code](../markdown-style-guide.md#-everything-is-code) philosophy: any agent or team member can find, read, and update issues with file access alone. No API, no tokens, no platform lock-in. `grep docs/project/issues/` beats searching Jira every time.
 
 ---
 
@@ -96,11 +96,11 @@ This template has two variants — use the section that matches your issue type:
 
 **Reproducibility:** [Always / Intermittent (~N% of attempts) / Once]
 
-### Expected behavior
+### Expected behaviour
 
 [What should happen when following the steps above.]
 
-### Actual behavior
+### Actual behaviour
 
 [What actually happens. Include the exact error message, screenshot, or log output.]
 
@@ -256,7 +256,7 @@ flowchart TB
 
 ### Mockup / wireframe
 
-[If visual, include a mockup or screenshot of the expected UI. If not visual, describe the expected behavior in detail.]
+[If visual, include a mockup or screenshot of the expected UI. If not visual, describe the expected behaviour in detail.]
 
 ### Technical considerations
 

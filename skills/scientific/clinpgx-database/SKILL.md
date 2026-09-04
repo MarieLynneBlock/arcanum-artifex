@@ -1,6 +1,6 @@
 ---
-description: Access ClinPGx pharmacogenomics data (successor to PharmGKB). Query gene-drug interactions, CPIC guidelines, allele functions, for precision medicine and genotype-guided dosing decisions.
 name: clinpgx-database
+description: Access ClinPGx pharmacogenomics data (successor to PharmGKB). Query gene-drug interactions, CPIC guidelines, allele functions, for precision medicine and genotype-guided dosing decisions.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -19,12 +19,12 @@ This skill should be used when:
 - **Gene-drug interactions**: Querying how genetic variants affect drug metabolism, efficacy, or toxicity
 - **CPIC guidelines**: Accessing evidence-based clinical practice guidelines for pharmacogenetics
 - **Allele information**: Retrieving allele function, frequency, and phenotype data
-- **Drug labels**: Exploring FDA and other regulatory pharmacogenomic drug labeling
+- **Drug labels**: Exploring FDA and other regulatory pharmacogenomic drug labelling
 - **Pharmacogenomic annotations**: Accessing curated literature on gene-drug-disease relationships
 - **Clinical decision support**: Using PharmDOG tool for phenoconversion and custom genotype interpretation
 - **Precision medicine**: Implementing pharmacogenomic testing in clinical practice
 - **Drug metabolism**: Understanding CYP450 and other pharmacogene functions
-- **Personalized dosing**: Finding genotype-guided dosing recommendations
+- **Personalised dosing**: Finding genotype-guided dosing recommendations
 - **Adverse drug reactions**: Identifying genetic risk factors for drug toxicity
 
 ## Installation and Setup
@@ -387,7 +387,7 @@ pathways = response.json()
    phenotype_dist = calculate_phenotype_frequencies(frequency_data)
    ```
 
-4. **Analyze implications** for drug dosing in diverse populations.
+4. **Analyse implications** for drug dosing in diverse populations.
 
 ### Workflow 5: Literature Evidence Review
 
@@ -531,7 +531,7 @@ Python script with ready-to-use functions for common ClinPGx queries:
 
 Consult this script for implementation examples with proper rate limiting and error handling.
 
-### references/api_reference.md
+### references/api-reference.md
 
 Comprehensive API documentation including:
 

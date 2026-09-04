@@ -168,7 +168,7 @@ When calling `load_*()` functions:
 
 ---
 
-## Workflow 3: Hyperparameter Optimization
+## Workflow 3: Hyperparameter Optimisation
 
 **Goal**: Find optimal model hyperparameters systematically.
 
@@ -475,7 +475,7 @@ dataset = dc.data.DiskDataset.from_numpy(X, y, w, ids)
 ```
 
 ### Issue 4: Overfitting on Small Datasets
-**Problem**: Model memorizes training data.
+**Problem**: Model memorises training data.
 **Solutions**:
 1. Use stronger regularization (increase dropout)
 2. Use simpler models (Random Forest, Ridge)

@@ -7,7 +7,7 @@ This document covers data curation, validation, schema management, and annotatio
 LaminDB's curation process ensures datasets are both validated and queryable through three essential steps:
 
 1. **Validation**: Confirming datasets match desired schemas
-2. **Standardization**: Fixing inconsistencies like typos and mapping synonyms
+2. **Standardisation**: Fixing inconsistencies like typos and mapping synonyms
 3. **Annotation**: Linking datasets to metadata entities for queryability
 
 ## Schema Design
@@ -134,7 +134,7 @@ else:
 
 ### Step 5: Fix Validation Issues
 
-#### Standardize Values
+#### Standardise Values
 
 ```python
 # Fix typos and synonyms in categorical columns
@@ -176,7 +176,7 @@ df = df.rename(columns={"celltype": "cell_type"})
 curator = ln.curators.DataFrameCurator(df, schema)
 ```
 
-### Step 6: Save Curated Artifact
+### Step 6: Save Curated Artefact
 
 ```python
 # Save with schema linkage
@@ -342,7 +342,7 @@ curator = ln.curators.DataFrameCurator(df, schema)
 curator.validate()  # Errors if cell_type values not in registry
 ```
 
-## Standardization Strategies
+## Standardisation Strategies
 
 ### Using Public Ontologies
 
@@ -368,7 +368,7 @@ curator.cat.standardize("cell_type")
 # "T-cell" → "T cell"
 ```
 
-### Custom Standardization
+### Custom Standardisation
 
 ```python
 # Manual mapping
@@ -460,10 +460,10 @@ ln.Artifact.filter(is_valid=True).to_dataframe(include="features")
 ## Best Practices
 
 1. **Define features first**: Create Feature registry before curation
-2. **Use public ontologies**: Leverage bt.lookup(public=True) for standardization
+2. **Use public ontologies**: Leverage bt.lookup(public=True) for standardisation
 3. **Start flexible**: Use flexible schemas initially, tighten as understanding grows
 4. **Document slots**: Clearly specify transposition (.T) in composite schemas
-5. **Standardize early**: Fix typos and synonyms before validation
+5. **Standardise early**: Fix typos and synonyms before validation
 6. **Validate incrementally**: Check each slot separately for composite structures
 7. **Version schemas**: Track schema changes over time
 8. **Add synonyms**: Register common variations to simplify future curation

@@ -1,9 +1,10 @@
 # Agentic
 
-Copilot customization, agent definitions, and MCP guidance.
+AI assistant behaviour, prompt and context guidance, agent definitions, and MCP guidance.
 
 ## Subfolders
 
 - `agents/`
-- `copilot-customization/`
+- `assistant-behaviour/`
+- `prompt-and-context/`
 - `mcp/`

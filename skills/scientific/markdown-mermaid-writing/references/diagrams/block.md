@@ -2,7 +2,7 @@
 
 # Block Diagram
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `block-beta`
 **Best for:** System block composition, layered architectures, component topology where spatial layout matters
@@ -173,5 +173,5 @@ block-beta
 
 - **5 tiers read top-to-bottom** like a network diagram — clients, gateway, services, data, infrastructure. Each tier is a block spanning the full width with its own column layout.
 - **`space:4` creates visual separation** between tiers without unnecessary lines or borders, keeping the diagram clean and scannable.
-- **Cylinder syntax `("text")` for databases** — PostgreSQL renders as a cylinder, instantly recognizable as a data store. Other components use standard rectangles.
+- **Cylinder syntax `("text")` for databases** — PostgreSQL renders as a cylinder, instantly recognisable as a data store. Other components use standard rectangles.
 - **Connections show real data paths** — not every possible connection, just the primary flows. A fully-connected diagram would be unreadable; this shows the key paths an engineer would trace during debugging.

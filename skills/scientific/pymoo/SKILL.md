@@ -1,27 +1,27 @@
 ---
-description: Multi-objective optimization framework. NSGA-II, NSGA-III, MOEA/D, Pareto fronts, constraint handling, benchmarks (ZDT, DTLZ), for engineering design and optimization problems.
 name: pymoo
+description: Multi-objective optimisation framework. NSGA-II, NSGA-III, MOEA/D, Pareto fronts, constraint handling, benchmarks (ZDT, DTLZ), for engineering design and optimisation problems.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
 
-# Pymoo - Multi-Objective Optimization in Python
+# Pymoo - Multi-Objective Optimisation in Python
 
 ## Overview
 
-Pymoo is a comprehensive Python framework for optimization with emphasis on multi-objective problems. Solve single and multi-objective optimization using state-of-the-art algorithms (NSGA-II/III, MOEA/D), benchmark problems (ZDT, DTLZ), customizable genetic operators, and multi-criteria decision making methods. Excels at finding trade-off solutions (Pareto fronts) for problems with conflicting objectives.
+Pymoo is a comprehensive Python framework for optimisation with emphasis on multi-objective problems. Solve single and multi-objective optimisation using state-of-the-art algorithms (NSGA-II/III, MOEA/D), benchmark problems (ZDT, DTLZ), customisable genetic operators, and multi-criteria decision making methods. Excels at finding trade-off solutions (Pareto fronts) for problems with conflicting objectives.
 
 ## When to Use This Skill
 
 This skill should be used when:
-- Solving optimization problems with one or multiple objectives
-- Finding Pareto-optimal solutions and analyzing trade-offs
+- Solving optimisation problems with one or multiple objectives
+- Finding Pareto-optimal solutions and analysing trade-offs
 - Implementing evolutionary algorithms (GA, DE, PSO, NSGA-II/III)
-- Working with constrained optimization problems
+- Working with constrained optimisation problems
 - Benchmarking algorithms on standard test problems (ZDT, DTLZ, WFG)
-- Customizing genetic operators (crossover, mutation, selection)
-- Visualizing high-dimensional optimization results
+- Customising genetic operators (crossover, mutation, selection)
+- Visualising high-dimensional optimisation results
 - Making decisions from multiple competing solutions
 - Handling binary, discrete, continuous, or mixed-variable problems
 
@@ -29,7 +29,7 @@ This skill should be used when:
 
 ### The Unified Interface
 
-Pymoo uses a consistent `minimize()` function for all optimization tasks:
+Pymoo uses a consistent `minimize()` function for all optimisation tasks:
 
 ```python
 from pymoo.optimize import minimize
@@ -51,7 +51,7 @@ result = minimize(
 
 ### Problem Types
 
-**Single-objective:** One objective to minimize/maximize
+**Single-objective:** One objective to minimise/maximise
 **Multi-objective:** 2-3 conflicting objectives → Pareto front
 **Many-objective:** 4+ objectives → High-dimensional Pareto front
 **Constrained:** Objectives + inequality/equality constraints
@@ -59,15 +59,15 @@ result = minimize(
 
 ## Quick Start Workflows
 
-### Workflow 1: Single-Objective Optimization
+### Workflow 1: Single-Objective Optimisation
 
-**When:** Optimizing one objective function
+**When:** Optimising one objective function
 
 **Steps:**
 1. Define or select problem
 2. Choose single-objective algorithm (GA, DE, PSO, CMA-ES)
 3. Configure termination criteria
-4. Run optimization
+4. Run optimisation
 5. Extract best solution
 
 **Example:**
@@ -100,17 +100,17 @@ print(f"Best objective: {result.F[0]}")
 
 **See:** `scripts/single_objective_example.py` for complete example
 
-### Workflow 2: Multi-Objective Optimization (2-3 objectives)
+### Workflow 2: Multi-Objective Optimisation (2-3 objectives)
 
-**When:** Optimizing 2-3 conflicting objectives, need Pareto front
+**When:** Optimising 2-3 conflicting objectives, need Pareto front
 
 **Algorithm choice:** NSGA-II (standard for bi/tri-objective)
 
 **Steps:**
 1. Define multi-objective problem
 2. Configure NSGA-II
-3. Run optimization to obtain Pareto front
-4. Visualize trade-offs
+3. Run optimisation to obtain Pareto front
+4. Visualise trade-offs
 5. Apply decision making (optional)
 
 **Example:**
@@ -140,9 +140,9 @@ print(f"Found {len(result.F)} Pareto-optimal solutions")
 
 **See:** `scripts/multi_objective_example.py` for complete example
 
-### Workflow 3: Many-Objective Optimization (4+ objectives)
+### Workflow 3: Many-Objective Optimisation (4+ objectives)
 
-**When:** Optimizing 4 or more objectives
+**When:** Optimising 4 or more objectives
 
 **Algorithm choice:** NSGA-III (designed for many objectives)
 
@@ -152,8 +152,8 @@ print(f"Found {len(result.F)} Pareto-optimal solutions")
 1. Define many-objective problem
 2. Generate reference directions
 3. Configure NSGA-III with reference directions
-4. Run optimization
-5. Visualize using Parallel Coordinate Plot
+4. Run optimisation
+5. Visualise using Parallel Coordinate Plot
 
 **Example:**
 ```python
@@ -185,7 +185,7 @@ plot.show()
 
 ### Workflow 4: Custom Problem Definition
 
-**When:** Solving domain-specific optimization problem
+**When:** Solving domain-specific optimisation problem
 
 **Steps:**
 1. Extend `ElementwiseProblem` class
@@ -281,7 +281,7 @@ from pymoo.constraints.as_obj import ConstraintsAsObjective
 problem_with_cv = ConstraintsAsObjective(problem)
 ```
 
-**4. Specialized Algorithms**
+**4. Specialised Algorithms**
 ```python
 from pymoo.algorithms.soo.nonconvex.sres import SRES
 
@@ -289,18 +289,18 @@ from pymoo.algorithms.soo.nonconvex.sres import SRES
 algorithm = SRES()
 ```
 
-**See:** `references/constraints_mcdm.md` for comprehensive constraint handling guide
+**See:** `references/constraints-mcdm.md` for comprehensive constraint handling guide
 
 ### Workflow 6: Decision Making from Pareto Front
 
 **When:** Have Pareto front, need to select preferred solution(s)
 
 **Steps:**
-1. Run multi-objective optimization
-2. Normalize objectives to [0, 1]
+1. Run multi-objective optimisation
+2. Normalise objectives to [0, 1]
 3. Define preference weights
 4. Apply MCDM method
-5. Visualize selected solution
+5. Visualise selected solution
 
 **Example using Pseudo-Weights:**
 ```python
@@ -333,11 +333,11 @@ print(f"Objective values: {best_objectives}")
 
 **See:**
 - `scripts/decision_making_example.py` for complete example
-- `references/constraints_mcdm.md` for detailed MCDM methods
+- `references/constraints-mcdm.md` for detailed MCDM methods
 
-### Workflow 7: Visualization
+### Workflow 7: Visualisation
 
-**Choose visualization based on number of objectives:**
+**Choose visualisation based on number of objectives:**
 
 **2 objectives: Scatter Plot**
 ```python
@@ -380,7 +380,7 @@ plot.add(solution_B, label="Design B")
 plot.show()
 ```
 
-**See:** `references/visualization.md` for all visualization types and usage
+**See:** `references/visualization.md` for all visualisation types and usage
 
 ## Algorithm Selection Guide
 
@@ -388,8 +388,8 @@ plot.show()
 
 | Algorithm | Best For | Key Features |
 |-----------|----------|--------------|
-| **GA** | General-purpose | Flexible, customizable operators |
-| **DE** | Continuous optimization | Good global search |
+| **GA** | General-purpose | Flexible, customisable operators |
+| **DE** | Continuous optimisation | Good global search |
 | **PSO** | Smooth landscapes | Fast convergence |
 | **CMA-ES** | Difficult/noisy problems | Self-adapting |
 
@@ -414,7 +414,7 @@ plot.show()
 | Approach | Algorithm | When to Use |
 |----------|-----------|-------------|
 | Feasibility-first | Any algorithm | Large feasible region |
-| Specialized | SRES, ISRES | Heavy constraints |
+| Specialised | SRES, ISRES | Heavy constraints |
 | Penalty | GA + penalty | Algorithm compatibility |
 
 **See:** `references/algorithms.md` for comprehensive algorithm reference
@@ -441,7 +441,7 @@ problem = get_problem("dtlz7", n_obj=4)
 
 **See:** `references/problems.md` for complete test problem reference
 
-## Genetic Operator Customization
+## Genetic Operator Customisation
 
 ### Standard operator configuration:
 ```python
@@ -503,10 +503,10 @@ algorithm = GA(
 
 ### Best practices:
 
-1. **Normalize objectives** when scales differ significantly
+1. **Normalise objectives** when scales differ significantly
 2. **Set random seed** for reproducibility
-3. **Save history** to analyze convergence: `save_history=True`
-4. **Visualize results** to understand solution quality
+3. **Save history** to analyse convergence: `save_history=True`
+4. **Visualise results** to understand solution quality
 5. **Compare with true Pareto front** when available
 6. **Use appropriate termination criteria** (generations, evaluations, tolerance)
 7. **Tune operator parameters** for problem characteristics
@@ -521,20 +521,20 @@ Detailed documentation for in-depth understanding:
 - **algorithms.md**: Complete algorithm reference with parameters, usage, and selection guidelines
 - **problems.md**: Benchmark test problems (ZDT, DTLZ, WFG) with characteristics
 - **operators.md**: Genetic operators (sampling, selection, crossover, mutation) with configuration
-- **visualization.md**: All visualization types with examples and selection guide
-- **constraints_mcdm.md**: Constraint handling techniques and multi-criteria decision making methods
+- **visualisation.md**: All visualisation types with examples and selection guide
+- **constraints-mcdm.md**: Constraint handling techniques and multi-criteria decision making methods
 
 **Search patterns for references:**
 - Algorithm details: `grep -r "NSGA-II\|NSGA-III\|MOEA/D" references/`
 - Constraint methods: `grep -r "Feasibility First\|Penalty\|Repair" references/`
-- Visualization types: `grep -r "Scatter\|PCP\|Petal" references/`
+- Visualisation types: `grep -r "Scatter\|PCP\|Petal" references/`
 
 ### scripts/
 Executable examples demonstrating common workflows:
 
-- **single_objective_example.py**: Basic single-objective optimization with GA
-- **multi_objective_example.py**: Multi-objective optimization with NSGA-II, visualization
-- **many_objective_example.py**: Many-objective optimization with NSGA-III, reference directions
+- **single_objective_example.py**: Basic single-objective optimisation with GA
+- **multi_objective_example.py**: Multi-objective optimisation with NSGA-II, visualisation
+- **many_objective_example.py**: Many-objective optimisation with NSGA-III, reference directions
 - **custom_problem_example.py**: Defining custom problems (constrained and unconstrained)
 - **decision_making_example.py**: Multi-criteria decision making with different preferences
 
@@ -564,5 +564,5 @@ uv pip install pymoo
 - Always use `ElementwiseProblem` for custom problems
 - Constraints formulated as `g(x) <= 0` and `h(x) = 0`
 - Reference directions required for NSGA-III
-- Normalize objectives before MCDM
+- Normalise objectives before MCDM
 - Use appropriate termination: `('n_gen', N)` or `get_termination("f_tol", tol=0.001)`

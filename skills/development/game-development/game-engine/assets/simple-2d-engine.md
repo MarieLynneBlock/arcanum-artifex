@@ -54,7 +54,7 @@ Every entity tracks its position using four values:
 | `xr` | Float | X ratio within the cell, range 0.0 to 1.0 |
 | `yr` | Float | Y ratio within the cell, range 0.0 to 1.0 |
 
-An entity at `cx=5, cy=3, xr=0.5, yr=1.0` is horizontally centered in cell (5,3) and sitting on the bottom edge.
+An entity at `cx=5, cy=3, xr=0.5, yr=1.0` is horizontally centred in cell (5,3) and sitting on the bottom edge.
 
 ### Converting to Pixel Coordinates
 
@@ -146,7 +146,7 @@ sprite.x = (cx + xr) * GRID;
 sprite.y = (cy + yr) * GRID;
 ```
 
-For a platformer character, the anchor point is typically at the bottom-center of the sprite. With `yr = 1.0` representing the bottom of the current cell, the sprite's feet align with the floor.
+For a platformer character, the anchor point is typically at the bottom-centre of the sprite. With `yr = 1.0` representing the bottom of the current cell, the sprite's feet align with the floor.
 
 ### Basic Entity Template
 
@@ -219,7 +219,7 @@ Instead of using bounding-box-to-bounding-box collision detection (which becomes
 
 ### The Core Idea
 
-Before allowing the entity to move into a neighboring cell, check if that cell is solid. If it is, clamp the entity's ratio and zero out its velocity on that axis.
+Before allowing the entity to move into a neighbouring cell, check if that cell is solid. If it is, clamp the entity's ratio and zero out its velocity on that axis.
 
 ### Axis Separation
 
@@ -250,7 +250,7 @@ while (xr > 1) { xr--; cx++; }
 while (xr < 0) { xr++; cx--; }
 ```
 
-**Why 0.7 and 0.3?** These thresholds represent the entity's collision radius within a cell. An entity centered at `xr = 0.5` with a half-width of 0.3 cells would collide at `xr = 0.7` on the right side and `xr = 0.3` on the left side. Adjust these values based on entity width.
+**Why 0.7 and 0.3?** These thresholds represent the entity's collision radius within a cell. An entity centred at `xr = 0.5` with a half-width of 0.3 cells would collide at `xr = 0.7` on the right side and `xr = 0.3` on the left side. Adjust these values based on entity width.
 
 ### Y-Axis Collision
 

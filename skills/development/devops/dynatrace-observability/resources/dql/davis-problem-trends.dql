@@ -1,0 +1,3 @@
+fetch dt.davis.problems, from:now() - 7d
+| filter dt.davis.is_duplicate == false
+| makeTimeseries problem_count = countDistinct(event.id), interval:6h

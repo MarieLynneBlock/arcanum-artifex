@@ -1,8 +1,8 @@
 ---
-description: Write comprehensive clinical reports including case reports (CARE guidelines), diagnostic reports (radiology/pathology/lab), clinical trial reports (ICH-E3, SAE, CSR), and patient documentation (SOAP, H&P, discharge summaries). Full support with templates, regulatory compliance (HIPAA, FDA, ICH-GCP), and validation tools.
 name: clinical-reports
-allowed-tools: Read Write Edit Bash
+description: Write comprehensive clinical reports including case reports (CARE guidelines), diagnostic reports (radiology/pathology/lab), clinical trial reports (ICH-E3, SAE, CSR), and patient documentation (SOAP, H&P, discharge summaries). Full support with templates, regulatory compliance (HIPAA, FDA, ICH-GCP), and validation tools.
 license: MIT License
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -33,7 +33,7 @@ This skill should be used when:
 
 **⚠️ MANDATORY: Every clinical report MUST include at least 1 AI-generated figure using the scientific-schematics skill.**
 
-This is not optional. Clinical reports benefit greatly from visual elements. Before finalizing any document:
+This is not optional. Clinical reports benefit greatly from visual elements. Before finalising any document:
 1. Generate at minimum ONE schematic or diagram (e.g., patient timeline, diagnostic algorithm, or treatment workflow)
 2. For case reports: include clinical progression timeline
 3. For trial reports: include CONSORT flow diagram
@@ -61,7 +61,7 @@ The AI will automatically:
 - Anatomical diagrams for case reports
 - Clinical trial participant flow diagrams (CONSORT)
 - Adverse event classification trees
-- Any complex concept that benefits from visualization
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -75,7 +75,7 @@ Clinical case reports describe unusual clinical presentations, novel diagnoses, 
 
 #### CARE Guidelines Compliance
 
-The CARE (CAse REport) guidelines provide a standardized framework for case report writing. All case reports should follow this checklist:
+The CARE (CAse REport) guidelines provide a standardised framework for case report writing. All case reports should follow this checklist:
 
 **Title**
 - Include the words "case report" or "case study"
@@ -165,7 +165,7 @@ The CARE (CAse REport) guidelines provide a standardized framework for case repo
 - For pediatric cases, parental/guardian consent
 - Example: "Written informed consent was obtained from the patient for publication of this case report and accompanying images. A copy of the written consent is available for review by the Editor-in-Chief of this journal."
 
-For detailed CARE guidelines, refer to `references/case_report_guidelines.md`.
+For detailed CARE guidelines, refer to `references/case-report-guidelines.md`.
 
 #### Journal-Specific Requirements
 
@@ -214,7 +214,7 @@ Diagnostic reports communicate findings from imaging studies, pathological exami
 
 #### Radiology Reports
 
-Radiology reports follow a standardized structure to ensure clarity and completeness.
+Radiology reports follow a standardised structure to ensure clarity and completeness.
 
 **Standard Structure:**
 
@@ -249,7 +249,7 @@ Radiology reports follow a standardized structure to ensure clarity and complete
 - Organ-by-organ or region-by-region approach
 - Positive findings first, then pertinent negatives
 - Measurements of lesions or abnormalities
-- Use of standardized terminology (ACR lexicon, RadLex)
+- Use of standardised terminology (ACR lexicon, RadLex)
 - Example:
   - Lungs: Bilateral ground-glass opacities, predominant in the lower lobes. No consolidation or pleural effusion.
   - Mediastinum: No lymphadenopathy. Heart size normal.
@@ -277,7 +277,7 @@ Many radiology departments use structured reporting templates for common examina
 
 Structured reports improve consistency, reduce ambiguity, and facilitate data extraction.
 
-For radiology reporting standards, see `references/diagnostic_reports_standards.md`.
+For radiology reporting standards, see `references/diagnostic-reports-standards.md`.
 
 #### Pathology Reports
 
@@ -307,7 +307,7 @@ Pathology reports document microscopic findings from tissue specimens and provid
 
 **4. Gross Description**
 - Macroscopic appearance of specimen
-- Size, weight, color, consistency
+- Size, weight, colour, consistency
 - Orientation markers if present
 - Sectioning and sampling approach
 - Example: "The specimen consists of an ellipse of skin measuring 2.5 x 1.0 x 0.5 cm. A pigmented lesion measuring 0.6 cm in diameter is present on the surface. The specimen is serially sectioned and entirely submitted in cassettes A1-A3."
@@ -403,7 +403,7 @@ Laboratory reports communicate test results for clinical specimens (blood, urine
 - Examples: glucose <40 or >500 mg/dL, potassium <2.5 or >6.5 mEq/L
 - Document notification time and recipient
 
-For laboratory standards and terminology, see `references/diagnostic_reports_standards.md`.
+For laboratory standards and terminology, see `references/diagnostic-reports-standards.md`.
 
 ### 3. Clinical Trial Reports
 
@@ -481,11 +481,11 @@ An adverse event is serious if it:
 - Other serious unexpected events: 15 days
 - IRB notification: per institutional policy, typically within 5-10 days
 
-For detailed SAE reporting guidance, see `references/clinical_trial_reporting.md`.
+For detailed SAE reporting guidance, see `references/clinical-trial-reporting.md`.
 
 #### Clinical Study Reports (CSR)
 
-Clinical study reports are comprehensive documents summarizing the design, conduct, and results of clinical trials. They are submitted to regulatory agencies as part of drug approval applications.
+Clinical study reports are comprehensive documents summarising the design, conduct, and results of clinical trials. They are submitted to regulatory agencies as part of drug approval applications.
 
 **ICH-E3 Structure:**
 
@@ -515,7 +515,7 @@ The ICH E3 guideline defines the structure and content of clinical study reports
 
 **6. Investigators and Study Administrative Structure** (Section 3)
 - List of investigators and sites
-- Study organization
+- Study organisation
 - Monitoring and quality assurance
 
 **7. Introduction** (Section 4)
@@ -535,7 +535,7 @@ The ICH E3 guideline defines the structure and content of clinical study reports
 - Demographic and baseline characteristics
 
 **10. Efficacy Evaluation** (Section 7)
-- Data sets analyzed (ITT, PP, safety)
+- Data sets analysed (ITT, PP, safety)
 - Demographic and other baseline characteristics
 - Efficacy results for primary and secondary endpoints
 - Subgroup analyses
@@ -573,7 +573,7 @@ The ICH E3 guideline defines the structure and content of clinical study reports
 - Clear presentation of safety data
 - Integration of appendices
 
-For ICH-E3 templates and detailed guidance, see `references/clinical_trial_reporting.md` and `assets/clinical_trial_csr_template.md`.
+For ICH-E3 templates and detailed guidance, see `references/clinical-trial-reporting.md` and `assets/clinical-trial-csr-template.md`.
 
 #### Protocol Deviations
 
@@ -613,7 +613,7 @@ SOAP notes are the most common format for progress notes in clinical practice.
 **O - Objective**
 - Measurable clinical findings
 - Vital signs (temperature, blood pressure, heart rate, respiratory rate, oxygen saturation)
-- Physical examination findings (organized by system)
+- Physical examination findings (organised by system)
 - Laboratory and imaging results
 - Example:
   - Vitals: T 98.6°F, BP 142/88, HR 92, RR 22, SpO2 91% on room air
@@ -635,7 +635,7 @@ SOAP notes are the most common format for progress notes in clinical practice.
 **P - Plan**
 - Diagnostic plan (further testing)
 - Therapeutic plan (medications, procedures)
-- Patient education and counseling
+- Patient education and counselling
 - Follow-up arrangements
 - Example:
   - "Diagnostics: BNP, chest X-ray, echocardiogram
@@ -648,11 +648,11 @@ SOAP notes are the most common format for progress notes in clinical practice.
 - Use standard medical abbreviations
 - Document time of encounter
 - Sign and date all notes
-- Avoid speculation or judgment
+- Avoid speculation or judgement
 - Document medical necessity for billing
 - Include patient's response to treatment
 
-For SOAP note templates and examples, see `assets/soap_note_template.md`.
+For SOAP note templates and examples, see `assets/soap-note-template.md`.
 
 #### History and Physical (H&P)
 
@@ -729,7 +729,7 @@ The H&P is a comprehensive assessment performed at admission or initial encounte
 - Diagnostic and therapeutic plans
 - Disposition (admit, discharge, transfer)
 
-For H&P templates, see `assets/history_physical_template.md`.
+For H&P templates, see `assets/history-physical-template.md`.
 
 #### Discharge Summaries
 
@@ -753,7 +753,7 @@ Discharge summaries document the hospital stay and communicate care plan to outp
 - Response to treatment
 - Complications
 - Consultations obtained
-- Organized by problem or chronologically
+- Organised by problem or chronologically
 
 **4. Discharge Diagnoses**
 - Primary diagnosis
@@ -800,7 +800,7 @@ Discharge summaries document the hospital stay and communicate care plan to outp
 - Document code status discussions
 - Include patient education provided
 
-For discharge summary templates, see `assets/discharge_summary_template.md`.
+For discharge summary templates, see `assets/discharge-summary-template.md`.
 
 ## Regulatory Compliance and Privacy
 
@@ -816,13 +816,13 @@ The Health Insurance Portability and Accountability Act (HIPAA) mandates protect
 - Breach notification procedures
 
 **De-identification Methods:**
-1. **Safe Harbor Method**: Remove 18 identifiers
+1. **Safe Harbour Method**: Remove 18 identifiers
 2. **Expert Determination**: Statistical method confirming low re-identification risk
 
 **Business Associate Agreements:**
 Required when PHI is shared with third parties for services
 
-For detailed HIPAA guidance, see `references/regulatory_compliance.md`.
+For detailed HIPAA guidance, see `references/regulatory-compliance.md`.
 
 ### FDA Regulations
 
@@ -841,11 +841,11 @@ Good Clinical Practice (GCP) guidelines ensure quality and ethical standards in 
 - Audit trails and data integrity
 - Investigator responsibilities
 
-For ICH-GCP compliance, see `references/regulatory_compliance.md`.
+For ICH-GCP compliance, see `references/regulatory-compliance.md`.
 
 ## Medical Terminology and Standards
 
-### Standardized Nomenclature
+### Standardised Nomenclature
 
 **SNOMED CT (Systematized Nomenclature of Medicine - Clinical Terms)**
 - Comprehensive clinical terminology
@@ -877,7 +877,7 @@ Use standard abbreviations to improve efficiency while maintaining clarity.
 - Lack of leading zero (.X mg) - always use before decimal (0.X mg)
 - MS, MSO4, MgSO4 - write "morphine sulfate" or "magnesium sulfate"
 
-For comprehensive terminology standards, see `references/medical_terminology.md`.
+For comprehensive terminology standards, see `references/medical-terminology.md`.
 
 ## Quality Assurance and Validation
 
@@ -895,12 +895,12 @@ For comprehensive terminology standards, see `references/medical_terminology.md`
 
 **Timeliness:**
 - Documented contemporaneously or shortly after encounter
-- Time-sensitive reports prioritized
+- Time-sensitive reports prioritised
 - Regulatory deadlines met
 
 **Clarity:**
 - Clear and unambiguous language
-- Organized logical structure
+- Organised logical structure
 - Appropriate use of medical terminology
 
 **Compliance:**
@@ -946,9 +946,9 @@ Validation scripts are available in the `scripts/` directory.
 - Appropriate scale bars
 - Annotations for key features
 - De-identified (no patient identifiers visible)
-- Informed consent for recognizable images
+- Informed consent for recognisable images
 
-For data presentation standards, see `references/data_presentation.md`.
+For data presentation standards, see `references/data-presentation.md`.
 
 ## Integration with Other Skills
 
@@ -1038,29 +1038,29 @@ This skill includes comprehensive reference files and templates:
 
 ### Reference Files
 
-- `references/case_report_guidelines.md` - CARE guidelines, journal requirements, writing tips
-- `references/diagnostic_reports_standards.md` - ACR, CAP, laboratory reporting standards
-- `references/clinical_trial_reporting.md` - ICH-E3, CONSORT, SAE reporting, CSR structure
-- `references/patient_documentation.md` - SOAP notes, H&P, discharge summaries, coding
-- `references/regulatory_compliance.md` - HIPAA, 21 CFR Part 11, ICH-GCP, FDA requirements
-- `references/medical_terminology.md` - SNOMED, LOINC, ICD-10, abbreviations, nomenclature
-- `references/data_presentation.md` - Tables, figures, safety data, CONSORT diagrams
-- `references/peer_review_standards.md` - Review criteria for clinical manuscripts
+- `references/case-report-guidelines.md` - CARE guidelines, journal requirements, writing tips
+- `references/diagnostic-reports-standards.md` - ACR, CAP, laboratory reporting standards
+- `references/clinical-trial-reporting.md` - ICH-E3, CONSORT, SAE reporting, CSR structure
+- `references/patient-documentation.md` - SOAP notes, H&P, discharge summaries, coding
+- `references/regulatory-compliance.md` - HIPAA, 21 CFR Part 11, ICH-GCP, FDA requirements
+- `references/medical-terminology.md` - SNOMED, LOINC, ICD-10, abbreviations, nomenclature
+- `references/data-presentation.md` - Tables, figures, safety data, CONSORT diagrams
+- `references/peer-review-standards.md` - Review criteria for clinical manuscripts
 
 ### Template Assets
 
-- `assets/case_report_template.md` - Structured case report following CARE guidelines
-- `assets/radiology_report_template.md` - Standard radiology report format
-- `assets/pathology_report_template.md` - Surgical pathology report with synoptic elements
-- `assets/lab_report_template.md` - Clinical laboratory report format
-- `assets/clinical_trial_sae_template.md` - Serious adverse event report form
-- `assets/clinical_trial_csr_template.md` - Clinical study report outline per ICH-E3
-- `assets/soap_note_template.md` - SOAP progress note format
-- `assets/history_physical_template.md` - Comprehensive H&P template
-- `assets/discharge_summary_template.md` - Hospital discharge summary
-- `assets/consult_note_template.md` - Consultation note format
-- `assets/quality_checklist.md` - Quality assurance checklist for all report types
-- `assets/hipaa_compliance_checklist.md` - Privacy and de-identification checklist
+- `assets/case-report-template.md` - Structured case report following CARE guidelines
+- `assets/radiology-report-template.md` - Standard radiology report format
+- `assets/pathology-report-template.md` - Surgical pathology report with synoptic elements
+- `assets/lab-report-template.md` - Clinical laboratory report format
+- `assets/clinical-trial-sae-template.md` - Serious adverse event report form
+- `assets/clinical-trial-csr-template.md` - Clinical study report outline per ICH-E3
+- `assets/soap-note-template.md` - SOAP progress note format
+- `assets/history-physical-template.md` - Comprehensive H&P template
+- `assets/discharge-summary-template.md` - Hospital discharge summary
+- `assets/consult-note-template.md` - Consultation note format
+- `assets/quality-checklist.md` - Quality assurance checklist for all report types
+- `assets/hipaa-compliance-checklist.md` - Privacy and de-identification checklist
 
 ### Automation Scripts
 
@@ -1107,7 +1107,7 @@ Load these resources as needed when working on specific clinical reports.
 
 ## Final Checklist
 
-Before finalizing any clinical report, verify:
+Before finalising any clinical report, verify:
 
 - [ ] All required sections complete
 - [ ] Patient privacy protected (HIPAA compliance)
@@ -1117,7 +1117,7 @@ Before finalizing any clinical report, verify:
 - [ ] Clear, professional language
 - [ ] Proper formatting per guidelines
 - [ ] References cited appropriately
-- [ ] Figures and tables labeled correctly
+- [ ] Figures and tables labelled correctly
 - [ ] Spell-checked and proofread
 - [ ] Regulatory requirements met
 - [ ] Institutional policies followed
@@ -1126,5 +1126,5 @@ Before finalizing any clinical report, verify:
 
 ---
 
-**Final Note**: Clinical report writing requires attention to detail, medical accuracy, regulatory compliance, and clear communication. Whether documenting patient care, reporting research findings, or communicating diagnostic results, the quality of clinical reports directly impacts patient safety, healthcare delivery, and medical knowledge advancement. Always prioritize accuracy, privacy, and professionalism in all clinical documentation.
+**Final Note**: Clinical report writing requires attention to detail, medical accuracy, regulatory compliance, and clear communication. Whether documenting patient care, reporting research findings, or communicating diagnostic results, the quality of clinical reports directly impacts patient safety, healthcare delivery, and medical knowledge advancement. Always prioritise accuracy, privacy, and professionalism in all clinical documentation.
 

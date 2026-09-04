@@ -1,7 +1,8 @@
 ---
-mode: ask
+agent: ask
 description: "[One sentence — what this prompt is for. Shown in the prompt picker.]"
-# mode options: ask | edit | agent
+# agent options: ask | edit | a custom agent name (see .github/prompts/ for examples)
+# argument-hint: optional hint shown after the / command, e.g. "[file or PR number]"
 # tools: optional list of MCP or VS Code tools this prompt may use
 #   tools: ["github", "fetch"]
 ---
@@ -16,12 +17,12 @@ description: "[One sentence — what this prompt is for. Shown in the prompt pic
   Reference workspace files with #file: or #folder: to give Copilot context.
   Variables: ${workspaceFolder}, ${file}, ${selection}
 
-  mode:
-    ask    — Copilot answers in chat (default)
-    edit   — Copilot proposes file edits
-    agent  — Copilot uses tools and acts autonomously
+  agent:
+    ask         — Copilot answers in chat (default)
+    edit        — Copilot proposes file edits
+    <name>      — run a specific agent (built-in or custom .agent.md), with tools
 
-  Docs: https://code.visualstudio.com/docs/copilot/copilot-customization#_reusable-prompt-files-experimental
+  Docs: https://code.visualstudio.com/docs/copilot/copilot-customisation#_reusable-prompt-files-experimental
 -->
 
 [Describe the task or context for this prompt. Be specific — Copilot uses this as the full instruction.]

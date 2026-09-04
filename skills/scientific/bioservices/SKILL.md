@@ -1,6 +1,6 @@
 ---
-description: Unified Python interface to 40+ bioinformatics services. Use when querying multiple databases (UniProt, KEGG, ChEMBL, Reactome) in a single workflow with consistent API. Best for cross-database analysis, ID mapping across services. For quick single-database lookups use gget; for sequence/file manipulation use biopython.
 name: bioservices
+description: Unified Python interface to 40+ bioinformatics services. Use when querying multiple databases (UniProt, KEGG, ChEMBL, Reactome) in a single workflow with consistent API. Best for cross-database analysis, ID mapping across services. For quick single-database lookups use gget; for sequence/file manipulation use biopython.
 license: GPLv3 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,13 +10,13 @@ metadata:
 
 ## Overview
 
-BioServices is a Python package providing programmatic access to approximately 40 bioinformatics web services and databases. Retrieve biological data, perform cross-database queries, map identifiers, analyze sequences, and integrate multiple biological resources in Python workflows. The package handles both REST and SOAP/WSDL protocols transparently.
+BioServices is a Python package providing programmatic access to approximately 40 bioinformatics web services and databases. Retrieve biological data, perform cross-database queries, map identifiers, analyse sequences, and integrate multiple biological resources in Python workflows. The package handles both REST and SOAP/WSDL protocols transparently.
 
 ## When to Use This Skill
 
 This skill should be used when:
 - Retrieving protein sequences, annotations, or structures from UniProt, PDB, Pfam
-- Analyzing metabolic pathways and gene functions via KEGG or Reactome
+- Analysing metabolic pathways and gene functions via KEGG or Reactome
 - Searching compound databases (ChEBI, ChEMBL, PubChem) for chemical information
 - Converting identifiers between different biological databases (KEGG↔UniProt, compound IDs)
 - Running sequence similarity searches (BLAST, MUSCLE alignment)
@@ -51,7 +51,7 @@ kegg_ids = u.mapping(fr="UniProtKB_AC-ID", to="KEGG", query="P43403")
 - `retrieve()`: Get protein entries in various formats (FASTA, XML, tab)
 - `mapping()`: Convert identifiers between databases
 
-Reference: `references/services_reference.md` for complete UniProt API details.
+Reference: `references/services-reference.md` for complete UniProt API details.
 
 ### 2. Pathway Discovery and Analysis
 
@@ -90,7 +90,7 @@ sif_data = k.pathway2sif("hsa04660")
 - `parse_kgml_pathway()`: Extract structured pathway data
 - `pathway2sif()`: Get protein interaction networks
 
-Reference: `references/workflow_patterns.md` for complete pathway analysis workflows.
+Reference: `references/workflow-patterns.md` for complete pathway analysis workflows.
 
 ### 3. Compound Database Searches
 
@@ -118,7 +118,7 @@ chembl_id = u.get_compound_id_from_kegg("C11222")  # Returns CHEMBL278315
 3. Use UniChem for KEGG → ChEMBL mapping
 4. ChEBI IDs are often provided in KEGG entries
 
-Reference: `references/identifier_mapping.md` for complete cross-database mapping guide.
+Reference: `references/identifier-mapping.md` for complete cross-database mapping guide.
 
 ### 4. Sequence Analysis
 
@@ -174,7 +174,7 @@ chembl_from_kegg = u.get_compound_id_from_kegg("C11222")
 - UniProtKB ↔ Ensembl
 - UniProtKB ↔ PDB
 - UniProtKB ↔ RefSeq
-- And many more (see `references/identifier_mapping.md`)
+- And many more (see `references/identifier-mapping.md`)
 
 ### 6. Gene Ontology Queries
 
@@ -216,7 +216,7 @@ BioServices excels at combining multiple services for comprehensive analysis. Co
 
 ### Complete Protein Analysis Pipeline
 
-Execute a full protein characterization workflow:
+Execute a full protein characterisation workflow:
 
 ```bash
 python scripts/protein_analysis_workflow.py ZAP70_HUMAN your.email@example.com
@@ -231,13 +231,13 @@ This script demonstrates:
 
 ### Pathway Network Analysis
 
-Analyze all pathways for an organism:
+Analyse all pathways for an organism:
 
 ```bash
 python scripts/pathway_analysis.py hsa output_directory/
 ```
 
-Extracts and analyzes:
+Extracts and analyses:
 - All pathway IDs for organism
 - Protein-protein interactions per pathway
 - Interaction type distributions
@@ -277,7 +277,7 @@ Different services return data in various formats:
 
 ### Rate Limiting and Verbosity
 
-Control API request behavior:
+Control API request behaviour:
 
 ```python
 from bioservices import KEGG
@@ -315,7 +315,7 @@ List all organisms: `k.list("organism")` or `k.organismIds`
 BioServices works well with:
 - **BioPython**: Sequence analysis on retrieved FASTA data
 - **Pandas**: Tabular data manipulation
-- **PyMOL**: 3D structure visualization (retrieve PDB IDs)
+- **PyMOL**: 3D structure visualisation (retrieve PDB IDs)
 - **NetworkX**: Network analysis of pathway interactions
 - **Galaxy**: Custom tool wrappers for workflow platforms
 
@@ -325,7 +325,7 @@ BioServices works well with:
 
 Executable Python scripts demonstrating complete workflows:
 
-- `protein_analysis_workflow.py`: End-to-end protein characterization
+- `protein_analysis_workflow.py`: End-to-end protein characterisation
 - `pathway_analysis.py`: KEGG pathway discovery and network extraction
 - `compound_cross_reference.py`: Multi-database compound searching
 - `batch_id_converter.py`: Bulk identifier mapping utility
@@ -336,9 +336,9 @@ Scripts can be executed directly or adapted for specific use cases.
 
 Detailed documentation loaded as needed:
 
-- `services_reference.md`: Comprehensive list of all 40+ services with methods
-- `workflow_patterns.md`: Detailed multi-step analysis workflows
-- `identifier_mapping.md`: Complete guide to cross-database ID conversion
+- `services-reference.md`: Comprehensive list of all 40+ services with methods
+- `workflow-patterns.md`: Detailed multi-step analysis workflows
+- `identifier-mapping.md`: Complete guide to cross-database ID conversion
 
 Load references when working with specific services or complex integration tasks.
 
@@ -355,4 +355,4 @@ Dependencies are automatically managed. Package is tested on Python 3.9-3.12.
 For detailed API documentation and advanced features, refer to:
 - Official documentation: https://bioservices.readthedocs.io/
 - Source code: https://github.com/cokelaer/bioservices
-- Service-specific references in `references/services_reference.md`
+- Service-specific references in `references/services-reference.md`

@@ -2,7 +2,7 @@
 
 ## Overview
 
-ESM3 is a frontier multimodal generative language model that reasons over the sequence, structure, and function of proteins. It uses iterative masked language modeling to simultaneously generate across these three modalities.
+ESM3 is a frontier multimodal generative language model that reasons over the sequence, structure, and function of proteins. It uses iterative masked language modelling to simultaneously generate across these three modalities.
 
 ## Model Architecture
 
@@ -76,7 +76,7 @@ protein = ESMProtein(
 
 ### GenerationConfig Class
 
-Controls generation behavior and parameters.
+Controls generation behaviour and parameters.
 
 **Basic Configuration:**
 
@@ -367,7 +367,7 @@ result = model.generate(
 )
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Memory Management
 

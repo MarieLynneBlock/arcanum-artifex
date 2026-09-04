@@ -1,6 +1,6 @@
 ---
-description: Constraint-based metabolic modeling (COBRA). FBA, FVA, gene knockouts, flux sampling, SBML models, for systems biology and metabolic engineering analysis.
 name: cobrapy
+description: Constraint-based metabolic modelling (COBRA). FBA, FVA, gene knockouts, flux sampling, SBML models, for systems biology and metabolic engineering analysis.
 license: GPL-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,11 +10,11 @@ metadata:
 
 ## Overview
 
-COBRApy is a Python library for constraint-based reconstruction and analysis (COBRA) of metabolic models, essential for systems biology research. Work with genome-scale metabolic models, perform computational simulations of cellular metabolism, conduct metabolic engineering analyses, and predict phenotypic behaviors.
+COBRApy is a Python library for constraint-based reconstruction and analysis (COBRA) of metabolic models, essential for systems biology research. Work with genome-scale metabolic models, perform computational simulations of cellular metabolism, conduct metabolic engineering analyses, and predict phenotypic behaviours.
 
 ## Core Capabilities
 
-COBRApy provides comprehensive tools organized into several key areas:
+COBRApy provides comprehensive tools organised into several key areas:
 
 ### 1. Model Management
 
@@ -84,7 +84,7 @@ model.objective = "ATPM"
 solution = model.optimize()
 ```
 
-Parsimonious FBA (minimize total flux):
+Parsimonious FBA (minimise total flux):
 ```python
 from cobra.flux_analysis import pfba
 solution = pfba(model)
@@ -322,7 +322,7 @@ print(f"Found {len(essential_genes)} essential genes")
 neutral_genes = results[results["growth"] > 0.9 * solution.objective_value]
 ```
 
-### Workflow 3: Media Optimization
+### Workflow 3: Media Optimisation
 
 ```python
 from cobra.io import load_model
@@ -436,18 +436,18 @@ Special reactions representing metabolite import/export:
 
 1. **Use context managers** for temporary modifications to avoid state management issues
 2. **Validate models** before analysis using `model.slim_optimize()` to ensure feasibility
-3. **Check solution status** after optimization - `optimal` indicates successful solve
+3. **Check solution status** after optimisation - `optimal` indicates successful solve
 4. **Use loopless FVA** when thermodynamic feasibility matters
 5. **Set fraction_of_optimum** appropriately in FVA to explore suboptimal space
 6. **Parallelize** computationally expensive operations (sampling, double deletions)
 7. **Prefer SBML format** for model exchange and long-term storage
-8. **Use slim_optimize()** when only objective value needed for performance
+8. **Use slim_optimise()** when only objective value needed for performance
 9. **Validate flux samples** to ensure numerical stability
 
 ## Troubleshooting
 
 **Infeasible solutions**: Check medium constraints, reaction bounds, and model consistency
-**Slow optimization**: Try different solvers (GLPK, CPLEX, Gurobi) via `model.solver`
+**Slow optimisation**: Try different solvers (GLPK, CPLEX, Gurobi) via `model.solver`
 **Unbounded solutions**: Verify exchange reactions have appropriate upper bounds
 **Import errors**: Ensure correct file format and valid SBML identifiers
 
@@ -455,6 +455,6 @@ Special reactions representing metabolite import/export:
 
 For detailed workflows and API patterns, refer to:
 - `references/workflows.md` - Comprehensive step-by-step workflow examples
-- `references/api_quick_reference.md` - Common function signatures and patterns
+- `references/api-quick-reference.md` - Common function signatures and patterns
 
 Official documentation: https://cobrapy.readthedocs.io/en/latest/

@@ -119,7 +119,7 @@ This workspace contains JSON Schema definitions for Power Platform Custom Connec
    - You should use `routerequesttoendpoint` for backend routing to different API endpoints.
    - You should implement `setqueryparameter` for setting default values on query parameters.
    - You should use `updatenextlink` for pagination scenarios to handle paging correctly.
-   - You should apply `pollingtrigger` for trigger operations that require polling behavior.
+   - You should apply `pollingtrigger` for trigger operations that require polling behaviour.
 
 3. **Branding and Metadata**:
    - You must always specify `iconBrandColor` as this property is required for all connectors.

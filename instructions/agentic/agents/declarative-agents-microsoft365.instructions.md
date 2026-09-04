@@ -7,7 +7,7 @@ applyTo: "**.json, **.ts, **.tsp, **manifest.json, **agent.json, **declarative-a
 
 ## Overview
 
-Microsoft 365 Copilot declarative agents are powerful custom AI assistants that extend Microsoft 365 Copilot with specialized capabilities, enterprise data access, and custom behaviors. These guidelines provide comprehensive development practices for creating production-ready agents using the latest v1.5 JSON schema specification with full Microsoft 365 Agents Toolkit integration.
+Microsoft 365 Copilot declarative agents are powerful custom AI assistants that extend Microsoft 365 Copilot with specialised capabilities, enterprise data access, and custom behaviours. These guidelines provide comprehensive development practices for creating production-ready agents using the latest v1.5 JSON schema specification with full Microsoft 365 Agents Toolkit integration.
 
 ## Schema Specification v1.5
 
@@ -232,11 +232,11 @@ graph LR
 ### 3. Environment Promotion
 - **Development**: Full debugging, verbose logging
 - **Staging**: Production-like testing, performance monitoring  
-- **Production**: Optimized performance, minimal logging
+- **Production**: Optimised performance, minimal logging
 
 ## Advanced Features
 
-### Behavior Overrides
+### Behaviour Overrides
 ```json
 {
   "instructions": "You are a specialized financial analyst agent. Always provide disclaimers for financial advice.",
@@ -270,7 +270,7 @@ graph LR
 - Response time per capability
 - User engagement with conversation starters
 - Error rates and failure patterns
-- Capability utilization statistics
+- Capability utilisation statistics
 
 ### Logging Strategy
 ```typescript
@@ -290,7 +290,7 @@ const log = {
 
 ### Data Privacy
 - Implement proper data handling for sensitive information
-- Ensure compliance with GDPR, CCPA, and organizational policies
+- Ensure compliance with GDPR, CCPA, and organisational policies
 - Use appropriate access controls for enterprise capabilities
 
 ### Security Considerations  
@@ -304,7 +304,7 @@ const log = {
 ### Common Issues
 1. **Schema Validation Errors**: Check character limits and required fields
 2. **Capability Conflicts**: Verify capability combinations are supported
-3. **Performance Issues**: Monitor response times and optimize instructions
+3. **Performance Issues**: Monitor response times and optimise instructions
 4. **Deployment Failures**: Validate environment configuration and permissions
 
 ### Debug Tools

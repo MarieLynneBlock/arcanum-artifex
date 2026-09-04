@@ -39,11 +39,11 @@ sample_dataset = dataset.set_task(mortality_prediction_mimic4_fn)
 - Improved label quality
 
 **eICU Mortality** (`mortality_prediction_eicu_fn`)
-- Multi-center ICU mortality prediction
+- Multi-centre ICU mortality prediction
 - Accounts for hospital-level variation
 
 **OMOP Mortality** (`mortality_prediction_omop_fn`)
-- Standardized mortality prediction
+- Standardised mortality prediction
 - Works with OMOP common data model
 
 **In-Hospital Mortality** (`inhospital_mortality_prediction_mimic4_fn`)
@@ -52,7 +52,7 @@ sample_dataset = dataset.set_task(mortality_prediction_mimic4_fn)
 - Earlier prediction window than next-visit mortality
 
 **StageNet Mortality** (`mortality_prediction_mimic4_fn_stagenet`)
-- Specialized for StageNet model architecture
+- Specialised for StageNet model architecture
 - Temporal stage-aware prediction
 
 ### Hospital Readmission Prediction
@@ -67,14 +67,14 @@ sample_dataset = dataset.set_task(mortality_prediction_mimic4_fn)
 
 **MIMIC-IV Readmission** (`readmission_prediction_mimic4_fn`)
 - Enhanced readmission features
-- Improved temporal modeling
+- Improved temporal modelling
 
 **eICU Readmission** (`readmission_prediction_eicu_fn`)
 - ICU-specific readmission risk
 - Multi-site data
 
 **OMOP Readmission** (`readmission_prediction_omop_fn`)
-- Standardized readmission prediction
+- Standardised readmission prediction
 
 ### Length of Stay Prediction
 
@@ -94,7 +94,7 @@ sample_dataset = dataset.set_task(mortality_prediction_mimic4_fn)
 - Multi-hospital data
 
 **OMOP Length of Stay** (`length_of_stay_prediction_omop_fn`)
-- Standardized LOS prediction
+- Standardised LOS prediction
 
 ### Drug Recommendation
 
@@ -108,20 +108,20 @@ sample_dataset = dataset.set_task(mortality_prediction_mimic4_fn)
 
 **MIMIC-IV Drug Recommendation** (`drug_recommendation_mimic4_fn`)
 - Updated medication data
-- Enhanced interaction modeling
+- Enhanced interaction modelling
 
 **eICU Drug Recommendation** (`drug_recommendation_eicu_fn`)
 - Critical care medication recommendations
 
 **OMOP Drug Recommendation** (`drug_recommendation_omop_fn`)
-- Standardized drug recommendation
+- Standardised drug recommendation
 
 **Key Considerations:**
 - Handles polypharmacy scenarios
 - Multi-label prediction (multiple drugs per patient)
 - Can integrate with SafeDrug/GAMENet models for safety-aware recommendations
 
-## Specialized Clinical Tasks
+## Specialised Clinical Tasks
 
 ### Medical Coding
 
@@ -159,7 +159,7 @@ sample_dataset = dataset.set_task(mortality_prediction_mimic4_fn)
 - Large-scale sleep study data
 - Population-level sleep analysis
 
-**Standardized Labels:**
+**Standardised Labels:**
 - Wake (W)
 - Non-REM Stage 1 (N1)
 - Non-REM Stage 2 (N2)
@@ -181,7 +181,7 @@ sample_dataset = dataset.set_task(mortality_prediction_mimic4_fn)
 - Output: Event type and timing
 
 **Seizure Detection** (`seizure_detection_tusz_fn`)
-- Specialized epileptic seizure detection
+- Specialised epileptic seizure detection
 - Critical for epilepsy monitoring
 - Input: Continuous EEG
 - Output: Seizure/non-seizure classification
@@ -364,7 +364,7 @@ model = Transformer(
 
 ## Best Practices
 
-1. **Match task to clinical question**: Choose predefined tasks when available for standardized benchmarking
+1. **Match task to clinical question**: Choose predefined tasks when available for standardised benchmarking
 
 2. **Consider temporal windows**: Ensure sufficient history for meaningful predictions
 

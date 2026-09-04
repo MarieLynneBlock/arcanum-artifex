@@ -1,6 +1,6 @@
 ---
-description: Process and manipulate images using ImageMagick. Supports resizing, format conversion, batch processing, and retrieving image metadata. Use when working with images, creating thumbnails, resizing wallpapers, or performing batch image operations.
 name: image-manipulation-image-magick
+description: Process and manipulate images using ImageMagick. Supports resizing, format conversion, batch processing, and retrieving image metadata. Use when working with images, creating thumbnails, resizing wallpapers, or performing batch image operations.
 compatibility: Requires ImageMagick installed and available as `magick` on PATH. Cross-platform examples provided for PowerShell (Windows) and Bash (Linux/macOS).
 metadata:
   skill-author: 'Marie-Lynne Block'
@@ -33,7 +33,7 @@ Use this skill when you need to:
 ### 1. Image Information
 
 - Get image dimensions (width x height)
-- Retrieve detailed metadata (format, color space, etc.)
+- Retrieve detailed metadata (format, colour space, etc.)
 - Identify image format
 
 ### 2. Image Resizing

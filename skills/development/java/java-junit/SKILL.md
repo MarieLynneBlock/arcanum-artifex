@@ -1,6 +1,6 @@
 ---
-description: 'Get best practices for JUnit 5 unit testing, including data-driven tests'
 name: java-junit
+description: 'Get best practices for JUnit 5 unit testing, including data-driven tests'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -28,7 +28,7 @@ Your goal is to help me write effective unit tests with JUnit 5, covering both s
 
 ## Standard Tests
 
-- Keep tests focused on a single behavior.
+- Keep tests focused on a single behaviour.
 - Avoid testing multiple conditions in one test method.
 - Make tests independent and idempotent (can run in any order).
 - Avoid test interdependencies.
@@ -59,7 +59,7 @@ Your goal is to help me write effective unit tests with JUnit 5, covering both s
 ## Test Organization
 
 - Group tests by feature or component using packages.
-- Use `@Tag` to categorize tests (e.g., `@Tag("fast")`, `@Tag("integration")`).
+- Use `@Tag` to categorise tests (e.g., `@Tag("fast")`, `@Tag("integration")`).
 - Use `@TestMethodOrder(MethodOrderer.OrderAnnotation.class)` and `@Order` to control test execution order when strictly necessary.
 - Use `@Disabled` to temporarily skip a test method or class, providing a reason.
-- Use `@Nested` to group tests in a nested inner class for better organization and structure.
+- Use `@Nested` to group tests in a nested inner class for better organisation and structure.

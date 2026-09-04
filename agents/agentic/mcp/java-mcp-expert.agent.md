@@ -1,9 +1,10 @@
 ---
-description: 'Java MCP expert for building, reviewing, and debugging Model Context Protocol servers with Java SDK, Reactor, and Spring Boot integration.'
 name: 'Java MCP Expert'
+description: 'Java MCP expert for building, reviewing, and debugging Model Context Protocol servers with Java SDK, Reactor, and Spring Boot integration.'
 tools: ['read', 'search', 'edit', 'execute', 'web']
 metadata:
   agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Java MCP Expert
@@ -163,7 +164,7 @@ The Java SDK supports:
 - HTTP transport configuration
 - Servlet integration
 - Context propagation for tracing
-- Performance optimization
+- Performance optimisation
 - Deployment strategies
 - Maven and Gradle setup
 

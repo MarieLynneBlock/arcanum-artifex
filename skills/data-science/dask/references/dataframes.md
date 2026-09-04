@@ -27,7 +27,7 @@ A Dask DataFrame is divided into multiple pandas DataFrames (partitions) along t
 
 **Use Dask When**:
 - Dataset exceeds available RAM
-- Computations require significant time and pandas optimization hasn't helped
+- Computations require significant time and pandas optimisation hasn't helped
 - Need to scale from prototype (pandas) to production (larger data)
 - Working with multiple files that should be processed together
 
@@ -60,7 +60,7 @@ ddf = dd.read_parquet('s3://mybucket/data/*.parquet')
 ddf = dd.read_parquet('data/year=*/month=*/day=*.parquet')
 ```
 
-### Optimizations
+### Optimisations
 ```python
 # Specify columns to read (reduces memory)
 ddf = dd.read_parquet('data.parquet', columns=['col1', 'col2'])
@@ -243,7 +243,7 @@ pdf = ddf.compute()
 - Complex joins: Depends on data distribution
 - Row-wise apply: Creates many tasks
 
-### Optimization Tips
+### Optimisation Tips
 
 **1. Select Columns Early**
 ```python
@@ -326,7 +326,7 @@ result = ddf.groupby('category')['value'].sum().compute()
 Some pandas operations are not implemented in Dask:
 - Some string methods
 - Certain window functions
-- Some specialized statistical functions
+- Some specialised statistical functions
 
 ### Partitioning Matters
 - Operations within partitions are efficient

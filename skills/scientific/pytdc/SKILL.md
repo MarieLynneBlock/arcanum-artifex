@@ -1,6 +1,6 @@
 ---
-description: Therapeutics Data Commons. AI-ready drug discovery datasets (ADME, toxicity, DTI), benchmarks, scaffold splits, molecular oracles, for therapeutic ML and pharmacological prediction.
 name: pytdc
+description: Therapeutics Data Commons. AI-ready drug discovery datasets (ADME, toxicity, DTI), benchmarks, scaffold splits, molecular oracles, for therapeutic ML and pharmacological prediction.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,18 +10,18 @@ metadata:
 
 ## Overview
 
-PyTDC is an open-science platform providing AI-ready datasets and benchmarks for drug discovery and development. Access curated datasets spanning the entire therapeutics pipeline with standardized evaluation metrics and meaningful data splits, organized into three categories: single-instance prediction (molecular/protein properties), multi-instance prediction (drug-target interactions, DDI), and generation (molecule generation, retrosynthesis).
+PyTDC is an open-science platform providing AI-ready datasets and benchmarks for drug discovery and development. Access curated datasets spanning the entire therapeutics pipeline with standardised evaluation metrics and meaningful data splits, organised into three categories: single-instance prediction (molecular/protein properties), multi-instance prediction (drug-target interactions, DDI), and generation (molecule generation, retrosynthesis).
 
 ## When to Use This Skill
 
 This skill should be used when:
 - Working with drug discovery or therapeutic ML datasets
-- Benchmarking machine learning models on standardized pharmaceutical tasks
+- Benchmarking machine learning models on standardised pharmaceutical tasks
 - Predicting molecular properties (ADME, toxicity, bioactivity)
 - Predicting drug-target or drug-drug interactions
 - Generating novel molecules with desired properties
 - Accessing curated datasets with proper train/test splits (scaffold, cold-split)
-- Using molecular oracles for property optimization
+- Using molecular oracles for property optimisation
 
 ## Installation & Setup
 
@@ -211,7 +211,7 @@ data = MolGen(name='ChEMBL_V29')
 split = data.get_split()
 ```
 
-Use with oracles to optimize for specific properties:
+Use with oracles to optimise for specific properties:
 
 ```python
 from tdc import Oracle
@@ -223,7 +223,7 @@ See `references/oracles.md` for all available oracle functions.
 
 ### 2. Retrosynthesis (RetroSyn)
 
-Predict reactants needed to synthesize a target molecule.
+Predict reactants needed to synthesise a target molecule.
 
 ```python
 from tdc.generation import RetroSyn
@@ -275,13 +275,13 @@ Available benchmark groups include collections for:
 - ADMET properties
 - Drug-target interactions
 - Drug combination prediction
-- And more specialized therapeutic tasks
+- And more specialised therapeutic tasks
 
 For benchmark evaluation workflows, see `scripts/benchmark_evaluation.py`.
 
 ## Data Functions
 
-TDC provides comprehensive data processing utilities organized into four categories.
+TDC provides comprehensive data processing utilities organised into four categories.
 
 ### 1. Dataset Splits
 
@@ -307,7 +307,7 @@ split = data.get_split(method='cold_target', seed=1)  # Unseen targets in test
 
 ### 2. Model Evaluation
 
-Use standardized metrics for evaluation:
+Use standardised metrics for evaluation:
 
 ```python
 from tdc import Evaluator
@@ -348,7 +348,7 @@ For comprehensive utilities documentation, see `references/utilities.md`.
 
 ### 4. Molecule Generation Oracles
 
-TDC provides 17+ oracle functions for molecular optimization:
+TDC provides 17+ oracle functions for molecular optimisation:
 
 ```python
 from tdc import Oracle
@@ -445,7 +445,7 @@ This skill includes bundled resources for common TDC workflows:
 
 ### references/
 
-- `datasets.md`: Comprehensive catalog of all available datasets organized by task type
+- `datasets.md`: Comprehensive catalogue of all available datasets organised by task type
 - `oracles.md`: Complete documentation of all 17+ molecule generation oracles
 - `utilities.md`: Detailed guide to data processing, splitting, and evaluation utilities
 

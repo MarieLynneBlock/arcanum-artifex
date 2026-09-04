@@ -1,6 +1,6 @@
 ---
-description: 'Generate high-quality Product Requirements Documents (PRDs) for software systems and AI-powered features. Includes executive summaries, user stories, technical specifications, and risk analysis.'
 name: prd
+description: 'Generate high-quality Product Requirements Documents (PRDs) for software systems and AI-powered features. Includes executive summaries, user stories, technical specifications, and risk analysis.'
 license: MIT
 metadata:
   skill-author: 'Marie-Lynne Block'
@@ -38,7 +38,7 @@ Before writing a single line of the PRD, you **MUST** interrogate the user to fi
 
 ### Phase 2: Analysis & Scoping
 
-Synthesize the user's input. Identify dependencies and hidden complexities.
+Synthesise the user's input. Identify dependencies and hidden complexities.
 
 - Map out the **User Flow**.
 - Define **Non-Goals** to protect the timeline.

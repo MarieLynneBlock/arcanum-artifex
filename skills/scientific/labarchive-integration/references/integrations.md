@@ -13,7 +13,7 @@ LabArchives integrates with numerous scientific software platforms to streamline
 Export protocols directly from Protocols.io to LabArchives notebooks.
 
 **Use cases:**
-- Standardize experimental procedures across lab notebooks
+- Standardise experimental procedures across lab notebooks
 - Maintain version control for protocols
 - Link protocols to experimental results
 
@@ -219,7 +219,7 @@ Clinical data capture integration with LabArchives for research compliance and a
 
 **Integration approach:**
 - REDCap API exports data to LabArchives entries
-- Automated data synchronization for longitudinal studies
+- Automated data synchronisation for longitudinal studies
 - HIPAA-compliant data handling
 
 **Example workflow:**
@@ -273,7 +273,7 @@ Literature management and citation integration.
 
 **Features:**
 - Citation import from SciSpace to LabArchives
-- PDF annotation synchronization
+- PDF annotation synchronisation
 - Reference management
 
 ## OAuth Authentication for Integrations
@@ -351,7 +351,7 @@ class LabArchivesIntegration:
 
     def _authenticate(self):
         """Get user ID"""
-        # Implementation from authentication_guide.md
+        # Implementation from authentication-guide.md
         pass
 
     def export_data(self, source_data, nbid, title):

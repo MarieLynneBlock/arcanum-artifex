@@ -1,16 +1,16 @@
 ---
-description: Query NHGRI-EBI GWAS Catalog for SNP-trait associations. Search variants by rs ID, disease/trait, gene, retrieve p-values and summary statistics, for genetic epidemiology and polygenic risk scores.
 name: gwas-database
+description: Query NHGRI-EBI GWAS Catalogue for SNP-trait associations. Search variants by rs ID, disease/trait, gene, retrieve p-values and summary statistics, for genetic epidemiology and polygenic risk scores.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
 
-# GWAS Catalog Database
+# GWAS Catalogue Database
 
 ## Overview
 
-The GWAS Catalog is a comprehensive repository of published genome-wide association studies maintained by the National Human Genome Research Institute (NHGRI) and the European Bioinformatics Institute (EBI). The catalog contains curated SNP-trait associations from thousands of GWAS publications, including genetic variants, associated traits and diseases, p-values, effect sizes, and full summary statistics for many studies.
+The GWAS Catalogue is a comprehensive repository of published genome-wide association studies maintained by the National Human Genome Research Institute (NHGRI) and the European Bioinformatics Institute (EBI). The catalogue contains curated SNP-trait associations from thousands of GWAS publications, including genetic variants, associated traits and diseases, p-values, effect sizes, and full summary statistics for many studies.
 
 ## When to Use This Skill
 
@@ -29,9 +29,9 @@ This skill should be used when queries involve:
 
 ## Core Capabilities
 
-### 1. Understanding GWAS Catalog Data Structure
+### 1. Understanding GWAS Catalogue Data Structure
 
-The GWAS Catalog is organized around four core entities:
+The GWAS Catalogue is organised around four core entities:
 
 - **Studies**: GWAS publications with metadata (PMID, author, cohort details)
 - **Associations**: SNP-trait associations with statistical evidence (p ≤ 5×10⁻⁸)
@@ -85,10 +85,10 @@ Returns study details and all reported associations.
 
 ### 3. REST API Access
 
-The GWAS Catalog provides two REST APIs for programmatic access:
+The GWAS Catalogue provides two REST APIs for programmatic access:
 
 **Base URLs:**
-- GWAS Catalog API: `https://www.ebi.ac.uk/gwas/rest/api`
+- GWAS Catalogue API: `https://www.ebi.ac.uk/gwas/rest/api`
 - Summary Statistics API: `https://www.ebi.ac.uk/gwas/summary-statistics/api`
 
 **API Documentation:**
@@ -229,7 +229,7 @@ variants_in_region = response.json()
 
 ### 5. Working with Summary Statistics
 
-The GWAS Catalog hosts full summary statistics for many studies, providing access to all tested variants (not just genome-wide significant hits).
+The GWAS Catalogue hosts full summary statistics for many studies, providing access to all tested variants (not just genome-wide significant hits).
 
 **Access Methods:**
 1. **FTP download**: http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/
@@ -240,7 +240,7 @@ The GWAS Catalog hosts full summary statistics for many studies, providing acces
 - Filter by chromosome, position, p-value
 - Query specific variants across studies
 - Retrieve effect sizes and allele frequencies
-- Access harmonized and standardized data
+- Access harmonised and standardised data
 
 **Example: Download summary statistics for a study**
 ```python
@@ -260,7 +260,7 @@ study_info = response.json()
 
 ### 6. Data Integration and Cross-referencing
 
-The GWAS Catalog provides links to external resources:
+The GWAS Catalogue provides links to external resources:
 
 **Genomic Databases:**
 - Ensembl: Gene annotations and variant consequences
@@ -269,11 +269,11 @@ The GWAS Catalog provides links to external resources:
 
 **Functional Resources:**
 - Open Targets: Target-disease associations
-- PGS Catalog: Polygenic risk scores
+- PGS Catalogue: Polygenic risk scores
 - UCSC Genome Browser: Genomic context
 
 **Phenotype Resources:**
-- EFO (Experimental Factor Ontology): Standardized trait terms
+- EFO (Experimental Factor Ontology): Standardised trait terms
 - OMIM: Disease gene relationships
 - Disease Ontology: Disease hierarchies
 
@@ -331,7 +331,7 @@ associations_response = requests.get(associations_url)
    url = f"https://www.ebi.ac.uk/gwas/rest/api/singleNucleotidePolymorphisms/{rs_id}/associations"
    ```
 
-3. **Analyze pleiotropy:**
+3. **Analyse pleiotropy:**
    - Identify all traits associated with this variant
    - Review effect directions across traits
    - Look for shared biological pathways
@@ -354,7 +354,7 @@ associations_response = requests.get(associations_url)
    - Query variants in region
    - Include promoter and regulatory regions (extend boundaries)
 
-3. **Analyze association patterns:**
+3. **Analyse association patterns:**
    - Identify traits associated with variants in this gene
    - Look for consistent associations across studies
    - Review effect sizes and directions
@@ -394,7 +394,7 @@ associations_response = requests.get(associations_url)
    - Document search strategy and date
    - Create reproducible analysis scripts
 
-### Workflow 5: Accessing and Analyzing Summary Statistics
+### Workflow 5: Accessing and Analysing Summary Statistics
 
 1. **Identify studies with summary statistics:**
    - Browse summary statistics portal
@@ -413,7 +413,7 @@ associations_response = requests.get(associations_url)
    params = {"start": start_pos, "end": end_pos}
    ```
 
-4. **Process and analyze:**
+4. **Process and analyse:**
    - Filter by p-value thresholds
    - Extract effect sizes and confidence intervals
    - Perform downstream analyses (fine-mapping, colocalization, etc.)
@@ -453,7 +453,7 @@ Results are paginated (default 20 items per page). Navigate using:
 - Start with web interface to identify relevant EFO terms and study accessions
 - Use API for bulk data extraction and automated analyses
 - Implement pagination handling for large result sets
-- Cache API responses to minimize redundant requests
+- Cache API responses to minimise redundant requests
 
 ### Data Interpretation
 - Always check p-value thresholds (genome-wide: 5×10⁻⁸)
@@ -467,18 +467,18 @@ Results are paginated (default 20 items per page). Navigate using:
 - Use summary statistics downloads for genome-wide analyses
 - Implement appropriate delays between API calls
 - Cache results locally when performing iterative analyses
-- Cite the GWAS Catalog in publications
+- Cite the GWAS Catalogue in publications
 
 ### Data Quality Considerations
-- GWAS Catalog curates published associations (may contain inconsistencies)
-- Effect sizes reported as published (may need harmonization)
+- GWAS Catalogue curates published associations (may contain inconsistencies)
+- Effect sizes reported as published (may need harmonisation)
 - Some studies report conditional or joint associations
 - Check for study overlap when combining results
 - Be aware of ascertainment and selection biases
 
 ## Python Integration Example
 
-Complete workflow for querying and analyzing GWAS data:
+Complete workflow for querying and analysing GWAS data:
 
 ```python
 import requests
@@ -542,7 +542,7 @@ print(f"Unique variants: {df['variant'].nunique()}")
 
 ## Resources
 
-### references/api_reference.md
+### references/api-reference.md
 
 Comprehensive API documentation including:
 - Detailed endpoint specifications for both APIs
@@ -561,29 +561,29 @@ Consult this reference when:
 
 ### Training Materials
 
-The GWAS Catalog team provides workshop materials:
-- GitHub repository: https://github.com/EBISPOT/GWAS_Catalog-workshop
+The GWAS Catalogue team provides workshop materials:
+- GitHub repository: https://github.com/EBISPOT/GWAS_Catalogue-workshop
 - Jupyter notebooks with example queries
 - Google Colab integration for cloud execution
 
 ## Important Notes
 
 ### Data Updates
-- The GWAS Catalog is updated regularly with new publications
+- The GWAS Catalogue is updated regularly with new publications
 - Re-run queries periodically for comprehensive coverage
 - Summary statistics are added as studies release data
 - EFO mappings may be updated over time
 
 ### Citation Requirements
-When using GWAS Catalog data, cite:
-- Sollis E, et al. (2023) The NHGRI-EBI GWAS Catalog: knowledgebase and deposition resource. Nucleic Acids Research. PMID: 37953337
+When using GWAS Catalogue data, cite:
+- Sollis E, et al. (2023) The NHGRI-EBI GWAS Catalogue: knowledgebase and deposition resource. Nucleic Acids Research. PMID: 37953337
 - Include access date and version when available
 - Cite original studies when discussing specific findings
 
 ### Limitations
 - Not all GWAS publications are included (curation criteria apply)
 - Full summary statistics available for subset of studies
-- Effect sizes may require harmonization across studies
+- Effect sizes may require harmonisation across studies
 - Population diversity is growing but historically limited
 - Some associations represent conditional or joint effects
 
@@ -595,11 +595,11 @@ When using GWAS Catalog data, cite:
 
 ## Additional Resources
 
-- **GWAS Catalog website**: https://www.ebi.ac.uk/gwas/
+- **GWAS Catalogue website**: https://www.ebi.ac.uk/gwas/
 - **Documentation**: https://www.ebi.ac.uk/gwas/docs
 - **API documentation**: https://www.ebi.ac.uk/gwas/rest/docs/api
 - **Summary Statistics API**: https://www.ebi.ac.uk/gwas/summary-statistics/docs/
 - **FTP site**: http://ftp.ebi.ac.uk/pub/databases/gwas/
-- **Training materials**: https://github.com/EBISPOT/GWAS_Catalog-workshop
-- **PGS Catalog** (polygenic scores): https://www.pgscatalog.org/
+- **Training materials**: https://github.com/EBISPOT/GWAS_Catalogue-workshop
+- **PGS Catalogue** (polygenic scores): https://www.pgscatalog.org/
 - **Help and support**: gwas-info@ebi.ac.uk

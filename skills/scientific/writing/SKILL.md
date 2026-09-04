@@ -1,6 +1,6 @@
 ---
-description: "Use this skill to create high-quality academic papers, literature reviews, grant proposals, clinical reports, and other research and scientific documents backed by comprehensive research and real, verifiable citations. Use this skill whenever the user asks for written output such as a report, paper...etc."
 name: writing
+description: "Use this skill to create high-quality academic papers, literature reviews, grant proposals, clinical reports, and other research and scientific documents backed by comprehensive research and real, verifiable citations. Use this skill whenever the user asks for written output such as a report, paper...etc."
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -115,7 +115,7 @@ This is non-negotiable. Research results are expensive to obtain and critical fo
 
 ### Phase 1: Planning and Execution
 
-1. **Analyze the Request**
+1. **Analyse the Request**
    - Identify document type and scientific field
    - Note specific requirements (journal, citation style, page limits)
    - **Default to LaTeX** unless user specifies otherwise
@@ -148,7 +148,7 @@ This is non-negotiable. Research results are expensive to obtain and critical fo
 
 ## Special Document Types
 
-For specialized documents, activate the dedicated skill which contains detailed templates, workflows, and requirements:
+For specialised documents, activate the dedicated skill which contains detailed templates, workflows, and requirements:
 
 | Document Type | Skill to Activate |
 |--------------|-------------------|
@@ -265,7 +265,7 @@ Every scientific writeup (research papers, literature reviews, reports) MUST inc
 - **Content**: Visual summary of the entire paper's key message
 - **Style**: Clean, professional, suitable for journal table of contents
 - **Size**: Landscape orientation, typically 1200x600px or similar aspect ratio
-- **Elements**: Include key workflow steps, main results visualization, and conclusions
+- **Elements**: Include key workflow steps, main results visualisation, and conclusions
 - Log: `[HH:MM:SS] GENERATED: Graphical abstract for paper summary`
 
 **Activate the `scientific-schematics` skill EXTENSIVELY for technical diagrams:**
@@ -275,17 +275,17 @@ Every scientific writeup (research papers, literature reviews, reports) MUST inc
 - Biological pathways, molecular structures, circuit diagrams
 - Data analysis pipelines, experimental workflows
 - Conceptual frameworks, comparison matrices
-- Decision trees, algorithm visualizations
+- Decision trees, algorithm visualisations
 - Timeline diagrams, Gantt charts
-- Any concept that benefits from schematic visualization
+- Any concept that benefits from schematic visualisation
 
 **Activate the `generate-image` skill EXTENSIVELY for visual content:**
 - Photorealistic illustrations of concepts
-- Artistic visualizations
+- Artistic visualisations
 - Medical/anatomical illustrations
 - Environmental/ecological scenes
-- Equipment and lab setup visualizations
-- Product mockups, prototype visualizations
+- Equipment and lab setup visualisations
+- Product mockups, prototype visualisations
 - Cover images, header graphics
 - Any visual that enhances understanding or engagement
 
@@ -302,7 +302,7 @@ Every scientific writeup (research papers, literature reviews, reports) MUST inc
 | Clinical reports | 3 | 4-6 | `scientific-schematics` (pathways, algorithms) |
 
 **Figure Generation Workflow:**
-1. **Plan figures BEFORE writing** - identify all concepts needing visualization
+1. **Plan figures BEFORE writing** - identify all concepts needing visualisation
 2. **Generate graphical abstract first** - sets the visual tone
 3. **Generate 2-3 candidates per figure** - select the best
 4. **Iterate for quality** - regenerate if needed
@@ -310,7 +310,7 @@ Every scientific writeup (research papers, literature reviews, reports) MUST inc
 
 **When in Doubt, Generate a Figure:**
 - If a concept is complex -> activate `scientific-schematics`
-- If data is being discussed -> generate a visualization
+- If data is being discussed -> generate a visualisation
 - If a process is described -> generate a flowchart
 - If comparisons are made -> generate a comparison diagram
 - If the reader might benefit from a visual -> generate one
@@ -343,13 +343,13 @@ For each citation in references.bib:
 
 1. **Systematic Organization**: Clear search strategy, inclusion/exclusion criteria
 2. **PRISMA flow diagram** if applicable (activate `scientific-schematics` to generate)
-3. **Comprehensive bibliography** organized by theme
+3. **Comprehensive bibliography** organised by theme
 
 ## Decision Making
 
 **Make independent decisions for:**
 - Standard formatting choices
-- File organization
+- File organisation
 - Technical details (LaTeX packages)
 - Choosing between acceptable approaches
 

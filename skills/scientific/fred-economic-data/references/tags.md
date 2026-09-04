@@ -1,6 +1,6 @@
 # FRED Tags Endpoints
 
-Tags endpoints provide access to FRED tags, which are attributes assigned to series for organization and discovery.
+Tags endpoints provide access to FRED tags, which are attributes assigned to series for organisation and discovery.
 
 ## Table of Contents
 
@@ -10,7 +10,7 @@ Tags endpoints provide access to FRED tags, which are attributes assigned to ser
 
 ## About Tags
 
-Tags are attributes assigned to series that help categorize and discover data. Tags are organized into groups:
+Tags are attributes assigned to series that help categorise and discover data. Tags are organised into groups:
 
 | Group ID | Description | Examples |
 |----------|-------------|----------|

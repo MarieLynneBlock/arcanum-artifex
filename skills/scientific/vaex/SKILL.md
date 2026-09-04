@@ -1,6 +1,6 @@
 ---
-description: Use this skill for processing and analyzing large tabular datasets (billions of rows) that exceed available RAM. Vaex excels at out-of-core DataFrame operations, lazy evaluation, fast aggregations, efficient visualization of big data, and machine learning on large datasets. Apply when users need to work with large CSV/HDF5/Arrow/Parquet files, perform fast statistics on massive datasets, create visualizations of big data, or build ML pipelines that do not fit in memory.
 name: vaex
+description: Use this skill for processing and analysing large tabular datasets (billions of rows) that exceed available RAM. Vaex excels at out-of-core DataFrame operations, lazy evaluation, fast aggregations, efficient visualisation of big data, and machine learning on large datasets. Apply when users need to work with large CSV/HDF5/Arrow/Parquet files, perform fast statistics on massive datasets, create visualisations of big data, or build ML pipelines that do not fit in memory.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,14 +10,14 @@ metadata:
 
 ## Overview
 
-Vaex is a high-performance Python library designed for lazy, out-of-core DataFrames to process and visualize tabular datasets that are too large to fit into RAM. Vaex can process over a billion rows per second, enabling interactive data exploration and analysis on datasets with billions of rows.
+Vaex is a high-performance Python library designed for lazy, out-of-core DataFrames to process and visualise tabular datasets that are too large to fit into RAM. Vaex can process over a billion rows per second, enabling interactive data exploration and analysis on datasets with billions of rows.
 
 ## When to Use This Skill
 
 Use Vaex when:
 - Processing tabular datasets larger than available RAM (gigabytes to terabytes)
 - Performing fast statistical aggregations on massive datasets
-- Creating visualizations and heatmaps of large datasets
+- Creating visualisations and heatmaps of large datasets
 - Building machine learning pipelines on big data
 - Converting between data formats (CSV, HDF5, Arrow, Parquet)
 - Needing lazy evaluation and virtual columns to avoid memory overhead
@@ -29,7 +29,7 @@ Vaex provides six primary capability areas, each documented in detail in the ref
 
 ### 1. DataFrames and Data Loading
 
-Load and create Vaex DataFrames from various sources including files (HDF5, CSV, Arrow, Parquet), pandas DataFrames, NumPy arrays, and dictionaries. Reference `references/core_dataframes.md` for:
+Load and create Vaex DataFrames from various sources including files (HDF5, CSV, Arrow, Parquet), pandas DataFrames, NumPy arrays, and dictionaries. Reference `references/core-dataframes.md` for:
 - Opening large files efficiently
 - Converting from pandas/NumPy/Arrow
 - Working with example datasets
@@ -37,33 +37,33 @@ Load and create Vaex DataFrames from various sources including files (HDF5, CSV,
 
 ### 2. Data Processing and Manipulation
 
-Perform filtering, create virtual columns, use expressions, and aggregate data without loading everything into memory. Reference `references/data_processing.md` for:
+Perform filtering, create virtual columns, use expressions, and aggregate data without loading everything into memory. Reference `references/data-processing.md` for:
 - Filtering and selections
 - Virtual columns and expressions
 - Groupby operations and aggregations
 - String operations and datetime handling
 - Working with missing data
 
-### 3. Performance and Optimization
+### 3. Performance and Optimisation
 
 Leverage Vaex's lazy evaluation, caching strategies, and memory-efficient operations. Reference `references/performance.md` for:
 - Understanding lazy evaluation
 - Using `delay=True` for batching operations
-- Materializing columns when needed
+- Materialising columns when needed
 - Caching strategies
 - Asynchronous operations
 
-### 4. Data Visualization
+### 4. Data Visualisation
 
-Create interactive visualizations of large datasets including heatmaps, histograms, and scatter plots. Reference `references/visualization.md` for:
+Create interactive visualisations of large datasets including heatmaps, histograms, and scatter plots. Reference `references/visualization.md` for:
 - Creating 1D and 2D plots
-- Heatmap visualizations
+- Heatmap visualisations
 - Working with selections
-- Customizing plots and subplots
+- Customising plots and subplots
 
 ### 5. Machine Learning Integration
 
-Build ML pipelines with transformers, encoders, and integration with scikit-learn, XGBoost, and other frameworks. Reference `references/machine_learning.md` for:
+Build ML pipelines with transformers, encoders, and integration with scikit-learn, XGBoost, and other frameworks. Reference `references/machine-learning.md` for:
 - Feature scaling and encoding
 - PCA and dimensionality reduction
 - K-means clustering
@@ -72,7 +72,7 @@ Build ML pipelines with transformers, encoders, and integration with scikit-lear
 
 ### 6. I/O Operations
 
-Efficiently read and write data in various formats with optimal performance. Reference `references/io_operations.md` for:
+Efficiently read and write data in various formats with optimal performance. Reference `references/io-operations.md` for:
 - File format recommendations
 - Export strategies
 - Working with Apache Arrow
@@ -117,20 +117,20 @@ df.export_hdf5('output.hdf5')
 
 The reference files contain detailed information about each capability area. Load references into context based on the specific task:
 
-- **Basic operations**: Start with `references/core_dataframes.md` and `references/data_processing.md`
+- **Basic operations**: Start with `references/core-dataframes.md` and `references/data-processing.md`
 - **Performance issues**: Check `references/performance.md`
-- **Visualization tasks**: Use `references/visualization.md`
-- **ML pipelines**: Reference `references/machine_learning.md`
-- **File I/O**: Consult `references/io_operations.md`
+- **Visualisation tasks**: Use `references/visualization.md`
+- **ML pipelines**: Reference `references/machine-learning.md`
+- **File I/O**: Consult `references/io-operations.md`
 
 ## Best Practices
 
 1. **Use HDF5 or Apache Arrow formats** for optimal performance with large datasets
-2. **Leverage virtual columns** instead of materializing data to save memory
+2. **Leverage virtual columns** instead of materialising data to save memory
 3. **Batch operations** using `delay=True` when performing multiple calculations
 4. **Export to efficient formats** rather than keeping data in CSV
 5. **Use expressions** for complex calculations without intermediate storage
-6. **Profile with `df.stat()`** to understand memory usage and optimize operations
+6. **Profile with `df.stat()`** to understand memory usage and optimise operations
 
 ## Common Patterns
 
@@ -171,9 +171,9 @@ df['is_adult'] = df.age >= 18
 
 This skill includes reference documentation in the `references/` directory:
 
-- `core_dataframes.md` - DataFrame creation, loading, and basic structure
-- `data_processing.md` - Filtering, expressions, aggregations, and transformations
-- `performance.md` - Optimization strategies and lazy evaluation
-- `visualization.md` - Plotting and interactive visualizations
-- `machine_learning.md` - ML pipelines and model integration
-- `io_operations.md` - File formats and data import/export
+- `core-dataframes.md` - DataFrame creation, loading, and basic structure
+- `data-processing.md` - Filtering, expressions, aggregations, and transformations
+- `performance.md` - Optimisation strategies and lazy evaluation
+- `visualization.md` - Plotting and interactive visualisations
+- `machine-learning.md` - ML pipelines and model integration
+- `io-operations.md` - File formats and data import/export

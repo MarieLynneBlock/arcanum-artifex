@@ -1,6 +1,6 @@
 ---
-description: 'Draft performance reviews, self-assessments, peer reviews, and upward feedback in your own voice. Analyzes your contributions, emails, and meeting history via WorkIQ, then produces honest, impact-focused drafts using the STAR format. USE FOR: write my performance review, draft self-assessment, peer review, 360 feedback, annual review, mid-year review, upward feedback, write review for colleague, performance appraisal.'
 name: performance-review-writer
+description: 'Draft performance reviews, self-assessments, peer reviews, and upward feedback in your own voice. Analyses your contributions, emails, and meeting history via WorkIQ, then produces honest, impact-focused drafts using the STAR format. USE FOR: write my performance review, draft self-assessment, peer review, 360 feedback, annual review, mid-year review, upward feedback, write review for colleague, performance appraisal.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -85,7 +85,7 @@ Apply the right structure for the review type (see schemas below). Follow these 
 
 ### Step 4 — Output
 
-1. Present the full draft with a brief note on what evidence was used. Summarize and redact rather than reproduce verbatim content — no raw excerpts, attendee lists, or sensitive personal details
+1. Present the full draft with a brief note on what evidence was used. Summarise and redact rather than reproduce verbatim content — no raw excerpts, attendee lists, or sensitive personal details
 2. Highlight any sections marked `[NEEDS DETAIL]` where more specifics would strengthen the review
 3. Iterate on edits as the user requests
 4. Save the final draft to `outputs/<year>/<month>/` with a descriptive filename (e.g., `2025-review-self-assessment.md` or `2025-peer-review-alex-chen.md`)

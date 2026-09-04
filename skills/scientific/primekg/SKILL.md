@@ -1,6 +1,6 @@
 ---
-description: Query the Precision Medicine Knowledge Graph (PrimeKG) for multiscale biological data including genes, drugs, diseases, phenotypes, and more.
 name: primekg
+description: Query the Precision Medicine Knowledge Graph (PrimeKG) for multiscale biological data including genes, drugs, diseases, phenotypes, and more.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc. (PrimeKG original from Harvard MIMS)'
@@ -14,8 +14,8 @@ PrimeKG is a precision medicine knowledge graph that integrates over 20 primary 
 
 **Key capabilities:**
 - Search for nodes (genes, proteins, drugs, diseases, phenotypes)
-- Retrieve direct neighbors (associated entities and clinical evidence)
-- Analyze local disease context (related genes, drugs, phenotypes)
+- Retrieve direct neighbours (associated entities and clinical evidence)
+- Analyse local disease context (related genes, drugs, phenotypes)
 - Identify drug-disease paths (potential repurposing opportunities)
 
 **Data access:** Programmatic access via `query_primekg.py`. Data is stored at `C:\Users\eamon\Documents\Data\PrimeKG\kg.csv`.
@@ -44,7 +44,7 @@ results = search_nodes("Alzheimer", node_type="disease")
 # Returns: [{"id": "EFO_0000249", "type": "disease", "name": "Alzheimer's disease", ...}]
 ```
 
-### 2. Get Neighbors (Direct Associations)
+### 2. Get Neighbours (Direct Associations)
 
 Retrieve all connected nodes and relationship types.
 
@@ -56,9 +56,9 @@ neighbors = get_neighbors("EFO_0000249")
 # Returns: List of neighbors like {"neighbor_name": "APOE", "relation": "disease_gene", ...}
 ```
 
-### 3. Analyze Disease Context
+### 3. Analyse Disease Context
 
-A high-level function to summarize associations for a disease.
+A high-level function to summarise associations for a disease.
 
 ```python
 from scripts.query_primekg import get_disease_context
@@ -94,4 +94,4 @@ The graph contains several key relationship types including:
 - Data: `/mnt/c/Users/eamon/Documents/Data/PrimeKG/kg.csv`
 - Total nodes: ~129,000
 - Total edges: ~4,000,000
-- Database: CSV-based, optimized for pandas querying.
+- Database: CSV-based, optimised for pandas querying.

@@ -1,6 +1,6 @@
 ---
-description: 'Ensure .NET/C# code meets best practices for the solution/project.'
 name: dotnet-best-practices
+description: 'Ensure .NET/C# code meets best practices for the solution/project.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -73,7 +73,7 @@ Your task is to ensure .NET/C# code in ${selection} meets the best practices spe
 
 ## Performance & Security
 
-- Use C# 12+ features and .NET 8 optimizations where applicable
+- Use C# 12+ features and .NET 8 optimisations where applicable
 - Implement proper input validation and sanitization
 - Use parameterized queries for database operations
 - Follow secure coding practices for AI/ML operations

@@ -1,6 +1,11 @@
 ---
-description: >
 name: exam-ready
+description: >-
+  For each syllabus topic, extract from the provided material: - What it is (1 line definition —
+  exam-ready) - 3–5 key points an examiner expects - Important keywords to use in the answer (bold
+  them) - Any important diagram or figure — describe what it shows in 2 lines - 1–2 sentences the
+  student can directly write in their exam answer (or MCQ trick if exam type is MCQ) - 1
+  examiner-style practice question to test recall
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -83,7 +88,7 @@ If the student says "I have X hours":
 
 - Stay strictly within the provided material. Do not add outside knowledge under any circumstance.
 - If exam type is MCQ, replace "Write this in your exam" with "MCQ trick".
-- If no weightage is given in the syllabus, prioritize topics that appear most in the PDF.
+- If no weightage is given in the syllabus, prioritise topics that appear most in the PDF.
 - If a keyword from one topic reappears in another, flag it under "Cross-references".
 - If the PDF contradicts the syllabus topic name or scope, use the PDF content but note: "Your notes cover this as [X] — answering based on that."
 - Keep everything short. The student is cramming, not researching.

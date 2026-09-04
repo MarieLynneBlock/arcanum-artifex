@@ -1,6 +1,6 @@
 ---
-description: This skill should be used when working with genomic interval data (BED files) for machine learning tasks. Use for training region embeddings (Region2Vec, BEDspace), single-cell ATAC-seq analysis (scEmbed), building consensus peaks (universes), or any ML-based analysis of genomic regions. Applies to BED file collections, scATAC-seq data, chromatin accessibility datasets, and region-based genomic feature learning.
 name: geniml
+description: This skill should be used when working with genomic interval data (BED files) for machine learning tasks. Use for training region embeddings (Region2Vec, BEDspace), single-cell ATAC-seq analysis (scEmbed), building consensus peaks (universes), or any ML-based analysis of genomic regions. Applies to BED file collections, scATAC-seq data, chromatin accessibility datasets, and region-based genomic feature learning.
 license: BSD-2-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -74,7 +74,7 @@ Train Region2Vec models on single-cell ATAC-seq data for cell-level embeddings.
 2. Pre-tokenize cells
 3. Train scEmbed model
 4. Generate cell embeddings
-5. Cluster and visualize with scanpy
+5. Cluster and visualise with scanpy
 
 **Reference:** See `references/scembed.md` for detailed workflow, parameters, and examples.
 
@@ -82,7 +82,7 @@ Train Region2Vec models on single-cell ATAC-seq data for cell-level embeddings.
 
 Build reference peak sets (universes) from BED file collections using multiple statistical methods.
 
-**Use for:** Creating tokenization references, standardizing regions across datasets, defining consensus features with statistical rigor.
+**Use for:** Creating tokenization references, standardising regions across datasets, defining consensus features with statistical rigour.
 
 **Workflow:**
 1. Combine BED files
@@ -92,10 +92,10 @@ Build reference peak sets (universes) from BED file collections using multiple s
 **Methods:**
 - **CC (Coverage Cutoff)**: Simple threshold-based
 - **CCF (Coverage Cutoff Flexible)**: Confidence intervals for boundaries
-- **ML (Maximum Likelihood)**: Probabilistic modeling of positions
-- **HMM (Hidden Markov Model)**: Complex state modeling
+- **ML (Maximum Likelihood)**: Probabilistic modelling of positions
+- **HMM (Hidden Markov Model)**: Complex state modelling
 
-**Reference:** See `references/consensus_peaks.md` for method comparison, parameters, and examples.
+**Reference:** See `references/consensus-peaks.md` for method comparison, parameters, and examples.
 
 ### 5. Utilities: Supporting Tools
 
@@ -234,7 +234,7 @@ geniml bedshift --input peaks.bed --genome hg38 --preserve-chrom --iterations 10
 - Building searchable genomic databases
 
 **Use scEmbed when:**
-- Analyzing single-cell ATAC-seq data
+- Analysing single-cell ATAC-seq data
 - Clustering cells by chromatin accessibility
 - Annotating cell types from scATAC-seq
 - Integration with scanpy is desired
@@ -258,7 +258,7 @@ geniml bedshift --input peaks.bed --genome hg38 --preserve-chrom --iterations 10
 - **Universe quality is critical**: Invest time in building comprehensive, well-constructed universes
 - **Tokenization validation**: Check coverage (>80% ideal) before training
 - **Parameter tuning**: Experiment with embedding dimensions, learning rates, and training epochs
-- **Evaluation**: Always validate embeddings with multiple metrics and visualizations
+- **Evaluation**: Always validate embeddings with multiple metrics and visualisations
 - **Documentation**: Record parameters and random seeds for reproducibility
 
 ### Performance Considerations
@@ -288,7 +288,7 @@ Geniml is part of the BEDbase ecosystem:
 
 - **Documentation**: https://docs.bedbase.org/geniml/
 - **GitHub**: https://github.com/databio/geniml
-- **Pre-trained models**: Available on Hugging Face (databio organization)
+- **Pre-trained models**: Available on Hugging Face (databio organisation)
 - **Publications**: Cited in documentation for methodological details
 
 ## Troubleshooting

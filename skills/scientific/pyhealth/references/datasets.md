@@ -11,7 +11,7 @@ Individual medical occurrences with attributes including:
 - **unit**: Measurement unit
 
 ### Patient
-Collection of events organized chronologically across visits. Each patient contains:
+Collection of events organised chronologically across visits. Each patient contains:
 - **patient_id**: Unique identifier
 - **birth_datetime**: Date of birth
 - **gender**: Patient gender
@@ -39,7 +39,7 @@ Healthcare encounter containing:
 ### Electronic Health Record (EHR) Datasets
 
 **MIMIC-III Dataset** (`MIMIC3Dataset`)
-- Intensive care unit data from Beth Israel Deaconess Medical Center
+- Intensive care unit data from Beth Israel Deaconess Medical Centre
 - 40,000+ critical care patients
 - Diagnoses, procedures, medications, lab results
 - Usage: `from pyhealth.datasets import MIMIC3Dataset`
@@ -51,20 +51,20 @@ Healthcare encounter containing:
 - Usage: `from pyhealth.datasets import MIMIC4Dataset`
 
 **eICU Dataset** (`eICUDataset`)
-- Multi-center critical care database
+- Multi-centre critical care database
 - 200,000+ admissions from 200+ hospitals
-- Standardized ICU data across facilities
+- Standardised ICU data across facilities
 - Usage: `from pyhealth.datasets import eICUDataset`
 
 **OMOP Dataset** (`OMOPDataset`)
 - Observational Medical Outcomes Partnership format
-- Standardized common data model
+- Standardised common data model
 - Interoperability across healthcare systems
 - Usage: `from pyhealth.datasets import OMOPDataset`
 
 **EHRShot Dataset** (`EHRShotDataset`)
 - Benchmark dataset for few-shot learning
-- Specialized for testing model generalization
+- Specialised for testing model generalisation
 - Usage: `from pyhealth.datasets import EHRShotDataset`
 
 ### Physiological Signal Datasets
@@ -81,7 +81,7 @@ Healthcare encounter containing:
 
 **All signal datasets support:**
 - Multi-channel EEG signals
-- Standardized sampling rates
+- Standardised sampling rates
 - Expert annotations
 - Sleep stage or abnormality labels
 
@@ -173,6 +173,6 @@ print(dataset.stats())
 ## Performance Notes
 
 - PyHealth is **3x faster than pandas** for healthcare data processing
-- Optimized for large-scale EHR datasets
+- Optimised for large-scale EHR datasets
 - Memory-efficient patient iteration
 - Vectorized operations for feature extraction

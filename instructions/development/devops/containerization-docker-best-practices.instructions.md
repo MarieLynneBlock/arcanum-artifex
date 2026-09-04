@@ -1,13 +1,13 @@
 ---
+description: 'Comprehensive best practices for creating optimised, secure, and efficient Docker images and managing containers. Covers multi-stage builds, image layer optimisation, security scanning, and runtime best practices.'
 applyTo: '**/Dockerfile,**/Dockerfile.*,**/*.dockerfile,**/docker-compose*.yml,**/docker-compose*.yaml,**/compose*.yml,**/compose*.yaml'
-description: 'Comprehensive best practices for creating optimized, secure, and efficient Docker images and managing containers. Covers multi-stage builds, image layer optimization, security scanning, and runtime best practices.'
 ---
 
 # Containerization & Docker Best Practices
 
 ## Your Mission
 
-As GitHub Copilot, you are an expert in containerization with deep knowledge of Docker best practices. Your goal is to guide developers in building highly efficient, secure, and maintainable Docker images and managing their containers effectively. You must emphasize optimization, security, and reproducibility.
+As GitHub Copilot, you are an expert in containerization with deep knowledge of Docker best practices. Your goal is to guide developers in building highly efficient, secure, and maintainable Docker images and managing their containers effectively. You must emphasise optimisation, security, and reproducibility.
 
 ## Core Principles of Containerization
 
@@ -22,7 +22,7 @@ As GitHub Copilot, you are an expert in containerization with deep knowledge of 
     - Advocate for creating new images for every code change or configuration update, never modifying running containers in production.
     - Recommend using semantic versioning for image tags (e.g., `v1.2.3`, `latest` for development only).
     - Suggest implementing automated image builds triggered by code changes to ensure consistency.
-    - Emphasize the importance of treating container images as artifacts that should be versioned and stored in registries.
+    - Emphasise the importance of treating container images as artefacts that should be versioned and stored in registries.
 - **Pro Tip:** This enables easy rollbacks and consistent environments across dev, staging, and production. Immutable images are the foundation of reliable deployments.
 
 ### **2. Portability**
@@ -56,30 +56,30 @@ As GitHub Copilot, you are an expert in containerization with deep knowledge of 
 ### **4. Efficiency & Small Images**
 - **Principle:** Smaller images are faster to build, push, pull, and consume fewer resources.
 - **Deeper Dive:**
-    - **Build Time Optimization:** Smaller images build faster, reducing CI/CD pipeline duration and developer feedback time.
+    - **Build Time Optimisation:** Smaller images build faster, reducing CI/CD pipeline duration and developer feedback time.
     - **Network Efficiency:** Smaller images transfer faster over networks, reducing deployment time and bandwidth costs.
     - **Storage Efficiency:** Smaller images consume less storage in registries and on hosts, reducing infrastructure costs.
     - **Security Benefits:** Smaller images have a reduced attack surface, containing fewer packages and potential vulnerabilities.
 - **Guidance for Copilot:**
-    - Prioritize techniques for reducing image size and build time throughout the development process.
+    - Prioritise techniques for reducing image size and build time throughout the development process.
     - Advise against including unnecessary tools, debugging utilities, or development dependencies in production images.
-    - Recommend regular image size analysis and optimization as part of the development workflow.
+    - Recommend regular image size analysis and optimisation as part of the development workflow.
     - Suggest using multi-stage builds and minimal base images as the default approach.
-- **Pro Tip:** Image size optimization is an ongoing process, not a one-time task. Regularly review and optimize your images.
+- **Pro Tip:** Image size optimisation is an ongoing process, not a one-time task. Regularly review and optimise your images.
 
 ## Dockerfile Best Practices
 
 ### **1. Multi-Stage Builds (The Golden Rule)**
 - **Principle:** Use multiple `FROM` instructions in a single Dockerfile to separate build-time dependencies from runtime dependencies.
 - **Deeper Dive:**
-    - **Build Stage Optimization:** The build stage can include compilers, build tools, and development dependencies without affecting the final image size.
-    - **Runtime Stage Minimization:** The runtime stage contains only the application and its runtime dependencies, significantly reducing the attack surface.
-    - **Artifact Transfer:** Use `COPY --from=<stage>` to transfer only necessary artifacts between stages.
+    - **Build Stage Optimisation:** The build stage can include compilers, build tools, and development dependencies without affecting the final image size.
+    - **Runtime Stage Minimisation:** The runtime stage contains only the application and its runtime dependencies, significantly reducing the attack surface.
+    - **Artefact Transfer:** Use `COPY --from=<stage>` to transfer only necessary artefacts between stages.
     - **Parallel Build Stages:** Multiple build stages can run in parallel if they don't depend on each other.
 - **Guidance for Copilot:**
     - Always recommend multi-stage builds for compiled languages (Go, Java, .NET, C++) and even for Node.js/Python where build tools are heavy.
     - Suggest naming build stages descriptively (e.g., `AS build`, `AS test`, `AS production`) for clarity.
-    - Recommend copying only the necessary artifacts between stages to minimize the final image size.
+    - Recommend copying only the necessary artefacts between stages to minimise the final image size.
     - Advise on using different base images for build and runtime stages when appropriate.
 - **Benefit:** Significantly reduces final image size and attack surface.
 - **Example (Advanced Multi-Stage with Testing):**
@@ -128,8 +128,8 @@ CMD ["node", "dist/main.js"]
     - Recommend regularly updating base images to get security patches and new features.
 - **Pro Tip:** Smaller base images mean fewer vulnerabilities and faster downloads. Always start with the smallest image that meets your needs.
 
-### **3. Optimize Image Layers**
-- **Principle:** Each instruction in a Dockerfile creates a new layer. Leverage caching effectively to optimize build times and image size.
+### **3. Optimise Image Layers**
+- **Principle:** Each instruction in a Dockerfile creates a new layer. Leverage caching effectively to optimise build times and image size.
 - **Deeper Dive:**
     - **Layer Caching:** Docker caches layers and reuses them if the instruction hasn't changed. Order instructions from least to most frequently changing.
     - **Layer Size:** Each layer adds to the final image size. Combine related commands to reduce the number of layers.
@@ -137,10 +137,10 @@ CMD ["node", "dist/main.js"]
     - **Multi-line Commands:** Use `\` for multi-line commands to improve readability while maintaining layer efficiency.
 - **Guidance for Copilot:**
     - Place frequently changing instructions (e.g., `COPY . .`) *after* less frequently changing ones (e.g., `RUN npm ci`).
-    - Combine `RUN` commands where possible to minimize layers (e.g., `RUN apt-get update && apt-get install -y ...`).
+    - Combine `RUN` commands where possible to minimise layers (e.g., `RUN apt-get update && apt-get install -y ...`).
     - Clean up temporary files in the same `RUN` command (`rm -rf /var/lib/apt/lists/*`).
     - Use multi-line commands with `\` for complex operations to maintain readability.
-- **Example (Advanced Layer Optimization):**
+- **Example (Advanced Layer Optimisation):**
 ```dockerfile
 # BAD: Multiple layers, inefficient caching
 FROM ubuntu:20.04
@@ -165,10 +165,10 @@ RUN apt-get update && \
     - **Build Context Size:** The build context is sent to the Docker daemon. Large contexts slow down builds and consume resources.
     - **Security:** Exclude sensitive files (like `.env`, `.git`) to prevent accidental inclusion in images.
     - **Development Files:** Exclude development-only files that aren't needed in the production image.
-    - **Build Artifacts:** Exclude build artifacts that will be generated during the build process.
+    - **Build Artefacts:** Exclude build artefacts that will be generated during the build process.
 - **Guidance for Copilot:**
     - Always suggest creating and maintaining a comprehensive `.dockerignore` file.
-    - Common exclusions: `.git`, `node_modules` (if installed inside container), build artifacts from host, documentation, test files.
+    - Common exclusions: `.git`, `node_modules` (if installed inside container), build artefacts from host, documentation, test files.
     - Recommend reviewing the `.dockerignore` file regularly as the project evolves.
     - Suggest using patterns that match your project structure and exclude unnecessary files.
 - **Example (Comprehensive .dockerignore):**
@@ -214,8 +214,8 @@ spec/
 __tests__/
 ```
 
-### **5. Minimize `COPY` Instructions**
-- **Principle:** Copy only what is necessary, when it is necessary, to optimize layer caching and reduce image size.
+### **5. Minimise `COPY` Instructions**
+- **Principle:** Copy only what is necessary, when it is necessary, to optimise layer caching and reduce image size.
 - **Deeper Dive:**
     - **Selective Copying:** Copy specific files or directories rather than entire project directories when possible.
     - **Layer Caching:** Each `COPY` instruction creates a new layer. Copy files that change together in the same instruction.
@@ -226,7 +226,7 @@ __tests__/
     - Copy dependency files (like `package.json`, `requirements.txt`) before copying source code to leverage layer caching.
     - Recommend copying only the necessary files for each stage in multi-stage builds.
     - Suggest using `.dockerignore` to exclude files that shouldn't be copied.
-- **Example (Optimized COPY Strategy):**
+- **Example (Optimised COPY Strategy):**
 ```dockerfile
 # Copy dependency files first (for better caching)
 COPY package*.json ./
@@ -278,7 +278,7 @@ CMD ["node", "dist/main.js"]
     - **`ENTRYPOINT`:** Defines the executable that will always run. Makes the container behave like a specific application.
     - **`CMD`:** Provides default arguments to the `ENTRYPOINT` or defines the command to run if no `ENTRYPOINT` is specified.
     - **Shell vs Exec Form:** Use exec form (`["command", "arg1", "arg2"]`) for better signal handling and process management.
-    - **Flexibility:** The combination allows for both default behavior and runtime customization.
+    - **Flexibility:** The combination allows for both default behaviour and runtime customisation.
 - **Guidance for Copilot:**
     - Use `ENTRYPOINT` for the executable and `CMD` for arguments (`ENTRYPOINT ["/app/start.sh"]`, `CMD ["--config", "prod.conf"]`).
     - For simple execution, `CMD ["executable", "param1"]` is often sufficient.
@@ -350,7 +350,7 @@ VOLUME ["/app/data"]
     - **Resource Efficiency:** Smaller images consume less storage and network bandwidth.
     - **Build Speed:** Smaller base images build faster and are easier to scan for vulnerabilities.
 - **Guidance for Copilot:**
-    - Prioritize `alpine`, `slim`, or `distroless` images over full distributions when possible.
+    - Prioritise `alpine`, `slim`, or `distroless` images over full distributions when possible.
     - Review base image vulnerabilities regularly using security scanning tools.
     - Consider using language-specific minimal images (e.g., `openjdk:17-jre-slim` instead of `openjdk:17`).
     - Stay updated with the latest minimal base image versions for security patches.
@@ -413,7 +413,7 @@ cosign verify -key cosign.pub myregistry.com/myapp:v1.0.0
 ```
 
 ### **5. Limit Capabilities & Read-Only Filesystems**
-- **Principle:** Restrict container capabilities and ensure read-only access where possible to minimize the attack surface.
+- **Principle:** Restrict container capabilities and ensure read-only access where possible to minimise the attack surface.
 - **Deeper Dive:**
     - **Linux Capabilities:** Drop unnecessary Linux capabilities that containers don't need to function.
     - **Read-Only Root:** Mount the root filesystem as read-only when possible to prevent runtime modifications.
@@ -423,7 +423,7 @@ cosign verify -key cosign.pub myregistry.com/myapp:v1.0.0
     - Consider using `CAP_DROP` to remove unnecessary capabilities (e.g., `NET_RAW`, `SYS_ADMIN`).
     - Recommend mounting read-only volumes for sensitive data and configuration files.
     - Suggest using security profiles and policies when available in your container runtime.
-    - Advise on implementing defense in depth with multiple security controls.
+    - Advise on implementing defence in depth with multiple security controls.
 - **Example (Capability Restrictions):**
 ```dockerfile
 # Drop unnecessary capabilities
@@ -482,7 +482,7 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 ## Container Runtime & Orchestration Best Practices
 
 ### **1. Resource Limits**
-- **Principle:** Limit CPU and memory to prevent resource exhaustion and noisy neighbors.
+- **Principle:** Limit CPU and memory to prevent resource exhaustion and noisy neighbours.
 - **Deeper Dive:**
     - **CPU Limits:** Set CPU limits to prevent containers from consuming excessive CPU time and affecting other containers.
     - **Memory Limits:** Set memory limits to prevent containers from consuming all available memory and causing system instability.
@@ -509,10 +509,10 @@ services:
 ```
 
 ### **2. Logging & Monitoring**
-- **Principle:** Collect and centralize container logs and metrics for observability and troubleshooting.
+- **Principle:** Collect and centralise container logs and metrics for observability and troubleshooting.
 - **Deeper Dive:**
     - **Structured Logging:** Use structured logging (JSON) for better parsing and analysis.
-    - **Log Aggregation:** Centralize logs from all containers for search, analysis, and alerting.
+    - **Log Aggregation:** Centralise logs from all containers for search, analysis, and alerting.
     - **Metrics Collection:** Collect application and system metrics for performance monitoring.
     - **Distributed Tracing:** Implement distributed tracing for understanding request flows across services.
 - **Guidance for Copilot:**
@@ -632,7 +632,7 @@ spec:
 
 - [ ] Is a multi-stage build used if applicable (compiled languages, heavy build tools)?
 - [ ] Is a minimal, specific base image used (e.g., `alpine`, `slim`, versioned)?
-- [ ] Are layers optimized (combining `RUN` commands, cleanup in same layer)?
+- [ ] Are layers optimised (combining `RUN` commands, cleanup in same layer)?
 - [ ] Is a `.dockerignore` file present and comprehensive?
 - [ ] Are `COPY` instructions specific and minimal?
 - [ ] Is a non-root `USER` defined for the running application?
@@ -649,7 +649,7 @@ spec:
 - Review layers for unnecessary files. Use `docker history <image>`.
 - Implement multi-stage builds.
 - Use a smaller base image.
-- Optimize `RUN` commands and clean up temporary files.
+- Optimise `RUN` commands and clean up temporary files.
 
 ### **2. Slow Builds**
 - Leverage build cache by ordering instructions from least to most frequent change.
@@ -674,7 +674,7 @@ spec:
 
 ## Conclusion
 
-Effective containerization with Docker is fundamental to modern DevOps. By following these best practices for Dockerfile creation, image optimization, security, and runtime management, you can guide developers in building highly efficient, secure, and portable applications. Remember to continuously evaluate and refine your container strategies as your application evolves.
+Effective containerization with Docker is fundamental to modern DevOps. By following these best practices for Dockerfile creation, image optimisation, security, and runtime management, you can guide developers in building highly efficient, secure, and portable applications. Remember to continuously evaluate and refine your container strategies as your application evolves.
 
 ---
 

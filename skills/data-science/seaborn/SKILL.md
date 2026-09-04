@@ -1,26 +1,26 @@
 ---
-description: Statistical visualization with pandas integration. Use for quick exploration of distributions, relationships, and categorical comparisons with attractive defaults. Best for box plots, violin plots, pair plots, heatmaps. Built on matplotlib. For interactive plots use plotly; for publication styling use scientific-visualization.
 name: seaborn
+description: Statistical visualisation with pandas integration. Use for quick exploration of distributions, relationships, and categorical comparisons with attractive defaults. Best for box plots, violin plots, pair plots, heatmaps. Built on matplotlib. For interactive plots use plotly; for publication styling use scientific-visualisation.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
 
-# Seaborn Statistical Visualization
+# Seaborn Statistical Visualisation
 
 ## Overview
 
-Seaborn is a Python visualization library for creating publication-quality statistical graphics. Use this skill for dataset-oriented plotting, multivariate analysis, automatic statistical estimation, and complex multi-panel figures with minimal code.
+Seaborn is a Python visualisation library for creating publication-quality statistical graphics. Use this skill for dataset-oriented plotting, multivariate analysis, automatic statistical estimation, and complex multi-panel figures with minimal code.
 
 ## Design Philosophy
 
 Seaborn follows these core principles:
 
 1. **Dataset-oriented**: Work directly with DataFrames and named variables rather than abstract coordinates
-2. **Semantic mapping**: Automatically translate data values into visual properties (colors, sizes, styles)
+2. **Semantic mapping**: Automatically translate data values into visual properties (colours, sizes, styles)
 3. **Statistical awareness**: Built-in aggregation, error estimation, and confidence intervals
-4. **Aesthetic defaults**: Publication-ready themes and color palettes out of the box
-5. **Matplotlib integration**: Full compatibility with matplotlib customization when needed
+4. **Aesthetic defaults**: Publication-ready themes and colour palettes out of the box
+5. **Matplotlib integration**: Full compatibility with matplotlib customisation when needed
 
 ## Quick Start
 
@@ -41,19 +41,19 @@ plt.show()
 
 ### Function Interface (Traditional)
 
-The function interface provides specialized plotting functions organized by visualization type. Each category has **axes-level** functions (plot to single axes) and **figure-level** functions (manage entire figure with faceting).
+The function interface provides specialised plotting functions organised by visualisation type. Each category has **axes-level** functions (plot to single axes) and **figure-level** functions (manage entire figure with faceting).
 
 **When to use:**
 - Quick exploratory analysis
-- Single-purpose visualizations
+- Single-purpose visualisations
 - When you need a specific plot type
 
 ### Objects Interface (Modern)
 
-The `seaborn.objects` interface provides a declarative, composable API similar to ggplot2. Build visualizations by chaining methods to specify data mappings, marks, transformations, and scales.
+The `seaborn.objects` interface provides a declarative, composable API similar to ggplot2. Build visualisations by chaining methods to specify data mappings, marks, transformations, and scales.
 
 **When to use:**
-- Complex layered visualizations
+- Complex layered visualisations
 - When you need fine-grained control over transformations
 - Building custom plot types
 - Programmatic plot generation
@@ -81,7 +81,7 @@ from seaborn import objects as so
 
 **Key parameters:**
 - `x`, `y` - Primary variables
-- `hue` - Color encoding for additional categorical/continuous variable
+- `hue` - Colour encoding for additional categorical/continuous variable
 - `size` - Point/line size encoding
 - `style` - Marker/line style encoding
 - `col`, `row` - Facet into multiple subplots (figure-level only)
@@ -114,7 +114,7 @@ sns.relplot(data=df, x='total_bill', y='tip',
 **Key parameters:**
 - `x`, `y` - Variables (y optional for univariate)
 - `hue` - Separate distributions by category
-- `stat` - Normalization: "count", "frequency", "probability", "density"
+- `stat` - Normalisation: "count", "frequency", "probability", "density"
 - `bins` / `binwidth` - Histogram binning control
 - `bw_adjust` - KDE bandwidth multiplier (higher = smoother)
 - `fill` - Fill area under curve
@@ -185,7 +185,7 @@ sns.catplot(data=df, x='day', y='total_bill',
 
 ### Regression Plots (Linear Relationships)
 
-**Use for:** Visualizing linear regressions and residuals
+**Use for:** Visualising linear regressions and residuals
 
 - `regplot()` - Axes-level regression plot with scatter + fit line
 - `lmplot()` - Figure-level with faceting support
@@ -197,7 +197,7 @@ sns.catplot(data=df, x='day', y='total_bill',
 - `logistic` - Fit logistic regression
 - `robust` - Use robust regression (less sensitive to outliers)
 - `ci` - Confidence interval width (default 95)
-- `scatter_kws`, `line_kws` - Customize scatter and line properties
+- `scatter_kws`, `line_kws` - Customise scatter and line properties
 
 ```python
 # Simple linear regression
@@ -213,9 +213,9 @@ sns.residplot(data=df, x='total_bill', y='tip')
 
 ### Matrix Plots (Rectangular Data)
 
-**Use for:** Visualizing matrices, correlations, and grid-structured data
+**Use for:** Visualising matrices, correlations, and grid-structured data
 
-- `heatmap()` - Color-encoded matrix with annotations
+- `heatmap()` - Colour-encoded matrix with annotations
 - `clustermap()` - Hierarchically-clustered heatmap
 
 **Key parameters:**
@@ -223,8 +223,8 @@ sns.residplot(data=df, x='total_bill', y='tip')
 - `annot` - Display values in cells
 - `fmt` - Format string for annotations (e.g., ".2f")
 - `cmap` - Colormap name
-- `center` - Value at colormap center (for diverging colormaps)
-- `vmin`, `vmax` - Color scale limits
+- `center` - Value at colormap centre (for diverging colormaps)
+- `vmin`, `vmax` - Colour scale limits
 - `square` - Force square cells
 - `linewidths` - Gap between cells
 
@@ -309,7 +309,7 @@ sns.kdeplot(data=df, x='x', y='y', ax=axes[1, 1])
 - Examples: `relplot`, `displot`, `catplot`, `lmplot`, `jointplot`, `pairplot`
 
 **When to use:**
-- Faceted visualizations (small multiples)
+- Faceted visualisations (small multiples)
 - Quick exploratory analysis
 - Consistent multi-panel layouts
 - Don't need to combine with other plot types
@@ -363,19 +363,19 @@ Variables are spread across columns. Useful for simple rectangular data:
 df_long = df.melt(var_name='condition', value_name='measurement')
 ```
 
-## Color Palettes
+## Colour Palettes
 
-Seaborn provides carefully designed color palettes for different data types:
+Seaborn provides carefully designed colour palettes for different data types:
 
 ### Qualitative Palettes (Categorical Data)
 
 Distinguish categories through hue variation:
-- `"deep"` - Default, vivid colors
+- `"deep"` - Default, vivid colours
 - `"muted"` - Softer, less saturated
 - `"pastel"` - Light, desaturated
 - `"bright"` - Highly saturated
 - `"dark"` - Dark values
-- `"colorblind"` - Safe for color vision deficiency
+- `"colorblind"` - Safe for colour vision deficiency
 
 ```python
 sns.set_palette("colorblind")
@@ -394,9 +394,9 @@ sns.heatmap(data, cmap='rocket')
 sns.kdeplot(data=df, x='x', y='y', cmap='mako', fill=True)
 ```
 
-### Diverging Palettes (Centered Data)
+### Diverging Palettes (Centred Data)
 
-Emphasize deviations from a midpoint:
+Emphasise deviations from a midpoint:
 - `"vlag"` - Blue to red
 - `"icefire"` - Blue to orange
 - `"coolwarm"` - Cool to warm
@@ -514,7 +514,7 @@ sns.scatterplot(data=df, x='x', y='y',
 
 ### 5. Control Statistical Estimation
 
-Many functions compute statistics automatically. Understand and customize:
+Many functions compute statistics automatically. Understand and customise:
 
 ```python
 # Lineplot computes mean and 95% CI by default
@@ -638,7 +638,7 @@ fig, ax = plt.subplots(figsize=(10, 6))
 sns.scatterplot(data=df, x='x', y='y', ax=ax)
 ```
 
-### Issue: Colors Not Distinct Enough
+### Issue: Colours Not Distinct Enough
 
 ```python
 # Use a different palette
@@ -663,8 +663,8 @@ This skill includes reference materials for deeper exploration:
 
 ### references/
 
-- `function_reference.md` - Comprehensive listing of all seaborn functions with parameters and examples
-- `objects_interface.md` - Detailed guide to the modern seaborn.objects API
+- `function-reference.md` - Comprehensive listing of all seaborn functions with parameters and examples
+- `objects-interface.md` - Detailed guide to the modern seaborn.objects API
 - `examples.md` - Common use cases and code patterns for different analysis scenarios
 
 Load reference files as needed for detailed function signatures, advanced parameters, or specific examples.

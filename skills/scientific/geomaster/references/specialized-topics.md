@@ -1,6 +1,6 @@
-# Specialized Topics
+# Specialised Topics
 
-Advanced specialized topics: geostatistics, optimization, ethics, and best practices.
+Advanced specialised topics: geostatistics, optimisation, ethics, and best practices.
 
 ## Geostatistics
 
@@ -137,7 +137,7 @@ def kriging_cross_validation(x, y, z, n_folds=5):
     return np.mean(errors), np.std(errors)
 ```
 
-## Spatial Optimization
+## Spatial Optimisation
 
 ### Location-Allocation Problem
 
@@ -194,7 +194,7 @@ def facility_location(demand_points, n_facilities=5):
     return demand_points[facility_indices]
 ```
 
-### Routing Optimization
+### Routing Optimisation
 
 ```python
 import networkx as nx
@@ -393,7 +393,7 @@ crs = config['projection']['output_crs']
 resolution = config['data']['resolution']
 ```
 
-### Performance Optimization
+### Performance Optimisation
 
 ```python
 # Memory profiling

@@ -156,7 +156,7 @@ if response.status_code == 200:
 ### Rate Limits
 - **Development Key**: 3,000 requests/month
 - **Production Key**: Custom limits based on license
-- **Best Practice**: Cache results locally to minimize API calls
+- **Best Practice**: Cache results locally to minimise API calls
 
 ### Regional Scoping
 DrugBank API is scoped by region:

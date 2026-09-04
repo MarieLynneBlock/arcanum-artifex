@@ -1,6 +1,6 @@
 ---
-description: Process-based discrete-event simulation framework in Python. Use this skill when building simulations of systems with processes, queues, resources, and time-based events such as manufacturing systems, service operations, network traffic, logistics, or any system where entities interact with shared resources over time.
 name: simpy
+description: Process-based discrete-event simulation framework in Python. Use this skill when building simulations of systems with processes, queues, resources, and time-based events such as manufacturing systems, service operations, network traffic, logistics, or any system where entities interact with shared resources over time.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -13,28 +13,28 @@ metadata:
 SimPy is a process-based discrete-event simulation framework based on standard Python. Use SimPy to model systems where entities (customers, vehicles, packets, etc.) interact with each other and compete for shared resources (servers, machines, bandwidth, etc.) over time.
 
 **Core capabilities:**
-- Process modeling using Python generator functions
+- Process modelling using Python generator functions
 - Shared resource management (servers, containers, stores)
-- Event-driven scheduling and synchronization
-- Real-time simulations synchronized with wall-clock time
+- Event-driven scheduling and synchronisation
+- Real-time simulations synchronised with wall-clock time
 - Comprehensive monitoring and data collection
 
 ## When to Use This Skill
 
 Use the SimPy skill when:
 
-1. **Modeling discrete-event systems** - Systems where events occur at irregular intervals
+1. **Modelling discrete-event systems** - Systems where events occur at irregular intervals
 2. **Resource contention** - Entities compete for limited resources (servers, machines, staff)
 3. **Queue analysis** - Studying waiting lines, service times, and throughput
-4. **Process optimization** - Analyzing manufacturing, logistics, or service processes
+4. **Process optimisation** - Analysing manufacturing, logistics, or service processes
 5. **Network simulation** - Packet routing, bandwidth allocation, latency analysis
 6. **Capacity planning** - Determining optimal resource levels for desired performance
-7. **System validation** - Testing system behavior before implementation
+7. **System validation** - Testing system behaviour before implementation
 
 **Not suitable for:**
 - Continuous simulations with fixed time steps (consider SciPy ODE solvers)
 - Independent processes without resource sharing
-- Pure mathematical optimization (consider SciPy optimize)
+- Pure mathematical optimisation (consider SciPy optimise)
 
 ## Quick Start
 
@@ -128,7 +128,7 @@ env.process(my_process(env, 'value1', 'value2'))
 
 ### 3. Events
 
-Events are the fundamental mechanism for process synchronization. Processes yield events and resume when those events are triggered.
+Events are the fundamental mechanism for process synchronisation. Processes yield events and resume when those events are triggered.
 
 **Common event types:**
 - `env.timeout(delay)` - Wait for time to pass
@@ -264,7 +264,7 @@ Identify:
 - **Entities**: What moves through the system? (customers, parts, packets)
 - **Resources**: What are the constraints? (servers, machines, bandwidth)
 - **Processes**: What are the activities? (arrival, service, departure)
-- **Metrics**: What to measure? (wait times, utilization, throughput)
+- **Metrics**: What to measure? (wait times, utilisation, throughput)
 
 ### Step 2: Implement Process Functions
 
@@ -302,7 +302,7 @@ monitor = ResourceMonitor(env, resource, "Server")
 monitor.report()
 ```
 
-### Step 4: Run and Analyze
+### Step 4: Run and Analyse
 
 ```python
 # Run simulation
@@ -323,13 +323,13 @@ monitor.export_csv('results.csv')
 Processes can interact through events, process yields, and interrupts. See `references/process-interaction.md` for detailed patterns.
 
 **Key mechanisms:**
-- **Event signaling**: Shared events for coordination
+- **Event signalling**: Shared events for coordination
 - **Process yields**: Wait for other processes to complete
 - **Interrupts**: Forcefully resume processes for preemption
 
 ### Real-Time Simulations
 
-Synchronize simulation with wall-clock time for hardware-in-the-loop or interactive applications. See `references/real-time.md`.
+Synchronise simulation with wall-clock time for hardware-in-the-loop or interactive applications. See `references/real-time.md`.
 
 ```python
 import simpy.rt
@@ -393,7 +393,7 @@ Detailed guides for specific topics:
 
 - **`references/resources.md`** - All resource types with examples
 - **`references/events.md`** - Event system and patterns
-- **`references/process-interaction.md`** - Process synchronization
+- **`references/process-interaction.md`** - Process synchronisation
 - **`references/monitoring.md`** - Data collection techniques
 - **`references/real-time.md`** - Real-time simulation setup
 
@@ -422,5 +422,5 @@ Detailed guides for specific topics:
 - **Healthcare**: Emergency room simulation, patient flow, staff allocation
 - **Telecommunications**: Network traffic, packet routing, bandwidth allocation
 - **Transportation**: Traffic flow, logistics, vehicle routing
-- **Service operations**: Call centers, retail checkout, appointment scheduling
+- **Service operations**: Call centres, retail checkout, appointment scheduling
 - **Computer systems**: CPU scheduling, memory management, I/O operations

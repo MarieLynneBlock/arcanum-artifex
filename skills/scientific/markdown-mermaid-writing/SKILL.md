@@ -1,8 +1,8 @@
 ---
-description: Comprehensive markdown and Mermaid diagram writing skill. Use when creating any scientific document, report, analysis, or visualization. Establishes text-based diagrams as the default documentation standard with full style guides (markdown + mermaid), 24 diagram type references, and 9 document templates.
 name: markdown-mermaid-writing
-allowed-tools: Read Write Edit Bash
+description: Comprehensive markdown and Mermaid diagram writing skill. Use when creating any scientific document, report, analysis, or visualisation. Establishes text-based diagrams as the default documentation standard with full style guides (markdown + mermaid), 24 diagram type references, and 9 document templates.
 license: Apache-2.0
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'Clayton Young / Superior Byte Works, LLC (@borealBytes)'
   skill-source: https://github.com/SuperiorByteWorks-LLC/agent-project
@@ -44,7 +44,7 @@ Use this skill when:
 - Producing **any diagram** — workflows, data pipelines, architectures, timelines, relationships
 - Generating **any output that will be version-controlled** — if it's going into git, it should be markdown
 - Working with **any other skill** — this skill defines the documentation layer that wraps every other output
-- Someone asks you to "add a diagram" or "visualize the relationship" — Mermaid first, always
+- Someone asks you to "add a diagram" or "visualise the relationship" — Mermaid first, always
 
 Do NOT start with Python matplotlib, seaborn, or AI image generation for structural or relational diagrams.
 Those are Phase 2 and Phase 3 — only used when Mermaid cannot express what's needed (e.g., scatter plots with real data, photorealistic images).
@@ -109,20 +109,20 @@ Mermaid covers 24 diagram types. Almost every scientific relationship fits one:
 | Concept hierarchy / brainstorm | Mindmap | `references/diagrams/mindmap.md` |
 | Chronological events / history | Timeline | `references/diagrams/timeline.md` |
 | Class hierarchy / type relationships | Class | `references/diagrams/class.md` |
-| User journey / satisfaction map | User Journey | `references/diagrams/user_journey.md` |
-| Two-axis comparison / prioritization | Quadrant | `references/diagrams/quadrant.md` |
+| User journey / satisfaction map | User Journey | `references/diagrams/user-journey.md` |
+| Two-axis comparison / prioritisation | Quadrant | `references/diagrams/quadrant.md` |
 | Requirements traceability | Requirement | `references/diagrams/requirement.md` |
 | Flow magnitude / resource distribution | Sankey | `references/diagrams/sankey.md` |
-| Numeric trends / bar + line charts | XY Chart | `references/diagrams/xy_chart.md` |
+| Numeric trends / bar + line charts | XY Chart | `references/diagrams/xy-chart.md` |
 | Component layout / spatial arrangement | Block | `references/diagrams/block.md` |
 | Work item status / task columns | Kanban | `references/diagrams/kanban.md` |
 | Cloud infrastructure / service topology | Architecture | `references/diagrams/architecture.md` |
 | Multi-dimensional comparison / skills radar | Radar | `references/diagrams/radar.md` |
 | Hierarchical proportions / budget | Treemap | `references/diagrams/treemap.md` |
 | Binary protocol / data format | Packet | `references/diagrams/packet.md` |
-| Git branching / merge strategy | Git Graph | `references/diagrams/git_graph.md` |
+| Git branching / merge strategy | Git Graph | `references/diagrams/git-graph.md` |
 | Code-style sequence (programming syntax) | ZenUML | `references/diagrams/zenuml.md` |
-| Multi-diagram composition patterns | Complex Examples | `references/diagrams/complex_examples.md` |
+| Multi-diagram composition patterns | Complex Examples | `references/diagrams/complex-examples.md` |
 
 > 💡 **Pick the right type, not the easy one.** Don't default to flowcharts for everything.
 > A timeline beats a flowchart for chronological events. A sequence beats a flowchart for
@@ -138,19 +138,19 @@ Check if a template exists before writing from scratch:
 
 | Document type | Template |
 | ------------------------------ | ----------------------------------------------- |
-| Pull request record | `templates/pull_request.md` |
+| Pull request record | `templates/pull-request.md` |
 | Issue / bug / feature request | `templates/issue.md` |
 | Sprint / project board | `templates/kanban.md` |
-| Architecture decision (ADR) | `templates/decision_record.md` |
+| Architecture decision (ADR) | `templates/decision-record.md` |
 | Presentation / briefing | `templates/presentation.md` |
-| Research paper / analysis | `templates/research_paper.md` |
-| Project documentation | `templates/project_documentation.md` |
-| How-to / tutorial | `templates/how_to_guide.md` |
-| Status report | `templates/status_report.md` |
+| Research paper / analysis | `templates/research-paper.md` |
+| Project documentation | `templates/project-documentation.md` |
+| How-to / tutorial | `templates/how-to-guide.md` |
+| Status report | `templates/status-report.md` |
 
 ### Step 2: Read the style guide
 
-Before writing any `.md` file: read `references/markdown_style_guide.md`.
+Before writing any `.md` file: read `references/markdown-style-guide.md`.
 
 Key rules to internalize:
 
@@ -164,7 +164,7 @@ Key rules to internalize:
 
 ### Step 3: Pick the diagram type and read its guide
 
-Before creating any Mermaid diagram: read `references/mermaid_style_guide.md`.
+Before creating any Mermaid diagram: read `references/mermaid-style-guide.md`.
 
 Then open the specific type file (e.g., `references/diagrams/flowchart.md`) for the exemplar, tips, and copy-paste template.
 
@@ -272,7 +272,7 @@ Literature review produces summaries with lots of relationship data. Use this sk
 
 ### With any skill that produces output documents
 
-Before finalizing any document from any skill, apply this skill's checklist:
+Before finalising any document from any skill, apply this skill's checklist:
 
 - [ ] Does the document use a template? If so, did I start from the right one?
 - [ ] Are all diagrams in Mermaid with `accTitle` + `accDescr`?
@@ -289,8 +289,8 @@ Before finalizing any document from any skill, apply this skill's checklist:
 
 | Guide | Path | Lines | What it covers |
 | ----------------------- | ------------------------------------------- | ----- | -------------------------------------------------- |
-| Markdown Style Guide | `references/markdown_style_guide.md` | ~733 | Headings, formatting, citations, tables, Mermaid integration, templates, quality checklist |
-| Mermaid Style Guide | `references/mermaid_style_guide.md` | ~458 | Accessibility, emoji set, color classes, theme neutrality, type selection, complexity tiers |
+| Markdown Style Guide | `references/markdown-style-guide.md` | ~733 | Headings, formatting, citations, tables, Mermaid integration, templates, quality checklist |
+| Mermaid Style Guide | `references/mermaid-style-guide.md` | ~458 | Accessibility, emoji set, colour classes, theme neutrality, type selection, complexity tiers |
 
 ### Diagram type guides (24 types)
 

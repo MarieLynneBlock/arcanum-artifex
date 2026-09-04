@@ -1,6 +1,6 @@
 ---
-description: Query Reactome REST API for pathway analysis, enrichment, gene-pathway mapping, disease pathways, molecular interactions, expression analysis, for systems biology studies.
 name: reactome-database
+description: Query Reactome REST API for pathway analysis, enrichment, gene-pathway mapping, disease pathways, molecular interactions, expression analysis, for systems biology studies.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -16,11 +16,11 @@ Reactome is a free, open-source, curated pathway database with 2,825+ human path
 
 This skill should be used when:
 - Performing pathway enrichment analysis on gene or protein lists
-- Analyzing gene expression data to identify relevant biological pathways
+- Analysing gene expression data to identify relevant biological pathways
 - Querying specific pathway information, reactions, or molecular interactions
 - Mapping genes or proteins to biological pathways and processes
 - Exploring disease-related pathways and mechanisms
-- Visualizing analysis results in the Reactome Pathway Browser
+- Visualising analysis results in the Reactome Pathway Browser
 - Conducting comparative pathway analysis across species
 
 ## Core Capabilities
@@ -46,7 +46,7 @@ Perform computational analysis on gene lists and expression data.
 
 **Analysis types:**
 - **Overrepresentation Analysis**: Identify statistically significant pathways from gene/protein lists
-- **Expression Data Analysis**: Analyze gene expression datasets to find relevant pathways
+- **Expression Data Analysis**: Analyse gene expression datasets to find relevant pathways
 - **Species Comparison**: Compare pathway data across different organisms
 
 **API Base URL:** `https://reactome.org/AnalysisService`
@@ -110,7 +110,7 @@ pathway_info = content.query_by_id("R-HSA-69278")
 version = content.get_database_version()
 ```
 
-**For detailed API endpoints and parameters**, refer to `references/api_reference.md` in this skill.
+**For detailed API endpoints and parameters**, refer to `references/api-reference.md` in this skill.
 
 ## Performing Pathway Analysis
 
@@ -150,7 +150,7 @@ results = response.json()
 
 ### Expression Data Analysis
 
-Analyze gene expression datasets with quantitative values.
+Analyse gene expression datasets with quantitative values.
 
 **Input format (TSV with header starting with #):**
 ```
@@ -189,9 +189,9 @@ response = requests.post(
 )
 ```
 
-## Visualizing Results
+## Visualising Results
 
-Analysis results can be visualized in the Reactome Pathway Browser by constructing URLs with the analysis token:
+Analysis results can be visualised in the Reactome Pathway Browser by constructing URLs with the analysis token:
 
 ```python
 token = result["summary"]["token"]
@@ -263,7 +263,7 @@ python scripts/reactome_query.py version
 - **Data Downloads**: https://reactome.org/download-data
 - **reactome2py Docs**: https://reactome.github.io/reactome2py/
 
-For comprehensive API endpoint documentation, see `references/api_reference.md` in this skill.
+For comprehensive API endpoint documentation, see `references/api-reference.md` in this skill.
 
 ## Current Database Statistics (Version 94, September 2025)
 

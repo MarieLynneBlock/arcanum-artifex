@@ -15,29 +15,29 @@ Comprehensive skill for writing clinical reports including case reports, diagnos
 
 ### 📚 Reference Files (8 comprehensive guides)
 
-- `case_report_guidelines.md` - CARE guidelines, de-identification, journal requirements
-- `diagnostic_reports_standards.md` - ACR, CAP, CLSI standards, structured reporting systems
-- `clinical_trial_reporting.md` - ICH-E3, CONSORT, SAE reporting, MedDRA coding
-- `patient_documentation.md` - SOAP notes, H&P, discharge summary standards
-- `regulatory_compliance.md` - HIPAA, 21 CFR Part 11, ICH-GCP, FDA regulations
-- `medical_terminology.md` - SNOMED-CT, LOINC, ICD-10, CPT codes
-- `data_presentation.md` - Clinical tables, figures, Kaplan-Meier curves
-- `peer_review_standards.md` - Review criteria for clinical manuscripts
+- `case-report-guidelines.md` - CARE guidelines, de-identification, journal requirements
+- `diagnostic-reports-standards.md` - ACR, CAP, CLSI standards, structured reporting systems
+- `clinical-trial-reporting.md` - ICH-E3, CONSORT, SAE reporting, MedDRA coding
+- `patient-documentation.md` - SOAP notes, H&P, discharge summary standards
+- `regulatory-compliance.md` - HIPAA, 21 CFR Part 11, ICH-GCP, FDA regulations
+- `medical-terminology.md` - SNOMED-CT, LOINC, ICD-10, CPT codes
+- `data-presentation.md` - Clinical tables, figures, Kaplan-Meier curves
+- `peer-review-standards.md` - Review criteria for clinical manuscripts
 
 ### 📄 Templates (12 professional templates)
 
-- `case_report_template.md` - Structured case report following CARE guidelines
-- `soap_note_template.md` - SOAP progress note format
-- `history_physical_template.md` - Complete H&P examination template
-- `discharge_summary_template.md` - Hospital discharge documentation
-- `consult_note_template.md` - Specialist consultation format
-- `radiology_report_template.md` - Imaging report with structured reporting
-- `pathology_report_template.md` - Surgical pathology with CAP synoptic elements
-- `lab_report_template.md` - Clinical laboratory test results
-- `clinical_trial_sae_template.md` - Serious adverse event report form
-- `clinical_trial_csr_template.md` - Clinical study report outline (ICH-E3)
-- `quality_checklist.md` - Quality assurance for all report types
-- `hipaa_compliance_checklist.md` - Privacy and de-identification verification
+- `case-report-template.md` - Structured case report following CARE guidelines
+- `soap-note-template.md` - SOAP progress note format
+- `history-physical-template.md` - Complete H&P examination template
+- `discharge-summary-template.md` - Hospital discharge documentation
+- `consult-note-template.md` - Specialist consultation format
+- `radiology-report-template.md` - Imaging report with structured reporting
+- `pathology-report-template.md` - Surgical pathology with CAP synoptic elements
+- `lab-report-template.md` - Clinical laboratory test results
+- `clinical-trial-sae-template.md` - Serious adverse event report form
+- `clinical-trial-csr-template.md` - Clinical study report outline (ICH-E3)
+- `quality-checklist.md` - Quality assurance for all report types
+- `hipaa-compliance-checklist.md` - Privacy and de-identification verification
 
 ### 🔧 Validation Scripts (8 automation tools)
 
@@ -90,7 +90,7 @@ python validate_trial_report.py my_csr.md
 - Literature review integration
 
 ### Regulatory Compliance
-- **HIPAA** - Privacy protection, 18 identifier removal, Safe Harbor method
+- **HIPAA** - Privacy protection, 18 identifier removal, Safe Harbour method
 - **FDA** - 21 CFR Parts 11, 50, 56, 312 compliance
 - **ICH-GCP** - Good Clinical Practice standards
 - **ALCOA-CCEA** - Data integrity principles

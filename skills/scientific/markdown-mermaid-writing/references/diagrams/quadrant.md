@@ -2,11 +2,11 @@
 
 # Quadrant Chart
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `quadrantChart`
-**Best for:** Prioritization matrices, risk assessment, two-axis comparisons, effort/impact analysis
-**When NOT to use:** Time-based data (use [Gantt](gantt.md) or [XY Chart](xy_chart.md)), simple rankings (use a table)
+**Best for:** Prioritisation matrices, risk assessment, two-axis comparisons, effort/impact analysis
+**When NOT to use:** Time-based data (use [Gantt](gantt.md) or [XY Chart](xy-chart.md)), simple rankings (use a table)
 
 > ⚠️ **Accessibility:** Quadrant charts do **not** support `accTitle`/`accDescr`. Always place a descriptive _italic_ Markdown paragraph directly above the code block.
 

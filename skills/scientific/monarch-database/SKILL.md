@@ -1,6 +1,6 @@
 ---
-description: Query the Monarch Initiative knowledge graph for disease-gene-phenotype associations across species. Integrates OMIM, ORPHANET, HPO, ClinVar, and model organism databases. Use for rare disease gene discovery, phenotype-to-gene mapping, cross-species disease modeling, and HPO term lookup.
 name: monarch-database
+description: Query the Monarch Initiative knowledge graph for disease-gene-phenotype associations across species. Integrates OMIM, ORPHANET, HPO, ClinVar, and model organism databases. Use for rare disease gene discovery, phenotype-to-gene mapping, cross-species disease modelling, and HPO term lookup.
 license: CC0-1.0
 metadata:
   skill-author: 'Kuan-lin Huang'
@@ -30,7 +30,7 @@ Use Monarch when:
 
 - **Rare disease gene discovery**: What genes are associated with my patient's phenotypes (HPO terms)?
 - **Phenotype similarity**: Are two diseases similar based on their phenotypic profiles?
-- **Cross-species modeling**: Are there mouse/zebrafish models for my disease of interest?
+- **Cross-species modelling**: Are there mouse/zebrafish models for my disease of interest?
 - **HPO term lookup**: Retrieve HPO term names, definitions, and ontology hierarchy
 - **Disease-phenotype mapping**: List all HPO terms associated with a specific disease
 - **Gene-phenotype associations**: What phenotypes are caused by variants in a gene?
@@ -248,7 +248,7 @@ def get_orthologs(gene_id, species=None):
 # Rat: 10116 (Rattus norvegicus)
 ```
 
-### 8. Full Workflow: Rare Disease Gene Prioritization
+### 8. Full Workflow: Rare Disease Gene Prioritisation
 
 ```python
 import requests
@@ -324,7 +324,7 @@ print(candidates[["gene_name", "matching_phenotypes", "phenotype_overlap"]].to_s
 2. Run phenotype-to-gene query against Monarch
 3. Rank candidate genes by number of matching phenotypes
 4. Cross-reference with gnomAD (constraint scores) and ClinVar (variant evidence)
-5. Prioritize genes with high pLI and known pathogenic variants
+5. Prioritise genes with high pLI and known pathogenic variants
 
 ### Workflow 2: Disease Model Discovery
 

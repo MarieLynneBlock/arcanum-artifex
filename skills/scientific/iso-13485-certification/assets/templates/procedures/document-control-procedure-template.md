@@ -99,7 +99,7 @@ This procedure does NOT apply to:
 | **Document Control Coordinator** | Person responsible for managing the document control system |
 | **Revision** | A change to a controlled document that has been approved and issued |
 | **Obsolete Document** | A document that has been superseded by a newer revision or is no longer applicable |
-| **External Document** | A document originating from outside the organization (standards, regulations, customer specifications, etc.) |
+| **External Document** | A document originating from outside the organisation (standards, regulations, customer specifications, etc.) |
 | **SUPERSEDED** | Watermark applied to obsolete documents retained for reference |
 
 ---
@@ -149,7 +149,7 @@ This procedure does NOT apply to:
 
 ### 5.1 Document Types and Hierarchy
 
-QMS documents are organized in a four-tier hierarchy:
+QMS documents are organised in a four-tier hierarchy:
 
 **Tier 1: Quality Manual (QM)**
 - Policy-level document
@@ -170,7 +170,7 @@ QMS documents are organized in a four-tier hierarchy:
 - Approved by Department Manager and Quality Manager
 
 **Tier 4: Forms and Templates**
-- Standardized formats for data collection
+- Standardised formats for data collection
 - Support SOPs and WIs
 - Approved by Document Owner and Quality Manager
 
@@ -497,7 +497,7 @@ External documents include:
      - Document title and number
      - Source/publisher
      - Date/version
-     - Location in organization
+     - Location in organisation
      - Responsible person for monitoring updates
    - Files in external document repository
 

@@ -26,7 +26,7 @@ These functions compare mass spectra based on their peak patterns (m/z and inten
 **When to use**:
 - Fast similarity calculations for large datasets
 - General-purpose spectral matching
-- When speed is prioritized over mathematically optimal matching
+- When speed is prioritised over mathematically optimal matching
 
 **Parameters**:
 - `tolerance` (float, default=0.1): Maximum m/z difference for peak matching (Daltons)

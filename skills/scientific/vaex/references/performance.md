@@ -1,6 +1,6 @@
-# Performance and Optimization
+# Performance and Optimisation
 
-This reference covers Vaex's performance features including lazy evaluation, caching, memory management, async operations, and optimization strategies for processing massive datasets.
+This reference covers Vaex's performance features including lazy evaluation, caching, memory management, async operations, and optimisation strategies for processing massive datasets.
 
 ## Understanding Lazy Evaluation
 
@@ -24,8 +24,8 @@ result = mean_expr  # Now the mean is actually calculated
 
 **Key concepts:**
 - **Expressions** are lazy - they define computations without executing them
-- **Materialization** happens when you access the result
-- **Query optimization** happens automatically before execution
+- **Materialisation** happens when you access the result
+- **Query optimisation** happens automatically before execution
 
 ### When Does Evaluation Happen?
 
@@ -153,7 +153,7 @@ future = df.x.mean(delay=True)
 result = future.get()  # Blocks until complete
 ```
 
-## Virtual Columns vs Materialized Columns
+## Virtual Columns vs Materialised Columns
 
 Understanding the difference is crucial for performance:
 
@@ -174,7 +174,7 @@ print(df.is_local('total'))  # False = virtual
 # - Fast to create
 ```
 
-### Materialized Columns
+### Materialised Columns
 
 ```python
 # Materialize a virtual column
@@ -192,7 +192,7 @@ print(df.is_local('total_materialized'))  # True = materialized
 # - Need to export data
 ```
 
-### Deciding: Virtual vs Materialized
+### Deciding: Virtual vs Materialised
 
 ```python
 # Virtual is better when:
@@ -211,7 +211,7 @@ df['complex'] = (df.x.log() * df.y.sqrt() + df.z ** 2).values  # Materialize
 
 ## Caching Strategies
 
-Vaex automatically caches some operations, but you can optimize further:
+Vaex automatically caches some operations, but you can optimise further:
 
 ### Automatic Caching
 
@@ -254,7 +254,7 @@ df = vaex.open('checkpoint.hdf5')
 
 ## Memory Management
 
-Optimize memory usage for very large datasets:
+Optimise memory usage for very large datasets:
 
 ### Memory-Mapped Files
 
@@ -367,9 +367,9 @@ def custom_sum(a):
 result = df.x.custom_agg(custom_sum)
 ```
 
-## Optimization Strategies
+## Optimisation Strategies
 
-### Strategy 1: Minimize Materializations
+### Strategy 1: Minimise Materialisations
 
 ```python
 # Bad: Creates many materialized columns
@@ -438,7 +438,7 @@ df = vaex.from_csv('huge.csv', convert='huge.hdf5')
 # Future loads: vaex.open('huge.hdf5')
 ```
 
-### Strategy 5: Optimize Expressions
+### Strategy 5: Optimise Expressions
 
 ```python
 # Less efficient: Repeated calculations
@@ -555,17 +555,17 @@ df['complex'] = (df.x.log() * df.y.sqrt() + df.z ** 3).values
 
 1. **Use HDF5 or Arrow formats** - Orders of magnitude faster than CSV
 2. **Leverage lazy evaluation** - Don't force computation until necessary
-3. **Batch operations with delay=True** - Minimize passes through data
-4. **Keep columns virtual** - Materialize only when beneficial
+3. **Batch operations with delay=True** - Minimise passes through data
+4. **Keep columns virtual** - Materialise only when beneficial
 5. **Use selections not filters** - More efficient for multiple segments
-6. **Profile your code** - Identify bottlenecks before optimizing
+6. **Profile your code** - Identify bottlenecks before optimising
 7. **Avoid `.values` and `.to_pandas_df()`** - Keep operations in Vaex
 8. **Parallelize naturally** - Vaex uses all cores automatically
 9. **Export to efficient formats** - Checkpoint complex pipelines
-10. **Optimize expressions** - Simplify math and reuse calculations
+10. **Optimise expressions** - Simplify math and reuse calculations
 
 ## Related Resources
 
-- For DataFrame basics: See `core_dataframes.md`
-- For data operations: See `data_processing.md`
-- For file I/O optimization: See `io_operations.md`
+- For DataFrame basics: See `core-dataframes.md`
+- For data operations: See `data-processing.md`
+- For file I/O optimisation: See `io-operations.md`

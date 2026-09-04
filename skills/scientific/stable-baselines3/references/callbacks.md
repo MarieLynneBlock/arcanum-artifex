@@ -523,7 +523,7 @@ class DebugCallback(BaseCallback):
    - Clear buffers periodically
 
 4. **Performance impact:**
-   - Minimize computation in `_on_step()` (called every step)
+   - Minimise computation in `_on_step()` (called every step)
    - Use `check_freq` to limit expensive operations
 
 ## Best Practices
@@ -543,7 +543,7 @@ class DebugCallback(BaseCallback):
 
 4. **Test callbacks independently:**
    - Create simple test cases
-   - Verify callback behavior before long training runs
+   - Verify callback behaviour before long training runs
 
 5. **Document custom callbacks:**
    - Clear docstrings

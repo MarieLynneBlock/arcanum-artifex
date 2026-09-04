@@ -1,6 +1,6 @@
 ---
-description: Query Open Targets Platform for target-disease associations, drug target discovery, tractability/safety data, genetics/omics evidence, known drugs, for therapeutic target identification.
 name: opentargets-database
+description: Query Open Targets Platform for target-disease associations, drug target discovery, tractability/safety data, genetics/omics evidence, known drugs, for therapeutic target identification.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-The Open Targets Platform is a comprehensive resource for systematic identification and prioritization of potential therapeutic drug targets. It integrates publicly available datasets including human genetics, omics, literature, and chemical data to build and score target-disease associations.
+The Open Targets Platform is a comprehensive resource for systematic identification and prioritisation of potential therapeutic drug targets. It integrates publicly available datasets including human genetics, omics, literature, and chemical data to build and score target-disease associations.
 
 **Key capabilities:**
 - Query target (gene) annotations including tractability, safety, expression
@@ -31,7 +31,7 @@ This skill should be used when:
 - **Evidence gathering:** Retrieving supporting evidence for target-disease associations
 - **Drug repurposing:** Identifying existing drugs that could be repurposed for new indications
 - **Competitive intelligence:** Understanding clinical precedence and drug development landscape
-- **Target prioritization:** Ranking targets based on genetic evidence and other data types
+- **Target prioritisation:** Ranking targets based on genetic evidence and other data types
 - **Mechanism research:** Investigating biological pathways and gene functions
 - **Biomarker discovery:** Finding genes differentially expressed in disease
 - **Safety assessment:** Identifying potential toxicity concerns for drug targets
@@ -94,7 +94,7 @@ target_info = get_target_info("ENSG00000157764", include_diseases=True)
 - **Genetic constraint:** pLI and LOEUF scores indicating essentiality
 - **Disease associations:** Diseases linked to the target with evidence scores
 
-Refer to `references/target_annotations.md` for detailed information about all target features.
+Refer to `references/target-annotations.md` for detailed information about all target features.
 
 ### 3. Query Disease Information
 
@@ -149,7 +149,7 @@ genetic_evidence = get_target_disease_evidence(
 6. **animal_model:** Mouse phenotypes from IMPC
 7. **literature:** Text-mining from Europe PMC
 
-Refer to `references/evidence_types.md` for detailed descriptions of all evidence types and interpretation guidelines.
+Refer to `references/evidence-types.md` for detailed descriptions of all evidence types and interpretation guidelines.
 
 ### 5. Find Known Drugs
 
@@ -228,10 +228,10 @@ Key information:
 - **Endpoint:** `https://api.platform.opentargets.org/api/v4/graphql`
 - **Interactive browser:** `https://api.platform.opentargets.org/api/v4/graphql/browser`
 - **No authentication required**
-- **Request only needed fields** to minimize response size
+- **Request only needed fields** to minimise response size
 - **Use pagination** for large result sets: `page: {size: N, index: M}`
 
-Refer to `references/api_reference.md` for:
+Refer to `references/api-reference.md` for:
 - Complete endpoint documentation
 - Example queries for all entity types
 - Error handling patterns
@@ -239,9 +239,9 @@ Refer to `references/api_reference.md` for:
 
 ## Best Practices
 
-### Target Prioritization Strategy
+### Target Prioritisation Strategy
 
-When prioritizing drug targets:
+When prioritising drug targets:
 
 1. **Start with genetic evidence:** Human genetics (GWAS, rare variants) provides strongest disease relevance
 2. **Check tractability:** Prefer targets with clinical or discovery precedence
@@ -281,7 +281,7 @@ When prioritizing drug targets:
 3. Review top targets sorted by association score
 4. For promising targets, get detailed target info
 5. Examine evidence types supporting each association
-6. Assess tractability and safety for prioritized targets
+6. Assess tractability and safety for prioritised targets
 
 **Workflow 2: Target Validation**
 1. Search for target → get Ensembl ID
@@ -326,7 +326,7 @@ Helper functions for common API operations:
 
 ### References
 
-**references/api_reference.md**
+**references/api-reference.md**
 Complete GraphQL API documentation including:
 - Endpoint details and authentication
 - Available query types (target, disease, drug, search)
@@ -334,7 +334,7 @@ Complete GraphQL API documentation including:
 - Error handling and best practices
 - Data licensing and citation requirements
 
-**references/evidence_types.md**
+**references/evidence-types.md**
 Comprehensive guide to evidence types and data sources:
 - Detailed descriptions of all 7 major evidence types
 - Scoring methodologies for each source
@@ -342,13 +342,13 @@ Comprehensive guide to evidence types and data sources:
 - Strengths and limitations of each evidence type
 - Quality assessment recommendations
 
-**references/target_annotations.md**
+**references/target-annotations.md**
 Complete target annotation reference:
 - 12 major annotation categories explained
 - Tractability assessment details
 - Safety liability sources
 - Expression, essentiality, and constraint data
-- Interpretation guidelines for target prioritization
+- Interpretation guidelines for target prioritisation
 - Red flags and green flags for target assessment
 
 ## Data Updates and Versioning

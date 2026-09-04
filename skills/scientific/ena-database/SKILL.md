@@ -1,6 +1,6 @@
 ---
-description: Access European Nucleotide Archive via API/FTP. Retrieve DNA/RNA sequences, raw reads (FASTQ), genome assemblies by accession, for genomics and bioinformatics pipelines. Supports multiple formats.
 name: ena-database
+description: Access European Nucleotide Archive via API/FTP. Retrieve DNA/RNA sequences, raw reads (FASTQ), genome assemblies by accession, for genomics and bioinformatics pipelines. Supports multiple formats.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -29,7 +29,7 @@ This skill should be used when:
 
 ### 1. Data Types and Structure
 
-ENA organizes data into hierarchical object types:
+ENA organises data into hierarchical object types:
 
 **Studies/Projects** - Group related data and control release dates. Studies are the primary unit for citing archived data.
 
@@ -49,7 +49,7 @@ ENA organizes data into hierarchical object types:
 
 ### 2. Programmatic Access
 
-ENA provides multiple REST APIs for data access. Consult `references/api_reference.md` for detailed endpoint documentation.
+ENA provides multiple REST APIs for data access. Consult `references/api-reference.md` for detailed endpoint documentation.
 
 **Key APIs:**
 
@@ -191,7 +191,7 @@ This skill includes detailed reference documentation for working with ENA:
 
 ### references/
 
-**api_reference.md** - Comprehensive API endpoint documentation including:
+**api-reference.md** - Comprehensive API endpoint documentation including:
 - Detailed parameters for Portal API and Browser API
 - Response format specifications
 - Advanced query syntax and operators

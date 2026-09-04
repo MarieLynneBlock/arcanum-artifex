@@ -9,6 +9,7 @@ This category contains skills focused on producing publication-ready and present
 - `markitdown`
 - `pdf`
 - `pptx`
+- `pptx-nord-theme`
 - `pptx-posters`
 - `scientific-slides`
 - `xlsx`

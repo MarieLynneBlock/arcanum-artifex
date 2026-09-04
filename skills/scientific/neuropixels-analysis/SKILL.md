@@ -1,6 +1,6 @@
 ---
-description: Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correction, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, AI-assisted visual analysis, for Neuropixels 1.0/2.0 extracellular electrophysiology. Use when working with neural recordings, spike sorting, extracellular electrophysiology, or when the user mentions Neuropixels, SpikeGLX, Open Ephys, Kilosort, quality metrics, or unit curation.
 name: neuropixels-analysis
+description: Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correction, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, AI-assisted visual analysis, for Neuropixels 1.0/2.0 extracellular electrophysiology. Use when working with neural recordings, spike sorting, extracellular electrophysiology, or when the user mentions Neuropixels, SpikeGLX, Open Ephys, Kilosort, quality metrics, or unit curation.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-Comprehensive toolkit for analyzing Neuropixels high-density neural recordings using current best practices from SpikeInterface, Allen Institute, and International Brain Laboratory (IBL). Supports the full workflow from raw data to publication-ready curated units.
+Comprehensive toolkit for analysing Neuropixels high-density neural recordings using current best practices from SpikeInterface, Allen Institute, and International Brain Laboratory (IBL). Supports the full workflow from raw data to publication-ready curated units.
 
 ## When to Use This Skill
 
@@ -22,7 +22,7 @@ This skill should be used when:
 - Running spike sorting (Kilosort4, SpykingCircus2, Mountainsort5)
 - Computing quality metrics (SNR, ISI violations, presence ratio)
 - Curating units using Allen/IBL criteria
-- Creating visualizations of neural data
+- Creating visualisations of neural data
 - Exporting results to Phy or NWB
 
 ## Supported Hardware & Formats
@@ -161,7 +161,7 @@ labels = npa.curate(metrics, method='allen')  # 'allen', 'ibl', 'strict'
 
 ### 6. AI-Assisted Curation (For Uncertain Units)
 
-When using this skill with Claude Code, Claude can directly analyze waveform plots and provide expert curation decisions. For programmatic API access:
+When using this skill with Claude Code, Claude can directly analyse waveform plots and provide expert curation decisions. For programmatic API access:
 
 ```python
 from anthropic import Anthropic
@@ -263,36 +263,36 @@ python scripts/export_to_phy.py metrics/analyzer --output phy_export/
 ```
 
 ### assets/analysis_template.py
-Complete analysis template. Copy and customize:
+Complete analysis template. Copy and customise:
 ```bash
 cp assets/analysis_template.py my_analysis.py
 # Edit parameters and run
 python my_analysis.py
 ```
 
-### reference/standard_workflow.md
+### reference/standard-workflow.md
 Detailed step-by-step workflow with explanations for each stage.
 
-### reference/api_reference.md
-Quick function reference organized by module.
+### reference/api-reference.md
+Quick function reference organised by module.
 
-### reference/plotting_guide.md
-Comprehensive visualization guide for publication-quality figures.
+### reference/plotting-guide.md
+Comprehensive visualisation guide for publication-quality figures.
 
 ## Detailed Reference Guides
 
 | Topic | Reference |
 |-------|-----------|
-| Full workflow | [references/standard_workflow.md](reference/standard_workflow.md) |
-| API reference | [references/api_reference.md](reference/api_reference.md) |
-| Plotting guide | [references/plotting_guide.md](reference/plotting_guide.md) |
-| Preprocessing | [references/PREPROCESSING.md](reference/PREPROCESSING.md) |
-| Spike sorting | [references/SPIKE_SORTING.md](reference/SPIKE_SORTING.md) |
-| Motion correction | [references/MOTION_CORRECTION.md](reference/MOTION_CORRECTION.md) |
-| Quality metrics | [references/QUALITY_METRICS.md](reference/QUALITY_METRICS.md) |
-| Automated curation | [references/AUTOMATED_CURATION.md](reference/AUTOMATED_CURATION.md) |
-| AI-assisted curation | [references/AI_CURATION.md](reference/AI_CURATION.md) |
-| Waveform analysis | [references/ANALYSIS.md](reference/ANALYSIS.md) |
+| Full workflow | [references/standard-workflow.md](references/standard-workflow.md) |
+| API reference | [references/api-reference.md](references/api-reference.md) |
+| Plotting guide | [references/plotting-guide.md](references/plotting-guide.md) |
+| Preprocessing | [references/preprocessing.md](references/preprocessing.md) |
+| Spike sorting | [references/spike-sorting.md](references/spike-sorting.md) |
+| Motion correction | [references/motion-correction.md](references/motion-correction.md) |
+| Quality metrics | [references/quality-metrics.md](references/quality-metrics.md) |
+| Automated curation | [references/automated-curation.md](references/automated-curation.md) |
+| AI-assisted curation | [references/ai-curation.md](references/ai-curation.md) |
+| Waveform analysis | [references/analysis.md](references/analysis.md) |
 
 ## Installation
 
@@ -339,7 +339,7 @@ project/
 ## Additional Resources
 
 - **SpikeInterface Docs**: https://spikeinterface.readthedocs.io/
-- **Neuropixels Tutorial**: https://spikeinterface.readthedocs.io/en/stable/how_to/analyze_neuropixels.html
+- **Neuropixels Tutorial**: https://spikeinterface.readthedocs.io/en/stable/how_to/analyse_neuropixels.html
 - **Kilosort4 GitHub**: https://github.com/MouseLand/Kilosort
 - **IBL Neuropixel Tools**: https://github.com/int-brain-lab/ibl-neuropixel
 - **Allen Institute ecephys**: https://github.com/AllenInstitute/ecephys_spike_sorting

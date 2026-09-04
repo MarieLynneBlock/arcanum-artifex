@@ -1,15 +1,15 @@
-# Visualization & Simulation in PyLabRobot
+# Visualisation & Simulation in PyLabRobot
 
 ## Overview
 
-PyLabRobot provides visualization and simulation tools for developing, testing, and validating laboratory protocols without physical hardware. The visualizer offers real-time 3D visualization of deck state, while simulation backends enable protocol testing and validation.
+PyLabRobot provides visualisation and simulation tools for developing, testing, and validating laboratory protocols without physical hardware. The visualizer offers real-time 3D visualisation of deck state, while simulation backends enable protocol testing and validation.
 
 ## The Visualizer
 
 ### What is the Visualizer?
 
 The PyLabRobot Visualizer is a browser-based tool that:
-- Displays 3D visualization of the deck layout
+- Displays 3D visualisation of the deck layout
 - Shows real-time tip presence and liquid volumes
 - Works with both simulated and physical robots
 - Provides interactive deck state inspection
@@ -82,7 +82,7 @@ set_volume_tracking(True)
 
 #### Setting Initial Liquids
 
-Define initial liquid contents for visualization:
+Define initial liquid contents for visualisation:
 
 ```python
 # Set liquid in a single well
@@ -105,7 +105,7 @@ for well in plate.children:
     well.tracker.set_liquids([("sample", 150)])
 ```
 
-#### Visualizing Tip Presence
+#### Visualising Tip Presence
 
 ```python
 # Tips are automatically tracked when using pick_up/drop operations
@@ -410,7 +410,7 @@ async def test_transfer_protocol():
 ## Best Practices
 
 1. **Always Use Simulation First**: Develop and test protocols in simulation before running on hardware
-2. **Enable Tracking**: Turn on tip and volume tracking for accurate visualization
+2. **Enable Tracking**: Turn on tip and volume tracking for accurate visualisation
 3. **Set Initial States**: Define initial liquid volumes for realistic simulation
 4. **Visual Inspection**: Use visualizer to verify deck layout and protocol execution
 5. **Validate Logic**: Test edge cases and error conditions in simulation

@@ -107,7 +107,7 @@ Select statistics from the CFTC Commitments of Traders (COT) report covering fin
 
 **Key use cases:**
 - Monitoring hedge fund positioning in futures markets
-- Analyzing speculative vs. commercial positioning
+- Analysing speculative vs. commercial positioning
 - Tracking changes in financial futures open interest
 
 ---
@@ -147,4 +147,4 @@ Statistics from the DTCC Fixed Income Clearing Corporation (FICC) Sponsored Repo
 **Key use cases:**
 - Monitoring growth of the sponsored repo market
 - Tracking volumes of centrally cleared repo activity
-- Analyzing changes in repo market structure
+- Analysing changes in repo market structure

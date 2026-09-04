@@ -269,7 +269,7 @@ data = av_get("ATR", symbol="IBM", interval="daily", time_period=14)
 ts = data["Technical Analysis: ATR"]
 ```
 
-### NATR — Normalized Average True Range
+### NATR — Normalised Average True Range
 
 ```python
 data = av_get("NATR", symbol="IBM", interval="daily", time_period=14)
@@ -334,7 +334,7 @@ ts = data["Technical Analysis: TRANGE"]
 | SAR | Parabolic SAR | symbol, interval |
 | TRANGE | True Range | symbol, interval |
 | ATR | Average True Range | symbol, interval, time_period |
-| NATR | Normalized ATR | symbol, interval, time_period |
+| NATR | Normalised ATR | symbol, interval, time_period |
 | AD | Chaikin A/D Line | symbol, interval |
 | ADOSC | Chaikin A/D Oscillator | symbol, interval |
 | OBV | On Balance Volume | symbol, interval |

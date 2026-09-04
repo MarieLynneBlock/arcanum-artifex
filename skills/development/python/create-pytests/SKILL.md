@@ -1,6 +1,7 @@
 ---
-description: >
 name: create-pytests
+description: >-
+  Generates pytest test files for a Python codebase (or a targeted scope) that:
 version: 1.0.0
 tags:
   - testing

@@ -6,7 +6,7 @@ _Example research report — demonstrates markdown-mermaid-writing skill standar
 
 ## 📋 Overview
 
-This report analyzes the efficiency of CRISPR-Cas9 gene editing across three cell line models under variable guide RNA (gRNA) conditions. Editing efficiency was quantified by T7E1 assay and next-generation sequencing (NGS) of on-target loci[^1].
+This report analyses the efficiency of CRISPR-Cas9 gene editing across three cell line models under variable guide RNA (gRNA) conditions. Editing efficiency was quantified by T7E1 assay and next-generation sequencing (NGS) of on-target loci[^1].
 
 **Key findings:**
 
@@ -18,7 +18,7 @@ This report analyzes the efficiency of CRISPR-Cas9 gene editing across three cel
 
 ## 🔄 Experimental workflow
 
-CRISPR editing experiments followed a standardized five-stage protocol. Each stage has defined go/no-go criteria before proceeding.
+CRISPR editing experiments followed a standardised five-stage protocol. Each stage has defined go/no-go criteria before proceeding.
 
 ```mermaid
 flowchart TD
@@ -170,7 +170,7 @@ HEK293T's superior editing efficiency relative to K562 and Jurkat likely reflect
 
 1. **Adherent morphology** — enables more uniform lipofection contact
 2. **High transfection permissiveness** — HEK293T expresses the SV40 large T antigen, which may facilitate nuclear import
-3. **Cell cycle distribution** — higher proportion in S/G2 phase where HDR is favored
+3. **Cell cycle distribution** — higher proportion in S/G2 phase where HDR is favoured
 
 <details>
 <summary><strong>🔧 Technical details — off-target analysis</strong></summary>
@@ -206,7 +206,7 @@ showLegend true
 
 1. RNP-lipofection in HEK293T achieves >75% CRISPR editing efficiency — competitive with electroporation without the associated viability cost
 2. gRNA GC content is the single strongest predictor of editing efficiency in our dataset (r = 0.82)
-3. This protocol is not directly transferable to suspension lines without further optimization; K562 and Jurkat require electroporation or viral delivery for comparable efficiency
+3. This protocol is not directly transferable to suspension lines without further optimisation; K562 and Jurkat require electroporation or viral delivery for comparable efficiency
 
 ---
 

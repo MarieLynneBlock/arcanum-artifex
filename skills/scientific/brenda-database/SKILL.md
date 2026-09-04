@@ -1,6 +1,6 @@
 ---
-description: Access BRENDA enzyme database via SOAP API. Retrieve kinetic parameters (Km, kcat), reaction equations, organism data, and substrate-specific enzyme information for biochemical research and metabolic pathway analysis.
 name: brenda-database
+description: Access BRENDA enzyme database via SOAP API. Retrieve kinetic parameters (Km, kcat), reaction equations, organism data, and substrate-specific enzyme information for biochemical research and metabolic pathway analysis.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -22,8 +22,8 @@ This skill should be used when:
 - Investigating optimal pH, temperature, and conditions
 - Accessing enzyme inhibition and activation data
 - Supporting metabolic pathway reconstruction and retrosynthesis
-- Performing enzyme engineering and optimization studies
-- Analyzing substrate specificity and cofactor requirements
+- Performing enzyme engineering and optimisation studies
+- Analysing substrate specificity and cofactor requirements
 
 ## Core Capabilities
 
@@ -186,7 +186,7 @@ for cofactor in cofactors:
 
 ### 6. Substrate Specificity
 
-Analyze enzyme substrate preferences:
+Analyse enzyme substrate preferences:
 
 **Get Substrate Specificity Data**:
 ```python
@@ -266,11 +266,11 @@ alkaline = find_ph_stable_variants("1.1.1.1", min_ph=8.0)
 acidic = find_ph_stable_variants("1.1.1.1", max_ph=6.0)
 ```
 
-### 9. Kinetic Modeling
+### 9. Kinetic Modelling
 
-Prepare data for kinetic modeling:
+Prepare data for kinetic modelling:
 
-**Get Kinetic Parameters for Modeling**:
+**Get Kinetic Parameters for Modelling**:
 ```python
 from scripts.brenda_queries import get_modeling_parameters
 
@@ -337,11 +337,11 @@ Provides high-level functions for enzyme data analysis:
 - `compare_across_organisms(ec_number, organisms)`: Compare enzyme properties
 - `get_environmental_parameters(ec_number)`: Get pH and temperature data
 - `get_cofactor_requirements(ec_number)`: Get cofactor information
-- `get_substrate_specificity(ec_number)`: Analyze substrate preferences
+- `get_substrate_specificity(ec_number)`: Analyse substrate preferences
 - `get_inhibitors(ec_number)`: Get enzyme inhibition data
 - `get_activators(ec_number)`: Get enzyme activation data
 - `find_thermophilic_homologs(ec_number, min_temp)`: Find heat-stable variants
-- `get_modeling_parameters(ec_number, substrate)`: Get parameters for kinetic modeling
+- `get_modeling_parameters(ec_number, substrate)`: Get parameters for kinetic modelling
 - `export_kinetic_data(ec_number, format, filename)`: Export data to file
 
 **Usage**:
@@ -355,16 +355,16 @@ enzymes = search_enzymes_by_substrate("glucose", limit=20)
 comparison = compare_across_organisms("1.1.1.1", ["E. coli", "S. cerevisiae"])
 ```
 
-### scripts/brenda_visualization.py
+### scripts/brenda_visualisation.py
 
-Provides visualization functions for enzyme data:
+Provides visualisation functions for enzyme data:
 
 **Key Functions**:
 - `plot_kinetic_parameters(ec_number)`: Plot Km and kcat distributions
 - `plot_organism_comparison(ec_number, organisms)`: Compare organisms
 - `plot_pH_profiles(ec_number)`: Plot pH activity profiles
 - `plot_temperature_profiles(ec_number)`: Plot temperature activity profiles
-- `plot_substrate_specificity(ec_number)`: Visualize substrate preferences
+- `plot_substrate_specificity(ec_number)`: Visualise substrate preferences
 - `plot_michaelis_menten(ec_number, substrate)`: Generate kinetic curves
 - `create_heatmap_data(enzymes, parameters)`: Create data for heatmaps
 - `generate_summary_plots(ec_number)`: Create comprehensive enzyme overview
@@ -662,7 +662,7 @@ def extract_multiple_values(data, field_name):
 
 ## Reference Documentation
 
-For detailed BRENDA documentation, see `references/api_reference.md`. This includes:
+For detailed BRENDA documentation, see `references/api-reference.md`. This includes:
 - Complete SOAP API method documentation
 - Full parameter lists and formats
 - EC number structure and validation

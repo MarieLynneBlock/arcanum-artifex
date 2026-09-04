@@ -377,9 +377,9 @@ ddf.to_parquet('cleaned_data/')
 ### Expensive Operations
 - GroupBy: Requires shuffle, can be slow
 - Distinct: Requires collecting all unique values
-- Operations requiring full data materialization
+- Operations requiring full data materialisation
 
-### Optimization Tips
+### Optimisation Tips
 
 **1. Use FoldBy Instead of GroupBy**
 ```python

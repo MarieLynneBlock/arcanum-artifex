@@ -1,6 +1,6 @@
 ---
-description: "Create and synchronize prompt-based AI agents directly within Azure AI Foundry via REST API, from a local JSON manifest. Unlike scaffolding skills that only generate local code, this skill registers agents in the Foundry service itself — making them immediately available for invocation. Use when the user asks to create agents in Foundry, sync, deploy, register, or push agents to Foundry, update agent instructions, or scaffold the manifest and sync script for a new repository. Triggers: 'create agent in foundry', 'sync foundry agents', 'deploy agents to foundry', 'register agents in foundry', 'push agents', 'create foundry agent manifest', 'scaffold agent sync'."
 name: foundry-agent-sync
+description: "Create and synchronise prompt-based AI agents directly within Azure AI Foundry via REST API, from a local JSON manifest. Unlike scaffolding skills that only generate local code, this skill registers agents in the Foundry service itself — making them immediately available for invocation. Use when the user asks to create agents in Foundry, sync, deploy, register, or push agents to Foundry, update agent instructions, or scaffold the manifest and sync script for a new repository. Triggers: 'create agent in foundry', 'sync foundry agents', 'deploy agents to foundry', 'register agents in foundry', 'push agents', 'create foundry agent manifest', 'scaffold agent sync'."
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -9,7 +9,7 @@ metadata:
 
 ## Overview
 
-Create and synchronize prompt-based AI agents directly within Azure AI Foundry via the Agent Service REST API. This skill registers agents in the Foundry service itself — making them immediately available for invocation, evaluation, and management through the Foundry portal or API. Each agent is created or updated idempotently via a named POST call, using definitions from a local JSON manifest file.
+Create and synchronise prompt-based AI agents directly within Azure AI Foundry via the Agent Service REST API. This skill registers agents in the Foundry service itself — making them immediately available for invocation, evaluation, and management through the Foundry portal or API. Each agent is created or updated idempotently via a named POST call, using definitions from a local JSON manifest file.
 
 > **Key distinction:** This skill creates agents inside AI Foundry (server-side). It does not scaffold local agent code or container images — for that, use the `microsoft-foundry` skill's `create` sub-skill.
 

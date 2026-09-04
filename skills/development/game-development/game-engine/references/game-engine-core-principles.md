@@ -13,7 +13,7 @@ A game engine is a reusable software framework that abstracts the common systems
 Key motivations:
 - **Reusability** -- Use the same codebase across multiple game projects.
 - **Separation of engine code from game code** -- Engine developers and game designers can work independently.
-- **Maintainability** -- Well-structured code is easier to debug, extend, and optimize.
+- **Maintainability** -- Well-structured code is easier to debug, extend, and optimise.
 - **Scalability** -- Add new features or platforms without rewriting existing systems.
 
 ---
@@ -56,15 +56,15 @@ Each system should have a single, clearly defined responsibility. Avoid mixing r
 
 ### Data-Driven Design
 
-Wherever possible, behavior should be controlled by data rather than hard-coded logic. This allows designers and artists to modify game behavior without recompiling code.
+Wherever possible, behaviour should be controlled by data rather than hard-coded logic. This allows designers and artists to modify game behaviour without recompiling code.
 
 **Examples of data-driven approaches:**
 - Level layouts defined in data files (JSON, XML, binary) rather than code.
-- Entity properties and behaviors configured through component data.
+- Entity properties and behaviours configured through component data.
 - Shader parameters exposed as material properties editable in tools.
 - Animation state machines defined in configuration rather than imperative code.
 
-### Minimize Dependencies
+### Minimise Dependencies
 
 Each module should depend on as few other modules as possible. The dependency graph should be a clean hierarchy, not a tangled web.
 
@@ -90,11 +90,11 @@ Circular dependencies between modules are a sign of poor architecture and should
 
 ## The Entity-Component-System (ECS) Pattern
 
-ECS is a widely adopted architectural pattern in modern game engines that favors composition over inheritance.
+ECS is a widely adopted architectural pattern in modern game engines that favours composition over inheritance.
 
 ### Core Concepts
 
-- **Entity** -- A unique identifier (often just an integer ID) that represents a game object. An entity has no behavior or data of its own.
+- **Entity** -- A unique identifier (often just an integer ID) that represents a game object. An entity has no behaviour or data of its own.
 - **Component** -- A plain data container attached to an entity. Each component type stores one aspect of an entity's state (position, velocity, sprite, health, etc.).
 - **System** -- A function or object that processes all entities with a specific set of components. Systems contain the logic; components contain the data.
 
@@ -115,7 +115,7 @@ GameObject
 Problems with this approach:
 - Adding a new entity type that combines traits from multiple branches requires restructuring the hierarchy or using multiple inheritance.
 - Deep hierarchies are fragile; changes to base classes ripple through all descendants.
-- Classes accumulate unused behavior over time.
+- Classes accumulate unused behaviour over time.
 
 ECS solves these problems through composition:
 
@@ -179,7 +179,7 @@ function gravitySystem(world, deltaTime) {
 
 ### Memory Management
 
-Custom memory management is critical for game engine performance. The default allocator (malloc/new) is general-purpose and not optimized for game workloads.
+Custom memory management is critical for game engine performance. The default allocator (malloc/new) is general-purpose and not optimised for game workloads.
 
 **Common allocation strategies:**
 
@@ -264,10 +264,10 @@ The rendering subsystem translates the game's visual state into pixels on screen
 2. **Frustum culling** -- Discard objects outside the camera's view.
 3. **Occlusion culling** -- Discard objects hidden behind other geometry.
 4. **Sorting** -- Order objects by material, depth, or transparency requirements.
-5. **Batching** -- Group objects with the same material to minimize draw calls and state changes.
+5. **Batching** -- Group objects with the same material to minimise draw calls and state changes.
 6. **Vertex processing** -- Transform vertices from model space to screen space (vertex shader).
 7. **Rasterization** -- Convert triangles to fragments (pixels).
-8. **Fragment processing** -- Compute final pixel color using lighting, textures, and effects (fragment shader).
+8. **Fragment processing** -- Compute final pixel colour using lighting, textures, and effects (fragment shader).
 9. **Post-processing** -- Apply screen-space effects like bloom, tone mapping, and anti-aliasing.
 
 **Render command pattern:**
@@ -310,13 +310,13 @@ class Renderer {
 
 ### Physics Integration
 
-The physics subsystem simulates physical behavior and detects collisions.
+The physics subsystem simulates physical behaviour and detects collisions.
 
 **Key design considerations:**
 
-- **Fixed timestep** -- Physics should update at a fixed rate (e.g., 50 Hz) independent of the rendering frame rate. This ensures deterministic simulation behavior.
+- **Fixed timestep** -- Physics should update at a fixed rate (e.g., 50 Hz) independent of the rendering frame rate. This ensures deterministic simulation behaviour.
 - **Collision phases** -- Use a broad phase (spatial partitioning, bounding volume hierarchies) to quickly eliminate non-colliding pairs, followed by a narrow phase for precise intersection testing.
-- **Physics world separation** -- The physics world should maintain its own representation of objects (physics bodies) separate from game entities. A synchronization step maps between them.
+- **Physics world separation** -- The physics world should maintain its own representation of objects (physics bodies) separate from game entities. A synchronisation step maps between them.
 
 ```javascript
 class PhysicsWorld {
@@ -482,7 +482,7 @@ class DeferredEventBus extends EventBus {
 
 ### Scene Management
 
-The scene manager organizes game content into logical groups and manages transitions between different game states.
+The scene manager organises game content into logical groups and manages transitions between different game states.
 
 **Common patterns:**
 
@@ -648,13 +648,13 @@ class Engine {
 
 While modularity is important, over-engineering interfaces before understanding real requirements leads to unnecessary complexity. Start with simple, concrete implementations and refactor toward abstraction when actual use cases demand it.
 
-### Profile Before Optimizing
+### Profile Before Optimising
 
-Measure actual performance bottlenecks using profiling tools before spending time on optimization. Intuition about where time is spent is frequently wrong.
+Measure actual performance bottlenecks using profiling tools before spending time on optimisation. Intuition about where time is spent is frequently wrong.
 
 ### Data-Oriented Design
 
-Organize data by how it is accessed rather than by object-oriented abstractions. Storing components of the same type contiguously in memory (Structure of Arrays rather than Array of Structures) dramatically improves CPU cache hit rates.
+Organise data by how it is accessed rather than by object-oriented abstractions. Storing components of the same type contiguously in memory (Structure of Arrays rather than Array of Structures) dramatically improves CPU cache hit rates.
 
 ```javascript
 // Array of Structures (cache-unfriendly for position-only iteration)
@@ -669,7 +669,7 @@ const sprites = ["hero.png", "bat.png"];
 const healths = [100, 30];
 ```
 
-### Minimize Allocations in Hot Paths
+### Minimise Allocations in Hot Paths
 
 Avoid creating new objects or allocating memory during per-frame updates. Pre-allocate buffers, use object pools, and reuse temporary objects.
 
@@ -685,11 +685,11 @@ Group similar operations together to reduce overhead from context switching, dra
 |---|---|
 | Modularity | Independent subsystems with clean interfaces |
 | Separation of concerns | Each system has a single responsibility |
-| Data-driven design | Behavior controlled by data, not hard-coded logic |
+| Data-driven design | Behaviour controlled by data, not hard-coded logic |
 | Composition over inheritance | ECS pattern for flexible entity construction |
 | Minimal dependencies | Clean, hierarchical dependency graph |
 | Platform abstraction | Uniform interfaces over platform-specific code |
 | Fixed timestep physics | Deterministic simulation independent of frame rate |
 | Event-driven communication | Decoupled interaction through publish-subscribe |
-| Data-oriented performance | Optimize memory layout for access patterns |
-| Measure before optimizing | Profile to identify actual bottlenecks |
+| Data-oriented performance | Optimise memory layout for access patterns |
+| Measure before optimising | Profile to identify actual bottlenecks |

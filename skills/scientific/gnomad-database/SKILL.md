@@ -1,6 +1,6 @@
 ---
-description: Query gnomAD (Genome Aggregation Database) for population allele frequencies, variant constraint scores (pLI, LOEUF), and loss-of-function intolerance. Essential for variant pathogenicity interpretation, rare disease genetics, and identifying loss-of-function intolerant genes.
 name: gnomad-database
+description: Query gnomAD (Genome Aggregation Database) for population allele frequencies, variant constraint scores (pLI, LOEUF), and loss-of-function intolerance. Essential for variant pathogenicity interpretation, rare disease genetics, and identifying loss-of-function intolerant genes.
 license: CC0-1.0
 metadata:
   skill-author: 'Kuan-lin Huang'
@@ -354,7 +354,7 @@ def query_gnomad_sv(gene_symbol):
    - BS1: AF > disease prevalence threshold → Benign Supporting
    - PM2: Absent or very rare in gnomAD → Pathogenic Moderate
 
-### Workflow 2: Gene Prioritization in Rare Disease
+### Workflow 2: Gene Prioritisation in Rare Disease
 
 1. Query constraint scores for candidate genes
 2. Filter for pLI > 0.9 (haploinsufficient) or LOEUF < 0.35

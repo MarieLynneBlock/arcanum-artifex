@@ -1,6 +1,6 @@
 ---
-description: Query STRING API for protein-protein interactions (59M proteins, 20B interactions). Network analysis, GO/KEGG enrichment, interaction discovery, 5000+ species, for systems biology.
 name: string-database
+description: Query STRING API for protein-protein interactions (59M proteins, 20B interactions). Network analysis, GO/KEGG enrichment, interaction discovery, 5000+ species, for systems biology.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -19,8 +19,8 @@ This skill should be used when:
 - Performing functional enrichment analysis (GO, KEGG, Pfam) on protein lists
 - Discovering interaction partners and expanding protein networks
 - Testing if proteins form significantly enriched functional modules
-- Generating network visualizations with evidence-based coloring
-- Analyzing homology and protein family relationships
+- Generating network visualisations with evidence-based colouring
+- Analysing homology and protein family relationships
 - Conducting cross-species protein interaction comparisons
 - Identifying hub proteins and network connectivity patterns
 
@@ -28,7 +28,7 @@ This skill should be used when:
 
 The skill provides:
 1. Python helper functions (`scripts/string_api.py`) for all STRING REST API operations
-2. Comprehensive reference documentation (`references/string_reference.md`) with detailed API specifications
+2. Comprehensive reference documentation (`references/string-reference.md`) with detailed API specifications
 
 When users request STRING data, determine which operation is needed and use the appropriate function from `scripts/string_api.py`.
 
@@ -65,7 +65,7 @@ result = string_map_ids('p53', species=9606, limit=5)
 
 Get protein-protein interaction network data in tabular format.
 
-**When to use**: Building interaction networks, analyzing connectivity, retrieving interaction evidence.
+**When to use**: Building interaction networks, analysing connectivity, retrieving interaction evidence.
 
 **Usage**:
 ```python
@@ -96,9 +96,9 @@ network = string_network('TP53', species=9606, network_type='physical')
 
 **Output columns**: Interaction pairs, confidence scores, and individual evidence scores (neighborhood, fusion, coexpression, experimental, database, text-mining).
 
-### 3. Network Visualization (`string_network_image`)
+### 3. Network Visualisation (`string_network_image`)
 
-Generate network visualization as PNG image.
+Generate network visualisation as PNG image.
 
 **When to use**: Creating figures, visual exploration, presentations.
 
@@ -124,8 +124,8 @@ img = string_network_image(proteins, species=9606, network_flavor='confidence')
 img = string_network_image(proteins, species=9606, network_flavor='actions')
 ```
 
-**Network flavors**:
-- `'evidence'`: Colored lines show evidence types (default)
+**Network flavours**:
+- `'evidence'`: Coloured lines show evidence types (default)
 - `'confidence'`: Line thickness represents confidence
 - `'actions'`: Shows activating/inhibiting relationships
 
@@ -164,7 +164,7 @@ partners = string_interaction_partners(['TP53', 'MDM2'],
 
 Perform enrichment analysis across Gene Ontology, KEGG pathways, Pfam domains, and more.
 
-**When to use**: Interpreting protein lists, pathway analysis, functional characterization, understanding biological processes.
+**When to use**: Interpreting protein lists, pathway analysis, functional characterisation, understanding biological processes.
 
 **Usage**:
 ```python
@@ -182,7 +182,7 @@ significant = df[df['fdr'] < 0.05]
 
 **Enrichment categories**:
 - **Gene Ontology**: Biological Process, Molecular Function, Cellular Component
-- **KEGG Pathways**: Metabolic and signaling pathways
+- **KEGG Pathways**: Metabolic and signalling pathways
 - **Pfam**: Protein domains
 - **InterPro**: Protein families and domains
 - **SMART**: Domain architecture
@@ -270,7 +270,7 @@ print(f"STRING version: {version}")
 
 ### Workflow 1: Protein List Analysis (Standard Workflow)
 
-**Use case**: Analyze a list of proteins from experiment (e.g., differential expression, proteomics).
+**Use case**: Analyse a list of proteins from experiment (e.g., differential expression, proteomics).
 
 ```python
 from scripts.string_api import (string_map_ids, string_network,
@@ -324,7 +324,7 @@ with open('tp53_network.png', 'wb') as f:
 
 ### Workflow 3: Pathway-Centric Analysis
 
-**Use case**: Identify and visualize proteins in a specific biological pathway.
+**Use case**: Identify and visualise proteins in a specific biological pathway.
 
 ```python
 from scripts.string_api import string_enrichment, string_network
@@ -473,7 +473,7 @@ Only includes evidence for direct physical binding (experimental data and databa
 
 ## Detailed Reference
 
-For comprehensive API documentation, complete parameter lists, output formats, and advanced usage, refer to `references/string_reference.md`. This includes:
+For comprehensive API documentation, complete parameter lists, output formats, and advanced usage, refer to `references/string-reference.md`. This includes:
 
 - Complete API endpoint specifications
 - All supported output formats (TSV, JSON, XML, PSI-MI)

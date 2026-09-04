@@ -1,11 +1,11 @@
-# Graphics and Visualization Reference
+# Graphics and Visualisation Reference
 
 ## Table of Contents
 1. [2D Plotting](#2d-plotting)
 2. [3D Plotting](#3d-plotting)
-3. [Specialized Plots](#specialized-plots)
+3. [Specialised Plots](#specialised-plots)
 4. [Figure Management](#figure-management)
-5. [Customization](#customization)
+5. [Customisation](#customisation)
 6. [Exporting and Saving](#exporting-and-saving)
 
 ## 2D Plotting
@@ -231,7 +231,7 @@ shading interp;                 % Interpolated colors
 shading faceted;                % With edges (default)
 ```
 
-## Specialized Plots
+## Specialised Plots
 
 ### Statistical Plots
 
@@ -376,7 +376,7 @@ figure(fig);
 axes(ax);
 ```
 
-## Customization
+## Customisation
 
 ### Labels and Title
 
@@ -457,7 +457,7 @@ ytickformat('%.2f');            % Format
 xtickformat('usd');             % Currency
 ```
 
-### Colors and Colormaps
+### Colours and Colormaps
 
 ```matlab
 % Predefined colormaps

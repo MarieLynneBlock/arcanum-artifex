@@ -1,6 +1,6 @@
 ---
-description: 'Create a formal specification for an existing GitHub Actions CI/CD workflow, optimized for AI consumption and workflow maintenance.'
 name: create-github-action-workflow-specification
+description: 'Create a formal specification for an existing GitHub Actions CI/CD workflow, optimised for AI consumption and workflow maintenance.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -9,9 +9,9 @@ metadata:
 
 Create a comprehensive specification for the GitHub Actions workflow: `${input:WorkflowFile}`.
 
-This specification serves as a specification for the workflow's behavior, requirements, and constraints. It must be implementation-agnostic, focusing on **what** the workflow accomplishes rather than **how** it's implemented.
+This specification serves as a specification for the workflow's behaviour, requirements, and constraints. It must be implementation-agnostic, focusing on **what** the workflow accomplishes rather than **how** it's implemented.
 
-## AI-Optimized Requirements
+## AI-Optimised Requirements
 
 - **Token Efficiency**: Use concise language without sacrificing clarity
 - **Structured Data**: Leverage tables, lists, and diagrams for dense information
@@ -99,7 +99,7 @@ branches: [list of branch patterns]
 ```yaml
 # Job Outputs
 job_1_output: string  # Description: [purpose]
-build_artifact: file  # Description: [content type]
+build_artefact: file  # Description: [content type]
 ```
 
 ### Secrets & Variables
@@ -229,7 +229,7 @@ build_artifact: file  # Description: [content type]
 
 ## Analysis Instructions
 
-When analyzing the workflow file:
+When analysing the workflow file:
 
 1. **Extract Core Purpose**: Identify the primary business objective
 2. **Map Job Flow**: Create dependency graph showing execution order
@@ -237,7 +237,7 @@ When analyzing the workflow file:
 4. **Capture Constraints**: Extract timeouts, permissions, and limits
 5. **Define Quality Gates**: Identify validation and approval points
 6. **Document Error Paths**: Map failure scenarios and recovery
-7. **Abstract Implementation**: Focus on behavior, not syntax
+7. **Abstract Implementation**: Focus on behaviour, not syntax
 
 ## Mermaid Diagram Guidelines
 
@@ -267,7 +267,7 @@ graph TD
     C --> D
 ```
 
-## Token Optimization Strategies
+## Token Optimisation Strategies
 
 1. **Use Tables**: Dense information in structured format
 2. **Abbreviate Consistently**: Define once, use throughout

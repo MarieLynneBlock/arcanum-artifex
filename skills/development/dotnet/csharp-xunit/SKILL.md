@@ -1,6 +1,6 @@
 ---
-description: 'Get best practices for XUnit unit testing, including data-driven tests'
 name: csharp-xunit
+description: 'Get best practices for XUnit unit testing, including data-driven tests'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -28,8 +28,8 @@ Your goal is to help me write effective unit tests with XUnit, covering both sta
 
 ## Standard Tests
 
-- Keep tests focused on a single behavior
-- Avoid testing multiple behaviors in one test method
+- Keep tests focused on a single behaviour
+- Avoid testing multiple behaviours in one test method
 - Use clear assertions that express intent
 - Include only the assertions needed to verify the test case
 - Make tests independent and idempotent (can run in any order)
@@ -64,7 +64,7 @@ Your goal is to help me write effective unit tests with XUnit, covering both sta
 ## Test Organization
 
 - Group tests by feature or component
-- Use `[Trait("Category", "CategoryName")]` for categorization
+- Use `[Trait("Category", "CategoryName")]` for categorisation
 - Use collection fixtures to group tests with shared dependencies
 - Consider output helpers (`ITestOutputHelper`) for test diagnostics
 - Skip tests conditionally with `Skip = "reason"` in fact/theory attributes

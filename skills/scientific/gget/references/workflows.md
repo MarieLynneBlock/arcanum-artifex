@@ -83,7 +83,7 @@ print("\nComplete gene analysis pipeline finished!")
 
 ## Comparative Structural Biology
 
-Compare protein structures across species and analyze functional motifs.
+Compare protein structures across species and analyse functional motifs.
 
 ```python
 import gget
@@ -164,7 +164,7 @@ print("\nComparative structural biology workflow completed!")
 
 ## Cancer Genomics Analysis
 
-Analyze cancer-associated genes and their mutations.
+Analyse cancer-associated genes and their mutations.
 
 ```python
 import gget
@@ -259,7 +259,7 @@ print("\nCancer genomics analysis completed!")
 
 ## Single-Cell Expression Analysis
 
-Analyze single-cell RNA-seq data for specific cell types and tissues.
+Analyse single-cell RNA-seq data for specific cell types and tissues.
 
 ```python
 import gget
@@ -479,7 +479,7 @@ print("  - key_genes_protein.fasta")
 
 ## Mutation Impact Assessment
 
-Analyze the impact of genetic mutations on protein structure and function.
+Analyse the impact of genetic mutations on protein structure and function.
 
 ```python
 import gget

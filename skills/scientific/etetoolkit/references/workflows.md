@@ -8,7 +8,7 @@ This document provides complete workflows for common tasks using the ETE Toolkit
 3. [Tree Comparison](#tree-comparison)
 4. [Taxonomy Integration](#taxonomy-integration)
 5. [Clustering Analysis](#clustering-analysis)
-6. [Tree Visualization](#tree-visualization)
+6. [Tree Visualisation](#tree-visualisation)
 
 ---
 
@@ -502,7 +502,7 @@ for taxid in lineage:
 
 ## Clustering Analysis
 
-### Analyzing Hierarchical Clustering Results
+### Analysing Hierarchical Clustering Results
 
 ```python
 from ete3 import ClusterTree
@@ -568,7 +568,7 @@ for metric in metrics:
 
 ---
 
-## Tree Visualization
+## Tree Visualisation
 
 ### Basic Tree Rendering
 
@@ -590,7 +590,7 @@ tree.render("tree_output.png", tree_style=ts, w=800, h=600, units="px")
 tree.render("tree_output.svg", tree_style=ts)
 ```
 
-### Customizing Node Appearance
+### Customising Node Appearance
 
 ```python
 from ete3 import Tree, TreeStyle, NodeStyle

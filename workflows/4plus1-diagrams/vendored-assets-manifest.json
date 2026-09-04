@@ -1,0 +1,81 @@
+{
+  "manifest_version": 1,
+  "generated_at_utc": "2026-07-10T07:38:29Z",
+  "assets": [
+    {
+      "id": "skill-4plus1-models",
+      "type": "skill",
+      "local_path": "skills/4plus1-models",
+      "source": {
+        "kind": "bundle-path",
+        "path": "skills/4plus1-models",
+        "ref": "snapshot-local-2026-05-16"
+      },
+      "last_sync_utc": "2026-05-16T00:00:00Z",
+      "integrity": {
+        "algo": "sha256-tree-v1",
+        "hash": "134ed5bfb3c6a529baae1df797082334028c190e43973e69c3f26056cb355325"
+      }
+    },
+    {
+      "id": "skill-draw-io-diagram-generator",
+      "type": "skill",
+      "local_path": "skills/draw-io-diagram-generator",
+      "source": {
+        "kind": "bundle-path",
+        "path": "skills/draw-io-diagram-generator",
+        "ref": "snapshot-local-2026-05-16"
+      },
+      "last_sync_utc": "2026-05-16T00:00:00Z",
+      "integrity": {
+        "algo": "sha256-tree-v1",
+        "hash": "3f968e141892b6fa9c89d17e25a6a91fabe59f1cf0472020b59367c8437ab428"
+      }
+    },
+    {
+      "id": "skill-miro-diagram-generator",
+      "type": "skill",
+      "local_path": "skills/miro-diagram-generator",
+      "source": {
+        "kind": "bundle-path",
+        "path": "skills/miro-diagram-generator",
+        "ref": "snapshot-local-2026-05-16"
+      },
+      "last_sync_utc": "2026-05-16T00:00:00Z",
+      "integrity": {
+        "algo": "sha256-tree-v1",
+        "hash": "42b96b2ebc61cb10bb66aa240feb810ca2cfe1dd664f2820039218cbe66ede06"
+      }
+    },
+    {
+      "id": "instruction-draw-io",
+      "type": "instruction",
+      "local_path": "instructions/draw-io.instructions.md",
+      "source": {
+        "kind": "bundle-path",
+        "path": "instructions/draw-io.instructions.md",
+        "ref": "snapshot-local-2026-05-16"
+      },
+      "last_sync_utc": "2026-05-16T00:00:00Z",
+      "integrity": {
+        "algo": "sha256-tree-v1",
+        "hash": "22dc060428cbda3b6586c95fd191e3a160a0338a171a6b92e42afcbd6edfbc4c"
+      }
+    },
+    {
+      "id": "instruction-miro",
+      "type": "instruction",
+      "local_path": "instructions/miro.instructions.md",
+      "source": {
+        "kind": "bundle-path",
+        "path": "instructions/miro.instructions.md",
+        "ref": "snapshot-local-2026-05-16"
+      },
+      "last_sync_utc": "2026-05-16T00:00:00Z",
+      "integrity": {
+        "algo": "sha256-tree-v1",
+        "hash": "85989cc15ed7f9fdab6a50943be60ea24aa99a20bdf5ac8ec802933c56a43a83"
+      }
+    }
+  ]
+}

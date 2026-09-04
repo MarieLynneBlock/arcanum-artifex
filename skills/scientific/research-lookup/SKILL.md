@@ -1,8 +1,8 @@
 ---
-description: Look up current research information using the Parallel Chat API (primary) or Perplexity sonar-pro-search (academic paper searches). Automatically routes queries to the best backend. Use for finding papers, gathering research data, and verifying scientific information.
 name: research-lookup
-allowed-tools: Read Write Edit Bash
+description: Look up current research information using the Parallel Chat API (primary) or Perplexity sonar-pro-search (academic paper searches). Automatically routes queries to the best backend. Use for finding papers, gathering research data, and verifying scientific information.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 compatibility: PARALLEL_API_KEY and OPENROUTER_API_KEY required
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -121,7 +121,7 @@ Query Examples:
 
 ### 2. Academic Paper Search (Perplexity sonar-pro-search)
 
-**Used for academic-specific queries.** Prioritizes scholarly databases and peer-reviewed sources.
+**Used for academic-specific queries.** Prioritises scholarly databases and peer-reviewed sources.
 
 ```
 Query Examples:
@@ -159,9 +159,9 @@ Query Examples:
 
 ---
 
-## Paper Quality and Popularity Prioritization
+## Paper Quality and Popularity Prioritisation
 
-**CRITICAL**: When searching for papers, ALWAYS prioritize high-quality, influential papers.
+**CRITICAL**: When searching for papers, ALWAYS prioritise high-quality, influential papers.
 
 ### Citation-Based Ranking
 
@@ -182,11 +182,11 @@ Query Examples:
 - **Field-Specific**: Nature Medicine, Nature Biotechnology, Nature Methods
 - **Top CS/AI**: NeurIPS, ICML, ICLR, ACL, CVPR
 
-**Tier 2 - High-Impact Specialized** (Strong preference):
+**Tier 2 - High-Impact Specialised** (Strong preference):
 - Journals with Impact Factor > 10
 - Top conferences in subfields (EMNLP, NAACL, ECCV, MICCAI)
 
-**Tier 3 - Respected Specialized** (Include when relevant):
+**Tier 3 - Respected Specialised** (Include when relevant):
 - Journals with Impact Factor 5-10
 
 ---
@@ -215,7 +215,7 @@ export OPENROUTER_API_KEY="your_openrouter_api_key"
 
 **Perplexity sonar-pro-search:**
 - Model: `perplexity/sonar-pro-search` (via OpenRouter)
-- Search mode: Academic (prioritizes peer-reviewed sources)
+- Search mode: Academic (prioritises peer-reviewed sources)
 - Search context: High (comprehensive research)
 - Response time: 5-15 seconds
 
@@ -359,7 +359,7 @@ This skill enhances scientific writing by providing:
 - Perplexity: Information cutoff, may not access full text behind paywalls
 - Both: Cannot access proprietary or restricted databases
 
-**Fallback Behavior:**
+**Fallback Behaviour:**
 - If the selected backend's API key is missing, tries the other backend
 - If both backends fail, returns structured error response
 - Rephrase queries for better results if initial response is insufficient

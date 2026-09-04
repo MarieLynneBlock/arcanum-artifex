@@ -1,6 +1,6 @@
 ---
-description: Search and retrieve preprints from arXiv via the Atom API. Use this skill when searching for papers in physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering, or economics by keywords, authors, arXiv IDs, date ranges, or categories.
 name: arxiv-database
+description: Search and retrieve preprints from arXiv via the Atom API. Use this skill when searching for papers in physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering, or economics by keywords, authors, arXiv IDs, date ranges, or categories.
 license: MIT
 metadata:
   skill-author: 'Orchestra Research'
@@ -153,7 +153,7 @@ for paper in results:
 |----------|-------------|
 | `stat.ML` | Machine Learning (Statistics) |
 | `stat.ME` | Methodology |
-| `math.OC` | Optimization and Control |
+| `math.OC` | Optimisation and Control |
 | `math.ST` | Statistics Theory |
 
 ### Other Relevant Categories
@@ -166,7 +166,7 @@ for paper in results:
 | `eess.SP` | Signal Processing |
 | `physics.comp-ph` | Computational Physics |
 
-Full list: see [references/api_reference.md](references/api_reference.md).
+Full list: see [references/api-reference.md](references/api-reference.md).
 
 ## Query Syntax
 
@@ -359,4 +359,4 @@ results = searcher.search(query=query, max_results=20)
 
 ## Reference Documentation
 
-- **API Reference**: See [references/api_reference.md](references/api_reference.md) for full endpoint specs, all categories, and response schemas
+- **API Reference**: See [references/api-reference.md](references/api-reference.md) for full endpoint specs, all categories, and response schemas

@@ -38,8 +38,8 @@ model = AutoModelForSeq2SeqLM.from_pretrained("t5-small")
 - `AutoModelForTokenClassification`: NER, POS tagging
 - `AutoModelForQuestionAnswering`: Extractive QA
 - `AutoModelForCausalLM`: Text generation (GPT, Llama)
-- `AutoModelForMaskedLM`: Masked language modeling (BERT)
-- `AutoModelForSeq2SeqLM`: Translation, summarization (T5, BART)
+- `AutoModelForMaskedLM`: Masked language modelling (BERT)
+- `AutoModelForSeq2SeqLM`: Translation, summarisation (T5, BART)
 
 **Vision Tasks:**
 - `AutoModelForImageClassification`: Image classification
@@ -139,7 +139,7 @@ model = AutoModel.from_pretrained("model-id", attn_implementation="flash_attenti
 model = AutoModel.from_pretrained("model-id", attn_implementation="eager")
 ```
 
-### Memory Optimization
+### Memory Optimisation
 
 **low_cpu_mem_usage**: Reduce CPU memory during loading
 ```python
@@ -307,7 +307,7 @@ model = AutoModel.from_pretrained("./model")
 
 ### ONNX Export
 
-Export for optimized inference:
+Export for optimised inference:
 
 ```python
 from transformers.onnx import export

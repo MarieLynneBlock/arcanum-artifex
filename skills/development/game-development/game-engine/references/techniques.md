@@ -10,7 +10,7 @@ A comprehensive reference covering essential techniques for building web-based g
 
 ### What It Is
 
-Async compilation allows JavaScript engines to compile asm.js code off the main thread during game loading and cache the generated machine code. This prevents recompilation on subsequent loads and gives the browser maximum flexibility to optimize the compilation process.
+Async compilation allows JavaScript engines to compile asm.js code off the main thread during game loading and cache the generated machine code. This prevents recompilation on subsequent loads and gives the browser maximum flexibility to optimise the compilation process.
 
 ### How It Works
 
@@ -62,9 +62,9 @@ The key insight is that setting `src` (rather than `innerHTML` or `textContent`)
 
 ---
 
-## Optimizing Startup Performance
+## Optimising Startup Performance
 
-**Source:** [MDN - Optimizing Startup Performance](https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Optimizing_startup_performance)
+**Source:** [MDN - Optimising Startup Performance](https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Optimizing_startup_performance)
 
 ### What It Is
 
@@ -110,7 +110,7 @@ Move data fetching, decoding, and calculations to workers. This frees the main t
 
 - Minify JavaScript files.
 - Use Gzip or Brotli compression.
-- Optimize and compress data files.
+- Optimise and compress data files.
 
 **6. Perceived Performance**
 
@@ -134,7 +134,7 @@ emscripten_push_main_loop_blocker();
 | User-perceptible delay | 50ms or less |
 | Sluggish threshold | Greater than 200ms |
 
-Users on older or slower devices experience longer delays than developers -- always optimize accordingly.
+Users on older or slower devices experience longer delays than developers -- always optimise accordingly.
 
 ---
 
@@ -144,11 +144,11 @@ Users on older or slower devices experience longer delays than developers -- alw
 
 ### What It Is
 
-WebRTC data channels let you send text or binary data over an active connection to a peer. In the context of games, this enables players to send data to each other for text chat or game state synchronization, without routing through a central server.
+WebRTC data channels let you send text or binary data over an active connection to a peer. In the context of games, this enables players to send data to each other for text chat or game state synchronisation, without routing through a central server.
 
 ### How It Works
 
-WebRTC establishes a peer-to-peer connection between two browsers. Once established, a data channel can be opened on that connection. Data channels come in two flavors:
+WebRTC establishes a peer-to-peer connection between two browsers. Once established, a data channel can be opened on that connection. Data channels come in two flavours:
 
 **Reliable Channels:**
 - Guarantee that messages arrive at the peer.
@@ -170,7 +170,7 @@ WebRTC establishes a peer-to-peer connection between two browsers. Once establis
 
 - Player-to-player text chat communication.
 - Game status information exchange between players.
-- Real-time game state synchronization.
+- Real-time game state synchronisation.
 - Peer-to-peer multiplayer without a dedicated game server.
 
 ### Implementation Notes
@@ -187,7 +187,7 @@ WebRTC establishes a peer-to-peer connection between two browsers. Once establis
 
 ### What It Is
 
-Audio provides feedback and atmosphere in web games. This technique covers implementing audio across desktop and mobile platforms, addressing browser differences and optimization strategies.
+Audio provides feedback and atmosphere in web games. This technique covers implementing audio across desktop and mobile platforms, addressing browser differences and optimisation strategies.
 
 ### How It Works
 
@@ -261,7 +261,7 @@ myAudio.pause();
 
 ### Technique 2: Web Audio API Multi-Track Music
 
-Load and synchronize separate audio tracks with precise timing.
+Load and synchronise separate audio tracks with precise timing.
 
 **Create audio context and load files:**
 
@@ -276,7 +276,7 @@ async function getFile(filepath) {
 }
 ```
 
-**Track playback with synchronization:**
+**Track playback with synchronisation:**
 
 ```javascript
 let offset = 0;
@@ -310,7 +310,7 @@ playButton.addEventListener("click", () => {
 });
 ```
 
-### Technique 3: Beat-Synchronized Track Playback
+### Technique 3: Beat-Synchronised Track Playback
 
 For seamless transitions, sync new tracks to beat boundaries:
 
@@ -391,7 +391,7 @@ class BoxEntity extends BaseEntity {
 
 ### Algorithm 2: Circle Collision
 
-Collision detection between two circles. Takes the center points of two circles and checks whether the distance between them is less than the sum of their radii.
+Collision detection between two circles. Takes the centre points of two circles and checks whether the distance between them is less than the sum of their radii.
 
 ```javascript
 class CircleEntity extends BaseEntity {
@@ -408,7 +408,7 @@ class CircleEntity extends BaseEntity {
 }
 ```
 
-Note: The circle's `x` and `y` coordinates refer to their top-left corner, so you must add the radius to compare their actual centers.
+Note: The circle's `x` and `y` coordinates refer to their top-left corner, so you must add the radius to compare their actual centres.
 
 ### Algorithm 3: Separating Axis Theorem (SAT)
 
@@ -429,7 +429,7 @@ Testing every entity against every other entity is computationally expensive (O(
 
 ### Base Engine Code
 
-**CSS for collision visualization:**
+**CSS for collision visualisation:**
 
 ```css
 .entity {
@@ -575,7 +575,7 @@ function screenToWorld(x, y) {
 }
 ```
 
-Key principle: Only render visible tiles to optimize performance. Apply the camera offset transformation during rendering.
+Key principle: Only render visible tiles to optimise performance. Apply the camera offset transformation during rendering.
 
 ### Tilemap Types
 
@@ -604,7 +604,7 @@ A separate grid for non-visual game logic:
 - **Pathfinding:** Create navigation graphs.
 - **Tile combinations:** Detect valid patterns (Tetris, Bejeweled).
 
-### Performance Optimization
+### Performance Optimisation
 
 1. **Only render visible tiles** -- Skip off-screen tiles entirely.
 2. **Pre-render to canvas** -- Render the map to an off-screen canvas element and blit as a single operation.
@@ -802,11 +802,11 @@ const gamepads = navigator.getGamepads();
 
 ### What It Is
 
-A technique for rendering pixel art without blurriness on high-resolution displays by mapping individual image pixels to blocks of screen pixels without smoothing interpolation. Retro pixel art requires preserving hard edges during scaling, but modern browsers default to smoothing algorithms that blend colors and create blur.
+A technique for rendering pixel art without blurriness on high-resolution displays by mapping individual image pixels to blocks of screen pixels without smoothing interpolation. Retro pixel art requires preserving hard edges during scaling, but modern browsers default to smoothing algorithms that blend colours and create blur.
 
 ### How It Works
 
-The CSS `image-rendering` property controls how browsers scale images. Setting it to `pixelated` enforces nearest-neighbor scaling, which preserves the crisp, blocky look of pixel art instead of applying bilinear or bicubic smoothing.
+The CSS `image-rendering` property controls how browsers scale images. Setting it to `pixelated` enforces nearest-neighbour scaling, which preserves the crisp, blocky look of pixel art instead of applying bilinear or bicubic smoothing.
 
 **Key CSS values:**
 - `pixelated` -- preserves crisp edges for pixel art.

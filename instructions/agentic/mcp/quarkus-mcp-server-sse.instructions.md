@@ -1,6 +1,6 @@
 ---
-applyTo: '*'
 description: 'Quarkus and MCP Server with HTTP SSE transport development standards and instructions'
+applyTo: '*'
 ---
 # Quarkus MCP Server
 
@@ -22,7 +22,7 @@ quarkus create app --no-code -x rest-client-jackson,qute,mcp-server-sse your-dom
 ## Structure
 
 - Use standard Java naming conventions (PascalCase classes, camelCase methods)
-- Organize in packages: `model`, `repository`, `service`, `mcp`
+- Organise in packages: `model`, `repository`, `service`, `mcp`
 - Use Record types for immutable data models
 - State management for immutable data must be managed by repository layer
 - Add Javadoc for public methods

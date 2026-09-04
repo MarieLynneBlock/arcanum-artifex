@@ -1,6 +1,6 @@
 ---
-description: Multiagent AI system for scientific research assistance that automates research workflows from data analysis to publication. This skill should be used when generating research ideas from datasets, developing research methodologies, executing computational experiments, performing literature searches, or generating publication-ready papers in LaTeX format. Supports end-to-end research pipelines with customizable agent orchestration.
 name: denario
+description: Multiagent AI system for scientific research assistance that automates research workflows from data analysis to publication. This skill should be used when generating research ideas from datasets, developing research methodologies, executing computational experiments, performing literature searches, or generating publication-ready papers in LaTeX format. Supports end-to-end research pipelines with customisable agent orchestration.
 license: GPL-3.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,14 +10,14 @@ metadata:
 
 ## Overview
 
-Denario is a multiagent AI system designed to automate scientific research workflows from initial data analysis through publication-ready manuscripts. Built on AG2 and LangGraph frameworks, it orchestrates multiple specialized agents to handle hypothesis generation, methodology development, computational analysis, and paper writing.
+Denario is a multiagent AI system designed to automate scientific research workflows from initial data analysis through publication-ready manuscripts. Built on AG2 and LangGraph frameworks, it orchestrates multiple specialised agents to handle hypothesis generation, methodology development, computational analysis, and paper writing.
 
 ## When to Use This Skill
 
 Use this skill when:
-- Analyzing datasets to generate novel research hypotheses
+- Analysing datasets to generate novel research hypotheses
 - Developing structured research methodologies
-- Executing computational experiments and generating visualizations
+- Executing computational experiments and generating visualisations
 - Conducting literature searches for research context
 - Writing journal-formatted LaTeX papers from research results
 - Automating the complete research pipeline from data to publication
@@ -46,7 +46,7 @@ Denario requires API keys from supported LLM providers. Supported providers incl
 - OpenAI
 - Other LLM services compatible with AG2/LangGraph
 
-Store API keys securely using environment variables or `.env` files. For detailed configuration instructions including Vertex AI setup, see `references/llm_configuration.md`.
+Store API keys securely using environment variables or `.env` files. For detailed configuration instructions including Vertex AI setup, see `references/llm-configuration.md`.
 
 ## Core Research Workflow
 
@@ -103,7 +103,7 @@ Execute computational experiments and generate analysis:
 den.get_results()
 ```
 
-This runs the methodology, performs computations, creates visualizations, and produces findings. Can also provide pre-computed results:
+This runs the methodology, performs computations, creates visualisations, and produces findings. Can also provide pre-computed results:
 
 ```python
 den.set_results("path/to/results.md")
@@ -125,7 +125,7 @@ The generated paper includes proper formatting for the specified journal, integr
 
 Denario supports multiple journal formatting styles:
 - `Journal.APS` - American Physical Society format
-- Additional journals may be available; check `references/research_pipeline.md` for the complete list
+- Additional journals may be available; check `references/research-pipeline.md` for the complete list
 
 ## Launching the GUI
 
@@ -189,7 +189,7 @@ For literature search functionality and additional workflow examples, see `refer
 
 ## Advanced Features
 
-- **Multiagent orchestration**: AG2 and LangGraph coordinate specialized agents for different research tasks
+- **Multiagent orchestration**: AG2 and LangGraph coordinate specialised agents for different research tasks
 - **Reproducible research**: All stages produce structured outputs that can be version-controlled
 - **Journal integration**: Automatic formatting for target publication venues
 - **Flexible input**: Manual or automated at each pipeline stage
@@ -199,14 +199,14 @@ For literature search functionality and additional workflow examples, see `refer
 
 For comprehensive documentation:
 - **Installation options**: `references/installation.md`
-- **LLM configuration**: `references/llm_configuration.md`
-- **Complete API reference**: `references/research_pipeline.md`
+- **LLM configuration**: `references/llm-configuration.md`
+- **Complete API reference**: `references/research-pipeline.md`
 - **Example workflows**: `references/examples.md`
 
 ## Troubleshooting
 
 Common issues and solutions:
-- **API key errors**: Ensure environment variables are set correctly (see `references/llm_configuration.md`)
+- **API key errors**: Ensure environment variables are set correctly (see `references/llm-configuration.md`)
 - **LaTeX compilation**: Install TeX distribution or use Docker image with pre-installed LaTeX
 - **Package conflicts**: Use virtual environments or Docker for isolation
 - **Python version**: Requires Python 3.12 or higher

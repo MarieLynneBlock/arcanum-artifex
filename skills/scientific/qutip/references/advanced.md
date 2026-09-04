@@ -543,7 +543,7 @@ options.num_cpus = 1  # Easier debugging
 ## Performance Tips
 
 1. **Use sparse matrices**: QuTiP does this automatically
-2. **Minimize Hilbert space**: Truncate when possible
+2. **Minimise Hilbert space**: Truncate when possible
 3. **Choose right solver**:
    - Pure states: `sesolve` faster than `mesolve`
    - Stochastic: `mcsolve` for quantum jumps

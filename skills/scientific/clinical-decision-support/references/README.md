@@ -6,7 +6,7 @@ Professional clinical decision support documents for medical professionals in ph
 
 This skill enables generation of three types of clinical documents:
 
-1. **Individual Patient Treatment Plans** - Personalized protocols for specific patients
+1. **Individual Patient Treatment Plans** - Personalised protocols for specific patients
 2. **Patient Cohort Analysis** - Biomarker-stratified group analyses with outcomes
 3. **Treatment Recommendation Reports** - Evidence-based clinical guidelines
 
@@ -20,20 +20,20 @@ clinical-decision-support/
 ├── README.md                    # This file
 │
 ├── references/                  # Clinical guidance documents
-│   ├── patient_cohort_analysis.md
-│   ├── treatment_recommendations.md
-│   ├── clinical_decision_algorithms.md
-│   ├── biomarker_classification.md
-│   ├── outcome_analysis.md
-│   └── evidence_synthesis.md
+│   ├── patient-cohort-analysis.md
+│   ├── treatment-recommendations.md
+│   ├── clinical-decision-algorithms.md
+│   ├── biomarker-classification.md
+│   ├── outcome-analysis.md
+│   └── evidence-synthesis.md
 │
 ├── assets/                      # Templates and examples
 │   ├── cohort_analysis_template.tex
 │   ├── treatment_recommendation_template.tex
 │   ├── clinical_pathway_template.tex
 │   ├── biomarker_report_template.tex
-│   ├── example_gbm_cohort.md
-│   ├── recommendation_strength_guide.md
+│   ├── example-gbm-cohort.md
+│   ├── recommendation-strength-guide.md
 │   └── color_schemes.tex
 │
 └── scripts/                     # Analysis and generation tools
@@ -71,14 +71,14 @@ clinical-decision-support/
 - **Biomarker Integration**: Genomic, expression, and molecular subtype classification
 - **Statistical Analysis**: Kaplan-Meier, Cox regression, log-rank tests
 - **Guideline Concordance**: NCCN, ASCO, ESMO, AHA/ACC integration
-- **Professional Output**: 0.5in margins, color-coded boxes, publication-ready
+- **Professional Output**: 0.5in margins, colour-coded boxes, publication-ready
 
 ## Dependencies
 
 Python scripts require:
 - `pandas`, `numpy`, `scipy`: Data analysis and statistics
 - `lifelines`: Survival analysis (Kaplan-Meier, Cox regression)
-- `matplotlib`: Visualization
+- `matplotlib`: Visualisation
 - `pyyaml` (optional): YAML input for decision trees
 
 Install with:

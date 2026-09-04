@@ -1,6 +1,6 @@
 ---
-description: Phylogenetic tree toolkit (ETE). Tree manipulation (Newick/NHX), evolutionary event detection, orthology/paralogy, NCBI taxonomy, visualization (PDF/SVG), for phylogenomics.
 name: etetoolkit
+description: Phylogenetic tree toolkit (ETE). Tree manipulation (Newick/NHX), evolutionary event detection, orthology/paralogy, NCBI taxonomy, visualisation (PDF/SVG), for phylogenomics.
 license: GPL-3.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,13 +10,13 @@ metadata:
 
 ## Overview
 
-ETE (Environment for Tree Exploration) is a toolkit for phylogenetic and hierarchical tree analysis. Manipulate trees, analyze evolutionary events, visualize results, and integrate with biological databases for phylogenomic research and clustering analysis.
+ETE (Environment for Tree Exploration) is a toolkit for phylogenetic and hierarchical tree analysis. Manipulate trees, analyse evolutionary events, visualise results, and integrate with biological databases for phylogenomic research and clustering analysis.
 
 ## Core Capabilities
 
 ### 1. Tree Manipulation and Analysis
 
-Load, manipulate, and analyze hierarchical tree structures with support for:
+Load, manipulate, and analyse hierarchical tree structures with support for:
 
 - **Tree I/O**: Read and write Newick, NHX, PhyloXML, and NeXML formats
 - **Tree traversal**: Navigate trees using preorder, postorder, or levelorder strategies
@@ -69,7 +69,7 @@ python scripts/tree_operations.py ascii tree.nw
 
 ### 2. Phylogenetic Analysis
 
-Analyze gene trees with evolutionary event detection:
+Analyse gene trees with evolutionary event detection:
 
 - **Sequence alignment integration**: Link trees to multiple sequence alignments (FASTA, Phylip)
 - **Species naming**: Automatic or custom species extraction from gene names
@@ -174,18 +174,18 @@ for leaf in tree:
     leaf.add_feature("lineage", [names[t] for t in lineage])
 ```
 
-### 4. Tree Visualization
+### 4. Tree Visualisation
 
-Create publication-quality tree visualizations:
+Create publication-quality tree visualisations:
 
 - **Output formats**: PNG (raster), PDF, and SVG (vector) for publications
 - **Layout modes**: Rectangular and circular tree layouts
 - **Interactive GUI**: Explore trees interactively with zoom, pan, and search
-- **Custom styling**: NodeStyle for node appearance (colors, shapes, sizes)
+- **Custom styling**: NodeStyle for node appearance (colours, shapes, sizes)
 - **Faces**: Add graphical elements (text, images, charts, heatmaps) to nodes
 - **Layout functions**: Dynamic styling based on node properties
 
-**Basic visualization workflow:**
+**Basic visualisation workflow:**
 
 ```python
 from ete3 import Tree, TreeStyle, NodeStyle
@@ -220,7 +220,7 @@ tree.render("tree.pdf", tree_style=ts)
 tree.render("tree.png", w=800, h=600, units="px", dpi=300)
 ```
 
-Use `scripts/quick_visualize.py` for rapid visualization:
+Use `scripts/quick_visualize.py` for rapid visualisation:
 
 ```bash
 # Basic visualization
@@ -236,7 +236,7 @@ python scripts/quick_visualize.py tree.nw output.png --width 1200 --height 800 -
 python scripts/quick_visualize.py tree.nw output.pdf --title "Species Phylogeny" --show-support
 ```
 
-**Advanced visualization with faces:**
+**Advanced visualisation with faces:**
 
 ```python
 from ete3 import Tree, TreeStyle, TextFace, CircleFace
@@ -268,13 +268,13 @@ tree.render("annotated_tree.pdf", tree_style=ts)
 
 ### 5. Clustering Analysis
 
-Analyze hierarchical clustering results with data integration:
+Analyse hierarchical clustering results with data integration:
 
-- **ClusterTree**: Specialized class for clustering dendrograms
+- **ClusterTree**: Specialised class for clustering dendrograms
 - **Data matrix linking**: Connect tree leaves to numerical profiles
 - **Cluster metrics**: Silhouette coefficient, Dunn index, inter/intra-cluster distances
 - **Validation**: Test cluster quality with different distance metrics
-- **Heatmap visualization**: Display data matrices alongside trees
+- **Heatmap visualisation**: Display data matrices alongside trees
 
 **Clustering workflow:**
 
@@ -308,9 +308,9 @@ tree.show("heatmap")
 Quantify topological differences between trees:
 
 - **Robinson-Foulds distance**: Standard metric for tree comparison
-- **Normalized RF**: Scale-invariant distance (0.0 to 1.0)
+- **Normalised RF**: Scale-invariant distance (0.0 to 1.0)
 - **Partition analysis**: Identify unique and shared bipartitions
-- **Consensus trees**: Analyze support across multiple trees
+- **Consensus trees**: Analyse support across multiple trees
 - **Batch comparison**: Compare multiple trees pairwise
 
 **Compare two trees:**
@@ -443,7 +443,7 @@ python scripts/tree_operations.py stats pruned.nw
 
 ### Use Case 3: Publication-Quality Figures
 
-Create styled visualizations:
+Create styled visualisations:
 
 ```python
 from ete3 import Tree, TreeStyle, NodeStyle, TextFace
@@ -516,15 +516,15 @@ for filename in os.listdir(input_dir):
 
 For comprehensive API documentation, code examples, and detailed guides, refer to the following resources in the `references/` directory:
 
-- **`api_reference.md`**: Complete API documentation for all ETE classes and methods (Tree, PhyloTree, ClusterTree, NCBITaxa), including parameters, return types, and code examples
-- **`workflows.md`**: Common workflow patterns organized by task (tree operations, phylogenetic analysis, tree comparison, taxonomy integration, clustering analysis)
-- **`visualization.md`**: Comprehensive visualization guide covering TreeStyle, NodeStyle, Faces, layout functions, and advanced visualization techniques
+- **`api-reference.md`**: Complete API documentation for all ETE classes and methods (Tree, PhyloTree, ClusterTree, NCBITaxa), including parameters, return types, and code examples
+- **`workflows.md`**: Common workflow patterns organised by task (tree operations, phylogenetic analysis, tree comparison, taxonomy integration, clustering analysis)
+- **`visualization.md`**: Comprehensive visualisation guide covering TreeStyle, NodeStyle, Faces, layout functions, and advanced visualisation techniques
 
 Load these references when detailed information is needed:
 
 ```python
 # To use API reference
-# Read references/api_reference.md for complete method signatures and parameters
+# Read references/api-reference.md for complete method signatures and parameters
 
 # To implement workflows
 # Read references/workflows.md for step-by-step workflow examples
@@ -614,7 +614,7 @@ tree.write(outfile="tree.nhx", features=["habitat", "temperature", "depth"])
 4. **Choose appropriate traversal**: Postorder for bottom-up analysis, preorder for top-down
 5. **Validate monophyly**: Always check returned clade type (monophyletic/paraphyletic/polyphyletic)
 6. **Vector formats for publication**: Use PDF or SVG for publication figures (scalable, editable)
-7. **Interactive testing**: Use `tree.show()` to test visualizations before rendering to file
+7. **Interactive testing**: Use `tree.show()` to test visualisations before rendering to file
 8. **PhyloTree for phylogenetics**: Use PhyloTree class for gene trees and evolutionary analysis
 9. **Copy method selection**: "newick" for speed, "cpickle" for full fidelity, "deepcopy" for complex objects
 10. **NCBI query caching**: Store NCBI taxonomy query results to avoid repeated database access

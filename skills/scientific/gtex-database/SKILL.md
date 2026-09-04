@@ -1,6 +1,6 @@
 ---
-description: Query GTEx (Genotype-Tissue Expression) portal for tissue-specific gene expression, eQTLs (expression quantitative trait loci), and sQTLs. Essential for linking GWAS variants to gene regulation, understanding tissue-specific expression, and interpreting non-coding variant effects.
 name: gtex-database
+description: Query GTEx (Genotype-Tissue Expression) portal for tissue-specific gene expression, eQTLs (expression quantitative trait loci), and sQTLs. Essential for linking GWAS variants to gene regulation, understanding tissue-specific expression, and interpreting non-coding variant effects.
 license: CC-BY-4.0
 metadata:
   skill-author: 'Kuan-lin Huang'
@@ -28,7 +28,7 @@ Use GTEx when:
 - **Multi-tissue eQTL analysis**: Finding variants that regulate expression in multiple tissues
 - **Splicing QTLs (sQTLs)**: Identifying variants that affect splicing ratios
 - **Tissue specificity analysis**: Determining which tissues express a gene of interest
-- **Gene expression exploration**: Retrieving normalized expression levels (TPM) per tissue
+- **Gene expression exploration**: Retrieving normalised expression levels (TPM) per tissue
 
 ## Core Capabilities
 
@@ -228,7 +228,7 @@ def query_sqtl(gene_id, tissue_id=None, dataset_id="gtex_v10"):
 2. **Convert to GTEx variant ID format** (`chr{chrom}_{pos}_{ref}_{alt}_b38`)
 3. **Query all eQTL associations** for that variant across tissues
 4. **Check effect direction**: is the GWAS risk allele the same as the eQTL effect allele?
-5. **Prioritize tissues**: select tissues biologically relevant to the disease
+5. **Prioritise tissues**: select tissues biologically relevant to the disease
 6. **Consider colocalization** using `coloc` (R package) with full summary statistics
 
 ```python

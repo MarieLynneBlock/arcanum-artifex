@@ -1,6 +1,6 @@
 ---
-description: Access USPTO APIs for patent/trademark searches, examination history (PEDS), assignments, citations, office actions, TSDR, for IP analysis and prior art searches.
 name: uspto-database
+description: Access USPTO APIs for patent/trademark searches, examination history (PEDS), assignments, citations, office actions, TSDR, for IP analysis and prior art searches.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-USPTO provides specialized APIs for patent and trademark data. Search patents by keywords/inventors/assignees, retrieve examination history via PEDS, track assignments, analyze citations and office actions, access TSDR for trademarks, for IP analysis and prior art searches.
+USPTO provides specialised APIs for patent and trademark data. Search patents by keywords/inventors/assignees, retrieve examination history via PEDS, track assignments, analyse citations and office actions, access TSDR for trademarks, for IP analysis and prior art searches.
 
 ## When to Use This Skill
 
@@ -23,13 +23,13 @@ This skill should be used when:
 - **Examination History**: Accessing patent prosecution data from PEDS (Patent Examination Data System)
 - **Office Actions**: Retrieving office action text, citations, and rejections
 - **Assignments**: Tracking patent/trademark ownership transfers
-- **Citations**: Analyzing patent citations (forward and backward)
+- **Citations**: Analysing patent citations (forward and backward)
 - **Litigation**: Accessing patent litigation records
-- **Portfolio Analysis**: Analyzing patent/trademark portfolios for companies or inventors
+- **Portfolio Analysis**: Analysing patent/trademark portfolios for companies or inventors
 
 ## USPTO API Ecosystem
 
-The USPTO provides multiple specialized APIs for different data needs:
+The USPTO provides multiple specialised APIs for different data needs:
 
 ### Core APIs
 
@@ -196,7 +196,7 @@ results = response.json()
 
 ### Reference Documentation
 
-See `references/patentsearch_api.md` for complete PatentSearch API documentation including:
+See `references/patentsearch-api.md` for complete PatentSearch API documentation including:
 - All available endpoints
 - Complete field reference
 - Query syntax and examples
@@ -268,7 +268,7 @@ if summary['is_patented']:
 
 #### Prosecution Analysis
 
-Analyze prosecution patterns:
+Analyse prosecution patterns:
 
 ```python
 analysis = helper.analyze_prosecution("16123456")
@@ -292,7 +292,7 @@ print(f"Responses filed: {analysis['responses']}")
 
 ### Reference Documentation
 
-See `references/peds_api.md` for complete PEDS documentation including:
+See `references/peds-api.md` for complete PEDS documentation including:
 - All available data fields
 - Transaction code reference
 - Python library usage
@@ -386,7 +386,7 @@ def monitor_portfolio(serial_numbers, api_key):
 
 ### Reference Documentation
 
-See `references/trademark_api.md` for complete trademark API documentation including:
+See `references/trademark-api.md` for complete trademark API documentation including:
 - TSDR API reference
 - Trademark Assignment Search API
 - All status codes
@@ -452,7 +452,7 @@ def find_company_patents(company_name, api_key):
 
 ### Office Actions, Citations, and Litigation
 
-Multiple specialized APIs provide additional patent data.
+Multiple specialised APIs provide additional patent data.
 
 #### Office Action Text Retrieval
 
@@ -460,7 +460,7 @@ Retrieve full text of office actions using application number. Integrate with PE
 
 #### Enriched Citation API
 
-Analyze patent citations:
+Analyse patent citations:
 - Forward citations (patents citing this patent)
 - Backward citations (prior art cited)
 - Examiner vs. applicant citations
@@ -483,7 +483,7 @@ Patent Trial and Appeal Board proceedings:
 
 ### Reference Documentation
 
-See `references/additional_apis.md` for comprehensive documentation on:
+See `references/additional-apis.md` for comprehensive documentation on:
 - Enriched Citation API
 - Office Action APIs (Text, Citations, Rejections)
 - Patent Litigation Cases API
@@ -556,7 +556,7 @@ def comprehensive_patent_analysis(patent_number, api_key):
    - Implement exponential backoff for rate limit errors
    - Cache responses when possible
 
-3. **Query Optimization**
+3. **Query Optimisation**
    - Use `_text_*` operators for text fields (more performant)
    - Request only needed fields to reduce response size
    - Use date ranges to narrow searches
@@ -593,10 +593,10 @@ def comprehensive_patent_analysis(patent_number, api_key):
 - **USPTO Docs**: https://docs.ip-tools.org/uspto-opendata-python/
 
 ### Reference Files
-- `references/patentsearch_api.md` - Complete PatentSearch API reference
-- `references/peds_api.md` - PEDS API and library documentation
-- `references/trademark_api.md` - Trademark APIs (TSDR and Assignment)
-- `references/additional_apis.md` - Citations, Office Actions, Litigation, PTAB
+- `references/patentsearch-api.md` - Complete PatentSearch API reference
+- `references/peds-api.md` - PEDS API and library documentation
+- `references/trademark-api.md` - Trademark APIs (TSDR and Assignment)
+- `references/additional-apis.md` - Citations, Office Actions, Litigation, PTAB
 
 ### Scripts
 - `scripts/patent_search.py` - PatentSearch API client

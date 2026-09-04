@@ -1,6 +1,6 @@
 ---
-description: 'Generate a complete MCP server project in Python with tools, resources, and proper configuration'
 name: python-mcp-server-generator
+description: 'Generate a complete MCP server project in Python with tools, resources, and proper configuration'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -56,7 +56,7 @@ Create a complete Model Context Protocol (MCP) server in Python with the followi
 
 ## Example Tool Types to Consider
 - Data processing and transformation
-- File system operations (read, analyze, search)
+- File system operations (read, analyse, search)
 - External API integrations
 - Database queries
 - Text analysis or generation (with sampling)

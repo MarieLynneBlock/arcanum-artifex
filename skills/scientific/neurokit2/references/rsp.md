@@ -63,7 +63,7 @@ cleaned_rsp = nk.rsp_clean(rsp_signal, sampling_rate=100, method='khodadad2018')
 cleaned_rsp = nk.rsp_clean(rsp_signal, sampling_rate=100, method='hampel')
 ```
 - Median-based outlier removal
-- Robust to artifacts and spikes
+- Robust to artefacts and spikes
 - Preserves sharp transitions
 
 **Typical respiratory frequency:**
@@ -80,7 +80,7 @@ peaks, info = nk.rsp_peaks(cleaned_rsp, sampling_rate=100, method='khodadad2018'
 ```
 
 **Detection methods:**
-- `'khodadad2018'`: Optimized for clean signals
+- `'khodadad2018'`: Optimised for clean signals
 - `'biosppy'`: Alternative approach
 - `'scipy'`: Simple scipy-based detection
 
@@ -121,7 +121,7 @@ corrected_peaks = nk.rsp_fixpeaks(peaks, sampling_rate=100)
 **Corrections:**
 - Remove physiologically implausible intervals
 - Interpolate missing peaks
-- Remove artifact-related false peaks
+- Remove artefact-related false peaks
 
 ## Feature Extraction Functions
 
@@ -179,7 +179,7 @@ phase, completion = nk.rsp_phase(cleaned_rsp, peaks, sampling_rate=100)
 
 ### rsp_symmetry()
 
-Analyze breath symmetry patterns (peak-trough balance, rise-decay timing).
+Analyse breath symmetry patterns (peak-trough balance, rise-decay timing).
 
 ```python
 symmetry = nk.rsp_symmetry(cleaned_rsp, peaks)
@@ -234,7 +234,7 @@ rvt = nk.rsp_rvt(cleaned_rsp, peaks, sampling_rate=100)
 - Correlates with BOLD signal fluctuations
 
 **Use cases:**
-- fMRI artifact correction
+- fMRI artefact correction
 - Neuroimaging preprocessing
 - Respiratory confound regression
 
@@ -260,7 +260,7 @@ rav = nk.rsp_rav(amplitude, sampling_rate=100)
 
 ## Analysis Functions
 
-### rsp_analyze()
+### rsp_analyse()
 
 Automatically select event-related or interval-related analysis.
 
@@ -274,7 +274,7 @@ analysis = nk.rsp_analyze(signals, sampling_rate=100)
 
 ### rsp_eventrelated()
 
-Analyze respiratory responses to specific events/stimuli.
+Analyse respiratory responses to specific events/stimuli.
 
 ```python
 results = nk.rsp_eventrelated(epochs)
@@ -294,7 +294,7 @@ results = nk.rsp_eventrelated(epochs)
 
 ### rsp_intervalrelated()
 
-Analyze extended respiratory recordings.
+Analyse extended respiratory recordings.
 
 ```python
 results = nk.rsp_intervalrelated(signals, sampling_rate=100)
@@ -316,7 +316,7 @@ results = nk.rsp_intervalrelated(signals, sampling_rate=100)
 - Baseline respiratory assessment
 - Stress or relaxation monitoring
 
-## Simulation and Visualization
+## Simulation and Visualisation
 
 ### rsp_simulate()
 
@@ -343,7 +343,7 @@ synthetic_rsp = nk.rsp_simulate(duration=60, sampling_rate=100, respiratory_rate
 
 ### rsp_plot()
 
-Visualize processed respiratory signal.
+Visualise processed respiratory signal.
 
 ```python
 nk.rsp_plot(signals, info, static=True)
@@ -355,7 +355,7 @@ nk.rsp_plot(signals, info, static=True)
 - Instantaneous breathing rate
 - Phase markers
 
-**Interactive mode:** Set `static=False` for Plotly visualization
+**Interactive mode:** Set `static=False` for Plotly visualisation
 
 ## Practical Considerations
 
@@ -397,16 +397,16 @@ nk.rsp_plot(signals, info, static=True)
 **Irregular breathing:**
 - Normal in awake, resting humans
 - Sighs, yawns, speech, swallowing cause variability
-- Exclude artifacts or model as events
+- Exclude artefacts or model as events
 
 **Shallow breathing:**
 - Low signal amplitude
 - Check sensor placement and tightness
 - Increase gain if available
 
-**Movement artifacts:**
+**Movement artefacts:**
 - Spikes or discontinuities
-- Minimize participant movement
+- Minimise participant movement
 - Use robust peak detection (Hampel filter)
 
 **Talking/coughing:**
@@ -472,7 +472,7 @@ bio_signals, bio_info = nk.bio_process(ecg=ecg, rsp=rsp, sampling_rate=1000)
 - Autonomic nervous system assessment
 
 **Neuroimaging:**
-- fMRI artifact correction (RVT regressor)
+- fMRI artefact correction (RVT regressor)
 - BOLD signal confound removal
 - Respiratory-related brain activity
 

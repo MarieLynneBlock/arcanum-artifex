@@ -1,6 +1,9 @@
 ---
-description: >
 name: eval-driven-dev
+description: >-
+  Build an automated evaluation pipeline that tests a Python LLM application end-to-end with
+  pixie test — real code paths, real LLM calls, instrumented external data — and scores outputs
+  with evaluators instead of assertions. Use when adding evals to a Python AI app.
 license: MIT
 compatibility: Python 3.10+
 metadata:
@@ -49,7 +52,7 @@ Follow Steps 1–6 straight through without stopping. Do not ask the user for co
 
 - **One step at a time.** Read only the current step's instructions. Do NOT read Steps 2–6 while working on Step 1.
 - **Read references only when a step tells you to.** Each step names a specific reference file. Read it when you reach that step — not before.
-- **Create artifacts immediately.** After reading code for a sub-step, write the output file for that sub-step before moving on. Don't accumulate understanding across multiple sub-steps before writing anything.
+- **Create artefacts immediately.** After reading code for a sub-step, write the output file for that sub-step before moving on. Don't accumulate understanding across multiple sub-steps before writing anything.
 - **Verify, then move on.** Each step has a checkpoint. Verify it, then proceed to the next step. Don't plan future steps while verifying the current one.
 
 **When to stop and ask for help:**
@@ -90,7 +93,7 @@ Before looking at code structure or entry points, understand what this software 
 
 > **Reference**: Read `references/1-b-entry-point.md` now.
 
-Read the source code to understand how the app starts and how a real user invokes it. Use the **capability inventory** from `pixie_qa/00-project-analysis.md` to prioritize entry points — focus on the entry point(s) that exercise the most valuable capabilities, not just the first one found. Write the detailed context file before moving on.
+Read the source code to understand how the app starts and how a real user invokes it. Use the **capability inventory** from `pixie_qa/00-project-analysis.md` to prioritise entry points — focus on the entry point(s) that exercise the most valuable capabilities, not just the first one found. Write the detailed context file before moving on.
 
 > **Checkpoint**: `pixie_qa/01-entry-point.md` written — covering entry point, execution flow, user-facing interface, and env requirements.
 
@@ -138,7 +141,7 @@ Run the app through the Runnable and capture a trace. The trace proves instrumen
 
 > **Reference**: Read `references/3-define-evaluators.md` now for the detailed sub-steps.
 
-**Goal**: Turn the qualitative eval criteria from Step 1c into concrete, runnable scoring functions. Each criterion maps to either a built-in evaluator, an **agent evaluator** (the default for any semantic or qualitative criterion), or a manual custom function (only for mechanical/deterministic checks like regex or field existence). The evaluator mapping artifact bridges between criteria and the dataset, ensuring every quality dimension has a scorer. Select evaluators that measure the **hard problems** identified in `pixie_qa/00-project-analysis.md` — not just generic quality dimensions.
+**Goal**: Turn the qualitative eval criteria from Step 1c into concrete, runnable scoring functions. Each criterion maps to either a built-in evaluator, an **agent evaluator** (the default for any semantic or qualitative criterion), or a manual custom function (only for mechanical/deterministic checks like regex or field existence). The evaluator mapping artefact bridges between criteria and the dataset, ensuring every quality dimension has a scorer. Select evaluators that measure the **hard problems** identified in `pixie_qa/00-project-analysis.md` — not just generic quality dimensions.
 
 > **Checkpoint**: All evaluators implemented. `pixie_qa/03-evaluator-mapping.md` written with criterion-to-evaluator mapping and decision rationale. Do NOT read Step 4 instructions yet.
 
@@ -166,17 +169,17 @@ Run the app through the Runnable and capture a trace. The trace proves instrumen
 
 **Always proceed to Step 6 after tests produce scores.** Analysis is the essential final step — without it, pending evaluations are never completed and the user gets uninterpreted raw scores with no actionable insights. Do NOT stop here and ask the user whether to continue.
 
-**Cycle rule for iterative runs**: Every successful `pixie test` invocation creates a concrete `pixie_qa/results/<test_id>` directory and starts a new analysis cycle. Before you edit application code, prompts, datasets, evaluators, or rerun `pixie test`, complete Step 6 for that exact results directory. Do not skip earlier cycles and analyze only the last run.
+**Cycle rule for iterative runs**: Every successful `pixie test` invocation creates a concrete `pixie_qa/results/<test_id>` directory and starts a new analysis cycle. Before you edit application code, prompts, datasets, evaluators, or rerun `pixie test`, complete Step 6 for that exact results directory. Do not skip earlier cycles and analyse only the last run.
 
 ---
 
-### Step 6: Analyze outcomes
+### Step 6: Analyse outcomes
 
 > **Reference**: Read `references/6-analyze-outcomes.md` now — it has the complete three-phase analysis process, writing guidelines, and output format requirements.
 
-**Goal**: Analyze `pixie test` results in a structured, data-driven process to produce actionable insights on test case quality, evaluator quality, and application quality. This step completes pending evaluations, writes per-entry and per-dataset analysis, and produces a prioritized action plan. Every statement must be backed by concrete data from the evaluation run — no speculation, no hand-waving.
+**Goal**: Analyse `pixie test` results in a structured, data-driven process to produce actionable insights on test case quality, evaluator quality, and application quality. This step completes pending evaluations, writes per-entry and per-dataset analysis, and produces a prioritised action plan. Every statement must be backed by concrete data from the evaluation run — no speculation, no hand-waving.
 
-**Persisted analysis artifacts**: In this trimmed workflow, persist analysis only at the dataset level and test-run level. Those artifacts still use a **detailed version** (for agent consumption: data points, evidence trails, reasoning chains) plus a **summary version** (for human review: concise TLDR readable in under 2 minutes). Do not create per-entry analysis files.
+**Persisted analysis artefacts**: In this trimmed workflow, persist analysis only at the dataset level and test-run level. Those artefacts still use a **detailed version** (for agent consumption: data points, evidence trails, reasoning chains) plus a **summary version** (for human review: concise TLDR readable in under 2 minutes). Do not create per-entry analysis files.
 
 **Hard completion gate**: Step 6 is **not complete** until all of the following are true:
 

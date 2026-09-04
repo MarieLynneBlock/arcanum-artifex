@@ -1,6 +1,6 @@
-# ETE Toolkit Visualization Guide
+# ETE Toolkit Visualisation Guide
 
-Complete guide to tree visualization with ETE Toolkit.
+Complete guide to tree visualisation with ETE Toolkit.
 
 ## Table of Contents
 1. [Rendering Basics](#rendering-basics)
@@ -8,7 +8,7 @@ Complete guide to tree visualization with ETE Toolkit.
 3. [Node Styling](#node-styling)
 4. [Faces](#faces)
 5. [Layout Functions](#layout-functions)
-6. [Advanced Visualization](#advanced-visualization)
+6. [Advanced Visualisation](#advanced-visualisation)
 
 ---
 
@@ -49,7 +49,7 @@ tree.render("tree.pdf", w=8.5, h=11, units="in")  # US Letter
 tree.render("tree.pdf", w=200, units="mm")  # Height auto-calculated
 ```
 
-### Interactive Visualization
+### Interactive Visualisation
 
 ```python
 from ete3 import Tree
@@ -571,7 +571,7 @@ tree.render("tree_columns.pdf", tree_style=ts)
 
 ---
 
-## Advanced Visualization
+## Advanced Visualisation
 
 ### Highlighting Clades
 
@@ -645,7 +645,7 @@ ts.layout_fn = layout
 tree.render("tree_collapsed.pdf", tree_style=ts)
 ```
 
-### Heat Map Visualization
+### Heat Map Visualisation
 
 ```python
 from ete3 import Tree, TreeStyle, RectFace, TextFace
@@ -685,7 +685,7 @@ for i in range(10):
 tree.render("tree_heatmap.pdf", tree_style=ts)
 ```
 
-### Phylogenetic Events Visualization
+### Phylogenetic Events Visualisation
 
 ```python
 from ete3 import PhyloTree, TreeStyle, TextFace, NodeStyle
@@ -771,7 +771,7 @@ tree.render("tree_with_legend.pdf", tree_style=ts)
 
 ## Best Practices
 
-1. **Use layout functions** for complex visualizations - they're called during rendering
+1. **Use layout functions** for complex visualisations - they're called during rendering
 2. **Set `show_leaf_name = False`** when using custom name faces
 3. **Use aligned position** for columnar data at leaf level
 4. **Choose appropriate units**: pixels for screen, mm/inches for print
@@ -779,5 +779,5 @@ tree.render("tree_with_legend.pdf", tree_style=ts)
 6. **Precompute styling** when possible - layout functions should be fast
 7. **Test interactively** with `show()` before rendering to file
 8. **Use NodeStyle for permanent** changes, layout functions for rendering-time changes
-9. **Align faces in columns** for clean, organized appearance
-10. **Add legends** to explain colors and symbols used
+9. **Align faces in columns** for clean, organised appearance
+10. **Add legends** to explain colours and symbols used

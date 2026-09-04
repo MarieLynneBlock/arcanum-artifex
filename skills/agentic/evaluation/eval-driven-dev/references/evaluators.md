@@ -244,12 +244,12 @@ client: OpenAI client instance.
 Humor(*, model: 'str | None' = None, client: 'Any' = None) -> 'AutoevalsAdapter'
 ```
 
-Humor quality evaluator (LLM-as-judge).
+Humour quality evaluator (LLM-as-judge).
 
-Uses an LLM to judge the humor quality of `eval_output` against
+Uses an LLM to judge the humour quality of `eval_output` against
 `expected_output`.
 
-**When to use**: Evaluating humor in creative writing, chatbot
+**When to use**: Evaluating humour in creative writing, chatbot
 personality, or entertainment applications.
 
 **Requires `expected_output`**: Yes.
@@ -490,7 +490,7 @@ Usage::
 
         User said: {eval_input}
         Agent responded: {eval_output}
-        Expected behavior: {expectation}
+        Expected behaviour: {expectation}
 
         Score 1.0 if the response is concise (under 3 sentences), directly
         addresses the question, and uses conversational language suitable for

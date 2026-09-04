@@ -14,7 +14,7 @@
 
 ## Overview
 
-Volumes are Modal's distributed file system, optimized for write-once, read-many workloads like storing model weights and distributing them across containers.
+Volumes are Modal's distributed file system, optimised for write-once, read-many workloads like storing model weights and distributing them across containers.
 
 Key characteristics:
 - Persistent across function invocations and deployments
@@ -241,7 +241,7 @@ def analyze():
 
 ### Performance Tips
 
-- Volumes are optimized for large files, not many small files
+- Volumes are optimised for large files, not many small files
 - Keep under 50,000 files and directories for best v1 performance
 - Use Parquet or other columnar formats instead of many small CSVs
 - For truly temporary data, use `ephemeral_disk` instead of Volumes

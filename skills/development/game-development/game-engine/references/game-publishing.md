@@ -51,7 +51,7 @@ Independent game portals offer natural promotion from high-traffic sites and pot
 
 - Strict requirements with a 1-2 week approval wait period.
 - Extremely competitive with hundreds of thousands of apps.
-- Generally favors paid games.
+- Generally favours paid games.
 - Most prominent mobile store but hardest to stand out.
 
 **Google Play (Android):**
@@ -114,7 +114,7 @@ Game promotion requires a sustained, multi-channel strategy. Most promotional me
 - System requirements and available platforms.
 - Support and contact information.
 - A playable demo, at least browser-based.
-- SEO optimization for discoverability.
+- SEO optimisation for discoverability.
 
 **Blogging strategy:**
 
@@ -180,7 +180,7 @@ Game promotion requires a sustained, multi-channel strategy. Most promotional me
 ### Community Building
 
 - Send weekly newsletters with regular updates to your audience.
-- Organize online competitions related to your game or game development in general.
+- Organise online competitions related to your game or game development in general.
 - Host local meetups for in-person developer gatherings.
 - Demonstrates passion and builds trust and reliability.
 - Your community becomes your advocates when you need support or buzz for a launch.
@@ -248,7 +248,7 @@ Monetization strategy should align with your game type, target audience, and dis
 
 **Ad networks:**
 
-- **Google AdSense:** Most effective but not game-optimized. Can be risky for game-related accounts.
+- **Google AdSense:** Most effective but not game-optimised. Can be risky for game-related accounts.
 - **LeadBolt:** Game-focused alternative with easier implementation.
 - **Video ads:** Pre-roll format shown during loading screens is gaining popularity.
 
@@ -328,7 +328,7 @@ Monetization strategy should align with your game type, target audience, and dis
 **Merchandise:**
 
 - T-shirts, stickers, and branded gadgets.
-- Most profitable for highly popular, visually recognizable games (e.g., Angry Birds).
+- Most profitable for highly popular, visually recognisable games (e.g., Angry Birds).
 - Some developers earn more from merchandise than from the games themselves.
 - Best as a diversified secondary revenue stream.
 

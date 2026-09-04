@@ -1,6 +1,6 @@
 # Geospatial Data Sources
 
-Comprehensive catalog of satellite imagery, vector data, and APIs for geospatial analysis.
+Comprehensive catalogue of satellite imagery, vector data, and APIs for geospatial analysis.
 
 ## Satellite Data Sources
 
@@ -214,7 +214,7 @@ weather = response.json()
 
 ## Data APIs in Python
 
-### STAC (SpatioTemporal Asset Catalog)
+### STAC (SpatioTemporal Asset Catalogue)
 
 ```python
 import pystac_client

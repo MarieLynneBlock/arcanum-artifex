@@ -1,8 +1,8 @@
-# QuTiP Visualization
+# QuTiP Visualisation
 
 ## Bloch Sphere
 
-Visualize qubit states on the Bloch sphere.
+Visualise qubit states on the Bloch sphere.
 
 ### Basic Usage
 
@@ -67,7 +67,7 @@ anim = FuncAnimation(b.fig, animate, frames=len(states),
 plt.show()
 ```
 
-### Customization
+### Customisation
 
 ```python
 b = Bloch()
@@ -200,7 +200,7 @@ Q = qf.eval(xvec, xvec)
 
 ## Fock State Probability Distribution
 
-Visualize photon number distribution.
+Visualise photon number distribution.
 
 ### Basic Histogram
 
@@ -253,11 +253,11 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Matrix Visualization
+## Matrix Visualisation
 
 ### Hinton Diagram
 
-Visualize matrix structure with weighted squares.
+Visualise matrix structure with weighted squares.
 
 ```python
 from qutip import hinton
@@ -340,7 +340,7 @@ plt.show()
 
 ## Quantum Process Tomography
 
-Visualize quantum channel/gate action.
+Visualise quantum channel/gate action.
 
 ```python
 from qutip.qip.operations import cnot

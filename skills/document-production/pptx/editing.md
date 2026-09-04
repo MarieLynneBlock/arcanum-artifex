@@ -4,7 +4,7 @@
 
 When using an existing presentation as a template:
 
-1. **Analyze existing slides**:
+1. **Analyse existing slides**:
    ```bash
    python scripts/thumbnail.py template.pptx
    python -m markitdown template.pptx

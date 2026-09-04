@@ -5,11 +5,11 @@ applyTo: '**/skills/**/SKILL.md'
 
 # Agent Skills File Guidelines
 
-Instructions for creating effective and portable Agent Skills that enhance GitHub Copilot with specialized capabilities, workflows, and bundled resources.
+Instructions for creating effective and portable Agent Skills that enhance GitHub Copilot with specialised capabilities, workflows, and bundled resources.
 
 ## What Are Agent Skills?
 
-Agent Skills are self-contained folders with instructions and bundled resources that teach AI agents specialized capabilities. Unlike custom instructions (which define coding standards), skills enable task-specific workflows that can include scripts, examples, templates, and reference data.
+Agent Skills are self-contained folders with instructions and bundled resources that teach AI agents specialised capabilities. Unlike custom instructions (which define coding standards), skills enable task-specific workflows that can include scripts, examples, templates, and reference data.
 
 Key characteristics:
 - **Portable**: Works across VS Code, Copilot CLI, and Copilot coding agent
@@ -82,11 +82,11 @@ The body contains detailed instructions that Copilot loads AFTER the skill is ac
 | `## When to Use This Skill` | List of scenarios (reinforces description triggers) |
 | `## Prerequisites` | Required tools, dependencies, environment setup (if applicable) |
 | `## Step-by-Step Workflows` | Numbered steps for repeatable procedures (build, deploy, setup) |
-| `## Gotchas` | Proactive warnings about non-obvious behavior ("never do X because Y") |
+| `## Gotchas` | Proactive warnings about non-obvious behaviour ("never do X because Y") |
 | `## Troubleshooting` | Reactive fixes for known issues ("if you see X, try Y") |
 | `## References` | Links to bundled docs or external resources |
 
-Not every skill needs every section. Skip `## Prerequisites` if there are no external dependencies. Skip `## Step-by-Step Workflows` if the skill is purely advisory. Include `## Gotchas` whenever the skill involves external tools, APIs, or platform-specific behavior.
+Not every skill needs every section. Skip `## Prerequisites` if there are no external dependencies. Skip `## Step-by-Step Workflows` if the skill is purely advisory. Include `## Gotchas` whenever the skill involves external tools, APIs, or platform-specific behaviour.
 
 For content quality principles (what to include and what to leave out), see [Writing High-Impact Skills](#writing-high-impact-skills) below.
 
@@ -126,7 +126,7 @@ For content quality principles (what to include and what to leave out), see [Wri
 4. Verify the health endpoint returns 200
 ```
 
-**`## Gotchas`** — Proactive warnings that prevent mistakes. Document non-obvious defaults, API quirks, version-specific behavior, and common traps. Bold the key constraint, then explain why.
+**`## Gotchas`** — Proactive warnings that prevent mistakes. Document non-obvious defaults, API quirks, version-specific behaviour, and common traps. Bold the key constraint, then explain why.
 
 ```markdown
 ## Gotchas
@@ -160,7 +160,7 @@ Skills can include additional files that Copilot accesses on-demand:
 | Folder | Purpose | Loaded into Context? | Example Files |
 |--------|---------|---------------------|---------------|
 | `scripts/` | Executable automation that performs specific operations | When executed | `helper.py`, `validate.sh`, `build.ts` |
-| `references/` | Documentation the AI agent reads to inform decisions | Yes, when referenced | `api_reference.md`, `schema.md`, `workflow_guide.md` |
+| `references/` | Documentation the AI agent reads to inform decisions | Yes, when referenced | `api-reference.md`, `schema.md`, `workflow-guide.md` |
 | `assets/` | **Static files used AS-IS** in output (not modified by the AI agent) | No | `logo.png`, `brand-template.pptx`, `custom-font.ttf` |
 | `templates/` | **Starter code/scaffolds that the AI agent MODIFIES** and builds upon | Yes, when referenced | `viewer.html` (insert algorithm), `hello-world/` (extend) |
 
@@ -174,7 +174,7 @@ Skills can include additional files that Copilot accesses on-demand:
 │   ├── helper.py         # Python script
 │   └── helper.ps1        # PowerShell script
 ├── references/           # Optional: Documentation loaded into context
-│   ├── api_reference.md
+│   ├── api-reference.md
 │   ├── workflow-setup.md     # Detailed workflow (>5 steps)
 │   └── workflow-deployment.md
 ├── assets/               # Optional: Static files used AS-IS in output
@@ -210,7 +210,7 @@ Use relative paths to reference files within the skill directory:
 
 Run the [helper script](./scripts/helper.py) to automate common tasks.
 
-See [API reference](./references/api_reference.md) for detailed documentation.
+See [API reference](./references/api-reference.md) for detailed documentation.
 
 Use the [scaffold](./templates/scaffold.py) as a starting point.
 ```
@@ -265,9 +265,9 @@ Include scripts in your skill when:
 - Complex logic benefits from being pre-tested rather than generated each time
 - The operation has a self-contained purpose that can evolve independently
 - Testability matters — scripts can be unit tested and validated
-- Predictable behavior is preferred over dynamic generation
+- Predictable behaviour is preferred over dynamic generation
 
-Scripts enable evolution: even simple operations benefit from being implemented as scripts when they may grow in complexity, need consistent behavior across invocations, or require future extensibility.
+Scripts enable evolution: even simple operations benefit from being implemented as scripts when they may grow in complexity, need consistent behaviour across invocations, or require future extensibility.
 
 ### Security Considerations
 
@@ -280,7 +280,7 @@ Scripts enable evolution: even simple operations benefit from being implemented 
 
 ### Focus on What Copilot Doesn't Know
 
-Do not include information Copilot already knows from its training data — standard language syntax, common library usage, or well-documented API behavior. Every line in a skill should teach something Copilot would otherwise get wrong or miss entirely. If the information is on the first page of official docs, leave it out. Focus on internal conventions, non-obvious defaults, version-specific quirks, and domain-specific workflows that change Copilot's behavior.
+Do not include information Copilot already knows from its training data — standard language syntax, common library usage, or well-documented API behaviour. Every line in a skill should teach something Copilot would otherwise get wrong or miss entirely. If the information is on the first page of official docs, leave it out. Focus on internal conventions, non-obvious defaults, version-specific quirks, and domain-specific workflows that change Copilot's behaviour.
 
 ### Context Budget Awareness
 
@@ -360,7 +360,7 @@ Before publishing a skill:
 - [ ] `description` is concise and keyword-dense (respects context budget)
 - [ ] Body focuses on information Copilot wouldn't know from training data
 - [ ] Body includes when to use, prerequisites (if applicable), and core instructions
-- [ ] `## Gotchas` section present if skill involves non-obvious behavior, API quirks, or common traps
+- [ ] `## Gotchas` section present if skill involves non-obvious behaviour, API quirks, or common traps
 - [ ] SKILL.md body under 500 lines (consider splitting into `references/` at ~200 lines; 500 is the hard maximum)
 - [ ] Large workflows (>5 steps) split into `references/` folder with clear links from SKILL.md
 - [ ] Scripts include help documentation and error handling

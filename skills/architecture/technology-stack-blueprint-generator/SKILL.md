@@ -1,6 +1,6 @@
 ---
-description: 'Comprehensive technology stack blueprint generator that analyzes codebases to create detailed architectural documentation. Automatically detects technology stacks, programming languages, and implementation patterns across multiple platforms (.NET, Java, JavaScript, React, Python). Generates configurable blueprints with version information, licensing details, usage patterns, coding conventions, and visual diagrams. Provides implementation-ready templates and maintains architectural consistency for guided development.'
 name: technology-stack-blueprint-generator
+description: 'Comprehensive technology stack blueprint generator that analyses codebases to create detailed architectural documentation. Automatically detects technology stacks, programming languages, and implementation patterns across multiple platforms (.NET, Java, JavaScript, React, Python). Generates configurable blueprints with version information, licensing details, usage patterns, coding conventions, and visual diagrams. Provides implementation-ready templates and maintains architectural consistency for guided development.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -16,16 +16,16 @@ ${INCLUDE_DIAGRAMS=true|false} <!-- Generate architecture diagrams -->
 ${INCLUDE_USAGE_PATTERNS=true|false} <!-- Include code usage patterns -->
 ${INCLUDE_CONVENTIONS=true|false} <!-- Document coding conventions -->
 ${OUTPUT_FORMAT="Markdown|JSON|YAML|HTML"} <!-- Select output format -->
-${CATEGORIZATION="Technology Type|Layer|Purpose"} <!-- Organization method -->
+${CATEGORISATION="Technology Type|Layer|Purpose"} <!-- Organization method -->
 
 ## Generated Prompt
 
-"Analyze the codebase and generate a ${DEPTH_LEVEL} technology stack blueprint that thoroughly documents technologies and implementation patterns to facilitate consistent code generation. Use the following approach:
+"Analyse the codebase and generate a ${DEPTH_LEVEL} technology stack blueprint that thoroughly documents technologies and implementation patterns to facilitate consistent code generation. Use the following approach:
 
 ### 1. Technology Identification Phase
 - ${PROJECT_TYPE == "Auto-detect" ? "Scan the codebase for project files, configuration files, and dependencies to determine all technology stacks in use" : "Focus on ${PROJECT_TYPE} technologies"}
 - Identify all programming languages by examining file extensions and content
-- Analyze configuration files (package.json, .csproj, pom.xml, etc.) to extract dependencies
+- Analyse configuration files (package.json, .csproj, pom.xml, etc.) to extract dependencies
 - Examine build scripts and pipeline definitions for tooling information
 - ${INCLUDE_VERSIONS ? "Extract precise version information from package files and configuration" : "Skip version details"}
 - ${INCLUDE_LICENSES ? "Document license information for all dependencies" : ""}
@@ -35,7 +35,7 @@ ${CATEGORIZATION="Technology Type|Layer|Purpose"} <!-- Organization method -->
 ${PROJECT_TYPE == ".NET" || PROJECT_TYPE == "Auto-detect" ? "#### .NET Stack Analysis (if detected)
 - Target frameworks and language versions (detect from project files)
 - All NuGet package references with versions and purpose comments
-- Project structure and organization patterns
+- Project structure and organisation patterns
 - Configuration approach (appsettings.json, IOptions, etc.)
 - Authentication mechanisms (Identity, JWT, etc.)
 - API design patterns (REST, GraphQL, minimal APIs, etc.)
@@ -46,7 +46,7 @@ ${PROJECT_TYPE == ".NET" || PROJECT_TYPE == "Auto-detect" ? "#### .NET Stack Ana
 ${PROJECT_TYPE == "Java" || PROJECT_TYPE == "Auto-detect" ? "#### Java Stack Analysis (if detected)
 - JDK version and core frameworks
 - All Maven/Gradle dependencies with versions and purpose
-- Package structure organization
+- Package structure organisation
 - Spring Boot usage and configurations
 - Annotation patterns
 - Dependency injection approach
@@ -55,7 +55,7 @@ ${PROJECT_TYPE == "Java" || PROJECT_TYPE == "Auto-detect" ? "#### Java Stack Ana
 
 ${PROJECT_TYPE == "JavaScript" || PROJECT_TYPE == "Auto-detect" ? "#### JavaScript Stack Analysis (if detected)
 - ECMAScript version and transpiler settings
-- All npm dependencies categorized by purpose
+- All npm dependencies categorised by purpose
 - Module system (ESM, CommonJS)
 - Build tooling (webpack, Vite, etc.) with configuration
 - TypeScript usage and configuration
@@ -75,7 +75,7 @@ ${PROJECT_TYPE == "Python" || PROJECT_TYPE == "Auto-detect" ? "#### Python Analy
 - Package dependencies and virtual environment setup
 - Web framework details (Django, Flask, FastAPI)
 - ORM usage patterns
-- Project structure organization
+- Project structure organisation
 - API design patterns" : ""}
 
 ### 3. Implementation Patterns & Conventions
@@ -86,11 +86,11 @@ ${INCLUDE_CONVENTIONS ?
 - Class/type naming patterns
 - Method/function naming patterns
 - Variable naming conventions
-- File naming and organization conventions
+- File naming and organisation conventions
 - Interface/abstract class patterns
 
 #### Code Organization
-- File structure and organization
+- File structure and organisation
 - Folder hierarchy patterns
 - Component/module boundaries
 - Code separation and responsibility patterns
@@ -122,7 +122,7 @@ ${INCLUDE_USAGE_PATTERNS ?
 
 #### Service Layer Examples
 - Service class implementation
-- Business logic organization
+- Business logic organisation
 - Cross-cutting concerns integration
 - Dependency injection usage
 
@@ -138,8 +138,8 @@ ${DEPTH_LEVEL == "Comprehensive" || DEPTH_LEVEL == "Implementation-Ready" ?
 
 #### Core Framework Usage
 - Primary frameworks and their specific usage in the project
-- Framework-specific configurations and customizations
-- Extension points and customizations
+- Framework-specific configurations and customisations
+- Extension points and customisations
 
 #### Integration Points
 - How different technology components integrate
@@ -157,7 +157,7 @@ ${DEPTH_LEVEL == "Comprehensive" || DEPTH_LEVEL == "Implementation-Ready" ?
 #### Infrastructure
 - Deployment environment details
 - Container technologies
-- Cloud services utilized
+- Cloud services utilised
 - Monitoring and logging infrastructure" : ""}
 
 ### 6. Technology-Specific Implementation Details
@@ -178,10 +178,10 @@ ${PROJECT_TYPE == ".NET" || PROJECT_TYPE == "Auto-detect" ?
   - ORM configuration and usage
   - Entity configuration approach
   - Relationship definitions
-  - Query patterns and optimization approaches
+  - Query patterns and optimisation approaches
   
 - **API Design Patterns** (if used):
-  - Endpoint organization
+  - Endpoint organisation
   - Parameter binding approaches
   - Response type handling
   
@@ -238,7 +238,7 @@ ${INCLUDE_DIAGRAMS ?
 - Identify technology constraints and boundaries
 - Document technology upgrade paths and compatibility considerations
 
-Format the output as ${OUTPUT_FORMAT} and categorize technologies by ${CATEGORIZATION}.
+Format the output as ${OUTPUT_FORMAT} and categorise technologies by ${CATEGORISATION}.
 
 Save the output as 'Technology_Stack_Blueprint.${OUTPUT_FORMAT == "Markdown" ? "md" : OUTPUT_FORMAT.toLowerCase()}'
 "

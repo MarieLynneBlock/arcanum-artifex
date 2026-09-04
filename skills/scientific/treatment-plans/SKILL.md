@@ -1,8 +1,8 @@
 ---
-description: Generate concise (3-4 page), focused medical treatment plans in LaTeX/PDF format for all clinical specialties. Supports general medical treatment, rehabilitation therapy, mental health care, chronic disease management, perioperative care, and pain management. Includes SMART goal frameworks, evidence-based interventions with minimal text citations, regulatory compliance (HIPAA), and professional formatting. Prioritizes brevity and clinical actionability.
 name: treatment-plans
-allowed-tools: Read Write Edit Bash
+description: Generate concise (3-4 page), focused medical treatment plans in LaTeX/PDF format for all clinical specialties. Supports general medical treatment, rehabilitation therapy, mental health care, chronic disease management, perioperative care, and pain management. Includes SMART goal frameworks, evidence-based interventions with minimal text citations, regulatory compliance (HIPAA), and professional formatting. Prioritises brevity and clinical actionability.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -15,7 +15,7 @@ Treatment plan writing is the systematic documentation of clinical care strategi
 
 **Critical Principles:**
 1. **CONCISE & ACTIONABLE**: Treatment plans default to 3-4 pages maximum, focusing only on clinically essential information that impacts care decisions
-2. **Patient-Centered**: Plans must be evidence-based, measurable, and compliant with healthcare regulations (HIPAA, documentation standards)
+2. **Patient-Centred**: Plans must be evidence-based, measurable, and compliant with healthcare regulations (HIPAA, documentation standards)
 3. **Minimal Citations**: Use brief in-text citations only when needed to support clinical recommendations; avoid extensive bibliographies
 
 Every treatment plan should include clear goals, specific interventions, defined timelines, monitoring parameters, and expected outcomes that align with patient preferences and current clinical guidelines - all presented as efficiently as possible.
@@ -29,7 +29,7 @@ This skill should be used when:
 - Writing mental health and psychiatric treatment plans
 - Planning perioperative and surgical care pathways
 - Establishing pain management protocols
-- Setting patient-centered goals using SMART criteria
+- Setting patient-centred goals using SMART criteria
 - Coordinating multidisciplinary care across specialties
 - Ensuring regulatory compliance in treatment documentation
 - Generating professional treatment plans for medical records
@@ -38,7 +38,7 @@ This skill should be used when:
 
 **⚠️ MANDATORY: Every treatment plan MUST include at least 1 AI-generated figure using the scientific-schematics skill.**
 
-This is not optional. Treatment plans benefit greatly from visual elements. Before finalizing any document:
+This is not optional. Treatment plans benefit greatly from visual elements. Before finalising any document:
 1. Generate at minimum ONE schematic or diagram (e.g., treatment pathway flowchart, care coordination diagram, or therapy timeline)
 2. For complex plans: include decision algorithm flowchart
 3. For rehabilitation plans: include milestone progression diagram
@@ -65,9 +65,9 @@ The AI will automatically:
 - Therapy progression timelines
 - Multidisciplinary team interaction diagrams
 - Medication management flowcharts
-- Rehabilitation protocol visualizations
+- Rehabilitation protocol visualisations
 - Clinical decision algorithm diagrams
-- Any complex concept that benefits from visualization
+- Any complex concept that benefits from visualisation
 
 For detailed guidance on creating schematics, refer to the scientific-schematics skill documentation.
 
@@ -99,10 +99,10 @@ Treatment plans come in three format options based on clinical complexity and us
 7. **Expected Outcome**: Timeline and success metrics
 
 **Design principles**:
-- Use small boxes/tables for organization (like the clinical treatment recommendation card format)
+- Use small boxes/tables for organisation (like the clinical treatment recommendation card format)
 - Eliminate all non-essential text
 - Use abbreviations familiar to clinicians
-- Dense information layout - maximize information per square inch
+- Dense information layout - maximise information per square inch
 - Think "quick reference card" not "comprehensive documentation"
 
 **Example structure**:
@@ -166,7 +166,7 @@ Following the Foundation Medicine model for precision medicine reporting and cli
    - Report author/clinic (if applicable)
    - Analysis approach or framework used
 
-3. **Key Findings or Treatment Highlights** (2-4 colored boxes using appropriate box types)
+3. **Key Findings or Treatment Highlights** (2-4 coloured boxes using appropriate box types)
    - **Primary Treatment Goals** (using `\begin{goalbox}`)
      - 2-3 SMART goals in bullet format
    - **Main Interventions** (using `\begin{keybox}` or `\begin{infobox}`)
@@ -180,7 +180,7 @@ Following the Foundation Medicine model for precision medicine reporting and cli
 **Visual Format Requirements:**
 - Use `\thispagestyle{empty}` to remove page numbers from first page
 - All content must fit on page 1 (before `\newpage`)
-- Use colored boxes (tcolorbox package) with different colors for different information types
+- Use coloured boxes (tcolorbox package) with different colours for different information types
 - Boxes should be visually prominent and easy to scan
 - Use concise, bullet-point format
 - Table of contents (if included) starts on page 2
@@ -223,12 +223,12 @@ Following the Foundation Medicine model for precision medicine reporting and cli
 
 ### Concise Documentation
 
-**CRITICAL: Treatment plans MUST prioritize brevity and clinical relevance. Default to 3-4 pages maximum unless clinical complexity absolutely demands more detail.**
+**CRITICAL: Treatment plans MUST prioritise brevity and clinical relevance. Default to 3-4 pages maximum unless clinical complexity absolutely demands more detail.**
 
-Treatment plans should prioritize **clarity and actionability** over exhaustive detail:
+Treatment plans should prioritise **clarity and actionability** over exhaustive detail:
 
 - **Focused**: Include only clinically essential information that impacts care decisions
-- **Actionable**: Emphasize what needs to be done, when, and why
+- **Actionable**: Emphasise what needs to be done, when, and why
 - **Efficient**: Facilitate quick decision-making without sacrificing clinical quality
 - **Target length options**:
   - **1-page format** (preferred for straightforward cases): Quick-reference card with all essential information
@@ -236,7 +236,7 @@ Treatment plans should prioritize **clarity and actionability** over exhaustive 
   - **5-6 pages** (rare): Only for highly complex cases with multiple comorbidities or multidisciplinary interventions
 
 **Streamlining Guidelines:**
-- **First Page Summary**: Use individual colored boxes to consolidate key information (goals, interventions, decision points) - this alone can often convey the essential treatment plan
+- **First Page Summary**: Use individual coloured boxes to consolidate key information (goals, interventions, decision points) - this alone can often convey the essential treatment plan
 - **Eliminate Redundancy**: If information is in the first-page summary, don't repeat it verbatim in detailed sections
 - **Patient Education section**: 3-5 key bullet points on critical topics and warning signs only
 - **Risk Mitigation section**: Highlight only critical medication safety concerns and emergency actions (not exhaustive lists)
@@ -284,7 +284,7 @@ General medical treatment plans address common chronic conditions and acute medi
 - Current medications and allergies
 - Relevant social and family history
 - Functional status and baseline assessments
-- **HIPAA Compliance**: Remove all 18 identifiers per Safe Harbor method
+- **HIPAA Compliance**: Remove all 18 identifiers per Safe Harbour method
 
 **Diagnosis and Assessment Summary**
 - Primary diagnosis with ICD-10 code
@@ -321,7 +321,7 @@ Long-term goals (6-12 months):
 
 *Non-pharmacological*:
 - Lifestyle modifications (diet, exercise, smoking cessation)
-- Behavioral interventions
+- Behavioural interventions
 - Patient education and self-management
 - Monitoring and self-tracking (glucose, blood pressure, weight)
 - Assistive devices or adaptive equipment
@@ -395,7 +395,7 @@ Rehabilitation plans focus on restoring function, improving mobility, and enhanc
 - Baseline functional status (ADLs, IADLs)
 - Range of motion, strength, balance, endurance
 - Gait analysis and mobility assessment
-- Standardized measures (FIM, Barthel Index, Berg Balance Scale)
+- Standardised measures (FIM, Barthel Index, Berg Balance Scale)
 - Environmental assessment (home safety, accessibility)
 
 **Rehabilitation Goals**
@@ -453,7 +453,7 @@ Rehabilitation plans focus on restoring function, improving mobility, and enhanc
 
 **Progress Monitoring**
 - Weekly functional assessments
-- Standardized outcome measures
+- Standardised outcome measures
 - Goal attainment scaling
 - Pain and symptom tracking
 - Patient satisfaction
@@ -495,7 +495,7 @@ Mental health treatment plans address psychiatric conditions through integrated 
 - Decrease depression severity (PHQ-9 score from 18 to <10)
 - Reduce anxiety symptoms (GAD-7 score <5)
 - Improve sleep quality (Pittsburgh Sleep Quality Index)
-- Stabilize mood (reduced mood episodes)
+- Stabilise mood (reduced mood episodes)
 
 *Functional improvement*:
 - Return to work or school
@@ -618,7 +618,7 @@ Structured plans for surgical and procedural patients covering preoperative prep
 **Preoperative Assessment**
 - Surgical indication and planned procedure
 - Preoperative risk stratification (ASA class, cardiac risk)
-- Optimization of medical conditions
+- Optimisation of medical conditions
 - Medication management (continuation, discontinuation)
 - Preoperative testing and clearances
 - Informed consent and patient education
@@ -676,7 +676,7 @@ Multimodal approaches to acute and chronic pain using evidence-based interventio
 
 *Non-pharmacological*:
 - Physical therapy and exercise
-- Cognitive-behavioral therapy for pain
+- Cognitive-behavioural therapy for pain
 - Mindfulness and relaxation techniques
 - Acupuncture
 - TENS units
@@ -720,7 +720,7 @@ Multimodal approaches to acute and chronic pain using evidence-based interventio
 - This provides an at-a-glance overview similar to precision medicine reports
 - Table of contents and detailed sections start on page 2 or later
 - Think of it as a "clinical highlights" page that a busy clinician can scan in 30 seconds
-- Use 2-4 colored boxes for different key findings (goals, interventions, decision points)
+- Use 2-4 coloured boxes for different key findings (goals, interventions, decision points)
 - **A strong first page can often stand alone** - subsequent pages are for details, not repetition
 
 ### SMART Goal Setting
@@ -733,11 +733,11 @@ All treatment goals should meet SMART criteria:
 - **Relevant**: Align with patient values, priorities, and life circumstances
 - **Time-bound**: Define clear timeframes for goal achievement and reassessment
 
-### Patient-Centered Care
+### Patient-Centred Care
 
 ✓ **Shared Decision-Making**: Involve patients in goal-setting and treatment choices  
 ✓ **Cultural Competence**: Respect cultural beliefs, language preferences, health literacy  
-✓ **Patient Preferences**: Honor treatment preferences and personal values  
+✓ **Patient Preferences**: Honour treatment preferences and personal values  
 ✓ **Individualization**: Tailor plans to patient's unique circumstances  
 ✓ **Empowerment**: Support patient activation and self-management  
 
@@ -755,7 +755,7 @@ All treatment goals should meet SMART criteria:
 ✓ **Clarity**: Use clear, professional medical language  
 ✓ **Accuracy**: Ensure factual correctness and current information  
 ✓ **Timeliness**: Document plans promptly  
-✓ **Legibility**: Professional formatting and organization  
+✓ **Legibility**: Professional formatting and organisation  
 ✓ **Signature and Date**: Authenticate all treatment plans  
 
 ### Regulatory Compliance
@@ -772,7 +772,7 @@ All treatment goals should meet SMART criteria:
 ✓ **Role Clarity**: Define responsibilities for each team member  
 ✓ **Care Transitions**: Ensure continuity across settings  
 ✓ **Specialist Integration**: Coordinate with subspecialty care  
-✓ **Patient-Centered Medical Home**: Align with PCMH principles  
+✓ **Patient-Centred Medical Home**: Align with PCMH principles  
 
 ## LaTeX Template Usage
 
@@ -795,7 +795,7 @@ Use only when one-page format is insufficient due to complexity:
 
 2. **general_medical_treatment_plan.tex** - Primary care, chronic disease, general medicine
 3. **rehabilitation_treatment_plan.tex** - PT/OT, post-surgery, injury recovery
-4. **mental_health_treatment_plan.tex** - Psychiatric conditions, behavioral health
+4. **mental_health_treatment_plan.tex** - Psychiatric conditions, behavioural health
 5. **chronic_disease_management_plan.tex** - Complex chronic diseases, multiple conditions
 6. **perioperative_care_plan.tex** - Surgical patients, procedural care
 7. **pain_management_plan.tex** - Acute or chronic pain conditions
@@ -866,17 +866,17 @@ Validation includes:
 
 ### Quality Checklist
 
-Review treatment plans against the quality checklist (`quality_checklist.md`):
+Review treatment plans against the quality checklist (`quality-checklist.md`):
 
 **Clinical Quality**
 - [ ] Diagnosis is accurate and properly coded (ICD-10)
-- [ ] Goals are SMART and patient-centered
+- [ ] Goals are SMART and patient-centred
 - [ ] Interventions are evidence-based and guideline-concordant
 - [ ] Timeline is realistic and clearly defined
 - [ ] Monitoring plan is comprehensive
 - [ ] Safety considerations are addressed
 
-**Patient-Centered Care**
+**Patient-Centred Care**
 - [ ] Patient preferences and values incorporated
 - [ ] Shared decision-making documented
 - [ ] Health literacy appropriate language
@@ -905,7 +905,7 @@ Treatment plans often accompany other clinical documentation:
 
 - **SOAP Notes** (`clinical-reports` skill): Document ongoing implementation
 - **H&P** (`clinical-reports` skill): Initial assessment informs treatment plan
-- **Discharge Summaries** (`clinical-reports` skill): Summarize treatment plan execution
+- **Discharge Summaries** (`clinical-reports` skill): Summarise treatment plan execution
 - **Progress Notes**: Track goal achievement and plan modifications
 
 ### Scientific Writing Integration
@@ -977,7 +977,7 @@ Treatment plans may be developed for clinical trials or research studies:
 **Template**: `perioperative_care_plan.tex`
 
 **Preoperative Goals**:
-- Optimize diabetes control (glucose <180)
+- Optimise diabetes control (glucose <180)
 - Discontinue anticoagulation per protocol
 - Complete medical clearance
 
@@ -999,7 +999,7 @@ Treatment plans may be developed for clinical trials or research studies:
 **Interventions**:
 - Pharmacological: Gabapentin 300mg TID, duloxetine 60mg daily
 - PT: Core strengthening, McKenzie exercises 2x/week x 8 weeks
-- Behavioral: CBT for pain, mindfulness meditation
+- Behavioural: CBT for pain, mindfulness meditation
 - Interventional: Consider lumbar ESI if inadequate response
 
 ## Professional Standards and Guidelines
@@ -1065,7 +1065,7 @@ python generate_template.py --type mental_health --output depression_treatment_p
 1. **Create treatment plan** using appropriate LaTeX template
 2. **Check completeness**: `python check_completeness.py plan.tex`
 3. **Validate quality**: `python validate_treatment_plan.py plan.tex`
-4. **Review checklist**: Compare against `quality_checklist.md`
+4. **Review checklist**: Compare against `quality-checklist.md`
 5. **Generate PDF**: `pdflatex plan.tex`
 6. **Review with patient**: Ensure understanding and agreement
 7. **Implement and document**: Track progress in clinical notes
@@ -1082,13 +1082,13 @@ python generate_template.py --type mental_health --output depression_treatment_p
 
 ### Overview
 
-Treatment plans can be enhanced with professional medical document styling using the `medical_treatment_plan.sty` LaTeX package. This custom style transforms plain academic documents into visually appealing, color-coded clinical documents that maintain scientific rigor while improving readability and usability.
+Treatment plans can be enhanced with professional medical document styling using the `medical_treatment_plan.sty` LaTeX package. This custom style transforms plain academic documents into visually appealing, colour-coded clinical documents that maintain scientific rigour while improving readability and usability.
 
 ### Medical Treatment Plan Style Package
 
 The `medical_treatment_plan.sty` package (located in `assets/medical_treatment_plan.sty`) provides:
 
-**Professional Color Scheme**
+**Professional Colour Scheme**
 - **Primary Blue** (RGB: 0, 102, 153): Headers, section titles, primary accents
 - **Secondary Blue** (RGB: 102, 178, 204): Light backgrounds, subtle accents
 - **Accent Blue** (RGB: 0, 153, 204): Hyperlinks, key highlights
@@ -1098,15 +1098,15 @@ The `medical_treatment_plan.sty` package (located in `assets/medical_treatment_p
 - **Light Gray** (RGB: 245, 245, 245): Background fills
 
 **Styled Elements**
-- Custom colored headers and footers with professional rules
+- Custom coloured headers and footers with professional rules
 - Blue section titles with underlines for clear hierarchy
-- Enhanced table formatting with colored headers and alternating rows
-- Optimized list spacing with colored bullets and numbering
+- Enhanced table formatting with coloured headers and alternating rows
+- Optimised list spacing with coloured bullets and numbering
 - Professional page layout with appropriate margins
 
 ### Custom Information Boxes
 
-The style package includes five specialized box environments for organizing clinical information:
+The style package includes five specialised box environments for organising clinical information:
 
 #### 1. Info Box (Blue Border, Light Gray Background)
 
@@ -1237,8 +1237,8 @@ Data row 3 content & Value 3 & Details 3 \\
 
 **Features:**
 - Blue headers with white text for visual prominence
-- Alternating row colors (`\tablerowcolor`) for improved readability
-- Automatic centering and spacing
+- Alternating row colours (`\tablerowcolor`) for improved readability
+- Automatic centring and spacing
 - Professional borders and padding
 
 ### Using the Style Package
@@ -1292,8 +1292,8 @@ This creates an eye-catching blue box with white text and clear hierarchy.
 
 **Required LaTeX Packages** (automatically loaded by the style):
 - `geometry` - Page layout and margins
-- `xcolor` - Color support
-- `tcolorbox` with `[most]` library - Custom colored boxes
+- `xcolor` - Colour support
+- `tcolorbox` with `[most]` library - Custom coloured boxes
 - `tikz` - Graphics and drawing
 - `fontspec` - Font management (XeLaTeX/LuaLaTeX)
 - `fancyhdr` - Custom headers and footers
@@ -1302,7 +1302,7 @@ This creates an eye-catching blue box with white text and clear hierarchy.
 - `booktabs` - Professional table rules
 - `longtable` - Multi-page tables
 - `array` - Enhanced table features
-- `colortbl` - Colored table cells
+- `colortbl` - Coloured table cells
 - `hyperref` - Hyperlinks and PDF metadata
 - `natbib` - Bibliography management
 
@@ -1322,11 +1322,11 @@ pdflatex document.tex
 pdflatex document.tex
 ```
 
-### Customization Options
+### Customisation Options
 
-#### Changing Colors
+#### Changing Colours
 
-Edit the style file to modify the color scheme:
+Edit the style file to modify the colour scheme:
 
 ```latex
 % In medical_treatment_plan.sty
@@ -1354,7 +1354,7 @@ Uncomment and modify in the style file:
 \setsansfont{Your Sans-Serif Font}
 ```
 
-#### Header/Footer Customization
+#### Header/Footer Customisation
 
 Modify in the style file:
 
@@ -1452,19 +1452,19 @@ sudo tlmgr install tcolorbox tikz pgf
 
 2. **Visual Hierarchy**
    - Use section styling for structure
-   - Boxes for emphasis and organization
+   - Boxes for emphasis and organisation
    - Tables for comparative data
    - Lists for sequential or grouped items
 
-3. **Color Consistency**
-   - Stick to defined color scheme
+3. **Colour Consistency**
+   - Stick to defined colour scheme
    - Use `\textcolor{primaryblue}{\textbf{Text}}` for emphasis
    - Maintain consistent meaning (red=warning, green=goals)
 
 4. **White Space**
    - Don't overcrowd pages with boxes
    - Use `\vspace{0.5cm}` between major sections
-   - Allow breathing room around colored elements
+   - Allow breathing room around coloured elements
 
 5. **Professional Appearance**
    - Maintain readability as top priority
@@ -1536,7 +1536,7 @@ sudo tlmgr install tcolorbox tikz pgf
 - Faster information scanning during patient encounters
 - Clear visual hierarchy for critical vs. routine information
 - Professional appearance suitable for patient-facing documents
-- Color-coded sections reduce cognitive load
+- Colour-coded sections reduce cognitive load
 
 **Educational Use:**
 - Enhanced readability for teaching materials
@@ -1547,14 +1547,14 @@ sudo tlmgr install tcolorbox tikz pgf
 **Documentation Quality:**
 - Modern, polished appearance
 - Maintains clinical accuracy while improving aesthetics
-- Standardized formatting across treatment plans
-- Easy to customize for institutional branding
+- Standardised formatting across treatment plans
+- Easy to customise for institutional branding
 
 **Patient Engagement:**
 - More approachable than dense text documents
-- Color coding helps patients identify key sections
+- Colour coding helps patients identify key sections
 - Professional appearance builds trust
-- Clear organization facilitates understanding
+- Clear organisation facilitates understanding
 
 ## Ethical Considerations
 

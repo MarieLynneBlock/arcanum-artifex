@@ -1,6 +1,6 @@
 ---
-description: Work with Data Commons, a platform providing programmatic access to public statistical data from global sources. Use this skill when working with demographic data, economic indicators, health statistics, environmental data, or any public datasets available through Data Commons. Applicable for querying population statistics, GDP figures, unemployment rates, disease prevalence, geographic entity resolution, and exploring relationships between statistical entities.
 name: datacommons-client
+description: Work with Data Commons, a platform providing programmatic access to public statistical data from global sources. Use this skill when working with demographic data, economic indicators, health statistics, environmental data, or any public datasets available through Data Commons. Applicable for querying population statistics, GDP figures, unemployment rates, disease prevalence, geographic entity resolution, and exploring relationships between statistical entities.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-Provides comprehensive access to the Data Commons Python API v2 for querying statistical observations, exploring the knowledge graph, and resolving entity identifiers. Data Commons aggregates data from census bureaus, health organizations, environmental agencies, and other authoritative sources into a unified knowledge graph.
+Provides comprehensive access to the Data Commons Python API v2 for querying statistical observations, exploring the knowledge graph, and resolving entity identifiers. Data Commons aggregates data from census bureaus, health organisations, environmental agencies, and other authoritative sources into a unified knowledge graph.
 
 ## Installation
 
@@ -232,7 +232,7 @@ Comprehensive documentation for each endpoint is available in the `references/` 
 - **`references/observation.md`**: Complete Observation API documentation with all methods, parameters, response formats, and common use cases
 - **`references/node.md`**: Complete Node API documentation for graph exploration, property queries, and hierarchy navigation
 - **`references/resolve.md`**: Complete Resolve API documentation for entity identification and DCID resolution
-- **`references/getting_started.md`**: Quickstart guide with end-to-end examples and common patterns
+- **`references/getting-started.md`**: Quickstart guide with end-to-end examples and common patterns
 
 ## Additional Resources
 

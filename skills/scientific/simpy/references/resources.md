@@ -1,6 +1,6 @@
 # SimPy Shared Resources
 
-This guide covers all resource types in SimPy for modeling congestion points and resource allocation.
+This guide covers all resource types in SimPy for modelling congestion points and resource allocation.
 
 ## Resource Types Overview
 
@@ -96,7 +96,7 @@ env.run()
 **Use cases:**
 - Operating system CPU scheduling
 - Emergency room triage
-- Network packet prioritization
+- Network packet prioritisation
 
 ## 2. Containers
 
@@ -252,7 +252,7 @@ env.run()
 **Use cases:**
 - Task scheduling
 - Print job queues
-- Message prioritization
+- Message prioritisation
 
 ## Choosing the Right Resource Type
 
@@ -271,5 +271,5 @@ env.run()
 1. **Capacity planning**: Set realistic capacities based on system constraints
 2. **Request patterns**: Use context managers (`with resource.request()`) for automatic cleanup
 3. **Error handling**: Wrap preemptive resources in try-except for Interrupt handling
-4. **Monitoring**: Track queue lengths and utilization (see monitoring.md)
+4. **Monitoring**: Track queue lengths and utilisation (see monitoring.md)
 5. **Performance**: FilterStore and PriorityStore have O(n) retrieval time; use wisely for large stores

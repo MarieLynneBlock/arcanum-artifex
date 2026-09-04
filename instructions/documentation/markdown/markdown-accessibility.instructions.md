@@ -23,7 +23,7 @@ Good: `Read my blog post "[Crafting an accessible resume](https://example.com)"`
 - Flag alt text that is a filename (e.g., `img_1234.jpg`) or generic placeholder (e.g., `screenshot`, `image`).
 - Alt text should be succinct and descriptive. Include any text visible in the image.
 - Use "screenshot of" where relevant, but do not prefix with "image of" since screen readers announce that automatically.
-- For complex images (charts, infographics), suggest summarizing the data in alt text and providing longer descriptions via `<details>` tags or linked content.
+- For complex images (charts, infographics), suggest summarising the data in alt text and providing longer descriptions via `<details>` tags or linked content.
 - When suggesting alt text improvements, present them as recommendations for the author to review. Alt text requires understanding of visual content and context that only the author can properly assess.
 
 ## 3. Heading Hierarchy
@@ -36,7 +36,7 @@ Good: `Read my blog post "[Crafting an accessible resume](https://example.com)"`
 ## 4. Plain Language
 
 - Flag unnecessarily complex or jargon-heavy language that could be simplified.
-- Favor short sentences, common words, and active voice.
+- Favour short sentences, common words, and active voice.
 - Flag long, dense paragraphs that could be broken into smaller sections or lists.
 - When describing UI navigation, write actions as sequential steps in plain language first (e.g., "open Settings, then select Preferences"). Use generic, stable labels rather than icon names or visual descriptions.
 - A parenthetical visual reference may follow as supplemental context (e.g., "(gear icon > Preferences)"), but never use visual breadcrumb notation or icon names as the sole way to describe a navigation path.
@@ -70,7 +70,7 @@ Good: `Read my blog post "[Crafting an accessible resume](https://example.com)"`
 
 ## Review Priority
 
-When multiple issues exist, prioritize in this order:
+When multiple issues exist, prioritise in this order:
 
 1. Missing or empty alt text on images
 2. Skipped heading levels or heading hierarchy issues

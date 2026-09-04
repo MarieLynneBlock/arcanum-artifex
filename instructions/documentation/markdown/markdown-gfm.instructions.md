@@ -1,9 +1,9 @@
 ---
-description: 'Markdown formatting for GitHub-flavored markdown (GFM) files'
+description: 'Markdown formatting for GitHub-flavoured markdown (GFM) files'
 applyTo: '**/*.md'
 ---
 
-# GitHub Flavored Markdown (GFM)
+# GitHub Flavoured Markdown (GFM)
 
 Apply these rules per the [GFM spec](https://github.github.com/gfm/) when writing or reviewing `.md` files. GFM is a strict superset of CommonMark. GFM spec for reference only. Do not download GFM Spec.
 
@@ -42,8 +42,8 @@ Apply these rules per the [GFM spec](https://github.github.com/gfm/) when writin
 
 ## Inlines
 
-- **Backslash escapes**: `\` before any ASCII punctuation character renders the literal character. Not recognized in code spans, code blocks, or autolinks.
-- **Entity and numeric character references**: `&amp;`, `&#123;`, `&#x7B;` — valid HTML5 entities. Not recognized in code spans or code blocks. Cannot replace structural characters.
+- **Backslash escapes**: `\` before any ASCII punctuation character renders the literal character. Not recognised in code spans, code blocks, or autolinks.
+- **Entity and numeric character references**: `&amp;`, `&#123;`, `&#x7B;` — valid HTML5 entities. Not recognised in code spans or code blocks. Cannot replace structural characters.
 - **Code spans**: Backtick-delimited inline code. Line endings convert to spaces. Leading and trailing space stripped when both present. Backslash escapes are literal inside code spans.
 - **Emphasis and strong emphasis**: `*`/`_` for `<em>`, `**`/`__` for `<strong>`. `_` is not allowed for intraword emphasis. Left-flanking / right-flanking delimiter run rules apply. Delimiter run length sum must not be a multiple of 3 when one delimiter can both open and close (unless both lengths are multiples of 3).
 - **Strikethrough** *(extension)*: `~~text~~` — one or two tildes. Does not span across paragraphs. Three or more tildes do not create strikethrough.
@@ -53,7 +53,7 @@ Apply these rules per the [GFM spec](https://github.github.com/gfm/) when writin
 - **Autolinks** *(extension)*: Bare `http://`, `https://`, `www.` URLs and bare email addresses auto-link without angle brackets. Trailing punctuation excluded; parentheses balanced.
 - **Raw HTML**: Open/close tags, comments (`<!-- -->`), processing instructions (`<? ?>`), declarations (`<!…>`), CDATA (`<![CDATA[…]]>`) are passed through.
 - **Disallowed raw HTML** *(extension)*: `<title>`, `<textarea>`, `<style>`, `<xmp>`, `<iframe>`, `<noembed>`, `<noframes>`, `<script>`, `<plaintext>` have their leading `<` replaced with `&lt;`.
-- **Hard line breaks**: Two+ trailing spaces or `\` before a line ending. Not recognized in code spans or HTML tags.
+- **Hard line breaks**: Two+ trailing spaces or `\` before a line ending. Not recognised in code spans or HTML tags.
 - **Soft line breaks**: A line ending not preceded by two+ spaces or `\`. Rendered as a space in browsers.
 
 ## Validation Checklist

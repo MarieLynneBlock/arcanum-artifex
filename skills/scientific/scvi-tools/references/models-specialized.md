@@ -1,6 +1,6 @@
-# Specialized Modality Models
+# Specialised Modality Models
 
-This document covers models for specialized single-cell data modalities in scvi-tools.
+This document covers models for specialised single-cell data modalities in scvi-tools.
 
 ## MethylVI / MethylANVI (Methylation Analysis)
 
@@ -13,7 +13,7 @@ This document covers models for specialized single-cell data modalities in scvi-
 - Label transfer (MethylANVI) for cell type annotation
 
 **When to Use**:
-- Analyzing scBS-seq or similar methylation data
+- Analysing scBS-seq or similar methylation data
 - Studying DNA methylation patterns across cell types
 - Integrating methylation data across batches
 - Cell type annotation based on methylation profiles
@@ -86,7 +86,7 @@ predictions = model.predict()
 - Designed for high-dimensional protein panels
 
 **When to Use**:
-- Analyzing flow cytometry or CyTOF data
+- Analysing flow cytometry or CyTOF data
 - Integrating cytometry experiments across batches
 - Batch correction for protein panels
 - Cross-study cytometry integration
@@ -152,7 +152,7 @@ sc.pl.umap(adata, color=["batch", "leiden"])
 **Purpose**: Batch effect correction with emphasis on preserving biological variation.
 
 **Key Features**:
-- Specialized batch integration approach
+- Specialised batch integration approach
 - Preserves biological signals while removing technical effects
 - Designed for large-scale integration studies
 
@@ -207,7 +207,7 @@ pseudotime = decipher_model.get_pseudotime()
 adata.obs["pseudotime"] = pseudotime
 ```
 
-**Visualization**:
+**Visualisation**:
 ```python
 import scanpy as sc
 
@@ -255,7 +255,7 @@ peak_gene_links = model.get_regulatory_links()
 1. **Sparsity**: Methylation data is inherently sparse; model accounts for this
 2. **CpG selection**: Filter CpGs with very low coverage
 3. **Biological interpretation**: Consider genomic context (promoters, enhancers)
-4. **Integration**: For multi-omics, analyze separately then integrate results
+4. **Integration**: For multi-omics, analyse separately then integrate results
 
 ### CytoVI
 1. **Protein QC**: Remove low-quality or uninformative proteins
@@ -276,7 +276,7 @@ peak_gene_links = model.get_regulatory_links()
 
 ## Integration with Other Models
 
-Many specialized models work well in combination:
+Many specialised models work well in combination:
 
 **Methylation + Expression**:
 ```python
@@ -308,7 +308,7 @@ multivi_model = scvi.model.MULTIVI(multiome_adata)
 pereglm_model = scvi.model.PEREGLM(multiome_adata)
 ```
 
-## Choosing Specialized Models
+## Choosing Specialised Models
 
 ### Decision Tree
 
@@ -375,7 +375,7 @@ meth_adata.write("methylation_analyzed.h5ad")
 
 ## External Tools Integration
 
-Some specialized models are available as external packages:
+Some specialised models are available as external packages:
 
 **SOLO** (doublet detection):
 ```python

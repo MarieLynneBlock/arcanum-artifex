@@ -1,8 +1,8 @@
 ---
-description: Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing prose. IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, reporting guidelines (CONSORT/STROBE/PRISMA), for research papers and journal submissions.
 name: scientific-writing
-allowed-tools: Read Write Edit Bash
+description: Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing prose. IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, reporting guidelines (CONSORT/STROBE/PRISMA), for research papers and journal submissions.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -23,7 +23,7 @@ This skill should be used when:
 - Writing or revising any section of a scientific manuscript (abstract, introduction, methods, results, discussion)
 - Structuring a research paper using IMRAD or other standard formats
 - Formatting citations and references in specific styles (APA, AMA, Vancouver, Chicago, IEEE)
-- Creating, formatting, or improving figures, tables, and data visualizations
+- Creating, formatting, or improving figures, tables, and data visualisations
 - Applying study-specific reporting guidelines (CONSORT for trials, STROBE for observational studies, PRISMA for reviews)
 - Drafting abstracts that meet journal requirements (structured or unstructured)
 - Preparing manuscripts for submission to specific journals
@@ -35,10 +35,10 @@ This skill should be used when:
 
 **⚠️ MANDATORY: Every scientific paper MUST include a graphical abstract plus 1-2 additional AI-generated figures using the scientific-schematics skill.**
 
-This is not optional. Scientific papers without visual elements are incomplete. Before finalizing any document:
+This is not optional. Scientific papers without visual elements are incomplete. Before finalising any document:
 1. **ALWAYS generate a graphical abstract** as the first visual element
 2. Generate at minimum ONE additional schematic or diagram using scientific-schematics
-3. Prefer 3-4 total figures for comprehensive papers (graphical abstract + methods flowchart + results visualization + conceptual diagram)
+3. Prefer 3-4 total figures for comprehensive papers (graphical abstract + methods flowchart + results visualisation + conceptual diagram)
 
 ### Graphical Abstract (REQUIRED)
 
@@ -88,11 +88,11 @@ python scripts/generate_schematic.py "your diagram description" -o figures/outpu
 - Experimental workflow illustrations
 - Data analysis pipeline diagrams
 - Biological pathway or mechanism diagrams
-- System architecture visualizations
+- System architecture visualisations
 - Neural network architectures
 - Decision trees, algorithm flowcharts
 - Comparison matrices, timeline diagrams
-- Any technical concept that benefits from schematic visualization
+- Any technical concept that benefits from schematic visualisation
 
 **Use generate-image EXTENSIVELY for visual content:**
 ```bash
@@ -102,10 +102,10 @@ python scripts/generate_image.py "your image description" -o figures/output.png
 - Photorealistic illustrations of concepts
 - Medical/anatomical illustrations
 - Environmental/ecological scenes
-- Equipment and lab setup visualizations
-- Artistic visualizations, infographics
+- Equipment and lab setup visualisations
+- Artistic visualisations, infographics
 - Cover images, header graphics
-- Product mockups, prototype visualizations
+- Product mockups, prototype visualisations
 - Any visual that enhances understanding or engagement
 
 The AI will automatically:
@@ -116,7 +116,7 @@ The AI will automatically:
 
 **When in Doubt, Generate a Figure:**
 - Complex concept → generate a schematic
-- Data discussion → generate a visualization
+- Data discussion → generate a visualisation
 - Process description → generate a flowchart
 - Comparison → generate a comparison diagram
 - Reader benefit → generate a visual
@@ -135,18 +135,18 @@ For detailed guidance, refer to the scientific-schematics and generate-image ski
 - **Results**: Present findings objectively without interpretation
 - **Discussion**: Interpret results, acknowledge limitations, propose future directions
 
-For detailed guidance on IMRAD structure, refer to `references/imrad_structure.md`.
+For detailed guidance on IMRAD structure, refer to `references/imrad-structure.md`.
 
 **Alternative Structures**: Support discipline-specific formats including:
 - Review articles (narrative, systematic, scoping)
 - Case reports and case series
 - Meta-analyses and pooled analyses
-- Theoretical/modeling papers
+- Theoretical/modelling papers
 - Methods papers and protocols
 
 ### 2. Section-Specific Writing Guidance
 
-**Abstract Composition**: Craft concise, standalone summaries (100-250 words) that capture the paper's purpose, methods, results, and conclusions. Support both structured abstracts (with labeled sections) and unstructured single-paragraph formats.
+**Abstract Composition**: Craft concise, standalone summaries (100-250 words) that capture the paper's purpose, methods, results, and conclusions. Support both structured abstracts (with labelled sections) and unstructured single-paragraph formats.
 
 **Introduction Development**: Build compelling introductions that:
 - Establish the research problem's importance
@@ -168,7 +168,7 @@ For detailed guidance on IMRAD structure, refer to `references/imrad_structure.m
 - Statistical significance with effect sizes
 - Objective reporting without interpretation
 
-**Discussion Construction**: Synthesize findings by:
+**Discussion Construction**: Synthesise findings by:
 - Relating results to research questions
 - Comparing with existing literature
 - Acknowledging limitations honestly
@@ -177,7 +177,7 @@ For detailed guidance on IMRAD structure, refer to `references/imrad_structure.m
 
 ### 3. Citation and Reference Management
 
-Apply citation styles correctly across disciplines. For comprehensive style guides, refer to `references/citation_styles.md`.
+Apply citation styles correctly across disciplines. For comprehensive style guides, refer to `references/citation-styles.md`.
 
 **Major Citation Styles:**
 - **AMA (American Medical Association)**: Numbered superscript citations, common in medicine
@@ -195,7 +195,7 @@ Apply citation styles correctly across disciplines. For comprehensive style guid
 
 ### 4. Figures and Tables
 
-Create effective data visualizations that enhance comprehension. For detailed best practices, refer to `references/figures_tables.md`.
+Create effective data visualisations that enhance comprehension. For detailed best practices, refer to `references/figures-tables.md`.
 
 **When to Use Tables vs. Figures:**
 - **Tables**: Precise numerical data, complex datasets, multiple variables requiring exact values
@@ -214,11 +214,11 @@ Create effective data visualizations that enhance comprehension. For detailed be
 - Line graphs: Showing trends over time
 - Scatterplots: Displaying correlations
 - Box plots: Showing distributions and outliers
-- Heatmaps: Visualizing matrices and patterns
+- Heatmaps: Visualising matrices and patterns
 
 ### 5. Reporting Guidelines by Study Type
 
-Ensure completeness and transparency by following established reporting standards. For comprehensive guideline details, refer to `references/reporting_guidelines.md`.
+Ensure completeness and transparency by following established reporting standards. For comprehensive guideline details, refer to `references/reporting-guidelines.md`.
 
 **Key Guidelines:**
 - **CONSORT**: Randomized controlled trials
@@ -236,7 +236,7 @@ Each guideline provides checklists ensuring all critical methodological elements
 
 ### 6. Writing Principles and Style
 
-Apply fundamental scientific writing principles. For detailed guidance, refer to `references/writing_principles.md`.
+Apply fundamental scientific writing principles. For detailed guidance, refer to `references/writing-principles.md`.
 
 **Clarity**:
 - Use precise, unambiguous language
@@ -246,7 +246,7 @@ Apply fundamental scientific writing principles. For detailed guidance, refer to
 
 **Conciseness**:
 - Eliminate redundant words and phrases
-- Favor shorter sentences (15-20 words average)
+- Favour shorter sentences (15-20 words average)
 - Remove unnecessary qualifiers
 - Respect word limits strictly
 
@@ -276,7 +276,7 @@ When starting a new section:
    - Main arguments or findings to present
    - Key studies to cite
    - Data points and statistics to include
-   - Logical flow and organization
+   - Logical flow and organisation
 3. These bullet points serve as scaffolding—they are NOT the final manuscript
 
 **Example outline (Introduction section):**
@@ -352,7 +352,7 @@ Lists may appear in scientific papers only in specific contexts:
 - **Never in**: Abstract, Introduction, Results, Discussion, Conclusions
 
 **Abstract Format Rule:**
-- ❌ **NEVER** use labeled sections (Background:, Methods:, Results:, Conclusions:)
+- ❌ **NEVER** use labelled sections (Background:, Methods:, Results:, Conclusions:)
 - ✅ **ALWAYS** write as flowing paragraph(s) with natural transitions
 - Exception: Only use structured format if journal explicitly requires it in author guidelines
 
@@ -361,11 +361,11 @@ Lists may appear in scientific papers only in specific contexts:
 The research-lookup skill is essential for Stage 1 (creating outlines):
 1. Search for relevant papers using research-lookup
 2. Extract key findings, methods, and data
-3. Organize findings as bullet points in your outline
+3. Organise findings as bullet points in your outline
 4. Then convert the outline to full paragraphs in Stage 2
 
 This two-stage process ensures you:
-- Gather and organize information systematically
+- Gather and organise information systematically
 - Create logical structure before writing
 - Produce polished, publication-ready prose
 - Maintain focus on the narrative flow
@@ -392,9 +392,9 @@ For research reports, technical reports, white papers, and other professional do
 | Feature | Description |
 |---------|-------------|
 | Typography | Helvetica font family for modern, professional appearance |
-| Color Scheme | Professional blues, greens, and accent colors |
-| Box Environments | Colored boxes for key findings, methods, recommendations, limitations |
-| Tables | Alternating row colors, professional headers |
+| Colour Scheme | Professional blues, greens, and accent colours |
+| Box Environments | Coloured boxes for key findings, methods, recommendations, limitations |
+| Tables | Alternating row colours, professional headers |
 | Figures | Consistent caption formatting |
 | Scientific Commands | Shortcuts for p-values, effect sizes, confidence intervals |
 
@@ -483,8 +483,8 @@ xelatex report.tex
 For complete documentation, refer to:
 - `assets/scientific_report.sty`: The style package
 - `assets/scientific_report_template.tex`: Complete template example
-- `assets/REPORT_FORMATTING_GUIDE.md`: Quick reference guide
-- `references/professional_report_formatting.md`: Comprehensive formatting guide
+- `assets/report-formatting-guide.md`: Quick reference guide
+- `references/professional-report-formatting.md`: Comprehensive formatting guide
 
 ### 9. Journal-Specific Formatting
 
@@ -508,7 +508,7 @@ Adapt language, terminology, and conventions to match the specific scientific di
 
 **Biomedical and Clinical Sciences:**
 - Use precise anatomical and clinical terminology (e.g., "myocardial infarction" not "heart attack" in formal writing)
-- Follow standardized disease nomenclature (ICD, DSM, SNOMED-CT)
+- Follow standardised disease nomenclature (ICD, DSM, SNOMED-CT)
 - Specify drug names using generic names first, brand names in parentheses if needed
 - Use "patients" for clinical studies, "participants" for community-based research
 - Follow Human Genome Variation Society (HGVS) nomenclature for genetic variants
@@ -532,7 +532,7 @@ Adapt language, terminology, and conventions to match the specific scientific di
 **Ecology and Environmental Sciences:**
 - Use binomial nomenclature for species (italicized: *Homo sapiens*)
 - Specify taxonomic authorities at first species mention when relevant
-- Employ standardized habitat and ecosystem classifications
+- Employ standardised habitat and ecosystem classifications
 - Use consistent terminology for ecological metrics (e.g., "species richness," "Shannon diversity index")
 - Describe sampling methods with field-standard terms (e.g., "transect," "quadrat," "mark-recapture")
 
@@ -544,15 +544,15 @@ Adapt language, terminology, and conventions to match the specific scientific di
 - Use mathematical notation consistent with field standards (e.g., ℏ for reduced Planck constant)
 
 **Neuroscience:**
-- Use standardized brain region nomenclature (e.g., refer to atlases like Allen Brain Atlas)
+- Use standardised brain region nomenclature (e.g., refer to atlases like Allen Brain Atlas)
 - Specify coordinates for brain regions using established stereotaxic systems
 - Follow conventions for neural terminology (e.g., "action potential" not "spike" in formal writing)
 - Use "neural activity," "neuronal firing," "brain activation" appropriately based on measurement method
 - Describe recording techniques with proper specificity (e.g., "whole-cell patch clamp," "extracellular recording")
 
-**Social and Behavioral Sciences:**
+**Social and Behavioural Sciences:**
 - Use person-first language when appropriate (e.g., "people with schizophrenia" not "schizophrenics")
-- Employ standardized psychological constructs and validated assessment names
+- Employ standardised psychological constructs and validated assessment names
 - Follow APA guidelines for reducing bias in language
 - Specify theoretical frameworks using established terminology
 - Use "participants" rather than "subjects" for human research
@@ -560,15 +560,15 @@ Adapt language, terminology, and conventions to match the specific scientific di
 **General Principles:**
 
 **Match Audience Expertise:**
-- For specialized journals: Use field-specific terminology freely, define only highly specialized or novel terms
-- For broad-impact journals (e.g., *Nature*, *Science*): Define more technical terms, provide context for specialized concepts
+- For specialised journals: Use field-specific terminology freely, define only highly specialised or novel terms
+- For broad-impact journals (e.g., *Nature*, *Science*): Define more technical terms, provide context for specialised concepts
 - For interdisciplinary audiences: Balance precision with accessibility, define terms at first use
 
 **Define Technical Terms Strategically:**
 - Define abbreviations at first use: "messenger RNA (mRNA)"
-- Provide brief explanations for specialized techniques when writing for broader audiences
+- Provide brief explanations for specialised techniques when writing for broader audiences
 - Avoid over-defining terms well-known to the target audience (signals unfamiliarity with field)
-- Create a glossary if numerous specialized terms are unavoidable
+- Create a glossary if numerous specialised terms are unavoidable
 
 **Maintain Consistency:**
 - Use the same term for the same concept throughout (don't alternate between "medication," "drug," and "pharmaceutical")
@@ -622,7 +622,7 @@ Adapt language, terminology, and conventions to match the specific scientific di
 4. Draft Results (describing figures/tables objectively)
 5. Compose Discussion (interpreting findings)
 6. Write Introduction (setting up the research question)
-7. Craft Abstract (synthesizing the complete story)
+7. Craft Abstract (synthesising the complete story)
 8. Create Title (concise and descriptive)
 
 **Remember**: Bullet points are for planning only—the final manuscript must be in complete paragraphs.
@@ -649,7 +649,7 @@ This skill works effectively with:
 - **Data analysis skills**: For generating results to report
 - **Statistical analysis**: For determining appropriate statistical presentations
 - **Literature review skills**: For contextualizing research
-- **Figure creation tools**: For developing publication-quality visualizations
+- **Figure creation tools**: For developing publication-quality visualisations
 - **Venue-templates skill**: For venue-specific writing styles and formatting (journal manuscripts)
 - **scientific_report.sty**: For professional reports, white papers, and technical documents
 
@@ -678,9 +678,9 @@ Different venues have dramatically different writing expectations:
 - **CS conferences (CHI, ACL)**: Field-specific conventions
 
 The venue-templates skill provides:
-- `venue_writing_styles.md`: Master style comparison
-- Venue-specific guides: `nature_science_style.md`, `cell_press_style.md`, `medical_journal_styles.md`, `ml_conference_style.md`, `cs_conference_style.md`
-- `reviewer_expectations.md`: What reviewers look for at each venue
+- `venue-writing-styles.md`: Master style comparison
+- Venue-specific guides: `nature-science-style.md`, `cell-press-style.md`, `medical-journal-styles.md`, `ml-conference-style.md`, `cs-conference-style.md`
+- `reviewer-expectations.md`: What reviewers look for at each venue
 - Writing examples in `assets/examples/`
 
 **Workflow**: First use this skill for general scientific writing principles (IMRAD, clarity, citations), then consult venue-templates for venue-specific style adaptation.
@@ -689,26 +689,26 @@ The venue-templates skill provides:
 
 This skill includes comprehensive reference files covering specific aspects of scientific writing:
 
-- `references/imrad_structure.md`: Detailed guide to IMRAD format and section-specific content
-- `references/citation_styles.md`: Complete citation style guides (APA, AMA, Vancouver, Chicago, IEEE)
-- `references/figures_tables.md`: Best practices for creating effective data visualizations
-- `references/reporting_guidelines.md`: Study-specific reporting standards and checklists
-- `references/writing_principles.md`: Core principles of effective scientific communication
-- `references/professional_report_formatting.md`: Guide to professional report styling with `scientific_report.sty`
+- `references/imrad-structure.md`: Detailed guide to IMRAD format and section-specific content
+- `references/citation-styles.md`: Complete citation style guides (APA, AMA, Vancouver, Chicago, IEEE)
+- `references/figures-tables.md`: Best practices for creating effective data visualisations
+- `references/reporting-guidelines.md`: Study-specific reporting standards and checklists
+- `references/writing-principles.md`: Core principles of effective scientific communication
+- `references/professional-report-formatting.md`: Guide to professional report styling with `scientific_report.sty`
 
 ## Assets
 
 This skill includes LaTeX style packages and templates for professional report formatting:
 
-- `assets/scientific_report.sty`: Professional LaTeX style package with Helvetica fonts, colored boxes, and attractive tables
+- `assets/scientific_report.sty`: Professional LaTeX style package with Helvetica fonts, coloured boxes, and attractive tables
 - `assets/scientific_report_template.tex`: Complete report template demonstrating all style features
-- `assets/REPORT_FORMATTING_GUIDE.md`: Quick reference guide for the style package
+- `assets/report-formatting-guide.md`: Quick reference guide for the style package
 
 **Key Features of `scientific_report.sty`:**
 - Helvetica font family for modern, professional appearance
-- Professional color scheme (blues, greens, oranges, purples)
+- Professional colour scheme (blues, greens, oranges, purples)
 - Box environments: `keyfindings`, `methodology`, `resultsbox`, `recommendations`, `limitations`, `criticalnotice`, `definition`, `executivesummary`, `hypothesis`
-- Tables with alternating row colors and professional headers
+- Tables with alternating row colours and professional headers
 - Scientific notation commands for p-values, effect sizes, confidence intervals
 - Professional headers and footers
 

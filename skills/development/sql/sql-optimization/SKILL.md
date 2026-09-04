@@ -1,15 +1,15 @@
 ---
-description: 'Universal SQL performance optimization assistant for comprehensive query tuning, indexing strategies, and database performance analysis across all SQL databases (MySQL, PostgreSQL, SQL Server, Oracle). Provides execution plan analysis, pagination optimization, batch operations, and performance monitoring guidance.'
-name: sql-optimization
+name: sql-optimisation
+description: 'Universal SQL performance optimisation assistant for comprehensive query tuning, indexing strategies, and database performance analysis across all SQL databases (MySQL, PostgreSQL, SQL Server, Oracle). Provides execution plan analysis, pagination optimisation, batch operations, and performance monitoring guidance.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
 
-# SQL Performance Optimization Assistant
+# SQL Performance Optimisation Assistant
 
-Expert SQL performance optimization for ${selection} (or entire project if no selection). Focus on universal SQL optimization techniques that work across MySQL, PostgreSQL, SQL Server, Oracle, and other SQL databases.
+Expert SQL performance optimisation for ${selection} (or entire project if no selection). Focus on universal SQL optimisation techniques that work across MySQL, PostgreSQL, SQL Server, Oracle, and other SQL databases.
 
-## 🎯 Core Optimization Areas
+## 🎯 Core Optimisation Areas
 
 ### Query Performance Analysis
 ```sql
@@ -34,7 +34,7 @@ WHERE o.created_at >= '2024-01-01'
 -- CREATE INDEX idx_orders_customer_id ON orders(customer_id);
 ```
 
-### Index Strategy Optimization
+### Index Strategy Optimisation
 ```sql
 -- ❌ BAD: Poor indexing strategy
 CREATE INDEX idx_user_data ON users(email, first_name, last_name, created_at);
@@ -51,7 +51,7 @@ CREATE INDEX idx_users_status_created ON users(status, created_at)
 WHERE status IS NOT NULL;
 ```
 
-### Subquery Optimization
+### Subquery Optimisation
 ```sql
 -- ❌ BAD: Correlated subquery
 SELECT p.product_name, p.price
@@ -74,7 +74,7 @@ WHERE price > avg_category_price;
 
 ## 📊 Performance Tuning Techniques
 
-### JOIN Optimization
+### JOIN Optimisation
 ```sql
 -- ❌ BAD: Inefficient JOIN order and conditions
 SELECT o.*, c.name, p.product_name
@@ -94,7 +94,7 @@ INNER JOIN products p ON oi.product_id = p.id
 WHERE o.created_at > '2024-01-01';
 ```
 
-### Pagination Optimization
+### Pagination Optimisation
 ```sql
 -- ❌ BAD: OFFSET-based pagination (slow for large offsets)
 SELECT * FROM products 
@@ -114,7 +114,7 @@ ORDER BY id
 LIMIT 20;
 ```
 
-### Aggregation Optimization
+### Aggregation Optimisation
 ```sql
 -- ❌ BAD: Multiple separate aggregation queries
 SELECT COUNT(*) FROM orders WHERE status = 'pending';
@@ -143,7 +143,7 @@ FROM large_table lt
 JOIN another_table at ON lt.id = at.ref_id;
 ```
 
-### WHERE Clause Optimization
+### WHERE Clause Optimisation
 ```sql
 -- ❌ BAD: Function calls in WHERE clause
 SELECT * FROM orders 
@@ -155,7 +155,7 @@ WHERE customer_email = 'john@example.com';
 -- Consider: CREATE INDEX idx_orders_email ON orders(LOWER(customer_email));
 ```
 
-### OR vs UNION Optimization
+### OR vs UNION Optimisation
 ```sql
 -- ❌ BAD: Complex OR conditions
 SELECT * FROM products 
@@ -168,7 +168,7 @@ UNION ALL
 SELECT * FROM products WHERE category = 'books' AND price < 50;
 ```
 
-## 📈 Database-Agnostic Optimization
+## 📈 Database-Agnostic Optimisation
 
 ### Batch Operations
 ```sql
@@ -250,7 +250,7 @@ CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) qt
 ORDER BY avg_elapsed_time DESC;
 ```
 
-## 🎯 Universal Optimization Checklist
+## 🎯 Universal Optimisation Checklist
 
 ### Query Structure
 - [ ] Avoiding SELECT * in production queries
@@ -268,7 +268,7 @@ ORDER BY avg_elapsed_time DESC;
 
 ### Data Types and Schema
 - [ ] Using appropriate data types for storage efficiency
-- [ ] Normalizing appropriately (3NF for OLTP, denormalized for OLAP)
+- [ ] Normalising appropriately (3NF for OLTP, denormalized for OLAP)
 - [ ] Using constraints to help query optimizer
 - [ ] Partitioning large tables when appropriate
 
@@ -281,18 +281,18 @@ ORDER BY avg_elapsed_time DESC;
 
 ### Performance Testing
 - [ ] Testing queries with realistic data volumes
-- [ ] Analyzing query execution plans
+- [ ] Analysing query execution plans
 - [ ] Monitoring query performance over time
 - [ ] Setting up alerts for slow queries
 - [ ] Regular index usage analysis
 
-## 📝 Optimization Methodology
+## 📝 Optimisation Methodology
 
 1. **Identify**: Use database-specific tools to find slow queries
-2. **Analyze**: Examine execution plans and identify bottlenecks
-3. **Optimize**: Apply appropriate optimization techniques
+2. **Analyse**: Examine execution plans and identify bottlenecks
+3. **Optimise**: Apply appropriate optimisation techniques
 4. **Test**: Verify performance improvements
 5. **Monitor**: Continuously track performance metrics
-6. **Iterate**: Regular performance review and optimization
+6. **Iterate**: Regular performance review and optimisation
 
-Focus on measurable performance improvements and always test optimizations with realistic data volumes and query patterns.
+Focus on measurable performance improvements and always test optimisations with realistic data volumes and query patterns.

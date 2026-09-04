@@ -6,7 +6,7 @@
 
 ## Choose the trace input
 
-The trace input determines what code paths are captured. A trivial input produces a trivial trace that misses the app's real behavior.
+The trace input determines what code paths are captured. A trivial input produces a trivial trace that misses the app's real behaviour.
 
 The input must reflect the "Realistic input characteristics" section, according to `pixie_qa/00-project-analysis.md` you've read in step 2b.
 

@@ -85,7 +85,7 @@ TimesFM forecasts a mean temperature anomaly of **1.19°C** for 2025, slightly b
 
 ---
 
-## Visualization
+## Visualisation
 
 ![Temperature Anomaly Forecast](forecast_visualization.png)
 
@@ -95,7 +95,7 @@ TimesFM forecasts a mean temperature anomaly of **1.19°C** for 2025, slightly b
 
 ### Key Observations
 
-1. **Slight cooling trend expected**: The model forecasts a mean anomaly 0.07°C below 2024 levels, suggesting a potential stabilization after the record-breaking temperatures of 2023-2024.
+1. **Slight cooling trend expected**: The model forecasts a mean anomaly 0.07°C below 2024 levels, suggesting a potential stabilisation after the record-breaking temperatures of 2023-2024.
 
 2. **Seasonal pattern preserved**: The forecast shows the expected seasonal variation with higher anomalies in late winter (Feb-Mar) and lower in late fall (Nov-Dec).
 
@@ -107,7 +107,7 @@ TimesFM forecasts a mean temperature anomaly of **1.19°C** for 2025, slightly b
 
 - TimesFM is a zero-shot forecaster without physical climate model constraints
 - The 36-month training window may not capture multi-decadal climate trends
-- El Niño/La Niña cycles are not explicitly modeled
+- El Niño/La Niña cycles are not explicitly modelled
 
 ### Recommendations
 
@@ -126,9 +126,9 @@ TimesFM forecasts a mean temperature anomaly of **1.19°C** for 2025, slightly b
 | `temperature_anomaly.csv` | Input data (36 months) |
 | `forecast_output.csv` | Point forecast with quantiles |
 | `forecast_output.json` | Machine-readable forecast |
-| `forecast_visualization.png` | Fan chart visualization |
+| `forecast_visualization.png` | Fan chart visualisation |
 | `run_forecast.py` | Forecasting script |
-| `visualize_forecast.py` | Visualization script |
+| `visualize_forecast.py` | Visualisation script |
 | `run_example.sh` | One-click runner |
 
 ### How to Reproduce

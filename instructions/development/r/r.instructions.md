@@ -30,7 +30,7 @@ Help GitHub Copilot generate idiomatic, safe, and maintainable R code across pro
 
 - **Large datasets:** consider `data.table`; benchmark with your workload.
 - **dplyr compatibility:** Use `dtplyr` to write dplyr syntax that translates to data.table operations automatically for performance gains.
-- **Profiling:** Use `profvis::profvis()` to identify performance bottlenecks in your code. Profile before optimizing.
+- **Profiling:** Use `profvis::profvis()` to identify performance bottlenecks in your code. Profile before optimising.
 - **Caching:** Use `memoise::memoise()` to cache expensive function results. Particularly useful for repeated API calls or complex computations.
 - **Vectorization:** Prefer vectorized operations over loops. Use `purrr::map_*()` family or `apply()` family for remaining iteration needs.
 
@@ -69,7 +69,7 @@ Help GitHub Copilot generate idiomatic, safe, and maintainable R code across pro
 
 - **Command execution:** Prefer `processx::run()` or `sys::exec_wait()` over `system()`; validate and sanitize all arguments.
 - **Database queries:** Use parameterized `DBI` queries to prevent SQL injection.
-- **File paths:** Normalize and sanitize user-provided paths (e.g., `fs::path_sanitize()`), and validate against allowlists.
+- **File paths:** Normalise and sanitize user-provided paths (e.g., `fs::path_sanitize()`), and validate against allowlists.
 - **Credentials:** Never hardcode secrets. Use env vars (`Sys.getenv()`), config outside VCS, or `keyring`.
 
 ## Shiny

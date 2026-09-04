@@ -511,7 +511,7 @@ def get_target_go_terms(drugbank_id):
 1. **UniProt Cross-Reference**: Use UniProt IDs for accurate protein matching across databases
 2. **Action Classification**: Pay attention to action types (inhibitor, agonist, antagonist, etc.)
 3. **Known vs Unknown**: Distinguish between validated targets and predicted/unknown interactions
-4. **Organism Specificity**: Consider organism when analyzing target data
+4. **Organism Specificity**: Consider organism when analysing target data
 5. **Polypharmacology**: Account for multiple targets when predicting drug effects
 6. **Pathway Context**: Use pathway data to understand systemic effects
 7. **CYP450 Profiling**: Essential for predicting drug-drug interactions

@@ -1,6 +1,6 @@
 ---
-description: Spectral similarity and compound identification for metabolomics. Use for comparing mass spectra, computing similarity scores (cosine, modified cosine), and identifying unknown compounds from spectral libraries. Best for metabolite identification, spectral matching, library searching. For full LC-MS/MS proteomics pipelines use pyopenms.
 name: matchms
+description: Spectral similarity and compound identification for metabolomics. Use for comparing mass spectra, computing similarity scores (cosine, modified cosine), and identifying unknown compounds from spectral libraries. Best for metabolite identification, spectral matching, library searching. For full LC-MS/MS proteomics pipelines use pyopenms.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-Matchms is an open-source Python library for mass spectrometry data processing and analysis. Import spectra from various formats, standardize metadata, filter peaks, calculate spectral similarities, and build reproducible analytical workflows.
+Matchms is an open-source Python library for mass spectrometry data processing and analysis. Import spectra from various formats, standardise metadata, filter peaks, calculate spectral similarities, and build reproducible analytical workflows.
 
 ## Core Capabilities
 
@@ -40,11 +40,11 @@ save_as_json(spectra, "output.json")
 - metabolomics-USI references
 - Pickle (Python serialization)
 
-For detailed importing/exporting documentation, consult `references/importing_exporting.md`.
+For detailed importing/exporting documentation, consult `references/importing-exporting.md`.
 
 ### 2. Spectrum Filtering and Processing
 
-Apply comprehensive filters to standardize metadata and refine peak data:
+Apply comprehensive filters to standardise metadata and refine peak data:
 
 ```python
 from matchms.filtering import default_filters, normalize_intensities
@@ -64,8 +64,8 @@ spectrum = require_minimum_number_of_peaks(spectrum, n_required=5)
 ```
 
 **Filter categories:**
-- **Metadata processing**: Harmonize compound names, derive chemical structures, standardize adducts, correct charges
-- **Peak filtering**: Normalize intensities, select by m/z or intensity, remove precursor peaks
+- **Metadata processing**: Harmonise compound names, derive chemical structures, standardise adducts, correct charges
+- **Peak filtering**: Normalise intensities, select by m/z or intensity, remove precursor peaks
 - **Quality control**: Require minimum peaks, validate precursor m/z, ensure metadata completeness
 - **Chemical annotation**: Add fingerprints, derive InChI/SMILES, repair structural mismatches
 
@@ -151,7 +151,7 @@ spectrum.plot_against(reference_spectrum)
 
 ### 6. Metadata Management
 
-Standardize and harmonize spectrum metadata:
+Standardise and harmonise spectrum metadata:
 
 ```python
 # Metadata is automatically harmonized
@@ -194,7 +194,7 @@ uv pip install matchms[chemistry]
 Detailed reference documentation is available in the `references/` directory:
 - `filtering.md` - Complete filter function reference with descriptions
 - `similarity.md` - All similarity metrics and when to use them
-- `importing_exporting.md` - File format details and I/O operations
+- `importing-exporting.md` - File format details and I/O operations
 - `workflows.md` - Common analysis patterns and examples
 
 Load these references as needed for detailed information about specific matchms capabilities.

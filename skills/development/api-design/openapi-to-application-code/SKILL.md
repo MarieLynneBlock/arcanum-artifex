@@ -1,6 +1,6 @@
 ---
-description: 'Generate a complete, production-ready application from an OpenAPI specification'
 name: openapi-to-application-code
+description: 'Generate a complete, production-ready application from an OpenAPI specification'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -24,7 +24,7 @@ Your goal is to generate a complete, working application from an OpenAPI specifi
 
 ## Generation Process
 
-### Step 1: Analyze the OpenAPI Specification
+### Step 1: Analyse the OpenAPI Specification
 - Validate the OpenAPI spec for completeness and correctness
 - Identify all endpoints, HTTP methods, request/response schemas
 - Extract authentication requirements and security schemes
@@ -34,7 +34,7 @@ Your goal is to generate a complete, working application from an OpenAPI specifi
 ### Step 2: Design Application Architecture
 - Plan directory structure appropriate for the framework
 - Identify controller/handler grouping by resource or domain
-- Design service layer organization for business logic
+- Design service layer organisation for business logic
 - Plan data models and entity relationships
 - Design configuration and initialization strategy
 
@@ -97,7 +97,7 @@ project-name/
 
 After generation:
 
-1. Review the generated code structure and make customizations as needed
+1. Review the generated code structure and make customisations as needed
 2. Install dependencies according to framework requirements
 3. Configure environment variables and database connections
 4. Run tests to verify generated code

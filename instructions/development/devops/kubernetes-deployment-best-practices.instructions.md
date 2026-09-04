@@ -1,13 +1,13 @@
 ---
-applyTo: '*'
 description: 'Comprehensive best practices for deploying and managing applications on Kubernetes. Covers Pods, Deployments, Services, Ingress, ConfigMaps, Secrets, health checks, resource limits, scaling, and security contexts.'
+applyTo: '*'
 ---
 
 # Kubernetes Deployment Best Practices
 
 ## Your Mission
 
-As GitHub Copilot, you are an expert in Kubernetes deployments, with deep knowledge of best practices for running applications reliably, securely, and efficiently at scale. Your mission is to guide developers in crafting optimal Kubernetes manifests, managing deployments, and ensuring their applications are production-ready within a Kubernetes environment. You must emphasize resilience, security, and scalability.
+As GitHub Copilot, you are an expert in Kubernetes deployments, with deep knowledge of best practices for running applications reliably, securely, and efficiently at scale. Your mission is to guide developers in crafting optimal Kubernetes manifests, managing deployments, and ensuring their applications are production-ready within a Kubernetes environment. You must emphasise resilience, security, and scalability.
 
 ## Core Kubernetes Concepts for Deployment
 
@@ -143,18 +143,18 @@ spec:
 - **Principle:** Define CPU and memory requests/limits for every container.
 - **Guidance for Copilot:**
     - **Requests:** Guaranteed minimum resources (for scheduling).
-    - **Limits:** Hard maximum resources (prevents noisy neighbors and resource exhaustion).
+    - **Limits:** Hard maximum resources (prevents noisy neighbours and resource exhaustion).
     - Recommend setting both requests and limits to ensure Quality of Service (QoS).
 - **QoS Classes:** Learn about `Guaranteed`, `Burstable`, and `BestEffort`.
 
 ### **2. Horizontal Pod Autoscaler (HPA)**
-- **Principle:** Automatically scales the number of Pod replicas based on observed CPU utilization or other custom metrics.
+- **Principle:** Automatically scales the number of Pod replicas based on observed CPU utilisation or other custom metrics.
 - **Guidance for Copilot:** Recommend HPA for stateless applications with fluctuating load.
 - **Configuration:** `minReplicas`, `maxReplicas`, `targetCPUUtilizationPercentage`.
 
 ### **3. Vertical Pod Autoscaler (VPA)**
 - **Principle:** Automatically adjusts the CPU and memory requests/limits for containers based on usage history.
-- **Guidance for Copilot:** Recommend VPA for optimizing resource usage for individual Pods over time.
+- **Guidance for Copilot:** Recommend VPA for optimising resource usage for individual Pods over time.
 
 ## Security Best Practices in Kubernetes
 
@@ -205,8 +205,8 @@ spec:
 
 ## Logging, Monitoring, and Observability
 
-### **1. Centralized Logging**
-- **Principle:** Collect logs from all Pods and centralize them for analysis.
+### **1. Centralised Logging**
+- **Principle:** Collect logs from all Pods and centralise them for analysis.
 - **Guidance for Copilot:**
     - Use standard output (`STDOUT`/`STDERR`) for application logs.
     - Deploy a logging agent (e.g., Fluentd, Logstash, Loki) to send logs to a central system (ELK Stack, Splunk, Datadog).
@@ -216,7 +216,7 @@ spec:
 - **Guidance for Copilot:**
     - Use Prometheus with `kube-state-metrics` and `node-exporter`.
     - Define custom metrics using application-specific exporters.
-    - Configure Grafana for visualization.
+    - Configure Grafana for visualisation.
 
 ### **3. Alerting**
 - **Principle:** Set up alerts for anomalies and critical events.
@@ -289,13 +289,13 @@ spec:
 
 ### **4. Resource Exhaustion (OOMKilled)**
 - Increase `memory.limits` for containers.
-- Optimize application memory usage.
+- Optimise application memory usage.
 - Use `Vertical Pod Autoscaler` to recommend optimal limits.
 
 ### **5. Performance Issues**
 - Monitor CPU/memory usage with `kubectl top pod` or Prometheus.
 - Check application logs for slow queries or operations.
-- Analyze distributed traces for bottlenecks.
+- Analyse distributed traces for bottlenecks.
 - Review database performance.
 
 ## Conclusion

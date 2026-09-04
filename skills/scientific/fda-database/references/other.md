@@ -1,6 +1,6 @@
 # FDA Other Databases - Substances and NSDE
 
-This reference covers FDA substance-related and other specialized API endpoints accessible through openFDA.
+This reference covers FDA substance-related and other specialised API endpoints accessible through openFDA.
 
 ## Overview
 
@@ -72,7 +72,7 @@ The FDA maintains additional databases for substance-level information that is p
 - Substance relationship analysis
 - Excipient identification
 - Botanical substance information
-- Protein and biologic characterization
+- Protein and biologic characterisation
 
 **Example Queries**:
 ```python
@@ -456,7 +456,7 @@ The FDA Unique Ingredient Identifier (UNII) system provides:
 - Complex natural products
 - Botanical extracts
 - Materials without single molecular structure
-- Characterized by source and composition
+- Characterised by source and composition
 
 ### Mixture
 - Defined combinations of substances
@@ -468,5 +468,5 @@ The FDA Unique Ingredient Identifier (UNII) system provides:
 - FDA Substance Registration System: https://fdasis.nlm.nih.gov/srs/
 - UNII Search: https://precision.fda.gov/uniisearch
 - OpenFDA Other APIs: https://open.fda.gov/apis/other/
-- API Basics: See `api_basics.md` in this references directory
+- API Basics: See `api-basics.md` in this references directory
 - Python examples: See `scripts/fda_substance_query.py`

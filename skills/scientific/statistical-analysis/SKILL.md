@@ -1,6 +1,6 @@
 ---
-description: Guided statistical analysis with test selection and reporting. Use when you need help choosing appropriate tests for your data, assumption checking, power analysis, and APA-formatted results. Best for academic research reporting, test selection guidance. For implementing specific models programmatically use statsmodels.
 name: statistical-analysis
+description: Guided statistical analysis with test selection and reporting. Use when you need help choosing appropriate tests for your data, assumption checking, power analysis, and APA-formatted results. Best for academic research reporting, test selection guidance. For implementing specific models programmatically use statsmodels.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -21,7 +21,7 @@ This skill should be used when:
 - Checking statistical assumptions and diagnostics
 - Calculating effect sizes and conducting power analyses
 - Reporting statistical results in APA format
-- Analyzing experimental or observational data for research
+- Analysing experimental or observational data for research
 
 ---
 
@@ -34,7 +34,7 @@ This skill should be used when:
 
 ### 2. Assumption Checking
 - Automatically verify all relevant assumptions before running tests
-- Provide diagnostic visualizations (Q-Q plots, residual plots, box plots)
+- Provide diagnostic visualisations (Q-Q plots, residual plots, box plots)
 - Recommend remedial actions when assumptions are violated
 
 ### 3. Statistical Testing
@@ -84,7 +84,7 @@ START
 
 ### Quick Reference: Choosing the Right Test
 
-Use `references/test_selection_guide.md` for comprehensive guidance. Quick reference:
+Use `references/test-selection-guide.md` for comprehensive guidance. Quick reference:
 
 **Comparing Two Groups:**
 - Independent, continuous, normal → Independent t-test
@@ -109,7 +109,7 @@ All tests have Bayesian versions that provide:
 - Direct probability statements about hypotheses
 - Bayes Factors quantifying evidence
 - Ability to support null hypothesis
-- See `references/bayesian_statistics.md`
+- See `references/bayesian-statistics.md`
 
 ---
 
@@ -180,7 +180,7 @@ print(result['recommendation'])
 - Transform variables
 - Use non-linear models or GAM
 
-See `references/assumptions_and_diagnostics.md` for comprehensive guidance.
+See `references/assumptions-and-diagnostics.md` for comprehensive guidance.
 
 ---
 
@@ -192,8 +192,8 @@ Primary libraries for statistical analysis:
 - **scipy.stats**: Core statistical tests
 - **statsmodels**: Advanced regression and diagnostics
 - **pingouin**: User-friendly statistical testing with effect sizes
-- **pymc**: Bayesian statistical modeling
-- **arviz**: Bayesian visualization and diagnostics
+- **pymc**: Bayesian statistical modelling
+- **arviz**: Bayesian visualisation and diagnostics
 
 ### Example Analyses
 
@@ -335,7 +335,7 @@ az.plot_posterior(trace, var_names=['difference'], ref_val=0)
 
 **Effect sizes quantify magnitude, while p-values only indicate existence of an effect.**
 
-See `references/effect_sizes_and_power.md` for comprehensive guidance.
+See `references/effect-sizes-and-power.md` for comprehensive guidance.
 
 ### Quick Reference: Common Effect Sizes
 
@@ -438,7 +438,7 @@ print(f"Study could detect d ≥ {detectable_d:.2f}")
 
 **Note**: Post-hoc power analysis (calculating power after study) is generally not recommended. Use sensitivity analysis instead.
 
-See `references/effect_sizes_and_power.md` for detailed guidance.
+See `references/effect-sizes-and-power.md` for detailed guidance.
 
 ---
 
@@ -446,7 +446,7 @@ See `references/effect_sizes_and_power.md` for detailed guidance.
 
 ### APA Style Statistical Reporting
 
-Follow guidelines in `references/reporting_standards.md`.
+Follow guidelines in `references/reporting-standards.md`.
 
 ### Essential Reporting Elements
 
@@ -519,7 +519,7 @@ Consider Bayesian approaches when:
 - You need to quantify evidence for the null hypothesis
 - The model is complex (hierarchical, missing data)
 
-See `references/bayesian_statistics.md` for comprehensive guidance on:
+See `references/bayesian-statistics.md` for comprehensive guidance on:
 - Bayes' theorem and interpretation
 - Prior specification (informative, weakly informative, non-informative)
 - Bayesian hypothesis testing with Bayes Factors
@@ -531,7 +531,7 @@ See `references/bayesian_statistics.md` for comprehensive guidance on:
 
 1. **Intuitive interpretation**: "Given the data, there is a 95% probability the parameter is in this interval"
 2. **Evidence for null**: Can quantify support for no effect
-3. **Flexible**: No p-hacking concerns; can analyze data as it arrives
+3. **Flexible**: No p-hacking concerns; can analyse data as it arrives
 4. **Uncertainty quantification**: Full posterior distribution
 
 ---
@@ -542,15 +542,15 @@ This skill includes comprehensive reference materials:
 
 ### References Directory
 
-- **test_selection_guide.md**: Decision tree for choosing appropriate statistical tests
-- **assumptions_and_diagnostics.md**: Detailed guidance on checking and handling assumption violations
-- **effect_sizes_and_power.md**: Calculating, interpreting, and reporting effect sizes; conducting power analyses
-- **bayesian_statistics.md**: Complete guide to Bayesian analysis methods
-- **reporting_standards.md**: APA-style reporting guidelines with examples
+- **test-selection-guide.md**: Decision tree for choosing appropriate statistical tests
+- **assumptions-and-diagnostics.md**: Detailed guidance on checking and handling assumption violations
+- **effect-sizes-and-power.md**: Calculating, interpreting, and reporting effect sizes; conducting power analyses
+- **bayesian-statistics.md**: Complete guide to Bayesian analysis methods
+- **reporting-standards.md**: APA-style reporting guidelines with examples
 
 ### Scripts Directory
 
-- **assumption_checks.py**: Automated assumption checking with visualizations
+- **assumption_checks.py**: Automated assumption checking with visualisations
   - `comprehensive_assumption_check()`: Complete workflow
   - `check_normality()`: Normality testing with Q-Q plots
   - `check_homogeneity_of_variance()`: Levene's test with box plots
@@ -566,7 +566,7 @@ This skill includes comprehensive reference materials:
 3. **Report effect sizes** with confidence intervals
 4. **Report all planned analyses** including non-significant results
 5. **Distinguish statistical from practical significance**
-6. **Visualize data** before and after analysis
+6. **Visualise data** before and after analysis
 7. **Check diagnostics** for regression/ANOVA (residual plots, VIF, etc.)
 8. **Conduct sensitivity analyses** to assess robustness
 9. **Share data and code** for reproducibility
@@ -594,7 +594,7 @@ This skill includes comprehensive reference materials:
 When beginning a statistical analysis:
 
 - [ ] Define research question and hypotheses
-- [ ] Determine appropriate statistical test (use test_selection_guide.md)
+- [ ] Determine appropriate statistical test (use test-selection-guide.md)
 - [ ] Conduct power analysis to determine sample size
 - [ ] Load and inspect data
 - [ ] Check for missing data and outliers
@@ -602,8 +602,8 @@ When beginning a statistical analysis:
 - [ ] Run primary analysis
 - [ ] Calculate effect sizes with confidence intervals
 - [ ] Conduct post-hoc tests if needed (with corrections)
-- [ ] Create visualizations
-- [ ] Write results following reporting_standards.md
+- [ ] Create visualisations
+- [ ] Write results following reporting-standards.md
 - [ ] Conduct sensitivity analyses
 - [ ] Share data and code
 
@@ -612,14 +612,14 @@ When beginning a statistical analysis:
 ## Support and Further Reading
 
 For questions about:
-- **Test selection**: See references/test_selection_guide.md
-- **Assumptions**: See references/assumptions_and_diagnostics.md
-- **Effect sizes**: See references/effect_sizes_and_power.md
-- **Bayesian methods**: See references/bayesian_statistics.md
-- **Reporting**: See references/reporting_standards.md
+- **Test selection**: See references/test-selection-guide.md
+- **Assumptions**: See references/assumptions-and-diagnostics.md
+- **Effect sizes**: See references/effect-sizes-and-power.md
+- **Bayesian methods**: See references/bayesian-statistics.md
+- **Reporting**: See references/reporting-standards.md
 
 **Key textbooks**:
-- Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences*
+- Cohen, J. (1988). *Statistical Power Analysis for the Behavioural Sciences*
 - Field, A. (2013). *Discovering Statistics Using IBM SPSS Statistics*
 - Gelman, A., & Hill, J. (2006). *Data Analysis Using Regression and Multilevel/Hierarchical Models*
 - Kruschke, J. K. (2014). *Doing Bayesian Data Analysis*

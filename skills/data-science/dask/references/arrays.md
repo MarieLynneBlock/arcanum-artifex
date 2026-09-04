@@ -2,7 +2,7 @@
 
 ## Overview
 
-Dask Array implements NumPy's ndarray interface using blocked algorithms. It coordinates many NumPy arrays arranged into a grid to enable computation on datasets larger than available memory, utilizing parallelism across multiple cores.
+Dask Array implements NumPy's ndarray interface using blocked algorithms. It coordinates many NumPy arrays arranged into a grid to enable computation on datasets larger than available memory, utilising parallelism across multiple cores.
 
 ## Core Concept
 
@@ -52,7 +52,7 @@ A Dask Array is divided into chunks (blocks):
 **Stick with NumPy When**:
 - Arrays fit comfortably in memory
 - Operations require global views of data
-- Using specialized functions not available in Dask
+- Using specialised functions not available in Dask
 - Performance is adequate with NumPy alone
 
 ## Important Limitations
@@ -63,7 +63,7 @@ Dask Arrays intentionally don't implement certain NumPy features:
 - Most `np.linalg` functions (only basic operations available)
 - Operations difficult to parallelize (like full sorting)
 - Memory-inefficient operations (converting to lists, iterating via loops)
-- Many specialized functions (driven by community needs)
+- Many specialised functions (driven by community needs)
 
 **Workarounds**: For unsupported operations, consider using `map_blocks` with custom NumPy code.
 
@@ -358,7 +358,7 @@ da.store(x, z)
 - Extremely irregular access patterns: Poor performance
 - Operations with poor chunk alignment: Requires rechunking
 
-### Optimization Tips
+### Optimisation Tips
 
 **1. Choose Good Chunk Sizes**
 ```python
@@ -382,7 +382,7 @@ z = x + y  # Efficient
 result = x.compute()  # Uses threads by default
 ```
 
-**4. Minimize Data Transfer**
+**4. Minimise Data Transfer**
 ```python
 # Better: Compute on each chunk, then transfer results
 means = x.mean(axis=1).compute()  # Transfers less data
@@ -468,7 +468,7 @@ X_scaled = scaler.fit_transform(X)
 
 ## Debugging Tips
 
-### Visualize Task Graph
+### Visualise Task Graph
 ```python
 # Visualize computation graph (for small arrays)
 x = da.random.random((100, 100), chunks=(10, 10))

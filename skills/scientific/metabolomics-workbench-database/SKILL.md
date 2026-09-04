@@ -1,6 +1,6 @@
 ---
-description: Access NIH Metabolomics Workbench via REST API (4,200+ studies). Query metabolites, RefMet nomenclature, MS/NMR data, m/z searches, study metadata, for metabolomics and biomarker discovery.
 name: metabolomics-workbench-database
+description: Access NIH Metabolomics Workbench via REST API (4,200+ studies). Query metabolites, RefMet nomenclature, MS/NMR data, m/z searches, study metadata, for metabolomics and biomarker discovery.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,11 +10,11 @@ metadata:
 
 ## Overview
 
-The Metabolomics Workbench is a comprehensive NIH Common Fund-sponsored platform hosted at UCSD that serves as the primary repository for metabolomics research data. It provides programmatic access to over 4,200 processed studies (3,790+ publicly available), standardized metabolite nomenclature through RefMet, and powerful search capabilities across multiple analytical platforms (GC-MS, LC-MS, NMR).
+The Metabolomics Workbench is a comprehensive NIH Common Fund-sponsored platform hosted at UCSD that serves as the primary repository for metabolomics research data. It provides programmatic access to over 4,200 processed studies (3,790+ publicly available), standardised metabolite nomenclature through RefMet, and powerful search capabilities across multiple analytical platforms (GC-MS, LC-MS, NMR).
 
 ## When to Use This Skill
 
-This skill should be used when querying metabolite structures, accessing study data, standardizing nomenclature, performing mass spectrometry searches, or retrieving gene/protein-metabolite associations through the Metabolomics Workbench REST API.
+This skill should be used when querying metabolite structures, accessing study data, standardising nomenclature, performing mass spectrometry searches, or retrieving gene/protein-metabolite associations through the Metabolomics Workbench REST API.
 
 ## Core Capabilities
 
@@ -25,7 +25,7 @@ Access comprehensive metabolite information including structures, identifiers, a
 **Key operations:**
 - Retrieve compound data by various identifiers (PubChem CID, InChI Key, KEGG ID, HMDB ID, etc.)
 - Download molecular structures as MOL files or PNG images
-- Access standardized compound classifications
+- Access standardised compound classifications
 - Cross-reference between different metabolite databases
 
 **Example queries:**
@@ -68,12 +68,12 @@ response = requests.get('https://www.metabolomicsworkbench.org/rest/study/study_
 response = requests.get('https://www.metabolomicsworkbench.org/rest/study/refmet_name/Tyrosine/summary/json')
 ```
 
-### 3. Standardizing Metabolite Nomenclature with RefMet
+### 3. Standardising Metabolite Nomenclature with RefMet
 
-Use the RefMet database to standardize metabolite names and access systematic classification across four structural resolution levels.
+Use the RefMet database to standardise metabolite names and access systematic classification across four structural resolution levels.
 
 **Key operations:**
-- Match common metabolite names to standardized RefMet names
+- Match common metabolite names to standardised RefMet names
 - Query by chemical formula, exact mass, or InChI Key
 - Access hierarchical classification (super class, main class, sub class)
 - Retrieve all RefMet entries or filter by classification
@@ -163,12 +163,12 @@ response = requests.get('https://www.metabolomicsworkbench.org/rest/protein/unip
 
 To find all studies containing measurements of a specific metabolite:
 
-1. First standardize the metabolite name using RefMet:
+1. First standardise the metabolite name using RefMet:
    ```python
    response = requests.get('https://www.metabolomicsworkbench.org/rest/refmet/match/glucose/name/json')
    ```
 
-2. Use the standardized name to search for studies:
+2. Use the standardised name to search for studies:
    ```python
    response = requests.get('https://www.metabolomicsworkbench.org/rest/study/refmet_name/Glucose/summary/json')
    ```
@@ -230,13 +230,13 @@ Specify format by appending `/json` or `/txt` to API URLs. When format is omitte
 
 ## Best Practices
 
-1. **Use RefMet for standardization**: Always standardize metabolite names through RefMet before searching studies to ensure consistent nomenclature
+1. **Use RefMet for standardisation**: Always standardise metabolite names through RefMet before searching studies to ensure consistent nomenclature
 
 2. **Specify appropriate adducts**: When performing m/z searches, use the correct ion adduct type for your analytical method (e.g., M+H for positive mode ESI)
 
 3. **Set reasonable tolerances**: Use appropriate mass tolerance values (typically 0.5 Da for low-resolution, 0.01 Da for high-resolution MS)
 
-4. **Cache reference data**: Consider caching frequently used reference data (RefMet database, compound information) to minimize API calls
+4. **Cache reference data**: Consider caching frequently used reference data (RefMet database, compound information) to minimise API calls
 
 5. **Handle pagination**: For large result sets, be prepared to handle multiple data structures in responses
 
@@ -246,7 +246,7 @@ Specify format by appending `/json` or `/txt` to API URLs. When format is omitte
 
 ### references/
 
-Detailed API reference documentation is available in `references/api_reference.md`, including:
+Detailed API reference documentation is available in `references/api-reference.md`, including:
 - Complete REST API endpoint specifications
 - All available contexts (compound, study, refmet, metstat, gene, protein, moverz)
 - Input/output parameter details

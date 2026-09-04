@@ -1,6 +1,6 @@
 ---
-description: Lightweight WSI tile extraction and preprocessing. Use for basic slide processing tissue detection, tile extraction, stain normalization for H&E images. Best for simple pipelines, dataset preparation, quick tile-based analysis. For advanced spatial proteomics, multiplexed imaging, or deep learning pipelines use pathml.
 name: histolab
+description: Lightweight WSI tile extraction and preprocessing. Use for basic slide processing tissue detection, tile extraction, stain normalisation for H&E images. Best for simple pipelines, dataset preparation, quick tile-based analysis. For advanced spatial proteomics, multiplexed imaging, or deep learning pipelines use pathml.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -53,17 +53,17 @@ Load, inspect, and work with whole slide images in various formats.
 **Common operations:**
 - Loading WSI files (SVS, TIFF, NDPI, etc.)
 - Accessing slide metadata (dimensions, magnification, properties)
-- Generating thumbnails for visualization
+- Generating thumbnails for visualisation
 - Working with pyramidal image structures
 - Extracting regions at specific coordinates
 
 **Key classes:** `Slide`
 
-**Reference:** `references/slide_management.md` contains comprehensive documentation on:
+**Reference:** `references/slide-management.md` contains comprehensive documentation on:
 - Slide initialization and configuration
 - Built-in sample datasets (prostate, ovarian, breast, heart, kidney tissues)
 - Accessing slide properties and metadata
-- Thumbnail generation and visualization
+- Thumbnail generation and visualisation
 - Working with pyramid levels
 - Multi-slide processing workflows
 
@@ -89,22 +89,22 @@ slide.save_thumbnail()
 
 ### 2. Tissue Detection and Masks
 
-Automatically identify tissue regions and filter background/artifacts.
+Automatically identify tissue regions and filter background/artefacts.
 
 **Common operations:**
 - Creating binary tissue masks
 - Detecting largest tissue region
-- Excluding background and artifacts
+- Excluding background and artefacts
 - Custom tissue segmentation
 - Removing pen annotations
 
 **Key classes:** `TissueMask`, `BiggestTissueBoxMask`, `BinaryMask`
 
-**Reference:** `references/tissue_masks.md` contains comprehensive documentation on:
+**Reference:** `references/tissue-masks.md` contains comprehensive documentation on:
 - TissueMask: Segments all tissue regions using automated filters
 - BiggestTissueBoxMask: Returns bounding box of largest tissue region (default)
 - BinaryMask: Base class for custom mask implementations
-- Visualizing masks with `locate_mask()`
+- Visualising masks with `locate_mask()`
 - Creating custom rectangular and annotation-exclusion masks
 - Mask integration with tile extraction
 - Best practices and troubleshooting
@@ -128,7 +128,7 @@ biggest_mask = BiggestTissueBoxMask()
 
 **When to use each mask:**
 - `TissueMask`: Multiple tissue sections, comprehensive analysis
-- `BiggestTissueBoxMask`: Single main tissue section, exclude artifacts (default)
+- `BiggestTissueBoxMask`: Single main tissue section, exclude artefacts (default)
 - Custom `BinaryMask`: Specific ROI, exclude annotations, custom segmentation
 
 ### 3. Tile Extraction
@@ -156,13 +156,13 @@ Extract smaller regions from large WSI using different strategies.
 - `tissue_percent`: Minimum tissue coverage (default 80%)
 - `extraction_mask`: Mask defining extraction region
 
-**Reference:** `references/tile_extraction.md` contains comprehensive documentation on:
+**Reference:** `references/tile-extraction.md` contains comprehensive documentation on:
 - Detailed explanation of each tiler strategy
 - Available scorers (NucleiScorer, CellularityScorer, custom)
 - Tile preview with `locate_tiles()`
 - Extraction workflows and reporting
 - Advanced patterns (multi-level, hierarchical extraction)
-- Performance optimization and troubleshooting
+- Performance optimisation and troubleshooting
 
 **Example workflows:**
 
@@ -212,7 +212,7 @@ Apply image processing filters for tissue detection, quality control, and prepro
 
 **Filter categories:**
 
-**Image Filters:** Color space conversions, thresholding, contrast enhancement
+**Image Filters:** Colour space conversions, thresholding, contrast enhancement
 - `RgbToGrayscale`, `RgbToHsv`, `RgbToHed`
 - `OtsuThreshold`, `AdaptiveThreshold`
 - `StretchContrast`, `HistogramEqualization`
@@ -225,7 +225,7 @@ Apply image processing filters for tissue detection, quality control, and prepro
 **Composition:** Chain multiple filters together
 - `Compose`: Create filter pipelines
 
-**Reference:** `references/filters_preprocessing.md` contains comprehensive documentation on:
+**Reference:** `references/filters-preprocessing.md` contains comprehensive documentation on:
 - Detailed explanation of each filter type
 - Filter composition and chaining
 - Common preprocessing pipelines (tissue detection, pen removal, nuclei enhancement)
@@ -261,27 +261,27 @@ from histolab.tile import Tile
 filtered_tile = tile.apply_filters(tissue_detection)
 ```
 
-### 5. Visualization
+### 5. Visualisation
 
-Visualize slides, masks, tile locations, and extraction quality.
+Visualise slides, masks, tile locations, and extraction quality.
 
-**Common visualization tasks:**
+**Common visualisation tasks:**
 - Displaying slide thumbnails
-- Visualizing tissue masks
+- Visualising tissue masks
 - Previewing tile locations
 - Assessing tile quality
 - Creating reports and figures
 
 **Reference:** `references/visualization.md` contains comprehensive documentation on:
 - Slide thumbnail display and saving
-- Mask visualization with `locate_mask()`
+- Mask visualisation with `locate_mask()`
 - Tile location preview with `locate_tiles()`
 - Displaying extracted tiles and mosaics
 - Quality assessment (score distributions, top vs bottom tiles)
-- Multi-slide visualization
-- Filter effect visualization
+- Multi-slide visualisation
+- Filter effect visualisation
 - Exporting high-resolution figures and PDF reports
-- Interactive visualization in Jupyter notebooks
+- Interactive visualisation in Jupyter notebooks
 
 **Example workflows:**
 
@@ -477,7 +477,7 @@ for slide_path in slide_dir.glob("*.svs"):
 
 ### Workflow 5: Custom Tissue Detection and Filtering
 
-Handle slides with artifacts, annotations, or unusual staining.
+Handle slides with artefacts, annotations, or unusual staining.
 
 ```python
 from histolab.slide import Slide
@@ -521,7 +521,7 @@ tiler.extract(slide, extraction_mask=custom_mask)
 ### Tissue Detection
 1. Preview masks with `locate_mask()` before extraction
 2. Use `TissueMask` for multiple sections, `BiggestTissueBoxMask` for single sections
-3. Customize filters for specific stains (H&E vs IHC)
+3. Customise filters for specific stains (H&E vs IHC)
 4. Handle pen annotations with custom masks
 5. Test masks on diverse slides
 
@@ -544,7 +544,7 @@ tiler.extract(slide, extraction_mask=custom_mask)
 5. Use `pixel_overlap=0` for non-overlapping grids
 
 ### Quality Control
-1. Validate tile quality (check for blur, artifacts, focus)
+1. Validate tile quality (check for blur, artefacts, focus)
 2. Review score distributions for ScoreTiler
 3. Inspect top and bottom scoring tiles
 4. Monitor tissue coverage statistics
@@ -564,7 +564,7 @@ tiler.extract(slide, extraction_mask=custom_mask)
 - Maintain spatial relationships with grid positions
 - Use `pixel_overlap` for sliding window approaches
 
-### Tissue Characterization
+### Tissue Characterisation
 - Sample diverse regions with RandomTiler
 - Quantify tissue coverage with masks
 - Extract stain-specific information with HED decomposition
@@ -572,12 +572,12 @@ tiler.extract(slide, extraction_mask=custom_mask)
 
 ### Quality Assessment
 - Identify optimal focus regions with ScoreTiler
-- Detect artifacts using custom masks and filters
+- Detect artefacts using custom masks and filters
 - Assess staining quality across slide collection
 - Flag problematic slides for manual review
 
 ### Dataset Curation
-- Use ScoreTiler to prioritize informative tiles
+- Use ScoreTiler to prioritise informative tiles
 - Filter tiles by tissue percentage
 - Generate reports with tile scores and metadata
 - Create stratified datasets across slides and tissue types
@@ -594,7 +594,7 @@ tiler.extract(slide, extraction_mask=custom_mask)
 - Enable `check_tissue=True`
 - Increase `tissue_percent` threshold
 - Use appropriate mask (TissueMask vs BiggestTissueBoxMask)
-- Customize mask filters to better detect tissue
+- Customise mask filters to better detect tissue
 
 ### Extraction very slow
 - Extract at lower pyramid level (level=1 or 2)
@@ -602,43 +602,43 @@ tiler.extract(slide, extraction_mask=custom_mask)
 - Use RandomTiler instead of GridTiler for sampling
 - Use BiggestTissueBoxMask instead of TissueMask
 
-### Tiles have artifacts
+### Tiles have artefacts
 - Implement custom annotation-exclusion masks
-- Adjust filter parameters for artifact removal
+- Adjust filter parameters for artefact removal
 - Increase small object removal threshold
 - Apply post-extraction quality filtering
 
 ### Inconsistent results across slides
 - Use same seed for RandomTiler
-- Normalize staining with preprocessing filters
+- Normalise staining with preprocessing filters
 - Adjust `tissue_percent` per staining quality
-- Implement slide-specific mask customization
+- Implement slide-specific mask customisation
 
 ## Resources
 
 This skill includes detailed reference documentation in the `references/` directory:
 
-### references/slide_management.md
+### references/slide-management.md
 Comprehensive guide to loading, inspecting, and working with whole slide images:
 - Slide initialization and configuration
 - Built-in sample datasets
 - Slide properties and metadata
-- Thumbnail generation and visualization
+- Thumbnail generation and visualisation
 - Working with pyramid levels
 - Multi-slide processing workflows
 - Best practices and common patterns
 
-### references/tissue_masks.md
+### references/tissue-masks.md
 Complete documentation on tissue detection and masking:
 - TissueMask, BiggestTissueBoxMask, BinaryMask classes
 - How tissue detection filters work
-- Customizing masks with filter chains
-- Visualizing masks
+- Customising masks with filter chains
+- Visualising masks
 - Creating custom rectangular and annotation-exclusion masks
 - Integration with tile extraction
 - Best practices and troubleshooting
 
-### references/tile_extraction.md
+### references/tile-extraction.md
 Detailed explanation of tile extraction strategies:
 - RandomTiler, GridTiler, ScoreTiler comparison
 - Available scorers (NucleiScorer, CellularityScorer, custom)
@@ -646,12 +646,12 @@ Detailed explanation of tile extraction strategies:
 - Tile preview with locate_tiles()
 - Extraction workflows and CSV reporting
 - Advanced patterns (multi-level, hierarchical)
-- Performance optimization
+- Performance optimisation
 - Troubleshooting common issues
 
-### references/filters_preprocessing.md
+### references/filters-preprocessing.md
 Complete filter reference and preprocessing guide:
-- Image filters (color conversion, thresholding, contrast)
+- Image filters (colour conversion, thresholding, contrast)
 - Morphological filters (dilation, erosion, opening, closing)
 - Filter composition and chaining
 - Common preprocessing pipelines
@@ -660,16 +660,16 @@ Complete filter reference and preprocessing guide:
 - Quality control filters
 - Best practices and troubleshooting
 
-### references/visualization.md
-Comprehensive visualization guide:
+### references/visualisation.md
+Comprehensive visualisation guide:
 - Slide thumbnail display and saving
-- Mask visualization techniques
+- Mask visualisation techniques
 - Tile location preview
 - Displaying extracted tiles and creating mosaics
-- Quality assessment visualizations
+- Quality assessment visualisations
 - Multi-slide comparison
-- Filter effect visualization
+- Filter effect visualisation
 - Exporting high-resolution figures and PDFs
-- Interactive visualization in Jupyter notebooks
+- Interactive visualisation in Jupyter notebooks
 
 **Usage pattern:** Reference files contain in-depth information to support workflows described in this main skill document. Load specific reference files as needed for detailed implementation guidance, troubleshooting, or advanced features.

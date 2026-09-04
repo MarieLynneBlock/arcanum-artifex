@@ -216,7 +216,7 @@ image = (
 
 Modal caches images per layer (per method call). Breaking the cache on one layer cascades to all subsequent layers.
 
-### Optimization Tips
+### Optimisation Tips
 
 1. **Order layers by change frequency**: Put stable dependencies first, frequently changing code last
 2. **Pin versions**: Unpinned versions may resolve differently and break cache

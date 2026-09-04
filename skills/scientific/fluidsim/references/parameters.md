@@ -2,7 +2,7 @@
 
 ## Parameters Object
 
-The `Parameters` object is hierarchical and organized into logical groups. Access using dot notation:
+The `Parameters` object is hierarchical and organised into logical groups. Access using dot notation:
 
 ```python
 params = Simul.create_default_params()

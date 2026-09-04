@@ -1,6 +1,6 @@
 ---
-applyTo: '*'
 description: 'Quarkus development standards and instructions'
+applyTo: '*'
 ---
 
 - Instructions for high-quality Quarkus applications with Java 17 or later.
@@ -18,7 +18,7 @@ description: 'Quarkus development standards and instructions'
   - Use Javadoc for public APIs and methods to ensure clarity for consumers.
   - Maintain a consistent coding style across the project, adhering to Java conventions.
   - Adhere to the Quarkus coding standards and best practices for optimal performance and maintainability.
-  - Follow Jarkarta EE and MicroProfile conventions, ensuring clarity in package organization.
+  - Follow Jarkarta EE and MicroProfile conventions, ensuring clarity in package organisation.
   - Use Java 17 or later features where appropriate, such as records and sealed classes.
 
 
@@ -29,7 +29,7 @@ description: 'Quarkus development standards and instructions'
 
 ##  Quarkus
   - Leverage Quarkus Dev Mode for faster development cycles.
-  - Implement build-time optimizations using Quarkus extensions and best practices.
+  - Implement build-time optimisations using Quarkus extensions and best practices.
   - Configure native builds with GraalVM for optimal performance (e.g., use the quarkus-maven-plugin).
   - Use quarkus logging capabilities (JBoss, SL4J or JUL) for consistent logging practices.
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-TorchDrug provides 40+ curated datasets across multiple domains: molecular property prediction, protein modeling, knowledge graph reasoning, and retrosynthesis. All datasets support lazy loading, automatic downloading, and customizable feature extraction.
+TorchDrug provides 40+ curated datasets across multiple domains: molecular property prediction, protein modelling, knowledge graph reasoning, and retrosynthesis. All datasets support lazy loading, automatic downloading, and customisable feature extraction.
 
 ## Molecular Property Prediction Datasets
 
@@ -39,7 +39,7 @@ TorchDrug provides 40+ curated datasets across multiple domains: molecular prope
 | **SAMPL** | 643 | Solvation | kcal/mol | Solvation free energies |
 
 **Metrics:** MAE, RMSE, R²
-**Use Cases:** ADME optimization, lead optimization
+**Use Cases:** ADME optimisation, lead optimisation
 
 ### Quantum Chemistry
 
@@ -102,7 +102,7 @@ TorchDrug provides 40+ curated datasets across multiple domains: molecular prope
 | **SubcellularLocalization** | 8,943 | Multi-class | 10 | Subcellular compartment |
 
 **Use Cases:**
-- Protein expression optimization
+- Protein expression optimisation
 - Target identification
 - Cell biology
 
@@ -111,7 +111,7 @@ TorchDrug provides 40+ curated datasets across multiple domains: molecular prope
 | Dataset | Size | Task | Description |
 |---------|------|------|-------------|
 | **Fold** | 16,712 | Multi-class (1,195) | Structural fold recognition |
-| **SecondaryStructure** | 8,678 | Sequence labeling | 3-state or 8-state prediction |
+| **SecondaryStructure** | 8,678 | Sequence labelling | 3-state or 8-state prediction |
 | **ProteinNet** | Varied | Contact prediction | Residue-residue contacts |
 
 **Use Cases:**
@@ -231,7 +231,7 @@ TorchDrug provides 40+ curated datasets across multiple domains: molecular prope
 
 **Features:**
 - Product → Reactants mapping
-- Atom mapping for reaction centers
+- Atom mapping for reaction centres
 - Canonicalized SMILES
 - Balanced across reaction types
 
@@ -377,4 +377,4 @@ train, valid, test = dataset.split()
 5. **Data Leakage**: Be careful with pre-trained models
 6. **Domain Knowledge**: Understand what you're predicting
 7. **Validation**: Always use held-out test set
-8. **Preprocessing**: Standardize features, handle missing values
+8. **Preprocessing**: Standardise features, handle missing values

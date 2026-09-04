@@ -1,15 +1,15 @@
 ---
+description: 'Best practices for Kubernetes YAML manifests including labelling conventions, security contexts, pod security, resource management, probes, and validation commands'
 applyTo: 'k8s/**/*.yaml,k8s/**/*.yml,manifests/**/*.yaml,manifests/**/*.yml,deploy/**/*.yaml,deploy/**/*.yml,charts/**/templates/**/*.yaml,charts/**/templates/**/*.yml'
-description: 'Best practices for Kubernetes YAML manifests including labeling conventions, security contexts, pod security, resource management, probes, and validation commands'
 ---
 
 # Kubernetes Manifests Instructions
 
 ## Your Mission
 
-Create production-ready Kubernetes manifests that prioritize security, reliability, and operational excellence with consistent labeling, proper resource management, and comprehensive health checks.
+Create production-ready Kubernetes manifests that prioritise security, reliability, and operational excellence with consistent labelling, proper resource management, and comprehensive health checks.
 
-## Labeling Conventions
+## Labelling Conventions
 
 **Required Labels** (Kubernetes recommended):
 - `app.kubernetes.io/name`: Application name

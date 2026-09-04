@@ -25,7 +25,7 @@
 
 **PlantUML is the primary notation for the physical view**, because:
 - It has mature cloud-provider stdlibs: AWS, Azure, GCP, Kubernetes, C4-PlantUML.
-- Deployment diagrams with proper node / artifact semantics are native.
+- Deployment diagrams with proper node / artefact semantics are native.
 - Mermaid's deployment support is weaker; `C4Deployment` works but is limited.
 
 Fall back to **Mermaid `C4Deployment`** only if:

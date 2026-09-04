@@ -1,5 +1,5 @@
 ---
-description: 'Comprehensive Power BI custom visuals development guide covering React, D3.js integration, TypeScript patterns, testing frameworks, and advanced visualization techniques.'
+description: 'Comprehensive Power BI custom visuals development guide covering React, D3.js integration, TypeScript patterns, testing frameworks, and advanced visualisation techniques.'
 applyTo: '**/*.{ts,tsx,js,jsx,json,less,css}'
 ---
 
@@ -723,7 +723,7 @@ export class Visual implements IVisual {
 }
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### 1. Data Reduction Strategies
 ```json
@@ -807,4 +807,4 @@ export class OptimizedVisual implements IVisual {
 }
 ```
 
-Remember: Custom visual development requires understanding both Power BI's visual framework and modern web development practices. Focus on creating reusable, testable, and performant visualizations that enhance the Power BI ecosystem.
+Remember: Custom visual development requires understanding both Power BI's visual framework and modern web development practices. Focus on creating reusable, testable, and performant visualisations that enhance the Power BI ecosystem.

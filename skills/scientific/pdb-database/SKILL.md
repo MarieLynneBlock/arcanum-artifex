@@ -1,6 +1,6 @@
 ---
-description: Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, download coordinates (PDB/mmCIF), retrieve metadata, for structural biology and drug discovery.
 name: pdb-database
+description: Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, download coordinates (PDB/mmCIF), retrieve metadata, for structural biology and drug discovery.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -170,7 +170,7 @@ with open(f"{pdb_id}.cif", "w") as f:
 
 Common operations with retrieved structures:
 
-**Parse and Analyze Coordinates:**
+**Parse and Analyse Coordinates:**
 Use BioPython or other structural biology libraries to work with downloaded files:
 ```python
 from Bio.PDB import PDBParser
@@ -248,25 +248,25 @@ The `rcsb-api` package provides unified access to both Search and Data APIs thro
 
 ### Drug Discovery
 - Search for structures of drug targets
-- Analyze ligand binding sites
+- Analyse ligand binding sites
 - Compare protein-ligand complexes
 - Identify similar binding pockets
 
 ### Protein Engineering
-- Find homologous structures for modeling
-- Analyze sequence-structure relationships
+- Find homologous structures for modelling
+- Analyse sequence-structure relationships
 - Compare mutant structures
 - Study protein stability and dynamics
 
 ### Structural Biology Research
 - Download structures for computational analysis
 - Build structure-based alignments
-- Analyze structural features (secondary structure, domains)
+- Analyse structural features (secondary structure, domains)
 - Compare experimental methods and quality metrics
 
-### Education and Visualization
+### Education and Visualisation
 - Retrieve structures for teaching
-- Generate molecular visualizations
+- Generate molecular visualisations
 - Explore structure-function relationships
 - Study evolutionary conservation
 
@@ -286,7 +286,7 @@ The `rcsb-api` package provides unified access to both Search and Data APIs thro
 
 This skill includes reference documentation in the `references/` directory:
 
-### references/api_reference.md
+### references/api-reference.md
 Comprehensive API documentation covering:
 - Detailed API endpoint specifications
 - Advanced query patterns and examples

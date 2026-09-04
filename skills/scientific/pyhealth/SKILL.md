@@ -1,6 +1,6 @@
 ---
-description: Comprehensive healthcare AI toolkit for developing, testing, and deploying machine learning models with clinical data. This skill should be used when working with electronic health records (EHR), clinical prediction tasks (mortality, readmission, drug recommendation), medical coding systems (ICD, NDC, ATC), physiological signals (EEG, ECG), healthcare datasets (MIMIC-III/IV, eICU, OMOP), or implementing deep learning models for healthcare applications (RETAIN, SafeDrug, Transformer, GNN).
 name: pyhealth
+description: Comprehensive healthcare AI toolkit for developing, testing, and deploying machine learning models with clinical data. This skill should be used when working with electronic health records (EHR), clinical prediction tasks (mortality, readmission, drug recommendation), medical coding systems (ICD, NDC, ATC), physiological signals (EEG, ECG), healthcare datasets (MIMIC-III/IV, eICU, OMOP), or implementing deep learning models for healthcare applications (RETAIN, SafeDrug, Transformer, GNN).
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-PyHealth is a comprehensive Python library for healthcare AI that provides specialized tools, models, and datasets for clinical machine learning. Use this skill when developing healthcare prediction models, processing clinical data, working with medical coding systems, or deploying AI solutions in healthcare settings.
+PyHealth is a comprehensive Python library for healthcare AI that provides specialised tools, models, and datasets for clinical machine learning. Use this skill when developing healthcare prediction models, processing clinical data, working with medical coding systems, or deploying AI solutions in healthcare settings.
 
 ## When to Use This Skill
 
@@ -25,9 +25,9 @@ Invoke this skill when:
 
 ## Core Capabilities
 
-PyHealth operates through a modular 5-stage pipeline optimized for healthcare AI:
+PyHealth operates through a modular 5-stage pipeline optimised for healthcare AI:
 
-1. **Data Loading**: Access 10+ healthcare datasets with standardized interfaces
+1. **Data Loading**: Access 10+ healthcare datasets with standardised interfaces
 2. **Task Definition**: Apply 20+ predefined clinical prediction tasks or create custom tasks
 3. **Model Selection**: Choose from 33+ models (baselines, deep learning, healthcare-specific)
 4. **Training**: Train with automatic checkpointing, monitoring, and evaluation
@@ -78,7 +78,7 @@ results = trainer.evaluate(test_loader)
 
 ## Detailed Documentation
 
-This skill includes comprehensive reference documentation organized by functionality. Read specific reference files as needed:
+This skill includes comprehensive reference documentation organised by functionality. Read specific reference files as needed:
 
 ### 1. Datasets and Data Structures
 
@@ -96,17 +96,17 @@ This skill includes comprehensive reference documentation organized by functiona
 - 10+ available datasets (EHR, physiological signals, imaging, text)
 - Data loading and iteration
 - Train/val/test splitting strategies
-- Performance optimization for large datasets
+- Performance optimisation for large datasets
 
 ### 2. Medical Coding Translation
 
-**File**: `references/medical_coding.md`
+**File**: `references/medical-coding.md`
 
 **Read when:**
 - Translating between medical coding systems
 - Working with diagnosis codes (ICD-9-CM, ICD-10-CM, CCS)
 - Processing medication codes (NDC, RxNorm, ATC)
-- Standardizing procedure codes (ICD-9-PROC, ICD-10-PROC)
+- Standardising procedure codes (ICD-9-PROC, ICD-10-PROC)
 - Grouping codes into clinical categories
 - Handling hierarchical drug classifications
 
@@ -114,7 +114,7 @@ This skill includes comprehensive reference documentation organized by functiona
 - InnerMap for within-system lookups
 - CrossMap for cross-system translation
 - Supported coding systems (ICD, NDC, ATC, CCS, RxNorm)
-- Code standardization and hierarchy traversal
+- Code standardisation and hierarchy traversal
 - Medication classification by therapeutic class
 - Integration with datasets
 
@@ -168,7 +168,7 @@ This skill includes comprehensive reference documentation organized by functiona
 - Preprocessing clinical data for models
 - Handling sequential events and time-series data
 - Processing physiological signals (EEG, ECG)
-- Normalizing lab values and vital signs
+- Normalising lab values and vital signs
 - Preparing labels for different task types
 - Building feature vocabularies
 - Managing missing data and outliers
@@ -184,7 +184,7 @@ This skill includes comprehensive reference documentation organized by functiona
 
 ### 6. Training and Evaluation
 
-**File**: `references/training_evaluation.md`
+**File**: `references/training-evaluation.md`
 
 **Read when:**
 - Training models with the Trainer class
@@ -202,7 +202,7 @@ This skill includes comprehensive reference documentation organized by functiona
 - Fairness metrics for bias assessment
 - Calibration methods (Platt scaling, temperature scaling)
 - Uncertainty quantification (conformal prediction, MC dropout)
-- Interpretability tools (attention visualization, SHAP, ChEFER)
+- Interpretability tools (attention visualisation, SHAP, ChEFER)
 - Complete training pipeline example
 
 ## Installation
@@ -226,8 +226,8 @@ uv pip install pyhealth
 1. Load MIMIC-IV dataset → Read `references/datasets.md`
 2. Apply mortality prediction task → Read `references/tasks.md`
 3. Select interpretable model (RETAIN) → Read `references/models.md`
-4. Train and evaluate → Read `references/training_evaluation.md`
-5. Interpret predictions for clinical use → Read `references/training_evaluation.md`
+4. Train and evaluate → Read `references/training-evaluation.md`
+5. Interpret predictions for clinical use → Read `references/training-evaluation.md`
 
 ### Use Case 2: Safe Medication Recommendation
 
@@ -237,8 +237,8 @@ uv pip install pyhealth
 1. Load EHR dataset (MIMIC-IV or OMOP) → Read `references/datasets.md`
 2. Apply drug recommendation task → Read `references/tasks.md`
 3. Use SafeDrug model with DDI constraints → Read `references/models.md`
-4. Preprocess medication codes → Read `references/medical_coding.md`
-5. Evaluate with multi-label metrics → Read `references/training_evaluation.md`
+4. Preprocess medication codes → Read `references/medical-coding.md`
+5. Evaluate with multi-label metrics → Read `references/training-evaluation.md`
 
 ### Use Case 3: Hospital Readmission Prediction
 
@@ -249,7 +249,7 @@ uv pip install pyhealth
 2. Apply readmission prediction task → Read `references/tasks.md`
 3. Handle class imbalance in preprocessing → Read `references/preprocessing.md`
 4. Train Transformer model → Read `references/models.md`
-5. Calibrate predictions and assess fairness → Read `references/training_evaluation.md`
+5. Calibrate predictions and assess fairness → Read `references/training-evaluation.md`
 
 ### Use Case 4: Sleep Disorder Diagnosis
 
@@ -260,14 +260,14 @@ uv pip install pyhealth
 2. Apply sleep staging task → Read `references/tasks.md`
 3. Preprocess EEG signals (filtering, segmentation) → Read `references/preprocessing.md`
 4. Train CNN or RNN model → Read `references/models.md`
-5. Evaluate per-stage performance → Read `references/training_evaluation.md`
+5. Evaluate per-stage performance → Read `references/training-evaluation.md`
 
 ### Use Case 5: Medical Code Translation
 
-**Objective**: Standardize diagnoses across different coding systems
+**Objective**: Standardise diagnoses across different coding systems
 
 **Approach:**
-1. Read `references/medical_coding.md` for comprehensive guidance
+1. Read `references/medical-coding.md` for comprehensive guidance
 2. Use CrossMap to translate between ICD-9, ICD-10, CCS
 3. Group codes into clinically meaningful categories
 4. Integrate with dataset processing
@@ -281,7 +281,7 @@ uv pip install pyhealth
 2. Apply ICD coding task → Read `references/tasks.md`
 3. Preprocess clinical text → Read `references/preprocessing.md`
 4. Use TransformersModel (ClinicalBERT) → Read `references/models.md`
-5. Evaluate with multi-label metrics → Read `references/training_evaluation.md`
+5. Evaluate with multi-label metrics → Read `references/training-evaluation.md`
 
 ## Best Practices
 
@@ -293,7 +293,7 @@ uv pip install pyhealth
    train, val, test = split_by_patient(dataset, [0.7, 0.1, 0.2])
    ```
 
-2. **Check dataset statistics**: Understand your data before modeling
+2. **Check dataset statistics**: Understand your data before modelling
    ```python
    print(dataset.stats())  # Patients, visits, events, code distributions
    ```
@@ -320,7 +320,7 @@ uv pip install pyhealth
 
 ### Clinical Deployment
 
-1. **Calibrate predictions**: Ensure probabilities are reliable (see `references/training_evaluation.md`)
+1. **Calibrate predictions**: Ensure probabilities are reliable (see `references/training-evaluation.md`)
 
 2. **Assess fairness**: Evaluate across demographic groups to detect bias
 
@@ -367,7 +367,7 @@ uv pip install pyhealth
 
 **Poor performance**:
 - Check class imbalance and use appropriate metrics (AUPRC vs AUROC)
-- Verify preprocessing (normalization, missing data handling)
+- Verify preprocessing (normalisation, missing data handling)
 - Increase model capacity or training epochs
 - Check for data leakage in train/test split
 
@@ -479,10 +479,10 @@ print("\nModel saved successfully!")
 For detailed information on each component, refer to the comprehensive reference files in the `references/` directory:
 
 - **datasets.md**: Data structures, loading, and splitting (4,500 words)
-- **medical_coding.md**: Code translation and standardization (3,800 words)
+- **medical-coding.md**: Code translation and standardisation (3,800 words)
 - **tasks.md**: Clinical prediction tasks and custom task creation (4,200 words)
 - **models.md**: Model architectures and selection guidelines (5,100 words)
 - **preprocessing.md**: Data processors and preprocessing workflows (4,600 words)
-- **training_evaluation.md**: Training, metrics, calibration, interpretability (5,900 words)
+- **training-evaluation.md**: Training, metrics, calibration, interpretability (5,900 words)
 
 **Total comprehensive documentation**: ~28,000 words across modular reference files.

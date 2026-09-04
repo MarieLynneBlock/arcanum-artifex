@@ -1,0 +1,13 @@
+// Discover candidate services before running targeted incident or performance queries.
+// Replace SERVICE_NAME_PATTERN with a partial service name, or remove the filter to list active services.
+fetch spans, from:now() - 4h
+| filter isNotNull(dt.entity.service)
+| summarize
+    request_count = count(),
+    failed_requests = countIf(request.is_failed == true),
+    latest_seen = max(timestamp),
+  by: {dt.entity.service}
+| fieldsAdd service_name = entityName(dt.entity.service)
+| filter contains(service_name, "SERVICE_NAME_PATTERN") or contains(toString(dt.entity.service), "SERVICE_NAME_PATTERN")
+| sort request_count desc
+| limit 20

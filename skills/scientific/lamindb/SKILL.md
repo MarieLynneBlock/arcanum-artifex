@@ -1,6 +1,6 @@
 ---
-description: This skill should be used when working with LaminDB, an open-source data framework for biology that makes data queryable, traceable, reproducible, and FAIR. Use when managing biological datasets (scRNA-seq, spatial, flow cytometry, etc.), tracking computational workflows, curating and validating data with biological ontologies, building data lakehouses, or ensuring data lineage and reproducibility in biological research. Covers data management, annotation, ontologies (genes, cell types, diseases, tissues), schema validation, integrations with workflow managers (Nextflow, Snakemake) and MLOps platforms (W&B, MLflow), and deployment strategies.
 name: lamindb
+description: This skill should be used when working with LaminDB, an open-source data framework for biology that makes data queryable, traceable, reproducible, and FAIR. Use when managing biological datasets (scRNA-seq, spatial, flow cytometry, etc.), tracking computational workflows, curating and validating data with biological ontologies, building data lakehouses, or ensuring data lineage and reproducibility in biological research. Covers data management, annotation, ontologies (genes, cell types, diseases, tissues), schema validation, integrations with workflow managers (Nextflow, Snakemake) and MLOps platforms (W&B, MLflow), and deployment strategies.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -16,7 +16,7 @@ LaminDB is an open-source data framework for biology designed to make data query
 - **Queryability**: Search and filter datasets by metadata, features, and ontology terms
 - **Traceability**: Automatic lineage tracking from raw data through analysis to results
 - **Reproducibility**: Version control for data, code, and environment
-- **FAIR Compliance**: Standardized annotations using biological ontologies
+- **FAIR Compliance**: Standardised annotations using biological ontologies
 
 ## When to Use This Skill
 
@@ -24,13 +24,13 @@ Use this skill when:
 
 - **Managing biological datasets**: scRNA-seq, bulk RNA-seq, spatial transcriptomics, flow cytometry, multi-modal data, EHR data
 - **Tracking computational workflows**: Notebooks, scripts, pipeline execution (Nextflow, Snakemake, Redun)
-- **Curating and validating data**: Schema validation, standardization, ontology-based annotation
+- **Curating and validating data**: Schema validation, standardisation, ontology-based annotation
 - **Working with biological ontologies**: Genes, proteins, cell types, tissues, diseases, pathways (via Bionty)
 - **Building data lakehouses**: Unified query interface across multiple datasets
 - **Ensuring reproducibility**: Automatic versioning, lineage tracking, environment capture
 - **Integrating ML pipelines**: Connecting with Weights & Biases, MLflow, HuggingFace, scVI-tools
 - **Deploying data infrastructure**: Setting up local or cloud-based data management systems
-- **Collaborating on datasets**: Sharing curated, annotated data with standardized metadata
+- **Collaborating on datasets**: Sharing curated, annotated data with standardised metadata
 
 ## Core Capabilities
 
@@ -39,19 +39,19 @@ LaminDB provides six interconnected capability areas, each documented in detail 
 ### 1. Core Concepts and Data Lineage
 
 **Core entities:**
-- **Artifacts**: Versioned datasets (DataFrame, AnnData, Parquet, Zarr, etc.)
+- **Artefacts**: Versioned datasets (DataFrame, AnnData, Parquet, Zarr, etc.)
 - **Records**: Experimental entities (samples, perturbations, instruments)
 - **Runs & Transforms**: Computational lineage tracking (what code produced what data)
 - **Features**: Typed metadata fields for annotation and querying
 
 **Key workflows:**
-- Create and version artifacts from files or Python objects
+- Create and version artefacts from files or Python objects
 - Track notebook/script execution with `ln.track()` and `ln.finish()`
-- Annotate artifacts with typed features
-- Visualize data lineage graphs with `artifact.view_lineage()`
+- Annotate artefacts with typed features
+- Visualise data lineage graphs with `artifact.view_lineage()`
 - Query by provenance (find all outputs from specific code/inputs)
 
-**Reference:** `references/core-concepts.md` - Read this for detailed information on artifacts, records, runs, transforms, features, versioning, and lineage tracking.
+**Reference:** `references/core-concepts.md` - Read this for detailed information on artefacts, records, runs, transforms, features, versioning, and lineage tracking.
 
 ### 2. Data Management and Querying
 
@@ -66,19 +66,19 @@ LaminDB provides six interconnected capability areas, each documented in detail 
 - Streaming large datasets without loading into memory
 
 **Key workflows:**
-- Browse artifacts with filters and ordering
+- Browse artefacts with filters and ordering
 - Query by features, creation date, creator, size, etc.
 - Stream large files in chunks or with array slicing
-- Organize data with hierarchical keys
-- Group artifacts into collections
+- Organise data with hierarchical keys
+- Group artefacts into collections
 
-**Reference:** `references/data-management.md` - Read this for comprehensive query patterns, filtering examples, streaming strategies, and data organization best practices.
+**Reference:** `references/data-management.md` - Read this for comprehensive query patterns, filtering examples, streaming strategies, and data organisation best practices.
 
 ### 3. Annotation and Validation
 
 **Curation process:**
 1. **Validation**: Confirm datasets match desired schemas
-2. **Standardization**: Fix typos, map synonyms to canonical terms
+2. **Standardisation**: Fix typos, map synonyms to canonical terms
 3. **Annotation**: Link datasets to metadata entities for queryability
 
 **Schema types:**
@@ -96,9 +96,9 @@ LaminDB provides six interconnected capability areas, each documented in detail 
 **Key workflows:**
 - Define features and schemas for data validation
 - Use `DataFrameCurator` or `AnnDataCurator` for validation
-- Standardize values with `.cat.standardize()`
+- Standardise values with `.cat.standardize()`
 - Map to ontologies with `.cat.add_ontology()`
-- Save curated artifacts with schema linkage
+- Save curated artefacts with schema linkage
 - Query validated datasets by features
 
 **Reference:** `references/annotation-validation.md` - Read this for detailed curation workflows, schema design patterns, handling validation errors, and best practices.
@@ -116,14 +116,14 @@ LaminDB provides six interconnected capability areas, each documented in detail 
 **Key workflows:**
 - Import public ontologies with `bt.CellType.import_source()`
 - Search ontologies with keyword or exact matching
-- Standardize terms using synonym mapping
+- Standardise terms using synonym mapping
 - Explore hierarchical relationships (parents, children, ancestors)
 - Validate data against ontology terms
 - Annotate datasets with ontology records
 - Create custom terms and hierarchies
 - Handle multi-organism contexts (human, mouse, etc.)
 
-**Reference:** `references/ontologies.md` - Read this for comprehensive ontology operations, standardization strategies, hierarchy navigation, and annotation workflows.
+**Reference:** `references/ontologies.md` - Read this for comprehensive ontology operations, standardisation strategies, hierarchy navigation, and annotation workflows.
 
 ### 5. Integrations
 
@@ -133,7 +133,7 @@ LaminDB provides six interconnected capability areas, each documented in detail 
 - Redun: Combine with Redun task tracking
 
 **MLOps platforms:**
-- Weights & Biases: Link experiments with data artifacts
+- Weights & Biases: Link experiments with data artefacts
 - MLflow: Track models and experiments
 - HuggingFace: Track model fine-tuning
 - scVI-tools: Single-cell analysis workflows
@@ -148,8 +148,8 @@ LaminDB provides six interconnected capability areas, each documented in detail 
 - TileDB-SOMA (with cellxgene support)
 - DuckDB for SQL queries on Parquet files
 
-**Visualization:**
-- Vitessce for interactive spatial/single-cell visualization
+**Visualisation:**
+- Vitessce for interactive spatial/single-cell visualisation
 
 **Version control:**
 - Git integration for source code tracking
@@ -317,8 +317,8 @@ To start using LaminDB effectively:
    - Initialize instance with `lamin init --storage ...`
 
 2. **Learn Core Concepts** (`references/core-concepts.md`)
-   - Understand Artifacts, Records, Runs, Transforms
-   - Practice creating and retrieving artifacts
+   - Understand Artefacts, Records, Runs, Transforms
+   - Practice creating and retrieving artefacts
    - Implement `ln.track()` and `ln.finish()` in workflows
 
 3. **Master Querying** (`references/data-management.md`)
@@ -334,7 +334,7 @@ To start using LaminDB effectively:
 5. **Integrate Ontologies** (`references/ontologies.md`)
    - Import relevant biological ontologies (genes, cell types, etc.)
    - Validate existing annotations
-   - Standardize metadata with ontology terms
+   - Standardise metadata with ontology terms
 
 6. **Connect Tools** (`references/integrations.md`)
    - Integrate with existing workflow managers
@@ -349,9 +349,9 @@ Follow these principles when working with LaminDB:
 
 2. **Validate early**: Define schemas and validate data before extensive analysis
 
-3. **Use ontologies**: Leverage public biological ontologies for standardized annotations
+3. **Use ontologies**: Leverage public biological ontologies for standardised annotations
 
-4. **Organize with keys**: Structure artifact keys hierarchically (e.g., `project/experiment/batch/file.h5ad`)
+4. **Organise with keys**: Structure artefact keys hierarchically (e.g., `project/experiment/batch/file.h5ad`)
 
 5. **Query metadata first**: Filter and search before loading large files
 
@@ -359,7 +359,7 @@ Follow these principles when working with LaminDB:
 
 7. **Annotate with features**: Define typed features for queryable metadata
 
-8. **Document thoroughly**: Add descriptions to artifacts, schemas, and transforms
+8. **Document thoroughly**: Add descriptions to artefacts, schemas, and transforms
 
 9. **Leverage lineage**: Use `view_lineage()` to understand data provenance
 
@@ -367,12 +367,12 @@ Follow these principles when working with LaminDB:
 
 ## Reference Files
 
-This skill includes comprehensive reference documentation organized by capability:
+This skill includes comprehensive reference documentation organised by capability:
 
-- **`references/core-concepts.md`** - Artifacts, records, runs, transforms, features, versioning, lineage
-- **`references/data-management.md`** - Querying, filtering, searching, streaming, organizing data
+- **`references/core-concepts.md`** - Artefacts, records, runs, transforms, features, versioning, lineage
+- **`references/data-management.md`** - Querying, filtering, searching, streaming, organising data
 - **`references/annotation-validation.md`** - Schema design, curation workflows, validation strategies
-- **`references/ontologies.md`** - Biological ontology management, standardization, hierarchies
+- **`references/ontologies.md`** - Biological ontology management, standardisation, hierarchies
 - **`references/integrations.md`** - Workflow managers, MLOps platforms, storage systems, tools
 - **`references/setup-deployment.md`** - Installation, configuration, deployment, troubleshooting
 

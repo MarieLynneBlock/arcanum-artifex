@@ -1,6 +1,6 @@
 ---
-description: 'Surgical code refactoring to improve maintainability without changing behavior. Covers extracting functions, renaming variables, breaking down god functions, improving type safety, eliminating code smells, and applying design patterns. Less drastic than repo-rebuilder; use for gradual improvements.'
 name: refactor
+description: 'Surgical code refactoring to improve maintainability without changing behaviour. Covers extracting functions, renaming variables, breaking down god functions, improving type safety, eliminating code smells, and applying design patterns. Less drastic than repo-rebuilder; use for gradual improvements.'
 license: MIT
 metadata:
   skill-author: 'Marie-Lynne Block'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-Improve code structure and readability without changing external behavior. Refactoring is gradual evolution, not revolution. Use this for improving existing code, not rewriting from scratch.
+Improve code structure and readability without changing external behaviour. Refactoring is gradual evolution, not revolution. Use this for improving existing code, not rewriting from scratch.
 
 ## When to Use
 
@@ -28,7 +28,7 @@ Use this skill when:
 
 ### The Golden Rules
 
-1. **Behavior is preserved** - Refactoring doesn't change what the code does, only how
+1. **Behaviour is preserved** - Refactoring doesn't change what the code does, only how
 2. **Small steps** - Make tiny changes, test after each
 3. **Version control is your friend** - Commit before and after each safe state
 4. **Tests are essential** - Without tests, you're not refactoring, you're editing
@@ -629,10 +629,10 @@ Use this skill when:
 | Operation                                     | Description                           |
 | --------------------------------------------- | ------------------------------------- |
 | Extract Method                                | Turn code fragment into method        |
-| Extract Class                                 | Move behavior to new class            |
+| Extract Class                                 | Move behaviour to new class            |
 | Extract Interface                             | Create interface from implementation  |
 | Inline Method                                 | Move method body back to caller       |
-| Inline Class                                  | Move class behavior to caller         |
+| Inline Class                                  | Move class behaviour to caller         |
 | Pull Up Method                                | Move method to superclass             |
 | Push Down Method                              | Move method to subclass               |
 | Rename Method/Variable                        | Improve clarity                       |

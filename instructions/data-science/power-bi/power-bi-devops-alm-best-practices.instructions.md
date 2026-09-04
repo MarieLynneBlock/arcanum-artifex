@@ -620,4 +620,4 @@ function Send-DeploymentNotification {
    - Direct production changes
    - Missing audit trails
 
-Remember: DevOps for Power BI requires a combination of proper tooling, automated processes, and organizational discipline. Start with basic CI/CD and gradually mature your practices based on organizational needs and compliance requirements.
+Remember: DevOps for Power BI requires a combination of proper tooling, automated processes, and organisational discipline. Start with basic CI/CD and gradually mature your practices based on organisational needs and compliance requirements.

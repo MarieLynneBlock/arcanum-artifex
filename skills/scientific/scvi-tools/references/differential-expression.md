@@ -8,7 +8,7 @@ scvi-tools implements Bayesian differential expression testing that leverages th
 
 - **Batch correction**: DE testing on batch-corrected representations
 - **Uncertainty quantification**: Probabilistic estimates of effect sizes
-- **Zero-inflation handling**: Proper modeling of dropout and zeros
+- **Zero-inflation handling**: Proper modelling of dropout and zeros
 - **Flexible comparisons**: Between any groups or cell types
 - **Multiple modalities**: Works for RNA, proteins (totalVI), and accessibility (PeakVI)
 
@@ -287,7 +287,7 @@ de = model.differential_expression(
 )
 ```
 
-## Visualization
+## Visualisation
 
 ### Volcano Plot
 
@@ -487,7 +487,7 @@ _, pvals_corrected, _, _ = multipletests(
 
 ## Performance Considerations
 
-### Speed Optimization
+### Speed Optimisation
 
 ```python
 # Faster DE testing for large datasets
@@ -521,7 +521,7 @@ for ct in cell_types:
 2. **Set appropriate delta**: Based on biological significance
 3. **Check expression levels**: Filter lowly expressed genes
 4. **Validate findings**: Check marker genes for sanity
-5. **Visualize results**: Always plot top DE genes
+5. **Visualise results**: Always plot top DE genes
 6. **Report parameters**: Document mode, delta, FDR used
 7. **Consider batch effects**: Use batch_correction=True
 8. **Multiple comparisons**: Be aware of testing many groups

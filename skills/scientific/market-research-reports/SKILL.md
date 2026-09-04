@@ -1,8 +1,8 @@
 ---
-description: Generate comprehensive market research reports (50+ pages) in the style of top consulting firms (McKinsey, BCG, Gartner). Features professional LaTeX formatting, extensive visual generation with scientific-schematics and generate-image, deep integration with research-lookup for data gathering, and multi-framework strategic analysis including Porter Five Forces, PESTLE, SWOT, TAM/SAM/SOM, and BCG Matrix.
 name: market-research-reports
-allowed-tools: Read Write Edit Bash
+description: Generate comprehensive market research reports (50+ pages) in the style of top consulting firms (McKinsey, BCG, Gartner). Features professional LaTeX formatting, extensive visual generation with scientific-schematics and generate-image, deep integration with research-lookup for data gathering, and multi-framework strategic analysis including Porter Five Forces, PESTLE, SWOT, TAM/SAM/SOM, and BCG Matrix.
 license: MIT license
+allowed-tools: Read Write Edit Bash
 metadata:
   skill-author: 'K-Dense Inc.'
 ---
@@ -11,14 +11,14 @@ metadata:
 
 ## Overview
 
-Market research reports are comprehensive strategic documents that analyze industries, markets, and competitive landscapes to inform business decisions, investment strategies, and strategic planning. This skill generates **professional-grade reports of 50+ pages** with extensive visual content, modeled after deliverables from top consulting firms like McKinsey, BCG, Bain, Gartner, and Forrester.
+Market research reports are comprehensive strategic documents that analyse industries, markets, and competitive landscapes to inform business decisions, investment strategies, and strategic planning. This skill generates **professional-grade reports of 50+ pages** with extensive visual content, modelled after deliverables from top consulting firms like McKinsey, BCG, Bain, Gartner, and Forrester.
 
 **Key Features:**
 - **Comprehensive length**: Reports are designed to be 50+ pages with no token constraints
 - **Visual-rich content**: 5-6 key diagrams generated at start (more added as needed during writing)
 - **Data-driven analysis**: Deep integration with research-lookup for market data
 - **Multi-framework approach**: Porter's Five Forces, PESTLE, SWOT, BCG Matrix, TAM/SAM/SOM
-- **Professional formatting**: Consulting-firm quality typography, colors, and layout
+- **Professional formatting**: Consulting-firm quality typography, colours, and layout
 - **Actionable recommendations**: Strategic focus with implementation roadmaps
 
 **Output Format:** LaTeX with professional styling, compiled to PDF. Uses the `market_research.sty` style package for consistent, professional formatting.
@@ -28,20 +28,20 @@ Market research reports are comprehensive strategic documents that analyze indus
 This skill should be used when:
 - Creating comprehensive market analysis for investment decisions
 - Developing industry reports for strategic planning
-- Analyzing competitive landscapes and market dynamics
+- Analysing competitive landscapes and market dynamics
 - Conducting market sizing exercises (TAM/SAM/SOM)
 - Evaluating market entry opportunities
 - Preparing due diligence materials for M&A activities
 - Creating thought leadership content for industry positioning
 - Developing go-to-market strategy documentation
-- Analyzing regulatory and policy impacts on markets
+- Analysing regulatory and policy impacts on markets
 - Building business cases for new product launches
 
 ## Visual Enhancement Requirements
 
 **CRITICAL: Market research reports should include key visual content.**
 
-Every report should generate **6 essential visuals** at the start, with additional visuals added as needed during writing. Start with the most critical visualizations to establish the report framework.
+Every report should generate **6 essential visuals** at the start, with additional visuals added as needed during writing. Start with the most critical visualisations to establish the report framework.
 
 ### Visual Generation Tools
 
@@ -54,7 +54,7 @@ Every report should generate **6 essential visuals** at the start, with addition
 - Value chain diagrams
 - Technology roadmaps
 - Risk heatmaps
-- Strategic prioritization matrices
+- Strategic prioritisation matrices
 - Implementation timelines/Gantt charts
 - SWOT analysis diagrams
 - BCG Growth-Share matrices
@@ -74,7 +74,7 @@ python skills/scientific-schematics/scripts/generate_schematic.py \
 **Use `generate-image` for:**
 - Executive summary hero infographics
 - Industry/sector conceptual illustrations
-- Abstract technology visualizations
+- Abstract technology visualisations
 - Cover page imagery
 
 ```bash
@@ -106,7 +106,7 @@ python skills/generate-image/scripts/generate_image.py \
 
 #### Cover Page (1 page)
 - Report title and subtitle
-- Hero visualization (generated)
+- Hero visualisation (generated)
 - Date and classification
 - Prepared for / Prepared by
 
@@ -242,7 +242,7 @@ Use `research-lookup` to find:
 **Content Requirements:**
 - Customer segment definitions
 - Segment size and growth
-- Buying behavior analysis
+- Buying behaviour analysis
 - Customer needs and pain points
 - Decision-making process
 - Value drivers by segment
@@ -349,7 +349,7 @@ Use `research-lookup` to find:
 - Opportunity identification
 - Opportunity sizing
 - Strategic options analysis
-- Prioritization framework
+- Prioritisation framework
 - Detailed recommendations
 - Success factors
 
@@ -474,7 +474,7 @@ python skills/research-lookup/scripts/research_lookup.py \
 
 **Step 3: Data Organization**
 - Create `sources/` folder with research notes
-- Organize data by section
+- Organise data by section
 - Identify data gaps
 - Conduct follow-up research as needed
 
@@ -486,15 +486,15 @@ For each framework, conduct structured analysis:
 
 - **Market Sizing**: TAM → SAM → SOM with clear assumptions
 - **Porter's Five Forces**: Rate each force High/Medium/Low with rationale
-- **PESTLE**: Analyze each dimension with trends and impacts
+- **PESTLE**: Analyse each dimension with trends and impacts
 - **SWOT**: Internal strengths/weaknesses, external opportunities/threats
 - **Competitive Positioning**: Define axes, plot competitors
 
 **Step 5: Develop Insights**
-- Synthesize findings into key insights
+- Synthesise findings into key insights
 - Identify strategic implications
 - Develop recommendations
-- Prioritize opportunities
+- Prioritise opportunities
 
 ### Phase 3: Visual Generation
 
@@ -601,7 +601,7 @@ Verify the report meets quality standards:
 - [ ] Executive summary captures key findings
 - [ ] All data points have sources cited
 - [ ] Analysis frameworks are properly applied
-- [ ] Recommendations are actionable and prioritized
+- [ ] Recommendations are actionable and prioritised
 - [ ] No orphaned figures or tables
 - [ ] Table of contents, list of figures, list of tables are accurate
 - [ ] Bibliography is complete
@@ -643,8 +643,8 @@ Use the peer-review skill to evaluate the report:
 - **Resolution**: All images at 300 DPI minimum
 - **Format**: PNG for raster, PDF for vector
 - **Accessibility**: Colorblind-friendly palettes
-- **Consistency**: Same color scheme throughout
-- **Labeling**: All axes, legends, and data points labeled
+- **Consistency**: Same colour scheme throughout
+- **Labelling**: All axes, legends, and data points labelled
 - **Source Attribution**: Sources cited in figure captions
 
 ### Data Quality Requirements
@@ -678,7 +678,7 @@ The `market_research.sty` package provides professional formatting. Include it i
 
 ### Box Environments
 
-Use colored boxes to highlight key content:
+Use coloured boxes to highlight key content:
 
 ```latex
 % Key insight box (blue)
@@ -744,7 +744,7 @@ Asia-Pacific & \$10.5B & 23.2\% & 18.7\% \\
 \end{table}
 ```
 
-For complete formatting reference, see `assets/FORMATTING_GUIDE.md`.
+For complete formatting reference, see `assets/formatting-guide.md`.
 
 ---
 
@@ -753,7 +753,7 @@ For complete formatting reference, see `assets/FORMATTING_GUIDE.md`.
 This skill works synergistically with:
 
 - **research-lookup**: Essential for gathering market data, statistics, and competitive intelligence
-- **scientific-schematics**: Generate all diagrams, charts, and visualizations
+- **scientific-schematics**: Generate all diagrams, charts, and visualisations
 - **generate-image**: Create infographics and conceptual illustrations
 - **peer-review**: Evaluate report quality and completeness
 - **citation-management**: Manage BibTeX references
@@ -805,7 +805,7 @@ Generate 3 supporting visuals including opportunity matrix and priority framewor
 
 ## Checklist: 50+ Page Validation
 
-Before finalizing the report, verify:
+Before finalising the report, verify:
 
 ### Structure Completeness
 - [ ] Cover page with hero visual
@@ -864,15 +864,15 @@ Before finalizing the report, verify:
 
 Load these files for detailed guidance:
 
-- **`references/report_structure_guide.md`**: Detailed section-by-section content requirements
-- **`references/visual_generation_guide.md`**: Complete prompts for generating all visual types
-- **`references/data_analysis_patterns.md`**: Templates for Porter's, PESTLE, SWOT, etc.
+- **`references/report-structure-guide.md`**: Detailed section-by-section content requirements
+- **`references/visual-generation-guide.md`**: Complete prompts for generating all visual types
+- **`references/data-analysis-patterns.md`**: Templates for Porter's, PESTLE, SWOT, etc.
 
 ### Assets
 
 - **`assets/market_research.sty`**: LaTeX style package
 - **`assets/market_report_template.tex`**: Complete LaTeX template
-- **`assets/FORMATTING_GUIDE.md`**: Quick reference for box environments and styling
+- **`assets/formatting-guide.md`**: Quick reference for box environments and styling
 
 ### Scripts
 
@@ -901,4 +901,4 @@ Load these files for detailed guidance:
 
 ---
 
-Use this skill to create comprehensive, visually-rich market research reports that rival top consulting firm deliverables. The combination of deep research, structured frameworks, and extensive visualization produces documents that inform strategic decisions and demonstrate analytical rigor.
+Use this skill to create comprehensive, visually-rich market research reports that rival top consulting firm deliverables. The combination of deep research, structured frameworks, and extensive visualisation produces documents that inform strategic decisions and demonstrate analytical rigour.

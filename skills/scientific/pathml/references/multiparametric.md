@@ -2,7 +2,7 @@
 
 ## Overview
 
-PathML provides specialized support for multiparametric imaging technologies that simultaneously measure multiple markers at single-cell resolution. These techniques include CODEX, Vectra multiplex immunofluorescence, MERFISH, and other spatial proteomics and transcriptomics platforms. PathML handles the unique data structures, processing requirements, and quantification workflows specific to each technology.
+PathML provides specialised support for multiparametric imaging technologies that simultaneously measure multiple markers at single-cell resolution. These techniques include CODEX, Vectra multiplex immunofluorescence, MERFISH, and other spatial proteomics and transcriptomics platforms. PathML handles the unique data structures, processing requirements, and quantification workflows specific to each technology.
 
 ## Supported Technologies
 
@@ -33,7 +33,7 @@ PathML provides specialized support for multiparametric imaging technologies tha
 
 ### Loading CODEX Data
 
-CODEX data is typically organized in multi-channel image stacks from multiple acquisition cycles:
+CODEX data is typically organised in multi-channel image stacks from multiple acquisition cycles:
 
 ```python
 from pathml.core import CODEXSlide
@@ -385,9 +385,9 @@ sc.tl.leiden(adata, resolution=0.5)
 sc.pl.umap(adata, color=['leiden', 'CD3', 'CD8', 'CD20', 'panCK'])
 ```
 
-### Spatial Visualization
+### Spatial Visualisation
 
-Visualize cells in spatial context:
+Visualise cells in spatial context:
 
 ```python
 import matplotlib.pyplot as plt
@@ -422,7 +422,7 @@ plt.show()
 
 ### Spatial Neighborhood Analysis
 
-Analyze cell neighborhoods and interactions:
+Analyse cell neighborhoods and interactions:
 
 ```python
 import squidpy as sq
@@ -627,14 +627,14 @@ def export_to_seurat(adata, output_file):
 1. **Channel selection for segmentation:**
    - Use brightest, most consistent nuclear marker (usually DAPI)
    - Choose membrane/cytoplasm marker based on tissue type
-   - Test multiple options to optimize segmentation
+   - Test multiple options to optimise segmentation
 
 2. **Background subtraction:**
    - Apply before quantification to reduce autofluorescence
    - Use blank/control images to model background
 
 3. **Quality control:**
-   - Visualize segmentation on sample regions
+   - Visualise segmentation on sample regions
    - Check cell size distributions for outliers
    - Validate marker expression ranges
 
@@ -651,7 +651,7 @@ def export_to_seurat(adata, output_file):
 6. **Batch effects:**
    - Include batch information in AnnData.obs
    - Apply batch correction if combining multiple experiments
-   - Visualize batch effects with UMAP colored by batch
+   - Visualise batch effects with UMAP coloured by batch
 
 ## Common Issues and Solutions
 
@@ -662,13 +662,13 @@ def export_to_seurat(adata, output_file):
 - Manually tune min/max cell size parameters
 
 **Issue: Low marker intensity**
-- Check for background subtraction artifacts
+- Check for background subtraction artefacts
 - Verify channel names match actual channels
 - Inspect raw images for technical issues (focus, exposure)
 
 **Issue: Cell type annotations don't match expectations**
 - Adjust marker thresholds (too high/low)
-- Visualize marker distributions to set data-driven thresholds
+- Visualise marker distributions to set data-driven thresholds
 - Check for antibody specificity issues
 
 **Issue: Spatial analysis shows no significant interactions**

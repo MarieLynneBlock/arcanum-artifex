@@ -1,6 +1,6 @@
 ---
-description: Create, alter, and validate Snowflake semantic views using Snowflake CLI (snow). Use when asked to build or troubleshoot semantic views/semantic layer definitions with CREATE/ALTER SEMANTIC VIEW, to validate semantic-view DDL against Snowflake via CLI, or to guide Snowflake CLI installation and connection setup.
 name: snowflake-semanticview
+description: Create, alter, and validate Snowflake semantic views using Snowflake CLI (snow). Use when asked to build or troubleshoot semantic views/semantic layer definitions with CREATE/ALTER SEMANTIC VIEW, to validate semantic-view DDL against Snowflake via CLI, or to guide Snowflake CLI installation and connection setup.
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -26,7 +26,7 @@ metadata:
    - If comments or synonyms are missing, ask whether you can create them, whether the user wants to provide text, or whether you should draft suggestions for approval.
 5. Use SELECT statements with DISTINCT and LIMIT (maximum 1000 rows) to discover relationships between fact and dimension tables, identify column data types, and create more meaningful comments and synonyms for columns.
 6. Create a temporary validation name (for example, append `__tmp_validate`) while keeping the same database and schema.
-7. Always validate by sending the DDL to Snowflake via Snowflake CLI before finalizing:
+7. Always validate by sending the DDL to Snowflake via Snowflake CLI before finalising:
    - Use `snow sql` to execute the statement with the configured connection.
    - If flags differ by version, check `snow sql --help` and use the connection option shown there.
 8. If validation fails, iterate on the DDL and re-run the validation step until it succeeds.

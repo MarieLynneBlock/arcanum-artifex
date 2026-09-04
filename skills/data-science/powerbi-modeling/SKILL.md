@@ -1,34 +1,34 @@
 ---
-description: 'Power BI semantic modeling assistant for building optimized data models. Use when working with Power BI semantic models, creating measures, designing star schemas, configuring relationships, implementing RLS, or optimizing model performance. Triggers on queries about DAX calculations, table relationships, dimension/fact table design, naming conventions, model documentation, cardinality, cross-filter direction, calculation groups, and data model best practices. Always connects to the active model first using power-bi-modeling MCP tools to understand the data structure before providing guidance.'
-name: powerbi-modeling
+name: powerbi-modelling
+description: 'Power BI semantic modelling assistant for building optimised data models. Use when working with Power BI semantic models, creating measures, designing star schemas, configuring relationships, implementing RLS, or optimising model performance. Triggers on queries about DAX calculations, table relationships, dimension/fact table design, naming conventions, model documentation, cardinality, cross-filter direction, calculation groups, and data model best practices. Always connects to the active model first using power-bi-modelling MCP tools to understand the data structure before providing guidance.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
 
-# Power BI Semantic Modeling
+# Power BI Semantic Modelling
 
-Guide users in building optimized, well-documented Power BI semantic models following Microsoft best practices.
+Guide users in building optimised, well-documented Power BI semantic models following Microsoft best practices.
 
 ## When to Use This Skill
 
 Use this skill when users ask about:
-- Creating or optimizing Power BI semantic models
+- Creating or optimising Power BI semantic models
 - Designing star schemas (dimension/fact tables)
 - Writing DAX measures or calculated columns
 - Configuring table relationships (cardinality, cross-filter)
 - Implementing row-level security (RLS)
 - Naming conventions for tables, columns, measures
 - Adding descriptions and documentation to models
-- Performance tuning and optimization
+- Performance tuning and optimisation
 - Calculation groups and field parameters
 - Model validation and best practice checks
 
-**Trigger phrases:** "create a measure", "add relationship", "star schema", "optimize model", "DAX formula", "RLS", "naming convention", "model documentation", "cardinality", "cross-filter"
+**Trigger phrases:** "create a measure", "add relationship", "star schema", "optimise model", "DAX formula", "RLS", "naming convention", "model documentation", "cardinality", "cross-filter"
 
 ## Prerequisites
 
 ### Required Tools
-- **Power BI Modeling MCP Server**: Required for connecting to and modifying semantic models
+- **Power BI Modelling MCP Server**: Required for connecting to and modifying semantic models
   - Enables: connection_operations, table_operations, measure_operations, relationship_operations, etc.
   - Must be configured and running to interact with models
 
@@ -39,9 +39,9 @@ Use this skill when users ask about:
 
 ## Workflow
 
-### 1. Connect and Analyze First
+### 1. Connect and Analyse First
 
-Before providing any modeling guidance, always examine the current model state:
+Before providing any modelling guidance, always examine the current model state:
 
 ```
 1. List connections: connection_operations(operation: "ListConnections")
@@ -67,11 +67,11 @@ After connecting, assess the model against best practices:
 ### 3. Provide Targeted Guidance
 
 Based on analysis, guide improvements using references:
-- Star schema design: See [STAR-SCHEMA.md](references/STAR-SCHEMA.md)
-- Relationship configuration: See [RELATIONSHIPS.md](references/RELATIONSHIPS.md)
-- DAX measures and naming: See [MEASURES-DAX.md](references/MEASURES-DAX.md)
-- Performance optimization: See [PERFORMANCE.md](references/PERFORMANCE.md)
-- Row-level security: See [RLS.md](references/RLS.md)
+- Star schema design: See [star-schema.md](references/star-schema.md)
+- Relationship configuration: See [relationships.md](references/relationships.md)
+- DAX measures and naming: See [measures-dax.md](references/measures-dax.md)
+- Performance optimisation: See [performance.md](references/performance.md)
+- Row-level security: See [rls.md](references/rls.md)
 
 ## Quick Reference: Model Quality Checklist
 
@@ -88,7 +88,7 @@ Based on analysis, guide improvements using references:
 
 ## MCP Tools Reference
 
-Use these Power BI Modeling MCP operations:
+Use these Power BI Modelling MCP operations:
 
 | Operation Category | Key Operations |
 |-------------------|----------------|
@@ -150,6 +150,6 @@ relationship_operations(
 Research current best practices using `microsoft_docs_search` for:
 - Latest DAX function documentation
 - New Power BI features and capabilities
-- Complex modeling scenarios (SCD Type 2, many-to-many)
-- Performance optimization techniques
+- Complex modelling scenarios (SCD Type 2, many-to-many)
+- Performance optimisation techniques
 - Security implementation patterns

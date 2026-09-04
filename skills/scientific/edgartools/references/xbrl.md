@@ -120,7 +120,7 @@ comprehensive  = stitched.comprehensive_income()
 
 All methods accept:
 - `max_periods` (int) — max periods to include (default: 8)
-- `standard` (bool) — use standardized concept labels (default: True)
+- `standard` (bool) — use standardised concept labels (default: True)
 - `use_optimal_periods` (bool) — use entity info for period selection (default: True)
 - `show_date_range` (bool) — show full date ranges (default: False)
 - `include_dimensions` (bool) — include segment data (default: False)

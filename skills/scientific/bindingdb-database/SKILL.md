@@ -1,6 +1,6 @@
 ---
-description: Query BindingDB for measured drug-target binding affinities (Ki, Kd, IC50, EC50). Search by target (UniProt ID), compound (SMILES/name), or pathogen. Essential for drug discovery, lead optimization, polypharmacology analysis, and structure-activity relationship (SAR) studies.
 name: bindingdb-database
+description: Query BindingDB for measured drug-target binding affinities (Ki, Kd, IC50, EC50). Search by target (UniProt ID), compound (SMILES/name), or pathogen. Essential for drug discovery, lead optimisation, polypharmacology analysis, and structure-activity relationship (SAR) studies.
 license: CC-BY-3.0
 metadata:
   skill-author: 'Kuan-lin Huang'
@@ -318,7 +318,7 @@ def prepare_ml_dataset(df, uniprot_ids, affinity_col="IC50 (nM)",
 
 - **Use Ki for direct binding**: Ki reflects true binding affinity independent of enzymatic mechanism
 - **IC50 context-dependency**: IC50 values depend on substrate concentration (Cheng-Prusoff equation)
-- **Normalize units**: BindingDB reports in nM; verify units when comparing across studies
+- **Normalise units**: BindingDB reports in nM; verify units when comparing across studies
 - **Filter by target organism**: Use `Target Source Organism` to ensure human protein data
 - **Handle missing values**: Not all compounds have all measurement types
 - **Cross-reference with ChEMBL**: ChEMBL has more curated activity data for medicinal chemistry

@@ -1,0 +1,11 @@
+fetch security.events, from:now() - 30d
+| filter event.type == "COMPLIANCE_SCAN_COMPLETED"
+| sort timestamp desc
+| limit 1
+| fields timestamp, scan.id, object.type
+
+fetch security.events, from:now() - 30d
+| filter event.type == "COMPLIANCE_FINDING" and scan.id == "SCAN_ID"
+| filter violation.detected == true
+| summarize finding_count = count(), by: {compliance.rule.severity.level}
+| sort finding_count desc

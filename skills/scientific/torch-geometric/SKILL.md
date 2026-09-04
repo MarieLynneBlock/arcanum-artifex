@@ -1,6 +1,6 @@
 ---
-description: Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, heterogeneous graphs, molecular property prediction, for geometric deep learning.
 name: torch-geometric
+description: Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, heterogeneous graphs, molecular property prediction, for geometric deep learning.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -21,7 +21,7 @@ This skill should be used when working with:
 - **Citation networks**: Paper classification, recommendation systems
 - **3D geometric data**: Point clouds, meshes, molecular structures
 - **Heterogeneous graphs**: Multi-type nodes and edges (e.g., knowledge graphs)
-- **Large-scale graph learning**: Neighbor sampling, distributed training
+- **Large-scale graph learning**: Neighbour sampling, distributed training
 
 ## Quick Start
 
@@ -118,7 +118,7 @@ for batch in loader:
 GNNs in PyG follow a neighborhood aggregation scheme:
 1. Transform node features
 2. Propagate messages along edges
-3. Aggregate messages from neighbors
+3. Aggregate messages from neighbours
 4. Update node representations
 
 ### Using Pre-Built Layers
@@ -249,7 +249,7 @@ from torch_geometric.datasets import Reddit
 dataset = Reddit(root='/tmp/Reddit')
 ```
 
-Check `references/datasets_reference.md` for a comprehensive list.
+Check `references/datasets-reference.md` for a comprehensive list.
 
 ### Creating Custom Datasets
 
@@ -408,7 +408,7 @@ for epoch in range(100):
         print(f'Epoch {epoch}, Loss: {total_loss / len(loader):.4f}')
 ```
 
-### Large-Scale Graphs with Neighbor Sampling
+### Large-Scale Graphs with Neighbour Sampling
 
 For large graphs, use `NeighborLoader` to sample subgraphs:
 
@@ -527,7 +527,7 @@ Common transforms:
 - **Sampling**: `RandomNodeSplit`, `RandomLinkSplit`
 - **Positional Encoding**: `AddLaplacianEigenvectorPE`, `AddRandomWalkPE`
 
-See `references/transforms_reference.md` for the full list.
+See `references/transforms-reference.md` for the full list.
 
 ### Model Explainability
 
@@ -650,16 +650,16 @@ See the GNN cheatsheet at `references/layer_capabilities.md`.
 
 This skill includes detailed reference documentation:
 
-- **`references/layers_reference.md`**: Complete listing of all 40+ GNN layers with descriptions and capabilities
-- **`references/datasets_reference.md`**: Comprehensive dataset catalog organized by category
-- **`references/transforms_reference.md`**: All available transforms and their use cases
+- **`references/layers-reference.md`**: Complete listing of all 40+ GNN layers with descriptions and capabilities
+- **`references/datasets-reference.md`**: Comprehensive dataset catalogue organised by category
+- **`references/transforms-reference.md`**: All available transforms and their use cases
 - **`references/api_patterns.md`**: Common API patterns and coding examples
 
 ### Scripts
 
 Utility scripts are provided in `scripts/`:
 
-- **`scripts/visualize_graph.py`**: Visualize graph structure using networkx and matplotlib
+- **`scripts/visualize_graph.py`**: Visualise graph structure using networkx and matplotlib
 - **`scripts/create_gnn_template.py`**: Generate boilerplate code for common GNN architectures
 - **`scripts/benchmark_model.py`**: Benchmark model performance on standard datasets
 

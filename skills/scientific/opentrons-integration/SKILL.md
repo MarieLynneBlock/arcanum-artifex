@@ -1,6 +1,6 @@
 ---
-description: Official Opentrons Protocol API for OT-2 and Flex robots. Use when writing protocols specifically for Opentrons hardware with full access to Protocol API v2 features. Best for production Opentrons protocols, official API compatibility. For multi-vendor automation or broader equipment control use pylabrobot.
 name: opentrons-integration
+description: Official Opentrons Protocol API for OT-2 and Flex robots. Use when writing protocols specifically for Opentrons hardware with full access to Protocol API v2 features. Best for production Opentrons protocols, official API compatibility. For multi-vendor automation or broader equipment control use pylabrobot.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -20,7 +20,7 @@ This skill should be used when:
 - Controlling hardware modules (temperature, magnetic, heater-shaker, thermocycler)
 - Setting up labware configurations and deck layouts
 - Implementing complex pipetting operations (serial dilutions, plate replication, PCR setup)
-- Managing tip usage and optimizing protocol efficiency
+- Managing tip usage and optimising protocol efficiency
 - Working with multi-channel pipettes for 96-well plate operations
 - Simulating and testing protocols before robot execution
 
@@ -347,7 +347,7 @@ result = plate_reader.read(wavelengths=[450, 650])
 absorbance_data = result  # Dict with wavelength keys
 ```
 
-### 6. Liquid Tracking and Labeling
+### 6. Liquid Tracking and Labelling
 
 **Define Liquids:**
 
@@ -549,7 +549,7 @@ def run(protocol: protocol_api.ProtocolContext):
 6. **Handle errors gracefully**: Add pauses for manual intervention when needed
 7. **Consider timing**: Use delays when protocols require incubation periods
 8. **Track liquids**: Use liquid tracking for better setup validation
-9. **Optimize tip usage**: Use `new_tip='once'` when appropriate to save tips
+9. **Optimise tip usage**: Use `new_tip='once'` when appropriate to save tips
 10. **Control flow rates**: Adjust flow rates for viscous or volatile liquids
 
 ## Troubleshooting
@@ -565,6 +565,6 @@ def run(protocol: protocol_api.ProtocolContext):
 
 ## Resources
 
-For detailed API documentation, see `references/api_reference.md` in this skill directory.
+For detailed API documentation, see `references/api-reference.md` in this skill directory.
 
 For example protocol templates, see `scripts/` directory.

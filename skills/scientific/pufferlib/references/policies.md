@@ -152,7 +152,7 @@ class EfficientCNN(nn.Module):
 
 ## Recurrent Policies (LSTM)
 
-PufferLib provides optimized LSTM integration with automatic recurrence handling:
+PufferLib provides optimised LSTM integration with automatic recurrence handling:
 
 ```python
 from pufferlib.pytorch import LSTMWrapper
@@ -209,9 +209,9 @@ class RecurrentPolicy(nn.Module):
         return logits, value, new_state
 ```
 
-### LSTM Optimization
+### LSTM Optimisation
 
-PufferLib's LSTM optimization uses LSTMCell during rollouts and LSTM during training for up to 3x faster inference:
+PufferLib's LSTM optimisation uses LSTMCell during rollouts and LSTM during training for up to 3x faster inference:
 
 ```python
 class OptimizedLSTMPolicy(nn.Module):
@@ -559,7 +559,7 @@ actor = layer_init(nn.Linear(256, num_actions), std=0.01)
 critic = layer_init(nn.Linear(256, 1), std=1.0)
 ```
 
-### Observation Normalization
+### Observation Normalisation
 
 ```python
 class NormalizedPolicy(nn.Module):

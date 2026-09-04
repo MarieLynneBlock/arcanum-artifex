@@ -1,15 +1,15 @@
 ---
-description: Run a multi-perspective Mind Council deliberation on any question, decision, or creative challenge. Use this skill whenever the user wants diverse viewpoints, needs help making a tough decision, asks for a council/panel/board discussion, wants to explore a problem from multiple angles, requests devil's advocate analysis, or says things like "what would different experts think about this", "help me think through this from all sides", "council mode", "mind council", or "deliberate on this". Also trigger when the user faces a dilemma, trade-off, or complex choice with no obvious answer.
 name: consciousness-council
-allowed-tools: Read Write
+description: Run a multi-perspective Mind Council deliberation on any question, decision, or creative challenge. Use this skill whenever the user wants diverse viewpoints, needs help making a tough decision, asks for a council/panel/board discussion, wants to explore a problem from multiple angles, requests devil's advocate analysis, or says things like "what would different experts think about this", "help me think through this from all sides", "council mode", "mind council", or "deliberate on this". Also trigger when the user faces a dilemma, trade-off, or complex choice with no obvious answer.
 license: MIT license
+allowed-tools: Read Write
 metadata:
   skill-author: 'AHK Strategies (ashrafkahoush-ux)'
 ---
 
 # Consciousness Council
 
-A structured multi-perspective deliberation system that generates genuine cognitive diversity on any question. Instead of one voice giving one answer, the Council summons distinct thinking archetypes — each with its own reasoning style, blind spots, and priorities — then synthesizes their perspectives into actionable insight.
+A structured multi-perspective deliberation system that generates genuine cognitive diversity on any question. Instead of one voice giving one answer, the Council summons distinct thinking archetypes — each with its own reasoning style, blind spots, and priorities — then synthesises their perspectives into actionable insight.
 
 ## Why This Exists
 
@@ -32,11 +32,11 @@ Based on the user's question, select 4-6 Council Members from the archetypes bel
 | 1   | **The Architect**  | Systems thinking, structure-first      | "What's the underlying structure?"           | Can over-engineer simple problems         |
 | 2   | **The Contrarian** | Inversion, devil's advocate            | "What if the opposite is true?"              | Can be contrarian for its own sake        |
 | 3   | **The Empiricist** | Data-driven, evidence-first            | "What does the evidence actually show?"      | Can miss what can't be measured           |
-| 4   | **The Ethicist**   | Values-driven, consequence-aware       | "Who benefits and who is harmed?"            | Can paralyze action with moral complexity |
+| 4   | **The Ethicist**   | Values-driven, consequence-aware       | "Who benefits and who is harmed?"            | Can paralyse action with moral complexity |
 | 5   | **The Futurist**   | Long-term, second-order effects        | "What does this look like in 10 years?"      | Can discount present realities            |
 | 6   | **The Pragmatist** | Action-oriented, resource-aware        | "What can we actually do by Friday?"         | Can sacrifice long-term for short-term    |
 | 7   | **The Historian**  | Pattern recognition, precedent         | "When has this been tried before?"           | Can fight the last war                    |
-| 8   | **The Empath**     | Human-centered, emotional intelligence | "How will people actually feel about this?"  | Can prioritize comfort over progress      |
+| 8   | **The Empath**     | Human-centred, emotional intelligence | "How will people actually feel about this?"  | Can prioritise comfort over progress      |
 | 9   | **The Outsider**   | Cross-domain, naive questions          | "Why does everyone assume that?"             | Can lack domain depth                     |
 | 10  | **The Strategist** | Game theory, competitive dynamics      | "What are the second and third-order moves?" | Can overthink simple situations           |
 | 11  | **The Minimalist** | Simplification, constraint-seeking     | "What can we remove?"                        | Can oversimplify complex problems         |
@@ -98,7 +98,7 @@ One Question to Sit With: [The question the user should keep thinking about afte
 
 ## Council Configurations
 
-The user can customize the Council:
+The user can customise the Council:
 
 - **"Quick council"** or **"fast deliberation"** → Use 3 members, shorter responses
 - **"Deep council"** or **"full deliberation"** → Use 6 members, extended reasoning

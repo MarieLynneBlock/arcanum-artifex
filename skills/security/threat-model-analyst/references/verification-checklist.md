@@ -1,10 +1,10 @@
 # Verification Checklist — Post-Analysis Quality Gates
 
-This file is the **single source of truth** for all verification rules that must pass before a threat model report is finalized. It is designed to be handed to a verification sub-agent along with the output folder path.
+This file is the **single source of truth** for all verification rules that must pass before a threat model report is finalised. It is designed to be handed to a verification sub-agent along with the output folder path.
 
 > **Authority hierarchy:** This file contains CHECKING rules (pass/fail criteria for quality gates). The AUTHORING rules that produce the content being checked are in `orchestrator.md`. Some rules appear in both files for visibility — if they ever conflict: `orchestrator.md` takes precedence for authoring decisions (how to write), this file takes precedence for pass/fail criteria (what constitutes a valid output). Do NOT remove rules from either file to "deduplicate" — the overlap is intentional for visibility.
 
-**When to use:** After ALL output files are written (0.1-architecture.md through 0-assessment.md), run every check in this file. If any check fails, fix the issue before finalizing.
+**When to use:** After ALL output files are written (0.1-architecture.md through 0-assessment.md), run every check in this file. If any check fails, fix the issue before finalising.
 
 **Sub-agent delegation:** The orchestrator can delegate this entire file to a verification sub-agent with the prompt:
 > "Read [verification-checklist.md](./verification-checklist.md). For each check, inspect the named output file(s) and report PASS/FAIL with evidence. Fix any failures."
@@ -30,7 +30,7 @@ This file is the **single source of truth** for all verification rules that must
 - [ ] Every finding has ALL 10 mandatory attribute rows: `SDL Bugbar Severity`, `CVSS 4.0`, `CWE`, `OWASP`, `Exploitation Prerequisites`, `Exploitability Tier`, `Remediation Effort`, `Mitigation Type`, `Component`, `Related Threats`
 - [ ] Every CWE value is a hyperlink: contains `](https://cwe.mitre.org/` (not plain text like `CWE-79`)
 - [ ] Every OWASP value uses `:2025` suffix (not `:2021`)
-- [ ] Findings organized by TIER (Tier 1/2/3 headings), NOT by severity (no `## Critical Findings`)
+- [ ] Findings organised by TIER (Tier 1/2/3 headings), NOT by severity (no `## Critical Findings`)
 - [ ] **Tier-Prerequisite consistency (inline)**: For each finding, use canonical mapping: `None`→T1; `Authenticated User`/`Privileged User`/`Internal Network`/`Local Process Access`→T2; `Host/OS Access`/`Admin Credentials`/`Physical Access`/`{Component} Compromise`/combos→T3. ⛔ `Application Access` and `Host Access` are FORBIDDEN.
 - [ ] Count finding headings — they must be sequential: FIND-01, FIND-02, FIND-03...
 - [ ] No time estimates: search for `~`, `Sprint`, `Phase`, `hour`, `day`, `week` — must not appear
@@ -82,7 +82,7 @@ This file is the **single source of truth** for all verification rules that must
 ### After writing `1.1-threatmodel.mmd`:
 - [ ] Line 1 starts with `%%{init:`
 - [ ] Contains `classDef process`, `classDef external`, `classDef datastore`
-- [ ] No Chakra UI colors (`#4299E1`, `#48BB78`, `#E53E3E`)
+- [ ] No Chakra UI colours (`#4299E1`, `#48BB78`, `#E53E3E`)
 - [ ] `linkStyle default stroke:#666666,stroke-width:2px` present
 - [ ] DFD uses `flowchart LR` (NOT `flowchart TB`) — search for `flowchart` and verify direction is `LR`
 - [ ] **Incremental DFD styling (incremental mode only)**: If new components exist, verify `classDef newComponent fill:#d4edda,stroke:#28a745` is present AND new component nodes use `:::newComponent` (NOT `:::process`). If removed components exist, verify `classDef removedComponent` with gray dashed styling. ❌ `newComponent fill:#6baed6` (same blue as process) → FAIL (visually invisible).
@@ -107,7 +107,7 @@ This file is the **single source of truth** for all verification rules that must
 ### After writing `incremental-comparison.html` (incremental mode only):
 - [ ] HTML contains `Trust Boundaries` or `Boundaries` in the metrics bar — search for the text "Boundaries"
 - [ ] STRIDE heatmap has 13 columns: Component, S, T, R, I, D, E, A, Total, divider, T1, T2, T3 — search for `T1` and `T2` and `T3` in the HTML
-- [ ] Fixed/New/Previously Unidentified status information appears ONLY in colored status cards, NOT also as small inline badges in the metrics bar
+- [ ] Fixed/New/Previously Unidentified status information appears ONLY in coloured status cards, NOT also as small inline badges in the metrics bar
 - [ ] No `| Authorization |` as a STRIDE category label in the heatmap — search for "Authorization" in heatmap rows
 - [ ] **HTML counts match markdown counts**: The Total threats in the HTML heatmap must equal the Totals row from `2-stride-analysis.md`. If they differ, regenerate the HTML heatmap from the STRIDE summary data. T1+T2+T3 totals in HTML must also match.
 - [ ] **Comparison cards present**: HTML contains `comparison-cards` div with 3 cards: baseline (hash + date + rating), target (hash + date + rating), trend (direction + duration)
@@ -141,7 +141,7 @@ These are the most frequently observed deviations across all previous runs. Afte
 
 ### 0.1 Structural Deviations
 
-- [ ] **Findings organized by severity instead of tier** — Search for `## Critical Findings`, `## Important Findings`, `## High Findings`. These must NOT exist. ❌ `## Critical Findings` → ✅ `## Tier 1 — Direct Exposure (No Prerequisites)`
+- [ ] **Findings organised by severity instead of tier** — Search for `## Critical Findings`, `## Important Findings`, `## High Findings`. These must NOT exist. ❌ `## Critical Findings` → ✅ `## Tier 1 — Direct Exposure (No Prerequisites)`
 - [ ] **Flat STRIDE tables (no tier sub-sections)** — Each component in `2-stride-analysis.md` must have `#### Tier 1`, `#### Tier 2`, `#### Tier 3` sub-headings. ❌ Single flat table per component → ✅ Three separate tier sub-sections
 - [ ] **Missing Exploitability Tier or Remediation Effort on findings** — Every `### FIND-` block in `3-findings.md` must contain both `Exploitability Tier` and `Remediation Effort` rows. ❌ Missing either field → ✅ Both MANDATORY
 - [ ] **STRIDE summary missing tier columns** — Summary table in `2-stride-analysis.md` must include `T1`, `T2`, `T3` columns. ❌ Only S/T/R/I/D/E/A/Total → ✅ Must also have T1/T2/T3/Risk columns
@@ -150,74 +150,7 @@ These are the most frequently observed deviations across all previous runs. Afte
 
 ### 0.2 File Format Deviations
 
-- [ ] **`.md` wrapped in code fences** — Check if any `.md` file starts with ` ```markdown ` or ` ````markdown `. ❌ ` ```markdown\n# Title` → ✅ `# Title` on line 1
-- [ ] **`.mmd` wrapped in code fences** — Check if `.mmd` file starts with ` ```plaintext ` or ` ```mermaid `. ❌ ` ```mermaid\n%%{init:` → ✅ `%%{init:` on line 1
-- [ ] **Leaked skill directives in output** — Search ALL `.md` files for `⛔`, `RIGID TIER`, `Do NOT use subjective`, `MANDATORY`, `CRITICAL —`, `decision procedure`. These are internal skill instructions that must NOT appear in report output. ❌ Any match → ✅ Zero matches. Remove any leaked directive lines.
-- [ ] **Nested duplicate output folder** — Check if the output folder contains a subfolder with the same name (e.g., `threat-model-20260307-081613/threat-model-20260307-081613/`). ❌ Subfolder exists → ✅ Delete the nested duplicate. The output folder should contain only files, no subfolders.
-- [ ] **STRIDE-A "Authorization" instead of "Abuse"** — Search `2-stride-analysis.md` for `| Authorization |` or `**Authorization**` used as a STRIDE category name. The A in STRIDE-A is ALWAYS "Abuse", never "Authorization". ❌ Any match where Authorization is used as a STRIDE category → ✅ Replace with "Abuse". Note: do NOT replace "Authorization" when it appears inside threat descriptions (e.g., "Authorization header", "lacks authorization checks").
-
-### 0.3 Assessment Section Deviations
-
-- [ ] **Wrong section name for Action Summary** — Search for `Priority Remediation Roadmap`, `Top Recommendations`, `Key Recommendations`, `Risk Profile`. ❌ Any of those names → ✅ `## Action Summary` only
-- [ ] **Separate recommendations section** — Search for `### Key Recommendations` or `### Top Recommendations` as standalone sections. ❌ Separate section → ✅ Action Summary IS the recommendations
-- [ ] **Missing Quick Wins subsection** — Search for `### Quick Wins` under Action Summary. ❌ Missing → ✅ Present (with note if no low-effort T1 findings)
-- [ ] **Missing threat count context** — Search for `> **Note on threat counts:**` blockquote in Executive Summary. ❌ Missing → ✅ Present
-- [ ] **Missing Analysis Context & Assumptions** — Search for `## Analysis Context & Assumptions`. ❌ Missing → ✅ Present with `### Needs Verification` and `### Finding Overrides` sub-sections
-- [ ] **Missing mandatory assessment sections** — Verify ALL 7 exist: Report Files, Executive Summary, Action Summary, Analysis Context & Assumptions, References Consulted, Report Metadata, Classification Reference. ❌ Any missing → ✅ All 7 present
-
-### 0.4 References & Metadata Deviations
-
-- [ ] **References Consulted as flat table** — Search for `| Reference | Usage |` pattern. ❌ Two-column flat table → ✅ Two subsections: `### Security Standards` with `| Standard | URL | How Used |` and `### Component Documentation` with `| Component | Documentation URL | Relevant Section |`
-- [ ] **References missing URLs** — Every row in References Consulted tables must have a full `https://` URL. ❌ Missing URL column or empty URLs → ✅ Full URLs in every row
-- [ ] **Report Metadata missing Model** — Search for `| **Model** |` or `| Model |` row. ❌ Missing → ✅ Present with actual model name
-- [ ] **Report Metadata missing timestamps** — Search for `Analysis Started`, `Analysis Completed`, `Duration` rows. ❌ Any missing → ✅ All three present with computed values
-
-### 0.5 Finding Quality Deviations
-
-- [ ] **CVSS score without vector or missing prefix** — Grep each finding's CVSS field. The value MUST match pattern: `\d+\.\d+ \(CVSS:4\.0/AV:`. Specifically check for the `CVSS:4.0/` prefix — the most common deviation is outputting the vector without this prefix (bare `AV:N/AC:L/...`). ❌ `9.3` (score only) → ❌ `9.3 (AV:N/AC:L/...)` (no prefix) → ✅ `9.3 (CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N)`
-- [ ] **CWE without hyperlink** — Grep for `CWE-\d+` without preceding `[`. ❌ `CWE-78: OS Command Injection` → ✅ `[CWE-78](https://cwe.mitre.org/data/definitions/78.html): OS Command Injection`
-- [ ] **OWASP `:2021` suffix** — Grep for `:2021`. ❌ `A01:2021` → ✅ `A01:2025`
-- [ ] **Related Threats as plain text** — Grep `Related Threats` rows for pattern without `](`. ❌ `T-02, T-17, T-23` → ✅ `[T02.S](2-stride-analysis.md#component-name), [T17.I](2-stride-analysis.md#other-component)`
-- [ ] **Finding IDs out of order** — Check that FIND-NN IDs are sequential: FIND-01, FIND-02, FIND-03... ❌ `FIND-06` appearing before `FIND-04` → ✅ Sequential numbering top-to-bottom
-- [ ] **CVSS AV:L or PR:H with Tier 1** — Grep every Tier 1 finding's CVSS vector for `AV:L` or `PR:H`. ❌ Tier 1 with local-only access → ✅ Downgrade to T2/T3
-- [ ] **Localhost-only or admin-only finding in Tier 1** — Check deployment context: air-gapped, localhost, single-admin services should NOT be Tier 1. ❌ Tier 1 for admin-only → ✅ T2/T3
-- [ ] **Time estimates in output** — Grep for `~1 hour`, `Sprint`, `Phase 1`, `(hours)`, `(days)`, `(weeks)`, `Immediate`. ❌ Any scheduling language → ✅ Only `Low`/`Medium`/`High` effort labels
-- [ ] **"Accepted Risk" in Coverage table** — Grep `3-findings.md` for `Accepted Risk`. ❌ Any match → FAIL. The tool does NOT have authority to accept risks. Every `Open` threat MUST have a finding. Replace all `⚠️ Accepted Risk` with `✅ Covered` and create corresponding findings.
-
-### 0.6 Diagram Deviations
-
-- [ ] **Wrong color palette** — Grep all `#[0-9a-fA-F]{6}` in `.mmd` files and Mermaid blocks. ❌ `#4299E1`, `#48BB78`, `#E53E3E`, `#2B6CB0`, `#2D3748`, `#2F855A`, `#C53030` (Chakra UI) → ✅ Only allowed: `#6baed6`, `#2171b5`, `#fdae61`, `#d94701`, `#74c476`, `#238b45`, `#e31a1c`, `#666666`, `#ffffff`, `#000000`
-- [ ] **Custom themeVariables colors** — Search init blocks for `secondaryColor`, `tertiaryColor`, or `primaryTextColor`. ❌ `"primaryColor": "#2D3748", "secondaryColor": "#4299E1"` → ✅ Only `'background': '#ffffff', 'primaryColor': '#ffffff', 'lineColor': '#666666'` in themeVariables
-- [ ] **Missing summary MMD** — Count nodes and subgraphs in `1.1-threatmodel.mmd`. If elements > 15 OR subgraphs > 4, `1.2-threatmodel-summary.mmd` MUST exist. ❌ Threshold met but file missing → ✅ File created with summary diagram
-- [ ] **Standalone sidecar nodes (K8s only)** — Search diagrams for nodes named `MISE`, `Dapr`, `Envoy`, `Istio`, `Sidecar` as separate entries. ❌ `MISE(("MISE Sidecar"))` → ✅ `InferencingFlow(("Inferencing Flow<br/>+ MISE"))`
-- [ ] **Intra-pod localhost flows (K8s only)** — Search for `-->|"localhost"|` arrows between co-located containers. ❌ Present → ✅ Absent (implicit)
-- [ ] **Missing sequence diagrams** — First 3 scenarios in `0.1-architecture.md` must each have a `sequenceDiagram` block. ❌ Fewer than 3 → ✅ At least 3
-- [ ] **Technology-specific gaps** — For every technology in the repo (Redis, PostgreSQL, Docker, K8s, ML/LLM, NFS, etc.), verify at least one finding or documented mitigation exists. ❌ Technology present but no coverage → ✅ Each technology addressed
-
-### 0.7 Canonical Pattern Checks
-
-- [ ] **Finding heading pattern** — All finding headings match `^### FIND-\d{2}: ` (never `F01`, `F-01`, `Finding 1`)
-- [ ] **CVSS prefix pattern** — All CVSS fields match `\d+\.\d+ \(CVSS:4\.0/AV:` (never bare `AV:N/AC:L/...`)
-- [ ] **Related Threats link pattern** — Every Related Threat token matches `\[T\d{2}\.[STRIDEA]\]\(2-stride-analysis\.md#[a-z0-9-]+\)`
-- [ ] **Assessment section headings exact set** — Exactly these `##` headings in `0-assessment.md`: Report Files, Executive Summary, Action Summary, Analysis Context & Assumptions, References Consulted, Report Metadata, Classification Reference
-- [ ] **Forbidden headings absent** — No `##` or `###` headings containing: Severity Distribution, Architecture Risk Areas, Methodology Notes, Deliverables, Priority Remediation Roadmap, Key Recommendations, Top Recommendations
-
----
-
-## Phase 1 — Per-File Structural Checks
-
-These checks validate each file independently. They can run in parallel.
-
-### 1.1 All `.md` Files
-
-- [ ] **No code-fence wrapping**: No `.md` file starts with ` ```markdown ` or ` ````markdown `. Every `.md` file must begin with a `# Heading` as its very first line. If any file is wrapped in fences, strip the first and last lines immediately.
-- [ ] **No `.mmd` code-fence wrapping**: The `.mmd` file must NOT start with ` ```plaintext ` or ` ```mermaid `. It must start with `%%{init:` as the very first characters. If wrapped, strip the fence lines.
-- [ ] **No empty files**: Every file has substantive content beyond the heading.
-
-### 1.2 `0.1-architecture.md`
-
-- [ ] **Required sections present**: System Purpose, Key Components, Component Diagram, Top Scenarios, Technology Stack, Deployment Model, Repository Structure
-- [ ] **Component Diagram exists** as a Mermaid `flowchart` inside a ` ```mermaid ` code fence
+- [ ] **`.md` wrapped in code fences** — Check if any `.md` file starts with `  0 plaintext ` or `  1 markdown ` or `  2 plaintext ` or `  3 mermaid ` code fence
 - [ ] **Architecture styles used** — NOT DFD circles `(("Name"))`. Must use `["Name"]` or `(["Name"])` with `service`/`external`/`datastore` classDef names
 - [ ] **At least 3 scenarios** have Mermaid `sequenceDiagram` blocks
 - [ ] **No separate `.mmd` files** were created for 0.1-architecture.md — all diagrams are inline
@@ -227,14 +160,7 @@ These checks validate each file independently. They can run in parallel.
 
 ### 1.3 `1.1-threatmodel.mmd`
 
-- [ ] **File exists** with pure Mermaid code (no markdown wrapper, no ` ```mermaid ` fence)
-- [ ] **Starts with** `%%{init:` block
-- [ ] **Contains** `classDef process`, `classDef external`, `classDef datastore`
-- [ ] **Uses DFD shapes**: circles `(("Name"))` for processes, rectangles `["Name"]` for externals, cylinders `[("Name")]` for data stores
-
-### 1.4 `1-threatmodel.md`
-
-- [ ] **Diagram content identical** to `1.1-threatmodel.mmd` — byte-for-byte comparison of the Mermaid block content (excluding the ` ```mermaid ` fence wrapper)
+- [ ] **File exists** with pure Mermaid code (no markdown wrapper, no `  4 mermaid ` fence wrapper)
 - [ ] **Element Table** present with columns: Element, Type, TMT Category, Description, Trust Boundary
 - [ ] **Data Flow Table** present with columns: ID, Source, Target, Protocol, Description
 - [ ] **Trust Boundary Table** present with columns: Boundary, Description, Contains
@@ -252,7 +178,7 @@ These checks validate each file independently. They can run in parallel.
 - [ ] **Anchor-safe headings**: No `## ` heading in this file contains ANY of these characters: `&`, `/`, `(`, `)`, `.`, `:`, `'`, `"`, `+`, `@`, `!`. Replace: `&` → `and`, `/` → `-`, parentheses → omit, `:` → omit.
 - [ ] **Pod Co-location line** present for K8s components listing co-located sidecars
 - [ ] **STRIDE Status values** — Every threat row's Status column uses exactly one of: `Open`, `Mitigated`, `Platform`. No `Partial`, `N/A`, or other ad-hoc values.
-- [ ] **A category labeled Abuse** — Search `2-stride-analysis.md` for `| Authorization |` as a STRIDE category label. FAIL if found. The "A" in STRIDE-A is always "Abuse" (business logic abuse, workflow manipulation, feature misuse), NEVER "Authorization". Also check N/A entries: `Authorization — N/A` is WRONG, must be `Abuse — N/A`.
+- [ ] **A category labelled Abuse** — Search `2-stride-analysis.md` for `| Authorization |` as a STRIDE category label. FAIL if found. The "A" in STRIDE-A is always "Abuse" (business logic abuse, workflow manipulation, feature misuse), NEVER "Authorization". Also check N/A entries: `Authorization — N/A` is WRONG, must be `Abuse — N/A`.
 - [ ] **STRIDE-Coverage Consistency** — For every threat ID, the STRIDE Status and Coverage table Status must agree:
   - STRIDE `Open` → Coverage `✅ Covered (FIND-XX)` (finding documents vulnerability needing remediation)
   - STRIDE `Mitigated` → Coverage `✅ Mitigated (FIND-XX)` (finding documents existing control the team built)
@@ -262,8 +188,8 @@ These checks validate each file independently. They can run in parallel.
 
 ### 1.6 `3-findings.md`
 
-- [ ] **Organized by tier** using exactly: `## Tier 1 — Direct Exposure (No Prerequisites)`, `## Tier 2 — Conditional Risk (...)`, `## Tier 3 — Defense-in-Depth (...)`
-- [ ] **NOT organized by severity** — no `## Critical Findings` or `## Important Findings` headings
+- [ ] **Organised by tier** using exactly: `## Tier 1 — Direct Exposure (No Prerequisites)`, `## Tier 2 — Conditional Risk (...)`, `## Tier 3 — Defense-in-Depth (...)`
+- [ ] **NOT organised by severity** — no `## Critical Findings` or `## Important Findings` headings
 - [ ] **Every finding** has ALL mandatory attributes: SDL Bugbar Severity, CVSS 4.0, CWE, OWASP (with `:2025` suffix), Exploitation Prerequisites, Exploitability Tier, Remediation Effort, Mitigation Type, Component, Related Threats
 - [ ] **Mitigation Type valid values** — Every finding's `Mitigation Type` row is one of exactly: `Redesign`, `Standard Mitigation`, `Custom Mitigation`, `Existing Control`, `Accept Risk`, `Transfer Risk`. ❌ Abbreviated forms (`Custom`, `Accept`, `Standard`) or invented values → FAIL
 - [ ] **SDL Severity valid values** — Every finding's severity is one of: `Critical`, `Important`, `Moderate`, `Low`. ❌ `High`, `Medium`, `Info` → FAIL
@@ -329,14 +255,14 @@ Run against ALL Mermaid blocks across all files. Can be delegated as a focused s
 
 - [ ] **Every flowchart** has `%%{init}%%` block with `'background': '#ffffff'` as the first line
 - [ ] **Every sequence diagram** has the full `%%{init}%%` theme variables block with `'background': '#ffffff'`
-- [ ] **NO custom color keys in themeVariables** — init block must NOT contain `primaryColor` (except `#ffffff`), `secondaryColor`, or `tertiaryColor`. All element colors come from classDef only.
+- [ ] **NO custom colour keys in themeVariables** — init block must NOT contain `primaryColor` (except `#ffffff`), `secondaryColor`, or `tertiaryColor`. All element colours come from classDef only.
 
-### 2.2 Class Definitions & Color Palette
+### 2.2 Class Definitions & Colour Palette
 
 - [ ] **Every `classDef`** includes `color:#000000` (explicit black text)
 - [ ] **DFD diagrams** use `process`/`external`/`datastore` class names
 - [ ] **Architecture diagrams** use `service`/`external`/`datastore` class names
-- [ ] **EXACT hex codes used** — grep all `#[0-9a-fA-F]{6}` values in `.mmd` files. The ONLY allowed fill colors are: `#6baed6`, `#fdae61`, `#74c476`, `#ffffff`, `#000000`. The ONLY allowed stroke colors are: `#2171b5`, `#d94701`, `#238b45`, `#e31a1c`, `#666666`. If ANY other hex color appears (e.g., `#4299E1`, `#48BB78`, `#E53E3E`, `#2B6CB0`), the diagram FAILS this check.
+- [ ] **EXACT hex codes used** — grep all `#[0-9a-fA-F]{6}` values in `.mmd` files. The ONLY allowed fill colours are: `#6baed6`, `#fdae61`, `#74c476`, `#ffffff`, `#000000`. The ONLY allowed stroke colours are: `#2171b5`, `#d94701`, `#238b45`, `#e31a1c`, `#666666`. If ANY other hex colour appears (e.g., `#4299E1`, `#48BB78`, `#E53E3E`, `#2B6CB0`), the diagram FAILS this check.
 
 ### 2.3 Styling
 
@@ -518,7 +444,7 @@ These checks validate the JSON inventory file generated in Step 8b. This file is
 - [ ] **`boundary_kind` valid values** — every component's `boundary_kind` is one of: `MachineBoundary`, `NetworkBoundary`, `ClusterBoundary`, `ProcessBoundary`, `PrivilegeBoundary`, `SandboxBoundary`. ❌ Any other value (e.g., `DataStorage`, `ApplicationCore`, `deployment`, `trust`) → FAIL
 - [ ] **Boundaries include deterministic identity fields** — every boundary has `kind`, `aliases` (array), and `contains_fingerprint`
 - [ ] **Boundary `kind` valid values** — every boundary's `kind` is one of the same 6 TMT-aligned values as `boundary_kind`. ❌ Any other value → FAIL
-- [ ] **No duplicate canonical component IDs** — `components[].id` values are unique after normalization
+- [ ] **No duplicate canonical component IDs** — `components[].id` values are unique after normalisation
 - [ ] **Alias mapping is coherent** — no alias appears under two unrelated component IDs in the same inventory
 - [ ] **Fingerprint evidence fields are stable-only** — `fingerprint` uses source files/topology/type/protocols, not freeform prose
 - [ ] **Deterministic ordering applied** — arrays sorted by canonical key (`components.id`, `boundaries.id`, `flows.id`, `threats.id`, `findings.id`)
@@ -527,14 +453,14 @@ These checks validate the JSON inventory file generated in Step 8b. This file is
 
 - [ ] **High-confidence rename candidates are not left as add/remove** — component pairs with strong alias/source-file/topology overlap are classified as `renamed`/`modified`
 - [ ] **Boundary rename candidates use containment overlap** — same `kind` + high `contains` overlap are classified as boundary `renamed`, not `added` + `removed`
-- [ ] **Split/merge boundary transitions recognized** — one-to-many and many-to-one containment transitions are mapped to `split`/`merged` categories
+- [ ] **Split/merge boundary transitions recognised** — one-to-many and many-to-one containment transitions are mapped to `split`/`merged` categories
 
 ### 5.5 Comparison Integrity Checks (when validating comparison outputs)
 
 - [ ] **Baseline ≠ Current commit** — `metadata.json` → `baseline.commit` must differ from `current.commit`. Same-commit comparisons are invalid (zero real code changes to compare).
 - [ ] **Files changed > 0** — `metadata.json` → `git_diff_stats.files_changed` must be > 0. A comparison with 0 files changed has no code delta and is meaningless.
 - [ ] **Duration > 0** — `metadata.json` → `duration` must NOT be `"0m 0s"` or any value under 2 minutes. A genuine comparison requires reading two inventories, performing multi-signal matching, computing heatmaps, and generating HTML — this takes real time.
-- [ ] **No external folder references** — `metadata.json` and all output files must NOT contain references to `D:\One\tm` or any folder outside the repository being analyzed. Reports should only reference folders within the current repo.
+- [ ] **No external folder references** — `metadata.json` and all output files must NOT contain references to `D:\One\tm` or any folder outside the repository being analysed. Reports should only reference folders within the current repo.
 - [ ] **Anti-reuse verification** — The comparison output must be freshly generated, not copied from a prior `threat-model-compare-*` folder. Verify by checking that `metadata.json` timestamps are from the current run.
 - [ ] **Methodology drift ratio** — If `diff-result.json` → `metrics.methodology_drift_ratio` > 0.50, verify the HTML report contains a methodology drift warning banner. If ratio not computed but >50% of component renames share the same aliases/fingerprints, flag as validation failure.
 
@@ -546,7 +472,7 @@ These checks validate that component/boundary/flow naming follows deterministic 
 
 ### 6.1 Component ID Determinism
 
-- [ ] **Component IDs derived from code artifacts** — Every component ID in `threat-inventory.json` must trace to an actual class name, file path, deployment manifest `metadata.name`, or config key. No abstract concepts (`ConfigurationStore`, `DataLayer`, `LocalFileSystem`). Grep component IDs against source file names and class names — at least 80% should have a direct match.
+- [ ] **Component IDs derived from code artefacts** — Every component ID in `threat-inventory.json` must trace to an actual class name, file path, deployment manifest `metadata.name`, or config key. No abstract concepts (`ConfigurationStore`, `DataLayer`, `LocalFileSystem`). Grep component IDs against source file names and class names — at least 80% should have a direct match.
 - [ ] **Component anchor verification** — Every process-type component in `threat-inventory.json` must have non-empty `fingerprint.source_files` or `fingerprint.source_directories`. If both are empty → FAIL (component has no code anchor).
 - [ ] **Helm/K8s workload naming** — For K8s-deployed components, verify the component ID matches the `metadata.name` from the Deployment/StatefulSet YAML, not the Helm template filename or directory. Example: `DevPortal` (from deployment name), NOT `templates-knowledge-deployment` (from file path).
 - [ ] **External service anchoring** — External services (no source code in repo) must anchor to their integration point: client class name, config key, or SDK dependency. Verify `fingerprint.config_keys` or `fingerprint.class_names` is populated.
@@ -623,8 +549,8 @@ These checks validate the HTML comparison report structure.
 - [ ] **Metrics bar includes trust boundaries** — The metrics bar MUST show trust boundary counts (e.g., `2 → 2`). If boundaries are missing from the metrics bar → FAIL. Components, Threats, Trust Boundaries, Findings, and Code Changes are the 5 required metric boxes.
 - [ ] **Metrics bar 5th box is Code Changes** — The 5th metrics box MUST show commit count and PR count (e.g., `142 commits, 23 PRs`). ❌ "Time Between" → FAIL. The duration/dates are now in the comparison cards (Section 1), not the metrics bar.
 - [ ] **Comparison cards structure** — Section 1 MUST contain a `comparison-cards` div with 3 sub-cards: Baseline (hash, date, rating), Target (hash, date, rating), Trend (direction, duration). ❌ Old-style `subtitle` div with `Baseline: SHA → Target: SHA` → FAIL. ❌ Separate `risk-shift` div → FAIL (merged into comparison cards).
-- [ ] **No duplicate status indicators** — Status information (Fixed/New/Previously Unidentified counts) MUST appear in ONLY ONE place: the colored status summary cards. They MUST NOT also appear as small inline badges or text in the metrics bar. If the same counts appear in both the metrics bar AND colored cards → FAIL (remove from metrics bar, keep colored cards).
-- [ ] **Tier labels match analysis reports** — The Threat Tier Distribution section in the HTML must use EXACTLY these labels: "Tier 1 — Direct Exposure", "Tier 2 — Conditional Risk", "Tier 3 — Defense-in-Depth". ❌ "Probable Exposure", "Theoretical", "High Risk", or any invented variant → FAIL.
+- [ ] **No duplicate status indicators** — Status information (Fixed/New/Previously Unidentified counts) MUST appear in ONLY ONE place: the coloured status summary cards. They MUST NOT also appear as small inline badges or text in the metrics bar. If the same counts appear in both the metrics bar AND coloured cards → FAIL (remove from metrics bar, keep coloured cards).
+- [ ] **Tier labels match analysis reports** — The Threat Tier Distribution section in the HTML must use EXACTLY these labels: "Tier 1 — Direct Exposure", "Tier 2 — Conditional Risk", "Tier 3 — Defence-in-Depth". ❌ "Probable Exposure", "Theoretical", "High Risk", or any invented variant → FAIL.
 - [ ] **Section title is "Comparison Basis" not "Architecture Changes"** — The component mapping section must be titled "Comparison Basis — Component Mapping", NOT "Architecture Changes".
 - [ ] **Heatmap has 13 columns** — The STRIDE-A heatmap grid must have: Component | S | T | R | I | D | E | A | Total | divider | T1 | T2 | T3. If T1/T2/T3 columns are missing → FAIL. The heatmap title must include "(with Delta Indicators)".
 

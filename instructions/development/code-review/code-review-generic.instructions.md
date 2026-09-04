@@ -1,5 +1,5 @@
 ---
-description: 'Generic code review instructions that can be customized for any project using GitHub Copilot'
+description: 'Generic code review instructions that can be customised for any project using GitHub Copilot'
 applyTo: '**'
 excludeAgent: ["coding-agent"]
 ---
@@ -12,11 +12,11 @@ Comprehensive code review guidelines for GitHub Copilot that can be adapted to a
 
 When performing a code review, respond in **English** (or specify your preferred language).
 
-> **Customization Tip**: Change to your preferred language by replacing "English" with "Portuguese (Brazilian)", "Spanish", "French", etc.
+> **Customisation Tip**: Change to your preferred language by replacing "English" with "Portuguese (Brazilian)", "Spanish", "French", etc.
 
 ## Review Priorities
 
-When performing a code review, prioritize issues in the following order:
+When performing a code review, prioritise issues in the following order:
 
 ### 🔴 CRITICAL (Block merge)
 - **Security**: Vulnerabilities, exposed secrets, authentication/authorization issues
@@ -32,7 +32,7 @@ When performing a code review, prioritize issues in the following order:
 
 ### 🟢 SUGGESTION (Non-blocking improvements)
 - **Readability**: Poor naming, complex logic that could be simplified
-- **Optimization**: Performance improvements without functional impact
+- **Optimisation**: Performance improvements without functional impact
 - **Best Practices**: Minor deviations from conventions
 - **Documentation**: Missing or incomplete comments/documentation
 
@@ -44,7 +44,7 @@ When performing a code review, follow these principles:
 2. **Provide context**: Explain WHY something is an issue and the potential impact
 3. **Suggest solutions**: Show corrected code when applicable, not just what's wrong
 4. **Be constructive**: Focus on improving the code, not criticizing the author
-5. **Recognize good practices**: Acknowledge well-written code and smart solutions
+5. **Recognise good practices**: Acknowledge well-written code and smart solutions
 6. **Be pragmatic**: Not every suggestion needs immediate implementation
 7. **Group related comments**: Avoid multiple comments about the same topic
 
@@ -182,7 +182,7 @@ When performing a code review, check for performance issues:
 
 - **Database Queries**: Avoid N+1 queries, use proper indexing
 - **Algorithms**: Appropriate time/space complexity for the use case
-- **Caching**: Utilize caching for expensive or repeated operations
+- **Caching**: Utilise caching for expensive or repeated operations
 - **Resource Management**: Proper cleanup of connections, files, streams
 - **Pagination**: Large result sets should be paginated
 - **Lazy Loading**: Load data only when needed
@@ -365,9 +365,9 @@ When performing a code review, systematically verify:
 - [ ] README is updated if needed
 - [ ] Breaking changes are documented
 
-## Project-Specific Customizations
+## Project-Specific Customisations
 
-To customize this template for your project, add sections for:
+To customise this template for your project, add sections for:
 
 1. **Language/Framework specific checks**
    - Example: "When performing a code review, verify React hooks follow rules of hooks"
@@ -387,7 +387,7 @@ To customize this template for your project, add sections for:
 
 ## Additional Resources
 
-For more information on effective code reviews and GitHub Copilot customization:
+For more information on effective code reviews and GitHub Copilot customisation:
 
 - [GitHub Copilot Prompt Engineering](https://docs.github.com/en/copilot/concepts/prompting/prompt-engineering)
 - [GitHub Copilot Custom Instructions](https://code.visualstudio.com/docs/copilot/customization/custom-instructions)
@@ -409,7 +409,7 @@ When performing a code review, apply these prompt engineering principles from th
 
 ## Project Context
 
-This is a generic template. Customize this section with your project-specific information:
+This is a generic template. Customise this section with your project-specific information:
 
 - **Tech Stack**: [e.g., Java 17, Spring Boot 3.x, PostgreSQL]
 - **Architecture**: [e.g., Hexagonal/Clean Architecture, Microservices]

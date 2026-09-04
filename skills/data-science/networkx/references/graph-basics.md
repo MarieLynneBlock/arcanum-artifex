@@ -19,14 +19,14 @@ G = nx.DiGraph()
 ```
 - Directed graphs with one-way connections
 - Edge direction matters: (u, v) ≠ (v, u)
-- Used for modeling directed relationships
+- Used for modelling directed relationships
 
 ### MultiGraph (Undirected Multi-edge)
 ```python
 G = nx.MultiGraph()
 ```
 - Allows multiple edges between same node pairs
-- Useful for modeling multiple relationships
+- Useful for modelling multiple relationships
 
 ### MultiDiGraph (Directed Multi-edge)
 ```python
@@ -125,7 +125,7 @@ G.has_node(1)
 G.has_edge(1, 2)
 ```
 
-### Accessing Neighbors
+### Accessing Neighbours
 ```python
 # Get neighbors of node 1
 list(G.neighbors(1))
@@ -279,5 +279,5 @@ Each time a script starts, graph data must be loaded into memory. For large data
 - Loading only necessary subgraphs
 - Using graph databases for very large networks
 
-### Node and Edge Removal Behavior
+### Node and Edge Removal Behaviour
 When a node is removed, all edges incident with that node are automatically removed as well.

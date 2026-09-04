@@ -1,6 +1,6 @@
 ---
-description: Query the Cancer Dependency Map (DepMap) for cancer cell line gene dependency scores (CRISPR Chronos), drug sensitivity data, and gene effect profiles. Use for identifying cancer-specific vulnerabilities, synthetic lethal interactions, and validating oncology drug targets.
 name: depmap
+description: Query the Cancer Dependency Map (DepMap) for cancer cell line gene dependency scores (CRISPR Chronos), drug sensitivity data, and gene effect profiles. Use for identifying cancer-specific vulnerabilities, synthetic lethal interactions, and validating oncology drug targets.
 license: CC-BY-4.0
 metadata:
   skill-author: 'Kuan-lin Huang'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-The Cancer Dependency Map (DepMap) project, run by the Broad Institute, systematically characterizes genetic dependencies across hundreds of cancer cell lines using genome-wide CRISPR knockout screens (DepMap CRISPR), RNA interference (RNAi), and compound sensitivity assays (PRISM). DepMap data is essential for:
+The Cancer Dependency Map (DepMap) project, run by the Broad Institute, systematically characterises genetic dependencies across hundreds of cancer cell lines using genome-wide CRISPR knockout screens (DepMap CRISPR), RNA interference (RNAi), and compound sensitivity assays (PRISM). DepMap data is essential for:
 - Identifying which genes are essential for specific cancer types
 - Finding cancer-selective dependencies (therapeutic targets)
 - Validating oncology drug targets
@@ -41,7 +41,7 @@ Use DepMap when:
 |-------|-------|---------|
 | **Chronos** (CRISPR) | ~ -3 to 0+ | More negative = more essential. Common essential threshold: −1. Pan-essential genes ~−1 to −2 |
 | **RNAi DEMETER2** | ~ -3 to 0+ | Similar scale to Chronos |
-| **Gene Effect** | normalized | Normalized Chronos; −1 = median effect of common essential genes |
+| **Gene Effect** | normalised | Normalised Chronos; −1 = median effect of common essential genes |
 
 **Key thresholds:**
 - Chronos ≤ −0.5: likely dependent
@@ -98,7 +98,7 @@ def get_dependencies_slice(gene_symbol, dataset_name="CRISPRGeneEffect"):
 
 ### 3. Download-Based Analysis (Recommended for Large Queries)
 
-For large-scale analysis, download DepMap data files and analyze locally:
+For large-scale analysis, download DepMap data files and analyse locally:
 
 ```python
 import pandas as pd

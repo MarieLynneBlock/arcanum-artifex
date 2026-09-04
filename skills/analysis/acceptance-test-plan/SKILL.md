@@ -1,6 +1,9 @@
 ---
-description: >
 name: acceptance-test-plan
+description: >-
+  Produces a traceable acceptance test plan with individually numbered test cases. Each test case
+  maps to a source requirement (user story, use case, or FR), specifies preconditions, steps, and
+  expected results, and includes coverage of the happy path, edge cases, and negative scenarios.
 version: 1.0.0
 tags:
   - testing

@@ -1,6 +1,6 @@
 ---
-description: Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMILES to features, for QSAR and molecular ML.
 name: molfeat
+description: Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMILES to features, for QSAR and molecular ML.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-Molfeat is a comprehensive Python library for molecular featurization that unifies 100+ pre-trained embeddings and hand-crafted featurizers. Convert chemical structures (SMILES strings or RDKit molecules) into numerical representations for machine learning tasks including QSAR modeling, virtual screening, similarity searching, and deep learning applications. Features fast parallel processing, scikit-learn compatible transformers, and built-in caching.
+Molfeat is a comprehensive Python library for molecular featurization that unifies 100+ pre-trained embeddings and hand-crafted featurizers. Convert chemical structures (SMILES strings or RDKit molecules) into numerical representations for machine learning tasks including QSAR modelling, virtual screening, similarity searching, and deep learning applications. Features fast parallel processing, scikit-learn compatible transformers, and built-in caching.
 
 ## When to Use This Skill
 
@@ -18,7 +18,7 @@ This skill should be used when working with:
 - **Molecular machine learning**: Building QSAR/QSPR models, property prediction
 - **Virtual screening**: Ranking compound libraries for biological activity
 - **Similarity searching**: Finding structurally similar molecules
-- **Chemical space analysis**: Clustering, visualization, dimensionality reduction
+- **Chemical space analysis**: Clustering, visualisation, dimensionality reduction
 - **Deep learning**: Training neural networks on molecular data
 - **Featurization pipelines**: Converting SMILES to ML-ready representations
 - **Cheminformatics**: Any task requiring molecular feature extraction
@@ -41,7 +41,7 @@ uv pip install "molfeat[all]"
 
 ## Core Concepts
 
-Molfeat organizes featurization into three hierarchical classes:
+Molfeat organises featurization into three hierarchical classes:
 
 ### 1. Calculators (`molfeat.calc`)
 
@@ -67,7 +67,7 @@ Scikit-learn compatible transformers that wrap calculators for batch processing 
 **Use transformers for:**
 - Batch featurization of molecular datasets
 - Integration with scikit-learn pipelines
-- Parallel processing (automatic CPU utilization)
+- Parallel processing (automatic CPU utilisation)
 
 **Example:**
 ```python
@@ -80,7 +80,7 @@ features = transformer(smiles_list)  # Parallel processing
 
 ### 3. Pretrained Transformers (`molfeat.trans.pretrained`)
 
-Specialized transformers for deep learning models with batched inference and caching.
+Specialised transformers for deep learning models with batched inference and caching.
 
 **Use pretrained transformers for:**
 - State-of-the-art molecular embeddings
@@ -402,7 +402,7 @@ except FileNotFoundError:
 
 ## Performance Tips
 
-1. **Use parallelization**: Set `n_jobs=-1` to utilize all CPU cores
+1. **Use parallelization**: Set `n_jobs=-1` to utilise all CPU cores
 2. **Batch processing**: Process multiple molecules at once instead of loops
 3. **Choose appropriate featurizers**: Fingerprints are faster than deep learning models
 4. **Cache pretrained models**: Leverage built-in caching for repeated use
@@ -429,18 +429,18 @@ except FileNotFoundError:
 
 This skill includes comprehensive reference documentation:
 
-### references/api_reference.md
+### references/api-reference.md
 Complete API documentation covering:
 - `molfeat.calc` - All calculator classes and parameters
 - `molfeat.trans` - Transformer classes and methods
 - `molfeat.store` - ModelStore usage
 - Common patterns and integration examples
-- Performance optimization tips
+- Performance optimisation tips
 
 **When to load:** Reference when implementing specific calculators, understanding transformer parameters, or integrating with scikit-learn/PyTorch.
 
-### references/available_featurizers.md
-Comprehensive catalog of all 100+ featurizers organized by category:
+### references/available-featurizers.md
+Comprehensive catalogue of all 100+ featurizers organised by category:
 - Transformer-based language models (ChemBERTa, ChemGPT)
 - Graph neural networks (GIN, Graphormer)
 - Molecular descriptors (RDKit, Mordred)
@@ -453,8 +453,8 @@ Comprehensive catalog of all 100+ featurizers organized by category:
 
 **Search tip:** Use grep to find specific featurizer types:
 ```bash
-grep -i "chembert" references/available_featurizers.md
-grep -i "pharmacophore" references/available_featurizers.md
+grep -i "chembert" references/available-featurizers.md
+grep -i "pharmacophore" references/available-featurizers.md
 ```
 
 ### references/examples.md

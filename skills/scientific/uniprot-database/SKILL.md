@@ -1,6 +1,6 @@
 ---
-description: Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEMBL. For Python workflows with multiple databases, prefer bioservices (unified interface to 40+ services). Use this for direct HTTP/REST work or UniProt-specific control.
 name: uniprot-database
+description: Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEMBL. For Python workflows with multiple databases, prefer bioservices (unified interface to 40+ services). Use this for direct HTTP/REST work or UniProt-specific control.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -82,7 +82,7 @@ Map protein identifiers between different database systems and retrieve multiple
 - Ensembl, RefSeq, EMBL
 - PDB, AlphaFoldDB
 - KEGG, GO terms
-- And many more (see `/references/id_mapping_databases.md`)
+- And many more (see `/references/id-mapping-databases.md`)
 
 **Limitations:**
 - Maximum 100,000 IDs per job
@@ -96,7 +96,7 @@ For large queries that exceed pagination limits, use the stream endpoint:
 
 The stream endpoint returns all results without pagination, suitable for downloading complete datasets.
 
-### 5. Customizing Retrieved Fields
+### 5. Customising Retrieved Fields
 
 Specify exactly which fields to retrieve for efficient data transfer.
 
@@ -114,7 +114,7 @@ Specify exactly which fields to retrieve for efficient data transfer.
 
 **Example:** `https://rest.uniprot.org/uniprotkb/search?query=insulin&fields=accession,gene_names,organism_name,length,sequence&format=tsv`
 
-See `/references/api_fields.md` for complete field list.
+See `/references/api-fields.md` for complete field list.
 
 ## Python Implementation
 
@@ -160,7 +160,7 @@ gene:BRCA*
 protein_name:kinase*
 ```
 
-See `/references/query_syntax.md` for comprehensive syntax documentation.
+See `/references/query-syntax.md` for comprehensive syntax documentation.
 
 ## Best Practices
 
@@ -168,7 +168,7 @@ See `/references/query_syntax.md` for comprehensive syntax documentation.
 2. **Specify format explicitly**: Choose the most appropriate format (FASTA for sequences, TSV for tabular data, JSON for programmatic parsing)
 3. **Use field selection**: Only request fields you need to reduce bandwidth and processing time
 4. **Handle pagination**: For large result sets, implement proper pagination or use the stream endpoint
-5. **Cache results**: Store frequently accessed data locally to minimize API calls
+5. **Cache results**: Store frequently accessed data locally to minimise API calls
 6. **Rate limiting**: Be respectful of API resources; implement delays for large batch operations
 7. **Check data quality**: TrEMBL entries are computational predictions; Swiss-Prot entries are manually reviewed
 
@@ -178,10 +178,10 @@ See `/references/query_syntax.md` for comprehensive syntax documentation.
 `uniprot_client.py` - Python client with helper functions for common UniProt operations including search, retrieval, ID mapping, and streaming.
 
 ### references/
-- `api_fields.md` - Complete list of available fields for customizing queries
-- `id_mapping_databases.md` - Supported databases for ID mapping operations
-- `query_syntax.md` - Comprehensive query syntax with advanced examples
-- `api_examples.md` - Code examples in multiple languages (Python, curl, R)
+- `api-fields.md` - Complete list of available fields for customising queries
+- `id-mapping-databases.md` - Supported databases for ID mapping operations
+- `query-syntax.md` - Comprehensive query syntax with advanced examples
+- `api-examples.md` - Code examples in multiple languages (Python, curl, R)
 
 ## Additional Resources
 

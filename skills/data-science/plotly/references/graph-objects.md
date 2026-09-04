@@ -293,7 +293,7 @@ Use graph_objects when:
 - Creating chart types not available in Plotly Express
 - Building complex multi-trace figures from scratch
 - Need precise control over individual components
-- Creating specialized visualizations (3D mesh, isosurface, custom shapes)
+- Creating specialised visualisations (3D mesh, isosurface, custom shapes)
 - Building subplots with mixed chart types
 
 Use Plotly Express when:

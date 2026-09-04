@@ -118,7 +118,7 @@ results = model.search(
 ## Output Interpretation
 
 Search results return items ranked by similarity in the joint embedding space:
-- **r2l**: Identifies metadata labels characterizing your query regions
+- **r2l**: Identifies metadata labels characterising your query regions
 - **l2r**: Finds region sets matching your metadata criteria
 - **r2r**: Discovers region sets with similar genomic content
 

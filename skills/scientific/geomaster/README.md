@@ -23,8 +23,8 @@ GeoMaster is a comprehensive geospatial science skill covering:
 7. **machine-learning.md** - Deep learning for RS, spatial ML, GNNs, XAI for geospatial
 8. **big-data.md** - Distributed processing, cloud platforms, GPU acceleration
 9. **industry-applications.md** - Urban planning, disaster management, utilities, transportation
-10. **specialized-topics.md** - Geostatistics, optimization, ethics, best practices
-11. **data-sources.md** - Satellite data catalogs, open data repositories, API access
+10. **specialised-topics.md** - Geostatistics, optimisation, ethics, best practices
+11. **data-sources.md** - Satellite data catalogues, open data repositories, API access
 12. **code-examples.md** - 500+ code examples across 7 programming languages
 
 ## Key Topics Covered

@@ -4,7 +4,7 @@ Reference guide for all built-in shape libraries. Enable via `View > Shapes` in 
 
 ---
 
-## Library Catalog
+## Library Catalogue
 
 ### General
 
@@ -137,7 +137,7 @@ Use swimlane containers for class boxes:
 | Interface (lollipop) | `ellipse;whiteSpace=wrap;html=1;aspect=fixed;` (small circle) |
 | Port | `shape=mxgraph.uml.port;` |
 | Node | `shape=mxgraph.uml.node;whiteSpace=wrap;html=1;` |
-| Artifact | `shape=mxgraph.uml.artifact;whiteSpace=wrap;html=1;` |
+| Artefact | `shape=mxgraph.uml.artifact;whiteSpace=wrap;html=1;` |
 
 #### Sequence Diagrams
 

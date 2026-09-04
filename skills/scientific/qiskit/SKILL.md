@@ -1,6 +1,6 @@
 ---
-description: IBM quantum computing framework. Use when targeting IBM Quantum hardware, working with Qiskit Runtime for production workloads, or needing IBM optimization tools. Best for IBM hardware execution, quantum error mitigation, and enterprise quantum computing. For Google hardware use cirq; for gradient-based quantum ML use pennylane; for open quantum system simulations use qutip.
 name: qiskit
+description: IBM quantum computing framework. Use when targeting IBM Quantum hardware, working with Qiskit Runtime for production workloads, or needing IBM optimisation tools. Best for IBM hardware execution, quantum error mitigation, and enterprise quantum computing. For Google hardware use cirq; for gradient-based quantum ML use pennylane; for open quantum system simulations use qutip.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,13 +10,13 @@ metadata:
 
 ## Overview
 
-Qiskit is the world's most popular open-source quantum computing framework with 13M+ downloads. Build quantum circuits, optimize for hardware, execute on simulators or real quantum computers, and analyze results. Supports IBM Quantum (100+ qubit systems), IonQ, Amazon Braket, and other providers.
+Qiskit is the world's most popular open-source quantum computing framework with 13M+ downloads. Build quantum circuits, optimise for hardware, execute on simulators or real quantum computers, and analyse results. Supports IBM Quantum (100+ qubit systems), IonQ, Amazon Braket, and other providers.
 
 **Key Features:**
 - 83x faster transpilation than competitors
-- 29% fewer two-qubit gates in optimized circuits
+- 29% fewer two-qubit gates in optimised circuits
 - Backend-agnostic execution (local simulators or cloud hardware)
-- Comprehensive algorithm libraries for optimization, chemistry, and ML
+- Comprehensive algorithm libraries for optimisation, chemistry, and ML
 
 ## Quick Start
 
@@ -46,7 +46,7 @@ counts = result[0].data.meas.get_counts()
 print(counts)  # {'00': ~512, '11': ~512}
 ```
 
-### Visualization
+### Visualisation
 
 ```python
 from qiskit.visualization import plot_histogram
@@ -91,28 +91,28 @@ Topics covered:
 - Sessions and Batch modes
 - Parameter binding
 
-### 4. Transpilation and Optimization
-For optimizing circuits and preparing for hardware execution:
+### 4. Transpilation and Optimisation
+For optimising circuits and preparing for hardware execution:
 - **See `references/transpilation.md`**
 
 Topics covered:
 - Why transpilation is necessary
-- Optimization levels (0-3)
-- Six transpilation stages (init, layout, routing, translation, optimization, scheduling)
+- Optimisation levels (0-3)
+- Six transpilation stages (init, layout, routing, translation, optimisation, scheduling)
 - Advanced features (virtual permutation elision, gate cancellation)
 - Common parameters (initial_layout, approximation_degree, seed)
 - Best practices for efficient circuits
 
-### 5. Visualization
+### 5. Visualisation
 For displaying circuits, results, and quantum states:
 - **See `references/visualization.md`**
 
 Topics covered:
 - Circuit drawings (text, matplotlib, LaTeX)
 - Result histograms
-- Quantum state visualization (Bloch sphere, state city, QSphere)
+- Quantum state visualisation (Bloch sphere, state city, QSphere)
 - Backend topology and error maps
-- Customization and styling
+- Customisation and styling
 - Saving publication-quality figures
 
 ### 6. Hardware Backends
@@ -136,9 +136,9 @@ For implementing the four-step quantum computing workflow:
 
 Topics covered:
 - **Map**: Translate problems to quantum circuits
-- **Optimize**: Transpile for hardware
+- **Optimise**: Transpile for hardware
 - **Execute**: Run with primitives
-- **Post-process**: Extract and analyze results
+- **Post-process**: Extract and analyse results
 - Complete VQE example
 - Session vs. Batch execution
 - Common workflow patterns
@@ -148,10 +148,10 @@ For implementing specific quantum algorithms:
 - **See `references/algorithms.md`**
 
 Topics covered:
-- **Optimization**: VQE, QAOA, Grover's algorithm
+- **Optimisation**: VQE, QAOA, Grover's algorithm
 - **Chemistry**: Molecular ground states, excited states, Hamiltonians
 - **Machine Learning**: Quantum kernels, VQC, QNN
-- **Algorithm libraries**: Qiskit Nature, Qiskit ML, Qiskit Optimization
+- **Algorithm libraries**: Qiskit Nature, Qiskit ML, Qiskit Optimisation
 - Physics simulations and benchmarking
 
 ## Workflow Decision Guide
@@ -163,13 +163,13 @@ Topics covered:
 - Understand gates and circuit operations → `references/circuits.md`
 - Run circuits and get measurements → `references/primitives.md`
 - Compute expectation values → `references/primitives.md`
-- Optimize circuits for hardware → `references/transpilation.md`
-- Visualize circuits or results → `references/visualization.md`
+- Optimise circuits for hardware → `references/transpilation.md`
+- Visualise circuits or results → `references/visualization.md`
 - Execute on IBM Quantum hardware → `references/backends.md`
 - Connect to third-party providers → `references/backends.md`
 - Implement end-to-end quantum workflow → `references/patterns.md`
 - Build specific algorithm (VQE, QAOA, etc.) → `references/algorithms.md`
-- Solve chemistry or optimization problems → `references/algorithms.md`
+- Solve chemistry or optimisation problems → `references/algorithms.md`
 
 ## Best Practices
 
@@ -181,14 +181,14 @@ Topics covered:
    sampler = StatevectorSampler()
    ```
 
-2. **Always transpile**: Optimize circuits before execution
+2. **Always transpile**: Optimise circuits before execution
    ```python
    from qiskit import transpile
    qc_optimized = transpile(qc, backend=backend, optimization_level=3)
    ```
 
 3. **Use appropriate primitives**:
-   - Sampler for bitstrings (optimization algorithms)
+   - Sampler for bitstrings (optimisation algorithms)
    - Estimator for expectation values (chemistry, physics)
 
 4. **Choose execution mode**:
@@ -196,10 +196,10 @@ Topics covered:
    - Batch: Independent parallel jobs
    - Single job: One-off experiments
 
-### Performance Optimization
+### Performance Optimisation
 
-- Use optimization_level=3 for production
-- Minimize two-qubit gates (major error source)
+- Use optimisation_level=3 for production
+- Minimise two-qubit gates (major error source)
 - Test with noisy simulators before hardware
 - Save and reuse transpiled circuits
 - Monitor convergence in variational algorithms

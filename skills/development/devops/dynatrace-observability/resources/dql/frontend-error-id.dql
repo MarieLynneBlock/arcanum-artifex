@@ -1,0 +1,8 @@
+fetch user.events, from:now() - 24h
+| filter error.id == toUid("ERROR_ID")
+| filter error.type == "exception"
+| summarize
+    occurrences = count(),
+    affected_users = countDistinct(dt.rum.instance.id, precision: 9),
+    file_locations = collectDistinct(record(exception.file.full, exception.line_number, exception.column_number), maxLength: 100),
+    messages = collectDistinct(exception.message, maxLength: 100)

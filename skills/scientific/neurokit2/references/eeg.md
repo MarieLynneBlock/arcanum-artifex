@@ -2,7 +2,7 @@
 
 ## Overview
 
-Analyze electroencephalography (EEG) signals for frequency band power, channel quality assessment, source localization, and microstate identification. NeuroKit2 integrates with MNE-Python for comprehensive EEG processing workflows.
+Analyse electroencephalography (EEG) signals for frequency band power, channel quality assessment, source localization, and microstate identification. NeuroKit2 integrates with MNE-Python for comprehensive EEG processing workflows.
 
 ## Core EEG Functions
 
@@ -71,7 +71,7 @@ rereferenced = nk.eeg_rereference(eeg_data, reference='average', robust=False)
 
 **Reference types:**
 - `'average'`: Average reference (mean of all electrodes)
-- `'REST'`: Reference Electrode Standardization Technique
+- `'REST'`: Reference Electrode Standardisation Technique
 - `'bipolar'`: Differential recording between electrode pairs
 - Specific channel name: Use single electrode as reference
 
@@ -93,14 +93,14 @@ gfp = nk.eeg_gfp(eeg_data)
 ```
 
 **Interpretation:**
-- High GFP: Strong, synchronized brain activity across regions
+- High GFP: Strong, synchronised brain activity across regions
 - Low GFP: Weak or desynchronized activity
 - GFP peaks: Points of stable topography, used for microstate detection
 
 **Use cases:**
 - Identify periods of stable topographic patterns
 - Select time points for microstate analysis
-- Event-related potential (ERP) visualization
+- Event-related potential (ERP) visualisation
 
 ### eeg_diss()
 
@@ -111,7 +111,7 @@ dissimilarity = nk.eeg_diss(eeg_data1, eeg_data2, method='gfp')
 ```
 
 **Methods:**
-- GFP-based: Normalized difference
+- GFP-based: Normalised difference
 - Spatial correlation
 - Cosine distance
 
@@ -131,14 +131,14 @@ sources = nk.eeg_source(eeg_data, method='sLORETA')
 ```
 
 **Methods:**
-- `'sLORETA'`: Standardized Low-Resolution Electromagnetic Tomography
+- `'sLORETA'`: Standardised Low-Resolution Electromagnetic Tomography
   - Zero localization error for point sources
   - Good spatial resolution
 - `'MNE'`: Minimum Norm Estimate
   - Fast, well-established
   - Bias toward superficial sources
 - `'dSPM'`: Dynamic Statistical Parametric Mapping
-  - Normalized MNE
+  - Normalised MNE
 - `'eLORETA'`: Exact LORETA
   - Improved localization accuracy
 
@@ -174,7 +174,7 @@ regional_activity = nk.eeg_source_extract(sources, regions=['PFC', 'MTL', 'Parie
 
 ## Microstate Analysis
 
-Microstates are brief (80-120 ms) periods of stable brain topography, representing coordinated neural networks. Typically 4-7 microstate classes (often labeled A, B, C, D) with distinct functions.
+Microstates are brief (80-120 ms) periods of stable brain topography, representing coordinated neural networks. Typically 4-7 microstate classes (often labelled A, B, C, D) with distinct functions.
 
 ### microstates_segment()
 
@@ -186,7 +186,7 @@ microstates = nk.microstates_segment(eeg_data, n_microstates=4, sampling_rate=25
 ```
 
 **Methods:**
-- `'kmod'` (default): Modified k-means optimized for EEG topographies
+- `'kmod'` (default): Modified k-means optimised for EEG topographies
   - Polarity-invariant clustering
   - Most common in microstate literature
 - `'kmeans'`: Standard k-means clustering
@@ -197,7 +197,7 @@ microstates = nk.microstates_segment(eeg_data, n_microstates=4, sampling_rate=25
 
 **Parameters:**
 - `n_microstates`: Number of microstate classes (typically 4-7)
-- `normalize`: Normalize topographies (recommended: True)
+- `normalize`: Normalise topographies (recommended: True)
 - `n_inits`: Number of random initializations (increase for stability)
 
 **Returns:**
@@ -235,7 +235,7 @@ classified = nk.microstates_classify(microstates)
 ```
 
 **Purpose:**
-- Standardize microstate labels across subjects
+- Standardise microstate labels across subjects
 - Match conventional A, B, C, D topographies:
   - **A**: Left-right orientation, parieto-occipital
   - **B**: Right-left orientation, fronto-temporal
@@ -255,13 +255,13 @@ cleaned_eeg = nk.microstates_clean(eeg_data, sampling_rate=250)
 
 **Preprocessing steps:**
 - Bandpass filtering (typically 2-20 Hz)
-- Artifact rejection
+- Artefact rejection
 - Bad channel interpolation
 - Re-referencing to average
 
 **Rationale:**
 - Microstates reflect large-scale network activity
-- High-frequency and low-frequency artifacts can distort topographies
+- High-frequency and low-frequency artefacts can distort topographies
 
 ### microstates_peaks()
 
@@ -272,7 +272,7 @@ peak_indices = nk.microstates_peaks(eeg_data, sampling_rate=250)
 ```
 
 **Purpose:**
-- Microstates typically analyzed at GFP peaks
+- Microstates typically analysed at GFP peaks
 - Peaks represent moments of maximal, stable topographic activity
 - Reduces computational load and noise sensitivity
 
@@ -308,7 +308,7 @@ static_metrics = nk.microstates_static(microstates)
 
 ### microstates_dynamic()
 
-Analyze transition patterns between microstates.
+Analyse transition patterns between microstates.
 
 ```python
 dynamic_metrics = nk.microstates_dynamic(microstates)
@@ -334,7 +334,7 @@ dynamic_metrics = nk.microstates_dynamic(microstates)
 
 ### microstates_plot()
 
-Visualize microstate topographies and time course.
+Visualise microstate topographies and time course.
 
 ```python
 nk.microstates_plot(microstates, eeg_data)
@@ -428,9 +428,9 @@ synthetic_eeg = nk.eeg_simulate(duration=60, sampling_rate=250, n_channels=32)
 - **Resting state**: 3-10 minutes typical
 - **Event-related**: Depends on trial count (≥30 trials per condition)
 
-### Artifact Management
+### Artefact Management
 - **Eye blinks**: Remove with ICA or regression
-- **Muscle artifacts**: High-pass filter (≥1 Hz) or manual rejection
+- **Muscle artefacts**: High-pass filter (≥1 Hz) or manual rejection
 - **Bad channels**: Detect and interpolate before analysis
 - **Line noise**: Notch filter at 50/60 Hz
 

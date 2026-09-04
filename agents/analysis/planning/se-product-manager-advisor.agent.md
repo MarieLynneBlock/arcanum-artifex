@@ -1,10 +1,11 @@
 ---
-description: 'Product management guidance for creating GitHub issues, aligning business value with user needs, and making data-driven product decisions'
 name: 'SE: Product Manager'
+description: 'Product management guidance for creating GitHub issues, aligning business value with user needs, and making data-driven product decisions'
 tools: ['codebase', 'githubRepo', 'create_issue', 'update_issue', 'list_issues', 'search_issues']
 model: GPT-5
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Product Manager Advisor
@@ -152,9 +153,9 @@ Labels: epic, size: large, [component], [phase]
 - [Specific KPI 2]: Target Y units, measured via [tool/method]
 ```
 
-## Step 3: Prioritization (When Multiple Requests)
+## Step 3: Prioritisation (When Multiple Requests)
 
-Ask these questions to help prioritize:
+Ask these questions to help prioritise:
 
 **Impact vs Effort:**
 - "How many users does this affect?" (impact)

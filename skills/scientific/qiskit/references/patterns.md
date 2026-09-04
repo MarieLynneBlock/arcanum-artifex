@@ -1,6 +1,6 @@
 # Qiskit Patterns: The Four-Step Workflow
 
-Qiskit Patterns provide a general framework for solving domain-specific quantum computing problems in four stages: Map, Optimize, Execute, and Post-process.
+Qiskit Patterns provide a general framework for solving domain-specific quantum computing problems in four stages: Map, Optimise, Execute, and Post-process.
 
 ## Overview
 
@@ -15,7 +15,7 @@ Problem → [Map] → [Optimize] → [Execute] → [Post-process] → Solution
 ### 1. Map
 Translate classical problems into quantum circuits and operators
 
-### 2. Optimize
+### 2. Optimise
 Prepare circuits for target hardware through transpilation
 
 ### 3. Execute
@@ -32,7 +32,7 @@ Transform domain-specific problems into quantum representations (circuits, opera
 ### Key Decisions
 
 **Choose Output Type:**
-- **Sampler**: For bitstring outputs (optimization, search)
+- **Sampler**: For bitstring outputs (optimisation, search)
 - **Estimator**: For expectation values (chemistry, physics)
 
 **Design Circuit Structure:**
@@ -65,7 +65,7 @@ ansatz, params = create_ansatz(num_qubits=4, depth=2)
 ### Considerations
 
 - **Hardware topology**: Design with backend coupling map in mind
-- **Gate efficiency**: Minimize two-qubit gates
+- **Gate efficiency**: Minimise two-qubit gates
 - **Measurement basis**: Determine required measurements
 
 ### Domain-Specific Examples
@@ -84,7 +84,7 @@ mapper = JordanWignerMapper()
 hamiltonian = mapper.map(problem.hamiltonian)
 ```
 
-**Optimization: QAOA Circuit**
+**Optimisation: QAOA Circuit**
 ```python
 from qiskit.circuit import QuantumCircuit, Parameter
 
@@ -113,7 +113,7 @@ def qaoa_circuit(graph, p):
     return qc
 ```
 
-## Step 2: Optimize
+## Step 2: Optimise
 
 ### Goal
 Transform abstract circuits to hardware-compatible ISA (Instruction Set Architecture) circuits.
@@ -136,7 +136,7 @@ qc_isa = transpile(
 )
 ```
 
-### Pre-optimization Tips
+### Pre-optimisation Tips
 
 1. **Test with simulators first**:
 ```python
@@ -147,7 +147,7 @@ qc_test = transpile(qc, sim, optimization_level=3)
 print(f"Estimated depth: {qc_test.depth()}")
 ```
 
-2. **Analyze transpilation results**:
+2. **Analyse transpilation results**:
 ```python
 print(f"Original gates: {qc.size()}")
 print(f"Transpiled gates: {qc_isa.size()}")
@@ -295,7 +295,7 @@ def post_process_chemistry(result, nuclear_repulsion):
     return total_energy
 ```
 
-**Optimization: MaxCut Solution**
+**Optimisation: MaxCut Solution**
 ```python
 def post_process_maxcut(counts, graph):
     """Find best cut from measurement results"""
@@ -350,7 +350,7 @@ def analyze_results(results_list):
     }
 ```
 
-**Visualization:**
+**Visualisation:**
 ```python
 from qiskit.visualization import plot_histogram
 import matplotlib.pyplot as plt

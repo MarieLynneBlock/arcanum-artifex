@@ -1,6 +1,6 @@
 ---
-description: "Fast CLI/Python queries to 20+ bioinformatics databases. Use for quick lookups: gene info, BLAST searches, AlphaFold structures, enrichment analysis. Best for interactive exploration, simple queries. For batch processing or advanced BLAST use biopython; for multi-database Python workflows use bioservices."
 name: gget
+description: "Fast CLI/Python queries to 20+ bioinformatics databases. Use for quick lookups: gene info, BLAST searches, AlphaFold structures, enrichment analysis. Best for interactive exploration, simple queries. For batch processing or advanced BLAST use biopython; for multi-database Python workflows use bioservices."
 license: BSD-2-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -313,14 +313,14 @@ gget setup alphafold
 ```
 
 **Parameters**:
-- `sequence`: Amino acid sequence (string), multiple sequences (list), or FASTA file. Multiple sequences trigger multimer modeling
+- `sequence`: Amino acid sequence (string), multiple sequences (list), or FASTA file. Multiple sequences trigger multimer modelling
 - `-mr/--multimer_recycles`: Recycling iterations (default: 3; recommend 20 for accuracy)
 - `-mfm/--multimer_for_monomer`: Apply multimer model to single proteins
 - `-r/--relax`: AMBER relaxation for top-ranked model
-- `plot`: Python-only; generate interactive 3D visualization (default: True)
+- `plot`: Python-only; generate interactive 3D visualisation (default: True)
 - `show_sidechains`: Python-only; include side chains (default: True)
 
-**Returns**: PDB structure file, JSON alignment error data, optional 3D visualization
+**Returns**: PDB structure file, JSON alignment error data, optional 3D visualisation
 
 **Examples**:
 ```bash
@@ -454,7 +454,7 @@ Perform ontology enrichment analysis on gene lists using Enrichr.
 - 'pathway' → KEGG_2021_Human
 - 'transcription' → ChEA_2016
 - 'ontology' → GO_Biological_Process_2021
-- 'diseases_drugs' → GWAS_Catalog_2019
+- 'diseases_drugs' → GWAS_Catalogue_2019
 - 'celltypes' → PanglaoDB_Augmented_2021
 
 **Examples**:
@@ -547,7 +547,7 @@ gget cbio search breast lung
 **Parameters**:
 - `-s/--study_ids`: Space-separated cBioPortal study IDs (required)
 - `-g/--genes`: Space-separated gene names or Ensembl IDs (required)
-- `-st/--stratification`: Column to organize data (tissue, cancer_type, cancer_type_detailed, study_id, sample)
+- `-st/--stratification`: Column to organise data (tissue, cancer_type, cancer_type_detailed, study_id, sample)
 - `-vt/--variation_type`: Data type (mutation_occurrences, cna_nonbinary, sv_occurrences, cna_occurrences, Consequence)
 - `-f/--filter`: Filter by column value (e.g., 'study_id:msk_impact_2017')
 - `-dd/--data_dir`: Cache directory (default: ./gget_cbio_cache)
@@ -695,7 +695,7 @@ gget.setup("alphafold")
 
 ### Workflow 1: Gene Discovery to Sequence Analysis
 
-Find and analyze genes of interest:
+Find and analyse genes of interest:
 
 ```python
 # 1. Search for genes
@@ -729,7 +729,7 @@ ortholog_df, regex_df = gget.elm(my_sequence)
 
 ### Workflow 3: Gene Expression and Enrichment
 
-Analyze expression patterns and functional enrichment:
+Analyse expression patterns and functional enrichment:
 
 ```python
 # 1. Get tissue expression
@@ -829,7 +829,7 @@ gget ref -w dna -d homo_sapiens
 ### Structure Prediction
 - AlphaFold multimer predictions: use `-mr 20` for higher accuracy
 - Use `-r` flag for AMBER relaxation of final structures
-- Visualize results in Python with `plot=True`
+- Visualise results in Python with `plot=True`
 - Check PDB database first before running AlphaFold predictions
 
 ### Error Handling
@@ -858,8 +858,8 @@ gget ref -w dna -d homo_sapiens
 This skill includes reference documentation for detailed module information:
 
 ### references/
-- `module_reference.md` - Comprehensive parameter reference for all modules
-- `database_info.md` - Information about queried databases and their update frequencies
+- `module-reference.md` - Comprehensive parameter reference for all modules
+- `database-info.md` - Information about queried databases and their update frequencies
 - `workflows.md` - Extended workflow examples and use cases
 
 For additional help:

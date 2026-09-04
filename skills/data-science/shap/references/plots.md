@@ -1,10 +1,10 @@
-# SHAP Visualization Reference
+# SHAP Visualisation Reference
 
-This document provides comprehensive information about all SHAP plotting functions, their parameters, use cases, and best practices for visualizing model explanations.
+This document provides comprehensive information about all SHAP plotting functions, their parameters, use cases, and best practices for visualising model explanations.
 
 ## Overview
 
-SHAP provides diverse visualization tools for explaining model predictions at both individual and global levels. Each plot type serves specific purposes in understanding feature importance, interactions, and prediction mechanisms.
+SHAP provides diverse visualisation tools for explaining model predictions at both individual and global levels. Each plot type serves specific purposes in understanding feature importance, interactions, and prediction mechanisms.
 
 ## Plot Types
 
@@ -29,7 +29,7 @@ SHAP provides diverse visualization tools for explaining model predictions at bo
 **When to Use**:
 - Explaining individual predictions in detail
 - Understanding which features drove a specific decision
-- Communicating model behavior for single instances (e.g., loan denial, diagnosis)
+- Communicating model behaviour for single instances (e.g., loan denial, diagnosis)
 - Debugging unexpected predictions
 
 **Important Notes**:
@@ -72,14 +72,14 @@ shap.plots.waterfall(shap_values[0], max_display=20)
 - **X-axis**: SHAP value (impact on model output)
 - **Each dot**: Single instance from dataset
 - **Dot position (X)**: SHAP value magnitude
-- **Dot color**: Original feature value (red = high, blue = low)
+- **Dot colour**: Original feature value (red = high, blue = low)
 - **Dot clustering**: Shows density/distribution of impacts
 
 **When to Use**:
-- Summarizing feature importance across entire datasets
+- Summarising feature importance across entire datasets
 - Understanding both average and individual feature impacts
 - Identifying feature value patterns and their effects
-- Comparing global model behavior across features
+- Comparing global model behaviour across features
 - Detecting nonlinear relationships (e.g., higher age → lower income likelihood)
 
 **Practical Variations**:
@@ -102,7 +102,7 @@ shap.plots.beeswarm(shap_values, color=plt.cm.viridis)
 
 ### Bar Plots
 
-**Purpose**: Display feature importance as mean absolute SHAP values, providing clean, simple visualizations of global feature impact.
+**Purpose**: Display feature importance as mean absolute SHAP values, providing clean, simple visualisations of global feature impact.
 
 **Function**: `shap.plots.bar(shap_values, max_display=10, clustering=None, clustering_cutoff=0.5, show=True)`
 
@@ -160,11 +160,11 @@ shap.plots.bar(shap_values, clustering=clustering, clustering_cutoff=0.3)
 - Quick overview of global feature importance
 - Comparing feature importance across cohorts or models
 - Identifying redundant or correlated features
-- Clean, simple visualizations for presentations
+- Clean, simple visualisations for presentations
 
 ### Force Plots
 
-**Purpose**: Additive force visualization showing how features push prediction higher (red) or lower (blue) from baseline.
+**Purpose**: Additive force visualisation showing how features push prediction higher (red) or lower (blue) from baseline.
 
 **Function**: `shap.plots.force(base_value, shap_values, features, feature_names=None, out_names=None, link="identity", matplotlib=False, show=True)`
 
@@ -184,12 +184,12 @@ shap.plots.bar(shap_values, clustering=clustering, clustering_cutoff=0.3)
 
 **Interactive Features** (JavaScript mode):
 - Hover for detailed feature information
-- Multiple samples create stacked visualization
+- Multiple samples create stacked visualisation
 - Can rotate for different perspectives
 
 **When to Use**:
 - Interactive exploration of predictions
-- Visualizing multiple predictions simultaneously
+- Visualising multiple predictions simultaneously
 - Presentations requiring interactive elements
 - Understanding prediction composition at a glance
 
@@ -219,25 +219,25 @@ shap.plots.force(
 
 **Key Parameters**:
 - `shap_values`: Explanation object, can specify feature with subscript (e.g., `shap_values[:, "Age"]`)
-- `color`: Feature to use for coloring points (string name or Explanation object)
+- `color`: Feature to use for colouring points (string name or Explanation object)
 - `hist`: Show histogram of feature values on y-axis
 - `alpha`: Point transparency (useful for dense plots)
 
 **Visual Elements**:
 - **X-axis**: Feature value
 - **Y-axis**: SHAP value (impact on prediction)
-- **Point color**: Another feature's value (for interaction detection)
+- **Point colour**: Another feature's value (for interaction detection)
 - **Histogram**: Distribution of feature values
 
 **When to Use**:
 - Understanding feature-prediction relationships
 - Detecting nonlinear effects
 - Identifying feature interactions
-- Validating or discovering patterns in model behavior
+- Validating or discovering patterns in model behaviour
 - Exploring counterintuitive predictions from waterfall plots
 
 **Interaction Detection**:
-Color points by another feature to reveal interactions.
+Colour points by another feature to reveal interactions.
 
 ```python
 # Basic dependence plot
@@ -255,7 +255,7 @@ shap.plots.scatter(shap_values[:, "Age"], alpha=0.5)
 
 ### Heatmap Plots
 
-**Purpose**: Visualize SHAP values for multiple samples simultaneously, showing feature impacts across instances.
+**Purpose**: Visualise SHAP values for multiple samples simultaneously, showing feature impacts across instances.
 
 **Function**: `shap.plots.heatmap(shap_values, instance_order=None, feature_values=None, max_display=10, show=True)`
 
@@ -268,7 +268,7 @@ shap.plots.scatter(shap_values[:, "Age"], alpha=0.5)
 **Visual Elements**:
 - **Rows**: Individual instances/samples
 - **Columns**: Features
-- **Cell color**: SHAP value (red = positive, blue = negative)
+- **Cell colour**: SHAP value (red = positive, blue = negative)
 - **Intensity**: Magnitude of impact
 
 **When to Use**:
@@ -291,14 +291,14 @@ shap.plots.heatmap(shap_values[:100])
 
 ### Violin Plots
 
-**Purpose**: Similar to beeswarm plots but uses violin (kernel density) visualization instead of individual dots.
+**Purpose**: Similar to beeswarm plots but uses violin (kernel density) visualisation instead of individual dots.
 
 **Function**: `shap.plots.violin(shap_values, features=None, feature_names=None, max_display=10, show=True)`
 
 **When to Use**:
 - Alternative to beeswarm when dataset is very large
-- Emphasizing distribution density over individual points
-- Cleaner visualization for presentations
+- Emphasising distribution density over individual points
+- Cleaner visualisation for presentations
 
 **Example**:
 ```python
@@ -362,14 +362,14 @@ shap.plots.decision(
 
 **For Multiple Samples**:
 - **Heatmap**: Grid view of SHAP values
-- **Force (stacked)**: Interactive multi-sample visualization
+- **Force (stacked)**: Interactive multi-sample visualisation
 - **Decision**: Prediction paths for multiclass problems
 
 **For Cohort Comparison**:
 - **Bar (cohort)**: Clean comparison of feature importance
 - **Multiple beeswarms**: Side-by-side distribution comparisons
 
-## Visualization Best Practices
+## Visualisation Best Practices
 
 **1. Start Global, Then Go Local**:
 - Begin with beeswarm or bar plot to understand global patterns
@@ -384,9 +384,9 @@ shap.plots.decision(
 - Increase (20-30) for detailed analysis
 - Consider clustering for redundant features
 
-**4. Color Meaningfully**:
+**4. Colour Meaningfully**:
 - Use default red-blue for SHAP values (red = positive, blue = negative)
-- Color scatter plots by interacting features
+- Colour scatter plots by interacting features
 - Custom colormaps for specific domains
 
 **5. Consider Audience**:
@@ -407,7 +407,7 @@ plt.close()
 ```
 
 **7. Handle Large Datasets**:
-- Sample subset for visualization (e.g., `shap_values[:1000]`)
+- Sample subset for visualisation (e.g., `shap_values[:1000]`)
 - Use violin instead of beeswarm for very large datasets
 - Adjust alpha for scatter plots with many points
 
@@ -486,10 +486,10 @@ for idx in error_indices[:5]:
 
 **Web Applications**:
 - Export force plots as HTML
-- Use shap.save_html() for interactive visualizations
+- Use shap.save_html() for interactive visualisations
 - Consider generating plots on-demand
 
-## Troubleshooting Visualizations
+## Troubleshooting Visualisations
 
 **Issue**: Plots don't display
 - **Solution**: Ensure matplotlib backend is set correctly; use `plt.show()` if needed
@@ -497,11 +497,11 @@ for idx in error_indices[:5]:
 **Issue**: Too many features cluttering plot
 - **Solution**: Reduce `max_display` parameter or use feature clustering
 
-**Issue**: Colors reversed or confusing
+**Issue**: Colours reversed or confusing
 - **Solution**: Check model output type (probability vs. log-odds) and use appropriate link function
 
 **Issue**: Slow plotting with large datasets
-- **Solution**: Sample subset of data; use `shap_values[:1000]` for visualization
+- **Solution**: Sample subset of data; use `shap_values[:1000]` for visualisation
 
 **Issue**: Feature names missing
 - **Solution**: Ensure feature_names are in Explanation object or pass explicitly to plot functions

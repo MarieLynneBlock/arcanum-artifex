@@ -39,7 +39,7 @@ silently with no error.
 Fixes #201
 ```
 
-### `refactor` — Code Restructure (no behavior change)
+### `refactor` — Code Restructure (no behaviour change)
 ```
 refactor(user-service): extract email validation into shared utility
 

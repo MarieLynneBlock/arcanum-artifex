@@ -15,16 +15,16 @@ from pathlib import Path
 
 
 TEMPLATES = {
-    "case_report": "case_report_template.md",
-    "soap_note": "soap_note_template.md",
-    "h_and_p": "history_physical_template.md",
-    "discharge_summary": "discharge_summary_template.md",
-    "consult_note": "consult_note_template.md",
-    "radiology": "radiology_report_template.md",
-    "pathology": "pathology_report_template.md",
-    "lab": "lab_report_template.md",
-    "sae": "clinical_trial_sae_template.md",
-    "csr": "clinical_trial_csr_template.md",
+    "case_report": "case-report-template.md",
+    "soap_note": "soap-note-template.md",
+    "h_and_p": "history-physical-template.md",
+    "discharge_summary": "discharge-summary-template.md",
+    "consult_note": "consult-note-template.md",
+    "radiology": "radiology-report-template.md",
+    "pathology": "pathology-report-template.md",
+    "lab": "lab-report-template.md",
+    "sae": "clinical-trial-sae-template.md",
+    "csr": "clinical-trial-csr-template.md",
 }
 
 DESCRIPTIONS = {

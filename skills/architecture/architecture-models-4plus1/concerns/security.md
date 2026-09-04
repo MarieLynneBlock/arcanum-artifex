@@ -64,5 +64,5 @@
 - NIST Cybersecurity Framework 2.0 — https://www.nist.gov/cyberframework
 - OWASP ASVS — https://owasp.org/www-project-application-security-verification-standard/
 - ISO/IEC 27001 — https://www.iso.org/standard/27001
-- SLSA (Supply-chain Levels for Software Artifacts) — https://slsa.dev/
+- SLSA (Supply-chain Levels for Software Artefacts) — https://slsa.dev/
 - CIS Controls — https://www.cisecurity.org/controls

@@ -2,7 +2,7 @@
 
 ## Overview
 
-ESM C (Cambrian) is a family of protein language models optimized for representation learning and efficient embedding generation. Designed as a drop-in replacement for ESM2, ESM C provides significant improvements in speed and quality across all model sizes.
+ESM C (Cambrian) is a family of protein language models optimised for representation learning and efficient embedding generation. Designed as a drop-in replacement for ESM2, ESM C provides significant improvements in speed and quality across all model sizes.
 
 ## Model Architecture
 
@@ -22,7 +22,7 @@ ESM C (Cambrian) is a family of protein language models optimized for representa
 - Support for long sequences (up to 1024 residues efficiently)
 
 **Architecture Improvements over ESM2:**
-- Optimized attention mechanisms
+- Optimised attention mechanisms
 - Better token representation
 - Enhanced training procedures
 - Reduced memory footprint
@@ -385,7 +385,7 @@ similarity = F.cosine_similarity(pos_5, pos_15, dim=0)
 print(f"Residue similarity: {similarity.item():.4f}")
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Memory Management
 
@@ -547,7 +547,7 @@ for epoch in range(num_epochs):
         optimizer.step()
 ```
 
-### Attention Visualization
+### Attention Visualisation
 
 Extract attention weights for interpretability:
 
@@ -579,5 +579,5 @@ EvolutionaryScale (2024)
 ## Additional Resources
 
 - ESM C blog post: https://www.evolutionaryscale.ai/blog/esm-cambrian
-- Model weights: HuggingFace EvolutionaryScale organization
+- Model weights: HuggingFace EvolutionaryScale organisation
 - Comparison benchmarks: See blog post for detailed performance comparisons

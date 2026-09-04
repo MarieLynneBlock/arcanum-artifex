@@ -1,6 +1,6 @@
 ---
-description: Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/Dask/Xarray compatible, for large-scale scientific computing pipelines.
 name: zarr-python
+description: Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/Dask/Xarray compatible, for large-scale scientific computing pipelines.
 license: MIT license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -316,7 +316,7 @@ z = zarr.open_array(store=store, mode='w', shape=(1000, 1000), chunks=(100, 100)
 
 ## Groups and Hierarchies
 
-Groups organize multiple arrays hierarchically, similar to directories or HDF5 groups.
+Groups organise multiple arrays hierarchically, similar to directories or HDF5 groups.
 
 ### Creating and Using Groups
 
@@ -448,7 +448,7 @@ da.to_zarr(large_array, 'output.zarr')
 
 ### Xarray Integration
 
-Xarray provides labeled, multidimensional arrays with Zarr backend:
+Xarray provides labelled, multidimensional arrays with Zarr backend:
 
 ```python
 import xarray as xr
@@ -490,7 +490,7 @@ ds.to_zarr('climate_data.zarr')
 - Integration with pandas for time series
 - NetCDF-like interface familiar to climate/geospatial scientists
 
-## Parallel Computing and Synchronization
+## Parallel Computing and Synchronisation
 
 ### Thread-Safe Operations
 
@@ -522,9 +522,9 @@ z = zarr.open_array('data.zarr', mode='r+', shape=(10000, 10000),
 ```
 
 **Note**:
-- Concurrent reads require no synchronization
-- Synchronization only needed for writes that may span chunk boundaries
-- Each process/thread writing to separate chunks needs no synchronization
+- Concurrent reads require no synchronisation
+- Synchronisation only needed for writes that may span chunk boundaries
+- Each process/thread writing to separate chunks needs no synchronisation
 
 ## Consolidated Metadata
 
@@ -554,7 +554,7 @@ root = zarr.open_consolidated('data.zarr')
 - Not suitable for frequently-updated datasets
 - Multi-writer scenarios may have inconsistent reads
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Checklist for Optimal Performance
 
@@ -771,6 +771,6 @@ For detailed API documentation, advanced usage, and the latest updates:
 - **Community Chat**: https://gitter.im/zarr-developers/community
 
 **Related Libraries**:
-- **Xarray**: https://docs.xarray.dev/ (labeled arrays)
+- **Xarray**: https://docs.xarray.dev/ (labelled arrays)
 - **Dask**: https://docs.dask.org/ (parallel computing)
 - **NumCodecs**: https://numcodecs.readthedocs.io/ (compression codecs)

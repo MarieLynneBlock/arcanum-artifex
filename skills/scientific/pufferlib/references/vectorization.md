@@ -2,17 +2,17 @@
 
 ## Overview
 
-PufferLib's vectorization system enables high-performance parallel environment simulation, achieving millions of steps per second through optimized implementation inspired by EnvPool. The system supports both synchronous and asynchronous vectorization with minimal overhead.
+PufferLib's vectorization system enables high-performance parallel environment simulation, achieving millions of steps per second through optimised implementation inspired by EnvPool. The system supports both synchronous and asynchronous vectorization with minimal overhead.
 
 ## Vectorization Architecture
 
-### Key Optimizations
+### Key Optimisations
 
 1. **Shared Memory Buffer**: Single unified buffer across all environments (unlike Gymnasium's per-environment buffers)
 2. **Busy-Wait Flags**: Workers busy-wait on unlocked flags rather than using pipes/queues
 3. **Zero-Copy Batching**: Contiguous worker subsets return observations without copying
 4. **Surplus Environments**: Simulates more environments than batch size for async returns
-5. **Multiple Envs per Worker**: Optimizes performance for lightweight environments
+5. **Multiple Envs per Worker**: Optimises performance for lightweight environments
 
 ### Performance Characteristics
 
@@ -108,7 +108,7 @@ vec_env = Multiprocessing(
 - Production training
 - CPU-intensive environments
 - Large-scale parallel simulation
-- Maximizing throughput
+- Maximising throughput
 
 ### Async Vectorization
 
@@ -130,11 +130,11 @@ vec_env = Multiprocessing(
 
 **When to use:**
 - Variable environment step times
-- Maximizing GPU utilization
+- Maximising GPU utilisation
 - Network-based environments
 - External simulators
 
-## Optimizing Vectorization Performance
+## Optimising Vectorization Performance
 
 ### Worker Configuration
 
@@ -191,7 +191,7 @@ num_envs = 1024
 steps_per_env = 64
 ```
 
-## Shared Memory Optimization
+## Shared Memory Optimisation
 
 ### Buffer Management
 
@@ -475,7 +475,7 @@ envs_per_worker = 16  # Instead of 32
 vec_env = Serial(env_creator, num_envs=16)
 ```
 
-### Synchronization Problems
+### Synchronisation Problems
 
 ```python
 # Ensure thread-safe operations

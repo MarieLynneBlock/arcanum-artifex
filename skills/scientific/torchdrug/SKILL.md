@@ -1,6 +1,6 @@
 ---
-description: PyTorch-native graph neural networks for molecules and proteins. Use when building custom GNN architectures for drug discovery, protein modeling, or knowledge graph reasoning. Best for custom model development, protein property prediction, retrosynthesis. For pre-trained models and diverse featurizers use deepchem; for benchmark datasets use pytdc.
 name: torchdrug
+description: PyTorch-native graph neural networks for molecules and proteins. Use when building custom GNN architectures for drug discovery, protein modelling, or knowledge graph reasoning. Best for custom model development, protein property prediction, retrosynthesis. For pre-trained models and diverse featurizers use deepchem; for benchmark datasets use pytdc.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-TorchDrug is a comprehensive PyTorch-based machine learning toolbox for drug discovery and molecular science. Apply graph neural networks, pre-trained models, and task definitions to molecules, proteins, and biological knowledge graphs, including molecular property prediction, protein modeling, knowledge graph reasoning, molecular generation, retrosynthesis planning, with 40+ curated datasets and 20+ model architectures.
+TorchDrug is a comprehensive PyTorch-based machine learning toolbox for drug discovery and molecular science. Apply graph neural networks, pre-trained models, and task definitions to molecules, proteins, and biological knowledge graphs, including molecular property prediction, protein modelling, knowledge graph reasoning, molecular generation, retrosynthesis planning, with 40+ curated datasets and 20+ model architectures.
 
 ## When to Use This Skill
 
@@ -104,13 +104,13 @@ Predict chemical, physical, and biological properties of molecules from structur
 - GNN models (GIN, GAT, SchNet)
 - PropertyPrediction and MultipleBinaryClassification tasks
 
-**Reference:** See `references/molecular_property_prediction.md` for:
-- Complete dataset catalog
+**Reference:** See `references/molecular-property-prediction.md` for:
+- Complete dataset catalogue
 - Model selection guide
 - Training workflows and best practices
 - Feature engineering details
 
-### 2. Protein Modeling
+### 2. Protein Modelling
 
 Work with protein sequences, structures, and properties.
 
@@ -127,7 +127,7 @@ Work with protein sequences, structures, and properties.
 - Structure models (GearNet, SchNet)
 - Multiple task types for different prediction levels
 
-**Reference:** See `references/protein_modeling.md` for:
+**Reference:** See `references/protein-modeling.md` for:
 - Protein-specific datasets
 - Sequence vs structure models
 - Pre-training strategies
@@ -148,7 +148,7 @@ Predict missing links and relationships in biological knowledge graphs.
 - Embedding models (TransE, RotatE, ComplEx)
 - KnowledgeGraphCompletion task
 
-**Reference:** See `references/knowledge_graphs.md` for:
+**Reference:** See `references/knowledge-graphs.md` for:
 - Knowledge graph datasets (including Hetionet with 45k biomedical entities)
 - Embedding model comparison
 - Evaluation metrics and protocols
@@ -160,7 +160,7 @@ Generate novel molecular structures with desired properties.
 
 **Use Cases:**
 - De novo drug design
-- Lead optimization
+- Lead optimisation
 - Chemical space exploration
 - Property-guided generation
 
@@ -168,11 +168,11 @@ Generate novel molecular structures with desired properties.
 - Autoregressive generation
 - GCPN (policy-based generation)
 - GraphAutoregressiveFlow
-- Property optimization workflows
+- Property optimisation workflows
 
-**Reference:** See `references/molecular_generation.md` for:
+**Reference:** See `references/molecular-generation.md` for:
 - Generation strategies (unconditional, conditional, scaffold-based)
-- Multi-objective optimization
+- Multi-objective optimisation
 - Validation and filtering
 - Integration with property prediction
 
@@ -182,25 +182,25 @@ Predict synthetic routes from target molecules to starting materials.
 
 **Use Cases:**
 - Synthesis planning
-- Route optimization
+- Route optimisation
 - Synthetic accessibility assessment
 - Multi-step planning
 
 **Key Components:**
 - USPTO-50k reaction dataset
-- CenterIdentification (reaction center prediction)
+- CenterIdentification (reaction centre prediction)
 - SynthonCompletion (reactant prediction)
 - End-to-end Retrosynthesis pipeline
 
 **Reference:** See `references/retrosynthesis.md` for:
-- Task decomposition (center ID → synthon completion)
+- Task decomposition (centre ID → synthon completion)
 - Multi-step synthesis planning
 - Commercial availability checking
 - Integration with other retrosynthesis tools
 
 ### 6. Graph Neural Network Models
 
-Comprehensive catalog of GNN architectures for different data types and tasks.
+Comprehensive catalogue of GNN architectures for different data types and tasks.
 
 **Available Models:**
 - General GNNs: GCN, GAT, GIN, RGCN, MPNN
@@ -209,7 +209,7 @@ Comprehensive catalog of GNN architectures for different data types and tasks.
 - Knowledge graph: TransE, RotatE, ComplEx, SimplE
 - Generative: GraphAutoregressiveFlow
 
-**Reference:** See `references/models_architectures.md` for:
+**Reference:** See `references/models-architectures.md` for:
 - Detailed model descriptions
 - Model selection guide by task and dataset
 - Architecture comparisons
@@ -226,7 +226,7 @@ Comprehensive catalog of GNN architectures for different data types and tasks.
 - Retrosynthesis reactions
 
 **Reference:** See `references/datasets.md` for:
-- Complete dataset catalog with sizes and tasks
+- Complete dataset catalogue with sizes and tasks
 - Dataset selection guide
 - Loading and preprocessing
 - Splitting strategies (random, scaffold)
@@ -244,7 +244,7 @@ Comprehensive catalog of GNN architectures for different data types and tasks.
 4. Train with scaffold split for realistic evaluation
 5. Evaluate using AUROC and AUPRC
 
-**Navigation:** `references/molecular_property_prediction.md` → Dataset selection → Model selection → Training
+**Navigation:** `references/molecular-property-prediction.md` → Dataset selection → Model selection → Training
 
 ### Workflow 2: Protein Function Prediction
 
@@ -257,7 +257,7 @@ Comprehensive catalog of GNN architectures for different data types and tasks.
 4. Fine-tune pre-trained model or train from scratch
 5. Evaluate using accuracy and per-class metrics
 
-**Navigation:** `references/protein_modeling.md` → Model selection (sequence vs structure) → Pre-training strategies
+**Navigation:** `references/protein-modeling.md` → Model selection (sequence vs structure) → Pre-training strategies
 
 ### Workflow 3: Drug Repurposing via Knowledge Graphs
 
@@ -271,21 +271,21 @@ Comprehensive catalog of GNN architectures for different data types and tasks.
 5. Query for "Compound-treats-Disease" predictions
 6. Filter by plausibility and mechanism
 
-**Navigation:** `references/knowledge_graphs.md` → Hetionet dataset → Model selection → Biomedical applications
+**Navigation:** `references/knowledge-graphs.md` → Hetionet dataset → Model selection → Biomedical applications
 
 ### Workflow 4: De Novo Molecule Generation
 
-**Scenario:** Generate drug-like molecules optimized for target binding.
+**Scenario:** Generate drug-like molecules optimised for target binding.
 
 **Steps:**
 1. Train property predictor on activity data
-2. Choose generation approach: GCPN for RL-based optimization
+2. Choose generation approach: GCPN for RL-based optimisation
 3. Define reward function combining affinity, drug-likeness, synthesizability
 4. Generate candidates with property constraints
 5. Validate chemistry and filter by drug-likeness
 6. Rank by multi-objective scoring
 
-**Navigation:** `references/molecular_generation.md` → Conditional generation → Multi-objective optimization
+**Navigation:** `references/molecular-generation.md` → Conditional generation → Multi-objective optimisation
 
 ### Workflow 5: Retrosynthesis Planning
 
@@ -293,7 +293,7 @@ Comprehensive catalog of GNN architectures for different data types and tasks.
 
 **Steps:**
 1. Load dataset: `datasets.USPTO50k()`
-2. Train center identification model (RGCN)
+2. Train centre identification model (RGCN)
 3. Train synthon completion model (GIN)
 4. Combine into end-to-end retrosynthesis pipeline
 5. Apply recursively for multi-step planning
@@ -366,7 +366,7 @@ class LightningTask(pl.LightningModule):
 
 For deep dives into TorchDrug's architecture:
 
-**Core Concepts:** See `references/core_concepts.md` for:
+**Core Concepts:** See `references/core-concepts.md` for:
 - Architecture philosophy (modular, configurable)
 - Data structures (Graph, Molecule, Protein, PackedGraph)
 - Model interface and forward function signature
@@ -383,47 +383,47 @@ For deep dives into TorchDrug's architecture:
 - Knowledge graph → `references/datasets.md` → Knowledge graph section
 
 **Choose Model:**
-- Molecules → `references/models_architectures.md` → GNN section → GIN/GAT/SchNet
-- Proteins (sequence) → `references/models_architectures.md` → Protein section → ESM
-- Proteins (structure) → `references/models_architectures.md` → Protein section → GearNet
-- Knowledge graph → `references/models_architectures.md` → KG section → RotatE/ComplEx
+- Molecules → `references/models-architectures.md` → GNN section → GIN/GAT/SchNet
+- Proteins (sequence) → `references/models-architectures.md` → Protein section → ESM
+- Proteins (structure) → `references/models-architectures.md` → Protein section → GearNet
+- Knowledge graph → `references/models-architectures.md` → KG section → RotatE/ComplEx
 
 **Common Tasks:**
-- Property prediction → `references/molecular_property_prediction.md` or `references/protein_modeling.md`
-- Generation → `references/molecular_generation.md`
+- Property prediction → `references/molecular-property-prediction.md` or `references/protein-modeling.md`
+- Generation → `references/molecular-generation.md`
 - Retrosynthesis → `references/retrosynthesis.md`
-- KG reasoning → `references/knowledge_graphs.md`
+- KG reasoning → `references/knowledge-graphs.md`
 
 **Understand Architecture:**
-- Data structures → `references/core_concepts.md` → Data Structures
-- Model design → `references/core_concepts.md` → Model Interface
-- Task design → `references/core_concepts.md` → Task Interface
+- Data structures → `references/core-concepts.md` → Data Structures
+- Model design → `references/core-concepts.md` → Model Interface
+- Task design → `references/core-concepts.md` → Task Interface
 
 ## Troubleshooting Common Issues
 
 **Issue: Dimension mismatch errors**
 → Check `model.input_dim` matches `dataset.node_feature_dim`
-→ See `references/core_concepts.md` → Essential Attributes
+→ See `references/core-concepts.md` → Essential Attributes
 
 **Issue: Poor performance on molecular tasks**
 → Use scaffold splitting, not random
 → Try GIN instead of GCN
-→ See `references/molecular_property_prediction.md` → Best Practices
+→ See `references/molecular-property-prediction.md` → Best Practices
 
 **Issue: Protein model not learning**
 → Use pre-trained ESM for sequence tasks
 → Check edge construction for structure models
-→ See `references/protein_modeling.md` → Training Workflows
+→ See `references/protein-modeling.md` → Training Workflows
 
 **Issue: Memory errors with large graphs**
 → Reduce batch size
 → Use gradient accumulation
-→ See `references/core_concepts.md` → Memory Efficiency
+→ See `references/core-concepts.md` → Memory Efficiency
 
 **Issue: Generated molecules are invalid**
 → Add validity constraints
 → Post-process with RDKit validation
-→ See `references/molecular_generation.md` → Validation and Filtering
+→ See `references/molecular-generation.md` → Validation and Filtering
 
 ## Resources
 
@@ -435,13 +435,13 @@ For deep dives into TorchDrug's architecture:
 
 Navigate to the appropriate reference file based on your task:
 
-1. **Molecular property prediction** → `molecular_property_prediction.md`
-2. **Protein modeling** → `protein_modeling.md`
-3. **Knowledge graphs** → `knowledge_graphs.md`
-4. **Molecular generation** → `molecular_generation.md`
+1. **Molecular property prediction** → `molecular-property-prediction.md`
+2. **Protein modelling** → `protein-modeling.md`
+3. **Knowledge graphs** → `knowledge-graphs.md`
+4. **Molecular generation** → `molecular-generation.md`
 5. **Retrosynthesis** → `retrosynthesis.md`
-6. **Model selection** → `models_architectures.md`
+6. **Model selection** → `models-architectures.md`
 7. **Dataset selection** → `datasets.md`
-8. **Technical details** → `core_concepts.md`
+8. **Technical details** → `core-concepts.md`
 
 Each reference provides comprehensive coverage of its domain with examples, best practices, and common use cases.

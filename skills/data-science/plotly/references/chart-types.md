@@ -1,6 +1,6 @@
 # Plotly Chart Types
 
-Comprehensive guide to chart types organized by category.
+Comprehensive guide to chart types organised by category.
 
 ## Basic Charts
 
@@ -393,7 +393,7 @@ fig = go.Figure(data=[go.Sankey(
 )])
 ```
 
-## Specialized Charts
+## Specialised Charts
 
 ### Parallel Coordinates
 

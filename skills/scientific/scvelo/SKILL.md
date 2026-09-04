@@ -1,6 +1,6 @@
 ---
-description: RNA velocity analysis with scVelo. Estimate cell state transitions from unspliced/spliced mRNA dynamics, infer trajectory directions, compute latent time, and identify driver genes in single-cell RNA-seq data. Complements Scanpy/scVI-tools for trajectory inference.
 name: scvelo
+description: RNA velocity analysis with scVelo. Estimate cell state transitions from unspliced/spliced mRNA dynamics, infer trajectory directions, compute latent time, and identify driver genes in single-cell RNA-seq data. Complements Scanpy/scVI-tools for trajectory inference.
 license: BSD-3-Clause
 metadata:
   skill-author: 'Kuan-lin Huang'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-scVelo is the leading Python package for RNA velocity analysis in single-cell RNA-seq data. It infers cell state transitions by modeling the kinetics of mRNA splicing — using the ratio of unspliced (pre-mRNA) to spliced (mature mRNA) abundances to determine whether a gene is being upregulated or downregulated in each cell. This allows reconstruction of developmental trajectories and identification of cell fate decisions without requiring time-course data.
+scVelo is the leading Python package for RNA velocity analysis in single-cell RNA-seq data. It infers cell state transitions by modelling the kinetics of mRNA splicing — using the ratio of unspliced (pre-mRNA) to spliced (mature mRNA) abundances to determine whether a gene is being upregulated or downregulated in each cell. This allows reconstruction of developmental trajectories and identification of cell fate decisions without requiring time-course data.
 
 **Installation:** `pip install scvelo`
 
@@ -296,7 +296,7 @@ After running the workflow, the following fields are added:
 - **Need good coverage of unspliced reads**: Short reads (< 100 bp) may miss intron coverage
 - **Minimum 2,000 cells**: RNA velocity is noisy with fewer cells
 - **Velocity should be coherent**: Arrows should follow known biology; randomness indicates issues
-- **k-NN bandwidth matters**: Too few neighbors → noisy velocity; too many → oversmoothed
+- **k-NN bandwidth matters**: Too few neighbours → noisy velocity; too many → oversmoothed
 - **Sanity check**: Root cells (progenitors) should have high unspliced/spliced ratios for marker genes
 - **Dynamical model requires distinct kinetic states**: Works best for clear differentiation processes
 
@@ -318,4 +318,4 @@ After running the workflow, the following fields are added:
 - **Paper**: Bergen V et al. (2020) Nature Biotechnology. PMID: 32747759
 - **velocyto** (preprocessing): http://velocyto.org/
 - **CellRank** (fate prediction, extends scVelo): https://cellrank.readthedocs.io/
-- **dynamo** (metabolic labeling alternative): https://dynamo-release.readthedocs.io/
+- **dynamo** (metabolic labelling alternative): https://dynamo-release.readthedocs.io/

@@ -8,7 +8,7 @@ Install Qiskit using uv:
 uv pip install qiskit
 ```
 
-For visualization capabilities:
+For visualisation capabilities:
 
 ```bash
 uv pip install "qiskit[visualization]" matplotlib

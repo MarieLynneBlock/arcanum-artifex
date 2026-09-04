@@ -1,6 +1,6 @@
 # SymPy Code Generation and Printing
 
-This document covers SymPy's capabilities for generating executable code in various languages, converting expressions to different output formats, and customizing printing behavior.
+This document covers SymPy's capabilities for generating executable code in various languages, converting expressions to different output formats, and customising printing behaviour.
 
 ## Code Generation
 
@@ -560,7 +560,7 @@ for name, expr in functions.items():
         f.write(c_code)
 ```
 
-### Pattern 5: Performance Optimization
+### Pattern 5: Performance Optimisation
 
 ```python
 from sympy import symbols, sin, cos, cse

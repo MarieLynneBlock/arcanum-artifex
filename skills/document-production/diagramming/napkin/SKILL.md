@@ -1,6 +1,6 @@
 ---
-description: 'Visual whiteboard collaboration for Copilot CLI. Creates an interactive whiteboard that opens in your browser — draw, sketch, add sticky notes, then share everything back with Copilot. Copilot sees your drawings and text, and responds with analysis, suggestions, and ideas.'
 name: napkin
+description: 'Visual whiteboard collaboration for Copilot CLI. Creates an interactive whiteboard that opens in your browser — draw, sketch, add sticky notes, then share everything back with Copilot. Copilot sees your drawings and text, and responds with analysis, suggestions, and ideas.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -72,16 +72,16 @@ Also try to grab structured JSON data from the system clipboard. The whiteboard 
 - Linux: `xclip -selection clipboard -o`
 - Windows: `powershell -command "Get-Clipboard"`
 
-The JSON contains the exact text content of sticky notes and text labels, their positions, and their colors. This supplements the PNG by giving you precise text that might be hard to read from a screenshot.
+The JSON contains the exact text content of sticky notes and text labels, their positions, and their colours. This supplements the PNG by giving you precise text that might be hard to read from a screenshot.
 
 If the clipboard doesn't contain JSON data, that's fine — the PNG alone gives the model plenty to work with. Do not treat a missing clipboard as an error.
 
 ### Step 3 — Interpret both sources together
 
-Synthesize the visual snapshot and the structured text into a coherent understanding of what the user is thinking or planning:
+Synthesise the visual snapshot and the structured text into a coherent understanding of what the user is thinking or planning:
 
 - **From the PNG:** Describe what you see — sketches, diagrams, flowcharts, groupings, arrows, spatial layout, annotations, circled items, crossed-out items, emphasis marks.
-- **From the JSON:** Read the exact text content of sticky notes and labels, noting their positions and colors.
+- **From the JSON:** Read the exact text content of sticky notes and labels, noting their positions and colours.
 - **Combine both** into a single, conversational interpretation.
 
 ### Step 4 — Respond conversationally
@@ -120,7 +120,7 @@ When the user wants the agent to add content back to the whiteboard:
 - Never use developer jargon without explaining it in plain English.
 - Treat the napkin as a creative, collaborative space — not a formal input mechanism.
 - Be encouraging about the user's sketches regardless of artistic quality.
-- Frame responses as "building on your thinking," not "analyzing your input."
+- Frame responses as "building on your thinking," not "analysing your input."
 
 ---
 

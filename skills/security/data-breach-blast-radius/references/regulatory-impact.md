@@ -2,9 +2,9 @@
 
 Fine formulas, breach notification timelines, cost benchmarks, and jurisdiction detection patterns for all major global data protection regulations.
 
-> **Disclaimer:** This reference is for risk planning and developer education only. All fine estimates are approximations based on publicly available legal texts and benchmarks cited in `SOURCES.md`. Consult qualified legal counsel for actual regulatory guidance in your jurisdiction.
+> **Disclaimer:** This reference is for risk planning and developer education only. All fine estimates are approximations based on publicly available legal texts and benchmarks cited in `sources.md`. Consult qualified legal counsel for actual regulatory guidance in your jurisdiction.
 
-> **Verifying these numbers:** Every fine formula in this file is sourced from the regulation's primary legal text. See `references/SOURCES.md` for the exact statute/article URL for each figure. If any number looks wrong, check SOURCES.md first — if it's genuinely outdated, please open a PR.
+> **Verifying these numbers:** Every fine formula in this file is sourced from the regulation's primary legal text. See `references/sources.md` for the exact statute/article URL for each figure. If any number looks wrong, check sources.md first — if it's genuinely outdated, please open a PR.
 
 ---
 
@@ -36,7 +36,7 @@ Scan the codebase for these signals to determine which regulations apply:
 - GCP storage in europe-* regions
 ```
 
-**Applies to:** Any organization processing personal data of EU/EEA residents, regardless of where the organization is based.
+**Applies to:** Any organisation processing personal data of EU/EEA residents, regardless of where the organisation is based.
 
 ---
 
@@ -172,7 +172,7 @@ When annual revenue/turnover is unknown, use these conservative estimates:
 | Large enterprise (500–5K employees) | €100M–€1B | €2M–€20M | €5M–€40M |
 | Multinational | > €1B | €10M (capped at 2%) | €20M (capped at 4%) |
 
-**Historic GDPR fines for calibration (all publicly verified — links in SOURCES.md):**
+**Historic GDPR fines for calibration (all publicly verified — links in sources.md):**
 - Meta: €1.2B (2023) — cross-border data transfer violations
 - Amazon: €746M (2021) — cookie consent violations
 - WhatsApp: €225M (2021) — transparency violations
@@ -228,8 +228,8 @@ HIPAA fines are tiered by knowledge/culpability (45 CFR § 160.404):
 | Tier | Culpability | Min per Violation | Max per Violation | Annual Cap |
 | A | Did not know | $137 | $68,928 | $2,067,813 |
 | B | Reasonable cause | $1,379 | $68,928 | $2,067,813 |
-| C | Willful neglect, corrected | $13,785 | $68,928 | $2,067,813 |
-| D | Willful neglect, not corrected | $68,928 | $1,919,173 | $1,919,173 |
+| C | Wilful neglect, corrected | $13,785 | $68,928 | $2,067,813 |
+| D | Wilful neglect, not corrected | $68,928 | $1,919,173 | $1,919,173 |
 
 **For breach planning:** Each affected patient record where PHI was exposed = 1 violation.
 
@@ -259,7 +259,7 @@ Daily fine possible during non-compliance period.
 
 ## Breach Notification Timeline Reference
 
-**All timelines are sourced from primary legal texts.** See `SOURCES.md` for exact article/section URLs for each regulation.
+**All timelines are sourced from primary legal texts.** See `sources.md` for exact article/section URLs for each regulation.
 
 How fast you must notify regulators and affected individuals after discovering a breach:
 
@@ -304,7 +304,7 @@ Use this model when generating the Financial Impact Estimate section:
 ```
 
 ### Reputational Multiplier
-Apply based on public visibility of the organization:
+Apply based on public visibility of the organisation:
 ```
 B2C consumer app, consumer brand:     ×1.5 (high reputational damage)
 B2B enterprise, low public profile:  ×1.1 (moderate reputational damage)

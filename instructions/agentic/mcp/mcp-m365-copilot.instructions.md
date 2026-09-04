@@ -14,7 +14,7 @@ applyTo: '**/{*mcp*,*agent*,*plugin*,declarativeAgent.json,ai-plugin.json,mcp.js
 - Use point-and-click tool selection in Agents Toolkit
 
 ### Declarative Over Imperative
-- Define agent behavior through configuration, not code
+- Define agent behaviour through configuration, not code
 - Use declarativeAgent.json for instructions and capabilities
 - Specify tools and actions in ai-plugin.json
 - Configure MCP servers in mcp.json
@@ -29,7 +29,7 @@ applyTo: '**/{*mcp*,*agent*,*plugin*,declarativeAgent.json,ai-plugin.json,mcp.js
 - Create adaptive cards for rich visual responses
 - Provide clear conversation starters
 - Design for responsive experience across hubs
-- Test thoroughly before organizational deployment
+- Test thoroughly before organisational deployment
 
 ## MCP Server Design
 
@@ -93,7 +93,7 @@ project-root/
 
 **declarativeAgent.json:**
 - Agent name and description
-- Instructions for behavior
+- Instructions for behaviour
 - Conversation starters
 - Capabilities (actions from plugins)
 
@@ -214,17 +214,17 @@ Define in ai-plugin.json for consistent formatting:
 - [ ] Response semantics extract expected data
 - [ ] Error handling provides clear messages
 - [ ] Conversation starters are relevant and clear
-- [ ] Agent instructions guide proper behavior
+- [ ] Agent instructions guide proper behaviour
 - [ ] Compliance and security reviewed
 
 ### Deployment Options
 **Organization Deployment:**
 - IT admin deploys to all or selected users
-- Requires approval in Microsoft 365 admin center
+- Requires approval in Microsoft 365 admin centre
 - Best for internal business agents
 
 **Agent Store:**
-- Submit to Partner Center for validation
+- Submit to Partner Centre for validation
 - Public availability to all Copilot users
 - Requires rigorous security review
 
@@ -277,7 +277,7 @@ Import tools from multiple MCP servers:
 - Provide default values where appropriate
 - Test with varied API responses
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Tool Selection
 - Import only necessary tools (reduces token usage)
@@ -321,7 +321,7 @@ Import tools from multiple MCP servers:
 Agents can be:
 - **Blocked**: Prevented from use
 - **Deployed**: Assigned to specific users/groups
-- **Published**: Made available organization-wide
+- **Published**: Made available organisation-wide
 
 ### Monitoring
 Track:

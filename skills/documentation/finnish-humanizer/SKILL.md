@@ -1,6 +1,6 @@
 ---
-description: 'Detect and remove AI-generated markers from Finnish text, making it sound like a native Finnish speaker wrote it. Use when asked to "humanize", "naturalize", or "remove AI feel" from Finnish text, or when editing .md/.txt files containing Finnish content. Identifies 26 patterns (12 Finnish-specific + 14 universal) and 4 style markers.'
 name: finnish-humanizer
+description: 'Detect and remove AI-generated markers from Finnish text, making it sound like a native Finnish speaker wrote it. Use when asked to "humanize", "naturalize", or "remove AI feel" from Finnish text, or when editing .md/.txt files containing Finnish content. Identifies 26 patterns (12 Finnish-specific + 14 universal) and 4 style markers.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -18,7 +18,7 @@ Ennen kuin korjaat yhtään patternia, sisäistä miten suomalainen kirjoittaja 
 
 **Lyhyys on voimaa.** Lyhyt virke ei ole laiska — se on täsmällinen. Pitkä virke on perusteltava.
 
-**Toisto on sallittu.** Suomessa saman sanan käyttö kahdesti on normaalia. Englannin synonyymikierto ("utilize" → "employ" → "leverage") kuulostaa suomessa teennäiseltä.
+**Toisto on sallittu.** Suomessa saman sanan käyttö kahdesti on normaalia. Englannin synonyymikierto ("utilise" → "employ" → "leverage") kuulostaa suomessa teennäiseltä.
 
 **Innostus epäilyttää.** Suomalainen kirjoittaja ei huuda eikä hehkuta. Kuiva toteamus on vahvempi kuin huutomerkki. "Ihan hyvä" on kehu.
 

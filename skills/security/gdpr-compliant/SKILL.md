@@ -1,6 +1,6 @@
 ---
-description: 'Apply GDPR-compliant engineering practices across your codebase. Use this skill whenever you are designing APIs, writing data models, building authentication flows, implementing logging, handling user data, writing retention/deletion jobs, designing cloud infrastructure, or reviewing pull requests for privacy compliance. Trigger this skill for any task involving personal data, user accounts, cookies, analytics, emails, audit logs, encryption, pseudonymization, anonymization, data exports, breach response, CI/CD pipelines that process real data, or any question framed as "is this GDPR-compliant?". Inspired by CNIL developer guidance and GDPR Articles 5, 25, 32, 33, 35.'
 name: gdpr-compliant
+description: 'Apply GDPR-compliant engineering practices across your codebase. Use this skill whenever you are designing APIs, writing data models, building authentication flows, implementing logging, handling user data, writing retention/deletion jobs, designing cloud infrastructure, or reviewing pull requests for privacy compliance. Trigger this skill for any task involving personal data, user accounts, cookies, analytics, emails, audit logs, encryption, pseudonymization, anonymization, data exports, breach response, CI/CD pipelines that process real data, or any question framed as "is this GDPR-compliant?". Inspired by CNIL developer guidance and GDPR Articles 5, 25, 32, 33, 35.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -25,7 +25,7 @@ For deep dives, read the reference files in `references/`:
 |---|---|
 | Lawfulness, fairness, transparency | Document legal basis for every processing activity in the RoPA |
 | Purpose limitation | Data collected for purpose A **MUST NOT** be reused for purpose B without a new legal basis |
-| Data minimization | Collect only fields with a documented business need today |
+| Data minimisation | Collect only fields with a documented business need today |
 | Accuracy | Provide update endpoints; propagate corrections to downstream stores |
 | Storage limitation | Define TTL at schema design time — never after |
 | Integrity & confidentiality | Encrypt at rest and in transit; restrict and audit access |
@@ -49,7 +49,7 @@ For deep dives, read the reference files in `references/`:
 
 ---
 
-## 3. Data Minimization
+## 3. Data Minimisation
 
 **MUST**
 - Map every DTO/model field to a concrete business need. Remove undocumented fields.
@@ -92,7 +92,7 @@ For deep dives, read the reference files in `references/`:
 | Session / refresh tokens | 30–90 days |
 | Email / notification logs | 6 months |
 | Inactive user accounts | 12 months after last login → notify → delete |
-| Payment records | As required by tax law (7–10 years), minimized |
+| Payment records | As required by tax law (7–10 years), minimised |
 | Analytics events | 13 months |
 
 **SHOULD**

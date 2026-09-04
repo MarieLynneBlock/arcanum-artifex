@@ -491,7 +491,7 @@ lamin init --storage s3://prod-bucket/data \
   --name production
 ```
 
-**Migration:** Export artifacts from dev, import to prod
+**Migration:** Export artefacts from dev, import to prod
 ```python
 # Export from dev
 artifacts = ln.Artifact.filter().all()
@@ -537,7 +537,7 @@ lamin init --storage s3://shared-bucket/data \
   --name user2-workspace
 ```
 
-## Performance Optimization
+## Performance Optimisation
 
 ### Database Performance
 
@@ -559,7 +559,7 @@ lamin init --storage s3://shared-bucket/data \
 export AWS_CLI_FILE_IO_BANDWIDTH=100MB
 ```
 
-### Cache Optimization
+### Cache Optimisation
 
 ```python
 # Pre-cache frequently used artifacts

@@ -353,7 +353,7 @@ result = sampler.run(circuit, repetitions=1000)
 
 ## Hardware Best Practices
 
-### Circuit Optimization for Hardware
+### Circuit Optimisation for Hardware
 
 ```python
 def optimize_for_hardware(circuit, device):
@@ -504,7 +504,7 @@ export PASQAL_TOKEN=your_token
 ## Best Practices
 
 1. **Validate circuits before submission**: Use device.validate_circuit()
-2. **Optimize for target hardware**: Decompose to native gates
+2. **Optimise for target hardware**: Decompose to native gates
 3. **Select best qubits**: Use calibration data for qubit selection
 4. **Monitor job status**: Check job completion before retrieving results
 5. **Implement error mitigation**: Use readout error correction

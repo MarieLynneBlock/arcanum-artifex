@@ -1,6 +1,6 @@
 ---
-description: 'Analyzes git diffs or staged changes and generates narrative commit messages that explain WHY a change was made, not just what changed — following Conventional Commits format. Use when asked to "write a commit message", "generate a commit", "describe my changes", "what should I commit this as", "commit this", "summarize my diff", or "help me commit". Works with git diff output, staged files, or plain descriptions of changes.'
 name: commit-message-storyteller
+description: 'Analyses git diffs or staged changes and generates narrative commit messages that explain WHY a change was made, not just what changed — following Conventional Commits format. Use when asked to "write a commit message", "generate a commit", "describe my changes", "what should I commit this as", "commit this", "summarise my diff", or "help me commit". Works with git diff output, staged files, or plain descriptions of changes.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
@@ -13,7 +13,7 @@ Transforms raw git diffs and change descriptions into clear, story-driven commit
 
 - User says "write a commit message", "help me commit", or "generate a commit"
 - User pastes a git diff or describes code changes
-- User says "what should I commit this as?" or "summarize my diff"
+- User says "what should I commit this as?" or "summarise my diff"
 - User wants better commit history for their team or open-source project
 - User is preparing a pull request and wants meaningful commit messages
 
@@ -43,8 +43,8 @@ Map the change to a Conventional Commits type using this guide:
 | Type | Use When |
 |------|----------|
 | `feat` | A new feature or capability is added |
-| `fix` | A bug or incorrect behavior is corrected |
-| `refactor` | Code restructured without changing behavior |
+| `fix` | A bug or incorrect behaviour is corrected |
+| `refactor` | Code restructured without changing behaviour |
 | `perf` | A change that improves performance |
 | `docs` | Documentation only changes |
 | `style` | Formatting, whitespace, missing semicolons (no logic change) |

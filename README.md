@@ -1,11 +1,11 @@
-![Arcanum Artifex](assets/arcanum-artifex_banner.png)
+![Arcanum Artifex](assets/arcanum-artifex-banner.png)
 
 # Arcanum Artifex 🧙🏻‍♀️
 
 > Prompts, skills, and agents that survive contact with real workflows.  
 > No vendor loyalty. Occasionally heretical.
 
-Everything here has survived contact with real work. Skills, agents, instructions, and guides... tested across stacks, tools, and the kinds of projects that don't forgive sloppy prompts. Built on the open Agent Skills standard, so the same assets travel freely between Copilot, Claude Code, and anything else that follows the spec.
+Everything here has survived contact with real work. Skills, agents, instructions, and workflows... tested across stacks, tools, and the kinds of projects that don't forgive sloppy prompts. Built on the open Agent Skills standard, so the same assets travel freely between Copilot, Claude Code, and anything else that follows the spec.
 
 ---
 
@@ -13,12 +13,11 @@ Everything here has survived contact with real work. Skills, agents, instruction
 
 | Folder | Contents |
 | --- | --- |
-| [skills/](skills/) | 200+ reusable skills, organized by domain |
-| [agents/](agents/) | Custom agent definitions, organized by specialty |
-| [instructions/](instructions/) | Context files that shape AI behavior per stack or domain |
+| [skills/](skills/) | 200+ reusable skills, organised by domain |
+| [agents/](agents/) | Custom agent definitions, organised by specialty |
+| [instructions/](instructions/) | Context files that shape AI behaviour per stack or domain |
 | [workflows/](workflows/) | Orchestrated playbooks that link skills, instructions, agents, prompts and tools end-to-end |
 | [templates/](templates/) | Blank starters to copy into your own project |
-| [guides/](guides/) | Setup, practices, policy, and reference material |
 | [workshops/](workshops/) | Hands-on exercises for team onboarding |
 
 ---
@@ -35,7 +34,7 @@ skills/
 ├── analysis/            ← architecture audit, gap analysis, risk analysis, stakeholder mapping, user stories, epics, trade-off analysis
 ├── architecture/        ← 4+1 architectural views, ADRs, technology stack blueprints
 ├── agentic/             ← agent governance, OWASP compliance for agents, MCP, supply chain, evaluation frameworks
-├── security/            ← threat modeling, GDPR compliance, security review, data breach blast radius
+├── security/            ← threat modelling, GDPR compliance, security review, data breach blast radius
 ├── document-production/ ← PPTX, DOCX, PDF, LaTeX posters, Mermaid diagrams, scientific slides
 ├── documentation/       ← doc standards, writing guides, changelog and release note templates
 └── study-support/       ← learning aids, flashcard generation, concept explanation frameworks
@@ -57,7 +56,7 @@ agents/
 ├── development/   ← code review, refactoring, test strategy, and DevOps agents
 ├── documentation/ ← doc writing, changelog, and release note agents
 ├── scientific/    ← research, literature review, and data pipeline agents
-└── security/      ← threat modeling, compliance, and security review agents
+└── security/      ← threat modelling, compliance, and security review agents
 ```
 
 ```text
@@ -76,7 +75,7 @@ The invisible hand. Load one of these and the AI stops guessing about your stack
 
 ```text
 instructions/
-├── agentic/      ← agent behavior, governance, and safety constraints
+├── agentic/      ← agent behaviour, governance, and safety constraints
 ├── architecture/ ← architectural standards and design principles
 ├── data-science/ ← data analysis, ML workflows, and notebook conventions
 ├── development/  ← language- and framework-specific coding standards
@@ -99,19 +98,6 @@ templates/
 
 ---
 
-## Guides
-
-```text
-guides/
-├── setup/           ← install in VS Code, IntelliJ, PyCharm, Visual Studio, Eclipse
-├── guidelines/      ← responsible use, security, admin setup, manager and pilot guides
-├── how-to/          ← getting started by role: developer, analyst, architect, DevOps
-├── practices/       ← prompt engineering
-└── resources/       ← cheat sheet, FAQ, prompt library, privacy card, impact measurement
-```
-
----
-
 ## Workshops
 
 Three hands-on exercises for team onboarding:
@@ -127,5 +113,5 @@ Three hands-on exercises for team onboarding:
 These resources are built for real work. If it only performs in controlled conditions, it doesn't belong here.
 
 - **No vendor loyalty.** Built on the open Agent Skills standard — run it in whatever tool you're actually using.
-- **Occasionally heretical.** When official docs and real behavior diverge, we document real behavior.
+- **Occasionally heretical.** When official docs and real behaviour diverge, we document real behaviour.
 - **Documentation-level accuracy.** If a feature is described here, it exists and works as described.

@@ -1,6 +1,6 @@
 # Analysis Principles — Security Analysis Methodology
 
-This file contains ALL rules for how to analyze code for security threats. It is self-contained — everything needed to perform correct, evidence-based security analysis is here.
+This file contains ALL rules for how to analyse code for security threats. It is self-contained — everything needed to perform correct, evidence-based security analysis is here.
 
 ---
 
@@ -26,7 +26,7 @@ This file contains ALL rules for how to analyze code for security threats. It is
 3. **Distinguish configuration states**:
    - **Explicitly disabled**: `enabled: false` → Flag as finding
    - **Not configured**: No setting present → Check platform default first
-   - **Implicitly enabled**: Default behavior is secure → Document as control, not gap
+   - **Implicitly enabled**: Default behaviour is secure → Document as control, not gap
 
 ### Evidence Quality Requirements
 
@@ -59,7 +59,7 @@ Before STRIDE-A analysis, identify ALL security-enabling components present in t
 Apply these frameworks during analysis:
 
 - **Zero Trust**: Verify explicitly, least privilege, assume breach
-- **Defense in Depth**: Identify missing security layers
+- **Defence in Depth**: Identify missing security layers
 - **Abuse Cases**: Business logic abuse, workflow manipulation, feature misuse
 
 ---
@@ -70,9 +70,9 @@ Apply these frameworks during analysis:
 
 ### Sidecar Security Analysis
 
-⚠️ **Sidecars (Dapr, MISE, Envoy, etc.) are NOT separate components in the DFD** — they are co-located in the same pod as the primary container (see diagram-conventions.md Rule 2). However, sidecar communication MUST still be analyzed for security vulnerabilities.
+⚠️ **Sidecars (Dapr, MISE, Envoy, etc.) are NOT separate components in the DFD** — they are co-located in the same pod as the primary container (see diagram-conventions.md Rule 2). However, sidecar communication MUST still be analysed for security vulnerabilities.
 
-**How to analyze sidecar threats:**
+**How to analyse sidecar threats:**
 - Sidecars with distinct threat surfaces (e.g., MISE auth bypass, Dapr mTLS) get their own `## Component` section in `2-stride-analysis.md` — but are NOT separate DFD nodes (see diagram-conventions.md Rule 2)
 - Use the format: threat title includes the sidecar name, e.g., "Dapr Sidecar Plaintext Communication"
 - Common sidecar threats:
@@ -85,8 +85,8 @@ Apply these frameworks during analysis:
 - If the sidecar vulnerability warrants a finding, list it under the sidecar component with a note: "Affects [Dapr/MISE] sidecar communication"
 
 1. **Minimum coverage:** Every component in `0.1-architecture.md` MUST have a corresponding section in `2-stride-analysis.md` with actual threat enumeration (not just "no threats found").
-2. **Finding density check:** As a guideline, expect roughly 1 finding per 2-3 significant components. If a repo has 15+ components and you have fewer than 8 findings, re-examine under-analyzed components.
-3. **Use sub-agents for scale:** For repos with 10+ components, delegate component-specific STRIDE analysis to sub-agents to maintain depth. Each sub-agent should analyze 3-5 components.
+2. **Finding density check:** As a guideline, expect roughly 1 finding per 2-3 significant components. If a repo has 15+ components and you have fewer than 8 findings, re-examine under-analysed components.
+3. **Use sub-agents for scale:** For repos with 10+ components, delegate component-specific STRIDE analysis to sub-agents to maintain depth. Each sub-agent should analyse 3-5 components.
 4. **OWASP checklist sweep:** After component-level STRIDE, do a cross-cutting pass using the OWASP Top 10:2025 checklist below. This catches systemic issues (missing auth, no audit logging, no rate limiting, unsigned images) that component-level analysis may miss.
 5. **Infrastructure-layer check:** Explicitly check for: container security contexts, network policies, resource limits, image signing, secrets management, backup/DR controls, and monitoring/alerting gaps.
 6. **Exhaustive findings consolidation:** After STRIDE analysis is complete, scan the STRIDE output for ALL identified threats. Every threat MUST map to either:
@@ -109,7 +109,7 @@ Apply these frameworks during analysis:
    - **Do NOT batch-classify entire STRIDE categories as Needs Review.** Each threat must be evaluated individually based on its prerequisites and exploitability.
    - **"⚠️ Needs Review" is reserved for:** Tier 2/3 threats where no technical mitigation is possible (e.g., social engineering), or threats requiring business context the tool doesn't have.
    - **The automated analysis does NOT have authority to accept risks** — it only identifies them. "Needs Review" signals that a human must decide.
-   - **Maximum Needs Review ratio:** If more than 30% of threats are classified as "Needs Review", re-examine — you are likely under-reporting findings. Typical ratio: 10-20% for a well-analyzed codebase.
+   - **Maximum Needs Review ratio:** If more than 30% of threats are classified as "Needs Review", re-examine — you are likely under-reporting findings. Typical ratio: 10-20% for a well-analysed codebase.
 7. **Minimum finding thresholds by repo size:**
    - Small repo (< 20 source files): 8+ findings expected
    - Medium repo (20-100 source files): 12+ findings expected
@@ -153,7 +153,7 @@ Apply these frameworks during analysis:
 | **Kubernetes** | No NetworkPolicy, no PodSecurityPolicy/Standards, no resource limits, RBAC gaps | Network segmentation + resource limits |
 | **Helm Charts** | Hardcoded secrets in values.yaml, no image tag pinning, no security contexts | Config + supply chain |
 | **Key Management** | Hardcoded RSA/HMAC keys, weak key generation, no rotation, keys in source | Cryptographic failures |
-| **CI/CD Pipelines** | Secrets in logs, no artifact signing, mutable dependencies, script injection | Supply chain |
+| **CI/CD Pipelines** | Secrets in logs, no artefact signing, mutable dependencies, script injection | Supply chain |
 | **REST APIs** | Missing auth, no rate limiting, verbose errors, no input validation | Auth + injection |
 | **gRPC Services** | No TLS, no auth interceptor, reflection enabled in production | Auth + encryption |
 | **Message Queues** | No auth on pub/sub, no encryption, no message signing | Auth + integrity |
@@ -175,7 +175,7 @@ Check for these vulnerability categories during analysis:
 | A03 | Software Supply Chain Failures | Vulnerable dependencies, malicious packages, compromised CI/CD |
 | A04 | Cryptographic Failures | Weak algorithms, exposed secrets, improper key management, plaintext data |
 | A05 | Injection | SQL, NoSQL, OS command, LDAP, XSS, template injection |
-| A06 | Insecure Design | Missing security controls at architecture level, threat modeling gaps |
+| A06 | Insecure Design | Missing security controls at architecture level, threat modelling gaps |
 | A07 | Authentication Failures | Broken auth, weak sessions, credential stuffing, missing MFA |
 | A08 | Software/Data Integrity Failures | Insecure deserialization, unsigned updates, CI/CD tampering |
 | A09 | Security Logging & Alerting Failures | Missing audit logs, no alerting, log injection, insufficient monitoring |
@@ -187,9 +187,9 @@ Reference: https://owasp.org/Top10/2025/
 
 ## Platform Security Defaults Reference
 
-Before flagging missing security, check these common secure-by-default behaviors:
+Before flagging missing security, check these common secure-by-default behaviours:
 
-| Platform | Feature | Default Behavior | How to Verify |
+| Platform | Feature | Default Behaviour | How to Verify |
 |----------|---------|------------------|---------------|
 | **Dapr** | mTLS | Enabled when Sentry deployed | Check for `dapr_sentry` or `sentry` component |
 | **Dapr** | Access Control | Deny if policies defined | Look for `accessControl` in Configuration |
@@ -216,7 +216,7 @@ Threats are classified into three exploitability tiers based on prerequisites:
 |------|-------|---------------|----------------|
 | **Tier 1** | Direct Exposure | `None` | Exploitable by unauthenticated external attacker with NO prior access. |
 | **Tier 2** | Conditional Risk | Single prerequisite | Requires exactly ONE form of access: `Authenticated User`, `Privileged User`, `Internal Network`, or single `{Boundary} Access`. |
-| **Tier 3** | Defense-in-Depth | Multiple prerequisites or infrastructure access | Requires `Host/OS Access`, `Admin Credentials`, `{Component} Compromise`, `Physical Access`, or multiple prerequisites with `+`. |
+| **Tier 3** | Defence-in-Depth | Multiple prerequisites or infrastructure access | Requires `Host/OS Access`, `Admin Credentials`, `{Component} Compromise`, `Physical Access`, or multiple prerequisites with `+`. |
 
 ### Tier Assignment Rules
 
@@ -241,7 +241,7 @@ Prerequisites MUST use only these values (closed enum). The tier follows mechani
 
 **Deployment context overrides:** If Deployment Classification is `LOCALHOST_DESKTOP` or `LOCALHOST_SERVICE`, the prerequisite `None` is FORBIDDEN for all components — use `Local Process Access` or `Host/OS Access` instead. The tier then follows from the corrected prerequisite.
 
-### ⛔ Prerequisite Determination (MANDATORY — Evidence-Based, Not Judgment-Based)
+### ⛔ Prerequisite Determination (MANDATORY — Evidence-Based, Not Judgement-Based)
 
 **Prerequisites MUST be determined from deployment configuration evidence, not from general knowledge or assumptions.** Two independent analysis runs on the same code MUST assign the same prerequisites because they are objective facts about the deployment.
 

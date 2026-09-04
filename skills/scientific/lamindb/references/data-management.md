@@ -1,6 +1,6 @@
 # LaminDB Data Management
 
-This document covers querying, searching, filtering, and streaming data in LaminDB, as well as best practices for organizing and accessing datasets.
+This document covers querying, searching, filtering, and streaming data in LaminDB, as well as best practices for organising and accessing datasets.
 
 ## Registry Overview
 
@@ -119,7 +119,7 @@ ln.Artifact.filter(suffix__in=[".h5ad", ".csv", ".parquet"]).to_dataframe()
 
 ## Feature-Based Queries
 
-Query artifacts by their annotated features:
+Query artefacts by their annotated features:
 
 ```python
 # Filter by feature value
@@ -355,7 +355,7 @@ if artifact.is_cached():
     path = artifact.cache()
 ```
 
-## Organizing Data with Keys
+## Organising Data with Keys
 
 Best practices for structuring keys:
 
@@ -374,7 +374,7 @@ ln.Artifact("data.h5ad", key="data/processed/v2/final.h5ad").save()
 
 ## Collections
 
-Group related artifacts into collections:
+Group related artefacts into collections:
 
 ```python
 # Create collection
@@ -401,7 +401,7 @@ ln.Collection.filter(name__contains="batch").to_dataframe()
 5. **Use search for discovery**: When you don't know exact field values
 6. **Cache strategically**: Configure cache location based on storage capacity
 7. **Index features**: Define features upfront for efficient feature-based queries
-8. **Use collections**: Group related artifacts for dataset-level operations
+8. **Use collections**: Group related artefacts for dataset-level operations
 9. **Order results**: Sort by creation date or other fields for consistent retrieval
 10. **Check existence**: Use `exists()` or `one_or_none()` to avoid errors
 

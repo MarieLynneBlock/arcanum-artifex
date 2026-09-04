@@ -1,6 +1,6 @@
 # Step 1a: Project Analysis
 
-Before looking at code structure, entry points, or writing any instrumentation, understand what this software does in the real world. This analysis is the foundation for every subsequent step — it determines which entry points to prioritize, what eval criteria to define, what trace inputs to use, and what dataset entries to build.
+Before looking at code structure, entry points, or writing any instrumentation, understand what this software does in the real world. This analysis is the foundation for every subsequent step — it determines which entry points to prioritise, what eval criteria to define, what trace inputs to use, and what dataset entries to build.
 
 ---
 
@@ -21,20 +21,20 @@ Who are the target users? What's the primary use case? What problem does this so
 List the distinct capabilities, modes, or features the app offers. Be specific. for example:
 
 - For a scraping library: single-page scraping, multi-page scraping, search-based scraping, speech output, script generation
-- For a voice agent: greeting, FAQ handling, account lookup, transfer to human, call summarization
+- For a voice agent: greeting, FAQ handling, account lookup, transfer to human, call summarisation
 - For a research agent: topic research, multi-source synthesis, citation generation, report formatting
 
 Each capability may need its own entry point, its own trace, and its own dataset entries. This list directly feeds Step 1c (use cases) and Step 4 (dataset diversity).
 
 ### 4. What are realistic inputs?
 
-Characterize the real-world inputs the app processes — not toy examples:
+Characterise the real-world inputs the app processes — not toy examples:
 
 - For a web scraper: "messy HTML pages with navigation, ads, dynamic content, tables, nested structures — typically 5KB-500KB of HTML"
 - For a research agent: "open-ended research questions requiring multi-source synthesis, with 3-10 sub-questions"
 - For a voice agent: "multi-turn conversations with background noise, interruptions, and ambiguous requests"
 
-Be specific about **scale** (how large), **complexity** (how messy/diverse), and **variety** (what kinds). This directly feeds trace input selection (Step 2) — if you don't characterize realistic inputs here, you'll end up using toy inputs that bypass the app's real logic.
+Be specific about **scale** (how large), **complexity** (how messy/diverse), and **variety** (what kinds). This directly feeds trace input selection (Step 2) — if you don't characterise realistic inputs here, you'll end up using toy inputs that bypass the app's real logic.
 
 **This section is an operational constraint, not just documentation.** Steps 2c (trace input) and 4c (dataset entries) will cross-reference these characteristics to verify that trace inputs and dataset entries match real-world scale and complexity. Be concrete and quantitative — write "5KB–500KB HTML pages," not "various HTML pages."
 

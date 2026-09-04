@@ -12,7 +12,7 @@ applyTo: '**/*.yaml, **/*.yml'
 - Keep things simple; only use advanced features when necessary
 - Give every play, block, and task a concise but descriptive `name`
   - Start names with an action verb that indicates the operation being performed, such as "Install," "Configure," or "Copy"
-  - Capitalize the first letter of the task name
+  - Capitalise the first letter of the task name
   - Omit periods from the end of task names for brevity
   - Omit the role name from role tasks; Ansible will automatically display the role name when running a role
   - When including tasks from a separate file, you may include the filename in each task name to make tasks easier to locate (e.g., `<TASK_FILENAME> : <TASK_NAME>`)

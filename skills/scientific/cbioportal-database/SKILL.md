@@ -1,6 +1,6 @@
 ---
-description: Query cBioPortal for cancer genomics data including somatic mutations, copy number alterations, gene expression, and survival data across hundreds of cancer studies. Essential for cancer target validation, oncogene/tumor suppressor analysis, and patient-level genomic profiling.
 name: cbioportal-database
+description: Query cBioPortal for cancer genomics data including somatic mutations, copy number alterations, gene expression, and survival data across hundreds of cancer studies. Essential for cancer target validation, oncogene/tumor suppressor analysis, and patient-level genomic profiling.
 license: LGPL-3.0
 metadata:
   skill-author: 'Kuan-lin Huang'
@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-cBioPortal for Cancer Genomics (https://www.cbioportal.org/) is an open-access resource for exploring, visualizing, and analyzing multidimensional cancer genomics data. It hosts data from The Cancer Genome Atlas (TCGA), AACR Project GENIE, MSK-IMPACT, and hundreds of other cancer studies — covering mutations, copy number alterations (CNA), structural variants, mRNA/protein expression, methylation, and clinical data for thousands of cancer samples.
+cBioPortal for Cancer Genomics (https://www.cbioportal.org/) is an open-access resource for exploring, visualising, and analysing multidimensional cancer genomics data. It hosts data from The Cancer Genome Atlas (TCGA), AACR Project GENIE, MSK-IMPACT, and hundreds of other cancer studies — covering mutations, copy number alterations (CNA), structural variants, mRNA/protein expression, methylation, and clinical data for thousands of cancer samples.
 
 **Key resources:**
 - cBioPortal website: https://www.cbioportal.org/

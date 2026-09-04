@@ -1,6 +1,6 @@
 ---
-description: Microscopy data management platform. Access images via Python, retrieve datasets, analyze pixels, manage ROIs/annotations, batch processing, for high-content screening and microscopy workflows.
 name: omero-integration
+description: Microscopy data management platform. Access images via Python, retrieve datasets, analyse pixels, manage ROIs/annotations, batch processing, for high-content screening and microscopy workflows.
 license: Unknown
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -10,14 +10,14 @@ metadata:
 
 ## Overview
 
-OMERO is an open-source platform for managing, visualizing, and analyzing microscopy images and metadata. Access images via Python API, retrieve datasets, analyze pixels, manage ROIs and annotations, for high-content screening and microscopy workflows.
+OMERO is an open-source platform for managing, visualising, and analysing microscopy images and metadata. Access images via Python API, retrieve datasets, analyse pixels, manage ROIs and annotations, for high-content screening and microscopy workflows.
 
 ## When to Use This Skill
 
 This skill should be used when:
 - Working with OMERO Python API (omero-py) to access microscopy data
 - Retrieving images, datasets, projects, or screening data programmatically
-- Analyzing pixel data and creating derived images
+- Analysing pixel data and creating derived images
 - Creating or managing ROIs (regions of interest) on microscopy images
 - Adding annotations, tags, or metadata to OMERO objects
 - Storing measurement results in OMERO tables
@@ -40,7 +40,7 @@ Establish secure connections to OMERO servers, manage sessions, handle authentic
 - Manage connection lifecycle with context managers
 
 ### 2. Data Access & Retrieval
-**File**: `references/data_access.md`
+**File**: `references/data-access.md`
 
 Navigate OMERO's hierarchical data structure (Projects → Datasets → Images) and screening data (Screens → Plates → Wells). Retrieve objects, query by attributes, and access metadata.
 
@@ -62,7 +62,7 @@ Create and manage annotations including tags, key-value pairs, file attachments,
 - Query annotations by namespace
 
 ### 4. Image Processing & Rendering
-**File**: `references/image_processing.md`
+**File**: `references/image-processing.md`
 
 Access raw pixel data as NumPy arrays, manipulate rendering settings, create derived images, and manage physical dimensions.
 
@@ -75,12 +75,12 @@ Access raw pixel data as NumPy arrays, manipulate rendering settings, create der
 ### 5. Regions of Interest (ROIs)
 **File**: `references/rois.md`
 
-Create, retrieve, and analyze ROIs with various shapes (rectangles, ellipses, polygons, masks, points, lines). Extract intensity statistics from ROI regions.
+Create, retrieve, and analyse ROIs with various shapes (rectangles, ellipses, polygons, masks, points, lines). Extract intensity statistics from ROI regions.
 
 **Common scenarios:**
 - Draw rectangular ROIs on images
 - Create polygon masks for segmentation
-- Analyze pixel intensities within ROIs
+- Analyse pixel intensities within ROIs
 - Export ROI coordinates
 
 ### 6. OMERO Tables
@@ -165,17 +165,17 @@ with BlitzGateway(username, password, host=host, port=port) as conn:
 
 **For data exploration:**
 - Start with `references/connection.md` to establish connection
-- Use `references/data_access.md` to navigate hierarchy
+- Use `references/data-access.md` to navigate hierarchy
 - Check `references/metadata.md` for annotation details
 
 **For image analysis:**
-- Use `references/image_processing.md` for pixel data access
+- Use `references/image-processing.md` for pixel data access
 - Use `references/rois.md` for region-based analysis
 - Use `references/tables.md` to store results
 
 **For automation:**
 - Use `references/scripts.md` for server-side processing
-- Use `references/data_access.md` for batch data retrieval
+- Use `references/data-access.md` for batch data retrieval
 
 **For advanced operations:**
 - Use `references/advanced.md` for permissions and deletion
@@ -183,12 +183,12 @@ with BlitzGateway(username, password, host=host, port=port) as conn:
 
 ## Common Workflows
 
-### Workflow 1: Retrieve and Analyze Images
+### Workflow 1: Retrieve and Analyse Images
 
 1. Connect to OMERO server (`references/connection.md`)
-2. Navigate to dataset (`references/data_access.md`)
-3. Retrieve images from dataset (`references/data_access.md`)
-4. Access pixel data as NumPy array (`references/image_processing.md`)
+2. Navigate to dataset (`references/data-access.md`)
+3. Retrieve images from dataset (`references/data-access.md`)
+4. Access pixel data as NumPy array (`references/image-processing.md`)
 5. Perform analysis
 6. Store results as table or file annotation (`references/tables.md` or `references/metadata.md`)
 
@@ -241,7 +241,7 @@ finally:
 ## Notes
 
 - OMERO uses group-based permissions (READ-ONLY, READ-ANNOTATE, READ-WRITE)
-- Images in OMERO are organized hierarchically: Project > Dataset > Image
+- Images in OMERO are organised hierarchically: Project > Dataset > Image
 - Screening data uses: Screen > Plate > Well > WellSample > Image
 - Always close connections to free server resources
 - Use context managers for automatic resource management

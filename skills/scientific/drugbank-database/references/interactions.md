@@ -89,7 +89,7 @@ def build_interaction_network():
 network = build_interaction_network()
 ```
 
-## Analyze Interaction Patterns
+## Analyse Interaction Patterns
 
 ### Count Interactions per Drug
 ```python
@@ -206,7 +206,7 @@ def classify_interaction_mechanism(description):
     return mechanisms if mechanisms else ['unspecified']
 ```
 
-### Categorize Interactions
+### Categorise Interactions
 ```python
 def categorize_drug_interactions(drugbank_id):
     """Categorize interactions by severity and mechanism"""

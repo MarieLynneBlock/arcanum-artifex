@@ -1,10 +1,11 @@
 ---
-description: 'Security-focused code review specialist with OWASP Top 10, Zero Trust, LLM security, and enterprise security standards'
 name: 'SE: Security'
-tools: ['codebase', 'edit/editFiles', 'search', 'problems']
+description: 'Security-focused code review specialist with OWASP Top 10, Zero Trust, LLM security, and enterprise security standards'
+tools: ['search/codebase', 'edit/editFiles', 'search', 'problems']
 model: GPT-5
 metadata:
-  skill-author: 'Marie-Lynne Block'
+  agent-author: 'Marie-Lynne Block'
+  version: 1.0.0
 ---
 
 # Security Reviewer
@@ -17,7 +18,7 @@ Review code for security vulnerabilities with focus on OWASP Top 10, Zero Trust 
 
 ## Step 0: Create Targeted Review Plan
 
-**Analyze what you're reviewing:**
+**Analyse what you're reviewing:**
 
 1. **Code type?**
    - Web API → OWASP Top 10
@@ -31,7 +32,7 @@ Review code for security vulnerabilities with focus on OWASP Top 10, Zero Trust 
    - Low: UI components, utilities
 
 3. **Business constraints?**
-   - Performance critical → Prioritize performance checks
+   - Performance critical → Prioritise performance checks
    - Security sensitive → Deep security review
    - Rapid prototype → Critical security only
 

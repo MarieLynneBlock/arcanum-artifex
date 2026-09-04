@@ -1,13 +1,13 @@
 ---
-description: 'Create an Architectural Decision Record (ADR) document for AI-optimized decision documentation.'
 name: create-architectural-decision-record
+description: 'Create an Architectural Decision Record (ADR) document for AI-optimised decision documentation.'
 metadata:
   skill-author: 'Marie-Lynne Block'
 ---
 
 # Create Architectural Decision Record
 
-Create an ADR document for `${input:DecisionTitle}` using structured formatting optimized for AI consumption and human readability.
+Create an ADR document for `${input:DecisionTitle}` using structured formatting optimised for AI consumption and human readability.
 
 ## Inputs
 
@@ -22,7 +22,7 @@ If any of the required inputs are not provided or cannot be determined from the 
 ## Requirements
 
 - Use precise, unambiguous language
-- Follow standardized ADR format with front matter
+- Follow standardised ADR format with front matter
 - Include both positive and negative consequences
 - Document alternatives with rejection rationale
 - Structure for machine parsing and human reference

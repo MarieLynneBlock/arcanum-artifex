@@ -1,6 +1,6 @@
 # PyMC Distributions Reference
 
-This reference provides a comprehensive catalog of probability distributions available in PyMC, organized by category. Use this to select appropriate distributions for priors and likelihoods when building Bayesian models.
+This reference provides a comprehensive catalogue of probability distributions available in PyMC, organised by category. Use this to select appropriate distributions for priors and likelihoods when building Bayesian models.
 
 ## Continuous Distributions
 
@@ -62,7 +62,7 @@ Continuous distributions define probability densities over real-valued domains.
 - Support: (-∞, ∞)
 - Common uses: Heavy-tailed alternative to normal
 
-### Specialized Continuous Distributions
+### Specialised Continuous Distributions
 
 **`pm.Laplace(name, mu, b)`** - Laplace (double exponential) distribution
 
@@ -146,7 +146,7 @@ Discrete distributions define probabilities over integer-valued domains.
 - Support: {0, 1, 2, ...}
 - Common uses: Number of failures before first success
 
-### Specialized Discrete Distributions
+### Specialised Discrete Distributions
 
 **`pm.BetaBinomial(name, alpha, beta, n)`** - Beta-binomial (overdispersed binomial)
 
@@ -173,7 +173,7 @@ Multivariate distributions define joint probability distributions over vector-va
 - Dirichlet distribution
 - Parameters: `a` (concentration parameters)
 - Support: Simplex (sums to 1)
-- Common uses: Prior for probability vectors, topic modeling
+- Common uses: Prior for probability vectors, topic modelling
 
 **`pm.Multinomial(name, n, p)`**
 - Multinomial distribution
@@ -183,9 +183,9 @@ Multivariate distributions define joint probability distributions over vector-va
 **`pm.MvStudentT(name, nu, mu, cov)`**
 - Multivariate Student's t-distribution
 - Parameters: `nu` (degrees of freedom), `mu` (location), `cov` (scale matrix)
-- Common uses: Robust multivariate modeling
+- Common uses: Robust multivariate modelling
 
-### Specialized Multivariate Distributions
+### Specialised Multivariate Distributions
 
 **`pm.LKJCorr(name, n, eta)`** - LKJ correlation matrix prior (for correlation matrices)
 
@@ -232,12 +232,12 @@ Mixture distributions combine multiple component distributions.
 
 ## Time Series Distributions
 
-Distributions designed for temporal data and sequential modeling.
+Distributions designed for temporal data and sequential modelling.
 
 **`pm.AR(name, rho, sigma, init_dist)`**
 - Autoregressive process
 - Parameters: `rho` (AR coefficients), `sigma` (innovation std), `init_dist` (initial distribution)
-- Common uses: Time series modeling, sequential data
+- Common uses: Time series modelling, sequential data
 
 **`pm.GaussianRandomWalk(name, mu, sigma, init_dist)`**
 - Gaussian random walk
@@ -249,7 +249,7 @@ Distributions designed for temporal data and sequential modeling.
 
 **`pm.GARCH11(name, omega, alpha_1, beta_1)`**
 - GARCH(1,1) volatility model
-- Common uses: Financial time series, volatility modeling
+- Common uses: Financial time series, volatility modelling
 
 **`pm.EulerMaruyama(name, dt, sde_fn, sde_pars, init_dist)`**
 - Stochastic differential equation via Euler-Maruyama discretization

@@ -1,6 +1,6 @@
 ---
-description: Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery including SMILES parsing, standardization, descriptors, fingerprints, clustering, 3D conformers, parallel processing. Returns native rdkit.Chem.Mol objects. For advanced control or custom parameters, use rdkit directly.
 name: datamol
+description: Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery including SMILES parsing, standardisation, descriptors, fingerprints, clustering, 3D conformers, parallel processing. Returns native rdkit.Chem.Mol objects. For advanced control or custom parameters, use rdkit directly.
 license: Apache-2.0 license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -14,13 +14,13 @@ Datamol is a Python library that provides a lightweight, Pythonic abstraction la
 
 **Key capabilities**:
 - Molecular format conversion (SMILES, SELFIES, InChI)
-- Structure standardization and sanitization
+- Structure standardisation and sanitization
 - Molecular descriptors and fingerprints
 - 3D conformer generation and analysis
 - Clustering and diversity selection
 - Scaffold and fragment analysis
 - Chemical reaction application
-- Visualization and alignment
+- Visualisation and alignment
 - Batch processing with parallelization
 - Cloud storage support via fsspec
 
@@ -72,7 +72,7 @@ inchikey = dm.to_inchikey(mol)
 selfies = dm.to_selfies(mol)
 ```
 
-**Standardization and sanitization** (always recommend for user-provided molecules):
+**Standardisation and sanitization** (always recommend for user-provided molecules):
 ```python
 # Sanitize molecule
 mol = dm.sanitize_mol(mol)
@@ -91,7 +91,7 @@ clean_smiles = dm.standardize_smiles(smiles)
 
 ### 2. Reading and Writing Molecular Files
 
-Refer to `references/io_module.md` for comprehensive I/O documentation.
+Refer to `references/io-module.md` for comprehensive I/O documentation.
 
 **Reading files**:
 ```python
@@ -137,7 +137,7 @@ dm.to_sdf(mols, "s3://bucket/output.sdf")
 
 ### 3. Molecular Descriptors and Properties
 
-Refer to `references/descriptors_viz.md` for detailed descriptor documentation.
+Refer to `references/descriptors-viz.md` for detailed descriptor documentation.
 
 **Computing descriptors for a single molecule**:
 ```python
@@ -215,7 +215,7 @@ dist_matrix = squareform(dm.pdist(mols))
 
 ### 5. Clustering and Diversity Selection
 
-Refer to `references/core_api.md` for clustering details.
+Refer to `references/core-api.md` for clustering details.
 
 **Butina clustering**:
 ```python
@@ -251,7 +251,7 @@ centroids = dm.pick_centroids(
 
 ### 6. Scaffold Analysis
 
-Refer to `references/fragments_scaffolds.md` for complete scaffold documentation.
+Refer to `references/fragments-scaffolds.md` for complete scaffold documentation.
 
 **Extracting Murcko scaffolds**:
 ```python
@@ -304,7 +304,7 @@ test_mols = [mol for scaf in test_scaffolds for mol in scaffold_to_mols[scaf]]
 
 ### 7. Molecular Fragmentation
 
-Refer to `references/fragments_scaffolds.md` for fragmentation details.
+Refer to `references/fragments-scaffolds.md` for fragmentation details.
 
 **BRICS fragmentation** (16 bond types):
 ```python
@@ -340,7 +340,7 @@ def fragment_score(mol, reference_fragments):
 
 ### 8. 3D Conformer Generation
 
-Refer to `references/conformers_module.md` for detailed conformer documentation.
+Refer to `references/conformers-module.md` for detailed conformer documentation.
 
 **Generating conformers**:
 ```python
@@ -382,9 +382,9 @@ conf = mol_3d.GetConformer(0)
 sasa = conf.GetDoubleProp('rdkit_free_sasa')
 ```
 
-### 9. Visualization
+### 9. Visualisation
 
-Refer to `references/descriptors_viz.md` for visualization documentation.
+Refer to `references/descriptors-viz.md` for visualisation documentation.
 
 **Basic molecule grid**:
 ```python
@@ -403,7 +403,7 @@ dm.viz.to_image(mols, outfile="molecules.png")
 dm.viz.to_image(mols, outfile="molecules.svg", use_svg=True)
 ```
 
-**Aligned visualization** (for SAR analysis):
+**Aligned visualisation** (for SAR analysis):
 ```python
 # Align molecules by common substructure
 dm.viz.to_image(
@@ -424,7 +424,7 @@ dm.viz.to_image(
 )
 ```
 
-**Conformer visualization**:
+**Conformer visualisation**:
 ```python
 # Display multiple conformers
 dm.viz.conformers(
@@ -437,7 +437,7 @@ dm.viz.conformers(
 
 ### 10. Chemical Reactions
 
-Refer to `references/reactions_data.md` for reactions documentation.
+Refer to `references/reactions-data.md` for reactions documentation.
 
 **Applying reactions**:
 ```python
@@ -597,16 +597,16 @@ dm.viz.to_image(
 
 For detailed API documentation, consult these reference files:
 
-- **`references/core_api.md`**: Core namespace functions (conversions, standardization, fingerprints, clustering)
-- **`references/io_module.md`**: File I/O operations (read/write SDF, CSV, Excel, remote files)
-- **`references/conformers_module.md`**: 3D conformer generation, clustering, SASA calculations
-- **`references/descriptors_viz.md`**: Molecular descriptors and visualization functions
-- **`references/fragments_scaffolds.md`**: Scaffold extraction, BRICS/RECAP fragmentation
-- **`references/reactions_data.md`**: Chemical reactions and toy datasets
+- **`references/core-api.md`**: Core namespace functions (conversions, standardisation, fingerprints, clustering)
+- **`references/io-module.md`**: File I/O operations (read/write SDF, CSV, Excel, remote files)
+- **`references/conformers-module.md`**: 3D conformer generation, clustering, SASA calculations
+- **`references/descriptors-viz.md`**: Molecular descriptors and visualisation functions
+- **`references/fragments-scaffolds.md`**: Scaffold extraction, BRICS/RECAP fragmentation
+- **`references/reactions-data.md`**: Chemical reactions and toy datasets
 
 ## Best Practices
 
-1. **Always standardize molecules** from external sources:
+1. **Always standardise molecules** from external sources:
    ```python
    mol = dm.standardize_mol(mol, disconnect_metals=True, normalize=True, reionize=True)
    ```
@@ -639,7 +639,7 @@ For detailed API documentation, consult these reference files:
 
 7. **Scaffold splitting for ML**: Ensure proper train/test separation by scaffold
 
-8. **Align molecules** when visualizing SAR series
+8. **Align molecules** when visualising SAR series
 
 ## Error Handling
 

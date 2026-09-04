@@ -26,7 +26,7 @@ for source, paths in nx.all_pairs_shortest_path(G):
 lengths = dict(nx.all_pairs_shortest_path_length(G))
 ```
 
-### Specialized Shortest Path Algorithms
+### Specialised Shortest Path Algorithms
 ```python
 # A* algorithm (with heuristic)
 def heuristic(u, v):
@@ -301,9 +301,9 @@ clique_number = nx.graph_clique_number(G)
 clique_counts = nx.node_clique_number(G)
 ```
 
-## Graph Coloring
+## Graph Colouring
 
-### Node Coloring
+### Node Colouring
 ```python
 # Greedy coloring
 coloring = nx.greedy_color(G, strategy='largest_first')

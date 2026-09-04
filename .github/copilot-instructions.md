@@ -1,11 +1,5 @@
 # Copilot Instructions
 
-<!--
-  This file applies to every Copilot Chat session in this repo.
-  Keep instructions concise — Copilot appends this to every request.
-  Specific context is better than generic rules.
--->
-
 ## Project
 
 This is a documentation-first lab for GitHub Copilot resources: verified templates, prompt files, skills, agents, workflows, and guides. Treat every asset as vendor-agnostic and copyable on its own.
@@ -13,7 +7,7 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 ## Working Mode
 
 - Prefer updating existing markdown and JSON content over creating new structures.
-- Do not invent product capabilities or undocumented behavior.
+- Do not invent product capabilities or undocumented behaviour.
 - Use `[TODO]` rather than filling gaps with speculation.
 - There is no build or test pipeline; validate changes by checking Markdown links, JSON syntax, YAML frontmatter, and nearby consistency.
 - Use British spelling in prose for customisation-related terms; preserve existing file and folder names even when they use US spelling.
@@ -32,7 +26,7 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 
 ## Standards
 
-- All content must reflect documented Copilot behavior.
+- All content must reflect documented Copilot behaviour.
 - Every skill, workflow, instruction, prompt, and agent must stand alone without runtime links to other repo paths.
 - When an asset depends on other material, vendor the needed files into the asset folder instead of linking outward.
 - The `_blank` suffix on template files is a lab-only convention. Remove it when deploying to real projects.
@@ -41,10 +35,11 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 
 - [README.md](../README.md): top-level source of truth for the repo layout and philosophy.
 - [skills/README.md](../skills/README.md): skill library conventions and deployment locations.
-- [instructions/README.md](../instructions/README.md): instruction-file organization and indexing.
-- [workflows/README.md](../workflows/README.md): workflow packaging rules and vendored asset expectations.
-- [guides/how-to/workflow-integration.md](../guides/how-to/workflow-integration.md): workflow expectations and limits.
-- [guides/practices/prompt-engineering.md](../guides/practices/prompt-engineering.md): prompt-writing patterns.
+- [instructions/README.md](../instructions/README.md): instruction-file organisation and indexing.
+- [workflows/README.md](../workflows/README.md): workflow packaging rules and bundled asset expectations.
+- [agents/README.md](../agents/README.md): custom agent taxonomy, placement, and reuse expectations.
+- [prompts/](prompts/): repo-scoped review prompts for skills, agents, and workflows.
+- [.vscode/settings.json](../.vscode/settings.json): VS Code Copilot settings reference for this lab.
 
 ## Conventions
 
@@ -53,14 +48,48 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 - VS Code settings for Copilot go in `.vscode/settings.json`.
 - Skills are folder-based assets intended to be copied into `.github/skills/` in target projects.
 - Workflows are self-contained folders; keep their runtime dependencies under `assets/`.
-- Workflow and skill entry files (`SKILL.md`, `WORKFLOW.md`, `*.agent.md`) must include YAML frontmatter with `name`, `description`, and `metadata` — in that order:
+
+- Skill and workflow entry files (`SKILL.md`, `WORKFLOW.md`) must include YAML frontmatter with `name`, `description`, and `metadata` — in that order. Use `skill-author` for skills and `workflow-author` for workflows:
 
   ```yaml
   ---
   name: (name)
   description: (description)
   metadata:
-     skill-author: (author name)
+    skill-author: (author name)
+    version: x.x.x
+  ---
+  ```
+
+  ```yaml
+  ---
+  name: (name)
+  description: (description)
+  metadata:
+    workflow-author: (author name)
+    version: x.x.x
+  ---
+  ```
+- Custom agent files (`*.agent.md`) must include a discovery-friendly `description` and `metadata.agent-author`; keep optional fields such as `name`, `tools`, and `model` only when they add clear value:
+
+  ```yaml
+  ---
+  description: (discovery-friendly description)
+  metadata:
+    agent-author: (author name)
+    version: x.x.x
+  ---
+  ```
+
+- Instruction files (`*.instructions.md`) must include a useful `description`, an accurate `applyTo` glob, and `metadata.instruction-author` as the last frontmatter field when metadata is present:
+
+  ```yaml
+  ---
+  description: (description)
+  applyTo: (glob)
+  metadata:
+    instruction-author: (author name)
+    version: x.x.x
   ---
   ```
 

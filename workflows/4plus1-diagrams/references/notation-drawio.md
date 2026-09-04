@@ -1,6 +1,6 @@
 # draw.io conventions for 4+1 views
 
-Per-view conventions for the `4plus1-diagrams` workflow. **Mechanics of mxGraph XML (cell ids, geometry, edges) are owned by [`draw-io-diagram-generator`](../skills/draw-io-diagram-generator/SKILL.md) and the [draw.io instruction file](../instructions/draw-io.instructions.md) (both vendored in top-level workflow folders).** This file only covers what is specific to each 4+1 view.
+Per-view conventions for the `4plus1-diagrams` workflow. **Mechanics of mxGraph XML (cell ids, geometry, edges) are owned by [`draw-io-diagram-generator`](../skills/draw-io-diagram-generator/SKILL.md) and the [draw.io instruction file](../instructions/draw-io.instructions.md) (both bundled in top-level workflow folders).** This file only covers what is specific to each 4+1 view.
 
 ---
 
@@ -58,7 +58,7 @@ Notes:
 ## Layout discipline
 
 - **Canvas:** A4 landscape (`pageWidth="1169" pageHeight="827"`), 10 px grid, snap to grid.
-- **Title cell:** First non-required cell. Plain text style, 18 pt bold, centered, full canvas width.
+- **Title cell:** First non-required cell. Plain text style, 18 pt bold, centred, full canvas width.
 - **Spacing:** Minimum 40 px between sibling shapes; minimum 20 px padding inside containers.
 - **Reading order:** Left-to-right for component / data flow; top-to-bottom for layers / time. BPMN lanes stack top-to-bottom inside a vertical pool.
 - **Avoid crossing edges.** Use `edgeStyle=orthogonalEdgeStyle` and reposition shapes if needed.

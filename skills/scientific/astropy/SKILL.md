@@ -1,6 +1,6 @@
 ---
-description: Comprehensive Python library for astronomy and astrophysics. This skill should be used when working with astronomical data including celestial coordinates, physical units, FITS files, cosmological calculations, time systems, tables, world coordinate systems (WCS), and astronomical data analysis. Use when tasks involve coordinate transformations, unit conversions, FITS file manipulation, cosmological distance calculations, time scale conversions, or astronomical data processing.
 name: astropy
+description: Comprehensive Python library for astronomy and astrophysics. This skill should be used when working with astronomical data including celestial coordinates, physical units, FITS files, cosmological calculations, time systems, tables, world coordinate systems (WCS), and astronomical data analysis. Use when tasks involve coordinate transformations, unit conversions, FITS file manipulation, cosmological distance calculations, time scale conversions, or astronomical data processing.
 license: BSD-3-Clause license
 metadata:
   skill-author: 'K-Dense Inc.'
@@ -20,7 +20,7 @@ Use astropy when tasks involve:
 - Reading, writing, or manipulating FITS files (images or tables)
 - Cosmological calculations (luminosity distance, lookback time, Hubble parameter)
 - Precise time handling with different time scales (UTC, TAI, TT, TDB) and formats (JD, MJD, ISO)
-- Table operations (reading catalogs, cross-matching, filtering, joining)
+- Table operations (reading catalogues, cross-matching, filtering, joining)
 - WCS transformations between pixel and world coordinates
 - Astronomical constants and calculations
 
@@ -70,7 +70,7 @@ Handle physical quantities with units, perform unit conversions, and ensure dime
 - Use equivalencies for domain-specific conversions (spectral, doppler, parallax)
 - Work with logarithmic units (magnitudes, decibels)
 
-**See:** `references/units.md` for comprehensive documentation, unit systems, equivalencies, performance optimization, and unit arithmetic.
+**See:** `references/units.md` for comprehensive documentation, unit systems, equivalencies, performance optimisation, and unit arithmetic.
 
 ### 2. Coordinate Systems (`astropy.coordinates`)
 
@@ -80,12 +80,12 @@ Represent celestial positions and transform between different coordinate frames.
 - Create coordinates with `SkyCoord` in any frame (ICRS, Galactic, FK5, AltAz, etc.)
 - Transform between coordinate systems
 - Calculate angular separations and position angles
-- Match coordinates to catalogs
+- Match coordinates to catalogues
 - Include distance for 3D coordinate operations
 - Handle proper motions and radial velocities
 - Query named objects from online databases
 
-**See:** `references/coordinates.md` for detailed coordinate frame descriptions, transformations, observer-dependent frames (AltAz), catalog matching, and performance tips.
+**See:** `references/coordinates.md` for detailed coordinate frame descriptions, transformations, observer-dependent frames (AltAz), catalogue matching, and performance tips.
 
 ### 3. Cosmological Calculations (`astropy.cosmology`)
 
@@ -160,19 +160,19 @@ Transform between pixel coordinates in images and world coordinates.
 - Access WCS parameters (reference pixel, projection, scale)
 - Create custom WCS objects
 
-**See:** `references/wcs_and_other_modules.md` for WCS operations and transformations.
+**See:** `references/wcs-and-other-modules.md` for WCS operations and transformations.
 
 ## Additional Capabilities
 
-The `references/wcs_and_other_modules.md` file also covers:
+The `references/wcs-and-other-modules.md` file also covers:
 
 ### NDData and CCDData
 Containers for n-dimensional datasets with metadata, uncertainty, masking, and WCS information.
 
-### Modeling
+### Modelling
 Framework for creating and fitting mathematical models to astronomical data.
 
-### Visualization
+### Visualisation
 Tools for astronomical image display with appropriate stretching and scaling.
 
 ### Constants
@@ -220,7 +220,7 @@ c_altaz = c.transform_to(aa_frame)
 print(f"Alt={c_altaz.alt.deg}, Az={c_altaz.az.deg}")
 ```
 
-### Reading and Analyzing FITS Files
+### Reading and Analysing FITS Files
 
 ```python
 from astropy.io import fits
@@ -269,7 +269,7 @@ t_lookback = Planck18.lookback_time(z)
 print(f"Lookback time: {t_lookback.to(u.Gyr)}")
 ```
 
-### Cross-Matching Catalogs
+### Cross-Matching Catalogues
 
 ```python
 from astropy.table import Table
@@ -320,9 +320,9 @@ print(f"Found {len(cat1_matched)} matches")
 
 For detailed information on specific modules:
 - `references/units.md` - Units, quantities, conversions, and equivalencies
-- `references/coordinates.md` - Coordinate systems, transformations, and catalog matching
+- `references/coordinates.md` - Coordinate systems, transformations, and catalogue matching
 - `references/cosmology.md` - Cosmological models and calculations
 - `references/fits.md` - FITS file operations and manipulation
 - `references/tables.md` - Table creation, I/O, and operations
 - `references/time.md` - Time formats, scales, and calculations
-- `references/wcs_and_other_modules.md` - WCS, NDData, modeling, visualization, constants, and utilities
+- `references/wcs-and-other-modules.md` - WCS, NDData, modelling, visualisation, constants, and utilities

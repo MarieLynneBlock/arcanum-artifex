@@ -1,14 +1,14 @@
 ---
 name: [skill-name]
-description: >
+description: >-
   [One sentence — what this skill enables the AI to do.
   This is used to decide when to load the skill, so be specific.]
 version: 1.0.0
-authors:
-  - [your name or team]
 tags:
   - [tag1]
   - [tag2]
+metadata:
+  skill-author: '[your name or team]'
 ---
 
 <!--

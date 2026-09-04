@@ -2,7 +2,7 @@
 
 # Treemap Diagram
 
-> **Back to [Style Guide](../mermaid_style_guide.md)** — Read the style guide first for emoji, color, and accessibility rules.
+> **Back to [Style Guide](../mermaid-style-guide.md)** — Read the style guide first for emoji, colour, and accessibility rules.
 
 **Syntax keyword:** `treemap-beta`
 **Mermaid version:** v11.12.0+
