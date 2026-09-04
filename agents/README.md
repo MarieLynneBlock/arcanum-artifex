@@ -6,15 +6,17 @@ Custom agents organised by category so they are easier to browse and reuse.
 
 This library is organised close to the `skills/` taxonomy:
 
-- [agentic/](agentic/)
-- [analysis/](analysis/)
-- [architecture/](architecture/)
-- [coach/](coach/)
-- [data/](data/)
-- [development/](development/)
-- [documentation/](documentation/)
-- [scientific/](scientific/)
-- [security/](security/)
+| Category | Focus | Agents |
+| --- | --- | ---: |
+| [agentic/](agentic/) | Agent customisation, teams, governance, and MCP | 24 |
+| [analysis/](analysis/) | Assessment, planning, and critical review | 10 |
+| [architecture/](architecture/) | Domain analysis and architecture review | 8 |
+| [coach/](coach/) | Technical learning design, delivery, assessment, and agent review | 7 |
+| [data/](data/) | Data storytelling review | 1 |
+| [development/](development/) | Language, platform, DevOps, and tooling specialists | 30 |
+| [documentation/](documentation/) | Accessibility and technical writing | 6 |
+| [scientific/](scientific/) | Scientific literature research | 1 |
+| [security/](security/) | Security review | 1 |
 
 ## Current subfolders
 
@@ -56,7 +58,7 @@ agents/
 
 ## Current size
 
-- Agent files in this folder: **87** (`*.agent.md`)
+- Agent files in this folder: **88** (`*.agent.md`)
 
 ## What are custom agents?
 
