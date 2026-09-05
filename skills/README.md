@@ -9,6 +9,7 @@ This library is organised by category:
 - [agentic/](agentic/)
 - [analysis/](analysis/)
 - [architecture/](architecture/)
+- [coach/](coach/)
 - [data-science/](data-science/)
 - [development/](development/)
 - [document-production/](document-production/)

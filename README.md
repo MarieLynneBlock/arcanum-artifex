@@ -32,6 +32,7 @@ skills/
 ├── data-science/        ← pandas, polars, scikit-learn, SHAP, MLflow, gradient boosting, survival analysis, time series
 ├── development/         ← Python, Rust, Java, TypeScript, SQL, DevOps, API design, frontend, game dev, refactoring, test strategy
 ├── analysis/            ← architecture audit, gap analysis, risk analysis, stakeholder mapping, user stories, epics, trade-off analysis
+├── coach/               ← technical coaching and delivery-performance improvement
 ├── architecture/        ← 4+1 architectural views, ADRs, technology stack blueprints
 ├── agentic/             ← agent governance, OWASP compliance for agents, MCP, supply chain, evaluation frameworks
 ├── security/            ← threat modelling, GDPR compliance, security review, data breach blast radius
