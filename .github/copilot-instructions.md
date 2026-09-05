@@ -27,8 +27,9 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 ## Standards
 
 - All content must reflect documented Copilot behaviour.
-- Every skill, workflow, instruction, prompt, and agent must stand alone without runtime links to other repo paths.
-- When an asset depends on other material, vendor the needed files into the asset folder instead of linking outward.
+- Every portable skill, workflow, instruction, prompt, and agent (the assets under `skills/`, `workflows/`, `instructions/`, `agents/`, and `templates/`) must stand alone without runtime links to other repo paths.
+- When a portable asset depends on other material, vendor the needed files into the asset folder instead of linking outward.
+- Repo-scoped tooling that maintains this lab itself — `.github/prompts/` and `.github/agents/` — is exempt from that standalone rule by design: it may reference this repo's own `copilot-instructions.md` and domain `README.md` index files as a documented, intentional dependency, but must say so explicitly rather than link to them silently.
 - The `_blank` suffix on template files is a lab-only convention. Remove it when deploying to real projects.
 
 ## Repository Map

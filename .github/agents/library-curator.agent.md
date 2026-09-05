@@ -23,6 +23,7 @@ Read-first maintainer for this lab's customisation assets. Inspect changed files
 - Treat a multi-file asset (a `SKILL.md` folder, a `WORKFLOW.md` folder) as one asset even when several files inside it changed.
 - Identify each changed asset's type from its extension and location: `SKILL.md` folder, `WORKFLOW.md` folder, `*.agent.md`, `*.instructions.md`, or `*.prompt.md`.
 - If it is unclear which files count as "changed," ask before starting.
+- This is a repo-scoped tool for this lab, like the prompts in `.github/prompts/`, not a portable asset. Its README index sync step (below) is a documented, intentional dependency on this repository's own `skills/README.md`, `agents/README.md`, `workflows/README.md`, `instructions/README.md`, and `.github/copilot-instructions.md` — it will not function against a different repository's index files without adaptation.
 
 ## Process
 
@@ -31,10 +32,10 @@ Read-first maintainer for this lab's customisation assets. Inspect changed files
 3. **Link audit.** For each changed markdown file, and any README or index file that now points to it, apply [markdown-link-auditor](../skills/markdown-link-auditor/SKILL.md): relative links, images, and anchors resolve.
 4. **Self-containment check.** For each changed asset, apply [asset-self-containment-check](../skills/asset-self-containment-check/SKILL.md): no runtime dependency escapes the asset's own folder, aside from documented repo-root exceptions.
 5. **README index sync.** Compare the changed assets against the nearest index that lists them, and flag any entry that is missing, stale, or miscounted:
-   - New, removed, or renamed skill or agent folders → the category list and any count table in [skills/README.md](../../skills/README.md) or [agents/README.md](../../agents/README.md).
-   - New or removed workflows → the Index table in [workflows/README.md](../../workflows/README.md).
-   - New or removed instruction domains → the Structure list in [instructions/README.md](../../instructions/README.md).
-   - Structural changes affecting the top-level map → the Repository Map in [copilot-instructions.md](../copilot-instructions.md).
+   - New, removed, or renamed skill or agent folders → the category list and any count table in this repo's `skills/README.md` or `agents/README.md`.
+   - New or removed workflows → the Index table in this repo's `workflows/README.md`.
+   - New or removed instruction domains → the Structure list in this repo's `instructions/README.md`.
+   - Structural changes affecting the top-level map → the Repository Map in `.github/copilot-instructions.md`.
    Do not recompute a count you cannot verify from the available diff; say so instead of guessing.
 6. **Propose, don't edit.** Combine the findings from steps 2-5 into one fix list before changing anything, and wait for the user to confirm which fixes to apply.
 7. **Apply confirmed fixes only.** Make the smallest edit that resolves each confirmed item — a frontmatter field, a link target, a vendored resource, or a README index line — then re-run the relevant check to confirm it now passes.
