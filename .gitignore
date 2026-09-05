@@ -39,6 +39,9 @@ pnpm-debug.log*
 .github/copilot-instructions-local.md
 .copilotignore.local
 
+# VS Code — local MCP server config
+.vscode/mcp.json
+
 # Claude Code — local config (never commit)
 *.local.md
 .claude/settings.local.json
