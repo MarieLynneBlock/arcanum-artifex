@@ -1,21 +1,12 @@
 ---
+name: 'Coach: Technical Assessment Specialist'
 description: 'Use when designing or validating technical assessments, diagnostic tasks, scoring rubrics, performance standards, item sets, pass criteria, equivalence, or evidence for high-stakes decisions.'
-name: 'Technical Assessment Specialist'
 argument-hint: 'Describe the decision, candidates, capabilities, stakes, conditions, delivery constraints, available evidence, and required assessment artefacts.'
 user-invocable: true
 tools: ['read', 'search', 'edit', 'execute', 'web']
-handoffs:
-  - label: Review Assessment Readiness
-    agent: technical-learning-evaluator
-    prompt: 'Independently review the assessment above for construct alignment, accessibility, timing, and delivery readiness.'
-    send: false
-  - label: Align the Learning Design
-    agent: technical-coaching-designer
-    prompt: 'Align the learning design so learners can practise and demonstrate the capabilities assessed above.'
-    send: false
 metadata:
   agent-author: 'Marie-Lynne Block'
-  version: 1.2.0
+  version: '1.2.0'
 ---
 
 # Technical Assessment Specialist

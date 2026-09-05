@@ -1,21 +1,12 @@
 ---
+name: 'Coach: Facilitator Guide Producer'
 description: 'Use when converting an approved technical learning design into a facilitator guide, timed run sheet, demonstration script, learner instructions, delivery prompts, and contingency plan.'
-name: 'Facilitator Guide Producer'
 argument-hint: 'Provide the approved design, audience, duration, delivery mode, cohort details, facilitator constraints, and required guide format.'
 user-invocable: true
 tools: ['read', 'search', 'edit']
-handoffs:
-  - label: Review Delivery Readiness
-    agent: technical-learning-evaluator
-    prompt: 'Independently review the facilitator guide above for outcome coverage, timing credibility, and delivery readiness.'
-    send: false
-  - label: Resolve Design Gaps
-    agent: technical-coaching-designer
-    prompt: 'Resolve the readiness gaps and missing design decisions listed above.'
-    send: false
 metadata:
   agent-author: 'Marie-Lynne Block'
-  version: 1.2.0
+  version: '1.2.0'
 ---
 
 # Facilitator Guide Producer
