@@ -27,8 +27,9 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 ## Standards
 
 - All content must reflect documented Copilot behaviour.
-- Every skill, workflow, instruction, prompt, and agent must stand alone without runtime links to other repo paths.
-- When an asset depends on other material, vendor the needed files into the asset folder instead of linking outward.
+- Every portable skill, workflow, instruction, prompt, and agent under `skills/`, `workflows/`, `instructions/`, `agents/`, and `templates/` must stand alone without runtime links to other repo paths.
+- When a portable asset depends on other material, vendor the needed files into the asset folder instead of linking outward.
+- Repo-scoped tooling under `.github/` may intentionally reference this repository's own audit skills and README indexes; it must state that dependency explicitly.
 - The `_blank` suffix on template files is a lab-only convention. Remove it when deploying to real projects.
 
 ## Repository Map
@@ -39,11 +40,13 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 - [workflows/README.md](../workflows/README.md): workflow packaging rules and bundled asset expectations.
 - [agents/README.md](../agents/README.md): custom agent taxonomy, placement, and reuse expectations.
 - [prompts/](prompts/): repo-scoped review prompts for skills, agents, and workflows.
+- [agents/](agents/): repo-scoped maintenance agents for this lab, including `library-curator`.
 - [.vscode/settings.json](../.vscode/settings.json): VS Code Copilot settings reference for this lab.
 
 ## Conventions
 
 - Prompt files use the `.prompt.md` extension and live in `.github/prompts/`.
+- Repo-scoped custom agents that maintain this lab live in `.github/agents/`.
 - Repo-level instructions live in `.github/copilot-instructions.md` or `AGENTS.md`.
 - VS Code settings for Copilot go in `.vscode/settings.json`.
 - Skills are folder-based assets intended to be copied into `.github/skills/` in target projects.
