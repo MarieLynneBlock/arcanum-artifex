@@ -7,7 +7,7 @@
 			"command": "powershell",
 			"args": [
 				"-Command",
-				"New-Item -ItemType Directory -Path 'c:\\devenv\\Coach\\arcanum-artifex\\.github\\skills\\asset-self-containment-check' -Force"
+				"New-Item -ItemType Directory -Path '${workspaceFolder}/.github/skills/asset-self-containment-check' -Force"
 			]
 		}
 	]
