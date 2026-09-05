@@ -27,7 +27,7 @@ Verify that documentation references resolve without changing content unless the
    - Check the target exists with the repository's expected case.
    - For a fragment, match the rendered heading slug or an explicit HTML `id`/anchor. Apply the repository's slug rules when they are documented; otherwise use common GitHub-style slugging and note the assumption.
    - Treat `/` as the portable separator; do not accept a platform-specific `\` separator in a Markdown target.
-5. **Classify non-local targets.** Leave `#anchor`, `mailto:`, and tool-specific URIs alone. Treat `http` and `https` links as external dependencies: check them only when network access is available and the user requests external validation.
+5. **Classify non-local targets.** Resolve fragment-only links such as `#anchor` against the source file. Leave `mailto:` and tool-specific URIs alone. Treat `http` and `https` links as external dependencies: check them only when network access is available and the user requests external validation.
 6. **Apply repository checks.** For documentation-first repositories, confirm index links point to the real asset, moved assets have no stale nearby links, and standalone assets do not rely on another repository for required instructions.
 7. **Report before editing.** Group identical failures, and do not rewrite links unless fixes were requested. If fixes are requested, change only affected targets and preserve link text, naming, and style.
 
