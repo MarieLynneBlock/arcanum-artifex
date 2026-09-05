@@ -39,11 +39,14 @@ This is a documentation-first lab for GitHub Copilot resources: verified templat
 - [workflows/README.md](../workflows/README.md): workflow packaging rules and bundled asset expectations.
 - [agents/README.md](../agents/README.md): custom agent taxonomy, placement, and reuse expectations.
 - [prompts/](prompts/): repo-scoped review prompts for skills, agents, and workflows.
+- [skills/](skills/): repo-scoped skills that audit this lab's own assets — frontmatter (`asset-frontmatter-check`), links (`markdown-link-auditor`), and self-containment (`asset-self-containment-check`).
+- [agents/](agents/): repo-scoped maintenance agent for this lab (`library-curator`), which runs the skills above plus a README index sync over changed files.
 - [.vscode/settings.json](../.vscode/settings.json): VS Code Copilot settings reference for this lab.
 
 ## Conventions
 
 - Prompt files use the `.prompt.md` extension and live in `.github/prompts/`.
+- Repo-scoped custom agents that maintain this lab (rather than portable library agents under `agents/`) live in `.github/agents/`.
 - Repo-level instructions live in `.github/copilot-instructions.md` or `AGENTS.md`.
 - VS Code settings for Copilot go in `.vscode/settings.json`.
 - Skills are folder-based assets intended to be copied into `.github/skills/` in target projects.
