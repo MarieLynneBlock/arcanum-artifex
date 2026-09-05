@@ -11,7 +11,7 @@ This library is organised close to the `skills/` taxonomy:
 | [agentic/](agentic/) | Agent customisation, teams, governance, and MCP | 24 |
 | [analysis/](analysis/) | Assessment, planning, and critical review | 10 |
 | [architecture/](architecture/) | Domain analysis and architecture review | 8 |
-| [coach/](coach/) | Technical learning design, delivery, assessment, and agent review | 7 |
+| [coach/](coach/) | Technical learning design, delivery, assessment, and agentic review | 8 |
 | [data/](data/) | Data storytelling review | 1 |
 | [development/](development/) | Language, platform, DevOps, and tooling specialists | 30 |
 | [documentation/](documentation/) | Accessibility and technical writing | 6 |
@@ -37,6 +37,8 @@ agents/
 │   ├── domain/
 │   └── review/
 ├── coach/
+│   ├── learning-design/
+│   └── review/
 ├── data/
 ├── development/
 │   ├── cpp/
@@ -58,7 +60,7 @@ agents/
 
 ## Current size
 
-- Agent files in this folder: **88** (`*.agent.md`)
+- Agent files in this folder: **89** (`*.agent.md`)
 
 ## What are custom agents?
 

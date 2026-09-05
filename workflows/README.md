@@ -51,6 +51,7 @@ workflows/
 Naming rules:
 
 - Workflow folders use `kebab-case` and start with the **outcome**, not the tool (`4plus1-diagrams`, not `drawio-and-skills`).
+- A single optional category folder may group related workflows (`learning-design/technical-workshop/`). Do not nest deeper.
 - A folder prefixed with `_` (e.g. `_template/`) is scaffolding, not a workflow — runners should ignore it.
 - `WORKFLOW.md` is the canonical orchestration document. `README.md` is for humans browsing the folder.
 
@@ -74,6 +75,7 @@ Keep `WORKFLOW.md` short. Push detail down into the linked skills and references
 | Workflow | Outcome | Status |
 |----------|---------|--------|
 | [4plus1-diagrams](4plus1-diagrams/) | Produce a 4+1 architectural view model with both Mermaid (primary) and editable drawio & miro diagrams per view. | Active |
+| [learning-design/technical-workshop](learning-design/technical-workshop/) | Design, build, facilitate, assess, and independently review a technical workshop or course for software and data practitioners. | Active |
 
 ---
 

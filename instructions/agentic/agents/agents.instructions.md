@@ -18,17 +18,22 @@ Instructions for creating effective and maintainable custom agent files that pro
 
 ## Required Frontmatter
 
-Every agent file must include YAML frontmatter with the following fields:
+Every agent file must include YAML frontmatter with the following fields, in this order:
 
 ```yaml
 ---
-description: 'Brief description of the agent purpose and capabilities'
 name: 'Agent Display Name'
+description: 'Brief description of the agent purpose and capabilities'
 tools: ['read', 'edit', 'search']
 model: 'Claude Sonnet 4.5'
 target: 'vscode'
+metadata:
+  agent-author: 'Author Name'
+  version: '1.0.0'
 ---
 ```
+
+Keep `name`, `description`, and `metadata` in that relative order. Place any other supported keys between `description` and `metadata`.
 
 ### Core Frontmatter Properties
 
@@ -70,10 +75,10 @@ target: 'vscode'
 - Default: `false` if omitted
 - Set to `true` to prevent subagent invocation while keeping it available in the picker
 
-#### **metadata** (OPTIONAL, GitHub.com only)
+#### **metadata** (OPTIONAL)
 - Object with name-value pairs for agent annotation
-- Example: `metadata: { category: 'testing', version: '1.0' }`
-- Not supported in VS Code
+- Used in this repository for `agent-author` and `version`
+- Ignored by hosts that do not support it, so it is safe to include everywhere
 
 #### **mcp-servers** (OPTIONAL, Organization/Enterprise only)
 - Configure MCP servers available only to this agent
@@ -104,8 +109,8 @@ Define handoffs in the agent file's YAML frontmatter using the `handoffs` field:
 
 ```yaml
 ---
-description: 'Brief description of the agent'
 name: 'Agent Name'
+description: 'Brief description of the agent'
 tools: ['search', 'read']
 handoffs:
   - label: Start Implementation
@@ -175,8 +180,8 @@ Here's an example of three agents with handoffs creating a complete workflow:
 **Planning Agent** (`planner.agent.md`):
 ```yaml
 ---
-description: 'Generate an implementation plan for new features or refactoring'
 name: 'Planner'
+description: 'Generate an implementation plan for new features or refactoring'
 tools: ['search', 'read']
 handoffs:
   - label: Implement Plan
@@ -197,8 +202,8 @@ Do not write any code - focus only on planning.
 **Implementation Agent** (`implementer.agent.md`):
 ```yaml
 ---
-description: 'Implement code based on a plan or specification'
 name: 'Implementer'
+description: 'Implement code based on a plan or specification'
 tools: ['read', 'edit', 'search', 'execute']
 handoffs:
   - label: Review Implementation
@@ -219,8 +224,8 @@ Implement the solution completely and thoroughly.
 **Review Agent** (`reviewer.agent.md`):
 ```yaml
 ---
-description: 'Review code for quality, security, and best practices'
 name: 'Reviewer'
+description: 'Review code for quality, security, and best practices'
 tools: ['read', 'search']
 handoffs:
   - label: Back to Planning
@@ -848,6 +853,7 @@ Each level can override settings from previous levels.
 ## Agent Creation Checklist
 
 ### Frontmatter
+- [ ] Fields ordered `name`, `description`, then remaining keys, with `metadata` last
 - [ ] `description` field present and descriptive (50-150 chars)
 - [ ] `description` wrapped in single quotes
 - [ ] `name` specified (optional but recommended)
@@ -914,6 +920,7 @@ Each level can override settings from previous levels.
 
 ### Frontmatter Errors
 - ❌ Missing `description` field
+- ❌ Fields out of the required `name`, `description`, `metadata` order
 - ❌ Description not wrapped in quotes
 - ❌ Invalid tool names without checking documentation
 - ❌ Incorrect YAML syntax (indentation, quotes)
