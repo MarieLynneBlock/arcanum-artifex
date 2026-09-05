@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "mkdir-skill",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-Command",
+				"New-Item -ItemType Directory -Path 'c:\\devenv\\Coach\\arcanum-artifex\\.github\\skills\\asset-self-containment-check' -Force"
+			]
+		}
+	]
+}
