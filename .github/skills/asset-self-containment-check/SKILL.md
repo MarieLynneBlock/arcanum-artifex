@@ -8,7 +8,7 @@ metadata:
 
 # Asset Self-Containment Check
 
-Check one asset folder for hidden dependencies on the rest of this repository, then report or fix deviations. This is distinct from [markdown-link-auditor](../markdown-link-auditor/SKILL.md), which checks whether links *resolve*; this skill checks whether an asset's references *escape its own package* — the "packaging over linking" rule stated in this repo's `copilot-instructions.md`.
+Check one asset folder for hidden dependencies on the rest of this repository, then report or fix deviations. This is distinct from [markdown-link-auditor](../markdown-link-auditor/SKILL.md), which checks whether links *resolve*; this skill checks whether an asset's references *escape its own package* — the "packaging over linking" rule stated in this repo's `.github/copilot-instructions.md`.
 
 ## Use this skill when
 

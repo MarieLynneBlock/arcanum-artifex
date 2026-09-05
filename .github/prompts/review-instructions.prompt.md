@@ -1,6 +1,6 @@
 ---
 agent: Plan
-description: Review one instruction file for applyTo glob accuracy, frontmatter conventions, overlap or conflict with sibling instructions and copilot-instructions.md, and current best practices.
+description: Review one instruction file for applyTo glob accuracy, frontmatter conventions, overlap or conflict with sibling instructions and .github/copilot-instructions.md, and current best practices.
 argument-hint: "Instruction file or folder path, for example: instructions/development/python.instructions.md"
 tools: [read, search, execute, web]
 ---
@@ -38,7 +38,7 @@ Check that:
 - Instructions are internally consistent and do not contain contradictory languages, tool names, file names, process steps, or behavioural requirements.
 - All required extra resources are bundled or referenced correctly; relative markdown links and file references resolve.
 - No absolute local paths, user-specific home folders, hidden repo dependencies, or machine-specific assumptions are required.
-- Guidance is concise and scoped to files matched by `applyTo`; avoid restating general project philosophy that belongs in `copilot-instructions.md`.
+- Guidance is concise and scoped to files matched by `applyTo`; avoid restating general project philosophy that belongs in `.github/copilot-instructions.md`.
 - The instructions avoid speculative product behaviour. Use `[TODO]` in suggested replacement text where behaviour cannot be verified.
 - The instructions follow current Copilot instruction-file best practices where applicable.
 
