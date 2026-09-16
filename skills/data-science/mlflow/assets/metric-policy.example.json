@@ -1,0 +1,13 @@
+{
+  "metrics": {
+    "roc_auc": {
+      "threshold": 0.75,
+      "higher_is_better": true,
+      "min_absolute_change": 0.01
+    },
+    "log_loss": {
+      "threshold": 0.65,
+      "higher_is_better": false
+    }
+  }
+}
