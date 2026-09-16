@@ -3,6 +3,7 @@ name: powerbi-modelling
 description: 'Power BI semantic modelling assistant for building optimised data models. Use when working with Power BI semantic models, creating measures, designing star schemas, configuring relationships, implementing RLS, or optimising model performance. Triggers on queries about DAX calculations, table relationships, dimension/fact table design, naming conventions, model documentation, cardinality, cross-filter direction, calculation groups, and data model best practices. Always connects to the active model first using power-bi-modelling MCP tools to understand the data structure before providing guidance.'
 metadata:
   skill-author: 'Marie-Lynne Block'
+  version: '0.0.1'
 ---
 
 # Power BI Semantic Modelling

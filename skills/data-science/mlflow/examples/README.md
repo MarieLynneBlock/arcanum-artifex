@@ -14,7 +14,7 @@ In VS Code, select that project's interpreter when investigating unresolved impo
 
 The Python sources were exercised end to end (all three example entry points plus the metric
 comparator) on Windows with Python 3.12.10, MLflow 3.16.0, NumPy 2.5.3, pandas 3.0.5,
-scikit-learn 1.9.1 and skops 0.14.0 on 16 September 2026, each completing with exit code 0 and the
+scikit-learn 1.9.1 and skops 0.14.0 each completing with exit code 0 and the
 documented row/metric outcomes. This is historical compatibility evidence, not a dependency pin or
 a guarantee for another environment. Check installed API signatures, especially model logging,
 serialisation, GenAI assessments and the comparator's validation exception import.
