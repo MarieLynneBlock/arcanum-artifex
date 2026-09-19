@@ -3,7 +3,8 @@ name: dashboard-beautify
 description: >-
   Design and build production-grade dashboards and infographics with Dash and Plotly Python:
   layout strategy, colour semantics, accessibility, and pre-ship validation. Use when creating
-  or beautifying a dashboard, KPI panel, or data infographic.
+  or beautifying a dashboard, KPI panel, or data infographic. For callback wiring, data-sharing
+  strategy, or Dash app architecture rather than visual design, see the `dash` skill instead.
 metadata:
   skill-author: 'Marie-Lynne Block'
   version: 0.0.4

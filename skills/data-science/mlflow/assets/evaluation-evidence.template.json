@@ -1,0 +1,20 @@
+{
+  "candidate": {
+    "protocol_id": "[TODO]",
+    "evaluation_dataset_id": "[TODO]",
+    "split_id": "[TODO]",
+    "phase": "[TODO] validation or final-test",
+    "model_uri": "[TODO]",
+    "run_id": "[TODO]",
+    "metrics": {}
+  },
+  "baseline": {
+    "protocol_id": "[TODO]",
+    "evaluation_dataset_id": "[TODO]",
+    "split_id": "[TODO]",
+    "phase": "[TODO] validation or final-test",
+    "model_uri": "[TODO]",
+    "run_id": "[TODO]",
+    "metrics": {}
+  }
+}
